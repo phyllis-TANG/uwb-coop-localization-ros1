@@ -1,0 +1,19 @@
+# Catkin-generated workspace output
+ros_ws/build/
+ros_ws/devel/
+ros_ws/install/
+ros_ws/logs/
+
+# catkin_init_workspace creates an environment-specific symlink here.
+ros_ws/src/CMakeLists.txt
+
+# catkin_make records the workspace root with this generated marker.
+ros_ws/.catkin_workspace
+
+# ROS runtime data must not be committed.
+*.bag
+*.bag.active
+
+# Python runtime artifacts
+*.pyc
+__pycache__/
