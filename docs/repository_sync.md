@@ -14,7 +14,7 @@ repo="$HOME/uwb-coop-localization-ros1"; \
 if git -C "$repo" rev-parse --is-inside-work-tree >/dev/null 2>&1; then \
   printf '%s\n' '--- repository found ---' "$repo" '--- remotes ---'; \
   git -C "$repo" remote -v; \
-  printf '%s\n' '--- branch ---'; git -C "$repo" branch --show-current; \
+  printf '%s\n' '--- branch ---'; git -C "$repo" rev-parse --abbrev-ref HEAD; \
   printf '%s\n' '--- commit ---'; git -C "$repo" log -1 --oneline; \
   printf '%s\n' '--- status ---'; git -C "$repo" status --short --branch; \
 else \
@@ -24,6 +24,10 @@ fi
 
 This command is read-only. It reports either `REPOSITORY_NOT_FOUND` or the
 existing clone's remote URL, branch, latest commit, and status.
+
+`rev-parse --abbrev-ref HEAD` is used instead of `git branch --show-current`
+because the Git version in the Ubuntu 18.04 vendor VM does not support the newer
+`--show-current` option.
 
 Send the complete output before continuing. The next command depends on the
 result:

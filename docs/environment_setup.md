@@ -10,6 +10,8 @@ The operator reported the following target environment on 2026-09-16:
 
 - Ubuntu 18.04
 - ROS Melodic
+- Git version old enough that `git branch --show-current` is unavailable; use
+  `git rev-parse --abbrev-ref HEAD` for branch inspection
 
 This is a report about the vendor VM, not a ROS runtime result from the
 repository's development container. The exact outputs of `rosversion -d` and
