@@ -1,0 +1,26 @@
+# Example Anchor map for simulation only.
+# Replace these coordinates with surveyed field values before real experiments.
+# Coordinate unit: metre.
+
+frame_id: uwb_map
+
+anchors:
+  - id: anchor_1
+    x: 0.0
+    y: 0.0
+    z: 0.0
+
+  - id: anchor_2
+    x: 5.0
+    y: 0.0
+    z: 0.0
+
+  - id: anchor_3
+    x: 5.0
+    y: 4.0
+    z: 0.0
+
+  - id: anchor_4
+    x: 0.0
+    y: 4.0
+    z: 0.0
