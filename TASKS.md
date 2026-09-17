@@ -27,8 +27,8 @@ environment or explicitly confirmed by its operator.
 
 ## Stage 1 — simulated UWB data path
 
-- **IN PROGRESS — Define one hardware-independent ROS range message.**
-- **TODO — Add configuration-driven `anchors.yaml`.**
+- **DONE — Define hardware-independent ROS range messages.**
+- **IN PROGRESS — Add configuration-driven `anchors.yaml`.**
 - **TODO — Implement and test `uwb_simulator.py`.**
 - **TODO — Implement and test `uwb_logger.py`.**
 - **TODO — Implement and test simple 2D least-squares trilateration.**

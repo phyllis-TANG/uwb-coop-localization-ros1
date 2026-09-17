@@ -17,9 +17,11 @@ modifying the existing Wheeltec workspaces. The `uwb_coop_localization` package
 has also been created and successfully built with `rospy`, `std_msgs`, and
 `geometry_msgs`.
 
-The package uses the MIT License. No real UWB hardware interface, simulator,
-logger, localizer, or fusion algorithm has been implemented yet. The next gate
-is to define a hardware-independent ROS message for UWB range measurements.
+The package uses the MIT License. Hardware-independent `UwbRange` and
+`UwbRangeArray` messages have been generated and verified with Python 2.7.
+No real UWB driver, simulator, logger, localizer, or fusion algorithm has been
+implemented yet. The next gate is a configuration-driven Anchor map followed
+by the UWB simulator.
 
 ## Development order
 
