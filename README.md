@@ -18,10 +18,15 @@ has also been created and successfully built with `rospy`, `std_msgs`, and
 `geometry_msgs`.
 
 The package uses the MIT License. Hardware-independent `UwbRange` and
-`UwbRangeArray` messages have been generated and verified with Python 2.7.
-No real UWB driver, simulator, logger, localizer, or fusion algorithm has been
-implemented yet. The next gate is a configuration-driven Anchor map followed
-by the UWB simulator.
+`UwbRangeArray` messages have been generated and verified with Python 2.7. A
+configuration-driven four-Anchor simulation map and an ideal stationary-Tag
+UWB simulator are now available.
+
+The simulator publishes `uwb_coop_localization/UwbRangeArray` on
+`/uwb/tag1/ranges`. In the vendor VM it produced the expected four geometric
+ranges at a stable rate of approximately 10 Hz. No real UWB driver, logger,
+localizer, or fusion algorithm has been implemented yet. The next gate is raw
+CSV range logging.
 
 ## Development order
 

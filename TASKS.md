@@ -28,9 +28,15 @@ environment or explicitly confirmed by its operator.
 ## Stage 1 — simulated UWB data path
 
 - **DONE — Define hardware-independent ROS range messages.**
-- **IN PROGRESS — Add configuration-driven `anchors.yaml`.**
-- **TODO — Implement and test `uwb_simulator.py`.**
-- **TODO — Implement and test `uwb_logger.py`.**
+- **DONE — Add configuration-driven `anchors.yaml`.**
+  - Verified four unique simulation Anchors in the `uwb_map` frame.
+  - Coordinates remain simulation-only until the field layout is surveyed.
+- **DONE — Implement and test `uwb_simulator.py`.**
+  - Verified Python 2.7 syntax and executable permission.
+  - Verified `catkin_make`, launch parameter loading, and node startup.
+  - Verified four ideal ranges for Tag position `(2.0, 2.0, 0.0)`.
+  - Verified `/uwb/tag1/ranges` at approximately 10 Hz.
+- **IN PROGRESS — Implement and test `uwb_logger.py`.**
 - **TODO — Implement and test simple 2D least-squares trilateration.**
 - **TODO — Display anchors, tag, estimate, and trajectory in RViz.**
 

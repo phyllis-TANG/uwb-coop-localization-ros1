@@ -1,0 +1,28 @@
+<launch>
+  <!-- Static simulated Tag configuration. -->
+  <arg name="tag_id" default="tag1" />
+  <arg name="tag_x" default="2.0" />
+  <arg name="tag_y" default="2.0" />
+  <arg name="tag_z" default="0.0" />
+
+  <!-- ROS output configuration. -->
+  <arg name="publish_rate" default="10.0" />
+  <arg name="topic" default="/uwb/tag1/ranges" />
+
+  <node pkg="uwb_coop_localization"
+        type="uwb_simulator.py"
+        name="uwb_simulator"
+        output="screen">
+
+    <!-- Load frame_id and anchors into this node's private namespace. -->
+    <rosparam command="load"
+              file="$(find uwb_coop_localization)/config/anchors.yaml" />
+
+    <param name="tag_id" value="$(arg tag_id)" />
+    <param name="tag_x" value="$(arg tag_x)" />
+    <param name="tag_y" value="$(arg tag_y)" />
+    <param name="tag_z" value="$(arg tag_z)" />
+    <param name="publish_rate" value="$(arg publish_rate)" />
+    <param name="topic" value="$(arg topic)" />
+  </node>
+</launch>
