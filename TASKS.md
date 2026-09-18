@@ -43,8 +43,14 @@ environment or explicitly confirmed by its operator.
   - Verified append mode added complete four-Anchor packets without repeating
     the CSV header.
   - Verified flush and clean file closure during ROS shutdown.
-- **IN PROGRESS — Implement and test simple 2D least-squares trilateration.**
-- **TODO — Display anchors, tag, estimate, and trajectory in RViz.**
+- **DONE — Implement and test simple 2D least-squares trilateration.**
+  - Verified exact `(2.0, 2.0)` solutions with three and four Anchors.
+  - Verified filtering of unknown Anchor IDs and invalid negative ranges.
+  - Verified rejection of fewer than three ranges and collinear Anchor layouts.
+  - Verified live `PoseStamped` output in `uwb_map` at approximately 10 Hz.
+  - Orientation remains an unobserved default unit quaternion, not a UWB yaw
+    estimate.
+- **IN PROGRESS — Display anchors, tag, estimate, and trajectory in RViz.**
 
 ## Deferred stages
 

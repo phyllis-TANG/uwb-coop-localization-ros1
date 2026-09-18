@@ -30,8 +30,14 @@ A Python 2.7-compatible logger now writes each Anchor measurement to CSV using
 the columns `timestamp,tag_id,anchor_id,range,quality`. It preserves the ROS
 acquisition timestamp, flushes each message batch by default, appends to
 existing files without repeating the header, and creates missing output
-directories. No real UWB driver, localizer, or fusion algorithm has been
-implemented yet. The next gate is simple 2D least-squares trilateration.
+directories.
+
+A simple unweighted 2D least-squares localizer now converts configured
+Anchor-to-Tag ranges into `geometry_msgs/PoseStamped` messages on
+`/uwb/tag1/pose`. It was verified with three and four Anchors, invalid-input
+filtering, degenerate-geometry rejection, and a live 10 Hz simulator data path.
+No real UWB driver, filtering, odometry/IMU fusion, or cooperative EKF has been
+implemented yet. The next gate is RViz visualization.
 
 ## Development order
 
