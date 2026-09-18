@@ -8,6 +8,8 @@
   <!-- ROS output configuration. -->
   <arg name="publish_rate" default="10.0" />
   <arg name="topic" default="/uwb/tag1/ranges" />
+  <arg name="ground_truth_topic"
+       default="/uwb/tag1/ground_truth_pose" />
 
   <node pkg="uwb_coop_localization"
         type="uwb_simulator.py"
@@ -24,5 +26,7 @@
     <param name="tag_z" value="$(arg tag_z)" />
     <param name="publish_rate" value="$(arg publish_rate)" />
     <param name="topic" value="$(arg topic)" />
+    <param name="ground_truth_topic"
+           value="$(arg ground_truth_topic)" />
   </node>
 </launch>

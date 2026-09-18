@@ -10,8 +10,10 @@ project(uwb_coop_localization)
 find_package(catkin REQUIRED COMPONENTS
   geometry_msgs
   message_generation
+  nav_msgs
   rospy
   std_msgs
+  visualization_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -104,7 +106,13 @@ generate_messages(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-  CATKIN_DEPENDS geometry_msgs message_runtime rospy std_msgs
+  CATKIN_DEPENDS
+    geometry_msgs
+    message_runtime
+    nav_msgs
+    rospy
+    std_msgs
+    visualization_msgs
 )
 
 ###########
@@ -161,6 +169,7 @@ catkin_install_python(PROGRAMS
   scripts/uwb_localizer.py
   scripts/uwb_logger.py
   scripts/uwb_simulator.py
+  scripts/uwb_visualizer.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
@@ -189,6 +198,7 @@ catkin_install_python(PROGRAMS
 install(DIRECTORY
   config
   launch
+  rviz
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 

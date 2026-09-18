@@ -1,0 +1,26 @@
+<launch>
+  <arg name="ground_truth_topic"
+       default="/uwb/tag1/ground_truth_pose" />
+  <arg name="estimate_topic" default="/uwb/tag1/pose" />
+  <arg name="path_topic" default="/uwb/tag1/path" />
+  <arg name="max_path_points" default="1000" />
+
+  <node pkg="uwb_coop_localization"
+        type="uwb_visualizer.py"
+        name="uwb_visualizer"
+        output="screen">
+
+    <!-- Load frame_id and Anchor coordinates into the private namespace. -->
+    <rosparam command="load"
+              file="$(find uwb_coop_localization)/config/anchors.yaml" />
+
+    <param name="ground_truth_topic"
+           value="$(arg ground_truth_topic)" />
+    <param name="estimate_topic"
+           value="$(arg estimate_topic)" />
+    <param name="path_topic"
+           value="$(arg path_topic)" />
+    <param name="max_path_points"
+           value="$(arg max_path_points)" />
+  </node>
+</launch>
