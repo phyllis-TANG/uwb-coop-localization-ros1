@@ -1,0 +1,30 @@
+<launch>
+  <arg name="tag_id" default="tag1" />
+  <arg name="tag_x" default="2.0" />
+  <arg name="tag_y" default="2.0" />
+  <arg name="tag_z" default="0.0" />
+  <arg name="publish_rate" default="10.0" />
+  <arg name="max_path_points" default="1000" />
+  <arg name="rviz" default="false" />
+
+  <include file="$(find uwb_coop_localization)/launch/uwb_simulator.launch">
+    <arg name="tag_id" value="$(arg tag_id)" />
+    <arg name="tag_x" value="$(arg tag_x)" />
+    <arg name="tag_y" value="$(arg tag_y)" />
+    <arg name="tag_z" value="$(arg tag_z)" />
+    <arg name="publish_rate" value="$(arg publish_rate)" />
+  </include>
+
+  <include file="$(find uwb_coop_localization)/launch/uwb_localizer.launch" />
+
+  <include file="$(find uwb_coop_localization)/launch/uwb_visualizer.launch">
+    <arg name="max_path_points" value="$(arg max_path_points)" />
+  </include>
+
+  <node if="$(arg rviz)"
+        pkg="rviz"
+        type="rviz"
+        name="rviz"
+        args="-d $(find uwb_coop_localization)/rviz/uwb_localization.rviz"
+        output="screen" />
+</launch>

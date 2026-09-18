@@ -50,7 +50,13 @@ environment or explicitly confirmed by its operator.
   - Verified live `PoseStamped` output in `uwb_map` at approximately 10 Hz.
   - Orientation remains an unobserved default unit quaternion, not a UWB yaw
     estimate.
-- **IN PROGRESS — Display anchors, tag, estimate, and trajectory in RViz.**
+- **DONE — Display anchors, tag, estimate, and trajectory in RViz.**
+  - Verified eight Anchor sphere/label markers in `uwb_map`.
+  - Verified simulated ground truth and UWB estimate markers at `(2.0, 2.0)`.
+  - Verified a bounded `nav_msgs/Path` with at most 1,000 poses.
+  - Verified the saved RViz configuration and combined demo launch.
+  - Ground truth is explicitly simulation-only and must not be claimed in
+    real experiments without an independent reference system.
 
 ## Deferred stages
 

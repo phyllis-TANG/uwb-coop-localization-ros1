@@ -36,8 +36,13 @@ A simple unweighted 2D least-squares localizer now converts configured
 Anchor-to-Tag ranges into `geometry_msgs/PoseStamped` messages on
 `/uwb/tag1/pose`. It was verified with three and four Anchors, invalid-input
 filtering, degenerate-geometry rejection, and a live 10 Hz simulator data path.
-No real UWB driver, filtering, odometry/IMU fusion, or cooperative EKF has been
-implemented yet. The next gate is RViz visualization.
+
+RViz visualization now displays labeled Anchor markers, simulated Tag ground
+truth, the UWB position estimate, and a bounded estimated path in the `uwb_map`
+frame. The ideal estimate and simulated truth overlap as expected. No real UWB
+driver, filtering, odometry/IMU fusion, or cooperative EKF has been implemented
+yet. The next gate is field-test preparation and real UWB hardware
+identification.
 
 ## Development order
 
