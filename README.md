@@ -24,9 +24,14 @@ UWB simulator are now available.
 
 The simulator publishes `uwb_coop_localization/UwbRangeArray` on
 `/uwb/tag1/ranges`. In the vendor VM it produced the expected four geometric
-ranges at a stable rate of approximately 10 Hz. No real UWB driver, logger,
-localizer, or fusion algorithm has been implemented yet. The next gate is raw
-CSV range logging.
+ranges at a stable rate of approximately 10 Hz.
+
+A Python 2.7-compatible logger now writes each Anchor measurement to CSV using
+the columns `timestamp,tag_id,anchor_id,range,quality`. It preserves the ROS
+acquisition timestamp, flushes each message batch by default, appends to
+existing files without repeating the header, and creates missing output
+directories. No real UWB driver, localizer, or fusion algorithm has been
+implemented yet. The next gate is simple 2D least-squares trilateration.
 
 ## Development order
 

@@ -36,8 +36,14 @@ environment or explicitly confirmed by its operator.
   - Verified `catkin_make`, launch parameter loading, and node startup.
   - Verified four ideal ranges for Tag position `(2.0, 2.0, 0.0)`.
   - Verified `/uwb/tag1/ranges` at approximately 10 Hz.
-- **IN PROGRESS — Implement and test `uwb_logger.py`.**
-- **TODO — Implement and test simple 2D least-squares trilateration.**
+- **DONE — Implement and test `uwb_logger.py`.**
+  - Verified Python 2.7 syntax, launch configuration, and catkin integration.
+  - Verified the CSV header and five-column row format.
+  - Verified 8,383 initial packets and 33,532 measurement rows.
+  - Verified append mode added complete four-Anchor packets without repeating
+    the CSV header.
+  - Verified flush and clean file closure during ROS shutdown.
+- **IN PROGRESS — Implement and test simple 2D least-squares trilateration.**
 - **TODO — Display anchors, tag, estimate, and trajectory in RViz.**
 
 ## Deferred stages
