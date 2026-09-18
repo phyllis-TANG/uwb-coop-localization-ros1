@@ -1,0 +1,16 @@
+<launch>
+  <arg name="input_topic" default="/uwb/tag1/ranges" />
+  <arg name="output_file"
+       default="$(env HOME)/.ros/uwb_logs/uwb_ranges.csv" />
+  <arg name="flush_each_message" default="true" />
+
+  <node pkg="uwb_coop_localization"
+        type="uwb_logger.py"
+        name="uwb_logger"
+        output="screen">
+    <param name="input_topic" value="$(arg input_topic)" />
+    <param name="output_file" value="$(arg output_file)" />
+    <param name="flush_each_message"
+           value="$(arg flush_each_message)" />
+  </node>
+</launch>
