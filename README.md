@@ -44,6 +44,11 @@ driver, filtering, odometry/IMU fusion, or cooperative EKF has been implemented
 yet. The next gate is field-test preparation and real UWB hardware
 identification.
 
+The continuing LinkTrack P hardware investigation, safety constraints, captured
+evidence, and unresolved field-test tasks are maintained in
+[`docs/field_test_handoff.md`](docs/field_test_handoff.md). Update that record at
+the end of each hardware investigation stage rather than relying on chat history.
+
 ## Development order
 
 1. Verify the ROS 1 virtual-machine environment.
