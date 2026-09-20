@@ -60,7 +60,7 @@ environment or explicitly confirmed by its operator.
 
 ## Deferred stages
 
-- **IN PROGRESS — Identify and integrate the real UWB hardware.**
+- **DONE — Identify and integrate the real UWB hardware.**
   - Field result (2026-09-19): two handheld LinkTrack nodes established a real
     `DR_MODE0` ranging link after their backed-up configurations were aligned.
   - Offline implementation: added a Python 2.7-compatible `Node_Frame3` stream
@@ -68,18 +68,17 @@ environment or explicitly confirmed by its operator.
   - Field verification (2026-09-20): Python 2.7 tests and catkin build passed;
     the live ROS topic reported N1-to-N0 ranges at 50.004 Hz with 14--26 ms
     inter-message intervals after removing serial timeout batching.
-  - Remaining gate: define a stable vehicle serial-device identity; the
-    temporary CH343 binding does not provide `/dev/serial/by-id`.
+  - Vehicle integration (2026-09-20): onboard `cdc_acm` exposed P-B as the
+    stable path `/dev/serial/by-id/usb-1a86_USB_Single_Serial_5B2E110223-if00`;
+    the read-only driver opened it after the `wheeltec` user joined `dialout`.
 - **IN PROGRESS — Validate one-car UWB experiments.**
-  - Next gate: powered-off mounting and cable inspection, followed by a
-    stationary powered acquisition. Do not enable the motors yet.
-  - Operator report: the UWB node has been physically fixed to the vehicle.
-    Next verify vehicle network reachability and which computer owns the P-B
-    USB serial device; do not send motion commands during this check.
-  - Network observation: the VM owns `192.168.0.136` on `ens37` and routes
-    `192.168.0.100` directly through it, but neighbor reachability fails with
-    `Destination Host Unreachable`; inspect the layer-2/VMware attachment
-    before changing ROS configuration.
+  - **DONE — EXP001 Car1 static LOS acquisition.** Vehicle-mounted P-B
+    published real N1-to-N0 ranges at approximately 50 Hz through the remote
+    vehicle ROS Master; the VMware client recorded 7,039 `/uwb/ranges`
+    messages over approximately 2 min 20 s. The rosbag remains local and the
+    experiment record is stored under `docs/field_tests/`.
+  - Next experiment: `EXP002_car1_static_human_NLOS`, changing only human-body
+    LOS obstruction while keeping both nodes and the vehicle stationary.
 - **TODO — Validate two independently namespaced cars and TF trees.**
 - **TODO — Establish an odometry/IMU baseline.**
 - **TODO — Implement a centralized 2D EKF only after the data path is stable.**

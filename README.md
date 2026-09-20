@@ -55,6 +55,11 @@ verified on the target VM. See
 [`docs/VEHICLE_STARTUP_GUIDE.md`](docs/VEHICLE_STARTUP_GUIDE.md) for the staged
 vehicle startup and static UWB workflow.
 
+Formal field experiment records are stored under
+[`docs/field_tests/`](docs/field_tests/). The first completed record is
+[`EXP001_car1_static_LOS`](docs/field_tests/2026-09-20_EXP001_car1_static_LOS.md).
+Large rosbag files remain in field storage and are not committed to Git.
+
 ## Development order
 
 1. Verify the ROS 1 virtual-machine environment.
