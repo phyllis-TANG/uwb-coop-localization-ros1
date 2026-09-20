@@ -60,7 +60,13 @@ environment or explicitly confirmed by its operator.
 
 ## Deferred stages
 
-- **TODO — Identify and integrate the real UWB hardware.**
+- **IN PROGRESS — Identify and integrate the real UWB hardware.**
+  - Field result (2026-09-19): two handheld LinkTrack nodes established a real
+    `DR_MODE0` ranging link after their backed-up configurations were aligned.
+  - Offline implementation: added a Python 2.7-compatible `Node_Frame3` stream
+    parser and read-only ROS serial node with real-frame unit tests.
+  - Remaining gate: build and validate the node with retained raw data and live
+    hardware in the ROS Melodic vendor VM.
 - **TODO — Validate one-car UWB experiments.**
 - **TODO — Validate two independently namespaced cars and TF trees.**
 - **TODO — Establish an odometry/IMU baseline.**
