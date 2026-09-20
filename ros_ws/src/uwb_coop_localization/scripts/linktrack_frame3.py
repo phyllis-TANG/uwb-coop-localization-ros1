@@ -13,6 +13,23 @@ NODE_BLOCK_LENGTH = 7
 MAX_FRAME_LENGTH = 2048
 
 
+def read_serial_chunk(serial_port, max_bytes):
+    """Wait for one byte, then drain only bytes already buffered.
+
+    Reading the full requested size with a timeout groups 50 Hz frames into
+    bursts and assigns them nearly identical ROS timestamps. A one-byte read
+    preserves the timeout for reconnects while keeping frame latency low.
+    """
+    data = serial_port.read(1)
+    if not data or max_bytes == 1:
+        return data
+
+    waiting = serial_port.inWaiting()
+    if waiting > 0:
+        data += serial_port.read(min(waiting, max_bytes - 1))
+    return data
+
+
 def decode_uint16_le(data, offset):
     return data[offset] | (data[offset + 1] << 8)
 

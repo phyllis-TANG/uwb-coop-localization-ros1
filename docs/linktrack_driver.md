@@ -75,6 +75,29 @@ firmware, driver binding, or serial cabling changes. Proceed to the vehicle in
 stages: powered-off mounting inspection, stationary powered acquisition,
 hand-pushed acquisition, and only then a low-speed motor test.
 
+## Vehicle connection gate
+
+Mounting the UWB hardware does not authorize motion. Before sending any drive
+command, keep the vehicle stationary with motor output disabled and establish
+which computer physically owns the P-B USB device. A serial device attached to
+the VMware host is not automatically visible on the vehicle computer, and a
+device attached to the vehicle computer is not automatically visible inside
+the VM.
+
+First verify network reachability and the intended ROS master without launching
+the UWB node. Then verify the P-B USB serial identity on the computer that will
+run the driver. Only after a stationary ROS acquisition succeeds should the
+workflow progress to a hand-pushed test. Motor commands remain a separate,
+later gate.
+
+If `ip route get` selects the expected vehicle-facing interface but `ping`
+returns `Destination Host Unreachable` from the VM's own address, routing is
+already present but layer-2 neighbor discovery received no reply. Do not change
+ROS variables to troubleshoot that condition: first inspect the interface link,
+address, NetworkManager connection, and neighbor table. Common causes include
+an unpowered vehicle computer, a disconnected vehicle Wi-Fi/Ethernet link, a
+stale vehicle IP, or a VMware adapter attached to the wrong virtual network.
+
 The rate output should also have approximately 20 ms inter-message intervals.
 Repeated `min: 0.000s` and `max: 0.100s` values indicate serial timeout batching,
 even when the long-term average is 50 Hz. The driver waits for one byte and then

@@ -16,6 +16,7 @@ if SCRIPT_DIRECTORY not in sys.path:
 
 from linktrack_frame3 import decode_frame3
 from linktrack_frame3 import Frame3StreamParser
+from linktrack_frame3 import read_serial_chunk
 
 
 FRAME_HEX = [
@@ -30,6 +31,35 @@ FRAME_HEX = [
 
 def from_hex(value):
     return bytearray(int(item, 16) for item in value.split())
+
+
+class FakeSerial(object):
+    def __init__(self, data):
+        self.data = data
+        self.read_sizes = []
+
+    def read(self, size):
+        self.read_sizes.append(size)
+        chunk = self.data[:size]
+        self.data = self.data[size:]
+        return chunk
+
+    def inWaiting(self):
+        return len(self.data)
+
+
+class ReadSerialChunkTest(unittest.TestCase):
+    def test_waits_for_one_byte_then_drains_available_data(self):
+        serial_port = FakeSerial(b"abcdef")
+
+        self.assertEqual(b"abcd", read_serial_chunk(serial_port, 4))
+        self.assertEqual([1, 3], serial_port.read_sizes)
+
+    def test_returns_empty_read_without_polling_again(self):
+        serial_port = FakeSerial(b"")
+
+        self.assertEqual(b"", read_serial_chunk(serial_port, 4))
+        self.assertEqual([1], serial_port.read_sizes)
 
 
 class DecodeFrame3Test(unittest.TestCase):

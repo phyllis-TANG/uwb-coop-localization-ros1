@@ -9,6 +9,7 @@ import rospy
 import serial
 
 from linktrack_frame3 import Frame3StreamParser
+from linktrack_frame3 import read_serial_chunk
 from uwb_coop_localization.msg import UwbRange
 from uwb_coop_localization.msg import UwbRangeArray
 
@@ -67,23 +68,7 @@ class LinkTrackDriver(object):
             rospy.loginfo("Closed LinkTrack serial port: %s", self.port)
 
     def read_chunk(self):
-        """Wait for one byte, then drain only bytes already buffered.
-
-        Asking pyserial for the full configured read size with a timeout makes
-        it wait for that size or the timeout.  At 50 Hz this groups several
-        complete frames into a burst and gives them nearly identical ROS
-        timestamps.  Waiting for one byte preserves the reconnect-friendly
-        timeout while draining the immediately available remainder keeps
-        latency low.
-        """
-        data = self.serial_port.read(1)
-        if not data or self.read_size == 1:
-            return data
-
-        waiting = self.serial_port.inWaiting()
-        if waiting > 0:
-            data += self.serial_port.read(min(waiting, self.read_size - 1))
-        return data
+        return read_serial_chunk(self.serial_port, self.read_size)
 
     def publish_frame(self, frame):
         message = UwbRangeArray()
