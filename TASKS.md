@@ -60,8 +60,26 @@ environment or explicitly confirmed by its operator.
 
 ## Deferred stages
 
-- **TODO — Identify and integrate the real UWB hardware.**
-- **TODO — Validate one-car UWB experiments.**
+- **IN PROGRESS — Identify and integrate the real UWB hardware.**
+  - Field result (2026-09-19): two handheld LinkTrack nodes established a real
+    `DR_MODE0` ranging link after their backed-up configurations were aligned.
+  - Offline implementation: added a Python 2.7-compatible `Node_Frame3` stream
+    parser and read-only ROS serial node with real-frame unit tests.
+  - Field verification (2026-09-20): Python 2.7 tests and catkin build passed;
+    the live ROS topic reported N1-to-N0 ranges at 50.004 Hz with 14--26 ms
+    inter-message intervals after removing serial timeout batching.
+  - Remaining gate: define a stable vehicle serial-device identity; the
+    temporary CH343 binding does not provide `/dev/serial/by-id`.
+- **IN PROGRESS — Validate one-car UWB experiments.**
+  - Next gate: powered-off mounting and cable inspection, followed by a
+    stationary powered acquisition. Do not enable the motors yet.
+  - Operator report: the UWB node has been physically fixed to the vehicle.
+    Next verify vehicle network reachability and which computer owns the P-B
+    USB serial device; do not send motion commands during this check.
+  - Network observation: the VM owns `192.168.0.136` on `ens37` and routes
+    `192.168.0.100` directly through it, but neighbor reachability fails with
+    `Destination Host Unreachable`; inspect the layer-2/VMware attachment
+    before changing ROS configuration.
 - **TODO — Validate two independently namespaced cars and TF trees.**
 - **TODO — Establish an odometry/IMU baseline.**
 - **TODO — Implement a centralized 2D EKF only after the data path is stable.**

@@ -166,6 +166,8 @@ include_directories(
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
 catkin_install_python(PROGRAMS
+  scripts/linktrack_frame3.py
+  scripts/uwb_linktrack_driver.py
   scripts/uwb_localizer.py
   scripts/uwb_logger.py
   scripts/uwb_simulator.py
@@ -213,4 +215,4 @@ install(DIRECTORY
 # endif()
 
 ## Add folders to be run by python nosetests
-# catkin_add_nosetests(test)
+catkin_add_nosetests(test)
