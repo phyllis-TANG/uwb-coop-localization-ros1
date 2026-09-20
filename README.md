@@ -44,6 +44,17 @@ driver, filtering, odometry/IMU fusion, or cooperative EKF has been implemented
 yet. The next gate is field-test preparation and real UWB hardware
 identification.
 
+The continuing LinkTrack P hardware investigation, safety constraints, captured
+evidence, and unresolved field-test tasks are maintained in
+[`docs/field_test_handoff.md`](docs/field_test_handoff.md). Update that record at
+the end of each hardware investigation stage rather than relying on chat history.
+
+A Python 2.7-compatible parser and read-only ROS serial node now support the
+field-verified LinkTrack `Node_Frame3` stream. They have hardware-independent
+tests using real captured frames, but have not yet been built or run against ROS
+on the target VM. See [`docs/linktrack_driver.md`](docs/linktrack_driver.md) for
+the required port selection, current limitations, and staged vehicle checks.
+
 ## Development order
 
 1. Verify the ROS 1 virtual-machine environment.
