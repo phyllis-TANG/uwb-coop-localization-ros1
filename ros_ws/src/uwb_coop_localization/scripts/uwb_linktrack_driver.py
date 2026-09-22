@@ -10,6 +10,8 @@ import serial
 
 from linktrack_frame3 import Frame3StreamParser
 from linktrack_frame3 import read_serial_chunk
+from uwb_coop_localization.msg import LinktrackFrame3
+from uwb_coop_localization.msg import LinktrackNodeMeasurement
 from uwb_coop_localization.msg import UwbRange
 from uwb_coop_localization.msg import UwbRangeArray
 
@@ -19,6 +21,7 @@ class LinkTrackDriver(object):
         self.port = rospy.get_param("~port")
         self.baudrate = int(rospy.get_param("~baudrate", 921600))
         self.topic = rospy.get_param("~topic", "/uwb/ranges")
+        self.raw_topic = rospy.get_param("~raw_topic", "/uwb/frame3")
         self.frame_id = rospy.get_param("~frame_id", "uwb_linktrack")
         self.node_prefix = rospy.get_param("~node_prefix", "node_")
         self.read_size = int(rospy.get_param("~read_size", 4096))
@@ -41,6 +44,11 @@ class LinkTrackDriver(object):
         self.publisher = rospy.Publisher(
             self.topic,
             UwbRangeArray,
+            queue_size=100,
+        )
+        self.raw_publisher = rospy.Publisher(
+            self.raw_topic,
+            LinktrackFrame3,
             queue_size=100,
         )
         self.parser = Frame3StreamParser()
@@ -71,8 +79,9 @@ class LinkTrackDriver(object):
         return read_serial_chunk(self.serial_port, self.read_size)
 
     def publish_frame(self, frame):
+        stamp = rospy.Time.now()
         message = UwbRangeArray()
-        message.header.stamp = rospy.Time.now()
+        message.header.stamp = stamp
         message.header.frame_id = self.frame_id
         message.tag_id = self.node_prefix + str(frame.node_id)
 
@@ -84,6 +93,26 @@ class LinkTrackDriver(object):
             message.ranges.append(measurement)
 
         self.publisher.publish(message)
+
+        raw_message = LinktrackFrame3()
+        raw_message.header.stamp = stamp
+        raw_message.header.frame_id = self.frame_id
+        raw_message.role = frame.role
+        raw_message.node_id = frame.node_id
+        raw_message.local_time_ms = frame.local_time_ms
+        raw_message.system_time_ms = frame.system_time_ms
+        raw_message.voltage_v = frame.voltage_v
+
+        for node in frame.measurements:
+            raw_measurement = LinktrackNodeMeasurement()
+            raw_measurement.role = node.role
+            raw_measurement.node_id = node.node_id
+            raw_measurement.distance_m = node.distance_m
+            raw_measurement.fp_rssi_db = node.fp_rssi_db
+            raw_measurement.rx_rssi_db = node.rx_rssi_db
+            raw_message.measurements.append(raw_measurement)
+
+        self.raw_publisher.publish(raw_message)
 
     def run(self):
         while not rospy.is_shutdown():

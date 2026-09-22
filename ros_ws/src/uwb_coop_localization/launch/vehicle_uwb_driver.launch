@@ -1,0 +1,21 @@
+<launch>
+  <!-- Read-only LinkTrack driver under one vehicle namespace. -->
+  <arg name="vehicle_namespace" />
+  <arg name="port" />
+  <arg name="baudrate" default="921600" />
+  <arg name="node_prefix" default="node_" />
+
+  <group ns="$(arg vehicle_namespace)">
+    <node pkg="uwb_coop_localization"
+          type="uwb_linktrack_driver.py"
+          name="uwb_linktrack_driver"
+          output="screen">
+      <param name="port" value="$(arg port)" />
+      <param name="baudrate" value="$(arg baudrate)" />
+      <param name="topic" value="uwb/ranges" />
+      <param name="raw_topic" value="uwb/frame3" />
+      <param name="frame_id" value="$(arg vehicle_namespace)/uwb_linktrack" />
+      <param name="node_prefix" value="$(arg node_prefix)" />
+    </node>
+  </group>
+</launch>

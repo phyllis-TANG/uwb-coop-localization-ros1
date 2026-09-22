@@ -69,6 +69,14 @@ bags without filtering source ranges. See
 [`docs/offline_bag_analysis.md`](docs/offline_bag_analysis.md) for the exact
 time, missing-frame, and jump definitions.
 
+Preparation for the first two-car session now includes a namespaced two-car
+simulator, optional noise/NLOS/dropout/time-offset injection, raw Frame3
+diagnostics, and an EXP005--008 field plan. See
+[`docs/dual_car_simulation.md`](docs/dual_car_simulation.md),
+[`docs/field_tests/EXP005_008_PLAN.md`](docs/field_tests/EXP005_008_PLAN.md),
+and
+[`docs/cooperative_localization_reading.md`](docs/cooperative_localization_reading.md).
+
 ## Development order
 
 1. Verify the ROS 1 virtual-machine environment.
