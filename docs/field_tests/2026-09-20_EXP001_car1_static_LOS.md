@@ -9,7 +9,7 @@
 **Vehicle motion:** Disabled; vehicle remained stationary throughout the test
 
 **Bag:** `EXP001_car1_static_LOS.bag`
-**SHA256:** 待在保存原始 bag 的现场机器由离线脚本计算，禁止猜测
+**SHA256:** `519f3f01e836608b6b48222329c312eaabc91f2ad2da8f295dc0d9a78a7e47bc`
 
 > The onboard computer displayed older system timestamps such as `Nov 19 2024`.
 > Those timestamps are not the experiment date; the actual date is 2026-09-20.

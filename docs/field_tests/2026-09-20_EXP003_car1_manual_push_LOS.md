@@ -1,7 +1,7 @@
 # EXP003 — Car1 Manual Push LOS UWB Test
 
 **Bag:** `EXP003_car1_manual_push_LOS.bag`
-**SHA256:** 待在保存原始 bag 的现场机器由离线脚本计算，禁止猜测
+**SHA256:** `df31ab76ca0fab7c9bb7456c37f24894a85df110183a4e1315c4166f4bc075ae`
 **方向:** `node_1 -> node_0`
 **状态:** 已完成；脚本复现验收待现场运行
 

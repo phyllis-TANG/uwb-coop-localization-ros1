@@ -66,4 +66,5 @@ python2 ros_ws/src/uwb_coop_localization/scripts/analyze_uwb_bags.py \
 Baseline verification passed for all supplied experiments
 ```
 
-SHA256 也必须由脚本对现场原文件计算；文档不猜测缺失的哈希值。
+四份现场文件的 SHA256 已于 2026-09-22 由用户在保存原文件的虚拟机上计算并写入
+对应实验报告；正式分析仍会再次计算哈希，用于确认分析输入与记录文件一致。

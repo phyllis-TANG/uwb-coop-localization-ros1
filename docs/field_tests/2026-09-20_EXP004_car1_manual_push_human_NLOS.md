@@ -1,7 +1,7 @@
 # EXP004 — Car1 Manual Push Human NLOS UWB Test
 
 **Bag:** `EXP004_car1_manual_push_human_NLOS.bag`
-**SHA256:** 待在保存原始 bag 的现场机器由离线脚本计算，禁止猜测
+**SHA256:** `c01a7b33ac83b829f7d00345a66af1b9ffae8d76a6972001083990a4632c839a`
 **方向:** `node_1 -> node_0`
 **状态:** 已完成；脚本复现验收待现场运行
 
