@@ -436,8 +436,9 @@ is 99.830%; this is not ranging accuracy and not a complete radio packet
 delivery rate. The raw range mean is 0.9748 m, median 0.9750 m, population
 standard deviation 0.0288 m, and range 0.8610–1.0810 m.
 
-Adjacent-change statistics use adjacent valid target measurements, skipping a
-message without a usable target: median 0.0290 m, P95 0.0850 m, P99 0.1122 m,
+Adjacent-change statistics require consecutive ROS messages to both contain a
+usable target range; a missing-target message breaks the sequence: median
+0.0290 m, P95 0.0850 m, P99 0.1122 m,
 2.305% above 0.10 m, and maximum 0.1720 m. `quality: NaN` is not interpreted as
 a valid quality score. Bag reception time is used because its offset from the
 header timestamp is approximately 57,902,871 seconds. No smoothing, filtering,

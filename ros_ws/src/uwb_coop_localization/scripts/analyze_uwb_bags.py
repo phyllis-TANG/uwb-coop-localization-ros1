@@ -43,9 +43,10 @@ def percentile(values, percent):
 def summarize_records(records):
     """Summarize extracted records without filtering or spike removal.
 
-    Jump statistics use consecutive *valid target measurements*.  A missing
-    target message is skipped, so the values on either side become adjacent
-    valid measurements.  This definition is emitted in every summary.
+    Jump statistics require two consecutive ROS messages to both contain a
+    usable target range.  A missing-target message breaks the sequence; values
+    on opposite sides of it are never paired.  The definition is emitted in
+    every summary.
     """
     frame_count = len(records)
     valid = [row["range_m"] for row in records if row["range_m"] is not None]
@@ -53,8 +54,10 @@ def summarize_records(records):
     bag_times = [row["bag_time_s"] for row in records]
     offsets = [row["bag_header_offset_s"] for row in records
                if row["bag_header_offset_s"] is not None]
-    jumps = [abs(valid[index] - valid[index - 1])
-             for index in range(1, len(valid))]
+    jumps = [abs(records[index]["range_m"] - records[index - 1]["range_m"])
+             for index in range(1, len(records))
+             if records[index - 1]["range_m"] is not None and
+             records[index]["range_m"] is not None]
 
     summary = {
         "frames": frame_count,
@@ -73,7 +76,7 @@ def summarize_records(records):
         "bag_header_offset_median_s": None,
         "bag_header_offset_min_s": None,
         "bag_header_offset_max_s": None,
-        "jump_definition": "adjacent_valid_target_measurements",
+        "jump_definition": "consecutive_ros_messages_with_usable_target",
         "jump_count": len(jumps),
         "jump_median_m": percentile(jumps, 50),
         "jump_p95_m": percentile(jumps, 95),

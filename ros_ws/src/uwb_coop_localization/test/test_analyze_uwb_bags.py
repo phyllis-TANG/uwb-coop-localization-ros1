@@ -50,9 +50,9 @@ class AnalyzeUwbBagsTest(unittest.TestCase):
                                   (4 - 7.0 / 3) ** 2) / 3)
         self.assertAlmostEqual(expected_std, summary["std_m"])
         self.assertAlmostEqual(50.0, summary["frequency_hz"])
-        self.assertEqual("adjacent_valid_target_measurements",
+        self.assertEqual("consecutive_ros_messages_with_usable_target",
                          summary["jump_definition"])
-        self.assertEqual(2, summary["jump_count"])
+        self.assertEqual(1, summary["jump_count"])
         self.assertEqual(2.0, summary["jump_max_m"])
         self.assertAlmostEqual(57902871.0,
                                summary["bag_header_offset_mean_s"])
