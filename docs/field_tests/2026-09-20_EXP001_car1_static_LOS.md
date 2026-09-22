@@ -436,10 +436,12 @@ is 99.830%; this is not ranging accuracy and not a complete radio packet
 delivery rate. The raw range mean is 0.9748 m, median 0.9750 m, population
 standard deviation 0.0288 m, and range 0.8610–1.0810 m.
 
-Adjacent-change statistics require consecutive ROS messages to both contain a
-usable target range; a missing-target message breaks the sequence: median
-0.0290 m, P95 0.0850 m, P99 0.1122 m,
-2.305% above 0.10 m, and maximum 0.1720 m. `quality: NaN` is not interpreted as
+Using the now-explicit rule that consecutive ROS messages must both contain a
+usable target range, the reproduced values are: median 0.0290 m, P95 0.0850 m,
+P99 0.1130 m, 2.3382% above 0.10 m, and maximum 0.1750 m. The earlier handoff
+listed P99 0.1122 m, 2.305%, and maximum 0.1720 m; neither allowed adjacency
+definition reproduced all three, so those legacy values remain recorded but
+are not treated as an accepted baseline. `quality: NaN` is not interpreted as
 a valid quality score. Bag reception time is used because its offset from the
 header timestamp is approximately 57,902,871 seconds. No smoothing, filtering,
 spike deletion, or independent distance ground truth is applied.
