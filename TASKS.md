@@ -71,14 +71,21 @@ environment or explicitly confirmed by its operator.
   - Vehicle integration (2026-09-20): onboard `cdc_acm` exposed P-B as the
     stable path `/dev/serial/by-id/usb-1a86_USB_Single_Serial_5B2E110223-if00`;
     the read-only driver opened it after the `wheeltec` user joined `dialout`.
-- **IN PROGRESS — Validate one-car UWB experiments.**
+- **DONE — Validate initial one-car UWB ranging experiments.**
   - **DONE — EXP001 Car1 static LOS acquisition.** Vehicle-mounted P-B
     published real N1-to-N0 ranges at approximately 50 Hz through the remote
     vehicle ROS Master; the VMware client recorded 7,039 `/uwb/ranges`
     messages over approximately 2 min 20 s. The rosbag remains local and the
     experiment record is stored under `docs/field_tests/`.
-  - Next experiment: `EXP002_car1_static_human_NLOS`, changing only human-body
-    LOS obstruction while keeping both nodes and the vehicle stationary.
+  - **DONE — EXP002 static human NLOS, EXP003 manual-push LOS, and EXP004
+    manual-push human NLOS.** Reports preserve raw spikes and distinguish
+    usable-target message percentage from accuracy or radio packet delivery.
+  - Offline analysis exports raw CSV, summary CSV/JSON/text, SHA256, and PNG
+    using bag reception time. Final field acceptance passed on the retained
+    bags without committing them to Git.
+- **NEXT — Validate static ranging between two cars.**
+- **TODO — Record both cars' UWB, odom, IMU, and tf streams.**
+- **TODO — Quantify and handle inter-computer/ROS time synchronization.**
 - **TODO — Validate two independently namespaced cars and TF trees.**
 - **TODO — Establish an odometry/IMU baseline.**
 - **TODO — Implement a centralized 2D EKF only after the data path is stable.**

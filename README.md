@@ -60,16 +60,14 @@ Formal field experiment records are stored under
 [`EXP001_car1_static_LOS`](docs/field_tests/2026-09-20_EXP001_car1_static_LOS.md).
 Large rosbag files remain in field storage and are not committed to Git.
 
-The continuing LinkTrack P hardware investigation, safety constraints, captured
-evidence, and unresolved field-test tasks are maintained in
-[`docs/field_test_handoff.md`](docs/field_test_handoff.md). Update that record at
-the end of each hardware investigation stage rather than relying on chat history.
-
-A Python 2.7-compatible parser and read-only ROS serial node now support the
-field-verified LinkTrack `Node_Frame3` stream. They have hardware-independent
-tests using real captured frames, but have not yet been built or run against ROS
-on the target VM. See [`docs/linktrack_driver.md`](docs/linktrack_driver.md) for
-the required port selection, current limitations, and staged vehicle checks.
+The first four single-car measurements are summarized in
+[`EXP001–004 comparison`](docs/field_tests/2026-09-20_EXP001_004_comparison.md).
+The Python 2.7-compatible
+[`analyze_uwb_bags.py`](ros_ws/src/uwb_coop_localization/scripts/analyze_uwb_bags.py)
+tool exports raw CSV, statistics, SHA256 metadata, and PNG plots from multiple
+bags without filtering source ranges. See
+[`docs/offline_bag_analysis.md`](docs/offline_bag_analysis.md) for the exact
+time, missing-frame, and jump definitions.
 
 ## Development order
 
