@@ -39,10 +39,35 @@ filtering, degenerate-geometry rejection, and a live 10 Hz simulator data path.
 
 RViz visualization now displays labeled Anchor markers, simulated Tag ground
 truth, the UWB position estimate, and a bounded estimated path in the `uwb_map`
-frame. The ideal estimate and simulated truth overlap as expected. No real UWB
-driver, filtering, odometry/IMU fusion, or cooperative EKF has been implemented
-yet. The next gate is field-test preparation and real UWB hardware
-identification.
+frame. The ideal estimate and simulated truth overlap as expected. Filtering,
+odometry/IMU fusion, and a cooperative EKF have not been implemented yet.
+
+The continuing LinkTrack P hardware investigation, safety constraints, captured
+evidence, and unresolved field-test tasks are maintained in
+[`docs/field_test_handoff.md`](docs/field_test_handoff.md). Update that record at
+the end of each hardware investigation stage rather than relying on chat history.
+
+A Python 2.7-compatible parser and read-only ROS serial node now support the
+field-verified LinkTrack `Node_Frame3` stream. Hardware-independent tests,
+Python 2.7 catkin build, and a live 50 Hz N1-to-N0 ROS data path have been
+verified on the target VM. See
+[`docs/linktrack_driver.md`](docs/linktrack_driver.md) for driver details and
+[`docs/VEHICLE_STARTUP_GUIDE.md`](docs/VEHICLE_STARTUP_GUIDE.md) for the staged
+vehicle startup and static UWB workflow.
+
+Formal field experiment records are stored under
+[`docs/field_tests/`](docs/field_tests/). The first completed record is
+[`EXP001_car1_static_LOS`](docs/field_tests/2026-09-20_EXP001_car1_static_LOS.md).
+Large rosbag files remain in field storage and are not committed to Git.
+
+The first four single-car measurements are summarized in
+[`EXP001–004 comparison`](docs/field_tests/2026-09-20_EXP001_004_comparison.md).
+The Python 2.7-compatible
+[`analyze_uwb_bags.py`](ros_ws/src/uwb_coop_localization/scripts/analyze_uwb_bags.py)
+tool exports raw CSV, statistics, SHA256 metadata, and PNG plots from multiple
+bags without filtering source ranges. See
+[`docs/offline_bag_analysis.md`](docs/offline_bag_analysis.md) for the exact
+time, missing-frame, and jump definitions.
 
 ## Development order
 

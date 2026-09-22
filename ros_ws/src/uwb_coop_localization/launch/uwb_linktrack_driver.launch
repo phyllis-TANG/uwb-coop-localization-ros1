@@ -1,0 +1,19 @@
+<launch>
+  <!-- A port is intentionally required: tty numbering is not stable. -->
+  <arg name="port" />
+  <arg name="baudrate" default="921600" />
+  <arg name="topic" default="/uwb/ranges" />
+  <arg name="frame_id" default="uwb_linktrack" />
+  <arg name="node_prefix" default="node_" />
+
+  <node pkg="uwb_coop_localization"
+        type="uwb_linktrack_driver.py"
+        name="uwb_linktrack_driver"
+        output="screen">
+    <param name="port" value="$(arg port)" />
+    <param name="baudrate" value="$(arg baudrate)" />
+    <param name="topic" value="$(arg topic)" />
+    <param name="frame_id" value="$(arg frame_id)" />
+    <param name="node_prefix" value="$(arg node_prefix)" />
+  </node>
+</launch>
