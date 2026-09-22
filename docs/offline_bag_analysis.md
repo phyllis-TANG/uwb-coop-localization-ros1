@@ -60,8 +60,8 @@ python2 ros_ws/src/uwb_coop_localization/scripts/analyze_uwb_bags.py \
 
 仓库不包含四份原始 bag，云端环境因而不能独立执行最终数据复现。已知基线被
 原样固化在 `exp001_004_expected.json`，且统计、目标提取和 NaN 处理有独立单元
-测试。正式接受新图表前，必须在保存 bag 的现场机器运行上述带
-`--expectations` 的命令并看到：
+测试。现场已于 2026-09-22 在保存 bag 的虚拟机运行上述带
+`--expectations` 的命令，并看到：
 
 ```text
 Baseline verification passed for all supplied experiments
@@ -69,6 +69,11 @@ Baseline verification passed for all supplied experiments
 
 四份现场文件的 SHA256 已于 2026-09-22 由用户在保存原文件的虚拟机上计算并写入
 对应实验报告；正式分析仍会再次计算哈希，用于确认分析输入与记录文件一致。
+
+最终分析进程退出状态为 0，输出保存在现场
+`~/uwb_analysis/EXP001_004_20260922_final/`，共约 2.9 MiB，包含四份逐消息 CSV、
+四份摘要、四张单实验 PNG、`ranges_comparison.png`、`summary.csv` 和
+`summary.json`。原始 bag 仍未提交仓库；最终图像仍需人工目视检查。
 
 首次现场复现还比较了交接资料中的旧跳变数字。无论采用“跳过空帧后的相邻有效
 测量”还是“连续 ROS 消息均有效”定义，都不能完整复现旧值；例如 EXP001 原始 bag
