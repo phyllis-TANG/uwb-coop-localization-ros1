@@ -11,6 +11,25 @@ send configuration commands, change a LinkTrack parameter, update firmware, or
 reset a device. Configure and back up the hardware with the official tool before
 using this node.
 
+In addition to the backward-compatible `UwbRangeArray` output, the driver
+publishes decoded Frame3 diagnostics on `/uwb/frame3`. The diagnostic message
+retains local/system device time, voltage, peer role/ID, distance, FP RSSI, and
+RX RSSI. The existing `/uwb/ranges` message and its `NaN` quality convention
+remain unchanged.
+
+For two vehicles on one ROS graph, use the namespaced launch file:
+
+```bash
+roslaunch uwb_coop_localization vehicle_uwb_driver.launch \
+  vehicle_namespace:=car1 \
+  port:=/dev/serial/by-id/usb-1a86_USB_Single_Serial_5B2E110223-if00
+```
+
+This produces `/car1/uwb/ranges` and `/car1/uwb/frame3`. Run the same launch on
+Car2 with `vehicle_namespace:=car2` and Car2's verified stable serial path.
+Merely namespacing the ROS node does not rewrite the vehicle vendor's odom/IMU
+or TF frames; those must be inspected separately before dynamic recording.
+
 The initial implementation targets the field-verified configuration:
 
 - `DR_MODE0`, `NODE`, `Node_Frame3`;

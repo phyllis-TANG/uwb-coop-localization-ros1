@@ -84,6 +84,14 @@ environment or explicitly confirmed by its operator.
     using bag reception time. Final field acceptance passed on the retained
     bags without committing them to Git.
 - **NEXT — Validate static ranging between two cars.**
+- **IN PROGRESS — Prepare the two-car field session off-site.**
+  - Add a namespaced two-car simulator with configurable range noise, positive
+    NLOS bias, dropouts, and timestamp offset.
+  - Preserve LinkTrack Frame3 device time, voltage, FP RSSI, and RX RSSI on a
+    diagnostic topic without changing the existing range topic.
+  - Define EXP005--008 truth, recording, evidence, and stop criteria.
+  - Run the new catkin build and live launch on the target Melodic VM before
+    marking this preparation `DONE`.
 - **TODO — Record both cars' UWB, odom, IMU, and tf streams.**
 - **TODO — Quantify and handle inter-computer/ROS time synchronization.**
 - **TODO — Validate two independently namespaced cars and TF trees.**

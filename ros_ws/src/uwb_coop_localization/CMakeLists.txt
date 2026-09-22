@@ -52,6 +52,8 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
 add_message_files(
   FILES
+  LinktrackFrame3.msg
+  LinktrackNodeMeasurement.msg
   UwbRange.msg
   UwbRangeArray.msg
 )
@@ -168,11 +170,18 @@ include_directories(
 catkin_install_python(PROGRAMS
   scripts/analyze_uwb_bags.py
   scripts/linktrack_frame3.py
+  scripts/two_car_model.py
+  scripts/two_car_uwb_simulator.py
   scripts/uwb_linktrack_driver.py
   scripts/uwb_localizer.py
   scripts/uwb_logger.py
   scripts/uwb_simulator.py
   scripts/uwb_visualizer.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+install(PROGRAMS
+  scripts/collect_field_snapshot.sh
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
