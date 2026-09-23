@@ -169,6 +169,7 @@ include_directories(
 ## in contrast to setup.py, you can choose the destination
 catkin_install_python(PROGRAMS
   scripts/analyze_uwb_bags.py
+  scripts/analyze_two_car_bag.py
   scripts/linktrack_frame3.py
   scripts/two_car_model.py
   scripts/two_car_uwb_simulator.py
