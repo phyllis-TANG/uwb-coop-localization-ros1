@@ -64,3 +64,6 @@ roslaunch uwb_coop_localization two_car_uwb_simulator.launch \
 3. 加入 10% NLOS 和 2% 空帧，确认后续节点不会崩溃；
 4. 保留原始 bag，不在采集阶段滤波；
 5. 真实车辆话题确认后，只修改 launch 映射，不修改消息格式。
+
+录包后可使用 [`analyze_two_car_bag.py`](two_car_bag_analysis.md) 对两侧消息进行
+一对一时间配对，并检查双向测距差、消息头时间差和仿真真值误差。

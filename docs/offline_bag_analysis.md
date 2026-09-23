@@ -10,7 +10,7 @@
 - 目标方向默认为 `tag_id=node_1`、`anchor_id=node_0`，距离单位为米。
 - 消息中没有有限的 `node_0` range 时计为 `no_usable_target`；该消息仍保留在
   明细 CSV，并在图中以红色刻线表示。
-- `quality` 当前为 NaN，脚本不把它用作有效性或质量指标。
+- `quality` 不参与本工具的有效性或质量统计；真实驱动和模拟器可能使用不同值。
 - 横轴和频率使用 bag 接收时间。脚本同时统计 `bag_time-header.stamp`，但已知约
   57,902,871 秒的偏移说明当前不能用 header 时间进行跨数据源对齐。
 - 原始距离不滤波、不平滑、不裁剪，也不删除尖峰。
@@ -57,6 +57,9 @@ python2 ros_ws/src/uwb_coop_localization/scripts/analyze_uwb_bags.py \
 对比图同一行使用相同纵轴范围：第一行比较静止 LOS/NLOS，第二行比较手推
 LOS/NLOS；两行仍可使用不同范围，避免动态实验压缩静止实验细节。
 这些衍生文件可以在现场审阅后选择性归档；原始 bag 不进入仓库。
+
+双车互测数据使用独立的 `analyze_two_car_bag.py`，其配对、时钟差、双向差和真值
+误差定义见 [`two_car_bag_analysis.md`](two_car_bag_analysis.md)。
 
 ## 当前复现状态
 
