@@ -6,6 +6,7 @@ from __future__ import division
 import math
 import os
 import sys
+import tempfile
 import unittest
 
 
@@ -16,6 +17,7 @@ if SCRIPT_DIR not in sys.path:
 from analyze_uwb_bags import extract_target_range
 from analyze_uwb_bags import percentile
 from analyze_uwb_bags import summarize_records
+from analyze_uwb_bags import write_summary_text
 
 
 class Object(object):
@@ -77,6 +79,23 @@ class AnalyzeUwbBagsTest(unittest.TestCase):
         target.range = float("nan")
         message.ranges = [target]
         self.assertIsNone(extract_target_range(message, "node_1", "node_0"))
+
+    def test_summary_quality_note_does_not_assume_nan(self):
+        descriptor, path = tempfile.mkstemp()
+        os.close(descriptor)
+        try:
+            write_summary_text(path, {
+                "bag_file": "example.bag",
+                "sha256": "example",
+                "summary": {},
+            })
+            with open(path) as stream:
+                contents = stream.read()
+            self.assertIn(
+                "quality_note: quality is not analyzed by this tool", contents)
+            self.assertNotIn("quality is NaN", contents)
+        finally:
+            os.unlink(path)
 
 
 if __name__ == "__main__":

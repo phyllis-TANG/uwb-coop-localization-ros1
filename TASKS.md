@@ -84,14 +84,21 @@ environment or explicitly confirmed by its operator.
     using bag reception time. Final field acceptance passed on the retained
     bags without committing them to Git.
 - **NEXT — Validate static ranging between two cars.**
-- **IN PROGRESS — Prepare the two-car field session off-site.**
-  - Add a namespaced two-car simulator with configurable range noise, positive
-    NLOS bias, dropouts, and timestamp offset.
-  - Preserve LinkTrack Frame3 device time, voltage, FP RSSI, and RX RSSI on a
+- **DONE — Prepare the two-car field session off-site.**
+  - Added a namespaced two-car simulator with configurable range noise,
+    positive NLOS bias, dropouts, and timestamp offset.
+  - Preserved LinkTrack Frame3 device time, voltage, FP RSSI, and RX RSSI on a
     diagnostic topic without changing the existing range topic.
-  - Define EXP005--008 truth, recording, evidence, and stop criteria.
-  - Run the new catkin build and live launch on the target Melodic VM before
-    marking this preparation `DONE`.
+  - Defined EXP005--008 truth, recording, evidence, and stop criteria.
+  - Target Melodic VM validation (2026-09-23): all 19 Python 2 unit tests
+    passed, the catkin message build reached 100%, and both simulated UWB
+    streams held approximately 20 Hz.
+  - A clean 11.3 s smoke bag contained 1,138 messages and produced 228/228
+    usable Car1 target ranges. A 14.5 s stress bag detected the injected
+    behavior: 17.18%/23.79% missing Car1/Car2 target ranges, an approximately
+    -49.3 ms Car2 bag/header offset, and 33.50%/35.50% jumps above 0.25 m.
+  - Live two-car `/uwb/frame3` publication and EXP005--008 remain field-test
+    acceptance items; they are not implied by the completed simulator work.
 - **TODO — Record both cars' UWB, odom, IMU, and tf streams.**
 - **TODO — Quantify and handle inter-computer/ROS time synchronization.**
 - **TODO — Validate two independently namespaced cars and TF trees.**

@@ -199,7 +199,7 @@ def write_summary_text(path, result):
         stream.write("sha256: %s\n" % result["sha256"])
         for key in sorted(summary):
             stream.write("%s: %s\n" % (key, summary[key]))
-        stream.write("quality_note: quality is NaN and is not analyzed\n")
+        stream.write("quality_note: quality is not analyzed by this tool\n")
         stream.write("time_basis: bag reception time\n")
         stream.write("filtering: none\n")
 
