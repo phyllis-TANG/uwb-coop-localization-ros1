@@ -99,15 +99,20 @@ environment or explicitly confirmed by its operator.
     -49.3 ms Car2 bag/header offset, and 33.50%/35.50% jumps above 0.25 m.
   - Live two-car `/uwb/frame3` publication and EXP005--008 remain field-test
     acceptance items; they are not implied by the completed simulator work.
-- **IN PROGRESS — Add reproducible two-car rosbag comparison.**
+- **DONE — Add reproducible two-car rosbag comparison.**
   - Pair reciprocal Car1/Car2 UWB messages by bag reception time without
     silently correcting timestamps or filtering ranges.
   - Report bilateral range differences, dropout combinations, header-time
     differences, and optional simulation or tape-measure truth errors.
   - Keep odometry-derived distance out of this stage until a shared coordinate
     frame and initial relative pose have been demonstrated.
-  - Mark this item `DONE` only after Python 2 tests, catkin build, and the saved
-    smoke/stress bags pass on the target Melodic VM.
+  - Target Melodic VM validation (2026-09-24): all 24 Python 2 unit tests and
+    the catkin build passed. The saved smoke bag produced 227 pairs with zero
+    header-time offset and a 0.0213 m reciprocal-mean truth RMSE.
+  - The saved stress bag produced 290 pairs, detected the injected 50 ms Car2
+    header offset, retained 61.38% both-usable pairs under independent
+    dropouts, and increased reciprocal absolute difference P95 from 0.0885 m
+    to 0.4407 m under NLOS injection. The generated plot passed visual review.
 - **TODO — Record both cars' UWB, odom, IMU, and tf streams.**
 - **TODO — Quantify and handle inter-computer/ROS time synchronization.**
 - **TODO — Validate two independently namespaced cars and TF trees.**
