@@ -74,6 +74,7 @@ simulator, optional noise/NLOS/dropout/time-offset injection, raw Frame3
 diagnostics, and an EXP005--008 field plan. See
 [`docs/dual_car_simulation.md`](docs/dual_car_simulation.md),
 [`docs/field_tests/EXP005_008_PLAN.md`](docs/field_tests/EXP005_008_PLAN.md),
+[`docs/field_tests/EXP005_RUNBOOK.md`](docs/field_tests/EXP005_RUNBOOK.md),
 and
 [`docs/cooperative_localization_reading.md`](docs/cooperative_localization_reading.md).
 

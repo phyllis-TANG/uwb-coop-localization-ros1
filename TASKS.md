@@ -90,6 +90,9 @@ environment or explicitly confirmed by its operator.
   - Preserved LinkTrack Frame3 device time, voltage, FP RSSI, and RX RSSI on a
     diagnostic topic without changing the existing range topic.
   - Defined EXP005--008 truth, recording, evidence, and stop criteria.
+  - Added an EXP005 runbook with per-host read-only snapshots, serial and topic
+    checks, shared/separate ROS Master recording templates, and immediate bag
+    verification commands.
   - Target Melodic VM validation (2026-09-23): all 19 Python 2 unit tests
     passed, the catkin message build reached 100%, and both simulated UWB
     streams held approximately 20 Hz.
