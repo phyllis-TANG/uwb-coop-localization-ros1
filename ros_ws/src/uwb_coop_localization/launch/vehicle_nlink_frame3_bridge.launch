@@ -1,0 +1,33 @@
+<launch>
+  <!-- Use Nooploop's nlink_parser and convert Node Frame3 to UwbRangeArray. -->
+  <!-- The port argument is required so an existing vehicle serial port is
+       never selected implicitly. -->
+  <arg name="vehicle_namespace" />
+  <arg name="port" />
+  <arg name="baudrate" default="921600" />
+  <arg name="node_prefix" default="node_" />
+  <arg name="queue_size" default="200" />
+
+  <group ns="$(arg vehicle_namespace)">
+    <node pkg="nlink_parser"
+          type="linktrack"
+          name="nlink_linktrack"
+          output="screen"
+          required="true">
+      <param name="port_name" value="$(arg port)" />
+      <param name="baud_rate" value="$(arg baudrate)" />
+    </node>
+
+    <node pkg="uwb_coop_localization"
+          type="nlink_frame3_bridge.py"
+          name="nlink_frame3_bridge"
+          output="screen"
+          required="true">
+      <param name="input_topic" value="nlink_linktrack_nodeframe3" />
+      <param name="output_topic" value="uwb/ranges" />
+      <param name="frame_id" value="$(arg vehicle_namespace)/uwb_linktrack" />
+      <param name="node_prefix" value="$(arg node_prefix)" />
+      <param name="queue_size" value="$(arg queue_size)" />
+    </node>
+  </group>
+</launch>
