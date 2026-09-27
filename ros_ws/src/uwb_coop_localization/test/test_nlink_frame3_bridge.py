@@ -79,6 +79,29 @@ class NlinkFrame3BridgeTest(unittest.TestCase):
         self.assertEqual("node_9", output.ranges[1].anchor_id)
         self.assertAlmostEqual(4.125, output.ranges[1].range)
 
+    def test_aggregates_duplicate_anchor_samples_with_median(self):
+        source = FakeFrame3()
+        source.nodes = [
+            FakeNode(3, 1.697),
+            FakeNode(3, 1.726),
+            FakeNode(3, 1.729),
+            FakeNode(3, 1.780),
+            FakeNode(9, 4.125),
+        ]
+
+        output = frame3_to_range_array(
+            source,
+            FakeRangeArray,
+            FakeRange,
+        )
+
+        self.assertEqual(2, len(output.ranges))
+        self.assertEqual("node_3", output.ranges[0].anchor_id)
+        self.assertAlmostEqual(1.7275, output.ranges[0].range)
+        self.assertTrue(math.isnan(output.ranges[0].quality))
+        self.assertEqual("node_9", output.ranges[1].anchor_id)
+        self.assertAlmostEqual(4.125, output.ranges[1].range)
+
     def test_preserves_source_frame_id_when_override_is_empty(self):
         output = frame3_to_range_array(
             FakeFrame3(), FakeRangeArray, FakeRange)
