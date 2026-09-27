@@ -11,6 +11,34 @@ def node_name(node_prefix, node_id):
     return "%s%d" % (node_prefix, int(node_id))
 
 
+def _median(values):
+    """Return the median without requiring Python's statistics module."""
+    ordered = sorted(values)
+    midpoint = len(ordered) // 2
+    if len(ordered) % 2:
+        return ordered[midpoint]
+    return (ordered[midpoint - 1] + ordered[midpoint]) / 2.0
+
+
+def aggregate_node_distances(nodes):
+    """Return one median distance per node ID in first-seen order.
+
+    LinkTrack P-A hardware can report several samples for the same anchor in
+    one NodeFrame3 message.  UwbRangeArray represents one measurement per
+    anchor, so collapse those repeated samples before publishing.
+    """
+    node_order = []
+    distances_by_id = {}
+    for node in nodes:
+        node_id = int(node.id)
+        if node_id not in distances_by_id:
+            node_order.append(node_id)
+            distances_by_id[node_id] = []
+        distances_by_id[node_id].append(float(node.dis))
+    return [(node_id, _median(distances_by_id[node_id]))
+            for node_id in node_order]
+
+
 def frame3_to_range_array(frame, array_class, range_class,
                           node_prefix="node_", frame_id=""):
     """Convert nlink_parser/LinktrackNodeframe3 to UwbRangeArray.
@@ -24,10 +52,10 @@ def frame3_to_range_array(frame, array_class, range_class,
         output.header.frame_id = frame_id
     output.tag_id = node_name(node_prefix, frame.id)
 
-    for node in frame.nodes:
+    for node_id, distance in aggregate_node_distances(frame.nodes):
         measurement = range_class()
-        measurement.anchor_id = node_name(node_prefix, node.id)
-        measurement.range = float(node.dis)
+        measurement.anchor_id = node_name(node_prefix, node_id)
+        measurement.range = distance
         measurement.quality = float("nan")
         output.ranges.append(measurement)
 
