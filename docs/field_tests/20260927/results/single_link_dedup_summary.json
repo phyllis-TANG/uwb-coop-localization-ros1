@@ -1,0 +1,70 @@
+{
+  "results": [
+    {
+      "bag_file": "PA0_PB3_static_LOS_AR1p56m_20260927_163421.bag",
+      "experiment": "PA0",
+      "sha256": "01c4d24b58ef08c2fdd33611637306be0cc1a025403006394e4b5a6ed39f6946",
+      "summary": {
+        "bag_header_offset_max_s": 0.0019502639770507812,
+        "bag_header_offset_mean_s": 0.0007867705613414821,
+        "bag_header_offset_median_s": 0.0007565021514892578,
+        "bag_header_offset_min_s": 0.0004863739013671875,
+        "duration_s": 29.70112109184265,
+        "frames": 1486,
+        "frequency_hz": 49.9981127112354,
+        "jump_count": 1483,
+        "jump_definition": "consecutive_ros_messages_with_usable_target",
+        "jump_gt_0_10_percent": 2.4949426837491573,
+        "jump_gt_0_25_percent": 0.0,
+        "jump_max_m": 0.14699995517730713,
+        "jump_median_m": 0.029999971389770508,
+        "jump_p95_m": 0.08489993810653695,
+        "jump_p99_m": 0.10800004005432129,
+        "max_m": 1.8949999809265137,
+        "mean_m": 1.7915488191726634,
+        "median_m": 1.7899999618530273,
+        "min_m": 1.7089999914169312,
+        "no_usable_target": 1,
+        "std_m": 0.03167426183078247,
+        "usable_target_frames": 1485,
+        "valid_frame_percent": 99.93270524899057
+      },
+      "tag_id": "node_0",
+      "target_id": "node_3",
+      "topic": "/car2/uwb/ranges"
+    },
+    {
+      "bag_file": "PA0_PB3_static_LOS_AR1p56m_median_20260927_165826.bag",
+      "experiment": "PA0",
+      "sha256": "8f04cce6591b7fa8ed7d44a4691cfee12411781c4a11380675e00113f153a7ea",
+      "summary": {
+        "bag_header_offset_max_s": 0.0032546520233154297,
+        "bag_header_offset_mean_s": 0.0007802644832022238,
+        "bag_header_offset_median_s": 0.0007596015930175781,
+        "bag_header_offset_min_s": 0.0004715919494628906,
+        "duration_s": 29.78026247024536,
+        "frames": 1490,
+        "frequency_hz": 49.99955932180647,
+        "jump_count": 1489,
+        "jump_definition": "consecutive_ros_messages_with_usable_target",
+        "jump_gt_0_10_percent": 0.8059100067159167,
+        "jump_gt_0_25_percent": 0.0,
+        "jump_max_m": 0.11250001192092896,
+        "jump_median_m": 0.029499948024749756,
+        "jump_p95_m": 0.07599997520446777,
+        "jump_p99_m": 0.09706000566482538,
+        "max_m": 1.8569999933242798,
+        "mean_m": 1.7692812086751797,
+        "median_m": 1.7680000066757202,
+        "min_m": 1.6895000338554382,
+        "no_usable_target": 0,
+        "std_m": 0.026932529636729943,
+        "usable_target_frames": 1490,
+        "valid_frame_percent": 100.0
+      },
+      "tag_id": "node_0",
+      "target_id": "node_3",
+      "topic": "/car2/uwb/ranges"
+    }
+  ]
+}
