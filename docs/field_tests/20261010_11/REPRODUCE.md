@@ -79,7 +79,23 @@ python tools/analyze_october_field_session.py \
 历史一维脚本使用录包时间；新二维使用 Car2 消息时间。跨方法比较必须保留这一差异。
 这些环境没有与 VM 共用 catkin 输出，勿把现代 Python 安装路线混入现有 Melodic 系统环境。
 
-## 4. 四个原始脚本
+## 4. 分段诊断
+
+完成主分析后，以相同配置和关键帧结果运行：
+
+```bash
+python2 tools/diagnose_october_L_segments.py \
+  --data-root /home/wheeltec-client/uwb_field_tests \
+  --config docs/field_tests/20261010_11/session_config.json \
+  --base-results /home/wheeltec-client/uwb_analysis/october_session_reproduced \
+  --output-dir /home/wheeltec-client/uwb_analysis/october_segments_reproduced
+```
+
+现代环境把 `python2` 换为该环境的 `python`，并使用对应数据路径。
+输出分段时间、人工起终点处链路残差、尾段截断的全部结果，以及 N8 可见性时间表。
+诊断图中的“测距减 Odom 几何”属于估计间一致性，不能当作轨迹真值误差。
+
+## 5. 四个原始脚本
 
 位置：`tools/field_session_20261010_11/`。四个文件与用户备份字节完全一致，校验见 `results/source_scripts.json`。
 
@@ -114,16 +130,16 @@ python tools/replay_october_1d.py \
   --output-dir /path/to/new_1d_replay
 ```
 
-## 5. 已运行检查与剩余验收
+## 6. 已运行检查与剩余验收
 
 - 28 份 bag 共 126,830 条消息全部完成离线读取，11 份已知原始校验值一致。
 - 独立静态校正量复算差异均小于 0.001 m，未对两份 L 形重新校准。
 - 六份一维历史摘要的位移和绝对差复现到三位小数。
 - 二维合成 L 形、任意 Odom 坐标原点/旋转、朝向跨界、测距离群值、退化几何、倒车首段对齐等测试通过。
-- 仓库原有 28 个硬件无关测试及新增 5 个测试在现代 Python 环境通过。
+- 仓库原有 28 个硬件无关测试及新增 7 个测试在现代 Python 环境通过；新增检查包括起点静止窗口和倒车分段。
 - 尚未运行新的目标 VM catkin 构建或目标 VM 新二维程序；本次没有硬件连接或控制器实车复测。
 
-## 6. Git 归档边界
+## 7. Git 归档边界
 
 提交：分析代码、四个原始脚本、启动指南、配置、bag SHA256、现场文本备注、紧凑关键帧 CSV、摘要和精选 PNG。
 原始 `.bag`、压缩备份、逐帧原始距离 CSV、`.pyc`、catkin 生成目录继续保存在数据存储中。

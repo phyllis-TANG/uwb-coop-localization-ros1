@@ -58,6 +58,7 @@
   },
   "corrected_uwb_fit_rms_median_m": 0.07020124293292374,
   "endpoint_used_in_optimizer": false,
+  "endpoint_window_policy": "initial <=5 s, ending 0.5 s before first motion command; final 5 s",
   "endpoint_windows_elapsed_s": [
     [
       0.1521914005279541,

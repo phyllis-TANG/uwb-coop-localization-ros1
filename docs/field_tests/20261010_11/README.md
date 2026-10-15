@@ -12,6 +12,7 @@
 
 - [实验与方法报告](REPORT.md)：实验过程、统计结果、解释边界与后续工作。
 - [复现步骤](REPRODUCE.md)：原始脚本与新分析程序的运行方法。
+- [分段诊断](SEGMENT_DIAGNOSTICS.md)：起点静止窗口、链路残差、尾段截断与 N8 可见性时间界限。
 - [完整 bag 清单](results/bag_manifest.csv)、[详细清单](results/bag_manifest.json)、[28 份 bag 的 SHA256](results/SHA256SUMS.txt)。
 - [坐标、校准与模型配置](session_config.json)、[静态校准复核](results/calibration.json)。
 - [二维结果表](results/two_dimensional_comparison.csv)、[二维完整结果](results/two_dimensional_summary.json)。

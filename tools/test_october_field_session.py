@@ -6,6 +6,7 @@ import unittest
 import numpy as np
 
 import analyze_october_field_session as analysis
+import diagnose_october_L_segments as diagnostics
 
 
 class FieldSessionTests(unittest.TestCase):
@@ -42,6 +43,23 @@ class FieldSessionTests(unittest.TestCase):
         self.assertNotIn('end_reference', inspect.getfullargspec(analysis.optimize_graph).args
                          if hasattr(inspect, 'getfullargspec') else
                          inspect.getargspec(analysis.optimize_graph).args)
+
+    def test_initial_window_excludes_early_motion_command(self):
+        windows = analysis.endpoint_windows({'cmd': [(4.4, -.045, 0., 0.)]}, .15, 120.)
+        self.assertAlmostEqual(windows[0][1], 3.9)
+        with self.assertRaises(ValueError):
+            analysis.endpoint_windows({'cmd': [(.9, .045, 0., 0.)]}, .15, 120.)
+
+    def test_reverse_motion_has_two_translation_phases(self):
+        data = {'cmd': [(4., -.045, 0., 0.), (30., 0., 0., 0.),
+                        (35., 0., 0., -.2), (39., 0., 0., 0.),
+                        (44., -.045, 0., 0.), (70., -.045, 0., 0.)]}
+        bounds = diagnostics.phase_bounds(data)
+        self.assertEqual(bounds['first_motion'], 4.)
+        self.assertEqual(bounds['second_translation'], 44.)
+        self.assertEqual(bounds['last_translation'], 70.)
+        with self.assertRaises(ValueError):
+            diagnostics.phase_bounds({'cmd': [(4., -.045, 0., 0.)]})
 
 
 if __name__ == '__main__':

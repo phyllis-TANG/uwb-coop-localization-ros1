@@ -299,6 +299,16 @@ def endpoint_metrics(xy, start_reference, end_reference):
             'displacement_vector_difference_m': float(np.linalg.norm(estimated_delta-reference_delta))}
 
 
+def endpoint_windows(data, low, high):
+    """Keep the initial reference window clear of the first motion command."""
+    motion = [row[0] for row in data['cmd']
+              if math.hypot(row[1], row[2]) > .005 or abs(row[3]) > .04]
+    start_end = min(low+5., min(motion)-.5) if motion else low+5.
+    if start_end-low < 1.:
+        raise ValueError('Less than 1 s of initial stationary reference data')
+    return [(low, start_end), (high-5., high+1e-6)]
+
+
 def analyze_run(data, run, config, biases, output):
     anchors, params = config['anchors_xyz_m'], config['graph_parameters']
     if any(data['info']['timing'][key]['header_nonincreasing_steps']
@@ -334,7 +344,7 @@ def analyze_run(data, run, config, biases, output):
     graph, graph_info = optimize_graph(local, observations, anchors, biases, height,
                                         start_ref, heading, times, params)
     # Independent 5 s endpoint windows; graph/Odom use medians at the same times.
-    windows = [(low, low+5.), (high-5., high+1e-6)]
+    windows = endpoint_windows(data, low, high)
     endpoints_raw, endpoints_corrected, endpoints_odom, endpoints_graph = [], [], [], []
     for left, right in windows:
         values = window_ranges(data['uwb'], left, right)
@@ -347,6 +357,7 @@ def analyze_run(data, run, config, biases, output):
         endpoints_graph.append(np.median(graph[select, :2], axis=0))
     result = {
         'label': run['label'], 'bag_file': data['info']['bag_file'],
+        'endpoint_window_policy': 'initial <=5 s, ending 0.5 s before first motion command; final 5 s',
         'bag_sha256': data['info']['sha256'], 'endpoint_windows_elapsed_s':
             [[a-data['start'], b-data['start']] for a, b in windows],
         'manual_start_xyz_m': run['start_antenna_xyz_m'],

@@ -21,48 +21,49 @@
     "bag_file": "CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083512.bag",
     "bag_sha256": "4b0b7276e9dbb6f50f016eca4f621cd8d0ee0fca60b5b7b91721d0d217d15407",
     "batch_graph_2d": {
-      "displacement_length_m": 1.4036138940310967,
-      "displacement_vector_difference_m": 0.2682698587844441,
+      "displacement_length_m": 1.4059015202372398,
+      "displacement_vector_difference_m": 0.26656970355906656,
       "displacement_xy_m": [
-        1.3461132319397855,
-        0.3976319030381794
+        1.3474722601195697,
+        0.4010954908916835
       ],
       "end_reference_difference_m": 0.2254689856235047,
       "end_xy_m": [
         3.3378384026887744,
         2.449445909849739
       ],
-      "start_reference_difference_m": 0.05247060225499351,
+      "start_reference_difference_m": 0.049300854175322144,
       "start_xy_m": [
-        1.991725170748989,
-        2.0518140068115596
+        1.9903661425692047,
+        2.0483504189580555
       ]
     },
     "continuous_trajectory_ground_truth": false,
     "corrected_uwb": {
-      "displacement_length_m": 1.5837970281170657,
-      "displacement_vector_difference_m": 0.27957910485305665,
+      "displacement_length_m": 1.583892298398049,
+      "displacement_vector_difference_m": 0.27863082292876723,
       "displacement_xy_m": [
-        1.4455908208126251,
-        0.6470550247503917
+        1.4439239676847235,
+        0.6509979942136996
       ],
       "end_reference_difference_m": 0.21728867641047542,
       "end_xy_m": [
         3.3304677926978123,
         2.453492469808176
       ],
-      "start_reference_difference_m": 0.22521051102930825,
+      "start_reference_difference_m": 0.22777343087674085,
       "start_xy_m": [
-        1.8848769718851872,
-        1.8064374450577845
+        1.8865438250130888,
+        1.8024944755944765
       ]
     },
     "corrected_uwb_fit_rms_median_m": 0.049668723688050996,
     "endpoint_used_in_optimizer": false,
+    "endpoint_window_policy": "initial <=5 s, ending 0.5 s before first motion command; final 5 s",
     "endpoint_windows_elapsed_s": [
       [
         0.1684877872467041,
-        5.168487787246704
+        3.877938985824585
       ],
       [
         114.96797060966492,
@@ -100,21 +101,21 @@
     ],
     "method": "single-car fixed-height SE(2) batch least-squares graph; not iSAM2; IMU diagnostic only",
     "raw_uwb": {
-      "displacement_length_m": 1.5468440908520518,
-      "displacement_vector_difference_m": 0.25073246236109414,
+      "displacement_length_m": 1.5480078042451342,
+      "displacement_vector_difference_m": 0.2532507168057605,
       "displacement_xy_m": [
-        1.3262662875298765,
-        0.7960806340852851
+        1.325184124623752,
+        0.8001344873513592
       ],
       "end_reference_difference_m": 0.6142391674819087,
       "end_xy_m": [
         2.6161188982712282,
         2.8655286802147564
       ],
-      "start_reference_difference_m": 0.7135351046599426,
+      "start_reference_difference_m": 0.7120743610625303,
       "start_xy_m": [
-        1.2898526107413517,
-        2.0694480461294713
+        1.2909347736474763,
+        2.065394192863397
       ]
     },
     "raw_uwb_fit_rms_median_m": 0.09133856923105534,
@@ -191,6 +192,7 @@
     },
     "corrected_uwb_fit_rms_median_m": 0.07020124293292374,
     "endpoint_used_in_optimizer": false,
+    "endpoint_window_policy": "initial <=5 s, ending 0.5 s before first motion command; final 5 s",
     "endpoint_windows_elapsed_s": [
       [
         0.1521914005279541,
