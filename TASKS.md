@@ -83,7 +83,8 @@ environment or explicitly confirmed by its operator.
   - Offline analysis exports raw CSV, summary CSV/JSON/text, SHA256, and PNG
     using bag reception time. Final field acceptance passed on the retained
     bags without committing them to Git.
-- **NEXT — Validate static ranging between two cars.**
+- **DONE — Validate initial static ranging between two cars.**
+  - See the September 27 field summary and archived analysis artifacts.
 - **DONE — Prepare the two-car field session off-site.**
   - Added a namespaced two-car simulator with configurable range noise,
     positive NLOS bias, dropouts, and timestamp offset.
@@ -121,4 +122,32 @@ environment or explicitly confirmed by its operator.
 - **TODO — Validate two independently namespaced cars and TF trees.**
 - **TODO — Establish an odometry/IMU baseline.**
 - **TODO — Implement a centralized 2D EKF only after the data path is stable.**
-- **TODO — Evaluate a factor graph only after the EKF baseline is stable.**
+- **TODO — Establish a controlled EKF-versus-graph comparison.**
+  - The October offline graph pilot below precedes this comparison; it does
+    not establish online EKF or cooperative-system acceptance.
+
+## October field archive and offline single-car pilots
+
+- **DONE — Audit and archive the October 10–11 session.**
+  - All 28 bags / 126,830 messages were read offline; 11 previously reported
+    hashes match. Preserve all bag hashes, source notes, four original scripts,
+    corrected P5 reference, failed attempts, and calibration provenance.
+- **DONE — Establish a short Car2 powered-motion Odom baseline.**
+  - Two approximately 1 m forward runs and a return run have endpoint references.
+    The return length is inferred from prior measurements rather than measured
+    independently. Manual pushing is retained as diagnostic data.
+- **DONE — Preserve and reproduce the 1D filtering/graph pilots.**
+  - Six historical summaries reproduced to their reported precision; IMU is
+    diagnostic and the graph is full-history reoptimization, not iSAM2.
+- **DONE — Run an offline fixed-height 2D UWB/Odom graph on two L-shaped bags.**
+  - Modern Python validation on uploaded original bags; endpoint-only manual
+    references, three active surveyed nodes, no endpoint factors or fitting.
+    Fusion does not outperform Odom on both runs. No real-time or cooperative
+    accuracy acceptance is implied.
+- **TODO — Accept the new offline program on the target Melodic VM.**
+- **TODO — Survey the tag-to-base lever arm and verify room/Odom alignment.**
+- **TODO — Restore/verify N8 visibility and quantify manual reference uncertainty.**
+- **TODO — Check stable post-stop motion/angle and resolve battery reliability.**
+- **TODO — Validate online fusion and independent timing before two-car fusion.**
+
+Details: `docs/field_tests/20261010_11/README.md`.

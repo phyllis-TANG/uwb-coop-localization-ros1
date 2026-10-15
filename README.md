@@ -40,7 +40,18 @@ filtering, degenerate-geometry rejection, and a live 10 Hz simulator data path.
 RViz visualization now displays labeled Anchor markers, simulated Tag ground
 truth, the UWB position estimate, and a bounded estimated path in the `uwb_map`
 frame. The ideal estimate and simulated truth overlap as expected. Filtering,
-odometry/IMU fusion, and a cooperative EKF have not been implemented yet.
+odometry/IMU fusion, and a cooperative EKF are not part of that simulator demo.
+
+October field work now includes wall-reference ranging, raised and low-mounted
+static tests, and Car2 UWB/Odom/IMU recordings. A read-only session audit and a
+fixed-height single-car 2D batch factor-graph pilot have been run on two recorded
+L-shaped trajectories. See the
+[`October session archive`](docs/field_tests/20261010_11/README.md) for all 28 bag
+hashes, preserved field scripts, measured endpoints, calibration provenance,
+results, and reproduction commands. IMU is diagnostic only in these pilots;
+online fusion, iSAM2, and two-car cooperative fusion remain future work. The new
+offline code was tested outside the target VM; its Melodic replay acceptance
+is still pending.
 
 The continuing LinkTrack P hardware investigation, safety constraints, captured
 evidence, and unresolved field-test tasks are maintained in
@@ -89,5 +100,6 @@ and
 7. Add simple 2D least-squares trilateration.
 8. Add RViz visualization.
 
-EKF and factor-graph work are intentionally deferred until the basic data path
-has been validated with repeatable experiments.
+Offline single-car fusion pilots are now isolated under `tools/`. Centralized
+online EKF and incremental cooperative graph work still require verified
+extrinsics, coordinate alignment, timing, and independent evaluation data.

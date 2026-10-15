@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "anchors_xyz_m": {
+    "node_8": [
+      0.1,
+      2.38,
+      2.22
+    ],
+    "node_10": [
+      3.27,
+      0.1,
+      2.35
+    ],
+    "node_3": [
+      5.23,
+      2.91,
+      2.33
+    ],
+    "node_2": [
+      5.23,
+      5.12,
+      2.88
+    ]
+  },
+  "survey_status": "preliminary manual survey; right-wall x=5.33-0.10=5.23 m; coordinate errors not independently bounded",
+  "room_dimensions_xy_m": [
+    5.33,
+    5.38
+  ],
+  "calibration": {
+    "bag": "20261011/CAR2_WALL_UWB_ODOM_IMU_static_20261011_042319.bag",
+    "antenna_xyz_m": [
+      2,
+      2,
+      0.2
+    ],
+    "frozen_bias_m": {
+      "node_8": 0.447,
+      "node_10": 0.488,
+      "node_3": 0.339,
+      "node_2": 0.308
+    }
+  },
+  "graph_parameters": {
+    "keyframe_step_s": 1,
+    "range_bin_half_width_s": 0.4,
+    "prior_position_sigma_m": 0.2,
+    "prior_heading_sigma_deg": 5,
+    "odom_translation_sigma_m": 0.03,
+    "odom_yaw_sigma_deg": 2,
+    "range_sigma_m": 0.2
+  },
+  "graph_parameter_policy": "Fixed before evaluating the two held-out L-shape endpoints; no endpoint fitting or parameter search",
+  "runs_2d": [
+    {
+      "label": "keyboard_L",
+      "bag": "20261011/CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083512.bag",
+      "start_antenna_xyz_m": [
+        2,
+        2,
+        0.2
+      ],
+      "end_antenna_xyz_m": [
+        3.17,
+        2.6,
+        0.2
+      ],
+      "initial_heading_deg": -90,
+      "initial_heading_source": "Inferred from marked first travel direction +room-y and recorded negative body linear.x commands; not an independent heading measurement; no endpoint used",
+      "reference_source": "start marked A; end manually measured; B only approximately reached"
+    },
+    {
+      "label": "automatic_L",
+      "bag": "20261011/CAR2_auto_Lshape_20261011_091958.bag",
+      "start_antenna_xyz_m": [
+        2,
+        2,
+        0.2
+      ],
+      "end_antenna_xyz_m": [
+        2.95,
+        3.11,
+        0.2
+      ],
+      "initial_heading_deg": 90,
+      "initial_heading_source": "Operator instructed to place body forward along +room-y toward B; approximate marked heading, not instrument surveyed",
+      "reference_source": "marked initial position/heading; end manually measured after run"
+    }
+  ],
+  "corrected_static_references": {
+    "MOBILE_P5_raised_LOS_20261011_023837.bag": [
+      2.02,
+      4,
+      1
+    ],
+    "MOBILE_P5_raised_LOS_20261011_025440.bag": [
+      2.02,
+      4,
+      1
+    ]
+  },
+  "experiments": {
+    "WALL_N8_N2_N3_N10_static_20261010_061958.bag": "wall static node_8; preliminary survey diagnostic",
+    "WALL_N10_N2_N3_N8_static_20261010_064512.bag": "wall static node_10; preliminary survey diagnostic",
+    "WALL_N3_N2_N8_N10_static_20261010_070846.bag": "wall static node_3; preliminary survey diagnostic",
+    "MOBILE_static_P1_xy_pilot_20261010_073610.bag": "early mobile fixed-height XY pilot; large systematic residual",
+    "MOBILE_P1_h0p20_clear_A_20261011_014350.bag": "low-height clear A; person reportedly outside paths",
+    "MOBILE_P1_h0p20_human_B_20261011_014654.bag": "low-height human obstruction B on node_10 path",
+    "MOBILE_P1_h0p20_clear_C_20261011_014758.bag": "low-height clear C; node_2 failed to return to A baseline",
+    "MOBILE_P1_h1p00_clear_R1_20261011_020429.bag": "raised P1 repeat 1; [2,2,1] m",
+    "MOBILE_P1_h1p00_clear_R2_20261011_020505.bag": "raised P1 repeat 2; [2,2,1] m",
+    "MOBILE_P2_raised_LOS_20261011_021656.bag": "raised P2; [1.5,1.5,1] m",
+    "MOBILE_P3_h1p00_clear_20261011_022616.bag": "raised P3; [3.5,1.5,1] m",
+    "MOBILE_P4_h1p00_clear_20261011_023347.bag": "raised P4; [3.5,4,1] m",
+    "MOBILE_P5_raised_LOS_20261011_023837.bag": "raised P5 repeat 1; corrected survey [2.02,4,1] m",
+    "MOBILE_P5_raised_LOS_20261011_025440.bag": "raised P5 repeat 2; corrected survey [2.02,4,1] m",
+    "CAR2_WALL_UWB_ODOM_IMU_static_20261011_042319.bag": "independent mounted static calibration source; [2,2,0.2] m",
+    "CAR2_WALL_UWB_ODOM_IMU_manual_roll_20261011_042840.bag": "unstructured manual back-and-forth; interface/motion diagnostic",
+    "CAR2_WALL_UWB_ODOM_IMU_oneway_20261011_043326.bag": "actually manual back-and-forth; filename is not motion ground truth",
+    "CAR2_WALL_UWB_ODOM_IMU_key_forward_20261011_045550.bag": "straight pilot; manual displacement 1.020 m; exclude late turn for 1D",
+    "CAR2_WALL_UWB_ODOM_IMU_key_forward_repeat_20261011_051810.bag": "straight repeat; manual displacement 1.010 m",
+    "CAR2_WALL_UWB_ODOM_IMU_key_return_20261011_052421.bag": "reverse pilot; reference 0.950 m inferred from prior endpoint and remaining 0.060 m",
+    "CAR2_WALL_UWB_ODOM_IMU_key_Lshape_20261011_054551.bag": "aborted low-battery motion; commands present but Odom path zero",
+    "CAR2_WALL_UWB_ODOM_IMU_key_Lshape_20261011_073901.bag": "earlier failed L attempt; Odom path only 0.023 m, yaw -0.8 deg; exclude from trajectory evaluation",
+    "CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083053.bag": "earlier L retry; reference coordinates unverified; not primary evaluation",
+    "CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083512.bag": "keyboard L evaluation candidate; measured end [3.17,2.60,0.20] m",
+    "CAR2_auto_turn90_20261011_091414.bag": "initial automatic-turn recording; Odom path/yaw zero; exclude from angle evaluation",
+    "CAR2_auto_turn90_20261011_091508.bag": "automatic turn 0.15 rad/s; stalled/no substantial rotation; controller aborted",
+    "CAR2_auto_turn90_w0p20_20261011_091734.bag": "automatic turn 0.20 rad/s; completed per Odom; no independent physical angle truth",
+    "CAR2_auto_Lshape_20261011_091958.bag": "automatic L evaluation candidate; measured end [2.95,3.11,0.20] m"
+  },
+  "known_sha256": {
+    "20261010/WALL_N8_N2_N3_N10_static_20261010_061958.bag": "5aeb1d79105e9c9f9c8eb5a882529e40c1ac828cd857573c5601cfeefa5820eb",
+    "20261010/WALL_N10_N2_N3_N8_static_20261010_064512.bag": "e3e1ddda23ba6b9ba9c234fbd072001fd488a8e786a21dd4874e185f824e3c56",
+    "20261010/WALL_N3_N2_N8_N10_static_20261010_070846.bag": "41a9b150503eac1877589b05ec3eb505698a12db2b209c69b95001861c3f060d",
+    "20261010/MOBILE_static_P1_xy_pilot_20261010_073610.bag": "02a4f46b0ec3301f5d2ab2ec3bf6b6d1ae46749371122b05cad16af612572f5a",
+    "20261011/CAR2_WALL_UWB_ODOM_IMU_static_20261011_042319.bag": "4be35bcb4052042b812c6c1e4a7a4f3c4e77e5c229f2e9ac794f9ae35caed029",
+    "20261011/CAR2_WALL_UWB_ODOM_IMU_key_forward_20261011_045550.bag": "f20548a7f34637b5275ec31d0ca42d275a0d13084ee959d11ca49c420dc8e9ba",
+    "20261011/CAR2_WALL_UWB_ODOM_IMU_key_forward_repeat_20261011_051810.bag": "71475c6894d0aaa8fee9b0d2213d119a24ddf820b0017bf0acec74cadf0097bb",
+    "20261011/CAR2_WALL_UWB_ODOM_IMU_key_return_20261011_052421.bag": "6484f1cba99cde9e1808751e760c8bbc965080940f32a91941030e416d55ff76",
+    "20261011/CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083512.bag": "4b0b7276e9dbb6f50f016eca4f621cd8d0ee0fca60b5b7b91721d0d217d15407",
+    "20261011/CAR2_auto_turn90_w0p20_20261011_091734.bag": "09d8feb868bf7970fac55ccc1f0a372c5e3b6efa699c69beef876947ecf90364",
+    "20261011/CAR2_auto_Lshape_20261011_091958.bag": "ba9286da5ef369d9e785883f9d909f3f4e54d4a8827aed2e9b2c1b59ef8e435f"
+  }
+}
