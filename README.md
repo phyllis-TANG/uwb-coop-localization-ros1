@@ -50,8 +50,9 @@ L-shaped trajectories. See the
 hashes, preserved field scripts, measured endpoints, calibration provenance,
 results, and reproduction commands. IMU is diagnostic only in these pilots;
 online fusion, iSAM2, and two-car cooperative fusion remain future work. The new
-offline code was tested outside the target VM; its Melodic replay acceptance
-is still pending.
+offline code also passed Python 2 self-tests, seven unit tests, and a full
+28-bag replay with segment diagnostics on the target Melodic VM. Online and
+catkin-node acceptance remain future work.
 
 The continuing LinkTrack P hardware investigation, safety constraints, captured
 evidence, and unresolved field-test tasks are maintained in

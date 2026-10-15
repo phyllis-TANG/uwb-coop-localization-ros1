@@ -144,7 +144,11 @@ environment or explicitly confirmed by its operator.
     references, three active surveyed nodes, no endpoint factors or fitting.
     Fusion does not outperform Odom on both runs. No real-time or cooperative
     accuracy acceptance is implied.
-- **TODO — Accept the new offline program on the target Melodic VM.**
+- **DONE — Accept the new offline program on the target Melodic VM.**
+  - On 2026-10-15, Python 2 self-test and all seven new unit tests passed;
+    28 original bags passed configured SHA/calibration checks. Both real L
+    results and guarded-start/tail diagnostics reproduced. This is offline
+    acceptance, not catkin-node, hardware, or online-fusion acceptance.
 - **TODO — Survey the tag-to-base lever arm and verify room/Odom alignment.**
 - **TODO — Restore/verify N8 visibility and quantify manual reference uncertainty.**
 - **TODO — Check stable post-stop motion/angle and resolve battery reliability.**
