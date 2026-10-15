@@ -1,0 +1,8 @@
+bag: /home/wheeltec-client/uwb_field_tests/20261011/CAR2_WALL_UWB_ODOM_IMU_key_forward_repeat_20261011_051810.bag
+reference: 1.010 m; keyframes: 43; range factors: 172; last time: 47.0 s
+Odom: signed=+1.002 m, absolute error=0.008 m
+corrected UWB 1D: signed=+0.963 m, absolute error=0.047 m
+factor graph 1D: signed=+1.023 m, absolute error=0.013 m
+model: fixed x=2.00, z=0.20 m; prior/Odom/UWB sigma=0.20/0.03/0.20 m
+method: append factors, re-optimize full graph; not iSAM2
+CSV: /home/wheeltec-client/uwb_field_tests/20261011/factor_graph_1d_pilot/forward2.csv

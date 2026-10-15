@@ -1,0 +1,38 @@
+[
+  {
+    "method": "filter_1d",
+    "run": "forward1",
+    "reference_m": 1.02,
+    "field_summary_reproduced_3dp": true
+  },
+  {
+    "method": "filter_1d",
+    "run": "forward2",
+    "reference_m": 1.01,
+    "field_summary_reproduced_3dp": true
+  },
+  {
+    "method": "filter_1d",
+    "run": "return",
+    "reference_m": 0.95,
+    "field_summary_reproduced_3dp": true
+  },
+  {
+    "method": "graph_1d",
+    "run": "forward1",
+    "reference_m": 1.02,
+    "field_summary_reproduced_3dp": true
+  },
+  {
+    "method": "graph_1d",
+    "run": "forward2",
+    "reference_m": 1.01,
+    "field_summary_reproduced_3dp": true
+  },
+  {
+    "method": "graph_1d",
+    "run": "return",
+    "reference_m": 0.95,
+    "field_summary_reproduced_3dp": true
+  }
+]
