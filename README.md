@@ -104,3 +104,11 @@ and
 Offline single-car fusion pilots are now isolated under `tools/`. Centralized
 online EKF and incremental cooperative graph work still require verified
 extrinsics, coordinate alignment, timing, and independent evaluation data.
+
+## Future research reference
+
+After the initial two-car platform is established, the
+[`lunar-rover research outlook`](docs/research/LUNAR_COOPERATIVE_LOCALIZATION_OUTLOOK.md)
+can support topic selection around degradation-aware cooperative localization
+and active recovery. It records candidate goals, experiments, limitations, and
+primary references; the current implementation priorities remain in `TASKS.md`.
