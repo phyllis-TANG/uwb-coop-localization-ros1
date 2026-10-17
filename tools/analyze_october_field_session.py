@@ -309,6 +309,20 @@ def endpoint_windows(data, low, high):
     return [(low, start_end), (high-5., high+1e-6)]
 
 
+def gate_by_odom(values, pose, anchors, biases, height, threshold, rejected):
+    kept = {}
+    for key, measured in values.items():
+        xyz = anchors[key]
+        predicted = math.sqrt((pose[0]-xyz[0])**2 +
+                              (pose[1]-xyz[1])**2 +
+                              (height-xyz[2])**2) + biases[key]
+        if abs(measured-predicted) <= threshold:
+            kept[key] = measured
+        else:
+            rejected[key] += 1
+    return kept
+
+
 def analyze_run(data, run, config, biases, output):
     anchors, params = config['anchors_xyz_m'], config['graph_parameters']
     if any(data['info']['timing'][key]['header_nonincreasing_steps']
@@ -324,12 +338,36 @@ def analyze_run(data, run, config, biases, output):
     times = np.arange(math.ceil(low-data['start']+1.),
                       math.floor(high-data['start']), params['keyframe_step_s']) + data['start']
     local = np.column_stack([np.interp(times, odom[:, 0], odom[:, j]) for j in [1, 2, 3]])
-    observations = bin_ranges(data['uwb'], times, params['range_bin_half_width_s'])
+    exclusions = run.get('range_exclusions', [])
+    filtered_uwb = []
+    removed = 0
+    for stamp, ranges, tag in data['uwb']:
+        kept = dict(ranges)
+        elapsed = stamp - data['start']
+        for exclusion in exclusions:
+            key = exclusion['anchor_id']
+            if (exclusion['elapsed_start_s'] <= elapsed <
+                    exclusion['elapsed_end_s'] and key in kept):
+                del kept[key]
+                removed += 1
+        filtered_uwb.append((stamp, kept, tag))
+    observations = bin_ranges(filtered_uwb, times, params['range_bin_half_width_s'])
     height = run['start_antenna_xyz_m'][2]
     start_ref = np.asarray(run['start_antenna_xyz_m'][:2])
     end_ref = np.asarray(run['end_antenna_xyz_m'][:2])
     heading = math.radians(run['initial_heading_deg'])
     aligned = align_odom(local, run['start_antenna_xyz_m'], heading)
+    automatic_gate_m = run.get('odom_innovation_gate_m')
+    gate_bin_rejections = collections.Counter()
+    gate_endpoint_rejections = collections.Counter()
+    if automatic_gate_m is not None:
+        if automatic_gate_m <= 0:
+            raise ValueError('Invalid odom innovation gate')
+        observations = [
+            gate_by_odom(row, pose, anchors, biases, height,
+                         automatic_gate_m, gate_bin_rejections)
+            for row, pose in zip(observations, aligned)
+        ]
     raw, corrected, raw_fit, corrected_fit = [], [], [], []
     for values in observations:
         xy, rms = solve_xy(values, anchors, height)
@@ -339,15 +377,28 @@ def analyze_run(data, run, config, biases, output):
         corrected.append(xy)
         corrected_fit.append(rms)
     raw, corrected = np.asarray(raw), np.asarray(corrected)
-    if not np.all(np.isfinite(np.r_[raw.ravel(), corrected.ravel()])):
-        raise ValueError('Missing XY bins; do not silently interpolate them')
+    missing_xy = [i for i, pair in enumerate(zip(raw, corrected))
+                  if not (np.all(np.isfinite(pair[0])) and
+                          np.all(np.isfinite(pair[1])))]
+    if missing_xy and (automatic_gate_m is None or
+                       any(len(observations[i]) >= 3 for i in missing_xy)):
+        raise ValueError('Unexpected missing XY bins')
+    missing_xy_s = [float(times[i]-data['start']) for i in missing_xy]
     graph, graph_info = optimize_graph(local, observations, anchors, biases, height,
                                         start_ref, heading, times, params)
     # Independent 5 s endpoint windows; graph/Odom use medians at the same times.
     windows = endpoint_windows(data, low, high)
     endpoints_raw, endpoints_corrected, endpoints_odom, endpoints_graph = [], [], [], []
     for left, right in windows:
-        values = window_ranges(data['uwb'], left, right)
+        values = window_ranges(filtered_uwb, left, right)
+        if automatic_gate_m is not None:
+            window_states = (times >= left) & (times < right)
+            if not np.any(window_states):
+                raise ValueError('No Odom state for range gate window')
+            window_pose = np.median(aligned[window_states, :2], axis=0)
+            values = gate_by_odom(values, window_pose, anchors, biases,
+                                  height, automatic_gate_m,
+                                  gate_endpoint_rejections)
         endpoints_raw.append(solve_xy(values, anchors, height)[0])
         endpoints_corrected.append(solve_xy(dict((k, v-biases[k]) for k, v in values.items()), anchors, height)[0])
         select = (times >= left) & (times < right)
@@ -365,13 +416,19 @@ def analyze_run(data, run, config, biases, output):
         'initial_heading_deg': run['initial_heading_deg'],
         'initial_heading_source': run['initial_heading_source'],
         'usable_anchor_combinations': data['info']['usable_anchor_combinations'],
+        'range_exclusions': exclusions,
+        'range_values_removed': removed,
+        'odom_innovation_gate_m': automatic_gate_m,
+        'odom_gate_rejected_keyframe_bins': dict(gate_bin_rejections),
+        'odom_gate_rejected_endpoint_windows': dict(gate_endpoint_rejections),
+        'standalone_xy_unavailable_elapsed_s': missing_xy_s,
         'raw_uwb': endpoint_metrics(endpoints_raw, start_ref, end_ref),
         'corrected_uwb': endpoint_metrics(endpoints_corrected, start_ref, end_ref),
         'aligned_odom': endpoint_metrics(endpoints_odom, start_ref, end_ref),
         'batch_graph_2d': endpoint_metrics(endpoints_graph, start_ref, end_ref),
         'graph': graph_info,
-        'raw_uwb_fit_rms_median_m': float(np.median(raw_fit)),
-        'corrected_uwb_fit_rms_median_m': float(np.median(corrected_fit)),
+        'raw_uwb_fit_rms_median_m': float(np.nanmedian(raw_fit)),
+        'corrected_uwb_fit_rms_median_m': float(np.nanmedian(corrected_fit)),
         'timestamp_basis': 'Car2 message header time; bag reception times kept in manifest diagnostics',
         'method': 'single-car fixed-height SE(2) batch least-squares graph; not iSAM2; IMU diagnostic only',
         'tag_to_base_lever_arm_m': [0., 0., 0.],
@@ -560,7 +617,7 @@ def run_session(data_root, config, output):
         os.makedirs(output)
     anchors = config['anchors_xyz_m']
     bags, cache = [], {}
-    for day in ('20261010', '20261011'):
+    for day in config.get('session_days', ('20261010', '20261011')):
         directory = os.path.join(data_root, day)
         for name in sorted(os.listdir(directory)):
             if not name.endswith('.bag'):
@@ -608,7 +665,8 @@ def run_session(data_root, config, output):
         print(run['label'], dict((key, round(result[key]['end_reference_difference_m'], 4))
                                 for key in ['aligned_odom', 'raw_uwb', 'corrected_uwb', 'batch_graph_2d']))
     write_json(os.path.join(output, 'two_dimensional_summary.json'), results)
-    static_overview(data_root, cache, config, output)
+    if config.get('include_static_overview', True):
+        static_overview(data_root, cache, config, output)
     write_csv(os.path.join(output, 'two_dimensional_comparison.csv'),
               ['run', 'method', 'end_x_m', 'end_y_m', 'endpoint_reference_difference_m',
                'displacement_vector_difference_m'],

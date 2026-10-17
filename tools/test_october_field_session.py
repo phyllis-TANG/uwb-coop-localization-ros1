@@ -2,6 +2,7 @@
 """Hardware-independent tests for the fixed-height offline session model."""
 import inspect
 import unittest
+from collections import Counter
 
 import numpy as np
 
@@ -10,6 +11,50 @@ import diagnose_october_L_segments as diagnostics
 
 
 class FieldSessionTests(unittest.TestCase):
+    def test_odom_gate_uses_link_bias_and_keeps_boundary(self):
+        anchors = {'a': [0., 0., 2.], 'b': [5., 0., 2.],
+                   'c': [5., 5., 2.]}
+        point = np.asarray([2., 2., .2])
+        biases = {'a': .3, 'b': .2, 'c': .4}
+        ranges = dict((key, float(np.linalg.norm(point-xyz))+biases[key])
+                      for key, xyz in anchors.items())
+        # Exactly representable threshold avoids rounding at the boundary.
+        ranges['b'] += .5
+        ranges['c'] += 1.2
+        original = ranges.copy()
+        rejected = Counter()
+        kept = analysis.gate_by_odom(ranges, point[:2], anchors, biases,
+                                     point[2], .5, rejected)
+        self.assertEqual(set(kept), set(['a', 'b']))
+        self.assertEqual(rejected, Counter({'c': 1}))
+        self.assertEqual(ranges, original)
+
+    def test_graph_retains_two_ranges_when_standalone_xy_is_missing(self):
+        anchors = {'a': [0., 0., 2.], 'b': [5., 0., 2.],
+                   'c': [5., 5., 2.]}
+        local = np.asarray([[0., 0., 0.], [.5, 0., 0.], [1., 0., 0.]])
+        start = np.asarray([2., 2.])
+        expected = local[:, :2]+start
+        observations = []
+        for xy in expected:
+            point = np.r_[xy, .2]
+            observations.append(dict((key, float(np.linalg.norm(point-xyz)))
+                                     for key, xyz in anchors.items()))
+        del observations[1]['c']
+        xy, rms = analysis.solve_xy(observations[1], anchors, .2)
+        self.assertTrue(np.isnan(xy).all())
+        self.assertTrue(np.isnan(rms))
+        parameters = {'odom_translation_sigma_m': .03,
+                      'odom_yaw_sigma_deg': 2., 'range_sigma_m': .2,
+                      'prior_position_sigma_m': .2,
+                      'prior_heading_sigma_deg': 5.}
+        graph, info = analysis.optimize_graph(
+            local, observations, anchors, dict((key, 0.) for key in anchors),
+            .2, start, 0., np.asarray([0., 1., 2.]), parameters)
+        self.assertTrue(info['optimizer_success'])
+        self.assertEqual(info['range_factors'], 8)
+        np.testing.assert_allclose(graph[:, :2], expected, atol=1e-6)
+
     def test_synthetic_L_and_robust_range(self):
         analysis.self_test()
 
