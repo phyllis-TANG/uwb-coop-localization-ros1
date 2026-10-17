@@ -53,3 +53,9 @@ This is a single-car offline baseline. Do not present it as real-time or
 two-car cooperative localization. Next development should replay recorded
 bags, preserve diagnostics for rejected links, and then evaluate a two-car
 relative-range constraint with independent references.
+
+## Next field session
+
+See the [2026-10-18 eight-hour runbook](../20261018_RUNBOOK.md) for the
+single-car recheck, two-car data prerequisites, static/one-moving-car
+experiments, and the first offline cooperative-estimation comparison.
