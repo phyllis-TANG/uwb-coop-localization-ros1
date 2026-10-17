@@ -1,0 +1,1701 @@
+[
+  {
+    "bag_file": "MOBILE_static_P1_xy_pilot_20261010_073610.bag",
+    "child_frame_ids": {},
+    "classification": "early mobile fixed-height XY pilot; large systematic residual",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 29.78183627128601,
+    "header_frame_ids": {
+      "/lab/mobile/uwb/ranges": [
+        "lab/mobile/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "relative_path": "20261010/MOBILE_static_P1_xy_pilot_20261010_073610.bag",
+    "sha256": "02a4f46b0ec3301f5d2ab2ec3bf6b6d1ae46749371122b05cad16af612572f5a",
+    "size_bytes": 306451,
+    "tag_id_counts": {
+      "node_0": 1490
+    },
+    "timing": {
+      "/lab/mobile/uwb/ranges": {
+        "bag_minus_header_median_s": 0.00032782554626464844,
+        "bag_minus_header_p95_s": 0.00446321964263916,
+        "header_max_gap_s": 0.21030807495117188,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/lab/mobile/uwb/ranges": 1490
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3|node_8": 1489,
+      "node_10|node_3|node_8": 1
+    }
+  },
+  {
+    "bag_file": "WALL_N10_N2_N3_N8_static_20261010_064512.bag",
+    "child_frame_ids": {},
+    "classification": "wall static node_10; preliminary survey diagnostic",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 59.760727882385254,
+    "header_frame_ids": {
+      "/lab/n10/uwb/ranges": [
+        "lab/n10/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "relative_path": "20261010/WALL_N10_N2_N3_N8_static_20261010_064512.bag",
+    "sha256": "e3e1ddda23ba6b9ba9c234fbd072001fd488a8e786a21dd4874e185f824e3c56",
+    "size_bytes": 532969,
+    "tag_id_counts": {
+      "node_10": 2989
+    },
+    "timing": {
+      "/lab/n10/uwb/ranges": {
+        "bag_minus_header_median_s": 0.0003323554992675781,
+        "bag_minus_header_p95_s": 0.0006591796874999997,
+        "header_max_gap_s": 0.04154491424560547,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/lab/n10/uwb/ranges": 2989
+    },
+    "usable_anchor_combinations": {
+      "node_2|node_3|node_8": 2986,
+      "node_2|node_8": 3
+    }
+  },
+  {
+    "bag_file": "WALL_N3_N2_N8_N10_static_20261010_070846.bag",
+    "child_frame_ids": {},
+    "classification": "wall static node_3; preliminary survey diagnostic",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 59.779999017715454,
+    "header_frame_ids": {
+      "/lab/n3/uwb/ranges": [
+        "lab/n3/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "relative_path": "20261010/WALL_N3_N2_N8_N10_static_20261010_070846.bag",
+    "sha256": "41a9b150503eac1877589b05ec3eb505698a12db2b209c69b95001861c3f060d",
+    "size_bytes": 530173,
+    "tag_id_counts": {
+      "node_3": 2990
+    },
+    "timing": {
+      "/lab/n3/uwb/ranges": {
+        "bag_minus_header_median_s": 0.0002911090850830078,
+        "bag_minus_header_p95_s": 0.0005123615264892578,
+        "header_max_gap_s": 0.09700703620910645,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/lab/n3/uwb/ranges": 2990
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_8": 2988,
+      "node_10|node_8": 2
+    }
+  },
+  {
+    "bag_file": "WALL_N8_N2_N3_N10_static_20261010_061958.bag",
+    "child_frame_ids": {},
+    "classification": "wall static node_8; preliminary survey diagnostic",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 59.78227782249451,
+    "header_frame_ids": {
+      "/lab/uwb/ranges": [
+        "lab/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "relative_path": "20261010/WALL_N8_N2_N3_N10_static_20261010_061958.bag",
+    "sha256": "5aeb1d79105e9c9f9c8eb5a882529e40c1ac828cd857573c5601cfeefa5820eb",
+    "size_bytes": 521011,
+    "tag_id_counts": {
+      "node_8": 2990
+    },
+    "timing": {
+      "/lab/uwb/ranges": {
+        "bag_minus_header_median_s": 0.0003638267517089844,
+        "bag_minus_header_p95_s": 0.0012544631958007805,
+        "header_max_gap_s": 0.10834097862243652,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/lab/uwb/ranges": 2990
+    },
+    "usable_anchor_combinations": {
+      "node_10": 1,
+      "node_10|node_2": 1,
+      "node_10|node_2|node_3": 2981,
+      "node_10|node_3": 3,
+      "node_2|node_3": 4
+    }
+  },
+  {
+    "bag_file": "CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083053.bag",
+    "child_frame_ids": {
+      "/car2/odom": [
+        "base_footprint"
+      ]
+    },
+    "classification": "earlier L retry; reference coordinates unverified; not primary evaluation",
+    "command_counts": {
+      "angular_nonzero": 111,
+      "translation_nonzero": 1431
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 119.99124002456665,
+    "header_frame_ids": {
+      "/car2/imu": [
+        "gyro_link"
+      ],
+      "/car2/odom": [
+        "car2/odom_combined"
+      ],
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "odom": {
+      "local_delta_xy_m": [
+        -0.5739248394966125,
+        0.7266943454742432
+      ],
+      "net_displacement_m": 0.9259991323621481,
+      "path_m": 2.167518840211568,
+      "yaw_change_deg": -120.77942354625105
+    },
+    "relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083053.bag",
+    "sha256": "971496691f7e0a019f49673f4841080f3a5eb416803e76a944b38308afc6dc5a",
+    "size_bytes": 4108869,
+    "tag_id_counts": {
+      "node_0": 5990
+    },
+    "timing": {
+      "/car2/imu": {
+        "bag_minus_header_median_s": 0.013888359069824219,
+        "bag_minus_header_p95_s": 0.09421777725219727,
+        "header_max_gap_s": 0.06047654151916504,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      },
+      "/car2/odom": {
+        "bag_minus_header_median_s": 0.03519713878631592,
+        "bag_minus_header_p95_s": 0.09296975135803226,
+        "header_max_gap_s": 0.06048130989074707,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      },
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": 0.03040778636932373,
+        "bag_minus_header_p95_s": 0.10898610353469887,
+        "header_max_gap_s": 0.03000664710998535,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/car2/PowerVoltage": 200,
+      "/car2/cmd_vel": 2188,
+      "/car2/imu": 2401,
+      "/car2/odom": 2398,
+      "/car2/uwb/ranges": 5990
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2": 7,
+      "node_10|node_2|node_3": 5979,
+      "node_10|node_3": 1,
+      "node_2|node_3": 3
+    },
+    "voltage": {
+      "first_v": 10.267000198364258,
+      "last_v": 10.253999710083008,
+      "min_v": 10.17199993133545
+    }
+  },
+  {
+    "bag_file": "CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083512.bag",
+    "child_frame_ids": {
+      "/car2/odom": [
+        "base_footprint"
+      ]
+    },
+    "classification": "keyboard L evaluation candidate; measured end [3.17,2.60,0.20] m",
+    "command_counts": {
+      "angular_nonzero": 102,
+      "translation_nonzero": 1492
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 119.9922730922699,
+    "header_frame_ids": {
+      "/car2/imu": [
+        "gyro_link"
+      ],
+      "/car2/odom": [
+        "car2/odom_combined"
+      ],
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "odom": {
+      "local_delta_xy_m": [
+        -1.0172069668769836,
+        0.7956046462059021
+      ],
+      "net_displacement_m": 1.291393343070767,
+      "path_m": 2.227046657527504,
+      "yaw_change_deg": -112.19679737296251
+    },
+    "relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083512.bag",
+    "sha256": "4b0b7276e9dbb6f50f016eca4f621cd8d0ee0fca60b5b7b91721d0d217d15407",
+    "size_bytes": 4115870,
+    "tag_id_counts": {
+      "node_0": 5991
+    },
+    "timing": {
+      "/car2/imu": {
+        "bag_minus_header_median_s": 0.007658123970031738,
+        "bag_minus_header_p95_s": 0.08808450698852538,
+        "header_max_gap_s": 0.05656266212463379,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      },
+      "/car2/odom": {
+        "bag_minus_header_median_s": 0.02818894386291504,
+        "bag_minus_header_p95_s": 0.07895073890686029,
+        "header_max_gap_s": 0.056575775146484375,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      },
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": 0.02505779266357422,
+        "bag_minus_header_p95_s": 0.0974956750869751,
+        "header_max_gap_s": 0.03201866149902344,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/car2/PowerVoltage": 201,
+      "/car2/cmd_vel": 2240,
+      "/car2/imu": 2402,
+      "/car2/odom": 2399,
+      "/car2/uwb/ranges": 5991
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2": 4,
+      "node_10|node_2|node_3": 5981,
+      "node_10|node_3": 3,
+      "node_2|node_3": 3
+    },
+    "voltage": {
+      "first_v": 10.241000175476074,
+      "last_v": 10.196000099182129,
+      "min_v": 10.107999801635742
+    }
+  },
+  {
+    "bag_file": "CAR2_WALL_UWB_ODOM_IMU_key_Lshape_20261011_054551.bag",
+    "child_frame_ids": {
+      "/car2/odom": [
+        "base_footprint"
+      ]
+    },
+    "classification": "aborted low-battery motion; commands present but Odom path zero",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 349
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 28.33162569999695,
+    "header_frame_ids": {
+      "/car2/imu": [
+        "gyro_link"
+      ],
+      "/car2/odom": [
+        "car2/odom_combined"
+      ],
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "odom": {
+      "local_delta_xy_m": [
+        0.0,
+        0.0
+      ],
+      "net_displacement_m": 0.0,
+      "path_m": 0.0,
+      "yaw_change_deg": 0.0
+    },
+    "relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_key_Lshape_20261011_054551.bag",
+    "sha256": "6a491c1f13421102dd0e45e3d744301b4d21f9cb0cc3a5647fbe6ef6a3f7f920",
+    "size_bytes": 1013757,
+    "tag_id_counts": {
+      "node_0": 1410
+    },
+    "timing": {
+      "/car2/imu": {
+        "bag_minus_header_median_s": 0.020337939262390137,
+        "bag_minus_header_p95_s": 0.042290687561035156,
+        "header_max_gap_s": 0.050356149673461914,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      },
+      "/car2/odom": {
+        "bag_minus_header_median_s": 0.03149676322937012,
+        "bag_minus_header_p95_s": 0.07188787460327149,
+        "header_max_gap_s": 0.05031228065490723,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      },
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": 0.01813805103302002,
+        "bag_minus_header_p95_s": 0.04760596752166747,
+        "header_max_gap_s": 0.02100086212158203,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/car2/PowerVoltage": 48,
+      "/car2/cmd_vel": 504,
+      "/car2/imu": 566,
+      "/car2/odom": 564,
+      "/car2/uwb/ranges": 1410
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3|node_8": 1409,
+      "node_10|node_2|node_8": 1
+    },
+    "voltage": {
+      "first_v": 9.979999542236328,
+      "last_v": 9.968000411987305,
+      "min_v": 9.968000411987305
+    }
+  },
+  {
+    "bag_file": "CAR2_WALL_UWB_ODOM_IMU_key_Lshape_20261011_073901.bag",
+    "child_frame_ids": {
+      "/car2/odom": [
+        "base_footprint"
+      ]
+    },
+    "classification": "earlier failed L attempt; Odom path only 0.023 m, yaw -0.8 deg; exclude from trajectory evaluation",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 104
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 109.9789867401123,
+    "header_frame_ids": {
+      "/car2/imu": [
+        "gyro_link"
+      ],
+      "/car2/odom": [
+        "car2/odom_combined"
+      ],
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "odom": {
+      "local_delta_xy_m": [
+        -0.011723494113539346,
+        0.00558697828091681
+      ],
+      "net_displacement_m": 0.01298671015082834,
+      "path_m": 0.023220018885683865,
+      "yaw_change_deg": -0.7990964078004816
+    },
+    "relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_key_Lshape_20261011_073901.bag",
+    "sha256": "0a6d693aa128b057696f8dd7828bc41ad0b69a7ca66d796d22e50de6354549fb",
+    "size_bytes": 3674873,
+    "tag_id_counts": {
+      "node_0": 5485
+    },
+    "timing": {
+      "/car2/imu": {
+        "bag_minus_header_median_s": -0.018279075622558594,
+        "bag_minus_header_p95_s": -0.015329504013061523,
+        "header_max_gap_s": 0.05042910575866699,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 2198
+      },
+      "/car2/odom": {
+        "bag_minus_header_median_s": 0.0012845993041992188,
+        "bag_minus_header_p95_s": 0.03290634155273438,
+        "header_max_gap_s": 0.05036568641662598,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 985
+      },
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": -0.010514020919799805,
+        "bag_minus_header_p95_s": 0.006927394866943364,
+        "header_max_gap_s": 0.02140331268310547,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 4840
+      }
+    },
+    "topic_counts": {
+      "/car2/PowerVoltage": 184,
+      "/car2/cmd_vel": 1151,
+      "/car2/imu": 2199,
+      "/car2/odom": 2197,
+      "/car2/uwb/ranges": 5485
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2": 5,
+      "node_10|node_2|node_3": 5473,
+      "node_10|node_3": 3,
+      "node_2|node_3": 4
+    },
+    "voltage": {
+      "first_v": 9.934000015258789,
+      "last_v": 9.98799991607666,
+      "min_v": 9.87399959564209
+    }
+  },
+  {
+    "bag_file": "CAR2_WALL_UWB_ODOM_IMU_key_forward_20261011_045550.bag",
+    "child_frame_ids": {
+      "/car2/odom": [
+        "base_footprint"
+      ]
+    },
+    "classification": "straight pilot; manual displacement 1.020 m; exclude late turn for 1D",
+    "command_counts": {
+      "angular_nonzero": 5,
+      "translation_nonzero": 726
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 49.98310399055481,
+    "header_frame_ids": {
+      "/car2/imu": [
+        "gyro_link"
+      ],
+      "/car2/odom": [
+        "car2/odom_combined"
+      ],
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "odom": {
+      "local_delta_xy_m": [
+        0.9986719489097595,
+        0.08828034996986389
+      ],
+      "net_displacement_m": 1.0025662480504811,
+      "path_m": 1.004613954447255,
+      "yaw_change_deg": -1.4536614770909975
+    },
+    "relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_key_forward_20261011_045550.bag",
+    "sha256": "f20548a7f34637b5275ec31d0ca42d275a0d13084ee959d11ca49c420dc8e9ba",
+    "size_bytes": 1784269,
+    "tag_id_counts": {
+      "node_0": 2486
+    },
+    "timing": {
+      "/car2/imu": {
+        "bag_minus_header_median_s": 0.048987627029418945,
+        "bag_minus_header_p95_s": 0.07948431968688964,
+        "header_max_gap_s": 0.05146002769470215,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      },
+      "/car2/odom": {
+        "bag_minus_header_median_s": 0.06931018829345703,
+        "bag_minus_header_p95_s": 0.10097894668579102,
+        "header_max_gap_s": 0.05145740509033203,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      },
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": 0.05036664009094238,
+        "bag_minus_header_p95_s": 0.08069974184036255,
+        "header_max_gap_s": 0.021038293838500977,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/car2/PowerVoltage": 84,
+      "/car2/cmd_vel": 989,
+      "/car2/imu": 1000,
+      "/car2/odom": 997,
+      "/car2/uwb/ranges": 2486
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3|node_8": 2486
+    },
+    "voltage": {
+      "first_v": 10.5,
+      "last_v": 10.473999977111816,
+      "min_v": 10.456999778747559
+    }
+  },
+  {
+    "bag_file": "CAR2_WALL_UWB_ODOM_IMU_key_forward_repeat_20261011_051810.bag",
+    "child_frame_ids": {
+      "/car2/odom": [
+        "base_footprint"
+      ]
+    },
+    "classification": "straight repeat; manual displacement 1.010 m",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 738
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 49.91630554199219,
+    "header_frame_ids": {
+      "/car2/imu": [
+        "gyro_link"
+      ],
+      "/car2/odom": [
+        "car2/odom_combined"
+      ],
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "odom": {
+      "local_delta_xy_m": [
+        1.0021218061447144,
+        0.07417944073677063
+      ],
+      "net_displacement_m": 1.0048635249519033,
+      "path_m": 1.0067503795480186,
+      "yaw_change_deg": -1.2821515850505691
+    },
+    "relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_key_forward_repeat_20261011_051810.bag",
+    "sha256": "71475c6894d0aaa8fee9b0d2213d119a24ddf820b0017bf0acec74cadf0097bb",
+    "size_bytes": 1785389,
+    "tag_id_counts": {
+      "node_0": 2489
+    },
+    "timing": {
+      "/car2/imu": {
+        "bag_minus_header_median_s": 0.030058860778808594,
+        "bag_minus_header_p95_s": 0.05189069509506225,
+        "header_max_gap_s": 0.05037736892700195,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      },
+      "/car2/odom": {
+        "bag_minus_header_median_s": 0.050101518630981445,
+        "bag_minus_header_p95_s": 0.08439846038818359,
+        "header_max_gap_s": 0.05034017562866211,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      },
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": 0.02985692024230957,
+        "bag_minus_header_p95_s": 0.05885944366455077,
+        "header_max_gap_s": 0.02101588249206543,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/car2/PowerVoltage": 83,
+      "/car2/cmd_vel": 1002,
+      "/car2/imu": 998,
+      "/car2/odom": 997,
+      "/car2/uwb/ranges": 2489
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3|node_8": 2488,
+      "node_2|node_3|node_8": 1
+    },
+    "voltage": {
+      "first_v": 10.288999557495117,
+      "last_v": 10.265999794006348,
+      "min_v": 10.246999740600586
+    }
+  },
+  {
+    "bag_file": "CAR2_WALL_UWB_ODOM_IMU_key_return_20261011_052421.bag",
+    "child_frame_ids": {
+      "/car2/odom": [
+        "base_footprint"
+      ]
+    },
+    "classification": "reverse pilot; reference 0.950 m inferred from prior endpoint and remaining 0.060 m",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 690
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 49.990246295928955,
+    "header_frame_ids": {
+      "/car2/imu": [
+        "gyro_link"
+      ],
+      "/car2/odom": [
+        "car2/odom_combined"
+      ],
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "odom": {
+      "local_delta_xy_m": [
+        -0.9377225637435913,
+        -0.057246431708335876
+      ],
+      "net_displacement_m": 0.9394683392734375,
+      "path_m": 0.9404280924103974,
+      "yaw_change_deg": 1.1614711070397294
+    },
+    "relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_key_return_20261011_052421.bag",
+    "sha256": "6484f1cba99cde9e1808751e760c8bbc965080940f32a91941030e416d55ff76",
+    "size_bytes": 1781848,
+    "tag_id_counts": {
+      "node_0": 2491
+    },
+    "timing": {
+      "/car2/imu": {
+        "bag_minus_header_median_s": 0.017038822174072266,
+        "bag_minus_header_p95_s": 0.045622396469116214,
+        "header_max_gap_s": 0.05054473876953125,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      },
+      "/car2/odom": {
+        "bag_minus_header_median_s": 0.03756582736968994,
+        "bag_minus_header_p95_s": 0.07473117113113403,
+        "header_max_gap_s": 0.05054068565368652,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      },
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": 0.022490739822387695,
+        "bag_minus_header_p95_s": 0.05231285095214844,
+        "header_max_gap_s": 0.02146625518798828,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/car2/PowerVoltage": 83,
+      "/car2/cmd_vel": 969,
+      "/car2/imu": 999,
+      "/car2/odom": 996,
+      "/car2/uwb/ranges": 2491
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3|node_8": 2489,
+      "node_10|node_2|node_8": 1,
+      "node_2|node_3|node_8": 1
+    },
+    "voltage": {
+      "first_v": 10.234999656677246,
+      "last_v": 10.206999778747559,
+      "min_v": 10.192999839782715
+    }
+  },
+  {
+    "bag_file": "CAR2_WALL_UWB_ODOM_IMU_manual_roll_20261011_042840.bag",
+    "child_frame_ids": {
+      "/car2/odom": [
+        "base_footprint"
+      ]
+    },
+    "classification": "unstructured manual back-and-forth; interface/motion diagnostic",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 49.880632162094116,
+    "header_frame_ids": {
+      "/car2/imu": [
+        "gyro_link"
+      ],
+      "/car2/odom": [
+        "car2/odom_combined"
+      ],
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "odom": {
+      "local_delta_xy_m": [
+        0.01758665218949318,
+        -0.007413038983941078
+      ],
+      "net_displacement_m": 0.019085163929388593,
+      "path_m": 2.065749703994511,
+      "yaw_change_deg": 0.2206492611372619
+    },
+    "relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_manual_roll_20261011_042840.bag",
+    "sha256": "06638ce3d045d08e9f8c15d06ce3a6e51354c1b375a2525fca5d40dae1e3f97a",
+    "size_bytes": 1676790,
+    "tag_id_counts": {
+      "node_0": 2491
+    },
+    "timing": {
+      "/car2/imu": {
+        "bag_minus_header_median_s": 0.03857231140136719,
+        "bag_minus_header_p95_s": 0.06283226013183589,
+        "header_max_gap_s": 0.050209760665893555,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      },
+      "/car2/odom": {
+        "bag_minus_header_median_s": 0.05798053741455078,
+        "bag_minus_header_p95_s": 0.09512615203857422,
+        "header_max_gap_s": 0.050211191177368164,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      },
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": 0.03331494331359863,
+        "bag_minus_header_p95_s": 0.06412899494171143,
+        "header_max_gap_s": 0.021051883697509766,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/car2/PowerVoltage": 83,
+      "/car2/imu": 998,
+      "/car2/odom": 996,
+      "/car2/uwb/ranges": 2491
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3": 2,
+      "node_10|node_2|node_3|node_8": 2484,
+      "node_10|node_2|node_8": 3,
+      "node_10|node_3|node_8": 1,
+      "node_2|node_3|node_8": 1
+    },
+    "voltage": {
+      "first_v": 11.053000450134277,
+      "last_v": 10.946999549865723,
+      "min_v": 10.9399995803833
+    }
+  },
+  {
+    "bag_file": "CAR2_WALL_UWB_ODOM_IMU_oneway_20261011_043326.bag",
+    "child_frame_ids": {
+      "/car2/odom": [
+        "base_footprint"
+      ]
+    },
+    "classification": "actually manual back-and-forth; filename is not motion ground truth",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 39.98138642311096,
+    "header_frame_ids": {
+      "/car2/imu": [
+        "gyro_link"
+      ],
+      "/car2/odom": [
+        "car2/odom_combined"
+      ],
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "odom": {
+      "local_delta_xy_m": [
+        0.04939745366573334,
+        -0.01630057906731963
+      ],
+      "net_displacement_m": 0.05201747116679367,
+      "path_m": 0.9197964780538284,
+      "yaw_change_deg": 1.7570986073843378
+    },
+    "relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_oneway_20261011_043326.bag",
+    "sha256": "1e00de7909394c1fa6ad5630e9e06b024053aeb6aa5ecfbb4c7ce75e25ca3386",
+    "size_bytes": 1346148,
+    "tag_id_counts": {
+      "node_0": 1989
+    },
+    "timing": {
+      "/car2/imu": {
+        "bag_minus_header_median_s": 0.03854775428771973,
+        "bag_minus_header_p95_s": 0.06726089715957641,
+        "header_max_gap_s": 0.050299882888793945,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      },
+      "/car2/odom": {
+        "bag_minus_header_median_s": 0.05756092071533203,
+        "bag_minus_header_p95_s": 0.09122251272201537,
+        "header_max_gap_s": 0.0502777099609375,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      },
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": 0.03743290901184082,
+        "bag_minus_header_p95_s": 0.07447853088378906,
+        "header_max_gap_s": 0.021031618118286133,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/car2/PowerVoltage": 67,
+      "/car2/imu": 800,
+      "/car2/odom": 798,
+      "/car2/uwb/ranges": 1989
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3|node_8": 1987,
+      "node_10|node_2|node_8": 2
+    },
+    "voltage": {
+      "first_v": 10.956999778747559,
+      "last_v": 10.977999687194824,
+      "min_v": 10.878999710083008
+    }
+  },
+  {
+    "bag_file": "CAR2_WALL_UWB_ODOM_IMU_static_20261011_042319.bag",
+    "child_frame_ids": {
+      "/car2/odom": [
+        "base_footprint"
+      ]
+    },
+    "classification": "independent mounted static calibration source; [2,2,0.2] m",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 29.88395094871521,
+    "header_frame_ids": {
+      "/car2/imu": [
+        "gyro_link"
+      ],
+      "/car2/odom": [
+        "car2/odom_combined"
+      ],
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "odom": {
+      "local_delta_xy_m": [
+        0.0,
+        0.0
+      ],
+      "net_displacement_m": 0.0,
+      "path_m": 0.0,
+      "yaw_change_deg": 0.0
+    },
+    "relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_static_20261011_042319.bag",
+    "sha256": "4be35bcb4052042b812c6c1e4a7a4f3c4e77e5c229f2e9ac794f9ae35caed029",
+    "size_bytes": 1013827,
+    "tag_id_counts": {
+      "node_0": 1491
+    },
+    "timing": {
+      "/car2/imu": {
+        "bag_minus_header_median_s": 0.023741960525512695,
+        "bag_minus_header_p95_s": 0.0472550392150879,
+        "header_max_gap_s": 0.05050516128540039,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      },
+      "/car2/odom": {
+        "bag_minus_header_median_s": 0.042792320251464844,
+        "bag_minus_header_p95_s": 0.0752892255783081,
+        "header_max_gap_s": 0.05032014846801758,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      },
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": 0.021605730056762695,
+        "bag_minus_header_p95_s": 0.05972146987915039,
+        "header_max_gap_s": 0.0210418701171875,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/car2/PowerVoltage": 50,
+      "/car2/imu": 599,
+      "/car2/odom": 598,
+      "/car2/uwb/ranges": 1491
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3": 1,
+      "node_10|node_2|node_3|node_8": 1490
+    },
+    "voltage": {
+      "first_v": 11.157999992370605,
+      "last_v": 11.145999908447266,
+      "min_v": 11.145000457763672
+    }
+  },
+  {
+    "bag_file": "CAR2_auto_Lshape_20261011_091958.bag",
+    "child_frame_ids": {
+      "/car2/odom": [
+        "base_footprint"
+      ]
+    },
+    "classification": "automatic L evaluation candidate; measured end [2.95,3.11,0.20] m",
+    "command_counts": {
+      "angular_nonzero": 1065,
+      "translation_nonzero": 966
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 178.5632734298706,
+    "header_frame_ids": {
+      "/car2/imu": [
+        "gyro_link"
+      ],
+      "/car2/odom": [
+        "car2/odom_combined"
+      ],
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "odom": {
+      "local_delta_xy_m": [
+        -1.0941208663862199,
+        -0.915252169012092
+      ],
+      "net_displacement_m": 1.4264596044554052,
+      "path_m": 2.133644467184727,
+      "yaw_change_deg": -88.089134140762
+    },
+    "relative_path": "20261011/CAR2_auto_Lshape_20261011_091958.bag",
+    "sha256": "ba9286da5ef369d9e785883f9d909f3f4e54d4a8827aed2e9b2c1b59ef8e435f",
+    "size_bytes": 5939705,
+    "tag_id_counts": {
+      "node_0": 8922
+    },
+    "timing": {
+      "/car2/imu": {
+        "bag_minus_header_median_s": -0.015623927116394043,
+        "bag_minus_header_p95_s": 0.011518323421478266,
+        "header_max_gap_s": 0.0506284236907959,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 3167
+      },
+      "/car2/odom": {
+        "bag_minus_header_median_s": 0.005349874496459961,
+        "bag_minus_header_p95_s": 0.039032649993896475,
+        "header_max_gap_s": 0.05062460899353027,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 1488
+      },
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": -0.013639569282531738,
+        "bag_minus_header_p95_s": 0.014949357509613011,
+        "header_max_gap_s": 0.022788524627685547,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 7025
+      }
+    },
+    "topic_counts": {
+      "/car2/PowerVoltage": 298,
+      "/car2/cmd_vel": 1695,
+      "/car2/imu": 3572,
+      "/car2/odom": 3569,
+      "/car2/uwb/ranges": 8922
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2": 1,
+      "node_10|node_2|node_3": 8913,
+      "node_10|node_3": 6,
+      "node_2|node_3": 2
+    },
+    "voltage": {
+      "first_v": 10.281000137329102,
+      "last_v": 10.234000205993652,
+      "min_v": 10.159000396728516
+    }
+  },
+  {
+    "bag_file": "CAR2_auto_turn90_20261011_091414.bag",
+    "child_frame_ids": {
+      "/car2/odom": [
+        "base_footprint"
+      ]
+    },
+    "classification": "initial automatic-turn recording; Odom path/yaw zero; exclude from angle evaluation",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 42.52901482582092,
+    "header_frame_ids": {
+      "/car2/imu": [
+        "gyro_link"
+      ],
+      "/car2/odom": [
+        "car2/odom_combined"
+      ],
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "odom": {
+      "local_delta_xy_m": [
+        0.0,
+        0.0
+      ],
+      "net_displacement_m": 0.0,
+      "path_m": 0.0,
+      "yaw_change_deg": 0.0
+    },
+    "relative_path": "20261011/CAR2_auto_turn90_20261011_091414.bag",
+    "sha256": "81564be5041759a0c504a7756aec3dce9c002d897f7549595c960a6e2776254f",
+    "size_bytes": 1426284,
+    "tag_id_counts": {
+      "node_0": 2116
+    },
+    "timing": {
+      "/car2/imu": {
+        "bag_minus_header_median_s": -0.015397071838378906,
+        "bag_minus_header_p95_s": 0.00825176239013667,
+        "header_max_gap_s": 0.05032706260681152,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 778
+      },
+      "/car2/odom": {
+        "bag_minus_header_median_s": 0.003144502639770508,
+        "bag_minus_header_p95_s": 0.0354034423828125,
+        "header_max_gap_s": 0.05029606819152832,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 400
+      },
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": -0.011382818222045898,
+        "bag_minus_header_p95_s": 0.011426031589508057,
+        "header_max_gap_s": 0.0233614444732666,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 1912
+      }
+    },
+    "topic_counts": {
+      "/car2/PowerVoltage": 71,
+      "/car2/cmd_vel": 387,
+      "/car2/imu": 849,
+      "/car2/odom": 849,
+      "/car2/uwb/ranges": 2116
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3": 2114,
+      "node_10|node_3": 2
+    },
+    "voltage": {
+      "first_v": 10.33899974822998,
+      "last_v": 10.32800006866455,
+      "min_v": 10.314000129699707
+    }
+  },
+  {
+    "bag_file": "CAR2_auto_turn90_20261011_091508.bag",
+    "child_frame_ids": {
+      "/car2/odom": [
+        "base_footprint"
+      ]
+    },
+    "classification": "automatic turn 0.15 rad/s; stalled/no substantial rotation; controller aborted",
+    "command_counts": {
+      "angular_nonzero": 100,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 48.473068714141846,
+    "header_frame_ids": {
+      "/car2/imu": [
+        "gyro_link"
+      ],
+      "/car2/odom": [
+        "car2/odom_combined"
+      ],
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "odom": {
+      "local_delta_xy_m": [
+        -0.0012990117102162912,
+        1.766253262758255e-06
+      ],
+      "net_displacement_m": 0.0012990129109942065,
+      "path_m": 0.0016009280415419198,
+      "yaw_change_deg": -0.6215474279145718
+    },
+    "relative_path": "20261011/CAR2_auto_turn90_20261011_091508.bag",
+    "sha256": "a97bd12be1d17af9e56ecb66e94b4ee6250c76d0ac4ff46fb6b29aae829e5f78",
+    "size_bytes": 1599264,
+    "tag_id_counts": {
+      "node_0": 2414
+    },
+    "timing": {
+      "/car2/imu": {
+        "bag_minus_header_median_s": -0.0023001432418823242,
+        "bag_minus_header_p95_s": 0.017919063568115234,
+        "header_max_gap_s": 0.05033588409423828,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 700
+      },
+      "/car2/odom": {
+        "bag_minus_header_median_s": 0.017490506172180176,
+        "bag_minus_header_p95_s": 0.0473204493522644,
+        "header_max_gap_s": 0.050272464752197266,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 176
+      },
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": -0.00010800361633300781,
+        "bag_minus_header_p95_s": 0.02007868289947509,
+        "header_max_gap_s": 0.02158975601196289,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 1247
+      }
+    },
+    "topic_counts": {
+      "/car2/PowerVoltage": 81,
+      "/car2/cmd_vel": 207,
+      "/car2/imu": 970,
+      "/car2/odom": 968,
+      "/car2/uwb/ranges": 2414
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3": 2412,
+      "node_10|node_3": 1,
+      "node_2|node_3": 1
+    },
+    "voltage": {
+      "first_v": 10.331000328063965,
+      "last_v": 10.222000122070312,
+      "min_v": 10.164999961853027
+    }
+  },
+  {
+    "bag_file": "CAR2_auto_turn90_w0p20_20261011_091734.bag",
+    "child_frame_ids": {
+      "/car2/odom": [
+        "base_footprint"
+      ]
+    },
+    "classification": "automatic turn 0.20 rad/s; completed per Odom; no independent physical angle truth",
+    "command_counts": {
+      "angular_nonzero": 281,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 59.92174220085144,
+    "header_frame_ids": {
+      "/car2/imu": [
+        "gyro_link"
+      ],
+      "/car2/odom": [
+        "car2/odom_combined"
+      ],
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "odom": {
+      "local_delta_xy_m": [
+        0.005536945885978639,
+        -0.0014370028948178515
+      ],
+      "net_displacement_m": 0.005720379975488575,
+      "path_m": 0.07941022591591244,
+      "yaw_change_deg": -97.61075353688535
+    },
+    "relative_path": "20261011/CAR2_auto_turn90_w0p20_20261011_091734.bag",
+    "sha256": "09d8feb868bf7970fac55ccc1f0a372c5e3b6efa699c69beef876947ecf90364",
+    "size_bytes": 2021425,
+    "tag_id_counts": {
+      "node_0": 2991
+    },
+    "timing": {
+      "/car2/imu": {
+        "bag_minus_header_median_s": -0.011456966400146484,
+        "bag_minus_header_p95_s": 0.007676458358764591,
+        "header_max_gap_s": 0.05041790008544922,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 1086
+      },
+      "/car2/odom": {
+        "bag_minus_header_median_s": 0.010345458984375,
+        "bag_minus_header_p95_s": 0.039461493492126465,
+        "header_max_gap_s": 0.05036449432373047,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 401
+      },
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": -0.004916667938232422,
+        "bag_minus_header_p95_s": 0.012137770652770996,
+        "header_max_gap_s": 0.02101922035217285,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 2639
+      }
+    },
+    "topic_counts": {
+      "/car2/PowerVoltage": 100,
+      "/car2/cmd_vel": 693,
+      "/car2/imu": 1199,
+      "/car2/odom": 1199,
+      "/car2/uwb/ranges": 2991
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3": 2987,
+      "node_10|node_3": 3,
+      "node_2|node_3": 1
+    },
+    "voltage": {
+      "first_v": 10.303999900817871,
+      "last_v": 10.277999877929688,
+      "min_v": 10.170999526977539
+    }
+  },
+  {
+    "bag_file": "MOBILE_P1_h0p20_clear_A_20261011_014350.bag",
+    "child_frame_ids": {},
+    "classification": "low-height clear A; person reportedly outside paths",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 29.7597234249115,
+    "header_frame_ids": {
+      "/lab/mobile/uwb/ranges": [
+        "lab/mobile/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "relative_path": "20261011/MOBILE_P1_h0p20_clear_A_20261011_014350.bag",
+    "sha256": "4631d79c8b0aef451aaf0c6f501695810be05e8c08d4660c8a1cb7aece3075a9",
+    "size_bytes": 306272,
+    "tag_id_counts": {
+      "node_0": 1489
+    },
+    "timing": {
+      "/lab/mobile/uwb/ranges": {
+        "bag_minus_header_median_s": 0.0002448558807373047,
+        "bag_minus_header_p95_s": 0.000509357452392578,
+        "header_max_gap_s": 0.15067291259765625,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/lab/mobile/uwb/ranges": 1489
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3|node_8": 1489
+    }
+  },
+  {
+    "bag_file": "MOBILE_P1_h0p20_clear_C_20261011_014758.bag",
+    "child_frame_ids": {},
+    "classification": "low-height clear C; node_2 failed to return to A baseline",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 29.77705955505371,
+    "header_frame_ids": {
+      "/lab/mobile/uwb/ranges": [
+        "lab/mobile/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "relative_path": "20261011/MOBILE_P1_h0p20_clear_C_20261011_014758.bag",
+    "sha256": "c14115c76d2677612b154609b1422e32ae5cf9ae365416953ce9740c5f604e5d",
+    "size_bytes": 306473,
+    "tag_id_counts": {
+      "node_0": 1490
+    },
+    "timing": {
+      "/lab/mobile/uwb/ranges": {
+        "bag_minus_header_median_s": 0.0002510547637939453,
+        "bag_minus_header_p95_s": 0.0005985021591186523,
+        "header_max_gap_s": 0.11423015594482422,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/lab/mobile/uwb/ranges": 1490
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3|node_8": 1490
+    }
+  },
+  {
+    "bag_file": "MOBILE_P1_h0p20_human_B_20261011_014654.bag",
+    "child_frame_ids": {},
+    "classification": "low-height human obstruction B on node_10 path",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 29.757235288619995,
+    "header_frame_ids": {
+      "/lab/mobile/uwb/ranges": [
+        "lab/mobile/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "relative_path": "20261011/MOBILE_P1_h0p20_human_B_20261011_014654.bag",
+    "sha256": "fd4ce42d95c68d62b61c8bd958b4626939135949d4404e3549bb05cf0e38fe1a",
+    "size_bytes": 306228,
+    "tag_id_counts": {
+      "node_0": 1489
+    },
+    "timing": {
+      "/lab/mobile/uwb/ranges": {
+        "bag_minus_header_median_s": 0.00025391578674316406,
+        "bag_minus_header_p95_s": 0.0005786418914794916,
+        "header_max_gap_s": 0.045886993408203125,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/lab/mobile/uwb/ranges": 1489
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3|node_8": 1487,
+      "node_10|node_2|node_8": 1,
+      "node_10|node_3|node_8": 1
+    }
+  },
+  {
+    "bag_file": "MOBILE_P1_h1p00_clear_R1_20261011_020429.bag",
+    "child_frame_ids": {},
+    "classification": "raised P1 repeat 1; [2,2,1] m",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 29.718539714813232,
+    "header_frame_ids": {
+      "/lab/mobile/uwb/ranges": [
+        "lab/mobile/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "relative_path": "20261011/MOBILE_P1_h1p00_clear_R1_20261011_020429.bag",
+    "sha256": "df08eb888b19a82b14e464959badf10d339b252266c3c4dc27d384cda6a8744c",
+    "size_bytes": 305804,
+    "tag_id_counts": {
+      "node_0": 1487
+    },
+    "timing": {
+      "/lab/mobile/uwb/ranges": {
+        "bag_minus_header_median_s": 0.00022935867309570312,
+        "bag_minus_header_p95_s": 0.00043148994445800786,
+        "header_max_gap_s": 0.029970884323120117,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/lab/mobile/uwb/ranges": 1487
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3|node_8": 1484,
+      "node_10|node_2|node_8": 3
+    }
+  },
+  {
+    "bag_file": "MOBILE_P1_h1p00_clear_R2_20261011_020505.bag",
+    "child_frame_ids": {},
+    "classification": "raised P1 repeat 2; [2,2,1] m",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 29.756767511367798,
+    "header_frame_ids": {
+      "/lab/mobile/uwb/ranges": [
+        "lab/mobile/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "relative_path": "20261011/MOBILE_P1_h1p00_clear_R2_20261011_020505.bag",
+    "sha256": "0a0f54a855ec66601c2cf33ecd78995352b81035718987a575e6b1282c29c0a6",
+    "size_bytes": 306228,
+    "tag_id_counts": {
+      "node_0": 1489
+    },
+    "timing": {
+      "/lab/mobile/uwb/ranges": {
+        "bag_minus_header_median_s": 0.00023174285888671875,
+        "bag_minus_header_p95_s": 0.00048193931579589813,
+        "header_max_gap_s": 0.07681608200073242,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/lab/mobile/uwb/ranges": 1489
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3": 1,
+      "node_10|node_2|node_3|node_8": 1487,
+      "node_10|node_3|node_8": 1
+    }
+  },
+  {
+    "bag_file": "MOBILE_P2_raised_LOS_20261011_021656.bag",
+    "child_frame_ids": {},
+    "classification": "raised P2; [1.5,1.5,1] m",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 29.698768138885498,
+    "header_frame_ids": {
+      "/lab/mobile/uwb/ranges": [
+        "lab/mobile/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "relative_path": "20261011/MOBILE_P2_raised_LOS_20261011_021656.bag",
+    "sha256": "39c7556a95fbacc0ff8a38db95689497b21fce2badc4c89939c1c6a90d2010c8",
+    "size_bytes": 305625,
+    "tag_id_counts": {
+      "node_0": 1486
+    },
+    "timing": {
+      "/lab/mobile/uwb/ranges": {
+        "bag_minus_header_median_s": 0.00025665760040283203,
+        "bag_minus_header_p95_s": 0.00047916173934936523,
+        "header_max_gap_s": 0.027603864669799805,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/lab/mobile/uwb/ranges": 1486
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3": 1,
+      "node_10|node_2|node_3|node_8": 1484,
+      "node_10|node_2|node_8": 1
+    }
+  },
+  {
+    "bag_file": "MOBILE_P3_h1p00_clear_20261011_022616.bag",
+    "child_frame_ids": {},
+    "classification": "raised P3; [3.5,1.5,1] m",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 29.738659381866455,
+    "header_frame_ids": {
+      "/lab/mobile/uwb/ranges": [
+        "lab/mobile/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "relative_path": "20261011/MOBILE_P3_h1p00_clear_20261011_022616.bag",
+    "sha256": "9022cfff7bbcdf4a0d036f7b45032d3b7b89d2ebeb2c01c4eb230535dd266331",
+    "size_bytes": 306049,
+    "tag_id_counts": {
+      "node_0": 1488
+    },
+    "timing": {
+      "/lab/mobile/uwb/ranges": {
+        "bag_minus_header_median_s": 0.0002353191375732422,
+        "bag_minus_header_p95_s": 0.0003867149353027344,
+        "header_max_gap_s": 0.02700209617614746,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/lab/mobile/uwb/ranges": 1488
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3": 1,
+      "node_10|node_2|node_3|node_8": 1487
+    }
+  },
+  {
+    "bag_file": "MOBILE_P4_h1p00_clear_20261011_023347.bag",
+    "child_frame_ids": {},
+    "classification": "raised P4; [3.5,4,1] m",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 29.703128337860107,
+    "header_frame_ids": {
+      "/lab/mobile/uwb/ranges": [
+        "lab/mobile/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "relative_path": "20261011/MOBILE_P4_h1p00_clear_20261011_023347.bag",
+    "sha256": "a3d079b916a72f4084f11c9de02e316f971dd2aeba1d686ea33856331c6fe7e1",
+    "size_bytes": 305581,
+    "tag_id_counts": {
+      "node_0": 1486
+    },
+    "timing": {
+      "/lab/mobile/uwb/ranges": {
+        "bag_minus_header_median_s": 0.0002595186233520508,
+        "bag_minus_header_p95_s": 0.00046515464782714844,
+        "header_max_gap_s": 0.053201913833618164,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/lab/mobile/uwb/ranges": 1486
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3": 1,
+      "node_10|node_2|node_3|node_8": 1482,
+      "node_10|node_2|node_8": 2,
+      "node_10|node_3|node_8": 1
+    }
+  },
+  {
+    "bag_file": "MOBILE_P5_raised_LOS_20261011_023837.bag",
+    "child_frame_ids": {},
+    "classification": "raised P5 repeat 1; corrected survey [2.02,4,1] m",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 29.740448713302612,
+    "header_frame_ids": {
+      "/lab/mobile/uwb/ranges": [
+        "lab/mobile/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "relative_path": "20261011/MOBILE_P5_raised_LOS_20261011_023837.bag",
+    "sha256": "2a0e2e85370211725a194c4c12c4b1479372d864285926d35bcd713d16e9d825",
+    "size_bytes": 306026,
+    "tag_id_counts": {
+      "node_0": 1488
+    },
+    "timing": {
+      "/lab/mobile/uwb/ranges": {
+        "bag_minus_header_median_s": 0.0002384185791015625,
+        "bag_minus_header_p95_s": 0.0003875613212585447,
+        "header_max_gap_s": 0.026112079620361328,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/lab/mobile/uwb/ranges": 1488
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3|node_8": 1486,
+      "node_10|node_2|node_8": 1,
+      "node_2|node_3|node_8": 1
+    }
+  },
+  {
+    "bag_file": "MOBILE_P5_raised_LOS_20261011_025440.bag",
+    "child_frame_ids": {},
+    "classification": "raised P5 repeat 2; corrected survey [2.02,4,1] m",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 29.739811897277832,
+    "header_frame_ids": {
+      "/lab/mobile/uwb/ranges": [
+        "lab/mobile/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "relative_path": "20261011/MOBILE_P5_raised_LOS_20261011_025440.bag",
+    "sha256": "95a294f90dfcaf927231c5efd966b9088d531abb8ae18d1687e4feee1f2af14d",
+    "size_bytes": 305895,
+    "tag_id_counts": {
+      "node_0": 1488
+    },
+    "timing": {
+      "/lab/mobile/uwb/ranges": {
+        "bag_minus_header_median_s": 0.00022017955780029297,
+        "bag_minus_header_p95_s": 0.000386691093444824,
+        "header_max_gap_s": 0.02300715446472168,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/lab/mobile/uwb/ranges": 1488
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2": 1,
+      "node_10|node_2|node_3": 1,
+      "node_10|node_2|node_3|node_8": 1481,
+      "node_10|node_2|node_8": 5
+    }
+  }
+]

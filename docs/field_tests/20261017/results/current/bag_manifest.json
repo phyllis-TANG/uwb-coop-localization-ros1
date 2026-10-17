@@ -1,0 +1,327 @@
+[
+  {
+    "bag_file": "CAR2_P15_REINSTALL_STATIC_20261017_055818.bag",
+    "child_frame_ids": {},
+    "classification": "Filename P15; corrected actual position [2,3,0.2]",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 29.699897050857544,
+    "header_frame_ids": {
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "relative_path": "20261017/CAR2_P15_REINSTALL_STATIC_20261017_055818.bag",
+    "sha256": "5ec05b7ab00c33e8be51e93800cf1b81f81a31e653df961d3737f81c9a4e6858",
+    "size_bytes": 296454,
+    "tag_id_counts": {
+      "node_0": 1485
+    },
+    "timing": {
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": 0.008998632431030273,
+        "bag_minus_header_p95_s": 0.01994795799255371,
+        "header_max_gap_s": 0.02101612091064453,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 334
+      }
+    },
+    "topic_counts": {
+      "/car2/uwb/ranges": 1485
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3|node_8": 1481,
+      "node_10|node_2|node_8": 4
+    }
+  },
+  {
+    "bag_file": "CAR2_P1_REINSTALL_STATIC_20261017_045257.bag",
+    "child_frame_ids": {},
+    "classification": "P1 [2,2,0.2] independent calibration source",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 29.700101375579834,
+    "header_frame_ids": {
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "relative_path": "20261017/CAR2_P1_REINSTALL_STATIC_20261017_045257.bag",
+    "sha256": "f7250698ae484b7ace3bf152b1ff216f5470b5d75f0b90a66483edb402d1ec33",
+    "size_bytes": 296715,
+    "tag_id_counts": {
+      "node_0": 1486
+    },
+    "timing": {
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": 0.0034554004669189453,
+        "bag_minus_header_p95_s": 0.006161391735076904,
+        "header_max_gap_s": 0.02101755142211914,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 731
+      }
+    },
+    "topic_counts": {
+      "/car2/uwb/ranges": 1486
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3|node_8": 1485,
+      "node_10|node_2|node_8": 1
+    }
+  },
+  {
+    "bag_file": "CAR2_P23_UWB_ODOM_IMU_static_20261017_060940.bag",
+    "child_frame_ids": {
+      "/car2/odom": [
+        "base_footprint"
+      ]
+    },
+    "classification": "Joint static [2,3,0.2]",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 19.99923610687256,
+    "header_frame_ids": {
+      "/car2/imu": [
+        "gyro_link"
+      ],
+      "/car2/odom": [
+        "car2/odom_combined"
+      ],
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "odom": {
+      "local_delta_xy_m": [
+        0.0,
+        0.0
+      ],
+      "net_displacement_m": 0.0,
+      "path_m": 0.0,
+      "yaw_change_deg": 0.0
+    },
+    "relative_path": "20261017/CAR2_P23_UWB_ODOM_IMU_static_20261017_060940.bag",
+    "sha256": "b9285811377432385566ebb6c500ca5fb498e701917a29e7923b28f3e3225d55",
+    "size_bytes": 681494,
+    "tag_id_counts": {
+      "node_0": 989
+    },
+    "timing": {
+      "/car2/imu": {
+        "bag_minus_header_median_s": -0.013536453247070312,
+        "bag_minus_header_p95_s": -0.009131908416748047,
+        "header_max_gap_s": 0.050266265869140625,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 398
+      },
+      "/car2/odom": {
+        "bag_minus_header_median_s": 0.005338072776794434,
+        "bag_minus_header_p95_s": 0.03736789226531982,
+        "header_max_gap_s": 0.050248146057128906,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 188
+      },
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": -0.004487037658691406,
+        "bag_minus_header_p95_s": 0.006242990493774409,
+        "header_max_gap_s": 0.021130800247192383,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 669
+      }
+    },
+    "topic_counts": {
+      "/car2/PowerVoltage": 34,
+      "/car2/imu": 401,
+      "/car2/odom": 398,
+      "/car2/uwb/ranges": 989
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3|node_8": 988,
+      "node_10|node_2|node_8": 1
+    },
+    "voltage": {
+      "first_v": 10.317000389099121,
+      "last_v": 10.305999755859375,
+      "min_v": 10.305000305175781
+    }
+  },
+  {
+    "bag_file": "CAR2_P4_REINSTALL_STATIC_20261017_053806.bag",
+    "child_frame_ids": {},
+    "classification": "Filename P4; actual position [3,3,0.2]",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 29.717692136764526,
+    "header_frame_ids": {
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "relative_path": "20261017/CAR2_P4_REINSTALL_STATIC_20261017_053806.bag",
+    "sha256": "4687abd3e2513477d29059789f1bf25539c1193237178f3805dca13fcac2e429",
+    "size_bytes": 296910,
+    "tag_id_counts": {
+      "node_0": 1487
+    },
+    "timing": {
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": 0.01908397674560547,
+        "bag_minus_header_p95_s": 0.030456018447875977,
+        "header_max_gap_s": 0.020294666290283203,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/car2/uwb/ranges": 1487
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2|node_3|node_8": 1486,
+      "node_10|node_3|node_8": 1
+    }
+  },
+  {
+    "bag_file": "CAR2_WALL_REINSTALL_STATIC_20261017_040643.bag",
+    "child_frame_ids": {},
+    "classification": "unreviewed",
+    "command_counts": {
+      "angular_nonzero": 0,
+      "translation_nonzero": 0
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 29.786384105682373,
+    "header_frame_ids": {
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "relative_path": "20261017/CAR2_WALL_REINSTALL_STATIC_20261017_040643.bag",
+    "sha256": "83abc8230bfde26eef639358dda22545aca75a4c22865a8290fb834439d7fc04",
+    "size_bytes": 296544,
+    "tag_id_counts": {
+      "node_0": 1491
+    },
+    "timing": {
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": 0.03388714790344238,
+        "bag_minus_header_p95_s": 0.037477731704711914,
+        "header_max_gap_s": 0.021001100540161133,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 0
+      }
+    },
+    "topic_counts": {
+      "/car2/uwb/ranges": 1491
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2": 1,
+      "node_10|node_2|node_3": 1,
+      "node_10|node_2|node_3|node_8": 1439,
+      "node_10|node_2|node_8": 47,
+      "node_10|node_3|node_8": 1,
+      "node_2|node_3|node_8": 2
+    }
+  },
+  {
+    "bag_file": "CAR2_auto_Lshape_reinstall_20261017_061540.bag",
+    "child_frame_ids": {
+      "/car2/odom": [
+        "base_footprint"
+      ]
+    },
+    "classification": "Automatic L; actual final C [3.03,2.95,0.2]; node_10 start anomaly",
+    "command_counts": {
+      "angular_nonzero": 1167,
+      "translation_nonzero": 969
+    },
+    "duplicate_surveyed_id_groups": 0,
+    "duration_s": 134.69327926635742,
+    "header_frame_ids": {
+      "/car2/imu": [
+        "gyro_link"
+      ],
+      "/car2/odom": [
+        "car2/odom_combined"
+      ],
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "invalid_surveyed_range_entries": 0,
+    "odom": {
+      "local_delta_xy_m": [
+        0.9792223572731018,
+        -0.9658975852653384
+      ],
+      "net_displacement_m": 1.375439773383372,
+      "path_m": 2.1527742546034077,
+      "yaw_change_deg": -95.3872326769425
+    },
+    "relative_path": "20261017/CAR2_auto_Lshape_reinstall_20261017_061540.bag",
+    "sha256": "da703f331c45433a5c08f2119b8585d377bca41db2fa5ebc1a7fd8f4b294dd10",
+    "size_bytes": 4683753,
+    "tag_id_counts": {
+      "node_0": 6725
+    },
+    "timing": {
+      "/car2/imu": {
+        "bag_minus_header_median_s": -0.00805974006652832,
+        "bag_minus_header_p95_s": -0.0038313865661621107,
+        "header_max_gap_s": 0.05063199996948242,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 2635
+      },
+      "/car2/odom": {
+        "bag_minus_header_median_s": 0.00666046142578125,
+        "bag_minus_header_p95_s": 0.043461835384368895,
+        "header_max_gap_s": 0.05062556266784668,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 1033
+      },
+      "/car2/uwb/ranges": {
+        "bag_minus_header_median_s": 0.0017938613891601562,
+        "bag_minus_header_p95_s": 0.012859725952148435,
+        "header_max_gap_s": 0.02103590965270996,
+        "header_nonincreasing_steps": 0,
+        "negative_bag_minus_header_count": 1885
+      }
+    },
+    "topic_counts": {
+      "/car2/PowerVoltage": 225,
+      "/car2/cmd_vel": 1759,
+      "/car2/imu": 2695,
+      "/car2/odom": 2692,
+      "/car2/uwb/ranges": 6725
+    },
+    "usable_anchor_combinations": {
+      "node_10|node_2": 1,
+      "node_10|node_2|node_3": 1,
+      "node_10|node_2|node_3|node_8": 6712,
+      "node_10|node_2|node_8": 4,
+      "node_10|node_3|node_8": 4,
+      "node_2|node_3|node_8": 3
+    },
+    "voltage": {
+      "first_v": 10.25100040435791,
+      "last_v": 10.243000030517578,
+      "min_v": 10.098999977111816
+    }
+  }
+]

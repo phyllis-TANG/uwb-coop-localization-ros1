@@ -1,0 +1,148 @@
+{
+  "aligned_odom": {
+    "displacement_length_m": 1.3754397733833719,
+    "displacement_vector_difference_m": 0.035065631823030734,
+    "displacement_xy_m": [
+      1.0268760972750992,
+      0.9150737954121309
+    ],
+    "end_reference_difference_m": 0.035065631823030734,
+    "end_xy_m": [
+      3.026876097275099,
+      2.915073795412131
+    ],
+    "start_reference_difference_m": 0.0,
+    "start_xy_m": [
+      2.0,
+      2.0
+    ]
+  },
+  "bag_file": "CAR2_auto_Lshape_reinstall_20261017_061540.bag",
+  "bag_sha256": "da703f331c45433a5c08f2119b8585d377bca41db2fa5ebc1a7fd8f4b294dd10",
+  "batch_graph_2d": {
+    "displacement_length_m": 1.2565756918272664,
+    "displacement_vector_difference_m": 0.1726282299069653,
+    "displacement_xy_m": [
+      0.9818152914661891,
+      0.7842328753210586
+    ],
+    "end_reference_difference_m": 0.09039533617667003,
+    "end_xy_m": [
+      2.99094135870239,
+      2.868478595801607
+    ],
+    "start_reference_difference_m": 0.0847385775340035,
+    "start_xy_m": [
+      2.009126067236201,
+      2.0842457204805482
+    ]
+  },
+  "continuous_trajectory_ground_truth": false,
+  "corrected_uwb": {
+    "displacement_length_m": 1.2439054244151542,
+    "displacement_vector_difference_m": 0.21204785842759943,
+    "displacement_xy_m": [
+      0.9997621366937945,
+      0.7401191626507879
+    ],
+    "end_reference_difference_m": 0.07822308780138103,
+    "end_xy_m": [
+      2.9942400834287195,
+      2.8804293177265192
+    ],
+    "start_reference_difference_m": 0.14041877612925593,
+    "start_xy_m": [
+      1.994477946734925,
+      2.1403101550757313
+    ]
+  },
+  "corrected_uwb_fit_rms_median_m": 0.08770901490641894,
+  "endpoint_used_in_optimizer": false,
+  "endpoint_window_policy": "initial <=5 s, ending 0.5 s before first motion command; final 5 s",
+  "endpoint_windows_elapsed_s": [
+    [
+      0.1988985538482666,
+      5.198898553848267
+    ],
+    [
+      129.64457631111145,
+      134.64457726478577
+    ]
+  ],
+  "graph": {
+    "cost": 63.2354370679063,
+    "keyframes": 132,
+    "odom_between_factors": 131,
+    "optimizer_message": "`ftol` termination condition is satisfied.",
+    "optimizer_nfev": 6,
+    "optimizer_success": true,
+    "range_factors": 495
+  },
+  "imu_diagnostic": {
+    "gyro_integrated_change_after_static_bias_deg": -105.59157589776831,
+    "independent_sensor_status": "on-board gyro and Odom yaw may share a source; no independent angle ground truth",
+    "initial_5s_gyro_z_median_rad_s": 0.0002664400089997798,
+    "odom_heading_change_deg": -95.3872326769425
+  },
+  "initial_heading_deg": 90,
+  "initial_heading_source": "Approximate placement along room +y, not independently surveyed",
+  "label": "automatic_L_20261017_manual_N10_mask",
+  "lever_arm_status": "unmeasured; zero horizontal offset is an explicit pilot approximation",
+  "manual_end_xyz_m": [
+    3.03,
+    2.95,
+    0.2
+  ],
+  "manual_start_xyz_m": [
+    2.0,
+    2.0,
+    0.2
+  ],
+  "method": "single-car fixed-height SE(2) batch least-squares graph; not iSAM2; IMU diagnostic only",
+  "odom_gate_rejected_endpoint_windows": {},
+  "odom_gate_rejected_keyframe_bins": {},
+  "odom_innovation_gate_m": null,
+  "range_exclusions": [
+    {
+      "anchor_id": "node_10",
+      "elapsed_end_s": 35.0,
+      "elapsed_start_s": 0.0,
+      "selection_basis": "Previously observed persistent start error and 5-second range bins; exploratory diagnostic"
+    }
+  ],
+  "range_values_removed": 1740,
+  "raw_uwb": {
+    "displacement_length_m": 2.27227053789374,
+    "displacement_vector_difference_m": 1.325425760882681,
+    "displacement_xy_m": [
+      0.5804864953225346,
+      2.1968725102126587
+    ],
+    "end_reference_difference_m": 0.512795271888431,
+    "end_xy_m": [
+      2.753283518926029,
+      3.3817255841077394
+    ],
+    "start_reference_difference_m": 0.8332606570002725,
+    "start_xy_m": [
+      2.1727970236034944,
+      1.1848530738950804
+    ]
+  },
+  "raw_uwb_fit_rms_median_m": 0.288070948119546,
+  "standalone_xy_unavailable_elapsed_s": [],
+  "tag_to_base_lever_arm_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "timestamp_basis": "Car2 message header time; bag reception times kept in manifest diagnostics",
+  "usable_anchor_combinations": {
+    "node_10|node_2": 1,
+    "node_10|node_2|node_3": 1,
+    "node_10|node_2|node_3|node_8": 6712,
+    "node_10|node_2|node_8": 4,
+    "node_10|node_3|node_8": 4,
+    "node_2|node_3|node_8": 3
+  }
+}
