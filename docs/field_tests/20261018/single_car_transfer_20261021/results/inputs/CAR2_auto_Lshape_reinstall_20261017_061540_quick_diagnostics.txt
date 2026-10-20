@@ -1,0 +1,23 @@
+duration: 134.7 s
+topic counts: {'/car2/imu': 2695, '/car2/PowerVoltage': 225, '/car2/odom': 2692, '/car2/uwb/ranges': 6725, '/car2/cmd_vel': 1759}
+UWB tag IDs: {'node_0': 6725}
+odom LOCAL path=2.153 m; endpoint net=1.375 m; yaw=-95.4 deg
+manual endpoint net=1.401 m; odom net minus manual=-0.026 m
+forward cmd: n=969, first=9.3 s, last=82.4 s
+turn cmd: n=1167, first=10.8 s, last=82.4 s
+voltage: first=10.251, last=10.243, min=10.099 V
+
+start 5-second window:
+  node_2: n=240 median=5.576 m geometry=5.222 m residual=+0.354 m
+  node_3: n=240 median=4.232 m geometry=4.018 m residual=+0.214 m
+  node_8: n=240 median=3.239 m geometry=2.861 m residual=+0.378 m
+  node_10: n=240 median=5.812 m geometry=3.137 m residual=+2.675 m
+
+end 5-second window:
+  node_2: n=250 median=4.429 m geometry=4.059 m residual=+0.370 m
+  node_3: n=251 median=3.380 m geometry=3.117 m residual=+0.263 m
+  node_8: n=251 median=3.905 m geometry=3.645 m residual=+0.260 m
+  node_10: n=251 median=4.051 m geometry=3.580 m residual=+0.471 m
+/car2/uwb/ranges receive-header median=0.002 s, p95=0.013 s
+/car2/odom receive-header median=0.007 s, p95=0.043 s
+/car2/imu receive-header median=-0.008 s, p95=-0.004 s

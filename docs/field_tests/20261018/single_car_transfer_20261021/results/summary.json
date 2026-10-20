@@ -1,0 +1,323 @@
+{
+  "protocol": {
+    "analysis": "P1 static range correction transfer, frozen before raw-bag computation",
+    "date_hong_kong": "2026-10-21",
+    "calibration_bag": "CAR2_P1_REINSTALL_STATIC_20261017_045257.bag",
+    "oct17_reference_points": {
+      "CAR2_P1_REINSTALL_STATIC_20261017_045257.bag": [
+        2.0,
+        2.0,
+        0.2
+      ],
+      "CAR2_P15_REINSTALL_STATIC_20261017_055818.bag": [
+        2.0,
+        3.0,
+        0.2
+      ],
+      "CAR2_P23_UWB_ODOM_IMU_static_20261017_060940.bag": [
+        2.0,
+        3.0,
+        0.2
+      ],
+      "CAR2_P4_REINSTALL_STATIC_20261017_053806.bag": [
+        3.0,
+        3.0,
+        0.2
+      ]
+    },
+    "oct18_endpoint_references": {
+      "004023": {
+        "bag": "CAR2_auto_Lshape_repeat_20261018_004023.bag",
+        "xyz": [
+          2.97,
+          3.11,
+          0.2
+        ]
+      },
+      "005135": {
+        "bag": "CAR2_auto_Lshape_repeat2_20261018_005135.bag",
+        "xyz": [
+          2.93,
+          3.04,
+          0.2
+        ]
+      }
+    },
+    "calibration_method": "Per-link whole-P1 median minus surveyed 3D antenna-to-anchor distance; subtract once from other bags. No fitting to validation points.",
+    "validation_windows": "Oct17 whole static bag; Oct18 use unchanged final stop+[2,7) header-time windows from final review input_manifest.json.",
+    "raw_validity": "node_0, unique anchor entry in frame, finite positive range. No additional outlier screening.",
+    "excluded": [
+      "040643 charging-table bag: no surveyed reference",
+      "Oct18 starting positions: candidate only",
+      "Oct11: different wall installation"
+    ],
+    "position_diagnostic": "Same unweighted fixed-height least-squares solve on four link medians, three fixed seeds; surveyed validation point never passed to solver.",
+    "limits": "Historical/calibration-transfer diagnostic, not a blind experiment. P1 offsets and Oct17 transfer were already visible. Unknown survey uncertainties, spatial propagation and mounting changes remain. Range RMS is across link-median residuals, not trajectory RMSE. No model/noise/fusion/IMU parameters changed."
+  },
+  "P1_bias_m": {
+    "node_10": 0.6088636183798282,
+    "node_2": 0.449737490591974,
+    "node_3": 0.2012859604623305,
+    "node_8": 0.3685143909425328
+  },
+  "groups": {
+    "oct17_static_validation": {
+      "range_link_cases": 12,
+      "raw_median_range_MAE_m": 0.3816297533674076,
+      "corrected_median_range_MAE_m": 0.0813071125605136,
+      "all_link_absolute_residuals_improve": true
+    },
+    "oct18_endpoint_validation": {
+      "range_link_cases": 8,
+      "raw_median_range_MAE_m": 0.36759635954451475,
+      "corrected_median_range_MAE_m": 0.046143904309805306,
+      "all_link_absolute_residuals_improve": true
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "CAR2_P1_REINSTALL_STATIC_20261017_045257.bag",
+      "group": "oct17_calibration",
+      "link_count": 4,
+      "raw_median_range_MAE_m": 0.40710036509416636,
+      "corrected_median_range_MAE_m": 0.0,
+      "raw_median_range_RMS_m": 0.43280989199691694,
+      "corrected_median_range_RMS_m": 0.0,
+      "corrected_max_abs_range_residual_m": 0.0,
+      "raw_UWB_only_x_m": 1.6708651809418424,
+      "raw_UWB_only_y_m": 2.135659846278609,
+      "corrected_UWB_only_x_m": 1.9999999999999998,
+      "corrected_UWB_only_y_m": 2.0,
+      "raw_UWB_only_position_difference_m": 0.355996240161019,
+      "corrected_UWB_only_position_difference_m": 2.220446049250313e-16,
+      "raw_UWB_only_fit_RMS_m": 0.387087085103355,
+      "corrected_UWB_only_fit_RMS_m": 0.0,
+      "window_odom_path_m": null,
+      "window_odom_net_m": null
+    },
+    {
+      "dataset": "CAR2_P15_REINSTALL_STATIC_20261017_055818.bag",
+      "group": "oct17_static_validation",
+      "link_count": 4,
+      "raw_median_range_MAE_m": 0.37760202372567264,
+      "corrected_median_range_MAE_m": 0.08985770982637731,
+      "raw_median_range_RMS_m": 0.40829565482315566,
+      "corrected_median_range_RMS_m": 0.0993624009547811,
+      "corrected_max_abs_range_residual_m": 0.14203627658546303,
+      "raw_UWB_only_x_m": 1.7943272371320664,
+      "raw_UWB_only_y_m": 3.6503481627799026,
+      "corrected_UWB_only_x_m": 2.1318758711197394,
+      "corrected_UWB_only_y_m": 3.0273511848631722,
+      "raw_UWB_only_position_difference_m": 0.6820953146129388,
+      "corrected_UWB_only_position_difference_m": 0.13468233995966042,
+      "raw_UWB_only_fit_RMS_m": 0.2960189864317326,
+      "corrected_UWB_only_fit_RMS_m": 0.04377062526671942,
+      "window_odom_path_m": null,
+      "window_odom_net_m": null
+    },
+    {
+      "dataset": "CAR2_P23_UWB_ODOM_IMU_static_20261017_060940.bag",
+      "group": "oct17_static_validation",
+      "link_count": 4,
+      "raw_median_range_MAE_m": 0.36585204089181034,
+      "corrected_median_range_MAE_m": 0.10760773462190953,
+      "raw_median_range_RMS_m": 0.4030931021535348,
+      "corrected_median_range_RMS_m": 0.12805954114280924,
+      "corrected_max_abs_range_residual_m": 0.21003611636817787,
+      "raw_UWB_only_x_m": 1.8258273743199926,
+      "raw_UWB_only_y_m": 3.6869001947109976,
+      "corrected_UWB_only_x_m": 2.1572026508957314,
+      "corrected_UWB_only_y_m": 3.0682478740665164,
+      "raw_UWB_only_position_difference_m": 0.7086381171163985,
+      "corrected_UWB_only_position_difference_m": 0.17137807842091204,
+      "raw_UWB_only_fit_RMS_m": 0.27620041101699416,
+      "corrected_UWB_only_fit_RMS_m": 0.06154654875767147,
+      "window_odom_path_m": 0.0,
+      "window_odom_net_m": 0.0
+    },
+    {
+      "dataset": "CAR2_P4_REINSTALL_STATIC_20261017_053806.bag",
+      "group": "oct17_static_validation",
+      "link_count": 4,
+      "raw_median_range_MAE_m": 0.4014351954847398,
+      "corrected_median_range_MAE_m": 0.04645589323325394,
+      "raw_median_range_RMS_m": 0.41426397479950616,
+      "corrected_median_range_RMS_m": 0.05823658028062452,
+      "corrected_max_abs_range_residual_m": 0.10424212568536095,
+      "raw_UWB_only_x_m": 2.765737175208956,
+      "raw_UWB_only_y_m": 3.460769880168079,
+      "corrected_UWB_only_x_m": 3.0284810000056055,
+      "corrected_UWB_only_y_m": 2.903106671655673,
+      "raw_UWB_only_position_difference_m": 0.51690226692208,
+      "corrected_UWB_only_position_difference_m": 0.10099249694388615,
+      "raw_UWB_only_fit_RMS_m": 0.3665435640857176,
+      "corrected_UWB_only_fit_RMS_m": 0.03713409371884322,
+      "window_odom_path_m": null,
+      "window_odom_net_m": null
+    },
+    {
+      "dataset": "004023",
+      "group": "oct18_endpoint_validation",
+      "link_count": 4,
+      "raw_median_range_MAE_m": 0.35048359736835344,
+      "corrected_median_range_MAE_m": 0.05896873859136331,
+      "raw_median_range_RMS_m": 0.3685429899700127,
+      "corrected_median_range_RMS_m": 0.08064346732260973,
+      "corrected_max_abs_range_residual_m": 0.13011363037558965,
+      "raw_UWB_only_x_m": 2.695880422836752,
+      "raw_UWB_only_y_m": 3.5328480765913794,
+      "corrected_UWB_only_x_m": 2.952197984998319,
+      "corrected_UWB_only_y_m": 2.9943818111839264,
+      "raw_UWB_only_position_difference_m": 0.5039266201156545,
+      "corrected_UWB_only_position_difference_m": 0.1169806707248223,
+      "raw_UWB_only_fit_RMS_m": 0.3062813610452087,
+      "corrected_UWB_only_fit_RMS_m": 0.05238516363267393,
+      "window_odom_path_m": 0.0,
+      "window_odom_net_m": 0.0
+    },
+    {
+      "dataset": "005135",
+      "group": "oct18_endpoint_validation",
+      "link_count": 4,
+      "raw_median_range_MAE_m": 0.38470912172067606,
+      "corrected_median_range_MAE_m": 0.0333190700282473,
+      "raw_median_range_RMS_m": 0.40690457220972254,
+      "corrected_median_range_RMS_m": 0.041154854768138786,
+      "corrected_max_abs_range_residual_m": 0.0639900586125921,
+      "raw_UWB_only_x_m": 2.6464729692842677,
+      "raw_UWB_only_y_m": 3.5270862066548894,
+      "corrected_UWB_only_x_m": 2.9154590186977978,
+      "corrected_UWB_only_y_m": 2.971646829714199,
+      "raw_UWB_only_position_difference_m": 0.5635960875129719,
+      "corrected_UWB_only_position_difference_m": 0.06988273052300349,
+      "raw_UWB_only_fit_RMS_m": 0.3402182288465855,
+      "corrected_UWB_only_fit_RMS_m": 0.018144586481821066,
+      "window_odom_path_m": 0.0,
+      "window_odom_net_m": 0.0
+    }
+  ],
+  "inputs": [
+    {
+      "id": "CAR2_P1_REINSTALL_STATIC_20261017_045257.bag",
+      "group": "oct17_calibration",
+      "xyz": [
+        2.0,
+        2.0,
+        0.2
+      ],
+      "window": null,
+      "sha256": "f7250698ae484b7ace3bf152b1ff216f5470b5d75f0b90a66483edb402d1ec33",
+      "topics": {
+        "/car2/uwb/ranges": 1486
+      },
+      "origin_ns": 1792237995196871952
+    },
+    {
+      "id": "CAR2_P15_REINSTALL_STATIC_20261017_055818.bag",
+      "group": "oct17_static_validation",
+      "xyz": [
+        2.0,
+        3.0,
+        0.2
+      ],
+      "window": null,
+      "sha256": "5ec05b7ab00c33e8be51e93800cf1b81f81a31e653df961d3737f81c9a4e6858",
+      "topics": {
+        "/car2/uwb/ranges": 1485
+      },
+      "origin_ns": 1792241907003254254
+    },
+    {
+      "id": "CAR2_P23_UWB_ODOM_IMU_static_20261017_060940.bag",
+      "group": "oct17_static_validation",
+      "xyz": [
+        2.0,
+        3.0,
+        0.2
+      ],
+      "window": null,
+      "sha256": "b9285811377432385566ebb6c500ca5fb498e701917a29e7923b28f3e3225d55",
+      "topics": {
+        "/car2/imu": 401,
+        "/car2/PowerVoltage": 34,
+        "/car2/odom": 398,
+        "/car2/uwb/ranges": 989
+      },
+      "origin_ns": 1792242581435826976
+    },
+    {
+      "id": "CAR2_P4_REINSTALL_STATIC_20261017_053806.bag",
+      "group": "oct17_static_validation",
+      "xyz": [
+        3.0,
+        3.0,
+        0.2
+      ],
+      "window": null,
+      "sha256": "4687abd3e2513477d29059789f1bf25539c1193237178f3805dca13fcac2e429",
+      "topics": {
+        "/car2/uwb/ranges": 1487
+      },
+      "origin_ns": 1792240726289411024
+    },
+    {
+      "id": "004023",
+      "group": "oct18_endpoint_validation",
+      "xyz": [
+        2.97,
+        3.11,
+        0.2
+      ],
+      "window": [
+        81.848289054,
+        86.848289054
+      ],
+      "sha256": "72d4a051005b0b109461842b6489aa2d07b08dd6f6e750c4b9a82aac8d8e1d82",
+      "topics": {
+        "/car2/imu": 1968,
+        "/car2/odom": 1966,
+        "/car2/uwb/ranges": 4908,
+        "/car2/PowerVoltage": 164,
+        "/car2/cmd_vel": 1666
+      },
+      "origin_ns": 1792309245383504223
+    },
+    {
+      "id": "005135",
+      "group": "oct18_endpoint_validation",
+      "xyz": [
+        2.93,
+        3.04,
+        0.2
+      ],
+      "window": [
+        83.81404534,
+        88.81404534
+      ],
+      "sha256": "63880adf78d5f07a9b12a87f7352f49e8f7be82d223bcdf60d96e257ba38b2ff",
+      "topics": {
+        "/car2/PowerVoltage": 158,
+        "/car2/imu": 1894,
+        "/car2/odom": 1891,
+        "/car2/uwb/ranges": 4722,
+        "/car2/cmd_vel": 1657
+      },
+      "origin_ns": 1792309931472145834
+    }
+  ],
+  "verification": {
+    "oct17_archived_table_max_difference_m": 8.881784197001252e-16,
+    "synthetic_geometry_and_bias_sign": "passed",
+    "input_hashes": "passed",
+    "analysis_type": "raw-bag median-range transfer; no fusion rerun; no trajectory truth"
+  },
+  "provenance": {
+    "oct17_archive_sha256": "06a4d4e1b70d7fca8e01dc8723149d04bc6f02167bfcc7dc8b21ea71872d5278",
+    "review_zip_sha256": "5536b5217127de0975b2a3839d844eea37630fb4aa2e7009a231b5c62397a13c",
+    "oct17_config_sha256": "4b0a97be01b3541937345080af27b747ee8294fd7dcd58f3c53338f8339a9c94",
+    "protocol_sha256": "557dba4c62f7efb1a5a6d6d1b1fe94a0d2c958847bb26c38802ef69dd8c4853f",
+    "script_sha256": "28144246bfdf034cb2c8b273355829cac6ae1d552ad36f44ff3a44365af5386d",
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  }
+}
