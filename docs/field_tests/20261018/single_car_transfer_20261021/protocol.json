@@ -1,0 +1,21 @@
+{
+  "analysis": "P1 static range correction transfer, frozen before raw-bag computation",
+  "date_hong_kong": "2026-10-21",
+  "calibration_bag": "CAR2_P1_REINSTALL_STATIC_20261017_045257.bag",
+  "oct17_reference_points": {
+    "CAR2_P1_REINSTALL_STATIC_20261017_045257.bag": [2.0, 2.0, 0.2],
+    "CAR2_P15_REINSTALL_STATIC_20261017_055818.bag": [2.0, 3.0, 0.2],
+    "CAR2_P23_UWB_ODOM_IMU_static_20261017_060940.bag": [2.0, 3.0, 0.2],
+    "CAR2_P4_REINSTALL_STATIC_20261017_053806.bag": [3.0, 3.0, 0.2]
+  },
+  "oct18_endpoint_references": {
+    "004023": {"bag": "CAR2_auto_Lshape_repeat_20261018_004023.bag", "xyz": [2.97, 3.11, 0.2]},
+    "005135": {"bag": "CAR2_auto_Lshape_repeat2_20261018_005135.bag", "xyz": [2.93, 3.04, 0.2]}
+  },
+  "calibration_method": "Per-link whole-P1 median minus surveyed 3D antenna-to-anchor distance; subtract once from other bags. No fitting to validation points.",
+  "validation_windows": "Oct17 whole static bag; Oct18 use unchanged final stop+[2,7) header-time windows from final review input_manifest.json.",
+  "raw_validity": "node_0, unique anchor entry in frame, finite positive range. No additional outlier screening.",
+  "excluded": ["040643 charging-table bag: no surveyed reference", "Oct18 starting positions: candidate only", "Oct11: different wall installation"],
+  "position_diagnostic": "Same unweighted fixed-height least-squares solve on four link medians, three fixed seeds; surveyed validation point never passed to solver.",
+  "limits": "Historical/calibration-transfer diagnostic, not a blind experiment. P1 offsets and Oct17 transfer were already visible. Unknown survey uncertainties, spatial propagation and mounting changes remain. Range RMS is across link-median residuals, not trajectory RMSE. No model/noise/fusion/IMU parameters changed."
+}

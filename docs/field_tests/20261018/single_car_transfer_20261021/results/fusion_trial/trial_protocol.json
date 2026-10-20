@@ -1,0 +1,137 @@
+{
+  "change": "only replace zero range_bias_m by per-link P1 median offsets",
+  "P1_bias_m": {
+    "node_10": 0.6088636183798282,
+    "node_2": 0.449737490591974,
+    "node_3": 0.2012859604623305,
+    "node_8": 0.3685143909425328
+  },
+  "original_config": {
+    "analysis_label": "重建分析",
+    "schema_version": 1,
+    "source_method": "existing single-car fixed-height SE(2) batch graph with minimal rotating lever-arm adaptation",
+    "anchors_xyz_m": {
+      "node_10": [
+        3.26,
+        0.1,
+        2.355
+      ],
+      "node_2": [
+        5.28,
+        5.16,
+        2.755
+      ],
+      "node_3": [
+        5.28,
+        2.86,
+        2.355
+      ],
+      "node_8": [
+        0.1,
+        2.41,
+        2.3
+      ]
+    },
+    "graph_parameters": {
+      "keyframe_step_s": 1,
+      "odom_translation_sigma_m": 0.03,
+      "odom_yaw_sigma_deg": 2,
+      "prior_heading_sigma_deg": 5,
+      "prior_position_sigma_m": 0.2,
+      "range_bin_half_width_s": 0.4,
+      "range_sigma_m": 0.2
+    },
+    "range_bias_m": {
+      "node_10": 0.0,
+      "node_2": 0.0,
+      "node_3": 0.0,
+      "node_8": 0.0
+    },
+    "candidate_start_antenna_xyz_m": [
+      2.0,
+      2.0,
+      0.2
+    ],
+    "initial_heading_deg": 90.0,
+    "base_to_antenna_body_xy_m": [
+      0.12,
+      -0.08
+    ],
+    "antenna_height_m": 0.2,
+    "reference_assumption": "approximate surveyed chassis geometric center assumed equal to odom base_footprint; unmeasured",
+    "start_status": "candidate inherited from other L runs, not independently measured for these bags",
+    "clock": "sensor headers and cmd reception use recorded ROS wall-clock seconds minus first bag receipt; no fitted clock correction",
+    "keyframes": "arange(ceil(max(first odom header, first UWB header)+1), floor(min(last odom header,last UWB header)),1)",
+    "bin_min_valid_observations": 5,
+    "range_robust_loss": "existing pseudo-Huber on normalized ranges only, delta=1; odom/prior Gaussian; scipy loss=linear",
+    "optimizer": {
+      "max_nfev": 300,
+      "ftol": 1e-07,
+      "xtol": 1e-07,
+      "gtol": 1e-07,
+      "failure_policy": "retain finite iterate for diagnosis; exclude failed solve from accepted accuracy claim"
+    },
+    "evaluation": {
+      "window_after_final_forward_stop_s": [
+        2.0,
+        7.0
+      ],
+      "interval": "[left,right)",
+      "statistic": "median estimated antenna X and Y at frozen keyframes",
+      "endpoints_xyz_m": {
+        "004023": [
+          2.97,
+          3.11,
+          0.2
+        ],
+        "005135": [
+          2.93,
+          3.04,
+          0.2
+        ]
+      },
+      "endpoint_in_optimizer": false
+    },
+    "filter": {
+      "version": "rebuild_exploratory_physical_hampel_v1",
+      "all_nodes_and_bags_same_rule": true,
+      "vertical_feasibility_tolerance_m": 0.05,
+      "half_window_s": 0.5,
+      "min_other_valid_neighbors": 10,
+      "mad_scale": 1.4826,
+      "mad_multiplier": 4.5,
+      "absolute_floor_m": 0.35,
+      "neighbor_policy": "centered header-time window, original baseline-valid values, exclude self; no iterative filtering",
+      "threshold_basis": "exploratory 0.20 m/s antenna speed envelope * 0.5 s + 0.25 m margin = 0.35 m; MAD handles local variation; not validated",
+      "insufficient_support": "keep if physically feasible; flag insufficient support",
+      "known_limit": "cannot certify correct values or remove stable bias or majority corruption"
+    },
+    "historical_filter": {
+      "recovered": false,
+      "unknown": [
+        "old added code",
+        "window definition",
+        "MAD threshold and scale",
+        "exact old preprocessing"
+      ],
+      "exact_old_C_reproduction_claimed": false
+    },
+    "parameter_policy": "inherited Oct17 weights are unvalidated pilot settings; no tuning to endpoints or historical results",
+    "imu": "diagnostic only; odom yaw may share IMU source",
+    "online_performance_claimed": false,
+    "continuous_truth_available": false
+  },
+  "comparison_methods": [
+    "A aligned odom",
+    "B raw ranges",
+    "D P1-corrected ranges"
+  ],
+  "no_additional_screening": true,
+  "no_tuning": true,
+  "endpoint_used_for_evaluation_only": true,
+  "review_zip_sha256": "5536b5217127de0975b2a3839d844eea37630fb4aa2e7009a231b5c62397a13c",
+  "source_hashes": {
+    "tools/rebuild_oct18_single_car.py": "8719e081037f2d37311ebc6d662ecd0b496f776eee49345524b1960aebfaafca",
+    "tools/analyze_october_field_session.py": "cc8934e0ee34eabddd46ed09e0de1ca69e9a74b00e93147f7d99f5a04d77e903"
+  }
+}
