@@ -1,0 +1,47 @@
+{
+  "analysis": "Retrospective nine-cell range/translation-noise sensitivity, no parameter selection",
+  "date_hong_kong": "2026-10-21",
+  "base_main_sha": "21b17f344b58b72c2bd00c9834f89e5d0a9b1bc5",
+  "merged_pr": 32,
+  "grid": {
+    "range_sigma_scale": [0.5, 1.0, 2.0],
+    "odom_translation_sigma_scale": [0.5, 1.0, 2.0],
+    "baseline_range_sigma_m": 0.2,
+    "baseline_odom_translation_sigma_m": 0.03,
+    "odom_sigma_time_rule": "translation scale * 0.03 * sqrt(dt_seconds) per XY component",
+    "combination_count": 9,
+    "runs": ["004023", "005135"],
+    "graph_solves": 18
+  },
+  "fixed": {
+    "odom_yaw_sigma_deg": 2.0,
+    "prior_position_sigma_m": 0.2,
+    "prior_heading_sigma_deg": 5.0,
+    "calibration": "Oct17 P1 per-link offsets from merged PR31, subtract once, no refitting",
+    "height_m": 0.2,
+    "lever_arm_body_xy_m": [0.12, -0.08],
+    "initial_heading_deg": 90.0,
+    "candidate_start_antenna_xy_m": [2.0, 2.0],
+    "observations": "Original B 1-second keyframes, four range-bin medians, no additional filtering or node selection",
+    "optimizer": "Unmodified archived solver from PR31; same Odom-aligned initialization each solve; max_nfev=300; ftol/xtol/gtol=1e-7",
+    "robust_loss": "Inherited pseudo-Huber, delta=1 on standardized range residual only; changing range sigma also changes physical robust transition scale",
+    "evaluation": "Original endpoint stop+[2,7) half-open interval, componentwise median estimated antenna XY; four stationary windows per run identical to PR32"
+  },
+  "metrics": [
+    "endpoint difference to manually measured antenna endpoint (no measurement uncertainty quantified)",
+    "stationary scatter about median and first-last displacement, not accuracy",
+    "range residuals in meters, overall and by link/phase, not position truth",
+    "per-step Odom translation/yaw residuals, not motion truth",
+    "trajectory displacement from frozen (1,1) graph, not position error",
+    "optimizer success, status, nfev, optimality and objective (objective not comparable across noise scales)"
+  ],
+  "reference_audit": {
+    "confirmed": "Survey axes x forward/y left; bag Odom child_frame base_footprint; recorded endpoints refer to antenna center",
+    "unverified": "Surveyed approximate chassis center equals base_footprint origin; gyro_link transform; upstream Odom IMU use; initial antenna position; intermediate poses",
+    "policy": "Do not estimate or change extrinsics using endpoint performance; preserve inherited assumption and label all results conditional"
+  },
+  "interpretation": "These two runs have been inspected previously. This is diagnostic development sensitivity, not held-out testing, an optimum search, independent replication, or an online benchmark.",
+  "failure_policy": "Retain finite nonconverged iterates with explicit failure flag, do not accept as successful accuracy result; record exceptions without replacing a grid cell",
+  "stop_rule": "Run exactly the nine specified cells for each run; do not add cells or change weights based on endpoint outcomes",
+  "not_allowed": ["select a best parameter", "recalibrate bias", "fit alignment, heading, time offset or lever to endpoints", "use endpoint in optimizer", "claim continuous-trajectory RMSE", "modify raw data or previous results", "control hardware"]
+}
