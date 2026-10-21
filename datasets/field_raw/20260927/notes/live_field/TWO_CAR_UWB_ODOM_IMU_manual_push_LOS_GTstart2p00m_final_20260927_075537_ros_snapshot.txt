@@ -1,0 +1,59 @@
+=== capture time ===
+2026-09-27T07:59:51-07:00
+=== ROS environment ===
+ROS_DISTRO=melodic
+ROS_ETC_DIR=/opt/ros/melodic/etc/ros
+ROS_IP=192.168.31.182
+ROS_MASTER_URI=http://192.168.31.24:11311
+ROS_PACKAGE_PATH=/home/wheeltec-client/uwb-coop-localization-ros1/ros_ws/src:/home/wheeltec-client/wheeltec_hector/src:/home/wheeltec-client/wheeltec_stepper_arm/src:/home/wheeltec-client/wheeltec_table_arm/src:/home/wheeltec-client/wheeltec_robot/src:/opt/ros/melodic/share
+ROS_PYTHON_VERSION=2
+ROS_ROOT=/opt/ros/melodic/share/ros
+ROS_VERSION=1
+=== ROS nodes ===
+/car1/uwb_linktrack_driver
+/car1/wheeltec_robot
+/car2/nlink_frame3_bridge
+/car2/nlink_linktrack
+/car2/wheeltec_robot
+/rosout
+=== ROS topics ===
+
+Published topics:
+ * /rosout_agg [rosgraph_msgs/Log] 1 publisher
+ * /rosout [rosgraph_msgs/Log] 5 publishers
+ * /car2/nlink_linktrack_nodeframe3 [nlink_parser/LinktrackNodeframe3] 1 publisher
+ * /car2/uwb/ranges [uwb_coop_localization/UwbRangeArray] 1 publisher
+ * /car1/uwb/ranges [uwb_coop_localization/UwbRangeArray] 1 publisher
+ * /car1/PowerVoltage [std_msgs/Float32] 1 publisher
+ * /car1/odom [nav_msgs/Odometry] 1 publisher
+ * /car1/imu [sensor_msgs/Imu] 1 publisher
+ * /car2/PowerVoltage [std_msgs/Float32] 1 publisher
+ * /car2/odom [nav_msgs/Odometry] 1 publisher
+ * /car2/imu [sensor_msgs/Imu] 1 publisher
+ * /car2/Distance [turn_on_wheeltec_robot/supersonic] 1 publisher
+ * /car2/robot_charging_flag [std_msgs/Bool] 1 publisher
+ * /car2/robot_charging_current [std_msgs/Float32] 1 publisher
+ * /car2/robot_red_flag [std_msgs/UInt8] 1 publisher
+ * /car2/robot_selfcheck [std_msgs/UInt32] 1 publisher
+
+Subscribed topics:
+ * /rosout [rosgraph_msgs/Log] 1 subscriber
+ * /car2/nlink_linktrack_data_transmission [std_msgs/String] 1 subscriber
+ * /car2/nlink_linktrack_nodeframe3 [nlink_parser/LinktrackNodeframe3] 1 subscriber
+ * /car1/cmd_vel [geometry_msgs/Twist] 1 subscriber
+ * /car2/cmd_vel [geometry_msgs/Twist] 1 subscriber
+ * /car2/red_vel [geometry_msgs/Twist] 1 subscriber
+ * /car2/robot_recharge_flag [std_msgs/Int8] 1 subscriber
+ * /car2/chassis_security [std_msgs/Int8] 1 subscriber
+ * /car2/arm_cmd [std_msgs/Float32MultiArray] 1 subscriber
+
+=== Car1 wheeltec parameters ===
+{gyro_frame_id: gyro_link, odom_frame_id: car1/odom_combined, odom_x_scale: 1.0, odom_y_scale: 1.0,
+  odom_z_scale_negative: 1.0, odom_z_scale_positive: 1.0, robot_frame_id: base_footprint,
+  serial_baud_rate: 115200, usart_port_name: /dev/wheeltec_controller}
+
+=== Car2 wheeltec parameters ===
+{car_mode: senior_diff, gyro_frame_id: gyro_link, odom_frame_id: car2/odom_combined,
+  odom_x_scale: 1.0, odom_y_scale: 1.0, odom_z_scale_negative: 1.0, odom_z_scale_positive: 1.0,
+  robot_frame_id: base_footprint, serial_baud_rate: 115200, usart_port_name: /dev/wheeltec_controller}
+

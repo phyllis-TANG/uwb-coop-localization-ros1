@@ -1,0 +1,11 @@
+experiment: Car1 zero-angular-command odom-controlled forward; Car2 stationary
+car1_start_antenna_xyz_m: [1.50, 4.00, 0.20]
+car1_measured_end_antenna_xyz_m: [1.45, 2.98, 0.20]
+car2_stationary_antenna_xyz_m: [2.95, 3.04, 0.20]
+end_direct_tape_antenna_distance_m: approximately 1.54
+car1_odom_path_m: 1.013
+car2_odom_path_m: 0.000
+recorded_max_abs_angular_z_rad_s: 0.0000
+peer_start_medians_m: car1_to_car2=1.617, car2_to_car1=1.643
+peer_end_medians_m: car1_to_car2=1.506, car2_to_car1=1.531
+raw_bag_unchanged: true

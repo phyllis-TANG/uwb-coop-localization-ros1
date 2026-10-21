@@ -1,0 +1,2878 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-10-21",
+  "scope": "74份项目实车原始bag与2份仿真bag的归档分类种子；不包含2份第三方软件样例。",
+  "status_policy": "文件可读性、实验完成状态、人工参考能力和推荐用途分别记录。实验失败不等于bag损坏；未接收不等于丢失。",
+  "evidence_priority": "2026-10-20集中用户补充以及2026-10-21已核验五包报告覆盖旧清单中的候选起点、待追补状态。原始备注仍原样保留。",
+  "corrections_policy": "P01-P09及O01-O04全部关闭，不再要求补造坐标；尚有的模型/同步/参考不确定性作为用途限制，不当作文件缺失。",
+  "date_policy": "目录与date来自文件名采集日期，不代表所有系统墙钟已统一校准。",
+  "live_verification_policy": "归档脚本应重新计算VM源文件和归档副本SHA；known_sha256只是此前已读取副本的已知值。9月27日18包known_sha256为空，须在VM生成。",
+  "provenance_sources": [
+    "artifacts/data_inventory_20261020/dataset_index.json",
+    "artifacts/reference_response_supplement_20261020/README.md",
+    "artifacts/history_reference_review_20261020/README.md",
+    "artifacts/two_car_reference_review_20261020/two_car_reference_index.csv",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/SINGLE_CAR_FIVE_BAG_REVIEW_20261021.md",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/single_car_historical_L_20261021/MOUNT_USER_CONFIRMATION_20261021.md"
+  ],
+  "bags": [
+    {
+      "record_id": "B001",
+      "filename": "CAR1_UWB_ODOM_IMU_static_interface_pilot_20260927_074518.bag",
+      "date": "20260927",
+      "vm_relative_path": "20260927/CAR1_UWB_ODOM_IMU_static_interface_pilot_20260927_074518.bag",
+      "category": "unreviewed",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "本窗口只有虚拟机文件清单，未读取此原始包。",
+      "reference_status": "未核对",
+      "recommended_use": [
+        "归档后结合原始备注核对用途，当前不作数据有效性验收。"
+      ],
+      "limitations": [
+        "本窗口未接收不表示虚拟机丢失；文件名中的距离和场景仅是标签，尚未在本窗口核验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B001"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 914880,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B002",
+      "filename": "PA0_PB3_static_LOS_AR1p56m_20260927_163421.bag",
+      "date": "20260927",
+      "vm_relative_path": "20260927/PA0_PB3_static_LOS_AR1p56m_20260927_163421.bag",
+      "category": "unreviewed",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "本窗口只有虚拟机文件清单，未读取此原始包。",
+      "reference_status": "未核对",
+      "recommended_use": [
+        "归档后结合原始备注核对用途，当前不作数据有效性验收。"
+      ],
+      "limitations": [
+        "本窗口未接收不表示虚拟机丢失；文件名中的距离和场景仅是标签，尚未在本窗口核验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B002"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 521826,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B003",
+      "filename": "PA0_PB3_static_LOS_AR1p56m_median_20260927_165826.bag",
+      "date": "20260927",
+      "vm_relative_path": "20260927/PA0_PB3_static_LOS_AR1p56m_median_20260927_165826.bag",
+      "category": "unreviewed",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "本窗口只有虚拟机文件清单，未读取此原始包。",
+      "reference_status": "未核对",
+      "recommended_use": [
+        "归档后结合原始备注核对用途，当前不作数据有效性验收。"
+      ],
+      "limitations": [
+        "本窗口未接收不表示虚拟机丢失；文件名中的距离和场景仅是标签，尚未在本窗口核验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B003"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 426488,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B004",
+      "filename": "PA0_PB3_static_LOS_GT1p50m_U0p01m_median_20260927_185420.bag",
+      "date": "20260927",
+      "vm_relative_path": "20260927/PA0_PB3_static_LOS_GT1p50m_U0p01m_median_20260927_185420.bag",
+      "category": "unreviewed",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "本窗口只有虚拟机文件清单，未读取此原始包。",
+      "reference_status": "未核对",
+      "recommended_use": [
+        "归档后结合原始备注核对用途，当前不作数据有效性验收。"
+      ],
+      "limitations": [
+        "本窗口未接收不表示虚拟机丢失；文件名中的距离和场景仅是标签，尚未在本窗口核验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B004"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 627902,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B005",
+      "filename": "PA0_PB3_static_LOS_GT1p50m_U0p01m_median_repeat1_20260927_190336.bag",
+      "date": "20260927",
+      "vm_relative_path": "20260927/PA0_PB3_static_LOS_GT1p50m_U0p01m_median_repeat1_20260927_190336.bag",
+      "category": "unreviewed",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "本窗口只有虚拟机文件清单，未读取此原始包。",
+      "reference_status": "未核对",
+      "recommended_use": [
+        "归档后结合原始备注核对用途，当前不作数据有效性验收。"
+      ],
+      "limitations": [
+        "本窗口未接收不表示虚拟机丢失；文件名中的距离和场景仅是标签，尚未在本窗口核验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B005"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 840850,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B006",
+      "filename": "PA0_PB3_static_LOS_GT2p00m_U0p01m_median_20260927_181013.bag",
+      "date": "20260927",
+      "vm_relative_path": "20260927/PA0_PB3_static_LOS_GT2p00m_U0p01m_median_20260927_181013.bag",
+      "category": "unreviewed",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "本窗口只有虚拟机文件清单，未读取此原始包。",
+      "reference_status": "未核对",
+      "recommended_use": [
+        "归档后结合原始备注核对用途，当前不作数据有效性验收。"
+      ],
+      "limitations": [
+        "本窗口未接收不表示虚拟机丢失；文件名中的距离和场景仅是标签，尚未在本窗口核验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B006"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 839720,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B007",
+      "filename": "PA0_PB3_static_LOS_GT3p00m_U0p01m_median_20260927_181904.bag",
+      "date": "20260927",
+      "vm_relative_path": "20260927/PA0_PB3_static_LOS_GT3p00m_U0p01m_median_20260927_181904.bag",
+      "category": "unreviewed",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "本窗口只有虚拟机文件清单，未读取此原始包。",
+      "reference_status": "未核对",
+      "recommended_use": [
+        "归档后结合原始备注核对用途，当前不作数据有效性验收。"
+      ],
+      "limitations": [
+        "本窗口未接收不表示虚拟机丢失；文件名中的距离和场景仅是标签，尚未在本窗口核验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B007"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 845810,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B008",
+      "filename": "PA0_PB3_static_human_NLOS_GT2p00m_U0p01m_median_20260927_190922.bag",
+      "date": "20260927",
+      "vm_relative_path": "20260927/PA0_PB3_static_human_NLOS_GT2p00m_U0p01m_median_20260927_190922.bag",
+      "category": "unreviewed",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "本窗口只有虚拟机文件清单，未读取此原始包。",
+      "reference_status": "未核对",
+      "recommended_use": [
+        "归档后结合原始备注核对用途，当前不作数据有效性验收。"
+      ],
+      "limitations": [
+        "本窗口未接收不表示虚拟机丢失；文件名中的距离和场景仅是标签，尚未在本窗口核验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B008"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 846170,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B009",
+      "filename": "PA0_PB3_static_human_NLOS_GT2p00m_U0p01m_median_repeat1_prepositioned_20260927_191310.bag",
+      "date": "20260927",
+      "vm_relative_path": "20260927/PA0_PB3_static_human_NLOS_GT2p00m_U0p01m_median_repeat1_prepositioned_20260927_191310.bag",
+      "category": "unreviewed",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "本窗口只有虚拟机文件清单，未读取此原始包。",
+      "reference_status": "未核对",
+      "recommended_use": [
+        "归档后结合原始备注核对用途，当前不作数据有效性验收。"
+      ],
+      "limitations": [
+        "本窗口未接收不表示虚拟机丢失；文件名中的距离和场景仅是标签，尚未在本窗口核验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B009"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 845682,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B010",
+      "filename": "TWO_CAR_PA0_PB1_manual_push_LOS_final2_20260927_070720.bag",
+      "date": "20260927",
+      "vm_relative_path": "20260927/TWO_CAR_PA0_PB1_manual_push_LOS_final2_20260927_070720.bag",
+      "category": "unreviewed",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "本窗口只有虚拟机文件清单，未读取此原始包。",
+      "reference_status": "未核对",
+      "recommended_use": [
+        "归档后结合原始备注核对用途，当前不作数据有效性验收。"
+      ],
+      "limitations": [
+        "本窗口未接收不表示虚拟机丢失；文件名中的距离和场景仅是标签，尚未在本窗口核验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B010"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 967163,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B011",
+      "filename": "TWO_CAR_PA0_PB1_manual_push_LOS_final3_20260927_071235.bag",
+      "date": "20260927",
+      "vm_relative_path": "20260927/TWO_CAR_PA0_PB1_manual_push_LOS_final3_20260927_071235.bag",
+      "category": "unreviewed",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "本窗口只有虚拟机文件清单，未读取此原始包。",
+      "reference_status": "未核对",
+      "recommended_use": [
+        "归档后结合原始备注核对用途，当前不作数据有效性验收。"
+      ],
+      "limitations": [
+        "本窗口未接收不表示虚拟机丢失；文件名中的距离和场景仅是标签，尚未在本窗口核验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B011"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 965327,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B012",
+      "filename": "TWO_CAR_PA0_PB1_manual_push_LOS_repeat1_20260927_064524.bag",
+      "date": "20260927",
+      "vm_relative_path": "20260927/TWO_CAR_PA0_PB1_manual_push_LOS_repeat1_20260927_064524.bag",
+      "category": "unreviewed",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "本窗口只有虚拟机文件清单，未读取此原始包。",
+      "reference_status": "未核对",
+      "recommended_use": [
+        "归档后结合原始备注核对用途，当前不作数据有效性验收。"
+      ],
+      "limitations": [
+        "本窗口未接收不表示虚拟机丢失；文件名中的距离和场景仅是标签，尚未在本窗口核验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B012"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 579851,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B013",
+      "filename": "TWO_CAR_PA0_PB1_static_CAR1_rot90CW_GT2p00m_EXP006_pilot_20260927_073244.bag",
+      "date": "20260927",
+      "vm_relative_path": "20260927/TWO_CAR_PA0_PB1_static_CAR1_rot90CW_GT2p00m_EXP006_pilot_20260927_073244.bag",
+      "category": "unreviewed",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "本窗口只有虚拟机文件清单，未读取此原始包。",
+      "reference_status": "未核对",
+      "recommended_use": [
+        "归档后结合原始备注核对用途，当前不作数据有效性验收。"
+      ],
+      "limitations": [
+        "本窗口未接收不表示虚拟机丢失；文件名中的距离和场景仅是标签，尚未在本窗口核验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B013"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 391496,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B014",
+      "filename": "TWO_CAR_PA0_PB1_static_LOS_NOM2p00m_20260927_061305.bag",
+      "date": "20260927",
+      "vm_relative_path": "20260927/TWO_CAR_PA0_PB1_static_LOS_NOM2p00m_20260927_061305.bag",
+      "category": "unreviewed",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "本窗口只有虚拟机文件清单，未读取此原始包。",
+      "reference_status": "未核对",
+      "recommended_use": [
+        "归档后结合原始备注核对用途，当前不作数据有效性验收。"
+      ],
+      "limitations": [
+        "本窗口未接收不表示虚拟机丢失；文件名中的距离和场景仅是标签，尚未在本窗口核验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B014"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 758010,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B015",
+      "filename": "TWO_CAR_PA0_PB1_static_LOS_camera_clear_facing_GT1p85m_20260927_063345.bag",
+      "date": "20260927",
+      "vm_relative_path": "20260927/TWO_CAR_PA0_PB1_static_LOS_camera_clear_facing_GT1p85m_20260927_063345.bag",
+      "category": "unreviewed",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "本窗口只有虚拟机文件清单，未读取此原始包。",
+      "reference_status": "未核对",
+      "recommended_use": [
+        "归档后结合原始备注核对用途，当前不作数据有效性验收。"
+      ],
+      "limitations": [
+        "本窗口未接收不表示虚拟机丢失；文件名中的距离和场景仅是标签，尚未在本窗口核验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B015"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 382622,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B016",
+      "filename": "TWO_CAR_PA0_PB1_static_facing_GT2p00m_EXP006_pilot_20260927_073058.bag",
+      "date": "20260927",
+      "vm_relative_path": "20260927/TWO_CAR_PA0_PB1_static_facing_GT2p00m_EXP006_pilot_20260927_073058.bag",
+      "category": "unreviewed",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "本窗口只有虚拟机文件清单，未读取此原始包。",
+      "reference_status": "未核对",
+      "recommended_use": [
+        "归档后结合原始备注核对用途，当前不作数据有效性验收。"
+      ],
+      "limitations": [
+        "本窗口未接收不表示虚拟机丢失；文件名中的距离和场景仅是标签，尚未在本窗口核验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B016"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 391566,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B017",
+      "filename": "TWO_CAR_UWB_ODOM_IMU_manual_push_LOS_GTstart2p00m_final_20260927_075537.bag",
+      "date": "20260927",
+      "vm_relative_path": "20260927/TWO_CAR_UWB_ODOM_IMU_manual_push_LOS_GTstart2p00m_final_20260927_075537.bag",
+      "category": "unreviewed",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "本窗口只有虚拟机文件清单，未读取此原始包。",
+      "reference_status": "未核对",
+      "recommended_use": [
+        "归档后结合原始备注核对用途，当前不作数据有效性验收。"
+      ],
+      "limitations": [
+        "本窗口未接收不表示虚拟机丢失；文件名中的距离和场景仅是标签，尚未在本窗口核验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B017"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 3645697,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B018",
+      "filename": "TWO_CAR_UWB_ODOM_IMU_static_interface_pilot_20260927_075002.bag",
+      "date": "20260927",
+      "vm_relative_path": "20260927/TWO_CAR_UWB_ODOM_IMU_static_interface_pilot_20260927_075002.bag",
+      "category": "unreviewed",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "本窗口只有虚拟机文件清单，未读取此原始包。",
+      "reference_status": "未核对",
+      "recommended_use": [
+        "归档后结合原始备注核对用途，当前不作数据有效性验收。"
+      ],
+      "limitations": [
+        "本窗口未接收不表示虚拟机丢失；文件名中的距离和场景仅是标签，尚未在本窗口核验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B018"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 1842974,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B019",
+      "filename": "MOBILE_static_P1_xy_pilot_20261010_073610.bag",
+      "date": "20261010",
+      "vm_relative_path": "20261010/MOBILE_static_P1_xy_pilot_20261010_073610.bag",
+      "category": "single_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "移动节点P1的早期静态XY试录，有独立survey记录。",
+      "reference_status": "有原始测量备注，按记录核对",
+      "recommended_use": [
+        "静态测距分布、节点可见性与早期移动节点位置接口检查。"
+      ],
+      "limitations": [
+        "未录odom核验静止；使用当日墙节点配置，不能直接套重装后的坐标/修正。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B019",
+        "original-note:R001"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R001",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261010/MOBILE_static_P1_xy_pilot_20261010_073610_survey.txt",
+          "sha256": "a1ff02ce589f4073f7e86b8c2361e08077546601b486e56573ebbcf29c430767",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "02a4f46b0ec3301f5d2ab2ec3bf6b6d1ae46749371122b05cad16af612572f5a",
+      "expected_size_bytes": 306451,
+      "previously_decoded_duration_s": 29.781836276000003,
+      "previously_decoded_message_count": 1490,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B020",
+      "filename": "WALL_N10_N2_N3_N8_static_20261010_064512.bag",
+      "date": "20261010",
+      "vm_relative_path": "20261010/WALL_N10_N2_N3_N8_static_20261010_064512.bag",
+      "category": "wall_setup",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "墙节点组合/顺序的静态接口记录。",
+      "reference_status": "节点名称来自文件名，绝对天线几何参考未核实。",
+      "recommended_use": [
+        "墙节点ID、帧解析、链路可见性和测距一致性检查。"
+      ],
+      "limitations": [
+        "不能仅凭文件名将节点顺序当作位置真值；不作为小车定位精度评价包。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B020"
+      ],
+      "original_notes": [],
+      "known_sha256": "e3e1ddda23ba6b9ba9c234fbd072001fd488a8e786a21dd4874e185f824e3c56",
+      "expected_size_bytes": 532969,
+      "previously_decoded_duration_s": 59.760727854,
+      "previously_decoded_message_count": 2989,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B021",
+      "filename": "WALL_N3_N2_N8_N10_static_20261010_070846.bag",
+      "date": "20261010",
+      "vm_relative_path": "20261010/WALL_N3_N2_N8_N10_static_20261010_070846.bag",
+      "category": "wall_setup",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "墙节点组合/顺序的静态接口记录。",
+      "reference_status": "节点名称来自文件名，绝对天线几何参考未核实。",
+      "recommended_use": [
+        "墙节点ID、帧解析、链路可见性和测距一致性检查。"
+      ],
+      "limitations": [
+        "不能仅凭文件名将节点顺序当作位置真值；不作为小车定位精度评价包。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B021"
+      ],
+      "original_notes": [],
+      "known_sha256": "41a9b150503eac1877589b05ec3eb505698a12db2b209c69b95001861c3f060d",
+      "expected_size_bytes": 530173,
+      "previously_decoded_duration_s": 59.779998975000005,
+      "previously_decoded_message_count": 2990,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B022",
+      "filename": "WALL_N8_N2_N3_N10_static_20261010_061958.bag",
+      "date": "20261010",
+      "vm_relative_path": "20261010/WALL_N8_N2_N3_N10_static_20261010_061958.bag",
+      "category": "wall_setup",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "墙节点组合/顺序的静态接口记录。",
+      "reference_status": "节点名称来自文件名，绝对天线几何参考未核实。",
+      "recommended_use": [
+        "墙节点ID、帧解析、链路可见性和测距一致性检查。"
+      ],
+      "limitations": [
+        "不能仅凭文件名将节点顺序当作位置真值；不作为小车定位精度评价包。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B022"
+      ],
+      "original_notes": [],
+      "known_sha256": "5aeb1d79105e9c9f9c8eb5a882529e40c1ac828cd857573c5601cfeefa5820eb",
+      "expected_size_bytes": 521011,
+      "previously_decoded_duration_s": 59.782277907,
+      "previously_decoded_message_count": 2990,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B023",
+      "filename": "CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083053.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083053.bag",
+      "category": "diagnostic",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "failed_confirmed",
+      "experiment_description": "用户确认本次尝试失败，未做人工终点记录。",
+      "reference_status": "无可用于完成路线精度评价的独立终点/角度参考。",
+      "recommended_use": [
+        "保留失败L形过程、运动控制和测距异常诊断。"
+      ],
+      "limitations": [
+        "不再追补终点，不借用083512或其他包的终点。",
+        "实验失败/未完成与bag文件损坏是不同状态；此包先前可完整读取。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B023",
+        "original-note:R002",
+        "artifacts/reference_response_supplement_20261020/README.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R002",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083053_notes.txt",
+          "sha256": "fb9de24f1840148bd0e96cc8cd3f77968bff6dfc8f8cbc6b47e79a37f531e96e",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "971496691f7e0a019f49673f4841080f3a5eb416803e76a944b38308afc6dc5a",
+      "expected_size_bytes": 4108869,
+      "previously_decoded_duration_s": 119.99123986900001,
+      "previously_decoded_message_count": 13177,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B024",
+      "filename": "CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083512.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083512.bag",
+      "category": "single_car_motion",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "completed_manual_reverse",
+      "experiment_description": "键盘倒车L形；初始N2存在不一致；当日仅三路墙锚有数据。",
+      "reference_status": "有逐包人工天线起终点/摆放参考；无连续实测轨迹。",
+      "recommended_use": [
+        "手动L形与初始异常挑战样本",
+        "单车离线UWB-only、odom与融合对照；按时间顺序回放开发测试（在线性能尚未验收）。"
+      ],
+      "limitations": [
+        "终点差不能代表全程精度；五包控制方法、可用链路与墙节点安装不完全相同。",
+        "使用各场次自己的墙节点配置和P1修正；10月11日N8缺失，不能跨重装套用配置。",
+        "天线相对近似底盘中心偏移已有记录且用户确认安装未改；该中心与odom车体参考点的对应仍待核实。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B024",
+        "original-note:R003",
+        "original-note:R004",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/SINGLE_CAR_FIVE_BAG_REVIEW_20261021.md",
+        "artifacts/history_reference_review_20261020/README.md",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/single_car_historical_L_20261021/MOUNT_USER_CONFIRMATION_20261021.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R003",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083512_motion_check.txt",
+          "sha256": "9ef56ebdcea16ab4fa07ed5f6e5469ca92cba38787e0eac759569be3c2a30f0f",
+          "kind": "existing_computed_motion_check",
+          "interpretation": "原motion_check计算证据，不是独立人工测量。"
+        },
+        {
+          "reference_id": "R004",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083512_notes.txt",
+          "sha256": "b84163bcb6904086b93943a07b5af64c425faeef3fce42445978232e3fda45ec",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "4b0b7276e9dbb6f50f016eca4f621cd8d0ee0fca60b5b7b91721d0d217d15407",
+      "expected_size_bytes": 4115870,
+      "previously_decoded_duration_s": 119.99227302000001,
+      "previously_decoded_message_count": 13233,
+      "manual_reference": {
+        "antenna_start_xyz_m": [
+          2.0,
+          2.0,
+          0.2
+        ],
+        "antenna_end_xyz_m": [
+          3.17,
+          2.6,
+          0.2
+        ],
+        "initial_heading": "名义车头-90度，倒车行进方向与车头方向分开",
+        "source_status": "用户确认/原始逐包备注；不确定度未量化"
+      },
+      "wall_layout": "before_reinstall_20261010_11",
+      "available_wall_anchor_ids": [
+        "N10",
+        "N2",
+        "N3"
+      ],
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B025",
+      "filename": "CAR2_WALL_UWB_ODOM_IMU_key_Lshape_20261011_054551.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_key_Lshape_20261011_054551.bag",
+      "category": "diagnostic",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "incomplete_low_voltage",
+      "experiment_description": "低电量中止，存在非零前进指令，但odom平移与航向均为零。",
+      "reference_status": "无可用于完成路线精度评价的独立终点/角度参考。",
+      "recommended_use": [
+        "低电量、启动和停滞诊断。"
+      ],
+      "limitations": [
+        "不是完成的L形实验，不用于路线或终点精度。",
+        "实验失败/未完成与bag文件损坏是不同状态；此包先前可完整读取。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B025",
+        "original-note:R005"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R005",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/CAR2_WALL_UWB_ODOM_IMU_key_Lshape_20261011_054551_notes.txt",
+          "sha256": "a5349d52e2ab7343b4caa23c9a9aede0ee671fc4888a60bf93a2ccf443fd5a5f",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "6a491c1f13421102dd0e45e3d744301b4d21f9cb0cc3a5647fbe6ef6a3f7f920",
+      "expected_size_bytes": 1013757,
+      "previously_decoded_duration_s": 28.331625706,
+      "previously_decoded_message_count": 3092,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B026",
+      "filename": "CAR2_WALL_UWB_ODOM_IMU_key_Lshape_20261011_073901.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_key_Lshape_20261011_073901.bag",
+      "category": "diagnostic",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "incomplete_motion",
+      "experiment_description": "未完成L形，odom只有约0.023m与-0.799度变化。",
+      "reference_status": "无可用于完成路线精度评价的独立终点/角度参考。",
+      "recommended_use": [
+        "启动、停滞和未完成控制过程诊断。"
+      ],
+      "limitations": [
+        "无已确认终点，不能借用后续重录的人工记录。",
+        "实验失败/未完成与bag文件损坏是不同状态；此包先前可完整读取。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B026",
+        "original-note:R006"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R006",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/CAR2_WALL_UWB_ODOM_IMU_key_Lshape_20261011_073901_notes.txt",
+          "sha256": "11005ea8b40be679657f3050741210b7605219e27808251dec9a72634db1ba68",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "0a6d693aa128b057696f8dd7828bc41ad0b69a7ca66d796d22e50de6354549fb",
+      "expected_size_bytes": 3674873,
+      "previously_decoded_duration_s": 109.978986676,
+      "previously_decoded_message_count": 11216,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B027",
+      "filename": "CAR2_WALL_UWB_ODOM_IMU_key_forward_20261011_045550.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_key_forward_20261011_045550.bag",
+      "category": "single_car_motion",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_forward_with_later_turn",
+      "experiment_description": "键盘前进后又有转向，必须按阶段拆分。",
+      "reference_status": "人工前进位移1.020m，须对应前进阶段；不把后段转向混为一维运动。",
+      "recommended_use": [
+        "固定前进窗口的一维位移对照和因果回放。"
+      ],
+      "limitations": [
+        "整包不是纯一维前进；位移参考不等于连续轨迹真值。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B027",
+        "original-note:R007",
+        "artifacts/history_reference_review_20261020/README.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R007",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/CAR2_WALL_UWB_ODOM_IMU_key_forward_20261011_045550_survey.txt",
+          "sha256": "78ed4419983d987df4abc38ec7a1bbadea9c21ef10f2dd555b071cced36886f7",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "f20548a7f34637b5275ec31d0ca42d275a0d13084ee959d11ca49c420dc8e9ba",
+      "expected_size_bytes": 1784269,
+      "previously_decoded_duration_s": 49.983104148,
+      "previously_decoded_message_count": 5556,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B028",
+      "filename": "CAR2_WALL_UWB_ODOM_IMU_key_forward_repeat_20261011_051810.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_key_forward_repeat_20261011_051810.bag",
+      "category": "single_car_motion",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "completed_forward_repeat",
+      "experiment_description": "前进重录，适合固定窗口位移检查。",
+      "reference_status": "起点天线[2,2,0.20]m，人工位移1.010m；未独立测量终点XYZ。",
+      "recommended_use": [
+        "独立人工位移对照、单车顺序回放和测距变化检查。"
+      ],
+      "limitations": [
+        "只有位移参考，不能升级为二维绝对终点或全程真值。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B028",
+        "original-note:R008",
+        "original-note:R009",
+        "artifacts/history_reference_review_20261020/README.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R008",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/CAR2_WALL_UWB_ODOM_IMU_key_forward_repeat_20261011_051810_independent_check.txt",
+          "sha256": "3718356e34d87af7ba84820049a37891b1f5e752689098c53007e7fcf3f3251d",
+          "kind": "original_reference_text"
+        },
+        {
+          "reference_id": "R009",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/CAR2_WALL_UWB_ODOM_IMU_key_forward_repeat_20261011_051810_survey.txt",
+          "sha256": "2953b6ea2d7240e0672f28931e76e5174a53a8aa988e905d247ca4ece6e00f84",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "71475c6894d0aaa8fee9b0d2213d119a24ddf820b0017bf0acec74cadf0097bb",
+      "expected_size_bytes": 1785389,
+      "previously_decoded_duration_s": 49.916305492000006,
+      "previously_decoded_message_count": 5569,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B029",
+      "filename": "CAR2_WALL_UWB_ODOM_IMU_key_return_20261011_052421.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_key_return_20261011_052421.bag",
+      "category": "single_car_motion",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_return",
+      "experiment_description": "返回记录；参考来源含前次终点与剩余距离推算。",
+      "reference_status": "0.950m为推算返回位移，不是本包新的独立卷尺测量。",
+      "recommended_use": [
+        "返回过程、时序、方向和测距一致性诊断。"
+      ],
+      "limitations": [
+        "不能将推算值当作独立位移真值，也不能借用051810参考。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B029",
+        "original-note:R010",
+        "artifacts/history_reference_review_20261020/README.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R010",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/CAR2_WALL_UWB_ODOM_IMU_key_return_20261011_052421_calibration_check.txt",
+          "sha256": "2495a3024824f285ab505c57b63e0fcbab83598a65fdc178dd15f4f2de40483b",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "6484f1cba99cde9e1808751e760c8bbc965080940f32a91941030e416d55ff76",
+      "expected_size_bytes": 1781848,
+      "previously_decoded_duration_s": 49.990246213000006,
+      "previously_decoded_message_count": 5538,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B030",
+      "filename": "CAR2_WALL_UWB_ODOM_IMU_manual_roll_20261011_042840.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_manual_roll_20261011_042840.bag",
+      "category": "diagnostic",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "unstructured_manual_diagnostic",
+      "experiment_description": "非结构化手动往返推动；odom累计约2.066m但最终离起点仅约0.019m。",
+      "reference_status": "用户确认没有具体人工坐标或结构化路线标注；追补事项已关闭。",
+      "recommended_use": [
+        "接口、手推/轮速响应、往返测距与odom一致性诊断。"
+      ],
+      "limitations": [
+        "不用于位置、终点或连续轨迹精度评价；不再要求用户补造坐标。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B030",
+        "artifacts/reference_response_supplement_20261020/README.md"
+      ],
+      "original_notes": [],
+      "known_sha256": "06638ce3d045d08e9f8c15d06ce3a6e51354c1b375a2525fca5d40dae1e3f97a",
+      "expected_size_bytes": 1676790,
+      "previously_decoded_duration_s": 49.880632224,
+      "previously_decoded_message_count": 4568,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B031",
+      "filename": "CAR2_WALL_UWB_ODOM_IMU_oneway_20261011_043326.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_oneway_20261011_043326.bag",
+      "category": "diagnostic",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "unstructured_manual_diagnostic",
+      "experiment_description": "非结构化手动前后推动；文件名oneway不代表实际单程，odom累计约0.920m、最终离起点约0.052m。",
+      "reference_status": "用户确认没有具体人工坐标或结构化路线标注；追补事项已关闭。",
+      "recommended_use": [
+        "接口、手推/轮速响应、往返测距与odom一致性诊断。"
+      ],
+      "limitations": [
+        "不用于位置、终点或连续轨迹精度评价；不再要求用户补造坐标。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B031",
+        "artifacts/reference_response_supplement_20261020/README.md"
+      ],
+      "original_notes": [],
+      "known_sha256": "1e00de7909394c1fa6ad5630e9e06b024053aeb6aa5ecfbb4c7ce75e25ca3386",
+      "expected_size_bytes": 1346148,
+      "previously_decoded_duration_s": 39.981386507,
+      "previously_decoded_message_count": 3654,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B032",
+      "filename": "CAR2_WALL_UWB_ODOM_IMU_static_20261011_042319.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/CAR2_WALL_UWB_ODOM_IMU_static_20261011_042319.bag",
+      "category": "single_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "Car2 UWB、odom、IMU静态联合记录，odom未见平移。",
+      "reference_status": "有原始测量备注，按记录核对",
+      "recommended_use": [
+        "静止噪声、话题接口、时序与局部测距偏差检查。"
+      ],
+      "limitations": [
+        "使用对应原始survey与当日布局，不能由odom零位移认定人工参考零误差。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B032",
+        "original-note:R011",
+        "artifacts/history_reference_review_20261020/README.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R011",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/CAR2_WALL_UWB_ODOM_IMU_static_20261011_042319_survey.txt",
+          "sha256": "ffb34d24367fef0a8d85a4b3df6c3226e88a3cfc4ae4db7468bd208ac1b4e9b1",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "4be35bcb4052042b812c6c1e4a7a4f3c4e77e5c229f2e9ac794f9ae35caed029",
+      "expected_size_bytes": 1013827,
+      "previously_decoded_duration_s": 29.883950901000002,
+      "previously_decoded_message_count": 2738,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B033",
+      "filename": "CAR2_auto_Lshape_20261011_091958.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/CAR2_auto_Lshape_20261011_091958.bag",
+      "category": "single_car_motion",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "completed_automatic",
+      "experiment_description": "自动L形，整体较干净；当日仅三路墙锚有数据。",
+      "reference_status": "有逐包人工天线起终点/摆放参考；无连续实测轨迹。",
+      "recommended_use": [
+        "历史自动L形对照样本",
+        "单车离线UWB-only、odom与融合对照；按时间顺序回放开发测试（在线性能尚未验收）。"
+      ],
+      "limitations": [
+        "终点差不能代表全程精度；五包控制方法、可用链路与墙节点安装不完全相同。",
+        "使用各场次自己的墙节点配置和P1修正；10月11日N8缺失，不能跨重装套用配置。",
+        "天线相对近似底盘中心偏移已有记录且用户确认安装未改；该中心与odom车体参考点的对应仍待核实。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B033",
+        "original-note:R012",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/SINGLE_CAR_FIVE_BAG_REVIEW_20261021.md",
+        "artifacts/history_reference_review_20261020/README.md",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/single_car_historical_L_20261021/MOUNT_USER_CONFIRMATION_20261021.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R012",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/CAR2_auto_Lshape_20261011_091958_notes.txt",
+          "sha256": "c23e2e375de8ea587a35ff6142be7a268b53e5323e5454e3542545d824b09e86",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "ba9286da5ef369d9e785883f9d909f3f4e54d4a8827aed2e9b2c1b59ef8e435f",
+      "expected_size_bytes": 5939705,
+      "previously_decoded_duration_s": 178.563273352,
+      "previously_decoded_message_count": 18056,
+      "manual_reference": {
+        "antenna_start_xyz_m": [
+          2.0,
+          2.0,
+          0.2
+        ],
+        "antenna_end_xyz_m": [
+          2.95,
+          3.11,
+          0.2
+        ],
+        "initial_heading": "+Y",
+        "source_status": "用户确认/原始逐包备注；不确定度未量化"
+      },
+      "wall_layout": "before_reinstall_20261010_11",
+      "available_wall_anchor_ids": [
+        "N10",
+        "N2",
+        "N3"
+      ],
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B034",
+      "filename": "CAR2_auto_turn90_20261011_091414.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/CAR2_auto_turn90_20261011_091414.bag",
+      "category": "diagnostic",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "not_started",
+      "experiment_description": "无非零控制指令，odom无变化，未完成转向。",
+      "reference_status": "无可用于完成路线精度评价的独立终点/角度参考。",
+      "recommended_use": [
+        "自动转向启动流程诊断。"
+      ],
+      "limitations": [
+        "不能称为完成90度转向或评价实际转角精度。",
+        "实验失败/未完成与bag文件损坏是不同状态；此包先前可完整读取。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B034"
+      ],
+      "original_notes": [],
+      "known_sha256": "81564be5041759a0c504a7756aec3dce9c002d897f7549595c960a6e2776254f",
+      "expected_size_bytes": 1426284,
+      "previously_decoded_duration_s": 42.529014835000005,
+      "previously_decoded_message_count": 4272,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B035",
+      "filename": "CAR2_auto_turn90_20261011_091508.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/CAR2_auto_turn90_20261011_091508.bag",
+      "category": "diagnostic",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "stalled_turn",
+      "experiment_description": "存在转向指令，但odom净转角仅约-0.622度。",
+      "reference_status": "无可用于完成路线精度评价的独立终点/角度参考。",
+      "recommended_use": [
+        "转向停滞和执行链诊断。"
+      ],
+      "limitations": [
+        "不能称为完成90度转向或评价实际转角精度。",
+        "实验失败/未完成与bag文件损坏是不同状态；此包先前可完整读取。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B035"
+      ],
+      "original_notes": [],
+      "known_sha256": "a97bd12be1d17af9e56ecb66e94b4ee6250c76d0ac4ff46fb6b29aae829e5f78",
+      "expected_size_bytes": 1599264,
+      "previously_decoded_duration_s": 48.473068818,
+      "previously_decoded_message_count": 4640,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B036",
+      "filename": "CAR2_auto_turn90_w0p20_20261011_091734.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/CAR2_auto_turn90_w0p20_20261011_091734.bag",
+      "category": "diagnostic",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "controller_completed_unverified_physical_turn",
+      "experiment_description": "不成熟自动相对右转试验。控制器结束odom约-89.8度，全包最终约-97.61度。",
+      "reference_status": "没有独立人工实际角度测量；用户补充事项已关闭。",
+      "recommended_use": [
+        "控制器、odom/IMU一致性与停止后沉降/漂移诊断。"
+      ],
+      "limitations": [
+        "原始notes和cmd_vel证实是自动转向，不按模糊回忆改写为手动。",
+        "控制器结束值与全包最终值不同，均不是独立物理角度真值。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B036",
+        "original-note:R013",
+        "artifacts/reference_response_supplement_20261020/README.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R013",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/CAR2_auto_turn90_w0p20_20261011_091734_notes.txt",
+          "sha256": "a6f63b7cf8325cb655891e43d892d4d71f2f4e5a5699aaefecf8d33d6c816076",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "09d8feb868bf7970fac55ccc1f0a372c5e3b6efa699c69beef876947ecf90364",
+      "expected_size_bytes": 2021425,
+      "previously_decoded_duration_s": 59.921742201,
+      "previously_decoded_message_count": 6182,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B037",
+      "filename": "MOBILE_P1_h0p20_clear_A_20261011_014350.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/MOBILE_P1_h0p20_clear_A_20261011_014350.bag",
+      "category": "single_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "静态标签；未录odom核验",
+      "reference_status": "有原始测量备注，按记录核对",
+      "recommended_use": [
+        "同一低位P1静态A无遮挡、B人员操作、C恢复的分段测距分布对照。"
+      ],
+      "limitations": [
+        "未录odom独立核验静止；遮挡操作标签不保证整个包均为稳定遮挡或必然有大偏差。",
+        "使用10月11日安装和人工备注，不与10月17日校准值混用。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B037",
+        "original-note:R014"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R014",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/MOBILE_P1_h0p20_clear_A_20261011_014350_survey.txt",
+          "sha256": "cd0654f0b289298700ead08d348e184df4845c2c421133a679784a2be3eba211",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "4631d79c8b0aef451aaf0c6f501695810be05e8c08d4660c8a1cb7aece3075a9",
+      "expected_size_bytes": 306272,
+      "previously_decoded_duration_s": 29.7597233,
+      "previously_decoded_message_count": 1489,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B038",
+      "filename": "MOBILE_P1_h0p20_clear_C_20261011_014758.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/MOBILE_P1_h0p20_clear_C_20261011_014758.bag",
+      "category": "single_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "静态标签；未录odom核验",
+      "reference_status": "有原始测量备注，按记录核对",
+      "recommended_use": [
+        "同一低位P1静态A无遮挡、B人员操作、C恢复的分段测距分布对照。"
+      ],
+      "limitations": [
+        "未录odom独立核验静止；遮挡操作标签不保证整个包均为稳定遮挡或必然有大偏差。",
+        "使用10月11日安装和人工备注，不与10月17日校准值混用。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B038",
+        "original-note:R015"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R015",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/MOBILE_P1_h0p20_clear_C_20261011_014758_survey.txt",
+          "sha256": "215dbcb222533018354a6cad195722326e630353984e3709c964266e312b8e59",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "c14115c76d2677612b154609b1422e32ae5cf9ae365416953ce9740c5f604e5d",
+      "expected_size_bytes": 306473,
+      "previously_decoded_duration_s": 29.777059559,
+      "previously_decoded_message_count": 1490,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B039",
+      "filename": "MOBILE_P1_h0p20_human_B_20261011_014654.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/MOBILE_P1_h0p20_human_B_20261011_014654.bag",
+      "category": "single_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "静态标签；未录odom核验",
+      "reference_status": "有原始测量备注，按记录核对",
+      "recommended_use": [
+        "同一低位P1静态A无遮挡、B人员操作、C恢复的分段测距分布对照。"
+      ],
+      "limitations": [
+        "未录odom独立核验静止；遮挡操作标签不保证整个包均为稳定遮挡或必然有大偏差。",
+        "使用10月11日安装和人工备注，不与10月17日校准值混用。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B039",
+        "original-note:R016"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R016",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/MOBILE_P1_h0p20_human_B_20261011_014654_survey.txt",
+          "sha256": "e40dcc1e64330634f0275a4779148ca3f0256d4ed03e525628f56acb23f1c2f9",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "fd4ce42d95c68d62b61c8bd958b4626939135949d4404e3549bb05cf0e38fe1a",
+      "expected_size_bytes": 306228,
+      "previously_decoded_duration_s": 29.757235253,
+      "previously_decoded_message_count": 1489,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B040",
+      "filename": "MOBILE_P1_h1p00_clear_R1_20261011_020429.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/MOBILE_P1_h1p00_clear_R1_20261011_020429.bag",
+      "category": "single_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "静态标签；未录odom核验",
+      "reference_status": "有原始测量备注，按记录核对",
+      "recommended_use": [
+        "高位静态多位置测距分布、重复性和局部校准适用范围检查。"
+      ],
+      "limitations": [
+        "P1与P5分别有重复记录，包数不能等同不同空间位置数。",
+        "高度、位置、安装和传播因素未隔离，不能单凭差异归因高度。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B040",
+        "original-note:R017",
+        "artifacts/history_reference_review_20261020/README.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R017",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/MOBILE_P1_h1p00_clear_R1_20261011_020429_survey.txt",
+          "sha256": "a7fa70f93c5463943f1eb694ae90264656a44ffe408af7319f03ac63ad6c5565",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "df08eb888b19a82b14e464959badf10d339b252266c3c4dc27d384cda6a8744c",
+      "expected_size_bytes": 305804,
+      "previously_decoded_duration_s": 29.718539823,
+      "previously_decoded_message_count": 1487,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B041",
+      "filename": "MOBILE_P1_h1p00_clear_R2_20261011_020505.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/MOBILE_P1_h1p00_clear_R2_20261011_020505.bag",
+      "category": "single_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "静态标签；未录odom核验",
+      "reference_status": "有原始测量备注，按记录核对",
+      "recommended_use": [
+        "高位静态多位置测距分布、重复性和局部校准适用范围检查。"
+      ],
+      "limitations": [
+        "P1与P5分别有重复记录，包数不能等同不同空间位置数。",
+        "高度、位置、安装和传播因素未隔离，不能单凭差异归因高度。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B041",
+        "original-note:R018",
+        "artifacts/history_reference_review_20261020/README.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R018",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/MOBILE_P1_h1p00_clear_R2_20261011_020505_survey.txt",
+          "sha256": "44515ceaa64508a237071d2f9402e9bfc9446f65d812049a34378ac190d6351a",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "0a0f54a855ec66601c2cf33ecd78995352b81035718987a575e6b1282c29c0a6",
+      "expected_size_bytes": 306228,
+      "previously_decoded_duration_s": 29.756767405,
+      "previously_decoded_message_count": 1489,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B042",
+      "filename": "MOBILE_P2_raised_LOS_20261011_021656.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/MOBILE_P2_raised_LOS_20261011_021656.bag",
+      "category": "single_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "静态标签；未录odom核验",
+      "reference_status": "有原始测量备注，按记录核对",
+      "recommended_use": [
+        "高位静态多位置测距分布、重复性和局部校准适用范围检查。"
+      ],
+      "limitations": [
+        "P1与P5分别有重复记录，包数不能等同不同空间位置数。",
+        "高度、位置、安装和传播因素未隔离，不能单凭差异归因高度。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B042",
+        "original-note:R019",
+        "artifacts/history_reference_review_20261020/README.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R019",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/MOBILE_P2_raised_LOS_20261011_021656_survey.txt",
+          "sha256": "4d182d0687684ea5fd2283293070aa30107c7a3e9ef22147d678ece9ed07a4bc",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "39c7556a95fbacc0ff8a38db95689497b21fce2badc4c89939c1c6a90d2010c8",
+      "expected_size_bytes": 305625,
+      "previously_decoded_duration_s": 29.698767966000002,
+      "previously_decoded_message_count": 1486,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B043",
+      "filename": "MOBILE_P3_h1p00_clear_20261011_022616.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/MOBILE_P3_h1p00_clear_20261011_022616.bag",
+      "category": "single_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "静态标签；未录odom核验",
+      "reference_status": "有原始测量备注，按记录核对",
+      "recommended_use": [
+        "高位静态多位置测距分布、重复性和局部校准适用范围检查。"
+      ],
+      "limitations": [
+        "P1与P5分别有重复记录，包数不能等同不同空间位置数。",
+        "高度、位置、安装和传播因素未隔离，不能单凭差异归因高度。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B043",
+        "original-note:R020",
+        "artifacts/history_reference_review_20261020/README.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R020",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/MOBILE_P3_h1p00_clear_20261011_022616_survey.txt",
+          "sha256": "00846e434bb908d5a0733bad7bee867dfc3c2b1c7bc0fc1bece5b45395abbb5f",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "9022cfff7bbcdf4a0d036f7b45032d3b7b89d2ebeb2c01c4eb230535dd266331",
+      "expected_size_bytes": 306049,
+      "previously_decoded_duration_s": 29.738659278,
+      "previously_decoded_message_count": 1488,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B044",
+      "filename": "MOBILE_P4_h1p00_clear_20261011_023347.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/MOBILE_P4_h1p00_clear_20261011_023347.bag",
+      "category": "single_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "静态标签；未录odom核验",
+      "reference_status": "有原始测量备注，按记录核对",
+      "recommended_use": [
+        "高位静态多位置测距分布、重复性和局部校准适用范围检查。"
+      ],
+      "limitations": [
+        "P1与P5分别有重复记录，包数不能等同不同空间位置数。",
+        "高度、位置、安装和传播因素未隔离，不能单凭差异归因高度。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B044",
+        "original-note:R021",
+        "artifacts/history_reference_review_20261020/README.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R021",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/MOBILE_P4_h1p00_clear_20261011_023347_survey.txt",
+          "sha256": "b13b6fc60d1209a200f597dc6b61e48fc3df26448ce1785c8e39461a8928c01f",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "a3d079b916a72f4084f11c9de02e316f971dd2aeba1d686ea33856331c6fe7e1",
+      "expected_size_bytes": 305581,
+      "previously_decoded_duration_s": 29.703128393,
+      "previously_decoded_message_count": 1486,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B045",
+      "filename": "MOBILE_P5_raised_LOS_20261011_023837.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/MOBILE_P5_raised_LOS_20261011_023837.bag",
+      "category": "single_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "静态标签；未录odom核验",
+      "reference_status": "采用最终更正后的天线坐标[2.02,4.00,1.00]m。",
+      "recommended_use": [
+        "高位静态多位置测距分布、重复性和局部校准适用范围检查。"
+      ],
+      "limitations": [
+        "保留原备注旧坐标[1.50,4.00,1.00]，当前评价使用最终更正；不改写原notes。",
+        "同位置两次录制，不能当作两个空间点。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B045",
+        "original-note:R022",
+        "original-note:R023",
+        "artifacts/history_reference_review_20261020/README.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R022",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/MOBILE_P5_raised_LOS_20261011_023837_survey.txt",
+          "sha256": "7f3eb55a956c9bfec84f6bf633877d48ece05b797339229f218a29e0f97bd57b",
+          "kind": "original_reference_text"
+        },
+        {
+          "reference_id": "R023",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/MOBILE_P5_raised_LOS_20261011_023837_survey_before_coordinate_correction.txt",
+          "sha256": "7f479d473472e7696101e218833ffa803577b7128a910e0ef0bae8863b03892f",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "2a0e2e85370211725a194c4c12c4b1479372d864285926d35bcd713d16e9d825",
+      "expected_size_bytes": 306026,
+      "previously_decoded_duration_s": 29.740448765000004,
+      "previously_decoded_message_count": 1488,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B046",
+      "filename": "MOBILE_P5_raised_LOS_20261011_025440.bag",
+      "date": "20261011",
+      "vm_relative_path": "20261011/MOBILE_P5_raised_LOS_20261011_025440.bag",
+      "category": "single_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "静态标签；未录odom核验",
+      "reference_status": "采用最终更正后的天线坐标[2.02,4.00,1.00]m。",
+      "recommended_use": [
+        "高位静态多位置测距分布、重复性和局部校准适用范围检查。"
+      ],
+      "limitations": [
+        "保留原备注旧坐标[1.50,4.00,1.00]，当前评价使用最终更正；不改写原notes。",
+        "同位置两次录制，不能当作两个空间点。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B046",
+        "original-note:R024",
+        "original-note:R025",
+        "artifacts/history_reference_review_20261020/README.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R024",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/MOBILE_P5_raised_LOS_20261011_025440_survey.txt",
+          "sha256": "7f3eb55a956c9bfec84f6bf633877d48ece05b797339229f218a29e0f97bd57b",
+          "kind": "original_reference_text"
+        },
+        {
+          "reference_id": "R025",
+          "archive_id": "oct10_11",
+          "archive_member": "uwb_field_tests/20261011/MOBILE_P5_raised_LOS_20261011_025440_survey_before_coordinate_correction.txt",
+          "sha256": "0028b53ec7a50b8c163181d3a2fb4a5ea96bb4f0dfb58697bdb77add33da3f5b",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "95a294f90dfcaf927231c5efd966b9088d531abb8ae18d1687e4feee1f2af14d",
+      "expected_size_bytes": 305895,
+      "previously_decoded_duration_s": 29.739811723000003,
+      "previously_decoded_message_count": 1488,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B047",
+      "filename": "CAR2_P15_REINSTALL_STATIC_20261017_055818.bag",
+      "date": "20261017",
+      "vm_relative_path": "20261017/CAR2_P15_REINSTALL_STATIC_20261017_055818.bag",
+      "category": "single_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "墙节点重装后的静态参考记录。",
+      "reference_status": "最终人工天线坐标[2, 3, 0.2]m；参考不确定度未量化。",
+      "recommended_use": [
+        "重装后静态修正迁移与同位置重复性验证。"
+      ],
+      "limitations": [
+        "B047与B049同为[2,3,0.20]m，不能当作不同位置。",
+        "保留文件名和更正前备注，采用最终确认坐标；先前P1修正不能视为全场通用。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B047",
+        "original-note:R026",
+        "original-note:R027",
+        "artifacts/history_reference_review_20261020/README.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R026",
+          "archive_id": "oct17",
+          "archive_member": "20261017/CAR2_P15_REINSTALL_STATIC_20261017_055818_notes.txt",
+          "sha256": "f5c4cbaa33077a24a98f62d00c612b51badce116e45c4af439b561adf64df3b5",
+          "kind": "original_reference_text"
+        },
+        {
+          "reference_id": "R027",
+          "archive_id": "oct17",
+          "archive_member": "20261017/CAR2_P15_REINSTALL_STATIC_20261017_055818_notes_before_coordinate_correction.txt",
+          "sha256": "4eb7e7aeda6c6ef44d05b240c6a729501e2e21028f685aa6d177781d154f3afc",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "5ec05b7ab00c33e8be51e93800cf1b81f81a31e653df961d3737f81c9a4e6858",
+      "expected_size_bytes": 296454,
+      "previously_decoded_duration_s": 29.699897001,
+      "previously_decoded_message_count": 1485,
+      "manual_reference": {
+        "antenna_xyz_m": [
+          2,
+          3,
+          0.2
+        ]
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B048",
+      "filename": "CAR2_P1_REINSTALL_STATIC_20261017_045257.bag",
+      "date": "20261017",
+      "vm_relative_path": "20261017/CAR2_P1_REINSTALL_STATIC_20261017_045257.bag",
+      "category": "single_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "重装后P1静态校准来源。",
+      "reference_status": "人工天线坐标[2,2,0.20]m。",
+      "recommended_use": [
+        "为同安装场次估计分墙节点的固定测距修正。"
+      ],
+      "limitations": [
+        "该包用于估计修正后，不能再将它作为独立校准效果验证。",
+        "修正适用范围需要其他位置/朝向检验。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B048",
+        "original-note:R028",
+        "artifacts/history_reference_review_20261020/README.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R028",
+          "archive_id": "oct17",
+          "archive_member": "20261017/CAR2_P1_REINSTALL_STATIC_20261017_045257_notes.txt",
+          "sha256": "2f32a6196348add72a2c43b401273733d4073a5ce8f30fcdec3684b8aef88f2c",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "f7250698ae484b7ace3bf152b1ff216f5470b5d75f0b90a66483edb402d1ec33",
+      "expected_size_bytes": 296715,
+      "previously_decoded_duration_s": 29.700101354,
+      "previously_decoded_message_count": 1486,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B049",
+      "filename": "CAR2_P23_UWB_ODOM_IMU_static_20261017_060940.bag",
+      "date": "20261017",
+      "vm_relative_path": "20261017/CAR2_P23_UWB_ODOM_IMU_static_20261017_060940.bag",
+      "category": "single_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "墙节点重装后的静态参考记录。",
+      "reference_status": "最终人工天线坐标[2, 3, 0.2]m；参考不确定度未量化。",
+      "recommended_use": [
+        "重装后静态修正迁移、同位置重复性及静止回放验证。"
+      ],
+      "limitations": [
+        "B047与B049同为[2,3,0.20]m，不能当作不同位置。",
+        "保留文件名和更正前备注，采用最终确认坐标；先前P1修正不能视为全场通用。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B049",
+        "original-note:R029",
+        "artifacts/history_reference_review_20261020/README.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R029",
+          "archive_id": "oct17",
+          "archive_member": "20261017/CAR2_P23_UWB_ODOM_IMU_static_20261017_060940_notes.txt",
+          "sha256": "1c00f7976bee29406b2b39e81b0b0cb7e66bdcc5d17533d9a48311d2b4b5c689",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "b9285811377432385566ebb6c500ca5fb498e701917a29e7923b28f3e3225d55",
+      "expected_size_bytes": 681494,
+      "previously_decoded_duration_s": 19.999236055,
+      "previously_decoded_message_count": 1822,
+      "manual_reference": {
+        "antenna_xyz_m": [
+          2,
+          3,
+          0.2
+        ]
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B050",
+      "filename": "CAR2_P4_REINSTALL_STATIC_20261017_053806.bag",
+      "date": "20261017",
+      "vm_relative_path": "20261017/CAR2_P4_REINSTALL_STATIC_20261017_053806.bag",
+      "category": "single_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "墙节点重装后的静态参考记录。",
+      "reference_status": "最终人工天线坐标[3, 3, 0.2]m；参考不确定度未量化。",
+      "recommended_use": [
+        "重装后另一位置的静态修正迁移验证。"
+      ],
+      "limitations": [
+        "B047与B049同为[2,3,0.20]m，不能当作不同位置。",
+        "保留文件名和更正前备注，采用最终确认坐标；先前P1修正不能视为全场通用。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B050",
+        "original-note:R030",
+        "original-note:R031",
+        "artifacts/history_reference_review_20261020/README.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R030",
+          "archive_id": "oct17",
+          "archive_member": "20261017/CAR2_P4_REINSTALL_STATIC_20261017_053806_notes.txt",
+          "sha256": "674c2ea5f7ff89941c92b06fdf6e5b8bce8d78832a3b3e4c8f12a708dba8d85b",
+          "kind": "original_reference_text"
+        },
+        {
+          "reference_id": "R031",
+          "archive_id": "oct17",
+          "archive_member": "20261017/CAR2_P4_REINSTALL_STATIC_20261017_053806_notes_before_height_fix.txt",
+          "sha256": "d3ee600844ca97f78f8d312c23d9022bb3510ef4c12dff50987022a0c7de0fef",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "4687abd3e2513477d29059789f1bf25539c1193237178f3805dca13fcac2e429",
+      "expected_size_bytes": 296910,
+      "previously_decoded_duration_s": 29.717692088000003,
+      "previously_decoded_message_count": 1487,
+      "manual_reference": {
+        "antenna_xyz_m": [
+          3,
+          3,
+          0.2
+        ]
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B051",
+      "filename": "CAR2_WALL_REINSTALL_STATIC_20261017_040643.bag",
+      "date": "20261017",
+      "vm_relative_path": "20261017/CAR2_WALL_REINSTALL_STATIC_20261017_040643.bag",
+      "category": "diagnostic",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "communication_only",
+      "experiment_description": "充电桌上通信试录，可能存在遮挡。",
+      "reference_status": "无可用于几何评价的人工天线坐标。",
+      "recommended_use": [
+        "通信、Frame3解析和节点身份检查。"
+      ],
+      "limitations": [
+        "不用于距离几何校准、静态位置精度或遮挡效果定量评价。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B051",
+        "original-note:R032"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R032",
+          "archive_id": "oct17",
+          "archive_member": "20261017/CAR2_WALL_REINSTALL_STATIC_20261017_040643_notes.txt",
+          "sha256": "4d6f1e3ae8e1f0b049b1cd75c8d1c6cb0b5760e864b14da4a0cf50a817a8ed34",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "83abc8230bfde26eef639358dda22545aca75a4c22865a8290fb834439d7fc04",
+      "expected_size_bytes": 296544,
+      "previously_decoded_duration_s": 29.786384269000003,
+      "previously_decoded_message_count": 1491,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B052",
+      "filename": "CAR2_auto_Lshape_reinstall_20261017_061540.bag",
+      "date": "20261017",
+      "vm_relative_path": "20261017/CAR2_auto_Lshape_reinstall_20261017_061540.bag",
+      "category": "single_car_motion",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "completed_with_measurement_anomaly",
+      "experiment_description": "重装后的四锚自动L形；N10初始持续异常。",
+      "reference_status": "有逐包人工天线起终点/摆放参考；无连续实测轨迹。",
+      "recommended_use": [
+        "四锚自动L形与初始化异常挑战样本",
+        "单车离线UWB-only、odom与融合对照；按时间顺序回放开发测试（在线性能尚未验收）。"
+      ],
+      "limitations": [
+        "终点差不能代表全程精度；五包控制方法、可用链路与墙节点安装不完全相同。",
+        "使用各场次自己的墙节点配置和P1修正；10月11日N8缺失，不能跨重装套用配置。",
+        "天线相对近似底盘中心偏移已有记录且用户确认安装未改；该中心与odom车体参考点的对应仍待核实。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B052",
+        "original-note:R033",
+        "original-note:R034",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/SINGLE_CAR_FIVE_BAG_REVIEW_20261021.md",
+        "artifacts/history_reference_review_20261020/README.md",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/single_car_historical_L_20261021/MOUNT_USER_CONFIRMATION_20261021.md"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R033",
+          "archive_id": "oct17",
+          "archive_member": "20261017/CAR2_auto_Lshape_reinstall_20261017_061540_notes.txt",
+          "sha256": "1b074a75b5e6c35a434cd2146841b6dbb214453b4ee3fadc8180458aff62961b",
+          "kind": "original_reference_text"
+        },
+        {
+          "reference_id": "R034",
+          "archive_id": "oct17",
+          "archive_member": "20261017/CAR2_auto_Lshape_reinstall_20261017_061540_quick_diagnostics.txt",
+          "sha256": "9a963c18b31a6d2b4f6673f6aa02ac41299d342d050f855db3c6953a85da21f5",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "da703f331c45433a5c08f2119b8585d377bca41db2fa5ebc1a7fd8f4b294dd10",
+      "expected_size_bytes": 4683753,
+      "previously_decoded_duration_s": 134.693279259,
+      "previously_decoded_message_count": 14096,
+      "manual_reference": {
+        "antenna_start_xyz_m": [
+          2.0,
+          2.0,
+          0.2
+        ],
+        "antenna_end_xyz_m": [
+          3.03,
+          2.95,
+          0.2
+        ],
+        "initial_heading": "+Y",
+        "source_status": "用户确认/原始逐包备注；不确定度未量化"
+      },
+      "wall_layout": "after_reinstall_20261017_18",
+      "available_wall_anchor_ids": [
+        "N10",
+        "N2",
+        "N3",
+        "N8"
+      ],
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B053",
+      "filename": "CAR2_A_static_20261018_003849.bag",
+      "date": "20261018",
+      "vm_relative_path": "20261018/CAR2_A_static_20261018_003849.bag",
+      "category": "single_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "Car2位于A点的静态联合话题记录，N10有波动。",
+      "reference_status": "A点天线[2,2,0.20]m，用户条件确认并由多节点起始测距对照支持。",
+      "recommended_use": [
+        "A点静止话题、启动与N10波动诊断。"
+      ],
+      "limitations": [
+        "不是未经验证即可通用的独立校准源；与用户条件确认的来源级别一并保留。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B053",
+        "artifacts/reference_response_supplement_20261020/README.md"
+      ],
+      "original_notes": [],
+      "known_sha256": "93c474dd76aa54fd6311dfc76be088fec0d4c236db92710c8781fbe1451b72c9",
+      "expected_size_bytes": 1013827,
+      "previously_decoded_duration_s": 29.90005731,
+      "previously_decoded_message_count": 2738,
+      "shared_installation_reference": {
+        "car1_antenna_height_m": 0.17,
+        "car2_antenna_height_m": 0.2,
+        "car1_note_original_height_m": 0.2,
+        "policy": "原始notes不改写，更正值单独用于分析。"
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B054",
+      "filename": "CAR2_auto_Lshape_repeat2_20261018_005135.bag",
+      "date": "20261018",
+      "vm_relative_path": "20261018/CAR2_auto_Lshape_repeat2_20261018_005135.bag",
+      "category": "single_car_motion",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "completed_automatic",
+      "experiment_description": "自动L形第二次重录，用户确认正常完成，但仍有短时测距尖峰。",
+      "reference_status": "有逐包人工天线起终点/摆放参考；无连续实测轨迹。",
+      "recommended_use": [
+        "单车L形正常完成对照",
+        "单车离线UWB-only、odom与融合对照；按时间顺序回放开发测试（在线性能尚未验收）。"
+      ],
+      "limitations": [
+        "终点差不能代表全程精度；五包控制方法、可用链路与墙节点安装不完全相同。",
+        "使用各场次自己的墙节点配置和P1修正；10月11日N8缺失，不能跨重装套用配置。",
+        "天线相对近似底盘中心偏移已有记录且用户确认安装未改；该中心与odom车体参考点的对应仍待核实。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B054",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/SINGLE_CAR_FIVE_BAG_REVIEW_20261021.md",
+        "artifacts/history_reference_review_20261020/README.md",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/single_car_historical_L_20261021/MOUNT_USER_CONFIRMATION_20261021.md",
+        "artifacts/reference_response_supplement_20261020/README.md"
+      ],
+      "original_notes": [],
+      "known_sha256": "63880adf78d5f07a9b12a87f7352f49e8f7be82d223bcdf60d96e257ba38b2ff",
+      "expected_size_bytes": 3341539,
+      "previously_decoded_duration_s": 94.67557343,
+      "previously_decoded_message_count": 10322,
+      "manual_reference": {
+        "antenna_start_xyz_m": [
+          2.0,
+          2.0,
+          0.2
+        ],
+        "antenna_end_xyz_m": [
+          2.93,
+          3.04,
+          0.2
+        ],
+        "initial_heading": "+Y",
+        "source_status": "用户确认/原始逐包备注；不确定度未量化"
+      },
+      "wall_layout": "after_reinstall_20261017_18",
+      "available_wall_anchor_ids": [
+        "N10",
+        "N2",
+        "N3",
+        "N8"
+      ],
+      "shared_installation_reference": {
+        "car1_antenna_height_m": 0.17,
+        "car2_antenna_height_m": 0.2,
+        "car1_note_original_height_m": 0.2,
+        "policy": "原始notes不改写，更正值单独用于分析。"
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B055",
+      "filename": "CAR2_auto_Lshape_repeat_20261018_004023.bag",
+      "date": "20261018",
+      "vm_relative_path": "20261018/CAR2_auto_Lshape_repeat_20261018_004023.bag",
+      "category": "single_car_motion",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "completed_with_measurement_anomaly",
+      "experiment_description": "自动L形第一次重录，用户确认N10不稳定。",
+      "reference_status": "有逐包人工天线起终点/摆放参考；无连续实测轨迹。",
+      "recommended_use": [
+        "单车L形N10异常对照",
+        "单车离线UWB-only、odom与融合对照；按时间顺序回放开发测试（在线性能尚未验收）。"
+      ],
+      "limitations": [
+        "终点差不能代表全程精度；五包控制方法、可用链路与墙节点安装不完全相同。",
+        "使用各场次自己的墙节点配置和P1修正；10月11日N8缺失，不能跨重装套用配置。",
+        "天线相对近似底盘中心偏移已有记录且用户确认安装未改；该中心与odom车体参考点的对应仍待核实。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B055",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/SINGLE_CAR_FIVE_BAG_REVIEW_20261021.md",
+        "artifacts/history_reference_review_20261020/README.md",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/single_car_historical_L_20261021/MOUNT_USER_CONFIRMATION_20261021.md",
+        "artifacts/reference_response_supplement_20261020/README.md"
+      ],
+      "original_notes": [],
+      "known_sha256": "72d4a051005b0b109461842b6489aa2d07b08dd6f6e750c4b9a82aac8d8e1d82",
+      "expected_size_bytes": 3466431,
+      "previously_decoded_duration_s": 98.34915239600001,
+      "previously_decoded_message_count": 10672,
+      "manual_reference": {
+        "antenna_start_xyz_m": [
+          2.0,
+          2.0,
+          0.2
+        ],
+        "antenna_end_xyz_m": [
+          2.97,
+          3.11,
+          0.2
+        ],
+        "initial_heading": "+Y",
+        "source_status": "用户确认/原始逐包备注；不确定度未量化"
+      },
+      "wall_layout": "after_reinstall_20261017_18",
+      "available_wall_anchor_ids": [
+        "N10",
+        "N2",
+        "N3",
+        "N8"
+      ],
+      "shared_installation_reference": {
+        "car1_antenna_height_m": 0.17,
+        "car2_antenna_height_m": 0.2,
+        "car1_note_original_height_m": 0.2,
+        "policy": "原始notes不改写，更正值单独用于分析。"
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B056",
+      "filename": "TWO_CAR_C1_1p5_4_C2_end_2p95_3p04_static_20261018_020151.bag",
+      "date": "20261018",
+      "vm_relative_path": "20261018/TWO_CAR_C1_1p5_4_C2_end_2p95_3p04_static_20261018_020151.bag",
+      "category": "two_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "015334结束后两车保持不动的静态复核，用户已确认。",
+      "reference_status": "共享015334终点几何：Car1(1.5,4,0.17)m、Car2(2.95,3.04,0.20)m；1.743m卷尺来源为该实验序列。",
+      "recommended_use": [
+        "同一终点几何下的静态测距复核、双向偏差和重复性诊断。"
+      ],
+      "limitations": [
+        "本包没有重新独立卷尺测量；人工坐标、卷尺和UWB差异并列保留。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B056",
+        "artifacts/reference_response_supplement_20261020/README.md",
+        "artifacts/two_car_reference_review_20261020/two_car_reference_index.csv"
+      ],
+      "original_notes": [],
+      "known_sha256": "06489487beeb6f6aec658b91c6c190c12a8c43f25352b8795c6c11eab38eee31",
+      "expected_size_bytes": 1355986,
+      "previously_decoded_duration_s": 24.998636022000003,
+      "previously_decoded_message_count": 3500,
+      "shared_installation_reference": {
+        "car1_antenna_height_m": 0.17,
+        "car2_antenna_height_m": 0.2,
+        "car1_note_original_height_m": 0.2,
+        "policy": "原始notes不改写，更正值单独用于分析。"
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B057",
+      "filename": "TWO_CAR_C1_static_C2_auto_L_20261018_015334.bag",
+      "date": "20261018",
+      "vm_relative_path": "20261018/TWO_CAR_C1_static_C2_auto_L_20261018_015334.bag",
+      "category": "two_car_motion",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "completed_with_reference_limits",
+      "experiment_description": "Car1静止、Car2自动L形。",
+      "reference_status": "该包独立原始运动notes和人工终点已在，不能互借其他包终点。",
+      "recommended_use": [
+        "首轮双车独立估计/车间约束联合估计对照。",
+        "双车时间关联、测距有效率和残差诊断。"
+      ],
+      "limitations": [
+        "人工坐标与直接卷尺值有分歧，分别保留，不靠调参消除。",
+        "Car1分析高度0.17m，原notes的0.20m保留；水平外参与odom车体参考对应仍有假设。",
+        "无连续轨迹真值；双向UWB时间头差随包变化，不能假定严格同步。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B057",
+        "original-note:R036",
+        "artifacts/reference_response_supplement_20261020/README.md",
+        "artifacts/two_car_reference_review_20261020/two_car_reference_index.csv"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R036",
+          "archive_id": "oct18",
+          "archive_member": "20261018/TWO_CAR_C1_static_C2_auto_L_20261018_015334_notes.txt",
+          "sha256": "6b2874aeb432670d3b958a052a6369bb1560543e4a257983b74b778aae165b9b",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "bb2f8cbfecf3e73cdf1b12f4c290b51d0c74215006746abba72c0b9c7a0946e6",
+      "expected_size_bytes": 6721576,
+      "previously_decoded_duration_s": 94.807749672,
+      "previously_decoded_message_count": 19060,
+      "shared_installation_reference": {
+        "car1_antenna_height_m": 0.17,
+        "car2_antenna_height_m": 0.2,
+        "car1_note_original_height_m": 0.2,
+        "policy": "原始notes不改写，更正值单独用于分析。"
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B058",
+      "filename": "TWO_CAR_C2_static_C1_auto_straight_20261018_030837.bag",
+      "date": "20261018",
+      "vm_relative_path": "20261018/TWO_CAR_C2_static_C1_auto_straight_20261018_030837.bag",
+      "category": "two_car_motion",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "completed_with_reference_limits",
+      "experiment_description": "Car2静止、Car1自动直行，出现偏向。",
+      "reference_status": "该包独立原始运动notes和人工终点已在，不能互借其他包终点。",
+      "recommended_use": [
+        "偏向自动直行挑战样本及与对齐后直行的过程对照。",
+        "双车时间关联、测距有效率和残差诊断。"
+      ],
+      "limitations": [
+        "人工坐标与直接卷尺值有分歧，分别保留，不靠调参消除。",
+        "Car1分析高度0.17m，原notes的0.20m保留；水平外参与odom车体参考对应仍有假设。",
+        "无连续轨迹真值；双向UWB时间头差随包变化，不能假定严格同步。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B058",
+        "original-note:R037",
+        "artifacts/reference_response_supplement_20261020/README.md",
+        "artifacts/two_car_reference_review_20261020/two_car_reference_index.csv"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R037",
+          "archive_id": "oct18",
+          "archive_member": "20261018/TWO_CAR_C2_static_C1_auto_straight_20261018_030837_notes.txt",
+          "sha256": "ec8dd9d7d8ee92b45bdcbf8d4c85b2997bb25671535dd3e52c6fdf84ac39845a",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "29e9a1307f577971072e48b28a741e0214e108d0fe81a2b49ab5b785360baaeb",
+      "expected_size_bytes": 4691235,
+      "previously_decoded_duration_s": 69.848831178,
+      "previously_decoded_message_count": 13122,
+      "shared_installation_reference": {
+        "car1_antenna_height_m": 0.17,
+        "car2_antenna_height_m": 0.2,
+        "car1_note_original_height_m": 0.2,
+        "policy": "原始notes不改写，更正值单独用于分析。"
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B059",
+      "filename": "TWO_CAR_C2_static_C1_auto_straight_aligned_20261018_033248.bag",
+      "date": "20261018",
+      "vm_relative_path": "20261018/TWO_CAR_C2_static_C1_auto_straight_aligned_20261018_033248.bag",
+      "category": "two_car_motion",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "completed_with_reference_limits",
+      "experiment_description": "Car2静止、Car1对齐后自动直行。",
+      "reference_status": "该包独立原始运动notes和人工终点已在，不能互借其他包终点。",
+      "recommended_use": [
+        "首轮双车独立估计/车间约束联合估计对照。",
+        "双车时间关联、测距有效率和残差诊断。"
+      ],
+      "limitations": [
+        "人工坐标与直接卷尺值有分歧，分别保留，不靠调参消除。",
+        "Car1分析高度0.17m，原notes的0.20m保留；水平外参与odom车体参考对应仍有假设。",
+        "无连续轨迹真值；双向UWB时间头差随包变化，不能假定严格同步。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B059",
+        "original-note:R038",
+        "artifacts/reference_response_supplement_20261020/README.md",
+        "artifacts/two_car_reference_review_20261020/two_car_reference_index.csv"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R038",
+          "archive_id": "oct18",
+          "archive_member": "20261018/TWO_CAR_C2_static_C1_auto_straight_aligned_20261018_033248_notes.txt",
+          "sha256": "b95edcda8a415e223fa9ef4195f524fba836423ed0a96138299737205e0b0d46",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "4e1283bbd58f9a64187a872cd9edeccaccdd5c438149d871761c6e2e11a67bbd",
+      "expected_size_bytes": 4066007,
+      "previously_decoded_duration_s": 57.45727899800001,
+      "previously_decoded_message_count": 11228,
+      "shared_installation_reference": {
+        "car1_antenna_height_m": 0.17,
+        "car2_antenna_height_m": 0.2,
+        "car1_note_original_height_m": 0.2,
+        "policy": "原始notes不改写，更正值单独用于分析。"
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B060",
+      "filename": "TWO_CAR_C2_static_C1_keyboard_return_20261018_025148.bag",
+      "date": "20261018",
+      "vm_relative_path": "20261018/TWO_CAR_C2_static_C1_keyboard_return_20261018_025148.bag",
+      "category": "two_car_motion",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "disturbed_return",
+      "experiment_description": "Car2静止、Car1键盘返回；车轮碰自身线缆。",
+      "reference_status": "用户确认终点天线间距约1.8m，Car1终点X基本不变；结合原notes登记约[1.47,4.05,0.17]m。",
+      "recommended_use": [
+        "受扰返回、方向一致性、线缆干扰与鲁棒性挑战诊断。"
+      ],
+      "limitations": [
+        "终点X是近似回忆，非精密复测；Car2位置沿用连续实验关系。",
+        "不作为正常运动的主精度样本，也不将odom路程当实际真值。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B060",
+        "original-note:R039",
+        "artifacts/reference_response_supplement_20261020/README.md",
+        "artifacts/two_car_reference_review_20261020/two_car_reference_index.csv"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R039",
+          "archive_id": "oct18",
+          "archive_member": "20261018/TWO_CAR_C2_static_C1_keyboard_return_20261018_025148_notes.txt",
+          "sha256": "abbfbea1c19756b9af78ea5d6b6e788166dbc92836fcb61d6ac700301474f170",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "6016eaa875030a985f958a36948dc7dfecac43e09ff4c72dfb92ef4a70fa5ee1",
+      "expected_size_bytes": 5849544,
+      "previously_decoded_duration_s": 82.305806505,
+      "previously_decoded_message_count": 16510,
+      "shared_installation_reference": {
+        "car1_antenna_height_m": 0.17,
+        "car2_antenna_height_m": 0.2,
+        "car1_note_original_height_m": 0.2,
+        "policy": "原始notes不改写，更正值单独用于分析。"
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B061",
+      "filename": "TWO_CAR_C2_static_C1_keyboard_straight_20261018_022035.bag",
+      "date": "20261018",
+      "vm_relative_path": "20261018/TWO_CAR_C2_static_C1_keyboard_straight_20261018_022035.bag",
+      "category": "two_car_motion",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "completed_manual_with_reference_disagreement",
+      "experiment_description": "Car2静止、Car1键盘直行。",
+      "reference_status": "用户最终确认Car1终点天线约[1.47,3.03,0.17]m；直接天线间卷尺约1.55m。Car2沿用[2.95,3.04,0.20]m为连续实验关系。",
+      "recommended_use": [
+        "手动直行方向、测距与odom一致性；有限终点参考对照。"
+      ],
+      "limitations": [
+        "坐标推算间距约1.480m与卷尺1.55m差约7cm，评价须并列，不强行选一当绝对真值。",
+        "Car1起点和Car2静止点为连续实验关系，不冒称本包独立重测；无连续轨迹真值。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B061",
+        "artifacts/reference_response_supplement_20261020/README.md",
+        "artifacts/two_car_reference_review_20261020/two_car_reference_index.csv"
+      ],
+      "original_notes": [],
+      "known_sha256": "0b2218bf3506867af37fe5688054323e2cda41ea439172c437399a23db5a9110",
+      "expected_size_bytes": 5393917,
+      "previously_decoded_duration_s": 75.942343064,
+      "previously_decoded_message_count": 15126,
+      "shared_installation_reference": {
+        "car1_antenna_height_m": 0.17,
+        "car2_antenna_height_m": 0.2,
+        "car1_note_original_height_m": 0.2,
+        "policy": "原始notes不改写，更正值单独用于分析。"
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B062",
+      "filename": "TWO_CAR_UWB_ODOM_IMU_static_20261018_013206.bag",
+      "date": "20261018",
+      "vm_relative_path": "20261018/TWO_CAR_UWB_ODOM_IMU_static_20261018_013206.bag",
+      "category": "two_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "双车UWB/odom/IMU静态接口记录，odom未见平移。",
+      "reference_status": "用户确认Car1天线XY(3,3)、Car2(2,2)；高度分别0.17/0.20m。",
+      "recommended_use": [
+        "双车接口、双向方向差和稳定测距偏差诊断。"
+      ],
+      "limitations": [
+        "原始双向中位数与人工几何有约+0.26/+0.31m差，不能靠改坐标消除。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B062",
+        "artifacts/reference_response_supplement_20261020/README.md",
+        "artifacts/two_car_reference_review_20261020/two_car_reference_index.csv"
+      ],
+      "original_notes": [],
+      "known_sha256": "d9b8183c2ca6edef82affcde0f6c70dd8fcb71ba6c1b36374cd23e73a7d0671f",
+      "expected_size_bytes": 2450052,
+      "previously_decoded_duration_s": 34.987286165,
+      "previously_decoded_message_count": 6439,
+      "shared_installation_reference": {
+        "car1_antenna_height_m": 0.17,
+        "car2_antenna_height_m": 0.2,
+        "car1_note_original_height_m": 0.2,
+        "policy": "原始notes不改写，更正值单独用于分析。"
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B063",
+      "filename": "TWO_CAR_both_motion_20261018_045116.bag",
+      "date": "20261018",
+      "vm_relative_path": "20261018/TWO_CAR_both_motion_20261018_045116.bag",
+      "category": "two_car_motion",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "completed_with_possible_person_interference",
+      "experiment_description": "双车首次同动；现场有人进入，可能短时遮挡。",
+      "reference_status": "旧聊天已有逐车起终点；用户无新增独立notes，追补已关闭。",
+      "recommended_use": [
+        "双车同动挑战、人员经过候选阶段与鲁棒性诊断。"
+      ],
+      "limitations": [
+        "人员进入仅约t=30.3至33.3s宽候选，不是已证实时段，不能将距离变化直接归因人员。",
+        "不能借用正常重录050447的终点或备注；无连续轨迹真值。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B063",
+        "artifacts/reference_response_supplement_20261020/README.md",
+        "artifacts/two_car_reference_review_20261020/two_car_reference_index.csv"
+      ],
+      "original_notes": [],
+      "known_sha256": "0e42309e71c9f5d4abd95047ff54bcad8e5aee3f4f5190603583af69cc00f94c",
+      "expected_size_bytes": 8203509,
+      "previously_decoded_duration_s": 114.992043945,
+      "previously_decoded_message_count": 23470,
+      "shared_installation_reference": {
+        "car1_antenna_height_m": 0.17,
+        "car2_antenna_height_m": 0.2,
+        "car1_note_original_height_m": 0.2,
+        "policy": "原始notes不改写，更正值单独用于分析。"
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B064",
+      "filename": "TWO_CAR_both_motion_clear_repeat_20261018_050447.bag",
+      "date": "20261018",
+      "vm_relative_path": "20261018/TWO_CAR_both_motion_clear_repeat_20261018_050447.bag",
+      "category": "two_car_motion",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "completed_clear_repeat",
+      "experiment_description": "双车同动正常重录，运动重叠和路程与独立备注吻合。",
+      "reference_status": "独立正常重录notes与人工起终点存在。",
+      "recommended_use": [
+        "在一静一动模型检查后，作双车同动离线与顺序回放主候选。"
+      ],
+      "limitations": [
+        "正常完成不等于所有观测无异常；无连续轨迹真值。",
+        "接收时间配近不证明同时测量，重叠窗消息头中位差约45.6ms；需时间关联敏感性检查。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B064",
+        "original-note:R040",
+        "artifacts/reference_response_supplement_20261020/README.md",
+        "artifacts/two_car_reference_review_20261020/two_car_reference_index.csv"
+      ],
+      "original_notes": [
+        {
+          "reference_id": "R040",
+          "archive_id": "oct18",
+          "archive_member": "20261018/TWO_CAR_both_motion_clear_repeat_20261018_050447_notes.txt",
+          "sha256": "7ff63c9580cfd489be6cde6e532a6b94dbddacb67d649448ff69d1970ba08179",
+          "kind": "original_reference_text"
+        }
+      ],
+      "known_sha256": "adfab304646d779c573f9001e1ceb2538b5cdcfffc2948750cde93f495501872",
+      "expected_size_bytes": 7859349,
+      "previously_decoded_duration_s": 109.974142302,
+      "previously_decoded_message_count": 22542,
+      "shared_installation_reference": {
+        "car1_antenna_height_m": 0.17,
+        "car2_antenna_height_m": 0.2,
+        "car1_note_original_height_m": 0.2,
+        "policy": "原始notes不改写，更正值单独用于分析。"
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B065",
+      "filename": "TWO_CAR_static_C1_1p5_1p5_C2_2_2_20261018_013951.bag",
+      "date": "20261018",
+      "vm_relative_path": "20261018/TWO_CAR_static_C1_1p5_1p5_C2_2_2_20261018_013951.bag",
+      "category": "two_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "双车近距离静态。",
+      "reference_status": "用户确认天线XY：Car1(1.5,1.5)、Car2(2,2)；0.707m为坐标推算水平距。",
+      "recommended_use": [
+        "双车近距测距、方向差与有效率诊断。"
+      ],
+      "limitations": [
+        "没有另造独立卷尺值；分析高度Car1/Car2为0.17/0.20m，三维几何距离约0.707743m。",
+        "反向有效率较低；有效条目不等于测距正确。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B065",
+        "artifacts/reference_response_supplement_20261020/README.md",
+        "artifacts/two_car_reference_review_20261020/two_car_reference_index.csv"
+      ],
+      "original_notes": [],
+      "known_sha256": "f4395b806a15735ac74a052e239a5c4bafd7ab14d1d93de487f1e42d50451abc",
+      "expected_size_bytes": 2443570,
+      "previously_decoded_duration_s": 34.995938728,
+      "previously_decoded_message_count": 6443,
+      "shared_installation_reference": {
+        "car1_antenna_height_m": 0.17,
+        "car2_antenna_height_m": 0.2,
+        "car1_note_original_height_m": 0.2,
+        "policy": "原始notes不改写，更正值单独用于分析。"
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B066",
+      "filename": "TWO_CAR_static_C1_1p5_4_C2_2_2_20261018_015009.bag",
+      "date": "20261018",
+      "vm_relative_path": "20261018/TWO_CAR_static_C1_1p5_4_C2_2_2_20261018_015009.bag",
+      "category": "two_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "015334开始前的双车静态摆放。",
+      "reference_status": "用户确认Car1天线(1.5,4,0.17)m，Car2(2,2,0.20)m；与后续序列连续摆放。",
+      "recommended_use": [
+        "L形前双车静态测距、方向差与几何一致性对照。"
+      ],
+      "limitations": [
+        "连续摆放关系是用户确认，不能冒称每包重新独立测量。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B066",
+        "artifacts/reference_response_supplement_20261020/README.md",
+        "artifacts/two_car_reference_review_20261020/two_car_reference_index.csv"
+      ],
+      "original_notes": [],
+      "known_sha256": "daed600f73ca9f10df2d142c955a661e80b38264622d6a0bd0c46d182b9efcb7",
+      "expected_size_bytes": 2449078,
+      "previously_decoded_duration_s": 34.997525807,
+      "previously_decoded_message_count": 6436,
+      "shared_installation_reference": {
+        "car1_antenna_height_m": 0.17,
+        "car2_antenna_height_m": 0.2,
+        "car1_note_original_height_m": 0.2,
+        "policy": "原始notes不改写，更正值单独用于分析。"
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B067",
+      "filename": "TWO_CAR_static_clear_A_20261018_054541.bag",
+      "date": "20261018",
+      "vm_relative_path": "20261018/TWO_CAR_static_clear_A_20261018_054541.bag",
+      "category": "two_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "静态A无遮挡。",
+      "reference_status": "用户确认该组天线中心直接卷尺距离2.93m。",
+      "recommended_use": [
+        "作为A/B/C静态分段对照基准和双向差异检查。"
+      ],
+      "limitations": [
+        "静止位置与UWB测距状态分别核对；无效缺失不能单凭它认定遮挡。",
+        "A/C为无遮挡参考，不能外推所有动态位置的固定偏差。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B067",
+        "artifacts/reference_response_supplement_20261020/README.md",
+        "artifacts/two_car_reference_review_20261020/two_car_reference_index.csv"
+      ],
+      "original_notes": [],
+      "known_sha256": "89a59ff5966cf1e11434d8b0090970073c3fdcde9141eb5660c1b9ae0bc17155",
+      "expected_size_bytes": 2104644,
+      "previously_decoded_duration_s": 29.987291053000003,
+      "previously_decoded_message_count": 5517,
+      "shared_installation_reference": {
+        "car1_antenna_height_m": 0.17,
+        "car2_antenna_height_m": 0.2,
+        "car1_note_original_height_m": 0.2,
+        "policy": "原始notes不改写，更正值单独用于分析。"
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B068",
+      "filename": "TWO_CAR_static_clear_C_20261018_055457.bag",
+      "date": "20261018",
+      "vm_relative_path": "20261018/TWO_CAR_static_clear_C_20261018_055457.bag",
+      "category": "two_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "静态C恢复无遮挡。",
+      "reference_status": "用户确认该组天线中心直接卷尺距离2.93m。",
+      "recommended_use": [
+        "作为遮挡操作后的恢复对照与重复性检查。"
+      ],
+      "limitations": [
+        "静止位置与UWB测距状态分别核对；无效缺失不能单凭它认定遮挡。",
+        "A/C为无遮挡参考，不能外推所有动态位置的固定偏差。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B068",
+        "artifacts/reference_response_supplement_20261020/README.md",
+        "artifacts/two_car_reference_review_20261020/two_car_reference_index.csv"
+      ],
+      "original_notes": [],
+      "known_sha256": "e22d9e59b70576ccb27f4428465045fa9e2215a07e0fa25f6e19ebf94412c554",
+      "expected_size_bytes": 2110405,
+      "previously_decoded_duration_s": 29.999156869,
+      "previously_decoded_message_count": 5531,
+      "shared_installation_reference": {
+        "car1_antenna_height_m": 0.17,
+        "car2_antenna_height_m": 0.2,
+        "car1_note_original_height_m": 0.2,
+        "policy": "原始notes不改写，更正值单独用于分析。"
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B069",
+      "filename": "TWO_CAR_static_human_B_20261018_055035.bag",
+      "date": "20261018",
+      "vm_relative_path": "20261018/TWO_CAR_static_human_B_20261018_055035.bag",
+      "category": "two_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "静态B首录，人员在开始录制后进入。",
+      "reference_status": "用户确认该组天线中心直接卷尺距离2.93m。",
+      "recommended_use": [
+        "人员进入过渡阶段与分段测距变化诊断。"
+      ],
+      "limitations": [
+        "静止位置与UWB测距状态分别核对；无效缺失不能单凭它认定遮挡。",
+        "不能整包标为稳定遮挡。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B069",
+        "artifacts/reference_response_supplement_20261020/README.md",
+        "artifacts/two_car_reference_review_20261020/two_car_reference_index.csv"
+      ],
+      "original_notes": [],
+      "known_sha256": "6932c9216b5293c107acebb35526ebca307d3c0c468ba51deabbeb00b50d1c96",
+      "expected_size_bytes": 2105001,
+      "previously_decoded_duration_s": 29.998212981,
+      "previously_decoded_message_count": 5517,
+      "shared_installation_reference": {
+        "car1_antenna_height_m": 0.17,
+        "car2_antenna_height_m": 0.2,
+        "car1_note_original_height_m": 0.2,
+        "policy": "原始notes不改写，更正值单独用于分析。"
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B070",
+      "filename": "TWO_CAR_static_human_B_repeat_20261018_055319.bag",
+      "date": "20261018",
+      "vm_relative_path": "20261018/TWO_CAR_static_human_B_repeat_20261018_055319.bag",
+      "category": "two_car_static",
+      "recording_status": "previously_decoded_complete",
+      "experiment_status": "recorded_static",
+      "experiment_description": "静态B重录，有人员遮挡操作记录。",
+      "reference_status": "用户确认该组天线中心直接卷尺距离2.93m。",
+      "recommended_use": [
+        "遮挡操作重复性与无明显偏移反例检查。"
+      ],
+      "limitations": [
+        "静止位置与UWB测距状态分别核对；无效缺失不能单凭它认定遮挡。",
+        "未见首录相同明显偏移，不能自动作为异常正类。"
+      ],
+      "evidence": [
+        "artifacts/data_inventory_20261020/dataset_index.json#B070",
+        "artifacts/reference_response_supplement_20261020/README.md",
+        "artifacts/two_car_reference_review_20261020/two_car_reference_index.csv"
+      ],
+      "original_notes": [],
+      "known_sha256": "847c622cc06235c0bd76ba37dafb80c1b399fbfc1f60c52c2d5ffc68b0ce24cf",
+      "expected_size_bytes": 2107028,
+      "previously_decoded_duration_s": 29.996003503,
+      "previously_decoded_message_count": 5522,
+      "shared_installation_reference": {
+        "car1_antenna_height_m": 0.17,
+        "car2_antenna_height_m": 0.2,
+        "car1_note_original_height_m": 0.2,
+        "policy": "原始notes不改写，更正值单独用于分析。"
+      },
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B071",
+      "filename": "EXP001_car1_static_LOS.bag",
+      "date": "20260920",
+      "date_source": "EXP001正式实验记录与EXP001-004实验系列报告；不是bag内旧系统墙钟或文件修改时间。",
+      "vm_source_path": "/home/wheeltec-client/uwb_bags/EXP001_car1_static_LOS.bag",
+      "source_root": "/home/wheeltec-client/uwb_bags",
+      "vm_relative_path": "EXP001_car1_static_LOS.bag",
+      "data_kind": "real_field",
+      "category": "single_car_static",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "historically_reported_completed",
+      "experiment_description": "静态无遮挡LOS，Car1和另一UWB节点保持不动。 仓库总报告记载2026-09-22现场基础统计复现通过；当前仅核对报告，不是新运行或新验收。",
+      "reference_status": "名义间距约1m，没有独立卷尺距离真值；EXP001/002只支持同位置相对对照。",
+      "recommended_use": [
+        "静态LOS/NLOS相对测距分布和人体操作对照。",
+        "早期Frame3、远程ROS采集和消息连续性链路复核。"
+      ],
+      "limitations": [
+        "本窗口没有接收或逐消息读取该原始bag；本次VM文件须重新计算SHA与检查可读性。",
+        "历史报告称仅录/uwb/ranges和/rosout，方向node_1到node_0；不是四墙锚定位记录，没有odom或IMU，不能直接作为UWB+odom融合输入。",
+        "使用bag接收时间。历史记录消息头与接收时间差约57,902,871秒，不能把旧墙钟误认作实验日期。",
+        "quality为NaN，不能当作有效质量指标；含可用目标消息比例不等于准确率或无线完整收包率。",
+        "任何均值差/连续消息跳变不是绝对定位误差，也不是通用NLOS补偿值。",
+        "保留原始尖峰和旧/新统计口径的区别，不因压力场景的高波动将bag认定为录制失败。",
+        "EXP001/002无独立卷尺，约+0.3888m只是本次同位置人体操作相对无遮挡的均值变化。"
+      ],
+      "evidence": [
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/2026-09-20_EXP001_car1_static_LOS.md",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/2026-09-20_EXP001_004_comparison.md",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/20260920/README.md",
+        "user_vm_inventory_reported_20261021"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "repository_reported_sha256": "519f3f01e836608b6b48222329c312eaabc91f2ad2da8f295dc0d9a78a7e47bc",
+      "repository_reported_sha256_source": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/2026-09-20_EXP001_004_comparison.md",
+      "repository_reported_hash_status": "仓库称由现场机器2026-09-22回报，尚未与此次VM副本核对。",
+      "expected_size_bytes": 878983,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "historically_reported_uwb_message_count": 7039,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B072",
+      "filename": "EXP002_car1_static_human_NLOS.bag",
+      "date": "20260920",
+      "date_source": "EXP001正式实验记录与EXP001-004实验系列报告；不是bag内旧系统墙钟或文件修改时间。",
+      "vm_source_path": "/home/wheeltec-client/uwb_bags/EXP002_car1_static_human_NLOS.bag",
+      "source_root": "/home/wheeltec-client/uwb_bags",
+      "vm_relative_path": "EXP002_car1_static_human_NLOS.bag",
+      "data_kind": "real_field",
+      "category": "single_car_static",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "historically_reported_completed",
+      "experiment_description": "与EXP001节点位置保持不变，人体置于传播路径中间的静态遮挡对照。 仓库总报告记载2026-09-22现场基础统计复现通过；当前仅核对报告，不是新运行或新验收。",
+      "reference_status": "名义间距约1m，没有独立卷尺距离真值；EXP001/002只支持同位置相对对照。",
+      "recommended_use": [
+        "静态LOS/NLOS相对测距分布和人体操作对照。",
+        "早期Frame3、远程ROS采集和消息连续性链路复核。"
+      ],
+      "limitations": [
+        "本窗口没有接收或逐消息读取该原始bag；本次VM文件须重新计算SHA与检查可读性。",
+        "历史报告称仅录/uwb/ranges和/rosout，方向node_1到node_0；不是四墙锚定位记录，没有odom或IMU，不能直接作为UWB+odom融合输入。",
+        "使用bag接收时间。历史记录消息头与接收时间差约57,902,871秒，不能把旧墙钟误认作实验日期。",
+        "quality为NaN，不能当作有效质量指标；含可用目标消息比例不等于准确率或无线完整收包率。",
+        "任何均值差/连续消息跳变不是绝对定位误差，也不是通用NLOS补偿值。",
+        "保留原始尖峰和旧/新统计口径的区别，不因压力场景的高波动将bag认定为录制失败。",
+        "EXP001/002无独立卷尺，约+0.3888m只是本次同位置人体操作相对无遮挡的均值变化。"
+      ],
+      "evidence": [
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/2026-09-20_EXP002_car1_static_human_NLOS.md",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/2026-09-20_EXP001_004_comparison.md",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/20260920/README.md",
+        "user_vm_inventory_reported_20261021"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "repository_reported_sha256": "48e618fc36ebe98bef178579c9ba8ca197efa28bc95adbd366a34d83267bb496",
+      "repository_reported_sha256_source": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/2026-09-20_EXP001_004_comparison.md",
+      "repository_reported_hash_status": "仓库称由现场机器2026-09-22回报，尚未与此次VM副本核对。",
+      "expected_size_bytes": 873161,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "historically_reported_uwb_message_count": 6990,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B073",
+      "filename": "EXP003_car1_manual_push_LOS.bag",
+      "date": "20260920",
+      "date_source": "EXP001正式实验记录与EXP001-004实验系列报告；不是bag内旧系统墙钟或文件修改时间。",
+      "vm_source_path": "/home/wheeltec-client/uwb_bags/EXP003_car1_manual_push_LOS.bag",
+      "source_root": "/home/wheeltec-client/uwb_bags",
+      "vm_relative_path": "EXP003_car1_manual_push_LOS.bag",
+      "data_kind": "real_field",
+      "category": "single_car_motion",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "historically_reported_completed",
+      "experiment_description": "人工推远、停留、再推回的无遮挡测距过程，没有使用电机运动命令。 仓库总报告记载2026-09-22现场基础统计复现通过；当前仅核对报告，不是新运行或新验收。",
+      "reference_status": "没有外部连续轨迹或逐时刻距离真值；EXP003/004没有严格复现同一轨迹。",
+      "recommended_use": [
+        "动态距离趋势、长尾/跳变与遮挡压力诊断。",
+        "离线分析器的原始消息读取和统计复现测试。"
+      ],
+      "limitations": [
+        "本窗口没有接收或逐消息读取该原始bag；本次VM文件须重新计算SHA与检查可读性。",
+        "历史报告称仅录/uwb/ranges和/rosout，方向node_1到node_0；不是四墙锚定位记录，没有odom或IMU，不能直接作为UWB+odom融合输入。",
+        "使用bag接收时间。历史记录消息头与接收时间差约57,902,871秒，不能把旧墙钟误认作实验日期。",
+        "quality为NaN，不能当作有效质量指标；含可用目标消息比例不等于准确率或无线完整收包率。",
+        "任何均值差/连续消息跳变不是绝对定位误差，也不是通用NLOS补偿值。",
+        "保留原始尖峰和旧/新统计口径的区别，不因压力场景的高波动将bag认定为录制失败。",
+        "人工运动与测量波动混在一起，不能把总体标准差当静态精度；不与另一动态包逐时刻对比误差。"
+      ],
+      "evidence": [
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/2026-09-20_EXP003_car1_manual_push_LOS.md",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/2026-09-20_EXP001_004_comparison.md",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/20260920/README.md",
+        "user_vm_inventory_reported_20261021"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "repository_reported_sha256": "df31ab76ca0fab7c9bb7456c37f24894a85df110183a4e1315c4166f4bc075ae",
+      "repository_reported_sha256_source": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/2026-09-20_EXP001_004_comparison.md",
+      "repository_reported_hash_status": "仓库称由现场机器2026-09-22回报，尚未与此次VM副本核对。",
+      "expected_size_bytes": 750216,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "historically_reported_uwb_message_count": 5991,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B074",
+      "filename": "EXP004_car1_manual_push_human_NLOS.bag",
+      "date": "20260920",
+      "date_source": "EXP001正式实验记录与EXP001-004实验系列报告；不是bag内旧系统墙钟或文件修改时间。",
+      "vm_source_path": "/home/wheeltec-client/uwb_bags/EXP004_car1_manual_push_human_NLOS.bag",
+      "source_root": "/home/wheeltec-client/uwb_bags",
+      "vm_relative_path": "EXP004_car1_manual_push_human_NLOS.bag",
+      "data_kind": "real_field",
+      "category": "single_car_motion",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "historically_reported_completed",
+      "experiment_description": "人工推动并由人体遮挡，后段人体随车移动，属于动态遮挡压力记录。 仓库总报告记载2026-09-22现场基础统计复现通过；当前仅核对报告，不是新运行或新验收。",
+      "reference_status": "没有外部连续轨迹或逐时刻距离真值；EXP003/004没有严格复现同一轨迹。",
+      "recommended_use": [
+        "动态距离趋势、长尾/跳变与遮挡压力诊断。",
+        "离线分析器的原始消息读取和统计复现测试。"
+      ],
+      "limitations": [
+        "本窗口没有接收或逐消息读取该原始bag；本次VM文件须重新计算SHA与检查可读性。",
+        "历史报告称仅录/uwb/ranges和/rosout，方向node_1到node_0；不是四墙锚定位记录，没有odom或IMU，不能直接作为UWB+odom融合输入。",
+        "使用bag接收时间。历史记录消息头与接收时间差约57,902,871秒，不能把旧墙钟误认作实验日期。",
+        "quality为NaN，不能当作有效质量指标；含可用目标消息比例不等于准确率或无线完整收包率。",
+        "任何均值差/连续消息跳变不是绝对定位误差，也不是通用NLOS补偿值。",
+        "保留原始尖峰和旧/新统计口径的区别，不因压力场景的高波动将bag认定为录制失败。",
+        "人工运动与测量波动混在一起，不能把总体标准差当静态精度；不与另一动态包逐时刻对比误差。"
+      ],
+      "evidence": [
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/2026-09-20_EXP004_car1_manual_push_human_NLOS.md",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/2026-09-20_EXP001_004_comparison.md",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/20260920/README.md",
+        "user_vm_inventory_reported_20261021"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "repository_reported_sha256": "c01a7b33ac83b829f7d00345a66af1b9ffae8d76a6972001083990a4632c839a",
+      "repository_reported_sha256_source": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/2026-09-20_EXP001_004_comparison.md",
+      "repository_reported_hash_status": "仓库称由现场机器2026-09-22回报，尚未与此次VM副本核对。",
+      "expected_size_bytes": 749037,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "historically_reported_uwb_message_count": 5981,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B075",
+      "filename": "two_car_smoke_20260923.bag",
+      "date": "20260923",
+      "date_source": "仅来自文件名，实际ROS时间与生成日志待核对。",
+      "vm_source_path": "/home/wheeltec-client/uwb_simulation_tests/two_car_smoke_20260923.bag",
+      "source_root": "/home/wheeltec-client/uwb_simulation_tests",
+      "vm_relative_path": "two_car_smoke_20260923.bag",
+      "data_kind": "simulation",
+      "category": "simulation",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "双车模拟smoke命名记录，目前只有用户VM文件名和大小。未从名字推断测试已通过、已失败或具体异常参数。",
+      "reference_status": "仓库双车模拟器支持发布模拟车间距离真值，但尚未检查此包实际包含的话题、参数或真值；模拟真值不属于现场测量。",
+      "recommended_use": [
+        "核对原生成日志和实际话题后，用于双车模拟数据接口、消息命名空间、时间关联和回放测试。",
+        "若包内真值与生成参数确实存在，可用于相应模拟场景的算法功能测试。"
+      ],
+      "limitations": [
+        "必须与实车数据分开归档、统计和汇报，不能增加现场实验次数或作为实车精度证据。",
+        "本窗口未读取原包，known_sha256保持空；smoke/stress文件名不能证明实际发布了哪些数据或注入了哪些异常。",
+        "仓库文档中的噪声、遮挡、丢包和时间偏移示例参数不等于此包的已知采集设置。",
+        "模拟器提供接口数据不等于已经运行或验证协同融合算法。"
+      ],
+      "evidence": [
+        "user_vm_inventory_reported_20261021",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/dual_car_simulation.md"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 452769,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    },
+    {
+      "record_id": "B076",
+      "filename": "two_car_stress_20260923.bag",
+      "date": "20260923",
+      "date_source": "仅来自文件名，实际ROS时间与生成日志待核对。",
+      "vm_source_path": "/home/wheeltec-client/uwb_simulation_tests/two_car_stress_20260923.bag",
+      "source_root": "/home/wheeltec-client/uwb_simulation_tests",
+      "vm_relative_path": "two_car_stress_20260923.bag",
+      "data_kind": "simulation",
+      "category": "simulation",
+      "recording_status": "not_reviewed_here",
+      "experiment_status": "not_yet_assessed",
+      "experiment_description": "双车模拟stress命名记录，目前只有用户VM文件名和大小。未从名字推断测试已通过、已失败或具体异常参数。",
+      "reference_status": "仓库双车模拟器支持发布模拟车间距离真值，但尚未检查此包实际包含的话题、参数或真值；模拟真值不属于现场测量。",
+      "recommended_use": [
+        "核对原生成日志和实际话题后，用于双车模拟数据接口、消息命名空间、时间关联和回放测试。",
+        "若包内真值与生成参数确实存在，可用于相应模拟场景的算法功能测试。"
+      ],
+      "limitations": [
+        "必须与实车数据分开归档、统计和汇报，不能增加现场实验次数或作为实车精度证据。",
+        "本窗口未读取原包，known_sha256保持空；smoke/stress文件名不能证明实际发布了哪些数据或注入了哪些异常。",
+        "仓库文档中的噪声、遮挡、丢包和时间偏移示例参数不等于此包的已知采集设置。",
+        "模拟器提供接口数据不等于已经运行或验证协同融合算法。"
+      ],
+      "evidence": [
+        "user_vm_inventory_reported_20261021",
+        "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/dual_car_simulation.md"
+      ],
+      "original_notes": [],
+      "known_sha256": null,
+      "expected_size_bytes": 567033,
+      "previously_decoded_duration_s": null,
+      "previously_decoded_message_count": null,
+      "annotation_is_new_bag_validation": false
+    }
+  ],
+  "summary": {
+    "bags": 70,
+    "expected_total_bytes": 129157705,
+    "known_sha256_count": 52,
+    "categories": {
+      "unreviewed": 18,
+      "single_car_static": 17,
+      "wall_setup": 3,
+      "diagnostic": 9,
+      "single_car_motion": 8,
+      "two_car_static": 8,
+      "two_car_motion": 7
+    },
+    "experiment_statuses": {
+      "not_yet_assessed": 18,
+      "recorded_static": 28,
+      "failed_confirmed": 1,
+      "completed_manual_reverse": 1,
+      "incomplete_low_voltage": 1,
+      "incomplete_motion": 1,
+      "recorded_forward_with_later_turn": 1,
+      "completed_forward_repeat": 1,
+      "recorded_return": 1,
+      "unstructured_manual_diagnostic": 2,
+      "completed_automatic": 2,
+      "not_started": 1,
+      "stalled_turn": 1,
+      "controller_completed_unverified_physical_turn": 1,
+      "communication_only": 1,
+      "completed_with_measurement_anomaly": 2,
+      "completed_with_reference_limits": 3,
+      "disturbed_return": 1,
+      "completed_manual_with_reference_disagreement": 1,
+      "completed_with_possible_person_interference": 1,
+      "completed_clear_repeat": 1
+    }
+  },
+  "user_confirmations": "# 2026-10-20 一次性对应清单回复\n\n本文件记录用户对 `reference_requests_20261020` 中 P01–P09、O01–O04 的集中回复，以及基于已读取原始 bag 所做的来源分级。它是冻结云端输入包之后新增的补充资料，不改写原始 bag、原始 notes 或已冻结的 `uwb_data_index_20261020.zip`。\n\n## 来源分级\n\n- **用户直接确认**：用户本轮明确给出的坐标、距离、连续摆放关系或“无新增资料”。\n- **用户条件确认＋数据核对**：用户给出判定条件，本窗口用原始 bag 统计核对后完成对应。\n- **连续实验关系**：根据相邻实验的已确认起终点和原始时间顺序登记；不是一份新的独立测量。\n- **原始 bag 重算**：由已接收 bag 中的 odom、UWB 或控制消息计算；不等于人工真值。\n\n## 优先事项结论\n\n### P01 / 003849\n\n- 结论：登记为 Car2 天线中心位于地面 A 点 `[2.00, 2.00, 0.20] m`，与 004023、005135 共用同一 A 点。\n- 来源：用户条件确认“若统计相似则为同一点，否则为桌上录制”；原始 bag 起始 5 秒四墙节点中位数核对支持“同一点”。\n- 数据核对：003849 的 N2/N3/N8/N10 为 `5.536/4.190/3.202/3.469 m`；004023 为 `5.555/4.179/3.195/3.476 m`，逐节点差的绝对值最大 `0.019 m`；005135 为 `5.630/4.210/3.242/3.453 m`，除 N2 相差 `0.094 m` 外，其余不超过 `0.040 m`。N10 当天有明显波动，因此没有单独用 N10 作点位判断。\n- 状态：已关闭，不再追问独立 notes。\n\n### P02 / 004023 与 P03 / 005135\n\n- 用户直接确认：两包起点均为 Car2 UWB 天线中心 `[2.00, 2.00, 0.20] m`。\n- 已有确认继续有效：004023 终点 `[2.97, 3.11, 0.20] m`、N10 不稳定；005135 终点 `[2.93, 3.04, 0.20] m`、正常完成；两包起始车头均朝房间 `+Y`。\n- 状态：已关闭。\n\n### P04 / 013206\n\n- 用户直接确认：Car2 天线 XY 为 `(2.00, 2.00)`，Car1 天线 XY 为 `(3.00, 3.00)`；水平距离约 `1.414 m`。高度沿用同日安装测量：Car1 `0.17 m`、Car2 `0.20 m`。\n- 三维天线中心几何距离为 `1.414532 m`。\n- 原始 bag 双向 UWB 全包中位数为 `1.675/1.726 m`，相对上述几何距离分别约 `+0.260/+0.312 m`。这是真实的参考与测距不一致，不能用改写坐标消除。\n- 状态：已关闭；保留作双车静态接口、方向差和稳定偏差诊断。\n\n### P05 / 013951\n\n- 用户直接确认：文件名中的 Car1 `(1.50,1.50)`、Car2 `(2.00,2.00)` 是两车天线中心 XY；预期水平距离按坐标计算为约 `0.707 m`。\n- 使用同日高度后的三维距离为 `0.707743 m`。\n- 原始 bag 双向中位数 `0.754/0.874 m`，相对三维几何距离约 `+0.046/+0.166 m`；反向有效率较低这一事实继续单列。\n- 状态：已关闭。\n\n### P06 / 015009\n\n- 用户直接确认：Car1 天线 XY `(1.50,4.00)`、Car2 `(2.00,2.00)` 正确；Car1 保持原位置，随后进入 015334 相关实验序列。\n- 使用同日高度后的三维距离为 `2.061771 m`；原始 bag 双向中位数 `2.103/2.148 m`，差约 `+0.041/+0.086 m`。\n- 状态：已关闭；坐标为用户确认，连续摆放关系为用户确认。\n\n### P07 / 020151\n\n- 用户直接确认：这是 015334 结束后两车保持不动录制。\n- 因此共享 015334 的终点几何：Car1 `[1.50,4.00,0.17] m`、Car2 `[2.95,3.04,0.20] m`，三维距离 `1.739253 m`；015334 的直接卷尺约 `1.743 m` 仍标为该实验序列的测量来源，而不是声称 020151 重新量了一次。\n- 原始 bag 双向中位数 `1.604/1.631 m`，相对几何距离约 `-0.135/-0.108 m`。\n- 状态：已关闭。\n\n### P08 / 022035\n\n- 用户直接确认：Car1 终点天线中心最终核对为约 `[1.47,3.03,0.17] m`；两天线中心直接测量约 `1.55 m`。原先 `x=1.50` 是标线暂记，后续核对值采用 `1.47`。\n- Car2 在该段静止；结合连续实验序列，位置登记为 `[2.95,3.04,0.20] m`。Car1 起点沿用前一静态阶段的 `[1.50,4.00,0.17] m`，这两项标为连续实验关系，不冒充本包独立重测。\n- 终点坐标推算三维距离为 `1.480338 m`，与直接卷尺 `1.55 m` 相差约 `0.070 m`，两者并列保留。原始 bag 末 5 秒双向中位数 `1.652/1.682 m`。\n- 状态：已关闭；评价时同时报告坐标参考与卷尺参考。\n\n### P09 / 025148\n\n- 用户直接确认：终点两天线中心距离约 `1.8 m`；Car1 终点 X 基本没有变化。\n- 结合已有 R039，Car1 起点约 `[1.47,3.03,0.17] m`，终点登记为约 `[1.47,4.05,0.17] m`；Car2 沿用静止位置 `[2.95,3.04,0.20] m`。终点 X 仍标为近似值，不写成精密测量。\n- 终点坐标推算三维距离 `1.792038 m`，与约 `1.8 m` 的直接测量一致；原始 bag 末 5 秒双向中位数 `1.746/1.778 m`。\n- 车轮碰自身线缆的原始备注继续保留，所以此包作为受扰返回对照，不作为正常运动的主精度样本。\n- 状态：已关闭。\n\n## 可选事项\n\n### O01 / 045116\n\n- 用户回复“不变”：没有新增独立 notes。继续使用旧聊天中已有的起终点坐标，并把人员进入时间仅保留为宽候选范围，不再追问精确秒数。\n- 状态：关闭可选追补。\n\n### O02 / 042840\n\n- 用户补充确认：这是一次不成熟的手动推动实验，没有具体人工坐标。今后不再追补起终点坐标，仅作为实验数据和接口过程参考。\n- 供回忆的客观特征：包长约 `49.88 s`，没有 `/cmd_vel`，说明不是有记录的自动控制或键盘速度命令；更像手动推动/滚动车轮的接口诊断。\n- odom 累计路程约 `2.066 m`，但最终离起点仅约 `0.019 m`；主要活动约从 12 秒后开始，反复短距离前后移动，活动跨度约 `0.38 m`，而不是一次走完 2 m。\n- 墙节点 UWB、odom、IMU 和电压均有数据。用途是检查手动滚动时 odom 与墙节点测距是否随运动变化、返回起点后是否恢复。\n- 状态：已关闭；保持非结构化手动过程诊断用途，不用于位置或轨迹精度评价。\n\n### O03 / 043326\n\n- 用户补充确认：与 O02 同类，是一次不成熟的手动实验，没有具体人工坐标或结构化路线标注。\n- 供回忆的客观特征：包长约 `39.98 s`，同样没有 `/cmd_vel`。虽然文件名含 `oneway`，原始 odom 显示累计约 `0.920 m`、最终离起点约 `0.052 m`，并且约 10–30 秒之间多次改变运动方向。\n- 最大离起点约 `0.186 m`，整体活动跨度约 `0.24 m`。因此它不是可靠的“单程固定距离”真值包，更像第二次手动前后推拉/滚轮诊断。\n- 状态：已关闭；保持非结构化手动过程诊断用途，不把文件名 `oneway` 当作单程运动真值。\n\n### O04 / 091734\n\n- 用户回忆它可能属于一次不成熟的早期实验。原始证据显示它不是手动推动：bag 内有 `/car2/cmd_vel`，原始 notes 写明 `automatic relative right turn`，因此登记为“不成熟的自动转向实验”，而不是手动实验。\n- 原始 notes 已明确：自动相对右转 `-90°`，角速度上限 `0.20 rad/s`；控制器结束时报告 odom 航向变化 `-89.8°`、目标误差 `-0.2°`、状态 completed。\n- 全包最后一帧 odom 相对开头约 `-97.61°`，说明控制器结束后的停止/沉降阶段还发生了约 `7.8°` 的 odom 变化；两种数值必须分开报告。\n- notes 同时明确 `physical_angle_independently_verified: false`。没有人工角度标注，因此只作为自动控制器、odom、IMU 与停止后漂移的诊断包，不作实际转角精度样本。\n\n## 当前结论\n\nP01–P09 均已具备可登记的参考或明确用途，不再列为资料缺口。O01–O04 也已关闭：O02/O03 是无坐标的非结构化手动过程诊断，O04 是无独立角度真值的不成熟自动转向诊断。它们均不阻塞单车离线融合、双车离线联合定位或现有结果审核。现有静态数据进一步确认，测距与人工几何的差异会随距离、方向和场景改变，不能用一个全局常数偏置解释或校准全部实验。\n",
+  "supplemental_provenance": {
+    "schema_version": 1,
+    "as_of": "2026-10-21",
+    "scope": "原70包目录之外新增的4份早期实车bag及2份模拟bag的补充分类种子；当前只核对VM清单和仓库历史报告。",
+    "merge_policy": "与bag_annotations.json的bags按record_id/filename合并，禁止覆盖既有70项。实车累计74项，模拟2项。",
+    "status_policy": "文件可读性、历史实验完成报告与本次副本校验分开。known_sha256为空不表示文件丢失；未重新解码不冒称此次验收。",
+    "hash_policy": "四份早期EXP有仓库历史SHA记录，另存repository_reported_sha256供独立比对；known_sha256按要求保持null，归档脚本生成本次源/副本哈希。",
+    "provenance_sources": [
+      "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/2026-09-20_EXP001_004_comparison.md",
+      "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/dual_car_simulation.md",
+      "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/2026-09-20_EXP001_car1_static_LOS.md",
+      "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/2026-09-20_EXP002_car1_static_human_NLOS.md",
+      "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/2026-09-20_EXP003_car1_manual_push_LOS.md",
+      "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/2fb0acf18ca60ae282e62c0177c134de7d8ec193/docs/field_tests/2026-09-20_EXP004_car1_manual_push_human_NLOS.md"
+    ],
+    "excluded_third_party_files": [
+      {
+        "filename": "single_depth_color_640x480.bag",
+        "path_context": "第三方librealsense测试数据",
+        "reason": "第三方依赖/测试样例，不是本项目采集的原始实验数据；不纳入归档。"
+      },
+      {
+        "filename": "gps_data.bag",
+        "path_context": "第三方fdilink_ahrs/data/gps_data.bag",
+        "reason": "第三方依赖附带样例，不是本项目采集；不纳入归档。"
+      }
+    ],
+    "summary": {
+      "additional_records": 6,
+      "real_field": 4,
+      "simulation": 2,
+      "expected_total_bytes": 4271199,
+      "expected_real_field_bytes": 3251397,
+      "expected_simulation_bytes": 1019802,
+      "known_sha256_count": 0,
+      "repository_reported_sha256_count": 4,
+      "categories": {
+        "single_car_static": 2,
+        "single_car_motion": 2,
+        "simulation": 2
+      }
+    }
+  },
+  "archives": [
+    {
+      "relative_path": "uwb_backups/20261010_11_oPpxeO/field_tests_and_scripts.tar.gz",
+      "sha256": "09d2c71c07fe5f29c5c962ed2f9d61b7d7fd3cfc62099f8fc805895a3037f19a"
+    },
+    {
+      "relative_path": "uwb_backups/uwb_20261017_field_session.tar.gz",
+      "sha256": "06a4d4e1b70d7fca8e01dc8723149d04bc6f02167bfcc7dc8b21ea71872d5278"
+    },
+    {
+      "relative_path": "uwb_backups/20261018_fF11Ul/field_tests_20261018.tar.gz",
+      "sha256": "c743dc90f3534812fc76073fdc0c594cb0e6cdd33ab82521d8c913fc4c90fcf9"
+    }
+  ]
+}

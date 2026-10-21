@@ -1,0 +1,42 @@
+
+P1_R1  xyz=(2.00, 2.00, 1.00)  frames=1487
+  node_10: usable=1487/1487 median=2.947 m geometry=2.654 m residual=+0.293 m std=0.016 m
+  node_2: usable=1487/1487 median=5.209 m geometry=4.868 m residual=+0.341 m std=0.029 m
+  node_3: usable=1484/1487 median=3.805 m geometry=3.610 m residual=+0.195 m std=0.035 m
+  node_8: usable=1487/1487 median=2.601 m geometry=2.290 m residual=+0.311 m std=0.029 m
+
+P1_R2  xyz=(2.00, 2.00, 1.00)  frames=1489
+  node_10: usable=1489/1489 median=2.952 m geometry=2.654 m residual=+0.298 m std=0.017 m
+  node_2: usable=1488/1489 median=5.216 m geometry=4.868 m residual=+0.348 m std=0.029 m
+  node_3: usable=1489/1489 median=3.805 m geometry=3.610 m residual=+0.195 m std=0.034 m
+  node_8: usable=1488/1489 median=2.615 m geometry=2.290 m residual=+0.325 m std=0.027 m
+
+P2  xyz=(1.50, 1.50, 1.00)  frames=1486
+  node_10: usable=1486/1486 median=2.991 m geometry=2.630 m residual=+0.361 m std=0.041 m
+  node_2: usable=1486/1486 median=5.890 m geometry=5.527 m residual=+0.363 m std=0.030 m
+  node_3: usable=1485/1486 median=4.375 m geometry=4.204 m residual=+0.171 m std=0.029 m
+  node_8: usable=1485/1486 median=2.429 m geometry=2.055 m residual=+0.374 m std=0.035 m
+
+P3  xyz=(3.50, 1.50, 1.00)  frames=1488
+  node_10: usable=1488/1488 median=2.343 m geometry=1.958 m residual=+0.385 m std=0.027 m
+  node_2: usable=1488/1488 median=4.839 m geometry=4.431 m residual=+0.408 m std=0.019 m
+  node_3: usable=1488/1488 median=2.802 m geometry=2.598 m residual=+0.204 m std=0.023 m
+  node_8: usable=1487/1488 median=4.062 m geometry=3.718 m residual=+0.344 m std=0.024 m
+
+P4  xyz=(3.50, 4.00, 1.00)  frames=1486
+  node_10: usable=1486/1486 median=4.423 m geometry=4.133 m residual=+0.290 m std=0.027 m
+  node_2: usable=1485/1486 median=3.002 m geometry=2.790 m residual=+0.212 m std=0.027 m
+  node_3: usable=1484/1486 median=2.665 m geometry=2.439 m residual=+0.226 m std=0.036 m
+  node_8: usable=1485/1486 median=4.197 m geometry=3.959 m residual=+0.238 m std=0.022 m
+
+P5  xyz=(1.50, 4.00, 1.00)  frames=1488
+  node_10: usable=1487/1488 median=4.611 m geometry=4.491 m residual=+0.120 m std=0.035 m
+  node_2: usable=1488/1488 median=4.186 m geometry=4.325 m residual=-0.139 m std=0.030 m
+  node_3: usable=1487/1488 median=3.826 m geometry=4.107 m residual=-0.281 m std=0.035 m
+  node_8: usable=1488/1488 median=3.207 m geometry=2.464 m residual=+0.743 m std=0.048 m
+
+Residual ranges across the five positions (P1_R2 excluded):
+  node_10: min=+0.120 m max=+0.385 m spread=0.264 m
+  node_2: min=-0.139 m max=+0.408 m spread=0.547 m
+  node_3: min=-0.281 m max=+0.226 m spread=0.507 m
+  node_8: min=+0.238 m max=+0.743 m spread=0.505 m

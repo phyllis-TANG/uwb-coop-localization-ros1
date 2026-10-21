@@ -1,0 +1,18 @@
+experiment: Car2 automatic L-shape after wall-node reinstall
+start_antenna_xyz_m: [2.00, 2.00, 0.20]
+planned_endpoint_antenna_xyz_m: [3.00, 3.00, 0.20]
+measured_endpoint_antenna_xyz_m: [3.03, 2.95, 0.20]
+measured_endpoint_xy_difference_from_plan_m: 0.058
+controller_first_forward_projected_m: 0.975
+controller_turn_deg: -89.0
+controller_second_forward_projected_m: 0.977
+controller_status: completed according to odom feedback
+physical_turn_angle_independently_verified: false
+raw_bag_unchanged: true
+node_10_first_0_10s_median_m: 5.812
+node_10_previous_static_at_A_median_m: 3.746
+node_10_first_0_10s_discrepancy_m: 2.066
+node_10_10_30s_status: large fluctuations during motion
+node_10_final_static_median_m: approximately 4.05
+node_10_anomaly_cause: undetermined
+analysis_requirement: inspect and gate inconsistent ranges before fusion

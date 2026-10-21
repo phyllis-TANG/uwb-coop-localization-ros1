@@ -1,0 +1,9 @@
+experiment: two-car dynamic fusion-input pilot
+configuration: Car2 stationary, Car1 manually pushed along inter-vehicle line
+initial_uwb_distance_m: 2.00
+trajectory: static, move away, static, return, static
+navigation_enabled: false
+cmd_vel_used: false
+recorded: car1/car2 UWB, odom, IMU, voltage
+tf_recorded: false
+known_frame_issue: both cars still use base_footprint and gyro_link internally

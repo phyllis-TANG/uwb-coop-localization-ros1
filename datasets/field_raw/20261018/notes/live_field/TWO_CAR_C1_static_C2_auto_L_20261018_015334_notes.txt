@@ -1,0 +1,11 @@
+experiment: Car1 stationary, Car2 automatic L-shaped motion
+car1_static_antenna_xyz_m: [1.50, 4.00, 0.20]
+car2_start_antenna_xyz_m: [2.00, 2.00, 0.20]
+car2_measured_end_antenna_xyz_m: [2.95, 3.04, 0.20]
+car2_controller_first_forward_odom_m: 0.975
+car2_controller_turn_odom_deg: -89.0
+car2_controller_second_forward_odom_m: 0.975
+controller_status: completed according to odom
+continuous_ground_truth: unavailable
+raw_bag_unchanged: true
+direct_tape_endpoint_antenna_distance_m: approximately 1.743

@@ -1,0 +1,9 @@
+experiment: Car1 odom-controlled forward, Car2 stationary
+car1_start_antenna_xyz_m: [1.50, 4.00, 0.20]
+car1_measured_end_antenna_xyz_m: [1.31, 3.02, 0.20]
+car2_stationary_antenna_xyz_m: [2.95, 3.04, 0.20]
+end_direct_tape_antenna_distance_m: 1.69
+controller_odom_projected_distance_m: 0.977
+controller_odom_lateral_m: -0.002
+observation: visible heading deviation; angular command and odom yaw pending bag review
+raw_bag_unchanged: true

@@ -1,0 +1,186 @@
+===== 1. 主机与系统 =====
+2024-11-19T15:17:35+08:00
+wheeltec
+192.168.0.100 
+Linux wheeltec 4.9.201-tegra #1 SMP PREEMPT Fri Jan 15 14:41:02 PST 2021 aarch64 aarch64 aarch64 GNU/Linux
+Ubuntu 18.04.5 LTS
+<unknown>
+Python 2.7.17
+Python 2.7.17
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/mmcblk0p1   55G   35G   18G  67% /
+
+===== 2. 网络接口与路由 =====
+lo               UNKNOWN        127.0.0.1/8 
+wlan0            UP             192.168.0.100/24 
+default via 192.168.0.1 dev wlan0 proto static metric 20600 
+169.254.0.0/16 dev wlan0 scope link metric 1000 
+192.168.0.0/24 dev wlan0 proto kernel scope link src 192.168.0.100 metric 600 
+phy#0
+	Unnamed/non-netdev interface
+		wdev 0x2
+		addr 90:de:80:95:e4:76
+		type P2P-device
+		txpower 19.00 dBm
+	Interface wlan0
+		ifindex 5
+		wdev 0x1
+		addr 90:de:80:95:e4:76
+		ssid WHEELTEC_TEST
+		type AP
+		txpower 19.00 dBm
+
+===== 3. NetworkManager状态 =====
+DEVICE  TYPE      STATE        CONNECTION         
+wlan0   wifi      connected    Wi-Fi connection 2 
+eth0    ethernet  unavailable  --                 
+l4tbr0  bridge    unmanaged    --                 
+dummy0  dummy     unmanaged    --                 
+rndis0  ethernet  unmanaged    --                 
+usb0    ethernet  unmanaged    --                 
+lo      loopback  unmanaged    --                 
+yes:WHEELTEC_TEST
+NAME                   TYPE      DEVICE  AUTOCONNECT 
+Wi-Fi connection 2     wifi      wlan0   yes         
+Ethernet connection 1  ethernet  --      yes         
+Hotspot                wifi      --      no          
+PolyUWLAN              wifi      --      yes         
+Wi-Fi connection 1     wifi      --      yes         
+Wired connection 1     ethernet  --      yes         
+
+===== 4. 热点相关服务 =====
+NetworkManager   active
+hostapd          inactive
+dnsmasq          inactive
+nobody    6614  4230  0 15:08 ?        00:00:00 /usr/sbin/dnsmasq --conf-file --no-hosts --keep-in-foreground --bind-interfaces --except-interface=lo --clear-on-reload --strict-order --listen-address=192.168.0.100 --dhcp-range=192.168.0.109,192.168.0.254,60m --dhcp-option=option:router,192.168.0.100 --dhcp-lease-max=50 --pid-file=/run/nm-dnsmasq-wlan0.pid --conf-dir=/etc/NetworkManager/dnsmasq-shared.d
+nobody    8106  6614  0 15:16 ?        00:00:00 /usr/sbin/dnsmasq --conf-file --no-hosts --keep-in-foreground --bind-interfaces --except-interface=lo --clear-on-reload --strict-order --listen-address=192.168.0.100 --dhcp-range=192.168.0.109,192.168.0.254,60m --dhcp-option=option:router,192.168.0.100 --dhcp-lease-max=50 --pid-file=/run/nm-dnsmasq-wlan0.pid --conf-dir=/etc/NetworkManager/dnsmasq-shared.d
+
+===== 5. 无线网卡数量与模式 =====
+		type P2P-device
+	Interface wlan0
+		type AP
+	Supported interface modes:
+		 * IBSS
+		 * managed
+		 * AP
+		 * P2P-client
+		 * P2P-GO
+		 * P2P-device
+	Band 1:
+
+===== 6. ROS环境（加载前） =====
+
+===== 7. 当前ROS进程与端口 =====
+当前没有匹配的ROS进程
+
+===== 8. USB与串口 =====
+Bus 002 Device 002: ID 0bda:0411 Realtek Semiconductor Corp. 
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 006: ID 0bda:3031 Realtek Semiconductor Corp. 
+Bus 001 Device 009: ID 1a86:55d4 QinHeng Electronics 
+Bus 001 Device 008: ID 2bc5:0402  
+Bus 001 Device 007: ID 0bda:b812 Realtek Semiconductor Corp. 
+Bus 001 Device 005: ID 1a40:0101 Terminus Technology Inc. Hub
+Bus 001 Device 004: ID 1a86:55d4 QinHeng Electronics 
+Bus 001 Device 003: ID 1a86:55d4 QinHeng Electronics 
+Bus 001 Device 002: ID 0bda:5411 Realtek Semiconductor Corp. 
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+total 0
+lrwxrwxrwx 1 root root 13 Nov 19 15:08 usb-1a86_USB_Single_Serial_5B2E110223-if00 -> ../../ttyACM0
+lrwxrwxrwx 1 root root 13 Nov 19 15:08 usb-WCH.CN_USB_Single_Serial_0001-if00 -> ../../ttyACM1
+lrwxrwxrwx 1 root root 13 Nov 19 15:08 usb-WCH.CN_USB_Single_Serial_0002-if00 -> ../../ttyACM2
+crw-rw---- 1 root dialout 166, 0 Nov 19 15:08 /dev/ttyACM0
+crwxrwxrwx 1 root dialout 166, 1 Nov 19 15:08 /dev/ttyACM1
+crwxrwxrwx 1 root dialout 166, 2 Nov 19 15:08 /dev/ttyACM2
+当前没有匹配串口
+oldcar_uwb_port=/dev/serial/by-id/usb-1a86_USB_Single_Serial_5B2E110223-if00
+/dev/ttyACM0
+DEVPATH=/devices/70090000.xusb/usb1/1-2/1-2.1/1-2.1:1.0/tty/ttyACM0
+ID_MODEL_ID=55d4
+ID_SERIAL=1a86_USB_Single_Serial_5B2E110223
+ID_USB_DRIVER=cdc_acm
+ID_VENDOR_ID=1a86
+旧车UWB串口当前未被占用
+
+===== 9. 加载旧车ROS工作空间 =====
+CMAKE_PREFIX_PATH=/home/wheeltec/uwb_ws/devel:/home/wheeltec/wheeltec_robot/devel:/home/wheeltec/wheeltec_arm/devel:/opt/ros/melodic
+ROS_DISTRO=melodic
+ROS_MASTER_URI=http://localhost:11311
+ROS_PACKAGE_PATH=/home/wheeltec/uwb_ws/src:/home/wheeltec/wheeltec_robot/src:/home/wheeltec/wheeltec_arm/src:/opt/ros/melodic/share
+ROS_VERSION=1
+
+===== 10. UWB包和消息兼容性 =====
+/home/wheeltec/uwb_ws/src/uwb_coop_localization
+618dc48f337736959542744a6ce2e7b8
+a3190247492671e8c91e49fd89da282d
+std_msgs/Header header
+  uint32 seq
+  time stamp
+  string frame_id
+string tag_id
+uwb_coop_localization/UwbRange[] ranges
+  string anchor_id
+  float64 range
+  float32 quality
+
+
+===== 11. 当前ROS图，不启动Master =====
+ERROR: Unable to communicate with master!
+ERROR: Unable to communicate with master!
+ERROR: Unable to communicate with master!
+
+===== 12. 旧车UWB代码文件 =====
+/home/wheeltec/uwb_ws/src/uwb_coop_localization/launch/uwb_linktrack_driver.launch
+/home/wheeltec/uwb_ws/src/uwb_coop_localization/msg/UwbRange.msg
+/home/wheeltec/uwb_ws/src/uwb_coop_localization/msg/UwbRangeArray.msg
+/home/wheeltec/uwb_ws/src/uwb_coop_localization/scripts/uwb_linktrack_driver.py
+
+===== 13. 驱动launch内容 =====
+
+--- /home/wheeltec/uwb_ws/src/uwb_coop_localization/launch/uwb_linktrack_driver.launch ---
+<launch>
+  <!-- A port is intentionally required: tty numbering is not stable. -->
+  <arg name="port" />
+  <arg name="baudrate" default="921600" />
+  <arg name="topic" default="/uwb/ranges" />
+  <arg name="frame_id" default="uwb_linktrack" />
+  <arg name="node_prefix" default="node_" />
+
+  <node pkg="uwb_coop_localization"
+        type="uwb_linktrack_driver.py"
+        name="uwb_linktrack_driver"
+        output="screen">
+    <param name="port" value="$(arg port)" />
+    <param name="baudrate" value="$(arg baudrate)" />
+    <param name="topic" value="$(arg topic)" />
+    <param name="frame_id" value="$(arg frame_id)" />
+    <param name="node_prefix" value="$(arg node_prefix)" />
+  </node>
+</launch>
+
+===== 14. 底盘总启动文件，仅检查不执行 =====
+vehicle_launch=/home/wheeltec/wheeltec_robot/src/turn_on_wheeltec_robot/launch/turn_on_wheeltec_robot.launch
+25:  <arg name="odom_frame_id"  default="odom_combined"/>
+28:  <!-- turn on base_serial 开启底层单片机的控制节点  -->
+29:  <include file="$(find turn_on_wheeltec_robot)/launch/include/base_serial.launch" unless="$(arg repeat)">
+30:    <arg name="odom_frame_id"  value="$(arg odom_frame_id)"/>
+31:  </include>
+36:  <include file="$(find wheeltec_arm_pick)/launch/base_serial.launch" >
+40:  </include>
+47:  <include file="$(find turn_on_wheeltec_robot)/launch/include/teb_local_planner.launch" if="$(arg navigation)">
+49:  <!-- <include file="$(find turn_on_wheeltec_robot)/launch/include/dwa_local_planner.launch" if="$(arg navigation)"> -->
+51:  </include>
+55:  <include file="$(find turn_on_wheeltec_robot)/launch/include/teb_local_planner_pure3d.launch" if="$(arg pure3d_nav)">
+57:  <!-- <include file="$(find turn_on_wheeltec_robot)/launch/include/dwa_local_planner_pure3d.launch" if="$(arg pure3d_nav)"> -->
+59:  </include>
+62:  <include file="$(find turn_on_wheeltec_robot)/launch/robot_model_visualization.launch" unless="$(arg repeat)">
+65:  </include>
+67:  <!-- 扩张卡尔曼滤波 发布odom_combined到footprint的TF,即小车定位 使用cartographer算法时不使用该滤波算法-->
+68:  <include file="$(find turn_on_wheeltec_robot)/launch/include/robot_pose_ekf.launch" unless="$(arg repeat)">
+70:  </include>
+
+===== 15. 关键代码SHA256 =====
+3b5e4178703e92f8aa955e145938b7842159d7a3d6b2973c1f2cbfd79c916eac  /home/wheeltec/uwb_ws/src/uwb_coop_localization/scripts/uwb_linktrack_driver.py
+61b00e468ef0a43a6d7894ffd47620a9214b61d47bc1619b192446a46e21ad68  /home/wheeltec/uwb_ws/src/uwb_coop_localization/msg/UwbRangeArray.msg
+b45a08d0535c0994614f2f24311c689b51880700cdc0421e9c00b2d7345af99a  /home/wheeltec/uwb_ws/src/uwb_coop_localization/msg/UwbRange.msg
+2bb90c9a0fc394c10b33c59e4afe2b0ee41eafe6a4a88b626df1ecde1e14bd83  /home/wheeltec/uwb_ws/src/uwb_coop_localization/launch/uwb_linktrack_driver.launch
