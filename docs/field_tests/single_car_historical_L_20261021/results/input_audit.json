@@ -1,0 +1,490 @@
+[
+  {
+    "case": {
+      "id": "oct11_keyboard_083512",
+      "day": "20261010_11",
+      "bag": "CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083512.bag",
+      "bag_sha256": "4b0b7276e9dbb6f50f016eca4f621cd8d0ee0fca60b5b7b91721d0d217d15407",
+      "label": "keyboard_L",
+      "historical_summary": "docs/field_tests/20261010_11/results/keyboard_L_summary.json"
+    },
+    "run": {
+      "label": "keyboard_L",
+      "bag": "20261011/CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083512.bag",
+      "start_antenna_xyz_m": [
+        2,
+        2,
+        0.2
+      ],
+      "end_antenna_xyz_m": [
+        3.17,
+        2.6,
+        0.2
+      ],
+      "initial_heading_deg": -90,
+      "initial_heading_source": "Inferred from marked first travel direction +room-y and recorded negative body linear.x commands; not an independent heading measurement; no endpoint used",
+      "reference_source": "start marked A; end manually measured; B only approximately reached"
+    },
+    "bag_metadata": {
+      "bag_file": "CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083512.bag",
+      "sha256": "4b0b7276e9dbb6f50f016eca4f621cd8d0ee0fca60b5b7b91721d0d217d15407",
+      "size_bytes": 4115870,
+      "duration_s": 119.99227285385132,
+      "topic_counts": {
+        "/car2/PowerVoltage": 201,
+        "/car2/cmd_vel": 2240,
+        "/car2/imu": 2402,
+        "/car2/odom": 2399,
+        "/car2/uwb/ranges": 5991
+      },
+      "tag_id_counts": {
+        "node_0": 5991
+      },
+      "usable_anchor_combinations": {
+        "node_10|node_2|node_3": 5981,
+        "node_10|node_3": 3,
+        "node_2|node_3": 3,
+        "node_10|node_2": 4
+      },
+      "invalid_surveyed_range_entries": 0,
+      "duplicate_surveyed_id_groups": 0,
+      "timing": {
+        "/car2/imu": {
+          "header_nonincreasing_steps": 0,
+          "header_max_gap_s": 0.05656266212463379,
+          "bag_minus_header_median_s": 0.00765836238861084,
+          "bag_minus_header_p95_s": 0.08808451890945433,
+          "negative_bag_minus_header_count": 0
+        },
+        "/car2/odom": {
+          "header_nonincreasing_steps": 0,
+          "header_max_gap_s": 0.056575775146484375,
+          "bag_minus_header_median_s": 0.02818894386291504,
+          "bag_minus_header_p95_s": 0.07895095348358147,
+          "negative_bag_minus_header_count": 0
+        },
+        "/car2/uwb/ranges": {
+          "header_nonincreasing_steps": 0,
+          "header_max_gap_s": 0.03201866149902344,
+          "bag_minus_header_median_s": 0.02505779266357422,
+          "bag_minus_header_p95_s": 0.0974959135055542,
+          "negative_bag_minus_header_count": 0
+        }
+      },
+      "header_frame_ids": {
+        "/car2/imu": [
+          "gyro_link"
+        ],
+        "/car2/odom": [
+          "car2/odom_combined"
+        ],
+        "/car2/uwb/ranges": [
+          "car2/uwb_linktrack"
+        ]
+      },
+      "child_frame_ids": {
+        "/car2/odom": [
+          "base_footprint"
+        ]
+      },
+      "odom": {
+        "local_delta_xy_m": [
+          -1.0172069668769836,
+          0.7956046462059021
+        ],
+        "net_displacement_m": 1.291393343070767,
+        "path_m": 2.227046657527504,
+        "yaw_change_deg": -112.19679737296251
+      },
+      "voltage": {
+        "first_v": 10.241000175476074,
+        "last_v": 10.196000099182129,
+        "min_v": 10.107999801635742
+      },
+      "command_counts": {
+        "translation_nonzero": 1492,
+        "angular_nonzero": 102
+      }
+    },
+    "keyframes": 117,
+    "origin_float_s": 1791732916.6588893,
+    "available_anchor_combinations": {
+      "node_10|node_2|node_3": 117
+    },
+    "window_checks": [
+      {
+        "window": "initial",
+        "odom_path_m": 0.0,
+        "odom_yaw_span_deg": 0.0,
+        "motion_command_count": 0,
+        "keyframes": 2,
+        "bounds_elapsed_s": [
+          0.1684877872467041,
+          3.877938985824585
+        ]
+      },
+      {
+        "window": "historical_tail5",
+        "odom_path_m": 0.0,
+        "odom_yaw_span_deg": 0.0,
+        "motion_command_count": 0,
+        "keyframes": 4,
+        "bounds_elapsed_s": [
+          114.96797060966492,
+          119.96797156333923
+        ]
+      },
+      {
+        "window": "after_stop_2_7",
+        "odom_path_m": 0.0,
+        "odom_yaw_span_deg": 0.0,
+        "motion_command_count": 0,
+        "keyframes": 5,
+        "bounds_elapsed_s": [
+          72.5550696849823,
+          77.5550696849823
+        ]
+      }
+    ],
+    "stop_window": {
+      "available": true,
+      "stop_elapsed_s": 70.5550696849823,
+      "bounds": [
+        1791732989.213959,
+        1791732994.213959
+      ],
+      "window_elapsed_s": [
+        72.5550696849823,
+        77.5550696849823
+      ]
+    },
+    "inherited_start_heading": true,
+    "horizontal_lever_independently_measured": false
+  },
+  {
+    "case": {
+      "id": "oct11_auto_091958",
+      "day": "20261010_11",
+      "bag": "CAR2_auto_Lshape_20261011_091958.bag",
+      "bag_sha256": "ba9286da5ef369d9e785883f9d909f3f4e54d4a8827aed2e9b2c1b59ef8e435f",
+      "label": "automatic_L",
+      "historical_summary": "docs/field_tests/20261010_11/results/automatic_L_summary.json"
+    },
+    "run": {
+      "label": "automatic_L",
+      "bag": "20261011/CAR2_auto_Lshape_20261011_091958.bag",
+      "start_antenna_xyz_m": [
+        2,
+        2,
+        0.2
+      ],
+      "end_antenna_xyz_m": [
+        2.95,
+        3.11,
+        0.2
+      ],
+      "initial_heading_deg": 90,
+      "initial_heading_source": "Operator instructed to place body forward along +room-y toward B; approximate marked heading, not instrument surveyed",
+      "reference_source": "marked initial position/heading; end manually measured after run"
+    },
+    "bag_metadata": {
+      "bag_file": "CAR2_auto_Lshape_20261011_091958.bag",
+      "sha256": "ba9286da5ef369d9e785883f9d909f3f4e54d4a8827aed2e9b2c1b59ef8e435f",
+      "size_bytes": 5939705,
+      "duration_s": 178.5632734298706,
+      "topic_counts": {
+        "/car2/imu": 3572,
+        "/car2/uwb/ranges": 8922,
+        "/car2/odom": 3569,
+        "/car2/PowerVoltage": 298,
+        "/car2/cmd_vel": 1695
+      },
+      "tag_id_counts": {
+        "node_0": 8922
+      },
+      "usable_anchor_combinations": {
+        "node_10|node_2|node_3": 8913,
+        "node_2|node_3": 2,
+        "node_10|node_2": 1,
+        "node_10|node_3": 6
+      },
+      "invalid_surveyed_range_entries": 0,
+      "duplicate_surveyed_id_groups": 0,
+      "timing": {
+        "/car2/imu": {
+          "header_nonincreasing_steps": 0,
+          "header_max_gap_s": 0.0506284236907959,
+          "bag_minus_header_median_s": -0.015623807907104492,
+          "bag_minus_header_p95_s": 0.011518430709838861,
+          "negative_bag_minus_header_count": 3167
+        },
+        "/car2/uwb/ranges": {
+          "header_nonincreasing_steps": 0,
+          "header_max_gap_s": 0.022788524627685547,
+          "bag_minus_header_median_s": -0.013639450073242188,
+          "bag_minus_header_p95_s": 0.014949369430541967,
+          "negative_bag_minus_header_count": 7025
+        },
+        "/car2/odom": {
+          "header_nonincreasing_steps": 0,
+          "header_max_gap_s": 0.05062460899353027,
+          "bag_minus_header_median_s": 0.005349874496459961,
+          "bag_minus_header_p95_s": 0.03903288841247558,
+          "negative_bag_minus_header_count": 1488
+        }
+      },
+      "header_frame_ids": {
+        "/car2/imu": [
+          "gyro_link"
+        ],
+        "/car2/uwb/ranges": [
+          "car2/uwb_linktrack"
+        ],
+        "/car2/odom": [
+          "car2/odom_combined"
+        ]
+      },
+      "child_frame_ids": {
+        "/car2/odom": [
+          "base_footprint"
+        ]
+      },
+      "odom": {
+        "local_delta_xy_m": [
+          -1.0941208663862199,
+          -0.915252169012092
+        ],
+        "net_displacement_m": 1.4264596044554052,
+        "path_m": 2.133644467184727,
+        "yaw_change_deg": -88.089134140762
+      },
+      "voltage": {
+        "first_v": 10.281000137329102,
+        "last_v": 10.234000205993652,
+        "min_v": 10.159000396728516
+      },
+      "command_counts": {
+        "translation_nonzero": 966,
+        "angular_nonzero": 1065
+      }
+    },
+    "keyframes": 176,
+    "origin_float_s": 1791735599.1401377,
+    "available_anchor_combinations": {
+      "node_10|node_2|node_3": 176
+    },
+    "window_checks": [
+      {
+        "window": "initial",
+        "odom_path_m": 0.0,
+        "odom_yaw_span_deg": 0.0,
+        "motion_command_count": 0,
+        "keyframes": 4,
+        "bounds_elapsed_s": [
+          0.1521914005279541,
+          5.152191400527954
+        ]
+      },
+      {
+        "window": "historical_tail5",
+        "odom_path_m": 0.0,
+        "odom_yaw_span_deg": 0.0,
+        "motion_command_count": 0,
+        "keyframes": 4,
+        "bounds_elapsed_s": [
+          173.57883977890015,
+          178.57884073257446
+        ]
+      },
+      {
+        "window": "after_stop_2_7",
+        "odom_path_m": 0.0,
+        "odom_yaw_span_deg": 0.0,
+        "motion_command_count": 0,
+        "keyframes": 5,
+        "bounds_elapsed_s": [
+          86.49092864990234,
+          91.49092864990234
+        ]
+      }
+    ],
+    "stop_window": {
+      "available": true,
+      "stop_elapsed_s": 84.49092864990234,
+      "bounds": [
+        1791735685.6310663,
+        1791735690.6310663
+      ],
+      "window_elapsed_s": [
+        86.49092864990234,
+        91.49092864990234
+      ]
+    },
+    "inherited_start_heading": true,
+    "horizontal_lever_independently_measured": false
+  },
+  {
+    "case": {
+      "id": "oct17_auto_061540",
+      "day": "20261017",
+      "bag": "CAR2_auto_Lshape_reinstall_20261017_061540.bag",
+      "bag_sha256": "da703f331c45433a5c08f2119b8585d377bca41db2fa5ebc1a7fd8f4b294dd10",
+      "label": "automatic_L_20261017_unfiltered",
+      "historical_summary": "docs/field_tests/20261017/results/current/automatic_L_20261017_unfiltered_summary.json"
+    },
+    "run": {
+      "bag": "20261017/CAR2_auto_Lshape_reinstall_20261017_061540.bag",
+      "end_antenna_xyz_m": [
+        3.03,
+        2.95,
+        0.2
+      ],
+      "initial_heading_deg": 90,
+      "initial_heading_source": "Approximate placement along room +y, not independently surveyed",
+      "label": "automatic_L_20261017_unfiltered",
+      "reference_source": "Marked A and manually measured final antenna C; no continuous ground truth",
+      "start_antenna_xyz_m": [
+        2.0,
+        2.0,
+        0.2
+      ]
+    },
+    "bag_metadata": {
+      "bag_file": "CAR2_auto_Lshape_reinstall_20261017_061540.bag",
+      "sha256": "da703f331c45433a5c08f2119b8585d377bca41db2fa5ebc1a7fd8f4b294dd10",
+      "size_bytes": 4683753,
+      "duration_s": 134.69327926635742,
+      "topic_counts": {
+        "/car2/imu": 2695,
+        "/car2/odom": 2692,
+        "/car2/PowerVoltage": 225,
+        "/car2/uwb/ranges": 6725,
+        "/car2/cmd_vel": 1759
+      },
+      "tag_id_counts": {
+        "node_0": 6725
+      },
+      "usable_anchor_combinations": {
+        "node_10|node_2|node_3|node_8": 6712,
+        "node_2|node_3|node_8": 3,
+        "node_10|node_3|node_8": 4,
+        "node_10|node_2|node_3": 1,
+        "node_10|node_2|node_8": 4,
+        "node_10|node_2": 1
+      },
+      "invalid_surveyed_range_entries": 0,
+      "duplicate_surveyed_id_groups": 0,
+      "timing": {
+        "/car2/imu": {
+          "header_nonincreasing_steps": 0,
+          "header_max_gap_s": 0.05063199996948242,
+          "bag_minus_header_median_s": -0.008059501647949219,
+          "bag_minus_header_p95_s": -0.0038313865661621107,
+          "negative_bag_minus_header_count": 2635
+        },
+        "/car2/odom": {
+          "header_nonincreasing_steps": 0,
+          "header_max_gap_s": 0.05062556266784668,
+          "bag_minus_header_median_s": 0.006660580635070801,
+          "bag_minus_header_p95_s": 0.043461966514587405,
+          "negative_bag_minus_header_count": 1033
+        },
+        "/car2/uwb/ranges": {
+          "header_nonincreasing_steps": 0,
+          "header_max_gap_s": 0.02103590965270996,
+          "bag_minus_header_median_s": 0.0017940998077392578,
+          "bag_minus_header_p95_s": 0.012859725952148435,
+          "negative_bag_minus_header_count": 1885
+        }
+      },
+      "header_frame_ids": {
+        "/car2/imu": [
+          "gyro_link"
+        ],
+        "/car2/odom": [
+          "car2/odom_combined"
+        ],
+        "/car2/uwb/ranges": [
+          "car2/uwb_linktrack"
+        ]
+      },
+      "child_frame_ids": {
+        "/car2/odom": [
+          "base_footprint"
+        ]
+      },
+      "odom": {
+        "local_delta_xy_m": [
+          0.9792223572731018,
+          -0.9658975852653384
+        ],
+        "net_displacement_m": 1.375439773383372,
+        "path_m": 2.1527742546034077,
+        "yaw_change_deg": -95.3872326769425
+      },
+      "voltage": {
+        "first_v": 10.25100040435791,
+        "last_v": 10.243000030517578,
+        "min_v": 10.098999977111816
+      },
+      "command_counts": {
+        "translation_nonzero": 969,
+        "angular_nonzero": 1167
+      }
+    },
+    "keyframes": 132,
+    "origin_float_s": 1792242960.5474975,
+    "available_anchor_combinations": {
+      "node_10|node_2|node_3|node_8": 132
+    },
+    "window_checks": [
+      {
+        "window": "initial",
+        "odom_path_m": 0.0,
+        "odom_yaw_span_deg": 0.0,
+        "motion_command_count": 0,
+        "keyframes": 4,
+        "bounds_elapsed_s": [
+          0.1988985538482666,
+          5.198898553848267
+        ]
+      },
+      {
+        "window": "historical_tail5",
+        "odom_path_m": 0.0,
+        "odom_yaw_span_deg": 0.0,
+        "motion_command_count": 0,
+        "keyframes": 4,
+        "bounds_elapsed_s": [
+          129.64457631111145,
+          134.64457726478577
+        ]
+      },
+      {
+        "window": "after_stop_2_7",
+        "odom_path_m": 0.0,
+        "odom_yaw_span_deg": 0.0,
+        "motion_command_count": 0,
+        "keyframes": 5,
+        "bounds_elapsed_s": [
+          84.49199342727661,
+          89.49199342727661
+        ]
+      }
+    ],
+    "stop_window": {
+      "available": true,
+      "stop_elapsed_s": 82.49199342727661,
+      "bounds": [
+        1792243045.039491,
+        1792243050.039491
+      ],
+      "window_elapsed_s": [
+        84.49199342727661,
+        89.49199342727661
+      ]
+    },
+    "inherited_start_heading": true,
+    "horizontal_lever_independently_measured": false
+  }
+]

@@ -1,0 +1,136 @@
+{
+  "anchors_xyz_m": {
+    "node_10": [
+      3.26,
+      0.1,
+      2.355
+    ],
+    "node_2": [
+      5.28,
+      5.16,
+      2.755
+    ],
+    "node_3": [
+      5.28,
+      2.86,
+      2.355
+    ],
+    "node_8": [
+      0.1,
+      2.41,
+      2.3
+    ]
+  },
+  "calibration": {
+    "antenna_xyz_m": [
+      2.0,
+      2.0,
+      0.2
+    ],
+    "bag": "20261017/CAR2_P1_REINSTALL_STATIC_20261017_045257.bag",
+    "frozen_bias_m": {
+      "node_10": 0.608864,
+      "node_2": 0.449738,
+      "node_3": 0.201286,
+      "node_8": 0.368514
+    }
+  },
+  "corrected_static_references": {},
+  "experiments": {
+    "CAR2_P15_REINSTALL_STATIC_20261017_055818.bag": "Filename P15; corrected actual position [2,3,0.2]",
+    "CAR2_P1_REINSTALL_STATIC_20261017_045257.bag": "P1 [2,2,0.2] independent calibration source",
+    "CAR2_P23_UWB_ODOM_IMU_static_20261017_060940.bag": "Joint static [2,3,0.2]",
+    "CAR2_P4_REINSTALL_STATIC_20261017_053806.bag": "Filename P4; actual position [3,3,0.2]",
+    "CAR2_auto_Lshape_reinstall_20261017_061540.bag": "Automatic L; actual final C [3.03,2.95,0.2]; node_10 start anomaly"
+  },
+  "graph_parameter_policy": "Inherited from 2026-10-11 pilot without tuning to 2026-10-17 endpoint; initial run retains all ranges for anomaly diagnosis",
+  "graph_parameters": {
+    "keyframe_step_s": 1,
+    "odom_translation_sigma_m": 0.03,
+    "odom_yaw_sigma_deg": 2,
+    "prior_heading_sigma_deg": 5,
+    "prior_position_sigma_m": 0.2,
+    "range_bin_half_width_s": 0.4,
+    "range_sigma_m": 0.2
+  },
+  "include_static_overview": false,
+  "known_sha256": {
+    "20261017/CAR2_P15_REINSTALL_STATIC_20261017_055818.bag": "5ec05b7ab00c33e8be51e93800cf1b81f81a31e653df961d3737f81c9a4e6858",
+    "20261017/CAR2_P1_REINSTALL_STATIC_20261017_045257.bag": "f7250698ae484b7ace3bf152b1ff216f5470b5d75f0b90a66483edb402d1ec33",
+    "20261017/CAR2_P23_UWB_ODOM_IMU_static_20261017_060940.bag": "b9285811377432385566ebb6c500ca5fb498e701917a29e7923b28f3e3225d55",
+    "20261017/CAR2_P4_REINSTALL_STATIC_20261017_053806.bag": "4687abd3e2513477d29059789f1bf25539c1193237178f3805dca13fcac2e429",
+    "20261017/CAR2_auto_Lshape_reinstall_20261017_061540.bag": "da703f331c45433a5c08f2119b8585d377bca41db2fa5ebc1a7fd8f4b294dd10"
+  },
+  "room_dimensions_xy_m": [
+    5.33,
+    5.38
+  ],
+  "runs_2d": [
+    {
+      "bag": "20261017/CAR2_auto_Lshape_reinstall_20261017_061540.bag",
+      "end_antenna_xyz_m": [
+        3.03,
+        2.95,
+        0.2
+      ],
+      "initial_heading_deg": 90,
+      "initial_heading_source": "Approximate placement along room +y, not independently surveyed",
+      "label": "automatic_L_20261017_unfiltered",
+      "reference_source": "Marked A and manually measured final antenna C; no continuous ground truth",
+      "start_antenna_xyz_m": [
+        2.0,
+        2.0,
+        0.2
+      ]
+    },
+    {
+      "bag": "20261017/CAR2_auto_Lshape_reinstall_20261017_061540.bag",
+      "end_antenna_xyz_m": [
+        3.03,
+        2.95,
+        0.2
+      ],
+      "initial_heading_deg": 90,
+      "initial_heading_source": "Approximate placement along room +y, not independently surveyed",
+      "label": "automatic_L_20261017_manual_N10_mask",
+      "range_exclusions": [
+        {
+          "anchor_id": "node_10",
+          "elapsed_end_s": 35.0,
+          "elapsed_start_s": 0.0,
+          "selection_basis": "Previously observed persistent start error and 5-second range bins; exploratory diagnostic"
+        }
+      ],
+      "reference_source": "Marked A and manually measured final antenna C; no continuous ground truth",
+      "start_antenna_xyz_m": [
+        2.0,
+        2.0,
+        0.2
+      ]
+    },
+    {
+      "bag": "20261017/CAR2_auto_Lshape_reinstall_20261017_061540.bag",
+      "end_antenna_xyz_m": [
+        3.03,
+        2.95,
+        0.2
+      ],
+      "gate_status": "Exploratory Odom-based innovation gate; threshold not independently validated",
+      "initial_heading_deg": 90,
+      "initial_heading_source": "Approximate placement along room +y, not independently surveyed",
+      "label": "automatic_L_20261017_odom_gate_0p60",
+      "odom_innovation_gate_m": 0.6,
+      "reference_source": "Marked A and manually measured final antenna C; no continuous ground truth",
+      "start_antenna_xyz_m": [
+        2.0,
+        2.0,
+        0.2
+      ]
+    }
+  ],
+  "schema_version": 1,
+  "session_days": [
+    "20261017"
+  ],
+  "survey_status": "Manual remeasurement after reinstall on 2026-10-17; node_8 height 2.30 m and node_2 height 2.755 m confirmed"
+}

@@ -1,0 +1,19 @@
+{
+  "checks_passed": 7,
+  "checks": [
+    "frozen_protocol_complete_cases_and_stationary_diagnostics",
+    "old_new_zero_lever_all_states_equivalent",
+    "all_72_window_positions_scatter_and_drift_reconstructed",
+    "all_48_endpoint_rows_and_both_windows_consistent",
+    "rotating_antenna_geometry_reconstructed_for_all_pose_states",
+    "all_7035_physical_range_residuals_and_rms_reconstructed",
+    "historical_endpoint_reproduction_under_1e-8_m"
+  ],
+  "success": true,
+  "endpoint_rows": 48,
+  "stationary_rows": 72,
+  "trajectory_rows": 3400,
+  "range_residual_rows": 7035,
+  "max_independent_range_difference_m": 8.881784197001252e-16,
+  "verification_script_sha256": "75204888b245ede3e68a4af20d8ce5ecfe7075ee0493cfc25957de3807e409e5"
+}

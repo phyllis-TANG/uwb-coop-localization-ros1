@@ -1,0 +1,61 @@
+{
+  "analysis": "Three historical L recordings: frozen calibration transfer and conditional geometry comparison",
+  "base_main_sha": "ba16d58a08148531db136c4a96e289161dc9f1c4",
+  "date_hong_kong": "2026-10-21",
+  "cases": [
+    {
+      "id": "oct11_keyboard_083512",
+      "day": "20261010_11",
+      "bag": "CAR2_WALL_UWB_ODOM_IMU_Lshape_retry_20261011_083512.bag",
+      "bag_sha256": "4b0b7276e9dbb6f50f016eca4f621cd8d0ee0fca60b5b7b91721d0d217d15407",
+      "label": "keyboard_L",
+      "historical_summary": "docs/field_tests/20261010_11/results/keyboard_L_summary.json"
+    },
+    {
+      "id": "oct11_auto_091958",
+      "day": "20261010_11",
+      "bag": "CAR2_auto_Lshape_20261011_091958.bag",
+      "bag_sha256": "ba9286da5ef369d9e785883f9d909f3f4e54d4a8827aed2e9b2c1b59ef8e435f",
+      "label": "automatic_L",
+      "historical_summary": "docs/field_tests/20261010_11/results/automatic_L_summary.json"
+    },
+    {
+      "id": "oct17_auto_061540",
+      "day": "20261017",
+      "bag": "CAR2_auto_Lshape_reinstall_20261017_061540.bag",
+      "bag_sha256": "da703f331c45433a5c08f2119b8585d377bca41db2fa5ebc1a7fd8f4b294dd10",
+      "label": "automatic_L_20261017_unfiltered",
+      "historical_summary": "docs/field_tests/20261017/results/current/automatic_L_20261017_unfiltered_summary.json"
+    }
+  ],
+  "calibration": "Each installation uses only its own recorded static P1 bag and anchor coordinates. Retain historical rounded frozen offsets for reproduction; independently recompute full-precision P1 median-minus-3D-geometry offsets for the latest-calibration comparison. No endpoint fitting.",
+  "methods": {
+    "A": "Odom aligned by recorded antenna start and initial heading, zero horizontal lever assumption",
+    "U_raw": "Per-keyframe UWB-only, raw ranges, same height, sigma and pseudo-Huber transform",
+    "U_P1": "Per-keyframe UWB-only, full-precision installation-specific P1 correction",
+    "G_raw": "New solver, zero bias, zero horizontal lever assumption",
+    "G_old": "Unmodified historical solver, historical rounded P1 offsets, zero horizontal lever",
+    "G_new0": "New solver, same historical P1 offsets, zero lever; tests solver equivalence against G_old",
+    "G_P1": "New solver, full-precision P1 offsets, zero horizontal lever assumption",
+    "G_assumedL": "New solver, full-precision P1 offsets, hypothetical historical lever [0.12,-0.08] m inherited from Oct18; conditional sensitivity only, never accepted as verified historical extrinsics"
+  },
+  "frozen_graph_parameters": {
+    "keyframe_step_s": 1.0,
+    "range_bin_half_width_s": 0.4,
+    "range_bin_min_samples": 5,
+    "range_sigma_m": 0.2,
+    "odom_translation_sigma_m": 0.03,
+    "odom_yaw_sigma_deg": 2.0,
+    "prior_position_sigma_m": 0.2,
+    "prior_heading_sigma_deg": 5.0,
+    "max_nfev": 300,
+    "ftol_xtol_gtol": 1e-7
+  },
+  "input_policy": "Reproduce historical sensor header timestamps, receipt timestamps for commands and origin, original one-second keyframes and +/-0.4-second median bins. Use every valid available surveyed-link observation; do not add missing anchors, masks, Odom gates or filters. Recorded bag start and initial heading are inherited assumptions with original uncertainty.",
+  "primary_evaluation": "Use the exact initial and final windows archived in each historical summary. Estimate each position as componentwise median antenna XY over the same keyframes for every method. Report both start and endpoint differences and displacement-vector differences. Historical UWB whole-window nonlinear LS and new per-keyframe robust UWB are distinct and are not silently equated.",
+  "secondary_evaluation": "One uniform alternative stop window per bag: find final nonzero command (linear speed norm >0.005 m/s or absolute yaw rate >0.04 rad/s), then first subsequent zero-motion command; use stop+[2,7) if fully covered and no motion command in the interval. Report unavailable/failed stationarity checks rather than selecting another interval. This supplements, never replaces, the archived-window result.",
+  "additional_metrics": "Stationary scatter and first-last displacement for all available predefined windows, physical range-fit residuals per node and phase window, Odom-step residuals, optimizer status/optimality, and changed trajectory relative to G_P1. These are diagnostics, not continuous trajectory ground truth.",
+  "reproduction_policy": "Compare rerun old solver against archived numerical endpoints, report differences explicitly. Oct11 archive runtime was Python3/NumPy2.3.5/SciPy1.17.0; Oct17 archive was Python2/NumPy1.13.3/SciPy0.19.1, so backend-induced differences must not be labeled an algorithm gain. Require G_old and G_new0 to agree within 1e-9 in the same modern runtime.",
+  "failure_policy": "New solver retains finite nonconverged iterates with explicit status; old solver failure is recorded. No weight change, solver budget increase, parameter grid, replacement bag or outcome-based window selection.",
+  "acceptance_boundary": "Retrospective cross-recording development check of the inherited model and calibration; not an unseen final benchmark. Historical nonzero horizontal extrinsics are not verified. All graphs are batch/noncausal. No new IMU factors, no continuous trajectory RMSE, no hardware operation. Preserve raw data and old results. No PR publication in this computation step."
+}
