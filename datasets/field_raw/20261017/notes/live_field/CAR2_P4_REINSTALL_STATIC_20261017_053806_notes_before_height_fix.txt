@@ -1,0 +1,4 @@
+experiment: Car2 P4 independent static check
+manual_reference_antenna_xyz_m: [3.50, 4.00, read -r -p '车已固定后按Enter；随后有8秒离开测距连线：'sleep 8rosbag record --duration=30 -O "$p4_bag" /car2/uwb/rangesrosbag info "$p4_bag"sha256sum "$p4_bag"printf '%s\n' \  'experiment: Car2 P4 independent static check' \  "manual_reference_antenna_xyz_m: [3.50, 4.00, $p4_z]" \  'wall_node_coordinates: remeasured 2026-10-17' \  'raw_bag_unchanged: true' \  > "${p4_bag%.bag}_notes.txt"0.2]
+wall_node_coordinates: remeasured 2026-10-17
+raw_bag_unchanged: true

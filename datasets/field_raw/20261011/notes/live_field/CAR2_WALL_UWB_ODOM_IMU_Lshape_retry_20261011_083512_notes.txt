@@ -1,0 +1,19 @@
+experiment: Car2 L-shaped motion retry
+actual_path_and_reference_coordinates: pending verification
+tf_recorded: false
+
+endpoint_update: user-reported measurements after repeat run
+
+A_status: user confirmed correct marked start
+
+B_status: approximately reached marked point
+
+actual_C_antenna_xyz_m: [3.17, 2.60, 0.20]
+
+C_status: deviated from planned endpoint during turning
+
+endpoint_evaluation: use actual measured C coordinates
+
+bag_motion_review: pending
+
+raw_bag_unchanged: true

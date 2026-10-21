@@ -1,0 +1,24 @@
+experiment: Car2 Odom-feedback automatic L-shaped motion
+planned_A_antenna_xyz_m: [2.00, 2.00, 0.20]
+planned_B_antenna_xyz_m: [2.00, 3.00, 0.20]
+planned_C_antenna_xyz_m: [3.00, 3.00, 0.20]
+relative_forward_distance_each_m: 1.00
+relative_turn_deg: -90.0
+linear_speed_limit_m_s: 0.045
+turn_speed_limit_rad_s: 0.20
+actual_endpoint_and_motion_status: pending measurement and review
+tf_recorded: false
+controller_status: completed
+odom_first_segment_projected_m: 0.975
+odom_first_segment_lateral_m: 0.003
+odom_relative_turn_deg: -89.6
+odom_second_segment_projected_m: 0.976
+odom_second_segment_lateral_m: -0.010
+forward_stop_tolerance_m: 0.025
+actual_C_antenna_xyz_m: [2.95, 3.11, 0.20]
+endpoint_reference_source: user manual measurement after run
+actual_C_minus_planned_C_xy_m: [-0.05, 0.11]
+actual_C_distance_to_planned_C_m: 0.121
+endpoint_evaluation: use actual measured C
+continuous_trajectory_ground_truth: unavailable
+raw_bag_unchanged: true
