@@ -1,0 +1,14 @@
+{
+  "analysis": "Matched UWB-only versus frozen corrected fusion, and correction scope diagnostics",
+  "date_hong_kong": "2026-10-21",
+  "base_main_sha": "bf9f70bf69fde122ef5c8d56e8314a0a61c61552",
+  "calibration": "Reuse only Oct17 P1 per-link offsets frozen in merged PR31; no refitting",
+  "primary_comparison": "U: independently solve antenna XY at every original B keyframe from the same four corrected range-bin medians, fixed height 0.20m, same range sigma 0.20m and same pseudo-Huber residual transform. F: PR31 D batch graph unchanged. A: PR31 aligned Odom unchanged.",
+  "U_initialization": "Three fixed room-frame seeds [2.665,2.69], [0,0], [5.33,5.38]. No Odom, endpoint, previous solution, or temporal prior; choose lowest objective among successful solves.",
+  "evaluation": "Keep original final stop+[2,7) windows and componentwise median XY; manual references enter evaluation only. No continuous trajectory truth.",
+  "static_windows": "initial [first output, first forward start-0.5); idle1 [first forward stop+2, turn_start); idle2 [turn_stop+2, second forward start); endpoint original evaluation window. Commands/Odom/IMU are stationarity diagnostics, not independent truth.",
+  "orientation_diagnostic": "Across idle1/idle2 around the in-place turn, compare measured range changes with candidate-start-aligned Odom antenna geometric range changes. Approximate transform and unmeasured intermediate point mean residual changes are not independently verified orientation bias.",
+  "dropout": "One prespecified full-wall range outage per run: [second_forward_start+5, second_forward_start+10). Remove every wall factor whose original keyframe center falls in this interval, retain Odom and all other settings. Diagnostic of batch interpolation, not online behavior or accuracy truth.",
+  "position_scope": "Summarize all previously reported independent-reference link residuals after P1 correction. The same (2,3) point has two recordings; link cases are correlated and do not provide independent statistical replicates.",
+  "not_allowed": ["retune weights", "fit correction or alignment to endpoints", "interpret smoothness or fit residual as accuracy", "claim pure orientation effect", "use Oct11 old installation with Oct17 calibration", "claim batch dropout interpolation as online recovery"]
+}
