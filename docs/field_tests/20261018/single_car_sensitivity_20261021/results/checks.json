@@ -1,0 +1,82 @@
+{
+  "dependency_manifest_files_checked": {
+    "PR31": 30,
+    "PR32": 16
+  },
+  "protocol_sha256": "048de25b3fb93344f0863d0c62245ada0b9aaf4f7cde76d7ef03e66acc78cd35",
+  "no_parameter_selection": true,
+  "continuous_truth_available": false,
+  "new_imu_factor": false,
+  "reference_assumption_unchanged": true,
+  "baseline_checks": [
+    {
+      "run": "004023",
+      "max_state_abs_difference": 0.0,
+      "max_antenna_xy_abs_difference_m": 0.0,
+      "endpoint_abs_difference_m": 0.0,
+      "stationary_scatter_max_abs_difference_m": 0.0
+    },
+    {
+      "run": "005135",
+      "max_state_abs_difference": 0.0,
+      "max_antenna_xy_abs_difference_m": 0.0,
+      "endpoint_abs_difference_m": 0.0,
+      "stationary_scatter_max_abs_difference_m": 0.0
+    }
+  ],
+  "input_checks": [
+    {
+      "run": "004023",
+      "cache_sha256": "a6b121b3ba61be7fac8ba4c553770d5f675eeae515ae6184be08b97c884b31d2",
+      "bins_sha256": "569f9306d72ab329230f88b8bbd779c52754b74bdc15be3a7c7443fc09dd81cb",
+      "keyframes": 96,
+      "wall_factors": 384,
+      "tf_topics_present": false,
+      "frames": {
+        "/car2/imu": [
+          "gyro_link"
+        ],
+        "/car2/odom": [
+          "car2/odom_combined"
+        ],
+        "/car2/uwb/ranges": [
+          "car2/uwb_linktrack"
+        ]
+      },
+      "odom_child_frames": [
+        "base_footprint"
+      ]
+    },
+    {
+      "run": "005135",
+      "cache_sha256": "63a0390ac4d1fc03d97d5468f86cb66596b54f0ff44f055396c28647c7545c22",
+      "bins_sha256": "b6b3a64458794aafdfb58c8c000bfcacfe27edd99b31d69f2fef0e4b6a736803",
+      "keyframes": 92,
+      "wall_factors": 368,
+      "tf_topics_present": false,
+      "frames": {
+        "/car2/imu": [
+          "gyro_link"
+        ],
+        "/car2/odom": [
+          "car2/odom_combined"
+        ],
+        "/car2/uwb/ranges": [
+          "car2/uwb_linktrack"
+        ]
+      },
+      "odom_child_frames": [
+        "base_footprint"
+      ]
+    }
+  ],
+  "attempted_solves": 18,
+  "successful_solves": 18,
+  "failed_or_nonconverged_cells": [],
+  "endpoint_rows": 18,
+  "stationary_rows": 72,
+  "trajectory_rows": 1692,
+  "odom_step_rows": 1674,
+  "objective_reconstruction_passed": true,
+  "protocol_unchanged_after_solves": true
+}
