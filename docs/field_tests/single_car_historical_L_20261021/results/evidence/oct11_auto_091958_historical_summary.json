@@ -1,0 +1,133 @@
+{
+  "aligned_odom": {
+    "displacement_length_m": 1.4264596044554052,
+    "displacement_vector_difference_m": 0.07087053848168082,
+    "displacement_xy_m": [
+      0.97310553542113,
+      1.0430017354136218
+    ],
+    "end_reference_difference_m": 0.07087053848168082,
+    "end_xy_m": [
+      2.97310553542113,
+      3.043001735413622
+    ],
+    "start_reference_difference_m": 0.0,
+    "start_xy_m": [
+      2.0,
+      2.0
+    ]
+  },
+  "bag_file": "CAR2_auto_Lshape_20261011_091958.bag",
+  "bag_sha256": "ba9286da5ef369d9e785883f9d909f3f4e54d4a8827aed2e9b2c1b59ef8e435f",
+  "batch_graph_2d": {
+    "displacement_length_m": 1.462157092376674,
+    "displacement_vector_difference_m": 0.045838784275315056,
+    "displacement_xy_m": [
+      0.9850916454472114,
+      1.0805081271594004
+    ],
+    "end_reference_difference_m": 0.05401281773576896,
+    "end_xy_m": [
+      2.9500260092091137,
+      3.055987188526439
+    ],
+    "start_reference_difference_m": 0.042788728378207845,
+    "start_xy_m": [
+      1.9649343637619023,
+      1.9754790613670385
+    ]
+  },
+  "continuous_trajectory_ground_truth": false,
+  "corrected_uwb": {
+    "displacement_length_m": 1.4639287886541057,
+    "displacement_vector_difference_m": 0.0593845882690636,
+    "displacement_xy_m": [
+      0.9962023127883952,
+      1.0726921507335316
+    ],
+    "end_reference_difference_m": 0.05618461338562084,
+    "end_xy_m": [
+      2.9472568854935806,
+      3.0538823904278134
+    ],
+    "start_reference_difference_m": 0.05243531191697596,
+    "start_xy_m": [
+      1.9510545727051853,
+      1.9811902396942818
+    ]
+  },
+  "corrected_uwb_fit_rms_median_m": 0.07020124293292374,
+  "endpoint_used_in_optimizer": false,
+  "endpoint_window_policy": "initial <=5 s, ending 0.5 s before first motion command; final 5 s",
+  "endpoint_windows_elapsed_s": [
+    [
+      0.1521914005279541,
+      5.152191400527954
+    ],
+    [
+      173.57883977890015,
+      178.57884073257446
+    ]
+  ],
+  "graph": {
+    "cost": 28.081409334196167,
+    "keyframes": 176,
+    "odom_between_factors": 175,
+    "optimizer_message": "`ftol` termination condition is satisfied.",
+    "optimizer_nfev": 6,
+    "optimizer_success": true,
+    "range_factors": 528
+  },
+  "imu_diagnostic": {
+    "gyro_integrated_change_after_static_bias_deg": -96.18298813080727,
+    "independent_sensor_status": "on-board gyro and Odom yaw may share a source; no independent angle ground truth",
+    "initial_5s_gyro_z_median_rad_s": 0.0,
+    "odom_heading_change_deg": -88.089134140762
+  },
+  "initial_heading_deg": 90,
+  "initial_heading_source": "Operator instructed to place body forward along +room-y toward B; approximate marked heading, not instrument surveyed",
+  "label": "automatic_L",
+  "lever_arm_status": "unmeasured; zero horizontal offset is an explicit pilot approximation",
+  "manual_end_xyz_m": [
+    2.95,
+    3.11,
+    0.2
+  ],
+  "manual_start_xyz_m": [
+    2,
+    2,
+    0.2
+  ],
+  "method": "single-car fixed-height SE(2) batch least-squares graph; not iSAM2; IMU diagnostic only",
+  "raw_uwb": {
+    "displacement_length_m": 1.5435852564592494,
+    "displacement_vector_difference_m": 0.08399495553170022,
+    "displacement_xy_m": [
+      0.9915485732543441,
+      1.1829991000992526
+    ],
+    "end_reference_difference_m": 0.6711228634167308,
+    "end_xy_m": [
+      2.366249008248405,
+      3.441120336780604
+    ],
+    "start_reference_difference_m": 0.6764806862154507,
+    "start_xy_m": [
+      1.3747004349940608,
+      2.2581212366813515
+    ]
+  },
+  "raw_uwb_fit_rms_median_m": 0.18034120261981798,
+  "tag_to_base_lever_arm_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "timestamp_basis": "Car2 message header time; bag reception times kept in manifest diagnostics",
+  "usable_anchor_combinations": {
+    "node_10|node_2": 1,
+    "node_10|node_2|node_3": 8913,
+    "node_10|node_3": 6,
+    "node_2|node_3": 2
+  }
+}

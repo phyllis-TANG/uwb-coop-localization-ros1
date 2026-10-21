@@ -1,0 +1,48 @@
+{
+  "20261010_11": {
+    "source_bag": "CAR2_WALL_UWB_ODOM_IMU_static_20261011_042319.bag",
+    "source_sha256": "4be35bcb4052042b812c6c1e4a7a4f3c4e77e5c229f2e9ac794f9ae35caed029",
+    "antenna_xyz_m": [
+      2.0,
+      2.0,
+      0.2
+    ],
+    "frozen_bias_m": {
+      "node_8": 0.447,
+      "node_10": 0.488,
+      "node_3": 0.339,
+      "node_2": 0.308
+    },
+    "full_precision_bias_m": {
+      "node_8": 0.4469287769503709,
+      "node_10": 0.48826188874186105,
+      "node_3": 0.3393429117751219,
+      "node_2": 0.3083060431018687
+    },
+    "max_rounding_difference_m": 0.0003429117751218569,
+    "evaluation_bags_used": false
+  },
+  "20261017": {
+    "source_bag": "CAR2_P1_REINSTALL_STATIC_20261017_045257.bag",
+    "source_sha256": "f7250698ae484b7ace3bf152b1ff216f5470b5d75f0b90a66483edb402d1ec33",
+    "antenna_xyz_m": [
+      2.0,
+      2.0,
+      0.2
+    ],
+    "frozen_bias_m": {
+      "node_10": 0.608864,
+      "node_2": 0.449738,
+      "node_3": 0.201286,
+      "node_8": 0.368514
+    },
+    "full_precision_bias_m": {
+      "node_10": 0.6088636183798282,
+      "node_2": 0.449737490591974,
+      "node_3": 0.2012859604623305,
+      "node_8": 0.3685143909425328
+    },
+    "max_rounding_difference_m": 5.094080260392708e-07,
+    "evaluation_bags_used": false
+  }
+}
