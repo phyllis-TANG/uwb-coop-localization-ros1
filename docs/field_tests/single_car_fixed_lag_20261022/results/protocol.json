@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "base_main_sha": "0199e04d8100c07c0eef3b68e3742159167a5be8",
+  "baseline_protocol": "docs/field_tests/single_car_sequential_replay_20261022/protocol.json",
+  "baseline_protocol_sha256": "18cb20774cb9337733ea5b696bdc3407451693271b543c306326d246e87e7fef",
+  "model": {
+    "anchors_xyz_m": {
+      "node_10": [
+        3.26,
+        0.1,
+        2.355
+      ],
+      "node_2": [
+        5.28,
+        5.16,
+        2.755
+      ],
+      "node_3": [
+        5.28,
+        2.86,
+        2.355
+      ],
+      "node_8": [
+        0.1,
+        2.41,
+        2.3
+      ]
+    },
+    "range_bias_m": {
+      "node_10": 0.6088636183798282,
+      "node_2": 0.449737490591974,
+      "node_3": 0.2012859604623305,
+      "node_8": 0.3685143909425328
+    },
+    "start_antenna_xyz_m": [
+      2,
+      2,
+      0.2
+    ],
+    "initial_heading_deg": 90,
+    "base_to_antenna_body_xy_m": [
+      0.12,
+      -0.08
+    ],
+    "antenna_height_m": 0.2,
+    "graph_parameters": {
+      "keyframe_step_s": 1,
+      "odom_translation_sigma_m": 0.03,
+      "odom_yaw_sigma_deg": 2,
+      "prior_heading_sigma_deg": 5,
+      "prior_position_sigma_m": 0.2,
+      "range_bin_half_width_s": 0.4,
+      "range_sigma_m": 0.2
+    }
+  },
+  "replay": {
+    "keyframe_step_s": 1,
+    "first_keyframe_margin_s": 1,
+    "range_bin_half_width_s": 0.4,
+    "minimum_samples_per_link": 5,
+    "release_delay_s": 1,
+    "clock_correction": "none",
+    "closed_bin_policy": "immutable; count late packets",
+    "eof_policy": "no timer advance beyond last recorded receipt",
+    "backend": "arm-specific; see arms",
+    "imu": "diagnostic messages only; zero independent IMU factors"
+  },
+  "cases": [
+    {
+      "id": "005135",
+      "role": "normal completion",
+      "bag": "datasets/field_raw/20261018/bags/CAR2_auto_Lshape_repeat2_20261018_005135.bag",
+      "sha256": "63880adf78d5f07a9b12a87f7352f49e8f7be82d223bcdf60d96e257ba38b2ff",
+      "evaluation_window_s": [
+        83.81404534,
+        88.81404534
+      ],
+      "end_antenna_xyz_m": [
+        2.93,
+        3.04,
+        0.2
+      ],
+      "archived_batch_endpoint_difference_m": 0.05650428296297438,
+      "archived_batch_keyframes": 92
+    },
+    {
+      "id": "004023",
+      "role": "N10 anomaly",
+      "bag": "datasets/field_raw/20261018/bags/CAR2_auto_Lshape_repeat_20261018_004023.bag",
+      "sha256": "72d4a051005b0b109461842b6489aa2d07b08dd6f6e750c4b9a82aac8d8e1d82",
+      "evaluation_window_s": [
+        81.848289054,
+        86.848289054
+      ],
+      "end_antenna_xyz_m": [
+        2.97,
+        3.11,
+        0.2
+      ],
+      "archived_batch_endpoint_difference_m": 0.11856330776153981,
+      "archived_batch_keyframes": 96
+    }
+  ],
+  "fixed_lag_s": 20.0,
+  "optimizer": {
+    "method": "trf",
+    "jacobian": "analytic",
+    "linear_solver": "exact dense",
+    "max_nfev": 50,
+    "ftol": 1e-07,
+    "xtol": 1e-07,
+    "gtol": 1e-07,
+    "initialization": "previous accepted active estimates plus Odom prediction"
+  },
+  "marginalization": {
+    "method": "square-root QR elimination",
+    "incident_factors_only": [
+      "carried prior",
+      "oldest-state UWB factors",
+      "oldest-to-next Odom factor"
+    ],
+    "linearization_point": "last maintained active estimates before solving the new update",
+    "prior_chart": "world XY and wrapped yaw delta",
+    "retain_linear_offset": true,
+    "historical_nonlinearity": "frozen linearized Gaussian approximation; not exact batch relinearization"
+  },
+  "frontend": {
+    "max_sensor_samples_per_stream": 512,
+    "output_history": "external sink; estimator retains last valid publication only"
+  },
+  "arms": [
+    "legacy_cold_full_history",
+    "analytic_warm_full_history",
+    "analytic_warm_fixed_20s"
+  ],
+  "evaluation_only": {
+    "prefix_guard_cutoff_s": 30,
+    "prefix_invariance_tolerance": 1e-09,
+    "before_first_marginalization_tolerance": 1e-10,
+    "baseline_reproduction_tolerance_m": 1e-06,
+    "continuous_trajectory_truth": false,
+    "position_update_metric": "distance from previous publication propagated by Odom to current publication; separate first graph initialization correction"
+  },
+  "assumptions": [
+    "Start antenna position and +Y heading are user-confirmed external inputs.",
+    "The measured approximate geometric center is conditionally treated as the Odom body reference; unverified.",
+    "Installation-specific anchors, P1 correction and weights are frozen before these dynamic tests.",
+    "Both recordings are development data, not an unseen benchmark.",
+    "The one-second deadline delay supports inherited centered bins; it is not measured network latency.",
+    "The estimator working set is bounded for the 20 s arm; offline reader diagnostics and archived outputs grow with recording length.",
+    "State/sample counts and max_nfev bound numerical work but do not provide a hard wall-clock deadline guarantee.",
+    "IMU factors, hardware, ROS transport, and model calibration are unchanged."
+  ],
+  "frozen_before_new_results": true
+}

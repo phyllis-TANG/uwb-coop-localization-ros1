@@ -1,0 +1,85 @@
+{
+  "records": 92,
+  "graph_outputs": 90,
+  "status_counts": {
+    "predict_only_warmup": 2,
+    "graph": 90
+  },
+  "solver_failures": 0,
+  "counters": {
+    "other_events": 1815,
+    "imu_events": 1894,
+    "odom_events": 1891,
+    "uwb_events": 4722
+  },
+  "peak_solve_states": 92,
+  "peak_transient_states": 92,
+  "sensor_buffer_peaks": {
+    "odom": 1891,
+    "uwb": 4722
+  },
+  "final_retained_states": 92,
+  "marginalizations": 0,
+  "replay_wall_s": 26.310453596001025,
+  "solve_wall_ms": {
+    "samples": 90,
+    "min": 134.8346400045557,
+    "median": 220.343122498889,
+    "p95": 374.278247251641,
+    "max": 881.1748990046908
+  },
+  "marginal_wall_ms": {
+    "samples": 90,
+    "min": 0.0,
+    "median": 0.0,
+    "p95": 0.0,
+    "max": 0.0
+  },
+  "complete_update_wall_ms": {
+    "samples": 90,
+    "min": 137.67924300191225,
+    "median": 227.53639399888925,
+    "p95": 378.61726569426537,
+    "max": 898.6277700023493
+  },
+  "complete_updates_over_1s": 0,
+  "estimated_worker_queue_max_s": 0.0,
+  "initialization_correction_m": 0.14649492135740877,
+  "regular_position_correction_m": {
+    "samples": 89,
+    "min": 0.0017677589913236104,
+    "median": 0.009366398076823951,
+    "p95": 0.03227324041473185,
+    "max": 0.033638123614721606
+  },
+  "regular_yaw_correction_deg": {
+    "samples": 89,
+    "min": 0.0017518190320683724,
+    "median": 0.18620654439070994,
+    "p95": 1.060712666154421,
+    "max": 1.8220953713447339
+  },
+  "published_endpoint": {
+    "samples": 5,
+    "window_keyframes": 5,
+    "median_antenna_xy_m": [
+      2.914924908386327,
+      2.994146498589124
+    ],
+    "difference_m": 0.04826802232117916,
+    "first_last_displacement_m": 0.013994301413331005
+  },
+  "aligned_odom_endpoint": {
+    "samples": 5,
+    "window_keyframes": 5,
+    "median_antenna_xy_m": [
+      3.0306657163287585,
+      2.8159057930649847
+    ],
+    "difference_m": 0.24566603352074443,
+    "first_last_displacement_m": 0.0
+  },
+  "verification": {
+    "all_dependencies_available": true
+  }
+}

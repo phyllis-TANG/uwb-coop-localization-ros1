@@ -1,0 +1,20 @@
+{
+  "unit_test_command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m unittest discover -s tools -p 'test_single_car_*.py' -v",
+  "unit_tests_passed": 25,
+  "fixed_lag_tests": 15,
+  "reference_tests": 10,
+  "unit_test_wall_s": 2.089,
+  "unit_test_exit_code": 0,
+  "note": "Unit-suite result was captured before the real-bag experiment; tested core and test sources were not changed afterward.",
+  "runner_and_plot_py_compile_exit_code": 0,
+  "real_bag_cases": 2,
+  "real_bag_arms_per_case": 3,
+  "all_real_bag_solver_failures": 0,
+  "archived_baseline_reproduction_exact": true,
+  "before_first_marginalization_identical": true,
+  "future_truncation_checked_outputs": 56,
+  "future_truncation_max_pose_component_delta": 0.0,
+  "fixed_solve_state_limit_observed": 21,
+  "figure_visually_inspected": true,
+  "frozen_source_hashes_match": true
+}

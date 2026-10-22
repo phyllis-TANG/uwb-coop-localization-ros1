@@ -1,0 +1,45 @@
+{
+  "origin_bag_receipt_ns": 1792309931472145834,
+  "topic_counts": {
+    "/car2/PowerVoltage": 158,
+    "/car2/imu": 1894,
+    "/car2/odom": 1891,
+    "/car2/uwb/ranges": 4722,
+    "/car2/cmd_vel": 1657
+  },
+  "duplicate_uwb_id_groups": 0,
+  "imu_factors": 0,
+  "timing": {
+    "/car2/imu": {
+      "header_nonincreasing_steps": 0,
+      "receipt_minus_header_s": {
+        "min": 0.011421281,
+        "median": 0.021840599500000002,
+        "p95": 0.024884772299999997,
+        "p99": 0.03197332784999998,
+        "max": 0.035803794
+      }
+    },
+    "/car2/odom": {
+      "header_nonincreasing_steps": 0,
+      "receipt_minus_header_s": {
+        "min": 0.011319782,
+        "median": 0.034049347,
+        "p95": 0.0729327245,
+        "p99": 0.0745384987,
+        "max": 0.08465099
+      }
+    },
+    "/car2/uwb/ranges": {
+      "header_nonincreasing_steps": 0,
+      "receipt_minus_header_s": {
+        "min": 0.015703256,
+        "median": 0.0284546845,
+        "p95": 0.03936626545,
+        "p99": 0.048817465709999994,
+        "max": 0.066412078
+      }
+    }
+  },
+  "clock_note": "Receipt and source-header clocks retained without fitted correction; their difference is not a measured network latency."
+}
