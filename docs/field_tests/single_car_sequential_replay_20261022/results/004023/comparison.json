@@ -1,0 +1,86 @@
+{
+  "case": "004023",
+  "role": "N10 anomaly",
+  "bag": "datasets/field_raw/20261018/bags/CAR2_auto_Lshape_repeat_20261018_004023.bag",
+  "sha256": "72d4a051005b0b109461842b6489aa2d07b08dd6f6e750c4b9a82aac8d8e1d82",
+  "records": 96,
+  "graph_outputs": 94,
+  "prediction_only_outputs": 2,
+  "missing_odom_outputs": 0,
+  "status_counts": {
+    "graph": 94,
+    "predict_only_warmup": 2
+  },
+  "counters": {
+    "imu_events": 1968,
+    "odom_events": 1966,
+    "uwb_events": 4908,
+    "other_events": 1830
+  },
+  "first_state_time_s": 2.0,
+  "first_graph_state_time_s": 4.0,
+  "graph_states_max": 96,
+  "graph_size_bounded": false,
+  "replay_wall_s": 41.137949173997185,
+  "solve_wall_ms": {
+    "min": 44.63017300076899,
+    "median": 229.03374650013575,
+    "p95": 1033.9623804509756,
+    "max": 1333.2581399990886
+  },
+  "estimated_single_worker_queue_max_s": 0.44991608499913127,
+  "timing_note": "Virtual deadlines plus measured solver wall time; queue is estimated. Unpaced replay, not a ROS or hardware real-time test.",
+  "evaluation_window_s": [
+    81.848289054,
+    86.848289054
+  ],
+  "endpoint_evaluation": {
+    "published_graph": {
+      "samples": 5,
+      "window_keyframes": 5,
+      "median_antenna_xy_m": [
+        3.0043947932865445,
+        2.987499481460662
+      ],
+      "difference_m": 0.12723748994549813,
+      "first_last_displacement_m": 0.013763197298976966
+    },
+    "offline_batch": {
+      "samples": 5,
+      "window_keyframes": 5,
+      "median_antenna_xy_m": [
+        2.9803163808630257,
+        2.991886367284523
+      ],
+      "difference_m": 0.11856330776153981,
+      "first_last_displacement_m": 0.016796585297961995
+    },
+    "aligned_odom": {
+      "samples": 5,
+      "window_keyframes": 5,
+      "median_antenna_xy_m": [
+        3.0237720696553616,
+        2.8296107013236997
+      ],
+      "difference_m": 0.2854988516390363,
+      "first_last_displacement_m": 0.0
+    }
+  },
+  "verification": {
+    "all_dependencies_available": true,
+    "future_truncation": {
+      "cutoff_s": 30,
+      "outputs_checked": 28,
+      "max_pose_component_delta": 0.0,
+      "passed": true
+    },
+    "frontend_matches_after_eof_batch": true,
+    "max_local_odom_component_delta": 0.0,
+    "final_prefix_matches_batch": true,
+    "max_final_state_component_delta": 0.0,
+    "archived_endpoint_reproduction_delta_m": 0.0
+  },
+  "imu_factors": 0,
+  "independent_trajectory_accuracy_claimed": false,
+  "live_or_hard_real_time_accepted": false
+}
