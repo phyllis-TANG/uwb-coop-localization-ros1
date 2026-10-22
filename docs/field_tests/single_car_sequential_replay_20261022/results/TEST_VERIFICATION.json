@@ -1,0 +1,14 @@
+{
+  "unit_tests": 10,
+  "unit_test_runtime_s": 2.634,
+  "unit_test_status": "passed",
+  "real_bag_graph_updates": 184,
+  "startup_predictions": 4,
+  "real_bag_prefix_outputs_checked": 56,
+  "source_hashes_match_executed_sources": true,
+  "thread_settings": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "execution_note": "Local execution restored. Existing pinned rosbags dependency directory appended after importing system NumPy/SciPy. All numerical checks ran locally; GitHub Actions was not needed."
+}
