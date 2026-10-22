@@ -1,0 +1,318 @@
+{
+  "case": "004023",
+  "role": "N10 anomaly",
+  "bag": "datasets/field_raw/20261018/bags/CAR2_auto_Lshape_repeat_20261018_004023.bag",
+  "sha256": "72d4a051005b0b109461842b6489aa2d07b08dd6f6e750c4b9a82aac8d8e1d82",
+  "evaluation_window_s": [
+    81.848289054,
+    86.848289054
+  ],
+  "arms": {
+    "legacy_cold_full_history": {
+      "records": 96,
+      "graph_outputs": 94,
+      "status_counts": {
+        "predict_only_warmup": 2,
+        "graph": 94
+      },
+      "solver_failures": 0,
+      "counters": {
+        "imu_events": 1968,
+        "odom_events": 1966,
+        "uwb_events": 4908,
+        "other_events": 1830
+      },
+      "peak_solve_states": 96,
+      "peak_transient_states": 96,
+      "sensor_buffer_peaks": {
+        "odom": 1966,
+        "uwb": 4908
+      },
+      "final_retained_states": 96,
+      "marginalizations": 0,
+      "replay_wall_s": 45.27083462599694,
+      "solve_wall_ms": {
+        "samples": 94,
+        "min": 65.26062600460136,
+        "median": 268.71565750116133,
+        "p95": 1574.962136652173,
+        "max": 3267.0287119981367
+      },
+      "marginal_wall_ms": {
+        "samples": 94,
+        "min": 0.0,
+        "median": 0.0,
+        "p95": 0.0,
+        "max": 0.0
+      },
+      "complete_update_wall_ms": {
+        "samples": 94,
+        "min": 66.63154700072482,
+        "median": 273.4528419969138,
+        "p95": 1576.40072379945,
+        "max": 3274.7779280034592
+      },
+      "complete_updates_over_1s": 8,
+      "estimated_worker_queue_max_s": 3.1141880770082935,
+      "initialization_correction_m": 0.10975619082556454,
+      "regular_position_correction_m": {
+        "samples": 93,
+        "min": 0.0019178256102588564,
+        "median": 0.01075172717271235,
+        "p95": 0.027305349421353764,
+        "max": 0.05411974736255234
+      },
+      "regular_yaw_correction_deg": {
+        "samples": 93,
+        "min": 0.0030684721489950906,
+        "median": 0.2177090538066846,
+        "p95": 0.9592917445311374,
+        "max": 1.3741180530480008
+      },
+      "published_endpoint": {
+        "samples": 5,
+        "window_keyframes": 5,
+        "median_antenna_xy_m": [
+          3.0043947932865445,
+          2.987499481460662
+        ],
+        "difference_m": 0.12723748994549813,
+        "first_last_displacement_m": 0.013763197298976966
+      },
+      "aligned_odom_endpoint": {
+        "samples": 5,
+        "window_keyframes": 5,
+        "median_antenna_xy_m": [
+          3.0237720696553616,
+          2.8296107013236997
+        ],
+        "difference_m": 0.2854988516390363,
+        "first_last_displacement_m": 0.0
+      },
+      "verification": {
+        "all_dependencies_available": true
+      }
+    },
+    "analytic_warm_full_history": {
+      "records": 96,
+      "graph_outputs": 94,
+      "status_counts": {
+        "predict_only_warmup": 2,
+        "graph": 94
+      },
+      "solver_failures": 0,
+      "counters": {
+        "imu_events": 1968,
+        "odom_events": 1966,
+        "uwb_events": 4908,
+        "other_events": 1830
+      },
+      "peak_solve_states": 96,
+      "peak_transient_states": 96,
+      "sensor_buffer_peaks": {
+        "odom": 20,
+        "uwb": 68
+      },
+      "final_retained_states": 96,
+      "marginalizations": 0,
+      "replay_wall_s": 18.195079500997963,
+      "solve_wall_ms": {
+        "samples": 94,
+        "min": 5.512766998435836,
+        "median": 193.33518650455517,
+        "p95": 441.6510492013913,
+        "max": 596.0235979946447
+      },
+      "marginal_wall_ms": {
+        "samples": 94,
+        "min": 0.00011600059224292636,
+        "median": 0.00026099587557837367,
+        "p95": 0.00048345063987653654,
+        "max": 0.0013660028344020247
+      },
+      "complete_update_wall_ms": {
+        "samples": 94,
+        "min": 7.299842000065837,
+        "median": 194.92680150142405,
+        "p95": 444.49903490203724,
+        "max": 603.3212719994481
+      },
+      "complete_updates_over_1s": 0,
+      "estimated_worker_queue_max_s": 0.0,
+      "initialization_correction_m": 0.10975610401527529,
+      "regular_position_correction_m": {
+        "samples": 93,
+        "min": 0.0019119381263338878,
+        "median": 0.01074653023993565,
+        "p95": 0.0272982079056115,
+        "max": 0.054108530030426615
+      },
+      "regular_yaw_correction_deg": {
+        "samples": 93,
+        "min": 0.004704551502878733,
+        "median": 0.21391468434901037,
+        "p95": 0.9527683331201703,
+        "max": 1.3724554073727548
+      },
+      "published_endpoint": {
+        "samples": 5,
+        "window_keyframes": 5,
+        "median_antenna_xy_m": [
+          3.004375644958578,
+          2.9875191396177625
+        ],
+        "difference_m": 0.12721338815663755,
+        "first_last_displacement_m": 0.013735653128376551
+      },
+      "aligned_odom_endpoint": {
+        "samples": 5,
+        "window_keyframes": 5,
+        "median_antenna_xy_m": [
+          3.0237720696553616,
+          2.8296107013236997
+        ],
+        "difference_m": 0.2854988516390363,
+        "first_last_displacement_m": 0.0
+      },
+      "verification": {
+        "all_dependencies_available": true
+      }
+    },
+    "analytic_warm_fixed_20s": {
+      "records": 96,
+      "graph_outputs": 94,
+      "status_counts": {
+        "predict_only_warmup": 2,
+        "graph": 94
+      },
+      "solver_failures": 0,
+      "counters": {
+        "imu_events": 1968,
+        "odom_events": 1966,
+        "uwb_events": 4908,
+        "other_events": 1830
+      },
+      "peak_solve_states": 21,
+      "peak_transient_states": 22,
+      "sensor_buffer_peaks": {
+        "odom": 20,
+        "uwb": 68
+      },
+      "final_retained_states": 21,
+      "marginalizations": 75,
+      "replay_wall_s": 5.822950111003593,
+      "solve_wall_ms": {
+        "samples": 94,
+        "min": 12.837444002798293,
+        "median": 31.24390550146927,
+        "p95": 64.48331074534508,
+        "max": 94.16151200275635
+      },
+      "marginal_wall_ms": {
+        "samples": 94,
+        "min": 0.0004539979272522032,
+        "median": 2.144581998436479,
+        "p95": 6.682161550270391,
+        "max": 12.019210000289604
+      },
+      "complete_update_wall_ms": {
+        "samples": 94,
+        "min": 15.192863000265788,
+        "median": 36.37325800082181,
+        "p95": 75.46218070274334,
+        "max": 103.07832199760014
+      },
+      "complete_updates_over_1s": 0,
+      "estimated_worker_queue_max_s": 0.0,
+      "initialization_correction_m": 0.10975610401527529,
+      "regular_position_correction_m": {
+        "samples": 93,
+        "min": 0.0019327404819945112,
+        "median": 0.01074653023993565,
+        "p95": 0.027276485942190138,
+        "max": 0.054108530030426615
+      },
+      "regular_yaw_correction_deg": {
+        "samples": 93,
+        "min": 0.0009545651316591455,
+        "median": 0.2161234267398573,
+        "p95": 0.9351449132293301,
+        "max": 1.3594733071328784
+      },
+      "published_endpoint": {
+        "samples": 5,
+        "window_keyframes": 5,
+        "median_antenna_xy_m": [
+          3.0043774896370192,
+          2.9878616539572573
+        ],
+        "difference_m": 0.1268841493954232,
+        "first_last_displacement_m": 0.013750622319011783
+      },
+      "aligned_odom_endpoint": {
+        "samples": 5,
+        "window_keyframes": 5,
+        "median_antenna_xy_m": [
+          3.0237720696553616,
+          2.8296107013236997
+        ],
+        "difference_m": 0.2854988516390363,
+        "first_last_displacement_m": 0.0
+      },
+      "verification": {
+        "all_dependencies_available": true
+      }
+    }
+  },
+  "verification": {
+    "frontend_equivalence": {
+      "analytic_warm_full_history": {
+        "passed": true,
+        "outputs_checked": 96,
+        "max_local_component_delta": 0.0
+      },
+      "analytic_warm_fixed_20s": {
+        "passed": true,
+        "outputs_checked": 96,
+        "max_local_component_delta": 0.0
+      }
+    },
+    "archived_baseline_max_antenna_delta_m": 0.0,
+    "before_first_marginalization": {
+      "outputs_checked": 21,
+      "max_pose_component_delta": 0.0,
+      "passed": true
+    },
+    "fixed_window_future_truncation": {
+      "passed": true,
+      "cutoff_s": 30,
+      "outputs_checked": 28,
+      "marginalizations": 7,
+      "max_pose_component_delta": 0.0
+    },
+    "analytic_warm_full_history_vs_legacy_antenna_displacement_m": {
+      "samples": 96,
+      "min": 0.0,
+      "median": 1.8344135803289437e-05,
+      "p95": 0.00011672311632901386,
+      "max": 0.00014874606132205226
+    },
+    "analytic_warm_fixed_20s_vs_legacy_antenna_displacement_m": {
+      "samples": 96,
+      "min": 0.0,
+      "median": 6.869540458740041e-05,
+      "p95": 0.0004480383438072523,
+      "max": 0.0006430283747039425
+    },
+    "fixed_vs_warm_full_antenna_displacement_m": {
+      "samples": 96,
+      "min": 0.0,
+      "median": 5.170133033849869e-05,
+      "p95": 0.0004048598280798211,
+      "max": 0.0005474712103363954
+    },
+    "warm_full_vs_legacy_final_state_max_component_delta": 0.00021037894128916879,
+    "warm_full_final_cost": 59.98102264487814,
+    "legacy_final_cost": 59.98102388900591
+  }
+}

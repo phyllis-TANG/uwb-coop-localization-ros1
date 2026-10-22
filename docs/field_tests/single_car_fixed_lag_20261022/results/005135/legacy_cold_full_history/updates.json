@@ -1,0 +1,6412 @@
+[
+  {
+    "state_time_s": 2.0,
+    "availability_cutoff_s": 3.0,
+    "status": "predict_only_warmup",
+    "accepted_graph": false,
+    "pose": [
+      1.92,
+      1.88,
+      1.5707963267948966
+    ],
+    "antenna_xy_m": [
+      2.0,
+      2.0
+    ],
+    "local_odom": [
+      1.0310958623886108,
+      -0.9828484058380127,
+      -1.5923019647598267
+    ],
+    "aligned_odom_pose": [
+      1.92,
+      1.88,
+      1.5707963267948966
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0,
+      2.0
+    ],
+    "range_medians_m": {
+      "node_10": 3.450000047683716,
+      "node_2": 5.63700008392334,
+      "node_3": 4.206500053405762,
+      "node_8": 3.2405000925064087
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 1,
+    "dependency_receipt_max_s": 2.412769263,
+    "solve_wall_s": 4.160028765909374e-07,
+    "estimated_worker_start_s": 3.0,
+    "estimated_worker_finish_s": 3.004857386004005,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": null,
+    "optimizer": {},
+    "update_wall_s": 0.004857386004005093,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 0.0,
+    "position_correction_m": 0.0,
+    "yaw_correction_deg": 0.0
+  },
+  {
+    "state_time_s": 3.0,
+    "availability_cutoff_s": 4.0,
+    "status": "predict_only_warmup",
+    "accepted_graph": false,
+    "pose": [
+      1.92,
+      1.88,
+      1.5707963267948966
+    ],
+    "antenna_xy_m": [
+      2.0,
+      2.0
+    ],
+    "local_odom": [
+      1.0310958623886108,
+      -0.9828484058380127,
+      -1.5923019647598267
+    ],
+    "aligned_odom_pose": [
+      1.92,
+      1.88,
+      1.5707963267948966
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0,
+      2.0
+    ],
+    "range_medians_m": {
+      "node_10": 3.4619998931884766,
+      "node_2": 5.625999927520752,
+      "node_3": 4.214000225067139,
+      "node_8": 3.2450000047683716
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 2,
+    "dependency_receipt_max_s": 3.427049406,
+    "solve_wall_s": 4.800021997652948e-07,
+    "estimated_worker_start_s": 4.0,
+    "estimated_worker_finish_s": 4.001662217997364,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": null,
+    "optimizer": {},
+    "update_wall_s": 0.0016622179973637685,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 1.0,
+    "position_correction_m": 0.0,
+    "yaw_correction_deg": 0.0
+  },
+  {
+    "state_time_s": 4.0,
+    "availability_cutoff_s": 5.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.0026027024600954,
+      1.759014234185164,
+      1.5665561405860136
+    ],
+    "antenna_xy_m": [
+      2.0831108041143755,
+      1.8786739415557911
+    ],
+    "local_odom": [
+      1.0310958623886108,
+      -0.9828484058380127,
+      -1.5923019647598267
+    ],
+    "aligned_odom_pose": [
+      1.92,
+      1.88,
+      1.5707963267948966
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0,
+      2.0
+    ],
+    "range_medians_m": {
+      "node_10": 3.450000047683716,
+      "node_2": 5.626999855041504,
+      "node_3": 4.21750020980835,
+      "node_8": 3.2519999742507935
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 3,
+    "dependency_receipt_max_s": 4.413303547,
+    "solve_wall_s": 0.14624679400003515,
+    "estimated_worker_start_s": 5.0,
+    "estimated_worker_finish_s": 5.146928636000666,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.0026027024600954,
+      1.759014234185164,
+      1.5665561405860136
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 1.7002785140121839,
+      "optimizer_status": 2,
+      "optimizer_optimality": 7.274546680413607e-05,
+      "optimizer_njev": 6,
+      "keyframes": 3,
+      "range_factors": 12,
+      "odom_between_factors": 2
+    },
+    "update_wall_s": 0.1469286360006663,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 2.0,
+    "position_correction_m": 0.14649492135740877,
+    "yaw_correction_deg": 0.24294477411857285
+  },
+  {
+    "state_time_s": 5.0,
+    "availability_cutoff_s": 6.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.0103902833081078,
+      1.7454577031603897,
+      1.5658565634174595
+    ],
+    "antenna_xy_m": [
+      2.0909820764541696,
+      1.8650610596245891
+    ],
+    "local_odom": [
+      1.0310958623886108,
+      -0.9828484058380127,
+      -1.5923019647598267
+    ],
+    "aligned_odom_pose": [
+      1.92,
+      1.88,
+      1.5707963267948966
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0,
+      2.0
+    ],
+    "range_medians_m": {
+      "node_10": 3.453000068664551,
+      "node_2": 5.619999885559082,
+      "node_3": 4.211999893188477,
+      "node_8": 3.2450000047683716
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 39,
+      "node_3": 39,
+      "node_8": 40
+    },
+    "graph_states": 4,
+    "dependency_receipt_max_s": 5.422965299,
+    "solve_wall_s": 0.15123630400194088,
+    "estimated_worker_start_s": 6.0,
+    "estimated_worker_finish_s": 6.1552602279989514,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.0103902833081078,
+      1.7454577031603897,
+      1.5658565634174595
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 2.1892492787104585,
+      "optimizer_status": 2,
+      "optimizer_optimality": 8.466110003224614e-05,
+      "optimizer_njev": 6,
+      "keyframes": 4,
+      "range_factors": 16,
+      "odom_between_factors": 3
+    },
+    "update_wall_s": 0.15526022799895145,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 3.0,
+    "position_correction_m": 0.015634127698403777,
+    "yaw_correction_deg": 0.040082819201860215
+  },
+  {
+    "state_time_s": 6.0,
+    "availability_cutoff_s": 7.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.016118186723202,
+      1.735913538915094,
+      1.5652521308669844
+    ],
+    "antenna_xy_m": [
+      2.0967822573050046,
+      1.8554681612313138
+    ],
+    "local_odom": [
+      1.0310958623886108,
+      -0.9828484058380127,
+      -1.5923019647598267
+    ],
+    "aligned_odom_pose": [
+      1.92,
+      1.88,
+      1.5707963267948966
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0,
+      2.0
+    ],
+    "range_medians_m": {
+      "node_10": 3.450000047683716,
+      "node_2": 5.624000072479248,
+      "node_3": 4.201000213623047,
+      "node_8": 3.2359999418258667
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 5,
+    "dependency_receipt_max_s": 6.423096947,
+    "solve_wall_s": 0.13511450000078185,
+    "estimated_worker_start_s": 7.0,
+    "estimated_worker_finish_s": 7.137679243001912,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.016118186723202,
+      1.735913538915094,
+      1.5652521308669844
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 2.6759889444847187,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00010552314014877773,
+      "optimizer_njev": 6,
+      "keyframes": 5,
+      "range_factors": 20,
+      "odom_between_factors": 4
+    },
+    "update_wall_s": 0.13767924300191225,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 4.0,
+    "position_correction_m": 0.011131035381932337,
+    "yaw_correction_deg": 0.03463143414254804
+  },
+  {
+    "state_time_s": 7.0,
+    "availability_cutoff_s": 8.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.020070617639597,
+      1.7293776860739123,
+      1.5647653851787284
+    ],
+    "antenna_xy_m": [
+      2.1007928713605044,
+      1.8488930313406076
+    ],
+    "local_odom": [
+      1.0310958623886108,
+      -0.9828484058380127,
+      -1.5923019647598267
+    ],
+    "aligned_odom_pose": [
+      1.92,
+      1.88,
+      1.5707963267948966
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0,
+      2.0
+    ],
+    "range_medians_m": {
+      "node_10": 3.4399999380111694,
+      "node_2": 5.61899995803833,
+      "node_3": 4.198999881744385,
+      "node_8": 3.222000002861023
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 6,
+    "dependency_receipt_max_s": 7.423830232,
+    "solve_wall_s": 0.21003778600424994,
+    "estimated_worker_start_s": 8.0,
+    "estimated_worker_finish_s": 8.211702674998378,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.020070617639597,
+      1.7293776860739123,
+      1.5647653851787284
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 3.2256427966944003,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0001369891358729558,
+      "optimizer_njev": 6,
+      "keyframes": 6,
+      "range_factors": 24,
+      "odom_between_factors": 5
+    },
+    "update_wall_s": 0.21170267499837792,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 5.0,
+    "position_correction_m": 0.007638002520977378,
+    "yaw_correction_deg": 0.027888473633260333
+  },
+  {
+    "state_time_s": 8.0,
+    "availability_cutoff_s": 9.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.023762600309926,
+      1.7219900175099996,
+      1.5641992351589147
+    ],
+    "antenna_xy_m": [
+      2.104552504705526,
+      1.8414596427197147
+    ],
+    "local_odom": [
+      1.0310958623886108,
+      -0.9828484058380127,
+      -1.5923019647598267
+    ],
+    "aligned_odom_pose": [
+      1.92,
+      1.88,
+      1.5707963267948966
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0,
+      2.0
+    ],
+    "range_medians_m": {
+      "node_10": 3.4420000314712524,
+      "node_2": 5.619999885559082,
+      "node_3": 4.2154998779296875,
+      "node_8": 3.250999927520752
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 7,
+    "dependency_receipt_max_s": 8.413104599,
+    "solve_wall_s": 0.1880599540018011,
+    "estimated_worker_start_s": 9.0,
+    "estimated_worker_finish_s": 9.189352267996583,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.023762600309926,
+      1.7219900175099996,
+      1.5641992351589147
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 3.717853027552428,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00013149482632024423,
+      "optimizer_njev": 6,
+      "keyframes": 7,
+      "range_factors": 28,
+      "odom_between_factors": 6
+    },
+    "update_wall_s": 0.18935226799658267,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 6.0,
+    "position_correction_m": 0.008258836652230973,
+    "yaw_correction_deg": 0.03243800670657576
+  },
+  {
+    "state_time_s": 9.0,
+    "availability_cutoff_s": 10.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.0267516549843503,
+      1.7154209833283187,
+      1.5636596014393296
+    ],
+    "antenna_xy_m": [
+      2.107606017451857,
+      1.834846994188487
+    ],
+    "local_odom": [
+      1.0310958623886108,
+      -0.9828484058380127,
+      -1.5923019647598267
+    ],
+    "aligned_odom_pose": [
+      1.92,
+      1.88,
+      1.5707963267948966
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0,
+      2.0
+    ],
+    "range_medians_m": {
+      "node_10": 3.4304999113082886,
+      "node_2": 5.625,
+      "node_3": 4.209000110626221,
+      "node_8": 3.242000102996826
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 8,
+    "dependency_receipt_max_s": 9.42292336,
+    "solve_wall_s": 0.2465296299997135,
+    "estimated_worker_start_s": 10.0,
+    "estimated_worker_finish_s": 10.255740800996136,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.0267516549843503,
+      1.7154209833283187,
+      1.5636596014393296
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 4.2431926165448255,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00015973685846476515,
+      "optimizer_njev": 6,
+      "keyframes": 8,
+      "range_factors": 32,
+      "odom_between_factors": 7
+    },
+    "update_wall_s": 0.2557408009961364,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 7.0,
+    "position_correction_m": 0.007217108695786026,
+    "yaw_correction_deg": 0.030918734615172243
+  },
+  {
+    "state_time_s": 10.0,
+    "availability_cutoff_s": 11.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.030495001375362,
+      1.7114761874383702,
+      1.5631052768567741
+    ],
+    "antenna_xy_m": [
+      2.111415552190803,
+      1.8308573603917537
+    ],
+    "local_odom": [
+      1.0310958623886108,
+      -0.9828484058380127,
+      -1.5923019647598267
+    ],
+    "aligned_odom_pose": [
+      1.92,
+      1.88,
+      1.5707963267948966
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0,
+      2.0
+    ],
+    "range_medians_m": {
+      "node_10": 3.428999900817871,
+      "node_2": 5.613999843597412,
+      "node_3": 4.197000026702881,
+      "node_8": 3.236999988555908
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 9,
+    "dependency_receipt_max_s": 10.428075359,
+    "solve_wall_s": 0.18357749399729073,
+    "estimated_worker_start_s": 11.0,
+    "estimated_worker_finish_s": 11.18530824699701,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.030495001375362,
+      1.7114761874383702,
+      1.5631052768567741
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 4.792490816380818,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0001578330461169397,
+      "optimizer_njev": 6,
+      "keyframes": 9,
+      "range_factors": 36,
+      "odom_between_factors": 8
+    },
+    "update_wall_s": 0.18530824699701043,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 8.0,
+    "position_correction_m": 0.0054382034548605355,
+    "yaw_correction_deg": 0.031760459060778075
+  },
+  {
+    "state_time_s": 11.0,
+    "availability_cutoff_s": 12.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.0313235607310696,
+      1.7087661713771565,
+      1.5628791161249227
+    ],
+    "antenna_xy_m": [
+      2.1122711088102353,
+      1.8281290402266073
+    ],
+    "local_odom": [
+      1.0310958623886108,
+      -0.9828484058380127,
+      -1.5923019647598267
+    ],
+    "aligned_odom_pose": [
+      1.92,
+      1.88,
+      1.5707963267948966
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0,
+      2.0
+    ],
+    "range_medians_m": {
+      "node_10": 3.4480000734329224,
+      "node_2": 5.622499942779541,
+      "node_3": 4.204999923706055,
+      "node_8": 3.228999972343445
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 10,
+    "dependency_receipt_max_s": 11.424189683,
+    "solve_wall_s": 0.15507317000447074,
+    "estimated_worker_start_s": 12.0,
+    "estimated_worker_finish_s": 12.158473670002422,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.0313235607310696,
+      1.7087661713771565,
+      1.5628791161249227
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 5.286512032107779,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00025360329522000624,
+      "optimizer_njev": 6,
+      "keyframes": 10,
+      "range_factors": 40,
+      "odom_between_factors": 9
+    },
+    "update_wall_s": 0.1584736700024223,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 9.0,
+    "position_correction_m": 0.002833848559462258,
+    "yaw_correction_deg": 0.012958055426677646
+  },
+  {
+    "state_time_s": 12.0,
+    "availability_cutoff_s": 13.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.033447121979653,
+      1.7058853151042075,
+      1.5624741825716266
+    ],
+    "antenna_xy_m": [
+      2.11444299745158,
+      1.8252153957902444
+    ],
+    "local_odom": [
+      1.0310958623886108,
+      -0.9828484058380127,
+      -1.5923019647598267
+    ],
+    "aligned_odom_pose": [
+      1.92,
+      1.88,
+      1.5707963267948966
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0,
+      2.0
+    ],
+    "range_medians_m": {
+      "node_10": 3.438999891281128,
+      "node_2": 5.616499900817871,
+      "node_3": 4.203999996185303,
+      "node_8": 3.2405000925064087
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 11,
+    "dependency_receipt_max_s": 12.415145346,
+    "solve_wall_s": 0.16634739399887621,
+    "estimated_worker_start_s": 13.0,
+    "estimated_worker_finish_s": 13.168377838999731,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.033447121979653,
+      1.7058853151042075,
+      1.5624741825716266
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 5.792853081643257,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00023357252786349036,
+      "optimizer_njev": 6,
+      "keyframes": 11,
+      "range_factors": 44,
+      "odom_between_factors": 10
+    },
+    "update_wall_s": 0.16837783899973147,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 10.0,
+    "position_correction_m": 0.0035789447106478202,
+    "yaw_correction_deg": 0.023200983587100703
+  },
+  {
+    "state_time_s": 13.0,
+    "availability_cutoff_s": 14.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.03579540851298,
+      1.7032869859330952,
+      1.562036614111665
+    ],
+    "antenna_xy_m": [
+      2.1168434913088894,
+      1.8225816139559339
+    ],
+    "local_odom": [
+      1.0310958623886108,
+      -0.9828484058380127,
+      -1.5923019647598267
+    ],
+    "aligned_odom_pose": [
+      1.92,
+      1.88,
+      1.5707963267948966
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0,
+      2.0
+    ],
+    "range_medians_m": {
+      "node_10": 3.4350000619888306,
+      "node_2": 5.610499858856201,
+      "node_3": 4.206500053405762,
+      "node_8": 3.246500015258789
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 12,
+    "dependency_receipt_max_s": 13.41290721,
+    "solve_wall_s": 0.18502081200131215,
+    "estimated_worker_start_s": 14.0,
+    "estimated_worker_finish_s": 14.186079819999577,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.03579540851298,
+      1.7032869859330952,
+      1.562036614111665
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 6.312863065549558,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00021241215500084065,
+      "optimizer_njev": 6,
+      "keyframes": 12,
+      "range_factors": 48,
+      "odom_between_factors": 11
+    },
+    "update_wall_s": 0.186079819999577,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 11.0,
+    "position_correction_m": 0.0035022512936765714,
+    "yaw_correction_deg": 0.025070826003836998
+  },
+  {
+    "state_time_s": 14.0,
+    "availability_cutoff_s": 15.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.037498167156317,
+      1.6994842445473632,
+      1.5615283011703551
+    ],
+    "antenna_xy_m": [
+      2.118606878482183,
+      1.8187376593708278
+    ],
+    "local_odom": [
+      1.0310958623886108,
+      -0.9828484058380127,
+      -1.5923501124161243
+    ],
+    "aligned_odom_pose": [
+      1.92,
+      1.88,
+      1.5707481791385989
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0000057776260256,
+      1.9999961480484059
+    ],
+    "range_medians_m": {
+      "node_10": 3.436000108718872,
+      "node_2": 5.63100004196167,
+      "node_3": 4.200000047683716,
+      "node_8": 3.2475000619888306
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 13,
+    "dependency_receipt_max_s": 14.415728338,
+    "solve_wall_s": 0.1562378960006754,
+    "estimated_worker_start_s": 15.0,
+    "estimated_worker_finish_s": 15.157004433996917,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.037498167156317,
+      1.6994842445473632,
+      1.5615283011703551
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 6.77831096533277,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00023800737891710444,
+      "optimizer_njev": 6,
+      "keyframes": 13,
+      "range_factors": 52,
+      "odom_between_factors": 12
+    },
+    "update_wall_s": 0.15700443399691721,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 12.0,
+    "position_correction_m": 0.0041665608172949415,
+    "yaw_correction_deg": 0.02636552870963647
+  },
+  {
+    "state_time_s": 15.0,
+    "availability_cutoff_s": 16.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.039998795689108,
+      1.6963349505595353,
+      1.5618113856278566
+    ],
+    "antenna_xy_m": [
+      2.121073744977288,
+      1.8156113212199434
+    ],
+    "local_odom": [
+      1.0310887708604655,
+      -0.983096465030353,
+      -1.5915017127990725
+    ],
+    "aligned_odom_pose": [
+      1.920001755628333,
+      1.8802481543278788,
+      1.5715965787556507
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.9999056997871656,
+      2.000312136053716
+    ],
+    "range_medians_m": {
+      "node_10": 3.4350000619888306,
+      "node_2": 5.631999969482422,
+      "node_3": 4.190999984741211,
+      "node_8": 3.250999927520752
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 14,
+    "dependency_receipt_max_s": 15.413603099,
+    "solve_wall_s": 0.14412913699925411,
+    "estimated_worker_start_s": 16.0,
+    "estimated_worker_finish_s": 16.14630134699837,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.039998795689108,
+      1.6963349505595353,
+      1.5618113856278566
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 7.229316312895658,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00023120356335745718,
+      "optimizer_njev": 6,
+      "keyframes": 14,
+      "range_factors": 56,
+      "odom_between_factors": 13
+    },
+    "update_wall_s": 0.14630134699837072,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 13.0,
+    "position_correction_m": 0.004216089463245257,
+    "yaw_correction_deg": 0.03239017273700173
+  },
+  {
+    "state_time_s": 16.0,
+    "availability_cutoff_s": 17.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.0395303883027065,
+      1.7256505295301006,
+      1.5635278963785482
+    ],
+    "antenna_xy_m": [
+      2.120400479078928,
+      1.8450658904257815
+    ],
+    "local_odom": [
+      1.0310499355016456,
+      -1.0106553504063738,
+      -1.5899220479157194
+    ],
+    "aligned_odom_pose": [
+      1.9194479562786422,
+      1.9078015021758996,
+      1.5731762436390038
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.999162139966886,
+      2.027991555503606
+    ],
+    "range_medians_m": {
+      "node_10": 3.496500015258789,
+      "node_2": 5.588500022888184,
+      "node_3": 4.202000141143799,
+      "node_8": 3.242000102996826
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 15,
+    "dependency_receipt_max_s": 16.425479855,
+    "solve_wall_s": 0.1348346400045557,
+    "estimated_worker_start_s": 17.0,
+    "estimated_worker_finish_s": 17.138518350002414,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.0395303883027065,
+      1.7256505295301006,
+      1.5635278963785482
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 7.632201472411311,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00021237052818090518,
+      "optimizer_njev": 6,
+      "keyframes": 15,
+      "range_factors": 60,
+      "odom_between_factors": 14
+    },
+    "update_wall_s": 0.13851835000241408,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 14.0,
+    "position_correction_m": 0.0017677589913236104,
+    "yaw_correction_deg": 0.007840690642304981
+  },
+  {
+    "state_time_s": 17.0,
+    "availability_cutoff_s": 18.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.0399743820601506,
+      1.7845819979064343,
+      1.5628712022293774
+    ],
+    "antenna_xy_m": [
+      2.120922874762057,
+      1.9039442261417072
+    ],
+    "local_odom": [
+      1.0294786708369796,
+      -1.0642472853307172,
+      -1.590986157045813
+    ],
+    "aligned_odom_pose": [
+      1.9198664176952112,
+      1.9614148330892494,
+      1.5721121345089102
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.9997084515611043,
+      2.081519993795014
+    ],
+    "range_medians_m": {
+      "node_10": 3.553999900817871,
+      "node_2": 5.503999948501587,
+      "node_3": 4.213000059127808,
+      "node_8": 3.249000072479248
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 16,
+    "dependency_receipt_max_s": 17.425341398,
+    "solve_wall_s": 0.14007249800488353,
+    "estimated_worker_start_s": 18.0,
+    "estimated_worker_finish_s": 18.14247107200208,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.0399743820601506,
+      1.7845819979064343,
+      1.5628712022293774
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 8.114267345331543,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0002537591425242347,
+      "optimizer_njev": 6,
+      "keyframes": 16,
+      "range_factors": 64,
+      "odom_between_factors": 15
+    },
+    "update_wall_s": 0.1424710720020812,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 15.0,
+    "position_correction_m": 0.0053473266639609655,
+    "yaw_correction_deg": 0.023343158917278374
+  },
+  {
+    "state_time_s": 18.0,
+    "availability_cutoff_s": 19.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.041401845745344,
+      1.835318456082213,
+      1.5623110199111416
+    ],
+    "antenna_xy_m": [
+      2.122417190352487,
+      1.9546353196773723
+    ],
+    "local_odom": [
+      1.0282283970040824,
+      -1.1075190012601737,
+      -1.591327645771896
+    ],
+    "aligned_odom_pose": [
+      1.9201858882910705,
+      2.004703428846968,
+      1.5717706457828273
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0000689320591207,
+      2.124781317395825
+    ],
+    "range_medians_m": {
+      "node_10": 3.5840001106262207,
+      "node_2": 5.428999900817871,
+      "node_3": 4.197000026702881,
+      "node_8": 3.234999895095825
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 17,
+    "dependency_receipt_max_s": 18.413332448,
+    "solve_wall_s": 0.17234580000513233,
+    "estimated_worker_start_s": 19.0,
+    "estimated_worker_finish_s": 19.174958532996243,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.041401845745344,
+      1.835318456082213,
+      1.5623110199111416
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 8.745196034873103,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.000268551151985541,
+      "optimizer_njev": 6,
+      "keyframes": 17,
+      "range_factors": 68,
+      "odom_between_factors": 16
+    },
+    "update_wall_s": 0.17495853299624287,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 16.0,
+    "position_correction_m": 0.007486215825790918,
+    "yaw_correction_deg": 0.012530219836915038
+  },
+  {
+    "state_time_s": 19.0,
+    "availability_cutoff_s": 20.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.0400016013192164,
+      1.8918655709603165,
+      1.5665786096565233
+    ],
+    "antenna_xy_m": [
+      2.120507014310772,
+      2.0115270872429503
+    ],
+    "local_odom": [
+      1.026984924664998,
+      -1.1548599404304294,
+      -1.5887384005998473
+    ],
+    "aligned_odom_pose": [
+      1.9204110544694533,
+      2.0520601606300213,
+      1.574359890954876
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.999982919716285,
+      2.172344483220873
+    ],
+    "range_medians_m": {
+      "node_10": 3.6470000743865967,
+      "node_2": 5.398999929428101,
+      "node_3": 4.20550012588501,
+      "node_8": 3.2320001125335693
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 18,
+    "dependency_receipt_max_s": 19.412767345,
+    "solve_wall_s": 0.2106033669988392,
+    "estimated_worker_start_s": 20.0,
+    "estimated_worker_finish_s": 20.212520711000252,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.0400016013192164,
+      1.8918655709603165,
+      1.5665786096565233
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 9.340057076674778,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0002900294058707509,
+      "optimizer_njev": 6,
+      "keyframes": 18,
+      "range_factors": 72,
+      "odom_between_factors": 17
+    },
+    "update_wall_s": 0.21252071100025205,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 17.0,
+    "position_correction_m": 0.00942550380554861,
+    "yaw_correction_deg": 0.09616206062066843
+  },
+  {
+    "state_time_s": 20.0,
+    "availability_cutoff_s": 21.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.0360934506088806,
+      1.945373867092015,
+      1.5702812893479217
+    ],
+    "antenna_xy_m": [
+      2.1161552444892426,
+      2.065332648182265
+    ],
+    "local_odom": [
+      1.026379204503032,
+      -1.2012573566038465,
+      -1.5882856381968278
+    ],
+    "aligned_odom_pose": [
+      1.920018905442762,
+      2.098459873383709,
+      1.5748126533578954
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.9995363023166437,
+      2.218780210793482
+    ],
+    "range_medians_m": {
+      "node_10": 3.6699999570846558,
+      "node_2": 5.372499942779541,
+      "node_3": 4.211999893188477,
+      "node_8": 3.2070000171661377
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 19,
+    "dependency_receipt_max_s": 20.41303826,
+    "solve_wall_s": 0.2725237440026831,
+    "estimated_worker_start_s": 21.0,
+    "estimated_worker_finish_s": 21.27482793499803,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.0360934506088806,
+      1.945373867092015,
+      1.5702812893479217
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 10.000580235258585,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0003460382553845953,
+      "optimizer_njev": 6,
+      "keyframes": 19,
+      "range_factors": 76,
+      "odom_between_factors": 18
+    },
+    "update_wall_s": 0.2748279349980294,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 18.0,
+    "position_correction_m": 0.008095686298500167,
+    "yaw_correction_deg": 0.18620654439070994
+  },
+  {
+    "state_time_s": 21.0,
+    "availability_cutoff_s": 22.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.0321642868288206,
+      1.9931894797676843,
+      1.568282765970892
+    ],
+    "antenna_xy_m": [
+      2.1124656610907007,
+      2.1129880160344245
+    ],
+    "local_odom": [
+      1.0260720095431346,
+      -1.244067646681037,
+      -1.5934064790232094
+    ],
+    "aligned_odom_pose": [
+      1.9194054377330914,
+      2.141266870038529,
+      1.5696918125315138
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.9995379306196828,
+      2.2611784357183264
+    ],
+    "range_medians_m": {
+      "node_10": 3.7200000286102295,
+      "node_2": 5.411999940872192,
+      "node_3": 4.180500030517578,
+      "node_8": 3.2214999198913574
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 20,
+    "dependency_receipt_max_s": 21.41335291,
+    "solve_wall_s": 0.18579323399899295,
+    "estimated_worker_start_s": 22.0,
+    "estimated_worker_finish_s": 22.187520218998543,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.0321642868288206,
+      1.9931894797676843,
+      1.568282765970892
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 10.338558024787664,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00042860090425977937,
+      "optimizer_njev": 6,
+      "keyframes": 20,
+      "range_factors": 80,
+      "odom_between_factors": 19
+    },
+    "update_wall_s": 0.187520218998543,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 19.0,
+    "position_correction_m": 0.006113969267477312,
+    "yaw_correction_deg": 0.17889561214792096
+  },
+  {
+    "state_time_s": 22.0,
+    "availability_cutoff_s": 23.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.020331494424883,
+      2.0616271929241194,
+      1.5774028251441807
+    ],
+    "antenna_xy_m": [
+      2.099536974563409,
+      2.182153090207755
+    ],
+    "local_odom": [
+      1.025011993699079,
+      -1.28772036609155,
+      -1.5956226511329457
+    ],
+    "aligned_odom_pose": [
+      1.9195265012435039,
+      2.184932289871036,
+      1.5674756404217776
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.999924541798023,
+      2.3046659738325426
+    ],
+    "range_medians_m": {
+      "node_10": 3.984999895095825,
+      "node_2": 5.419000148773193,
+      "node_3": 4.180500030517578,
+      "node_8": 3.2640000581741333
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 39,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 21,
+    "dependency_receipt_max_s": 22.424341257,
+    "solve_wall_s": 0.196021274998202,
+    "estimated_worker_start_s": 23.0,
+    "estimated_worker_finish_s": 23.198819461998937,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.020331494424883,
+      2.0616271929241194,
+      1.5774028251441807
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 10.831354823425348,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00030986481452616177,
+      "optimizer_njev": 6,
+      "keyframes": 21,
+      "range_factors": 84,
+      "odom_between_factors": 20
+    },
+    "update_wall_s": 0.19881946199893719,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 20.0,
+    "position_correction_m": 0.027532644796954518,
+    "yaw_correction_deg": 0.6495182081015048
+  },
+  {
+    "state_time_s": 23.0,
+    "availability_cutoff_s": 24.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.0051538452652693,
+      2.1215214597642245,
+      1.5835263579176562
+    ],
+    "antenna_xy_m": [
+      2.083619800729017,
+      2.2425301116580507
+    ],
+    "local_odom": [
+      1.024239322310331,
+      -1.3291357757822373,
+      -1.6033154770325977
+    ],
+    "aligned_odom_pose": [
+      1.9194083978075196,
+      2.2263547382837126,
+      1.5597828145221255
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0007251407131346,
+      2.3454663973403393
+    ],
+    "range_medians_m": {
+      "node_10": 3.981500029563904,
+      "node_2": 5.41949987411499,
+      "node_3": 4.2174999713897705,
+      "node_8": 3.257999897003174
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 22,
+    "dependency_receipt_max_s": 23.415450674,
+    "solve_wall_s": 0.2228146330016898,
+    "estimated_worker_start_s": 24.0,
+    "estimated_worker_finish_s": 24.22762114899524,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.0051538452652693,
+      2.1215214597642245,
+      1.5835263579176562
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 11.20436274985247,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00042341034774263844,
+      "optimizer_njev": 6,
+      "keyframes": 22,
+      "range_factors": 88,
+      "odom_between_factors": 21
+    },
+    "update_wall_s": 0.22762114899524022,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 21.0,
+    "position_correction_m": 0.023577552063262446,
+    "yaw_correction_deg": 0.7916190402091743
+  },
+  {
+    "state_time_s": 24.0,
+    "availability_cutoff_s": 25.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.987528090758157,
+      2.167696846449738,
+      1.6019239234856646
+    ],
+    "antenna_xy_m": [
+      2.063754628371861,
+      2.290128521123519
+    ],
+    "local_odom": [
+      1.0215564123021104,
+      -1.3772217559841644,
+      -1.6026223123899783
+    ],
+    "aligned_odom_pose": [
+      1.9210566474556594,
+      2.2744872924564317,
+      1.560475979164745
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.002290806841884,
+      2.3936552887843616
+    ],
+    "range_medians_m": {
+      "node_10": 3.9325000047683716,
+      "node_2": 5.493000030517578,
+      "node_3": 4.2174999713897705,
+      "node_8": 3.2300000190734863
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 23,
+    "dependency_receipt_max_s": 24.413381777,
+    "solve_wall_s": 0.26960516899998765,
+    "estimated_worker_start_s": 25.0,
+    "estimated_worker_finish_s": 25.27886584400403,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.987528090758157,
+      2.167696846449738,
+      1.6019239234856646
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 11.38376747561417,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0004254469888719248,
+      "optimizer_njev": 6,
+      "keyframes": 23,
+      "range_factors": 92,
+      "odom_between_factors": 22
+    },
+    "update_wall_s": 0.2788658440040308,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 22.0,
+    "position_correction_m": 0.01823890025218373,
+    "yaw_correction_deg": 1.0143874518323017
+  },
+  {
+    "state_time_s": 25.0,
+    "availability_cutoff_s": 26.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9696328622544976,
+      2.198997617451257,
+      1.6214331162120994
+    ],
+    "antenna_xy_m": [
+      2.0434565024671443,
+      2.322893017469796
+    ],
+    "local_odom": [
+      1.020656734417314,
+      -1.4163686022561413,
+      -1.5994176466927381
+    ],
+    "aligned_odom_pose": [
+      1.921114304290156,
+      2.3136444331721124,
+      1.563680644861985
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.001966153607738,
+      2.433072145458361
+    ],
+    "range_medians_m": {
+      "node_10": 3.9884999990463257,
+      "node_2": 5.585000038146973,
+      "node_3": 4.213000059127808,
+      "node_8": 3.3014999628067017
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 24,
+    "dependency_receipt_max_s": 25.423076423,
+    "solve_wall_s": 0.20747990000381833,
+    "estimated_worker_start_s": 26.0,
+    "estimated_worker_finish_s": 26.212662687001284,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9696328622544976,
+      2.198997617451257,
+      1.6214331162120994
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 11.789184021713748,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0005045237023130738,
+      "optimizer_njev": 6,
+      "keyframes": 24,
+      "range_factors": 96,
+      "odom_between_factors": 23
+    },
+    "update_wall_s": 0.2126626870012842,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 23.0,
+    "position_correction_m": 0.01810833819816912,
+    "yaw_correction_deg": 0.9341805857298252
+  },
+  {
+    "state_time_s": 26.0,
+    "availability_cutoff_s": 27.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9572408336763334,
+      2.2433139461996205,
+      1.6314929742561302
+    ],
+    "antenna_xy_m": [
+      2.029814389302494,
+      2.3679457199323917
+    ],
+    "local_odom": [
+      1.0192683226652326,
+      -1.4664076306475242,
+      -1.599675954514631
+    ],
+    "aligned_odom_pose": [
+      1.921426356708665,
+      2.363701747051655,
+      1.5634223370400921
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0023090524408023,
+      2.4831085706887595
+    ],
+    "range_medians_m": {
+      "node_10": 4.005000114440918,
+      "node_2": 5.516999959945679,
+      "node_3": 4.203000068664551,
+      "node_8": 3.302999973297119
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 25,
+    "dependency_receipt_max_s": 26.412990707,
+    "solve_wall_s": 0.240197810002428,
+    "estimated_worker_start_s": 27.0,
+    "estimated_worker_finish_s": 27.243426097003976,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9572408336763334,
+      2.2433139461996205,
+      1.6314929742561302
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 12.031114337112946,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0005164752728028647,
+      "optimizer_njev": 6,
+      "keyframes": 25,
+      "range_factors": 100,
+      "odom_between_factors": 24
+    },
+    "update_wall_s": 0.24342609700397588,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 24.0,
+    "position_correction_m": 0.011337149174429661,
+    "yaw_correction_deg": 0.5911873564333772
+  },
+  {
+    "state_time_s": 27.0,
+    "availability_cutoff_s": 28.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.949156507364409,
+      2.28391094848616,
+      1.6363408869212286
+    ],
+    "antenna_xy_m": [
+      2.0211250085833914,
+      2.4088930865391367
+    ],
+    "local_odom": [
+      1.0184189003580637,
+      -1.5075541431680044,
+      -1.6003278479552838
+    ],
+    "aligned_odom_pose": [
+      1.9213907688028768,
+      2.4048570109234237,
+      1.5627704435994394
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0023512878684397,
+      2.5242110822935895
+    ],
+    "range_medians_m": {
+      "node_10": 4.042500019073486,
+      "node_2": 5.461999893188477,
+      "node_3": 4.207499980926514,
+      "node_8": 3.3235000371932983
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 26,
+    "dependency_receipt_max_s": 27.413069171,
+    "solve_wall_s": 0.2943075299990596,
+    "estimated_worker_start_s": 28.0,
+    "estimated_worker_finish_s": 28.29633553000167,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.949156507364409,
+      2.28391094848616,
+      1.6363408869212286
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 12.27830603105431,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0005283122181175706,
+      "optimizer_njev": 6,
+      "keyframes": 26,
+      "range_factors": 104,
+      "odom_between_factors": 25
+    },
+    "update_wall_s": 0.2963355300016701,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 25.0,
+    "position_correction_m": 0.005269680663881886,
+    "yaw_correction_deg": 0.3151156779998236
+  },
+  {
+    "state_time_s": 28.0,
+    "availability_cutoff_s": 29.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9342774057661953,
+      2.3298162408533547,
+      1.6524913050965915
+    ],
+    "antenna_xy_m": [
+      2.004218095155969,
+      2.4559443502012837
+    ],
+    "local_odom": [
+      1.0172251471351397,
+      -1.5510508223613697,
+      -1.5967296361923218
+    ],
+    "aligned_odom_pose": [
+      1.921648894252841,
+      2.4483693025070656,
+      1.5663686553624014
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0021794289190247,
+      2.568013913695278
+    ],
+    "range_medians_m": {
+      "node_10": 4.145999908447266,
+      "node_2": 5.510000228881836,
+      "node_3": 4.19350004196167,
+      "node_8": 3.30649995803833
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 27,
+    "dependency_receipt_max_s": 28.42341394,
+    "solve_wall_s": 0.2467994809994707,
+    "estimated_worker_start_s": 29.0,
+    "estimated_worker_finish_s": 29.250311721996695,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9342774057661953,
+      2.3298162408533547,
+      1.6524913050965915
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 12.704787788946954,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00028976021707504285,
+      "optimizer_njev": 6,
+      "keyframes": 27,
+      "range_factors": 108,
+      "odom_between_factors": 26
+    },
+    "update_wall_s": 0.25031172199669527,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 26.0,
+    "position_correction_m": 0.012195461525747553,
+    "yaw_correction_deg": 0.719188451007617
+  },
+  {
+    "state_time_s": 29.0,
+    "availability_cutoff_s": 30.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9265692269955699,
+      2.389441354832007,
+      1.6614802263335047
+    ],
+    "antenna_xy_m": [
+      1.9953733504031557,
+      2.5161930514759323
+    ],
+    "local_odom": [
+      1.0167743622306842,
+      -1.5956387888151409,
+      -1.590774168702024
+    ],
+    "aligned_odom_pose": [
+      1.9211407561665854,
+      2.492956652228685,
+      1.5723241228526992
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.000957327344558,
+      2.6130787358161403
+    ],
+    "range_medians_m": {
+      "node_10": 4.23799991607666,
+      "node_2": 5.4075000286102295,
+      "node_3": 4.158999919891357,
+      "node_8": 3.2990000247955322
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 28,
+    "dependency_receipt_max_s": 29.422811667,
+    "solve_wall_s": 0.26615712700004224,
+    "estimated_worker_start_s": 30.0,
+    "estimated_worker_finish_s": 30.269320415995026,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9265692269955699,
+      2.389441354832007,
+      1.6614802263335047
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 13.1086379866611,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0002897440637557036,
+      "optimizer_njev": 6,
+      "keyframes": 28,
+      "range_factors": 112,
+      "odom_between_factors": 27
+    },
+    "update_wall_s": 0.26932041599502554,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 27.0,
+    "position_correction_m": 0.01561400684837939,
+    "yaw_correction_deg": 0.17380409702921262
+  },
+  {
+    "state_time_s": 30.0,
+    "availability_cutoff_s": 31.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9215388586417472,
+      2.44883977176489,
+      1.6693561167134612
+    ],
+    "antenna_xy_m": [
+      1.9893425759647874,
+      2.5761294253789107
+    ],
+    "local_odom": [
+      1.0163437326642217,
+      -1.6413494876413142,
+      -1.5827265697631279
+    ],
+    "aligned_odom_pose": [
+      1.9205883241881803,
+      2.538666041285091,
+      1.5803717217915954
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.9994356268479572,
+      2.6594265599295452
+    ],
+    "range_medians_m": {
+      "node_10": 4.259000062942505,
+      "node_2": 5.386000156402588,
+      "node_3": 4.138000011444092,
+      "node_8": 3.299499988555908
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 29,
+    "dependency_receipt_max_s": 30.403951488,
+    "solve_wall_s": 0.3013994080029079,
+    "estimated_worker_start_s": 31.0,
+    "estimated_worker_finish_s": 31.307050232004258,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9215388586417472,
+      2.44883977176489,
+      1.6693561167134612
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 13.449019026514414,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0003314895306323895,
+      "optimizer_njev": 6,
+      "keyframes": 29,
+      "range_factors": 116,
+      "odom_between_factors": 28
+    },
+    "update_wall_s": 0.30705023200425785,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 28.0,
+    "position_correction_m": 0.013925807088484513,
+    "yaw_correction_deg": 0.009838175733516145
+  },
+  {
+    "state_time_s": 31.0,
+    "availability_cutoff_s": 32.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9195298140273436,
+      2.503352109354248,
+      1.67051301315193
+    ],
+    "antenna_xy_m": [
+      1.9871862250617527,
+      2.6307201196470333
+    ],
+    "local_odom": [
+      1.016062937151392,
+      -1.6914760483610336,
+      -1.5778671248066343
+    ],
+    "aligned_odom_pose": [
+      1.9197911341961835,
+      2.5887870490944356,
+      1.585231166748089
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.9980506791159074,
+      2.709929294529122
+    ],
+    "range_medians_m": {
+      "node_10": 4.252999782562256,
+      "node_2": 5.418999910354614,
+      "node_3": 4.099999904632568,
+      "node_8": 3.3310000896453857
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 30,
+    "dependency_receipt_max_s": 31.415324327,
+    "solve_wall_s": 0.3138117499984219,
+    "estimated_worker_start_s": 32.0,
+    "estimated_worker_finish_s": 32.3182584449969,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9195298140273436,
+      2.503352109354248,
+      1.67051301315193
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 13.859716698918634,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00035356985220275083,
+      "optimizer_njev": 6,
+      "keyframes": 30,
+      "range_factors": 120,
+      "odom_between_factors": 29
+    },
+    "update_wall_s": 0.3182584449968999,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 29.0,
+    "position_correction_m": 0.005675542986332973,
+    "yaw_correction_deg": 0.21214040352524285
+  },
+  {
+    "state_time_s": 32.0,
+    "availability_cutoff_s": 33.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9204337109557532,
+      2.5514766129320967,
+      1.661473812958005
+    ],
+    "antenna_xy_m": [
+      1.9892386472681498,
+      2.678227868306736
+    ],
+    "local_odom": [
+      1.0150733800648621,
+      -1.7324901947370386,
+      -1.582098359341273
+    ],
+    "aligned_odom_pose": [
+      1.9198984950643294,
+      2.6298129908852568,
+      1.5809999322134503
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.9986699191542572,
+      2.750623018394751
+    ],
+    "range_medians_m": {
+      "node_10": 4.251999855041504,
+      "node_2": 5.315499782562256,
+      "node_3": 4.12749981880188,
+      "node_8": 3.284999966621399
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 31,
+    "dependency_receipt_max_s": 32.414718329,
+    "solve_wall_s": 0.30332903600356076,
+    "estimated_worker_start_s": 33.0,
+    "estimated_worker_finish_s": 33.30735748200095,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9204337109557532,
+      2.5514766129320967,
+      1.661473812958005
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 13.9763449863992,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0002977209157431493,
+      "optimizer_njev": 6,
+      "keyframes": 31,
+      "range_factors": 124,
+      "odom_between_factors": 30
+    },
+    "update_wall_s": 0.3073574820009526,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 30.0,
+    "position_correction_m": 0.008415029170962197,
+    "yaw_correction_deg": 0.2754761403209403
+  },
+  {
+    "state_time_s": 33.0,
+    "availability_cutoff_s": 34.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9229954290142282,
+      2.606480577362286,
+      1.649235365640034
+    ],
+    "antenna_xy_m": [
+      1.9933464124409688,
+      2.732380295911973
+    ],
+    "local_odom": [
+      1.014318295511173,
+      -1.7740756906685864,
+      -1.5877020478867658
+    ],
+    "aligned_odom_pose": [
+      1.9197591513288454,
+      2.671405108021553,
+      1.5753962436679574
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.9992063168827734,
+      2.7917718305217805
+    ],
+    "range_medians_m": {
+      "node_10": 4.337000131607056,
+      "node_2": 5.2829999923706055,
+      "node_3": 4.080999851226807,
+      "node_8": 3.2829999923706055
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 32,
+    "dependency_receipt_max_s": 33.423192887,
+    "solve_wall_s": 0.2730232519970741,
+    "estimated_worker_start_s": 34.0,
+    "estimated_worker_finish_s": 34.27811620399734,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9229954290142282,
+      2.606480577362286,
+      1.649235365640034
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 14.198323804520175,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00024454759929248837,
+      "optimizer_njev": 6,
+      "keyframes": 32,
+      "range_factors": 128,
+      "odom_between_factors": 31
+    },
+    "update_wall_s": 0.2781162039973424,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 31.0,
+    "position_correction_m": 0.014843881555317705,
+    "yaw_correction_deg": 0.3801436757503876
+  },
+  {
+    "state_time_s": 34.0,
+    "availability_cutoff_s": 35.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9329372287026743,
+      2.6705904542557803,
+      1.6279468592001927
+    ],
+    "antenna_xy_m": [
+      2.0059522857085654,
+      2.7949640907324325
+    ],
+    "local_odom": [
+      1.0145406864980469,
+      -1.8197809179875255,
+      -1.5937326764373052
+    ],
+    "aligned_odom_pose": [
+      1.9185539674590104,
+      2.717094984294824,
+      1.569365615117418
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.9987255709243141,
+      2.8369804045835405
+    ],
+    "range_medians_m": {
+      "node_10": 4.330999851226807,
+      "node_2": 5.121500015258789,
+      "node_3": 4.111000061035156,
+      "node_8": 3.305000066757202
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 33,
+    "dependency_receipt_max_s": 34.443466445,
+    "solve_wall_s": 0.29101226400234737,
+    "estimated_worker_start_s": 35.0,
+    "estimated_worker_finish_s": 35.29377987100452,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9329372287026743,
+      2.6705904542557803,
+      1.6279468592001927
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 14.475128558101185,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00040365134668526,
+      "optimizer_njev": 6,
+      "keyframes": 33,
+      "range_factors": 132,
+      "odom_between_factors": 32
+    },
+    "update_wall_s": 0.2937798710045172,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 32.0,
+    "position_correction_m": 0.0236192682638676,
+    "yaw_correction_deg": 0.8742120073829811
+  },
+  {
+    "state_time_s": 35.0,
+    "availability_cutoff_s": 36.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9482073121694088,
+      2.7272223907414577,
+      1.6097828900978004
+    ],
+    "antenna_xy_m": [
+      2.023469319252915,
+      2.8502493401865374
+    ],
+    "local_odom": [
+      1.0139640061469763,
+      -1.8673350826214725,
+      -1.5928446987532867
+    ],
+    "aligned_odom_pose": [
+      1.9181079106404,
+      2.764650553554107,
+      1.5702535928014365
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.9981730269340106,
+      2.884607117163151
+    ],
+    "range_medians_m": {
+      "node_10": 4.295499801635742,
+      "node_2": 5.040999889373779,
+      "node_3": 4.079999923706055,
+      "node_8": 3.2699999809265137
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 34,
+    "dependency_receipt_max_s": 35.414943558,
+    "solve_wall_s": 0.2552623869996751,
+    "estimated_worker_start_s": 36.0,
+    "estimated_worker_finish_s": 36.257054896996124,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9482073121694088,
+      2.7272223907414577,
+      1.6097828900978004
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 14.776577012279404,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0005064266750785871,
+      "optimizer_njev": 6,
+      "keyframes": 34,
+      "range_factors": 136,
+      "odom_between_factors": 33
+    },
+    "update_wall_s": 0.2570548969961237,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 33.0,
+    "position_correction_m": 0.020653906669549804,
+    "yaw_correction_deg": 1.091596142369168
+  },
+  {
+    "state_time_s": 36.0,
+    "availability_cutoff_s": 37.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9636888422907994,
+      2.7825218731632297,
+      1.5891414882754729
+    ],
+    "antenna_xy_m": [
+      2.041474084970029,
+      2.903969211632763
+    ],
+    "local_odom": [
+      1.012978637318646,
+      -1.9137108166886871,
+      -1.5958511610504709
+    ],
+    "aligned_odom_pose": [
+      1.918095788742718,
+      2.8110367531727483,
+      1.5672471305042524
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.9985211875321824,
+      2.9307520622587444
+    ],
+    "range_medians_m": {
+      "node_10": 4.328999996185303,
+      "node_2": 5.01200008392334,
+      "node_3": 4.079499959945679,
+      "node_8": 3.3014999628067017
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 35,
+    "dependency_receipt_max_s": 36.414923291,
+    "solve_wall_s": 0.20252757099660812,
+    "estimated_worker_start_s": 37.0,
+    "estimated_worker_finish_s": 37.205785971003934,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9636888422907994,
+      2.7825218731632297,
+      1.5891414882754729
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 15.046610750791146,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0004066091365393476,
+      "optimizer_njev": 6,
+      "keyframes": 35,
+      "range_factors": 140,
+      "odom_between_factors": 34
+    },
+    "update_wall_s": 0.2057859710039338,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 34.0,
+    "position_correction_m": 0.01950178787049012,
+    "yaw_correction_deg": 1.0104076067591563
+  },
+  {
+    "state_time_s": 37.0,
+    "availability_cutoff_s": 38.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9645247640786496,
+      2.8332586700713476,
+      1.5827159087354177
+    ],
+    "antenna_xy_m": [
+      2.0430887651253204,
+      2.9542036895617705
+    ],
+    "local_odom": [
+      1.0128407982095966,
+      -1.955550462289785,
+      -1.5999719095539116
+    ],
+    "aligned_odom_pose": [
+      1.9173338770632882,
+      2.8528696879758217,
+      1.5631263820008117
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.9982519083038566,
+      2.9722525687424977
+    ],
+    "range_medians_m": {
+      "node_10": 4.389999866485596,
+      "node_2": 5.009000062942505,
+      "node_3": 4.125,
+      "node_8": 3.247499942779541
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 36,
+    "dependency_receipt_max_s": 37.41353204,
+    "solve_wall_s": 0.20378523899853462,
+    "estimated_worker_start_s": 38.0,
+    "estimated_worker_finish_s": 38.20675513099559,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9645247640786496,
+      2.8332586700713476,
+      1.5827159087354177
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 15.23999043632732,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00048663169661501216,
+      "optimizer_njev": 6,
+      "keyframes": 36,
+      "range_factors": 144,
+      "odom_between_factors": 35
+    },
+    "update_wall_s": 0.20675513099558884,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 35.0,
+    "position_correction_m": 0.009277534718948476,
+    "yaw_correction_deg": 0.13205709088877315
+  },
+  {
+    "state_time_s": 38.0,
+    "availability_cutoff_s": 39.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9652179449315792,
+      2.843413439547447,
+      1.5828040367154228
+    ],
+    "antenna_xy_m": [
+      2.043771287032919,
+      2.9643653822549116
+    ],
+    "local_odom": [
+      1.0134357213974,
+      -1.9578254222869873,
+      -1.5989768505096436
+    ],
+    "aligned_odom_pose": [
+      1.916690170748956,
+      2.8551313287008586,
+      1.5641214410450797
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.9974893689337028,
+      2.97459466857005
+    ],
+    "range_medians_m": {
+      "node_10": 4.388999938964844,
+      "node_2": 5.005000114440918,
+      "node_3": 4.146999835968018,
+      "node_8": 3.2615000009536743
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 37,
+    "dependency_receipt_max_s": 38.414745734,
+    "solve_wall_s": 0.24623804899601964,
+    "estimated_worker_start_s": 39.0,
+    "estimated_worker_finish_s": 39.24963442299486,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9652179449315792,
+      2.843413439547447,
+      1.5828040367154228
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 15.445553457631782,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00043403390969319784,
+      "optimizer_njev": 6,
+      "keyframes": 37,
+      "range_factors": 148,
+      "odom_between_factors": 36
+    },
+    "update_wall_s": 0.24963442299485905,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 36.0,
+    "position_correction_m": 0.008025888962882555,
+    "yaw_correction_deg": 0.051963322291570635
+  },
+  {
+    "state_time_s": 39.0,
+    "availability_cutoff_s": 40.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9662052284414808,
+      2.8498395505367324,
+      1.5823857833733885
+    ],
+    "antenna_xy_m": [
+      2.0448091522247105,
+      2.9707586274678777
+    ],
+    "local_odom": [
+      1.0134357213974,
+      -1.9578254222869873,
+      -1.5989768505096436
+    ],
+    "aligned_odom_pose": [
+      1.916690170748956,
+      2.8551313287008586,
+      1.5641214410450797
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.9974893689337028,
+      2.97459466857005
+    ],
+    "range_medians_m": {
+      "node_10": 4.388000011444092,
+      "node_2": 5.006500005722046,
+      "node_3": 4.144000053405762,
+      "node_8": 3.256999969482422
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 38,
+    "dependency_receipt_max_s": 39.414779957,
+    "solve_wall_s": 0.21836382799665444,
+    "estimated_worker_start_s": 40.0,
+    "estimated_worker_finish_s": 40.22047912700509,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9662052284414808,
+      2.8498395505367324,
+      1.5823857833733885
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 15.638799308119115,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0004671364876185063,
+      "optimizer_njev": 6,
+      "keyframes": 38,
+      "range_factors": 152,
+      "odom_between_factors": 37
+    },
+    "update_wall_s": 0.22047912700509187,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 37.0,
+    "position_correction_m": 0.006501509915053626,
+    "yaw_correction_deg": 0.023964151265805304
+  },
+  {
+    "state_time_s": 40.0,
+    "availability_cutoff_s": 41.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9668463087945949,
+      2.855848214175511,
+      1.5823326438626963
+    ],
+    "antenna_xy_m": [
+      2.045456658047422,
+      2.976763113961884
+    ],
+    "local_odom": [
+      1.0134357213974,
+      -1.9578254222869873,
+      -1.5989768505096436
+    ],
+    "aligned_odom_pose": [
+      1.916690170748956,
+      2.8551313287008586,
+      1.5641214410450797
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.9974893689337028,
+      2.97459466857005
+    ],
+    "range_medians_m": {
+      "node_10": 4.391000032424927,
+      "node_2": 5.003999948501587,
+      "node_3": 4.144999980926514,
+      "node_8": 3.25600004196167
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 39,
+    "dependency_receipt_max_s": 40.414665493,
+    "solve_wall_s": 0.19522723800037056,
+    "estimated_worker_start_s": 41.0,
+    "estimated_worker_finish_s": 41.19662830699963,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9668463087945949,
+      2.855848214175511,
+      1.5823326438626963
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 15.8339005799013,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00047491133955901346,
+      "optimizer_njev": 6,
+      "keyframes": 39,
+      "range_factors": 156,
+      "odom_between_factors": 38
+    },
+    "update_wall_s": 0.19662830699962797,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 38.0,
+    "position_correction_m": 0.006042766149962206,
+    "yaw_correction_deg": 0.0030446696880528324
+  },
+  {
+    "state_time_s": 41.0,
+    "availability_cutoff_s": 42.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9683435546153907,
+      2.862131708671168,
+      1.5819121476996996
+    ],
+    "antenna_xy_m": [
+      2.0470047411683048,
+      2.983013542418376
+    ],
+    "local_odom": [
+      1.0134357213974,
+      -1.9578254222869873,
+      -1.5989768505096436
+    ],
+    "aligned_odom_pose": [
+      1.916690170748956,
+      2.8551313287008586,
+      1.5641214410450797
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.9974893689337028,
+      2.97459466857005
+    ],
+    "range_medians_m": {
+      "node_10": 4.395500183105469,
+      "node_2": 5.003999948501587,
+      "node_3": 4.145999908447266,
+      "node_8": 3.273500084877014
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 40,
+    "dependency_receipt_max_s": 41.423705376,
+    "solve_wall_s": 0.17325249499845086,
+    "estimated_worker_start_s": 42.0,
+    "estimated_worker_finish_s": 42.17532066000422,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9683435546153907,
+      2.862131708671168,
+      1.5819121476996996
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 16.013951747954522,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00044890069976250306,
+      "optimizer_njev": 6,
+      "keyframes": 40,
+      "range_factors": 160,
+      "odom_between_factors": 39
+    },
+    "update_wall_s": 0.17532066000421764,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 39.0,
+    "position_correction_m": 0.006459415463092919,
+    "yaw_correction_deg": 0.02409265544116036
+  },
+  {
+    "state_time_s": 42.0,
+    "availability_cutoff_s": 43.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.969487781477297,
+      2.8680425164753816,
+      1.581788698517486
+    ],
+    "antenna_xy_m": [
+      2.0481638901943073,
+      2.988914638642361
+    ],
+    "local_odom": [
+      1.0134357213974,
+      -1.9578254222869873,
+      -1.5989768505096436
+    ],
+    "aligned_odom_pose": [
+      1.916690170748956,
+      2.8551313287008586,
+      1.5641214410450797
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.9974893689337028,
+      2.97459466857005
+    ],
+    "range_medians_m": {
+      "node_10": 4.398000001907349,
+      "node_2": 5.009000062942505,
+      "node_3": 4.153500080108643,
+      "node_8": 3.2860000133514404
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 41,
+    "dependency_receipt_max_s": 42.413451754,
+    "solve_wall_s": 0.18507190299715148,
+    "estimated_worker_start_s": 43.0,
+    "estimated_worker_finish_s": 43.18651288700494,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.969487781477297,
+      2.8680425164753816,
+      1.581788698517486
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 16.184173596316693,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00039983496592768675,
+      "optimizer_njev": 6,
+      "keyframes": 41,
+      "range_factors": 164,
+      "odom_between_factors": 40
+    },
+    "update_wall_s": 0.1865128870049375,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 40.0,
+    "position_correction_m": 0.006020540175919266,
+    "yaw_correction_deg": 0.007073117125176152
+  },
+  {
+    "state_time_s": 43.0,
+    "availability_cutoff_s": 44.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9702202707611887,
+      2.87194982922444,
+      1.5811150326214363
+    ],
+    "antenna_xy_m": [
+      2.048977789045906,
+      2.9927689225567127
+    ],
+    "local_odom": [
+      1.013484239578247,
+      -1.9578768014907837,
+      -1.5996199413956846
+    ],
+    "aligned_odom_pose": [
+      1.9166405589299365,
+      2.8551816526898603,
+      1.5634783501590386
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.9975165661865781,
+      2.9745930066317015
+    ],
+    "range_medians_m": {
+      "node_10": 4.388000011444092,
+      "node_2": 5.005000114440918,
+      "node_3": 4.1545000076293945,
+      "node_8": 3.277000069618225
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 42,
+    "dependency_receipt_max_s": 43.415471005,
+    "solve_wall_s": 0.1775019560009241,
+    "estimated_worker_start_s": 44.0,
+    "estimated_worker_finish_s": 44.179660895999405,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9702202707611887,
+      2.87194982922444,
+      1.5811150326214363
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 16.367806977243013,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00043018866863602043,
+      "optimizer_njev": 6,
+      "keyframes": 42,
+      "range_factors": 168,
+      "odom_between_factors": 41
+    },
+    "update_wall_s": 0.1796608959994046,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 41.0,
+    "position_correction_m": 0.003936527160696272,
+    "yaw_correction_deg": 0.0017518190320683724
+  },
+  {
+    "state_time_s": 44.0,
+    "availability_cutoff_s": 45.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9716030249078187,
+      2.876090503039528,
+      1.5776688835007224
+    ],
+    "antenna_xy_m": [
+      2.05077643532121,
+      2.9966374693369535
+    ],
+    "local_odom": [
+      1.0135225057601929,
+      -1.9582782983779907,
+      -1.6028256293306298
+    ],
+    "aligned_odom_pose": [
+      1.9165936678154054,
+      2.8555822338607806,
+      1.5602726622240934
+    ],
+    "aligned_odom_antenna_xy_m": [
+      1.99785205439488,
+      2.9747337114449914
+    ],
+    "range_medians_m": {
+      "node_10": 4.392000198364258,
+      "node_2": 5.003999948501587,
+      "node_3": 4.141499996185303,
+      "node_8": 3.2760000228881836
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 43,
+    "dependency_receipt_max_s": 44.41278263,
+    "solve_wall_s": 0.1751544879953144,
+    "estimated_worker_start_s": 45.0,
+    "estimated_worker_finish_s": 45.18020720899949,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9716030249078187,
+      2.876090503039528,
+      1.5776688835007224
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 16.530174118609867,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00043274381544273783,
+      "optimizer_njev": 6,
+      "keyframes": 43,
+      "range_factors": 172,
+      "odom_between_factors": 42
+    },
+    "update_wall_s": 0.18020720899949083,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 42.0,
+    "position_correction_m": 0.0040073756691972,
+    "yaw_correction_deg": 0.013777411081257953
+  },
+  {
+    "state_time_s": 45.0,
+    "availability_cutoff_s": 46.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9709629169808813,
+      2.8948370996294344,
+      1.4376764065985743
+    ],
+    "antenna_xy_m": [
+      2.0661823786846205,
+      3.0031572460143527
+    ],
+    "local_odom": [
+      1.011531249275085,
+      -1.9846699946707915,
+      -1.7422494094725371
+    ],
+    "aligned_odom_pose": [
+      1.9180169373304308,
+      2.882010647348701,
+      1.420848882082186
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0150455918114925,
+      2.988713225619307
+    ],
+    "range_medians_m": {
+      "node_10": 4.30649995803833,
+      "node_2": 5.003999948501587,
+      "node_3": 4.168499946594238,
+      "node_8": 3.2660000324249268
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 44,
+    "dependency_receipt_max_s": 45.416210574,
+    "solve_wall_s": 0.1933805430016946,
+    "estimated_worker_start_s": 46.0,
+    "estimated_worker_finish_s": 46.19499310699757,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9709629169808813,
+      2.8948370996294344,
+      1.4376764065985743
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 16.886200933647416,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0003896585387862554,
+      "optimizer_njev": 6,
+      "keyframes": 44,
+      "range_factors": 176,
+      "odom_between_factors": 43
+    },
+    "update_wall_s": 0.19499310699757189,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 43.0,
+    "position_correction_m": 0.007867697966181423,
+    "yaw_correction_deg": 0.03258392418455762
+  },
+  {
+    "state_time_s": 46.0,
+    "availability_cutoff_s": 47.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9634334665200919,
+      2.9122519703132426,
+      1.3274824185560334
+    ],
+    "antenna_xy_m": [
+      2.069987488787412,
+      3.0094437412542816
+    ],
+    "local_odom": [
+      1.0057198244919021,
+      -2.0046100533253464,
+      -1.857200347288347
+    ],
+    "aligned_odom_pose": [
+      1.923398227666754,
+      2.902071063881612,
+      1.3058979442663763
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0320251000877687,
+      2.996940461413317
+    ],
+    "range_medians_m": {
+      "node_10": 4.385999917984009,
+      "node_2": 5.046000003814697,
+      "node_3": 4.197999954223633,
+      "node_8": 3.246500015258789
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 45,
+    "dependency_receipt_max_s": 46.423640101,
+    "solve_wall_s": 0.18288811900129076,
+    "estimated_worker_start_s": 47.0,
+    "estimated_worker_finish_s": 47.18504595500417,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9634334665200919,
+      2.9122519703132426,
+      1.3274824185560334
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 17.167104700202934,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0004371065328227647,
+      "optimizer_njev": 6,
+      "keyframes": 45,
+      "range_factors": 180,
+      "odom_between_factors": 44
+    },
+    "update_wall_s": 0.18504595500417054,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 44.0,
+    "position_correction_m": 0.012866103619062668,
+    "yaw_correction_deg": 0.27255314536402203
+  },
+  {
+    "state_time_s": 47.0,
+    "availability_cutoff_s": 48.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9584410613507706,
+      2.9238447196420645,
+      1.2155594674543384
+    ],
+    "antenna_xy_m": [
+      2.075183685447727,
+      3.008527419876273
+    ],
+    "local_odom": [
+      0.9994244219654133,
+      -2.014525286645831,
+      -1.9734391698361007
+    ],
+    "aligned_odom_pose": [
+      1.9294789574792022,
+      2.9121193806420536,
+      1.1896591217186225
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0483754926595914,
+      2.993750342427999
+    ],
+    "range_medians_m": {
+      "node_10": 4.4070000648498535,
+      "node_2": 5.052000045776367,
+      "node_3": 4.195000171661377,
+      "node_8": 3.2955000400543213
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 46,
+    "dependency_receipt_max_s": 47.413367287,
+    "solve_wall_s": 0.2080414779993589,
+    "estimated_worker_start_s": 48.0,
+    "estimated_worker_finish_s": 48.214598914004455,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9584410613507706,
+      2.9238447196420645,
+      1.2155594674543384
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 17.38216478640879,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0004226968712647706,
+      "optimizer_njev": 6,
+      "keyframes": 46,
+      "range_factors": 184,
+      "odom_between_factors": 45
+    },
+    "update_wall_s": 0.21459891400445485,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 45.0,
+    "position_correction_m": 0.010946755529478751,
+    "yaw_correction_deg": 0.247281218780188
+  },
+  {
+    "state_time_s": 48.0,
+    "availability_cutoff_s": 49.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9487468754249173,
+      2.9064093355107343,
+      0.9903858647472796
+    ],
+    "antenna_xy_m": [
+      2.081449953554078,
+      2.9628884737393393
+    ],
+    "local_odom": [
+      1.0005755498229085,
+      -1.9979558941109603,
+      -2.1984608531336143
+    ],
+    "aligned_odom_pose": [
+      1.9286844036961468,
+      2.8955290657383284,
+      0.9646374384211089
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0627975826604557,
+      2.9485729648039825
+    ],
+    "range_medians_m": {
+      "node_10": 4.3454999923706055,
+      "node_2": 5.059000015258789,
+      "node_3": 4.204999923706055,
+      "node_8": 3.2980000972747803
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 47,
+    "dependency_receipt_max_s": 48.424711225,
+    "solve_wall_s": 0.21073584300029324,
+    "estimated_worker_start_s": 49.0,
+    "estimated_worker_finish_s": 49.214050966002105,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9487468754249173,
+      2.9064093355107343,
+      0.9903858647472796
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 17.660805744103328,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00046497384826889483,
+      "optimizer_njev": 6,
+      "keyframes": 47,
+      "range_factors": 188,
+      "odom_between_factors": 46
+    },
+    "update_wall_s": 0.21405096600210527,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 46.0,
+    "position_correction_m": 0.009366398076823951,
+    "yaw_correction_deg": 0.008704340993058054
+  },
+  {
+    "state_time_s": 49.0,
+    "availability_cutoff_s": 50.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9448134077429657,
+      2.9146669191434134,
+      0.7284834488721185
+    ],
+    "antenna_xy_m": [
+      2.0876146960531528,
+      2.934860781006635
+    ],
+    "local_odom": [
+      0.9996734892147991,
+      -2.002253472129259,
+      -2.461082771903639
+    ],
+    "aligned_odom_pose": [
+      1.9294938406811184,
+      2.8998450478897544,
+      0.7020155196510842
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.072779539401338,
+      2.9162526236478743
+    ],
+    "range_medians_m": {
+      "node_10": 4.340000152587891,
+      "node_2": 5.046000003814697,
+      "node_3": 4.184000015258789,
+      "node_8": 3.328000068664551
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 48,
+    "dependency_receipt_max_s": 49.423339807,
+    "solve_wall_s": 0.17959222999343183,
+    "estimated_worker_start_s": 50.0,
+    "estimated_worker_finish_s": 50.18274533300428,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9448134077429657,
+      2.9146669191434134,
+      0.7284834488721185
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 17.90902636174425,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0005032325164490356,
+      "optimizer_njev": 6,
+      "keyframes": 48,
+      "range_factors": 192,
+      "odom_between_factors": 47
+    },
+    "update_wall_s": 0.1827453330042772,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 47.0,
+    "position_correction_m": 0.006069148432648717,
+    "yaw_correction_deg": 0.041224479223126706
+  },
+  {
+    "state_time_s": 50.0,
+    "availability_cutoff_s": 51.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9396373889532754,
+      2.9254561746562207,
+      0.5387016632651044
+    ],
+    "antenna_xy_m": [
+      2.083684203658011,
+      2.918348771936559
+    ],
+    "local_odom": [
+      1.000399048094477,
+      -2.004190219780128,
+      -2.6529534455192643
+    ],
+    "aligned_odom_pose": [
+      1.928726801794393,
+      2.9017657452884293,
+      0.510144846035459
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.072511948776089,
+      2.89054828089347
+    ],
+    "range_medians_m": {
+      "node_10": 4.355000019073486,
+      "node_2": 5.035999774932861,
+      "node_3": 4.184000015258789,
+      "node_8": 3.321000099182129
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 49,
+    "dependency_receipt_max_s": 50.425285293,
+    "solve_wall_s": 0.19388204399729148,
+    "estimated_worker_start_s": 51.0,
+    "estimated_worker_finish_s": 51.19606807600212,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9396373889532754,
+      2.9254561746562207,
+      0.5387016632651044
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 18.18309234034864,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0004905886786127325,
+      "optimizer_njev": 6,
+      "keyframes": 49,
+      "range_factors": 196,
+      "odom_between_factors": 48
+    },
+    "update_wall_s": 0.1960680760021205,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 48.0,
+    "position_correction_m": 0.009900482563925169,
+    "yaw_correction_deg": 0.11968446676890768
+  },
+  {
+    "state_time_s": 51.0,
+    "availability_cutoff_s": 52.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.944910052431827,
+      2.9450046695256327,
+      0.45144845113259535
+    ],
+    "antenna_xy_m": [
+      2.087789534713229,
+      2.925371698711248
+    ],
+    "local_odom": [
+      0.9934543659908176,
+      -2.007035202380043,
+      -2.7463256405384358
+    ],
+    "aligned_odom_pose": [
+      1.9356086995785822,
+      2.904759408329368,
+      0.41677265101628747
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.077721637979705,
+      2.880184772238498
+    ],
+    "range_medians_m": {
+      "node_10": 4.4029998779296875,
+      "node_2": 5.010000228881836,
+      "node_3": 4.158999919891357,
+      "node_8": 3.347499966621399
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 50,
+    "dependency_receipt_max_s": 51.407841609,
+    "solve_wall_s": 0.22278401799849235,
+    "estimated_worker_start_s": 52.0,
+    "estimated_worker_finish_s": 52.23078644400084,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.944910052431827,
+      2.9450046695256327,
+      0.45144845113259535
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 18.505282170373953,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0005797673976767085,
+      "optimizer_njev": 6,
+      "keyframes": 50,
+      "range_factors": 200,
+      "odom_between_factors": 49
+    },
+    "update_wall_s": 0.23078644400084158,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 49.0,
+    "position_correction_m": 0.01643010341037906,
+    "yaw_correction_deg": 0.3505918943185363
+  },
+  {
+    "state_time_s": 52.0,
+    "availability_cutoff_s": 53.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9248025597728449,
+      2.967012559452611,
+      0.16842106687089922
+    ],
+    "antenna_xy_m": [
+      2.056514716987891,
+      2.9082596221493664
+    ],
+    "local_odom": [
+      0.9959121059905197,
+      -2.0065863259797965,
+      -3.0262863338848085
+    ],
+    "aligned_odom_pose": [
+      1.9331611805293603,
+      2.9042577845335513,
+      0.13681195766991472
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.062950725285283,
+      2.8413715851568173
+    ],
+    "range_medians_m": {
+      "node_10": 4.494999885559082,
+      "node_2": 5.059999942779541,
+      "node_3": 4.178999900817871,
+      "node_8": 3.191499948501587
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 51,
+    "dependency_receipt_max_s": 52.425561174,
+    "solve_wall_s": 0.24074550600198563,
+    "estimated_worker_start_s": 53.0,
+    "estimated_worker_finish_s": 53.24348065000231,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9248025597728449,
+      2.967012559452611,
+      0.16842106687089922
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 19.094264860074947,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0006837697185928804,
+      "optimizer_njev": 6,
+      "keyframes": 51,
+      "range_factors": 204,
+      "odom_between_factors": 50
+    },
+    "update_wall_s": 0.24348065000231145,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 50.0,
+    "position_correction_m": 0.028688551656381626,
+    "yaw_correction_deg": 0.17570844651914436
+  },
+  {
+    "state_time_s": 53.0,
+    "availability_cutoff_s": 54.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9205150209247632,
+      2.9981570794735326,
+      0.029959705491761558
+    ],
+    "antenna_xy_m": [
+      2.042857587819825,
+      2.9217876070023463
+    ],
+    "local_odom": [
+      1.0007084075586552,
+      -2.005219836295627,
+      -3.172773251576982
+    ],
+    "aligned_odom_pose": [
+      1.9283953730123984,
+      2.9027884712583405,
+      -0.009674960022258983
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0476157720382604,
+      2.8216312383328996
+    ],
+    "range_medians_m": {
+      "node_10": 4.552999973297119,
+      "node_2": 5.021999835968018,
+      "node_3": 4.195000171661377,
+      "node_8": 3.396499991416931
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 52,
+    "dependency_receipt_max_s": 53.406669163,
+    "solve_wall_s": 0.20424861699575558,
+    "estimated_worker_start_s": 54.0,
+    "estimated_worker_finish_s": 54.20661078400008,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9205150209247632,
+      2.9981570794735326,
+      0.029959705491761558
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 20.013651407581463,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0007080875630791628,
+      "optimizer_njev": 6,
+      "keyframes": 52,
+      "range_factors": 208,
+      "odom_between_factors": 51
+    },
+    "update_wall_s": 0.20661078400007682,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 51.0,
+    "position_correction_m": 0.03276653159299197,
+    "yaw_correction_deg": 0.4598305049815387
+  },
+  {
+    "state_time_s": 54.0,
+    "availability_cutoff_s": 55.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9200566214636252,
+      3.0312069607106,
+      0.03641154647180785
+    ],
+    "antenna_xy_m": [
+      2.0428893623100057,
+      2.9556284070318886
+    ],
+    "local_odom": [
+      1.0008021593093872,
+      -2.00527286529541,
+      -3.1736853122711186
+    ],
+    "aligned_odom_pose": [
+      1.928300502606003,
+      2.9028394719600388,
+      -0.01058702071639539
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0474468317329095,
+      2.8215735365652934
+    ],
+    "range_medians_m": {
+      "node_10": 4.561999797821045,
+      "node_2": 5.018500089645386,
+      "node_3": 4.192500114440918,
+      "node_8": 3.396499991416931
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 53,
+    "dependency_receipt_max_s": 54.403152749,
+    "solve_wall_s": 0.1793788709983346,
+    "estimated_worker_start_s": 55.0,
+    "estimated_worker_finish_s": 55.18150328100455,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9200566214636252,
+      3.0312069607106,
+      0.03641154647180785
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 20.820288715219892,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0009635589629261032,
+      "optimizer_njev": 6,
+      "keyframes": 53,
+      "range_factors": 212,
+      "odom_between_factors": 52
+    },
+    "update_wall_s": 0.18150328100455226,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 52.0,
+    "position_correction_m": 0.03300466048101367,
+    "yaw_correction_deg": 0.4219204866799899
+  },
+  {
+    "state_time_s": 55.0,
+    "availability_cutoff_s": 56.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.917660746699853,
+      3.0643741967497515,
+      0.04238876296201195
+    ],
+    "antenna_xy_m": [
+      2.040943040010325,
+      2.9895311866812704
+    ],
+    "local_odom": [
+      1.0008021593093872,
+      -2.00527286529541,
+      -3.173885583877564
+    ],
+    "aligned_odom_pose": [
+      1.928300502606003,
+      2.9028394719600388,
+      -0.010787292322840702
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.047430554084184,
+      2.821549676568453
+    ],
+    "range_medians_m": {
+      "node_10": 4.568999767303467,
+      "node_2": 5.010000228881836,
+      "node_3": 4.223999977111816,
+      "node_8": 3.4075000286102295
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 54,
+    "dependency_receipt_max_s": 55.424017751,
+    "solve_wall_s": 0.20578773099987302,
+    "estimated_worker_start_s": 56.0,
+    "estimated_worker_finish_s": 56.208205681003164,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.917660746699853,
+      3.0643741967497515,
+      0.04238876296201195
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 21.636177239205523,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.001411190151760111,
+      "optimizer_njev": 6,
+      "keyframes": 54,
+      "range_factors": 216,
+      "odom_between_factors": 53
+    },
+    "update_wall_s": 0.2082056810031645,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 53.0,
+    "position_correction_m": 0.033253657879404354,
+    "yaw_correction_deg": 0.35394399593031534
+  },
+  {
+    "state_time_s": 56.0,
+    "availability_cutoff_s": 57.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9157855331359956,
+      3.0937013963497426,
+      0.04792183528596617
+    ],
+    "antenna_xy_m": [
+      2.039480048989055,
+      3.0195416582981744
+    ],
+    "local_odom": [
+      1.0008021593093872,
+      -2.00527286529541,
+      -3.173885583877564
+    ],
+    "aligned_odom_pose": [
+      1.928300502606003,
+      2.9028394719600388,
+      -0.010787292322840702
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.047430554084184,
+      2.821549676568453
+    ],
+    "range_medians_m": {
+      "node_10": 4.559999942779541,
+      "node_2": 5.016000032424927,
+      "node_3": 4.208000183105469,
+      "node_8": 3.4040000438690186
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 55,
+    "dependency_receipt_max_s": 56.41493711,
+    "solve_wall_s": 0.20441657499759458,
+    "estimated_worker_start_s": 57.0,
+    "estimated_worker_finish_s": 57.206471256999066,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9157855331359956,
+      3.0937013963497426,
+      0.04792183528596617
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 22.236217809691208,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0016707645114084624,
+      "optimizer_njev": 6,
+      "keyframes": 55,
+      "range_factors": 220,
+      "odom_between_factors": 54
+    },
+    "update_wall_s": 0.2064712569990661,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 54.0,
+    "position_correction_m": 0.029387090061586425,
+    "yaw_correction_deg": 0.3170216919032189
+  },
+  {
+    "state_time_s": 57.0,
+    "availability_cutoff_s": 58.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.912914091454128,
+      3.1201944866394244,
+      0.05246496809062737
+    ],
+    "antenna_xy_m": [
+      2.0369442471582646,
+      3.046597472596682
+    ],
+    "local_odom": [
+      1.0008021593093872,
+      -2.00527286529541,
+      -3.173885583877564
+    ],
+    "aligned_odom_pose": [
+      1.928300502606003,
+      2.9028394719600388,
+      -0.010787292322840702
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.047430554084184,
+      2.821549676568453
+    ],
+    "range_medians_m": {
+      "node_10": 4.564000129699707,
+      "node_2": 5.019999980926514,
+      "node_3": 4.216000080108643,
+      "node_8": 3.4049999713897705
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 39,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 56,
+    "dependency_receipt_max_s": 57.412944748,
+    "solve_wall_s": 0.25603104200126836,
+    "estimated_worker_start_s": 58.0,
+    "estimated_worker_finish_s": 58.25911614300276,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.912914091454128,
+      3.1201944866394244,
+      0.05246496809062737
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 22.762122529149917,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0015938918791843504,
+      "optimizer_njev": 6,
+      "keyframes": 56,
+      "range_factors": 224,
+      "odom_between_factors": 55
+    },
+    "update_wall_s": 0.25911614300275687,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 55.0,
+    "position_correction_m": 0.026648245916562695,
+    "yaw_correction_deg": 0.2603023354745193
+  },
+  {
+    "state_time_s": 58.0,
+    "availability_cutoff_s": 59.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9095345712339946,
+      3.1434486847001746,
+      0.05616976593378179
+    ],
+    "antenna_xy_m": [
+      2.033836537184626,
+      3.070311681337936
+    ],
+    "local_odom": [
+      1.0008021593093872,
+      -2.00527286529541,
+      -3.173885583877564
+    ],
+    "aligned_odom_pose": [
+      1.928300502606003,
+      2.9028394719600388,
+      -0.010787292322840702
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.047430554084184,
+      2.821549676568453
+    ],
+    "range_medians_m": {
+      "node_10": 4.560999870300293,
+      "node_2": 5.014999866485596,
+      "node_3": 4.228000164031982,
+      "node_8": 3.3984999656677246
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 57,
+    "dependency_receipt_max_s": 58.423554533,
+    "solve_wall_s": 0.18141031200502766,
+    "estimated_worker_start_s": 59.0,
+    "estimated_worker_finish_s": 59.18460340900492,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9095345712339946,
+      3.1434486847001746,
+      0.05616976593378179
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 23.224875046179264,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0014193379097870995,
+      "optimizer_njev": 6,
+      "keyframes": 57,
+      "range_factors": 228,
+      "odom_between_factors": 56
+    },
+    "update_wall_s": 0.18460340900492156,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 56.0,
+    "position_correction_m": 0.023498486852707896,
+    "yaw_correction_deg": 0.21226928036191883
+  },
+  {
+    "state_time_s": 59.0,
+    "availability_cutoff_s": 60.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9098261143129187,
+      3.166234563065539,
+      0.0547900714847722
+    ],
+    "antenna_xy_m": [
+      2.034027055270102,
+      3.092926130635495
+    ],
+    "local_odom": [
+      0.9997108079948452,
+      -2.005575861787354,
+      -3.179731920810133
+    ],
+    "aligned_odom_pose": [
+      1.929385085928797,
+      2.9031658667850584,
+      -0.016633629255409677
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0480378566749717,
+      2.821180990165918
+    ],
+    "range_medians_m": {
+      "node_10": 4.572499990463257,
+      "node_2": 4.993000030517578,
+      "node_3": 4.209000110626221,
+      "node_8": 3.3989999294281006
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 58,
+    "dependency_receipt_max_s": 59.423732363,
+    "solve_wall_s": 0.22820030299772043,
+    "estimated_worker_start_s": 60.0,
+    "estimated_worker_finish_s": 60.23154298800364,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9098261143129187,
+      3.166234563065539,
+      0.0547900714847722
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 7,
+      "cost": 23.634149633637445,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0006943170393190756,
+      "optimizer_njev": 7,
+      "keyframes": 58,
+      "range_factors": 232,
+      "odom_between_factors": 57
+    },
+    "update_wall_s": 0.23154298800363904,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 57.0,
+    "position_correction_m": 0.022400844242275425,
+    "yaw_correction_deg": 0.25591976290178464
+  },
+  {
+    "state_time_s": 60.0,
+    "availability_cutoff_s": 61.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9325206395575238,
+      3.1847442538923265,
+      -0.08012303861035415
+    ],
+    "antenna_xy_m": [
+      2.045732676420432,
+      3.0953964239838645
+    ],
+    "local_odom": [
+      0.9727284649249864,
+      -2.003884118832708,
+      -3.3184530625645725
+    ],
+    "aligned_odom_pose": [
+      1.9563975688811384,
+      2.9020547427984495,
+      -0.1553547710098493
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.0625739241695658,
+      2.804450533987222
+    ],
+    "range_medians_m": {
+      "node_10": 4.553999900817871,
+      "node_2": 4.988999843597412,
+      "node_3": 4.195499897003174,
+      "node_8": 3.35099995136261
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 59,
+    "dependency_receipt_max_s": 60.425304957,
+    "solve_wall_s": 0.8769560649961932,
+    "estimated_worker_start_s": 61.0,
+    "estimated_worker_finish_s": 61.878772989002755,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9325206395575238,
+      3.1847442538923265,
+      -0.08012303861035415
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 7,
+      "cost": 23.89840645383811,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0006463750469137275,
+      "optimizer_njev": 7,
+      "keyframes": 59,
+      "range_factors": 236,
+      "odom_between_factors": 58
+    },
+    "update_wall_s": 0.8787729890027549,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 58.0,
+    "position_correction_m": 0.018212118142657753,
+    "yaw_correction_deg": 0.2181841423308504
+  },
+  {
+    "state_time_s": 61.0,
+    "availability_cutoff_s": 62.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      1.9743037231520104,
+      3.184197715439011,
+      -0.10346035468252061
+    ],
+    "antenna_xy_m": [
+      2.0853999827796184,
+      3.0922323899257766
+    ],
+    "local_odom": [
+      0.9303948591228683,
+      -1.996753051042146,
+      -3.342763598558103
+    ],
+    "aligned_odom_pose": [
+      1.998874731915028,
+      2.8958356650022576,
+      -0.17966530700337957
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.1026471366053565,
+      2.7956793470548273
+    ],
+    "range_medians_m": {
+      "node_10": 4.456999778747559,
+      "node_2": 4.979000091552734,
+      "node_3": 4.130500078201294,
+      "node_8": 3.3450000286102295
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 60,
+    "dependency_receipt_max_s": 61.4235807,
+    "solve_wall_s": 0.27106286300113425,
+    "estimated_worker_start_s": 62.0,
+    "estimated_worker_finish_s": 62.2762925499992,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      1.9743037231520104,
+      3.184197715439011,
+      -0.10346035468252061
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 7,
+      "cost": 23.999068260607164,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0006549074327014681,
+      "optimizer_njev": 7,
+      "keyframes": 60,
+      "range_factors": 240,
+      "odom_between_factors": 59
+    },
+    "update_wall_s": 0.27629254999919794,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 59.0,
+    "position_correction_m": 0.0026734821696436013,
+    "yaw_correction_deg": 0.05576139403220052
+  },
+  {
+    "state_time_s": 62.0,
+    "availability_cutoff_s": 63.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.009839289516817,
+      3.1874176877129097,
+      -0.08028811438332323
+    ],
+    "antenna_xy_m": [
+      2.1230365756751928,
+      3.0980511704574027
+    ],
+    "local_odom": [
+      0.890035072811748,
+      -1.9895245767422456,
+      -3.322701393166743
+    ],
+    "aligned_odom_pose": [
+      2.039380626506307,
+      2.889476758245289,
+      -0.15960310161201985
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.1451413699442425,
+      2.7914223593258365
+    ],
+    "range_medians_m": {
+      "node_10": 4.464000225067139,
+      "node_2": 4.942999839782715,
+      "node_3": 4.164000034332275,
+      "node_8": 3.384999990463257
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 61,
+    "dependency_receipt_max_s": 62.414110131,
+    "solve_wall_s": 0.2581915260016103,
+    "estimated_worker_start_s": 63.0,
+    "estimated_worker_finish_s": 63.261794322999776,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.009839289516817,
+      3.1874176877129097,
+      -0.08028811438332323
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 7,
+      "cost": 24.2570125997121,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0007133569802938444,
+      "optimizer_njev": 7,
+      "keyframes": 61,
+      "range_factors": 244,
+      "odom_between_factors": 60
+    },
+    "update_wall_s": 0.26179432299977634,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 60.0,
+    "position_correction_m": 0.008392226585464128,
+    "yaw_correction_deg": 0.17819187435745612
+  },
+  {
+    "state_time_s": 63.0,
+    "availability_cutoff_s": 64.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.049500258909259,
+      3.1997538825261316,
+      0.014656690049904563
+    ],
+    "antenna_xy_m": [
+      2.1706598632502545,
+      3.121521214950921
+    ],
+    "local_odom": [
+      0.8444763443886515,
+      -1.9835685893073915,
+      -3.240832783850499
+    ],
+    "aligned_odom_pose": [
+      2.085056897487639,
+      2.884501842055692,
+      -0.07773449229577567
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.1984820226315964,
+      2.7954246789549417
+    ],
+    "range_medians_m": {
+      "node_10": 4.521999835968018,
+      "node_2": 4.9045000076293945,
+      "node_3": 4.0879998207092285,
+      "node_8": 3.419000029563904
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 62,
+    "dependency_receipt_max_s": 63.424899558,
+    "solve_wall_s": 0.31135487199935596,
+    "estimated_worker_start_s": 64.0,
+    "estimated_worker_finish_s": 64.31399262499326,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.049500258909259,
+      3.1997538825261316,
+      0.014656690049904563
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 7,
+      "cost": 24.44633526124762,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0008636883506956128,
+      "optimizer_njev": 7,
+      "keyframes": 62,
+      "range_factors": 248,
+      "odom_between_factors": 61
+    },
+    "update_wall_s": 0.3139926249932614,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 61.0,
+    "position_correction_m": 0.015043491800447265,
+    "yaw_correction_deg": 0.7492107922927368
+  },
+  {
+    "state_time_s": 64.0,
+    "availability_cutoff_s": 65.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.0882315974417023,
+      3.196627500933282,
+      0.11159940285020836
+    ],
+    "antenna_xy_m": [
+      2.2163945387576627,
+      3.1304893086897554
+    ],
+    "local_odom": [
+      0.8002084203688832,
+      -1.9838115318500071,
+      -3.1328359549270917
+    ],
+    "aligned_odom_pose": [
+      2.129309360879652,
+      2.8856966649871465,
+      0.03026233662763156
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.251675033952152,
+      2.8093642206825518
+    ],
+    "range_medians_m": {
+      "node_10": 4.375999927520752,
+      "node_2": 4.8480000495910645,
+      "node_3": 4.052999973297119,
+      "node_8": 3.3610000610351562
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 63,
+    "dependency_receipt_max_s": 64.413604457,
+    "solve_wall_s": 0.23540242099988973,
+    "estimated_worker_start_s": 65.0,
+    "estimated_worker_finish_s": 65.24102565400244,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.0882315974417023,
+      3.196627500933282,
+      0.11159940285020836
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 7,
+      "cost": 24.81275805636344,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0005945798359115739,
+      "optimizer_njev": 7,
+      "keyframes": 63,
+      "range_factors": 252,
+      "odom_between_factors": 62
+    },
+    "update_wall_s": 0.24102565400244202,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 62.0,
+    "position_correction_m": 0.009889957184258153,
+    "yaw_correction_deg": 0.6333542001013427
+  },
+  {
+    "state_time_s": 65.0,
+    "availability_cutoff_s": 66.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.150612137506248,
+      3.2034262577589017,
+      0.14639491464499174
+    ],
+    "antenna_xy_m": [
+      2.2809983493413144,
+      3.1417866944630677
+    ],
+    "local_odom": [
+      0.7547391793307879,
+      -1.984787391026419,
+      -3.099985761981483
+    ],
+    "aligned_odom_pose": [
+      2.174747102875807,
+      2.8876500681722193,
+      0.0631125295732402
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.299553841887221,
+      2.815377819713099
+    ],
+    "range_medians_m": {
+      "node_10": 4.370999813079834,
+      "node_2": 4.804500102996826,
+      "node_3": 3.9989999532699585,
+      "node_8": 3.902999997138977
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 64,
+    "dependency_receipt_max_s": 65.424850121,
+    "solve_wall_s": 0.21915080500184558,
+    "estimated_worker_start_s": 66.0,
+    "estimated_worker_finish_s": 66.22279106300266,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.150612137506248,
+      3.2034262577589017,
+      0.14639491464499174
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 7,
+      "cost": 26.432881909307113,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0005880002495407682,
+      "optimizer_njev": 7,
+      "keyframes": 64,
+      "range_factors": 256,
+      "odom_between_factors": 63
+    },
+    "update_wall_s": 0.22279106300265994,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 63.0,
+    "position_correction_m": 0.017290688407019313,
+    "yaw_correction_deg": 0.11145855986495848
+  },
+  {
+    "state_time_s": 66.0,
+    "availability_cutoff_s": 67.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.2014263965416476,
+      3.2084901656564453,
+      0.14866725029219266
+    ],
+    "antenna_xy_m": [
+      2.3319523374080675,
+      3.147147042480853
+    ],
+    "local_odom": [
+      0.7145440281468471,
+      -1.9864145726457862,
+      -3.0966393921199002
+    ],
+    "aligned_odom_pose": [
+      2.214897968559225,
+      2.890141229265846,
+      0.06645889943482297
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.3399458579891173,
+      2.8182870341960427
+    ],
+    "range_medians_m": {
+      "node_10": 4.371999979019165,
+      "node_2": 4.78000020980835,
+      "node_3": 3.96150004863739,
+      "node_8": 3.6780000925064087
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 65,
+    "dependency_receipt_max_s": 66.41609446,
+    "solve_wall_s": 0.21386166399315698,
+    "estimated_worker_start_s": 67.0,
+    "estimated_worker_finish_s": 67.21809939599916,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.2014263965416476,
+      3.2084901656564453,
+      0.14866725029219266
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 7,
+      "cost": 26.953288981739764,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0003577375628313062,
+      "optimizer_njev": 7,
+      "keyframes": 65,
+      "range_factors": 260,
+      "odom_between_factors": 64
+    },
+    "update_wall_s": 0.21809939599916106,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 64.0,
+    "position_correction_m": 0.011035890006198106,
+    "yaw_correction_deg": 0.06153762753672889
+  },
+  {
+    "state_time_s": 67.0,
+    "availability_cutoff_s": 68.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.258684585742973,
+      3.2158925901976776,
+      0.1430847858261781
+    ],
+    "antenna_xy_m": [
+      2.388866048738663,
+      3.153821770223218
+    ],
+    "local_odom": [
+      0.6698773900734096,
+      -1.9882889867081381,
+      -3.10314228029969
+    ],
+    "aligned_odom_pose": [
+      2.2595139706759113,
+      2.892975720399092,
+      0.059956011255033026
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.384091959627808,
+      2.8203098778821216
+    ],
+    "range_medians_m": {
+      "node_10": 4.358500003814697,
+      "node_2": 4.726999998092651,
+      "node_3": 3.940999984741211,
+      "node_8": 3.794000029563904
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 66,
+    "dependency_receipt_max_s": 67.423680467,
+    "solve_wall_s": 0.24091027800022857,
+    "estimated_worker_start_s": 68.0,
+    "estimated_worker_finish_s": 68.24596087700047,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.258684585742973,
+      3.2158925901976776,
+      0.1430847858261781
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 7,
+      "cost": 27.822874632020362,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0003800546420884843,
+      "optimizer_njev": 7,
+      "keyframes": 66,
+      "range_factors": 264,
+      "odom_between_factors": 65
+    },
+    "update_wall_s": 0.24596087700047065,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 65.0,
+    "position_correction_m": 0.013057636885913729,
+    "yaw_correction_deg": 0.05273639416308632
+  },
+  {
+    "state_time_s": 68.0,
+    "availability_cutoff_s": 69.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.3176628744096424,
+      3.2197067368111743,
+      0.11983119323635592
+    ],
+    "antenna_xy_m": [
+      2.4463659030239873,
+      3.1546257839486422
+    ],
+    "local_odom": [
+      0.6235621226233439,
+      -1.9900907006924171,
+      -3.1224377599778954
+    ],
+    "aligned_odom_pose": [
+      2.305779784285634,
+      2.8957729803588794,
+      0.04066053157682781
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.4289325475128045,
+      2.8207170218378366
+    ],
+    "range_medians_m": {
+      "node_10": 4.330999851226807,
+      "node_2": 4.703000068664551,
+      "node_3": 3.8910000324249268,
+      "node_8": 3.821000099182129
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 67,
+    "dependency_receipt_max_s": 68.413520482,
+    "solve_wall_s": 0.20348960300179897,
+    "estimated_worker_start_s": 69.0,
+    "estimated_worker_finish_s": 69.20553315900179,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.3176628744096424,
+      3.2197067368111743,
+      0.11983119323635592
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 7,
+      "cost": 28.637185868197957,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00036100830557078516,
+      "optimizer_njev": 7,
+      "keyframes": 67,
+      "range_factors": 268,
+      "odom_between_factors": 66
+    },
+    "update_wall_s": 0.2055331590017886,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 66.0,
+    "position_correction_m": 0.013403452957736105,
+    "yaw_correction_deg": 0.22678316467188897
+  },
+  {
+    "state_time_s": 69.0,
+    "availability_cutoff_s": 70.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.3754289129725596,
+      3.2215081508011005,
+      0.09509997881317332
+    ],
+    "antenna_xy_m": [
+      2.5024832171539555,
+      3.1532644420142732
+    ],
+    "local_odom": [
+      0.5783672681347201,
+      -1.990563372169774,
+      -3.1429852754848033
+    ],
+    "aligned_odom_pose": [
+      2.3509540237190976,
+      2.8972174117977167,
+      0.020113016069919887
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.472538685335024,
+      2.81964699179279
+    ],
+    "range_medians_m": {
+      "node_10": 4.313999891281128,
+      "node_2": 4.671000003814697,
+      "node_3": 3.8669999837875366,
+      "node_8": 3.899500012397766
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 68,
+    "dependency_receipt_max_s": 69.413562037,
+    "solve_wall_s": 0.27522737300023437,
+    "estimated_worker_start_s": 70.0,
+    "estimated_worker_finish_s": 70.27720162600599,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.3754289129725596,
+      3.2215081508011005,
+      0.09509997881317332
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 7,
+      "cost": 29.65493675167455,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00037920948059122495,
+      "optimizer_njev": 7,
+      "keyframes": 68,
+      "range_factors": 272,
+      "odom_between_factors": 67
+    },
+    "update_wall_s": 0.27720162600598997,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 67.0,
+    "position_correction_m": 0.013242781171161695,
+    "yaw_correction_deg": 0.23970829065599555
+  },
+  {
+    "state_time_s": 70.0,
+    "availability_cutoff_s": 71.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.4287489796748263,
+      3.2272050942932515,
+      0.07295681456401425
+    ],
+    "antenna_xy_m": [
+      2.5542611283472625,
+      3.1561649610189657
+    ],
+    "local_odom": [
+      0.5340345595752758,
+      -1.9895908691295003,
+      -3.1683823455554823
+    ],
+    "aligned_odom_pose": [
+      2.3952973935880584,
+      2.8971984633281256,
+      -0.005284054000759042
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.5148729959654554,
+      2.8165654966452442
+    ],
+    "range_medians_m": {
+      "node_10": 4.354000091552734,
+      "node_2": 4.656499862670898,
+      "node_3": 3.8329999446868896,
+      "node_8": 3.9549999237060547
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 69,
+    "dependency_receipt_max_s": 70.424918613,
+    "solve_wall_s": 0.2568734559972654,
+    "estimated_worker_start_s": 71.0,
+    "estimated_worker_finish_s": 71.26034706099745,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.4287489796748263,
+      3.2272050942932515,
+      0.07295681456401425
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 30.639091093872697,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0026299434613565875,
+      "optimizer_njev": 6,
+      "keyframes": 69,
+      "range_factors": 276,
+      "odom_between_factors": 68
+    },
+    "update_wall_s": 0.26034706099744653,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 68.0,
+    "position_correction_m": 0.009409473990792479,
+    "yaw_correction_deg": 0.18643507050613653
+  },
+  {
+    "state_time_s": 71.0,
+    "availability_cutoff_s": 72.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.479200189871085,
+      3.2278419290358347,
+      0.05203399260798093
+    ],
+    "antenna_xy_m": [
+      2.6031986155488833,
+      3.1541914678734795
+    ],
+    "local_odom": [
+      0.4945924585715006,
+      -1.9882953970276704,
+      -3.1872175187105922
+    ],
+    "aligned_odom_pose": [
+      2.434758231912672,
+      2.8967514529509266,
+      -0.024119227155869005
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.5527939782803655,
+      2.81388069466176
+    ],
+    "range_medians_m": {
+      "node_10": 4.314000129699707,
+      "node_2": 4.609499931335449,
+      "node_3": 3.7829999923706055,
+      "node_8": 3.9214999675750732
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 70,
+    "dependency_receipt_max_s": 71.414466933,
+    "solve_wall_s": 0.22141956999985268,
+    "estimated_worker_start_s": 72.0,
+    "estimated_worker_finish_s": 72.22745163900254,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.479200189871085,
+      3.2278419290358347,
+      0.05203399260798093
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 31.395743059006765,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.002486961860945325,
+      "optimizer_njev": 6,
+      "keyframes": 70,
+      "range_factors": 280,
+      "odom_between_factors": 69
+    },
+    "update_wall_s": 0.2274516390025383,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 69.0,
+    "position_correction_m": 0.011255597804103974,
+    "yaw_correction_deg": 0.11961346539845512
+  },
+  {
+    "state_time_s": 72.0,
+    "availability_cutoff_s": 73.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.529976218786049,
+      3.225072252085929,
+      0.032423557650015346
+    ],
+    "antenna_xy_m": [
+      2.652506577236093,
+      3.149004445110154
+    ],
+    "local_odom": [
+      0.44763466336368163,
+      -1.9862627701154316,
+      -3.2004490805445083
+    ],
+    "aligned_odom_pose": [
+      2.4817488782948693,
+      2.8957290755611558,
+      -0.037350788989785055
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.598677814736977,
+      2.811303819727859
+    ],
+    "range_medians_m": {
+      "node_10": 4.296000003814697,
+      "node_2": 4.590000152587891,
+      "node_3": 3.76200008392334,
+      "node_8": 3.861999988555908
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 71,
+    "dependency_receipt_max_s": 72.424827917,
+    "solve_wall_s": 0.19986994300415972,
+    "estimated_worker_start_s": 73.0,
+    "estimated_worker_finish_s": 73.20487632099685,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.529976218786049,
+      3.225072252085929,
+      0.032423557650015346
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 31.910253976134957,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.002249951690504126,
+      "optimizer_njev": 6,
+      "keyframes": 71,
+      "range_factors": 284,
+      "odom_between_factors": 70
+    },
+    "update_wall_s": 0.2048763209968456,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 70.0,
+    "position_correction_m": 0.006567608915938831,
+    "yaw_correction_deg": 0.3654825080574688
+  },
+  {
+    "state_time_s": 73.0,
+    "availability_cutoff_s": 74.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.56245713284616,
+      3.21769113981797,
+      0.017240593161044804
+    ],
+    "antenna_xy_m": [
+      2.683818478131183,
+      3.139771797735215
+    ],
+    "local_odom": [
+      0.3993357522117299,
+      -1.98337507221814,
+      -3.203332397480001
+    ],
+    "aligned_odom_pose": [
+      2.5300987179347643,
+      2.8938806642415034,
+      -0.04023410592527776
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.6467837438992428,
+      2.809118616627792
+    ],
+    "range_medians_m": {
+      "node_10": 4.293499946594238,
+      "node_2": 4.571000099182129,
+      "node_3": 3.754499912261963,
+      "node_8": 3.709499955177307
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 72,
+    "dependency_receipt_max_s": 73.423413053,
+    "solve_wall_s": 0.231625307998911,
+    "estimated_worker_start_s": 74.0,
+    "estimated_worker_finish_s": 74.23377283599984,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.56245713284616,
+      3.21769113981797,
+      0.017240593161044804
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 32.41149824695755,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0015966421452677793,
+      "optimizer_njev": 6,
+      "keyframes": 72,
+      "range_factors": 288,
+      "odom_between_factors": 71
+    },
+    "update_wall_s": 0.23377283599984366,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 71.0,
+    "position_correction_m": 0.01820802605695731,
+    "yaw_correction_deg": 0.7047178943126885
+  },
+  {
+    "state_time_s": 74.0,
+    "availability_cutoff_s": 75.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.576812231362719,
+      3.2032080750479537,
+      0.0016743498829678855
+    ],
+    "antenna_xy_m": [
+      2.696946011083958,
+      3.123409109077906
+    ],
+    "local_odom": [
+      0.3551871586545342,
+      -1.9809081948338225,
+      -3.196880273812068
+    ],
+    "aligned_odom_pose": [
+      2.5742901503721973,
+      2.892363727777604,
+      -0.033781982257344634
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.691519638971157,
+      2.8083563054696534
+    ],
+    "range_medians_m": {
+      "node_10": 4.295000076293945,
+      "node_2": 4.632500171661377,
+      "node_3": 3.7365000247955322,
+      "node_8": 3.5779999494552612
+    },
+    "range_sample_counts": {
+      "node_10": 39,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 73,
+    "dependency_receipt_max_s": 74.414896705,
+    "solve_wall_s": 0.21866213400062406,
+    "estimated_worker_start_s": 75.0,
+    "estimated_worker_finish_s": 75.2213870409978,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.576812231362719,
+      3.2032080750479537,
+      0.0016743498829678855
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 33.291529449528255,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0009394440199796961,
+      "optimizer_njev": 6,
+      "keyframes": 73,
+      "range_factors": 292,
+      "odom_between_factors": 72
+    },
+    "update_wall_s": 0.22138704099779716,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 72.0,
+    "position_correction_m": 0.033638123614721606,
+    "yaw_correction_deg": 1.2615594977767315
+  },
+  {
+    "state_time_s": 75.0,
+    "availability_cutoff_s": 76.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.593085502012753,
+      3.1848395165131067,
+      -0.01041765335469575
+    ],
+    "antenna_xy_m": [
+      2.7122455932277933,
+      3.1035937617832543
+    ],
+    "local_odom": [
+      0.31188115359785235,
+      -1.9783973465057434,
+      -3.1821104545724306
+    ],
+    "aligned_odom_pose": [
+      2.6176401346973317,
+      2.8907847115311474,
+      -0.019012163017707362
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.7360975661960496,
+      2.808517847468351
+    ],
+    "range_medians_m": {
+      "node_10": 4.256500005722046,
+      "node_2": 4.623000144958496,
+      "node_3": 3.7070000171661377,
+      "node_8": 3.5920000076293945
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 74,
+    "dependency_receipt_max_s": 75.413659632,
+    "solve_wall_s": 0.21469745499780402,
+    "estimated_worker_start_s": 76.0,
+    "estimated_worker_finish_s": 76.21755586999643,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.593085502012753,
+      3.1848395165131067,
+      -0.01041765335469575
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 34.12699356056072,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0015312714146014095,
+      "optimizer_njev": 6,
+      "keyframes": 74,
+      "range_factors": 296,
+      "odom_between_factors": 73
+    },
+    "update_wall_s": 0.21755586999643128,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 73.0,
+    "position_correction_m": 0.032719915540813896,
+    "yaw_correction_deg": 1.5390690579789916
+  },
+  {
+    "state_time_s": 76.0,
+    "availability_cutoff_s": 77.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.6117715754512814,
+      3.1711341631047043,
+      -0.02202318767443533
+    ],
+    "antenna_xy_m": [
+      2.729980762785079,
+      3.0885109942603473
+    ],
+    "local_odom": [
+      0.27087286895883306,
+      -1.9770935256957567,
+      -3.1727771759033208
+    ],
+    "aligned_odom_pose": [
+      2.658666974027539,
+      2.890363033558369,
+      -0.009678884348597538
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.777887054565016,
+      2.8092053327738014
+    ],
+    "range_medians_m": {
+      "node_10": 4.242000102996826,
+      "node_2": 4.577000141143799,
+      "node_3": 3.680500030517578,
+      "node_8": 3.618499994277954
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 75,
+    "dependency_receipt_max_s": 76.425129369,
+    "solve_wall_s": 0.19873332099814434,
+    "estimated_worker_start_s": 77.0,
+    "estimated_worker_finish_s": 77.20253718300228,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.6117715754512814,
+      3.1711341631047043,
+      -0.02202318767443533
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 34.85364461438911,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.001387212807756999,
+      "optimizer_njev": 6,
+      "keyframes": 75,
+      "range_factors": 300,
+      "odom_between_factors": 74
+    },
+    "update_wall_s": 0.20253718300227774,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 74.0,
+    "position_correction_m": 0.026175418189429023,
+    "yaw_correction_deg": 1.1997056122747798
+  },
+  {
+    "state_time_s": 77.0,
+    "availability_cutoff_s": 78.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.6350423287443756,
+      3.1496777610236513,
+      -0.04829656642613328
+    ],
+    "antenna_xy_m": [
+      2.7510401790182026,
+      3.0639777100793792
+    ],
+    "local_odom": [
+      0.22400044710875242,
+      -1.9762181407370811,
+      -3.1672489911397044
+    ],
+    "aligned_odom_pose": [
+      2.705547381485328,
+      2.890495794657631,
+      -0.0041506995849811545
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.8252142927750503,
+      2.8099984012689148
+    ],
+    "range_medians_m": {
+      "node_10": 4.226000070571899,
+      "node_2": 4.662499904632568,
+      "node_3": 3.6570000648498535,
+      "node_8": 3.708500027656555
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 76,
+    "dependency_receipt_max_s": 77.423601228,
+    "solve_wall_s": 0.23562347199913347,
+    "estimated_worker_start_s": 78.0,
+    "estimated_worker_finish_s": 78.23823078699934,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.6350423287443756,
+      3.1496777610236513,
+      -0.04829656642613328
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 35.367695144789586,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.002770884886302727,
+      "optimizer_njev": 6,
+      "keyframes": 76,
+      "range_factors": 304,
+      "odom_between_factors": 75
+    },
+    "update_wall_s": 0.2382307869993383,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 75.0,
+    "position_correction_m": 0.031603227725608786,
+    "yaw_correction_deg": 1.8220953713447339
+  },
+  {
+    "state_time_s": 78.0,
+    "availability_cutoff_s": 79.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.664136793566222,
+      3.14001171189059,
+      -0.05713551449507047
+    ],
+    "antenna_xy_m": [
+      2.779372624151026,
+      3.053289723044448
+    ],
+    "local_odom": [
+      0.17728672379298252,
+      -1.975829540914627,
+      -3.1618036156395046
+    ],
+    "aligned_odom_pose": [
+      2.7522586592878486,
+      2.8911118156800675,
+      0.0012946759152185905
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.8723621327610016,
+      2.8112672437939112
+    ],
+    "range_medians_m": {
+      "node_10": 4.263999938964844,
+      "node_2": 4.620500087738037,
+      "node_3": 3.6109999418258667,
+      "node_8": 3.771499991416931
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 77,
+    "dependency_receipt_max_s": 78.41294817,
+    "solve_wall_s": 0.23518842199700885,
+    "estimated_worker_start_s": 79.0,
+    "estimated_worker_finish_s": 79.23892112500471,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.664136793566222,
+      3.14001171189059,
+      -0.05713551449507047
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 35.59121178616995,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0025470083122313136,
+      "optimizer_njev": 6,
+      "keyframes": 77,
+      "range_factors": 308,
+      "odom_between_factors": 76
+    },
+    "update_wall_s": 0.2389211250047083,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 76.0,
+    "position_correction_m": 0.019423586793498048,
+    "yaw_correction_deg": 0.8184314537107948
+  },
+  {
+    "state_time_s": 79.0,
+    "availability_cutoff_s": 80.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.70179460651257,
+      3.13560372347125,
+      -0.05588133491045948
+    ],
+    "antenna_xy_m": [
+      2.817139111385773,
+      3.0490263292187336
+    ],
+    "local_odom": [
+      0.13323029890643592,
+      -1.97538002827914,
+      -3.1562373472548546
+    ],
+    "aligned_odom_pose": [
+      2.7963145629956436,
+      2.8916097954817035,
+      0.00686094429986861
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.9168606098911587,
+      2.8124349852333403
+    ],
+    "range_medians_m": {
+      "node_10": 4.234000205993652,
+      "node_2": 4.523000001907349,
+      "node_3": 3.5789999961853027,
+      "node_8": 3.8399999141693115
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 78,
+    "dependency_receipt_max_s": 79.414721924,
+    "solve_wall_s": 0.2577188249997562,
+    "estimated_worker_start_s": 80.0,
+    "estimated_worker_finish_s": 80.26115004199528,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.70179460651257,
+      3.13560372347125,
+      -0.05588133491045948
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 35.79284874075009,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.00278216911620921,
+      "optimizer_njev": 6,
+      "keyframes": 78,
+      "range_factors": 312,
+      "odom_between_factors": 77
+    },
+    "update_wall_s": 0.261150041995279,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 77.0,
+    "position_correction_m": 0.006766666594047577,
+    "yaw_correction_deg": 0.24706448912786821
+  },
+  {
+    "state_time_s": 80.0,
+    "availability_cutoff_s": 81.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.738443385066555,
+      3.1298836410611783,
+      -0.05808845431019306
+    ],
+    "antenna_xy_m": [
+      2.8535965225053523,
+      3.043051878796432
+    ],
+    "local_odom": [
+      0.09029278841587775,
+      -1.9746665455952481,
+      -3.153024051145418
+    ],
+    "aligned_odom_pose": [
+      2.839257487448939,
+      2.891819805161527,
+      0.010074240409305268
+    ],
+    "aligned_odom_antenna_xy_m": [
+      2.9600573236815593,
+      2.813032753140449
+    ],
+    "range_medians_m": {
+      "node_10": 4.2200000286102295,
+      "node_2": 4.495999813079834,
+      "node_3": 3.5325000286102295,
+      "node_8": 3.8454999923706055
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 39,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 79,
+    "dependency_receipt_max_s": 80.415068011,
+    "solve_wall_s": 0.2192666749979253,
+    "estimated_worker_start_s": 81.0,
+    "estimated_worker_finish_s": 81.24653808899893,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.738443385066555,
+      3.1298836410611783,
+      -0.05808845431019306
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 35.992624036525086,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.002861704344832794,
+      "optimizer_njev": 6,
+      "keyframes": 79,
+      "range_factors": 316,
+      "odom_between_factors": 78
+    },
+    "update_wall_s": 0.24653808899893193,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 78.0,
+    "position_correction_m": 0.007014437160543388,
+    "yaw_correction_deg": 0.3105669318827099
+  },
+  {
+    "state_time_s": 81.0,
+    "availability_cutoff_s": 82.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.7765155827411285,
+      3.1196435091695047,
+      -0.06473675712874552
+    ],
+    "antenna_xy_m": [
+      2.8910888957118086,
+      3.032048098588113
+    ],
+    "local_odom": [
+      0.04668994569520519,
+      -1.9743470489802233,
+      -3.1485031371475705
+    ],
+    "aligned_odom_pose": [
+      2.882857118014041,
+      2.8924380170971076,
+      0.014595154407152755
+    ],
+    "aligned_odom_antenna_xy_m": [
+      3.0040119080281626,
+      2.8141978940358925
+    ],
+    "range_medians_m": {
+      "node_10": 4.2270002365112305,
+      "node_2": 4.539499998092651,
+      "node_3": 3.4399999380111694,
+      "node_8": 3.8604999780654907
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 80,
+    "dependency_receipt_max_s": 81.41487128,
+    "solve_wall_s": 0.370950486001675,
+    "estimated_worker_start_s": 82.0,
+    "estimated_worker_finish_s": 82.37434795999434,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.7765155827411285,
+      3.1196435091695047,
+      -0.06473675712874552
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 36.061892039404704,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0030598146552840433,
+      "optimizer_njev": 6,
+      "keyframes": 80,
+      "range_factors": 320,
+      "odom_between_factors": 79
+    },
+    "update_wall_s": 0.37434795999433845,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 79.0,
+    "position_correction_m": 0.009597519128893884,
+    "yaw_correction_deg": 0.6399489840462624
+  },
+  {
+    "state_time_s": 82.0,
+    "availability_cutoff_s": 83.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.803318270660802,
+      3.1105719377189445,
+      -0.07930089281907472
+    ],
+    "antenna_xy_m": [
+      2.9166037261964073,
+      3.0213172147957823
+    ],
+    "local_odom": [
+      0.0197297531472822,
+      -1.9758956994433805,
+      -3.1519684564276536
+    ],
+    "aligned_odom_pose": [
+      2.9097777742102404,
+      2.894566060904025,
+      0.011129835127069665
+    ],
+    "aligned_odom_antenna_xy_m": [
+      3.03066071032093,
+      2.8159065684237214
+    ],
+    "range_medians_m": {
+      "node_10": 4.203000068664551,
+      "node_2": 4.5269999504089355,
+      "node_3": 3.402500033378601,
+      "node_8": 3.9040000438690186
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 81,
+    "dependency_receipt_max_s": 82.413564546,
+    "solve_wall_s": 0.31440304199350066,
+    "estimated_worker_start_s": 83.0,
+    "estimated_worker_finish_s": 83.32024259999889,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.803318270660802,
+      3.1105719377189445,
+      -0.07930089281907472
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 36.113353149996705,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0014304840236170069,
+      "optimizer_njev": 6,
+      "keyframes": 81,
+      "range_factors": 324,
+      "odom_between_factors": 80
+    },
+    "update_wall_s": 0.3202425999988918,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 80.0,
+    "position_correction_m": 0.009061745104097341,
+    "yaw_correction_deg": 0.6359153378976411
+  },
+  {
+    "state_time_s": 83.0,
+    "availability_cutoff_s": 84.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.80317476431697,
+      3.1017690186615217,
+      -0.08909865860079728
+    ],
+    "antenna_xy_m": [
+      2.9155802995298563,
+      3.011408653160354
+    ],
+    "local_odom": [
+      0.019724201411008835,
+      -1.975895643234253,
+      -3.1519753932952885
+    ],
+    "aligned_odom_pose": [
+      2.909783325871465,
+      2.894566124092323,
+      0.011122898259434688
+    ],
+    "aligned_odom_antenna_xy_m": [
+      3.0306657163287585,
+      2.8159057930649847
+    ],
+    "range_medians_m": {
+      "node_10": 4.195000171661377,
+      "node_2": 4.534999847412109,
+      "node_3": 3.3949999809265137,
+      "node_8": 3.8959999084472656
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 82,
+    "dependency_receipt_max_s": 83.414815362,
+    "solve_wall_s": 0.3331361040036427,
+    "estimated_worker_start_s": 84.0,
+    "estimated_worker_finish_s": 84.33743485499872,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.80317476431697,
+      3.1017690186615217,
+      -0.08909865860079728
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 36.17023996205045,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0007195623327849177,
+      "optimizer_njev": 6,
+      "keyframes": 82,
+      "range_factors": 328,
+      "odom_between_factors": 81
+    },
+    "update_wall_s": 0.33743485499871895,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 81.0,
+    "position_correction_m": 0.008803742299856277,
+    "yaw_correction_deg": 0.5609731747118735
+  },
+  {
+    "state_time_s": 84.0,
+    "availability_cutoff_s": 85.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.8032506600822718,
+      3.0953603203385325,
+      -0.0955028565904543
+    ],
+    "antenna_xy_m": [
+      2.915075208501253,
+      3.004281945457934
+    ],
+    "local_odom": [
+      0.019724201411008835,
+      -1.975895643234253,
+      -3.1519753932952885
+    ],
+    "aligned_odom_pose": [
+      2.909783325871465,
+      2.894566124092323,
+      0.011122898259434688
+    ],
+    "aligned_odom_antenna_xy_m": [
+      3.0306657163287585,
+      2.8159057930649847
+    ],
+    "range_medians_m": {
+      "node_10": 4.197000026702881,
+      "node_2": 4.535999774932861,
+      "node_3": 3.4049999713897705,
+      "node_8": 3.909000039100647
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 83,
+    "dependency_receipt_max_s": 84.413642849,
+    "solve_wall_s": 0.3360770250001224,
+    "estimated_worker_start_s": 85.0,
+    "estimated_worker_finish_s": 85.34274399800051,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.8032506600822718,
+      3.0953603203385325,
+      -0.0955028565904543
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 36.204728841836626,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0009588859439424446,
+      "optimizer_njev": 6,
+      "keyframes": 83,
+      "range_factors": 332,
+      "odom_between_factors": 82
+    },
+    "update_wall_s": 0.3427439980005147,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 82.0,
+    "position_correction_m": 0.006409147709506708,
+    "yaw_correction_deg": 0.36693351597351304
+  },
+  {
+    "state_time_s": 85.0,
+    "availability_cutoff_s": 86.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.8037259500987526,
+      3.090258253310673,
+      -0.09992987564068363
+    ],
+    "antenna_xy_m": [
+      2.9151461983393236,
+      2.998685723139177
+    ],
+    "local_odom": [
+      0.019724201411008835,
+      -1.975895643234253,
+      -3.1519753932952885
+    ],
+    "aligned_odom_pose": [
+      2.909783325871465,
+      2.894566124092323,
+      0.011122898259434688
+    ],
+    "aligned_odom_antenna_xy_m": [
+      3.0306657163287585,
+      2.8159057930649847
+    ],
+    "range_medians_m": {
+      "node_10": 4.195000171661377,
+      "node_2": 4.5289998054504395,
+      "node_3": 3.399999976158142,
+      "node_8": 3.902999997138977
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 84,
+    "dependency_receipt_max_s": 85.424258286,
+    "solve_wall_s": 0.3262649850003072,
+    "estimated_worker_start_s": 86.0,
+    "estimated_worker_finish_s": 86.33334106099937,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.8037259500987526,
+      3.090258253310673,
+      -0.09992987564068363
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 36.24205248553935,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0008469789140972406,
+      "optimizer_njev": 6,
+      "keyframes": 84,
+      "range_factors": 336,
+      "odom_between_factors": 83
+    },
+    "update_wall_s": 0.33334106099937344,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 83.0,
+    "position_correction_m": 0.0051241573508762316,
+    "yaw_correction_deg": 0.2536495074021553
+  },
+  {
+    "state_time_s": 86.0,
+    "availability_cutoff_s": 87.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.8038040930777575,
+      3.0860821522016306,
+      -0.10319330139186074
+    ],
+    "antenna_xy_m": [
+      2.914924908386327,
+      2.994146498589124
+    ],
+    "local_odom": [
+      0.019724201411008835,
+      -1.975895643234253,
+      -3.1519753932952885
+    ],
+    "aligned_odom_pose": [
+      2.909783325871465,
+      2.894566124092323,
+      0.011122898259434688
+    ],
+    "aligned_odom_antenna_xy_m": [
+      3.0306657163287585,
+      2.8159057930649847
+    ],
+    "range_medians_m": {
+      "node_10": 4.199000120162964,
+      "node_2": 4.5325000286102295,
+      "node_3": 3.3940000534057617,
+      "node_8": 3.896000027656555
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 85,
+    "dependency_receipt_max_s": 86.413968325,
+    "solve_wall_s": 0.3212331960021402,
+    "estimated_worker_start_s": 87.0,
+    "estimated_worker_finish_s": 87.32755067400285,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.8038040930777575,
+      3.0860821522016306,
+      -0.10319330139186074
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 36.27664296993556,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0007807164844945147,
+      "optimizer_njev": 6,
+      "keyframes": 85,
+      "range_factors": 340,
+      "odom_between_factors": 84
+    },
+    "update_wall_s": 0.32755067400285043,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 84.0,
+    "position_correction_m": 0.004176832148663783,
+    "yaw_correction_deg": 0.18698052229675857
+  },
+  {
+    "state_time_s": 87.0,
+    "availability_cutoff_s": 88.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.8030256511424283,
+      3.0844124472289116,
+      -0.10444549792603519
+    ],
+    "antenna_xy_m": [
+      2.914031257855768,
+      2.9923377206303305
+    ],
+    "local_odom": [
+      0.019724201411008835,
+      -1.975895643234253,
+      -3.1519753932952885
+    ],
+    "aligned_odom_pose": [
+      2.909783325871465,
+      2.894566124092323,
+      0.011122898259434688
+    ],
+    "aligned_odom_antenna_xy_m": [
+      3.0306657163287585,
+      2.8159057930649847
+    ],
+    "range_medians_m": {
+      "node_10": 4.2165000438690186,
+      "node_2": 4.535999774932861,
+      "node_3": 3.39300000667572,
+      "node_8": 3.893499970436096
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 86,
+    "dependency_receipt_max_s": 87.413461391,
+    "solve_wall_s": 0.3694702850043541,
+    "estimated_worker_start_s": 88.0,
+    "estimated_worker_finish_s": 88.37411126899678,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.8030256511424283,
+      3.0844124472289116,
+      -0.10444549792603519
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 36.299215722686306,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0006908797548237366,
+      "optimizer_njev": 6,
+      "keyframes": 86,
+      "range_factors": 344,
+      "odom_between_factors": 85
+    },
+    "update_wall_s": 0.37411126899678493,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 85.0,
+    "position_correction_m": 0.0018422504017102587,
+    "yaw_correction_deg": 0.07174557652910524
+  },
+  {
+    "state_time_s": 88.0,
+    "availability_cutoff_s": 89.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.8033924129114447,
+      3.082513511001102,
+      -0.1056094065853611
+    ],
+    "antenna_xy_m": [
+      2.914290777888671,
+      2.990309646410848
+    ],
+    "local_odom": [
+      0.019724201411008835,
+      -1.975895643234253,
+      -3.1519753932952885
+    ],
+    "aligned_odom_pose": [
+      2.909783325871465,
+      2.894566124092323,
+      0.011122898259434688
+    ],
+    "aligned_odom_antenna_xy_m": [
+      3.0306657163287585,
+      2.8159057930649847
+    ],
+    "range_medians_m": {
+      "node_10": 4.218999862670898,
+      "node_2": 4.549000024795532,
+      "node_3": 3.3889999389648438,
+      "node_8": 3.909999966621399
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 87,
+    "dependency_receipt_max_s": 88.424669421,
+    "solve_wall_s": 0.33500658700359054,
+    "estimated_worker_start_s": 89.0,
+    "estimated_worker_finish_s": 89.34744848300033,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.8033924129114447,
+      3.082513511001102,
+      -0.1056094065853611
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 36.30802428041272,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0006849411809961847,
+      "optimizer_njev": 6,
+      "keyframes": 87,
+      "range_factors": 348,
+      "odom_between_factors": 86
+    },
+    "update_wall_s": 0.3474484830003348,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 86.0,
+    "position_correction_m": 0.0019340302460148049,
+    "yaw_correction_deg": 0.06668705391810428
+  },
+  {
+    "state_time_s": 89.0,
+    "availability_cutoff_s": 90.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.8034492962869026,
+      3.0806242903673766,
+      -0.10668980667004631
+    ],
+    "antenna_xy_m": [
+      2.91424797949655,
+      2.9883006650106556
+    ],
+    "local_odom": [
+      0.019724201411008835,
+      -1.975895643234253,
+      -3.1519753932952885
+    ],
+    "aligned_odom_pose": [
+      2.909783325871465,
+      2.894566124092323,
+      0.011122898259434688
+    ],
+    "aligned_odom_antenna_xy_m": [
+      3.0306657163287585,
+      2.8159057930649847
+    ],
+    "range_medians_m": {
+      "node_10": 4.210000038146973,
+      "node_2": 4.53849983215332,
+      "node_3": 3.3959999084472656,
+      "node_8": 3.9040000438690186
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 88,
+    "dependency_receipt_max_s": 89.424095958,
+    "solve_wall_s": 0.33280341399949975,
+    "estimated_worker_start_s": 90.0,
+    "estimated_worker_finish_s": 90.33662036400347,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.8034492962869026,
+      3.0806242903673766,
+      -0.10668980667004631
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 36.32318089880461,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0008052476136827802,
+      "optimizer_njev": 6,
+      "keyframes": 88,
+      "range_factors": 352,
+      "odom_between_factors": 87
+    },
+    "update_wall_s": 0.3366203640034655,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 87.0,
+    "position_correction_m": 0.001890076803015419,
+    "yaw_correction_deg": 0.0619023650380394
+  },
+  {
+    "state_time_s": 90.0,
+    "availability_cutoff_s": 91.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.8046687923328126,
+      3.0783115029331842,
+      -0.10774555435376615
+    ],
+    "antenna_xy_m": [
+      2.9153699433586677,
+      2.9858709535971335
+    ],
+    "local_odom": [
+      0.019724201411008835,
+      -1.975895643234253,
+      -3.1519753932952885
+    ],
+    "aligned_odom_pose": [
+      2.909783325871465,
+      2.894566124092323,
+      0.011122898259434688
+    ],
+    "aligned_odom_antenna_xy_m": [
+      3.0306657163287585,
+      2.8159057930649847
+    ],
+    "range_medians_m": {
+      "node_10": 4.204999923706055,
+      "node_2": 4.540999889373779,
+      "node_3": 3.3940000534057617,
+      "node_8": 3.9149999618530273
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 89,
+    "dependency_receipt_max_s": 90.41352404,
+    "solve_wall_s": 0.3770009610016132,
+    "estimated_worker_start_s": 91.0,
+    "estimated_worker_finish_s": 91.3821103339942,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.8046687923328126,
+      3.0783115029331842,
+      -0.10774555435376615
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 36.33491814292613,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0007971406763754296,
+      "optimizer_njev": 6,
+      "keyframes": 89,
+      "range_factors": 356,
+      "odom_between_factors": 88
+    },
+    "update_wall_s": 0.3821103339942056,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 88.0,
+    "position_correction_m": 0.0026146044293063326,
+    "yaw_correction_deg": 0.060489886507859345
+  },
+  {
+    "state_time_s": 91.0,
+    "availability_cutoff_s": 92.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.8054629467271806,
+      3.076018757852046,
+      -0.10872276781876884
+    ],
+    "antenna_xy_m": [
+      2.9160737107610744,
+      2.983470074015709
+    ],
+    "local_odom": [
+      0.019724201411008835,
+      -1.975895643234253,
+      -3.1519753932952885
+    ],
+    "aligned_odom_pose": [
+      2.909783325871465,
+      2.894566124092323,
+      0.011122898259434688
+    ],
+    "aligned_odom_antenna_xy_m": [
+      3.0306657163287585,
+      2.8159057930649847
+    ],
+    "range_medians_m": {
+      "node_10": 4.203000068664551,
+      "node_2": 4.543000221252441,
+      "node_3": 3.397499918937683,
+      "node_8": 3.916000008583069
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 90,
+    "dependency_receipt_max_s": 91.414714626,
+    "solve_wall_s": 0.3844086489989422,
+    "estimated_worker_start_s": 92.0,
+    "estimated_worker_finish_s": 92.38745194699732,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.8054629467271806,
+      3.076018757852046,
+      -0.10872276781876884
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 36.34527874804204,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0007095900981992087,
+      "optimizer_njev": 6,
+      "keyframes": 90,
+      "range_factors": 360,
+      "odom_between_factors": 89
+    },
+    "update_wall_s": 0.38745194699731655,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 89.0,
+    "position_correction_m": 0.0024263885115903758,
+    "yaw_correction_deg": 0.05599020722800953
+  },
+  {
+    "state_time_s": 92.0,
+    "availability_cutoff_s": 93.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.8058625708531846,
+      3.0740974025759544,
+      -0.10950542189229237
+    ],
+    "antenna_xy_m": [
+      2.9164008674129036,
+      2.9814621771286354
+    ],
+    "local_odom": [
+      0.019724201411008835,
+      -1.975895643234253,
+      -3.1519753932952885
+    ],
+    "aligned_odom_pose": [
+      2.909783325871465,
+      2.894566124092323,
+      0.011122898259434688
+    ],
+    "aligned_odom_antenna_xy_m": [
+      3.0306657163287585,
+      2.8159057930649847
+    ],
+    "range_medians_m": {
+      "node_10": 4.202000141143799,
+      "node_2": 4.539499998092651,
+      "node_3": 3.397499918937683,
+      "node_8": 3.909999966621399
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 91,
+    "dependency_receipt_max_s": 92.414453811,
+    "solve_wall_s": 0.6159447089958121,
+    "estimated_worker_start_s": 93.0,
+    "estimated_worker_finish_s": 93.62166702700051,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.8058625708531846,
+      3.0740974025759544,
+      -0.10950542189229237
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 36.35887222172765,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0008147932156448157,
+      "optimizer_njev": 6,
+      "keyframes": 91,
+      "range_factors": 364,
+      "odom_between_factors": 90
+    },
+    "update_wall_s": 0.6216670270005125,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 90.0,
+    "position_correction_m": 0.0019624743409912687,
+    "yaw_correction_deg": 0.044842775231619794
+  },
+  {
+    "state_time_s": 93.0,
+    "availability_cutoff_s": 94.0,
+    "status": "graph",
+    "accepted_graph": true,
+    "pose": [
+      2.8059260675190973,
+      3.0721229980474964,
+      -0.11026675277447681
+    ],
+    "antenna_xy_m": [
+      2.9163938059923553,
+      2.979403643236304
+    ],
+    "local_odom": [
+      0.019724201411008835,
+      -1.975895643234253,
+      -3.1519753932952885
+    ],
+    "aligned_odom_pose": [
+      2.909783325871465,
+      2.894566124092323,
+      0.011122898259434688
+    ],
+    "aligned_odom_antenna_xy_m": [
+      3.0306657163287585,
+      2.8159057930649847
+    ],
+    "range_medians_m": {
+      "node_10": 4.203999996185303,
+      "node_2": 4.546499967575073,
+      "node_3": 3.3940000534057617,
+      "node_8": 3.9079999923706055
+    },
+    "range_sample_counts": {
+      "node_10": 40,
+      "node_2": 40,
+      "node_3": 40,
+      "node_8": 40
+    },
+    "graph_states": 92,
+    "dependency_receipt_max_s": 93.427178652,
+    "solve_wall_s": 0.8811748990046908,
+    "estimated_worker_start_s": 94.0,
+    "estimated_worker_finish_s": 94.89862777000235,
+    "estimated_worker_queue_s": 0.0,
+    "candidate_pose": [
+      2.8059260675190973,
+      3.0721229980474964,
+      -0.11026675277447681
+    ],
+    "optimizer": {
+      "optimizer_success": true,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 6,
+      "cost": 36.37004656937382,
+      "optimizer_status": 2,
+      "optimizer_optimality": 0.0009023132181371629,
+      "optimizer_njev": 6,
+      "keyframes": 92,
+      "range_factors": 368,
+      "odom_between_factors": 91
+    },
+    "update_wall_s": 0.8986277700023493,
+    "marginal_wall_s": 0.0,
+    "marginalizations": 0,
+    "graph_time_span_s": 91.0,
+    "position_correction_m": 0.001975425288027222,
+    "yaw_correction_deg": 0.04362104636214019
+  }
+]
