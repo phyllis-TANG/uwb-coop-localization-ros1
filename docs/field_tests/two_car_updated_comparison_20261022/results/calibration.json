@@ -1,0 +1,146 @@
+{
+  "car1_source": {
+    "path": "datasets/field_raw/20261018/bags/TWO_CAR_UWB_ODOM_IMU_static_20261018_013206.bag",
+    "sha256": "d9b8183c2ca6edef82affcde0f6c70dd8fcb71ba6c1b36374cd23e73a7d0671f",
+    "reference_antenna_xyz_m": [
+      3.0,
+      3.0,
+      0.17
+    ],
+    "method": "whole-static-bag per-link raw median minus surveyed 3D distance; no dynamic endpoints",
+    "reference_source": "datasets/field_raw/provenance/user_confirmations_20261020.md#p04--013206"
+  },
+  "car1_link_fit": {
+    "node_10": {
+      "samples": 1766,
+      "raw_median_m": 4.192,
+      "geometry_m": 3.64030561903805,
+      "bias_m": 0.5516943809619503,
+      "raw_iqr_m": 0.08999999999999986
+    },
+    "node_2": {
+      "samples": 1766,
+      "raw_median_m": 4.492,
+      "geometry_m": 4.067705126972702,
+      "bias_m": 0.4242948730272982,
+      "raw_iqr_m": 0.04800000000000004
+    },
+    "node_3": {
+      "samples": 1766,
+      "raw_median_m": 3.2824999999999998,
+      "geometry_m": 3.161048085682975,
+      "bias_m": 0.12145191431702473,
+      "raw_iqr_m": 0.04400000000000004
+    },
+    "node_8": {
+      "samples": 1766,
+      "raw_median_m": 3.988,
+      "geometry_m": 3.6462309307009066,
+      "bias_m": 0.34176906929909334,
+      "raw_iqr_m": 0.039000000000000146
+    }
+  },
+  "applied_biases_m": {
+    "car1": {
+      "node_10": 0.5516943809619503,
+      "node_2": 0.4242948730272982,
+      "node_3": 0.12145191431702473,
+      "node_8": 0.34176906929909334
+    },
+    "car2": {
+      "node_10": 0.6088636183798282,
+      "node_2": 0.449737490591974,
+      "node_3": 0.2012859604623305,
+      "node_8": 0.3685143909425328
+    }
+  },
+  "car2_policy": {
+    "method": "reuse frozen Oct17 P1 offsets, unchanged from merged single-car model",
+    "range_bias_m": {
+      "node_10": 0.6088636183798282,
+      "node_2": 0.449737490591974,
+      "node_3": 0.2012859604623305,
+      "node_8": 0.3685143909425328
+    },
+    "source": "docs/field_tests/single_car_fixed_lag_20261022/protocol.json"
+  },
+  "peer_correction_m": null,
+  "calibration_diagnostics": {
+    "origin_receipt_ns": 1792312328085370781,
+    "topic_counts": {
+      "/car1/imu": 711,
+      "/car1/PowerVoltage": 59,
+      "/car1/odom": 708,
+      "/car1/uwb/ranges": 1766,
+      "/car2/imu": 701,
+      "/car2/odom": 697,
+      "/car2/uwb/ranges": 1739,
+      "/car2/PowerVoltage": 58
+    },
+    "duplicate_uwb_id_groups": {
+      "car1": 0,
+      "car2": 0
+    },
+    "frames": {
+      "/car1/odom": [
+        "car1/odom_combined"
+      ],
+      "/car1/odom child": [
+        "base_footprint"
+      ],
+      "/car1/uwb/ranges": [
+        "car1/uwb_linktrack"
+      ],
+      "/car2/odom": [
+        "car2/odom_combined"
+      ],
+      "/car2/odom child": [
+        "base_footprint"
+      ],
+      "/car2/uwb/ranges": [
+        "car2/uwb_linktrack"
+      ]
+    },
+    "timing": {
+      "/car1/odom": {
+        "header_nonincreasing_steps": 0,
+        "receipt_minus_header_ms": {
+          "min": -76.72953605651855,
+          "median": -46.04673385620117,
+          "p95": -29.67109680175783,
+          "max": 305.76038360595703
+        }
+      },
+      "/car1/uwb/ranges": {
+        "header_nonincreasing_steps": 0,
+        "receipt_minus_header_ms": {
+          "min": -79.09107208251953,
+          "median": -75.35886764526367,
+          "p95": -71.36458158493042,
+          "max": 234.82108116149902
+        }
+      },
+      "/car2/odom": {
+        "header_nonincreasing_steps": 0,
+        "receipt_minus_header_ms": {
+          "min": -99.75242614746094,
+          "median": -77.03113555908203,
+          "p95": -44.74043846130371,
+          "max": -35.31026840209961
+        }
+      },
+      "/car2/uwb/ranges": {
+        "header_nonincreasing_steps": 0,
+        "receipt_minus_header_ms": {
+          "min": -95.32690048217773,
+          "median": -84.41162109375,
+          "p95": -78.8323163986206,
+          "max": -62.26539611816406
+        }
+      }
+    },
+    "imu_factors": 0,
+    "receipt_clock_note": "Inherited common bag receipt-time association; clock differences are not network latency or proof of synchronized acquisition."
+  },
+  "dynamic_endpoints_used": false
+}

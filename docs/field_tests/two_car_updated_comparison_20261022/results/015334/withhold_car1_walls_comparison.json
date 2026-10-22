@@ -1,0 +1,355 @@
+{
+  "independent": {
+    "optimizer": {
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 10,
+      "njev": 10,
+      "cost": 97.69389153068838,
+      "optimality": 0.000598465443303095,
+      "solve_wall_s": 4.183930354993208,
+      "solve_cpu_s": 4.1819365590000075
+    },
+    "keyframes": 93,
+    "first_last_keyframe_s": [
+      1.0,
+      93.0
+    ],
+    "endpoint_window_s": [
+      89.0,
+      90.0,
+      91.0,
+      92.0,
+      93.0
+    ],
+    "endpoint_antenna_xy_m": {
+      "car1": [
+        1.5,
+        3.9999999999999996
+      ],
+      "car2": [
+        3.0411532484589663,
+        3.031108006134897
+      ]
+    },
+    "endpoint_difference_m": {
+      "car1": 4.440892098500626e-16,
+      "car2": 0.09158592828332873
+    },
+    "wall_factor_count": 372,
+    "peer_factor_count": 0,
+    "cars": {
+      "car1": {
+        "estimated_base_path_m": 0.0,
+        "estimated_antenna_path_m": 0.0,
+        "estimated_antenna_net_displacement_m": 0.0,
+        "aligned_odom_path_m": 0.0,
+        "start_antenna_prior_displacement_m": 4.440892098500626e-16,
+        "odom_between_translation_errors": {
+          "count": 92,
+          "median_m": 0.0,
+          "median_abs_m": 0.0,
+          "rms_m": 0.0,
+          "max_abs_m": 0.0
+        },
+        "odom_between_yaw_rms_deg": 0.0,
+        "last_five_odom_max_translation_from_window_start_m": 0.0,
+        "last_five_odom_max_yaw_from_window_start_deg": 0.0,
+        "last_five_odom_stationary": true
+      },
+      "car2": {
+        "estimated_base_path_m": 1.9872137006552753,
+        "estimated_antenna_path_m": 1.9918638645450124,
+        "estimated_antenna_net_displacement_m": 1.3030284473878009,
+        "aligned_odom_path_m": 2.0758158056263065,
+        "start_antenna_prior_displacement_m": 0.42024243739849587,
+        "odom_between_translation_errors": {
+          "count": 92,
+          "median_m": 0.007603831078309774,
+          "median_abs_m": 0.007603831078309774,
+          "rms_m": 0.011309721852028934,
+          "max_abs_m": 0.0301437194756066
+        },
+        "odom_between_yaw_rms_deg": 0.2103610248119014,
+        "last_five_odom_max_translation_from_window_start_m": 0.0,
+        "last_five_odom_max_yaw_from_window_start_deg": 0.0028686794514180777,
+        "last_five_odom_stationary": false
+      }
+    },
+    "wall_residual_by_link": {
+      "car1": {
+        "node_10": {
+          "count": 0,
+          "median_m": null,
+          "median_abs_m": null,
+          "rms_m": null,
+          "max_abs_m": null
+        },
+        "node_2": {
+          "count": 0,
+          "median_m": null,
+          "median_abs_m": null,
+          "rms_m": null,
+          "max_abs_m": null
+        },
+        "node_3": {
+          "count": 0,
+          "median_m": null,
+          "median_abs_m": null,
+          "rms_m": null,
+          "max_abs_m": null
+        },
+        "node_8": {
+          "count": 0,
+          "median_m": null,
+          "median_abs_m": null,
+          "rms_m": null,
+          "max_abs_m": null
+        }
+      },
+      "car2": {
+        "node_10": {
+          "count": 93,
+          "median_m": 0.053728243872800174,
+          "median_abs_m": 0.0924956987300023,
+          "rms_m": 0.3946661455224899,
+          "max_abs_m": 2.006207771020083
+        },
+        "node_2": {
+          "count": 93,
+          "median_m": 0.03509530992778309,
+          "median_abs_m": 0.06031950598749791,
+          "rms_m": 0.07762428208011603,
+          "max_abs_m": 0.2556338377334155
+        },
+        "node_3": {
+          "count": 93,
+          "median_m": -0.05334859224134325,
+          "median_abs_m": 0.05531788078685729,
+          "rms_m": 0.10187634888775385,
+          "max_abs_m": 0.2011801730731153
+        },
+        "node_8": {
+          "count": 93,
+          "median_m": -0.0765132979011538,
+          "median_abs_m": 0.07908213508073736,
+          "rms_m": 0.12066751974908896,
+          "max_abs_m": 0.3983554993132459
+        }
+      }
+    },
+    "stationary_car": "car1",
+    "peer_residual_m": {
+      "count": 93,
+      "median_m": 0.18063615801417288,
+      "median_abs_m": 0.1942105392732396,
+      "rms_m": 0.2590882732164833,
+      "max_abs_m": 0.5037043832772232
+    },
+    "endpoint_distance": {
+      "estimated_3d_m": 1.8206606029162926,
+      "coordinate_reference_3d_m": 1.7392527130926088,
+      "estimated_minus_coordinate_reference_m": 0.08140788982368385,
+      "direct_tape_reference_m": 1.743,
+      "estimated_minus_tape_m": 0.07766060291629251,
+      "coordinate_reference_minus_tape_m": -0.003747286907391345
+    },
+    "factor_cost_ledger": {
+      "car1": {
+        "prior": 0.0,
+        "odom": 0.0,
+        "wall": 0.0
+      },
+      "car2": {
+        "prior": 2.29059473947946,
+        "odom": 7.0465076765523325,
+        "wall": 88.35678911465658
+      },
+      "peer": 0.0
+    },
+    "independent_solve_reused_from_configuration": null
+  },
+  "joint": {
+    "optimizer": {
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 12,
+      "njev": 12,
+      "cost": 104.8780476738338,
+      "optimality": 0.0012023535677391228,
+      "solve_wall_s": 5.87846097000147,
+      "solve_cpu_s": 5.859974495000017
+    },
+    "keyframes": 93,
+    "first_last_keyframe_s": [
+      1.0,
+      93.0
+    ],
+    "endpoint_window_s": [
+      89.0,
+      90.0,
+      91.0,
+      92.0,
+      93.0
+    ],
+    "endpoint_antenna_xy_m": {
+      "car1": [
+        1.6733434300631227,
+        3.9183650686050995
+      ],
+      "car2": [
+        3.0414372618725656,
+        3.0306619471788236
+      ]
+    },
+    "endpoint_difference_m": {
+      "car1": 0.19160429736803614,
+      "car2": 0.09191285051201047
+    },
+    "wall_factor_count": 372,
+    "peer_factor_count": 93,
+    "cars": {
+      "car1": {
+        "estimated_base_path_m": 0.48289879515750483,
+        "estimated_antenna_path_m": 0.48470886322900014,
+        "estimated_antenna_net_displacement_m": 0.4143498472724069,
+        "aligned_odom_path_m": 0.0,
+        "start_antenna_prior_displacement_m": 0.3038632583265002,
+        "odom_between_translation_errors": {
+          "count": 92,
+          "median_m": 0.003414272573361338,
+          "median_abs_m": 0.003414272573361338,
+          "rms_m": 0.007220085192985938,
+          "max_abs_m": 0.016080502093920104
+        },
+        "odom_between_yaw_rms_deg": 0.02893323842624433,
+        "last_five_odom_max_translation_from_window_start_m": 0.0,
+        "last_five_odom_max_yaw_from_window_start_deg": 0.0,
+        "last_five_odom_stationary": true
+      },
+      "car2": {
+        "estimated_base_path_m": 2.118823645834968,
+        "estimated_antenna_path_m": 2.084864790466102,
+        "estimated_antenna_net_displacement_m": 1.337811419146271,
+        "aligned_odom_path_m": 2.0758158056263065,
+        "start_antenna_prior_displacement_m": 0.28303761553195955,
+        "odom_between_translation_errors": {
+          "count": 92,
+          "median_m": 0.006288028580562489,
+          "median_abs_m": 0.006288028580562489,
+          "rms_m": 0.010288608992587654,
+          "max_abs_m": 0.02435179755569363
+        },
+        "odom_between_yaw_rms_deg": 0.176448033881324,
+        "last_five_odom_max_translation_from_window_start_m": 0.0,
+        "last_five_odom_max_yaw_from_window_start_deg": 0.0028686794514180777,
+        "last_five_odom_stationary": false
+      }
+    },
+    "wall_residual_by_link": {
+      "car1": {
+        "node_10": {
+          "count": 0,
+          "median_m": null,
+          "median_abs_m": null,
+          "rms_m": null,
+          "max_abs_m": null
+        },
+        "node_2": {
+          "count": 0,
+          "median_m": null,
+          "median_abs_m": null,
+          "rms_m": null,
+          "max_abs_m": null
+        },
+        "node_3": {
+          "count": 0,
+          "median_m": null,
+          "median_abs_m": null,
+          "rms_m": null,
+          "max_abs_m": null
+        },
+        "node_8": {
+          "count": 0,
+          "median_m": null,
+          "median_abs_m": null,
+          "rms_m": null,
+          "max_abs_m": null
+        }
+      },
+      "car2": {
+        "node_10": {
+          "count": 93,
+          "median_m": 0.055200480607840774,
+          "median_abs_m": 0.078342742446178,
+          "rms_m": 0.4210290804885156,
+          "max_abs_m": 2.072690698925871
+        },
+        "node_2": {
+          "count": 93,
+          "median_m": 0.03904866709548038,
+          "median_abs_m": 0.050096541758259505,
+          "rms_m": 0.07052131090732826,
+          "max_abs_m": 0.2386819168743992
+        },
+        "node_3": {
+          "count": 93,
+          "median_m": -0.04581734845169416,
+          "median_abs_m": 0.04581734845169416,
+          "rms_m": 0.09963664292284755,
+          "max_abs_m": 0.19593392696766188
+        },
+        "node_8": {
+          "count": 93,
+          "median_m": -0.0710294097231019,
+          "median_abs_m": 0.07718927077478277,
+          "rms_m": 0.11703097494172954,
+          "max_abs_m": 0.39919526973472763
+        }
+      }
+    },
+    "stationary_car": "car1",
+    "peer_residual_m": {
+      "count": 93,
+      "median_m": -0.001397918076268434,
+      "median_abs_m": 0.023359055869807133,
+      "rms_m": 0.039113800629122925,
+      "max_abs_m": 0.1064650955600247
+    },
+    "endpoint_distance": {
+      "estimated_3d_m": 1.6311338278709684,
+      "coordinate_reference_3d_m": 1.7392527130926088,
+      "estimated_minus_coordinate_reference_m": -0.10811888522164037,
+      "direct_tape_reference_m": 1.743,
+      "estimated_minus_tape_m": -0.11186617212903172,
+      "coordinate_reference_minus_tape_m": -0.003747286907391345
+    },
+    "factor_cost_ledger": {
+      "car1": {
+        "prior": 1.1526233855650068,
+        "odom": 2.674030342312423,
+        "wall": 0.0
+      },
+      "car2": {
+        "prior": 1.0610520466573745,
+        "odom": 5.768430894161565,
+        "wall": 92.48932966310699
+      },
+      "peer": 1.7325813420304699
+    },
+    "independent_solve_reused_from_configuration": null
+  },
+  "effect": {
+    "endpoint_difference_joint_minus_independent_m": {
+      "car1": 0.1916042973680357,
+      "car2": 0.0003269222286817336
+    },
+    "antenna_path_joint_minus_independent_m": {
+      "car1": 0.48470886322900014,
+      "car2": 0.09300092592108955
+    }
+  },
+  "matched_input_sha256": "f3b8d9f2adf23c47525d2a32941d598bbdb243656a8e0ceab7f7549e8eebba34"
+}

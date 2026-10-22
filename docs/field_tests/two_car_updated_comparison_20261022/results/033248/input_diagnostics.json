@@ -1,0 +1,78 @@
+{
+  "origin_receipt_ns": 1792319570409833299,
+  "topic_counts": {
+    "/car1/imu": 1160,
+    "/car1/PowerVoltage": 97,
+    "/car1/odom": 1158,
+    "/car1/uwb/ranges": 2888,
+    "/car2/imu": 1150,
+    "/car2/PowerVoltage": 96,
+    "/car2/odom": 1147,
+    "/car2/uwb/ranges": 2861,
+    "/car1/cmd_vel": 671
+  },
+  "duplicate_uwb_id_groups": {
+    "car1": 0,
+    "car2": 0
+  },
+  "frames": {
+    "/car1/odom": [
+      "car1/odom_combined"
+    ],
+    "/car1/odom child": [
+      "base_footprint"
+    ],
+    "/car1/uwb/ranges": [
+      "car1/uwb_linktrack"
+    ],
+    "/car2/odom": [
+      "car2/odom_combined"
+    ],
+    "/car2/odom child": [
+      "base_footprint"
+    ],
+    "/car2/uwb/ranges": [
+      "car2/uwb_linktrack"
+    ]
+  },
+  "timing": {
+    "/car1/odom": {
+      "header_nonincreasing_steps": 0,
+      "receipt_minus_header_ms": {
+        "min": -7.3795318603515625,
+        "median": 17.37082004547119,
+        "p95": 43.8970565795898,
+        "max": 387.2668743133545
+      }
+    },
+    "/car1/uwb/ranges": {
+      "header_nonincreasing_steps": 0,
+      "receipt_minus_header_ms": {
+        "min": -11.43503189086914,
+        "median": -4.899024963378906,
+        "p95": 8.258903026580825,
+        "max": 316.73741340637207
+      }
+    },
+    "/car2/odom": {
+      "header_nonincreasing_steps": 0,
+      "receipt_minus_header_ms": {
+        "min": 59.273481369018555,
+        "median": 80.70540428161621,
+        "p95": 113.77215385437012,
+        "max": 465.1923179626465
+      }
+    },
+    "/car2/uwb/ranges": {
+      "header_nonincreasing_steps": 0,
+      "receipt_minus_header_ms": {
+        "min": 57.43265151977539,
+        "median": 69.78106498718262,
+        "p95": 89.10393714904785,
+        "max": 484.26079750061035
+      }
+    }
+  },
+  "imu_factors": 0,
+  "receipt_clock_note": "Inherited common bag receipt-time association; clock differences are not network latency or proof of synchronized acquisition."
+}
