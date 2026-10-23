@@ -1,0 +1,9 @@
+id,method,kind,error_limit_m,time_axis,start_s,end_s,duration_s
+test_two_anchors_1703,M0,unalerted_exceedance,0.2,state,1.0,3.0,2.0
+test_two_anchors_1703,M1,unalerted_exceedance,0.2,state,1.0,3.0,2.0
+test_two_anchors_1703,M1,monitor_unavailable,,state,1.0,3.0,2.0
+test_two_anchors_1703,M1,monitor_unavailable,,state,26.0,61.0,35.0
+test_two_anchors_1703,M2,unalerted_exceedance,0.2,state,1.0,3.0,2.0
+test_two_anchors_1703,M2,monitor_unavailable,,state,1.0,3.0,2.0
+test_two_anchors_1703,M2,monitor_unavailable,,state,26.0,61.0,35.0
+test_two_anchors_1703,M2,alarm,,state,4.0,8.0,4.0

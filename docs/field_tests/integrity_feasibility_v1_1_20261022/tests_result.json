@@ -1,0 +1,19 @@
+{
+  "single_car_tests": {
+    "count": 37,
+    "passed": 37,
+    "failed": 0,
+    "duration_s": 1.551,
+    "command": "env PYTHONPATH=/home/ubuntu22/uwb/offline-deps OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -m unittest discover -s tools -p test_single_car_*.py -v",
+    "full_log": "single_car_tests.log"
+  },
+  "metric_tests": {
+    "count": 4,
+    "passed": 4,
+    "failed": 0,
+    "command": "env PYTHONPATH=/home/ubuntu22/uwb/offline-deps OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 -m unittest discover -s tools -p test_integrity_evaluation.py -v",
+    "full_log": "metric_tests.log"
+  },
+  "initial_fixture_failure": "Preserved in test_development_history.json; zero XY gradient test anchor changed, estimator unchanged",
+  "v1_generation_failure": "Preserved in previous version with source snapshot; v1.1 adds JSON label regression"
+}

@@ -1,0 +1,8 @@
+id,method,kind,error_limit_m,time_axis,start_s,end_s,duration_s
+test_negative_1302,M0,unalerted_exceedance,0.2,state,33.0,63.0,30.0
+test_negative_1302,M1,unalerted_exceedance,0.2,state,33.0,62.0,29.0
+test_negative_1302,M1,monitor_unavailable,,state,1.0,3.0,2.0
+test_negative_1302,M1,alarm,,state,27.0,31.0,4.0
+test_negative_1302,M1,alarm,,state,62.0,63.0,1.0
+test_negative_1302,M2,monitor_unavailable,,state,1.0,3.0,2.0
+test_negative_1302,M2,alarm,,state,29.0,69.0,40.0

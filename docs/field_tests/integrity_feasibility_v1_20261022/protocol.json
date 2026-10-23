@@ -1,0 +1,371 @@
+{
+  "schema_version": 1,
+  "experiment": "integrity-feasibility-v1",
+  "created_utc": "2026-10-22T15:39:12.550347+00:00",
+  "baseline_commit": "13aeade4c6b13ffa55b0acfafe65c29136067c0f",
+  "model": {
+    "anchors_xyz_m": {
+      "node_10": [
+        3.26,
+        0.1,
+        2.355
+      ],
+      "node_2": [
+        5.28,
+        5.16,
+        2.755
+      ],
+      "node_3": [
+        5.28,
+        2.86,
+        2.355
+      ],
+      "node_8": [
+        0.1,
+        2.41,
+        2.3
+      ]
+    },
+    "range_bias_m": {
+      "node_10": 0.6088636183798282,
+      "node_2": 0.449737490591974,
+      "node_3": 0.2012859604623305,
+      "node_8": 0.3685143909425328
+    },
+    "start_antenna_xyz_m": [
+      2,
+      2,
+      0.2
+    ],
+    "initial_heading_deg": 90,
+    "base_to_antenna_body_xy_m": [
+      0.12,
+      -0.08
+    ],
+    "antenna_height_m": 0.2,
+    "graph_parameters": {
+      "keyframe_step_s": 1,
+      "odom_translation_sigma_m": 0.03,
+      "odom_yaw_sigma_deg": 2,
+      "prior_heading_sigma_deg": 5,
+      "prior_position_sigma_m": 0.2,
+      "range_bin_half_width_s": 0.4,
+      "range_sigma_m": 0.2
+    }
+  },
+  "replay": {
+    "keyframe_step_s": 1,
+    "first_keyframe_margin_s": 1,
+    "range_bin_half_width_s": 0.4,
+    "minimum_samples_per_link": 5,
+    "release_delay_s": 1,
+    "clock_correction": "none",
+    "closed_bin_policy": "immutable; count late packets",
+    "eof_policy": "no timer advance beyond last recorded receipt",
+    "backend": "arm-specific; see arms",
+    "imu": "diagnostic messages only; zero independent IMU factors"
+  },
+  "lag_s": 20.0,
+  "max_nfev": 50,
+  "max_sensor_samples": 512,
+  "trajectory": {
+    "duration_s": 90.0,
+    "sensor_hz": 20.0,
+    "segments": [
+      [
+        0,
+        10,
+        "stationary"
+      ],
+      [
+        10,
+        35,
+        "straight"
+      ],
+      [
+        35,
+        45,
+        "turn_in_place_left_pi/2"
+      ],
+      [
+        45,
+        70,
+        "straight"
+      ],
+      [
+        70,
+        90,
+        "stationary"
+      ]
+    ],
+    "speed_m_s": 0.04,
+    "initial_truth_draw": "independent Gaussian world body XY offsets sigma .20m and yaw offset sigma 5deg around initial_prior; initial prior is external uncertain input",
+    "truth_sampling_hz": 20
+  },
+  "noise": {
+    "range_marginal_sigma_m": 0.06,
+    "nominal_range_ar1_rho": 0.2,
+    "mismatch_range_ar1_rho": 0.98,
+    "ar1_innovation": "sigma*sqrt(1-rho^2); stationary initialization",
+    "odom_xy_rw_sigma_m_sqrt_s": 0.004,
+    "odom_yaw_rw_sigma_rad_sqrt_s": 0.003,
+    "odom_scale_sigma": 0.01,
+    "independent_random_streams": [
+      "initial_truth",
+      "odom",
+      "uwb",
+      "receipt"
+    ]
+  },
+  "timing": {
+    "header_time": "physical sample time, no clock-fit correction",
+    "odom_delay_s": [
+      0.02,
+      0.03
+    ],
+    "uwb_delay_s": [
+      0.06,
+      0.08
+    ],
+    "uwb_extra_delay_s": 1.1,
+    "uwb_extra_delay_every_samples": 401,
+    "within_stream_delivery": "FIFO, receipt=max(sample+delay,previous_receipt+1e-6)",
+    "availability": "measured per-event CPU duration on serial replay worker; virtual start=max(original receipt,previous virtual finish); include ingest, trigger wait, full solve, monitoring and queue. Also save actual unpaced UTC/elapsed times. No ROS real-time claim."
+  },
+  "scenarios": [
+    {
+      "id": "nominal",
+      "category": "nominal",
+      "interval_s": null,
+      "amplitude_m": 0.0,
+      "anchor": "node_10",
+      "ramp": null,
+      "remaining_anchors": null,
+      "seeds": [
+        1001,
+        1002,
+        1003
+      ]
+    },
+    {
+      "id": "spike",
+      "category": "measurement_fault",
+      "interval_s": [
+        30.0,
+        32.0
+      ],
+      "amplitude_m": 0.5,
+      "anchor": "node_10",
+      "ramp": null,
+      "remaining_anchors": null,
+      "seeds": [
+        1101,
+        1102,
+        1103
+      ]
+    },
+    {
+      "id": "positive",
+      "category": "measurement_fault",
+      "interval_s": [
+        25.0,
+        60.0
+      ],
+      "amplitude_m": 0.3,
+      "anchor": "node_10",
+      "ramp": null,
+      "remaining_anchors": null,
+      "seeds": [
+        1201,
+        1202,
+        1203
+      ]
+    },
+    {
+      "id": "negative",
+      "category": "measurement_fault",
+      "interval_s": [
+        25.0,
+        60.0
+      ],
+      "amplitude_m": -0.3,
+      "anchor": "node_10",
+      "ramp": null,
+      "remaining_anchors": null,
+      "seeds": [
+        1301,
+        1302,
+        1303
+      ]
+    },
+    {
+      "id": "ramp",
+      "category": "measurement_fault",
+      "interval_s": [
+        25.0,
+        60.0
+      ],
+      "amplitude_m": 0.3,
+      "anchor": "node_10",
+      "ramp": "linear from zero at start to amplitude just before end",
+      "remaining_anchors": null,
+      "seeds": [
+        1401,
+        1402,
+        1403
+      ]
+    },
+    {
+      "id": "correlated",
+      "category": "model_mismatch",
+      "interval_s": [
+        25.0,
+        60.0
+      ],
+      "amplitude_m": 0.0,
+      "anchor": "node_10",
+      "ramp": null,
+      "remaining_anchors": null,
+      "seeds": [
+        1501,
+        1502,
+        1503
+      ]
+    },
+    {
+      "id": "drop_one",
+      "category": "availability",
+      "interval_s": [
+        25.0,
+        60.0
+      ],
+      "amplitude_m": 0.0,
+      "anchor": "node_10",
+      "ramp": null,
+      "remaining_anchors": null,
+      "seeds": [
+        1601,
+        1602,
+        1603
+      ]
+    },
+    {
+      "id": "two_anchors",
+      "category": "availability",
+      "interval_s": [
+        25.0,
+        60.0
+      ],
+      "amplitude_m": 0.0,
+      "anchor": "node_10",
+      "ramp": null,
+      "remaining_anchors": [
+        "node_2",
+        "node_8"
+      ],
+      "seeds": [
+        1701,
+        1702,
+        1703
+      ]
+    }
+  ],
+  "development_seeds": [
+    101,
+    102,
+    103,
+    104,
+    105
+  ],
+  "threshold_selection": {
+    "development": "5 nominal runs only; no fault/trajectory-error based choice",
+    "M1": "max(1.0,1.25*quantile_0.995 of available max absolute prefit innovations / frozen range_sigma=.2 across 5 nominal dev runs)",
+    "M2": "max(.05m,1.25*quantile_0.995 of available max antenna XY full-minus-independent-exclusion distances across same dev runs)",
+    "quantile": "numpy linear interpolation",
+    "consecutive_exceedances": 2,
+    "release": "immediate on below threshold; consecutive counter resets on unavailable; no detector feedback to locator",
+    "validity": "accepted full graph, >=3 current anchors and current raw XY geometry rank2; M2 additionally all four hypotheses accepted with >=3 current retained anchors, rank2 range geometry and full-rank weighted objective Jacobian; any failed/rank-invalid hypothesis => unavailable, never trusted",
+    "rank_rtol": 1e-08,
+    "condition_limit": 100000000.0
+  },
+  "metrics": {
+    "error_reference": "Euclidean antenna XY at state measurement time from immutable then-published estimate, never final smoothed state; same trajectory for M0/M1/M2",
+    "exploratory_error_limits_m": [
+      0.2,
+      0.5
+    ],
+    "intervals": "state sample zero-order hold [state_t,next_state_t), clipped to truth horizon; availability hold [monitor_available_t,next_available_t), clipped to horizon; separate axes",
+    "normal_false_alarm": "exclude entire injected interval; pre-fault and post-recovery separately; startup unavailable reported",
+    "unalerted_exceedance": "report all no-alarm time INCLUDING unavailable; also available-but-no-alarm and unavailable overlap separately",
+    "detection_delay": "first alarm about an in-fault state; available_receipt_time-fault_start; short fault without in-fault alarm is undetected",
+    "recovery": "first of 3 consecutive recovery-state outputs below error limit or available/no-alarm; relative to fault end; censored at EOF",
+    "independent_units": "complete runs, not frames"
+  },
+  "budget": {
+    "max_development_runs": 5,
+    "max_diagnostic_runs": 24,
+    "historical_baseline_runs": 2,
+    "per_run_wall_timeout_s": 180,
+    "total_compute_wall_budget_s": 3600,
+    "max_hypotheses_per_update": 4,
+    "max_states_per_graph": 21,
+    "max_nfev_per_graph": 50,
+    "timeout_policy": "save streaming rows and run checkpoint, mark timed_out; never auto-expand grid; resume verifies source/protocol/input hashes and skips completed runs"
+  },
+  "static_audit": {
+    "windows": "first [3,8)s and existing final endpoint evaluation windows; report odom movement as conditional stationarity check",
+    "statistics": [
+      "count",
+      "std",
+      "MAD",
+      "p05",
+      "p95",
+      "lag1_correlation",
+      "lag20_correlation"
+    ],
+    "unconfirmed_positions": "stability only; not absolute range bias"
+  },
+  "literature": {
+    "2020": "https://doi.org/10.1109/LRA.2020.2975769",
+    "2023": "https://arxiv.org/abs/2303.17207",
+    "scope": "simplified residual/independent single-anchor solution-separation monitors inspired by these works; no paper-exact reproduction, risk bound, PL, or Hessian 3sigma protection claim"
+  },
+  "unchanged_parameters": true,
+  "test_thresholds_frozen_before_diagnostics": true,
+  "historical_cases": [
+    {
+      "id": "005135",
+      "role": "normal completion",
+      "bag": "datasets/field_raw/20261018/bags/CAR2_auto_Lshape_repeat2_20261018_005135.bag",
+      "sha256": "63880adf78d5f07a9b12a87f7352f49e8f7be82d223bcdf60d96e257ba38b2ff",
+      "evaluation_window_s": [
+        83.81404534,
+        88.81404534
+      ],
+      "end_antenna_xyz_m": [
+        2.93,
+        3.04,
+        0.2
+      ],
+      "archived_batch_endpoint_difference_m": 0.05650428296297438,
+      "archived_batch_keyframes": 92
+    },
+    {
+      "id": "004023",
+      "role": "N10 anomaly",
+      "bag": "datasets/field_raw/20261018/bags/CAR2_auto_Lshape_repeat_20261018_004023.bag",
+      "sha256": "72d4a051005b0b109461842b6489aa2d07b08dd6f6e750c4b9a82aac8d8e1d82",
+      "evaluation_window_s": [
+        81.848289054,
+        86.848289054
+      ],
+      "end_antenna_xyz_m": [
+        2.97,
+        3.11,
+        0.2
+      ],
+      "archived_batch_endpoint_difference_m": 0.11856330776153981,
+      "archived_batch_keyframes": 96
+    }
+  ]
+}

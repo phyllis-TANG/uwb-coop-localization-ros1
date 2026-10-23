@@ -1,0 +1,24 @@
+{
+  "files": {
+    "docs/field_tests/single_car_historical_L_20261021/results/evidence/new_graph.py": "cc8934e0ee34eabddd46ed09e0de1ca69e9a74b00e93147f7d99f5a04d77e903",
+    "tools/evaluate_single_car_integrity.py": "e9a8bb02756ff0bf9e3e539290d9d7cb6ba0ff6f2b748e4b191e2d1f45bb8ff9",
+    "tools/export_integrity_conclusion_pdf.py": "30a6b6afb53f2cbfd953a9cc73c2bef7975e1fbca45c670eb5949e5c047fb17c",
+    "tools/report_single_car_integrity.py": "d7ebeb087fc252c061e1743e02b5f533f696fb8dc50f2f736a9970913331bc5d",
+    "tools/requirements-integrity-feasibility.txt": "476ad1e35e7528be0322a7ccf62582bf84a28c9bebc369f3041a8dc2ff96aec7",
+    "tools/run_single_car_fixed_lag.py": "454c8601a4f53cdf0084e35487240424d70fed7ee37ca342aeb9172fa38aed97",
+    "tools/run_single_car_integrity_experiment.py": "395ba53d00e650ffdda7138b9e50a46b2a79bedad131c5977b6b5a5041045727",
+    "tools/run_single_car_integrity_worker.py": "51e9bc6a69e6dbb43fb02ce4f42d126b8e50a1a9f26bd385bfb16e5c02ce6641",
+    "tools/run_single_car_sequential_baseline.py": "651ebd8613c9247bf70a4c873a4d3cc56eca48725fedf08f047c1867864eced5",
+    "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+    "tools/single_car_integrity.py": "32bb4106695b9e8a7c343a37b74097de0d90249a862c7b346ac1488d32bede7a",
+    "tools/single_car_integrity_sim.py": "c8d7427671167505670f6fe65d31f4de9636e7fa8ef9892fc711a1dd932cc3ff",
+    "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+    "tools/test_integrity_evaluation.py": "c739e905848e9eea9e270a0e0ef668894a8542bea5d310eaadd4d952edf1d953",
+    "tools/test_single_car_fixed_lag.py": "e576f5ddfaaf24b538d446b3d748e48e9f6be5cbcfb31d9d8f6312b1dd841a33",
+    "tools/test_single_car_integrity.py": "923c14472a9e8c1a6afe712eb9487521b0cde5fb1258037f7a3447905b2aa381",
+    "tools/test_single_car_integrity_worker_io.py": "c5e656cb3daed28765821ec759c6fa245fac718978e13f349774daaf9ee73075",
+    "tools/test_single_car_sequential_replay.py": "148cd4ca3bff47c6dce8c2102daf289f55f39dbcbc4f2eca1cca621a5e31525b",
+    "tools/verify_single_car_integrity_artifacts.py": "71da9f9ec49f358cca7f391fd570492629364e711cfb1e3896c6e6408ea54e47"
+  },
+  "note": "Core execution lock remains unchanged; evaluation/export/verification code added after runs is hashed separately. Imported v1 runs retain their original execution lock and snapshot."
+}

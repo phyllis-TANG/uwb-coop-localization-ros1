@@ -1,0 +1,115 @@
+{
+  "cases": [
+    {
+      "case": "005135",
+      "status": "completed",
+      "input_hash_matches": true,
+      "archived_updates_sha256": "9c46cf15bf5d15820ab59f4efd6200c5ba936caf5f13b2ee3f27c7cec6f163fd",
+      "same_frontend_and_status": true,
+      "max_published_position_delta_m": 4.965068306494546e-16,
+      "endpoint": {
+        "samples": 5,
+        "window_keyframes": 5,
+        "median_antenna_xy_m": [
+          2.914909445590865,
+          2.994628422133806
+        ],
+        "difference_m": 0.04781532087566875,
+        "first_last_displacement_m": 0.014265757130632602
+      },
+      "counters": {
+        "other_events": 1815,
+        "imu_events": 1894,
+        "odom_events": 1891,
+        "uwb_events": 4722
+      },
+      "continuous_trajectory_truth": false,
+      "full_trajectory_RMSE": null,
+      "error_exceedance_missed_alarm_rate": null,
+      "retrospective_monitor_counts": {
+        "M1": {
+          "alarm_states": 6,
+          "unavailable_states": 2
+        },
+        "M2": {
+          "alarm_states": 78,
+          "unavailable_states": 2
+        }
+      }
+    },
+    {
+      "case": "004023",
+      "status": "completed",
+      "input_hash_matches": true,
+      "archived_updates_sha256": "11a47259eb059f3787fb3e48a6c31343ef9c911ae940ed3b158baf556048f26a",
+      "same_frontend_and_status": true,
+      "max_published_position_delta_m": 6.280369834735101e-16,
+      "endpoint": {
+        "samples": 5,
+        "window_keyframes": 5,
+        "median_antenna_xy_m": [
+          3.0043774896370192,
+          2.9878616539572573
+        ],
+        "difference_m": 0.1268841493954232,
+        "first_last_displacement_m": 0.013750622319011783
+      },
+      "counters": {
+        "imu_events": 1968,
+        "odom_events": 1966,
+        "uwb_events": 4908,
+        "other_events": 1830
+      },
+      "continuous_trajectory_truth": false,
+      "full_trajectory_RMSE": null,
+      "error_exceedance_missed_alarm_rate": null,
+      "retrospective_monitor_counts": {
+        "M1": {
+          "alarm_states": 19,
+          "unavailable_states": 2
+        },
+        "M2": {
+          "alarm_states": 93,
+          "unavailable_states": 2
+        }
+      }
+    }
+  ],
+  "P1_calibration": {
+    "node_10": {
+      "raw_median_m": 3.746000051498413,
+      "geometry_m": 3.137136433118585,
+      "recomputed_bias_m": 0.6088636183798282,
+      "frozen_bias_m": 0.6088636183798282,
+      "delta_m": 0.0
+    },
+    "node_2": {
+      "raw_median_m": 5.671999931335449,
+      "geometry_m": 5.222262440743475,
+      "recomputed_bias_m": 0.449737490591974,
+      "frozen_bias_m": 0.449737490591974,
+      "delta_m": 0.0
+    },
+    "node_3": {
+      "raw_median_m": 4.218999862670898,
+      "geometry_m": 4.017713902208568,
+      "recomputed_bias_m": 0.2012859604623305,
+      "frozen_bias_m": 0.2012859604623305,
+      "delta_m": 0.0
+    },
+    "node_8": {
+      "raw_median_m": 3.2300000190734863,
+      "geometry_m": 2.8614856281309535,
+      "recomputed_bias_m": 0.3685143909425328,
+      "frozen_bias_m": 0.3685143909425328,
+      "delta_m": 0.0
+    }
+  },
+  "P1_raw_bag_sha256": "f7250698ae484b7ace3bf152b1ff216f5470b5d75f0b90a66483edb402d1ec33",
+  "anchor_source": "docs/field_tests/20261017/session_config.json; original P1 field note says previous manual survey, pending recheck",
+  "correction_sign": "raw - P1 bias; ingestion validity check does not mutate raw; medians remain raw; Objective subtracts once",
+  "calibration_scope": "Oct17 reinstallation and unchanged Oct18 mounting only; no transfer to Oct11 or future installations guaranteed",
+  "lever_assumption": "[.12,-.08] m manual geometric center; Odom reference correspondence pending",
+  "timestamp_policy": "receipt order; header measurement association; +-0.4s raw median, >=5 samples, closes t+1s; no clock fit",
+  "continuity_truth_absent": true
+}

@@ -1,0 +1,60 @@
+{
+  "locked": {
+    "protocol_sha256": "ec4000526c6812b6184c1d2613bc9ad69019eb3041f09c4e9944fed1ca4eee81",
+    "config_sha256": "159e6ff35643e146a58b8ab7497b049136c85d37f9e6deee08aa8ebd50e82516",
+    "sources": {
+      "tools/single_car_integrity.py": "32bb4106695b9e8a7c343a37b74097de0d90249a862c7b346ac1488d32bede7a",
+      "tools/single_car_integrity_sim.py": "c8d7427671167505670f6fe65d31f4de9636e7fa8ef9892fc711a1dd932cc3ff",
+      "tools/run_single_car_integrity_worker.py": "51e9bc6a69e6dbb43fb02ce4f42d126b8e50a1a9f26bd385bfb16e5c02ce6641",
+      "tools/run_single_car_integrity_experiment.py": "395ba53d00e650ffdda7138b9e50a46b2a79bedad131c5977b6b5a5041045727",
+      "tools/test_single_car_integrity.py": "923c14472a9e8c1a6afe712eb9487521b0cde5fb1258037f7a3447905b2aa381",
+      "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+      "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+      "tools/run_single_car_fixed_lag.py": "454c8601a4f53cdf0084e35487240424d70fed7ee37ca342aeb9172fa38aed97",
+      "tools/run_single_car_sequential_baseline.py": "651ebd8613c9247bf70a4c873a4d3cc56eca48725fedf08f047c1867864eced5",
+      "tools/test_single_car_fixed_lag.py": "e576f5ddfaaf24b538d446b3d748e48e9f6be5cbcfb31d9d8f6312b1dd841a33",
+      "tools/test_single_car_sequential_replay.py": "148cd4ca3bff47c6dce8c2102daf289f55f39dbcbc4f2eca1cca621a5e31525b",
+      "docs/field_tests/single_car_historical_L_20261021/results/evidence/new_graph.py": "cc8934e0ee34eabddd46ed09e0de1ca69e9a74b00e93147f7d99f5a04d77e903"
+    }
+  },
+  "created_utc": "2026-10-22T15:54:02.812545+00:00",
+  "baseline_commit": "13aeade4c6b13ffa55b0acfafe65c29136067c0f",
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "rosbags": "0.11.9",
+  "platform": "Linux-6.14.6-custom-x86_64-with-glibc2.35",
+  "thread_env": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "dependency_directory": "/home/ubuntu22/uwb/offline-deps",
+  "archive_environment": {
+    "base_main_sha": "0199e04d8100c07c0eef3b68e3742159167a5be8",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "rosbags": "0.11.8",
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1"
+    },
+    "protocol_sha256": "71175af3a690f1666967b6ed905233de8a8cb1b84c31e5a72eaacdccad0a2f50",
+    "source_files": {
+      "tools/run_single_car_fixed_lag.py": "454c8601a4f53cdf0084e35487240424d70fed7ee37ca342aeb9172fa38aed97",
+      "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+      "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+      "tools/run_single_car_sequential_baseline.py": "651ebd8613c9247bf70a4c873a4d3cc56eca48725fedf08f047c1867864eced5",
+      "tools/test_single_car_fixed_lag.py": "e576f5ddfaaf24b538d446b3d748e48e9f6be5cbcfb31d9d8f6312b1dd841a33",
+      "tools/test_single_car_sequential_replay.py": "148cd4ca3bff47c6dce8c2102daf289f55f39dbcbc4f2eca1cca621a5e31525b",
+      "tools/plot_single_car_fixed_lag.py": "a02c0bab22c042b1291fe40020942baa1b33cb390588034021f5d8f4acc35a59",
+      "docs/field_tests/single_car_historical_L_20261021/results/evidence/new_graph.py": "cc8934e0ee34eabddd46ed09e0de1ca69e9a74b00e93147f7d99f5a04d77e903"
+    },
+    "data_files": {
+      "datasets/field_raw/20261018/bags/CAR2_auto_Lshape_repeat2_20261018_005135.bag": "63880adf78d5f07a9b12a87f7352f49e8f7be82d223bcdf60d96e257ba38b2ff",
+      "datasets/field_raw/20261018/bags/CAR2_auto_Lshape_repeat_20261018_004023.bag": "72d4a051005b0b109461842b6489aa2d07b08dd6f6e750c4b9a82aac8d8e1d82"
+    },
+    "source_and_protocol_unchanged_during_run": true
+  }
+}

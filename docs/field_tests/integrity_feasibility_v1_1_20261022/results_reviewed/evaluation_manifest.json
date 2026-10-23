@@ -1,0 +1,58 @@
+{
+  "created_utc": "2026-10-23T01:26:05.926506+00:00",
+  "source_lock_sha256": "afad12945c4190426188cd33f2aef1344537ae924d2b148c60d2bf1e80b842a8",
+  "protocol_sha256": "ec4000526c6812b6184c1d2613bc9ad69019eb3041f09c4e9944fed1ca4eee81",
+  "thresholds_sha256": "341736609ec25e4ccb69945bb0c08de898d84e008784f16a931392988256f5c7",
+  "evaluation_sources": {
+    "tools/evaluate_single_car_integrity.py": "e9a8bb02756ff0bf9e3e539290d9d7cb6ba0ff6f2b748e4b191e2d1f45bb8ff9",
+    "tools/report_single_car_integrity.py": "d7ebeb087fc252c061e1743e02b5f533f696fb8dc50f2f736a9970913331bc5d",
+    "tools/export_integrity_conclusion_pdf.py": "30a6b6afb53f2cbfd953a9cc73c2bef7975e1fbca45c670eb5949e5c047fb17c",
+    "tools/verify_single_car_integrity_artifacts.py": "71da9f9ec49f358cca7f391fd570492629364e711cfb1e3896c6e6408ea54e47",
+    "tools/test_single_car_integrity_worker_io.py": "c5e656cb3daed28765821ec759c6fa245fac718978e13f349774daaf9ee73075",
+    "tools/test_integrity_evaluation.py": "c739e905848e9eea9e270a0e0ef668894a8542bea5d310eaadd4d952edf1d953",
+    "tools/requirements-integrity-feasibility.txt": "476ad1e35e7528be0322a7ccf62582bf84a28c9bebc369f3041a8dc2ff96aec7"
+  },
+  "original_run_updates": {
+    "dev_nominal_101": "3a463befec092760a9de40db31b6afc81932a445a34606e1dd65c976fb1bf69a",
+    "dev_nominal_102": "1fb462080e934855102a6755ed77b10d62d56d26e46ce0792cd39446370c614f",
+    "dev_nominal_103": "fdf3d920b493dd0625f5e2694728bb5b87fbe94c5a2825ffe13110a009819167",
+    "dev_nominal_104": "72527be518b06a305a54cbc670ab74d9b206f43623f47d8962634cdb60d2f969",
+    "dev_nominal_105": "f50c32d13edf260acbb830802ab57b1894afe1de5f41625bfbdbdeebe325b71b",
+    "history_004023": "bd8a0d5cd7621ba457445de7f7880ed35cd10aa857e10ccd98d4d012ff4d58fa",
+    "history_005135": "8391ad003bffde4ac5e2b141397010021789e2aa65b476d4be1a18cf0ddedcfa",
+    "test_correlated_1501": "9d706bbf832d3826f8260d3b2b4d08906f2b062fbbe30f52b42e179aa8968470",
+    "test_correlated_1502": "b963894cc4346004f90a1a4c857c2c2d26092aa4853f1ba1f66ec74370f3ea47",
+    "test_correlated_1503": "118d8ce15d6a9b8e27585e6df58721e7066f5d2773f7f73d47c4e28f7b7fa264",
+    "test_drop_one_1601": "0d6ae6605aeedad16ab01e2a4f75080749ee891c8dd8d0b4a1b32cbb8311e2fc",
+    "test_drop_one_1602": "23dad26d8d4e4e0a047a1f2fe6313ab6ddf0f4d5503e447fa070dd026ee41e30",
+    "test_drop_one_1603": "76dd892191c802a821b7bd9f7bde2c5a41d81030b6bb8355dafe0533208267f3",
+    "test_negative_1301": "89b6f106f1af31a04ef5e4732fb8b89e26c4a5d972317bcd5c50acce3521d4cb",
+    "test_negative_1302": "cf2d7f498ccafcda98b47e571e4f8b0528a4e436ec816f24f6bcf8b27a29d174",
+    "test_negative_1303": "afd781a2f0250f1ab8e7c039705b166c92de1352097ae67498edbf4abf2058da",
+    "test_nominal_1001": "7ef779aaef933e99789e38352a35a51f5b1c65682cb26422a88f5246170d45f7",
+    "test_nominal_1002": "c17e12e208d430b6659a955fe188069c3b7ab1af9178155fb1f6ff8d6d5a3337",
+    "test_nominal_1003": "378b1dae77fa57992ef60715e945268c0354b031c49123fc4f6b41699f350e1d",
+    "test_positive_1201": "279303c492e217e573d08eb181fa2888d62ef9bec4ab464f684029f12464ec13",
+    "test_positive_1202": "2e4eec229cff78ad97a6b51b3ed14017e9773fcf71b01107301b1b4a6d07e9c4",
+    "test_positive_1203": "0d0a49b7ff63efbbdf406ebea642b76a4930877ffdffad417d6cc69e677dcf88",
+    "test_ramp_1401": "59bf2fde5bcbd1933d1bde9eecc98b25209ca16123ca2790b625572feed4f5e6",
+    "test_ramp_1402": "86aace7136d159fdc58ad173adcc3562e881d17421175cc1cfa20c13d1f58d24",
+    "test_ramp_1403": "a6f55d514e5e260e4476a69b95065fa54c7f1aaaadaedd516af547c85d953170",
+    "test_spike_1101": "9dea5f52837254eb6f40ce3372a3e2e8c7b7200176536aa5413fc57003de9570",
+    "test_spike_1102": "523ece16c32d5d4fb17ebc18ed08c4c393e896b8aaa5085c4fb067a69cc127b8",
+    "test_spike_1103": "6ad0a92862d614dc3ed65682d1ef04c759fb307ae043040e1a08dc2527ebcac7",
+    "test_two_anchors_1701": "c9d2bd97eaf9dc4fdba88fdc7a6f2793f4cba7e18b79b10f9d0697d63db363e1",
+    "test_two_anchors_1702": "d6ec409080ac8b1a60a3518c39b8b915c008c870e16504fa1d73f0d1d383897c",
+    "test_two_anchors_1703": "d0a359c85e38f24164da1d640a174111b1e6a2c76a7574a134333fc0e38fc629"
+  },
+  "note": "development/historical alarm labels with frozen thresholds can be reconstructed after run; only diagnostic alarms were evaluated online; no development reruns",
+  "text_review": {
+    "previous_sources": {
+      "tools/evaluate_single_car_integrity.py": "e9a8bb02756ff0bf9e3e539290d9d7cb6ba0ff6f2b748e4b191e2d1f45bb8ff9",
+      "tools/report_single_car_integrity.py": "4ded047f77322d37c0630457c09b6bd064cba864a26a5afb5265611bb65ced59"
+    },
+    "changed": "Added model transfer failure, onset attribution and 0.50m severity limitation; estimates and frozen thresholds unchanged",
+    "utc": "2026-10-23T02:06:51.523913+00:00"
+  },
+  "final_text_review_note": "Final local review adds PR38 remote advancement, 37+4 test counts and unchanged-baseline statement; numerical tables unchanged."
+}

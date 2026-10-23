@@ -1,0 +1,35 @@
+{
+  "id": "dev_nominal_103",
+  "group": "development",
+  "status": "completed",
+  "scenario": "nominal",
+  "seed": 103,
+  "input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/runs/dev_nominal_103/sensors.jsonl",
+  "input_sha256": "0f86393bb442a4487108dfd2cf5a5acb75bdf66fff423ff790d39c145a1e221b",
+  "source_lock_sha256": "a60a4b35f5e2be119f03a6befaccb49d6e13319a9b37a2e30443c02a0273621d",
+  "threshold_sha256": null,
+  "config_sha256": "159e6ff35643e146a58b8ab7497b049136c85d37f9e6deee08aa8ebd50e82516",
+  "started_utc": "2026-10-22T15:49:25.458322+00:00",
+  "wall_s": 1.6663395020004828,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/tools/run_single_car_integrity_worker.py",
+    "--config",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/estimator_config.json",
+    "--sensors",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/runs/dev_nominal_103/sensors.jsonl",
+    "--output",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/runs/dev_nominal_103/output"
+  ],
+  "exit_code": 0,
+  "output_count": 89,
+  "output_files": {
+    "sensors.jsonl": "0f86393bb442a4487108dfd2cf5a5acb75bdf66fff423ff790d39c145a1e221b",
+    "fault_labels.json": "31aa333305f79e11b68851c66daf3a78cb56de5dff30a55fa53cedbc1fb963e5",
+    "truth.csv": "1011b385f23975ae6daa303c95809da1b3765f7f735ae91ce54da07abeea8afd",
+    "worker.log": "edf07a76ff23498fa6502ba83eb90fce63b78d51a74331eb0d9d5233d5265127",
+    "output/worker_summary.json": "20bc8cd58f3bc0cb7dd0fa26f3c7412a69d140811f90779d4b23130e9eb2ad5f",
+    "output/updates.jsonl": "fdf3d920b493dd0625f5e2694728bb5b87fbe94c5a2825ffe13110a009819167"
+  },
+  "completed_utc": "2026-10-22T15:49:27.140651+00:00"
+}

@@ -1,0 +1,687 @@
+{
+  "remote": {
+    "sha": "21d3d48476579837caa6aee4e1027cf57b9d18e3",
+    "message": "Merge pull request #38 from phyllis-TANG/work/20261022-two-car-updated-comparison\n\n新版双车三包离线对照：分车校正与车间约束的条件验证",
+    "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/commit/21d3d48476579837caa6aee4e1027cf57b9d18e3"
+  },
+  "comparison": {
+    "repository_full_name": "phyllis-TANG/uwb-coop-localization-ros1",
+    "base": "13aeade4c6b13ffa55b0acfafe65c29136067c0f",
+    "head": "21d3d48476579837caa6aee4e1027cf57b9d18e3",
+    "status": "ahead",
+    "ahead_by": 2,
+    "behind_by": 0,
+    "total_commits": 2,
+    "too_large": null,
+    "base_commit": {
+      "sha": "13aeade4c6b13ffa55b0acfafe65c29136067c0f",
+      "url": "https://api.github.com/repos/phyllis-TANG/uwb-coop-localization-ros1/commits/13aeade4c6b13ffa55b0acfafe65c29136067c0f",
+      "html_url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/commit/13aeade4c6b13ffa55b0acfafe65c29136067c0f"
+    },
+    "merge_base_commit": {
+      "sha": "13aeade4c6b13ffa55b0acfafe65c29136067c0f",
+      "url": "https://api.github.com/repos/phyllis-TANG/uwb-coop-localization-ros1/commits/13aeade4c6b13ffa55b0acfafe65c29136067c0f",
+      "html_url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/commit/13aeade4c6b13ffa55b0acfafe65c29136067c0f"
+    },
+    "files": [
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/README.md",
+        "status": "added",
+        "additions": 81,
+        "deletions": 0,
+        "changes": 81,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/protocol.json",
+        "status": "added",
+        "additions": 360,
+        "deletions": 0,
+        "changes": 360,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/015334/car2_p1_only_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/015334/car2_p1_only_inputs.json",
+        "status": "added",
+        "additions": 5339,
+        "deletions": 0,
+        "changes": 5339,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/015334/comparison.json",
+        "status": "added",
+        "additions": 2853,
+        "deletions": 0,
+        "changes": 2853,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/015334/input_diagnostics.json",
+        "status": "added",
+        "additions": 78,
+        "deletions": 0,
+        "changes": 78,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/015334/peer_car2_minus_0p1s_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/015334/peer_car2_minus_0p1s_inputs.json",
+        "status": "added",
+        "additions": 5339,
+        "deletions": 0,
+        "changes": 5339,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/015334/peer_car2_plus_0p1s_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/015334/peer_car2_plus_0p1s_inputs.json",
+        "status": "added",
+        "additions": 5339,
+        "deletions": 0,
+        "changes": 5339,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/015334/peer_sigma_0p4_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/015334/peer_sigma_0p4_inputs.json",
+        "status": "added",
+        "additions": 5339,
+        "deletions": 0,
+        "changes": 5339,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/015334/per_car_walls_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/015334/per_car_walls_inputs.json",
+        "status": "added",
+        "additions": 5339,
+        "deletions": 0,
+        "changes": 5339,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/015334/raw_walls_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/015334/raw_walls_inputs.json",
+        "status": "added",
+        "additions": 5339,
+        "deletions": 0,
+        "changes": 5339,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/015334/withhold_car1_walls_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/015334/withhold_car1_walls_inputs.json",
+        "status": "added",
+        "additions": 4874,
+        "deletions": 0,
+        "changes": 4874,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/015334/withhold_car2_walls_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/015334/withhold_car2_walls_inputs.json",
+        "status": "added",
+        "additions": 4874,
+        "deletions": 0,
+        "changes": 4874,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/033248/car2_p1_only_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/033248/car2_p1_only_inputs.json",
+        "status": "added",
+        "additions": 3267,
+        "deletions": 0,
+        "changes": 3267,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/033248/comparison.json",
+        "status": "added",
+        "additions": 2853,
+        "deletions": 0,
+        "changes": 2853,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/033248/input_diagnostics.json",
+        "status": "added",
+        "additions": 78,
+        "deletions": 0,
+        "changes": 78,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/033248/peer_car2_minus_0p1s_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/033248/peer_car2_minus_0p1s_inputs.json",
+        "status": "added",
+        "additions": 3267,
+        "deletions": 0,
+        "changes": 3267,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/033248/peer_car2_plus_0p1s_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/033248/peer_car2_plus_0p1s_inputs.json",
+        "status": "added",
+        "additions": 3267,
+        "deletions": 0,
+        "changes": 3267,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/033248/peer_sigma_0p4_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/033248/peer_sigma_0p4_inputs.json",
+        "status": "added",
+        "additions": 3267,
+        "deletions": 0,
+        "changes": 3267,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/033248/per_car_walls_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/033248/per_car_walls_inputs.json",
+        "status": "added",
+        "additions": 3267,
+        "deletions": 0,
+        "changes": 3267,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/033248/raw_walls_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/033248/raw_walls_inputs.json",
+        "status": "added",
+        "additions": 3267,
+        "deletions": 0,
+        "changes": 3267,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/033248/withhold_car1_walls_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/033248/withhold_car1_walls_inputs.json",
+        "status": "added",
+        "additions": 2987,
+        "deletions": 0,
+        "changes": 2987,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/033248/withhold_car2_walls_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/033248/withhold_car2_walls_inputs.json",
+        "status": "added",
+        "additions": 2987,
+        "deletions": 0,
+        "changes": 2987,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/050447/car2_p1_only_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/050447/car2_p1_only_inputs.json",
+        "status": "added",
+        "additions": 6179,
+        "deletions": 0,
+        "changes": 6179,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/050447/comparison.json",
+        "status": "added",
+        "additions": 2853,
+        "deletions": 0,
+        "changes": 2853,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/050447/input_diagnostics.json",
+        "status": "added",
+        "additions": 79,
+        "deletions": 0,
+        "changes": 79,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/050447/peer_car2_minus_0p1s_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/050447/peer_car2_minus_0p1s_inputs.json",
+        "status": "added",
+        "additions": 6179,
+        "deletions": 0,
+        "changes": 6179,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/050447/peer_car2_plus_0p1s_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/050447/peer_car2_plus_0p1s_inputs.json",
+        "status": "added",
+        "additions": 6179,
+        "deletions": 0,
+        "changes": 6179,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/050447/peer_sigma_0p4_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/050447/peer_sigma_0p4_inputs.json",
+        "status": "added",
+        "additions": 6179,
+        "deletions": 0,
+        "changes": 6179,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/050447/per_car_walls_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/050447/per_car_walls_inputs.json",
+        "status": "added",
+        "additions": 6179,
+        "deletions": 0,
+        "changes": 6179,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/050447/raw_walls_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/050447/raw_walls_inputs.json",
+        "status": "added",
+        "additions": 6179,
+        "deletions": 0,
+        "changes": 6179,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/050447/withhold_car1_walls_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/050447/withhold_car1_walls_inputs.json",
+        "status": "added",
+        "additions": 5639,
+        "deletions": 0,
+        "changes": 5639,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/050447/withhold_car2_walls_comparison.json",
+        "status": "added",
+        "additions": 355,
+        "deletions": 0,
+        "changes": 355,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/050447/withhold_car2_walls_inputs.json",
+        "status": "added",
+        "additions": 5639,
+        "deletions": 0,
+        "changes": 5639,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/DERIVED_VERIFICATION.json",
+        "status": "added",
+        "additions": 23,
+        "deletions": 0,
+        "changes": 23,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/INTERPRETATION.md",
+        "status": "added",
+        "additions": 66,
+        "deletions": 0,
+        "changes": 66,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/REPORT.md",
+        "status": "added",
+        "additions": 24,
+        "deletions": 0,
+        "changes": 24,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/VISUAL_VERIFICATION.json",
+        "status": "added",
+        "additions": 10,
+        "deletions": 0,
+        "changes": 10,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/calibration.json",
+        "status": "added",
+        "additions": 146,
+        "deletions": 0,
+        "changes": 146,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/comparison.csv",
+        "status": "added",
+        "additions": 49,
+        "deletions": 0,
+        "changes": 49,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/input_manifest.json",
+        "status": "added",
+        "additions": 34,
+        "deletions": 0,
+        "changes": 34,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/legacy_reproduction.json",
+        "status": "added",
+        "additions": 870,
+        "deletions": 0,
+        "changes": 870,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/peer_reference_diagnostics.csv",
+        "status": "added",
+        "additions": 7,
+        "deletions": 0,
+        "changes": 7,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/peer_time_association_sensitivity.json",
+        "status": "added",
+        "additions": 98,
+        "deletions": 0,
+        "changes": 98,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/primary_trajectories.png",
+        "status": "added",
+        "additions": 0,
+        "deletions": 0,
+        "changes": 0,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/primary_trajectories.svg",
+        "status": "added",
+        "additions": 4700,
+        "deletions": 0,
+        "changes": 4700,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/protocol.json",
+        "status": "added",
+        "additions": 360,
+        "deletions": 0,
+        "changes": 360,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/signed_endpoint_effects.png",
+        "status": "added",
+        "additions": 0,
+        "deletions": 0,
+        "changes": 0,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/signed_endpoint_effects.svg",
+        "status": "added",
+        "additions": 2498,
+        "deletions": 0,
+        "changes": 2498,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/static_peer_reference_checks.csv",
+        "status": "added",
+        "additions": 7,
+        "deletions": 0,
+        "changes": 7,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/static_validation.json",
+        "status": "added",
+        "additions": 307,
+        "deletions": 0,
+        "changes": 307,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/static_wall_transfer.csv",
+        "status": "added",
+        "additions": 25,
+        "deletions": 0,
+        "changes": 25,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/summary.json",
+        "status": "added",
+        "additions": 0,
+        "deletions": 0,
+        "changes": 0,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/trajectories.csv",
+        "status": "added",
+        "additions": 0,
+        "deletions": 0,
+        "changes": 0,
+        "previous_filename": null
+      },
+      {
+        "filename": "docs/field_tests/two_car_updated_comparison_20261022/results/wall_reference_diagnostics.csv",
+        "status": "added",
+        "additions": 0,
+        "deletions": 0,
+        "changes": 0,
+        "previous_filename": null
+      },
+      {
+        "filename": "tools/analyze_two_car_comparison_results.py",
+        "status": "added",
+        "additions": 0,
+        "deletions": 0,
+        "changes": 0,
+        "previous_filename": null
+      },
+      {
+        "filename": "tools/plot_two_car_updated_comparison.py",
+        "status": "added",
+        "additions": 0,
+        "deletions": 0,
+        "changes": 0,
+        "previous_filename": null
+      },
+      {
+        "filename": "tools/run_two_car_updated_comparison.py",
+        "status": "added",
+        "additions": 0,
+        "deletions": 0,
+        "changes": 0,
+        "previous_filename": null
+      },
+      {
+        "filename": "tools/test_two_car_updated_comparison.py",
+        "status": "added",
+        "additions": 0,
+        "deletions": 0,
+        "changes": 0,
+        "previous_filename": null
+      },
+      {
+        "filename": "tools/two_car_updated_comparison.py",
+        "status": "added",
+        "additions": 0,
+        "deletions": 0,
+        "changes": 0,
+        "previous_filename": null
+      }
+    ]
+  },
+  "checked_utc": "2026-10-23T02:17:38.129908+00:00",
+  "baseline_choice": "Keep PR37 13aeade4c6b13ffa55b0acfafe65c29136067c0f unchanged throughout runs; do not rebase or rerun against PR38."
+}
