@@ -1,0 +1,443 @@
+{
+  "biases_m": {
+    "car1": {
+      "node_10": 0.5516943809619503,
+      "node_2": 0.4242948730272982,
+      "node_3": 0.12145191431702473,
+      "node_8": 0.34176906929909334
+    },
+    "car2": {
+      "node_10": 0.6088636183798282,
+      "node_2": 0.449737490591974,
+      "node_3": 0.2012859604623305,
+      "node_8": 0.3685143909425328
+    }
+  },
+  "scales": {
+    "wall_sigma_m": {
+      "car1": {
+        "node_10": 0.293676945384276,
+        "node_2": 0.2021348398357125,
+        "node_3": 0.22252606051612964,
+        "node_8": 0.21258803969060536
+      },
+      "car2": {
+        "node_10": 0.6514600169867029,
+        "node_2": 0.23272513833517067,
+        "node_3": 0.20099751052453588,
+        "node_8": 0.225887148827534
+      }
+    },
+    "peer_sigma_m": 0.34896681877544383
+  },
+  "training": [
+    {
+      "id": "013206",
+      "path": "datasets/field_raw/20261018/bags/TWO_CAR_UWB_ODOM_IMU_static_20261018_013206.bag",
+      "sha256": "d9b8183c2ca6edef82affcde0f6c70dd8fcb71ba6c1b36374cd23e73a7d0671f",
+      "reference_source": "user confirmation P04",
+      "wall_errors_m": {
+        "car1": {
+          "node_10": 0.0,
+          "node_2": 0.0,
+          "node_3": 0.0,
+          "node_8": 0.0
+        },
+        "car2": {
+          "node_10": -0.2999999523162842,
+          "node_2": 0.004000186920166016,
+          "node_3": 0.0,
+          "node_8": 0.08699989318847656
+        }
+      },
+      "wall_details": [
+        {
+          "car": "car1",
+          "anchor": "node_10",
+          "samples": 1766,
+          "raw_median_m": 4.192,
+          "geometry_m": 3.64030561903805,
+          "applied_bias_m": 0.5516943809619503,
+          "corrected_error_m": 0.0
+        },
+        {
+          "car": "car1",
+          "anchor": "node_2",
+          "samples": 1766,
+          "raw_median_m": 4.492,
+          "geometry_m": 4.067705126972702,
+          "applied_bias_m": 0.4242948730272982,
+          "corrected_error_m": 0.0
+        },
+        {
+          "car": "car1",
+          "anchor": "node_3",
+          "samples": 1766,
+          "raw_median_m": 3.2824999999999998,
+          "geometry_m": 3.161048085682975,
+          "applied_bias_m": 0.12145191431702473,
+          "corrected_error_m": 0.0
+        },
+        {
+          "car": "car1",
+          "anchor": "node_8",
+          "samples": 1766,
+          "raw_median_m": 3.988,
+          "geometry_m": 3.6462309307009066,
+          "applied_bias_m": 0.34176906929909334,
+          "corrected_error_m": 0.0
+        },
+        {
+          "car": "car2",
+          "anchor": "node_10",
+          "samples": 1738,
+          "raw_median_m": 3.446000099182129,
+          "geometry_m": 3.137136433118585,
+          "applied_bias_m": 0.6088636183798282,
+          "corrected_error_m": -0.2999999523162842
+        },
+        {
+          "car": "car2",
+          "anchor": "node_2",
+          "samples": 1738,
+          "raw_median_m": 5.676000118255615,
+          "geometry_m": 5.222262440743475,
+          "applied_bias_m": 0.449737490591974,
+          "corrected_error_m": 0.004000186920166016
+        },
+        {
+          "car": "car2",
+          "anchor": "node_3",
+          "samples": 1739,
+          "raw_median_m": 4.218999862670898,
+          "geometry_m": 4.017713902208568,
+          "applied_bias_m": 0.2012859604623305,
+          "corrected_error_m": 0.0
+        },
+        {
+          "car": "car2",
+          "anchor": "node_8",
+          "samples": 1738,
+          "raw_median_m": 3.316999912261963,
+          "geometry_m": 2.8614856281309535,
+          "applied_bias_m": 0.3685143909425328,
+          "corrected_error_m": 0.08699989318847656
+        }
+      ],
+      "peer_directional_medians_m": [
+        1.675,
+        1.7259999513626099
+      ],
+      "peer_aggregate_m": 1.7004999756813048,
+      "peer_reference_m": 1.4145317246354003,
+      "peer_error_m": 0.2859682510459045
+    },
+    {
+      "id": "013951",
+      "path": "datasets/field_raw/20261018/bags/TWO_CAR_static_C1_1p5_1p5_C2_2_2_20261018_013951.bag",
+      "sha256": "f4395b806a15735ac74a052e239a5c4bafd7ab14d1d93de487f1e42d50451abc",
+      "reference_source": "user confirmation P05",
+      "wall_errors_m": {
+        "car1": {
+          "node_10": -0.15926849107320695,
+          "node_2": 0.027433809471268056,
+          "node_3": 0.09755945678830003,
+          "node_8": 0.0017572101560348052
+        },
+        "car2": {
+          "node_10": -0.30500006675720215,
+          "node_2": 0.11899995803833008,
+          "node_3": -0.019999980926513672,
+          "node_8": 0.10500001907348633
+        }
+      },
+      "wall_details": [
+        {
+          "car": "car1",
+          "anchor": "node_10",
+          "samples": 1764,
+          "raw_median_m": 3.528,
+          "geometry_m": 3.1355741101112566,
+          "applied_bias_m": 0.5516943809619503,
+          "corrected_error_m": -0.15926849107320695
+        },
+        {
+          "car": "car1",
+          "anchor": "node_2",
+          "samples": 1765,
+          "raw_median_m": 6.314,
+          "geometry_m": 5.862271317501434,
+          "applied_bias_m": 0.4242948730272982,
+          "corrected_error_m": 0.027433809471268056
+        },
+        {
+          "car": "car1",
+          "anchor": "node_3",
+          "samples": 1766,
+          "raw_median_m": 4.792,
+          "geometry_m": 4.5729886288946755,
+          "applied_bias_m": 0.12145191431702473,
+          "corrected_error_m": 0.09755945678830003
+        },
+        {
+          "car": "car1",
+          "anchor": "node_8",
+          "samples": 1766,
+          "raw_median_m": 3.05,
+          "geometry_m": 2.7064737205448717,
+          "applied_bias_m": 0.34176906929909334,
+          "corrected_error_m": 0.0017572101560348052
+        },
+        {
+          "car": "car2",
+          "anchor": "node_10",
+          "samples": 1738,
+          "raw_median_m": 3.440999984741211,
+          "geometry_m": 3.137136433118585,
+          "applied_bias_m": 0.6088636183798282,
+          "corrected_error_m": -0.30500006675720215
+        },
+        {
+          "car": "car2",
+          "anchor": "node_2",
+          "samples": 1739,
+          "raw_median_m": 5.790999889373779,
+          "geometry_m": 5.222262440743475,
+          "applied_bias_m": 0.449737490591974,
+          "corrected_error_m": 0.11899995803833008
+        },
+        {
+          "car": "car2",
+          "anchor": "node_3",
+          "samples": 1739,
+          "raw_median_m": 4.198999881744385,
+          "geometry_m": 4.017713902208568,
+          "applied_bias_m": 0.2012859604623305,
+          "corrected_error_m": -0.019999980926513672
+        },
+        {
+          "car": "car2",
+          "anchor": "node_8",
+          "samples": 1739,
+          "raw_median_m": 3.3350000381469727,
+          "geometry_m": 2.8614856281309535,
+          "applied_bias_m": 0.3685143909425328,
+          "corrected_error_m": 0.10500001907348633
+        }
+      ],
+      "peer_directional_medians_m": [
+        0.754,
+        0.8740000128746033
+      ],
+      "peer_aggregate_m": 0.8140000064373016,
+      "peer_reference_m": 0.7077428911688198,
+      "peer_error_m": 0.1062571152684818
+    },
+    {
+      "id": "015009",
+      "path": "datasets/field_raw/20261018/bags/TWO_CAR_static_C1_1p5_4_C2_2_2_20261018_015009.bag",
+      "sha256": "daed600f73ca9f10df2d142c955a661e80b38264622d6a0bd0c46d182b9efcb7",
+      "reference_source": "user confirmation P06",
+      "wall_errors_m": {
+        "car1": {
+          "node_10": -0.21504917635331466,
+          "node_2": -0.029300059307263204,
+          "node_3": -0.07990413013050546,
+          "node_8": 0.07206715354094673
+        },
+        "car2": {
+          "node_10": 0.6200001239776611,
+          "node_2": -0.0819997787475586,
+          "node_3": -0.01399993896484375,
+          "node_8": 0.03299999237060547
+        }
+      },
+      "wall_details": [
+        {
+          "car": "car1",
+          "anchor": "node_10",
+          "samples": 1764,
+          "raw_median_m": 5.141,
+          "geometry_m": 4.804354795391364,
+          "applied_bias_m": 0.5516943809619503,
+          "corrected_error_m": -0.21504917635331466
+        },
+        {
+          "car": "car1",
+          "anchor": "node_2",
+          "samples": 1764,
+          "raw_median_m": 5.119,
+          "geometry_m": 4.724005186279965,
+          "applied_bias_m": 0.4242948730272982,
+          "corrected_error_m": -0.029300059307263204
+        },
+        {
+          "car": "car1",
+          "anchor": "node_3",
+          "samples": 1764,
+          "raw_median_m": 4.554,
+          "geometry_m": 4.512452215813481,
+          "applied_bias_m": 0.12145191431702473,
+          "corrected_error_m": -0.07990413013050546
+        },
+        {
+          "car": "car1",
+          "anchor": "node_8",
+          "samples": 1763,
+          "raw_median_m": 3.418,
+          "geometry_m": 3.00416377715996,
+          "applied_bias_m": 0.34176906929909334,
+          "corrected_error_m": 0.07206715354094673
+        },
+        {
+          "car": "car2",
+          "anchor": "node_10",
+          "samples": 1738,
+          "raw_median_m": 4.366000175476074,
+          "geometry_m": 3.137136433118585,
+          "applied_bias_m": 0.6088636183798282,
+          "corrected_error_m": 0.6200001239776611
+        },
+        {
+          "car": "car2",
+          "anchor": "node_2",
+          "samples": 1737,
+          "raw_median_m": 5.590000152587891,
+          "geometry_m": 5.222262440743475,
+          "applied_bias_m": 0.449737490591974,
+          "corrected_error_m": -0.0819997787475586
+        },
+        {
+          "car": "car2",
+          "anchor": "node_3",
+          "samples": 1737,
+          "raw_median_m": 4.204999923706055,
+          "geometry_m": 4.017713902208568,
+          "applied_bias_m": 0.2012859604623305,
+          "corrected_error_m": -0.01399993896484375
+        },
+        {
+          "car": "car2",
+          "anchor": "node_8",
+          "samples": 1737,
+          "raw_median_m": 3.263000011444092,
+          "geometry_m": 2.8614856281309535,
+          "applied_bias_m": 0.3685143909425328,
+          "corrected_error_m": 0.03299999237060547
+        }
+      ],
+      "peer_directional_medians_m": [
+        2.103,
+        2.1480000019073486
+      ],
+      "peer_aggregate_m": 2.125500000953674,
+      "peer_reference_m": 2.061771083316477,
+      "peer_error_m": 0.06372891763719712
+    }
+  ],
+  "validation": [
+    {
+      "id": "020151",
+      "path": "datasets/field_raw/20261018/bags/TWO_CAR_C1_1p5_4_C2_end_2p95_3p04_static_20261018_020151.bag",
+      "sha256": "06489487beeb6f6aec658b91c6c190c12a8c43f25352b8795c6c11eab38eee31",
+      "reference_source": "user confirmation P07; continuation of L endpoint, not newly surveyed",
+      "wall_errors_m": {
+        "car1": {
+          "node_10": -0.21204917635331455,
+          "node_2": -0.020300059307262863,
+          "node_3": -0.09590413013050547,
+          "node_8": 0.05506715354094638
+        },
+        "car2": {
+          "node_10": -0.07924078875280793,
+          "node_2": -0.08576071304768007,
+          "node_3": 0.07482657926800407,
+          "node_8": 0.09173835340057046
+        }
+      },
+      "wall_details": [
+        {
+          "car": "car1",
+          "anchor": "node_10",
+          "samples": 1255,
+          "raw_median_m": 5.144,
+          "geometry_m": 4.804354795391364,
+          "applied_bias_m": 0.5516943809619503,
+          "corrected_error_m": -0.21204917635331455
+        },
+        {
+          "car": "car1",
+          "anchor": "node_2",
+          "samples": 1256,
+          "raw_median_m": 5.128,
+          "geometry_m": 4.724005186279965,
+          "applied_bias_m": 0.4242948730272982,
+          "corrected_error_m": -0.020300059307262863
+        },
+        {
+          "car": "car1",
+          "anchor": "node_3",
+          "samples": 1254,
+          "raw_median_m": 4.538,
+          "geometry_m": 4.512452215813481,
+          "applied_bias_m": 0.12145191431702473,
+          "corrected_error_m": -0.09590413013050547
+        },
+        {
+          "car": "car1",
+          "anchor": "node_8",
+          "samples": 1255,
+          "raw_median_m": 3.401,
+          "geometry_m": 3.00416377715996,
+          "applied_bias_m": 0.34176906929909334,
+          "corrected_error_m": 0.05506715354094638
+        },
+        {
+          "car": "car2",
+          "anchor": "node_10",
+          "samples": 1240,
+          "raw_median_m": 4.188000202178955,
+          "geometry_m": 3.658377372551935,
+          "applied_bias_m": 0.6088636183798282,
+          "corrected_error_m": -0.07924078875280793
+        },
+        {
+          "car": "car2",
+          "anchor": "node_2",
+          "samples": 1239,
+          "raw_median_m": 4.420000076293945,
+          "geometry_m": 4.056023298749651,
+          "applied_bias_m": 0.449737490591974,
+          "corrected_error_m": -0.08576071304768007
+        },
+        {
+          "car": "car2",
+          "anchor": "node_3",
+          "samples": 1239,
+          "raw_median_m": 3.4549999237060547,
+          "geometry_m": 3.17888738397572,
+          "applied_bias_m": 0.2012859604623305,
+          "corrected_error_m": 0.07482657926800407
+        },
+        {
+          "car": "car2",
+          "anchor": "node_8",
+          "samples": 1240,
+          "raw_median_m": 4.056000232696533,
+          "geometry_m": 3.59574748835343,
+          "applied_bias_m": 0.3685143909425328,
+          "corrected_error_m": 0.09173835340057046
+        }
+      ],
+      "peer_directional_medians_m": [
+        1.604,
+        1.63100004196167
+      ],
+      "peer_aggregate_m": 1.617500020980835,
+      "peer_reference_m": 1.7392527130926088,
+      "peer_error_m": -0.12175269211177375
+    }
+  ],
+  "formula": "sigma_link = hypot(0.2 m, max over training bags of abs(corrected link median minus coordinate-reference 3D distance)); peer uses mean of the two whole-bag directional medians, without fitted offset.",
+  "validation_and_dynamic_endpoints_used_for_fitting": false
+}
