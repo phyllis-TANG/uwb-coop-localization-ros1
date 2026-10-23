@@ -1,0 +1,19 @@
+{
+  "all_walls": {
+    "peer_predicted_median_m": 1.310699099040997,
+    "peer_prediction_minus_reference_m": -0.75107198427548,
+    "peer_observed_median_m": 2.125499954223633,
+    "peer_min_weight": 0.2534321794432941,
+    "peer_downweighted_bins": 27
+  },
+  "remove_car2_node10_from_predictor_only": {
+    "peer_predicted_median_m": 1.8330823696349652,
+    "peer_prediction_minus_reference_m": -0.2286887136815119,
+    "peer_observed_median_m": 2.125499954223633,
+    "peer_min_weight": 1.0,
+    "peer_downweighted_bins": 0
+  },
+  "reference_3d_m": 2.061771083316477,
+  "diagnostic_only": true,
+  "used_to_change_frozen_policy_or_graph_weights": false
+}
