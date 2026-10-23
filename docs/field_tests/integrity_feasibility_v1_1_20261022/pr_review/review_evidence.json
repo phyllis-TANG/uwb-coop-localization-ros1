@@ -1,0 +1,87 @@
+{
+  "input_sha256": {
+    "results_reviewed/evaluated_runs/test_nominal_1001/timeseries.csv": "bd58bd9fc2f7137a54d77ce92a77c0f6083f70fb28b26c7db82e97bfed12d945",
+    "results_reviewed/evaluated_runs/test_nominal_1002/timeseries.csv": "1a638a5c951ef6325230dafc2530724433a7057e4534ee5ec3b0a43c51001995",
+    "results_reviewed/evaluated_runs/test_nominal_1003/timeseries.csv": "b283956b4282f0a1fc0c633b3763be0e9fc27fe29790a93ad344d3def28132a5"
+  },
+  "threshold": 0.062191200771030145,
+  "rows": [
+    {
+      "seed": 1001,
+      "method": "M1",
+      "published_evaluation_s": 89.0,
+      "monitorable_evaluation_s": 87.0,
+      "unmonitorable_s": 2.0,
+      "alarm_state_time_s": 0,
+      "alarm_states": 0
+    },
+    {
+      "seed": 1001,
+      "method": "M2",
+      "published_evaluation_s": 89.0,
+      "monitorable_evaluation_s": 87.0,
+      "unmonitorable_s": 2.0,
+      "alarm_state_time_s": 13.0,
+      "alarm_states": 13
+    },
+    {
+      "seed": 1002,
+      "method": "M1",
+      "published_evaluation_s": 89.0,
+      "monitorable_evaluation_s": 87.0,
+      "unmonitorable_s": 2.0,
+      "alarm_state_time_s": 0,
+      "alarm_states": 0
+    },
+    {
+      "seed": 1002,
+      "method": "M2",
+      "published_evaluation_s": 89.0,
+      "monitorable_evaluation_s": 87.0,
+      "unmonitorable_s": 2.0,
+      "alarm_state_time_s": 0,
+      "alarm_states": 0
+    },
+    {
+      "seed": 1003,
+      "method": "M1",
+      "published_evaluation_s": 89.0,
+      "monitorable_evaluation_s": 87.0,
+      "unmonitorable_s": 2.0,
+      "alarm_state_time_s": 0,
+      "alarm_states": 0
+    },
+    {
+      "seed": 1003,
+      "method": "M2",
+      "published_evaluation_s": 89.0,
+      "monitorable_evaluation_s": 87.0,
+      "unmonitorable_s": 2.0,
+      "alarm_state_time_s": 0,
+      "alarm_states": 0
+    }
+  ],
+  "nominal_run_count": 3,
+  "simulated_duration_s": 270,
+  "published_state_evaluation_s": 267,
+  "common_M1_M2_monitorable_evaluation_s": 261,
+  "M1_unmonitorable_s": 6,
+  "M2_unmonitorable_s": 6,
+  "M2_alarm_state_time_s": 13,
+  "M2_alarm_time_occupancy": 0.04980842911877394,
+  "M2_alarm_event_count": 1,
+  "M2_runs_with_any_alarm": 1,
+  "alarm_state_interval_s": [
+    4,
+    17
+  ],
+  "stationary_overlap_s": 6,
+  "straight_motion_overlap_s": 7,
+  "alarm_error_min_m": 0.014154645655061169,
+  "alarm_error_max_m": 0.08466363093898374,
+  "modeled_alarm_availability_interval_s": [
+    5.028212682298523,
+    18.02760916206113
+  ],
+  "note": "Read-only archival summarization/plot; no new estimator run, no threshold change; 13/261 is descriptive time occupancy, not a long-term probability."
+}
