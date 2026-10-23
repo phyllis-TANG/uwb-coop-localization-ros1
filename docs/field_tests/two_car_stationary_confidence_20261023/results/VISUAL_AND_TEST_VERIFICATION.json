@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "review": "All three PNGs visually inspected: labels and legends readable; no clipping; zero reference visible; absolute offset separated from relative deformation; negative endpoint cases shown.",
+  "figures_sha256": {
+    "stationary_deformation.png": "32cd8bcf99baddb071da0bb52e89c80867787ae24d95c3c395a5d43d50c9832e",
+    "endpoint_ablation.png": "473875ae4acba1a1e471f8c0c9a91ad5f85f85363b58c2f30fd0df9a818c1c03",
+    "static_range_transfer.png": "6cc29f77a17cb34e5f9ba6655dbc7e3e8c0a521be42eb120d2b8d04b5fea13aa"
+  },
+  "tests": {
+    "passed": 22,
+    "new_policy_tests": 10,
+    "updated_dual_tests": 9,
+    "legacy_dual_tests": 3,
+    "elapsed_s": 0.941,
+    "environment_note": "NumPy/SciPy imported before appending the separately installed rosbags dependency path."
+  },
+  "analysis_sources_sha256": {
+    "plot_two_car_stationary_confidence.py": "af031c1cbb6f2a2cdfa9c22c1a0d707e9abf0004e36324c42de010263f85adce",
+    "analyze_two_car_stationary_confidence.py": "663f2c1b7ccb746d5c7c4008dbcf7a4305663b6c2cafef04e0cb2bc947a536f2"
+  }
+}

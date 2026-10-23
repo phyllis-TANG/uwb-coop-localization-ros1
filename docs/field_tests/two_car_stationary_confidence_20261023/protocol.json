@@ -1,0 +1,176 @@
+{
+  "schema_version": 1,
+  "date_asia_shanghai": "2026-10-23",
+  "base_main_sha": "21d3d48476579837caa6aee4e1027cf57b9d18e3",
+  "frozen_before_new_dynamic_fits_utc": "2026-10-23T02:22:37.336148+00:00",
+  "parent_protocol_path": "docs/field_tests/two_car_updated_comparison_20261022/protocol.json",
+  "parent_protocol_sha256": "ea47738f0d58fe48a7e2077ec1e30a5e25ef399bf95a7997293d1cd48c445fa5",
+  "purpose": "Targeted development ablation: reduce unsupported near-zero-Odom deformation and limit known spatial range-mismatch influence. No position-dependent range correction is fitted.",
+  "hypotheses": [
+    "Stronger existing relative-motion factors on past-only near-zero Odom candidates reduce stationary estimated path without hard-locking world coordinates.",
+    "Conservative per-link uncertainty scales from separate static measurements may limit range-induced pull; endpoint improvement is not guaranteed."
+  ],
+  "detector": {
+    "lookback_s": 2.0,
+    "max_gap_s": 0.2,
+    "minimum_samples": 10,
+    "pose_speed_max_mps": 0.001,
+    "pose_yaw_rate_max_degps": 0.1,
+    "twist_speed_max_mps": 0.005,
+    "twist_yaw_rate_max_radps": 0.01,
+    "odom_sigma_multiplier": 0.1,
+    "policy": "For each edge ending at t use raw Odom receipt samples no later than t. Require support over the entire 2s lookback, maximum gap/endpoint age <=0.2s, pose step rates and reported planar twist below thresholds. Change only covariance of existing Odom increment factors; preserve measured means, including small nonzero motion. No stationary-car label, command or truth in detector."
+  },
+  "range_confidence": {
+    "training": [
+      {
+        "id": "013206",
+        "path": "datasets/field_raw/20261018/bags/TWO_CAR_UWB_ODOM_IMU_static_20261018_013206.bag",
+        "sha256": "d9b8183c2ca6edef82affcde0f6c70dd8fcb71ba6c1b36374cd23e73a7d0671f",
+        "antenna_xyz_m": {
+          "car1": [
+            3.0,
+            3.0,
+            0.17
+          ],
+          "car2": [
+            2.0,
+            2.0,
+            0.2
+          ]
+        },
+        "source": "user confirmation P04"
+      },
+      {
+        "path": "datasets/field_raw/20261018/bags/TWO_CAR_static_C1_1p5_1p5_C2_2_2_20261018_013951.bag",
+        "sha256": "f4395b806a15735ac74a052e239a5c4bafd7ab14d1d93de487f1e42d50451abc",
+        "antenna_xyz_m": {
+          "car1": [
+            1.5,
+            1.5,
+            0.17
+          ],
+          "car2": [
+            2.0,
+            2.0,
+            0.2
+          ]
+        },
+        "source": "user confirmation P05",
+        "id": "013951"
+      },
+      {
+        "path": "datasets/field_raw/20261018/bags/TWO_CAR_static_C1_1p5_4_C2_2_2_20261018_015009.bag",
+        "sha256": "daed600f73ca9f10df2d142c955a661e80b38264622d6a0bd0c46d182b9efcb7",
+        "antenna_xyz_m": {
+          "car1": [
+            1.5,
+            4.0,
+            0.17
+          ],
+          "car2": [
+            2.0,
+            2.0,
+            0.2
+          ]
+        },
+        "source": "user confirmation P06",
+        "id": "015009"
+      }
+    ],
+    "validation": [
+      {
+        "path": "datasets/field_raw/20261018/bags/TWO_CAR_C1_1p5_4_C2_end_2p95_3p04_static_20261018_020151.bag",
+        "sha256": "06489487beeb6f6aec658b91c6c190c12a8c43f25352b8795c6c11eab38eee31",
+        "antenna_xyz_m": {
+          "car1": [
+            1.5,
+            4.0,
+            0.17
+          ],
+          "car2": [
+            2.95,
+            3.04,
+            0.2
+          ]
+        },
+        "source": "user confirmation P07; continuation of L endpoint, not newly surveyed",
+        "id": "020151"
+      }
+    ],
+    "wall_sigma_floor_m": 0.2,
+    "peer_sigma_floor_m": 0.2,
+    "formula": "sigma_link = hypot(0.2 m, max over training bags of abs(corrected link median minus coordinate-reference 3D distance)); peer uses mean of the two whole-bag directional medians, without fitted offset.",
+    "loss": "unchanged signed pseudo-Huber transform, unchanged Gaussian prior/Odom",
+    "range_bias_policy": "Reuse all PR38 per-car wall offsets unchanged; no peer bias adjustment; no dynamic endpoint or 020151 validation measurement enters fitting.",
+    "meaning": "Conservative heuristic scales from observed reference mismatch, not estimated Gaussian standard deviations or an identified position-dependent correction."
+  },
+  "configurations": [
+    {
+      "id": "baseline",
+      "stationary_covariance": false,
+      "range_confidence": false,
+      "withheld_wall_car": null
+    },
+    {
+      "id": "stationary_only",
+      "stationary_covariance": true,
+      "range_confidence": false,
+      "withheld_wall_car": null
+    },
+    {
+      "id": "confidence_only",
+      "stationary_covariance": false,
+      "range_confidence": true,
+      "withheld_wall_car": null
+    },
+    {
+      "id": "combined",
+      "stationary_covariance": true,
+      "range_confidence": true,
+      "withheld_wall_car": null
+    },
+    {
+      "id": "combined_no_car1_walls",
+      "stationary_covariance": true,
+      "range_confidence": true,
+      "withheld_wall_car": "car1"
+    },
+    {
+      "id": "combined_no_car2_walls",
+      "stationary_covariance": true,
+      "range_confidence": true,
+      "withheld_wall_car": "car2"
+    }
+  ],
+  "optimizer": {
+    "method": "trf",
+    "jacobian": "analytic",
+    "linear_solver": "exact dense",
+    "max_nfev": 100,
+    "ftol": 1e-07,
+    "xtol": 1e-07,
+    "gtol": 1e-07,
+    "initialization": "aligned Odom; same initial states for independent and joint"
+  },
+  "cases": [
+    "015334",
+    "033248",
+    "050447"
+  ],
+  "evaluation_only": {
+    "endpoints": "Inherited last-five median antenna coordinates; all three bags are known development data.",
+    "stationary_path": "Estimated antenna path/net displacement and start-prior displacement; no fixed surveyed pose.",
+    "negative_cases": "Preserve all both-motion and synthetic complete wall-loss results, including worsened endpoints.",
+    "baseline_reproduction_tolerance_m": 1e-09,
+    "continuous_truth": false
+  },
+  "limitations": [
+    "Full-bag offline batch only; not two-car sequential replay or fixed-lag.",
+    "Near-zero Odom plus twist is a candidate, not independent proof of physical rest; pushing, slipping or driver deadband can invalidate it.",
+    "Relative-motion covariance cannot fix a globally shifted stationary trajectory.",
+    "Training 015009 shares L-start geometry; validation 020151 shares L-end placement and Car1 training geometry. This is historical development and temporal transfer, not a blind test.",
+    "No continuous ground truth; manual reference uncertainty and Odom origin/heading remain unverified.",
+    "No new IMU factor. No parameter selection by the three dynamic endpoints."
+  ]
+}
