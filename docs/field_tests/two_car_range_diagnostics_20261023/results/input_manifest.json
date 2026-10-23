@@ -1,0 +1,35 @@
+{
+  "base_main_sha": "e9df6104d710b01b08282c168e2191d355a37fa2",
+  "protocol_sha256": "f903450236b16b122fae06cbd9d42e9585d6f48dd901fd654198fcd32ae3f468",
+  "source_files_sha256": {
+    "two_car_range_confidence.py": "14c3e5b30f3ec59982f4d7fa8c82897bf1b1e966d8925abab4200dc34172d16a",
+    "run_two_car_range_confidence.py": "5e9e8b1e48b92cf8fc5748fa4a3cb72640f4dc73a5bb216a55758fdb634f6fa4",
+    "test_two_car_range_confidence.py": "02034ab74306cac56afa7d2ce2fea7d4454333746dc4a6d54af6acfbb9c9279e",
+    "diagnose_two_car_ranges.py": "baacead914da86e044127820e6d000a2102ddc593f8b52cad960174cec9fd56e",
+    "two_car_stationary_confidence.py": "9d70c052336fa438754f339664b85d17af750635788f568d29254a5d17d52df0",
+    "run_two_car_stationary_confidence.py": "70547d1d43cada694ab9169c9a43d3a025ac12c20c6993d5ef84046ca29c5f27",
+    "two_car_updated_comparison.py": "7ccd2e7c40b1c9654898a40382bf562766c22d449b4cc350808fb6b52d5026d0",
+    "single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+    "single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3"
+  },
+  "data_sha256": {
+    "datasets/field_raw/20261018/bags/TWO_CAR_UWB_ODOM_IMU_static_20261018_013206.bag": "d9b8183c2ca6edef82affcde0f6c70dd8fcb71ba6c1b36374cd23e73a7d0671f",
+    "datasets/field_raw/20261018/bags/TWO_CAR_static_C1_1p5_1p5_C2_2_2_20261018_013951.bag": "f4395b806a15735ac74a052e239a5c4bafd7ab14d1d93de487f1e42d50451abc",
+    "datasets/field_raw/20261018/bags/TWO_CAR_static_C1_1p5_4_C2_2_2_20261018_015009.bag": "daed600f73ca9f10df2d142c955a661e80b38264622d6a0bd0c46d182b9efcb7",
+    "datasets/field_raw/20261018/bags/TWO_CAR_C1_1p5_4_C2_end_2p95_3p04_static_20261018_020151.bag": "06489487beeb6f6aec658b91c6c190c12a8c43f25352b8795c6c11eab38eee31",
+    "datasets/field_raw/20261018/bags/TWO_CAR_C1_static_C2_auto_L_20261018_015334.bag": "bb2f8cbfecf3e73cdf1b12f4c290b51d0c74215006746abba72c0b9c7a0946e6",
+    "datasets/field_raw/20261018/bags/TWO_CAR_C2_static_C1_auto_straight_aligned_20261018_033248.bag": "4e1283bbd58f9a64187a872cd9edeccaccdd5c438149d871761c6e2e11a67bbd",
+    "datasets/field_raw/20261018/bags/TWO_CAR_both_motion_clear_repeat_20261018_050447.bag": "adfab304646d779c573f9001e1ceb2538b5cdcfffc2948750cde93f495501872"
+  },
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "frozen_fixed_scales_sha256": "d116e7350e6a85b5aaf517d5f4a422f7c239417eb142e7c2fac13bb3eaacc0a2",
+  "baseline_reproduction_max_component_delta": 0.0,
+  "all_solves_accepted": true,
+  "method_records": 36,
+  "trajectory_rows": 6168,
+  "confidence_rows": 3411,
+  "source_and_protocol_unchanged": true,
+  "confidence_computed_before_fits": true
+}

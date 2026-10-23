@@ -1,0 +1,335 @@
+{
+  "independent": {
+    "optimizer": {
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 7,
+      "njev": 7,
+      "cost": 115.37980891065158,
+      "optimality": 0.001270017304190756,
+      "solve_wall_s": 1.0795100610012014,
+      "solve_cpu_s": 1.0794709359999999
+    },
+    "endpoint_difference_m": {
+      "car1": 0.19029673138299202,
+      "car2": 0.1587337622454381
+    },
+    "endpoint_xy_m": {
+      "car1": [
+        1.0438786647455482,
+        3.1587926252400247
+      ],
+      "car2": [
+        3.8347381370186344,
+        2.8402428561498003
+      ]
+    },
+    "cars": {
+      "car1": {
+        "estimated_antenna_path_m": 1.318265925252937,
+        "antenna_net_displacement_m": 1.1742380372013819,
+        "start_antenna_prior_displacement_m": 0.3603184648076369,
+        "aligned_odom_path_m": 1.0126356278403261,
+        "odom_translation_correction_m": {
+          "count": 107,
+          "median_m": 0.0014603820446741187,
+          "median_abs_m": 0.0014603820446741187,
+          "rms_m": 0.005400864873932038,
+          "max_abs_m": 0.01725137566870412
+        },
+        "near_zero_edges": 70,
+        "near_zero_odom_correction_m": {
+          "count": 70,
+          "median_m": 0.0008151737826680094,
+          "median_abs_m": 0.0008151737826680094,
+          "rms_m": 0.002142639181595304,
+          "max_abs_m": 0.006268241545089102
+        }
+      },
+      "car2": {
+        "estimated_antenna_path_m": 2.30882401536746,
+        "antenna_net_displacement_m": 1.133580880201961,
+        "start_antenna_prior_displacement_m": 0.09060902701029624,
+        "aligned_odom_path_m": 2.0733898411495995,
+        "odom_translation_correction_m": {
+          "count": 107,
+          "median_m": 0.005015955132409267,
+          "median_abs_m": 0.005015955132409267,
+          "rms_m": 0.007908097016696668,
+          "max_abs_m": 0.019571520458164134
+        },
+        "near_zero_edges": 31,
+        "near_zero_odom_correction_m": {
+          "count": 31,
+          "median_m": 0.004594824590131304,
+          "median_abs_m": 0.004594824590131304,
+          "rms_m": 0.006584882337156408,
+          "max_abs_m": 0.014186162719199084
+        }
+      }
+    },
+    "wall_residual_by_link": {
+      "car1": {
+        "node_10": {
+          "count": 108,
+          "median_m": 0.04168757296010428,
+          "median_abs_m": 0.045112446754622226,
+          "rms_m": 0.23172593221037285,
+          "max_abs_m": 1.3379879252443265
+        },
+        "node_2": {
+          "count": 108,
+          "median_m": -0.050734421327372825,
+          "median_abs_m": 0.050734421327372825,
+          "rms_m": 0.05495889869711554,
+          "max_abs_m": 0.08866777739356824
+        },
+        "node_3": {
+          "count": 108,
+          "median_m": -0.022010845046711136,
+          "median_abs_m": 0.023471896925087776,
+          "rms_m": 0.03398089426304162,
+          "max_abs_m": 0.10548411760412346
+        },
+        "node_8": {
+          "count": 108,
+          "median_m": -0.14200611519227446,
+          "median_abs_m": 0.14200611519227446,
+          "rms_m": 0.16746595332874878,
+          "max_abs_m": 0.3876985450496524
+        }
+      },
+      "car2": {
+        "node_10": {
+          "count": 108,
+          "median_m": 0.07454653838481784,
+          "median_abs_m": 0.09029627675662888,
+          "rms_m": 0.17561109213177592,
+          "max_abs_m": 0.676000760219877
+        },
+        "node_2": {
+          "count": 108,
+          "median_m": 0.08646627962882358,
+          "median_abs_m": 0.08646627962882358,
+          "rms_m": 0.09938305723024897,
+          "max_abs_m": 0.16719508289795915
+        },
+        "node_3": {
+          "count": 108,
+          "median_m": -0.019216314800032386,
+          "median_abs_m": 0.03387267515955461,
+          "rms_m": 0.05210723303124318,
+          "max_abs_m": 0.1419171473336851
+        },
+        "node_8": {
+          "count": 108,
+          "median_m": -0.0054819271115551516,
+          "median_abs_m": 0.04980144131854791,
+          "rms_m": 0.09719187515357304,
+          "max_abs_m": 0.6372194346477844
+        }
+      }
+    },
+    "stationary_car": null,
+    "keyframes": 108,
+    "endpoint_window_s": [
+      104.0,
+      105.0,
+      106.0,
+      107.0,
+      108.0
+    ],
+    "wall_factor_count": 864,
+    "peer_factor_count": 0,
+    "peer_residual_m": {
+      "count": 108,
+      "median_m": -0.06079564097879597,
+      "median_abs_m": 0.08064777535625323,
+      "rms_m": 0.11008926848285536,
+      "max_abs_m": 0.19532591183064074
+    },
+    "factor_cost_ledger": {
+      "car1": {
+        "prior": 1.6387528481425553,
+        "odom": 1.8000711445110262,
+        "wall": 57.154841880305
+      },
+      "car2": {
+        "prior": 0.10344519556943774,
+        "odom": 3.8601988305275388,
+        "wall": 50.82249901159605
+      },
+      "peer": 0.0
+    }
+  },
+  "joint": {
+    "optimizer": {
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 7,
+      "njev": 7,
+      "cost": 122.01795360324341,
+      "optimality": 0.000780824275955605,
+      "solve_wall_s": 1.2607908490008413,
+      "solve_cpu_s": 1.2604641069999971
+    },
+    "endpoint_difference_m": {
+      "car1": 0.20059266970300071,
+      "car2": 0.17914062889875618
+    },
+    "endpoint_xy_m": {
+      "car1": [
+        1.0059813788890946,
+        3.170102217380833
+      ],
+      "car2": [
+        3.9088441907246545,
+        2.8008630997612136
+      ]
+    },
+    "cars": {
+      "car1": {
+        "estimated_antenna_path_m": 1.326257266768877,
+        "antenna_net_displacement_m": 1.1847044006554026,
+        "start_antenna_prior_displacement_m": 0.3742201742406369,
+        "aligned_odom_path_m": 1.0126356278403261,
+        "odom_translation_correction_m": {
+          "count": 107,
+          "median_m": 0.0017667313240836485,
+          "median_abs_m": 0.0017667313240836485,
+          "rms_m": 0.004873431803600911,
+          "max_abs_m": 0.014918768024878558
+        },
+        "near_zero_edges": 70,
+        "near_zero_odom_correction_m": {
+          "count": 70,
+          "median_m": 0.0013774217706346622,
+          "median_abs_m": 0.0013774217706346622,
+          "rms_m": 0.0021867400918691,
+          "max_abs_m": 0.005843093324430533
+        }
+      },
+      "car2": {
+        "estimated_antenna_path_m": 2.284846755937851,
+        "antenna_net_displacement_m": 1.169301475606252,
+        "start_antenna_prior_displacement_m": 0.061862109236948654,
+        "aligned_odom_path_m": 2.0733898411495995,
+        "odom_translation_correction_m": {
+          "count": 107,
+          "median_m": 0.004060542536881483,
+          "median_abs_m": 0.004060542536881483,
+          "rms_m": 0.007155132056761872,
+          "max_abs_m": 0.02017896057344485
+        },
+        "near_zero_edges": 31,
+        "near_zero_odom_correction_m": {
+          "count": 31,
+          "median_m": 0.00270501580904786,
+          "median_abs_m": 0.00270501580904786,
+          "rms_m": 0.005180762546801007,
+          "max_abs_m": 0.013129033147159783
+        }
+      }
+    },
+    "wall_residual_by_link": {
+      "car1": {
+        "node_10": {
+          "count": 108,
+          "median_m": 0.053750956181839005,
+          "median_abs_m": 0.0593085355820393,
+          "rms_m": 0.23739629241546417,
+          "max_abs_m": 1.3654331175557513
+        },
+        "node_2": {
+          "count": 108,
+          "median_m": -0.04108937690677239,
+          "median_abs_m": 0.04108937690677239,
+          "rms_m": 0.04714804536653195,
+          "max_abs_m": 0.09656080812010259
+        },
+        "node_3": {
+          "count": 108,
+          "median_m": -0.004915175529977223,
+          "median_abs_m": 0.009122263649373519,
+          "rms_m": 0.03242540928981212,
+          "max_abs_m": 0.1235750187828657
+        },
+        "node_8": {
+          "count": 108,
+          "median_m": -0.14929259295742314,
+          "median_abs_m": 0.14929259295742314,
+          "rms_m": 0.1719086977061264,
+          "max_abs_m": 0.3960513203985685
+        }
+      },
+      "car2": {
+        "node_10": {
+          "count": 108,
+          "median_m": 0.07253644822813343,
+          "median_abs_m": 0.08298564586949797,
+          "rms_m": 0.17675817395124002,
+          "max_abs_m": 0.6804989203155283
+        },
+        "node_2": {
+          "count": 108,
+          "median_m": 0.08066352764244167,
+          "median_abs_m": 0.08066352764244167,
+          "rms_m": 0.09644370629030352,
+          "max_abs_m": 0.16392585559550232
+        },
+        "node_3": {
+          "count": 108,
+          "median_m": -0.0235561462844196,
+          "median_abs_m": 0.024910921720314505,
+          "rms_m": 0.05484042968539022,
+          "max_abs_m": 0.14948218604307728
+        },
+        "node_8": {
+          "count": 108,
+          "median_m": 0.0011115833888155624,
+          "median_abs_m": 0.05318159828949076,
+          "rms_m": 0.11047779125514505,
+          "max_abs_m": 0.6156335552392367
+        }
+      }
+    },
+    "stationary_car": null,
+    "keyframes": 108,
+    "endpoint_window_s": [
+      104.0,
+      105.0,
+      106.0,
+      107.0,
+      108.0
+    ],
+    "wall_factor_count": 864,
+    "peer_factor_count": 108,
+    "peer_residual_m": {
+      "count": 108,
+      "median_m": -0.03211447735671069,
+      "median_abs_m": 0.043437954131145595,
+      "rms_m": 0.047568178131404945,
+      "max_abs_m": 0.07967491751631028
+    },
+    "factor_cost_ledger": {
+      "car1": {
+        "prior": 1.7726173433142611,
+        "odom": 1.48838369032549,
+        "wall": 58.64948784497566
+      },
+      "car2": {
+        "prior": 0.048877716836300024,
+        "odom": 3.19310018291857,
+        "wall": 53.88119698722501
+      },
+      "peer": 2.9842898376481197
+    }
+  },
+  "joint_minus_independent_endpoint_m": {
+    "car1": 0.01029593832000869,
+    "car2": 0.02040686665331809
+  },
+  "matched_input_sha256": "e84a8104d1db166f5362609813067e50738383799b25b1614904ca2c2d5102c7"
+}

@@ -1,0 +1,212 @@
+{
+  "date_asia_shanghai": "2026-10-23",
+  "base_main_sha": "e9df6104d710b01b08282c168e2191d355a37fa2",
+  "created_utc": "2026-10-23T05:04:59.640827+00:00",
+  "parent_protocol_path": "docs/field_tests/two_car_updated_comparison_20261022/protocol.json",
+  "parent_policy_protocol_path": "docs/field_tests/two_car_stationary_confidence_20261023/protocol.json",
+  "static_cases": [
+    {
+      "id": "013206",
+      "path": "datasets/field_raw/20261018/bags/TWO_CAR_UWB_ODOM_IMU_static_20261018_013206.bag",
+      "sha256": "d9b8183c2ca6edef82affcde0f6c70dd8fcb71ba6c1b36374cd23e73a7d0671f",
+      "antenna_xyz_m": {
+        "car1": [
+          3,
+          3,
+          0.17
+        ],
+        "car2": [
+          2,
+          2,
+          0.2
+        ]
+      },
+      "source": "user confirmation P04"
+    },
+    {
+      "path": "datasets/field_raw/20261018/bags/TWO_CAR_static_C1_1p5_1p5_C2_2_2_20261018_013951.bag",
+      "sha256": "f4395b806a15735ac74a052e239a5c4bafd7ab14d1d93de487f1e42d50451abc",
+      "antenna_xyz_m": {
+        "car1": [
+          1.5,
+          1.5,
+          0.17
+        ],
+        "car2": [
+          2.0,
+          2.0,
+          0.2
+        ]
+      },
+      "source": "user confirmation P05",
+      "id": "013951"
+    },
+    {
+      "path": "datasets/field_raw/20261018/bags/TWO_CAR_static_C1_1p5_4_C2_2_2_20261018_015009.bag",
+      "sha256": "daed600f73ca9f10df2d142c955a661e80b38264622d6a0bd0c46d182b9efcb7",
+      "antenna_xyz_m": {
+        "car1": [
+          1.5,
+          4.0,
+          0.17
+        ],
+        "car2": [
+          2.0,
+          2.0,
+          0.2
+        ]
+      },
+      "source": "user confirmation P06",
+      "id": "015009"
+    },
+    {
+      "path": "datasets/field_raw/20261018/bags/TWO_CAR_C1_1p5_4_C2_end_2p95_3p04_static_20261018_020151.bag",
+      "sha256": "06489487beeb6f6aec658b91c6c190c12a8c43f25352b8795c6c11eab38eee31",
+      "antenna_xyz_m": {
+        "car1": [
+          1.5,
+          4.0,
+          0.17
+        ],
+        "car2": [
+          2.95,
+          3.04,
+          0.2
+        ]
+      },
+      "source": "user confirmation P07; continuation of L endpoint, not newly surveyed",
+      "id": "020151"
+    }
+  ],
+  "dynamic_cases": [
+    {
+      "id": "015334",
+      "legacy_name": "L",
+      "role": "Car1 stationary / Car2 L",
+      "path": "datasets/field_raw/20261018/bags/TWO_CAR_C1_static_C2_auto_L_20261018_015334.bag",
+      "sha256": "bb2f8cbfecf3e73cdf1b12f4c290b51d0c74215006746abba72c0b9c7a0946e6",
+      "start_antenna_xyz_m": {
+        "car1": [
+          1.5,
+          4.0,
+          0.17
+        ],
+        "car2": [
+          2.0,
+          2.0,
+          0.2
+        ]
+      },
+      "initial_heading_deg": {
+        "car1": 0.0,
+        "car2": 90.0
+      },
+      "heading_source": "unchanged historical two-car placement hypotheses; not independently surveyed",
+      "stationary_car": "car1",
+      "evaluation_only": {
+        "end_antenna_xyz_m": {
+          "car1": [
+            1.5,
+            4.0,
+            0.17
+          ],
+          "car2": [
+            2.95,
+            3.04,
+            0.2
+          ]
+        },
+        "direct_tape_endpoint_distance_m": 1.743
+      }
+    },
+    {
+      "id": "033248",
+      "legacy_name": "straight",
+      "role": "Car2 stationary / Car1 aligned straight",
+      "path": "datasets/field_raw/20261018/bags/TWO_CAR_C2_static_C1_auto_straight_aligned_20261018_033248.bag",
+      "sha256": "4e1283bbd58f9a64187a872cd9edeccaccdd5c438149d871761c6e2e11a67bbd",
+      "start_antenna_xyz_m": {
+        "car1": [
+          1.5,
+          4.0,
+          0.17
+        ],
+        "car2": [
+          2.95,
+          3.04,
+          0.2
+        ]
+      },
+      "initial_heading_deg": {
+        "car1": -90.0,
+        "car2": 0.0
+      },
+      "heading_source": "unchanged historical two-car placement hypotheses; not independently surveyed",
+      "stationary_car": "car2",
+      "evaluation_only": {
+        "end_antenna_xyz_m": {
+          "car1": [
+            1.45,
+            2.98,
+            0.17
+          ],
+          "car2": [
+            2.95,
+            3.04,
+            0.2
+          ]
+        },
+        "direct_tape_endpoint_distance_m": 1.54
+      }
+    },
+    {
+      "id": "050447",
+      "legacy_name": null,
+      "role": "both cars moving / clear repeat",
+      "path": "datasets/field_raw/20261018/bags/TWO_CAR_both_motion_clear_repeat_20261018_050447.bag",
+      "sha256": "adfab304646d779c573f9001e1ceb2538b5cdcfffc2948750cde93f495501872",
+      "start_antenna_xyz_m": {
+        "car1": [
+          1.0,
+          4.0,
+          0.17
+        ],
+        "car2": [
+          3.0,
+          2.0,
+          0.2
+        ]
+      },
+      "initial_heading_deg": {
+        "car1": -90.0,
+        "car2": 90.0
+      },
+      "heading_source": "provisional placement directions from historical session reconstruction, not derived from endpoints",
+      "stationary_car": null,
+      "evaluation_only": {
+        "end_antenna_xyz_m": {
+          "car1": [
+            1.02,
+            2.97,
+            0.17
+          ],
+          "car2": [
+            3.91,
+            2.98,
+            0.2
+          ]
+        },
+        "direct_tape_endpoint_distance_m": null
+      }
+    }
+  ],
+  "diagnostic_bin_half_width_s": 0.4,
+  "minimum_samples_per_link": 5,
+  "questions": [
+    "Is the ~92 cm Car2/node_10 discrepancy a within-bag transition or a between-recording difference?",
+    "Do link ID, tag, units, quality availability, header/receipt timing, Odom or peer reciprocity explain it?",
+    "Does a leave-one-link-out prediction reveal sustained inconsistency without using target ranges or manual endpoints?"
+  ],
+  "scope": "Raw measurements and time association diagnosis first. Freeze one new confidence policy after these diagnostics, before any new dynamic endpoint comparison. All bags are known development data.",
+  "reference_policy": "Only static reference positions enter diagnostic reference errors; dynamic endpoints remain evaluation only. Do not rewrite user-confirmed coordinates or original bags."
+}

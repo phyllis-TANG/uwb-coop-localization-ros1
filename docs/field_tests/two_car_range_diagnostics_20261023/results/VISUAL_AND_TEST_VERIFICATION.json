@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "tests": {
+    "passed": 32,
+    "new_tests": 10,
+    "inherited_tests": 22,
+    "elapsed_s": 0.517
+  },
+  "visual_review": "All three figures visually inspected: readable labels, complete static evidence, score and lagged-weight axes distinguished, all six strategy/switch configurations and both cars retained. PNG checksums and SVG XML verified.",
+  "figures_sha256": {
+    "static_node10_diagnosis.png": "c02d5c0e5be695ebcd8e1eb2f4bbd8d922a336e66d924e463c2c4fc486ea2b2e",
+    "confidence_timeline.png": "6549d3ac3d941cc8ef1677d8f877d757e35f97cbdcf0b1cc8dfe2697598f4517",
+    "confidence_endpoint_comparison.png": "d1063cef57899874fba884a470e3d44632e32261930b6fd6c6c0a9c06d2fb754"
+  },
+  "analysis_source_sha256": {
+    "plot_two_car_range_confidence.py": "07b9f33e271e9d34b6162be7446d0b03a4569c1738c2bd624939914141f54799",
+    "analyze_two_car_range_confidence.py": "8c3798347c0063bb3a1854804cb77b7053723df79b7421c1d4506280b5fa9a7e"
+  }
+}

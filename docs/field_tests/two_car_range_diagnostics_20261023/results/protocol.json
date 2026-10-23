@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "date_asia_shanghai": "2026-10-23",
+  "base_main_sha": "e9df6104d710b01b08282c168e2191d355a37fa2",
+  "frozen_utc": "2026-10-23T05:09:28.780543+00:00",
+  "diagnostic_plan_sha256": "913ffe92bf2d412ea271cd86bcd6682d88b0f2902c7ad6b1bf6389e52ed5d475",
+  "basis": "Car2/node_10 median windows are stable within 013951 (~3.44m) and 015009 (~4.37m); the ~0.925m difference is between recordings, not an observed single-bag jump. Quality unavailable. Use persistent omitted-link inconsistency rather than only within-link scatter.",
+  "parent_protocol_path": "docs/field_tests/two_car_updated_comparison_20261022/protocol.json",
+  "parent_policy_protocol_path": "docs/field_tests/two_car_stationary_confidence_20261023/protocol.json",
+  "frozen_fixed_scales_path": "docs/field_tests/two_car_stationary_confidence_20261023/results/range_confidence.json",
+  "new_policy": {
+    "prediction": "Ten independent 3-state EKF instruments: one per omitted wall link (four per car), plus one all-wall no-peer filter per car to predict peer distance. Each uses external start prior, measured body-frame Odom increments and remaining current/past binned wall ranges. The checked wall link or any peer range never enters its own prediction. No manual endpoints or ongoing static reference factor in prediction; externally supplied start prior is the only reference input.",
+    "measurement_update": "Scalar robust EKF, pseudo-Huber-inspired R_eff = R * sqrt(1 + innovation^2 / S), S = HPHt + R. Joseph covariance. Same .2m floor and Odom noise as PR38; no confidence feedback into these instruments.",
+    "z_definition": "(predicted distance - corrected measurement) / sqrt(predicted distance variance + 0.2^2). Approximate consistency score, not a calibrated chi-square statistic.",
+    "history_bins": 3,
+    "minimum_valid_history": 3,
+    "threshold_abs_z": 2.0,
+    "minimum_weight": 0.1,
+    "weight_formula": "For bin i take median absolute z of the three preceding bins. w = clip((2/max(2, median_abs_z))^2, 0.1, 1). Missing/incomplete history gives w=1.",
+    "factor_application": "sigma_i = original .2m / sqrt(w_i); keep all factor means, robust losses, priors, and at most one reciprocal-aggregated peer factor per epoch. Weights fixed before graph solving and identical for independent/joint.",
+    "time_scope": "Causal in the inherited keyframe sequence and lagged score history. The PR38 frontend uses centered +/-0.4s bins and bracketed interpolation; this remains an offline full-bag experiment, not verified sensor-arrival causal replay."
+  },
+  "configurations": [
+    {
+      "id": "original",
+      "strategy": "original",
+      "stationary_covariance": false
+    },
+    {
+      "id": "original_stationary",
+      "strategy": "original",
+      "stationary_covariance": true
+    },
+    {
+      "id": "fixed",
+      "strategy": "fixed",
+      "stationary_covariance": false
+    },
+    {
+      "id": "fixed_stationary",
+      "strategy": "fixed",
+      "stationary_covariance": true
+    },
+    {
+      "id": "adaptive",
+      "strategy": "adaptive",
+      "stationary_covariance": false
+    },
+    {
+      "id": "adaptive_stationary",
+      "strategy": "adaptive",
+      "stationary_covariance": true
+    }
+  ],
+  "cases": [
+    "015334",
+    "033248",
+    "050447"
+  ],
+  "static_prediction_cases": [
+    "013206",
+    "013951",
+    "015009",
+    "020151"
+  ],
+  "rules": [
+    "Freeze before new dynamic fits, do not tune using endpoint results.",
+    "Reproduce all four PR39 full-wall configurations before interpreting the two new ones.",
+    "Report both cars, stationary deformation, global prior shift, physical range residuals and weights; preserve regressions.",
+    "All existing bags are known development data. No blind-test or physical NLOS classification claim.",
+    "No policy feeds back final optimized residuals into its own weights; no hard stationary world coordinate."
+  ],
+  "supersedes_pre_fit_protocol_sha256": "f685f9922803f9e3c0a3e516887b05e7c546227470bb28c7d4ecc5802e914f89",
+  "pre_fit_clarification": "Static diagnostic instruments use the static reference coordinate only as an external start prior (same role as dynamic start inputs), with provisional zero heading. No ongoing reference factor, endpoint or physical stationary label enters prediction. They are not independent accuracy tests. No numeric rule changed."
+}
