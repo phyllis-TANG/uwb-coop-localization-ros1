@@ -1,0 +1,39 @@
+{
+  "id": "dev_nominal_105",
+  "group": "development",
+  "status": "completed",
+  "scenario": "nominal",
+  "seed": 105,
+  "input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/dev_nominal_105/sensors.jsonl",
+  "input_sha256": "dbb00488b9702af0b7542a6b68d46d0e8b13c4d7a78e30d058447344f721fd63",
+  "source_lock_sha256": "afad12945c4190426188cd33f2aef1344537ae924d2b148c60d2bf1e80b842a8",
+  "threshold_sha256": null,
+  "config_sha256": "159e6ff35643e146a58b8ab7497b049136c85d37f9e6deee08aa8ebd50e82516",
+  "started_utc": "2026-10-22T15:49:28.988374+00:00",
+  "wall_s": 1.6664209619921166,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/tools/run_single_car_integrity_worker.py",
+    "--config",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/estimator_config.json",
+    "--sensors",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/runs/dev_nominal_105/sensors.jsonl",
+    "--output",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/runs/dev_nominal_105/output"
+  ],
+  "exit_code": 0,
+  "output_count": 89,
+  "output_files": {
+    "sensors.jsonl": "dbb00488b9702af0b7542a6b68d46d0e8b13c4d7a78e30d058447344f721fd63",
+    "fault_labels.json": "035fe1ad79039fe4555ab10da8cf5c38b5e16a1f469e765c908e3e0e998b87c8",
+    "truth.csv": "adce8a895e393d515a3e63098275b5c6ebe5e78ebbcc82353383dd7090175d0b",
+    "worker.log": "7b4956812e08421660bd17e1532d71ba916fd5321632a349a2596ddc37fe9a91",
+    "output/worker_summary.json": "785d3d87f8f3c6cc71c2e11a8d2492f1871792a8ff8350e39e61761bf3682a73",
+    "output/updates.jsonl": "f50c32d13edf260acbb830802ab57b1894afe1de5f41625bfbdbdeebe325b71b"
+  },
+  "completed_utc": "2026-10-22T15:49:30.664052+00:00",
+  "imported_from": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/runs/dev_nominal_105",
+  "execution_source_lock_sha256": "a60a4b35f5e2be119f03a6befaccb49d6e13319a9b37a2e30443c02a0273621d",
+  "execution_threshold_sha256": null,
+  "compatibility_note": "Estimator code unchanged; generator changes Python bool label serialization only; input bytes and original outputs retained exactly"
+}

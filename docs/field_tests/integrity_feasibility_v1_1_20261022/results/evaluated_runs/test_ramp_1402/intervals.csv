@@ -1,0 +1,6 @@
+id,method,kind,error_limit_m,time_axis,start_s,end_s,duration_s
+test_ramp_1402,M0,unalerted_exceedance,0.2,state,54.0,62.0,8.0
+test_ramp_1402,M1,unalerted_exceedance,0.2,state,54.0,62.0,8.0
+test_ramp_1402,M1,monitor_unavailable,,state,1.0,3.0,2.0
+test_ramp_1402,M2,monitor_unavailable,,state,1.0,3.0,2.0
+test_ramp_1402,M2,alarm,,state,40.0,68.0,28.0

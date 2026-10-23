@@ -1,0 +1,37 @@
+{
+  "id": "test_ramp_1401",
+  "group": "diagnostic",
+  "status": "completed",
+  "scenario": "ramp",
+  "seed": 1401,
+  "input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_ramp_1401/sensors.jsonl",
+  "input_sha256": "ebe2d0698bf87c7e43c515d7012145604d142fd349daa33804d1b019fa546ca5",
+  "source_lock_sha256": "afad12945c4190426188cd33f2aef1344537ae924d2b148c60d2bf1e80b842a8",
+  "threshold_sha256": "341736609ec25e4ccb69945bb0c08de898d84e008784f16a931392988256f5c7",
+  "config_sha256": "159e6ff35643e146a58b8ab7497b049136c85d37f9e6deee08aa8ebd50e82516",
+  "started_utc": "2026-10-22T15:54:40.889737+00:00",
+  "wall_s": 1.7159404550038744,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/tools/run_single_car_integrity_worker.py",
+    "--config",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/estimator_config.json",
+    "--sensors",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_ramp_1401/sensors.jsonl",
+    "--output",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_ramp_1401/output",
+    "--thresholds",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/thresholds.json"
+  ],
+  "exit_code": 0,
+  "output_count": 89,
+  "output_files": {
+    "sensors.jsonl": "ebe2d0698bf87c7e43c515d7012145604d142fd349daa33804d1b019fa546ca5",
+    "fault_labels.json": "dbc4defe1a991318d9c904135fcc8b7caf37a6288351dace4c913f39e2b8c4d2",
+    "truth.csv": "9591589ffd3cfdcc6f28a81ea0c243fb2ecf76cab67a1fbf030d5d2eecbecf9e",
+    "worker.log": "f1890774726d39d7f03dedefd0cd729b101e2eb627bc0c78bef7116512c7a205",
+    "output/worker_summary.json": "ab9afd047159d200df4237bf3f5d62238c81c6e466099f909e11c3cdce88b769",
+    "output/updates.jsonl": "59bf2fde5bcbd1933d1bde9eecc98b25209ca16123ca2790b625572feed4f5e6"
+  },
+  "completed_utc": "2026-10-22T15:54:42.614433+00:00"
+}

@@ -1,0 +1,49 @@
+{
+  "values": {
+    "M1": 1.0,
+    "M2": 0.062191200771030145
+  },
+  "rule": {
+    "development": "5 nominal runs only; no fault/trajectory-error based choice",
+    "M1": "max(1.0,1.25*quantile_0.995 of available max absolute prefit innovations / frozen range_sigma=.2 across 5 nominal dev runs)",
+    "M2": "max(.05m,1.25*quantile_0.995 of available max antenna XY full-minus-independent-exclusion distances across same dev runs)",
+    "quantile": "numpy linear interpolation",
+    "consecutive_exceedances": 2,
+    "release": "immediate on below threshold; consecutive counter resets on unavailable; no detector feedback to locator",
+    "validity": "accepted full graph, >=3 current anchors and current raw XY geometry rank2; M2 additionally all four hypotheses accepted with >=3 current retained anchors, rank2 range geometry and full-rank weighted objective Jacobian; any failed/rank-invalid hypothesis => unavailable, never trusted",
+    "rank_rtol": 1e-08,
+    "condition_limit": 100000000.0
+  },
+  "development_evidence": [
+    {
+      "run_id": "dev_nominal_101",
+      "updates_sha256": "3a463befec092760a9de40db31b6afc81932a445a34606e1dd65c976fb1bf69a",
+      "input_sha256": "9907308d9f437b82d83fedeae097b1d2a048a092f3b707fa3ba19fbeaeb0e240"
+    },
+    {
+      "run_id": "dev_nominal_102",
+      "updates_sha256": "1fb462080e934855102a6755ed77b10d62d56d26e46ce0792cd39446370c614f",
+      "input_sha256": "de0c1c416b463a2fb4f0b0784005969b1675071f739dc36eb576d7c214d8ce90"
+    },
+    {
+      "run_id": "dev_nominal_103",
+      "updates_sha256": "fdf3d920b493dd0625f5e2694728bb5b87fbe94c5a2825ffe13110a009819167",
+      "input_sha256": "0f86393bb442a4487108dfd2cf5a5acb75bdf66fff423ff790d39c145a1e221b"
+    },
+    {
+      "run_id": "dev_nominal_104",
+      "updates_sha256": "72527be518b06a305a54cbc670ab74d9b206f43623f47d8962634cdb60d2f969",
+      "input_sha256": "d86d8ce12635b9e257df4e53c4ad123f53f7203b90b7c8fcc17fac2e7b2669c7"
+    },
+    {
+      "run_id": "dev_nominal_105",
+      "updates_sha256": "f50c32d13edf260acbb830802ab57b1894afe1de5f41625bfbdbdeebe325b71b",
+      "input_sha256": "dbb00488b9702af0b7542a6b68d46d0e8b13c4d7a78e30d058447344f721fd63"
+    }
+  ],
+  "sample_counts": {
+    "M1": 435,
+    "M2": 435
+  },
+  "source_lock_sha256": "afad12945c4190426188cd33f2aef1344537ae924d2b148c60d2bf1e80b842a8"
+}

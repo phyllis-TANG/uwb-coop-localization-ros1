@@ -1,0 +1,32 @@
+{
+  "original_experiment_commit": "f8097700fc36565fdeda76e2952c38833c9df3e6",
+  "branch": "experiment/integrity-feasibility-v1-20261022",
+  "initial_worktree_clean": true,
+  "original_commit_changed_files": 660,
+  "required_code_tests_protocol_inventory_reports_present": true,
+  "all_666_original_artifact_hashes_verified": true,
+  "original_tracked_files_unchanged": true,
+  "estimator_reruns": 0,
+  "test_reruns": 0,
+  "threshold_changes": 0,
+  "normal_data_summary_source": "archived timeseries.csv only",
+  "M1_M2_common_monitorable_s": 261,
+  "M1_unmonitorable_s": 6,
+  "M2_unmonitorable_s": 6,
+  "M2_alarm_s": 13,
+  "M2_alarm_time_share": 0.04980842911877394,
+  "independent_nominal_runs": 3,
+  "runs_with_M2_alarm": 1,
+  "M2_alarm_events": 1,
+  "state_alarm_interval_s": [
+    4,
+    17
+  ],
+  "stationary_overlap_s": 6,
+  "straight_motion_overlap_s": 7,
+  "first_accepted_graph_state_s": 3,
+  "initialization_cause": "hypothesis only, not verified",
+  "defaults_unchanged": true,
+  "PR_requested_state": "draft",
+  "PR_requested_base": "main"
+}

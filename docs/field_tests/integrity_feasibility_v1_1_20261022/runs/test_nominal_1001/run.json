@@ -1,0 +1,41 @@
+{
+  "id": "test_nominal_1001",
+  "group": "diagnostic",
+  "status": "completed",
+  "scenario": "nominal",
+  "seed": 1001,
+  "input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_nominal_1001/sensors.jsonl",
+  "input_sha256": "9d370e4c4984f71e39987a3c35f1b625a363f230ce7e901e6d7060de9b7ce6a3",
+  "source_lock_sha256": "afad12945c4190426188cd33f2aef1344537ae924d2b148c60d2bf1e80b842a8",
+  "threshold_sha256": "341736609ec25e4ccb69945bb0c08de898d84e008784f16a931392988256f5c7",
+  "config_sha256": "159e6ff35643e146a58b8ab7497b049136c85d37f9e6deee08aa8ebd50e82516",
+  "started_utc": "2026-10-22T15:50:04.729944+00:00",
+  "wall_s": 1.6663659020123305,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/tools/run_single_car_integrity_worker.py",
+    "--config",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/estimator_config.json",
+    "--sensors",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/runs/test_nominal_1001/sensors.jsonl",
+    "--output",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/runs/test_nominal_1001/output",
+    "--thresholds",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/thresholds.json"
+  ],
+  "exit_code": 0,
+  "output_count": 89,
+  "output_files": {
+    "sensors.jsonl": "9d370e4c4984f71e39987a3c35f1b625a363f230ce7e901e6d7060de9b7ce6a3",
+    "fault_labels.json": "bf8548cbfcb167d95b44114254b7cf79690b5f988fb150e3bafcce14395d9a5c",
+    "truth.csv": "2f2689288942a2438afcd434209e13a9c6d407fac68e35c7d5a43ca37045f3df",
+    "worker.log": "683b1ad285f0ea8e118e791c170e45c24079312c4e90f5f5db6ff7e97957d619",
+    "output/worker_summary.json": "24f0d3742d0959986ac60e7174a0160b472f7cf448f1645d60ddb9317e04f0c6",
+    "output/updates.jsonl": "7ef779aaef933e99789e38352a35a51f5b1c65682cb26422a88f5246170d45f7"
+  },
+  "completed_utc": "2026-10-22T15:50:06.405486+00:00",
+  "imported_from": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/runs/test_nominal_1001",
+  "execution_source_lock_sha256": "a60a4b35f5e2be119f03a6befaccb49d6e13319a9b37a2e30443c02a0273621d",
+  "execution_threshold_sha256": "6ba3e50e2a9b826a6f3c3f02887ec096982eff3ff5d2f7a3ddb3d4291402a1db",
+  "compatibility_note": "Estimator code unchanged; generator changes Python bool label serialization only; input bytes and original outputs retained exactly"
+}

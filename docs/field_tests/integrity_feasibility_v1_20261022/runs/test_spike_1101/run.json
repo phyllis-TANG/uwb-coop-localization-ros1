@@ -1,0 +1,15 @@
+{
+  "id": "test_spike_1101",
+  "group": "generation_failure",
+  "status": "generation_failed",
+  "scenario": "spike",
+  "seed": 1101,
+  "wall_s": 0.0,
+  "output_count": 0,
+  "estimator_executed": false,
+  "input_path": "/home/ubuntu22/\u53cc\u8f66\u534f\u540c/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/runs/test_spike_1101/sensors.jsonl",
+  "input_sha256": "df917754697cc05f8af64baf0dfa343081e3daa95ed77ccf1f197a33dad84109",
+  "source_lock_sha256": "a60a4b35f5e2be119f03a6befaccb49d6e13319a9b37a2e30443c02a0273621d",
+  "threshold_sha256": "6ba3e50e2a9b826a6f3c3f02887ec096982eff3ff5d2f7a3ddb3d4291402a1db",
+  "error": "TypeError: NumPy bool is not JSON serializable while saving fault_labels.json; estimator never started"
+}

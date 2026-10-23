@@ -1,0 +1,24 @@
+test_real_archive_relocated_resume_and_audit_without_estimator (test_integrity_compatibility.ArchivedRelocationTests) ... ok
+test_archived_metrics_are_87_rows_15_development_72_diagnostic (test_integrity_compatibility.CompatibilityTests) ... ok
+test_checkpoint_does_not_rewrite_frozen_inventory_or_root_handoff (test_integrity_compatibility.CompatibilityTests) ... ok
+test_cli_requires_explicit_experiment (test_integrity_compatibility.CompatibilityTests) ... ok
+test_corrupt_local_input_never_falls_back (test_integrity_compatibility.CompatibilityTests) ... ok
+test_existing_run_uses_portable_hash_check (test_integrity_compatibility.CompatibilityTests) ... ok
+test_historical_bag_uses_current_repository (test_integrity_compatibility.CompatibilityTests) ... ok
+test_historical_hash_disagreement_and_corruption_rejected (test_integrity_compatibility.CompatibilityTests) ... ok
+test_missing_local_input_never_falls_back_to_valid_old_path (test_integrity_compatibility.CompatibilityTests) ... ok
+test_original_ledger_accepts_only_explicit_source_snapshot_replacements (test_integrity_compatibility.CompatibilityTests) ... ok
+test_original_lock_preserved_exact_registered_runner_only (test_integrity_compatibility.CompatibilityTests) ... ok
+test_output_and_threshold_corruption_rejected (test_integrity_compatibility.CompatibilityTests) ... ok
+test_path_traversal_and_symlink_escape_rejected (test_integrity_compatibility.CompatibilityTests) ... ok
+test_protocol_config_runner_snapshot_and_manifest_tampering_rejected (test_integrity_compatibility.CompatibilityTests) ... ok
+test_relocated_sensors_preserve_absolute_provenance (test_integrity_compatibility.CompatibilityTests) ... ok
+test_resume_missing_or_incomplete_never_starts_worker (test_integrity_compatibility.CompatibilityTests) ... ok
+test_resume_only_all_phases_no_generator_worker_or_threshold_selection (test_integrity_compatibility.CompatibilityTests) ... ok
+test_unknown_input_group_rejected (test_integrity_compatibility.CompatibilityTests) ... ok
+test_v1_1_handoff_uses_actual_experiment_and_quoted_paths (test_integrity_compatibility.CompatibilityTests) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 1.433s
+
+OK

@@ -1,0 +1,7 @@
+id,method,kind,error_limit_m,time_axis,start_s,end_s,duration_s
+test_nominal_1001,M0,unalerted_exceedance,0.2,state,1.0,3.0,2.0
+test_nominal_1001,M1,unalerted_exceedance,0.2,state,1.0,3.0,2.0
+test_nominal_1001,M1,monitor_unavailable,,state,1.0,3.0,2.0
+test_nominal_1001,M2,unalerted_exceedance,0.2,state,1.0,3.0,2.0
+test_nominal_1001,M2,monitor_unavailable,,state,1.0,3.0,2.0
+test_nominal_1001,M2,alarm,,state,4.0,17.0,13.0

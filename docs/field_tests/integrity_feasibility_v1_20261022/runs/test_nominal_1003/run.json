@@ -1,0 +1,37 @@
+{
+  "id": "test_nominal_1003",
+  "group": "diagnostic",
+  "status": "completed",
+  "scenario": "nominal",
+  "seed": 1003,
+  "input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/runs/test_nominal_1003/sensors.jsonl",
+  "input_sha256": "e12914a5ab07df99633630064f6e7020a506a60b40d9c74a6c71d65817fe32df",
+  "source_lock_sha256": "a60a4b35f5e2be119f03a6befaccb49d6e13319a9b37a2e30443c02a0273621d",
+  "threshold_sha256": "6ba3e50e2a9b826a6f3c3f02887ec096982eff3ff5d2f7a3ddb3d4291402a1db",
+  "config_sha256": "159e6ff35643e146a58b8ab7497b049136c85d37f9e6deee08aa8ebd50e82516",
+  "started_utc": "2026-10-22T15:50:08.195637+00:00",
+  "wall_s": 1.6657681210053852,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/tools/run_single_car_integrity_worker.py",
+    "--config",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/estimator_config.json",
+    "--sensors",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/runs/test_nominal_1003/sensors.jsonl",
+    "--output",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/runs/test_nominal_1003/output",
+    "--thresholds",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/thresholds.json"
+  ],
+  "exit_code": 0,
+  "output_count": 89,
+  "output_files": {
+    "sensors.jsonl": "e12914a5ab07df99633630064f6e7020a506a60b40d9c74a6c71d65817fe32df",
+    "fault_labels.json": "0ff4a72e23c8664671d68e4447f60fef108bc444bf9e6d83437bef39a6278d9c",
+    "truth.csv": "decdaaeb71b9d4a9822a1fc607ca16e77cc012d72a21d39750cf402952c5f5a7",
+    "worker.log": "d26b8c49b8304e23971f31c442df6b95e70e98eeb2ed8c7f49f1dc2b00328ec4",
+    "output/worker_summary.json": "1a9449b662492b3fb9953fabb3881e9b983fb505e97715fcd2edf14610c134f1",
+    "output/updates.jsonl": "378b1dae77fa57992ef60715e945268c0354b031c49123fc4f6b41699f350e1d"
+  },
+  "completed_utc": "2026-10-22T15:50:09.868155+00:00"
+}

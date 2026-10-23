@@ -1,0 +1,37 @@
+{
+  "id": "test_two_anchors_1701",
+  "group": "diagnostic",
+  "status": "completed",
+  "scenario": "two_anchors",
+  "seed": 1701,
+  "input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_two_anchors_1701/sensors.jsonl",
+  "input_sha256": "c51e66707c4b3eea5273a35bbf5e5d2d085e061ad4bb2dc0c840894e82ae1a7d",
+  "source_lock_sha256": "afad12945c4190426188cd33f2aef1344537ae924d2b148c60d2bf1e80b842a8",
+  "threshold_sha256": "341736609ec25e4ccb69945bb0c08de898d84e008784f16a931392988256f5c7",
+  "config_sha256": "159e6ff35643e146a58b8ab7497b049136c85d37f9e6deee08aa8ebd50e82516",
+  "started_utc": "2026-10-22T15:54:56.530785+00:00",
+  "wall_s": 1.5170692310057348,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/tools/run_single_car_integrity_worker.py",
+    "--config",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/estimator_config.json",
+    "--sensors",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_two_anchors_1701/sensors.jsonl",
+    "--output",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_two_anchors_1701/output",
+    "--thresholds",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/thresholds.json"
+  ],
+  "exit_code": 0,
+  "output_count": 89,
+  "output_files": {
+    "sensors.jsonl": "c51e66707c4b3eea5273a35bbf5e5d2d085e061ad4bb2dc0c840894e82ae1a7d",
+    "fault_labels.json": "68687e958dc64e9093c44640016fecec60e7f40b6a8187e2a5e64fcf6fbb271b",
+    "truth.csv": "ea0e9020d0c45ea7d115e3766b9c091182a9997c3f97a6403ffa76b43ba42b0c",
+    "worker.log": "444ce77f46f567952a9e6a89b919aa89bcd92394a5f62f76a64689a2d8791e58",
+    "output/worker_summary.json": "58a3cb6070ec72b27df5188429347afa44e23eb4241e4ed8c2fd8827999dedfe",
+    "output/updates.jsonl": "c9d2bd97eaf9dc4fdba88fdc7a6f2793f4cba7e18b79b10f9d0697d63db363e1"
+  },
+  "completed_utc": "2026-10-22T15:54:58.057068+00:00"
+}

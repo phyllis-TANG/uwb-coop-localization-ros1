@@ -1,0 +1,36 @@
+{
+  "id": "history_005135",
+  "group": "historical",
+  "status": "completed",
+  "scenario": null,
+  "seed": null,
+  "input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/datasets/field_raw/20261018/bags/CAR2_auto_Lshape_repeat2_20261018_005135.bag",
+  "input_sha256": "63880adf78d5f07a9b12a87f7352f49e8f7be82d223bcdf60d96e257ba38b2ff",
+  "source_lock_sha256": "afad12945c4190426188cd33f2aef1344537ae924d2b148c60d2bf1e80b842a8",
+  "threshold_sha256": null,
+  "config_sha256": "159e6ff35643e146a58b8ab7497b049136c85d37f9e6deee08aa8ebd50e82516",
+  "started_utc": "2026-10-22T15:48:56.969976+00:00",
+  "wall_s": 2.171958254999481,
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/tools/run_single_car_integrity_worker.py",
+    "--config",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/estimator_config.json",
+    "--bag",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/datasets/field_raw/20261018/bags/CAR2_auto_Lshape_repeat2_20261018_005135.bag",
+    "--output",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/runs/history_005135/output"
+  ],
+  "exit_code": 0,
+  "output_count": 92,
+  "output_files": {
+    "worker.log": "25ee8a325a860c3be3a53a90341817035f03cc21e9bd29f13182b389c7e60324",
+    "output/worker_summary.json": "2502563e73d58a28ddf3cd395fb3b9c98562ad2049e6c8a6bfb5289a0ace27c8",
+    "output/updates.jsonl": "8391ad003bffde4ac5e2b141397010021789e2aa65b476d4be1a18cf0ddedcfa"
+  },
+  "completed_utc": "2026-10-22T15:48:59.151226+00:00",
+  "imported_from": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/runs/history_005135",
+  "execution_source_lock_sha256": "a60a4b35f5e2be119f03a6befaccb49d6e13319a9b37a2e30443c02a0273621d",
+  "execution_threshold_sha256": null,
+  "compatibility_note": "Estimator code unchanged; generator changes Python bool label serialization only; input bytes and original outputs retained exactly"
+}

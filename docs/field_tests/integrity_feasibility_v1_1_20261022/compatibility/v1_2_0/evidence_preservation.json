@@ -1,0 +1,19 @@
+{
+  "original_ledger_entries_checked": 666,
+  "explicit_source_replacements": [
+    "tools/report_single_car_integrity.py",
+    "tools/run_single_car_integrity_experiment.py",
+    "tools/verify_single_car_integrity_artifacts.py"
+  ],
+  "original_evidence_bytes_unchanged": true,
+  "compatibility_version": "1.2.0",
+  "prior_review_ledger_entries_checked": 7,
+  "execution_verification": {
+    "mode": "registered_compatibility",
+    "compatibility_version": "1.2.0",
+    "changed_execution_sources": [
+      "tools/run_single_car_integrity_experiment.py"
+    ],
+    "original_execution_lock_sha256": "afad12945c4190426188cd33f2aef1344537ae924d2b148c60d2bf1e80b842a8"
+  }
+}

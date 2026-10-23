@@ -1,0 +1,32 @@
+[
+  {
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools",
+      "-p",
+      "test_single_car_*.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "log": "single_car_tests.log"
+  },
+  {
+    "command": [
+      "python3",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools",
+      "-p",
+      "test_integrity_evaluation.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "log": "metric_tests.log"
+  }
+]

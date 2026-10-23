@@ -1,0 +1,1 @@
+{"initial_test_attempt":{"tests":36,"failures":1,"cause":"fixture fault on anchor a directly above stationary tag had zero XY gradient; full poses remained equal; independent-prior invariance checks passed","fix":"test injects anchor b with nonzero XY sensitivity; estimator code unchanged"}}

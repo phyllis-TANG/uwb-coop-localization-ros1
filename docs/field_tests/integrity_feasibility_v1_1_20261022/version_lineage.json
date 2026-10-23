@@ -1,0 +1,33 @@
+{
+  "imported_runs": [
+    "history_004023",
+    "dev_nominal_104",
+    "dev_nominal_102",
+    "dev_nominal_105",
+    "history_005135",
+    "dev_nominal_101",
+    "test_nominal_1003",
+    "dev_nominal_103",
+    "test_nominal_1002",
+    "test_nominal_1001"
+  ],
+  "new_estimator_runs_for_imports": 0,
+  "previous_source_lock_sha256": "a60a4b35f5e2be119f03a6befaccb49d6e13319a9b37a2e30443c02a0273621d",
+  "current_source_lock_sha256": "afad12945c4190426188cd33f2aef1344537ae924d2b148c60d2bf1e80b842a8",
+  "change": "Only NumPy boolean label serialization and regression test; thresholds identical",
+  "previous_failure": {
+    "id": "test_spike_1101",
+    "group": "generation_failure",
+    "status": "generation_failed",
+    "scenario": "spike",
+    "seed": 1101,
+    "wall_s": 0.0,
+    "output_count": 0,
+    "estimator_executed": false,
+    "input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_20261022/runs/test_spike_1101/sensors.jsonl",
+    "input_sha256": "df917754697cc05f8af64baf0dfa343081e3daa95ed77ccf1f197a33dad84109",
+    "source_lock_sha256": "a60a4b35f5e2be119f03a6befaccb49d6e13319a9b37a2e30443c02a0273621d",
+    "threshold_sha256": "6ba3e50e2a9b826a6f3c3f02887ec096982eff3ff5d2f7a3ddb3d4291402a1db",
+    "error": "TypeError: NumPy bool is not JSON serializable while saving fault_labels.json; estimator never started"
+  }
+}
