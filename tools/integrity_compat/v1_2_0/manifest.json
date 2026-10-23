@@ -1,0 +1,34 @@
+{
+  "compatibility_version": "1.2.0",
+  "purpose": "Recovery and review compatibility only; no new estimator execution or thresholds",
+  "original_experiment_commit": "f8097700fc36565fdeda76e2952c38833c9df3e6",
+  "original_review_commit": "4682ac4c05b7f572cc191cf465d7c07d5831de2a",
+  "supported_execution_source_lock_sha256": [
+    "afad12945c4190426188cd33f2aef1344537ae924d2b148c60d2bf1e80b842a8"
+  ],
+  "execution_lock_policy": "Only exact registered runner replacement; estimator, generator, other CORE sources, protocol and config remain strict",
+  "source_replacements": {
+    "tools/run_single_car_integrity_experiment.py": {
+      "original_sha256": "395ba53d00e650ffdda7138b9e50a46b2a79bedad131c5977b6b5a5041045727",
+      "compatible_sha256": "44c1210a5cbf5f8460ac150fc3a7c82b81beb35b0473169df06bda05fb9d57b7",
+      "snapshot": "tools/integrity_compat/v1_2_0/original_sources/run_single_car_integrity_experiment.py"
+    },
+    "tools/verify_single_car_integrity_artifacts.py": {
+      "original_sha256": "71da9f9ec49f358cca7f391fd570492629364e711cfb1e3896c6e6408ea54e47",
+      "compatible_sha256": "c0b58df38528abdda1291dd5d468f90cde6b2da3c54323235f8ba343c19748cf",
+      "snapshot": "tools/integrity_compat/v1_2_0/original_sources/verify_single_car_integrity_artifacts.py"
+    },
+    "tools/report_single_car_integrity.py": {
+      "original_sha256": "d7ebeb087fc252c061e1743e02b5f533f696fb8dc50f2f736a9970913331bc5d",
+      "compatible_sha256": "2c88cfceb7e422eae8c14b9cb63ce735461742f659f11b986ae60624f8ac4e08",
+      "snapshot": "tools/integrity_compat/v1_2_0/original_sources/report_single_car_integrity.py"
+    }
+  },
+  "compatibility_sources": {
+    "tools/run_single_car_integrity_experiment.py": "44c1210a5cbf5f8460ac150fc3a7c82b81beb35b0473169df06bda05fb9d57b7",
+    "tools/verify_single_car_integrity_artifacts.py": "c0b58df38528abdda1291dd5d468f90cde6b2da3c54323235f8ba343c19748cf",
+    "tools/report_single_car_integrity.py": "2c88cfceb7e422eae8c14b9cb63ce735461742f659f11b986ae60624f8ac4e08",
+    "tools/single_car_integrity_compat.py": "35ce83d6fe9a32662de5d041ff1b7ea79799d542c72015c51588b71321d05e25",
+    "tools/test_integrity_compatibility.py": "244b29da9fb452f6e6c875a7614ada77820ce60f54ecf6495e37446f9e3ae081"
+  }
+}

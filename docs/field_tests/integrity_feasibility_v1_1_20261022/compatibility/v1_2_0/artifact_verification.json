@@ -1,0 +1,235 @@
+{
+  "runs_checked": 31,
+  "updates_checked": 2769,
+  "independent_hypothesis_records_checked": 11076,
+  "imported_nominal_sensor_inputs_hash_verified": 8,
+  "synthetic_inputs_regenerated": 0,
+  "development_metric_rows": 15,
+  "diagnostic_metric_rows": 72,
+  "total_metric_rows": 87,
+  "M0_M1_M2_position_and_error_identical": true,
+  "unavailable_never_concluded_no_alarm": true,
+  "future_receipts_not_used": true,
+  "execution_sources_verified": true,
+  "compatibility_version": "1.2.0",
+  "supplemental_onset_audit_passed": true,
+  "input_resolution_records": [
+    {
+      "run_id": "dev_nominal_101",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/dev_nominal_101/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/dev_nominal_101/sensors.jsonl",
+      "input_sha256": "9907308d9f437b82d83fedeae097b1d2a048a092f3b707fa3ba19fbeaeb0e240",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "dev_nominal_102",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/dev_nominal_102/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/dev_nominal_102/sensors.jsonl",
+      "input_sha256": "de0c1c416b463a2fb4f0b0784005969b1675071f739dc36eb576d7c214d8ce90",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "dev_nominal_103",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/dev_nominal_103/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/dev_nominal_103/sensors.jsonl",
+      "input_sha256": "0f86393bb442a4487108dfd2cf5a5acb75bdf66fff423ff790d39c145a1e221b",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "dev_nominal_104",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/dev_nominal_104/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/dev_nominal_104/sensors.jsonl",
+      "input_sha256": "d86d8ce12635b9e257df4e53c4ad123f53f7203b90b7c8fcc17fac2e7b2669c7",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "dev_nominal_105",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/dev_nominal_105/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/dev_nominal_105/sensors.jsonl",
+      "input_sha256": "dbb00488b9702af0b7542a6b68d46d0e8b13c4d7a78e30d058447344f721fd63",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "history_004023",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/datasets/field_raw/20261018/bags/CAR2_auto_Lshape_repeat_20261018_004023.bag",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/datasets/field_raw/20261018/bags/CAR2_auto_Lshape_repeat_20261018_004023.bag",
+      "input_sha256": "72d4a051005b0b109461842b6489aa2d07b08dd6f6e750c4b9a82aac8d8e1d82",
+      "resolution": "current_repository"
+    },
+    {
+      "run_id": "history_005135",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/datasets/field_raw/20261018/bags/CAR2_auto_Lshape_repeat2_20261018_005135.bag",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/datasets/field_raw/20261018/bags/CAR2_auto_Lshape_repeat2_20261018_005135.bag",
+      "input_sha256": "63880adf78d5f07a9b12a87f7352f49e8f7be82d223bcdf60d96e257ba38b2ff",
+      "resolution": "current_repository"
+    },
+    {
+      "run_id": "test_correlated_1501",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_correlated_1501/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_correlated_1501/sensors.jsonl",
+      "input_sha256": "9ee76077f3a3f84c85fd2a9f5b458cd9e6a72b53f9b24ce4ee7a9316aa22818c",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_correlated_1502",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_correlated_1502/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_correlated_1502/sensors.jsonl",
+      "input_sha256": "a5f56f6c719e22c9fe89f9f20486ac307bdf6b9d7bfe172ccd9faf3c272621b6",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_correlated_1503",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_correlated_1503/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_correlated_1503/sensors.jsonl",
+      "input_sha256": "54ffddb9f4db87a5d012322e9b54c99158481faad3672ae803d7d7071bd43be8",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_drop_one_1601",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_drop_one_1601/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_drop_one_1601/sensors.jsonl",
+      "input_sha256": "f1143db15b6e2970fedd8a0521747c42fa747d825578227803277f82a6e25977",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_drop_one_1602",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_drop_one_1602/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_drop_one_1602/sensors.jsonl",
+      "input_sha256": "b9ef19da8f3fb2f9dab11a345ed05661c08d05c3a1a6641832d278f1ebb9f03c",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_drop_one_1603",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_drop_one_1603/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_drop_one_1603/sensors.jsonl",
+      "input_sha256": "3a275fbab8ee386000ab188bab07fd35675a917b9db9c58a12aeb7ab22c1f46c",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_negative_1301",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_negative_1301/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_negative_1301/sensors.jsonl",
+      "input_sha256": "3ff6b34ba0d493fad416b4acac86ff21298faf45cc5dc7d13512395591dec834",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_negative_1302",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_negative_1302/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_negative_1302/sensors.jsonl",
+      "input_sha256": "02eda3d7a7eed5df0643846a503d3ddc0cba8c51e06c1c8369f41a0836ce3c8b",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_negative_1303",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_negative_1303/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_negative_1303/sensors.jsonl",
+      "input_sha256": "2bac01dc8f97352b24721c07bb5ab1a1784fd91d0eed94c81b888292993249fc",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_nominal_1001",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_nominal_1001/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_nominal_1001/sensors.jsonl",
+      "input_sha256": "9d370e4c4984f71e39987a3c35f1b625a363f230ce7e901e6d7060de9b7ce6a3",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_nominal_1002",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_nominal_1002/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_nominal_1002/sensors.jsonl",
+      "input_sha256": "7b6b6e58a4cd72b82d6e4d394b934a2504a5ce13ac6ef9e57a21451cbca18c58",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_nominal_1003",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_nominal_1003/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_nominal_1003/sensors.jsonl",
+      "input_sha256": "e12914a5ab07df99633630064f6e7020a506a60b40d9c74a6c71d65817fe32df",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_positive_1201",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_positive_1201/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_positive_1201/sensors.jsonl",
+      "input_sha256": "cc7585b25935b28f2953ffc7534ab1d373004f0dfd8c0114db974653f224784d",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_positive_1202",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_positive_1202/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_positive_1202/sensors.jsonl",
+      "input_sha256": "309ecdd64e55e70a9c3a6496d1a70c5b200b7bf105e84c3adecf2912dc8b52c5",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_positive_1203",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_positive_1203/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_positive_1203/sensors.jsonl",
+      "input_sha256": "5bd9490573526f5374813e97259e59a9fff5f4259e04807f58f03ecd26b9b2d4",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_ramp_1401",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_ramp_1401/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_ramp_1401/sensors.jsonl",
+      "input_sha256": "ebe2d0698bf87c7e43c515d7012145604d142fd349daa33804d1b019fa546ca5",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_ramp_1402",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_ramp_1402/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_ramp_1402/sensors.jsonl",
+      "input_sha256": "4e45f073cc28774fc7c3b2ed4fb09de2ea93062feb4b976cd129877e760069f7",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_ramp_1403",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_ramp_1403/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_ramp_1403/sensors.jsonl",
+      "input_sha256": "6f90ce9c072391e8785638d87412a499cc3c406b74b8dd463247d4e0c0291743",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_spike_1101",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_spike_1101/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_spike_1101/sensors.jsonl",
+      "input_sha256": "df917754697cc05f8af64baf0dfa343081e3daa95ed77ccf1f197a33dad84109",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_spike_1102",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_spike_1102/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_spike_1102/sensors.jsonl",
+      "input_sha256": "c6c11c968f712fa066eb49850632358c9b6e250b052d59abc79f1953d1b6621a",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_spike_1103",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_spike_1103/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_spike_1103/sensors.jsonl",
+      "input_sha256": "6855ccd70632cc4bf47e5bfa71006b21c460ce2d9d16142a3dd1ee8e665ccc87",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_two_anchors_1701",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_two_anchors_1701/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_two_anchors_1701/sensors.jsonl",
+      "input_sha256": "c51e66707c4b3eea5273a35bbf5e5d2d085e061ad4bb2dc0c840894e82ae1a7d",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_two_anchors_1702",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_two_anchors_1702/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_two_anchors_1702/sensors.jsonl",
+      "input_sha256": "14ad53484cc47f72dc2fad15f97234ebfaade8c82c2cb5943d596a82c90b0a75",
+      "resolution": "current_experiment"
+    },
+    {
+      "run_id": "test_two_anchors_1703",
+      "resolved_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_two_anchors_1703/sensors.jsonl",
+      "recorded_input_path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_two_anchors_1703/sensors.jsonl",
+      "input_sha256": "a69c0063d971ddadd30bc679219f992bdb5e4bcf194366de2858983a99d7349e",
+      "resolution": "current_experiment"
+    }
+  ]
+}

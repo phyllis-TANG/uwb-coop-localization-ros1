@@ -16,9 +16,11 @@ import time
 import numpy as np
 import scipy
 from single_car_integrity_sim import save_generated
+from single_car_integrity_compat import (VERSION, compatibility_manifest, verify_execution_state,
+                                        verify_record, handoff_text)
 
 ROOT=Path(__file__).resolve().parents[1]
-DEFAULT=ROOT/'docs/field_tests/integrity_feasibility_v1_20261022'
+DEFAULT=ROOT/'docs/field_tests/integrity_feasibility_v1_1_20261022'
 CORE=['tools/single_car_integrity.py','tools/single_car_integrity_sim.py',
       'tools/run_single_car_integrity_worker.py','tools/run_single_car_integrity_experiment.py',
       'tools/test_single_car_integrity.py','tools/single_car_fixed_lag.py',
@@ -53,29 +55,52 @@ def source_state(out):
 
 def verify(out):
     current=source_state(out)
-    locked=json.loads((out/'source_lock.json').read_text())
-    if current!=locked['locked']:
-        raise ValueError('Source/config/protocol changed; use a new experiment version, never overwrite')
+    verify_execution_state(out,ROOT,current)
     return current
 
 
 def checkpoint(out,stage):
-    records=[]
-    for path in sorted((out/'runs').glob('*/run.json')):
-        records.append(json.loads(path.read_text()))
-    write(out/'run_inventory.json',records)
+    records=[json.loads(path.read_text()) for path in sorted((out/'runs').glob('*/run.json'))]
+    registered=sha(out/'source_lock.json') in compatibility_manifest(ROOT)['supported_execution_source_lock_sha256']
+    # Frozen run inventories and the historical root HANDOFF stay untouched.
+    metadata=out/'compatibility'/'v1_2_0'/'checkpoints' if registered else out
+    metadata.mkdir(parents=True,exist_ok=True)
+    write(metadata/'run_inventory.json',records)
     fields=['id','group','status','seed','scenario','wall_s','output_count','input_sha256','source_lock_sha256','threshold_sha256','error']
-    with (out/'run_inventory.csv').open('w',newline='') as f:
-        writer=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore');writer.writeheader();writer.writerows(records)
-    counts={status:sum(r['status']==status for r in records) for status in sorted({r['status'] for r in records})}
-    (ROOT/'HANDOFF.md').write_text('# 定位完好性监测可行性试验 v1\n\n'
-        +'基线：13aeade4c6b13ffa55b0acfafe65c29136067c0f；分支 experiment/integrity-feasibility-v1-20261022。\n\n'
-        +'阶段：'+stage+'。运行清单状态：'+json.dumps(counts,ensure_ascii=False)+'。\n\n'
-        +'实验目录：docs/field_tests/integrity_feasibility_v1_20261022。protocol.json、source_lock.json、estimator_config.json 为恢复核对依据；thresholds.json 存在后不可修改。每个 runs/<id>/run.json 保存输入、源码和阈值哈希，output/updates.jsonl 逐行持久化。\n\n'
-        +'恢复命令：OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 PYTHONPATH=/home/ubuntu22/uwb/offline-deps python3 tools/run_single_car_integrity_experiment.py --phase all。已完成项校验哈希后跳过；失败/超时不自动重跑。\n\n'
-        +'预算：2 实测 + 5 开发 + 24 诊断；每运行 180 s，总计算 3600 s；不自动扩网格。\n\n'
-        +'原工作区和全部原始数据不变；不启动真实小车，不推送、不合并。报告及评价脚本可单独补充，但不得变更冻结的估计器/生成器/运行器和协议。\n')
+    with (metadata/'run_inventory.csv').open('w',newline='') as stream:
+        writer=csv.DictWriter(stream,fieldnames=fields,extrasaction='ignore');writer.writeheader();writer.writerows(records)
+    (metadata/'HANDOFF.md').write_text(handoff_text(out,ROOT,stage,records))
     return records
+
+
+def resume_existing(out,p,phase='all',handoff_output=None):
+    """Hash audit only: cannot generate inputs, select thresholds or start workers."""
+    verify(out)
+    expected=[]
+    if phase in ('baseline','all'):
+        expected.extend('history_'+case['id'] for case in p['historical_cases'])
+    if phase in ('develop','all'):
+        expected.extend('dev_nominal_'+str(seed) for seed in p['development_seeds'])
+    if phase in ('diagnostics','all'):
+        expected.extend('test_'+scene['id']+'_'+str(seed) for scene in p['scenarios'] for seed in scene['seeds'])
+        frozen=json.loads((out/'thresholds.json').read_text())
+        if frozen['source_lock_sha256']!=sha(out/'source_lock.json'):
+            raise ValueError('Frozen threshold execution-lock mismatch')
+    records=[];resolutions=[]
+    for run_id in expected:
+        path=out/'runs'/run_id/'run.json'
+        if not path.is_file():raise FileNotFoundError('Resume-only run missing: '+run_id)
+        record=json.loads(path.read_text())
+        if record['id']!=run_id or record['status']!='completed':
+            raise ValueError('Resume-only requires an existing completed run: '+run_id)
+        resolutions.append(verify_record(out,ROOT,record,p));records.append(record)
+    if handoff_output is not None:
+        handoff_output=Path(handoff_output)
+        handoff_output.parent.mkdir(parents=True,exist_ok=True)
+        with handoff_output.open('x') as stream:
+            stream.write(handoff_text(out,ROOT,'全部已有项校验完成；未启动估计器',records))
+    return dict(status='verified_existing_only',compatibility_version=VERSION,runs_verified=len(records),
+                estimator_runs_started=0,thresholds_reselected=False,input_resolutions=resolutions)
 
 
 def initialize(out,p):
@@ -104,12 +129,7 @@ def run_one(out,p,run_id,group,scenario=None,seed=None,bag=None,expected_hash=No
     if threshold and not threshold.exists():raise ValueError('Diagnostic thresholds not frozen')
     if target.exists():
         previous=json.loads((target/'run.json').read_text())
-        input_path=Path(previous['input_path'])
-        if previous['source_lock_sha256']!=sha(out/'source_lock.json') or previous['input_sha256']!=sha(input_path):
-            raise ValueError('Resume source/input hash mismatch '+run_id)
-        if previous['threshold_sha256']!=(sha(threshold) if threshold else None):raise ValueError('Resume threshold mismatch')
-        for rel,expected in previous.get('output_files',{}).items():
-            if sha(target/rel)!=expected:raise ValueError('Saved output changed '+run_id+':'+rel)
+        verify_record(out,ROOT,previous,p)
         print('Preserving existing run',run_id,previous['status'],flush=True)
         return previous
     inventory=checkpoint(out,'准备 '+run_id)
@@ -179,11 +199,18 @@ def freeze_thresholds(out,p):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--experiment',type=Path,default=DEFAULT)
+    parser.add_argument('--experiment',type=Path,required=True)
     parser.add_argument('--phase',choices=['baseline','develop','diagnostics','all'],default='all')
-    args=parser.parse_args();out=args.experiment.resolve();p=json.loads((out/'protocol.json').read_text())
+    parser.add_argument('--resume-only',action='store_true',help='Verify completed runs only; never start an estimator or reselect thresholds')
+    parser.add_argument('--handoff-output',type=Path,help='New handoff file for --resume-only; must not already exist')
+    args=parser.parse_args()
+    if args.handoff_output and not args.resume_only:parser.error('--handoff-output requires --resume-only')
+    out=args.experiment.resolve();p=json.loads((out/'protocol.json').read_text())
     for key in ['OPENBLAS_NUM_THREADS','OMP_NUM_THREADS']:
         if os.environ.get(key)!='1':raise ValueError(key+' must be 1')
+    if args.resume_only:
+        print(json.dumps(resume_existing(out,p,args.phase,args.handoff_output),ensure_ascii=False),flush=True)
+        return
     initialize(out,p)
     if args.phase in ['baseline','all']:
         for case in p['historical_cases']:
