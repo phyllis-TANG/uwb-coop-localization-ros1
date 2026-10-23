@@ -1,0 +1,25 @@
+{
+  "id": "033248_car2",
+  "bag_id": "033248",
+  "car": "car2",
+  "status": "completed",
+  "source_lock_sha256": "e1e71c78b704aba470729f404283b416f4ebcb13869bf145a3f6e8d54a5ac86f",
+  "config_sha256": "9b959c53e5ab8cf85347c4006f173623035e84758c13163b59454f377b6d274b",
+  "started_utc": "2026-10-23T05:44:35.983985+00:00",
+  "command": [
+    "/usr/bin/python3",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/tools/run_two_car_independent_integrity.py",
+    "--experiment",
+    "/home/ubuntu22/双车协同/uwb-coop-localization-ros1/docs/field_tests/two_car_independent_integrity_bridge_20261023",
+    "--worker",
+    "033248_car2"
+  ],
+  "returncode": 0,
+  "process_wall_s": 1.2656547850056086,
+  "output_hashes": {
+    "delivery_times.jsonl": "4b0e28be94c2709c2278840362a79938bff710a6a55caa4d4da4b6da60b800b3",
+    "sensor_provenance.jsonl": "418ec95ef25653722c1e76dbf2fc8cd269268b9e29a5c028d579fbfba03fe220",
+    "updates.jsonl": "bd7907905a448a99564295c0022e29bdc7ee944d70ef58ef9cabd4cba762448f",
+    "worker_summary.json": "b8c34065fe2ee647264cb70c32524e229bce3e4684600531c11892c3731f88f7"
+  }
+}

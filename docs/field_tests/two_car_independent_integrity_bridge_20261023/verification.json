@@ -1,0 +1,52 @@
+{
+  "runs_verified": 6,
+  "published_states_verified": 508,
+  "wall_bins_verified": 2032,
+  "independent_exclusion_records_verified": 2032,
+  "raw_header_records_verified": 36766,
+  "common_origins_ns": {
+    "015334": 1792313648982309104,
+    "033248": 1792319570409833299,
+    "050447": 1792325091247927829
+  },
+  "actual_state_ranges": {
+    "015334_car1": {
+      "first": 2.0,
+      "last": 93.0,
+      "eof": 94.807749671
+    },
+    "015334_car2": {
+      "first": 2.0,
+      "last": 93.0,
+      "eof": 94.807749671
+    },
+    "033248_car1": {
+      "first": 2.0,
+      "last": 56.0,
+      "eof": 57.457278997
+    },
+    "033248_car2": {
+      "first": 2.0,
+      "last": 56.0,
+      "eof": 57.457278997
+    },
+    "050447_car1": {
+      "first": 2.0,
+      "last": 108.0,
+      "eof": 109.974142301
+    },
+    "050447_car2": {
+      "first": 2.0,
+      "last": 108.0,
+      "eof": 109.974142301
+    }
+  },
+  "interpolation_and_bin_dependencies_before_cutoff": true,
+  "original_headers_preserved": true,
+  "correction_applied_once": true,
+  "exclusion_lineages_verified": true,
+  "triggers_verified": true,
+  "endpoints_frozen_and_conditionally_stopped": true,
+  "new_estimator_runs": 0,
+  "source_and_output_hashes_verified": true
+}

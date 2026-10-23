@@ -1,0 +1,73 @@
+{
+  "model": {
+    "anchors_xyz_m": {
+      "node_10": [
+        3.26,
+        0.1,
+        2.355
+      ],
+      "node_2": [
+        5.28,
+        5.16,
+        2.755
+      ],
+      "node_3": [
+        5.28,
+        2.86,
+        2.355
+      ],
+      "node_8": [
+        0.1,
+        2.41,
+        2.3
+      ]
+    },
+    "range_bias_m": {
+      "node_10": 0.6088636183798282,
+      "node_2": 0.449737490591974,
+      "node_3": 0.2012859604623305,
+      "node_8": 0.3685143909425328
+    },
+    "start_antenna_xyz_m": [
+      3.0,
+      2.0,
+      0.2
+    ],
+    "initial_heading_deg": 90.0,
+    "base_to_antenna_body_xy_m": [
+      0.12,
+      -0.08
+    ],
+    "antenna_height_m": 0.2,
+    "graph_parameters": {
+      "keyframe_step_s": 1,
+      "odom_translation_sigma_m": 0.03,
+      "odom_yaw_sigma_deg": 2,
+      "prior_heading_sigma_deg": 5,
+      "prior_position_sigma_m": 0.2,
+      "range_bin_half_width_s": 0.4,
+      "range_sigma_m": 0.2
+    }
+  },
+  "replay": {
+    "keyframe_step_s": 1,
+    "first_keyframe_margin_s": 1,
+    "range_bin_half_width_s": 0.4,
+    "minimum_samples_per_link": 5,
+    "release_delay_s": 1,
+    "clock_correction": "none",
+    "closed_bin_policy": "immutable; count late packets",
+    "eof_policy": "no timer advance beyond last recorded receipt",
+    "backend": "arm-specific; see arms",
+    "imu": "diagnostic messages only; zero independent IMU factors",
+    "association_version": "bag-receipt-v1"
+  },
+  "lag_s": 20.0,
+  "max_nfev": 50,
+  "max_sensor_samples": 512,
+  "monitor_rules": {
+    "consecutive_exceedances": 2,
+    "rank_rtol": 1e-08,
+    "condition_limit": 100000000.0
+  }
+}
