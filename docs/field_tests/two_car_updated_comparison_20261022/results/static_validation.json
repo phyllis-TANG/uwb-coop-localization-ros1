@@ -1,0 +1,307 @@
+[
+  {
+    "path": "datasets/field_raw/20261018/bags/TWO_CAR_static_C1_1p5_1p5_C2_2_2_20261018_013951.bag",
+    "sha256": "f4395b806a15735ac74a052e239a5c4bafd7ab14d1d93de487f1e42d50451abc",
+    "diagnostics": {
+      "origin_receipt_ns": 1792312801003391427,
+      "topic_counts": {
+        "/car1/PowerVoltage": 60,
+        "/car1/imu": 711,
+        "/car1/odom": 709,
+        "/car1/uwb/ranges": 1766,
+        "/car2/imu": 701,
+        "/car2/PowerVoltage": 59,
+        "/car2/odom": 698,
+        "/car2/uwb/ranges": 1739
+      },
+      "duplicate_uwb_id_groups": {
+        "car1": 0,
+        "car2": 0
+      },
+      "frames": {
+        "/car1/odom": [
+          "car1/odom_combined"
+        ],
+        "/car1/odom child": [
+          "base_footprint"
+        ],
+        "/car1/uwb/ranges": [
+          "car1/uwb_linktrack"
+        ],
+        "/car2/odom": [
+          "car2/odom_combined"
+        ],
+        "/car2/odom child": [
+          "base_footprint"
+        ],
+        "/car2/uwb/ranges": [
+          "car2/uwb_linktrack"
+        ]
+      },
+      "timing": {
+        "/car1/odom": {
+          "header_nonincreasing_steps": 0,
+          "receipt_minus_header_ms": {
+            "min": -134.3710422515869,
+            "median": -114.0434741973877,
+            "p95": -92.54274368286133,
+            "max": 278.2602310180664
+          }
+        },
+        "/car1/uwb/ranges": {
+          "header_nonincreasing_steps": 0,
+          "receipt_minus_header_ms": {
+            "min": -140.33794403076172,
+            "median": -138.0707025527954,
+            "p95": -134.8246932029724,
+            "max": 163.91420364379883
+          }
+        },
+        "/car2/odom": {
+          "header_nonincreasing_steps": 0,
+          "receipt_minus_header_ms": {
+            "min": -172.07741737365723,
+            "median": -150.65467357635498,
+            "p95": -118.7021255493164,
+            "max": -106.30345344543457
+          }
+        },
+        "/car2/uwb/ranges": {
+          "header_nonincreasing_steps": 0,
+          "receipt_minus_header_ms": {
+            "min": -170.5942153930664,
+            "median": -158.74052047729492,
+            "p95": -148.23791980743408,
+            "max": -128.6783218383789
+          }
+        }
+      },
+      "imu_factors": 0,
+      "receipt_clock_note": "Inherited common bag receipt-time association; clock differences are not network latency or proof of synchronized acquisition."
+    },
+    "cars": {
+      "car1": {
+        "corrected_link_median_errors": {
+          "count": 4,
+          "median_m": 0.01459550981365143,
+          "median_abs_m": 0.06249663312978404,
+          "rms_m": 0.09439279838420235,
+          "max_abs_m": 0.15926849107320695
+        },
+        "odom_path_m": 0.0
+      },
+      "car2": {
+        "corrected_link_median_errors": {
+          "count": 4,
+          "median_m": 0.04250001907348633,
+          "median_abs_m": 0.1119999885559082,
+          "rms_m": 0.172199763340078,
+          "max_abs_m": 0.30500006675720215
+        },
+        "odom_path_m": 0.0
+      }
+    }
+  },
+  {
+    "path": "datasets/field_raw/20261018/bags/TWO_CAR_static_C1_1p5_4_C2_2_2_20261018_015009.bag",
+    "sha256": "daed600f73ca9f10df2d142c955a661e80b38264622d6a0bd0c46d182b9efcb7",
+    "diagnostics": {
+      "origin_receipt_ns": 1792313419065243040,
+      "topic_counts": {
+        "/car1/imu": 710,
+        "/car1/odom": 708,
+        "/car1/uwb/ranges": 1764,
+        "/car1/PowerVoltage": 59,
+        "/car2/PowerVoltage": 59,
+        "/car2/imu": 700,
+        "/car2/odom": 698,
+        "/car2/uwb/ranges": 1738
+      },
+      "duplicate_uwb_id_groups": {
+        "car1": 0,
+        "car2": 0
+      },
+      "frames": {
+        "/car1/odom": [
+          "car1/odom_combined"
+        ],
+        "/car1/odom child": [
+          "base_footprint"
+        ],
+        "/car1/uwb/ranges": [
+          "car1/uwb_linktrack"
+        ],
+        "/car2/odom": [
+          "car2/odom_combined"
+        ],
+        "/car2/odom child": [
+          "base_footprint"
+        ],
+        "/car2/uwb/ranges": [
+          "car2/uwb_linktrack"
+        ]
+      },
+      "timing": {
+        "/car1/odom": {
+          "header_nonincreasing_steps": 0,
+          "receipt_minus_header_ms": {
+            "min": -179.11243438720703,
+            "median": -158.35869312286377,
+            "p95": -137.6001000404358,
+            "max": 202.89993286132812
+          }
+        },
+        "/car1/uwb/ranges": {
+          "header_nonincreasing_steps": 0,
+          "receipt_minus_header_ms": {
+            "min": -182.91807174682617,
+            "median": -181.22851848602295,
+            "p95": -177.9031276702881,
+            "max": 80.42335510253906
+          }
+        },
+        "/car2/odom": {
+          "header_nonincreasing_steps": 0,
+          "receipt_minus_header_ms": {
+            "min": -189.26477432250977,
+            "median": -167.79375076293945,
+            "p95": -129.56634759902954,
+            "max": -112.59722709655762
+          }
+        },
+        "/car2/uwb/ranges": {
+          "header_nonincreasing_steps": 0,
+          "receipt_minus_header_ms": {
+            "min": -186.0663890838623,
+            "median": -175.38130283355713,
+            "p95": -166.36831760406494,
+            "max": -144.77968215942383
+          }
+        }
+      },
+      "imu_factors": 0,
+      "receipt_clock_note": "Inherited common bag receipt-time association; clock differences are not network latency or proof of synchronized acquisition."
+    },
+    "cars": {
+      "car1": {
+        "corrected_link_median_errors": {
+          "count": 4,
+          "median_m": -0.05460209471888433,
+          "median_abs_m": 0.07598564183572609,
+          "rms_m": 0.12112285741867151,
+          "max_abs_m": 0.21504917635331466
+        },
+        "odom_path_m": 0.0
+      },
+      "car2": {
+        "corrected_link_median_errors": {
+          "count": 4,
+          "median_m": 0.00950002670288086,
+          "median_abs_m": 0.05749988555908203,
+          "rms_m": 0.3132128330841678,
+          "max_abs_m": 0.6200001239776611
+        },
+        "odom_path_m": 0.0
+      }
+    }
+  },
+  {
+    "path": "datasets/field_raw/20261018/bags/TWO_CAR_C1_1p5_4_C2_end_2p95_3p04_static_20261018_020151.bag",
+    "sha256": "06489487beeb6f6aec658b91c6c190c12a8c43f25352b8795c6c11eab38eee31",
+    "diagnostics": {
+      "origin_receipt_ns": 1792314120377145110,
+      "topic_counts": {
+        "/car1/odom": 504,
+        "/car1/uwb/ranges": 1256,
+        "/car2/odom": 499,
+        "/car2/uwb/ranges": 1241
+      },
+      "duplicate_uwb_id_groups": {
+        "car1": 0,
+        "car2": 0
+      },
+      "frames": {
+        "/car1/odom": [
+          "car1/odom_combined"
+        ],
+        "/car1/odom child": [
+          "base_footprint"
+        ],
+        "/car1/uwb/ranges": [
+          "car1/uwb_linktrack"
+        ],
+        "/car2/odom": [
+          "car2/odom_combined"
+        ],
+        "/car2/odom child": [
+          "base_footprint"
+        ],
+        "/car2/uwb/ranges": [
+          "car2/uwb_linktrack"
+        ]
+      },
+      "timing": {
+        "/car1/odom": {
+          "header_nonincreasing_steps": 0,
+          "receipt_minus_header_ms": {
+            "min": -210.60967445373535,
+            "median": -180.25410175323486,
+            "p95": -165.16396999359134,
+            "max": -19.124269485473633
+          }
+        },
+        "/car1/uwb/ranges": {
+          "header_nonincreasing_steps": 0,
+          "receipt_minus_header_ms": {
+            "min": -214.1401767730713,
+            "median": -212.94069290161133,
+            "p95": -202.38065719604492,
+            "max": -111.74726486206055
+          }
+        },
+        "/car2/odom": {
+          "header_nonincreasing_steps": 0,
+          "receipt_minus_header_ms": {
+            "min": -189.54896926879883,
+            "median": -167.6163673400879,
+            "p95": -129.0600061416626,
+            "max": -42.39010810852051
+          }
+        },
+        "/car2/uwb/ranges": {
+          "header_nonincreasing_steps": 0,
+          "receipt_minus_header_ms": {
+            "min": -178.65324020385742,
+            "median": -168.5483455657959,
+            "p95": -163.32292556762695,
+            "max": -90.79813957214355
+          }
+        }
+      },
+      "imu_factors": 0,
+      "receipt_clock_note": "Inherited common bag receipt-time association; clock differences are not network latency or proof of synchronized acquisition."
+    },
+    "cars": {
+      "car1": {
+        "corrected_link_median_errors": {
+          "count": 4,
+          "median_m": -0.05810209471888417,
+          "median_abs_m": 0.07548564183572593,
+          "rms_m": 0.12000722808979943,
+          "max_abs_m": 0.21204917635331455
+        },
+        "odom_path_m": 0.0
+      },
+      "car2": {
+        "corrected_link_median_errors": {
+          "count": 4,
+          "median_m": -0.002207104742401933,
+          "median_abs_m": 0.082500750900244,
+          "rms_m": 0.08313985950525252,
+          "max_abs_m": 0.09173835340057046
+        },
+        "odom_path_m": 0.0
+      }
+    }
+  }
+]

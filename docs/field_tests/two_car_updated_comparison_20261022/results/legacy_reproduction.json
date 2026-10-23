@@ -1,0 +1,870 @@
+{
+  "L": {
+    "primary": {
+      "independent": {
+        "metrics": {
+          "keyframes": 93,
+          "first_last_keyframe_s": [
+            1.0,
+            93.0
+          ],
+          "end_antenna_xy_m": {
+            "car1": [
+              1.4700076475730177,
+              4.427992817559742
+            ],
+            "car2": [
+              2.713695999921055,
+              3.6598298671166467
+            ]
+          },
+          "start_antenna_xy_m": {
+            "car1": [
+              1.4498085558851956,
+              4.351757158180677
+            ],
+            "car2": [
+              1.5969288463396503,
+              2.7807390143295034
+            ]
+          },
+          "manual_end_xy_error_m": {
+            "car1": 0.42904241408843385,
+            "car2": 0.6633465494167812
+          },
+          "end_intercar_distance_m": 1.4620995301960866,
+          "end_distance_minus_tape_m": -0.2809004698039135,
+          "antenna_trajectory": {
+            "car1": {
+              "path_m": 0.1260953027097074,
+              "net_displacement_m": 0.08926964805062594
+            },
+            "car2": {
+              "path_m": 2.178309282049387,
+              "net_displacement_m": 1.4264999568984726
+            }
+          },
+          "odom_diagnostics": {
+            "car1": {
+              "interpolated_odom_path_m": 0.0,
+              "estimated_base_path_m": 0.12508542174241777,
+              "estimated_antenna_path_m": 0.1260953027097074,
+              "odom_between_translation_error_median_m": 0.0008859311506907584,
+              "odom_between_translation_error_rms_m": 0.00200124952304732,
+              "odom_between_translation_error_max_m": 0.006960942771022915,
+              "odom_between_translation_weighted_squared_sum": 0.4093999645797062,
+              "odom_between_yaw_error_rms_deg": 0.01250998828492341,
+              "start_antenna_prior_displacement_m": 0.34500254786068396,
+              "start_heading_prior_error_deg": 0.003059467507016051
+            },
+            "car2": {
+              "interpolated_odom_path_m": 2.0758158056263065,
+              "estimated_base_path_m": 2.182663949297996,
+              "estimated_antenna_path_m": 2.178309282049387,
+              "odom_between_translation_error_median_m": 0.004439026538216463,
+              "odom_between_translation_error_rms_m": 0.009552573849050533,
+              "odom_between_translation_error_max_m": 0.01995161000189291,
+              "odom_between_translation_weighted_squared_sum": 9.327948196693221,
+              "odom_between_yaw_error_rms_deg": 0.20135667002040553,
+              "start_antenna_prior_displacement_m": 0.8543040158914419,
+              "start_heading_prior_error_deg": -2.284201184728836
+            }
+          },
+          "wall_residual": {
+            "car1": {
+              "count": 372,
+              "median_m": -0.08220635099309459,
+              "median_abs_m": 0.14656347293597682,
+              "rms_m": 0.25117012202676775
+            },
+            "car2": {
+              "count": 372,
+              "median_m": -0.3349359109917871,
+              "median_abs_m": 0.3349359109917871,
+              "rms_m": 0.4170912852416643
+            }
+          },
+          "peer_residual": {
+            "count": 93,
+            "median_m": -0.17228767878950357,
+            "median_abs_m": 0.17228767878950357,
+            "rms_m": 0.3099715355250862
+          },
+          "wall_factors": 744,
+          "peer_factors": 0,
+          "peer_bin_coverage": 0.0,
+          "parameters": {
+            "step_s": 1.0,
+            "bin_half_width_s": 0.4,
+            "odom_translation_sigma_m": 0.03,
+            "odom_yaw_sigma_deg": 2.0,
+            "prior_position_sigma_m": 0.2,
+            "prior_heading_sigma_deg": 5.0,
+            "wall_sigma_m": 0.2,
+            "peer_sigma_m": 0.2
+          },
+          "optimizer_nfev": 16,
+          "optimizer_cost": 576.6072547511278
+        },
+        "archived_endpoint_reproduction_max_delta_m": 0.0
+      },
+      "joint": {
+        "metrics": {
+          "keyframes": 93,
+          "first_last_keyframe_s": [
+            1.0,
+            93.0
+          ],
+          "end_antenna_xy_m": {
+            "car1": [
+              1.4049473331947686,
+              4.433027799964791
+            ],
+            "car2": [
+              2.781651114292245,
+              3.648529205293379
+            ]
+          },
+          "start_antenna_xy_m": {
+            "car1": [
+              1.4647753441923772,
+              4.393702021769622
+            ],
+            "car2": [
+              1.643569742997105,
+              2.309134630723114
+            ]
+          },
+          "manual_end_xy_error_m": {
+            "car1": 0.4433374392143457,
+            "car2": 0.6313866810553056
+          },
+          "end_intercar_distance_m": 1.584819026239119,
+          "end_distance_minus_tape_m": -0.15818097376088103,
+          "antenna_trajectory": {
+            "car1": {
+              "path_m": 0.22141349430365742,
+              "net_displacement_m": 0.07898122999414034
+            },
+            "car2": {
+              "path_m": 2.545914501098666,
+              "net_displacement_m": 1.7585795181790043
+            }
+          },
+          "odom_diagnostics": {
+            "car1": {
+              "interpolated_odom_path_m": 0.0,
+              "estimated_base_path_m": 0.21986410838770598,
+              "estimated_antenna_path_m": 0.22141349430365742,
+              "odom_between_translation_error_median_m": 0.0018950909212227711,
+              "odom_between_translation_error_rms_m": 0.0030704403958856322,
+              "odom_between_translation_error_max_m": 0.00778748089146215,
+              "odom_between_translation_weighted_squared_sum": 0.9637106540790458,
+              "odom_between_yaw_error_rms_deg": 0.01844917622071148,
+              "start_antenna_prior_displacement_m": 0.38376785427282695,
+              "start_heading_prior_error_deg": 0.030897194593273714
+            },
+            "car2": {
+              "interpolated_odom_path_m": 2.0758158056263065,
+              "estimated_base_path_m": 2.6082374809417397,
+              "estimated_antenna_path_m": 2.545914501098666,
+              "odom_between_translation_error_median_m": 0.005137347632323895,
+              "odom_between_translation_error_rms_m": 0.010655160521907694,
+              "odom_between_translation_error_max_m": 0.029609636404426928,
+              "odom_between_translation_weighted_squared_sum": 11.605538898645623,
+              "odom_between_yaw_error_rms_deg": 0.14360414218067075,
+              "start_antenna_prior_displacement_m": 0.4579732675881019,
+              "start_heading_prior_error_deg": -1.4157386136895074
+            }
+          },
+          "wall_residual": {
+            "car1": {
+              "count": 372,
+              "median_m": -0.04976270900616764,
+              "median_abs_m": 0.1621804350700029,
+              "rms_m": 0.2497505844139666
+            },
+            "car2": {
+              "count": 372,
+              "median_m": -0.3083483448919542,
+              "median_abs_m": 0.3083483448919542,
+              "rms_m": 0.4448797548396194
+            }
+          },
+          "peer_residual": {
+            "count": 93,
+            "median_m": -0.04386858470832555,
+            "median_abs_m": 0.04679135372015031,
+            "rms_m": 0.056267478912041965
+          },
+          "wall_factors": 744,
+          "peer_factors": 93,
+          "peer_bin_coverage": 1.0,
+          "parameters": {
+            "step_s": 1.0,
+            "bin_half_width_s": 0.4,
+            "odom_translation_sigma_m": 0.03,
+            "odom_yaw_sigma_deg": 2.0,
+            "prior_position_sigma_m": 0.2,
+            "prior_heading_sigma_deg": 5.0,
+            "wall_sigma_m": 0.2,
+            "peer_sigma_m": 0.2
+          },
+          "optimizer_nfev": 10,
+          "optimizer_cost": 591.1212391061609
+        },
+        "archived_endpoint_reproduction_max_delta_m": 0.0
+      }
+    },
+    "car2_P1_wall_bias_only": {
+      "independent": {
+        "metrics": {
+          "keyframes": 93,
+          "first_last_keyframe_s": [
+            1.0,
+            93.0
+          ],
+          "end_antenna_xy_m": {
+            "car1": [
+              1.469860699394669,
+              4.427917291059412
+            ],
+            "car2": [
+              3.0411635903372196,
+              3.0310826069515135
+            ]
+          },
+          "start_antenna_xy_m": {
+            "car1": [
+              1.4496939625026903,
+              4.351682024529316
+            ],
+            "car2": [
+              1.8938477067971857,
+              2.417677755990584
+            ]
+          },
+          "manual_end_xy_error_m": {
+            "car1": 0.428977371697627,
+            "car2": 0.09159869050348682
+          },
+          "end_intercar_distance_m": 2.102626906945507,
+          "end_distance_minus_tape_m": 0.3596269069455069,
+          "antenna_trajectory": {
+            "car1": {
+              "path_m": 0.1260947542761636,
+              "net_displacement_m": 0.08926371531676765
+            },
+            "car2": {
+              "path_m": 1.9919040555739487,
+              "net_displacement_m": 1.3032077273886438
+            }
+          },
+          "odom_diagnostics": {
+            "car1": {
+              "interpolated_odom_path_m": 0.0,
+              "estimated_base_path_m": 0.12496752738238999,
+              "estimated_antenna_path_m": 0.1260947542761636,
+              "odom_between_translation_error_median_m": 0.0008846722597884702,
+              "odom_between_translation_error_rms_m": 0.0020001628376501226,
+              "odom_between_translation_error_max_m": 0.006959445673694752,
+              "odom_between_translation_weighted_squared_sum": 0.40895547410525157,
+              "odom_between_yaw_error_rms_deg": 0.013586212586271672,
+              "start_antenna_prior_displacement_m": 0.34494252118415963,
+              "start_heading_prior_error_deg": 0.017087235034749383
+            },
+            "car2": {
+              "interpolated_odom_path_m": 2.0758158056263065,
+              "estimated_base_path_m": 1.9869518206083305,
+              "estimated_antenna_path_m": 1.9919040555739487,
+              "odom_between_translation_error_median_m": 0.007587868572738286,
+              "odom_between_translation_error_rms_m": 0.01131104238591645,
+              "odom_between_translation_error_max_m": 0.030143144719130488,
+              "odom_between_translation_weighted_squared_sum": 13.078278385279848,
+              "odom_between_yaw_error_rms_deg": 0.2072030644970286,
+              "start_antenna_prior_displacement_m": 0.4210983031823448,
+              "start_heading_prior_error_deg": -2.044359986979332
+            }
+          },
+          "wall_residual": {
+            "car1": {
+              "count": 372,
+              "median_m": -0.08225519198754139,
+              "median_abs_m": 0.14664983890404937,
+              "rms_m": 0.25114515840974083
+            },
+            "car2": {
+              "count": 372,
+              "median_m": -0.013890612345271114,
+              "median_abs_m": 0.07184054453465216,
+              "rms_m": 0.21599837943836347
+            }
+          },
+          "peer_residual": {
+            "count": 93,
+            "median_m": 0.4599886562405191,
+            "median_abs_m": 0.4599886562405191,
+            "rms_m": 0.4224795842996183
+          },
+          "wall_factors": 744,
+          "peer_factors": 0,
+          "peer_bin_coverage": 0.0,
+          "parameters": {
+            "step_s": 1.0,
+            "bin_half_width_s": 0.4,
+            "odom_translation_sigma_m": 0.03,
+            "odom_yaw_sigma_deg": 2.0,
+            "prior_position_sigma_m": 0.2,
+            "prior_heading_sigma_deg": 5.0,
+            "wall_sigma_m": 0.2,
+            "peer_sigma_m": 0.2
+          },
+          "optimizer_nfev": 8,
+          "optimizer_cost": 285.18209572870154
+        },
+        "archived_endpoint_reproduction_max_delta_m": 0.0
+      },
+      "joint": {
+        "metrics": {
+          "keyframes": 93,
+          "first_last_keyframe_s": [
+            1.0,
+            93.0
+          ],
+          "end_antenna_xy_m": {
+            "car1": [
+              1.5640603165906564,
+              4.376823470529448
+            ],
+            "car2": [
+              2.911087869679851,
+              3.2186932966775594
+            ]
+          },
+          "start_antenna_xy_m": {
+            "car1": [
+              1.451340850540308,
+              4.38765762718516
+            ],
+            "car2": [
+              1.9112869723876185,
+              2.3628863260853366
+            ]
+          },
+          "manual_end_xy_error_m": {
+            "car1": 0.3822298419845748,
+            "car2": 0.18288096719873978
+          },
+          "end_intercar_distance_m": 1.7766960146203035,
+          "end_distance_minus_tape_m": 0.03369601462030336,
+          "antenna_trajectory": {
+            "car1": {
+              "path_m": 0.29482730786506167,
+              "net_displacement_m": 0.11231994916832616
+            },
+            "car2": {
+              "path_m": 2.122733523494891,
+              "net_displacement_m": 1.3201821894987544
+            }
+          },
+          "odom_diagnostics": {
+            "car1": {
+              "interpolated_odom_path_m": 0.0,
+              "estimated_base_path_m": 0.2924145773846015,
+              "estimated_antenna_path_m": 0.29482730786506167,
+              "odom_between_translation_error_median_m": 0.00320761771789105,
+              "odom_between_translation_error_rms_m": 0.0036407739822250478,
+              "odom_between_translation_error_max_m": 0.0073883802822118805,
+              "odom_between_translation_weighted_squared_sum": 1.3549795971638987,
+              "odom_between_yaw_error_rms_deg": 0.022049780774027146,
+              "start_antenna_prior_displacement_m": 0.37995163847090474,
+              "start_heading_prior_error_deg": 0.035648441497817505
+            },
+            "car2": {
+              "interpolated_odom_path_m": 2.0758158056263065,
+              "estimated_base_path_m": 2.140690560914185,
+              "estimated_antenna_path_m": 2.122733523494891,
+              "odom_between_translation_error_median_m": 0.005460510916511282,
+              "odom_between_translation_error_rms_m": 0.009007204260899886,
+              "odom_between_translation_error_max_m": 0.020699708176208358,
+              "odom_between_translation_weighted_squared_sum": 8.293261145529693,
+              "odom_between_yaw_error_rms_deg": 0.14299927552968852,
+              "start_antenna_prior_displacement_m": 0.36363604157670065,
+              "start_heading_prior_error_deg": -1.397046463009363
+            }
+          },
+          "wall_residual": {
+            "car1": {
+              "count": 372,
+              "median_m": -0.13889921401210303,
+              "median_abs_m": 0.15122890875682948,
+              "rms_m": 0.2628209529261479
+            },
+            "car2": {
+              "count": 372,
+              "median_m": 0.008476276812072747,
+              "median_abs_m": 0.061138166528860616,
+              "rms_m": 0.2348643716104681
+            }
+          },
+          "peer_residual": {
+            "count": 93,
+            "median_m": 0.1396782401402814,
+            "median_abs_m": 0.1396782401402814,
+            "rms_m": 0.14855760070941512
+          },
+          "wall_factors": 744,
+          "peer_factors": 93,
+          "peer_bin_coverage": 1.0,
+          "parameters": {
+            "step_s": 1.0,
+            "bin_half_width_s": 0.4,
+            "odom_translation_sigma_m": 0.03,
+            "odom_yaw_sigma_deg": 2.0,
+            "prior_position_sigma_m": 0.2,
+            "prior_heading_sigma_deg": 5.0,
+            "wall_sigma_m": 0.2,
+            "peer_sigma_m": 0.2
+          },
+          "optimizer_nfev": 8,
+          "optimizer_cost": 341.22955036161505
+        },
+        "archived_endpoint_reproduction_max_delta_m": 0.0
+      }
+    }
+  },
+  "straight": {
+    "primary": {
+      "independent": {
+        "metrics": {
+          "keyframes": 56,
+          "first_last_keyframe_s": [
+            1.0,
+            56.0
+          ],
+          "end_antenna_xy_m": {
+            "car1": [
+              1.228362080353545,
+              3.4760189818135623
+            ],
+            "car2": [
+              2.7678278946385104,
+              3.718147963079802
+            ]
+          },
+          "start_antenna_xy_m": {
+            "car1": [
+              1.3219157293359776,
+              4.647436920841112
+            ],
+            "car2": [
+              2.7636797447451484,
+              3.6405244283159837
+            ]
+          },
+          "manual_end_xy_error_m": {
+            "car1": 0.5432846378691113,
+            "car2": 0.7021903842983913
+          },
+          "end_intercar_distance_m": 1.5586793887522534,
+          "end_distance_minus_tape_m": 0.01867938875225339,
+          "antenna_trajectory": {
+            "car1": {
+              "path_m": 1.3510231987184964,
+              "net_displacement_m": 1.1577962437825133
+            },
+            "car2": {
+              "path_m": 0.1075256942337784,
+              "net_displacement_m": 0.09447238349466422
+            }
+          },
+          "odom_diagnostics": {
+            "car1": {
+              "interpolated_odom_path_m": 1.0130866254624018,
+              "estimated_base_path_m": 1.3485649374279645,
+              "estimated_antenna_path_m": 1.3510231987184964,
+              "odom_between_translation_error_median_m": 0.007051808123142948,
+              "odom_between_translation_error_rms_m": 0.008840847301395192,
+              "odom_between_translation_error_max_m": 0.0190911232390623,
+              "odom_between_translation_weighted_squared_sum": 4.7764799504025195,
+              "odom_between_yaw_error_rms_deg": 0.06845205033989454,
+              "start_antenna_prior_displacement_m": 0.6524829815754866,
+              "start_heading_prior_error_deg": -0.4717778599467083
+            },
+            "car2": {
+              "interpolated_odom_path_m": 0.0,
+              "estimated_base_path_m": 0.10573447618778774,
+              "estimated_antenna_path_m": 0.1075256942337784,
+              "odom_between_translation_error_median_m": 0.0009740737720784582,
+              "odom_between_translation_error_rms_m": 0.0032830656766024376,
+              "odom_between_translation_error_max_m": 0.012016269999680721,
+              "odom_between_translation_weighted_squared_sum": 0.6586873478096402,
+              "odom_between_yaw_error_rms_deg": 0.026842508801750358,
+              "start_antenna_prior_displacement_m": 0.6113320611146978,
+              "start_heading_prior_error_deg": 0.02066642026309101
+            }
+          },
+          "wall_residual": {
+            "car1": {
+              "count": 224,
+              "median_m": -0.08982461292494781,
+              "median_abs_m": 0.163479242089285,
+              "rms_m": 0.2654394985870351
+            },
+            "car2": {
+              "count": 224,
+              "median_m": -0.1745372143198629,
+              "median_abs_m": 0.1745372143198629,
+              "rms_m": 0.3244248747238005
+            }
+          },
+          "peer_residual": {
+            "count": 56,
+            "median_m": 0.057572332120144454,
+            "median_abs_m": 0.057572332120144454,
+            "rms_m": 0.09539007182891046
+          },
+          "wall_factors": 448,
+          "peer_factors": 0,
+          "peer_bin_coverage": 0.0,
+          "parameters": {
+            "step_s": 1.0,
+            "bin_half_width_s": 0.4,
+            "odom_translation_sigma_m": 0.03,
+            "odom_yaw_sigma_deg": 2.0,
+            "prior_position_sigma_m": 0.2,
+            "prior_heading_sigma_deg": 5.0,
+            "wall_sigma_m": 0.2,
+            "peer_sigma_m": 0.2
+          },
+          "optimizer_nfev": 9,
+          "optimizer_cost": 293.40482746497355
+        },
+        "archived_endpoint_reproduction_max_delta_m": 0.0
+      },
+      "joint": {
+        "metrics": {
+          "keyframes": 56,
+          "first_last_keyframe_s": [
+            1.0,
+            56.0
+          ],
+          "end_antenna_xy_m": {
+            "car1": [
+              1.241544960683445,
+              3.4827686412253454
+            ],
+            "car2": [
+              2.7525920765426584,
+              3.7131475263665887
+            ]
+          },
+          "start_antenna_xy_m": {
+            "car1": [
+              1.3783945928161103,
+              4.631944046656882
+            ],
+            "car2": [
+              2.7276260277022137,
+              3.6575179136053846
+            ]
+          },
+          "manual_end_xy_error_m": {
+            "car1": 0.5442699789773882,
+            "car2": 0.7014966004886958
+          },
+          "end_intercar_distance_m": 1.528802739749432,
+          "end_distance_minus_tape_m": -0.011197260250568108,
+          "antenna_trajectory": {
+            "car1": {
+              "path_m": 1.328887698068465,
+              "net_displacement_m": 1.1400746505388761
+            },
+            "car2": {
+              "path_m": 0.13365873854030205,
+              "net_displacement_m": 0.0753002060879567
+            }
+          },
+          "odom_diagnostics": {
+            "car1": {
+              "interpolated_odom_path_m": 1.0130866254624018,
+              "estimated_base_path_m": 1.3267230459904362,
+              "estimated_antenna_path_m": 1.328887698068465,
+              "odom_between_translation_error_median_m": 0.006890779798414252,
+              "odom_between_translation_error_rms_m": 0.00837146235654565,
+              "odom_between_translation_error_max_m": 0.017061215149473907,
+              "odom_between_translation_weighted_squared_sum": 4.282751121431497,
+              "odom_between_yaw_error_rms_deg": 0.10588555039450592,
+              "start_antenna_prior_displacement_m": 0.6250603360521461,
+              "start_heading_prior_error_deg": -0.8990977221638196
+            },
+            "car2": {
+              "interpolated_odom_path_m": 0.0,
+              "estimated_base_path_m": 0.1323276354393886,
+              "estimated_antenna_path_m": 0.13365873854030205,
+              "odom_between_translation_error_median_m": 0.0010502218552208347,
+              "odom_between_translation_error_rms_m": 0.0036574995426717177,
+              "odom_between_translation_error_max_m": 0.01245440842750345,
+              "odom_between_translation_weighted_squared_sum": 0.8175018441726782,
+              "odom_between_yaw_error_rms_deg": 0.025748527043578346,
+              "start_antenna_prior_displacement_m": 0.6383219712935813,
+              "start_heading_prior_error_deg": 0.0231025813735705
+            }
+          },
+          "wall_residual": {
+            "car1": {
+              "count": 224,
+              "median_m": -0.09917987803191841,
+              "median_abs_m": 0.15250845481212139,
+              "rms_m": 0.2709883037076893
+            },
+            "car2": {
+              "count": 224,
+              "median_m": -0.16916939326473157,
+              "median_abs_m": 0.16916939326473157,
+              "rms_m": 0.3218119679341863
+            }
+          },
+          "peer_residual": {
+            "count": 56,
+            "median_m": 0.014931853746667834,
+            "median_abs_m": 0.015063278941319647,
+            "rms_m": 0.02784802673298301
+          },
+          "wall_factors": 448,
+          "peer_factors": 56,
+          "peer_bin_coverage": 1.0,
+          "parameters": {
+            "step_s": 1.0,
+            "bin_half_width_s": 0.4,
+            "odom_translation_sigma_m": 0.03,
+            "odom_yaw_sigma_deg": 2.0,
+            "prior_position_sigma_m": 0.2,
+            "prior_heading_sigma_deg": 5.0,
+            "wall_sigma_m": 0.2,
+            "peer_sigma_m": 0.2
+          },
+          "optimizer_nfev": 9,
+          "optimizer_cost": 295.16492599291814
+        },
+        "archived_endpoint_reproduction_max_delta_m": 0.0
+      }
+    },
+    "car2_P1_wall_bias_only": {
+      "independent": {
+        "metrics": {
+          "keyframes": 56,
+          "first_last_keyframe_s": [
+            1.0,
+            56.0
+          ],
+          "end_antenna_xy_m": {
+            "car1": [
+              1.2283135284493185,
+              3.4759803947707897
+            ],
+            "car2": [
+              2.9252360511476407,
+              3.0613583959265793
+            ]
+          },
+          "start_antenna_xy_m": {
+            "car1": [
+              1.3219319233138236,
+              4.647430291661154
+            ],
+            "car2": [
+              2.9155546736386637,
+              3.0641247409500663
+            ]
+          },
+          "manual_end_xy_error_m": {
+            "car1": 0.5432692184042636,
+            "car2": 0.03270220541979995
+          },
+          "end_intercar_distance_m": 1.747099725249365,
+          "end_distance_minus_tape_m": 0.20709972524936493,
+          "antenna_trajectory": {
+            "car1": {
+              "path_m": 1.3510561064823516,
+              "net_displacement_m": 1.1578334231468306
+            },
+            "car2": {
+              "path_m": 0.03538776678659573,
+              "net_displacement_m": 0.010010317594123557
+            }
+          },
+          "odom_diagnostics": {
+            "car1": {
+              "interpolated_odom_path_m": 1.0130866254624018,
+              "estimated_base_path_m": 1.3485987306956677,
+              "estimated_antenna_path_m": 1.3510561064823516,
+              "odom_between_translation_error_median_m": 0.007051266677811203,
+              "odom_between_translation_error_rms_m": 0.008841121793539545,
+              "odom_between_translation_error_max_m": 0.019093884680170193,
+              "odom_between_translation_weighted_squared_sum": 4.776776556945548,
+              "odom_between_yaw_error_rms_deg": 0.06857383874695583,
+              "start_antenna_prior_displacement_m": 0.6524718414822235,
+              "start_heading_prior_error_deg": -0.47405422549639914
+            },
+            "car2": {
+              "interpolated_odom_path_m": 0.0,
+              "estimated_base_path_m": 0.03479428068637566,
+              "estimated_antenna_path_m": 0.03538776678659573,
+              "odom_between_translation_error_median_m": 0.0005665439223266783,
+              "odom_between_translation_error_rms_m": 0.0007099030700584737,
+              "odom_between_translation_error_max_m": 0.001475786094924395,
+              "odom_between_translation_weighted_squared_sum": 0.030797700320349487,
+              "odom_between_yaw_error_rms_deg": 0.006157945820327277,
+              "start_antenna_prior_displacement_m": 0.041478994698762095,
+              "start_heading_prior_error_deg": 0.0001060278912837964
+            }
+          },
+          "wall_residual": {
+            "car1": {
+              "count": 224,
+              "median_m": -0.08983564275841172,
+              "median_abs_m": 0.16351537433550156,
+              "rms_m": 0.2654328943069247
+            },
+            "car2": {
+              "count": 224,
+              "median_m": 0.03235107238001911,
+              "median_abs_m": 0.03251159418342242,
+              "rms_m": 0.038018118298101304
+            }
+          },
+          "peer_residual": {
+            "count": 56,
+            "median_m": 0.4250360830092922,
+            "median_abs_m": 0.4250360830092922,
+            "rms_m": 0.47644419892117323
+          },
+          "wall_factors": 448,
+          "peer_factors": 0,
+          "peer_bin_coverage": 0.0,
+          "parameters": {
+            "step_s": 1.0,
+            "bin_half_width_s": 0.4,
+            "odom_translation_sigma_m": 0.03,
+            "odom_yaw_sigma_deg": 2.0,
+            "prior_position_sigma_m": 0.2,
+            "prior_heading_sigma_deg": 5.0,
+            "wall_sigma_m": 0.2,
+            "peer_sigma_m": 0.2
+          },
+          "optimizer_nfev": 8,
+          "optimizer_cost": 134.31502834037806
+        },
+        "archived_endpoint_reproduction_max_delta_m": 0.0
+      },
+      "joint": {
+        "metrics": {
+          "keyframes": 56,
+          "first_last_keyframe_s": [
+            1.0,
+            56.0
+          ],
+          "end_antenna_xy_m": {
+            "car1": [
+              1.3131272650288845,
+              3.481337598351333
+            ],
+            "car2": [
+              2.8674135364080167,
+              3.10272977835143
+            ]
+          },
+          "start_antenna_xy_m": {
+            "car1": [
+              1.4970261329099683,
+              4.531528090747218
+            ],
+            "car2": [
+              2.8181976810543197,
+              3.2184709304162133
+            ]
+          },
+          "manual_end_xy_error_m": {
+            "car1": 0.5196859947113791,
+            "car2": 0.10370896326089446
+          },
+          "end_intercar_distance_m": 1.6000155295379868,
+          "end_distance_minus_tape_m": 0.06001552953798672,
+          "antenna_trajectory": {
+            "car1": {
+              "path_m": 1.231819643363955,
+              "net_displacement_m": 1.0508502183968997
+            },
+            "car2": {
+              "path_m": 0.16597553596438824,
+              "net_displacement_m": 0.12019188948315128
+            }
+          },
+          "odom_diagnostics": {
+            "car1": {
+              "interpolated_odom_path_m": 1.0130866254624018,
+              "estimated_base_path_m": 1.2307191924094931,
+              "estimated_antenna_path_m": 1.231819643363955,
+              "odom_between_translation_error_median_m": 0.006802958091698953,
+              "odom_between_translation_error_rms_m": 0.006470356037162149,
+              "odom_between_translation_error_max_m": 0.010523958925980464,
+              "odom_between_translation_weighted_squared_sum": 2.558447665133597,
+              "odom_between_yaw_error_rms_deg": 0.14527865809851212,
+              "start_antenna_prior_displacement_m": 0.5156937843557119,
+              "start_heading_prior_error_deg": -1.3083369937260727
+            },
+            "car2": {
+              "interpolated_odom_path_m": 0.0,
+              "estimated_base_path_m": 0.16474793468187468,
+              "estimated_antenna_path_m": 0.16597553596438824,
+              "odom_between_translation_error_median_m": 0.0023626447918719115,
+              "odom_between_translation_error_rms_m": 0.0038539294581822333,
+              "odom_between_translation_error_max_m": 0.007452374397567727,
+              "odom_between_translation_weighted_squared_sum": 0.9076694164171826,
+              "odom_between_yaw_error_rms_deg": 0.022416006135458678,
+              "start_antenna_prior_displacement_m": 0.21602627573081234,
+              "start_heading_prior_error_deg": -0.008380933938946076
+            }
+          },
+          "wall_residual": {
+            "car1": {
+              "count": 224,
+              "median_m": -0.12186165954152162,
+              "median_abs_m": 0.12280047173328956,
+              "rms_m": 0.30231108887680846
+            },
+            "car2": {
+              "count": 224,
+              "median_m": 0.06001596754074412,
+              "median_abs_m": 0.06001596754074412,
+              "rms_m": 0.07704132255175432
+            }
+          },
+          "peer_residual": {
+            "count": 56,
+            "median_m": 0.15923671659042038,
+            "median_abs_m": 0.15923671659042038,
+            "rms_m": 0.18284233906830646
+          },
+          "wall_factors": 448,
+          "peer_factors": 56,
+          "peer_bin_coverage": 1.0,
+          "parameters": {
+            "step_s": 1.0,
+            "bin_half_width_s": 0.4,
+            "odom_translation_sigma_m": 0.03,
+            "odom_yaw_sigma_deg": 2.0,
+            "prior_position_sigma_m": 0.2,
+            "prior_heading_sigma_deg": 5.0,
+            "wall_sigma_m": 0.2,
+            "peer_sigma_m": 0.2
+          },
+          "optimizer_nfev": 8,
+          "optimizer_cost": 177.91261320817364
+        },
+        "archived_endpoint_reproduction_max_delta_m": 0.0
+      }
+    }
+  }
+}

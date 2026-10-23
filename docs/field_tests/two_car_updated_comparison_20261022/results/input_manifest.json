@@ -1,0 +1,34 @@
+{
+  "base_main_sha": "13aeade4c6b13ffa55b0acfafe65c29136067c0f",
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "rosbags": "0.11.8",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "thread_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "protocol_sha256": "ea47738f0d58fe48a7e2077ec1e30a5e25ef399bf95a7997293d1cd48c445fa5",
+  "source_files": {
+    "tools/two_car_updated_comparison.py": "7ccd2e7c40b1c9654898a40382bf562766c22d449b4cc350808fb6b52d5026d0",
+    "tools/run_two_car_updated_comparison.py": "dfecaeb1a7e08b8523e0336fb77565ab4757fcdc9b9a25d7874d311fedad6c0d",
+    "tools/plot_two_car_updated_comparison.py": "8f7098f923f892f22b6b80fc90eebd4babc00bf0f59ff449c28eca319cd94106",
+    "tools/test_two_car_updated_comparison.py": "c6eb8794295410e3d147d0b0641fdda4cf7679871cbe7741afe8213b73cd2cb4",
+    "tools/two_car_offline_graph.py": "c8c07e97cfd0a6e7cc40e863eaa04bc054afac340e56fd312589cffebb758672",
+    "tools/test_two_car_offline_graph.py": "62079a865e3e02027fe8877fb22b716c428a50bcf8c66572a648ef36b77a6789",
+    "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+    "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3"
+  },
+  "archive_sha256": "c743dc90f3534812fc76073fdc0c594cb0e6cdd33ab82521d8c913fc4c90fcf9",
+  "data_files": {
+    "datasets/field_raw/20261018/bags/TWO_CAR_C1_static_C2_auto_L_20261018_015334.bag": "bb2f8cbfecf3e73cdf1b12f4c290b51d0c74215006746abba72c0b9c7a0946e6",
+    "datasets/field_raw/20261018/bags/TWO_CAR_C2_static_C1_auto_straight_aligned_20261018_033248.bag": "4e1283bbd58f9a64187a872cd9edeccaccdd5c438149d871761c6e2e11a67bbd",
+    "datasets/field_raw/20261018/bags/TWO_CAR_both_motion_clear_repeat_20261018_050447.bag": "adfab304646d779c573f9001e1ceb2538b5cdcfffc2948750cde93f495501872",
+    "datasets/field_raw/20261018/bags/TWO_CAR_static_C1_1p5_1p5_C2_2_2_20261018_013951.bag": "f4395b806a15735ac74a052e239a5c4bafd7ab14d1d93de487f1e42d50451abc",
+    "datasets/field_raw/20261018/bags/TWO_CAR_static_C1_1p5_4_C2_2_2_20261018_015009.bag": "daed600f73ca9f10df2d142c955a661e80b38264622d6a0bd0c46d182b9efcb7",
+    "datasets/field_raw/20261018/bags/TWO_CAR_C1_1p5_4_C2_end_2p95_3p04_static_20261018_020151.bag": "06489487beeb6f6aec658b91c6c190c12a8c43f25352b8795c6c11eab38eee31",
+    "datasets/field_raw/20261018/bags/TWO_CAR_UWB_ODOM_IMU_static_20261018_013206.bag": "d9b8183c2ca6edef82affcde0f6c70dd8fcb71ba6c1b36374cd23e73a7d0671f"
+  },
+  "source_and_protocol_unchanged_during_run": true
+}
