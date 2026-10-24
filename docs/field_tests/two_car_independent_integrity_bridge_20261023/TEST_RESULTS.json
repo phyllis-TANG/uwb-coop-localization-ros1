@@ -1,0 +1,15 @@
+{
+  "new_adapter_tests": 11,
+  "reused_single_car_tests": 37,
+  "total_tests_passed": 48,
+  "formal_bag_replays": 6,
+  "additional_formal_replays_for_verification": 0,
+  "preflight_failures_retained": 1,
+  "formal_failures": 0,
+  "formal_timeouts": 0,
+  "artifact_audit": "verification.json",
+  "test_commands": [
+    "python3 -m unittest discover -s tools -p test_two_car_independent_integrity.py -v",
+    "python3 -m unittest discover -s tools -p 'test_single_car_*.py' -v"
+  ]
+}

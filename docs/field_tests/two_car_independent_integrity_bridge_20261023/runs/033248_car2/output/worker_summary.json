@@ -1,0 +1,69 @@
+{
+  "run_id": "033248_car2",
+  "wall_s": 1.0346767480077688,
+  "output_count": 55,
+  "frontend_counters": {
+    "clock_events": 7220,
+    "odom_events": 1147,
+    "uwb_events": 2861,
+    "late_packets_for_closed_bins": 0,
+    "missing_odom_bracket": 0,
+    "invalid_raw_ranges": 0,
+    "nonpositive_corrected_ranges": 0,
+    "bootstrap_skipped_deadlines": 0
+  },
+  "sensor_buffer_peaks": {
+    "odom": 26,
+    "uwb": 76
+  },
+  "peak_solve_states": 21,
+  "marginalizations": 34,
+  "exclusion_peak_states": {
+    "node_10": 21,
+    "node_2": 21,
+    "node_3": 21,
+    "node_8": 21
+  },
+  "external_output_logging_wall_s": 0.03178183708223514,
+  "input_diagnostics": {
+    "origin_bag_receipt_ns": 1792319570409833299,
+    "last_bag_receipt_ns": 1792319627867112296,
+    "eof_receipt_s": 57.457278997,
+    "topic_counts": {
+      "/car1/imu": 1160,
+      "/car1/PowerVoltage": 97,
+      "/car1/odom": 1158,
+      "/car1/uwb/ranges": 2888,
+      "/car2/imu": 1150,
+      "/car2/PowerVoltage": 96,
+      "/car2/odom": 1147,
+      "/car2/uwb/ranges": 2861,
+      "/car1/cmd_vel": 671
+    },
+    "duplicate_uwb_id_groups": 0,
+    "timing": {
+      "/car2/odom": {
+        "header_nonincreasing_steps": 0,
+        "receipt_minus_header_s": {
+          "min": 0.05927351,
+          "median": 0.080705326,
+          "p95": 0.1137719454,
+          "max": 0.465192148
+        }
+      },
+      "/car2/uwb/ranges": {
+        "header_nonincreasing_steps": 0,
+        "receipt_minus_header_s": {
+          "min": 0.057432703,
+          "median": 0.069781055,
+          "p95": 0.089103839,
+          "max": 0.484260672
+        }
+      }
+    },
+    "imu_factors": 0,
+    "peer_factors": 0,
+    "association_version": "bag-receipt-v1; no physical synchronization claim"
+  },
+  "config_sha256": "9b959c53e5ab8cf85347c4006f173623035e84758c13163b59454f377b6d274b"
+}

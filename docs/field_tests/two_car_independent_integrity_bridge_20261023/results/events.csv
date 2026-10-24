@@ -1,0 +1,35 @@
+bag_id,car,method,kind,start_s,end_s,duration_s,first_result_available_s,odom_phases,max_anchor_counts,reasons
+015334,car1,M1,unavailable,2.0,4.0,2.0,3.0026675269976986,"{""startup"": 1, ""odom_near_zero"": 1}","{""node_10"": 2}","[""predict_only_warmup""]"
+015334,car1,M2,alarm,5.0,94.0,89.0,6.017867697987472,"{""odom_near_zero"": 89}","{""node_10"": 89}",[]
+015334,car1,M2,unavailable,2.0,4.0,2.0,3.0026675269976986,"{""startup"": 1, ""odom_near_zero"": 1}","{""node_10"": 2}","[""full_graph_invalid"", ""node_10:predict_only_warmup"", ""node_2:predict_only_warmup"", ""node_3:predict_only_warmup"", ""node_8:predict_only_warmup""]"
+015334,car2,M1,alarm,5.0,16.0,11.0,6.020027250024955,"{""odom_near_zero"": 7, ""moving"": 4}","{""node_10"": 11}",[]
+015334,car2,M1,alarm,18.0,25.0,7.0,19.021703855995188,"{""moving"": 7}","{""node_10"": 7}",[]
+015334,car2,M1,alarm,27.0,28.0,1.0,28.043936663999133,"{""moving"": 1}","{""node_10"": 1}",[]
+015334,car2,M1,alarm,30.0,35.0,5.0,31.03238184202121,"{""moving"": 4, ""odom_near_zero"": 1}","{""node_10"": 5}",[]
+015334,car2,M1,alarm,59.0,62.0,3.0,60.03534898901147,"{""moving"": 3}","{""node_8"": 3}",[]
+015334,car2,M1,alarm,64.0,69.0,5.0,65.02759769099681,"{""moving"": 5}","{""node_8"": 5}",[]
+015334,car2,M1,unavailable,2.0,4.0,2.0,3.00264853701026,"{""startup"": 1, ""odom_near_zero"": 1}","{""node_10"": 2}","[""predict_only_warmup""]"
+015334,car2,M2,alarm,5.0,94.0,89.0,6.020027250024955,"{""odom_near_zero"": 34, ""moving"": 52, ""turning"": 3}","{""node_10"": 74, ""node_2"": 15}",[]
+015334,car2,M2,unavailable,2.0,4.0,2.0,3.00264853701026,"{""startup"": 1, ""odom_near_zero"": 1}","{""node_10"": 2}","[""full_graph_invalid"", ""node_10:predict_only_warmup"", ""node_2:predict_only_warmup"", ""node_3:predict_only_warmup"", ""node_8:predict_only_warmup""]"
+033248,car1,M1,alarm,21.0,28.0,7.0,22.02721758897706,"{""moving"": 7}","{""node_10"": 7}",[]
+033248,car1,M1,unavailable,2.0,4.0,2.0,3.0070096169958447,"{""startup"": 1, ""odom_near_zero"": 1}","{""node_10"": 2}","[""predict_only_warmup""]"
+033248,car1,M2,alarm,5.0,28.0,23.0,6.011686104985295,"{""odom_near_zero"": 8, ""moving"": 15}","{""node_10"": 23}",[]
+033248,car1,M2,alarm,38.0,57.0,19.0,39.02625979399206,"{""odom_near_zero"": 19}","{""node_10"": 19}",[]
+033248,car1,M2,unavailable,2.0,4.0,2.0,3.0070096169958447,"{""startup"": 1, ""odom_near_zero"": 1}","{""node_10"": 2}","[""full_graph_invalid"", ""node_10:predict_only_warmup"", ""node_2:predict_only_warmup"", ""node_3:predict_only_warmup"", ""node_8:predict_only_warmup""]"
+033248,car2,M1,unavailable,2.0,4.0,2.0,3.0066908599994235,"{""startup"": 1, ""odom_near_zero"": 1}","{""node_8"": 2}","[""predict_only_warmup""]"
+033248,car2,M2,alarm,10.0,57.0,47.0,11.012302687002705,"{""odom_near_zero"": 47}","{""node_10"": 47}",[]
+033248,car2,M2,unavailable,2.0,4.0,2.0,3.0066908599994235,"{""startup"": 1, ""odom_near_zero"": 1}","{""node_10"": 2}","[""full_graph_invalid"", ""node_10:predict_only_warmup"", ""node_2:predict_only_warmup"", ""node_3:predict_only_warmup"", ""node_8:predict_only_warmup""]"
+050447,car1,M1,alarm,5.0,28.0,23.0,6.011496439991593,"{""odom_near_zero"": 11, ""moving"": 12}","{""node_8"": 20, ""node_10"": 3}",[]
+050447,car1,M1,alarm,34.0,36.0,2.0,35.02825255998598,"{""moving"": 2}","{""node_10"": 2}",[]
+050447,car1,M1,unavailable,2.0,4.0,2.0,3.005006493990424,"{""startup"": 1, ""odom_near_zero"": 1}","{""node_8"": 2}","[""predict_only_warmup""]"
+050447,car1,M2,alarm,5.0,109.0,104.0,6.011496439991593,"{""odom_near_zero"": 80, ""moving"": 24}","{""node_8"": 8, ""node_10"": 96}",[]
+050447,car1,M2,unavailable,2.0,4.0,2.0,3.005006493990424,"{""startup"": 1, ""odom_near_zero"": 1}","{""node_10"": 2}","[""full_graph_invalid"", ""node_10:predict_only_warmup"", ""node_2:predict_only_warmup"", ""node_3:predict_only_warmup"", ""node_8:predict_only_warmup""]"
+050447,car2,M1,alarm,5.0,10.0,5.0,6.011739048998411,"{""odom_near_zero"": 5}","{""node_10"": 5}",[]
+050447,car2,M1,alarm,12.0,17.0,5.0,13.018341645993534,"{""moving"": 5}","{""node_10"": 5}",[]
+050447,car2,M1,alarm,43.0,44.0,1.0,44.02522318002056,"{""moving"": 1}","{""node_10"": 1}",[]
+050447,car2,M1,alarm,72.0,74.0,2.0,73.02682927899322,"{""moving"": 2}","{""node_8"": 2}",[]
+050447,car2,M1,unavailable,2.0,4.0,2.0,3.004976621003936,"{""startup"": 1, ""odom_near_zero"": 1}","{""node_10"": 2}","[""predict_only_warmup""]"
+050447,car2,M2,alarm,5.0,22.0,17.0,6.011739048998411,"{""odom_near_zero"": 7, ""moving"": 10}","{""node_10"": 4, ""node_2"": 7, ""node_8"": 6}",[]
+050447,car2,M2,alarm,37.0,42.0,5.0,38.021916358002215,"{""odom_near_zero"": 4, ""turning"": 1}","{""node_10"": 5}",[]
+050447,car2,M2,alarm,49.0,109.0,60.0,50.03097987299198,"{""moving"": 25, ""turning"": 1, ""odom_near_zero"": 34}","{""node_3"": 11, ""node_10"": 49}",[]
+050447,car2,M2,unavailable,2.0,4.0,2.0,3.004976621003936,"{""startup"": 1, ""odom_near_zero"": 1}","{""node_10"": 2}","[""full_graph_invalid"", ""node_10:predict_only_warmup"", ""node_2:predict_only_warmup"", ""node_3:predict_only_warmup"", ""node_8:predict_only_warmup""]"

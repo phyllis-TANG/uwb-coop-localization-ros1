@@ -1,0 +1,16 @@
+test_alarm_intervals_use_state_axis_and_clip_actual_eof (test_two_car_independent_integrity.AdapterTests) ... ok
+test_duplicate_or_nonpositive_ranges_and_repeated_receipts_are_explicit (test_two_car_independent_integrity.AdapterTests) ... ok
+test_each_car_bias_used_once_and_no_endpoint_fields (test_two_car_independent_integrity.AdapterTests) ... ok
+test_exclusion_history_remains_independent_after_adapter_and_marginalization (test_two_car_independent_integrity.AdapterTests) ... ok
+test_future_mutation_and_truncation_preserve_past_publications (test_two_car_independent_integrity.AdapterTests) ... ok
+test_interpolation_never_uses_unarrived_right_endpoint (test_two_car_independent_integrity.AdapterTests) ... ok
+test_monitor_off_leaves_full_localization_identical_for_both_cars (test_two_car_independent_integrity.AdapterTests) ... ok
+test_peer_changes_cannot_change_independent_outputs (test_two_car_independent_integrity.AdapterTests) ... ok
+test_reader_origin_is_first_all_topic_receipt_and_headers_are_lossless (test_two_car_independent_integrity.AdapterTests) ... ok
+test_resume_refuses_unfinished_or_changed_output_without_starting_worker (test_two_car_independent_integrity.AdapterTests) ... ok
+test_topic_node_frame_identity_and_cross_car_isolation (test_two_car_independent_integrity.AdapterTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 2.081s
+
+OK

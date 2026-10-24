@@ -1,0 +1,22 @@
+{
+  "repository": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1",
+  "branch": "experiment/two-car-independent-integrity-bridge-20261023",
+  "head": "5ced063043c264618d15ae6cd47b98d2487500b4",
+  "pre_freeze_worktree": "?? .bridge_work/\n?? docs/field_tests/two_car_independent_integrity_bridge_20261023/\n?? tools/report_two_car_independent_integrity.py\n?? tools/run_two_car_independent_integrity.py\n?? tools/test_two_car_independent_integrity.py\n?? tools/two_car_independent_integrity.py",
+  "python": "3.10.12",
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "rosbags": "0.11.9",
+    "matplotlib": "3.10.9"
+  },
+  "dependency_path": "/home/ubuntu22/uwb/offline-deps",
+  "process_visibility": "PID namespace contains command only; host analysis/ROS processes not observable",
+  "visible_process_names": "    PID    PPID COMMAND\n      1       0 codex-linux-san\n      2       1 python3\n     13       2 ps\n",
+  "network_used": false,
+  "new_dependencies_installed": false,
+  "thread_limits": {
+    "OPENBLAS_NUM_THREADS": 1,
+    "OMP_NUM_THREADS": 1
+  }
+}

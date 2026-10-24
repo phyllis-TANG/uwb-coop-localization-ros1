@@ -1,0 +1,182 @@
+[
+  {
+    "case": "015334",
+    "car": "car1",
+    "counts": {
+      "clock": 12392,
+      "odom": 1908,
+      "uwb": 4760
+    },
+    "timing": {
+      "/car1/odom": {
+        "header_nonincreasing_steps": 0,
+        "receipt_minus_header_s": {
+          "min": -0.194965201,
+          "median": -0.1645889025,
+          "p95": -0.1425708275,
+          "max": 0.37514607
+        }
+      },
+      "/car1/uwb/ranges": {
+        "header_nonincreasing_steps": 0,
+        "receipt_minus_header_s": {
+          "min": -0.197279201,
+          "median": -0.194013227,
+          "p95": -0.18719939895,
+          "max": 0.17618689
+        }
+      }
+    },
+    "eof": 94.807749671
+  },
+  {
+    "case": "015334",
+    "car": "car2",
+    "counts": {
+      "clock": 12438,
+      "odom": 1893,
+      "uwb": 4729
+    },
+    "timing": {
+      "/car2/odom": {
+        "header_nonincreasing_steps": 0,
+        "receipt_minus_header_s": {
+          "min": -0.180701674,
+          "median": -0.15787781,
+          "p95": -0.1269034468,
+          "max": 0.080010323
+        }
+      },
+      "/car2/uwb/ranges": {
+        "header_nonincreasing_steps": 0,
+        "receipt_minus_header_s": {
+          "min": -0.176217579,
+          "median": -0.164755888,
+          "p95": -0.161300322,
+          "max": 0.16095394
+        }
+      }
+    },
+    "eof": 94.807749671
+  },
+  {
+    "case": "033248",
+    "car": "car1",
+    "counts": {
+      "clock": 7182,
+      "odom": 1158,
+      "uwb": 2888
+    },
+    "timing": {
+      "/car1/odom": {
+        "header_nonincreasing_steps": 0,
+        "receipt_minus_header_s": {
+          "min": -0.007379611,
+          "median": 0.017370681,
+          "p95": 0.04389680869999996,
+          "max": 0.387266775
+        }
+      },
+      "/car1/uwb/ranges": {
+        "header_nonincreasing_steps": 0,
+        "receipt_minus_header_s": {
+          "min": -0.011435075,
+          "median": -0.0048990405,
+          "p95": 0.008258764200000013,
+          "max": 0.316737284
+        }
+      }
+    },
+    "eof": 57.457278997
+  },
+  {
+    "case": "033248",
+    "car": "car2",
+    "counts": {
+      "clock": 7220,
+      "odom": 1147,
+      "uwb": 2861
+    },
+    "timing": {
+      "/car2/odom": {
+        "header_nonincreasing_steps": 0,
+        "receipt_minus_header_s": {
+          "min": 0.05927351,
+          "median": 0.080705326,
+          "p95": 0.1137719454,
+          "max": 0.465192148
+        }
+      },
+      "/car2/uwb/ranges": {
+        "header_nonincreasing_steps": 0,
+        "receipt_minus_header_s": {
+          "min": 0.057432703,
+          "median": 0.069781055,
+          "p95": 0.089103839,
+          "max": 0.484260672
+        }
+      }
+    },
+    "eof": 57.457278997
+  },
+  {
+    "case": "050447",
+    "car": "car1",
+    "counts": {
+      "clock": 14809,
+      "odom": 2211,
+      "uwb": 5522
+    },
+    "timing": {
+      "/car1/odom": {
+        "header_nonincreasing_steps": 0,
+        "receipt_minus_header_s": {
+          "min": -0.014752944,
+          "median": 0.008166511,
+          "p95": 0.06213148,
+          "max": 0.869304237
+        }
+      },
+      "/car1/uwb/ranges": {
+        "header_nonincreasing_steps": 0,
+        "receipt_minus_header_s": {
+          "min": -0.016956934,
+          "median": -0.014480663000000001,
+          "p95": 0.054646069199999904,
+          "max": 0.89992762
+        }
+      }
+    },
+    "eof": 109.974142301
+  },
+  {
+    "case": "050447",
+    "car": "car2",
+    "counts": {
+      "clock": 14853,
+      "odom": 2199,
+      "uwb": 5490
+    },
+    "timing": {
+      "/car2/odom": {
+        "header_nonincreasing_steps": 0,
+        "receipt_minus_header_s": {
+          "min": 0.007152949,
+          "median": 0.037118833,
+          "p95": 0.08789921369999966,
+          "max": 0.946022013
+        }
+      },
+      "/car2/uwb/ranges": {
+        "header_nonincreasing_steps": 0,
+        "receipt_minus_header_s": {
+          "min": 0.009155083,
+          "median": 0.029597397999999997,
+          "p95": 0.08753377985000002,
+          "max": 1.038321651
+        }
+      }
+    },
+    "eof": 109.974142301
+  }
+]

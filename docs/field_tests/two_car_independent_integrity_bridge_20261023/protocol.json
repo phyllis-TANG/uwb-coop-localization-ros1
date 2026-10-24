@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "experiment": "two-car-independent-integrity-bridge-v1",
+  "frozen_utc": "2026-10-23T05:44:21.598099+00:00",
+  "base_head": "5ced063043c264618d15ae6cd47b98d2487500b4",
+  "cases": [
+    {
+      "id": "015334",
+      "legacy_name": "L",
+      "role": "Car1 stationary / Car2 L",
+      "path": "datasets/field_raw/20261018/bags/TWO_CAR_C1_static_C2_auto_L_20261018_015334.bag",
+      "sha256": "bb2f8cbfecf3e73cdf1b12f4c290b51d0c74215006746abba72c0b9c7a0946e6",
+      "start_antenna_xyz_m": {
+        "car1": [
+          1.5,
+          4.0,
+          0.17
+        ],
+        "car2": [
+          2.0,
+          2.0,
+          0.2
+        ]
+      },
+      "initial_heading_deg": {
+        "car1": 0.0,
+        "car2": 90.0
+      },
+      "heading_source": "unchanged historical two-car placement hypotheses; not independently surveyed",
+      "stationary_car": "car1"
+    },
+    {
+      "id": "033248",
+      "legacy_name": "straight",
+      "role": "Car2 stationary / Car1 aligned straight",
+      "path": "datasets/field_raw/20261018/bags/TWO_CAR_C2_static_C1_auto_straight_aligned_20261018_033248.bag",
+      "sha256": "4e1283bbd58f9a64187a872cd9edeccaccdd5c438149d871761c6e2e11a67bbd",
+      "start_antenna_xyz_m": {
+        "car1": [
+          1.5,
+          4.0,
+          0.17
+        ],
+        "car2": [
+          2.95,
+          3.04,
+          0.2
+        ]
+      },
+      "initial_heading_deg": {
+        "car1": -90.0,
+        "car2": 0.0
+      },
+      "heading_source": "unchanged historical two-car placement hypotheses; not independently surveyed",
+      "stationary_car": "car2"
+    },
+    {
+      "id": "050447",
+      "legacy_name": null,
+      "role": "both cars moving / clear repeat",
+      "path": "datasets/field_raw/20261018/bags/TWO_CAR_both_motion_clear_repeat_20261018_050447.bag",
+      "sha256": "adfab304646d779c573f9001e1ceb2538b5cdcfffc2948750cde93f495501872",
+      "start_antenna_xyz_m": {
+        "car1": [
+          1.0,
+          4.0,
+          0.17
+        ],
+        "car2": [
+          3.0,
+          2.0,
+          0.2
+        ]
+      },
+      "initial_heading_deg": {
+        "car1": -90.0,
+        "car2": 90.0
+      },
+      "heading_source": "provisional placement directions from historical session reconstruction, not derived from endpoints",
+      "stationary_car": null
+    }
+  ],
+  "thresholds": {
+    "M1": 1.0,
+    "M2": 0.062191200771030145
+  },
+  "monitor_rules": {
+    "consecutive_exceedances": 2,
+    "rank_rtol": 1e-08,
+    "condition_limit": 100000000.0
+  },
+  "association": {
+    "version": "bag-receipt-v1",
+    "origin": "first receipt of ALL bag messages, shared by both cars",
+    "odom_and_uwb": "association = (bag_receipt_ns-origin_ns)/1e9; original header_ns retained",
+    "internal_Event_header_s": "association coordinate only; never the original physical measurement header",
+    "half_width_s": 0.4,
+    "minimum_samples_per_link": 5,
+    "release_delay_s": 1.0,
+    "first_state": "ceil(max(first selected Odom receipt, first selected UWB receipt)+1s)",
+    "equal_receipt_per_stream": "fail explicitly if nonincreasing; no jitter or reordering",
+    "closed_bins": "immutable; no late remeasurement rewrite",
+    "eof": "no advancement beyond last actual bag receipt"
+  },
+  "model": {
+    "lag_s": 20.0,
+    "state_step_s": 1.0,
+    "max_solve_states": 21,
+    "max_nfev": 50,
+    "near_zero_motion_covariance": false,
+    "range_confidence_policy": false,
+    "peer_factors": 0,
+    "imu_factors": 0
+  },
+  "budgets": {
+    "per_run_wall_s": 180.0,
+    "total_formal_wall_s": 1800.0,
+    "formal_replays": 6,
+    "automatic_retries": 0
+  },
+  "timing_model": "Two independent virtual workers. Each serializes ingest, full solve, M1, four exclusion solves and logging. Actual runs serial, not a measured dual-worker platform.",
+  "timing_exclusions": "Bag decode, input trace disk IO and process startup outside virtual model; inside actual per-run budget. Per-output delivery log includes current output enrichment/JSON flush; timing log write itself excluded.",
+  "evaluation": "Fixed PR38 last five state times, never replace with a new last-five window; record missing output/stop support explicitly.",
+  "odom_phase_diagnostic": {
+    "translation_speed_threshold_m_s": 0.005,
+    "yaw_speed_threshold_deg_s": 1.0,
+    "note": "diagnostic using consecutive interpolated Odom states only; no covariance/weight feedback"
+  },
+  "assumptions": [
+    "Both Car1 and Car2 odom reference points are conditionally treated as approximate surveyed chassis centers; not yet verified.",
+    "Initial headings are placement hypotheses, not angles inferred from the measured endpoint.",
+    "No independent IMU factors.",
+    "All data are historical/development data; no blind-test claim.",
+    "The two methods in each configuration share identical calibration, Odom, wall observations, priors, initial states and solver settings; only the joint method adds peer factors.",
+    "No peer/reference adjustment or dynamic endpoint fitting.",
+    "Reciprocal directions may be correlated and asynchronous; one aggregate factor does not prove synchronized acquisition.",
+    "Static reference uncertainty is not quantified; range spread does not include survey or spatial-transfer uncertainty.",
+    "Full-bag results are offline smoothing, not published online estimates or hard-real-time performance.",
+    "Frozen M1/M2 thresholds are transfer diagnostics, not true fault labels.",
+    "No continuous truth; no trajectory error, true false-alarm or missed-detection rate.",
+    "M1 stored residual = prediction minus corrected; signed innovation = corrected minus prediction.",
+    "Largest exclusion separation is sensitivity attribution, not confirmed faulty-anchor isolation."
+  ]
+}
