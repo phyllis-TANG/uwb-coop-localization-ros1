@@ -62,6 +62,18 @@ class AdapterTests(unittest.TestCase):
         y,_=right.step(self.odom,[observation(target="node_0",value=999.)],"independent")
         for c in a.TAGS:np.testing.assert_array_equal(x[c],y[c])
 
+    def test_independent_car1_does_not_change_with_car2_wall_data(self):
+        rows=[observation(value=2.8)]
+        x,_=a.FixedComparison(self.initial,self.odom,self.config).step(self.odom,rows,"independent")
+        rows.append(observation(car="car2",value=100.,idx=1))
+        y,_=a.FixedComparison(self.initial,self.odom,self.config).step(self.odom,rows,"independent")
+        np.testing.assert_array_equal(x["car1"],y["car1"])
+
+    def test_one_wall_factor_stays_marked_underconstrained(self):
+        _,d=a.FixedComparison(self.initial,self.odom,self.config).step(self.odom,[observation()],"independent")
+        self.assertTrue(d["measurement_degraded"])
+        self.assertEqual(d["wall_factors_by_car"],{"car1":1,"car2":0})
+
     def test_missing_links_predict_and_report_degradation(self):
         method=a.FixedComparison(self.initial,self.odom,self.config)
         x,d=method.step(self.odom,[],"joint")

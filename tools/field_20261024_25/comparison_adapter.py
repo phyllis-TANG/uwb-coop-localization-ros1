@@ -103,33 +103,43 @@ class FixedComparison:
         peers=[r["range_m"] for r in observations if r["target_id"] not in WALLS] if method=="joint" else []
         target_peer=float(np.median(peers)) if peers else None
         cars=list(TAGS)
-        def residual(x):
-            states={c:x[3*i:3*i+3] for i,c in enumerate(cars)}
+        def residual(x,active_cars):
+            states={c:x[3*i:3*i+3] for i,c in enumerate(active_cars)}
             out=[]
-            for car in cars:
+            for car in active_cars:
                 d=states[car]-predicted[car]
                 out.extend(d[:2]/config["odom_xy_sigma_m"])
                 out.append(wrap(d[2])/config["odom_yaw_sigma_rad"])
             for r in wall:
+                if r["vehicle_id"] not in active_cars:continue
                 out.append((wall_distance(states[r["vehicle_id"]],r["vehicle_id"],r["target_id"],config)-r["range_m"])/config["wall_sigma_m"])
             if target_peer is not None:
                 out.append((np.linalg.norm(antenna(states["car1"],"car1",config)-antenna(states["car2"],"car2",config))-target_peer)/config["peer_sigma_m"])
             return np.array(out)
         x0=np.concatenate([predicted[c] for c in cars])
         if wall or peers:
-            result=least_squares(residual,x0,max_nfev=config["max_nfev"],loss="linear")
-            success=bool(result.success and np.isfinite(result.x).all())
-            x=result.x if success else x0
-            nfev=int(result.nfev)
+            groups=[[c] for c in cars] if method=="independent" else [cars]
+            estimates={}
+            success=True
+            nfev=0
+            for group in groups:
+                prior=np.concatenate([predicted[c] for c in group])
+                result=least_squares(lambda v:residual(v,group),prior,max_nfev=config["max_nfev"],loss="linear")
+                good=bool(result.success and np.isfinite(result.x).all())
+                success=success and good
+                nfev+=int(result.nfev)
+                for i,c in enumerate(group):estimates[c]=(result.x if good else prior)[3*i:3*i+3]
+            x=np.concatenate([estimates[c] for c in cars])
         else:
             x=x0
             success=True
             nfev=0
         self.states={c:x[3*i:3*i+3].copy() for i,c in enumerate(cars)}
         self.previous_odom={c:np.asarray(odom[c]).copy() for c in TAGS}
-        d={"method":method,"solver_success":success,"nfev":nfev,"wall_factors":len(wall),
+        per_car={c:sum(r["vehicle_id"]==c for r in wall) for c in cars}
+        d={"method":method,"solver_success":success,"nfev":nfev,"wall_factors":len(wall),"wall_factors_by_car":per_car,
             "peer_directed_entries":len(peers),"peer_factors":int(target_peer is not None),
-            "measurement_degraded":not bool(wall),"causal":True,"failed_solve_fallback":"odom prediction; valid false if solver failed"}
+            "measurement_degraded":any(n<3 for n in per_car.values()),"causal":True,"failed_solve_fallback":"affected solve uses odom prediction; valid false if any solver failed"}
         return copy.deepcopy(self.states),d
 
 
