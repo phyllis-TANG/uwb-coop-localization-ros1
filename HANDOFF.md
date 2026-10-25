@@ -1,4 +1,26 @@
-# 定位完好性监测可行性试验：已完成
+# 当前交接：2026-10-24–25双车实测资料与多端离线作业
+
+更新时间：2026-10-26，北京时间。当前统一入口为
+[docs/field_tests/20261024_25/README.md](docs/field_tests/20261024_25/README.md)。
+
+请先读取入口、manifest.json、geometry.json及QC_REPORT.md，再按实际执行端读取
+RUNBOOK_SANDBOX.md、RUNBOOK_LOCAL_VIDEO.md或RUNBOOK_COORDINATOR.md。
+夜间自主作业读取NIGHTLY_SANDBOX.md；可复制的任务指令在PROMPTS.md。
+原始bag/视频从manifest列出的GitHub Release下载至仓库外目录，不提交至Git。
+
+最新状态：T08–T15八个正式bag哈希及311,144条消息解码通过；
+相机参考八片和T08–T10运动原片的ZIP校验、全片解码通过；
+Car2标记提取、独立视觉精度、逐片空间关系和视频/ROS同步未验收。
+剩余视频及现场信息见新交接目录，不将“文件完整”写成“定位精度通过”。
+
+三个端各用独立分支与输出目录，共用数据哈希和配置版本；留出集
+T09/T11/T13/T15不用于定位误差调参。当前任务为离线分析与测试，不启动实车。
+这一入口覆盖本轮现场资料；下方保留原2026-10-22完好性试验交接，作为历史结果，
+其中本地路径、分支和默认实验目录不是本轮作业指令。
+
+---
+
+# 历史交接：定位完好性监测可行性试验（2026-10-22，已完成）
 
 当前实验仓库：`/home/ubuntu22/双车协同/uwb-coop-localization-ros1`。
 实验分支：`experiment/integrity-feasibility-v1-20261022`。

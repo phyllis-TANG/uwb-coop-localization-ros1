@@ -1,5 +1,16 @@
 # UWB Cooperative Localization for ROS 1
 
+## October 24–25 field data and multi-worker analysis handoff
+
+Start with the [current field-session entry point](docs/field_tests/20261024_25/README.md).
+It contains verified Release data hashes, corrected field measurements, bag/video
+intake results, separate sandbox/video/coordinator runbooks, and a bounded
+[nightly sandbox work order](docs/field_tests/20261024_25/NIGHTLY_SANDBOX.md).
+The eight new formal dynamic bags passed complete decoding; received videos
+passed archive and full-video decode checks. Visual reference precision and
+synchronization remain open, including Car2 marker extraction. Read the current
+handoff before reusing historical paths, calibration or evaluation claims below.
+
 This repository will contain a modular ROS 1 experiment platform for UWB-assisted
 cooperative localization. Development is deliberately incremental: raw data
 acquisition and repeatable experiments take priority over advanced fusion

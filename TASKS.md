@@ -1,5 +1,14 @@
 # Tasks
 
+## Current field-session work orders — 2026-10-24/25
+
+The maintained entry point is [the current session handoff](docs/field_tests/20261024_25/README.md).
+Use its verified manifest, per-role runbooks and bounded nightly work order.
+The eight formal dynamic bags and received reference/T08–T10 videos have passed
+file-level intake. Independent reference validation, spatial/temporal alignment,
+remaining uploads and method evaluation remain open. Historical task states
+below are preserved and do not override the current session's explicit gates.
+
 Task states use `TODO`, `IN PROGRESS`, `BLOCKED`, and `DONE`. A task is marked
 `DONE` only after its success criterion has been checked in the target
 environment or explicitly confirmed by its operator.

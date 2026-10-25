@@ -11,6 +11,13 @@ ros_ws/src/CMakeLists.txt
 *.bag
 *.bag.active
 
+# Oct24–25 offline intake/analysis scratch: large originals live outside Git.
+/field_data/
+/field_results/
+/work_data/
+/work_results/
+/.venv-field/
+
 # Python runtime artifacts
 *.pyc
 __pycache__/

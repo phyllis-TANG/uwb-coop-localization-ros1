@@ -1,0 +1,5 @@
+# Modern offline tools only; do not install into a robot's ROS Python environment.
+# prepare.py and audit_videos.py use the standard library; audit_bags.py needs NumPy.
+numpy>=1.24,<3
+# Video health checks additionally require ffmpeg and ffprobe on PATH.
+# OpenCV is intentionally not required until the separate visual-reference task.
