@@ -62,4 +62,4 @@ PYTHON="$VENV/bin/python"
 "$PYTHON" docs/field_tests/20261024_25/sandbox_20261026_takeover/plot_development.py --development "$OUTPUT_ROOT/development" --output "$OUTPUT_ROOT/figures"
 ```
 
-本次实际完整结果在 `/workspace/work/uwb-handoff-20261026/results/`，每个新计算阶段有run.json、源码/配置/输入/输出哈希、运行耗时与状态；runner另有tasks.jsonl及逐项stdout/stderr。本端日志在其父目录的各`.log`。原件在独立data目录；约492MiB标准化表和逐窗CSV不入Git。下载结果包包含完整结果/日志、代码补丁与git bundle；不含原始bag/视频、venv或下载缓存。包的SHA256及最终分支提交由下载目录SHA256SUMS和交接文件登记。本目录仅保存紧凑证据；完整time_diagnostics.json、CSV和各阶段run.json以结果包为准。
+本次实际完整结果在 `/workspace/work/uwb-handoff-20261026/results/`，每个新计算阶段有run.json、源码/配置/输入/输出哈希、运行耗时与状态；runner另有tasks.jsonl及逐项stdout/stderr。本端日志在其父目录的各`.log`。原件在独立data目录；约492MiB标准化表和逐窗CSV不入Git。本轮完整归档 `/workspace/work/uwb-handoff-20261026/package/field_sandbox_results.tar.gz` 包含结果/日志、代码补丁与git bundle；不含原始bag/视频、venv或下载缓存。包的SHA256及最终分支提交由同目录SHA256SUMS.txt和交接文件登记。聊天应用指定的 `/codex/browser/.../output` 在本执行环境不可创建（Permission denied），无法在该位置提供下载附件；本地完整归档保留，PR提供紧凑证据。本目录仅保存紧凑证据；完整time_diagnostics.json、CSV和各阶段run.json以结果包为准。
