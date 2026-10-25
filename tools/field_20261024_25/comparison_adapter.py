@@ -65,6 +65,39 @@ class ArrivalAdapter:
         return [latest[k] for k in sorted(latest)]
 
 
+class OdomArrivalAdapter:
+    """Latest arrived odometry only, with no future interpolation or room alignment.
+
+    A missing/stale vehicle returns None; the caller must block that solve.
+    position.z is deliberately excluded from the planar odometry state.
+    """
+    def __init__(self,rows,max_age_ns):
+        experiments={r["experiment_id"] for r in rows}
+        if len(experiments)>1:raise ValueError("odometry accepts one experiment at a time")
+        self.rows=sorted(rows,key=lambda r:(int(r["receive_epoch_ns"]),int(r["record_index"])))
+        self.latest={}
+        self.index=0
+        self.last=None
+        self.max_age_ns=max_age_ns
+
+    def take(self,cutoff_ns):
+        if not isinstance(cutoff_ns,int):raise ValueError("cutoff must be exact integer ns")
+        if self.last is not None and cutoff_ns<self.last:raise ValueError("cutoff must be monotonic")
+        self.last=cutoff_ns
+        while self.index<len(self.rows) and int(self.rows[self.index]["receive_epoch_ns"])<=cutoff_ns:
+            r=self.rows[self.index]
+            self.index+=1
+            car=r["vehicle_id"]
+            if car not in TAGS or r["frame_id"]!=car+"/odom" or r["child_frame_id"]!=car+"/base_footprint":
+                raise ValueError("unexpected odometry vehicle/frame identity")
+            q={k:float(r["orientation_"+k]) for k in "xyzw"}
+            state=np.array([float(r["position_x"]),float(r["position_y"]),
+                math.atan2(2*(q["w"]*q["z"]+q["x"]*q["y"]),1-2*(q["y"]**2+q["z"]**2))])
+            if not np.isfinite(state).all():raise ValueError("nonfinite odometry state")
+            self.latest[car]=(int(r["receive_epoch_ns"]),state)
+        return {c:self.latest[c][1].copy() if c in self.latest and cutoff_ns-self.latest[c][0]<=self.max_age_ns else None for c in TAGS}
+
+
 def wrap(value):return math.atan2(math.sin(value),math.cos(value))
 
 
@@ -137,9 +170,16 @@ class FixedComparison:
         self.states={c:x[3*i:3*i+3].copy() for i,c in enumerate(cars)}
         self.previous_odom={c:np.asarray(odom[c]).copy() for c in TAGS}
         per_car={c:sum(r["vehicle_id"]==c for r in wall) for c in cars}
+        ranks={}
+        for car in cars:
+            position=antenna(predicted[car],car,config)
+            differences=[position-np.asarray(config["anchors_xyz_m"][r["target_id"]]) for r in wall if r["vehicle_id"]==car]
+            jacobian=np.array([v[:2]/np.linalg.norm(v) for v in differences if np.linalg.norm(v)>0])
+            ranks[car]=int(np.linalg.matrix_rank(jacobian,tol=1e-8)) if len(jacobian) else 0
         d={"method":method,"solver_success":success,"nfev":nfev,"wall_factors":len(wall),"wall_factors_by_car":per_car,
+            "wall_xy_local_rank_by_car":ranks,
             "peer_directed_entries":len(peers),"peer_factors":int(target_peer is not None),
-            "measurement_degraded":any(n<3 for n in per_car.values()),"causal":True,"failed_solve_fallback":"affected solve uses odom prediction; valid false if any solver failed"}
+            "measurement_degraded":any(per_car[c]<3 or ranks[c]<2 for c in cars),"causal":True,"failed_solve_fallback":"affected solve uses odom prediction; valid false if any solver failed"}
         return copy.deepcopy(self.states),d
 
 

@@ -74,6 +74,29 @@ class AdapterTests(unittest.TestCase):
         self.assertTrue(d["measurement_degraded"])
         self.assertEqual(d["wall_factors_by_car"],{"car1":1,"car2":0})
 
+    def test_collinear_local_geometry_is_reported_degraded(self):
+        config=copy.deepcopy(self.config)
+        config["body_to_antenna_xyz_m"]={c:[0.,0.,.2] for c in a.TAGS}
+        config["anchors_xyz_m"]={target:[float(i),0.,2.] for i,target in enumerate(sorted(a.WALLS))}
+        initial={c:np.array([1.,0.,0.]) for c in a.TAGS}
+        rows=[observation(car=c,target=target,value=a.wall_distance(initial[c],c,target,config),idx=i)
+              for c in a.TAGS for i,target in enumerate(sorted(a.WALLS))]
+        _,d=a.FixedComparison(initial,self.odom,config).step(self.odom,rows,"independent")
+        self.assertEqual(d["wall_xy_local_rank_by_car"],{"car1":1,"car2":1})
+        self.assertTrue(d["measurement_degraded"])
+
+    def test_odometry_never_interpolates_future_and_ignores_driver_z(self):
+        base={"experiment_id":"T08","vehicle_id":"car2","frame_id":"car2/odom",
+            "child_frame_id":"car2/base_footprint","position_x":1.,"position_y":2.,"position_z":999.,
+            "orientation_x":0.,"orientation_y":0.,"orientation_z":0.,"orientation_w":1.}
+        rows=[dict(base,receive_epoch_ns=10,record_index=0),dict(base,receive_epoch_ns=30,record_index=1,position_x=999.)]
+        adapter=a.OdomArrivalAdapter(rows,max_age_ns=10)
+        states=adapter.take(15)
+        self.assertIsNone(states["car1"])
+        np.testing.assert_array_equal(states["car2"],[1.,2.,0.])
+        self.assertIsNone(adapter.take(25)["car2"])
+        self.assertEqual(adapter.take(30)["car2"][0],999.)
+
     def test_missing_links_predict_and_report_degradation(self):
         method=a.FixedComparison(self.initial,self.odom,self.config)
         x,d=method.step(self.odom,[],"joint")
