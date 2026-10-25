@@ -1,0 +1,769 @@
+{
+  "normalized": {
+    "run_json_sha256": "b7448d932d8c92054b3147d3add1bb755cf39e50f292c8e2151e5c89ea99c11a",
+    "status": "DONE",
+    "code_commit": "f44eb1f9dd16fb68cff0def8488b6fbf7072b00a",
+    "worktree_dirty": false,
+    "source_sha256": {
+      "tools/field_20261024_25/audit_bags.py": "aead4ca10d232941d8accaa886b54d6b6d6e320f640db19ee9c990e6fbca9913",
+      "tools/field_20261024_25/audit_videos.py": "f7d3b4c0cbb60975b7e3bf1b369f0c326248de6adbb011f6d8bc4151ab91072a",
+      "tools/field_20261024_25/bag_decoder.py": "acbe5b1727c4e1fbebc4a3bdc9c735ad9cde682e8c46baeff5654742297143d0",
+      "tools/field_20261024_25/normalize.py": "d0766d16736b6f9ae720a4dcd9760551819c5cadbcb8c136e1030d54d9312703",
+      "tools/field_20261024_25/prepare.py": "e37544b930fd0370de865f54aaab12c75ffc24603ee0eeae3d8d153b3e5b41c0",
+      "tools/field_20261024_25/run_nightly.py": "79583a8552b821b6271fec1bdaed615418c9f4b2d27509558b76a441e952d41f",
+      "tools/field_20261024_25/test_audit_bags.py": "e7793ce87eff704ca0966bd5b98353738459c030607ce16726bc87352e7ebcce",
+      "tools/field_20261024_25/test_audit_videos.py": "e5e9f81abdcf2048de8a2d7df05370dee2ef272a0b04aeb46e95621cccd4be4d",
+      "tools/field_20261024_25/test_normalize.py": "3160271ff8d50b6f08fd28effc9efdf9cd869c8999ae2a303d76592ce6dcf958",
+      "tools/field_20261024_25/test_prepare.py": "0240a987e23e15b44cd96e31547448df187303c8238ef06051fc7d324bdde89f",
+      "tools/field_20261024_25/test_run_nightly.py": "43993ee82c9b0fc7402d7a5047152280077acb95c2782a67cacecead9c478e3f"
+    },
+    "config_sha256": {
+      "geometry.json": "bd59d654a6794cc61a5680816d479a7ae3a4b5a0376a3d5ebd517b6c3842266c",
+      "manifest.json": "d4cd1ecc0e9bb71a0c18b8fa62487f6b02e6ee8549783c472d876ebebb1ad544"
+    },
+    "elapsed_s": 72.26941452800003,
+    "inputs": [
+      {
+        "asset_id": "bags",
+        "experiment_id": "T08",
+        "relative_path": "uwb_field_20261025/bags/T08_C1static_C2L_repeat1_20261025_180633.bag",
+        "sha256": "cf3b4de0f20424d02779aeeb416a4fb16d77bb1f5333344d48ebf446a3884ada"
+      },
+      {
+        "asset_id": "bags",
+        "experiment_id": "T09",
+        "relative_path": "uwb_field_20261025/bags/T09_C1static_C2L_repeat2_holdout_20261025_182408.bag",
+        "sha256": "f4271484e66c3fe83cc6e3121afbd74f12982499122012a9d2b375fa39a03e12"
+      },
+      {
+        "asset_id": "bags",
+        "experiment_id": "T10",
+        "relative_path": "uwb_field_20261025/bags/T10_C2static_C1straight_repeat1_retry_20261025_184755.bag",
+        "sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558"
+      },
+      {
+        "asset_id": "bags",
+        "experiment_id": "T11",
+        "relative_path": "uwb_field_20261025/bags/T11_C2static_C1straight_repeat2_holdout_20261025_185437.bag",
+        "sha256": "f9bf03d97b2da800451762ce89849e05ce225e621a5b8813b055c0549590bcab"
+      },
+      {
+        "asset_id": "bags",
+        "experiment_id": "T12",
+        "relative_path": "uwb_field_20261025/bags/T12_bothmoving_clear_repeat1_20261025_191149.bag",
+        "sha256": "540c2fbdcf67da5f3060f0363517cb65b6cfb0f96d6d35aae8d883ac604b18f1"
+      },
+      {
+        "asset_id": "bags",
+        "experiment_id": "T13",
+        "relative_path": "uwb_field_20261025/bags/T13_bothmoving_clear_repeat2_holdout_20261025_192355.bag",
+        "sha256": "40dc6b1e24ff5a1e0db6781c0834e5f6440d6fe9f22626606ac477013faff6f8"
+      },
+      {
+        "asset_id": "bags",
+        "experiment_id": "T14",
+        "relative_path": "uwb_field_20261025/bags/T14_C1static_C2L_occlusion_repeat1_20261025_194542.bag",
+        "sha256": "793a169da34095585cbd97860fa9e37f07358173c8a91a768aa4f8cf0a5ada83"
+      },
+      {
+        "asset_id": "bags",
+        "experiment_id": "T15",
+        "relative_path": "uwb_field_20261025/bags/T15_C1static_C2L_occlusion_repeat2_holdout_20261025_195528.bag",
+        "sha256": "4b3be332d424648c41827cda7906a9eb90453aa8979eb0a5aebdd8a986d1c3cd"
+      }
+    ],
+    "outputs": [
+      {
+        "relative_path": "commands.csv",
+        "sha256": "fb126ac1578589d0ec4d267d666095278693fd0f9780c7b383ede3b03974e8d9"
+      },
+      {
+        "relative_path": "counts.json",
+        "sha256": "732ee4249e4491d1431d406b7a4a45e691dea6154cd3096dea974ffd07a1af4a"
+      },
+      {
+        "relative_path": "frames.csv",
+        "sha256": "146b849c81b340ab9021439db1ebe93c95f9db5f56fe2a714246db345d862696"
+      },
+      {
+        "relative_path": "imu.csv",
+        "sha256": "6f24987ee27e918d2cee59ba5fe3aa8bd3809189bc679d2940ee10c42f6966b8"
+      },
+      {
+        "relative_path": "normalization_report.md",
+        "sha256": "46861fd286fe336250b916ce28ca00599e6e51431b341c141ef12bd7c0d40f23"
+      },
+      {
+        "relative_path": "odom.csv",
+        "sha256": "faeaae73bbdfb33d95ca14a7ad58efaa291e72de389d7cfd74450f42cc439e1c"
+      },
+      {
+        "relative_path": "python_packages.txt",
+        "sha256": "d14743fdfb9247ceada5f16be898a84a5bcb8cb1736da203f90e955b446ed177"
+      },
+      {
+        "relative_path": "ranges.csv",
+        "sha256": "b5010808447b1694ce8076a648ba2a3ed1132e7d52ea900efef2fb83d95cc220"
+      },
+      {
+        "relative_path": "time_diagnostics.json",
+        "sha256": "7f10e5d761e5394a8c6db88602b5f608c103357398bd87fe0416b40ee6ba9e9f"
+      }
+    ]
+  },
+  "development": {
+    "run_json_sha256": "16feeb2506be241842120ca99d58e179c6721991dc955bc43fb46785223dfd21",
+    "status": "DONE",
+    "code_commit": "1bc2372d0b2dca17e6368abe150f0b0044acfe74",
+    "worktree_dirty": false,
+    "source_sha256": {
+      "tools/field_20261024_25/audit_bags.py": "aead4ca10d232941d8accaa886b54d6b6d6e320f640db19ee9c990e6fbca9913",
+      "tools/field_20261024_25/audit_videos.py": "f7d3b4c0cbb60975b7e3bf1b369f0c326248de6adbb011f6d8bc4151ab91072a",
+      "tools/field_20261024_25/bag_decoder.py": "acbe5b1727c4e1fbebc4a3bdc9c735ad9cde682e8c46baeff5654742297143d0",
+      "tools/field_20261024_25/development.py": "73dd54a331cbb2bf836817ad9a2784bd0e647131c42b3b15d581dfa035b0b384",
+      "tools/field_20261024_25/normalize.py": "d0766d16736b6f9ae720a4dcd9760551819c5cadbcb8c136e1030d54d9312703",
+      "tools/field_20261024_25/prepare.py": "e37544b930fd0370de865f54aaab12c75ffc24603ee0eeae3d8d153b3e5b41c0",
+      "tools/field_20261024_25/run_nightly.py": "79583a8552b821b6271fec1bdaed615418c9f4b2d27509558b76a441e952d41f",
+      "tools/field_20261024_25/test_audit_bags.py": "e7793ce87eff704ca0966bd5b98353738459c030607ce16726bc87352e7ebcce",
+      "tools/field_20261024_25/test_audit_videos.py": "e5e9f81abdcf2048de8a2d7df05370dee2ef272a0b04aeb46e95621cccd4be4d",
+      "tools/field_20261024_25/test_development.py": "146348edacad7f7ae2c73c92ff926558301537987ef1e0a88e8e7c8780e7ddc5",
+      "tools/field_20261024_25/test_normalize.py": "3160271ff8d50b6f08fd28effc9efdf9cd869c8999ae2a303d76592ce6dcf958",
+      "tools/field_20261024_25/test_prepare.py": "0240a987e23e15b44cd96e31547448df187303c8238ef06051fc7d324bdde89f",
+      "tools/field_20261024_25/test_run_nightly.py": "43993ee82c9b0fc7402d7a5047152280077acb95c2782a67cacecead9c478e3f"
+    },
+    "config_sha256": {
+      "development_config.json": "f1fc3682d51ce2b2746e33dc1fb22141281b2ccab3d21da44b52e249d356883a",
+      "geometry.json": "bd59d654a6794cc61a5680816d479a7ae3a4b5a0376a3d5ebd517b6c3842266c",
+      "manifest.json": "d4cd1ecc0e9bb71a0c18b8fa62487f6b02e6ee8549783c472d876ebebb1ad544"
+    },
+    "elapsed_s": 13.165173701000015,
+    "inputs": [
+      {
+        "asset_id": "normalization",
+        "relative_path": "run.json",
+        "sha256": "b7448d932d8c92054b3147d3add1bb755cf39e50f292c8e2151e5c89ea99c11a"
+      },
+      {
+        "relative_path": "frames.csv",
+        "sha256": "146b849c81b340ab9021439db1ebe93c95f9db5f56fe2a714246db345d862696"
+      },
+      {
+        "relative_path": "ranges.csv",
+        "sha256": "b5010808447b1694ce8076a648ba2a3ed1132e7d52ea900efef2fb83d95cc220"
+      },
+      {
+        "relative_path": "time_diagnostics.json",
+        "sha256": "7f10e5d761e5394a8c6db88602b5f608c103357398bd87fe0416b40ee6ba9e9f"
+      }
+    ],
+    "outputs": [
+      {
+        "relative_path": "T08_peer_asof.csv",
+        "sha256": "502665a43553e10ae5fe29d1703db08dea7684fef19831935346f778c37f6a47"
+      },
+      {
+        "relative_path": "T10_peer_asof.csv",
+        "sha256": "c3168a0d429e19cb9b169c9b5c373a8688573a0974358e2705757fe460b205e2"
+      },
+      {
+        "relative_path": "T12_peer_asof.csv",
+        "sha256": "362ae485552f53c32c926bddd6544f0e8f981994121e5de49cdb64a474f25ee1"
+      },
+      {
+        "relative_path": "T14_peer_asof.csv",
+        "sha256": "6ab43a361c67b98d755404f157fac2e2bb04c1ea1d0d0e440cf76788ce208ab0"
+      },
+      {
+        "relative_path": "development_diagnostics.json",
+        "sha256": "c19d95b9c74cf33c721a9a42cd6c392ecf533b1edf5efc49e6616559c2b67367"
+      },
+      {
+        "relative_path": "development_report.md",
+        "sha256": "62896aa4f82f63e961e5012f4270f40a52ea42aa663986e1165539e59220eb87"
+      },
+      {
+        "relative_path": "link_windows.csv",
+        "sha256": "5e68805952bb5ad21449c95a7bccfbb2f499f28b376ef99d698e0acf7ae91789"
+      },
+      {
+        "relative_path": "python_packages.txt",
+        "sha256": "d14743fdfb9247ceada5f16be898a84a5bcb8cb1736da203f90e955b446ed177"
+      }
+    ]
+  },
+  "export_audit": {
+    "run_json_sha256": "01a4ca46851d075a09411ff3c69cdb3c330fac5c3f305949f4e19f4fe21b4772",
+    "status": "DONE",
+    "code_commit": "44a0c31781ae63f14c2c34f64b68df057ae5216f",
+    "worktree_dirty": false,
+    "source_sha256": {
+      "tools/field_20261024_25/audit_bags.py": "aead4ca10d232941d8accaa886b54d6b6d6e320f640db19ee9c990e6fbca9913",
+      "tools/field_20261024_25/audit_exports.py": "cf7c88343a296cb786471c04b3f7869af079a9dc199fcb00915ed442c3bd40a3",
+      "tools/field_20261024_25/audit_videos.py": "f7d3b4c0cbb60975b7e3bf1b369f0c326248de6adbb011f6d8bc4151ab91072a",
+      "tools/field_20261024_25/bag_decoder.py": "acbe5b1727c4e1fbebc4a3bdc9c735ad9cde682e8c46baeff5654742297143d0",
+      "tools/field_20261024_25/comparison_adapter.py": "280316c8d1c7aa83f1937445b116eddc26756633a72e78e18a0baaf243982afa",
+      "tools/field_20261024_25/development.py": "73dd54a331cbb2bf836817ad9a2784bd0e647131c42b3b15d581dfa035b0b384",
+      "tools/field_20261024_25/normalize.py": "d0766d16736b6f9ae720a4dcd9760551819c5cadbcb8c136e1030d54d9312703",
+      "tools/field_20261024_25/prepare.py": "e37544b930fd0370de865f54aaab12c75ffc24603ee0eeae3d8d153b3e5b41c0",
+      "tools/field_20261024_25/run_nightly.py": "79583a8552b821b6271fec1bdaed615418c9f4b2d27509558b76a441e952d41f",
+      "tools/field_20261024_25/test_audit_bags.py": "e7793ce87eff704ca0966bd5b98353738459c030607ce16726bc87352e7ebcce",
+      "tools/field_20261024_25/test_audit_videos.py": "e5e9f81abdcf2048de8a2d7df05370dee2ef272a0b04aeb46e95621cccd4be4d",
+      "tools/field_20261024_25/test_comparison_adapter.py": "6792bbde2896c713f05884e3f2afd0dedc62313ff45f2a276c888d5772a81cf5",
+      "tools/field_20261024_25/test_development.py": "146348edacad7f7ae2c73c92ff926558301537987ef1e0a88e8e7c8780e7ddc5",
+      "tools/field_20261024_25/test_normalize.py": "3160271ff8d50b6f08fd28effc9efdf9cd869c8999ae2a303d76592ce6dcf958",
+      "tools/field_20261024_25/test_prepare.py": "0240a987e23e15b44cd96e31547448df187303c8238ef06051fc7d324bdde89f",
+      "tools/field_20261024_25/test_run_nightly.py": "43993ee82c9b0fc7402d7a5047152280077acb95c2782a67cacecead9c478e3f"
+    },
+    "config_sha256": {
+      "geometry.json": "bd59d654a6794cc61a5680816d479a7ae3a4b5a0376a3d5ebd517b6c3842266c",
+      "manifest.json": "d4cd1ecc0e9bb71a0c18b8fa62487f6b02e6ee8549783c472d876ebebb1ad544"
+    },
+    "elapsed_s": 54.07346642499999,
+    "inputs": [
+      {
+        "asset_id": "bags",
+        "experiment_id": "T08",
+        "relative_path": "uwb_field_20261025/bags/T08_C1static_C2L_repeat1_20261025_180633.bag",
+        "sha256": "cf3b4de0f20424d02779aeeb416a4fb16d77bb1f5333344d48ebf446a3884ada"
+      },
+      {
+        "asset_id": "bags",
+        "experiment_id": "T09",
+        "relative_path": "uwb_field_20261025/bags/T09_C1static_C2L_repeat2_holdout_20261025_182408.bag",
+        "sha256": "f4271484e66c3fe83cc6e3121afbd74f12982499122012a9d2b375fa39a03e12"
+      },
+      {
+        "asset_id": "bags",
+        "experiment_id": "T10",
+        "relative_path": "uwb_field_20261025/bags/T10_C2static_C1straight_repeat1_retry_20261025_184755.bag",
+        "sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558"
+      },
+      {
+        "asset_id": "bags",
+        "experiment_id": "T11",
+        "relative_path": "uwb_field_20261025/bags/T11_C2static_C1straight_repeat2_holdout_20261025_185437.bag",
+        "sha256": "f9bf03d97b2da800451762ce89849e05ce225e621a5b8813b055c0549590bcab"
+      },
+      {
+        "asset_id": "bags",
+        "experiment_id": "T12",
+        "relative_path": "uwb_field_20261025/bags/T12_bothmoving_clear_repeat1_20261025_191149.bag",
+        "sha256": "540c2fbdcf67da5f3060f0363517cb65b6cfb0f96d6d35aae8d883ac604b18f1"
+      },
+      {
+        "asset_id": "bags",
+        "experiment_id": "T13",
+        "relative_path": "uwb_field_20261025/bags/T13_bothmoving_clear_repeat2_holdout_20261025_192355.bag",
+        "sha256": "40dc6b1e24ff5a1e0db6781c0834e5f6440d6fe9f22626606ac477013faff6f8"
+      },
+      {
+        "asset_id": "bags",
+        "experiment_id": "T14",
+        "relative_path": "uwb_field_20261025/bags/T14_C1static_C2L_occlusion_repeat1_20261025_194542.bag",
+        "sha256": "793a169da34095585cbd97860fa9e37f07358173c8a91a768aa4f8cf0a5ada83"
+      },
+      {
+        "asset_id": "bags",
+        "experiment_id": "T15",
+        "relative_path": "uwb_field_20261025/bags/T15_C1static_C2L_occlusion_repeat2_holdout_20261025_195528.bag",
+        "sha256": "4b3be332d424648c41827cda7906a9eb90453aa8979eb0a5aebdd8a986d1c3cd"
+      },
+      {
+        "asset_id": "normalized",
+        "relative_path": "run.json",
+        "sha256": "b7448d932d8c92054b3147d3add1bb755cf39e50f292c8e2151e5c89ea99c11a"
+      }
+    ],
+    "outputs": [
+      {
+        "relative_path": "python_packages.txt",
+        "sha256": "d14743fdfb9247ceada5f16be898a84a5bcb8cb1736da203f90e955b446ed177"
+      },
+      {
+        "relative_path": "verification.json",
+        "sha256": "a6b70e07e8ee575519f82a750f73739a978873be4e333d4f1d5917db9a9aba37"
+      }
+    ]
+  },
+  "synthetic_final": {
+    "run_json_sha256": "5ac1356b7888336c4a944e2c33efb776596f56d4d150c85868fb4af9305acb58",
+    "status": "DONE",
+    "code_commit": "33f1991dd6f571c40fdd3a550440629bb92414bc",
+    "worktree_dirty": false,
+    "source_sha256": {
+      "tools/field_20261024_25/audit_bags.py": "aead4ca10d232941d8accaa886b54d6b6d6e320f640db19ee9c990e6fbca9913",
+      "tools/field_20261024_25/audit_exports.py": "cf7c88343a296cb786471c04b3f7869af079a9dc199fcb00915ed442c3bd40a3",
+      "tools/field_20261024_25/audit_videos.py": "f7d3b4c0cbb60975b7e3bf1b369f0c326248de6adbb011f6d8bc4151ab91072a",
+      "tools/field_20261024_25/bag_decoder.py": "acbe5b1727c4e1fbebc4a3bdc9c735ad9cde682e8c46baeff5654742297143d0",
+      "tools/field_20261024_25/comparison_adapter.py": "277ade1b034769f01b6e328f23e727c8f12b0970497fdd4723987dbc099247c2",
+      "tools/field_20261024_25/development.py": "73dd54a331cbb2bf836817ad9a2784bd0e647131c42b3b15d581dfa035b0b384",
+      "tools/field_20261024_25/normalize.py": "d0766d16736b6f9ae720a4dcd9760551819c5cadbcb8c136e1030d54d9312703",
+      "tools/field_20261024_25/prepare.py": "e37544b930fd0370de865f54aaab12c75ffc24603ee0eeae3d8d153b3e5b41c0",
+      "tools/field_20261024_25/run_nightly.py": "e3be2f6b7702b334ae8164935b9059ba04b8b124e0e202c9425e0a95d53ed524",
+      "tools/field_20261024_25/test_audit_bags.py": "e7793ce87eff704ca0966bd5b98353738459c030607ce16726bc87352e7ebcce",
+      "tools/field_20261024_25/test_audit_videos.py": "e5e9f81abdcf2048de8a2d7df05370dee2ef272a0b04aeb46e95621cccd4be4d",
+      "tools/field_20261024_25/test_comparison_adapter.py": "23b667a9b8d1318713a9e458bf97fb5438b258ebc280a1677f803dcbdf68848d",
+      "tools/field_20261024_25/test_development.py": "146348edacad7f7ae2c73c92ff926558301537987ef1e0a88e8e7c8780e7ddc5",
+      "tools/field_20261024_25/test_export_audit.py": "32e33dac658078cf7ddcd59a69e69457da100c8d78af006ce62d67f78c3791c4",
+      "tools/field_20261024_25/test_normalize.py": "3160271ff8d50b6f08fd28effc9efdf9cd869c8999ae2a303d76592ce6dcf958",
+      "tools/field_20261024_25/test_prepare.py": "0240a987e23e15b44cd96e31547448df187303c8238ef06051fc7d324bdde89f",
+      "tools/field_20261024_25/test_run_nightly.py": "43993ee82c9b0fc7402d7a5047152280077acb95c2782a67cacecead9c478e3f"
+    },
+    "config_sha256": {
+      "geometry.json": "bd59d654a6794cc61a5680816d479a7ae3a4b5a0376a3d5ebd517b6c3842266c",
+      "synthetic_comparison_config.json": "d15bb06ce92dba59154a937b30d5169a26e0b4bfe1b5e5ec116698c23060047a"
+    },
+    "elapsed_s": 0.3565322910000077,
+    "inputs": [],
+    "outputs": [
+      {
+        "relative_path": "diagnostics.json",
+        "sha256": "760939faa7bf4d3b25a13282e62f954217a5acebaf4d94528b5b1649917c5727"
+      },
+      {
+        "relative_path": "estimate.csv",
+        "sha256": "e6ba609ceb30b6dd617a91d6c099d3d8e6a5b3caf488944c6df920d6a7468aca"
+      },
+      {
+        "relative_path": "field_readiness.json",
+        "sha256": "25c6cb5303c1460e3fdf2f5863db6f5b1e6b2842e888e224df02c1e94e98b243"
+      },
+      {
+        "relative_path": "python_packages.txt",
+        "sha256": "d14743fdfb9247ceada5f16be898a84a5bcb8cb1736da203f90e955b446ed177"
+      },
+      {
+        "relative_path": "report.md",
+        "sha256": "6c88e4435dff62ed4ecc043a691ecc28c3935a4db46b22bcc8e579d08f7eb69f"
+      }
+    ]
+  },
+  "figures": {
+    "run_json_sha256": "b21cc1f5d4a384f206c61c3453aa48080fc5eea0e888ab898a2e7ad9fa0918f5",
+    "status": "DONE",
+    "code_commit": "892849582f94f4e8af2b83e041e4475aa509a2ff",
+    "worktree_dirty": true,
+    "source_sha256": {
+      "docs/field_tests/20261024_25/sandbox_20261026_takeover/plot_development.py": "cfbbcfcc98117bbd750fb51354fb633d3b952fa78718596b1838bf37ce0bfbaf",
+      "tools/field_20261024_25/audit_bags.py": "aead4ca10d232941d8accaa886b54d6b6d6e320f640db19ee9c990e6fbca9913",
+      "tools/field_20261024_25/audit_exports.py": "cf7c88343a296cb786471c04b3f7869af079a9dc199fcb00915ed442c3bd40a3",
+      "tools/field_20261024_25/audit_videos.py": "f7d3b4c0cbb60975b7e3bf1b369f0c326248de6adbb011f6d8bc4151ab91072a",
+      "tools/field_20261024_25/bag_decoder.py": "acbe5b1727c4e1fbebc4a3bdc9c735ad9cde682e8c46baeff5654742297143d0",
+      "tools/field_20261024_25/comparison_adapter.py": "7281eac054d8fa59639ab2382d6db58aff29ea8500c756ac60fff54ee8461339",
+      "tools/field_20261024_25/development.py": "73dd54a331cbb2bf836817ad9a2784bd0e647131c42b3b15d581dfa035b0b384",
+      "tools/field_20261024_25/normalize.py": "d0766d16736b6f9ae720a4dcd9760551819c5cadbcb8c136e1030d54d9312703",
+      "tools/field_20261024_25/prepare.py": "e37544b930fd0370de865f54aaab12c75ffc24603ee0eeae3d8d153b3e5b41c0",
+      "tools/field_20261024_25/run_nightly.py": "e3be2f6b7702b334ae8164935b9059ba04b8b124e0e202c9425e0a95d53ed524",
+      "tools/field_20261024_25/test_audit_bags.py": "e7793ce87eff704ca0966bd5b98353738459c030607ce16726bc87352e7ebcce",
+      "tools/field_20261024_25/test_audit_videos.py": "e5e9f81abdcf2048de8a2d7df05370dee2ef272a0b04aeb46e95621cccd4be4d",
+      "tools/field_20261024_25/test_comparison_adapter.py": "d23de9dcdd839d6fddc61ea4c21829d16c0427582a2ac7effe4161fce6e6b4ed",
+      "tools/field_20261024_25/test_development.py": "146348edacad7f7ae2c73c92ff926558301537987ef1e0a88e8e7c8780e7ddc5",
+      "tools/field_20261024_25/test_export_audit.py": "32e33dac658078cf7ddcd59a69e69457da100c8d78af006ce62d67f78c3791c4",
+      "tools/field_20261024_25/test_normalize.py": "3160271ff8d50b6f08fd28effc9efdf9cd869c8999ae2a303d76592ce6dcf958",
+      "tools/field_20261024_25/test_prepare.py": "0240a987e23e15b44cd96e31547448df187303c8238ef06051fc7d324bdde89f",
+      "tools/field_20261024_25/test_run_nightly.py": "43993ee82c9b0fc7402d7a5047152280077acb95c2782a67cacecead9c478e3f"
+    },
+    "config_sha256": {
+      "development_config.json": "f1fc3682d51ce2b2746e33dc1fb22141281b2ccab3d21da44b52e249d356883a"
+    },
+    "elapsed_s": 2.186386913000092,
+    "inputs": [
+      {
+        "asset_id": "development_windows",
+        "relative_path": "link_windows.csv",
+        "sha256": "5e68805952bb5ad21449c95a7bccfbb2f499f28b376ef99d698e0acf7ae91789"
+      }
+    ],
+    "outputs": [
+      {
+        "relative_path": "development_peer.png",
+        "sha256": "fe14d65d658f9371e882e20f5ede5ffe28c67f44df797a495120c465ac89c999"
+      },
+      {
+        "relative_path": "development_peer.svg",
+        "sha256": "10bb28306c29f872046fcb770258e189439686455cc1b9ce2c09ec54bfd09f51"
+      },
+      {
+        "relative_path": "python_packages.txt",
+        "sha256": "d14743fdfb9247ceada5f16be898a84a5bcb8cb1736da203f90e955b446ed177"
+      }
+    ]
+  },
+  "nightly_release": {
+    "status": "COMPLETE",
+    "fingerprint": "e42cde9ab43d3dbfc82e8b8d5a36f63b2e66bb8095867cfbcd3a68dc965be0c5",
+    "code_commit": "33f1991dd6f571c40fdd3a550440629bb92414bc",
+    "source_configuration_input_identity": {
+      "configuration_sha256": {
+        "docs/field_tests/20261024_25/geometry.json": "bd59d654a6794cc61a5680816d479a7ae3a4b5a0376a3d5ebd517b6c3842266c",
+        "docs/field_tests/20261024_25/manifest.json": "d4cd1ecc0e9bb71a0c18b8fa62487f6b02e6ee8549783c472d876ebebb1ad544",
+        "tools/field_20261024_25/development_config.json": "f1fc3682d51ce2b2746e33dc1fb22141281b2ccab3d21da44b52e249d356883a",
+        "tools/field_20261024_25/synthetic_comparison_config.json": "d15bb06ce92dba59154a937b30d5169a26e0b4bfe1b5e5ec116698c23060047a"
+      },
+      "executable": "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+      "git_head": "33f1991dd6f571c40fdd3a550440629bb92414bc",
+      "inputs": [
+        {
+          "expected_sha256": "cf3b4de0f20424d02779aeeb416a4fb16d77bb1f5333344d48ebf446a3884ada",
+          "id": "T08",
+          "relative_path": "uwb_field_20261025/bags/T08_C1static_C2L_repeat1_20261025_180633.bag",
+          "sha256": "cf3b4de0f20424d02779aeeb416a4fb16d77bb1f5333344d48ebf446a3884ada",
+          "status": "verified"
+        },
+        {
+          "expected_sha256": "f4271484e66c3fe83cc6e3121afbd74f12982499122012a9d2b375fa39a03e12",
+          "id": "T09",
+          "relative_path": "uwb_field_20261025/bags/T09_C1static_C2L_repeat2_holdout_20261025_182408.bag",
+          "sha256": "f4271484e66c3fe83cc6e3121afbd74f12982499122012a9d2b375fa39a03e12",
+          "status": "verified"
+        },
+        {
+          "expected_sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+          "id": "T10",
+          "relative_path": "uwb_field_20261025/bags/T10_C2static_C1straight_repeat1_retry_20261025_184755.bag",
+          "sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+          "status": "verified"
+        },
+        {
+          "expected_sha256": "f9bf03d97b2da800451762ce89849e05ce225e621a5b8813b055c0549590bcab",
+          "id": "T11",
+          "relative_path": "uwb_field_20261025/bags/T11_C2static_C1straight_repeat2_holdout_20261025_185437.bag",
+          "sha256": "f9bf03d97b2da800451762ce89849e05ce225e621a5b8813b055c0549590bcab",
+          "status": "verified"
+        },
+        {
+          "expected_sha256": "540c2fbdcf67da5f3060f0363517cb65b6cfb0f96d6d35aae8d883ac604b18f1",
+          "id": "T12",
+          "relative_path": "uwb_field_20261025/bags/T12_bothmoving_clear_repeat1_20261025_191149.bag",
+          "sha256": "540c2fbdcf67da5f3060f0363517cb65b6cfb0f96d6d35aae8d883ac604b18f1",
+          "status": "verified"
+        },
+        {
+          "expected_sha256": "40dc6b1e24ff5a1e0db6781c0834e5f6440d6fe9f22626606ac477013faff6f8",
+          "id": "T13",
+          "relative_path": "uwb_field_20261025/bags/T13_bothmoving_clear_repeat2_holdout_20261025_192355.bag",
+          "sha256": "40dc6b1e24ff5a1e0db6781c0834e5f6440d6fe9f22626606ac477013faff6f8",
+          "status": "verified"
+        },
+        {
+          "expected_sha256": "793a169da34095585cbd97860fa9e37f07358173c8a91a768aa4f8cf0a5ada83",
+          "id": "T14",
+          "relative_path": "uwb_field_20261025/bags/T14_C1static_C2L_occlusion_repeat1_20261025_194542.bag",
+          "sha256": "793a169da34095585cbd97860fa9e37f07358173c8a91a768aa4f8cf0a5ada83",
+          "status": "verified"
+        },
+        {
+          "expected_sha256": "4b3be332d424648c41827cda7906a9eb90453aa8979eb0a5aebdd8a986d1c3cd",
+          "id": "T15",
+          "relative_path": "uwb_field_20261025/bags/T15_C1static_C2L_occlusion_repeat2_holdout_20261025_195528.bag",
+          "sha256": "4b3be332d424648c41827cda7906a9eb90453aa8979eb0a5aebdd8a986d1c3cd",
+          "status": "verified"
+        }
+      ],
+      "jobs": [
+        {
+          "command": [
+            "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+            "/workspace/work/uwb-sandbox-20261026/tools/field_20261024_25/run_nightly.py",
+            "--check-config"
+          ],
+          "depends_on": [],
+          "id": "configuration",
+          "timeout_s": 60
+        },
+        {
+          "command": [
+            "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tools/field_20261024_25",
+            "-p",
+            "test_*.py",
+            "-v"
+          ],
+          "depends_on": [],
+          "id": "field_tools_tests",
+          "timeout_s": 300
+        },
+        {
+          "command": [
+            "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tools",
+            "-p",
+            "test_october_field_session.py",
+            "-v"
+          ],
+          "depends_on": [],
+          "id": "test_october_field_session",
+          "timeout_s": 600
+        },
+        {
+          "command": [
+            "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tools",
+            "-p",
+            "test_single_car_sequential_replay.py",
+            "-v"
+          ],
+          "depends_on": [],
+          "id": "test_single_car_sequential_replay",
+          "timeout_s": 600
+        },
+        {
+          "command": [
+            "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tools",
+            "-p",
+            "test_single_car_fixed_lag.py",
+            "-v"
+          ],
+          "depends_on": [],
+          "id": "test_single_car_fixed_lag",
+          "timeout_s": 600
+        },
+        {
+          "command": [
+            "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tools",
+            "-p",
+            "test_two_car_offline_graph.py",
+            "-v"
+          ],
+          "depends_on": [],
+          "id": "test_two_car_offline_graph",
+          "timeout_s": 600
+        },
+        {
+          "command": [
+            "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tools",
+            "-p",
+            "test_two_car_updated_comparison.py",
+            "-v"
+          ],
+          "depends_on": [],
+          "id": "test_two_car_updated_comparison",
+          "timeout_s": 600
+        },
+        {
+          "command": [
+            "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tools",
+            "-p",
+            "test_two_car_stationary_confidence.py",
+            "-v"
+          ],
+          "depends_on": [],
+          "id": "test_two_car_stationary_confidence",
+          "timeout_s": 600
+        },
+        {
+          "command": [
+            "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tools",
+            "-p",
+            "test_two_car_range_confidence.py",
+            "-v"
+          ],
+          "depends_on": [],
+          "id": "test_two_car_range_confidence",
+          "timeout_s": 600
+        },
+        {
+          "command": [
+            "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tools",
+            "-p",
+            "test_single_car_integrity.py",
+            "-v"
+          ],
+          "depends_on": [],
+          "id": "test_single_car_integrity",
+          "timeout_s": 600
+        },
+        {
+          "command": [
+            "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tools",
+            "-p",
+            "test_single_car_integrity_worker_io.py",
+            "-v"
+          ],
+          "depends_on": [],
+          "id": "test_single_car_integrity_worker_io",
+          "timeout_s": 600
+        },
+        {
+          "command": [
+            "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tools",
+            "-p",
+            "test_integrity_evaluation.py",
+            "-v"
+          ],
+          "depends_on": [],
+          "id": "test_integrity_evaluation",
+          "timeout_s": 600
+        },
+        {
+          "command": [
+            "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+            "-m",
+            "unittest",
+            "discover",
+            "-s",
+            "tools",
+            "-p",
+            "test_two_car_independent_integrity.py",
+            "-v"
+          ],
+          "depends_on": [],
+          "id": "test_two_car_independent_integrity",
+          "timeout_s": 600
+        },
+        {
+          "artifacts": [
+            "bag_qc.json",
+            "BAG_QC_REPORT.md"
+          ],
+          "command": [
+            "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+            "tools/field_20261024_25/audit_bags.py",
+            "--data-root",
+            "{data_root}",
+            "--output",
+            "{job_output}"
+          ],
+          "depends_on": [
+            "configuration"
+          ],
+          "id": "bag_qc",
+          "requires_bags": true,
+          "timeout_s": 1800
+        }
+      ],
+      "package_versions": {
+        "matplotlib": "3.10.9",
+        "numpy": "2.2.6",
+        "rosbags": "0.11.9",
+        "scipy": "1.15.3"
+      },
+      "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+      "source_sha256": {
+        "docs/field_tests/integrity_feasibility_v1_1_20261022/estimator_config.json": "159e6ff35643e146a58b8ab7497b049136c85d37f9e6deee08aa8ebd50e82516",
+        "docs/field_tests/integrity_feasibility_v1_20261022/protocol.json": "5641db8e47ed80dcb94cd72f489655e5cb6b9049154f0be101e572b4658397dd",
+        "docs/field_tests/two_car_updated_comparison_20261022/protocol.json": "ea47738f0d58fe48a7e2077ec1e30a5e25ef399bf95a7997293d1cd48c445fa5",
+        "docs/field_tests/two_car_updated_comparison_20261022/results/calibration.json": "f91dbc34e2743e5be9603f8349904bc821ab948ce2b4f704654cab3075968332",
+        "tools/analyze_october_field_session.py": "ec99a7e7697d7f9b2c8d2e681a5bbc01bf1d87be711dcd299d839d159b64509a",
+        "tools/analyze_two_car_comparison_results.py": "71c4a4616f08eccfac21aef6c8dbc6edc52f3e4ad8ed14679d6fc8d355db012e",
+        "tools/analyze_two_car_range_confidence.py": "8c3798347c0063bb3a1854804cb77b7053723df79b7421c1d4506280b5fa9a7e",
+        "tools/analyze_two_car_stationary_confidence.py": "663f2c1b7ccb746d5c7c4008dbcf7a4305663b6c2cafef04e0cb2bc947a536f2",
+        "tools/diagnose_october_L_segments.py": "ac6a232a7427a92512cc4e0e7eda05cd5bbd896e528d97945e119a13a9f3f233",
+        "tools/diagnose_two_car_ranges.py": "baacead914da86e044127820e6d000a2102ddc593f8b52cad960174cec9fd56e",
+        "tools/evaluate_single_car_integrity.py": "e9a8bb02756ff0bf9e3e539290d9d7cb6ba0ff6f2b748e4b191e2d1f45bb8ff9",
+        "tools/export_integrity_conclusion_pdf.py": "30a6b6afb53f2cbfd953a9cc73c2bef7975e1fbca45c670eb5949e5c047fb17c",
+        "tools/field_20261024_25/audit_bags.py": "aead4ca10d232941d8accaa886b54d6b6d6e320f640db19ee9c990e6fbca9913",
+        "tools/field_20261024_25/audit_exports.py": "cf7c88343a296cb786471c04b3f7869af079a9dc199fcb00915ed442c3bd40a3",
+        "tools/field_20261024_25/audit_videos.py": "f7d3b4c0cbb60975b7e3bf1b369f0c326248de6adbb011f6d8bc4151ab91072a",
+        "tools/field_20261024_25/bag_decoder.py": "acbe5b1727c4e1fbebc4a3bdc9c735ad9cde682e8c46baeff5654742297143d0",
+        "tools/field_20261024_25/comparison_adapter.py": "277ade1b034769f01b6e328f23e727c8f12b0970497fdd4723987dbc099247c2",
+        "tools/field_20261024_25/development.py": "73dd54a331cbb2bf836817ad9a2784bd0e647131c42b3b15d581dfa035b0b384",
+        "tools/field_20261024_25/normalize.py": "d0766d16736b6f9ae720a4dcd9760551819c5cadbcb8c136e1030d54d9312703",
+        "tools/field_20261024_25/prepare.py": "e37544b930fd0370de865f54aaab12c75ffc24603ee0eeae3d8d153b3e5b41c0",
+        "tools/field_20261024_25/run_nightly.py": "e3be2f6b7702b334ae8164935b9059ba04b8b124e0e202c9425e0a95d53ed524",
+        "tools/field_20261024_25/test_audit_bags.py": "e7793ce87eff704ca0966bd5b98353738459c030607ce16726bc87352e7ebcce",
+        "tools/field_20261024_25/test_audit_videos.py": "e5e9f81abdcf2048de8a2d7df05370dee2ef272a0b04aeb46e95621cccd4be4d",
+        "tools/field_20261024_25/test_comparison_adapter.py": "23b667a9b8d1318713a9e458bf97fb5438b258ebc280a1677f803dcbdf68848d",
+        "tools/field_20261024_25/test_development.py": "146348edacad7f7ae2c73c92ff926558301537987ef1e0a88e8e7c8780e7ddc5",
+        "tools/field_20261024_25/test_export_audit.py": "32e33dac658078cf7ddcd59a69e69457da100c8d78af006ce62d67f78c3791c4",
+        "tools/field_20261024_25/test_normalize.py": "3160271ff8d50b6f08fd28effc9efdf9cd869c8999ae2a303d76592ce6dcf958",
+        "tools/field_20261024_25/test_prepare.py": "0240a987e23e15b44cd96e31547448df187303c8238ef06051fc7d324bdde89f",
+        "tools/field_20261024_25/test_run_nightly.py": "43993ee82c9b0fc7402d7a5047152280077acb95c2782a67cacecead9c478e3f",
+        "tools/plot_integrity_pr_review.py": "24e46a685756d14ab24e219f5c082acfcb8f2247d735a7f81604fb4e57e49c07",
+        "tools/plot_single_car_fixed_lag.py": "a02c0bab22c042b1291fe40020942baa1b33cb390588034021f5d8f4acc35a59",
+        "tools/plot_single_car_sequential_baseline.py": "43d2b2c72e915122d9afbd40ac41b22093f79464d3170c1d725d8f425e29e3ee",
+        "tools/plot_two_car_range_confidence.py": "07b9f33e271e9d34b6162be7446d0b03a4569c1738c2bd624939914141f54799",
+        "tools/plot_two_car_stationary_confidence.py": "af031c1cbb6f2a2cdfa9c22c1a0d707e9abf0004e36324c42de010263f85adce",
+        "tools/plot_two_car_updated_comparison.py": "8f7098f923f892f22b6b80fc90eebd4babc00bf0f59ff449c28eca319cd94106",
+        "tools/replay_october_1d.py": "98b55630e658a57ea7cf220261f3d1f4e5abd893fa5897fb9e5f952388ab40de",
+        "tools/report_single_car_integrity.py": "2c88cfceb7e422eae8c14b9cb63ce735461742f659f11b986ae60624f8ac4e08",
+        "tools/report_two_car_independent_integrity.py": "d8b0affa9b0c0dabefb1957c5c921b69349c6cbfcda075b2e353362d88e7cd09",
+        "tools/run_single_car_fixed_lag.py": "454c8601a4f53cdf0084e35487240424d70fed7ee37ca342aeb9172fa38aed97",
+        "tools/run_single_car_integrity_experiment.py": "44c1210a5cbf5f8460ac150fc3a7c82b81beb35b0473169df06bda05fb9d57b7",
+        "tools/run_single_car_integrity_worker.py": "51e9bc6a69e6dbb43fb02ce4f42d126b8e50a1a9f26bd385bfb16e5c02ce6641",
+        "tools/run_single_car_sequential_baseline.py": "651ebd8613c9247bf70a4c873a4d3cc56eca48725fedf08f047c1867864eced5",
+        "tools/run_two_car_independent_integrity.py": "1b0c11cfbf169cc86950684d9e264d6f35590a447847572640a0fc08934c4893",
+        "tools/run_two_car_range_confidence.py": "5e9e8b1e48b92cf8fc5748fa4a3cb72640f4dc73a5bb216a55758fdb634f6fa4",
+        "tools/run_two_car_stationary_confidence.py": "70547d1d43cada694ab9169c9a43d3a025ac12c20c6993d5ef84046ca29c5f27",
+        "tools/run_two_car_updated_comparison.py": "dfecaeb1a7e08b8523e0336fb77565ab4757fcdc9b9a25d7874d311fedad6c0d",
+        "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+        "tools/single_car_integrity.py": "32bb4106695b9e8a7c343a37b74097de0d90249a862c7b346ac1488d32bede7a",
+        "tools/single_car_integrity_compat.py": "35ce83d6fe9a32662de5d041ff1b7ea79799d542c72015c51588b71321d05e25",
+        "tools/single_car_integrity_sim.py": "c8d7427671167505670f6fe65d31f4de9636e7fa8ef9892fc711a1dd932cc3ff",
+        "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+        "tools/test_integrity_compatibility.py": "244b29da9fb452f6e6c875a7614ada77820ce60f54ecf6495e37446f9e3ae081",
+        "tools/test_integrity_evaluation.py": "c739e905848e9eea9e270a0e0ef668894a8542bea5d310eaadd4d952edf1d953",
+        "tools/test_october_field_session.py": "cb49a5a56d1aea1e3e87affa412b22f542b91e4edd72e351ea8878cd08945d33",
+        "tools/test_single_car_fixed_lag.py": "e576f5ddfaaf24b538d446b3d748e48e9f6be5cbcfb31d9d8f6312b1dd841a33",
+        "tools/test_single_car_integrity.py": "923c14472a9e8c1a6afe712eb9487521b0cde5fb1258037f7a3447905b2aa381",
+        "tools/test_single_car_integrity_worker_io.py": "c5e656cb3daed28765821ec759c6fa245fac718978e13f349774daaf9ee73075",
+        "tools/test_single_car_sequential_replay.py": "148cd4ca3bff47c6dce8c2102daf289f55f39dbcbc4f2eca1cca621a5e31525b",
+        "tools/test_two_car_independent_integrity.py": "48b002afbcce9c8c18a7580349d2963014c9c4ea1d761c3b257926aea50ebf7a",
+        "tools/test_two_car_offline_graph.py": "62079a865e3e02027fe8877fb22b716c428a50bcf8c66572a648ef36b77a6789",
+        "tools/test_two_car_range_confidence.py": "02034ab74306cac56afa7d2ce2fea7d4454333746dc4a6d54af6acfbb9c9279e",
+        "tools/test_two_car_stationary_confidence.py": "5c2f76fb0c438c0519d3837dfcc75008118abbb8d9a3e613fcedcf854aaefaa9",
+        "tools/test_two_car_updated_comparison.py": "c6eb8794295410e3d147d0b0641fdda4cf7679871cbe7741afe8213b73cd2cb4",
+        "tools/two_car_independent_integrity.py": "6aa240410c4df188888e8cb85c4f62dd9f7ff78ef6875332dfa3d54587dfb3e6",
+        "tools/two_car_offline_graph.py": "c8c07e97cfd0a6e7cc40e863eaa04bc054afac340e56fd312589cffebb758672",
+        "tools/two_car_range_confidence.py": "14c3e5b30f3ec59982f4d7fa8c82897bf1b1e966d8925abab4200dc34172d16a",
+        "tools/two_car_stationary_confidence.py": "9d70c052336fa438754f339664b85d17af750635788f568d29254a5d17d52df0",
+        "tools/two_car_updated_comparison.py": "7ccd2e7c40b1c9654898a40382bf562766c22d449b4cc350808fb6b52d5026d0",
+        "tools/verify_single_car_integrity_artifacts.py": "c0b58df38528abdda1291dd5d468f90cde6b2da3c54323235f8ba343c19748cf",
+        "tools/verify_two_car_independent_integrity.py": "5470f97877da1881bacfbd4f83e01fdb158bf5cb3c2644cca25309fcc1d7da2d"
+      }
+    },
+    "run_json_sha256": "d14475463e14ef300b1fe206a50e4d51ea4c1c00a3dcfce54ffa04d70c34dd4c"
+  }
+}
