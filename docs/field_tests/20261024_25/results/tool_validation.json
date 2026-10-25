@@ -1,0 +1,211 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-26",
+  "status": "passed",
+  "jobs": [
+    {
+      "job_id": "bag_qc",
+      "status": "PASSED",
+      "attempt_count": 1,
+      "unit_tests": 0,
+      "elapsed_s": 20.93668292399525,
+      "returncode": 0
+    },
+    {
+      "job_id": "configuration",
+      "status": "PASSED",
+      "attempt_count": 1,
+      "unit_tests": 0,
+      "elapsed_s": 0.0640202610011329,
+      "returncode": 0
+    },
+    {
+      "job_id": "field_tools_tests",
+      "status": "PASSED",
+      "attempt_count": 1,
+      "unit_tests": 39,
+      "elapsed_s": 0.6191808319999836,
+      "returncode": 0
+    },
+    {
+      "job_id": "test_integrity_evaluation",
+      "status": "PASSED",
+      "attempt_count": 1,
+      "unit_tests": 4,
+      "elapsed_s": 0.7162843729965971,
+      "returncode": 0
+    },
+    {
+      "job_id": "test_october_field_session",
+      "status": "PASSED",
+      "attempt_count": 1,
+      "unit_tests": 9,
+      "elapsed_s": 0.7157196390035097,
+      "returncode": 0
+    },
+    {
+      "job_id": "test_single_car_fixed_lag",
+      "status": "PASSED",
+      "attempt_count": 1,
+      "unit_tests": 15,
+      "elapsed_s": 1.267381955003657,
+      "returncode": 0
+    },
+    {
+      "job_id": "test_single_car_integrity",
+      "status": "PASSED",
+      "attempt_count": 1,
+      "unit_tests": 11,
+      "elapsed_s": 2.8224147990040365,
+      "returncode": 0
+    },
+    {
+      "job_id": "test_single_car_integrity_worker_io",
+      "status": "PASSED",
+      "attempt_count": 1,
+      "unit_tests": 1,
+      "elapsed_s": 0.7663664469946525,
+      "returncode": 0
+    },
+    {
+      "job_id": "test_single_car_sequential_replay",
+      "status": "PASSED",
+      "attempt_count": 1,
+      "unit_tests": 10,
+      "elapsed_s": 0.7661030129966093,
+      "returncode": 0
+    },
+    {
+      "job_id": "test_two_car_independent_integrity",
+      "status": "PASSED",
+      "attempt_count": 1,
+      "unit_tests": 11,
+      "elapsed_s": 4.377151569002308,
+      "returncode": 0
+    },
+    {
+      "job_id": "test_two_car_offline_graph",
+      "status": "PASSED",
+      "attempt_count": 1,
+      "unit_tests": 3,
+      "elapsed_s": 0.7660410629978287,
+      "returncode": 0
+    },
+    {
+      "job_id": "test_two_car_range_confidence",
+      "status": "PASSED",
+      "attempt_count": 1,
+      "unit_tests": 10,
+      "elapsed_s": 0.9672966619982617,
+      "returncode": 0
+    },
+    {
+      "job_id": "test_two_car_stationary_confidence",
+      "status": "PASSED",
+      "attempt_count": 1,
+      "unit_tests": 10,
+      "elapsed_s": 0.8661301890024333,
+      "returncode": 0
+    },
+    {
+      "job_id": "test_two_car_updated_comparison",
+      "status": "PASSED",
+      "attempt_count": 1,
+      "unit_tests": 9,
+      "elapsed_s": 0.8663979310003924,
+      "returncode": 0
+    }
+  ],
+  "unit_tests_passed": 132,
+  "field_tool_tests_passed": 39,
+  "legacy_regression_tests_passed": 93,
+  "real_bags": 8,
+  "decoded_messages": 311144,
+  "validated_car1_raw_packets": 52758,
+  "elapsed_s_sum": 36.51717165699665,
+  "resume_verified_skip_events": 14,
+  "extra_job_attempts_after_resume": 0,
+  "full_run_fingerprint": "57b0c6f40109cf7b2c30923a86bd2cb701de526fb685a63697c97c9a8ba3d648",
+  "tested_sources_sha256": {
+    "docs/field_tests/integrity_feasibility_v1_1_20261022/estimator_config.json": "159e6ff35643e146a58b8ab7497b049136c85d37f9e6deee08aa8ebd50e82516",
+    "docs/field_tests/integrity_feasibility_v1_20261022/protocol.json": "5641db8e47ed80dcb94cd72f489655e5cb6b9049154f0be101e572b4658397dd",
+    "docs/field_tests/two_car_updated_comparison_20261022/protocol.json": "ea47738f0d58fe48a7e2077ec1e30a5e25ef399bf95a7997293d1cd48c445fa5",
+    "docs/field_tests/two_car_updated_comparison_20261022/results/calibration.json": "f91dbc34e2743e5be9603f8349904bc821ab948ce2b4f704654cab3075968332",
+    "tools/analyze_october_field_session.py": "ec99a7e7697d7f9b2c8d2e681a5bbc01bf1d87be711dcd299d839d159b64509a",
+    "tools/analyze_two_car_comparison_results.py": "71c4a4616f08eccfac21aef6c8dbc6edc52f3e4ad8ed14679d6fc8d355db012e",
+    "tools/analyze_two_car_range_confidence.py": "8c3798347c0063bb3a1854804cb77b7053723df79b7421c1d4506280b5fa9a7e",
+    "tools/analyze_two_car_stationary_confidence.py": "663f2c1b7ccb746d5c7c4008dbcf7a4305663b6c2cafef04e0cb2bc947a536f2",
+    "tools/diagnose_october_L_segments.py": "ac6a232a7427a92512cc4e0e7eda05cd5bbd896e528d97945e119a13a9f3f233",
+    "tools/diagnose_two_car_ranges.py": "baacead914da86e044127820e6d000a2102ddc593f8b52cad960174cec9fd56e",
+    "tools/evaluate_single_car_integrity.py": "e9a8bb02756ff0bf9e3e539290d9d7cb6ba0ff6f2b748e4b191e2d1f45bb8ff9",
+    "tools/export_integrity_conclusion_pdf.py": "30a6b6afb53f2cbfd953a9cc73c2bef7975e1fbca45c670eb5949e5c047fb17c",
+    "tools/field_20261024_25/audit_bags.py": "aead4ca10d232941d8accaa886b54d6b6d6e320f640db19ee9c990e6fbca9913",
+    "tools/field_20261024_25/audit_videos.py": "f7d3b4c0cbb60975b7e3bf1b369f0c326248de6adbb011f6d8bc4151ab91072a",
+    "tools/field_20261024_25/bag_decoder.py": "acbe5b1727c4e1fbebc4a3bdc9c735ad9cde682e8c46baeff5654742297143d0",
+    "tools/field_20261024_25/prepare.py": "e37544b930fd0370de865f54aaab12c75ffc24603ee0eeae3d8d153b3e5b41c0",
+    "tools/field_20261024_25/run_nightly.py": "79583a8552b821b6271fec1bdaed615418c9f4b2d27509558b76a441e952d41f",
+    "tools/field_20261024_25/test_audit_bags.py": "e7793ce87eff704ca0966bd5b98353738459c030607ce16726bc87352e7ebcce",
+    "tools/field_20261024_25/test_audit_videos.py": "e5e9f81abdcf2048de8a2d7df05370dee2ef272a0b04aeb46e95621cccd4be4d",
+    "tools/field_20261024_25/test_prepare.py": "0240a987e23e15b44cd96e31547448df187303c8238ef06051fc7d324bdde89f",
+    "tools/field_20261024_25/test_run_nightly.py": "43993ee82c9b0fc7402d7a5047152280077acb95c2782a67cacecead9c478e3f",
+    "tools/plot_integrity_pr_review.py": "24e46a685756d14ab24e219f5c082acfcb8f2247d735a7f81604fb4e57e49c07",
+    "tools/plot_single_car_fixed_lag.py": "a02c0bab22c042b1291fe40020942baa1b33cb390588034021f5d8f4acc35a59",
+    "tools/plot_single_car_sequential_baseline.py": "43d2b2c72e915122d9afbd40ac41b22093f79464d3170c1d725d8f425e29e3ee",
+    "tools/plot_two_car_range_confidence.py": "07b9f33e271e9d34b6162be7446d0b03a4569c1738c2bd624939914141f54799",
+    "tools/plot_two_car_stationary_confidence.py": "af031c1cbb6f2a2cdfa9c22c1a0d707e9abf0004e36324c42de010263f85adce",
+    "tools/plot_two_car_updated_comparison.py": "8f7098f923f892f22b6b80fc90eebd4babc00bf0f59ff449c28eca319cd94106",
+    "tools/replay_october_1d.py": "98b55630e658a57ea7cf220261f3d1f4e5abd893fa5897fb9e5f952388ab40de",
+    "tools/report_single_car_integrity.py": "2c88cfceb7e422eae8c14b9cb63ce735461742f659f11b986ae60624f8ac4e08",
+    "tools/report_two_car_independent_integrity.py": "d8b0affa9b0c0dabefb1957c5c921b69349c6cbfcda075b2e353362d88e7cd09",
+    "tools/run_single_car_fixed_lag.py": "454c8601a4f53cdf0084e35487240424d70fed7ee37ca342aeb9172fa38aed97",
+    "tools/run_single_car_integrity_experiment.py": "44c1210a5cbf5f8460ac150fc3a7c82b81beb35b0473169df06bda05fb9d57b7",
+    "tools/run_single_car_integrity_worker.py": "51e9bc6a69e6dbb43fb02ce4f42d126b8e50a1a9f26bd385bfb16e5c02ce6641",
+    "tools/run_single_car_sequential_baseline.py": "651ebd8613c9247bf70a4c873a4d3cc56eca48725fedf08f047c1867864eced5",
+    "tools/run_two_car_independent_integrity.py": "1b0c11cfbf169cc86950684d9e264d6f35590a447847572640a0fc08934c4893",
+    "tools/run_two_car_range_confidence.py": "5e9e8b1e48b92cf8fc5748fa4a3cb72640f4dc73a5bb216a55758fdb634f6fa4",
+    "tools/run_two_car_stationary_confidence.py": "70547d1d43cada694ab9169c9a43d3a025ac12c20c6993d5ef84046ca29c5f27",
+    "tools/run_two_car_updated_comparison.py": "dfecaeb1a7e08b8523e0336fb77565ab4757fcdc9b9a25d7874d311fedad6c0d",
+    "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+    "tools/single_car_integrity.py": "32bb4106695b9e8a7c343a37b74097de0d90249a862c7b346ac1488d32bede7a",
+    "tools/single_car_integrity_compat.py": "35ce83d6fe9a32662de5d041ff1b7ea79799d542c72015c51588b71321d05e25",
+    "tools/single_car_integrity_sim.py": "c8d7427671167505670f6fe65d31f4de9636e7fa8ef9892fc711a1dd932cc3ff",
+    "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+    "tools/test_integrity_compatibility.py": "244b29da9fb452f6e6c875a7614ada77820ce60f54ecf6495e37446f9e3ae081",
+    "tools/test_integrity_evaluation.py": "c739e905848e9eea9e270a0e0ef668894a8542bea5d310eaadd4d952edf1d953",
+    "tools/test_october_field_session.py": "cb49a5a56d1aea1e3e87affa412b22f542b91e4edd72e351ea8878cd08945d33",
+    "tools/test_single_car_fixed_lag.py": "e576f5ddfaaf24b538d446b3d748e48e9f6be5cbcfb31d9d8f6312b1dd841a33",
+    "tools/test_single_car_integrity.py": "923c14472a9e8c1a6afe712eb9487521b0cde5fb1258037f7a3447905b2aa381",
+    "tools/test_single_car_integrity_worker_io.py": "c5e656cb3daed28765821ec759c6fa245fac718978e13f349774daaf9ee73075",
+    "tools/test_single_car_sequential_replay.py": "148cd4ca3bff47c6dce8c2102daf289f55f39dbcbc4f2eca1cca621a5e31525b",
+    "tools/test_two_car_independent_integrity.py": "48b002afbcce9c8c18a7580349d2963014c9c4ea1d761c3b257926aea50ebf7a",
+    "tools/test_two_car_offline_graph.py": "62079a865e3e02027fe8877fb22b716c428a50bcf8c66572a648ef36b77a6789",
+    "tools/test_two_car_range_confidence.py": "02034ab74306cac56afa7d2ce2fea7d4454333746dc4a6d54af6acfbb9c9279e",
+    "tools/test_two_car_stationary_confidence.py": "5c2f76fb0c438c0519d3837dfcc75008118abbb8d9a3e613fcedcf854aaefaa9",
+    "tools/test_two_car_updated_comparison.py": "c6eb8794295410e3d147d0b0641fdda4cf7679871cbe7741afe8213b73cd2cb4",
+    "tools/two_car_independent_integrity.py": "6aa240410c4df188888e8cb85c4f62dd9f7ff78ef6875332dfa3d54587dfb3e6",
+    "tools/two_car_offline_graph.py": "c8c07e97cfd0a6e7cc40e863eaa04bc054afac340e56fd312589cffebb758672",
+    "tools/two_car_range_confidence.py": "14c3e5b30f3ec59982f4d7fa8c82897bf1b1e966d8925abab4200dc34172d16a",
+    "tools/two_car_stationary_confidence.py": "9d70c052336fa438754f339664b85d17af750635788f568d29254a5d17d52df0",
+    "tools/two_car_updated_comparison.py": "7ccd2e7c40b1c9654898a40382bf562766c22d449b4cc350808fb6b52d5026d0",
+    "tools/verify_single_car_integrity_artifacts.py": "c0b58df38528abdda1291dd5d468f90cde6b2da3c54323235f8ba343c19748cf",
+    "tools/verify_two_car_independent_integrity.py": "5470f97877da1881bacfbd4f83e01fdb158bf5cb3c2644cca25309fcc1d7da2d"
+  },
+  "tested_configuration_sha256": {
+    "docs/field_tests/20261024_25/geometry.json": "bd59d654a6794cc61a5680816d479a7ae3a4b5a0376a3d5ebd517b6c3842266c",
+    "docs/field_tests/20261024_25/manifest.json": "d4cd1ecc0e9bb71a0c18b8fa62487f6b02e6ee8549783c472d876ebebb1ad544"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "package_versions": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.3.5",
+    "rosbags": "0.11.9",
+    "scipy": "1.17.0"
+  },
+  "git_base_at_test": "f14f8bd7c2a33c96f759919b50dff9cc00580014",
+  "limitations": [
+    "Executed from the pre-PR working tree; explicit source/configuration hashes identify tested bytes.",
+    "Initial generic-environment trial lacked rosbags; failures were retained and dependency was installed only in an isolated venv before this final run.",
+    "This finite matrix finished in about 37 seconds; it is not a claim that 6 hours of night work or localization evaluation ran.",
+    "Spatial reference, video synchronization and positioning improvement are not evaluated."
+  ]
+}

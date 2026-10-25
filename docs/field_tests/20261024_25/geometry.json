@@ -1,0 +1,306 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-10-26",
+  "units": "metres_unless_explicitly_named",
+  "status": "mixed_operator_measurements_and_nominal_values_not_final_calibration",
+  "coordinate_conventions": {
+    "room": "Historical room coordinate system reused for current marked points; actual survey uncertainty unknown.",
+    "body_aligned": "x forward, y left, z up",
+    "heading_deg_room": {
+      "0": "+X",
+      "90": "+Y",
+      "180": "-X",
+      "270": "-Y"
+    },
+    "reference_point": "UWB antenna reference center, not device enclosure center, chassis center or odometry origin"
+  },
+  "anchors": {
+    "xyz_m": {
+      "node_10": [
+        3.26,
+        0.1,
+        2.355
+      ],
+      "node_2": [
+        5.28,
+        5.16,
+        2.755
+      ],
+      "node_3": [
+        5.28,
+        2.86,
+        2.355
+      ],
+      "node_8": [
+        0.1,
+        2.41,
+        2.3
+      ]
+    },
+    "status": "historical_measured_coordinates_reused_operator_says_mounts_unchanged",
+    "source_repo_path": "docs/field_tests/20261017/session_config.json",
+    "fresh_survey_date": null,
+    "uncertainty_m": null
+  },
+  "marker": {
+    "dictionary": "DICT_4X4_50",
+    "black_border_side_m": 0.144,
+    "status": "operator_ruler_measurement",
+    "printed_nominal_side_m": 0.15,
+    "use_printed_nominal_for_scale": false,
+    "id_mapping": {
+      "car1": {
+        "visual_id": 0,
+        "uwb_tag_id": "node_1"
+      },
+      "car2": {
+        "visual_id": 1,
+        "uwb_tag_id": "node_0"
+      }
+    }
+  },
+  "checkerboard": {
+    "squares_cols": 10,
+    "squares_rows": 7,
+    "inner_corner_cols": 9,
+    "inner_corner_rows": 6,
+    "measured_extent_xy_m": [
+      0.192,
+      0.134
+    ],
+    "pitch_xy_m": [
+      0.019200000000000002,
+      0.019142857142857145
+    ],
+    "nominal_pitch_m": 0.02,
+    "status": "operator_measured_two_axis_extent_not_metrology_grade",
+    "flatness_status": "not_verified_possible_bending_in_handheld_material"
+  },
+  "mounts": {
+    "car1": {
+      "measurement_status": "operator_reported",
+      "black_border_center_height_m": 0.37,
+      "antenna_reference_height_m": 0.17,
+      "marker_center_to_antenna_body_aligned_xyz_m": [
+        0.07,
+        -0.13,
+        -0.2
+      ],
+      "translation_definition": "from black-border geometric center toward antenna reference center, expressed with car-aligned axes",
+      "board_level_status": "operator_reports_horizontal",
+      "marker_to_body_rotation": null,
+      "rotation_status": "actual marker-pattern heading relative to body must be recovered_from_mount_photos",
+      "uncertainty_m": null,
+      "removed_status": "user_was_authorized_to_remove_no_post_removal_observation",
+      "photo_names": [
+        "98662755f4e268c693c212cbde596f42.jpg",
+        "3feec3310d564bda636de013f6e9a7ea.jpg"
+      ]
+    },
+    "car2": {
+      "measurement_status": "operator_reported",
+      "black_border_center_height_m": 0.23,
+      "antenna_reference_height_m": 0.2,
+      "marker_center_to_antenna_body_aligned_xyz_m": [
+        -0.17,
+        0.025,
+        -0.03
+      ],
+      "translation_definition": "from black-border geometric center toward antenna reference center, expressed with car-aligned axes",
+      "board_level_status": "slightly_tilted_angle_not_measured",
+      "marker_to_body_rotation": null,
+      "rotation_status": "unknown_not_zero",
+      "board_flatness_status": "reference_images_show_bending_signs_not_equivalent_to_rigid_plane_tilt",
+      "uncertainty_m": null,
+      "removed_status": "operator_says_kept_installed"
+    },
+    "policy": "These translations are not native ArUco-coordinate transforms. Rotate with independently established marker/body relation; do not directly substitute into marker pose or base_footprint transforms."
+  },
+  "nominal_vehicle_points": {
+    "A_car2_xyz_m": [
+      2,
+      2,
+      0.2
+    ],
+    "B_car1_xyz_m": [
+      1.5,
+      4,
+      0.17
+    ],
+    "C_car2_xyz_m": [
+      3,
+      3,
+      0.2
+    ],
+    "status": "nominal_marked_targets_except_each_trial_operator_confirmation; do_not_replace_actual_trial_reference"
+  },
+  "ground_reference_points": {
+    "P1": [
+      2,
+      2,
+      0
+    ],
+    "P2": [
+      3,
+      2,
+      0
+    ],
+    "P3": [
+      2,
+      4,
+      0
+    ],
+    "P4": [
+      3,
+      4,
+      0
+    ],
+    "status": "instructed_locations_video_crosses_visible_actual_ruler_confirmation_pending",
+    "uncertainty_m": null
+  },
+  "independent_check_points": {
+    "Q1_xy_m": [
+      2,
+      2.5
+    ],
+    "Q2_xy_m": [
+      2,
+      3.5
+    ],
+    "Q3_xy_m": [
+      2.5,
+      3
+    ],
+    "status": "instructed_positions_recording_reported_done_actual_measured_coordinates_and_video_mapping_pending",
+    "used_for_extrinsic_fit": false,
+    "car2_planned_headings": {
+      "Q1": "+Y",
+      "Q2": "+Y",
+      "Q3": "+Y"
+    },
+    "car1_planned_headings": {
+      "Q1": "-Y",
+      "Q2": "-Y",
+      "Q3": "-Y",
+      "Q3_extra": "+X"
+    }
+  },
+  "nominal_routes": {
+    "T08_T09_T14_T15": {
+      "car1": "static near B, head-Y",
+      "car2": "from A head+Y: forward target1m, right90deg, forward target1m"
+    },
+    "T10_T11": {
+      "car1": "from B head-Y, straight target1m",
+      "car2": "static near T09 measured endpoint(2.98,3.07)"
+    },
+    "T12_T13": {
+      "car1": "from nominal B head+X, straight target1m",
+      "car2": "from nominal A head+Y, sameL",
+      "warning": "T12 actual initial XY unknown; do not copy T13 confirmed return locations"
+    }
+  },
+  "odometry_limits": {
+    "odom_frames": "car1/odom and car2/odom, not the room frame",
+    "base_footprint_to_antenna": "not_independently_established",
+    "car2_position_z": "yaw-related driver field, not height",
+    "reason": "source audit indicates common controller data and host calculations; exact lower-board fusion unknown",
+    "odom_and_imu_independence_status": "not_established_shared_controller_inputs_do_not_assume_independent_noise"
+  },
+  "camera": {
+    "within_clip_fixed": "operator_confirmed",
+    "between_clip_angles": "may_change; independent per-clip room extrinsics needed",
+    "intrinsics_status": "exploratory_not_approved_for_production_reference",
+    "time_sync_status": "not_validated_use_actual_frame_PTS_and_explicit_time_model",
+    "model_candidate": {
+      "source": "IMG_7337.MOV 27 sampled valid views",
+      "encoded_image_size_wh": [
+        3840,
+        2160
+      ],
+      "orientation_auto": false,
+      "file_display_rotation_deg": -90,
+      "K": [
+        [
+          3179.1018,
+          0,
+          1923.684639
+        ],
+        [
+          0,
+          3183.035973,
+          1022.185707
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "D_order": [
+        "k1",
+        "k2",
+        "p1",
+        "p2",
+        "k3"
+      ],
+      "D": [
+        0.172125421,
+        -0.390378784,
+        -0.010545959,
+        -0.003213457,
+        -0.134329263
+      ],
+      "fit_RMS_pixels": 1.854,
+      "status": "trial_only_not_final",
+      "stability_note": "interleaved splits show focal change~3.1%, principal cy change~47.4px; oldclip-only RMS5.057px, combined3.922px; never interpret reprojection error as independent spatial accuracy"
+    },
+    "reference_policy": "Need per-clip room relation, rigid marker geometry, marker-to-antenna conversion and independent Q validation before continuous trajectory RMSE."
+  },
+  "historical_conflicts": {
+    "car2_antenna_from_geometric_center_body_xy_m": [
+      -0.12,
+      0.08
+    ],
+    "old_repository_value_xy_m": [
+      0.12,
+      -0.08
+    ],
+    "status": "opposite_sign_operator_correction_not_verified_odometry_origin_transform",
+    "do_not_silently_overwrite_old_results": true
+  },
+  "unknowns": [
+    "P/Q actual surveyed placements and uncertainty",
+    "Car2 marker plane/tilt and deformation model",
+    "Per-clip camera room pose and time mapping",
+    "Camera lens/processing/focus equivalence across all clips",
+    "T12 actual initial geometry",
+    "T14/T15 actual occlusion geometry/material/intervals",
+    "Marker-to-antenna transform uncertainty"
+  ],
+  "visual_evidence": {
+    "provenance": "EVIDENCE.md",
+    "car1_mount_previews": [
+      "evidence/car1_side.jpg",
+      "evidence/car1_top.jpg"
+    ],
+    "car2_marker_shape_preview": "evidence/car2_marker_crop.jpg",
+    "reference_sampling_preview": "evidence/reference_contact_sheet.jpg",
+    "status": "derived_resized_EXIF_stripped_review_images_not_calibration_raw"
+  },
+  "source_snapshot": {
+    "manifest": "manifest.json",
+    "release_updated_at_utc": "2026-10-25T19:22:02Z",
+    "decoded_motion_assets": [
+      "T08_video",
+      "T09_video",
+      "T10_video"
+    ],
+    "new_motion_assets_pending_decode": [
+      "T11_video",
+      "T12_video",
+      "T13_video"
+    ],
+    "geometry_status_unchanged_by_new_uploads": true
+  }
+}
