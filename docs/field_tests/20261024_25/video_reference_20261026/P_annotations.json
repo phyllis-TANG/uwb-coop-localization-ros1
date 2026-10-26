@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "reference_frame_sha256": "4a9bd65762df5fa657396292a5cd14c7dc29bdf9182f3c0c878ea28e44b7dcde",
+  "coordinate_convention": "encoded_pixels",
+  "P_ids": [
+    "P1",
+    "P2",
+    "P3",
+    "P4"
+  ],
+  "P_pixels": [
+    [
+      1037.0,
+      1008.0
+    ],
+    [
+      479.0,
+      1719.0
+    ],
+    [
+      3231.0,
+      1037.0
+    ],
+    [
+      3579.0,
+      1890.0
+    ]
+  ],
+  "annotations": [
+    {
+      "id": "P1",
+      "ROI_xyxy": [
+        900,
+        900,
+        1220,
+        1120
+      ],
+      "pixel": [
+        1037.0,
+        1008.0
+      ],
+      "diagnostic": {
+        "method": "explicit_human_annotation"
+      }
+    },
+    {
+      "id": "P2",
+      "ROI_xyxy": [
+        280,
+        1490,
+        700,
+        1930
+      ],
+      "pixel": [
+        479.0,
+        1719.0
+      ],
+      "diagnostic": {
+        "method": "explicit_human_annotation"
+      }
+    },
+    {
+      "id": "P3",
+      "ROI_xyxy": [
+        3000,
+        900,
+        3410,
+        1180
+      ],
+      "pixel": [
+        3231.0,
+        1037.0
+      ],
+      "diagnostic": {
+        "method": "explicit_human_annotation"
+      }
+    },
+    {
+      "id": "P4",
+      "ROI_xyxy": [
+        3310,
+        1660,
+        3839,
+        2140
+      ],
+      "pixel": [
+        3579.0,
+        1890.0
+      ],
+      "diagnostic": {
+        "method": "explicit_human_annotation"
+      }
+    }
+  ],
+  "identity_source": "Written P1/P2/P3/P4 labels read in original video, consistent with session log section50",
+  "coordinate_source": "geometry.json instructed nominal coordinates; actual ruler survey not supplied",
+  "coordinate_uncertainty_m": null,
+  "pixel_annotation_uncertainty_px": null,
+  "independent_Q_used_for_identification_or_fit": false,
+  "status": "nominal_geometry_feasibility_only"
+}

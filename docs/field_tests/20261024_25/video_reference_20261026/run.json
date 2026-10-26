@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "run_id": "video_reference_20261026_delivery",
+  "role": "local_video",
+  "status": "BLOCKED",
+  "created_at_utc": "2026-10-26T08:20:18.998919+00:00",
+  "task_start_utc": "2026-10-26T05:33:27Z",
+  "code_commit": "4a379da4044a5fd6d36cb8c3e2c53f4a7d120d5b",
+  "worktree_dirty": true,
+  "source_sha256": {
+    "tools/field_video_20261026/annotate_floor.py": "36840a3eb512c6ef23c32bb02adb44194e63ed5aab11a8cdf60472286af1457a",
+    "tools/field_video_20261026/assemble.py": "97a512acdbd55b68d38f0b2e18ae79ef74a1bdfd7878f3fd9fa5fa55ae9ebfb3",
+    "tools/field_video_20261026/background_geometry.py": "b1f984526ce46ab29b0c43b662b6d3f1680c9ea4db9b10cd91704d3fa7954be2",
+    "tools/field_video_20261026/calibrate.py": "a55bd24da4a7bf55c96e1b99e11e25995042808186fd4f64f096a33f58eed2d5",
+    "tools/field_video_20261026/common.py": "f71f8e9208d9aa953487d748987ad68ac6933d7ca830d6761dec88701ad5980e",
+    "tools/field_video_20261026/diagnose_markers.py": "3597ded576a7031adcc5ca425bb28eef1b53e17aec4e140db2d0246177bf448f",
+    "tools/field_video_20261026/download_ranges.py": "3177a5f53390db26d47a5562bf75bd38f82ebc01cb1ad215cc9716db0a4d3632",
+    "tools/field_video_20261026/event_sync.py": "18abe8ea31f8dbcd09e5dd7363aebd52dd0b13c2aff42491f6ef83c09d29d23b",
+    "tools/field_video_20261026/intake.py": "397a7f4b16c81a30d65ec777c52cafc1d98a4ef0af38da01d01f0be8b476dda3",
+    "tools/field_video_20261026/intake_local_calibration.py": "442fef761266f8afe1f6211f4e75130c6e9a887546ef65d86dbf72050e1d5d1c",
+    "tools/field_video_20261026/manifest_patch.py": "4a634966e8e3ddb41de94cba450dff931a026029bc7abb1e17968eeed6270b2c",
+    "tools/field_video_20261026/manual_sync_candidate.py": "52c4723058daf4e7368db2d9083e2eee6316e5f3b01d89a573e3e582dbf038e4",
+    "tools/field_video_20261026/manual_timing.py": "5d70bf47ea4db51d3fe980eab55f40954018c007f3ece91798a8bc14374ee7e6",
+    "tools/field_video_20261026/media_audit.py": "21d5d15a3c7be49eb97ea81fdde84b42b43423f70050a2146e30ce7d198a22bb",
+    "tools/field_video_20261026/nominal_checks.py": "cfef342893745e32e4b4e47dc9369a29c10569cd74d3264eaea7c586ae58321f",
+    "tools/field_video_20261026/observations.py": "20c040da4835fa02afa353070182ad887fb615b0f6992e3d2611defaf079283e",
+    "tools/field_video_20261026/test_video_reference.py": "a2858bf7129a6f3ee3c83fd9f699f651a2778c6f51114b765360f8f799ea1ca3",
+    "tools/field_video_20261026/time_events.py": "46f6e7a572cccb18653d2d7e5fb11f713403f5f5b5f005357ace21ec311ce37f",
+    "tools/field_video_20261026/observation_config.json": "3dfff6f6a29382732ce38b59a5468a56f73771da4d978073308146f99da0cc05",
+    "tools/field_video_20261026/requirements-video.txt": "e02ffc70b4a289a1d2b726899cff3623ce92fcd4fa8476cff382742e23a9cc35",
+    "tools/field_20261024_25/prepare.py": "f12b9547092f22c8fdf1bc59ba82fa05e1dec304ea43be9abc12e44b669ceea7",
+    "tools/field_20261024_25/bag_decoder.py": "42a558fc0450927dd6a529ea2978361d2a1454fb6396e5237c5bf9aa9ffd2bc3"
+  },
+  "config_sha256": {
+    "docs/field_tests/20261024_25/manifest.json": "4cd10d79c7772a91f91343f78c5189fe97073f1c6896d1d17c0b25b9c8a9d4b0",
+    "docs/field_tests/20261024_25/geometry.json": "0d85db448252f80c6ab456880d611efa4bace594adab83a305a95c9b13ab9f98",
+    "tools/field_video_20261026/observation_config.json": "3dfff6f6a29382732ce38b59a5468a56f73771da4d978073308146f99da0cc05"
+  },
+  "inputs": [
+    {
+      "asset_id": "bags",
+      "relative_path": "downloads/UWB_field_20261024_25_20261025_071212.tar.gz",
+      "sha256": "b7cec6f75584e583e66946fd669dc7495d10e3bcbebc0b67fa480b65b53fd1bf",
+      "size_bytes": 38399544
+    },
+    {
+      "asset_id": "camera_reference",
+      "relative_path": "downloads/camera_reference.zip",
+      "sha256": "9028d8cc8bf2cef97809ae097f0efe262f8f5c5fdce1503ef372a1ab00241217",
+      "size_bytes": 966049975
+    },
+    {
+      "asset_id": "T08_video",
+      "relative_path": "downloads/T08.zip",
+      "sha256": "52da595701211ea2c14e736dad4ed2eb18c1b45fd612810962463dc8332680dd",
+      "size_bytes": 961360216
+    },
+    {
+      "asset_id": "T09_video",
+      "relative_path": "downloads/T09.zip",
+      "sha256": "d57ccbf1d8f9120c75e7281a5543345a5c4f21cb66e2f74929f2e1c881e6a28e",
+      "size_bytes": 1023223519
+    },
+    {
+      "asset_id": "T10_video",
+      "relative_path": "downloads/T10.zip",
+      "sha256": "98df44cc12aa043e1e195fbd09bbeef86598a733051b4ae01bcd8a2f167c6784",
+      "size_bytes": 556415997
+    },
+    {
+      "asset_id": "T11_video",
+      "relative_path": "downloads/T11.zip",
+      "sha256": "4f0eecce0a31f60ba23b58d56441c12029a45c6431dee3669a7a3ff3f6f00390",
+      "size_bytes": 476658182
+    },
+    {
+      "asset_id": "T12_video",
+      "relative_path": "downloads/T12.zip",
+      "sha256": "cd41c97ccc6f818bc48631791acefee0ab706d9726a9e33f437b477519eb6b4f",
+      "size_bytes": 1026621145
+    },
+    {
+      "asset_id": "T13_video",
+      "relative_path": "downloads/T13.zip",
+      "sha256": "105af36ae01ff9a4bf64b8b24bfdbea73362e27e934f6958744c5a5aabe145ae",
+      "size_bytes": 822955790
+    },
+    {
+      "asset_id": "T14_video",
+      "relative_path": "downloads/T14.zip",
+      "sha256": "c8e258ed70067d1fc25ba6e3a9b82879c4d9a317e6a35fa8d2301c55bd4794cf",
+      "size_bytes": 1039698424
+    },
+    {
+      "asset_id": "T15_video",
+      "relative_path": "downloads/T15.zip",
+      "sha256": "4b34f617a9d6c7e22766e6f977d19b8d47c3aaa970e959a4498d5403c59a4ecb",
+      "size_bytes": 885476468
+    },
+    {
+      "asset_id": "IMG_7336",
+      "relative_path": "downloads/IMG_7336.zip",
+      "sha256": "bc73edf107b01d73c3de3cf4846e93e965d0b8fd7ee13ff67270d44a0740090a"
+    },
+    {
+      "asset_id": "IMG_7337",
+      "relative_path": "downloads/IMG_7337.zip",
+      "sha256": "0f7bf0ba120716ea5c15292c4e45b50ff726c3ff9a863549a17e3215620822d4"
+    },
+    {
+      "asset_id": "camera_reference",
+      "relative_path": "extracted/camera_reference/IMG_7364.MOV",
+      "sha256": "8683bb28af0a32003ee8f4ece2241a3986279e774f16d4e1160e8e30f2b65cf0",
+      "size_bytes": 120227964
+    },
+    {
+      "asset_id": "camera_reference",
+      "relative_path": "extracted/camera_reference/IMG_7365.MOV",
+      "sha256": "5f5c2ad9bd1a4cdce4c774abc9308b436a018ca165d9d55168b7543c97b139dd",
+      "size_bytes": 120776991
+    },
+    {
+      "asset_id": "camera_reference",
+      "relative_path": "extracted/camera_reference/IMG_7366.MOV",
+      "sha256": "8250c1077bac3cfb2fb103b2604a18348c3a9542ad06a77ea7cb243204dd5253",
+      "size_bytes": 124500201
+    },
+    {
+      "asset_id": "camera_reference",
+      "relative_path": "extracted/camera_reference/IMG_7367.MOV",
+      "sha256": "64b6dba40a4b3719c132ad65a3ef7a132b07e416d98c683dc37525e1e4397408",
+      "size_bytes": 120288518
+    },
+    {
+      "asset_id": "camera_reference",
+      "relative_path": "extracted/camera_reference/IMG_7369.MOV",
+      "sha256": "6d1317720c9c4f69852292e118d1429983ecafea78cc2cc279b2aa29cb526e33",
+      "size_bytes": 118867585
+    },
+    {
+      "asset_id": "camera_reference",
+      "relative_path": "extracted/camera_reference/IMG_7370.MOV",
+      "sha256": "05d4101fe3801896276e327836ca8a35c3edd5ef8abea9908b80427681ebe717",
+      "size_bytes": 121023422
+    },
+    {
+      "asset_id": "camera_reference",
+      "relative_path": "extracted/camera_reference/IMG_7371.MOV",
+      "sha256": "a63ade1c2f8c5dd555478e18bf01d41429f576bdf15cdfa1dcf50ee69b9da96e",
+      "size_bytes": 120635835
+    },
+    {
+      "asset_id": "camera_reference",
+      "relative_path": "extracted/camera_reference/IMG_7373.MOV",
+      "sha256": "07700f5211f6d958e0866c0bb6a30fd0f4f283b91696bff92e18943754006bd9",
+      "size_bytes": 119976934
+    },
+    {
+      "asset_id": "T08_video",
+      "relative_path": "extracted/T08_video/IMG_7341.MOV",
+      "sha256": "6eb5ebde83006e5e78ada49318a3c9a3d291492c41311b33893aaaf6c6b575f7",
+      "size_bytes": 961714936
+    },
+    {
+      "asset_id": "T09_video",
+      "relative_path": "extracted/T09_video/IMG_7343.MOV",
+      "sha256": "803dbffc21ae0fb313d2f52c23b6f5682639025247db5b365dffff71595cf9e0",
+      "size_bytes": 1023594048
+    },
+    {
+      "asset_id": "T10_video",
+      "relative_path": "extracted/T10_video/IMG_7347.MOV",
+      "sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+      "size_bytes": 556644048
+    },
+    {
+      "asset_id": "T11_video",
+      "relative_path": "extracted/T11_video/IMG_7350.MOV",
+      "sha256": "5ce17f35864f50c925e6ccb725f623c3f739b2500c82de96b59da854df91a077",
+      "size_bytes": 476838991
+    },
+    {
+      "asset_id": "T12_video",
+      "relative_path": "extracted/T12_video/IMG_7352.MOV",
+      "sha256": "ef4cece5d7da94ea7cfcc32c5cb8164d663cfe6fb332bf6b242411b363f9e4cd",
+      "size_bytes": 1027002267
+    },
+    {
+      "asset_id": "T13_video",
+      "relative_path": "extracted/T13_video/IMG_7353.MOV",
+      "sha256": "1fca28d78157cd9b73e7955e59c1b9194cb1fb8a5ae80386926934f7d40d54c2",
+      "size_bytes": 823259653
+    },
+    {
+      "asset_id": "T14_video",
+      "relative_path": "extracted/T14_video/IMG_7357.MOV",
+      "sha256": "ab15655b3f3d35846058b348a1e0f59282f25854eacbfd64467a960a1bc06848",
+      "size_bytes": 1040203691
+    },
+    {
+      "asset_id": "T15_video",
+      "relative_path": "extracted/T15_video/IMG_7358.MOV",
+      "sha256": "8fba8eaffbf12c98420caeb3c359649fbf7cd4b27ab97b03db309a28491106be",
+      "size_bytes": 885859287
+    },
+    {
+      "asset_id": "IMG_7336",
+      "relative_path": "extracted/IMG_7336/IMG_7336.MOV",
+      "sha256": "c2b63890aa764c2128b6103163540073607dd7a131cdcdf05cf14ee916dc72c8",
+      "size_bytes": 79918414
+    },
+    {
+      "asset_id": "IMG_7337",
+      "relative_path": "extracted/IMG_7337/IMG_7337.MOV",
+      "sha256": "3abd6bfe961b6b7a5a9d184f1cd6dda61fc8569d4bf5e41f5024fcb4ddd03dd6",
+      "size_bytes": 76156170
+    }
+  ],
+  "command_argv": [
+    "python",
+    "tools/field_video_20261026/assemble.py",
+    "--results",
+    "$RESULTS",
+    "--output",
+    "$FINAL_OUTPUT"
+  ],
+  "command_path_normalization": "Host paths replaced with logical roots; full stage intent and parameters in commands.json",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "packages_file": "python_packages.txt"
+  },
+  "outputs": [
+    {
+      "relative_path": "video_inventory.csv",
+      "sha256": "ab64ee72180df5552bdf17d075e7bd831705475350f83c8a12853a3ef8b19d2e"
+    },
+    {
+      "relative_path": "marker_observations.csv",
+      "sha256": "7540db7355edc361e63c45dcc482d64b3bd75d43090551e7926024d34eb7be8a"
+    },
+    {
+      "relative_path": "frame_transforms.json",
+      "sha256": "40f01472632ec69a769b4e335075fb91217cb4d561561b18a8aae3f1b69f301f"
+    },
+    {
+      "relative_path": "time_mapping.json",
+      "sha256": "a6c0b6777feca41ed4203ca72362a662ac8a8ab711abb616d8d61089470d5854"
+    },
+    {
+      "relative_path": "reference_validation.json",
+      "sha256": "fdf9d8a65540a33862f6f2f2c15bfcd68217ed1986e1a28d58c223c1701dcc44"
+    }
+  ],
+  "blocked_reasons": [
+    "Actual P/Q coordinates, placement and measurement uncertainty not supplied",
+    "Reference-video Q correspondence/headings provisional",
+    "Camera intrinsics/processing equivalence and stability unapproved",
+    "Marker/body rotation and lever-arm uncertainty unverified",
+    "Car2 curved/tilted board and view-dependent extraction unvalidated",
+    "No independently bounded video/measurement-clock mapping"
+  ],
+  "limitations": [
+    "No accepted continuous or checkpoint reference",
+    "Dirty source execution and after-run provenance capture explicitly disclosed"
+  ]
+}

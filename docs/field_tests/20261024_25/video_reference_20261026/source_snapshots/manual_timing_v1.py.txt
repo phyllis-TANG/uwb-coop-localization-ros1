@@ -1,0 +1,51 @@
+"""Explicit manual-quadrilateral LK supplement, for motion timing only, never pose truth."""
+import argparse
+import csv
+import json
+from pathlib import Path
+import av
+import cv2
+import numpy as np
+import common
+import observations
+
+
+def main():
+    p=argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--video',type=Path,required=True);p.add_argument('--seed',type=Path,required=True)
+    p.add_argument('--output',type=Path,required=True);p.add_argument('--experiment',default='')
+    a=p.parse_args();a.output.mkdir(parents=True,exist_ok=False)
+    seed=json.loads(a.seed.read_text(encoding='utf-8'));digest=common.sha256(a.video)
+    if digest!=seed['video_sha256']:raise ValueError('Manual seed video identity mismatch')
+    config=json.loads(Path(observations.__file__).with_name('observation_config.json').read_text(encoding='utf-8'))
+    cv2.setNumThreads(2);previous=None;points=None;corners=None;next_target=seed['video_time_s'];counts={};started=False
+    with av.open(str(a.video)) as c,(a.output/'marker_observations.csv').open('x',newline='',encoding='utf-8') as f:
+        w=csv.DictWriter(f,fieldnames=observations.FIELDS);w.writeheader();s=c.streams.video[0];s.codec_context.thread_count=2
+        for index,frame in enumerate(c.decode(s)):
+            t=float(frame.pts*frame.time_base)
+            if t+1e-9<next_target:continue
+            next_target+=config['sampling_period_s'];gray=frame.to_ndarray(format='gray')
+            diag={};method='failed_manual_tracking_v1'
+            if not started:
+                if index!=seed['frame_index']:raise ValueError('Seed frame/PTS do not agree')
+                corners=np.array(seed['corners_canonical_order_inferred'],np.float32)
+                points=observations.features(gray,corners);started=True
+                method='lk_manual_initialization_timing_only_v1'
+            elif previous is not None and corners is not None:
+                corners,diag=observations.track(previous,gray,points,corners,config['tracking'])
+                if corners is not None:
+                    points=observations.features(gray,corners);method='lk_manual_seed_timing_only_v1'
+            row=observations.row_state(dict(experiment_id=a.experiment,video_sha256=digest,frame_index=index,
+                pts_ticks=frame.pts,time_base_num=frame.time_base.numerator,time_base_den=frame.time_base.denominator,
+                video_time_s=t,coordinate_convention='encoded_pixels'),seed['marker_id'],corners,method,diag)
+            row['quality_flags']+=';timing_diagnostic_only;manual_corner_order_template_inferred;metric_pose_prohibited'
+            w.writerow(row);previous=gray
+            counts[row['observation_status']]=counts.get(row['observation_status'],0)+1
+    common.write_json(a.output/'observation_summary.json',dict(video_sha256=digest,seed=seed,counts=counts,
+        purpose='Visual-motion timing feasibility only',maximum_metric_reference_scope='not_accepted',
+        limitations=['Unmeasured board curvature','Accumulated tracking drift unbounded',
+            'Forward/backward LK consistency does not validate absolute corner location']))
+    print(json.dumps(counts),flush=True)
+
+
+if __name__=='__main__':main()

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "source": "operator reply in this guidance chat on 2026-10-26",
+  "operator_verbatim": "指的是车头方向car1车头是红色支架一侧 也就是机械臂一侧",
+  "directly_confirmed_fact": "Car1 body +X points toward the red support / mechanical-arm side",
+  "visual_inference_separate_from_operator_measurement": {
+    "evidence": "docs/field_tests/20261024_25/evidence/car1_top.jpg and car1_side.jpg; corresponding raw video views",
+    "marker_ID0_canonical_top_edge": "toward printed title / mast side in installation image",
+    "body_front_side": "opposite canonical marker +Y edge",
+    "nominal_hypothesis": "body_front_marker_minus_Y",
+    "nominal_R_body_marker": [[0,-1,0],[1,0,0],[0,0,1]],
+    "angle_uncertainty_rad": null,
+    "status": "qualitative_front_side_resolved_not_a_measured_full_rotation"
+  },
+  "Q_positions_or_discrepancies_used_to_choose_rotation": false,
+  "public_geometry_modified": false,
+  "Car2_rotation_status": "still_unknown"
+}

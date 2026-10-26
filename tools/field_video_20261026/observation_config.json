@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "coordinate_convention": "encoded_pixels",
+  "dictionary": "DICT_4X4_50",
+  "id_to_vehicle": {"0": "car1", "1": "car2"},
+  "marker_black_side_m": 0.144,
+  "sampling_period_s": 0.5,
+  "default_detector": {"cornerRefinementMethod": 1},
+  "recovery_detector": {"polygonalApproxAccuracyRate": 0.06, "cornerRefinementMethod": 1},
+  "tracking": {
+    "enabled": true,
+    "requires_prior_decoded_or_explicit_manual_seed": true,
+    "max_gap_since_decode_s": 5.0,
+    "forward_backward_threshold_px": 1.5,
+    "ransac_threshold_px": 2.0,
+    "minimum_inliers": 8,
+    "minimum_inlier_fraction": 0.6
+  },
+  "spatial_policy": "No detector/tracker output is a validated metric reference by itself",
+  "holdout_policy": "Shared extraction and health only; no held-out localization errors used for selection"
+}

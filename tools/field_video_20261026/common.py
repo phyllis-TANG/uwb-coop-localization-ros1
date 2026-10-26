@@ -1,0 +1,68 @@
+"""Coordinate/serialization primitives for independent video-reference work."""
+import hashlib
+import json
+from pathlib import Path
+import numpy as np
+
+
+def sha256(path):
+    h = hashlib.sha256()
+    with Path(path).open('rb') as f:
+        for b in iter(lambda: f.read(1024*1024), b''):
+            h.update(b)
+    return h.hexdigest()
+
+
+def write_json(path, value):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open('x', encoding='utf-8') as f:
+        json.dump(value, f, indent=2, ensure_ascii=False, allow_nan=False)
+        f.write('\n')
+
+
+def encoded_to_display(width, height, rotation_ccw):
+    """Pixel-centre map. Rotation follows PyAV DISPLAYMATRIX CCW degrees."""
+    r = rotation_ccw % 360
+    if r == 0:
+        return np.eye(3), (width, height)
+    if r == 90:
+        return np.array([[0,1,0],[-1,0,width-1],[0,0,1.]]), (height,width)
+    if r == 180:
+        return np.array([[-1,0,width-1],[0,-1,height-1],[0,0,1.]]), (width,height)
+    if r == 270:
+        return np.array([[0,-1,height-1],[1,0,0],[0,0,1.]]), (height,width)
+    raise ValueError('Non-right-angle display rotation requires full display matrix')
+
+
+def transform_pixels(points, H):
+    q = np.c_[np.asarray(points,dtype=float), np.ones(len(points))] @ np.asarray(H).T
+    return q[:,:2]/q[:,2:3]
+
+
+def marker_object_points(side_m=0.144):
+    h = side_m/2
+    return np.array([[-h,h,0],[h,h,0],[h,-h,0],[-h,-h,0]],dtype=np.float64)
+
+
+def intersect_room_plane(pixel, K, D, T_room_camera, plane_height_m):
+    """Ray-plane intersection; camera optical axes x right/y down/z forward."""
+    import cv2
+    p = cv2.undistortPoints(np.array(pixel,dtype=float).reshape(1,1,2),np.array(K),np.array(D))[0,0]
+    T = np.asarray(T_room_camera,dtype=float)
+    origin = T[:3,3]
+    ray = T[:3,:3] @ np.r_[p,1.]
+    if abs(ray[2]) < 1e-10:
+        raise ValueError('ray parallel to plane')
+    distance = (plane_height_m-origin[2])/ray[2]
+    if distance <= 0:
+        raise ValueError('plane behind camera')
+    return origin+distance*ray
+
+
+def antenna_from_body_offset(marker_xyz,body_heading_room_rad,body_offset_xyz):
+    if body_heading_room_rad is None:
+        raise ValueError('Unknown body heading must not be substituted with zero')
+    c,s=np.cos(body_heading_room_rad),np.sin(body_heading_room_rad)
+    R=np.array([[c,-s,0],[s,c,0],[0,0,1.]])
+    return np.asarray(marker_xyz,float)+R@np.asarray(body_offset_xyz,float)

@@ -1,0 +1,487 @@
+{
+  "schema_version": 1,
+  "base_commit": "4a379da4044a5fd6d36cb8c3e2c53f4a7d120d5b",
+  "base_manifest_git_blob_sha": "9e17ae2576792b45ba475854148f702c0fc01489",
+  "base_manifest_canonical_utf8_lf_sha256": "d4cd1ecc0e9bb71a0c18b8fa62487f6b02e6ee8549783c472d876ebebb1ad544",
+  "checked_out_manifest_raw_sha256": "4cd10d79c7772a91f91343f78c5189fe97073f1c6896d1d17c0b25b9c8a9d4b0",
+  "newline_note": "Git for Windows checkout uses CRLF; canonical hash is UTF-8 LF Git content",
+  "status": "proposal_for_coordinator_only",
+  "public_geometry_modified": false,
+  "rfc6902_operations": [
+    {
+      "op": "test",
+      "path": "/assets",
+      "value": [
+        {
+          "id": "bags",
+          "name": "UWB_field_20261024_25_20261025_071212.tar.gz",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/UWB_field_20261024_25_20261025_071212.tar.gz",
+          "sha256": "b7cec6f75584e583e66946fd669dc7495d10e3bcbebc0b67fa480b65b53fd1bf",
+          "size_bytes": 38399544,
+          "extract_subdir": "bags",
+          "archive_format": "tar.gz",
+          "status": "downloaded_hash_verified"
+        },
+        {
+          "id": "camera_reference",
+          "name": "camera_reference.zip",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/camera_reference.zip",
+          "sha256": "9028d8cc8bf2cef97809ae097f0efe262f8f5c5fdce1503ef372a1ab00241217",
+          "size_bytes": 966049975,
+          "extract_subdir": "camera_reference",
+          "archive_format": "zip",
+          "status": "downloaded_hash_verified"
+        },
+        {
+          "id": "T08_video",
+          "name": "T08.zip",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/T08.zip",
+          "sha256": "52da595701211ea2c14e736dad4ed2eb18c1b45fd612810962463dc8332680dd",
+          "size_bytes": 961360216,
+          "extract_subdir": "T08_video",
+          "archive_format": "zip",
+          "status": "downloaded_hash_verified"
+        },
+        {
+          "id": "T09_video",
+          "name": "T09.zip",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/T09.zip",
+          "sha256": "d57ccbf1d8f9120c75e7281a5543345a5c4f21cb66e2f74929f2e1c881e6a28e",
+          "size_bytes": 1023223519,
+          "extract_subdir": "T09_video",
+          "archive_format": "zip",
+          "status": "downloaded_hash_verified"
+        },
+        {
+          "id": "T10_video",
+          "name": "T10.zip",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/T10.zip",
+          "sha256": "98df44cc12aa043e1e195fbd09bbeef86598a733051b4ae01bcd8a2f167c6784",
+          "size_bytes": 556415997,
+          "extract_subdir": "T10_video",
+          "archive_format": "zip",
+          "status": "downloaded_hash_verified"
+        },
+        {
+          "id": "bag_checksum",
+          "name": "UWB_field_20261024_25_20261025_071212.tar.gz.sha256",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/UWB_field_20261024_25_20261025_071212.tar.gz.sha256",
+          "sha256": "709d1d6a5005057f2bce9d79998b72e203621f72746a98d8a8864bb7fd1370b5",
+          "size_bytes": 133,
+          "extract_subdir": "bag_checksum",
+          "archive_format": "text",
+          "status": "downloaded_hash_verified"
+        },
+        {
+          "id": "T11_video",
+          "name": "T11.zip",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/T11.zip",
+          "sha256": "4f0eecce0a31f60ba23b58d56441c12029a45c6431dee3669a7a3ff3f6f00390",
+          "size_bytes": 476658182,
+          "extract_subdir": "T11_video",
+          "archive_format": "zip",
+          "status": "release_uploaded_not_downloaded_or_crc_verified",
+          "sha256_source": "GitHub_release_asset_digest_not_independently_recomputed"
+        },
+        {
+          "id": "T12_video",
+          "name": "T12.zip",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/T12.zip",
+          "sha256": "cd41c97ccc6f818bc48631791acefee0ab706d9726a9e33f437b477519eb6b4f",
+          "size_bytes": 1026621145,
+          "extract_subdir": "T12_video",
+          "archive_format": "zip",
+          "status": "release_uploaded_not_downloaded_or_crc_verified",
+          "sha256_source": "GitHub_release_asset_digest_not_independently_recomputed"
+        },
+        {
+          "id": "T13_video",
+          "name": "T13.zip",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/T13.zip",
+          "sha256": "105af36ae01ff9a4bf64b8b24bfdbea73362e27e934f6958744c5a5aabe145ae",
+          "size_bytes": 822955790,
+          "extract_subdir": "T13_video",
+          "archive_format": "zip",
+          "status": "release_uploaded_not_downloaded_or_crc_verified",
+          "sha256_source": "GitHub_release_asset_digest_not_independently_recomputed"
+        }
+      ]
+    },
+    {
+      "op": "replace",
+      "path": "/assets",
+      "value": [
+        {
+          "id": "bags",
+          "name": "UWB_field_20261024_25_20261025_071212.tar.gz",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/UWB_field_20261024_25_20261025_071212.tar.gz",
+          "sha256": "b7cec6f75584e583e66946fd669dc7495d10e3bcbebc0b67fa480b65b53fd1bf",
+          "size_bytes": 38399544,
+          "extract_subdir": "bags",
+          "archive_format": "tar.gz",
+          "status": "downloaded_hash_verified"
+        },
+        {
+          "id": "camera_reference",
+          "name": "camera_reference.zip",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/camera_reference.zip",
+          "sha256": "9028d8cc8bf2cef97809ae097f0efe262f8f5c5fdce1503ef372a1ab00241217",
+          "size_bytes": 966049975,
+          "extract_subdir": "camera_reference",
+          "archive_format": "zip",
+          "status": "downloaded_hash_verified"
+        },
+        {
+          "id": "T08_video",
+          "name": "T08.zip",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/T08.zip",
+          "sha256": "52da595701211ea2c14e736dad4ed2eb18c1b45fd612810962463dc8332680dd",
+          "size_bytes": 961360216,
+          "extract_subdir": "T08_video",
+          "archive_format": "zip",
+          "status": "downloaded_hash_verified"
+        },
+        {
+          "id": "T09_video",
+          "name": "T09.zip",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/T09.zip",
+          "sha256": "d57ccbf1d8f9120c75e7281a5543345a5c4f21cb66e2f74929f2e1c881e6a28e",
+          "size_bytes": 1023223519,
+          "extract_subdir": "T09_video",
+          "archive_format": "zip",
+          "status": "downloaded_hash_verified"
+        },
+        {
+          "id": "T10_video",
+          "name": "T10.zip",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/T10.zip",
+          "sha256": "98df44cc12aa043e1e195fbd09bbeef86598a733051b4ae01bcd8a2f167c6784",
+          "size_bytes": 556415997,
+          "extract_subdir": "T10_video",
+          "archive_format": "zip",
+          "status": "downloaded_hash_verified"
+        },
+        {
+          "id": "bag_checksum",
+          "name": "UWB_field_20261024_25_20261025_071212.tar.gz.sha256",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/UWB_field_20261024_25_20261025_071212.tar.gz.sha256",
+          "sha256": "709d1d6a5005057f2bce9d79998b72e203621f72746a98d8a8864bb7fd1370b5",
+          "size_bytes": 133,
+          "extract_subdir": "bag_checksum",
+          "archive_format": "text",
+          "status": "downloaded_hash_verified"
+        },
+        {
+          "id": "T11_video",
+          "name": "T11.zip",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/T11.zip",
+          "sha256": "4f0eecce0a31f60ba23b58d56441c12029a45c6431dee3669a7a3ff3f6f00390",
+          "size_bytes": 476658182,
+          "extract_subdir": "T11_video",
+          "archive_format": "zip",
+          "status": "independently_hash_crc_and_full_decode_verified",
+          "sha256_source": "independently_recomputed_original_download_bytes"
+        },
+        {
+          "id": "T12_video",
+          "name": "T12.zip",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/T12.zip",
+          "sha256": "cd41c97ccc6f818bc48631791acefee0ab706d9726a9e33f437b477519eb6b4f",
+          "size_bytes": 1026621145,
+          "extract_subdir": "T12_video",
+          "archive_format": "zip",
+          "status": "independently_hash_crc_and_full_decode_verified",
+          "sha256_source": "independently_recomputed_original_download_bytes"
+        },
+        {
+          "id": "T13_video",
+          "name": "T13.zip",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/T13.zip",
+          "sha256": "105af36ae01ff9a4bf64b8b24bfdbea73362e27e934f6958744c5a5aabe145ae",
+          "size_bytes": 822955790,
+          "extract_subdir": "T13_video",
+          "archive_format": "zip",
+          "status": "independently_hash_crc_and_full_decode_verified",
+          "sha256_source": "independently_recomputed_original_download_bytes"
+        },
+        {
+          "id": "T14_video",
+          "name": "T14.zip",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/T14.zip",
+          "sha256": "c8e258ed70067d1fc25ba6e3a9b82879c4d9a317e6a35fa8d2301c55bd4794cf",
+          "size_bytes": 1039698424,
+          "extract_subdir": "T14_video",
+          "archive_format": "zip",
+          "status": "independently_hash_crc_and_full_decode_verified",
+          "sha256_source": "independently_recomputed_original_download_bytes"
+        },
+        {
+          "id": "T15_video",
+          "name": "T15.zip",
+          "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/T15.zip",
+          "sha256": "4b34f617a9d6c7e22766e6f977d19b8d47c3aaa970e959a4498d5403c59a4ecb",
+          "size_bytes": 885476468,
+          "extract_subdir": "T15_video",
+          "archive_format": "zip",
+          "status": "independently_hash_crc_and_full_decode_verified",
+          "sha256_source": "independently_recomputed_original_download_bytes"
+        }
+      ]
+    },
+    {
+      "op": "test",
+      "path": "/motion_videos",
+      "value": [
+        {
+          "experiment_id": "T08",
+          "asset_id": "T08_video",
+          "relative_path": "IMG_7341.MOV",
+          "sha256": "6eb5ebde83006e5e78ada49318a3c9a3d291492c41311b33893aaaf6c6b575f7",
+          "size_bytes": 961714936,
+          "duration_s": 167.536667,
+          "encoded_width": 3840,
+          "encoded_height": 2160,
+          "declared_frames": 5026,
+          "full_decode_status": "passed",
+          "experiment_mapping_source": "operator_archive_label",
+          "motion_coverage_status": "not_checked",
+          "bag_time_mapping_status": "not_validated",
+          "use_frame_pts": true
+        },
+        {
+          "experiment_id": "T09",
+          "asset_id": "T09_video",
+          "relative_path": "IMG_7343.MOV",
+          "sha256": "803dbffc21ae0fb313d2f52c23b6f5682639025247db5b365dffff71595cf9e0",
+          "size_bytes": 1023594048,
+          "duration_s": 178.57,
+          "encoded_width": 3840,
+          "encoded_height": 2160,
+          "declared_frames": 5357,
+          "full_decode_status": "passed",
+          "experiment_mapping_source": "operator_archive_label",
+          "motion_coverage_status": "not_checked",
+          "bag_time_mapping_status": "not_validated",
+          "use_frame_pts": true
+        },
+        {
+          "experiment_id": "T10",
+          "asset_id": "T10_video",
+          "relative_path": "IMG_7347.MOV",
+          "sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+          "size_bytes": 556644048,
+          "duration_s": 96.768333,
+          "encoded_width": 3840,
+          "encoded_height": 2160,
+          "declared_frames": 2903,
+          "full_decode_status": "passed",
+          "experiment_mapping_source": "operator_archive_label",
+          "motion_coverage_status": "not_checked",
+          "bag_time_mapping_status": "not_validated",
+          "use_frame_pts": true
+        }
+      ]
+    },
+    {
+      "op": "replace",
+      "path": "/motion_videos",
+      "value": [
+        {
+          "experiment_id": "T08",
+          "asset_id": "T08_video",
+          "relative_path": "IMG_7341.MOV",
+          "sha256": "6eb5ebde83006e5e78ada49318a3c9a3d291492c41311b33893aaaf6c6b575f7",
+          "size_bytes": 961714936,
+          "duration_s": 167.536667,
+          "encoded_width": 3840,
+          "encoded_height": 2160,
+          "declared_frames": 5026,
+          "full_decode_status": "passed",
+          "experiment_mapping_source": "operator_archive_label",
+          "motion_coverage_status": "not_checked",
+          "bag_time_mapping_status": "not_validated",
+          "use_frame_pts": true
+        },
+        {
+          "experiment_id": "T09",
+          "asset_id": "T09_video",
+          "relative_path": "IMG_7343.MOV",
+          "sha256": "803dbffc21ae0fb313d2f52c23b6f5682639025247db5b365dffff71595cf9e0",
+          "size_bytes": 1023594048,
+          "duration_s": 178.57,
+          "encoded_width": 3840,
+          "encoded_height": 2160,
+          "declared_frames": 5357,
+          "full_decode_status": "passed",
+          "experiment_mapping_source": "operator_archive_label",
+          "motion_coverage_status": "not_checked",
+          "bag_time_mapping_status": "not_validated",
+          "use_frame_pts": true
+        },
+        {
+          "experiment_id": "T10",
+          "asset_id": "T10_video",
+          "relative_path": "IMG_7347.MOV",
+          "sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+          "size_bytes": 556644048,
+          "duration_s": 96.768333,
+          "encoded_width": 3840,
+          "encoded_height": 2160,
+          "declared_frames": 2903,
+          "full_decode_status": "passed",
+          "experiment_mapping_source": "operator_archive_label",
+          "motion_coverage_status": "not_checked",
+          "bag_time_mapping_status": "not_validated",
+          "use_frame_pts": true
+        },
+        {
+          "experiment_id": "T11",
+          "asset_id": "T11_video",
+          "relative_path": "IMG_7350.MOV",
+          "sha256": "5ce17f35864f50c925e6ccb725f623c3f739b2500c82de96b59da854df91a077",
+          "size_bytes": 476838991,
+          "duration_s": 83.035,
+          "encoded_width": 3840,
+          "encoded_height": 2160,
+          "declared_frames": 2491,
+          "decoded_frames": 2491,
+          "rotation_ccw_deg": 0,
+          "full_decode_status": "passed",
+          "experiment_mapping_source": "operator_archive_label_not_independent_action_identity",
+          "motion_coverage_status": "separate_event_audit_required",
+          "bag_time_mapping_status": "not_accepted",
+          "use_frame_pts": true
+        },
+        {
+          "experiment_id": "T12",
+          "asset_id": "T12_video",
+          "relative_path": "IMG_7352.MOV",
+          "sha256": "ef4cece5d7da94ea7cfcc32c5cb8164d663cfe6fb332bf6b242411b363f9e4cd",
+          "size_bytes": 1027002267,
+          "duration_s": 179.17,
+          "encoded_width": 3840,
+          "encoded_height": 2160,
+          "declared_frames": 5375,
+          "decoded_frames": 5375,
+          "rotation_ccw_deg": 0,
+          "full_decode_status": "passed",
+          "experiment_mapping_source": "operator_archive_label_not_independent_action_identity",
+          "motion_coverage_status": "separate_event_audit_required",
+          "bag_time_mapping_status": "not_accepted",
+          "use_frame_pts": true
+        },
+        {
+          "experiment_id": "T13",
+          "asset_id": "T13_video",
+          "relative_path": "IMG_7353.MOV",
+          "sha256": "1fca28d78157cd9b73e7955e59c1b9194cb1fb8a5ae80386926934f7d40d54c2",
+          "size_bytes": 823259653,
+          "duration_s": 143.57,
+          "encoded_width": 3840,
+          "encoded_height": 2160,
+          "declared_frames": 4307,
+          "decoded_frames": 4307,
+          "rotation_ccw_deg": 0,
+          "full_decode_status": "passed",
+          "experiment_mapping_source": "operator_archive_label_not_independent_action_identity",
+          "motion_coverage_status": "separate_event_audit_required",
+          "bag_time_mapping_status": "not_accepted",
+          "use_frame_pts": true
+        },
+        {
+          "experiment_id": "T14",
+          "asset_id": "T14_video",
+          "relative_path": "IMG_7357.MOV",
+          "sha256": "ab15655b3f3d35846058b348a1e0f59282f25854eacbfd64467a960a1bc06848",
+          "size_bytes": 1040203691,
+          "duration_s": 182.04166666666666,
+          "encoded_width": 3840,
+          "encoded_height": 2160,
+          "declared_frames": 5459,
+          "decoded_frames": 5459,
+          "rotation_ccw_deg": 0,
+          "full_decode_status": "passed",
+          "experiment_mapping_source": "operator_archive_label_not_independent_action_identity",
+          "motion_coverage_status": "separate_event_audit_required",
+          "bag_time_mapping_status": "not_accepted",
+          "use_frame_pts": true
+        },
+        {
+          "experiment_id": "T15",
+          "asset_id": "T15_video",
+          "relative_path": "IMG_7358.MOV",
+          "sha256": "8fba8eaffbf12c98420caeb3c359649fbf7cd4b27ab97b03db309a28491106be",
+          "size_bytes": 885859287,
+          "duration_s": 154.60333333333332,
+          "encoded_width": 3840,
+          "encoded_height": 2160,
+          "declared_frames": 4638,
+          "decoded_frames": 4638,
+          "rotation_ccw_deg": 0,
+          "full_decode_status": "passed",
+          "experiment_mapping_source": "operator_archive_label_not_independent_action_identity",
+          "motion_coverage_status": "separate_event_audit_required",
+          "bag_time_mapping_status": "not_accepted",
+          "use_frame_pts": true
+        }
+      ]
+    },
+    {
+      "op": "test",
+      "path": "/pending_videos",
+      "value": [
+        {
+          "experiment_id": "T14",
+          "status": "not_in_nine_asset_snapshot"
+        },
+        {
+          "experiment_id": "T15",
+          "status": "not_in_nine_asset_snapshot"
+        }
+      ]
+    },
+    {
+      "op": "replace",
+      "path": "/pending_videos",
+      "value": []
+    },
+    {
+      "op": "test",
+      "path": "/pending_qc_video_assets",
+      "value": [
+        {
+          "asset_id": "T11_video",
+          "experiment_id": "T11",
+          "archive_filename": "T11.zip",
+          "status": "available_on_release_pending_download_hash_crc_and_full_decode",
+          "movie_relative_path": null,
+          "movie_sha256": null,
+          "movie_duration_s": null
+        },
+        {
+          "asset_id": "T12_video",
+          "experiment_id": "T12",
+          "archive_filename": "T12.zip",
+          "status": "available_on_release_pending_download_hash_crc_and_full_decode",
+          "movie_relative_path": null,
+          "movie_sha256": null,
+          "movie_duration_s": null
+        },
+        {
+          "asset_id": "T13_video",
+          "experiment_id": "T13",
+          "archive_filename": "T13.zip",
+          "status": "available_on_release_pending_download_hash_crc_and_full_decode",
+          "movie_relative_path": null,
+          "movie_sha256": null,
+          "movie_duration_s": null
+        }
+      ]
+    },
+    {
+      "op": "replace",
+      "path": "/pending_qc_video_assets",
+      "value": []
+    }
+  ]
+}

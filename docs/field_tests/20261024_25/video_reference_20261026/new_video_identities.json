@@ -1,0 +1,587 @@
+{
+  "T11_video": {
+    "asset_id": "T11_video",
+    "relative_path": "IMG_7350.MOV",
+    "sha256": "5ce17f35864f50c925e6ccb725f623c3f739b2500c82de96b59da854df91a077",
+    "size_bytes": 476838991,
+    "decoder": "PyAV 16.0.1",
+    "decoder_libraries": {
+      "libavutil": [
+        60,
+        8,
+        100
+      ],
+      "libavcodec": [
+        62,
+        11,
+        100
+      ],
+      "libavformat": [
+        62,
+        3,
+        100
+      ],
+      "libavdevice": [
+        62,
+        1,
+        100
+      ],
+      "libavfilter": [
+        11,
+        4,
+        100
+      ],
+      "libswscale": [
+        9,
+        1,
+        100
+      ],
+      "libswresample": [
+        6,
+        1,
+        100
+      ]
+    },
+    "pixel_convention": "encoded_pixels",
+    "decode_status": "passed",
+    "codec": "h264",
+    "encoded_width": 3840,
+    "encoded_height": 2160,
+    "declared_frames": 2491,
+    "time_base_num": 1,
+    "time_base_den": 600,
+    "average_rate": "498200/16607",
+    "base_rate": "30",
+    "start_time_ticks": 0,
+    "duration_ticks": 49821,
+    "duration_s": 83.035,
+    "diagnostic_frames": [
+      {
+        "path": "diagnostic_0_frame_000015.png",
+        "frame_index": 15,
+        "pts_ticks": 300,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "video_time_s": 0.5,
+        "sha256": "074ebbd0c06799bc038af5b74c863e4d0b4029136294a5b08d4b41ec8a5d76bb"
+      },
+      {
+        "path": "diagnostic_1_frame_000150.png",
+        "frame_index": 150,
+        "pts_ticks": 3000,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "video_time_s": 5.0,
+        "sha256": "f5a617d469d6deb60c982061d93202b8597f8d125ad82c5cb878715a7aff6f9c"
+      },
+      {
+        "path": "diagnostic_2_frame_001246.png",
+        "frame_index": 1246,
+        "pts_ticks": 24921,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "video_time_s": 41.535,
+        "sha256": "3d74d7450169677b3ce8ba5b0c296f766c2cc9fd76ab3ecaf928f4105bad836b"
+      }
+    ],
+    "decoder_logs": [],
+    "rotation_ccw_degrees": [
+      0
+    ],
+    "rotation": 0,
+    "encoded_to_display": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "display_width": 3840,
+    "display_height": 2160,
+    "decoded_frames": 2491,
+    "missing_pts": 0,
+    "nonincreasing_pts": 0,
+    "first_pts_ticks": 0,
+    "last_pts_ticks": 49801,
+    "elapsed_s": 69.40599999998813,
+    "checked_at_utc": "2026-10-26T05:53:03.568936+00:00"
+  },
+  "T12_video": {
+    "asset_id": "T12_video",
+    "relative_path": "IMG_7352.MOV",
+    "sha256": "ef4cece5d7da94ea7cfcc32c5cb8164d663cfe6fb332bf6b242411b363f9e4cd",
+    "size_bytes": 1027002267,
+    "decoder": "PyAV 16.0.1",
+    "decoder_libraries": {
+      "libavutil": [
+        60,
+        8,
+        100
+      ],
+      "libavcodec": [
+        62,
+        11,
+        100
+      ],
+      "libavformat": [
+        62,
+        3,
+        100
+      ],
+      "libavdevice": [
+        62,
+        1,
+        100
+      ],
+      "libavfilter": [
+        11,
+        4,
+        100
+      ],
+      "libswscale": [
+        9,
+        1,
+        100
+      ],
+      "libswresample": [
+        6,
+        1,
+        100
+      ]
+    },
+    "pixel_convention": "encoded_pixels",
+    "decode_status": "passed",
+    "codec": "h264",
+    "encoded_width": 3840,
+    "encoded_height": 2160,
+    "declared_frames": 5375,
+    "time_base_num": 1,
+    "time_base_den": 600,
+    "average_rate": "3225000/107503",
+    "base_rate": "30",
+    "start_time_ticks": 0,
+    "duration_ticks": 107502,
+    "duration_s": 179.17,
+    "diagnostic_frames": [
+      {
+        "path": "diagnostic_0_frame_000015.png",
+        "frame_index": 15,
+        "pts_ticks": 300,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "video_time_s": 0.5,
+        "sha256": "55ec968be6c5120d662d459d7861244dcf3b8ce88ad694f70eac38209a3377f9"
+      },
+      {
+        "path": "diagnostic_1_frame_000150.png",
+        "frame_index": 150,
+        "pts_ticks": 3000,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "video_time_s": 5.0,
+        "sha256": "ea35f8f3bfc5999aded3c831b20edd64989617c738729e81f0c0635aa51dd693"
+      },
+      {
+        "path": "diagnostic_2_frame_002688.png",
+        "frame_index": 2688,
+        "pts_ticks": 53761,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "video_time_s": 89.60166666666667,
+        "sha256": "2f87a176abfb8d810dbf7d59f9f5079225e43606ef48c772ca012206453b3aa9"
+      }
+    ],
+    "decoder_logs": [],
+    "rotation_ccw_degrees": [
+      0
+    ],
+    "rotation": 0,
+    "encoded_to_display": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "display_width": 3840,
+    "display_height": 2160,
+    "decoded_frames": 5375,
+    "missing_pts": 0,
+    "nonincreasing_pts": 0,
+    "first_pts_ticks": 0,
+    "last_pts_ticks": 107483,
+    "elapsed_s": 169.63999999998487,
+    "checked_at_utc": "2026-10-26T05:57:58.238591+00:00"
+  },
+  "T13_video": {
+    "asset_id": "T13_video",
+    "relative_path": "IMG_7353.MOV",
+    "sha256": "1fca28d78157cd9b73e7955e59c1b9194cb1fb8a5ae80386926934f7d40d54c2",
+    "size_bytes": 823259653,
+    "decoder": "PyAV 16.0.1",
+    "decoder_libraries": {
+      "libavutil": [
+        60,
+        8,
+        100
+      ],
+      "libavcodec": [
+        62,
+        11,
+        100
+      ],
+      "libavformat": [
+        62,
+        3,
+        100
+      ],
+      "libavdevice": [
+        62,
+        1,
+        100
+      ],
+      "libavfilter": [
+        11,
+        4,
+        100
+      ],
+      "libswscale": [
+        9,
+        1,
+        100
+      ],
+      "libswresample": [
+        6,
+        1,
+        100
+      ]
+    },
+    "pixel_convention": "encoded_pixels",
+    "decode_status": "passed",
+    "codec": "h264",
+    "encoded_width": 3840,
+    "encoded_height": 2160,
+    "declared_frames": 4307,
+    "time_base_num": 1,
+    "time_base_den": 600,
+    "average_rate": "430700/14357",
+    "base_rate": "30",
+    "start_time_ticks": 0,
+    "duration_ticks": 86142,
+    "duration_s": 143.57,
+    "diagnostic_frames": [
+      {
+        "path": "diagnostic_0_frame_000015.png",
+        "frame_index": 15,
+        "pts_ticks": 300,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "video_time_s": 0.5,
+        "sha256": "8e815d7d9c7abf88d33aaa9919e43db80281b1be137b04ef76577e379b2f9034"
+      },
+      {
+        "path": "diagnostic_1_frame_000150.png",
+        "frame_index": 150,
+        "pts_ticks": 3000,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "video_time_s": 5.0,
+        "sha256": "d3c97650b53353655ffd4eb4c0e31d917619e80557a515fd03b945e75ca9c057"
+      },
+      {
+        "path": "diagnostic_2_frame_002154.png",
+        "frame_index": 2154,
+        "pts_ticks": 43081,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "video_time_s": 71.80166666666666,
+        "sha256": "07543037cf5b0bfc937dfea697d0e6dd177df39bb4ef32f210b056718274c49b"
+      }
+    ],
+    "decoder_logs": [],
+    "rotation_ccw_degrees": [
+      0
+    ],
+    "rotation": 0,
+    "encoded_to_display": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "display_width": 3840,
+    "display_height": 2160,
+    "decoded_frames": 4307,
+    "missing_pts": 0,
+    "nonincreasing_pts": 0,
+    "first_pts_ticks": 0,
+    "last_pts_ticks": 86122,
+    "elapsed_s": 137.625,
+    "checked_at_utc": "2026-10-26T06:06:16.119330+00:00"
+  },
+  "T14_video": {
+    "asset_id": "T14_video",
+    "relative_path": "IMG_7357.MOV",
+    "sha256": "ab15655b3f3d35846058b348a1e0f59282f25854eacbfd64467a960a1bc06848",
+    "size_bytes": 1040203691,
+    "decoder": "PyAV 16.0.1",
+    "decoder_libraries": {
+      "libavutil": [
+        60,
+        8,
+        100
+      ],
+      "libavcodec": [
+        62,
+        11,
+        100
+      ],
+      "libavformat": [
+        62,
+        3,
+        100
+      ],
+      "libavdevice": [
+        62,
+        1,
+        100
+      ],
+      "libavfilter": [
+        11,
+        4,
+        100
+      ],
+      "libswscale": [
+        9,
+        1,
+        100
+      ],
+      "libswresample": [
+        6,
+        1,
+        100
+      ]
+    },
+    "pixel_convention": "encoded_pixels",
+    "decode_status": "passed",
+    "codec": "h264",
+    "encoded_width": 3840,
+    "encoded_height": 2160,
+    "declared_frames": 5459,
+    "time_base_num": 1,
+    "time_base_den": 600,
+    "average_rate": "1637700/54613",
+    "base_rate": "30000/1001",
+    "start_time_ticks": 0,
+    "duration_ticks": 109225,
+    "duration_s": 182.04166666666666,
+    "diagnostic_frames": [
+      {
+        "path": "diagnostic_0_frame_000015.png",
+        "frame_index": 15,
+        "pts_ticks": 300,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "video_time_s": 0.5,
+        "sha256": "b2869bf148910f47a4242290810a73258c067d0fabf331c7d51f637f987d6b91"
+      },
+      {
+        "path": "diagnostic_1_frame_000150.png",
+        "frame_index": 150,
+        "pts_ticks": 3001,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "video_time_s": 5.001666666666667,
+        "sha256": "dae9cc85412a6ddb799cb4dac3adafdd512e71be41c87de753ca59b59b11f118"
+      },
+      {
+        "path": "diagnostic_2_frame_002730.png",
+        "frame_index": 2730,
+        "pts_ticks": 54623,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "video_time_s": 91.03833333333333,
+        "sha256": "4e5c209467df3bdcd888a2b0363892a33e0c4905feb21072dbabb48b78fd2884"
+      }
+    ],
+    "decoder_logs": [],
+    "rotation_ccw_degrees": [
+      0
+    ],
+    "rotation": 0,
+    "encoded_to_display": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "display_width": 3840,
+    "display_height": 2160,
+    "decoded_frames": 5459,
+    "missing_pts": 0,
+    "nonincreasing_pts": 0,
+    "first_pts_ticks": 0,
+    "last_pts_ticks": 109206,
+    "elapsed_s": 195.875,
+    "checked_at_utc": "2026-10-26T06:15:32.059025+00:00"
+  },
+  "T15_video": {
+    "asset_id": "T15_video",
+    "relative_path": "IMG_7358.MOV",
+    "sha256": "8fba8eaffbf12c98420caeb3c359649fbf7cd4b27ab97b03db309a28491106be",
+    "size_bytes": 885859287,
+    "decoder": "PyAV 16.0.1",
+    "decoder_libraries": {
+      "libavutil": [
+        60,
+        8,
+        100
+      ],
+      "libavcodec": [
+        62,
+        11,
+        100
+      ],
+      "libavformat": [
+        62,
+        3,
+        100
+      ],
+      "libavdevice": [
+        62,
+        1,
+        100
+      ],
+      "libavfilter": [
+        11,
+        4,
+        100
+      ],
+      "libswscale": [
+        9,
+        1,
+        100
+      ],
+      "libswresample": [
+        6,
+        1,
+        100
+      ]
+    },
+    "pixel_convention": "encoded_pixels",
+    "decode_status": "passed",
+    "codec": "h264",
+    "encoded_width": 3840,
+    "encoded_height": 2160,
+    "declared_frames": 4638,
+    "time_base_num": 1,
+    "time_base_den": 600,
+    "average_rate": "1391400/46381",
+    "base_rate": "30",
+    "start_time_ticks": 0,
+    "duration_ticks": 92762,
+    "duration_s": 154.60333333333332,
+    "diagnostic_frames": [
+      {
+        "path": "diagnostic_0_frame_000015.png",
+        "frame_index": 15,
+        "pts_ticks": 300,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "video_time_s": 0.5,
+        "sha256": "150c451ead37a2af96992062c90a380d34457d2a32bc534094ea972daebad706"
+      },
+      {
+        "path": "diagnostic_1_frame_000150.png",
+        "frame_index": 150,
+        "pts_ticks": 3000,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "video_time_s": 5.0,
+        "sha256": "7b6beeb1df59c56917eb11869658649d91375d9f8f9ae66389d8daa6527d1431"
+      },
+      {
+        "path": "diagnostic_2_frame_002319.png",
+        "frame_index": 2319,
+        "pts_ticks": 46381,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "video_time_s": 77.30166666666666,
+        "sha256": "4f80b2c0e44355bcb589f63d42ce0296f0688a5b7646569a240a307f44139701"
+      }
+    ],
+    "decoder_logs": [],
+    "rotation_ccw_degrees": [
+      0
+    ],
+    "rotation": 0,
+    "encoded_to_display": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "display_width": 3840,
+    "display_height": 2160,
+    "decoded_frames": 4638,
+    "missing_pts": 0,
+    "nonincreasing_pts": 0,
+    "first_pts_ticks": 0,
+    "last_pts_ticks": 92742,
+    "elapsed_s": 222.31200000000536,
+    "checked_at_utc": "2026-10-26T06:22:19.440124+00:00"
+  }
+}
