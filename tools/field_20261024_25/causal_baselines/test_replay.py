@@ -83,6 +83,11 @@ class ReplayTests(unittest.TestCase):
             self.assertEqual(e.exception.code,2)
             self.assertFalse(output.exists())
 
+    def test_library_field_replay_also_rejects_holdout(self):
+        field=json.loads(Path(__file__).with_name("field_config.json").read_text())
+        with self.assertRaisesRegex(ValueError,"holdout"):
+            list(replay.replay_events([],field,"T13",ORIGIN,ORIGIN+100_000_000))
+
     def test_existing_output_and_lock_are_preserved(self):
         with tempfile.TemporaryDirectory() as tmp:
             p=Path(tmp)/"out";p.mkdir();(p/"old.lock").write_text("keep")

@@ -40,6 +40,7 @@ def event_key(event):
 
 
 def read_events(normalized, experiment, config, manifest):
+    if experiment not in DEVELOPMENT:raise ValueError("whole-bag holdout gate: development input only")
     row = next(r for r in manifest["formal_bags"] if r["id"] == experiment)
     events = []
     counts = Counter()
@@ -68,6 +69,8 @@ def read_events(normalized, experiment, config, manifest):
 def replay_events(events, config, experiment, origin_ns, end_ns, config_hash="unsaved", deadline=None):
     """Yield one publication at a time; no future rows reach any estimator."""
     model.validate_config(config)
+    if config["scope"] == "field" and experiment not in DEVELOPMENT:
+        raise ValueError("whole-bag holdout gate: development replay only")
     engines = {m: model.Baseline(m, config) for m in model.METHODS}
     events = sorted(events, key=event_key)
     if len(events) > config["max_events"]:raise ValueError("event budget exceeded")
