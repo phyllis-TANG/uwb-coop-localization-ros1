@@ -77,8 +77,8 @@
       "size_bytes": 476658182,
       "extract_subdir": "T11_video",
       "archive_format": "zip",
-      "status": "release_uploaded_not_downloaded_or_crc_verified",
-      "sha256_source": "GitHub_release_asset_digest_not_independently_recomputed"
+      "status": "independently_hash_crc_and_full_decode_verified",
+      "sha256_source": "independently_recomputed_original_download_bytes"
     },
     {
       "id": "T12_video",
@@ -88,8 +88,8 @@
       "size_bytes": 1026621145,
       "extract_subdir": "T12_video",
       "archive_format": "zip",
-      "status": "release_uploaded_not_downloaded_or_crc_verified",
-      "sha256_source": "GitHub_release_asset_digest_not_independently_recomputed"
+      "status": "independently_hash_crc_and_full_decode_verified",
+      "sha256_source": "independently_recomputed_original_download_bytes"
     },
     {
       "id": "T13_video",
@@ -99,8 +99,30 @@
       "size_bytes": 822955790,
       "extract_subdir": "T13_video",
       "archive_format": "zip",
-      "status": "release_uploaded_not_downloaded_or_crc_verified",
-      "sha256_source": "GitHub_release_asset_digest_not_independently_recomputed"
+      "status": "independently_hash_crc_and_full_decode_verified",
+      "sha256_source": "independently_recomputed_original_download_bytes"
+    },
+    {
+      "id": "T14_video",
+      "name": "T14.zip",
+      "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/T14.zip",
+      "sha256": "c8e258ed70067d1fc25ba6e3a9b82879c4d9a317e6a35fa8d2301c55bd4794cf",
+      "size_bytes": 1039698424,
+      "extract_subdir": "T14_video",
+      "archive_format": "zip",
+      "status": "independently_hash_crc_and_full_decode_verified",
+      "sha256_source": "independently_recomputed_original_download_bytes"
+    },
+    {
+      "id": "T15_video",
+      "name": "T15.zip",
+      "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/T15.zip",
+      "sha256": "4b34f617a9d6c7e22766e6f977d19b8d47c3aaa970e959a4498d5403c59a4ecb",
+      "size_bytes": 885476468,
+      "extract_subdir": "T15_video",
+      "archive_format": "zip",
+      "status": "independently_hash_crc_and_full_decode_verified",
+      "sha256_source": "independently_recomputed_original_download_bytes"
     }
   ],
   "formal_bags": [
@@ -762,18 +784,99 @@
       "motion_coverage_status": "not_checked",
       "bag_time_mapping_status": "not_validated",
       "use_frame_pts": true
-    }
-  ],
-  "pending_videos": [
+    },
+    {
+      "experiment_id": "T11",
+      "asset_id": "T11_video",
+      "relative_path": "IMG_7350.MOV",
+      "sha256": "5ce17f35864f50c925e6ccb725f623c3f739b2500c82de96b59da854df91a077",
+      "size_bytes": 476838991,
+      "duration_s": 83.035,
+      "encoded_width": 3840,
+      "encoded_height": 2160,
+      "declared_frames": 2491,
+      "decoded_frames": 2491,
+      "rotation_ccw_deg": 0,
+      "full_decode_status": "passed",
+      "experiment_mapping_source": "operator_archive_label_not_independent_action_identity",
+      "motion_coverage_status": "separate_event_audit_required",
+      "bag_time_mapping_status": "not_accepted",
+      "use_frame_pts": true
+    },
+    {
+      "experiment_id": "T12",
+      "asset_id": "T12_video",
+      "relative_path": "IMG_7352.MOV",
+      "sha256": "ef4cece5d7da94ea7cfcc32c5cb8164d663cfe6fb332bf6b242411b363f9e4cd",
+      "size_bytes": 1027002267,
+      "duration_s": 179.17,
+      "encoded_width": 3840,
+      "encoded_height": 2160,
+      "declared_frames": 5375,
+      "decoded_frames": 5375,
+      "rotation_ccw_deg": 0,
+      "full_decode_status": "passed",
+      "experiment_mapping_source": "operator_archive_label_not_independent_action_identity",
+      "motion_coverage_status": "separate_event_audit_required",
+      "bag_time_mapping_status": "not_accepted",
+      "use_frame_pts": true
+    },
+    {
+      "experiment_id": "T13",
+      "asset_id": "T13_video",
+      "relative_path": "IMG_7353.MOV",
+      "sha256": "1fca28d78157cd9b73e7955e59c1b9194cb1fb8a5ae80386926934f7d40d54c2",
+      "size_bytes": 823259653,
+      "duration_s": 143.57,
+      "encoded_width": 3840,
+      "encoded_height": 2160,
+      "declared_frames": 4307,
+      "decoded_frames": 4307,
+      "rotation_ccw_deg": 0,
+      "full_decode_status": "passed",
+      "experiment_mapping_source": "operator_archive_label_not_independent_action_identity",
+      "motion_coverage_status": "separate_event_audit_required",
+      "bag_time_mapping_status": "not_accepted",
+      "use_frame_pts": true
+    },
     {
       "experiment_id": "T14",
-      "status": "not_in_nine_asset_snapshot"
+      "asset_id": "T14_video",
+      "relative_path": "IMG_7357.MOV",
+      "sha256": "ab15655b3f3d35846058b348a1e0f59282f25854eacbfd64467a960a1bc06848",
+      "size_bytes": 1040203691,
+      "duration_s": 182.04166666666666,
+      "encoded_width": 3840,
+      "encoded_height": 2160,
+      "declared_frames": 5459,
+      "decoded_frames": 5459,
+      "rotation_ccw_deg": 0,
+      "full_decode_status": "passed",
+      "experiment_mapping_source": "operator_archive_label_not_independent_action_identity",
+      "motion_coverage_status": "separate_event_audit_required",
+      "bag_time_mapping_status": "not_accepted",
+      "use_frame_pts": true
     },
     {
       "experiment_id": "T15",
-      "status": "not_in_nine_asset_snapshot"
+      "asset_id": "T15_video",
+      "relative_path": "IMG_7358.MOV",
+      "sha256": "8fba8eaffbf12c98420caeb3c359649fbf7cd4b27ab97b03db309a28491106be",
+      "size_bytes": 885859287,
+      "duration_s": 154.60333333333332,
+      "encoded_width": 3840,
+      "encoded_height": 2160,
+      "declared_frames": 4638,
+      "decoded_frames": 4638,
+      "rotation_ccw_deg": 0,
+      "full_decode_status": "passed",
+      "experiment_mapping_source": "operator_archive_label_not_independent_action_identity",
+      "motion_coverage_status": "separate_event_audit_required",
+      "bag_time_mapping_status": "not_accepted",
+      "use_frame_pts": true
     }
   ],
+  "pending_videos": [],
   "global_limits": [
     "Raw bytes are immutable; checksum agreement is not a localization-accuracy claim.",
     "Holdout structure QC is allowed; never tune localization parameters against holdout reference errors.",
@@ -781,33 +884,17 @@
     "No validated continuous ground truth exists yet."
   ],
   "release_updated_at_utc": "2026-10-25T19:22:02Z",
-  "pending_qc_video_assets": [
-    {
-      "asset_id": "T11_video",
-      "experiment_id": "T11",
-      "archive_filename": "T11.zip",
-      "status": "available_on_release_pending_download_hash_crc_and_full_decode",
-      "movie_relative_path": null,
-      "movie_sha256": null,
-      "movie_duration_s": null
-    },
-    {
-      "asset_id": "T12_video",
-      "experiment_id": "T12",
-      "archive_filename": "T12.zip",
-      "status": "available_on_release_pending_download_hash_crc_and_full_decode",
-      "movie_relative_path": null,
-      "movie_sha256": null,
-      "movie_duration_s": null
-    },
-    {
-      "asset_id": "T13_video",
-      "experiment_id": "T13",
-      "archive_filename": "T13.zip",
-      "status": "available_on_release_pending_download_hash_crc_and_full_decode",
-      "movie_relative_path": null,
-      "movie_sha256": null,
-      "movie_duration_s": null
-    }
-  ]
+  "pending_qc_video_assets": [],
+  "coordinator_reconciliation": {
+    "review_date": "2026-10-27",
+    "base_commit": "7128abc769121f1f39c3959ce195ac545656c86c",
+    "applied_proposal": "video_reference_20261026/coordinator_manifest_patch.json",
+    "proposal_base_blob_sha": "9e17ae2576792b45ba475854148f702c0fc01489",
+    "proposal_base_canonical_utf8_lf_sha256": "d4cd1ecc0e9bb71a0c18b8fa62487f6b02e6ee8549783c472d876ebebb1ad544",
+    "media_evidence": "video_reference_20261026/README.md and media_qc.json",
+    "verification_scope": "Reconciled prior PR49 hash/CRC/full-decode evidence; coordinator did not download or decode media again.",
+    "position_reference_approved_scope": "not_accepted",
+    "checker_originals_release_status": "IMG_7336/IMG_7337 available to PR49 video worker; not published as Release assets by this reconciliation.",
+    "historical_fields_note": "snapshot_date, base_commit and release_updated_at_utc retain the original intake snapshot; reconciliation date and base are recorded separately."
+  }
 }

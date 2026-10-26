@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "algorithm_base_commit": "7128abc769121f1f39c3959ce195ac545656c86c",
+  "scope": "coordinator documentation and media identity reconciliation; no algorithm/field/synthetic execution",
+  "manifest_preimage_sha256": "d4cd1ecc0e9bb71a0c18b8fa62487f6b02e6ee8549783c472d876ebebb1ad544",
+  "rfc6902_tests_passed": [
+    "/assets",
+    "/motion_videos",
+    "/pending_videos",
+    "/pending_qc_video_assets"
+  ],
+  "unchanged_manifest_sections": [
+    "formal_bags",
+    "historical_and_fault_bags",
+    "reference_videos",
+    "global_limits"
+  ],
+  "assets": 11,
+  "motion_videos": 8,
+  "reference_approved_scope": "not_accepted",
+  "prepare_tests_passed": 13,
+  "prepare_tests_command": "python3 -m unittest discover -s tools/field_20261024_25 -p test_prepare.py -v",
+  "changed_relative_links_checked": 6,
+  "media_redownloaded_or_decoded": false,
+  "algorithms_modified": false,
+  "overnight_jobs_started": false,
+  "note": "The two tasks are dispatch instructions; workers must start separately. Original PR49 checks are reused, not re-executed."
+}

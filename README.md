@@ -4,11 +4,13 @@
 
 Start with the [current field-session entry point](docs/field_tests/20261024_25/README.md).
 It contains verified Release data hashes, corrected field measurements, bag/video
-intake results, separate sandbox/video/coordinator runbooks, and a bounded
-[nightly sandbox work order](docs/field_tests/20261024_25/NIGHTLY_SANDBOX.md).
-The eight new formal dynamic bags passed complete decoding; received videos
-passed archive and full-video decode checks. Visual reference precision and
-synchronization remain open, including Car2 marker extraction. Read the current
+intake results and the current
+[two-worker integration/T10 work order](docs/field_tests/20261024_25/NIGHTLY_INTEGRATION_20261027.md).
+PR44–49 are merged at the common algorithm baseline `7128abc769121f1f39c3959ce195ac545656c86c`.
+The eight new formal dynamic bags passed complete decoding; PR49 checked all 18
+MOVs (41,381 frames). Reference scope remains `not_accepted`; room-frame field
+fusion still needs geometry, initialization and timing inputs. PR47's synthetic
+reliability estimator has not yet been integrated into the field EKF. Read the current
 handoff before reusing historical paths, calibration or evaluation claims below.
 
 This repository will contain a modular ROS 1 experiment platform for UWB-assisted
