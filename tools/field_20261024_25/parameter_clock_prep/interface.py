@@ -21,6 +21,14 @@ def provided(value):
     return model.known(value)
 
 
+def derived_kind(items,neutral):
+    """A derivation must not upgrade assumptions or hide synthetic inputs."""
+    kinds=[item.get("source_kind","unspecified") for item in items]
+    if "synthetic" in kinds:return "synthetic"
+    if any("engineering" in k or "assumption" in k for k in kinds):return "engineering_assumption"
+    return neutral
+
+
 def compile_clock(group, adjustment, source_id):
     """sample_master_ns = affine(header_host_ns) + signed sample offset.
 
@@ -48,7 +56,8 @@ def compile_clock(group, adjustment, source_id):
     output.update(status="provided", destination_origin_ns=group["destination_origin_ns"]+adjustment["offset_ns"],
         uncertainty_ns=group["uncertainty_ns"]+adjustment["uncertainty_ns"],
         source=group["source"]+"; "+adjustment["source"], source_clock_id=source_id,
-        source_kind="synthetic" if "synthetic" in (group.get("source_kind"),adjustment.get("source_kind")) else "documented_calibration",
+        source_kind=derived_kind([group,adjustment],"provided_clock_mapping"),
+        input_source_kinds=[group.get("source_kind","unspecified"),adjustment.get("source_kind","unspecified")],
         valid_source_interval_ns=interval, sample_time_semantics=adjustment.get("semantics"))
     return output
 
@@ -87,7 +96,9 @@ def compile_template(template):
             base = p-model.rotation(heading) @ arm
             cc["initial_room_pose"] = {"status":"provided","value":[float(base[0]),float(base[1]),model.wrap(heading)],
                 "source":"derived: p_base=p_antenna-R(yaw)*lever_xy; "+xy["source"]+"; "+yaw["source"]+"; "+lever["source"],
-                "source_kind":"derived_record", "uncertainty_note":"PR46 engineering covariance retained; input uncertainty/correlation not newly calibrated"}
+                "source_kind":derived_kind([xy,yaw,lever],"derived_input"),
+                "input_provenance":{"antenna_xy":copy.deepcopy(xy),"body_yaw":copy.deepcopy(yaw),"lever_xy":copy.deepcopy(lever)},
+                "uncertainty_note":"PR46 engineering covariance retained; input uncertainty/correlation not newly calibrated"}
             cc["initial_record_binding"] = copy.deepcopy(binding)
             derived[car] = "base initial pose derived only from provided antenna XY, body yaw, XY lever and exact record binding"
         else:

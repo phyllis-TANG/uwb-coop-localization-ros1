@@ -162,5 +162,23 @@ class MinimalGeometryTests(unittest.TestCase):
         c["vehicles"]["car1"]["antenna_height_m"]["value"]=False
         with self.assertRaisesRegex(ValueError,"invalid antenna height"):model.validate_config(c)
 
+    def test_clock_derivation_does_not_promote_engineering_assumptions(self):
+        group={"status":"provided","source_origin_ns":100,"destination_origin_ns":200,"rate_numerator":1,"rate_denominator":1,
+            "uncertainty_ns":3,"valid_source_interval_ns":[100,1000],"source":"declared approximation","source_kind":"engineering"}
+        adjustment={"status":"provided","offset_ns":-7,"uncertainty_ns":4,"source":"assumed timing model","source_kind":"engineering"}
+        self.assertEqual(interface.compile_clock(group,adjustment,"host")["source_kind"],"engineering_assumption")
+
+    def test_synthetic_initial_pose_cannot_be_hidden_by_base_derivation(self):
+        import audit
+        manifest=json.loads((audit.replay.SESSION/"manifest.json").read_text())
+        geometry=json.loads((audit.replay.SESSION/"geometry.json").read_text())
+        t=audit.templates(geometry,manifest,{})["T08"];cc=t["vehicles"]["car1"]
+        for name,value in [("initial_antenna_xy_room_m",[1.,2.]),("initial_body_yaw_room_rad",.3),("antenna_body_xy_m",[.1,.2])]:
+            cc[name].update(status="provided",value=value,source="explicit fixture",source_kind="engineering")
+        cc["initial_antenna_xy_room_m"]["source_kind"]="synthetic"
+        cc["initial_record_binding"].update(status="provided",record_index=1,header_epoch_ns=100,receive_epoch_ns=101,source="explicit source record")
+        with self.assertRaisesRegex(ValueError,"synthetic parameter"):
+            interface.compile_template(t)
+
 
 if __name__=="__main__":unittest.main()
