@@ -1,0 +1,34 @@
+{
+  "environment": {
+    "numpy": "2.2.6",
+    "python": "3.10.12",
+    "thread_env": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    }
+  },
+  "fingerprint_sha256": "c1211f6b7584830b0dadc2022aaf18eef7208a36db8df771520448e93cb2a0f0",
+  "protocol_sha256": "d325758e35673b8f71177b3553478eaa726ebb667c74a6aa4ef75b1ae507bf5b",
+  "source_sha256": {
+    "tools/field_20261024_25/causal_baselines/model.py": "1bbc0c0b6b4d76a4d7c7d25e35260e80c1e601dccb86f223087e4651ea0d82c2",
+    "tools/field_20261024_25/causal_baselines/replay.py": "ade3c2405041d5d99491731dc7be3f4678c6847fb90e04e356cfac985516a6f4",
+    "tools/field_20261024_25/causal_baselines/synthetic_validation.py": "31aea9bee97a91bde27295304991fa1495b6952e2baa1b38c347ae3de73e42d4",
+    "tools/field_20261024_25/causal_baselines/test_model.py": "6adac54a1f1e94a0cf55c0f211b609fa1f226ff47c8a1d4c7895a24634dea0ea",
+    "tools/field_20261024_25/causal_baselines/test_replay.py": "ba4425db0d2f4c0b93a2ba5ffd5902811e83b52513afbb4082dfed3441a9ae62",
+    "tools/field_20261024_25/causal_baselines/test_verification.py": "ddd2f6f3978949b03a0ed8f38fbe3c34ce0a719acef35d398787e6bd3d13530b",
+    "tools/field_20261024_25/causal_baselines/verify_outputs.py": "dcbe85d26c00dc7980cb19d76875b6880ebc0a9385e441756279708e146c72fc",
+    "tools/field_20261024_25/causal_reliability/engine.py": "418780a477c14328cf3389d7f3fcf0d11966227f8ca5fa3ca4d596e3f6906091",
+    "tools/field_20261024_25/causal_reliability/evaluate.py": "cd94d3276f19789caee16d98cd0bbb34ee47327ab6ee8f56830add4615013595",
+    "tools/field_20261024_25/causal_reliability/io_utils.py": "c764a524bf8a2e499789309813560544a99cb4d994e217c8d4405222ec86c434",
+    "tools/field_20261024_25/causal_reliability/preflight_t10.py": "236034da65229b9a0aaee94ede7d62c839be176475eafe06a9bbc5125dee0412",
+    "tools/field_20261024_25/causal_reliability/report.py": "0c5d62d6b12caf084dcf77cf6ee0ed5a1de42ac470c9e3ca37b9d39ff4931d95",
+    "tools/field_20261024_25/causal_reliability/run.py": "ed9d7f75e4a4bf72734c8e6ecf65ce34b44d4bed6977b9206c8d83a1acf1e18c",
+    "tools/field_20261024_25/causal_reliability/simulate.py": "8992eb46baa15f16d3752593262aa223294470f24b2edd313aedfba9f315a482",
+    "tools/field_20261024_25/causal_reliability/test_integration.py": "3185e30565189f631b51d0a92e4a0857f5d9ab8c08ef4f4fd5043575a523a19c",
+    "tools/field_20261024_25/causal_reliability/verify_outputs.py": "f61fe7227e60150db4c7605dc5207af1955c1566153b971614760db2d7e6fec3",
+    "tools/field_20261024_25/development.py": "73dd54a331cbb2bf836817ad9a2784bd0e647131c42b3b15d581dfa035b0b384",
+    "tools/field_20261024_25/normalize.py": "d0766d16736b6f9ae720a4dcd9760551819c5cadbcb8c136e1030d54d9312703",
+    "tools/field_20261024_25/prepare.py": "e37544b930fd0370de865f54aaab12c75ffc24603ee0eeae3d8d153b3e5b41c0",
+    "tools/field_20261024_25/run_nightly.py": "e3be2f6b7702b334ae8164935b9059ba04b8b124e0e202c9425e0a95d53ed524"
+  }
+}

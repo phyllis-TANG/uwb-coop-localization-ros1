@@ -1,0 +1,381 @@
+[
+  {
+    "stage": "parameter_regression",
+    "command_argv": [
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/field_20261024_25/parameter_clock_prep",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "created_at_utc": "2026-10-26T18:41:02.984264+00:00",
+    "elapsed_s": 0.10115297901211306,
+    "exit_code": 0,
+    "log": "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/logs/parameter_regression_01.log",
+    "checkpoint": "02_test_commands.json"
+  },
+  {
+    "stage": "baseline_regression",
+    "command_argv": [
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/field_20261024_25/causal_baselines",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "created_at_utc": "2026-10-26T18:41:02.984160+00:00",
+    "elapsed_s": 0.36489314696518704,
+    "exit_code": 0,
+    "log": "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/logs/baseline_regression_01.log",
+    "checkpoint": "02_test_commands.json"
+  },
+  {
+    "stage": "integration",
+    "command_argv": [
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/field_20261024_25/causal_reliability",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "created_at_utc": "2026-10-26T18:41:02.984759+00:00",
+    "elapsed_s": 1.8789425130235031,
+    "exit_code": 1,
+    "log": "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/logs/integration_01.log",
+    "checkpoint": "02_test_commands.json"
+  },
+  {
+    "stage": "integration_after_import_and_support_fixture_fix",
+    "command_argv": [
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/field_20261024_25/causal_reliability",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "elapsed_s": 1.560675735003315,
+    "created_at_utc": "2026-10-26T18:41:54.070980+00:00",
+    "checkpoint": "03_integration_fix.json"
+  },
+  {
+    "stage": "integration_03",
+    "command_argv": [
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/field_20261024_25/causal_reliability",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "exit_code": 0,
+    "elapsed_s": 1.814738308021333,
+    "finished_at_utc": "2026-10-26T18:53:59.223509+00:00",
+    "checkpoint": "06_pre_smoke_checks.json"
+  },
+  {
+    "stage": "T10_preflight",
+    "command_argv": [
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+      "tools/field_20261024_25/causal_reliability/preflight_t10.py",
+      "--output",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/t10_preflight_v1"
+    ],
+    "exit_code": 2,
+    "elapsed_s": 0.0769189769634977,
+    "finished_at_utc": "2026-10-26T18:53:59.300465+00:00",
+    "checkpoint": "06_pre_smoke_checks.json"
+  },
+  {
+    "stage": "07_smoke_v1",
+    "status": "DONE",
+    "command_argv": [
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+      "tools/field_20261024_25/causal_reliability/run.py",
+      "--output",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/smoke_v1",
+      "--smoke",
+      "--max-seconds",
+      "900"
+    ],
+    "started_at_utc": "2026-10-26T18:54:57.209526+00:00",
+    "timeout_s": 900,
+    "expected_exit_code": 0,
+    "log": "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/logs/07_smoke_v1.log",
+    "exit_code": 0,
+    "elapsed_s": 25.153910405992065,
+    "finished_at_utc": "2026-10-26T18:55:22.363439+00:00",
+    "checkpoint": "07_smoke_v1.json"
+  },
+  {
+    "stage": "08_smoke_readback_v1",
+    "status": "DONE",
+    "command_argv": [
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+      "tools/field_20261024_25/causal_reliability/verify_outputs.py",
+      "--results",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/smoke_v1",
+      "--output",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/smoke_v1_readback.json"
+    ],
+    "started_at_utc": "2026-10-26T18:55:56.227755+00:00",
+    "timeout_s": 900,
+    "expected_exit_code": 0,
+    "log": "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/logs/08_smoke_readback_v1.log",
+    "exit_code": 0,
+    "elapsed_s": 10.730570502986666,
+    "finished_at_utc": "2026-10-26T18:56:06.958326+00:00",
+    "checkpoint": "08_smoke_readback_v1.json"
+  },
+  {
+    "stage": "09_final_integration_regression",
+    "status": "DONE",
+    "command_argv": [
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/field_20261024_25/causal_reliability",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "started_at_utc": "2026-10-26T18:58:27.271402+00:00",
+    "timeout_s": 180,
+    "expected_exit_code": 0,
+    "log": "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/logs/09_final_integration_regression.log",
+    "exit_code": 0,
+    "elapsed_s": 1.8172234179801308,
+    "finished_at_utc": "2026-10-26T18:58:29.088625+00:00",
+    "checkpoint": "09_final_integration_regression.json"
+  },
+  {
+    "stage": "10_changed_source_resume_refusal",
+    "status": "DONE",
+    "command_argv": [
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+      "tools/field_20261024_25/causal_reliability/run.py",
+      "--output",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/smoke_v1",
+      "--smoke",
+      "--resume"
+    ],
+    "started_at_utc": "2026-10-26T18:59:17.878676+00:00",
+    "timeout_s": 180,
+    "expected_exit_code": 1,
+    "log": "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/logs/10_changed_source_resume_refusal.log",
+    "exit_code": 1,
+    "elapsed_s": 0.11403650499414653,
+    "finished_at_utc": "2026-10-26T18:59:17.992716+00:00",
+    "checkpoint": "10_changed_source_resume_refusal.json"
+  },
+  {
+    "stage": "11_smoke_v2",
+    "status": "DONE",
+    "command_argv": [
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+      "tools/field_20261024_25/causal_reliability/run.py",
+      "--output",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/smoke_v2",
+      "--smoke",
+      "--max-seconds",
+      "900"
+    ],
+    "started_at_utc": "2026-10-26T18:59:18.024590+00:00",
+    "timeout_s": 900,
+    "expected_exit_code": 0,
+    "log": "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/logs/11_smoke_v2.log",
+    "exit_code": 0,
+    "elapsed_s": 24.507044328027405,
+    "finished_at_utc": "2026-10-26T18:59:42.531634+00:00",
+    "checkpoint": "11_smoke_v2.json"
+  },
+  {
+    "stage": "12_smoke_v2_readback",
+    "status": "DONE",
+    "command_argv": [
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+      "tools/field_20261024_25/causal_reliability/verify_outputs.py",
+      "--results",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/smoke_v2",
+      "--output",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/smoke_v2_readback.json"
+    ],
+    "started_at_utc": "2026-10-26T19:00:55.666269+00:00",
+    "timeout_s": 900,
+    "expected_exit_code": 0,
+    "log": "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/logs/12_smoke_v2_readback.log",
+    "exit_code": 0,
+    "elapsed_s": 11.130612117005512,
+    "finished_at_utc": "2026-10-26T19:01:06.796881+00:00",
+    "checkpoint": "12_smoke_v2_readback.json"
+  },
+  {
+    "stage": "13_T10_frozen_preflight",
+    "status": "DONE",
+    "command_argv": [
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+      "tools/field_20261024_25/causal_reliability/preflight_t10.py",
+      "--output",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/t10_preflight_frozen"
+    ],
+    "started_at_utc": "2026-10-26T19:02:10.531918+00:00",
+    "timeout_s": 180,
+    "expected_exit_code": 2,
+    "log": "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/logs/13_T10_frozen_preflight.log",
+    "exit_code": 2,
+    "elapsed_s": 0.11382098897593096,
+    "finished_at_utc": "2026-10-26T19:02:10.645744+00:00",
+    "checkpoint": "13_T10_frozen_preflight.json"
+  },
+  {
+    "stage": "14_matrix_v1",
+    "status": "DONE",
+    "command_argv": [
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+      "tools/field_20261024_25/causal_reliability/run.py",
+      "--output",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/matrix_v1",
+      "--max-seconds",
+      "7200"
+    ],
+    "started_at_utc": "2026-10-26T19:02:10.688164+00:00",
+    "timeout_s": 9000,
+    "expected_exit_code": 0,
+    "log": "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/logs/14_matrix_v1.log",
+    "exit_code": 0,
+    "elapsed_s": 365.85309634701116,
+    "finished_at_utc": "2026-10-26T19:08:16.541260+00:00",
+    "checkpoint": "14_matrix_v1.json"
+  },
+  {
+    "stage": "17_full_portable_readback",
+    "status": "DONE",
+    "command_argv": [
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/transfer_bundle/A_causal_reliability_20261027/source/tools/field_20261024_25/causal_reliability/verify_outputs.py",
+      "--results",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/transfer_bundle/A_causal_reliability_20261027/matrix",
+      "--output",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/transfer_bundle/A_causal_reliability_20261027/matrix_independent_readback.json"
+    ],
+    "started_at_utc": "2026-10-26T19:09:16.639656+00:00",
+    "timeout_s": 1800,
+    "expected_exit_code": 0,
+    "log": "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/logs/17_full_portable_readback.log",
+    "exit_code": 0,
+    "elapsed_s": 162.43595655198442,
+    "finished_at_utc": "2026-10-26T19:11:59.075612+00:00",
+    "checkpoint": "17_full_portable_readback.json"
+  },
+  {
+    "stage": "18_descriptive_report",
+    "status": "DONE",
+    "command_argv": [
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/transfer_bundle/A_causal_reliability_20261027/source/tools/field_20261024_25/causal_reliability/report.py",
+      "--results",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/transfer_bundle/A_causal_reliability_20261027/matrix",
+      "--verification",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/transfer_bundle/A_causal_reliability_20261027/matrix_independent_readback.json",
+      "--output",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/transfer_bundle/A_causal_reliability_20261027/report"
+    ],
+    "started_at_utc": "2026-10-26T19:12:09.913642+00:00",
+    "timeout_s": 300,
+    "expected_exit_code": 0,
+    "log": "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/logs/18_descriptive_report.log",
+    "exit_code": 0,
+    "elapsed_s": 2.4174269860377535,
+    "finished_at_utc": "2026-10-26T19:12:12.331072+00:00",
+    "checkpoint": "18_descriptive_report.json"
+  },
+  {
+    "stage": "19_reviewed_figures",
+    "status": "DONE",
+    "command_argv": [
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+      "docs/field_tests/20261024_25/causal_reliability_20261027/plot_reviewed_summary.py",
+      "--bundle",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/transfer_bundle/A_causal_reliability_20261027",
+      "--output",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/transfer_bundle/A_causal_reliability_20261027/report_reviewed"
+    ],
+    "started_at_utc": "2026-10-26T19:18:05.388278+00:00",
+    "timeout_s": 600,
+    "expected_exit_code": 0,
+    "log": "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/logs/19_reviewed_figures.log",
+    "exit_code": 0,
+    "elapsed_s": 7.272202746011317,
+    "finished_at_utc": "2026-10-26T19:18:12.660480+00:00",
+    "checkpoint": "19_reviewed_figures.json"
+  },
+  {
+    "stage": "20_alias_input_verification",
+    "status": "DONE",
+    "command_argv": [
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/validate_aliases.py"
+    ],
+    "started_at_utc": "2026-10-26T19:19:25.562051+00:00",
+    "timeout_s": 180,
+    "expected_exit_code": 0,
+    "log": "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/logs/20_alias_input_verification.log",
+    "exit_code": 0,
+    "elapsed_s": 2.9177979130181484,
+    "finished_at_utc": "2026-10-26T19:19:28.479851+00:00",
+    "checkpoint": "20_alias_input_verification.json"
+  },
+  {
+    "stage": "21_archive_build",
+    "status": "DONE",
+    "command_argv": [
+      "python3",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/package_archive.py"
+    ],
+    "started_at_utc": "2026-10-26T19:25:56.943333+00:00",
+    "timeout_s": 600,
+    "expected_exit_code": 0,
+    "log": "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/logs/21_archive_build.log",
+    "exit_code": 0,
+    "elapsed_s": 32.12289094401058,
+    "finished_at_utc": "2026-10-26T19:26:29.066226+00:00",
+    "checkpoint": "21_archive_build.json"
+  },
+  {
+    "stage": "22_NAS_retrieval_verification",
+    "status": "DONE",
+    "command_argv": [
+      "python3",
+      "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/verify_transfer.py"
+    ],
+    "started_at_utc": "2026-10-26T19:28:02.978883+00:00",
+    "timeout_s": 600,
+    "expected_exit_code": 0,
+    "log": "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/logs/22_NAS_retrieval_verification.log",
+    "exit_code": 0,
+    "elapsed_s": 32.324285954004154,
+    "finished_at_utc": "2026-10-26T19:28:35.303172+00:00",
+    "checkpoint": "22_NAS_retrieval_verification.json"
+  }
+]

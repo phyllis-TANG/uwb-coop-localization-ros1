@@ -1,0 +1,321 @@
+{
+  "B_handoff_status": "not present in frozen starting checkout; no waiting or assumption substitution",
+  "actual_field_ATE_RMSE": null,
+  "bag_read": false,
+  "baseline_blockers": [
+    "car1:antenna_body_xy_m:unknown",
+    "car1:initial_room_pose:unknown",
+    "car1:odom_clock:unknown",
+    "car1:range_clock:unknown",
+    "car2:antenna_body_xy_m:unknown",
+    "car2:initial_room_pose:unknown",
+    "car2:odom_clock:unknown",
+    "car2:range_clock:unknown"
+  ],
+  "blocked_fields": [
+    {
+      "details": {
+        "candidate_records": [],
+        "source": "physical odometry/base origin to antenna XY not established",
+        "source_kind": "unknown",
+        "status": "pending",
+        "uncertainty": null,
+        "uncertainty_reason": "not independently measured",
+        "value": null
+      },
+      "field": "vehicles.car1.antenna_body_xy_m",
+      "reason": "physical odometry/base origin to antenna XY not established",
+      "status": "pending"
+    },
+    {
+      "details": {
+        "candidate_records": [
+          {
+            "classification": "nominal route guidance; actual per-bag confirmation pending",
+            "value": [
+              1.5,
+              4.0
+            ]
+          }
+        ],
+        "source": "actual start at bound source record pending",
+        "source_kind": "unknown",
+        "status": "pending",
+        "uncertainty": null,
+        "uncertainty_reason": "not independently measured",
+        "value": null
+      },
+      "field": "vehicles.car1.initial_antenna_xy_room_m",
+      "reason": "actual start at bound source record pending",
+      "status": "pending"
+    },
+    {
+      "details": {
+        "candidate_records": [
+          {
+            "classification": "planned body heading; not marker orientation",
+            "value": -1.5707963267948966
+          }
+        ],
+        "source": "actual body heading at same bound source record pending",
+        "source_kind": "unknown",
+        "status": "pending",
+        "uncertainty": null,
+        "uncertainty_reason": "not independently measured",
+        "value": null
+      },
+      "field": "vehicles.car1.initial_body_yaw_room_rad",
+      "reason": "actual body heading at same bound source record pending",
+      "status": "pending"
+    },
+    {
+      "details": {
+        "first_arrived_candidate": {
+          "header_epoch_ns": 1792925284331894800,
+          "receive_epoch_ns": 1792925285431505126,
+          "record_index": 3,
+          "source_file_sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+          "topic": "/car1/odom"
+        },
+        "header_epoch_ns": null,
+        "receive_epoch_ns": null,
+        "record_index": null,
+        "source": "first accepted odometry record must be explicitly confirmed after clock-model validation",
+        "source_file_sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+        "status": "pending",
+        "video_trace": {
+          "frame_index": null,
+          "pts_ticks": null,
+          "time_base_den": null,
+          "time_base_num": null,
+          "time_mapping_id": null,
+          "video_sha256": null
+        }
+      },
+      "field": "vehicles.car1.initial_record_binding",
+      "reason": "first accepted odometry record must be explicitly confirmed after clock-model validation",
+      "status": "pending"
+    },
+    {
+      "details": {
+        "offset_ns": null,
+        "semantics": null,
+        "source": "sampling-to-header relation not calibrated; no receipt-header median correction",
+        "status": "pending",
+        "uncertainty_ns": null
+      },
+      "field": "vehicles.car1.sample_time_adjustments.odom",
+      "reason": "sampling-to-header relation not calibrated; no receipt-header median correction",
+      "status": "pending"
+    },
+    {
+      "details": {
+        "offset_ns": null,
+        "semantics": null,
+        "source": "sampling-to-header relation not calibrated; no receipt-header median correction",
+        "status": "pending",
+        "uncertainty_ns": null
+      },
+      "field": "vehicles.car1.sample_time_adjustments.uwb",
+      "reason": "sampling-to-header relation not calibrated; no receipt-header median correction",
+      "status": "pending"
+    },
+    {
+      "details": {
+        "candidate_records": [],
+        "source": "physical odometry/base origin to antenna XY not established",
+        "source_kind": "unknown",
+        "status": "pending",
+        "uncertainty": null,
+        "uncertainty_reason": "not independently measured",
+        "value": null
+      },
+      "field": "vehicles.car2.antenna_body_xy_m",
+      "reason": "physical odometry/base origin to antenna XY not established",
+      "status": "pending"
+    },
+    {
+      "details": {
+        "candidate_records": [
+          {
+            "classification": "carried T09 manual endpoint plus assumed unchanged placement; not newly measured T10 start",
+            "value": [
+              2.98,
+              3.07
+            ]
+          }
+        ],
+        "source": "actual start at bound source record pending",
+        "source_kind": "unknown",
+        "status": "pending",
+        "uncertainty": null,
+        "uncertainty_reason": "not independently measured",
+        "value": null
+      },
+      "field": "vehicles.car2.initial_antenna_xy_room_m",
+      "reason": "actual start at bound source record pending",
+      "status": "pending"
+    },
+    {
+      "details": {
+        "candidate_records": [
+          {
+            "classification": "planned body heading; not marker orientation",
+            "value": null
+          }
+        ],
+        "source": "actual body heading at same bound source record pending",
+        "source_kind": "unknown",
+        "status": "pending",
+        "uncertainty": null,
+        "uncertainty_reason": "not independently measured",
+        "value": null
+      },
+      "field": "vehicles.car2.initial_body_yaw_room_rad",
+      "reason": "actual body heading at same bound source record pending",
+      "status": "pending"
+    },
+    {
+      "details": {
+        "first_arrived_candidate": {
+          "header_epoch_ns": 1792925285157573158,
+          "receive_epoch_ns": 1792925285433124538,
+          "record_index": 117,
+          "source_file_sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+          "topic": "/car2/odom"
+        },
+        "header_epoch_ns": null,
+        "receive_epoch_ns": null,
+        "record_index": null,
+        "source": "first accepted odometry record must be explicitly confirmed after clock-model validation",
+        "source_file_sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+        "status": "pending",
+        "video_trace": {
+          "frame_index": null,
+          "pts_ticks": null,
+          "time_base_den": null,
+          "time_base_num": null,
+          "time_mapping_id": null,
+          "video_sha256": null
+        }
+      },
+      "field": "vehicles.car2.initial_record_binding",
+      "reason": "first accepted odometry record must be explicitly confirmed after clock-model validation",
+      "status": "pending"
+    },
+    {
+      "details": {
+        "offset_ns": null,
+        "semantics": null,
+        "source": "sampling-to-header relation not calibrated; no receipt-header median correction",
+        "status": "pending",
+        "uncertainty_ns": null
+      },
+      "field": "vehicles.car2.sample_time_adjustments.odom",
+      "reason": "sampling-to-header relation not calibrated; no receipt-header median correction",
+      "status": "pending"
+    },
+    {
+      "details": {
+        "offset_ns": null,
+        "semantics": null,
+        "source": "sampling-to-header relation not calibrated; no receipt-header median correction",
+        "status": "pending",
+        "uncertainty_ns": null
+      },
+      "field": "vehicles.car2.sample_time_adjustments.uwb",
+      "reason": "sampling-to-header relation not calibrated; no receipt-header median correction",
+      "status": "pending"
+    },
+    {
+      "details": {
+        "deployment_grouping_status": "host grouping from session topology; per-node binary/time-mode confirmation still required",
+        "destination_origin_ns": null,
+        "rate_denominator": null,
+        "rate_numerator": null,
+        "source": "host/recorder clock relation and ROS time mode pending; NTP status is not a millisecond bound",
+        "source_kind": "unknown",
+        "source_origin_ns": null,
+        "status": "pending",
+        "uncertainty_ns": null,
+        "valid_source_interval_ns": [
+          null,
+          null
+        ]
+      },
+      "field": "clock_groups.car1_ros_host",
+      "reason": "host/recorder clock relation and ROS time mode pending; NTP status is not a millisecond bound",
+      "status": "pending"
+    },
+    {
+      "details": {
+        "deployment_grouping_status": "host grouping from session topology; per-node binary/time-mode confirmation still required",
+        "destination_origin_ns": null,
+        "rate_denominator": null,
+        "rate_numerator": null,
+        "source": "host/recorder clock relation and ROS time mode pending; NTP status is not a millisecond bound",
+        "source_kind": "unknown",
+        "source_origin_ns": null,
+        "status": "pending",
+        "uncertainty_ns": null,
+        "valid_source_interval_ns": [
+          null,
+          null
+        ]
+      },
+      "field": "clock_groups.car2_ros_host",
+      "reason": "host/recorder clock relation and ROS time mode pending; NTP status is not a millisecond bound",
+      "status": "pending"
+    }
+  ],
+  "branch": "analysis/a-side-se2-integration-20261027",
+  "code_commit": "7896c82d2454b67ea388341484a93c2265a209fb",
+  "created_at_utc": "2026-10-26T19:02:10.588714+00:00",
+  "existing_strict_three_baseline_command": [
+    "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python",
+    "tools/field_20261024_25/causal_baselines/replay.py",
+    "--normalized",
+    "<verified_normalized_root>",
+    "--config",
+    "strict_baseline_config.json",
+    "--experiment",
+    "T10",
+    "--output",
+    "<new_external_output>"
+  ],
+  "field_accuracy_evaluation_executed": false,
+  "known_heights": {
+    "car1": {
+      "applicability": "same mounting state assumed; no per-run fresh Z survey",
+      "source": "geometry.json mounts.car1.antenna_reference_height_m; SESSION_LOG_ARCHIVE.md section 54",
+      "source_kind": "operator_record",
+      "status": "provided",
+      "uncertainty_m": null,
+      "uncertainty_reason": "operator approximate height; instrument uncertainty not reported",
+      "value": 0.17
+    },
+    "car2": {
+      "applicability": "same mounting state assumed; no per-run fresh Z survey",
+      "source": "geometry.json mounts.car2.antenna_reference_height_m; SESSION_LOG_ARCHIVE.md section 55",
+      "source_kind": "operator_record",
+      "status": "provided",
+      "uncertainty_m": null,
+      "uncertainty_reason": "operator approximate height; instrument uncertainty not reported",
+      "value": 0.2
+    }
+  },
+  "limitations": [
+    "first-arrived odom candidates are provenance, not approved initial records",
+    "no assumption config created",
+    "holdout bags not opened"
+  ],
+  "next_step": "B supplies traceable initial pose/record binding, horizontal lever and clock/sample models; compile a new config, then call same Candidate/process event interface",
+  "reference_scope": "not_accepted",
+  "room_localization_executed": false,
+  "schema_version": 1,
+  "source_bag_sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+  "source_template_relative_path": "tools/field_20261024_25/parameter_clock_prep/results/T10_input_template.json",
+  "source_template_sha256": "6c3e50296eafc64a74de9e634f0b4d066cc0ba5a9614f544fb3338462a6c0f7a",
+  "status": "BLOCKED",
+  "worktree_dirty": false
+}

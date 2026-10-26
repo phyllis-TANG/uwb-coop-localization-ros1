@@ -1,15 +1,15 @@
-# A端阶段交接：正式矩阵前
+# A端中文交接：开发层完成
 
-当前分支 analysis/a-side-se2-integration-20261027；独立工作树 /home/ubuntu22/uwb-a-nightly-20261027。起点32445a299b3f4674b865c4d78c4f662e51b5b857；原算法工具与7128abc无差异。
+分支：`analysis/a-side-se2-integration-20261027`。冻结执行提交：`7896c82d2454b67ea388341484a93c2265a209fb`；起点：`32445a299b3f4674b865c4d78c4f662e51b5b857`。交付提交见草稿PR的HEAD，后续仅报告/归档补充。
 
-规格、九种同六维EKF比较、冻结80计划行/60唯一组合及独立回读实现完成。47原基线+17参数+25新增集成测试通过。两版各4个smoke及逐行独立回读通过；v2只增加诊断/审核，不改策略或阈值，旧源码及全部产物保留。PRE_MATRIX.json和validation/记录实际结果。
+**实际完成**：同PR46/48六维SE(2) EKF的9组比较；47原基线+17参数+25集成测试=89项通过；60正式共享输入完成、20角色重复去重，估计365.36s，失败/超时0。全量回读417,300输入事件、522,720逐车发布状态及3,240指标行通过；原窗口目录保持干净。另保留两版各4个smoke及诊断变更源码，输入/发布状态/指标逐字节相同。
 
-正式60组合矩阵尚未启动。本提交将冻结源码/配置后再运行；生成结果都在Git外新目录，不把smoke或PR47四维480组当正式本轮结果。T10已有模板仍缺真实初值/记录绑定、水平杆臂、时间来源，不等待B，不进行留出包定位或现场误差评价。
+**主要发现（合成开发）**：持续peer偏差时Car1的joint/Huber/gate+cap/组合RMSE约.174/.139/.165/.034m，不能声称门控必胜；正确peer下弱Car2的joint=.168、组合=.224、独立=.277m，保护损失协同收益；自洽故障下受影响车仍约.8m。gate+cap实际仅1次clip，限幅单独效应证据很弱。shadow-only控制有时优于组合，全部负结果保留。5个配对seed簇不是60个独立seed；PSD/cap不是误差保护级。
 
-下一条命令（当前Git外目录不存在才执行；首次不加--resume）：
+**失败与BLOCKED**：ensurepip缺失已换隔离安装；首次集成测试2问题已修复，日志保留。T10实际严格编译缺14组来源字段/8个基线条件，仍BLOCKED；无bag读取/定位/现场ATE或RMSE，参考not_accepted。T09/T11/T13/T15未定位回放或调参。
 
-```bash
-env OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 /home/ubuntu22/uwb-a-nightly-20261027-artifacts/venv/bin/python tools/field_20261024_25/causal_reliability/run.py --output /home/ubuntu22/uwb-a-nightly-20261027-artifacts/matrix_v1 --max-seconds 7200
-```
+**产物**：[结果与图表](REPORT.md)、[配置](frozen_protocol.json)、[测试/实验索引](RESULT_INDEX.json)、[归档与SHA](artifact_manifest.json)。完整包约672MB，位于NAS `//10.22.5.135/data/uwb_coop_artifacts/a_causal_reliability_20261027/`；已取回验证全部779个清单文件及20源码哈希，解包后实际回读通过。需LAN/VPN/NAS权限，无公开HTTP链接；不冒称另一物理机器执行验收。
 
-source_lock/输入/配置/输出均匹配时才可显式--resume；累计任务预算从2026-10-26T18:15:14Z起计6小时，未因暂停重置。检查点和原始日志在 /home/ubuntu22/uwb-a-nightly-20261027-artifacts/checkpoints 和 logs。后续交接会补分车结果、负结果、独立回读和NAS归档/SHA，当前尚不宣称这些已生成。
+**复核/续跑**：从归档根执行 `OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python source/tools/field_20261024_25/causal_reliability/verify_outputs.py --results matrix --output new_readback.json`。正式矩阵已完成，无需重跑；真正中断时严格同指纹加`--resume`，详见README。累计预算从18:15:14Z计6小时，未重置。
+
+**下一步三件事**：①协调验收B的T10实际初值/记录绑定、水平杆臂与时间来源，再接同一因果入口；②建立合格独立参考，针对墙/peer自洽错误验证，保留现场精度空值直到验收；③另起预登记的小型单因素试验，分离非反馈保持、gate和罕见cap的作用，复验弱Car2反例，继续关闭整包留出。
