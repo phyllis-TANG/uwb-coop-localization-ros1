@@ -186,6 +186,26 @@ class CausalFilterTests(unittest.TestCase):
         self.assertEqual(engine.process(range_event(offset=40_000_000,receive_offset=30_000_000))["status"],"future_measurement_time")
         self.assertEqual(engine.process(range_event(target="node_0",offset=90_000_000,index=104))["status"],"stale_odometry_support:car1")
 
+    def test_very_late_initialization_and_range_are_not_treated_as_current(self):
+        engine=model.Baseline("joint",config())
+        self.assertEqual(engine.process(odom(receive_offset=500_000_000))["status"],"stale_measurement_on_arrival")
+        self.assertFalse(engine.snapshot(ORIGIN+500_000_000)["car1"]["valid"])
+        engine=initialized()
+        self.assertEqual(engine.process(range_event(receive_offset=500_000_000))["status"],"stale_measurement_on_arrival")
+
+    def test_recent_arrival_with_old_measurement_does_not_hide_state_age(self):
+        engine=model.Baseline("joint",config())
+        engine.process(odom(receive_offset=190_000_000))
+        s=engine.snapshot(ORIGIN+250_000_000)["car1"]
+        self.assertEqual(s["receipt_age_ns"],60_000_000)
+        self.assertEqual(s["measurement_age_ns"],250_000_000)
+        self.assertFalse(s["valid"])
+
+    def test_snapshot_cannot_publish_state_before_admitted_data(self):
+        engine=initialized()
+        with self.assertRaisesRegex(ValueError,"precedes"):
+            engine.snapshot(ORIGIN)
+
     def test_car2_disconnect_does_not_block_car1_wall_update(self):
         engine=initialized()
         engine.process(odom(offset=300_000_000,index=4))
@@ -226,6 +246,12 @@ class CausalFilterTests(unittest.TestCase):
         s=engine.snapshot(ORIGIN+40_000_000)["car1"]
         self.assertFalse(s["valid"])
         self.assertEqual(s["fallback_status"],"numerical_update_failed_hold")
+        json.dumps(s,allow_nan=False)
+
+    def test_cross_car_tag_identity_is_rejected(self):
+        engine=initialized()
+        e=range_event();e["row"]["tag_id"]="node_0"
+        self.assertEqual(engine.process(e)["status"],"invalid_range_identity")
 
     def test_source_local_odom_keeps_original_frame_z_and_unmapped_clock(self):
         c=json.loads(Path(__file__).with_name("field_config.json").read_text())

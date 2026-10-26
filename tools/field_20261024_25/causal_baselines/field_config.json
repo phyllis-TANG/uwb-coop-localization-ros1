@@ -193,5 +193,6 @@
   },
   "master_clock_id": "bag_receive_epoch_ns",
   "body_twist_convention": "x forward, y left, z up; yaw/omega CCW rad; twist in vehicle body frame",
-  "range_geometry": "Euclidean 3D antenna-to-anchor or antenna-to-antenna slant distance; planar yaw only; fixed provided base height and rotated rigid lever arm"
+  "range_geometry": "Euclidean 3D antenna-to-anchor or antenna-to-antenna slant distance; planar yaw only; fixed provided base height and rotated rigid lever arm",
+  "max_measurement_latency_ns": 200000000
 }

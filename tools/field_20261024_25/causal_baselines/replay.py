@@ -79,6 +79,8 @@ def replay_events(events, config, experiment, origin_ns, end_ns, config_hash="un
         if deadline is not None and time.monotonic() >= deadline:raise TimeoutError("run wall-time budget exhausted")
         decisions = []
         while pointer < len(events) and int(events[pointer]["row"]["receive_epoch_ns"]) <= tick:
+            if pointer % 256 == 0 and deadline is not None and time.monotonic() >= deadline:
+                raise TimeoutError("run wall-time budget exhausted during event batch")
             event = events[pointer]
             pointer += 1
             for method, engine in engines.items():
@@ -146,11 +148,16 @@ def write_replay(output, events, config, experiment, origin, end, run, deadline)
     summary = {"experiment_id": experiment, "methods": {}, "input_events": len(events), "estimates": 0,
                "accuracy_evaluation_performed": False, "publication_state_policy": "hold last odometry-anchored posterior; per-vehicle state time recorded"}
     last_diagnostic = None
+    state_counts = {m: {c: {"rows":0, "valid_rows":0, "fallback_counts":Counter()} for c in model.CARS} for m in model.METHODS}
     with (output/"estimate.csv").open("x", newline="") as estimates, (output/"tick_diagnostics.jsonl").open("x") as diagnostics, (output/"observations.jsonl").open("x") as observations:
         writer = csv.DictWriter(estimates, fieldnames=ESTIMATE_COLUMNS, lineterminator="\n")
         writer.writeheader()
         for rows, diag, decisions in replay_events(events, config, experiment, origin, end, config_hash, deadline):
             for row in rows:
+                count = state_counts[row["method_id"]][row["vehicle_id"]]
+                count["rows"] += 1
+                count["valid_rows"] += row["valid"]
+                count["fallback_counts"][row["fallback_status"]] += 1
                 row = dict(row)
                 row["pose_covariance"] = json.dumps(row["pose_covariance"], allow_nan=False) if row["pose_covariance"] is not None else None
                 writer.writerow(row)
@@ -165,7 +172,8 @@ def write_replay(output, events, config, experiment, origin, end, run, deadline)
     for method in model.METHODS:
         blocked = ready[method]
         summary["methods"][method] = {"status": "BLOCKED" if all(blocked[c] for c in model.CARS) else "PARTIAL" if any(blocked[c] for c in model.CARS) else "DONE",
-            "blocked_reasons": blocked, "events": last_diagnostic["methods"][method]["cumulative_event_status"] if last_diagnostic else {}}
+            "blocked_reasons": blocked, "states":state_counts[method],
+            "events": last_diagnostic["methods"][method]["cumulative_event_status"] if last_diagnostic else {}}
     atomic_json(output/"diagnostics.json", summary)
     run["blocked_reasons"] = sorted({reason for method in ready.values() for reasons in method.values() for reason in reasons})
     return summary

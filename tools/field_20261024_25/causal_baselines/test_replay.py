@@ -111,6 +111,26 @@ class ReplayTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,"bag identity"):
                 replay.read_events(root,"T08",field,{"formal_bags":[{"id":"T08","sha256":"0"*64}]})
 
+    def test_pr45_range_and_odometry_csv_round_trip_drives_all_three_methods(self):
+        from normalize import COLUMNS
+        cfg=config()
+        inputs=[odom(index=0),odom("car2",index=1),range_event(value=2.8),range_event(target="node_0",index=101,value=2.8)]
+        for e in inputs:e["row"]["experiment_id"]="T08"
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            for kind,table in [("odom","odom"),("range","ranges")]:
+                with (root/(table+".csv")).open("w",newline="") as f:
+                    w=csv.DictWriter(f,fieldnames=COLUMNS[table],extrasaction="ignore")
+                    w.writeheader();w.writerows(e["row"] for e in inputs if e["kind"]==kind)
+            events,counts,meta=replay.read_events(root,"T08",cfg,{"formal_bags":[{"id":"T08","sha256":"f"*64}]})
+            rows,result=collect(events,cfg)
+        self.assertTrue(meta["range_tables_ingested"])
+        final=result[-1][1]["methods"]
+        self.assertEqual(final["odom_only"]["cumulative_event_status"]["excluded_odom_only"],2)
+        self.assertEqual(final["independent"]["cumulative_event_status"]["wall_updated"],1)
+        self.assertEqual(final["joint"]["cumulative_event_status"]["peer_updated"],1)
+        self.assertEqual(counts,{"odom":2,"range":2})
+
     def test_blocked_methods_write_null_rows_and_per_tick_reasons(self):
         field=json.loads(Path(__file__).with_name("field_config.json").read_text())
         with tempfile.TemporaryDirectory() as tmp:

@@ -130,7 +130,7 @@ def validate_config(config):
         raise ValueError("fixed peer direction required")
     if config["initialization_binding"] != "first_accepted_odometry_measurement":
         raise ValueError("initialization must explicitly bind to first odometry")
-    for key in ("publish_period_ns", "max_publish_age_ns", "max_extrapolation_ns",
+    for key in ("publish_period_ns", "max_publish_age_ns", "max_measurement_latency_ns", "max_extrapolation_ns",
                 "min_range_spacing_ns", "geometry_window_ns", "max_events"):
         if not isinstance(config[key], int) or config[key] <= 0:
             raise ValueError("positive integer policy required: "+key)
@@ -151,6 +151,8 @@ def validate_config(config):
     for car in CARS:
         cc = config["vehicles"][car]
         for key in ("odom_clock", "range_clock"):
+            if isinstance(cc.get(key), dict) and cc[key].get("status") == "provided" and not clock_ready(cc[key]):
+                raise ValueError("invalid provided clock model: "+car+":"+key)
             if clock_ready(cc.get(key)) and cc[key]["destination_clock_id"] != config["master_clock_id"]:
                 raise ValueError("clock destination must match replay master clock")
         for key in ("initial_room_pose", "initial_covariance_diagonal", "antenna_body_xyz_m"):
@@ -237,6 +239,8 @@ class Baseline:
             measured = receive if self.local else map_time(row, cc["odom_clock"])
             details["measurement_epoch_ns"] = None if self.local else measured
             if not self.local and measured > receive:return result("future_measurement_time")
+            if not self.local and receive-measured > self.config["max_measurement_latency_ns"]:
+                return result("stale_measurement_on_arrival")
             if car in self.anchor_ns and measured <= self.anchor_ns[car]:return result("out_of_order_measurement_time")
             sl = self._slice(car)
             if car not in self.odom:
@@ -281,6 +285,7 @@ class Baseline:
         measured = map_time(row, cc["range_clock"])
         details["measurement_epoch_ns"] = measured
         if measured > receive:return result("future_measurement_time")
+        if receive-measured > self.config["max_measurement_latency_ns"]:return result("stale_measurement_on_arrival")
         if peer:
             if self.method == "independent":return result("excluded_independent_peer")
             if car != self.config["peer_source_vehicle"]:return result("excluded_correlated_reverse_direction")
@@ -335,6 +340,9 @@ class Baseline:
         return result("peer_updated" if peer else "wall_updated")
 
     def snapshot(self, publication_ns):
+        if not isinstance(publication_ns, int):raise ValueError("publication must be exact integer ns")
+        if self.last_event_receive is not None and publication_ns < self.last_event_receive:
+            raise ValueError("publication precedes an admitted event")
         out = {}
         for car in CARS:
             reasons = self.blocked[car]
@@ -354,7 +362,8 @@ class Baseline:
             geometry = [v for (c,t),(stamp,v) in self.wall_geometry.items()
                         if c == car and 0 <= publication_ns-stamp <= self.config["geometry_window_ns"]]
             rank = int(np.linalg.matrix_rank(np.asarray(geometry), tol=1e-8)) if geometry else 0
-            stale = age > self.config["max_publish_age_ns"]
+            measurement_age = None if self.local else publication_ns-self.anchor_ns[car]
+            stale = age > self.config["max_publish_age_ns"] or (measurement_age is not None and measurement_age > self.config["max_publish_age_ns"])
             failed = car in self.last_failure
             degraded = self.method != "odom_only" and (len(geometry)<3 or rank<2)
             out[car] = dict(common, pose=state.tolist(), covariance=covariance, valid=not stale and not failed,
@@ -363,6 +372,7 @@ class Baseline:
                 state_epoch_ns=None if self.local else self.anchor_ns[car],
                 source_header_epoch_ns=int(row["header_epoch_ns"]), source_receive_epoch_ns=int(row["receive_epoch_ns"]),
                 source_record_index=int(row["record_index"]), receipt_age_ns=age,
+                measurement_age_ns=measurement_age,
                 wall_xy_local_rank=rank, recent_wall_links=len(geometry), geometry_degraded=degraded,
                 time_semantics="latest arrived source pose; header clock unmapped" if self.local else "pose at last odometry measurement time; held at publication")
         return out
