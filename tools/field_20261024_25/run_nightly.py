@@ -130,7 +130,10 @@ def provenance(data_root, jobs):
         "docs/field_tests/integrity_feasibility_v1_1_20261022/estimator_config.json",
     ]]
     sources = {str(p.relative_to(ROOT)): sha256(p) for p in sorted(set(source_paths)) if p.is_file()}
-    configs = {str(p.relative_to(ROOT)): sha256(p) for p in [MANIFEST, GEOMETRY] if p.is_file()}
+    # Field diagnostics and synthetic adapters now have explicit JSON policies.
+    # Their changes must also invalidate a resume of the field-tools tests.
+    config_paths = [MANIFEST, GEOMETRY] + sorted((ROOT / "tools/field_20261024_25").glob("*.json"))
+    configs = {str(p.relative_to(ROOT)): sha256(p) for p in config_paths if p.is_file()}
     inputs = []
     bag_errors = []
     try:

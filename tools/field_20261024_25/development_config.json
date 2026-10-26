@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "development_experiments": ["T08", "T10", "T12", "T14"],
+  "source": "raw",
+  "time_basis": "bag_receive_relative_to_first_record",
+  "window_ns": 1000000000,
+  "receipt_batch_max_gap_ns": 1000000,
+  "header_progress_min_ns": 10000000,
+  "peer_asof_max_age_ns": 30000000,
+  "peer_matching": "car1 minus most recent car2 received at or before car1; diagnostic only",
+  "range_jump": "successive valid raw entries per directed link; no rejection threshold",
+  "occlusion_label_policy": "unknown_actual_material_geometry_and_intervals"
+}

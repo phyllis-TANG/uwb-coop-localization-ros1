@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "scope": "synthetic_only_not_field_calibration",
+  "odom_xy_sigma_m": 0.1,
+  "odom_yaw_sigma_rad": 0.05,
+  "wall_sigma_m": 0.15,
+  "peer_sigma_m": 0.2,
+  "max_nfev": 50,
+  "max_arrival_age_ns": 30000000,
+  "base_height_m": {"car1": 0.0, "car2": 0.0},
+  "body_to_antenna_xyz_m": {"car1": [0.1, -0.02, 0.2], "car2": [-0.05, 0.03, 0.25]},
+  "anchors_xyz_m": {"node_2": [0.0, 0.0, 2.0], "node_3": [5.0, 0.0, 2.0], "node_8": [0.0, 5.0, 2.0], "node_10": [5.0, 5.0, 2.0]},
+  "peer_policy": "one factor from median of new directed observations; no independence claim",
+  "causality": "current state with previous estimate/odometry prior; arrival gated; no smoothing or interpolation"
+}
