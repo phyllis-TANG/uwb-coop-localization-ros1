@@ -94,6 +94,30 @@ def verify_video_artifacts():
             'artifacts_verified':len(registry['files']), 'media_decode_repeated':False}
 
 
+def verify_packet(root, expected_run_sha256=None):
+    """Accept the portable T10 selection only via its Git-registered run SHA."""
+    root=Path(root)
+    if expected_run_sha256 is None:
+        expected_run_sha256=json.loads((DOCS/'results/input_packet_identity.json').read_text())['run_sha256']
+    if sha(root/'run.json')!=expected_run_sha256:raise ValueError('unregistered or modified T10 packet')
+    run=json.loads((root/'run.json').read_text())
+    if run['status']!='DONE' or run['role']!='T10_input_closure':raise ValueError('incomplete T10 packet')
+    for item in run['outputs']:
+        rel=Path(item['relative_path'])
+        if rel.is_absolute() or '..' in rel.parts or sha(root/rel)!=item['sha256']:
+            raise ValueError('packet output hash mismatch: '+str(rel))
+    packet=json.loads((root/'packet.json').read_text())
+    if packet['experiment_id']!='T10' or packet['bag_sha256']!=BAG_SHA or packet['mov_sha256']!=MOV_SHA:
+        raise ValueError('packet selected identity mismatch')
+    # Historic run.json is intentionally copied byte-for-byte, not rewritten;
+    # its hash is separately bound as an input in the packet run receipt.
+    prior=next((x for x in run.get('inputs',[]) if x['relative_path']=='PR46_T10/run.json'),None)
+    if prior and sha(root/'reused_PR46_T10/run.json')!=prior['sha256']:
+        raise ValueError('historic replay provenance changed')
+    return {'status':'DONE','packet_run_sha256':expected_run_sha256,'bag_sha256':BAG_SHA,
+            'normalization_rebuilt':False,'normalization_root_kind':'verified_T10_selection_from_PR45'}
+
+
 def start(output, role):
     output = Path(output)
     output.mkdir(parents=True, exist_ok=False)

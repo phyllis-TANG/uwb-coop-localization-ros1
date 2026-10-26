@@ -11,7 +11,7 @@ from pathlib import Path
 import sys
 import time
 
-from common import BAG_SHA, ROOT, SESSION, finish, sha, start, verify_normalized, write
+from common import BAG_SHA, ROOT, SESSION, finish, sha, start, verify_normalized, verify_packet, write
 import interface
 import model
 import replay
@@ -63,7 +63,10 @@ def verify_bindings(template, odom):
 
 def main():
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--template',type=Path,required=True);p.add_argument('--normalized',type=Path,required=True)
+    p.add_argument('--template',type=Path,required=True)
+    inputs=p.add_mutually_exclusive_group(required=True)
+    inputs.add_argument('--normalized',type=Path,help='original registered PR45 root')
+    inputs.add_argument('--packet',type=Path,help='portable B input packet; validated against Git-registered identity')
     p.add_argument('--output',type=Path,required=True);p.add_argument('--max-seconds',type=float,default=600)
     args=p.parse_args();started=time.monotonic();run=start(args.output,'T10_strict_compile_and_conditional_replay')
     try:
@@ -74,13 +77,16 @@ def main():
         # Source-frame Odom-only is already preserved in the reused PR46 run.
         config['odom_only_frame']='room'
         ready['methods']=model.readiness(config)
-        reuse=verify_normalized(args.normalized);write(args.output/'normalized_reuse.json',reuse)
-        with (args.normalized/'odom.csv').open() as f:odom=[r for r in csv.DictReader(f) if r['experiment_id']=='T10']
+        reuse=verify_packet(args.packet) if args.packet else verify_normalized(args.normalized)
+        normalized=args.packet/'normalized_T10' if args.packet else args.normalized
+        write(args.output/'normalized_reuse.json',reuse)
+        with (normalized/'odom.csv').open() as f:odom=[r for r in csv.DictReader(f) if r['experiment_id']=='T10']
         verify_bindings(template,odom)
         write(args.output/'baseline_config.json',config);write(args.output/'readiness.json',ready)
         blocked=sorted({r for m in ready['methods'].values() for c in m.values() for r in c})
         run['inputs']=[{'relative_path':args.template.name,'sha256':sha(args.template)},
-            {'relative_path':'normalized/run.json','sha256':reuse['parent_run_sha256']}]
+            {'relative_path':'packet/run.json' if args.packet else 'normalized/run.json',
+             'sha256':reuse.get('packet_run_sha256',reuse.get('parent_run_sha256'))}]
         run['blocked_fields']=blocked;run['new_estimator_runs']=0
         if blocked:
             write(args.output/'execution.json',{'status':'BLOCKED','new_estimator_runs':0,
@@ -93,7 +99,7 @@ def main():
         baseline_run=replay.create_run(directory,args.output/'baseline_config.json',[sys.executable]+sys.argv)
         manifest=json.loads((SESSION/'manifest.json').read_text())
         item=next(r for r in manifest['formal_bags'] if r['id']=='T10')
-        events,counts,ingestion=replay.read_events(args.normalized,'T10',config,manifest)
+        events,counts,ingestion=replay.read_events(normalized,'T10',config,manifest)
         baseline_run['ingestion']=dict(ingestion,selected_event_counts=counts)
         baseline_run['inputs']=run['inputs']
         baseline_run['normalization_compatibility_receipt_sha256']=sha(args.output/'normalized_reuse.json')

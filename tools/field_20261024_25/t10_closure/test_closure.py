@@ -10,6 +10,7 @@ import common
 from intake import exact_record, select_csv
 from inspect_video import select_frames
 from run_ready import strict_inputs, verify_bindings
+from readback import compare_selection
 import interface
 
 
@@ -105,6 +106,30 @@ class ClosureTests(unittest.TestCase):
     def test_new_output_required(self):
         with tempfile.TemporaryDirectory() as td:
             with self.assertRaises(FileExistsError):common.start(Path(td),'test')
+
+    def test_row_readback_rejects_loss_or_change(self):
+        with tempfile.TemporaryDirectory() as td:
+            a,b=Path(td)/'a.csv',Path(td)/'b.csv'
+            a.write_text('experiment_id,record_index\nT10,3\nT11,9\n')
+            b.write_text('experiment_id,record_index\nT10,3\n')
+            self.assertEqual(compare_selection(a,b,'experiment_id','T10'),1)
+            b.write_text('experiment_id,record_index\nT10,4\n')
+            with self.assertRaises(ValueError):compare_selection(a,b,'experiment_id','T10')
+
+    def test_portable_packet_requires_registered_hash(self):
+        with tempfile.TemporaryDirectory() as td:
+            p=Path(td);common.write(p/'run.json',{'status':'DONE','role':'T10_input_closure','outputs':[]})
+            common.write(p/'packet.json',{'experiment_id':'T10','bag_sha256':common.BAG_SHA,'mov_sha256':common.MOV_SHA})
+            digest=common.sha(p/'run.json');common.verify_packet(p,digest)
+            with self.assertRaises(ValueError):common.verify_packet(p,'0'*64)
+
+    def test_portable_packet_mutation_rejected(self):
+        with tempfile.TemporaryDirectory() as td:
+            p=Path(td);(p/'selected.csv').write_text('T10,original\n')
+            common.write(p/'run.json',{'status':'DONE','role':'T10_input_closure',
+                'outputs':[{'relative_path':'selected.csv','sha256':common.sha(p/'selected.csv')}]})
+            digest=common.sha(p/'run.json');(p/'selected.csv').write_text('T10,changed\n')
+            with self.assertRaises(ValueError):common.verify_packet(p,digest)
 
 
 if __name__=='__main__':unittest.main()
