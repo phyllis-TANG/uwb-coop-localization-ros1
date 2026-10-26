@@ -39,7 +39,7 @@ Room状态为每车 `[x_base,y_base,yaw]`，参考点是`base_footprint`，右�
 
 [47项测试日志](results_summary/TESTS.log)覆盖：非零初始朝向、yaw双向跨界、倒车、旋转lever-arm/3D斜距、精确仿射纳秒时钟、乱序/晚到/重复、源/桥接去重、无未来数据/未来附加不改过去输出、跨车/peer隔离、断链、collinear退化几何、无解/陈旧/数值失败状态、未知参数门槛及PR45 CSV驱动三方法。
 
-固定种子7/19/43/91/137，普通噪声与延迟/重复/断链两类场景，各12s，共10次正式运行，三个方法均输出有限状态/协方差；[全量合成摘要](results_summary/synthetic_summary.json)。只用生成真值在各自明确的`state_epoch_ns`评价，不在保持状态的publication时刻伪造误差。这是数值验证而非现场性能：例如普通场景seed91中joint RMSE约0.034324m、independent约0.034154m，保留该略差结果，不筛选种子或宣称joint必然改善。
+固定种子7/19/43/91/137，普通噪声与延迟/重复/断链两类场景，各12s，共10次正式运行，三个方法所有已初始化状态/协方差均有限；[全量合成摘要](results_summary/synthetic_summary.json)。只用生成真值在各自明确的`state_epoch_ns`评价，不在保持状态的publication时刻伪造误差。这是数值验证而非现场性能：例如普通场景seed91中joint RMSE约0.034324m、independent约0.034154m，保留该略差结果，不筛选种子或宣称joint必然改善。
 
 | 开发包 | 原始frame Odom-only | 有效source状态行/全部Odom-only行 | room独立 / 联合 | 单列说明 |
 |---|---|---:|---|---|
@@ -73,6 +73,6 @@ PYTHON="$VENV/bin/python"
 
 退出码：0=该执行入口完成；field replay的2=有BLOCKED条件且结果已保存；1=执行/输入失败。Shell串行四包时应接受预期的2并继续独立包，不要用`set -e`误停，也不能把2当三种room定位都通过。
 
-本次完整结果：`/workspace/work/uwb-baselines-20261026-run/results/{synthetic_release,field_release,field_verification}`；stdout/stderr在父目录。完整结果包与SHA清单位于同根的`package/`，仅属当前环境本地归档，不含原始bag/视频、旧标准化大表或venv。归档身份会在本目录`artifact_manifest.json`登记；另一环境若拿不到该归档，按前述CLI在其已验证输入上复现。
+本次完整结果：`/workspace/work/uwb-baselines-20261026-run/results/{synthetic_release,field_release,field_verification}`；stdout/stderr在父目录。完整结果包与SHA清单位于同根的`package/`，仅属当前环境本地归档，不含原始bag/视频、旧标准化大表或venv。归档身份已在[artifact_manifest.json](artifact_manifest.json)登记；另一环境若拿不到该归档，按前述CLI在其已验证输入上复现。
 
 后续实际运行room基线，需要提供**base参考点**的初始XY/yaw与对应第一条odom时刻定义、base高度和body表达的天线三维lever-arm，以及每车odom/UWB header到共同master的时间映射/有效范围/不确定性；视觉marker偏移不能替代这些参数。新信息必须以独立新配置及来源版本登记；不要为让程序跑起来填0或复制合成值。通过独立参考后再另行固定评价规则，当前CLI没有现场误差评价功能。
