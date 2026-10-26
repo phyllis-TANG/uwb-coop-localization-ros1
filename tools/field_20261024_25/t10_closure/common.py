@@ -46,6 +46,9 @@ def verify_manifest_compatibility(old, current):
         a = next(x for x in old['assets'] if x['id'] == asset_id)
         b = next(x for x in current['assets'] if x['id'] == asset_id)
         if a != b: raise ValueError('selected asset identity changed: ' + asset_id)
+    selected = lambda m: next(x for x in m['motion_videos'] if x['experiment_id']=='T10')
+    if selected(old)!=selected(current) or selected(current)['sha256']!=MOV_SHA:
+        raise ValueError('selected T10 MOV metadata changed')
     a = next(x for x in current['formal_bags'] if x['id'] == 'T10')
     if a['sha256'] != BAG_SHA or a['split'] != 'development' or '184755' not in a['relative_path']:
         raise ValueError('only the successful development retry is authorized')
