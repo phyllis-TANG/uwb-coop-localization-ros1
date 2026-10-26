@@ -110,13 +110,31 @@
         "source": "host mapping and publication-to-sample adjustment not both provided"
       },
       "antenna_body_xy_m": {
-        "candidate_records": [],
-        "source": "physical odometry/base origin to antenna XY not established",
+        "candidate_records": [
+          {
+            "value": [
+              0.08,
+              -0.06
+            ],
+            "reference_point": "approximate_chassis_geometric_center",
+            "axes": "x forward, y left",
+            "source_kind": "operator_record",
+            "date": "2026-10-18",
+            "source": "operator_evidence.json; original survey/correction records",
+            "uncertainty_m": null,
+            "adopted_as_base_lever": false,
+            "reason": "physical odometry point correspondence and T10 mounting applicability not established"
+          }
+        ],
+        "source": "operator_evidence.json: center offset available; physical odometry/base origin relation unknown, value remains null",
         "source_kind": "unknown",
         "status": "pending",
         "uncertainty": null,
         "uncertainty_reason": "not independently measured",
-        "value": null
+        "value": null,
+        "point_definition": "physical_odometry_origin_to_antenna_body_axes",
+        "units": "m",
+        "axes": "x forward, y left, body frame; physical point must be established"
       },
       "antenna_height_m": {
         "applicability": "same mounting state assumed; no per-run fresh Z survey",
@@ -170,13 +188,31 @@
         "source": "host mapping and publication-to-sample adjustment not both provided"
       },
       "antenna_body_xy_m": {
-        "candidate_records": [],
-        "source": "physical odometry/base origin to antenna XY not established",
+        "candidate_records": [
+          {
+            "value": [
+              -0.12,
+              0.08
+            ],
+            "reference_point": "approximate_chassis_geometric_center",
+            "axes": "x forward, y left",
+            "source_kind": "operator_record",
+            "date": "2026-10-24",
+            "source": "operator_evidence.json; original survey/correction records",
+            "uncertainty_m": null,
+            "adopted_as_base_lever": false,
+            "reason": "physical odometry point correspondence and T10 mounting applicability not established"
+          }
+        ],
+        "source": "operator_evidence.json: center offset available; physical odometry/base origin relation unknown, value remains null",
         "source_kind": "unknown",
         "status": "pending",
         "uncertainty": null,
         "uncertainty_reason": "not independently measured",
-        "value": null
+        "value": null,
+        "point_definition": "physical_odometry_origin_to_antenna_body_axes",
+        "units": "m",
+        "axes": "x forward, y left, body frame; physical point must be established"
       },
       "antenna_height_m": {
         "applicability": "same mounting state assumed; no per-run fresh Z survey",

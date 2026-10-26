@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "experiment_id": "T10",
+  "status": "pending",
+  "axes": "physical measurement master = recorder ROS epoch; not independently calibrated UTC",
+  "observed_source_windows": {
+    "car1": {
+      "odom": {
+        "header_min_ns": 1792925284331894800,
+        "header_max_ns": 1792925342331466730,
+        "rows": 1161,
+        "unique_source_records": 1161,
+        "status": "observed_only_not_calibration"
+      },
+      "uwb_primary": {
+        "header_min_ns": 1792925284436798095,
+        "header_max_ns": 1792925342358153104,
+        "rows": 14478,
+        "unique_source_records": 2897,
+        "status": "observed_only_not_calibration"
+      }
+    },
+    "car2": {
+      "odom": {
+        "header_min_ns": 1792925285157573158,
+        "header_max_ns": 1792925342356334404,
+        "rows": 1145,
+        "unique_source_records": 1145,
+        "status": "observed_only_not_calibration"
+      },
+      "uwb_primary": {
+        "header_min_ns": 1792925285021806333,
+        "header_max_ns": 1792925342362812140,
+        "rows": 14112,
+        "unique_source_records": 2868,
+        "status": "observed_only_not_calibration"
+      }
+    }
+  },
+  "host_relation": "unknown; same-host grouping itself needs deployed ROS time source evidence",
+  "required_model": "sample_master_ns = destination_origin_ns + round((header_ns-source_origin_ns)*rate_numerator/rate_denominator) + sample_offset_ns",
+  "calibration_policy": "observed header windows below are data coverage, NOT calibrated validity intervals; do not assign rate=1/offset=0/error=0 or receive-header medians",
+  "minimum_provenance": [
+    "actual deployed source/binary identity and ROS time mode",
+    "source and destination clock IDs",
+    "integer source/destination origin_ns, rational positive rate, bounded valid_source_interval_ns",
+    "each-topic physical sample-to-header signed offset with source and nonzero absolute bound",
+    "independent check events distinct from fit events if time calibration attempted"
+  ],
+  "video_candidate_is_not_host_model": true
+}

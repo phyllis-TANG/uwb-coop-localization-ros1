@@ -14,7 +14,7 @@ def main():
     p.add_argument('--source',type=Path,required=True);p.add_argument('--archive',type=Path,required=True)
     p.add_argument('--prefix',default='T10_inputs')
     args=p.parse_args()
-    if args.prefix not in ('T10_inputs','T10_full_local_results'):raise ValueError('explicit archive scope required')
+    if args.prefix not in ('T10_inputs','T10_full_local_results','T10_closure_review'):raise ValueError('explicit archive scope required')
     files=sorted(x for x in args.source.rglob('*') if x.is_file())
     if any(x.is_symlink() for x in args.source.rglob('*')):raise ValueError('symlinks forbidden')
     if sum(x.stat().st_size for x in files)>100*1024**2:raise ValueError('archive budget exceeded')

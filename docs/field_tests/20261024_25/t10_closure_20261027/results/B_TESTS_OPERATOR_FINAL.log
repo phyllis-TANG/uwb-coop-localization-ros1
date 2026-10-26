@@ -1,0 +1,30 @@
+test_engineering_clock_is_not_strict (test_closure.ClosureTests.test_engineering_clock_is_not_strict) ... ok
+test_engineering_geometry_is_not_strict (test_closure.ClosureTests.test_engineering_geometry_is_not_strict) ... ok
+test_exact_record_matching (test_closure.ClosureTests.test_exact_record_matching) ... ok
+test_holdout_rejected (test_closure.ClosureTests.test_holdout_rejected) ... ok
+test_manifest_formal_change_rejected (test_closure.ClosureTests.test_manifest_formal_change_rejected) ... ok
+test_manifest_media_only_change_allowed (test_closure.ClosureTests.test_manifest_media_only_change_allowed) ... ok
+test_marker_cannot_be_base (test_closure.ClosureTests.test_marker_cannot_be_base) ... ok
+test_new_output_required (test_closure.ClosureTests.test_new_output_required) ... ok
+test_operator_center_offsets_do_not_release_base_gate (test_closure.ClosureTests.test_operator_center_offsets_do_not_release_base_gate) ... ok
+test_packet_t10_only_and_no_overwrite (test_closure.ClosureTests.test_packet_t10_only_and_no_overwrite) ... /workspace/work/uwb-b-t10-closure-20261027/tools/field_20261024_25/t10_closure/test_closure.py:103: ResourceWarning: unclosed file <_io.TextIOWrapper name='/tmp/tmppuhxclu3/selected.csv' mode='r' encoding='UTF-8'>
+  self.assertEqual(len(list(csv.DictReader(dst.open()))),1)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_pending_template_stays_null (test_closure.ClosureTests.test_pending_template_stays_null) ... ok
+test_planned_car2_plus_x_is_not_actual_initial_yaw (test_closure.ClosureTests.test_planned_car2_plus_x_is_not_actual_initial_yaw) ... ok
+test_portable_packet_mutation_rejected (test_closure.ClosureTests.test_portable_packet_mutation_rejected) ... ok
+test_portable_packet_requires_registered_hash (test_closure.ClosureTests.test_portable_packet_requires_registered_hash) ... ok
+test_pts_sampling_is_not_frame_over_30 (test_closure.ClosureTests.test_pts_sampling_is_not_frame_over_30) ... ok
+test_record_vehicle_isolation (test_closure.ClosureTests.test_record_vehicle_isolation) ... ok
+test_row_readback_rejects_loss_or_change (test_closure.ClosureTests.test_row_readback_rejects_loss_or_change) ... ok
+test_selected_mov_change_rejected (test_closure.ClosureTests.test_selected_mov_change_rejected) ... ok
+test_source_record_ns_preserved (test_closure.ClosureTests.test_source_record_ns_preserved) ... ok
+test_wrong_attempt_rejected (test_closure.ClosureTests.test_wrong_attempt_rejected) ... ok
+test_zero_clock_uncertainty_is_not_evidence (test_closure.ClosureTests.test_zero_clock_uncertainty_is_not_evidence) ... ok
+test_zero_sample_uncertainty_rejected (test_closure.ClosureTests.test_zero_sample_uncertainty_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.018s
+
+OK

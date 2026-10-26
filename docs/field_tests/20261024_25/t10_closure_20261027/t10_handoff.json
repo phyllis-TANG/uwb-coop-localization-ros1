@@ -1,0 +1,564 @@
+{
+  "schema_version": 1,
+  "role": "B_T10_closure",
+  "task_status": "DONE_WITH_FIELD_PRECONDITIONS_BLOCKED",
+  "base_commit": "32445a299b3f4674b865c4d78c4f662e51b5b857",
+  "source_code_commit": "9742e8103853cd05b7fa8b7d2f0f857df7a6b1c3",
+  "branch": "analysis/20261027-b-t10-closure",
+  "inputs": {
+    "bag": {
+      "asset_id": "bags",
+      "relative_path": "uwb_field_20261025/bags/T10_C2static_C1straight_repeat1_retry_20261025_184755.bag",
+      "sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+      "attempt": "successful_retry_184755_only"
+    },
+    "video": {
+      "asset_id": "T10_video",
+      "relative_path": "IMG_7347.MOV",
+      "sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+      "size_bytes": 556644048,
+      "media_integrity_recheck": false
+    },
+    "normalized": {
+      "source_run_sha256": "b7448d932d8c92054b3147d3add1bb755cf39e50f292c8e2151e5c89ea99c11a",
+      "T10_selection": {
+        "archive_relative_path": "inputs/T10_portable_inputs_v2.tar.gz",
+        "archive_sha256": "67a4aeaaeb2606f3dd971803ccbbf7598220a9b1fe6f6ab215929f6a4b046faf",
+        "archive_size_bytes": 1786970,
+        "packet_run_sha256": "b9c7b241ff170e17a1d8bc078859c480951db0bdf42f19c2566c13a50fdf2b95",
+        "tables": {
+          "odom.csv": 2306,
+          "ranges.csv": 57090,
+          "frames.csv": 11512,
+          "imu.csv": 2313,
+          "commands.csv": 666,
+          "marker_observations.csv": 388
+        }
+      },
+      "rebuild": "prefer verified archive. If original PR45 output is unavailable, use existing prepare.py --assets bags --extract and normalize.py --data-root $DATA_ROOT --output $NEW_NORMALIZED once; then intake.py. No new decoder."
+    }
+  },
+  "strict_configuration": {
+    "input_template": "T10_strict_input_template.json",
+    "baseline_config": "results/T10_strict_baseline_config.json",
+    "compile_status": "BLOCKED",
+    "actual_exit_code": 2,
+    "blocked_fields": [
+      "car1:antenna_body_xy_m:unknown",
+      "car1:initial_room_pose:unknown",
+      "car1:odom_clock:unknown",
+      "car1:range_clock:unknown",
+      "car2:antenna_body_xy_m:unknown",
+      "car2:initial_room_pose:unknown",
+      "car2:odom_clock:unknown",
+      "car2:range_clock:unknown"
+    ],
+    "initial_record_identities_selected_but_physical_pose_not_adopted": true,
+    "new_estimator_runs": 0,
+    "height_policy": "absolute antenna heights 0.17/0.20m retained; uncertainties null; no fake base height or lever Z"
+  },
+  "exploratory_configuration": {
+    "path": null,
+    "status": "not_instantiated",
+    "reason": "geometric-center origin equivalence, actual start and measurement-clock convention have no defensible T10 evidence; no zero lever/zero clock error or synthetic replacement"
+  },
+  "initialization_records": {
+    "car1": {
+      "selected_source_record": {
+        "vehicle_id": "car1",
+        "source_file_sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+        "topic": "/car1/odom",
+        "record_index": 3,
+        "header_epoch_ns": 1792925284331894800,
+        "receive_epoch_ns": 1792925285431505126,
+        "frame_id": "car1/odom",
+        "child_frame_id": "car1/base_footprint"
+      },
+      "record_selection": "first arrived own-car odometry in successful retry; identity selected, actual room pose unestablished",
+      "adopted_as_actual_room_initialization": false,
+      "actual_initial_antenna_xy_room_m": null,
+      "actual_initial_body_yaw_room_rad": null,
+      "reason": "no independent actual pose at this record; nominal start and endpoint cannot establish it",
+      "source_pose_raw": {
+        "position_x": "0.0",
+        "position_y": "0.0",
+        "position_z": "0.0",
+        "position_z_semantics": "source_odom_z_not_antenna_height",
+        "orientation_x": "0.0",
+        "orientation_y": "0.0",
+        "orientation_z": "0.0",
+        "orientation_w": "1.0",
+        "linear_x": "0.0",
+        "linear_y": "0.0",
+        "linear_z": "0.0",
+        "angular_x": "0.0",
+        "angular_y": "0.0",
+        "angular_z": "0.0"
+      },
+      "conditional_video_candidate": {
+        "video_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+        "mapping_id": "T10_pts_to_receive_events_v1",
+        "mapping_status": "event_alignment_candidate_not_accepted",
+        "frame_index": 749,
+        "pts_ticks": 14980,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "status": "not_adopted_for_pose_binding",
+        "time_uncertainty_ns": null,
+        "reason": "nearest PTS under event candidate only; not independent synchronization"
+      }
+    },
+    "car2": {
+      "selected_source_record": {
+        "vehicle_id": "car2",
+        "source_file_sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+        "topic": "/car2/odom",
+        "record_index": 117,
+        "header_epoch_ns": 1792925285157573158,
+        "receive_epoch_ns": 1792925285433124538,
+        "frame_id": "car2/odom",
+        "child_frame_id": "car2/base_footprint"
+      },
+      "record_selection": "first arrived own-car odometry in successful retry; identity selected, actual room pose unestablished",
+      "adopted_as_actual_room_initialization": false,
+      "actual_initial_antenna_xy_room_m": null,
+      "actual_initial_body_yaw_room_rad": null,
+      "reason": "no independent actual pose at this record; nominal start and endpoint cannot establish it",
+      "source_pose_raw": {
+        "position_x": "-0.13334991037845612",
+        "position_y": "-1.957391619682312",
+        "position_z": "-3.213017463684082",
+        "position_z_semantics": "driver_yaw_related_not_height",
+        "orientation_x": "0.0",
+        "orientation_y": "-0.0",
+        "orientation_z": "-0.9993623798343106",
+        "orientation_w": "-0.03570481440790504",
+        "linear_x": "0.0",
+        "linear_y": "0.0",
+        "linear_z": "0.0",
+        "angular_x": "0.0",
+        "angular_y": "0.0",
+        "angular_z": "0.0"
+      },
+      "conditional_video_candidate": {
+        "video_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+        "mapping_id": "T10_pts_to_receive_events_v1",
+        "mapping_status": "event_alignment_candidate_not_accepted",
+        "frame_index": 749,
+        "pts_ticks": 14980,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "status": "not_adopted_for_pose_binding",
+        "time_uncertainty_ns": null,
+        "reason": "nearest PTS under event candidate only; not independent synchronization"
+      }
+    }
+  },
+  "reference_scope": "qualitative",
+  "metric_reference_scope": "not_accepted",
+  "reference_decision": "reference_decision.json",
+  "per_vehicle_reference": {
+    "car1": {
+      "reference_scope": "qualitative",
+      "metric_reference_scope": "not_accepted",
+      "original_PTS_observation_support": {
+        "start_ticks": 0,
+        "end_ticks": 57902,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "source": "PR49 2Hz pixel observations, not a metric validity window"
+      },
+      "actual_metric_valid_intervals": [],
+      "spatial_uncertainty_m": null,
+      "temporal_uncertainty_ns": null,
+      "qualitative_comment": "sparse image-space scene review only; exact physical start/stop or stationary state not calibrated"
+    },
+    "car2": {
+      "reference_scope": "qualitative",
+      "metric_reference_scope": "not_accepted",
+      "original_PTS_observation_support": {
+        "start_ticks": 0,
+        "end_ticks": 57902,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "source": "PR49 2Hz pixel observations, not a metric validity window"
+      },
+      "actual_metric_valid_intervals": [],
+      "spatial_uncertainty_m": null,
+      "temporal_uncertainty_ns": null,
+      "qualitative_comment": "sparse image-space scene review only; exact physical start/stop or stationary state not calibrated"
+    }
+  },
+  "metric_valid_intervals": [],
+  "space_error_bound_m": null,
+  "time_error_bound_ns": null,
+  "reportable": [
+    "verified T10 identity/input rows",
+    "source-frame replay/readback status",
+    "qualitative pixel observations and operator readings with provenance"
+  ],
+  "not_reportable": [
+    "field RMSE/ATE/checkpoint accuracy/improvement",
+    "bounded synchronization/physical error guarantees"
+  ],
+  "executed_commands": [
+    {
+      "operation": "create isolated video venv",
+      "argv": [
+        "python",
+        "-m",
+        "venv",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/video-venv"
+      ],
+      "exit_code": 0
+    },
+    {
+      "operation": "install video dependencies only in new venv",
+      "argv": [
+        "/workspace/work/uwb-b-t10-closure-20261027-run/video-venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "tools/field_video_20261026/requirements-video.txt"
+      ],
+      "exit_code": 0,
+      "log": "video_dependencies.log"
+    },
+    {
+      "operation": "T10-only original intake",
+      "argv": [
+        "python",
+        "tools/field_20261024_25/prepare.py",
+        "--data-root",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/data",
+        "--assets",
+        "T10_video",
+        "--extract"
+      ],
+      "exit_code": 0,
+      "log": "T10_prepare.log"
+    },
+    {
+      "operation": "compile_PR48_001",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "/workspace/work/uwb-b-t10-closure-20261027/tools/field_20261024_25/parameter_clock_prep/interface.py",
+        "--template",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/intake_001/T10_strict_input_template.json",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/compile_PR48_001"
+      ],
+      "exit_code": 2,
+      "run_sha256": "86f6ad98b9fb5ffedd9750290442e81fc84cc05e5208893e29f714d978145c8f"
+    },
+    {
+      "operation": "handoff_strict_003",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/run_ready.py",
+        "--template",
+        "docs/field_tests/20261024_25/t10_closure_20261027/T10_strict_input_template.json",
+        "--packet",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/portable_inputs_001",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/handoff_strict_003"
+      ],
+      "exit_code": 2,
+      "run_sha256": "20a3ba6146fcca7460f7505797058df2dd5742c5c9844e6564a0743bc175892b"
+    },
+    {
+      "operation": "independent_readback_001",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/readback.py",
+        "--packet",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/intake_001",
+        "--normalized",
+        "/workspace/work/uwb-handoff-20261026/results/normalized",
+        "--review",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/video_review_001",
+        "--strict-run",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/portable_strict_002",
+        "--reference-decision",
+        "docs/field_tests/20261024_25/t10_closure_20261027/reference_decision.json",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/independent_readback_001"
+      ],
+      "exit_code": 0,
+      "run_sha256": "ba93a8bf84e4d47736ad4043590a5c94c0993bc54e64b9cbfd95691c828730e5"
+    },
+    {
+      "operation": "independent_readback_002",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/readback.py",
+        "--packet",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/intake_001",
+        "--normalized",
+        "/workspace/work/uwb-handoff-20261026/results/normalized",
+        "--review",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/video_review_001",
+        "--strict-run",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/transfer_strict_004",
+        "--reference-decision",
+        "docs/field_tests/20261024_25/t10_closure_20261027/reference_decision.json",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/independent_readback_002"
+      ],
+      "exit_code": 0,
+      "run_sha256": "08183c01ef1aab030369b81f9edb1ac0efce28e497f5027b19d0c5b18075a4c0"
+    },
+    {
+      "operation": "intake_001",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/intake.py",
+        "--normalized",
+        "/workspace/work/uwb-handoff-20261026/results/normalized",
+        "--data-root",
+        "/workspace/work/uwb-handoff-20261026/data",
+        "--baseline-run",
+        "/workspace/work/uwb-baselines-20261026-run/results/field_release/T10",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/intake_001"
+      ],
+      "exit_code": 0,
+      "run_sha256": "0378a2f9f5ffd9b7ade3697f529d5b9e47c496cdc36a66ae23fe06c2e6460f21"
+    },
+    {
+      "operation": "portable_inputs_001",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/package_inputs.py",
+        "--packet",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/intake_001",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/portable_inputs_001"
+      ],
+      "exit_code": 0,
+      "run_sha256": "4d85acd0deb9149dec9652721a31fc8b94424274fbea66ca8e8b61e25b940ae7"
+    },
+    {
+      "operation": "portable_inputs_002",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/package_inputs.py",
+        "--packet",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/intake_001",
+        "--strict-template",
+        "docs/field_tests/20261024_25/t10_closure_20261027/T10_strict_input_template.json",
+        "--operator-evidence",
+        "docs/field_tests/20261024_25/t10_closure_20261027/operator_evidence.json",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/portable_inputs_002"
+      ],
+      "exit_code": 0,
+      "run_sha256": "b9c7b241ff170e17a1d8bc078859c480951db0bdf42f19c2566c13a50fdf2b95"
+    },
+    {
+      "operation": "portable_strict_002",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/run_ready.py",
+        "--template",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/intake_001/T10_strict_input_template.json",
+        "--packet",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/intake_001",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/portable_strict_002"
+      ],
+      "exit_code": 2,
+      "run_sha256": "5710eeb763703d3c7cc67512e18801c220865ee91518603fbedbd1ca60fc6aa1"
+    },
+    {
+      "operation": "strict_ready_001",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/run_ready.py",
+        "--template",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/intake_001/T10_strict_input_template.json",
+        "--normalized",
+        "/workspace/work/uwb-handoff-20261026/results/normalized",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/strict_ready_001"
+      ],
+      "exit_code": 2,
+      "run_sha256": "c18bdeaa5e50c6100f4a230adbeb0b4a885b967e4cea7afbfb5091b2428dbc33"
+    },
+    {
+      "operation": "transfer_strict_004",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/run_ready.py",
+        "--template",
+        "docs/field_tests/20261024_25/t10_closure_20261027/T10_strict_input_template.json",
+        "--packet",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/transfer_test_001/T10_inputs",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/transfer_strict_004"
+      ],
+      "exit_code": 2,
+      "run_sha256": "76fcd07547b6c1e0e2787b2c269107df84ee2a3f3acbdd1ab16c025e790badef"
+    },
+    {
+      "operation": "video_review_001",
+      "argv": [
+        "/workspace/work/uwb-b-t10-closure-20261027-run/video-venv/bin/python",
+        "tools/field_20261024_25/t10_closure/inspect_video.py",
+        "--mov",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/data/extracted/T10_video/IMG_7347.MOV",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/video_review_001"
+      ],
+      "exit_code": 0,
+      "run_sha256": "498d061c246d72143bfd8520cbe164a9f0008ee94870c20813aefa81c1e4f5db"
+    },
+    {
+      "operation": "final relevant tests t10_closure",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/field_20261024_25/t10_closure",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "tests": 22,
+      "log": "B_TESTS_OPERATOR_FINAL.log"
+    },
+    {
+      "operation": "final relevant tests causal_baselines",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/field_20261024_25/causal_baselines",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "tests": 47,
+      "log": "BASELINE_TESTS.log"
+    },
+    {
+      "operation": "final relevant tests parameter_clock_prep",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/field_20261024_25/parameter_clock_prep",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "tests": 17,
+      "log": "INTERFACE_TESTS.log"
+    },
+    {
+      "operation": "portable input archive with full member readback",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/make_archive.py",
+        "--source",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/portable_inputs_002",
+        "--archive",
+        "docs/field_tests/20261024_25/t10_closure_20261027/inputs/T10_portable_inputs_v2.tar.gz",
+        "--prefix",
+        "T10_inputs"
+      ],
+      "exit_code": 0,
+      "archive_sha256": "67a4aeaaeb2606f3dd971803ccbbf7598220a9b1fe6f6ab215929f6a4b046faf",
+      "members_verified": 20
+    },
+    {
+      "operation": "transfer extraction to an empty directory, preserve any existing files",
+      "argv": [
+        "tar",
+        "--keep-old-files",
+        "-xzf",
+        "docs/field_tests/20261024_25/t10_closure_20261027/inputs/T10_portable_inputs_v2.tar.gz",
+        "-C",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/transfer_test_001"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "actual_runs": {
+    "new_room_baseline_runs": 0,
+    "source_odometry": "PR46 existing T10 reused after independent 3426-row readback; 1140 source poses, 2284 blocked fusion rows",
+    "input_row_readback": "results/independent_readback.json",
+    "strict_gate": "results/strict_execution.json",
+    "tests": {
+      "B": 22,
+      "baseline": 47,
+      "parameter_interface": 17,
+      "total": 86
+    }
+  },
+  "operator_evidence": "operator_evidence.json",
+  "minimum_operator_followup": {
+    "asked_groups": 3,
+    "answers_received": 3,
+    "do_not_repeat": true,
+    "remaining_dependencies": [
+      "physical odometry-point to approximate geometric-center relation and T10 mounting applicability, or directly measured base-to-antenna XY",
+      "actual per-car start position/body heading tied to exact own-car odom record or independently confirmed unchanged start interval",
+      "T10-deployed timestamp semantics and bounded host/sample-time mappings; historical absence cannot be repaired with present-day NTP checks"
+    ],
+    "evaluation_only": [
+      "actual independent spatial validation and uncertainty",
+      "same stationary-state binding for checkpoint use, or bounded independent video time mapping for continuous use"
+    ]
+  },
+  "portable_artifact": {
+    "relative_path": "inputs/T10_portable_inputs_v2.tar.gz",
+    "sha256": "67a4aeaaeb2606f3dd971803ccbbf7598220a9b1fe6f6ab215929f6a4b046faf",
+    "size_bytes": 1786970,
+    "retrieval": "Git branch/PR blob; available to another environment; includes no raw MOV/bag/venv or historic full replay output"
+  },
+  "checkpoints": {
+    "status": "DONE",
+    "source_versions": "results/source_versions.json",
+    "reuse_policy": "use existing units only when source/config/input/output fingerprints match; new configuration uses a new output directory; no --resume flag",
+    "next_command": [
+      "$ALGORITHM_PYTHON",
+      "tools/field_20261024_25/t10_closure/run_ready.py",
+      "--template",
+      "$NEW_PROVENANCE_COMPLETE_T10_TEMPLATE",
+      "--packet",
+      "$EXTRACTED/T10_inputs",
+      "--output",
+      "$NEW_OUTPUT/T10_strict"
+    ],
+    "expected_current_exit_code": 2,
+    "after_actual_ready_run": "existing PR46/48 write_replay saves estimate.csv/diagnostics/hashes; independently read back new room outputs before any field claim; independent metric reference remains separate"
+  },
+  "limitations": [
+    "no accepted actual room initialization or horizontal base lever",
+    "no calibrated T10 measurement-clock model",
+    "no accepted continuous/checkpoint metric reference",
+    "T12 actual start remains unrelated/unknown; no other trial substituted",
+    "T09/T11/T13/T15 localization replay/error tuning not performed"
+  ],
+  "protection": {
+    "changed_paths_only": [
+      "tools/field_20261024_25/t10_closure/",
+      "docs/field_tests/20261024_25/t10_closure_20261027/"
+    ],
+    "raw_or_public_geometry_manifest_changed": false,
+    "other_processes_signalled": false,
+    "ROS_vehicle_serial_started": false,
+    "PR_auto_merge": false
+  }
+}
