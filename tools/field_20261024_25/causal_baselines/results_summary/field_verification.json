@@ -1,0 +1,38 @@
+{
+  "all_passed": true,
+  "checks": [
+    {
+      "blocked_rows_verified": 9712,
+      "experiment_id": "T08",
+      "rows": 14568,
+      "run_sha256": "ff4ff6debe33421d5231523a5b9129aebf09dfb6b9bf45a35adb90552e862b06",
+      "source_pose_rows_verified": 4854,
+      "valid_source_rows": 4849
+    },
+    {
+      "blocked_rows_verified": 2284,
+      "experiment_id": "T10",
+      "rows": 3426,
+      "run_sha256": "89ab64834e1d379c8b4ae8a3e9cb2b8296761fe0c6e6e4974be1858a811c27bb",
+      "source_pose_rows_verified": 1140,
+      "valid_source_rows": 1140
+    },
+    {
+      "blocked_rows_verified": 5408,
+      "experiment_id": "T12",
+      "rows": 8112,
+      "run_sha256": "dea03393a647dc3d694b2c1e93359bfbb1f6d28cc827a5875b2e2da44a536314",
+      "source_pose_rows_verified": 2702,
+      "valid_source_rows": 2693
+    },
+    {
+      "blocked_rows_verified": 6556,
+      "experiment_id": "T14",
+      "rows": 9834,
+      "run_sha256": "0ffe14e767b5d0e406d0b0f746da426196864428d56a657bb4bc8a630e9c355e",
+      "source_pose_rows_verified": 3276,
+      "valid_source_rows": 3270
+    }
+  ],
+  "scope": "causal source replay and blocked-output integrity; no accuracy evaluation"
+}
