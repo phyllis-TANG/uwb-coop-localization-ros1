@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "experiment_id": "T10",
+  "scope": "development-only hypothesis exploration; not strict field acceptance or accuracy evaluation",
+  "algorithm_base_commit": "8dd0bbcc495996a0ffff0bd900fc70409e907814",
+  "bag_sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+  "initialization_after_receive_seconds": 2.0,
+  "nominal_antenna_xy_m": {"car1": [1.5, 4.0], "car2": [2.98, 3.07]},
+  "nominal_body_yaw_rad": {"car1": -1.5707963267948966, "car2": 0.0},
+  "geometric_center_offset_as_base_hypothesis_xy_m": {"car1": [0.08, -0.06], "car2": [-0.12, 0.08]},
+  "total_header_to_comparison_time_hypothesis_ns": {"car1": -20000000, "car2": -20000000},
+  "clock_uncertainty_api_parameter_ns": 100000000,
+  "clock_uncertainty_parameter_meaning": "unverified engineering input scale required by legacy API; NOT a measured or defensible clock error bound; no covariance coverage claim",
+  "clock_hypothesis_meaning": "identity epoch/rate plus an assumed combined host/sampling adjustment; NOT a separation or calibration of clock offset, network delay or sampling latency",
+  "profiles": [
+    {"id": "nominal", "change": null},
+    {"id": "car1_lever_x_minus_5cm", "change": {"kind": "lever_x", "car": "car1", "delta": -0.05}},
+    {"id": "car1_lever_x_plus_5cm", "change": {"kind": "lever_x", "car": "car1", "delta": 0.05}},
+    {"id": "car2_lever_x_minus_5cm", "change": {"kind": "lever_x", "car": "car2", "delta": -0.05}},
+    {"id": "car2_lever_x_plus_5cm", "change": {"kind": "lever_x", "car": "car2", "delta": 0.05}},
+    {"id": "car2_time_minus_20ms", "change": {"kind": "clock_ns", "car": "car2", "delta": -20000000}},
+    {"id": "car2_time_plus_20ms", "change": {"kind": "clock_ns", "car": "car2", "delta": 20000000}}
+  ],
+  "step_sizes_are_calibration_bounds": false,
+  "data_informed_design_note": "T10 source headers/receipts and the earlier UWB-only feasibility calculation were inspected before this development protocol; no claim of preregistered blind validation",
+  "not_used_as_inputs": ["operator endpoint coordinates", "operator tape distances", "video-derived positions", "holdout localization outputs"],
+  "unchanged": ["SE(2) EKF source", "fixed R/Q and initial covariance", "Car1-only peer direction", "200ms directed-link thinning", "60ms twist support", "200ms arrival/freshness limits"],
+  "evaluation": {"reference_scope": "not_accepted", "RMSE_m": null, "ATE_m": null, "accuracy_improvement_percent": null}
+}
