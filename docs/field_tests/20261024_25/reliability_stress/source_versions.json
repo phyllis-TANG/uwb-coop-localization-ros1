@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "scope": "synthetic_only",
+  "baseline_commit": "4a379da4044a5fd6d36cb8c3e2c53f4a7d120d5b",
+  "preregistration_local_commit": "4f8eaf8d8189b3ee56703790dc580b9b8951155d",
+  "source_freeze_commit": "62f1a1368596c6729365a8f55f9926c05ae113f2",
+  "report_generator_sha256": "e784d56276511d3275bc6882187253143d61e5589de6efe605457ef0852b25e6",
+  "branch": "analysis/reliability-stress-20261026-baf181",
+  "work_start_utc": "2026-10-26T05:56:50Z",
+  "runs": {
+    "development": {
+      "status": "DONE",
+      "code_commit": "9ff2ba52fa4a721268079a6693032882d501cc46",
+      "worktree_dirty": false,
+      "elapsed_s": 152.44341000699933,
+      "created_at_utc": "2026-10-26T06:12:08.790564+00:00",
+      "finished_at_utc": "2026-10-26T06:14:40.905343+00:00",
+      "source_sha256": {
+        "tools/field_20261024_25/audit_bags.py": "aead4ca10d232941d8accaa886b54d6b6d6e320f640db19ee9c990e6fbca9913",
+        "tools/field_20261024_25/audit_exports.py": "cf7c88343a296cb786471c04b3f7869af079a9dc199fcb00915ed442c3bd40a3",
+        "tools/field_20261024_25/audit_videos.py": "f7d3b4c0cbb60975b7e3bf1b369f0c326248de6adbb011f6d8bc4151ab91072a",
+        "tools/field_20261024_25/bag_decoder.py": "acbe5b1727c4e1fbebc4a3bdc9c735ad9cde682e8c46baeff5654742297143d0",
+        "tools/field_20261024_25/comparison_adapter.py": "277ade1b034769f01b6e328f23e727c8f12b0970497fdd4723987dbc099247c2",
+        "tools/field_20261024_25/development.py": "73dd54a331cbb2bf836817ad9a2784bd0e647131c42b3b15d581dfa035b0b384",
+        "tools/field_20261024_25/normalize.py": "d0766d16736b6f9ae720a4dcd9760551819c5cadbcb8c136e1030d54d9312703",
+        "tools/field_20261024_25/prepare.py": "e37544b930fd0370de865f54aaab12c75ffc24603ee0eeae3d8d153b3e5b41c0",
+        "tools/field_20261024_25/reliability_stress/engine.py": "b5a8a02d40340c5d9d2824f80eaa66839aa1a50c1805e40998eb988bd11e8cb7",
+        "tools/field_20261024_25/reliability_stress/evaluate.py": "e2698f942ca6f08b04adfd99d50e21317763d2f548de63735b8b22cc8be832ef",
+        "tools/field_20261024_25/reliability_stress/protocol.py": "475a5dc04fa29068209962bbcd067deedb09aadcf02d894500232ade2a1ba37f",
+        "tools/field_20261024_25/reliability_stress/run.py": "183629ef163ae38c64035bc8e1e1b0047c1bc20e496ffa74228275e010a3c8b0",
+        "tools/field_20261024_25/reliability_stress/simulate.py": "948050587e3ab87b0edde8572e8bdb56f00231288c3bf325c01ed56236de5fa0",
+        "tools/field_20261024_25/reliability_stress/test_reliability.py": "90ce9411b5b07cb1a383f3baa17e7829c76f70d79f41c0cb05132c9e84dd49ab",
+        "tools/field_20261024_25/run_nightly.py": "e3be2f6b7702b334ae8164935b9059ba04b8b124e0e202c9425e0a95d53ed524",
+        "tools/field_20261024_25/test_audit_bags.py": "e7793ce87eff704ca0966bd5b98353738459c030607ce16726bc87352e7ebcce",
+        "tools/field_20261024_25/test_audit_videos.py": "e5e9f81abdcf2048de8a2d7df05370dee2ef272a0b04aeb46e95621cccd4be4d",
+        "tools/field_20261024_25/test_comparison_adapter.py": "23b667a9b8d1318713a9e458bf97fb5438b258ebc280a1677f803dcbdf68848d",
+        "tools/field_20261024_25/test_development.py": "146348edacad7f7ae2c73c92ff926558301537987ef1e0a88e8e7c8780e7ddc5",
+        "tools/field_20261024_25/test_export_audit.py": "32e33dac658078cf7ddcd59a69e69457da100c8d78af006ce62d67f78c3791c4",
+        "tools/field_20261024_25/test_normalize.py": "3160271ff8d50b6f08fd28effc9efdf9cd869c8999ae2a303d76592ce6dcf958",
+        "tools/field_20261024_25/test_prepare.py": "0240a987e23e15b44cd96e31547448df187303c8238ef06051fc7d324bdde89f",
+        "tools/field_20261024_25/test_run_nightly.py": "43993ee82c9b0fc7402d7a5047152280077acb95c2782a67cacecead9c478e3f"
+      },
+      "config_sha256": {
+        "frozen_config.json": "aebeac0592c7676a955479edcd4075edbaff76e8729c4a50481a936972832f29",
+        "geometry.json": "bd59d654a6794cc61a5680816d479a7ae3a4b5a0376a3d5ebd517b6c3842266c",
+        "manifest.json": "d4cd1ecc0e9bb71a0c18b8fa62487f6b02e6ee8549783c472d876ebebb1ad544",
+        "synthetic_comparison_config.json": "d15bb06ce92dba59154a937b30d5169a26e0b4bfe1b5e5ec116698c23060047a"
+      },
+      "command_argv": [
+        "/workspace/scratch/baf181dcbfd0/reliability-venv-baf181/bin/python",
+        "/workspace/scratch/baf181dcbfd0/reliability-stress-20261026-baf181/tools/field_20261024_25/reliability_stress/run.py",
+        "--split",
+        "development",
+        "--output",
+        "/tmp/uwb-reliability-20261026-baf181/development"
+      ],
+      "environment": {
+        "packages_file": "python_packages.txt",
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+        "thread_limits": {
+          "MKL_NUM_THREADS": null,
+          "OMP_NUM_THREADS": null,
+          "OPENBLAS_NUM_THREADS": "1"
+        }
+      },
+      "run_json_sha256": "56fa5230fd040efd267872f5c1cb8dab9a1982b2864ac199e668f5f5f3061f4b"
+    },
+    "validation": {
+      "status": "DONE",
+      "code_commit": "62f1a1368596c6729365a8f55f9926c05ae113f2",
+      "worktree_dirty": false,
+      "elapsed_s": 1073.2298058530032,
+      "created_at_utc": "2026-10-26T06:17:49.613956+00:00",
+      "finished_at_utc": "2026-10-26T06:35:42.528279+00:00",
+      "source_sha256": {
+        "tools/field_20261024_25/audit_bags.py": "aead4ca10d232941d8accaa886b54d6b6d6e320f640db19ee9c990e6fbca9913",
+        "tools/field_20261024_25/audit_exports.py": "cf7c88343a296cb786471c04b3f7869af079a9dc199fcb00915ed442c3bd40a3",
+        "tools/field_20261024_25/audit_videos.py": "f7d3b4c0cbb60975b7e3bf1b369f0c326248de6adbb011f6d8bc4151ab91072a",
+        "tools/field_20261024_25/bag_decoder.py": "acbe5b1727c4e1fbebc4a3bdc9c735ad9cde682e8c46baeff5654742297143d0",
+        "tools/field_20261024_25/comparison_adapter.py": "277ade1b034769f01b6e328f23e727c8f12b0970497fdd4723987dbc099247c2",
+        "tools/field_20261024_25/development.py": "73dd54a331cbb2bf836817ad9a2784bd0e647131c42b3b15d581dfa035b0b384",
+        "tools/field_20261024_25/normalize.py": "d0766d16736b6f9ae720a4dcd9760551819c5cadbcb8c136e1030d54d9312703",
+        "tools/field_20261024_25/prepare.py": "e37544b930fd0370de865f54aaab12c75ffc24603ee0eeae3d8d153b3e5b41c0",
+        "tools/field_20261024_25/reliability_stress/engine.py": "b5a8a02d40340c5d9d2824f80eaa66839aa1a50c1805e40998eb988bd11e8cb7",
+        "tools/field_20261024_25/reliability_stress/evaluate.py": "e2698f942ca6f08b04adfd99d50e21317763d2f548de63735b8b22cc8be832ef",
+        "tools/field_20261024_25/reliability_stress/protocol.py": "475a5dc04fa29068209962bbcd067deedb09aadcf02d894500232ade2a1ba37f",
+        "tools/field_20261024_25/reliability_stress/run.py": "183629ef163ae38c64035bc8e1e1b0047c1bc20e496ffa74228275e010a3c8b0",
+        "tools/field_20261024_25/reliability_stress/simulate.py": "948050587e3ab87b0edde8572e8bdb56f00231288c3bf325c01ed56236de5fa0",
+        "tools/field_20261024_25/reliability_stress/test_reliability.py": "90ce9411b5b07cb1a383f3baa17e7829c76f70d79f41c0cb05132c9e84dd49ab",
+        "tools/field_20261024_25/reliability_stress/verify_outputs.py": "c31945b7a0d717d6043d76d253ebfe16f0a067e349a281a3a215c4e9adb18ee8",
+        "tools/field_20261024_25/run_nightly.py": "e3be2f6b7702b334ae8164935b9059ba04b8b124e0e202c9425e0a95d53ed524",
+        "tools/field_20261024_25/test_audit_bags.py": "e7793ce87eff704ca0966bd5b98353738459c030607ce16726bc87352e7ebcce",
+        "tools/field_20261024_25/test_audit_videos.py": "e5e9f81abdcf2048de8a2d7df05370dee2ef272a0b04aeb46e95621cccd4be4d",
+        "tools/field_20261024_25/test_comparison_adapter.py": "23b667a9b8d1318713a9e458bf97fb5438b258ebc280a1677f803dcbdf68848d",
+        "tools/field_20261024_25/test_development.py": "146348edacad7f7ae2c73c92ff926558301537987ef1e0a88e8e7c8780e7ddc5",
+        "tools/field_20261024_25/test_export_audit.py": "32e33dac658078cf7ddcd59a69e69457da100c8d78af006ce62d67f78c3791c4",
+        "tools/field_20261024_25/test_normalize.py": "3160271ff8d50b6f08fd28effc9efdf9cd869c8999ae2a303d76592ce6dcf958",
+        "tools/field_20261024_25/test_prepare.py": "0240a987e23e15b44cd96e31547448df187303c8238ef06051fc7d324bdde89f",
+        "tools/field_20261024_25/test_run_nightly.py": "43993ee82c9b0fc7402d7a5047152280077acb95c2782a67cacecead9c478e3f"
+      },
+      "config_sha256": {
+        "frozen_config.json": "aebeac0592c7676a955479edcd4075edbaff76e8729c4a50481a936972832f29",
+        "geometry.json": "bd59d654a6794cc61a5680816d479a7ae3a4b5a0376a3d5ebd517b6c3842266c",
+        "manifest.json": "d4cd1ecc0e9bb71a0c18b8fa62487f6b02e6ee8549783c472d876ebebb1ad544",
+        "synthetic_comparison_config.json": "d15bb06ce92dba59154a937b30d5169a26e0b4bfe1b5e5ec116698c23060047a"
+      },
+      "command_argv": [
+        "/workspace/scratch/baf181dcbfd0/reliability-venv-baf181/bin/python",
+        "/workspace/scratch/baf181dcbfd0/reliability-stress-20261026-baf181/tools/field_20261024_25/reliability_stress/run.py",
+        "--split",
+        "validation",
+        "--freeze-commit",
+        "62f1a1368596c6729365a8f55f9926c05ae113f2",
+        "--output",
+        "/tmp/uwb-reliability-20261026-baf181/validation"
+      ],
+      "environment": {
+        "packages_file": "python_packages.txt",
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+        "thread_limits": {
+          "MKL_NUM_THREADS": null,
+          "OMP_NUM_THREADS": null,
+          "OPENBLAS_NUM_THREADS": "1"
+        }
+      },
+      "run_json_sha256": "2218afa1b76179819da2e965f7fbe5f5335807e149677836d41429b8d722df39"
+    },
+    "development_readback": {
+      "status": "DONE",
+      "code_commit": "792e815c63beade3d9fa243d0d16607156918b73",
+      "worktree_dirty": false,
+      "elapsed_s": 3.6411623880012485,
+      "created_at_utc": "2026-10-26T06:15:47.847525+00:00",
+      "finished_at_utc": "2026-10-26T06:15:51.145549+00:00",
+      "source_sha256": {
+        "tools/field_20261024_25/audit_bags.py": "aead4ca10d232941d8accaa886b54d6b6d6e320f640db19ee9c990e6fbca9913",
+        "tools/field_20261024_25/audit_exports.py": "cf7c88343a296cb786471c04b3f7869af079a9dc199fcb00915ed442c3bd40a3",
+        "tools/field_20261024_25/audit_videos.py": "f7d3b4c0cbb60975b7e3bf1b369f0c326248de6adbb011f6d8bc4151ab91072a",
+        "tools/field_20261024_25/bag_decoder.py": "acbe5b1727c4e1fbebc4a3bdc9c735ad9cde682e8c46baeff5654742297143d0",
+        "tools/field_20261024_25/comparison_adapter.py": "277ade1b034769f01b6e328f23e727c8f12b0970497fdd4723987dbc099247c2",
+        "tools/field_20261024_25/development.py": "73dd54a331cbb2bf836817ad9a2784bd0e647131c42b3b15d581dfa035b0b384",
+        "tools/field_20261024_25/normalize.py": "d0766d16736b6f9ae720a4dcd9760551819c5cadbcb8c136e1030d54d9312703",
+        "tools/field_20261024_25/prepare.py": "e37544b930fd0370de865f54aaab12c75ffc24603ee0eeae3d8d153b3e5b41c0",
+        "tools/field_20261024_25/reliability_stress/verify_outputs.py": "c31945b7a0d717d6043d76d253ebfe16f0a067e349a281a3a215c4e9adb18ee8",
+        "tools/field_20261024_25/run_nightly.py": "e3be2f6b7702b334ae8164935b9059ba04b8b124e0e202c9425e0a95d53ed524",
+        "tools/field_20261024_25/test_audit_bags.py": "e7793ce87eff704ca0966bd5b98353738459c030607ce16726bc87352e7ebcce",
+        "tools/field_20261024_25/test_audit_videos.py": "e5e9f81abdcf2048de8a2d7df05370dee2ef272a0b04aeb46e95621cccd4be4d",
+        "tools/field_20261024_25/test_comparison_adapter.py": "23b667a9b8d1318713a9e458bf97fb5438b258ebc280a1677f803dcbdf68848d",
+        "tools/field_20261024_25/test_development.py": "146348edacad7f7ae2c73c92ff926558301537987ef1e0a88e8e7c8780e7ddc5",
+        "tools/field_20261024_25/test_export_audit.py": "32e33dac658078cf7ddcd59a69e69457da100c8d78af006ce62d67f78c3791c4",
+        "tools/field_20261024_25/test_normalize.py": "3160271ff8d50b6f08fd28effc9efdf9cd869c8999ae2a303d76592ce6dcf958",
+        "tools/field_20261024_25/test_prepare.py": "0240a987e23e15b44cd96e31547448df187303c8238ef06051fc7d324bdde89f",
+        "tools/field_20261024_25/test_run_nightly.py": "43993ee82c9b0fc7402d7a5047152280077acb95c2782a67cacecead9c478e3f"
+      },
+      "config_sha256": {
+        "frozen_config.json": "aebeac0592c7676a955479edcd4075edbaff76e8729c4a50481a936972832f29"
+      },
+      "command_argv": [
+        "tools/field_20261024_25/reliability_stress/verify_outputs.py",
+        "--input",
+        "/tmp/uwb-reliability-20261026-baf181/development",
+        "--output",
+        "/tmp/uwb-reliability-20261026-baf181/development_readback"
+      ],
+      "environment": {
+        "packages_file": "python_packages.txt",
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+      },
+      "run_json_sha256": "9b657f60e71d3418a9053af01055576c9c9b7bba2807651d856a01bbe5e591e7"
+    },
+    "validation_readback": {
+      "status": "DONE",
+      "code_commit": "62f1a1368596c6729365a8f55f9926c05ae113f2",
+      "worktree_dirty": false,
+      "elapsed_s": 26.092394228999183,
+      "created_at_utc": "2026-10-26T06:35:56.251255+00:00",
+      "finished_at_utc": "2026-10-26T06:36:21.922289+00:00",
+      "source_sha256": {
+        "tools/field_20261024_25/audit_bags.py": "aead4ca10d232941d8accaa886b54d6b6d6e320f640db19ee9c990e6fbca9913",
+        "tools/field_20261024_25/audit_exports.py": "cf7c88343a296cb786471c04b3f7869af079a9dc199fcb00915ed442c3bd40a3",
+        "tools/field_20261024_25/audit_videos.py": "f7d3b4c0cbb60975b7e3bf1b369f0c326248de6adbb011f6d8bc4151ab91072a",
+        "tools/field_20261024_25/bag_decoder.py": "acbe5b1727c4e1fbebc4a3bdc9c735ad9cde682e8c46baeff5654742297143d0",
+        "tools/field_20261024_25/comparison_adapter.py": "277ade1b034769f01b6e328f23e727c8f12b0970497fdd4723987dbc099247c2",
+        "tools/field_20261024_25/development.py": "73dd54a331cbb2bf836817ad9a2784bd0e647131c42b3b15d581dfa035b0b384",
+        "tools/field_20261024_25/normalize.py": "d0766d16736b6f9ae720a4dcd9760551819c5cadbcb8c136e1030d54d9312703",
+        "tools/field_20261024_25/prepare.py": "e37544b930fd0370de865f54aaab12c75ffc24603ee0eeae3d8d153b3e5b41c0",
+        "tools/field_20261024_25/reliability_stress/verify_outputs.py": "c31945b7a0d717d6043d76d253ebfe16f0a067e349a281a3a215c4e9adb18ee8",
+        "tools/field_20261024_25/run_nightly.py": "e3be2f6b7702b334ae8164935b9059ba04b8b124e0e202c9425e0a95d53ed524",
+        "tools/field_20261024_25/test_audit_bags.py": "e7793ce87eff704ca0966bd5b98353738459c030607ce16726bc87352e7ebcce",
+        "tools/field_20261024_25/test_audit_videos.py": "e5e9f81abdcf2048de8a2d7df05370dee2ef272a0b04aeb46e95621cccd4be4d",
+        "tools/field_20261024_25/test_comparison_adapter.py": "23b667a9b8d1318713a9e458bf97fb5438b258ebc280a1677f803dcbdf68848d",
+        "tools/field_20261024_25/test_development.py": "146348edacad7f7ae2c73c92ff926558301537987ef1e0a88e8e7c8780e7ddc5",
+        "tools/field_20261024_25/test_export_audit.py": "32e33dac658078cf7ddcd59a69e69457da100c8d78af006ce62d67f78c3791c4",
+        "tools/field_20261024_25/test_normalize.py": "3160271ff8d50b6f08fd28effc9efdf9cd869c8999ae2a303d76592ce6dcf958",
+        "tools/field_20261024_25/test_prepare.py": "0240a987e23e15b44cd96e31547448df187303c8238ef06051fc7d324bdde89f",
+        "tools/field_20261024_25/test_run_nightly.py": "43993ee82c9b0fc7402d7a5047152280077acb95c2782a67cacecead9c478e3f"
+      },
+      "config_sha256": {
+        "frozen_config.json": "aebeac0592c7676a955479edcd4075edbaff76e8729c4a50481a936972832f29"
+      },
+      "command_argv": [
+        "tools/field_20261024_25/reliability_stress/verify_outputs.py",
+        "--input",
+        "/tmp/uwb-reliability-20261026-baf181/validation",
+        "--output",
+        "/tmp/uwb-reliability-20261026-baf181/validation_readback"
+      ],
+      "environment": {
+        "packages_file": "python_packages.txt",
+        "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+      },
+      "run_json_sha256": "c72acbfc5446f557ef27f818c7a31df7400445a20fa023f5a9dd3b46236aeb3e"
+    }
+  },
+  "compact_outputs_sha256": {
+    "TESTS.log": "b698f9f1fdee53e60032560f076994c8fa024dff1d767f30434f7a60662b6826",
+    "development_readback.json": "1374c20061ebb363cd9bd6c0239dffb633a34a790b58eb416bed2db1ac935c45",
+    "per_seed_fault.csv": "07cb55bf9fc0d1109ca89820d694a631981399b7d33c5210bb3e3ee416a92f54",
+    "validation_readback.json": "6805e910dcfe7f74aa17d5db3d3c3d729e1657f03b4ed6627770edb6b037718c",
+    "validation_summary.json": "6bad3c979fbfb5f533152219c8b2b3ec4422f21b304a5b6b91e600d97a9cbc12"
+  },
+  "archive_policy": "full contract run.json, generated inputs/truth, estimates, diagnostics, per-seed metrics, snapshots and logs are outside Git; archive SHA registered separately",
+  "limitations": [
+    "no field localization accuracy evaluated",
+    "no novelty established",
+    "unadjusted seed-block bootstrap CIs",
+    "equal fixed solve count is not a real-time performance claim"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "checked": {
+    "checked_metric_rows": 2160,
+    "estimate_rows": 173520,
+    "firewall_bound_checks": 34704,
+    "selected_peer_checks": 86400,
+    "solver_failures": 0,
+    "trials": 72
+  },
+  "input_run_sha256": "56fa5230fd040efd267872f5c1cb8dab9a1982b2864ac199e668f5f5f3061f4b",
+  "limitations": [
+    "readback verifies recorded causality; online prefix test is separate",
+    "does not independently validate synthetic physical realism"
+  ],
+  "max_healthy_shift_m": 0.06000000000000026,
+  "max_weak_shift_m": 0.3500000000000002,
+  "schema_version": 1,
+  "status": "DONE"
+}
