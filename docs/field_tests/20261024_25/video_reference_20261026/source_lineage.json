@@ -1,0 +1,11 @@
+{
+  "capture_policy": "Execution used uncommitted task tools at the stated base commit. Source hashes and this lineage were finalized after execution; no claim that every startup hash was captured live.",
+  "common.py": "An unused antenna-offset helper was appended after initial media/calibration/primary-observation jobs started. Existing called functions were unchanged. The earlier module is reconstructed by removing that known appended helper; reconstruction is explicitly labelled.",
+  "manual_timing.py": "T12 used v1 (exact snapshot saved before extension). T14/T15 used the cropped-flow extension. All manual tracks are timing-only and include failures.",
+  "calibrate.py": "The first run had an in-place refinement-shift logging error. calibration_002 recomputed into a fresh directory after correction; only this corrected run is delivered.",
+  "event_sync.py": "Preliminary mappings were superseded after adding visibility/stationary guards and single-event stage ambiguity handling. Only time_candidates_final_002 is delivered.",
+  "background_geometry.py": "Synthetic camera-direction testing rejected an IPPE pathological solution before real spatial candidates ran. Delivered candidates use ITERATIVE with positive-depth/above-floor checks.",
+  "diagnose_markers.py": "A later asset filter only avoids repeating completed clips; detection mathematics unchanged.",
+  "floor_annotation": "Two automatic Hough attempts failed. Delivered P intersections are explicit human original-pixel annotations, with unknown annotation uncertainty.",
+  "assembly": "final_contract_001 stopped at the Git owner check after writing copies. final_contract_003 is the selected complete assembly. Older directories are preserved and not published."
+}

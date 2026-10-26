@@ -1,0 +1,1461 @@
+{
+  "schema_version": 1,
+  "configuration": {
+    "displacement_window_s": 0.25,
+    "speed_threshold_m_s": 0.005,
+    "yaw_rate_threshold_rad_s": 0.03,
+    "interval_min_duration_s": 0.5,
+    "interval_bridge_gap_s": 0.5
+  },
+  "experiments": [
+    {
+      "experiment_id": "T08",
+      "bag_sha256": "cf3b4de0f20424d02779aeeb416a4fb16d77bb1f5333344d48ebf446a3884ada",
+      "receive_origin_epoch_ns": "1792922800963481831",
+      "clock": "bag_receive_ROS_record_clock",
+      "vehicles": {
+        "car1": {
+          "odom_samples": 4879,
+          "command_samples": 0,
+          "translational_intervals": [],
+          "turning_intervals": [],
+          "nonzero_linear_command_intervals": [],
+          "nonzero_angular_command_intervals": [],
+          "maximum_speed_m_s": 0.0,
+          "maximum_abs_yaw_rate_rad_s": 0.0
+        },
+        "car2": {
+          "odom_samples": 4861,
+          "command_samples": 1766,
+          "translational_intervals": [
+            {
+              "start_s": 134.892227377,
+              "end_s": 156.483491774,
+              "start_bracket_s": [
+                134.883248487,
+                134.892227377
+              ],
+              "end_bracket_s": [
+                156.483491774,
+                156.532937647
+              ]
+            },
+            {
+              "start_s": 163.092886658,
+              "end_s": 170.144057081,
+              "start_bracket_s": [
+                163.033740659,
+                163.092886658
+              ],
+              "end_bracket_s": [
+                170.144057081,
+                170.183213776
+              ]
+            },
+            {
+              "start_s": 170.682788334,
+              "end_s": 174.584805372,
+              "start_bracket_s": [
+                170.633362912,
+                170.682788334
+              ],
+              "end_bracket_s": [
+                174.584805372,
+                174.632641808
+              ]
+            },
+            {
+              "start_s": 177.182883208,
+              "end_s": 177.972882387,
+              "start_bracket_s": [
+                177.122434983,
+                177.182883208
+              ],
+              "end_bracket_s": [
+                177.972882387,
+                178.032374434
+              ]
+            },
+            {
+              "start_s": 183.052018276,
+              "end_s": 206.542608038,
+              "start_bracket_s": [
+                182.994044608,
+                183.052018276
+              ],
+              "end_bracket_s": [
+                206.542608038,
+                206.602889477
+              ]
+            }
+          ],
+          "turning_intervals": [
+            {
+              "start_s": 163.836059651,
+              "end_s": 174.584805372,
+              "start_bracket_s": [
+                163.782640792,
+                163.836059651
+              ],
+              "end_bracket_s": [
+                174.584805372,
+                174.632641808
+              ]
+            },
+            {
+              "start_s": 177.182883208,
+              "end_s": 177.972882387,
+              "start_bracket_s": [
+                177.122434983,
+                177.182883208
+              ],
+              "end_bracket_s": [
+                177.972882387,
+                178.032374434
+              ]
+            },
+            {
+              "start_s": 183.052018276,
+              "end_s": 185.082852155,
+              "start_bracket_s": [
+                182.994044608,
+                183.052018276
+              ],
+              "end_bracket_s": [
+                185.082852155,
+                185.132949444
+              ]
+            },
+            {
+              "start_s": 186.44274979,
+              "end_s": 190.336029929,
+              "start_bracket_s": [
+                186.422949869,
+                186.44274979
+              ],
+              "end_bracket_s": [
+                190.336029929,
+                190.379679863
+              ]
+            },
+            {
+              "start_s": 193.084566584,
+              "end_s": 195.052350229,
+              "start_bracket_s": [
+                193.033983193,
+                193.084566584
+              ],
+              "end_bracket_s": [
+                195.052350229,
+                195.112676916
+              ]
+            },
+            {
+              "start_s": 200.482684788,
+              "end_s": 201.042629821,
+              "start_bracket_s": [
+                200.442917361,
+                200.482684788
+              ],
+              "end_bracket_s": [
+                201.042629821,
+                201.103032299
+              ]
+            }
+          ],
+          "nonzero_linear_command_intervals": [
+            {
+              "start_s": 132.744844168,
+              "end_s": 155.945620513,
+              "start_bracket_s": [
+                132.694563192,
+                132.744844168
+              ],
+              "end_bracket_s": [
+                155.945620513,
+                155.992653131
+              ]
+            },
+            {
+              "start_s": 182.362210281,
+              "end_s": 206.202980137,
+              "start_bracket_s": [
+                182.304723989,
+                182.362210281
+              ],
+              "end_bracket_s": [
+                206.202980137,
+                206.253733202
+              ]
+            }
+          ],
+          "nonzero_angular_command_intervals": [
+            {
+              "start_s": 133.402585059,
+              "end_s": 155.945620513,
+              "start_bracket_s": [
+                133.356266818,
+                133.402585059
+              ],
+              "end_bracket_s": [
+                155.945620513,
+                155.992653131
+              ]
+            },
+            {
+              "start_s": 161.042350309,
+              "end_s": 177.054637662,
+              "start_bracket_s": [
+                160.99442317,
+                161.042350309
+              ],
+              "end_bracket_s": [
+                177.054637662,
+                177.103548089
+              ]
+            },
+            {
+              "start_s": 182.81380576,
+              "end_s": 206.202980137,
+              "start_bracket_s": [
+                182.76654856,
+                182.81380576
+              ],
+              "end_bracket_s": [
+                206.202980137,
+                206.253733202
+              ]
+            }
+          ],
+          "maximum_speed_m_s": 0.1267340282116618,
+          "maximum_abs_yaw_rate_rad_s": 0.45337743502932976
+        }
+      }
+    },
+    {
+      "experiment_id": "T09",
+      "bag_sha256": "f4271484e66c3fe83cc6e3121afbd74f12982499122012a9d2b375fa39a03e12",
+      "receive_origin_epoch_ns": "1792923852736080064",
+      "clock": "bag_receive_ROS_record_clock",
+      "vehicles": {
+        "car1": {
+          "odom_samples": 2668,
+          "command_samples": 0,
+          "translational_intervals": [],
+          "turning_intervals": [],
+          "nonzero_linear_command_intervals": [],
+          "nonzero_angular_command_intervals": [],
+          "maximum_speed_m_s": 0.0,
+          "maximum_abs_yaw_rate_rad_s": 0.0
+        },
+        "car2": {
+          "odom_samples": 2650,
+          "command_samples": 1712,
+          "translational_intervals": [
+            {
+              "start_s": 35.596286219,
+              "end_s": 57.638155063,
+              "start_bracket_s": [
+                35.554761307,
+                35.596286219
+              ],
+              "end_bracket_s": [
+                57.638155063,
+                57.697227803
+              ]
+            },
+            {
+              "start_s": 64.404182734,
+              "end_s": 74.394673722,
+              "start_bracket_s": [
+                64.344037827,
+                64.404182734
+              ],
+              "end_bracket_s": [
+                74.394673722,
+                74.444575825
+              ]
+            },
+            {
+              "start_s": 75.244651796,
+              "end_s": 76.084933235,
+              "start_bracket_s": [
+                75.184660151,
+                75.244651796
+              ],
+              "end_bracket_s": [
+                76.084933235,
+                76.144600432
+              ]
+            },
+            {
+              "start_s": 81.99492357,
+              "end_s": 105.035593545,
+              "start_bracket_s": [
+                81.945204385,
+                81.99492357
+              ],
+              "end_bracket_s": [
+                105.035593545,
+                105.095734841
+              ]
+            }
+          ],
+          "turning_intervals": [
+            {
+              "start_s": 64.46450974,
+              "end_s": 74.394673722,
+              "start_bracket_s": [
+                64.404182734,
+                64.46450974
+              ],
+              "end_bracket_s": [
+                74.394673722,
+                74.444575825
+              ]
+            },
+            {
+              "start_s": 75.064678172,
+              "end_s": 76.084933235,
+              "start_bracket_s": [
+                75.004642622,
+                75.064678172
+              ],
+              "end_bracket_s": [
+                76.084933235,
+                76.144600432
+              ]
+            },
+            {
+              "start_s": 81.99492357,
+              "end_s": 83.255043319,
+              "start_bracket_s": [
+                81.945204385,
+                81.99492357
+              ],
+              "end_bracket_s": [
+                83.255043319,
+                83.298715019
+              ]
+            },
+            {
+              "start_s": 85.044933662,
+              "end_s": 88.265040897,
+              "start_bracket_s": [
+                85.005933127,
+                85.044933662
+              ],
+              "end_bracket_s": [
+                88.265040897,
+                88.325039482
+              ]
+            },
+            {
+              "start_s": 91.695430265,
+              "end_s": 93.16547701,
+              "start_bracket_s": [
+                91.644877495,
+                91.695430265
+              ],
+              "end_bracket_s": [
+                93.16547701,
+                93.224912751
+              ]
+            }
+          ],
+          "nonzero_linear_command_intervals": [
+            {
+              "start_s": 33.817662244,
+              "end_s": 57.224130748,
+              "start_bracket_s": [
+                33.743887717,
+                33.817662244
+              ],
+              "end_bracket_s": [
+                57.224130748,
+                57.287917857
+              ]
+            },
+            {
+              "start_s": 80.924537527,
+              "end_s": 104.63572484,
+              "start_bracket_s": [
+                80.874722744,
+                80.924537527
+              ],
+              "end_bracket_s": [
+                104.63572484,
+                104.68544941
+              ]
+            }
+          ],
+          "nonzero_angular_command_intervals": [
+            {
+              "start_s": 34.234930315,
+              "end_s": 57.224130748,
+              "start_bracket_s": [
+                34.181765797,
+                34.234930315
+              ],
+              "end_bracket_s": [
+                57.224130748,
+                57.287917857
+              ]
+            },
+            {
+              "start_s": 62.275473246,
+              "end_s": 75.664894639,
+              "start_bracket_s": [
+                62.224769527,
+                62.275473246
+              ],
+              "end_bracket_s": [
+                75.664894639,
+                75.715095262
+              ]
+            },
+            {
+              "start_s": 81.233081853,
+              "end_s": 104.63572484,
+              "start_bracket_s": [
+                81.17894471,
+                81.233081853
+              ],
+              "end_bracket_s": [
+                104.63572484,
+                104.68544941
+              ]
+            }
+          ],
+          "maximum_speed_m_s": 0.0809162584972766,
+          "maximum_abs_yaw_rate_rad_s": 0.48924019693985615
+        }
+      }
+    },
+    {
+      "experiment_id": "T10",
+      "bag_sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+      "receive_origin_epoch_ns": "1792925285431466217",
+      "clock": "bag_receive_ROS_record_clock",
+      "vehicles": {
+        "car1": {
+          "odom_samples": 1161,
+          "command_samples": 666,
+          "translational_intervals": [
+            {
+              "start_s": 10.366639764,
+              "end_s": 34.227232395,
+              "start_bracket_s": [
+                10.318426119,
+                10.366639764
+              ],
+              "end_bracket_s": [
+                34.227232395,
+                34.277206465
+              ]
+            }
+          ],
+          "turning_intervals": [],
+          "nonzero_linear_command_intervals": [
+            {
+              "start_s": 9.406722413,
+              "end_s": 32.486816506,
+              "start_bracket_s": [
+                9.356953609,
+                9.406722413
+              ],
+              "end_bracket_s": [
+                32.486816506,
+                32.537207404
+              ]
+            }
+          ],
+          "nonzero_angular_command_intervals": [],
+          "maximum_speed_m_s": 0.06425746567127963,
+          "maximum_abs_yaw_rate_rad_s": 0.03048349982551171
+        },
+        "car2": {
+          "odom_samples": 1145,
+          "command_samples": 0,
+          "translational_intervals": [],
+          "turning_intervals": [],
+          "nonzero_linear_command_intervals": [],
+          "nonzero_angular_command_intervals": [],
+          "maximum_speed_m_s": 0.0,
+          "maximum_abs_yaw_rate_rad_s": 0.0
+        }
+      }
+    },
+    {
+      "experiment_id": "T11",
+      "bag_sha256": "f9bf03d97b2da800451762ce89849e05ce225e621a5b8813b055c0549590bcab",
+      "receive_origin_epoch_ns": "1792925680870004735",
+      "clock": "bag_receive_ROS_record_clock",
+      "vehicles": {
+        "car1": {
+          "odom_samples": 1169,
+          "command_samples": 666,
+          "translational_intervals": [
+            {
+              "start_s": 12.79167846,
+              "end_s": 22.730938826,
+              "start_bracket_s": [
+                12.741005915,
+                12.79167846
+              ],
+              "end_bracket_s": [
+                22.730938826,
+                23.372932066
+              ]
+            },
+            {
+              "start_s": 23.372970249,
+              "end_s": 36.611312616,
+              "start_bracket_s": [
+                23.372932066,
+                23.372970249
+              ],
+              "end_bracket_s": [
+                36.611312616,
+                36.661134469
+              ]
+            }
+          ],
+          "turning_intervals": [],
+          "nonzero_linear_command_intervals": [
+            {
+              "start_s": 11.86188361,
+              "end_s": 22.717514086,
+              "start_bracket_s": [
+                11.810372529,
+                11.86188361
+              ],
+              "end_bracket_s": [
+                22.717514086,
+                23.371309313
+              ]
+            },
+            {
+              "start_s": 23.371309313,
+              "end_s": 34.966319505,
+              "start_bracket_s": [
+                22.717514086,
+                23.371309313
+              ],
+              "end_bracket_s": [
+                34.966319505,
+                35.011190885
+              ]
+            }
+          ],
+          "nonzero_angular_command_intervals": [],
+          "maximum_speed_m_s": 87.09349586209876,
+          "maximum_abs_yaw_rate_rad_s": 2.12967775860463
+        },
+        "car2": {
+          "odom_samples": 1151,
+          "command_samples": 0,
+          "translational_intervals": [],
+          "turning_intervals": [],
+          "nonzero_linear_command_intervals": [],
+          "nonzero_angular_command_intervals": [],
+          "maximum_speed_m_s": 0.0,
+          "maximum_abs_yaw_rate_rad_s": 0.0
+        }
+      }
+    },
+    {
+      "experiment_id": "T12",
+      "bag_sha256": "540c2fbdcf67da5f3060f0363517cb65b6cfb0f96d6d35aae8d883ac604b18f1",
+      "receive_origin_epoch_ns": "1792926714033038898",
+      "clock": "bag_receive_ROS_record_clock",
+      "vehicles": {
+        "car1": {
+          "odom_samples": 2730,
+          "command_samples": 662,
+          "translational_intervals": [
+            {
+              "start_s": 38.441710548,
+              "end_s": 62.264687343,
+              "start_bracket_s": [
+                38.391312529,
+                38.441710548
+              ],
+              "end_bracket_s": [
+                62.264687343,
+                62.319340943
+              ]
+            }
+          ],
+          "turning_intervals": [],
+          "nonzero_linear_command_intervals": [
+            {
+              "start_s": 37.611949406,
+              "end_s": 60.501687335,
+              "start_bracket_s": [
+                37.560827494,
+                37.611949406
+              ],
+              "end_bracket_s": [
+                60.501687335,
+                60.552372121
+              ]
+            }
+          ],
+          "nonzero_angular_command_intervals": [],
+          "maximum_speed_m_s": 0.0612917227967539,
+          "maximum_abs_yaw_rate_rad_s": 0.011412944181704339
+        },
+        "car2": {
+          "odom_samples": 2712,
+          "command_samples": 1745,
+          "translational_intervals": [
+            {
+              "start_s": 35.581419763,
+              "end_s": 57.510544218,
+              "start_bracket_s": [
+                35.522255482,
+                35.581419763
+              ],
+              "end_bracket_s": [
+                57.510544218,
+                57.560914839
+              ]
+            },
+            {
+              "start_s": 58.681946153,
+              "end_s": 59.582147958,
+              "start_bracket_s": [
+                58.622000321,
+                58.681946153
+              ],
+              "end_bracket_s": [
+                59.582147958,
+                59.642153048
+              ]
+            },
+            {
+              "start_s": 65.712299574,
+              "end_s": 74.291304179,
+              "start_bracket_s": [
+                65.662256791,
+                65.712299574
+              ],
+              "end_bracket_s": [
+                74.291304179,
+                74.352274178
+              ]
+            },
+            {
+              "start_s": 74.961634914,
+              "end_s": 75.642729259,
+              "start_bracket_s": [
+                74.922124563,
+                74.961634914
+              ],
+              "end_bracket_s": [
+                75.642729259,
+                75.702468791
+              ]
+            },
+            {
+              "start_s": 76.262803173,
+              "end_s": 78.172216624,
+              "start_bracket_s": [
+                76.211018846,
+                76.262803173
+              ],
+              "end_bracket_s": [
+                78.172216624,
+                78.233880588
+              ]
+            },
+            {
+              "start_s": 84.115907137,
+              "end_s": 107.115055483,
+              "start_bracket_s": [
+                84.055476047,
+                84.115907137
+              ],
+              "end_bracket_s": [
+                107.115055483,
+                107.122986834
+              ]
+            }
+          ],
+          "turning_intervals": [
+            {
+              "start_s": 65.712299574,
+              "end_s": 78.172216624,
+              "start_bracket_s": [
+                65.662256791,
+                65.712299574
+              ],
+              "end_bracket_s": [
+                78.172216624,
+                78.233880588
+              ]
+            },
+            {
+              "start_s": 84.115907137,
+              "end_s": 85.621760133,
+              "start_bracket_s": [
+                84.055476047,
+                84.115907137
+              ],
+              "end_bracket_s": [
+                85.621760133,
+                85.680488869
+              ]
+            },
+            {
+              "start_s": 86.872071809,
+              "end_s": 90.581293423,
+              "start_bracket_s": [
+                86.823073154,
+                86.872071809
+              ],
+              "end_bracket_s": [
+                90.581293423,
+                90.642673597
+              ]
+            },
+            {
+              "start_s": 93.92380536,
+              "end_s": 95.882188738,
+              "start_bracket_s": [
+                93.913282096,
+                93.92380536
+              ],
+              "end_bracket_s": [
+                95.882188738,
+                95.942572308
+              ]
+            }
+          ],
+          "nonzero_linear_command_intervals": [
+            {
+              "start_s": 34.032408571,
+              "end_s": 58.760301147,
+              "start_bracket_s": [
+                33.97208109,
+                34.032408571
+              ],
+              "end_bracket_s": [
+                58.760301147,
+                58.811406643
+              ]
+            },
+            {
+              "start_s": 82.991187104,
+              "end_s": 106.611475556,
+              "start_bracket_s": [
+                82.942449435,
+                82.991187104
+              ],
+              "end_bracket_s": [
+                106.611475556,
+                106.662706339
+              ]
+            }
+          ],
+          "nonzero_angular_command_intervals": [
+            {
+              "start_s": 34.4814546,
+              "end_s": 58.760301147,
+              "start_bracket_s": [
+                34.432026154,
+                34.4814546
+              ],
+              "end_bracket_s": [
+                58.760301147,
+                58.811406643
+              ]
+            },
+            {
+              "start_s": 63.811300487,
+              "end_s": 77.692439342,
+              "start_bracket_s": [
+                63.762450371,
+                63.811300487
+              ],
+              "end_bracket_s": [
+                77.692439342,
+                77.742253739
+              ]
+            },
+            {
+              "start_s": 83.392697779,
+              "end_s": 106.611475556,
+              "start_bracket_s": [
+                83.342606753,
+                83.392697779
+              ],
+              "end_bracket_s": [
+                106.611475556,
+                106.662706339
+              ]
+            }
+          ],
+          "maximum_speed_m_s": 0.08959002826898396,
+          "maximum_abs_yaw_rate_rad_s": 0.3267248666514683
+        }
+      }
+    },
+    {
+      "experiment_id": "T13",
+      "bag_sha256": "40dc6b1e24ff5a1e0db6781c0834e5f6440d6fe9f22626606ac477013faff6f8",
+      "receive_origin_epoch_ns": "1792927440026568428",
+      "clock": "bag_receive_ROS_record_clock",
+      "vehicles": {
+        "car1": {
+          "odom_samples": 2451,
+          "command_samples": 667,
+          "translational_intervals": [
+            {
+              "start_s": 27.296106547,
+              "end_s": 51.014046403,
+              "start_bracket_s": [
+                27.245411206,
+                27.296106547
+              ],
+              "end_bracket_s": [
+                51.014046403,
+                51.062724865
+              ]
+            }
+          ],
+          "turning_intervals": [],
+          "nonzero_linear_command_intervals": [
+            {
+              "start_s": 26.212245498,
+              "end_s": 49.32259835,
+              "start_bracket_s": [
+                26.212242404,
+                26.212245498
+              ],
+              "end_bracket_s": [
+                49.32259835,
+                49.374952976
+              ]
+            }
+          ],
+          "nonzero_angular_command_intervals": [],
+          "maximum_speed_m_s": 0.06963443535523262,
+          "maximum_abs_yaw_rate_rad_s": 0.011683571053395906
+        },
+        "car2": {
+          "odom_samples": 2425,
+          "command_samples": 1725,
+          "translational_intervals": [
+            {
+              "start_s": 26.21193749,
+              "end_s": 47.744235806,
+              "start_bracket_s": [
+                26.211919402,
+                26.21193749
+              ],
+              "end_bracket_s": [
+                47.744235806,
+                47.802562736
+              ]
+            },
+            {
+              "start_s": 55.252033659,
+              "end_s": 57.673354167,
+              "start_bracket_s": [
+                55.189070745,
+                55.252033659
+              ],
+              "end_bracket_s": [
+                57.673354167,
+                57.732152472
+              ]
+            },
+            {
+              "start_s": 58.583298441,
+              "end_s": 62.16266777,
+              "start_bracket_s": [
+                58.52332766,
+                58.583298441
+              ],
+              "end_bracket_s": [
+                62.16266777,
+                62.203754214
+              ]
+            },
+            {
+              "start_s": 62.94292414,
+              "end_s": 65.592916707,
+              "start_bracket_s": [
+                62.883117531,
+                62.94292414
+              ],
+              "end_bracket_s": [
+                65.592916707,
+                65.653270887
+              ]
+            },
+            {
+              "start_s": 66.492648483,
+              "end_s": 67.39258763,
+              "start_bracket_s": [
+                66.431151697,
+                66.492648483
+              ],
+              "end_bracket_s": [
+                67.39258763,
+                67.452649404
+              ]
+            },
+            {
+              "start_s": 72.451359924,
+              "end_s": 95.819271226,
+              "start_bracket_s": [
+                72.400942397,
+                72.451359924
+              ],
+              "end_bracket_s": [
+                95.819271226,
+                95.880737047
+              ]
+            }
+          ],
+          "turning_intervals": [
+            {
+              "start_s": 55.252033659,
+              "end_s": 57.673354167,
+              "start_bracket_s": [
+                55.189070745,
+                55.252033659
+              ],
+              "end_bracket_s": [
+                57.673354167,
+                57.732152472
+              ]
+            },
+            {
+              "start_s": 58.643191232,
+              "end_s": 62.16266777,
+              "start_bracket_s": [
+                58.583298441,
+                58.643191232
+              ],
+              "end_bracket_s": [
+                62.16266777,
+                62.203754214
+              ]
+            },
+            {
+              "start_s": 62.94292414,
+              "end_s": 65.592916707,
+              "start_bracket_s": [
+                62.883117531,
+                62.94292414
+              ],
+              "end_bracket_s": [
+                65.592916707,
+                65.653270887
+              ]
+            },
+            {
+              "start_s": 66.371002024,
+              "end_s": 67.39258763,
+              "start_bracket_s": [
+                66.311354757,
+                66.371002024
+              ],
+              "end_bracket_s": [
+                67.39258763,
+                67.452649404
+              ]
+            },
+            {
+              "start_s": 72.510851764,
+              "end_s": 74.32206094,
+              "start_bracket_s": [
+                72.451359924,
+                72.510851764
+              ],
+              "end_bracket_s": [
+                74.32206094,
+                74.381995775
+              ]
+            },
+            {
+              "start_s": 75.630425849,
+              "end_s": 78.72196575,
+              "start_bracket_s": [
+                75.570579133,
+                75.630425849
+              ],
+              "end_bracket_s": [
+                78.72196575,
+                78.782101813
+              ]
+            },
+            {
+              "start_s": 81.930132343,
+              "end_s": 82.510255198,
+              "start_bracket_s": [
+                81.870427103,
+                81.930132343
+              ],
+              "end_bracket_s": [
+                82.510255198,
+                82.55189913
+              ]
+            }
+          ],
+          "nonzero_linear_command_intervals": [
+            {
+              "start_s": 24.016145087,
+              "end_s": 47.46421868,
+              "start_bracket_s": [
+                23.957471635,
+                24.016145087
+              ],
+              "end_bracket_s": [
+                47.46421868,
+                47.513788961
+              ]
+            },
+            {
+              "start_s": 71.821542437,
+              "end_s": 95.42083274,
+              "start_bracket_s": [
+                71.776789706,
+                71.821542437
+              ],
+              "end_bracket_s": [
+                95.42083274,
+                95.470712531
+              ]
+            }
+          ],
+          "nonzero_angular_command_intervals": [
+            {
+              "start_s": 24.486580243,
+              "end_s": 47.46421868,
+              "start_bracket_s": [
+                24.424133917,
+                24.486580243
+              ],
+              "end_bracket_s": [
+                47.46421868,
+                47.513788961
+              ]
+            },
+            {
+              "start_s": 52.522466946,
+              "end_s": 66.522907905,
+              "start_bracket_s": [
+                52.473548369,
+                52.522466946
+              ],
+              "end_bracket_s": [
+                66.522907905,
+                66.573964887
+              ]
+            },
+            {
+              "start_s": 72.222236966,
+              "end_s": 95.42083274,
+              "start_bracket_s": [
+                72.17268376,
+                72.222236966
+              ],
+              "end_bracket_s": [
+                95.42083274,
+                95.470712531
+              ]
+            }
+          ],
+          "maximum_speed_m_s": 219.78485642453754,
+          "maximum_abs_yaw_rate_rad_s": 74.41779064139638
+        }
+      }
+    },
+    {
+      "experiment_id": "T14",
+      "bag_sha256": "793a169da34095585cbd97860fa9e37f07358173c8a91a768aa4f8cf0a5ada83",
+      "receive_origin_epoch_ns": "1792928746481439126",
+      "clock": "bag_receive_ROS_record_clock",
+      "vehicles": {
+        "car1": {
+          "odom_samples": 3300,
+          "command_samples": 0,
+          "translational_intervals": [],
+          "turning_intervals": [],
+          "nonzero_linear_command_intervals": [],
+          "nonzero_angular_command_intervals": [],
+          "maximum_speed_m_s": 0.0,
+          "maximum_abs_yaw_rate_rad_s": 0.0
+        },
+        "car2": {
+          "odom_samples": 3281,
+          "command_samples": 1746,
+          "translational_intervals": [
+            {
+              "start_s": 70.189264181,
+              "end_s": 91.559942957,
+              "start_bracket_s": [
+                70.181238655,
+                70.189264181
+              ],
+              "end_bracket_s": [
+                91.559942957,
+                91.620417989
+              ]
+            },
+            {
+              "start_s": 92.729407403,
+              "end_s": 93.629121279,
+              "start_bracket_s": [
+                92.68101843,
+                92.729407403
+              ],
+              "end_bracket_s": [
+                93.629121279,
+                93.690800227
+              ]
+            },
+            {
+              "start_s": 99.940857091,
+              "end_s": 102.991387366,
+              "start_bracket_s": [
+                99.879607651,
+                99.940857091
+              ],
+              "end_bracket_s": [
+                102.991387366,
+                103.049321408
+              ]
+            },
+            {
+              "start_s": 103.829180292,
+              "end_s": 111.66928982,
+              "start_bracket_s": [
+                103.785052439,
+                103.829180292
+              ],
+              "end_bracket_s": [
+                111.66928982,
+                111.728948555
+              ]
+            },
+            {
+              "start_s": 117.908881121,
+              "end_s": 141.281702798,
+              "start_bracket_s": [
+                117.848934936,
+                117.908881121
+              ],
+              "end_bracket_s": [
+                141.281702798,
+                141.329359263
+              ]
+            }
+          ],
+          "turning_intervals": [
+            {
+              "start_s": 100.001369376,
+              "end_s": 102.929060061,
+              "start_bracket_s": [
+                99.940857091,
+                100.001369376
+              ],
+              "end_bracket_s": [
+                102.929060061,
+                102.991387366
+              ]
+            },
+            {
+              "start_s": 103.829180292,
+              "end_s": 111.728948555,
+              "start_bracket_s": [
+                103.785052439,
+                103.829180292
+              ],
+              "end_bracket_s": [
+                111.728948555,
+                111.77972499
+              ]
+            },
+            {
+              "start_s": 117.908881121,
+              "end_s": 119.529379304,
+              "start_bracket_s": [
+                117.848934936,
+                117.908881121
+              ],
+              "end_bracket_s": [
+                119.529379304,
+                119.591212707
+              ]
+            },
+            {
+              "start_s": 120.782989857,
+              "end_s": 123.250593643,
+              "start_bracket_s": [
+                120.729150815,
+                120.782989857
+              ],
+              "end_bracket_s": [
+                123.250593643,
+                123.313603964
+              ]
+            }
+          ],
+          "nonzero_linear_command_intervals": [
+            {
+              "start_s": 68.04134381,
+              "end_s": 92.700982309,
+              "start_bracket_s": [
+                67.990570237,
+                68.04134381
+              ],
+              "end_bracket_s": [
+                92.700982309,
+                92.749798683
+              ]
+            },
+            {
+              "start_s": 116.611109325,
+              "end_s": 140.730910508,
+              "start_bracket_s": [
+                116.559753662,
+                116.611109325
+              ],
+              "end_bracket_s": [
+                140.730910508,
+                140.780479077
+              ]
+            }
+          ],
+          "nonzero_angular_command_intervals": [
+            {
+              "start_s": 68.343527279,
+              "end_s": 92.700982309,
+              "start_bracket_s": [
+                68.29173906,
+                68.343527279
+              ],
+              "end_bracket_s": [
+                92.700982309,
+                92.749798683
+              ]
+            },
+            {
+              "start_s": 97.750016254,
+              "end_s": 111.34082068,
+              "start_bracket_s": [
+                97.701093642,
+                97.750016254
+              ],
+              "end_bracket_s": [
+                111.34082068,
+                111.390444465
+              ]
+            },
+            {
+              "start_s": 117.061487766,
+              "end_s": 140.730910508,
+              "start_bracket_s": [
+                117.010873472,
+                117.061487766
+              ],
+              "end_bracket_s": [
+                140.730910508,
+                140.780479077
+              ]
+            }
+          ],
+          "maximum_speed_m_s": 0.10812018465765531,
+          "maximum_abs_yaw_rate_rad_s": 0.434718366151871
+        }
+      }
+    },
+    {
+      "experiment_id": "T15",
+      "bag_sha256": "4b3be332d424648c41827cda7906a9eb90453aa8979eb0a5aebdd8a986d1c3cd",
+      "receive_origin_epoch_ns": "1792929333624676843",
+      "clock": "bag_receive_ROS_record_clock",
+      "vehicles": {
+        "car1": {
+          "odom_samples": 2765,
+          "command_samples": 0,
+          "translational_intervals": [],
+          "turning_intervals": [],
+          "nonzero_linear_command_intervals": [],
+          "nonzero_angular_command_intervals": [],
+          "maximum_speed_m_s": 0.0,
+          "maximum_abs_yaw_rate_rad_s": 0.0
+        },
+        "car2": {
+          "odom_samples": 2730,
+          "command_samples": 1721,
+          "translational_intervals": [
+            {
+              "start_s": 43.259037263,
+              "end_s": 64.576688355,
+              "start_bracket_s": [
+                43.19632642,
+                43.259037263
+              ],
+              "end_bracket_s": [
+                64.576688355,
+                64.626719071
+              ]
+            },
+            {
+              "start_s": 71.508276196,
+              "end_s": 84.237637442,
+              "start_bracket_s": [
+                71.449491758,
+                71.508276196
+              ],
+              "end_bracket_s": [
+                84.237637442,
+                84.296701116
+              ]
+            },
+            {
+              "start_s": 89.588614733,
+              "end_s": 112.466794167,
+              "start_bracket_s": [
+                89.52837703,
+                89.588614733
+              ],
+              "end_bracket_s": [
+                112.466794167,
+                112.51738041
+              ]
+            }
+          ],
+          "turning_intervals": [
+            {
+              "start_s": 71.567448235,
+              "end_s": 84.237637442,
+              "start_bracket_s": [
+                71.508276196,
+                71.567448235
+              ],
+              "end_bracket_s": [
+                84.237637442,
+                84.296701116
+              ]
+            },
+            {
+              "start_s": 89.588614733,
+              "end_s": 91.277468816,
+              "start_bracket_s": [
+                89.52837703,
+                89.588614733
+              ],
+              "end_bracket_s": [
+                91.277468816,
+                91.336596809
+              ]
+            },
+            {
+              "start_s": 92.476893079,
+              "end_s": 96.13731337,
+              "start_bracket_s": [
+                92.469495499,
+                92.476893079
+              ],
+              "end_bracket_s": [
+                96.13731337,
+                96.196666574
+              ]
+            },
+            {
+              "start_s": 99.166901919,
+              "end_s": 101.478221456,
+              "start_bracket_s": [
+                99.117300278,
+                99.166901919
+              ],
+              "end_bracket_s": [
+                101.478221456,
+                101.538238516
+              ]
+            }
+          ],
+          "nonzero_linear_command_intervals": [
+            {
+              "start_s": 40.788371722,
+              "end_s": 64.147840733,
+              "start_bracket_s": [
+                40.73815027,
+                40.788371722
+              ],
+              "end_bracket_s": [
+                64.147840733,
+                64.197701145
+              ]
+            },
+            {
+              "start_s": 88.597057644,
+              "end_s": 112.238612225,
+              "start_bracket_s": [
+                88.548254702,
+                88.597057644
+              ],
+              "end_bracket_s": [
+                112.238612225,
+                112.287471252
+              ]
+            }
+          ],
+          "nonzero_angular_command_intervals": [
+            {
+              "start_s": 41.90651421,
+              "end_s": 64.147840733,
+              "start_bracket_s": [
+                41.856959551,
+                41.90651421
+              ],
+              "end_bracket_s": [
+                64.147840733,
+                64.197701145
+              ]
+            },
+            {
+              "start_s": 69.237876229,
+              "end_s": 83.337655895,
+              "start_bracket_s": [
+                69.18850342,
+                69.237876229
+              ],
+              "end_bracket_s": [
+                83.337655895,
+                83.396724159
+              ]
+            },
+            {
+              "start_s": 89.297066798,
+              "end_s": 112.238612225,
+              "start_bracket_s": [
+                89.248420241,
+                89.297066798
+              ],
+              "end_bracket_s": [
+                112.238612225,
+                112.287471252
+              ]
+            }
+          ],
+          "maximum_speed_m_s": 0.1257490598845235,
+          "maximum_abs_yaw_rate_rad_s": 0.38517040629402016
+        }
+      }
+    }
+  ],
+  "limitations": [
+    "Odom is used only for timing; never for fitting visual room coordinates",
+    "Receive and measurement timestamps are not proven simultaneous",
+    "No video mapping is accepted until events are independently matched"
+  ]
+}

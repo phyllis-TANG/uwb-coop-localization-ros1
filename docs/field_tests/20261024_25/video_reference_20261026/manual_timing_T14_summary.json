@@ -1,0 +1,44 @@
+{
+  "video_sha256": "ab15655b3f3d35846058b348a1e0f59282f25854eacbfd64467a960a1bc06848",
+  "seed": {
+    "video_sha256": "ab15655b3f3d35846058b348a1e0f59282f25854eacbfd64467a960a1bc06848",
+    "frame_index": 150,
+    "video_time_s": 5.0,
+    "marker_id": 1,
+    "coordinate_convention": "encoded_pixels",
+    "corners_canonical_order_inferred": [
+      [
+        1560,
+        915
+      ],
+      [
+        1512,
+        965
+      ],
+      [
+        1414,
+        965
+      ],
+      [
+        1468,
+        918
+      ]
+    ],
+    "source": "Human inspection of original frame150; crop origin x1250,y820",
+    "corner_order_evidence": "Physical printed Car2 marker; canonical order provisional, not decoded",
+    "corner_annotation_uncertainty_px": null,
+    "purpose": "timing_diagnostic_only_not_metric_pose"
+  },
+  "counts": {
+    "tracked": 93,
+    "failed": 262
+  },
+  "purpose": "Visual-motion timing feasibility only",
+  "crop_flow": true,
+  "maximum_metric_reference_scope": "not_accepted",
+  "limitations": [
+    "Unmeasured board curvature",
+    "Accumulated tracking drift unbounded",
+    "Forward/backward LK consistency does not validate absolute corner location"
+  ]
+}

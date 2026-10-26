@@ -1,0 +1,269 @@
+[
+  {
+    "video": "IMG_7364.MOV",
+    "video_sha256": "8683bb28af0a32003ee8f4ece2241a3986279e774f16d4e1160e8e30f2b65cf0",
+    "asset_id": "camera_reference",
+    "experiment_id": "",
+    "role": "ground_reference",
+    "sampled_frames": 42,
+    "counts": {
+      "car1_not_applicable": 42,
+      "car2_not_applicable": 42
+    },
+    "expected_vehicle_ids": []
+  },
+  {
+    "video": "IMG_7365.MOV",
+    "video_sha256": "5f5c2ad9bd1a4cdce4c774abc9308b436a018ca165d9d55168b7543c97b139dd",
+    "asset_id": "camera_reference",
+    "experiment_id": "",
+    "role": "provisional_check_car2",
+    "sampled_frames": 42,
+    "counts": {
+      "car1_not_applicable": 42,
+      "car2_failed": 42
+    },
+    "expected_vehicle_ids": [
+      "car2"
+    ]
+  },
+  {
+    "video": "IMG_7366.MOV",
+    "video_sha256": "8250c1077bac3cfb2fb103b2604a18348c3a9542ad06a77ea7cb243204dd5253",
+    "asset_id": "camera_reference",
+    "experiment_id": "",
+    "role": "provisional_check_car2",
+    "sampled_frames": 43,
+    "counts": {
+      "car1_not_applicable": 43,
+      "car2_failed": 43
+    },
+    "expected_vehicle_ids": [
+      "car2"
+    ]
+  },
+  {
+    "video": "IMG_7367.MOV",
+    "video_sha256": "64b6dba40a4b3719c132ad65a3ef7a132b07e416d98c683dc37525e1e4397408",
+    "asset_id": "camera_reference",
+    "experiment_id": "",
+    "role": "provisional_check_car2",
+    "sampled_frames": 42,
+    "counts": {
+      "car1_not_applicable": 42,
+      "car2_failed": 42
+    },
+    "expected_vehicle_ids": [
+      "car2"
+    ]
+  },
+  {
+    "video": "IMG_7369.MOV",
+    "video_sha256": "6d1317720c9c4f69852292e118d1429983ecafea78cc2cc279b2aa29cb526e33",
+    "asset_id": "camera_reference",
+    "experiment_id": "",
+    "role": "provisional_check_car1",
+    "sampled_frames": 41,
+    "counts": {
+      "car1_decoded": 40,
+      "car2_not_applicable": 41,
+      "car1_tracked": 1
+    },
+    "expected_vehicle_ids": [
+      "car1"
+    ]
+  },
+  {
+    "video": "IMG_7370.MOV",
+    "video_sha256": "05d4101fe3801896276e327836ca8a35c3edd5ef8abea9908b80427681ebe717",
+    "asset_id": "camera_reference",
+    "experiment_id": "",
+    "role": "provisional_check_car1",
+    "sampled_frames": 42,
+    "counts": {
+      "car1_decoded": 42,
+      "car2_not_applicable": 42
+    },
+    "expected_vehicle_ids": [
+      "car1"
+    ]
+  },
+  {
+    "video": "IMG_7371.MOV",
+    "video_sha256": "a63ade1c2f8c5dd555478e18bf01d41429f576bdf15cdfa1dcf50ee69b9da96e",
+    "asset_id": "camera_reference",
+    "experiment_id": "",
+    "role": "provisional_check_car1",
+    "sampled_frames": 42,
+    "counts": {
+      "car1_decoded": 42,
+      "car2_not_applicable": 42
+    },
+    "expected_vehicle_ids": [
+      "car1"
+    ]
+  },
+  {
+    "video": "IMG_7373.MOV",
+    "video_sha256": "07700f5211f6d958e0866c0bb6a30fd0f4f283b91696bff92e18943754006bd9",
+    "asset_id": "camera_reference",
+    "experiment_id": "",
+    "role": "provisional_check_car1",
+    "sampled_frames": 41,
+    "counts": {
+      "car1_decoded": 41,
+      "car2_not_applicable": 41
+    },
+    "expected_vehicle_ids": [
+      "car1"
+    ]
+  },
+  {
+    "video": "IMG_7341.MOV",
+    "video_sha256": "6eb5ebde83006e5e78ada49318a3c9a3d291492c41311b33893aaaf6c6b575f7",
+    "asset_id": "T08_video",
+    "experiment_id": "T08",
+    "role": "motion",
+    "sampled_frames": 336,
+    "counts": {
+      "car1_decoded": 336,
+      "car2_failed": 176,
+      "car2_decoded": 145,
+      "car2_tracked": 15
+    },
+    "expected_vehicle_ids": [
+      "car1",
+      "car2"
+    ]
+  },
+  {
+    "video": "IMG_7343.MOV",
+    "video_sha256": "803dbffc21ae0fb313d2f52c23b6f5682639025247db5b365dffff71595cf9e0",
+    "asset_id": "T09_video",
+    "experiment_id": "T09",
+    "role": "motion",
+    "sampled_frames": 358,
+    "counts": {
+      "car1_decoded": 358,
+      "car2_failed": 199,
+      "car2_decoded": 148,
+      "car2_tracked": 11
+    },
+    "expected_vehicle_ids": [
+      "car1",
+      "car2"
+    ]
+  },
+  {
+    "video": "IMG_7347.MOV",
+    "video_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+    "asset_id": "T10_video",
+    "experiment_id": "T10",
+    "role": "motion",
+    "sampled_frames": 194,
+    "counts": {
+      "car1_decoded": 194,
+      "car2_decoded": 194
+    },
+    "expected_vehicle_ids": [
+      "car1",
+      "car2"
+    ]
+  },
+  {
+    "video": "IMG_7350.MOV",
+    "video_sha256": "5ce17f35864f50c925e6ccb725f623c3f739b2500c82de96b59da854df91a077",
+    "asset_id": "T11_video",
+    "experiment_id": "T11",
+    "role": "motion",
+    "sampled_frames": 167,
+    "counts": {
+      "car1_decoded": 166,
+      "car2_decoded": 167,
+      "car1_tracked": 1
+    },
+    "expected_vehicle_ids": [
+      "car1",
+      "car2"
+    ]
+  },
+  {
+    "video": "IMG_7352.MOV",
+    "video_sha256": "ef4cece5d7da94ea7cfcc32c5cb8164d663cfe6fb332bf6b242411b363f9e4cd",
+    "asset_id": "T12_video",
+    "experiment_id": "T12",
+    "role": "motion",
+    "sampled_frames": 359,
+    "counts": {
+      "car1_failed": 6,
+      "car2_failed": 252,
+      "car1_decoded": 271,
+      "car1_tracked": 82,
+      "car2_decoded": 106,
+      "car2_tracked": 1
+    },
+    "expected_vehicle_ids": [
+      "car1",
+      "car2"
+    ]
+  },
+  {
+    "video": "IMG_7353.MOV",
+    "video_sha256": "1fca28d78157cd9b73e7955e59c1b9194cb1fb8a5ae80386926934f7d40d54c2",
+    "asset_id": "T13_video",
+    "experiment_id": "T13",
+    "role": "motion",
+    "sampled_frames": 288,
+    "counts": {
+      "car1_decoded": 247,
+      "car2_failed": 203,
+      "car1_tracked": 41,
+      "car2_decoded": 84,
+      "car2_tracked": 1
+    },
+    "expected_vehicle_ids": [
+      "car1",
+      "car2"
+    ]
+  },
+  {
+    "video": "IMG_7357.MOV",
+    "video_sha256": "ab15655b3f3d35846058b348a1e0f59282f25854eacbfd64467a960a1bc06848",
+    "asset_id": "T14_video",
+    "experiment_id": "T14",
+    "role": "motion",
+    "sampled_frames": 365,
+    "counts": {
+      "car1_failed": 3,
+      "car2_failed": 288,
+      "car1_decoded": 275,
+      "car1_tracked": 87,
+      "car2_decoded": 76,
+      "car2_tracked": 1
+    },
+    "expected_vehicle_ids": [
+      "car1",
+      "car2"
+    ]
+  },
+  {
+    "video": "IMG_7358.MOV",
+    "video_sha256": "8fba8eaffbf12c98420caeb3c359649fbf7cd4b27ab97b03db309a28491106be",
+    "asset_id": "T15_video",
+    "experiment_id": "T15",
+    "role": "motion",
+    "sampled_frames": 310,
+    "counts": {
+      "car1_decoded": 244,
+      "car2_failed": 235,
+      "car1_tracked": 62,
+      "car1_failed": 4,
+      "car2_decoded": 70,
+      "car2_tracked": 5
+    },
+    "expected_vehicle_ids": [
+      "car1",
+      "car2"
+    ]
+  }
+]
