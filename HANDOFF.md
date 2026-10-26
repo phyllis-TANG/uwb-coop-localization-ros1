@@ -1,17 +1,22 @@
 # 当前交接：2026-10-24–25双车实测资料与多端离线作业
 
-更新时间：2026-10-26，北京时间。当前统一入口为
+更新时间：2026-10-27，北京时间。当前统一入口为
 [docs/field_tests/20261024_25/README.md](docs/field_tests/20261024_25/README.md)。
 
-请先读取入口、manifest.json、geometry.json及QC_REPORT.md，再按实际执行端读取
-RUNBOOK_SANDBOX.md、RUNBOOK_LOCAL_VIDEO.md或RUNBOOK_COORDINATOR.md。
-夜间自主作业读取NIGHTLY_SANDBOX.md；可复制的任务指令在PROMPTS.md。
+PR44–49已合并；共同算法基准为`7128abc769121f1f39c3959ce195ac545656c86c`。
+本轮优先读取[夜间统一回放集成与T10闭环任务书](docs/field_tests/20261024_25/NIGHTLY_INTEGRATION_20261027.md)，
+分A端同一六维EKF的可靠性机制集成、B端T10输入/参考闭环，两端使用独立分支与输出。
+任务书与媒体清单协调更新是新一轮计划，不能当成集成算法或T10融合已执行。
+随后读取manifest.json、geometry.json、QC_REPORT.md及任务书指定接口；
+早期RUNBOOK、NIGHTLY_SANDBOX.md和PROMPTS.md仅作背景与工具参考。
 原始bag/视频从manifest列出的GitHub Release下载至仓库外目录，不提交至Git。
 
 最新状态：T08–T15八个正式bag哈希及311,144条消息解码通过；
-相机参考八片和T08–T10运动原片的ZIP校验、全片解码通过；
-Car2标记提取、独立视觉精度、逐片空间关系和视频/ROS同步未验收。
-剩余视频及现场信息见新交接目录，不将“文件完整”写成“定位精度通过”。
+PR49的18段原MOV、41,381帧检查通过，T11–T15媒体身份已回填清单；
+像素提取及空间/时间候选已保存，位置参考仍为`not_accepted`。
+PR46/48新实包room融合仍缺几何/初值/时间输入；PR47仅为独立合成估计器的机制证据，
+不能与该EKF直接混比。棋盘原片已由视频端取得但本次未上传Release。
+不将“文件完整”写成“定位精度通过”，也不重复已经通过的全片QC。
 
 三个端各用独立分支与输出目录，共用数据哈希和配置版本；留出集
 T09/T11/T13/T15不用于定位误差调参。当前任务为离线分析与测试，不启动实车。
