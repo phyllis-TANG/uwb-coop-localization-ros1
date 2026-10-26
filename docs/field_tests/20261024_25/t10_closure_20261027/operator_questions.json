@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "pending_operator_evidence",
+  "status": "answered_no_new_calibration; do_not_repeat_questions",
   "groups": [
     {
       "id": "rigid_mount",
@@ -19,7 +19,8 @@
       "not_required": [
         "base高度与杆臂Z分别测量",
         "重复已报0.17/0.20m天线高度"
-      ]
+      ],
+      "answer_status": "answered; known records retained, remaining calibration/record-binding/time evidence not supplied"
     },
     {
       "id": "historical_placement",
@@ -34,7 +35,8 @@
       "unlocks": [
         "实际初始化及绑定",
         "若空间/安装验证通过，可启用独立停点参考；不要求毫秒级连续同步"
-      ]
+      ],
+      "answer_status": "answered; known records retained, remaining calibration/record-binding/time evidence not supplied"
     },
     {
       "id": "historical_time",
@@ -49,8 +51,10 @@
       "unlocks": [
         "来源支持的room三基线测量时间准入",
         "空间条件也通过后才可能连续参考评价"
-      ]
+      ],
+      "answer_status": "answered; known records retained, remaining calibration/record-binding/time evidence not supplied"
     }
   ],
-  "optional_future_capture_if_historical_time_irrecoverable": "仅建议协调端另行决定一次小规模补录：保持刚性安装、标清物理base点/天线；静止初值独立尺量和朝向；共同可见并记录的同步事件、保存各主机偏差日志；保留独立检验事件与停点读数。今晚不安排、不启动任何车辆。"
+  "optional_future_capture_if_historical_time_irrecoverable": "仅建议协调端另行决定一次小规模补录：保持刚性安装、标清物理base点/天线；静止初值独立尺量和朝向；共同可见并记录的同步事件、保存各主机偏差日志；保留独立检验事件与停点读数。今晚不安排、不启动任何车辆。",
+  "answers_file": "operator_evidence.json"
 }

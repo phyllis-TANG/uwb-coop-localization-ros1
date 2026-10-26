@@ -131,5 +131,23 @@ class ClosureTests(unittest.TestCase):
             digest=common.sha(p/'run.json');(p/'selected.csv').write_text('T10,changed\n')
             with self.assertRaises(ValueError):common.verify_packet(p,digest)
 
+    def test_operator_center_offsets_do_not_release_base_gate(self):
+        t=json.loads((common.DOCS/'T10_strict_input_template.json').read_text())
+        expected={'car1':[.08,-.06],'car2':[-.12,.08]}
+        strict_inputs(t);config,ready=interface.compile_template(t)
+        for car,value in expected.items():
+            arm=t['vehicles'][car]['antenna_body_xy_m']
+            self.assertEqual(arm['candidate_records'][0]['value'],value)
+            self.assertIsNone(arm['value'])
+            self.assertIn(car+':antenna_body_xy_m:unknown',ready['methods']['independent'][car])
+
+    def test_planned_car2_plus_x_is_not_actual_initial_yaw(self):
+        t=json.loads((common.DOCS/'T10_strict_input_template.json').read_text())
+        yaw=t['vehicles']['car2']['initial_body_yaw_room_rad']
+        self.assertEqual(yaw['candidate_records'][0]['value'],0.0)
+        self.assertIsNone(yaw['value']);self.assertEqual(yaw['status'],'pending')
+        config,_=interface.compile_template(t)
+        self.assertIsNone(config['vehicles']['car2']['initial_room_pose']['value'])
+
 
 if __name__=='__main__':unittest.main()
