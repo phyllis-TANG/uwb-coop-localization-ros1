@@ -1,6 +1,6 @@
-# 交接：数值实验完成，已获授权发布草稿 PR
+# 交接：数值实验完成，已发布草稿 PR #47
 
-分支：`analysis/reliability-stress-20261026-baf181`。报告提交为 `64e187a0638d2ab4164da77901547fedf46588bd`；本交接随后作为独立文档提交，最终 HEAD 以 `git log -1` 为准。冻结数值源码为 `62f1a1368596c6729365a8f55f9926c05ae113f2`，位于 GitHub 同名分支。完整报告及对照/消融、尾部、恢复和限制见 [README.md](README.md)，机器状态见 [DELIVERY_STATUS.json](DELIVERY_STATUS.json)。用户现已明确授权发布并创建草稿PR；发布状态见DELIVERY_STATUS.json。未合并任何内容。
+分支：`analysis/reliability-stress-20261026-baf181`。报告提交为 `64e187a0638d2ab4164da77901547fedf46588bd`；本交接随后作为独立文档提交，最终 HEAD 以 `git log -1` 为准。冻结数值源码为 `62f1a1368596c6729365a8f55f9926c05ae113f2`，位于 GitHub 同名分支。完整报告及对照/消融、尾部、恢复和限制见 [README.md](README.md)，机器状态见 [DELIVERY_STATUS.json](DELIVERY_STATUS.json)。已按用户明确授权发布[草稿PR #47](https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/47)，未合并。报告发布提交为`06b535402a460ced9cc09e6ad613ba4b313d717d`，与本地授权检查点`be1f41fa4f5f4ca684bba3ca8d0103d931bdc34e`树完全一致；本交接与发布状态随后单独提交，最终HEAD以同名远端分支为准。
 
 ## 实际完成
 
@@ -14,9 +14,9 @@
 
 候选正常全时段比Huber约差0.002m；薄几何source0.2116m高于Huber0.1631m；墙与peer自洽故障约0.7525m，未解决。相对独立解0.06/0.35m位移界不是绝对精度保证。没有证明学术新颖性，也没有报告实包定位精度。
 
-## 阻塞与下一步
+## 发布状态与下一步
 
-首次普通push因缺凭据失败；冻结源码后来通过已连接GitHub接口成功发布。最终报告上传时自动审批拒绝`github.create_tree`，理由是将最新问题视为状态询问，未认可前文发布授权；没有通过其他方式绕过，也未重复尝试。用户随后明确回复“允许发布并创建pr”，现继续最终报告发布和草稿PR创建；不自动合并。
+首次普通push因缺凭据失败；冻结源码后来通过已连接GitHub接口成功发布。最终报告上传时自动审批拒绝`github.create_tree`，理由是将最新问题视为状态询问，未认可前文发布授权；没有通过其他方式绕过，也未重复尝试。用户随后明确回复“允许发布并创建pr”，已通过GitHub接口成功发布最终报告并创建草稿PR #47；不自动合并。此前审批阻塞已解除。发布时main已合并PR46，仅新增causal_baselines目录，与本任务没有文件重叠；保留PR45实验起点，不混入其数值实现。
 
 继续前先检查当前目录、分支、HEAD、工作区。只处理本分支新增目录。当前数字算法与冻结提交相同；报告工具属于验证后整理，不改估计器。所有真实运行来源、输入、种子、命令、耗时及哈希在完整归档的run.json与 [source_versions.json](source_versions.json)。复现命令见README；必须在自己的新checkout检出冻结源码，不能切换其他工作端。
 
