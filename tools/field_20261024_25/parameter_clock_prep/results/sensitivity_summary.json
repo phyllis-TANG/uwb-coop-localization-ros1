@@ -1,0 +1,2585 @@
+{
+  "runs": [
+    {
+      "changed_leaves": [],
+      "condition": "reference",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09103118247052419,
+          "xy_rmse_m": 0.038620334279941396
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08515531855869915,
+          "xy_rmse_m": 0.03666673989883483
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.13133050761664303,
+          "xy_rmse_m": 0.07859786863754063
+        }
+      },
+      "observation_sha256": "27274f709cce3f20101f5d7df700c3b193dc85403620ea79b68fef11be8f5390",
+      "seed": 7,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "range_clock",
+          "destination_origin_ns"
+        ]
+      ],
+      "condition": "uwb_clock_car2_minus20ms",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09195701417292133,
+          "xy_rmse_m": 0.038529936529791343
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08597034568580653,
+          "xy_rmse_m": 0.036558709544652325
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.13133050761664303,
+          "xy_rmse_m": 0.07859786863754063
+        }
+      },
+      "observation_sha256": "27274f709cce3f20101f5d7df700c3b193dc85403620ea79b68fef11be8f5390",
+      "seed": 7,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.0037304249996336692,
+          "rmse": 0.0013579249623181012,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.0037165072397537784,
+          "rmse": 0.0012775880163733285,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "range_clock",
+          "destination_origin_ns"
+        ]
+      ],
+      "condition": "uwb_clock_car2_plus20ms",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 240,
+          "excluded_independent_peer": 120,
+          "future_measurement_time": 600,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 240
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 300,
+          "future_measurement_time": 600,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 240
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.13133050761664303,
+          "xy_rmse_m": 0.07560063095726773
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09184758932208834,
+          "xy_rmse_m": 0.051383856913276474
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.13133050761664303,
+          "xy_rmse_m": 0.07859786863754063
+        }
+      },
+      "observation_sha256": "27274f709cce3f20101f5d7df700c3b193dc85403620ea79b68fef11be8f5390",
+      "seed": 7,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.12506303869776797,
+          "rmse": 0.052359436817623645,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.08276306658140757,
+          "rmse": 0.031057471814068236,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "antenna_body_xy_m",
+          "value",
+          0
+        ]
+      ],
+      "condition": "lever_car2_x_minus5cm",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.059354641725619016,
+          "xy_rmse_m": 0.0313119434834479
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.0554837219083681,
+          "xy_rmse_m": 0.029943228286878395
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.13133050761664303,
+          "xy_rmse_m": 0.07859786863754063
+        }
+      },
+      "observation_sha256": "27274f709cce3f20101f5d7df700c3b193dc85403620ea79b68fef11be8f5390",
+      "seed": 7,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.047891337076529754,
+          "rmse": 0.02923744384726189,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.04783824695662316,
+          "rmse": 0.029732049977663783,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "antenna_body_xy_m",
+          "value",
+          0
+        ]
+      ],
+      "condition": "lever_car2_x_plus5cm",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.13606564476488506,
+          "xy_rmse_m": 0.0609316908945952
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.13086191867403368,
+          "xy_rmse_m": 0.05966106701809468
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.13133050761664303,
+          "xy_rmse_m": 0.07859786863754063
+        }
+      },
+      "observation_sha256": "27274f709cce3f20101f5d7df700c3b193dc85403620ea79b68fef11be8f5390",
+      "seed": 7,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.047829361633989494,
+          "rmse": 0.029216717409309815,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.04783663537590629,
+          "rmse": 0.02970395173830588,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "initial_room_pose",
+          "value",
+          2
+        ]
+      ],
+      "condition": "heading_car2_minus5deg",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09717771170715686,
+          "xy_rmse_m": 0.04487411425305105
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09109986998173805,
+          "xy_rmse_m": 0.04289946635740042
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.1774058332965084,
+          "xy_rmse_m": 0.08828500550287428
+        }
+      },
+      "observation_sha256": "27274f709cce3f20101f5d7df700c3b193dc85403620ea79b68fef11be8f5390",
+      "seed": 7,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.03488068328629246,
+          "rmse": 0.014510658697137682,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.03249556383729806,
+          "rmse": 0.0141425237247912,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.06736774144558674,
+          "rmse": 0.019902832596637245,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "initial_room_pose",
+          "value",
+          2
+        ]
+      ],
+      "condition": "heading_car2_plus5deg",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08538439165044986,
+          "xy_rmse_m": 0.03764231497884892
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08242049545649881,
+          "xy_rmse_m": 0.03571984757647024
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.12875009324493816,
+          "xy_rmse_m": 0.07413760152003762
+        }
+      },
+      "observation_sha256": "27274f709cce3f20101f5d7df700c3b193dc85403620ea79b68fef11be8f5390",
+      "seed": 7,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.03484189987540523,
+          "rmse": 0.014499199947450372,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.03243312080458957,
+          "rmse": 0.014142018677775663,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.06736774144558608,
+          "rmse": 0.019902832596635247,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [],
+      "condition": "reference",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.06722811437486181,
+          "xy_rmse_m": 0.03372304165798898
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.0654141269703685,
+          "xy_rmse_m": 0.03142076141114167
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09427203245925464,
+          "xy_rmse_m": 0.04495772997129351
+        }
+      },
+      "observation_sha256": "0e47e032496f506b00a6c61e138d31f1e2d6c12b9d7a21701452e65b898715ea",
+      "seed": 19,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "range_clock",
+          "destination_origin_ns"
+        ]
+      ],
+      "condition": "uwb_clock_car2_minus20ms",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.06751695368886096,
+          "xy_rmse_m": 0.03360484576055075
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.06549096961292465,
+          "xy_rmse_m": 0.03128964685448693
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09427203245925464,
+          "xy_rmse_m": 0.04495772997129351
+        }
+      },
+      "observation_sha256": "0e47e032496f506b00a6c61e138d31f1e2d6c12b9d7a21701452e65b898715ea",
+      "seed": 19,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.0037584244667841216,
+          "rmse": 0.0013577439533435627,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.0037467786128786464,
+          "rmse": 0.0012785590390978724,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "range_clock",
+          "destination_origin_ns"
+        ]
+      ],
+      "condition": "uwb_clock_car2_plus20ms",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 240,
+          "excluded_independent_peer": 120,
+          "future_measurement_time": 600,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 240
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 300,
+          "future_measurement_time": 600,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 240
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09427203245925464,
+          "xy_rmse_m": 0.04661386004459692
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08044911928265658,
+          "xy_rmse_m": 0.037025328112952664
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09427203245925464,
+          "xy_rmse_m": 0.04495772997129351
+        }
+      },
+      "observation_sha256": "0e47e032496f506b00a6c61e138d31f1e2d6c12b9d7a21701452e65b898715ea",
+      "seed": 19,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.08158413075509231,
+          "rmse": 0.02877253724517892,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.058773578503073486,
+          "rmse": 0.021126436135008652,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "antenna_body_xy_m",
+          "value",
+          0
+        ]
+      ],
+      "condition": "lever_car2_x_minus5cm",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.07221700333919572,
+          "xy_rmse_m": 0.03696757154661178
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.07088963442040591,
+          "xy_rmse_m": 0.03573269816724659
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09427203245925464,
+          "xy_rmse_m": 0.04495772997129351
+        }
+      },
+      "observation_sha256": "0e47e032496f506b00a6c61e138d31f1e2d6c12b9d7a21701452e65b898715ea",
+      "seed": 19,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.047793567604111985,
+          "rmse": 0.02911513905910237,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.04772652205611663,
+          "rmse": 0.029624191980296616,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "antenna_body_xy_m",
+          "value",
+          0
+        ]
+      ],
+      "condition": "lever_car2_x_plus5cm",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.10511553191128577,
+          "xy_rmse_m": 0.05108079014738188
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.10371925531233735,
+          "xy_rmse_m": 0.049567124211403975
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09427203245925464,
+          "xy_rmse_m": 0.04495772997129351
+        }
+      },
+      "observation_sha256": "0e47e032496f506b00a6c61e138d31f1e2d6c12b9d7a21701452e65b898715ea",
+      "seed": 19,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.047714048256037256,
+          "rmse": 0.029091737213988514,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.047629077936571354,
+          "rmse": 0.02959131319724848,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "initial_room_pose",
+          "value",
+          2
+        ]
+      ],
+      "condition": "heading_car2_minus5deg",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.07737276590872244,
+          "xy_rmse_m": 0.0404142658519088
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.07538526466973663,
+          "xy_rmse_m": 0.03729164194592453
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.15128353714564963,
+          "xy_rmse_m": 0.06183480289811053
+        }
+      },
+      "observation_sha256": "0e47e032496f506b00a6c61e138d31f1e2d6c12b9d7a21701452e65b898715ea",
+      "seed": 19,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.03501092301826295,
+          "rmse": 0.015314993658444801,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.03371173639501189,
+          "rmse": 0.014952357275945969,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.07725240235890453,
+          "rmse": 0.02475861924547757,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "initial_room_pose",
+          "value",
+          2
+        ]
+      ],
+      "condition": "heading_car2_plus5deg",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.07307903735173352,
+          "xy_rmse_m": 0.03343560054867296
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.0729516286986884,
+          "xy_rmse_m": 0.03224367725514684
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.07169633316447835,
+          "xy_rmse_m": 0.03739574237333551
+        }
+      },
+      "observation_sha256": "0e47e032496f506b00a6c61e138d31f1e2d6c12b9d7a21701452e65b898715ea",
+      "seed": 19,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.03501444605915812,
+          "rmse": 0.015313130462638538,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.033814570684303345,
+          "rmse": 0.014959468770772026,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0772524023589081,
+          "rmse": 0.024758619245477332,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [],
+      "condition": "reference",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.05917896271252632,
+          "xy_rmse_m": 0.028765619130359098
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.05957590784575769,
+          "xy_rmse_m": 0.028099606985477216
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09228274499573129,
+          "xy_rmse_m": 0.044882961322393874
+        }
+      },
+      "observation_sha256": "ce4af8e98620c2f582e1d3971810684a80a442dc1ecd8235dbcb41fc718c92ba",
+      "seed": 43,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "range_clock",
+          "destination_origin_ns"
+        ]
+      ],
+      "condition": "uwb_clock_car2_minus20ms",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.05917896271252632,
+          "xy_rmse_m": 0.029073520075080923
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.0592932625788286,
+          "xy_rmse_m": 0.028396860793590075
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09228274499573129,
+          "xy_rmse_m": 0.044882961322393874
+        }
+      },
+      "observation_sha256": "ce4af8e98620c2f582e1d3971810684a80a442dc1ecd8235dbcb41fc718c92ba",
+      "seed": 43,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.0037645767073810807,
+          "rmse": 0.0013574458386405367,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.0037500894354413265,
+          "rmse": 0.0012781788524653514,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "range_clock",
+          "destination_origin_ns"
+        ]
+      ],
+      "condition": "uwb_clock_car2_plus20ms",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 240,
+          "excluded_independent_peer": 120,
+          "future_measurement_time": 600,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 240
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 300,
+          "future_measurement_time": 600,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 240
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.05917896271252632,
+          "xy_rmse_m": 0.030607557541652834
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.05894086398134266,
+          "xy_rmse_m": 0.030884603913764352
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09228274499573129,
+          "xy_rmse_m": 0.044882961322393874
+        }
+      },
+      "observation_sha256": "ce4af8e98620c2f582e1d3971810684a80a442dc1ecd8235dbcb41fc718c92ba",
+      "seed": 43,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.049109919452441496,
+          "rmse": 0.01802743763701497,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.038717536875179814,
+          "rmse": 0.01587366093814829,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "antenna_body_xy_m",
+          "value",
+          0
+        ]
+      ],
+      "condition": "lever_car2_x_minus5cm",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.0852300144554834,
+          "xy_rmse_m": 0.04686693559394982
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.0822808837289504,
+          "xy_rmse_m": 0.04629464272942895
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09228274499573129,
+          "xy_rmse_m": 0.044882961322393874
+        }
+      },
+      "observation_sha256": "ce4af8e98620c2f582e1d3971810684a80a442dc1ecd8235dbcb41fc718c92ba",
+      "seed": 43,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.04772887386645051,
+          "rmse": 0.029228104073170554,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.0480377278124957,
+          "rmse": 0.029721027763815144,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "antenna_body_xy_m",
+          "value",
+          0
+        ]
+      ],
+      "condition": "lever_car2_x_plus5cm",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08182362325214214,
+          "xy_rmse_m": 0.034151335231497305
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08696914742983722,
+          "xy_rmse_m": 0.03466813627703274
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09228274499573129,
+          "xy_rmse_m": 0.044882961322393874
+        }
+      },
+      "observation_sha256": "ce4af8e98620c2f582e1d3971810684a80a442dc1ecd8235dbcb41fc718c92ba",
+      "seed": 43,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.04764174754746814,
+          "rmse": 0.029203813089729976,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.04802945940300023,
+          "rmse": 0.02968970618595809,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "initial_room_pose",
+          "value",
+          2
+        ]
+      ],
+      "condition": "heading_car2_minus5deg",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.07441469240126057,
+          "xy_rmse_m": 0.034106712334551134
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.07273783818251679,
+          "xy_rmse_m": 0.0334896521166056
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09228274499573129,
+          "xy_rmse_m": 0.05214735615490689
+        }
+      },
+      "observation_sha256": "ce4af8e98620c2f582e1d3971810684a80a442dc1ecd8235dbcb41fc718c92ba",
+      "seed": 43,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.034181116891110676,
+          "rmse": 0.0149742649980507,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.03359017718667848,
+          "rmse": 0.014595276078843242,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.07346632228414914,
+          "rmse": 0.024180954351741384,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "initial_room_pose",
+          "value",
+          2
+        ]
+      ],
+      "condition": "heading_car2_plus5deg",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.05917896271252632,
+          "xy_rmse_m": 0.03027766696969035
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.06047689053206377,
+          "xy_rmse_m": 0.029346181263729433
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09228274499573129,
+          "xy_rmse_m": 0.04969352257983709
+        }
+      },
+      "observation_sha256": "ce4af8e98620c2f582e1d3971810684a80a442dc1ecd8235dbcb41fc718c92ba",
+      "seed": 43,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.03420522036540744,
+          "rmse": 0.014975644544584148,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.03373633289293535,
+          "rmse": 0.014616970554572738,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.073466322284148,
+          "rmse": 0.02418095435174045,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [],
+      "condition": "reference",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.06722466950403609,
+          "xy_rmse_m": 0.03415404183241839
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.06692123765486464,
+          "xy_rmse_m": 0.03432430226054918
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.13551836745686244,
+          "xy_rmse_m": 0.05874828379546699
+        }
+      },
+      "observation_sha256": "292f44a4775e9858f0bd7d1ce6bf6b40ecd1027392971ffe080efded900d60ee",
+      "seed": 91,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "range_clock",
+          "destination_origin_ns"
+        ]
+      ],
+      "condition": "uwb_clock_car2_minus20ms",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.067815950154592,
+          "xy_rmse_m": 0.03432756033804645
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.06749826064895369,
+          "xy_rmse_m": 0.03450032361447264
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.13551836745686244,
+          "xy_rmse_m": 0.05874828379546699
+        }
+      },
+      "observation_sha256": "292f44a4775e9858f0bd7d1ce6bf6b40ecd1027392971ffe080efded900d60ee",
+      "seed": 91,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.0037624282605184076,
+          "rmse": 0.0013669633443505694,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.003746981167316616,
+          "rmse": 0.001286088760457143,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "range_clock",
+          "destination_origin_ns"
+        ]
+      ],
+      "condition": "uwb_clock_car2_plus20ms",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 240,
+          "excluded_independent_peer": 120,
+          "future_measurement_time": 600,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 240
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 300,
+          "future_measurement_time": 600,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 240
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08377386178499178,
+          "xy_rmse_m": 0.04390531284917792
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.07390153681974267,
+          "xy_rmse_m": 0.03975856809036653
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.13551836745686244,
+          "xy_rmse_m": 0.05874828379546699
+        }
+      },
+      "observation_sha256": "292f44a4775e9858f0bd7d1ce6bf6b40ecd1027392971ffe080efded900d60ee",
+      "seed": 91,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.0857262868661075,
+          "rmse": 0.029904521504514357,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.06781677881258272,
+          "rmse": 0.023848063206500077,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "antenna_body_xy_m",
+          "value",
+          0
+        ]
+      ],
+      "condition": "lever_car2_x_minus5cm",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.07528941367641262,
+          "xy_rmse_m": 0.043902904057436645
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.07583277850656524,
+          "xy_rmse_m": 0.04456080303567488
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.13551836745686244,
+          "xy_rmse_m": 0.05874828379546699
+        }
+      },
+      "observation_sha256": "292f44a4775e9858f0bd7d1ce6bf6b40ecd1027392971ffe080efded900d60ee",
+      "seed": 91,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.047898404929726,
+          "rmse": 0.029266999917986328,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.04785307433164358,
+          "rmse": 0.029764206688151214,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "antenna_body_xy_m",
+          "value",
+          0
+        ]
+      ],
+      "condition": "lever_car2_x_plus5cm",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09667337108577738,
+          "xy_rmse_m": 0.045941899921515456
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09703329031460191,
+          "xy_rmse_m": 0.04619764597028434
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.13551836745686244,
+          "xy_rmse_m": 0.05874828379546699
+        }
+      },
+      "observation_sha256": "292f44a4775e9858f0bd7d1ce6bf6b40ecd1027392971ffe080efded900d60ee",
+      "seed": 91,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.04781919177176257,
+          "rmse": 0.02924237710419626,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.047838043741639004,
+          "rmse": 0.02973201581452937,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "initial_room_pose",
+          "value",
+          2
+        ]
+      ],
+      "condition": "heading_car2_minus5deg",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.06282170189668464,
+          "xy_rmse_m": 0.03502330321015267
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.06325298355404838,
+          "xy_rmse_m": 0.03470382338497392
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.13551836745686244,
+          "xy_rmse_m": 0.050810531569036345
+        }
+      },
+      "observation_sha256": "292f44a4775e9858f0bd7d1ce6bf6b40ecd1027392971ffe080efded900d60ee",
+      "seed": 91,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.03575814134901836,
+          "rmse": 0.015045237718271,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.03360963494251089,
+          "rmse": 0.014676892482335486,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.07592909067841727,
+          "rmse": 0.023913238177905048,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "initial_room_pose",
+          "value",
+          2
+        ]
+      ],
+      "condition": "heading_car2_plus5deg",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.07333855295615958,
+          "xy_rmse_m": 0.03953149087395484
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.07292756678724781,
+          "xy_rmse_m": 0.03982739686833462
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.1564057768919723,
+          "xy_rmse_m": 0.0739046967470665
+        }
+      },
+      "observation_sha256": "292f44a4775e9858f0bd7d1ce6bf6b40ecd1027392971ffe080efded900d60ee",
+      "seed": 91,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.03586415093812401,
+          "rmse": 0.015064735034464035,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.03365865121844833,
+          "rmse": 0.014704751284905273,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.07592909067841613,
+          "rmse": 0.023913238177904812,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [],
+      "condition": "reference",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08544639217969341,
+          "xy_rmse_m": 0.03561145053730403
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08387998506196978,
+          "xy_rmse_m": 0.03476605011433411
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.10830034697934869,
+          "xy_rmse_m": 0.0444588872700936
+        }
+      },
+      "observation_sha256": "dbf085c1819aa1dccc2d12b94eb508b268673ead8c56b9dde57edca1f0f3fae1",
+      "seed": 137,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "range_clock",
+          "destination_origin_ns"
+        ]
+      ],
+      "condition": "uwb_clock_car2_minus20ms",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08544639217969341,
+          "xy_rmse_m": 0.03583660347800853
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08390421370590549,
+          "xy_rmse_m": 0.034942034956137506
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.10830034697934869,
+          "xy_rmse_m": 0.0444588872700936
+        }
+      },
+      "observation_sha256": "dbf085c1819aa1dccc2d12b94eb508b268673ead8c56b9dde57edca1f0f3fae1",
+      "seed": 137,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.0037138909423441676,
+          "rmse": 0.0013483435591407687,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.003694804915070962,
+          "rmse": 0.0012666678098908813,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "range_clock",
+          "destination_origin_ns"
+        ]
+      ],
+      "condition": "uwb_clock_car2_plus20ms",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 240,
+          "excluded_independent_peer": 120,
+          "future_measurement_time": 600,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 240
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 300,
+          "future_measurement_time": 600,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 240
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08544639217969341,
+          "xy_rmse_m": 0.035424161922140145
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08434311609482509,
+          "xy_rmse_m": 0.03237204341711925
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.10830034697934869,
+          "xy_rmse_m": 0.0444588872700936
+        }
+      },
+      "observation_sha256": "dbf085c1819aa1dccc2d12b94eb508b268673ead8c56b9dde57edca1f0f3fae1",
+      "seed": 137,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.07473194829547555,
+          "rmse": 0.026808691236434187,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.07326707324777032,
+          "rmse": 0.02277074117469089,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "antenna_body_xy_m",
+          "value",
+          0
+        ]
+      ],
+      "condition": "lever_car2_x_minus5cm",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.0886651901447158,
+          "xy_rmse_m": 0.0451591137266896
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08389256482157714,
+          "xy_rmse_m": 0.04428780727992461
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.10830034697934869,
+          "xy_rmse_m": 0.0444588872700936
+        }
+      },
+      "observation_sha256": "dbf085c1819aa1dccc2d12b94eb508b268673ead8c56b9dde57edca1f0f3fae1",
+      "seed": 137,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.047631579029251234,
+          "rmse": 0.029174655746922316,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.04790522807327508,
+          "rmse": 0.029663346916673817,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "antenna_body_xy_m",
+          "value",
+          0
+        ]
+      ],
+      "condition": "lever_car2_x_plus5cm",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09708315070121958,
+          "xy_rmse_m": 0.046864074981923465
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09816940012645907,
+          "xy_rmse_m": 0.04702613168646299
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.10830034697934869,
+          "xy_rmse_m": 0.0444588872700936
+        }
+      },
+      "observation_sha256": "dbf085c1819aa1dccc2d12b94eb508b268673ead8c56b9dde57edca1f0f3fae1",
+      "seed": 137,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.047550996709934984,
+          "rmse": 0.029148688633415392,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.047894464639452454,
+          "rmse": 0.029628742995308745,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.0,
+          "rmse": 0.0,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "initial_room_pose",
+          "value",
+          2
+        ]
+      ],
+      "condition": "heading_car2_minus5deg",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08544639217969341,
+          "xy_rmse_m": 0.04207914556748008
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08401850568719672,
+          "xy_rmse_m": 0.04036142591285217
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.10830034697934869,
+          "xy_rmse_m": 0.0543975324247931
+        }
+      },
+      "observation_sha256": "dbf085c1819aa1dccc2d12b94eb508b268673ead8c56b9dde57edca1f0f3fae1",
+      "seed": 137,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.03619387597658429,
+          "rmse": 0.015448734086904961,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.03509052441276272,
+          "rmse": 0.0150574571174127,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.07729626209055193,
+          "rmse": 0.025367438763184976,
+          "rows": 244
+        }
+      }
+    },
+    {
+      "changed_leaves": [
+        [
+          "vehicles",
+          "car2",
+          "initial_room_pose",
+          "value",
+          2
+        ]
+      ],
+      "condition": "heading_car2_plus5deg",
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "metrics_generated_truth_only": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08544639217969341,
+          "xy_rmse_m": 0.035152900281802624
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08374514438485962,
+          "xy_rmse_m": 0.03519345555512126
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.10830034697934869,
+          "xy_rmse_m": 0.047038812756759946
+        }
+      },
+      "observation_sha256": "dbf085c1819aa1dccc2d12b94eb508b268673ead8c56b9dde57edca1f0f3fae1",
+      "seed": 137,
+      "xy_change_from_reference_m": {
+        "independent": {
+          "max": 0.03613911586818466,
+          "rmse": 0.015448479626552308,
+          "rows": 244
+        },
+        "joint": {
+          "max": 0.03520641678912492,
+          "rmse": 0.015072394377320534,
+          "rows": 244
+        },
+        "odom_only": {
+          "max": 0.07729626209054903,
+          "rmse": 0.02536743876318271,
+          "rows": 244
+        }
+      }
+    }
+  ],
+  "scope": "synthetic model sensitivity only; assumed perturbations are not real calibration error ranges"
+}

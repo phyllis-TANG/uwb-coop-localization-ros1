@@ -207,7 +207,7 @@ def validate_config(config):
                 raise ValueError("conflicting minimal and legacy horizontal lever arms")
         if known(cc.get("antenna_height_m")):
             height = cc["antenna_height_m"]["value"]
-            if not isinstance(height, (float, int)) or not math.isfinite(height):raise ValueError("invalid antenna height")
+            if isinstance(height, bool) or not isinstance(height, (float, int)) or not math.isfinite(height):raise ValueError("invalid antenna height")
             if known(cc.get("base_height_m")) and known(cc.get("antenna_body_xyz_m")):
                 legacy = cc["base_height_m"]["value"]+cc["antenna_body_xyz_m"]["value"][2]
                 if not math.isclose(height, legacy, abs_tol=1e-12, rel_tol=0):

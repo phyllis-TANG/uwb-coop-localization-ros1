@@ -141,10 +141,26 @@ class MinimalGeometryTests(unittest.TestCase):
         geometry=json.loads((audit.replay.SESSION/"geometry.json").read_text())
         t=audit.templates(geometry,manifest,{})["T08"]
         t["vehicles"]["car2"]["clock_group_ids"]={"odom":"car2_ros_host","uwb":"unconfirmed_nlink_clock"}
+        t["vehicles"]["car2"].pop("ros_clock_group_id")
         t["clock_groups"]["unconfirmed_nlink_clock"]={"status":"pending"}
         c,r=interface.compile_template(t)
         self.assertEqual(c["vehicles"]["car2"]["range_clock"]["source_clock_id"],"unconfirmed_nlink_clock")
         self.assertEqual(c["vehicles"]["car2"]["range_clock"]["status"],"pending")
+
+    def test_initial_binding_cannot_be_copied_from_another_bag(self):
+        import audit
+        manifest=json.loads((audit.replay.SESSION/"manifest.json").read_text())
+        geometry=json.loads((audit.replay.SESSION/"geometry.json").read_text())
+        t=audit.templates(geometry,manifest,{})["T12"]
+        t["vehicles"]["car1"]["initial_record_binding"].update(status="provided",source_file_sha256="f"*64,
+            record_index=1,header_epoch_ns=100,receive_epoch_ns=101,source="wrong experiment fixture")
+        with self.assertRaisesRegex(ValueError,"different experiment"):
+            interface.compile_template(t)
+
+    def test_boolean_is_not_a_provided_metric_height(self):
+        c=minimal(config())
+        c["vehicles"]["car1"]["antenna_height_m"]["value"]=False
+        with self.assertRaisesRegex(ValueError,"invalid antenna height"):model.validate_config(c)
 
 
 if __name__=="__main__":unittest.main()

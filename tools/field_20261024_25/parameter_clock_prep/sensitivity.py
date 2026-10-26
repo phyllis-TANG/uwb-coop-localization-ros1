@@ -54,6 +54,7 @@ def main(argv=None):
     try:
         run=replay.create_run(args.output,PROTOCOL,[sys.executable,__file__]+(list(argv) if argv is not None else sys.argv[1:]))
         run["role"]="synthetic_parameter_sensitivity"
+        run["config_sha256"]["baseline_synthetic_config.json"]=replay.sha256(synthetic.CONFIG)
         run["source_sha256"].update({str(x.relative_to(replay.ROOT)):replay.sha256(x) for x in HERE.glob("*.py")})
         protocol=json.loads(PROTOCOL.read_text());base=minimal_synthetic_config()
         if protocol["seeds"]!=base["validation_protocol"]["seeds"]:raise ValueError("fixed seed protocol changed")

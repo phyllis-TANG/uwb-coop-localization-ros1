@@ -1,0 +1,1471 @@
+{
+  "clock_mapping_status": "pending",
+  "policy": "receive-header distributions mix host clock error and processing/transport; never fitted as delay",
+  "scope": "four development bags only; stamp/source diagnostics, no replay or error evaluation",
+  "topics": [
+    {
+      "experiment_id": "T08",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 53703582.0,
+        "median": 50001391.5,
+        "min": 46252549.0,
+        "n": 4882,
+        "p05": 49941034.9,
+        "p95": 50064980.15
+      },
+      "messages": 4883,
+      "negative_difference_count": 4638,
+      "receive_delta_ns": {
+        "max": 426583516.0,
+        "median": 49984866.0,
+        "min": 3206.0,
+        "n": 4882,
+        "p05": 45395712.45,
+        "p95": 54004944.75
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 1478863594.0,
+        "median": -13367381.0,
+        "min": -20347228.0,
+        "n": 4883,
+        "p05": -16084588.1,
+        "p95": 19334.199999989385
+      },
+      "topic": "/car1/imu",
+      "vehicle_id": "car1"
+    },
+    {
+      "experiment_id": "T08",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 53684727.0,
+        "median": 50001616.5,
+        "min": 46264424.0,
+        "n": 4878,
+        "p05": 49943208.6,
+        "p95": 50060903.7
+      },
+      "messages": 4879,
+      "negative_difference_count": 1946,
+      "receive_delta_ns": {
+        "max": 417817288.0,
+        "median": 50021723.0,
+        "min": 3986.0,
+        "n": 4878,
+        "p05": 46541729.85,
+        "p95": 55282267.3
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 1329357899.0,
+        "median": 6675760.0,
+        "min": -16698368.0,
+        "n": 4879,
+        "p05": -15137792.4,
+        "p95": 38456468.199999996
+      },
+      "topic": "/car1/odom",
+      "vehicle_id": "car1"
+    },
+    {
+      "experiment_id": "T08",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 23122788.0,
+        "median": 19999028.0,
+        "min": 16836166.0,
+        "n": 12193,
+        "p05": 19927978.0,
+        "p95": 20086050.0
+      },
+      "messages": 12194,
+      "negative_difference_count": 9081,
+      "receive_delta_ns": {
+        "max": 388356743.0,
+        "median": 19530387.0,
+        "min": 1098.0,
+        "n": 12193,
+        "p05": 8243180.4,
+        "p95": 40594597.8
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 1234560977.0,
+        "median": -8791386.5,
+        "min": -20386740.0,
+        "n": 12194,
+        "p05": -18431672.1,
+        "p95": 11526138.600000001
+      },
+      "topic": "/car1/uwb/frame3",
+      "vehicle_id": "car1"
+    },
+    {
+      "experiment_id": "T08",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 23122788.0,
+        "median": 19999028.0,
+        "min": 16836166.0,
+        "n": 12188,
+        "p05": 19927978.0,
+        "p95": 20086050.0
+      },
+      "messages": 12189,
+      "negative_difference_count": 11881,
+      "receive_delta_ns": {
+        "max": 388217282.0,
+        "median": 19993060.5,
+        "min": 1773.0,
+        "n": 12188,
+        "p05": 15961046.95,
+        "p95": 23642036.2
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 1134926662.0,
+        "median": -13015249.0,
+        "min": -20497519.0,
+        "n": 12189,
+        "p05": -19012259.2,
+        "p95": -4630384.799999998
+      },
+      "topic": "/car1/uwb/ranges",
+      "vehicle_id": "car1"
+    },
+    {
+      "experiment_id": "T08",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "n": 0
+      },
+      "messages": 1766,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 89521458.0,
+        "median": 50039117.0,
+        "min": 15542995.0,
+        "n": 1765,
+        "p05": 46880205.8,
+        "p95": 58806128.199999996
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "n": 0
+      },
+      "topic": "/car2/cmd_vel",
+      "vehicle_id": "car2"
+    },
+    {
+      "experiment_id": "T08",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 50597227.0,
+        "median": 49999115.0,
+        "min": 49472309.0,
+        "n": 4866,
+        "p05": 49900049.5,
+        "p95": 50094150.25
+      },
+      "messages": 4867,
+      "negative_difference_count": 4732,
+      "receive_delta_ns": {
+        "max": 407062281.0,
+        "median": 49989082.0,
+        "min": 4486.0,
+        "n": 4866,
+        "p05": 45687794.25,
+        "p95": 53969425.75
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 660287997.0,
+        "median": -9041943.0,
+        "min": -13415112.0,
+        "n": 4867,
+        "p05": -12464171.2,
+        "p95": -3141099.6
+      },
+      "topic": "/car2/imu",
+      "vehicle_id": "car2"
+    },
+    {
+      "experiment_id": "T08",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 21341263.0,
+        "median": 19999602.0,
+        "min": 18663354.0,
+        "n": 12159,
+        "p05": 19977236.2,
+        "p95": 20023212.4
+      },
+      "messages": 12160,
+      "negative_difference_count": 5127,
+      "receive_delta_ns": {
+        "max": 388335749.0,
+        "median": 20000079.0,
+        "min": 1790.0,
+        "n": 12159,
+        "p05": 16728624.5,
+        "p95": 23682870.500000004
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 553019021.0,
+        "median": 974537.5,
+        "min": -13925333.0,
+        "n": 12160,
+        "p05": -10879473.8,
+        "p95": 12301793.249999998
+      },
+      "topic": "/car2/nlink_linktrack_nodeframe3",
+      "vehicle_id": "car2"
+    },
+    {
+      "experiment_id": "T08",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 50581131.0,
+        "median": 49999285.0,
+        "min": 49470262.0,
+        "n": 4860,
+        "p05": 49915633.7,
+        "p95": 50078335.8
+      },
+      "messages": 4861,
+      "negative_difference_count": 1537,
+      "receive_delta_ns": {
+        "max": 398564783.0,
+        "median": 58187510.5,
+        "min": 3949.0,
+        "n": 4860,
+        "p05": 9178341.2,
+        "p95": 62424260.0
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 361407683.0,
+        "median": 10530941.0,
+        "min": -13369334.0,
+        "n": 4861,
+        "p05": -10997114.0,
+        "p95": 43022316.0
+      },
+      "topic": "/car2/odom",
+      "vehicle_id": "car2"
+    },
+    {
+      "experiment_id": "T08",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 21341263.0,
+        "median": 19999602.0,
+        "min": 18663354.0,
+        "n": 12144,
+        "p05": 19977230.2,
+        "p95": 20023215.4
+      },
+      "messages": 12145,
+      "negative_difference_count": 4407,
+      "receive_delta_ns": {
+        "max": 396987983.0,
+        "median": 19999396.0,
+        "min": 2716.0,
+        "n": 12144,
+        "p05": 16660128.3,
+        "p95": 23863251.700000003
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 377104361.0,
+        "median": 4625700.0,
+        "min": -13898413.0,
+        "n": 12145,
+        "p05": -2230588.0,
+        "p95": 12858001.2
+      },
+      "topic": "/car2/uwb/ranges",
+      "vehicle_id": "car2"
+    },
+    {
+      "experiment_id": "T10",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "n": 0
+      },
+      "messages": 666,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 108566151.0,
+        "median": 50086702.0,
+        "min": 10713196.0,
+        "n": 665,
+        "p05": 46651018.0,
+        "p95": 62736962.4
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "n": 0
+      },
+      "topic": "/car1/cmd_vel",
+      "vehicle_id": "car1"
+    },
+    {
+      "experiment_id": "T10",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 50263137.0,
+        "median": 49998678.0,
+        "min": 49749320.0,
+        "n": 1162,
+        "p05": 49931993.35,
+        "p95": 50071338.6
+      },
+      "messages": 1163,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 117087697.0,
+        "median": 49966000.5,
+        "min": 6324.0,
+        "n": 1162,
+        "p05": 45312771.0,
+        "p95": 53047830.400000006
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 1199574791.0,
+        "median": 7063759.0,
+        "min": 171356.0,
+        "n": 1163,
+        "p05": 6171960.2,
+        "p95": 12221196.799999988
+      },
+      "topic": "/car1/imu",
+      "vehicle_id": "car1"
+    },
+    {
+      "experiment_id": "T10",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 50255013.0,
+        "median": 49998546.5,
+        "min": 49753903.0,
+        "n": 1160,
+        "p05": 49932342.7,
+        "p95": 50067335.35
+      },
+      "messages": 1161,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 109768428.0,
+        "median": 50007370.0,
+        "min": 4299.0,
+        "n": 1160,
+        "p05": 46158033.4,
+        "p95": 54271734.44999999
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 1099610326.0,
+        "median": 26816036.0,
+        "min": 5695500.0,
+        "n": 1161,
+        "p05": 6731398.0,
+        "p95": 48662491.0
+      },
+      "topic": "/car1/odom",
+      "vehicle_id": "car1"
+    },
+    {
+      "experiment_id": "T10",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 22261858.0,
+        "median": 19999027.0,
+        "min": 17822028.0,
+        "n": 2896,
+        "p05": 19922732.75,
+        "p95": 20085871.5
+      },
+      "messages": 2897,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 97279058.0,
+        "median": 19505031.0,
+        "min": 1235.0,
+        "n": 2896,
+        "p05": 5717393.25,
+        "p95": 41167601.25
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 994733400.0,
+        "median": 3663095.0,
+        "min": 205606.0,
+        "n": 2897,
+        "p05": 769820.2000000001,
+        "p95": 30801736.8
+      },
+      "topic": "/car1/uwb/frame3",
+      "vehicle_id": "car1"
+    },
+    {
+      "experiment_id": "T10",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 22261858.0,
+        "median": 19999027.0,
+        "min": 17822028.0,
+        "n": 2891,
+        "p05": 19922971.5,
+        "p95": 20085931.0
+      },
+      "messages": 2892,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 49387683.0,
+        "median": 19975234.0,
+        "min": 1974.0,
+        "n": 2891,
+        "p05": 11600177.0,
+        "p95": 24631673.0
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 894782663.0,
+        "median": 1282029.5,
+        "min": 103882.0,
+        "n": 2892,
+        "p05": 565756.65,
+        "p95": 10950287.95
+      },
+      "topic": "/car1/uwb/ranges",
+      "vehicle_id": "car1"
+    },
+    {
+      "experiment_id": "T10",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 50387554.0,
+        "median": 49999869.0,
+        "min": 49448007.0,
+        "n": 1149,
+        "p05": 49922365.6,
+        "p95": 50077460.4
+      },
+      "messages": 1150,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 98734876.0,
+        "median": 49947788.0,
+        "min": 14574.0,
+        "n": 1149,
+        "p05": 45801691.6,
+        "p95": 53268230.6
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 525469289.0,
+        "median": 2080241.0,
+        "min": 229840.0,
+        "n": 1150,
+        "p05": 846831.35,
+        "p95": 6409073.499999993
+      },
+      "topic": "/car2/imu",
+      "vehicle_id": "car2"
+    },
+    {
+      "experiment_id": "T10",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 21019209.0,
+        "median": 19999707.0,
+        "min": 18960585.0,
+        "n": 2867,
+        "p05": 19976578.2,
+        "p95": 20024404.1
+      },
+      "messages": 2868,
+      "negative_difference_count": 79,
+      "receive_delta_ns": {
+        "max": 49617788.0,
+        "median": 19993620.0,
+        "min": 4773.0,
+        "n": 2867,
+        "p05": 16635087.2,
+        "p95": 23258502.99999999
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 411270639.0,
+        "median": 15106843.0,
+        "min": -4693654.0,
+        "n": 2868,
+        "p05": 5247910.55,
+        "p95": 18359948.75
+      },
+      "topic": "/car2/nlink_linktrack_nodeframe3",
+      "vehicle_id": "car2"
+    },
+    {
+      "experiment_id": "T10",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 50366369.0,
+        "median": 49999661.0,
+        "min": 49476679.0,
+        "n": 1144,
+        "p05": 49934469.25,
+        "p95": 50059603.4
+      },
+      "messages": 1145,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 109784421.0,
+        "median": 58144038.5,
+        "min": 5759.0,
+        "n": 1144,
+        "p05": 8492522.4,
+        "p95": 62638609.15
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 275551380.0,
+        "median": 21681894.0,
+        "min": 377791.0,
+        "n": 1145,
+        "p05": 1321026.8,
+        "p95": 53794897.8
+      },
+      "topic": "/car2/odom",
+      "vehicle_id": "car2"
+    },
+    {
+      "experiment_id": "T10",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 21019209.0,
+        "median": 19999692.5,
+        "min": 18960585.0,
+        "n": 2854,
+        "p05": 19976856.1,
+        "p95": 20024336.8
+      },
+      "messages": 2855,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 49467899.0,
+        "median": 19994998.0,
+        "min": 1880.0,
+        "n": 2854,
+        "p05": 17038715.05,
+        "p95": 23082941.3
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 171402056.0,
+        "median": 15504971.0,
+        "min": 4594368.0,
+        "n": 2855,
+        "p05": 5401615.6,
+        "p95": 18750603.099999994
+      },
+      "topic": "/car2/uwb/ranges",
+      "vehicle_id": "car2"
+    },
+    {
+      "experiment_id": "T12",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "n": 0
+      },
+      "messages": 662,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 89769656.0,
+        "median": 50118052.0,
+        "min": 9939871.0,
+        "n": 661,
+        "p05": 47715686.0,
+        "p95": 67789595.0
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "n": 0
+      },
+      "topic": "/car1/cmd_vel",
+      "vehicle_id": "car1"
+    },
+    {
+      "experiment_id": "T12",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 50248674.0,
+        "median": 49998298.0,
+        "min": 49762828.0,
+        "n": 2731,
+        "p05": 49939068.0,
+        "p95": 50059372.5
+      },
+      "messages": 2732,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 327799703.0,
+        "median": 49954718.0,
+        "min": 2954.0,
+        "n": 2731,
+        "p05": 39863738.5,
+        "p95": 55143692.0
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 1465014366.0,
+        "median": 7797671.0,
+        "min": 4242388.0,
+        "n": 2732,
+        "p05": 5367403.8,
+        "p95": 33615118.99999979
+      },
+      "topic": "/car1/imu",
+      "vehicle_id": "car1"
+    },
+    {
+      "experiment_id": "T12",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 50214924.0,
+        "median": 49999102.0,
+        "min": 49772775.0,
+        "n": 2729,
+        "p05": 49941738.0,
+        "p95": 50055606.4
+      },
+      "messages": 2730,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 331605585.0,
+        "median": 50012000.0,
+        "min": 3072.0,
+        "n": 2729,
+        "p05": 38750649.6,
+        "p95": 57300901.8
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 1365091643.0,
+        "median": 28266744.5,
+        "min": 4611341.0,
+        "n": 2730,
+        "p05": 6655317.4,
+        "p95": 59088790.9999999
+      },
+      "topic": "/car1/odom",
+      "vehicle_id": "car1"
+    },
+    {
+      "experiment_id": "T12",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 21070957.0,
+        "median": 19999027.0,
+        "min": 19000054.0,
+        "n": 6817,
+        "p05": 19926023.4,
+        "p95": 20081043.0
+      },
+      "messages": 6818,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 306995854.0,
+        "median": 19076084.0,
+        "min": 1554.0,
+        "n": 6817,
+        "p05": 6368392.6,
+        "p95": 41032801.0
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 1264889880.0,
+        "median": 15487070.5,
+        "min": 5259039.0,
+        "n": 6818,
+        "p05": 13020636.5,
+        "p95": 42999473.099999994
+      },
+      "topic": "/car1/uwb/frame3",
+      "vehicle_id": "car1"
+    },
+    {
+      "experiment_id": "T12",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 21070957.0,
+        "median": 19999027.0,
+        "min": 19000054.0,
+        "n": 6811,
+        "p05": 19925952.0,
+        "p95": 20081043.0
+      },
+      "messages": 6812,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 338521149.0,
+        "median": 19945549.0,
+        "min": 1701.0,
+        "n": 6811,
+        "p05": 10113219.0,
+        "p95": 23178312.0
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 1262666237.0,
+        "median": 14527983.0,
+        "min": 5720102.0,
+        "n": 6812,
+        "p05": 12707878.7,
+        "p95": 36385529.499999955
+      },
+      "topic": "/car1/uwb/ranges",
+      "vehicle_id": "car1"
+    },
+    {
+      "experiment_id": "T12",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "n": 0
+      },
+      "messages": 1745,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 153679805.0,
+        "median": 50078312.5,
+        "min": 28938.0,
+        "n": 1744,
+        "p05": 45646518.4,
+        "p95": 59726662.0
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "n": 0
+      },
+      "topic": "/car2/cmd_vel",
+      "vehicle_id": "car2"
+    },
+    {
+      "experiment_id": "T12",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 50617701.0,
+        "median": 49999060.5,
+        "min": 49380615.0,
+        "n": 2716,
+        "p05": 49892562.5,
+        "p95": 50104405.25
+      },
+      "messages": 2717,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 451715552.0,
+        "median": 49947398.0,
+        "min": 2638.0,
+        "n": 2716,
+        "p05": 39421412.75,
+        "p95": 59365622.0
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 763599570.0,
+        "median": 15702381.0,
+        "min": 11504447.0,
+        "n": 2717,
+        "p05": 12612396.8,
+        "p95": 40736139.199999936
+      },
+      "topic": "/car2/imu",
+      "vehicle_id": "car2"
+    },
+    {
+      "experiment_id": "T12",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 22059047.0,
+        "median": 19999861.5,
+        "min": 17189621.0,
+        "n": 6786,
+        "p05": 19970217.25,
+        "p95": 20029328.5
+      },
+      "messages": 6787,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 303241926.0,
+        "median": 19971674.5,
+        "min": 1676.0,
+        "n": 6786,
+        "p05": 621608.25,
+        "p95": 23628802.25
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 665212196.0,
+        "median": 31987002.0,
+        "min": 14339701.0,
+        "n": 6787,
+        "p05": 21212905.7,
+        "p95": 48335948.89999996
+      },
+      "topic": "/car2/nlink_linktrack_nodeframe3",
+      "vehicle_id": "car2"
+    },
+    {
+      "experiment_id": "T12",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 50603556.0,
+        "median": 49999256.0,
+        "min": 49393512.0,
+        "n": 2711,
+        "p05": 49910294.5,
+        "p95": 50087208.5
+      },
+      "messages": 2712,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 369192193.0,
+        "median": 58353007.0,
+        "min": 3936.0,
+        "n": 2711,
+        "p05": 4350117.5,
+        "p95": 62927278.0
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 519932170.0,
+        "median": 35521473.5,
+        "min": 11858503.0,
+        "n": 2712,
+        "p05": 14139742.0,
+        "p95": 73698806.54999997
+      },
+      "topic": "/car2/odom",
+      "vehicle_id": "car2"
+    },
+    {
+      "experiment_id": "T12",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 22059047.0,
+        "median": 19999851.5,
+        "min": 17189621.0,
+        "n": 6774,
+        "p05": 19970209.5,
+        "p95": 20029352.35
+      },
+      "messages": 6775,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 451269534.0,
+        "median": 19969594.0,
+        "min": 1885.0,
+        "n": 6774,
+        "p05": 716137.6500000003,
+        "p95": 24001487.349999998
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 524814402.0,
+        "median": 32004923.0,
+        "min": 14439366.0,
+        "n": 6775,
+        "p05": 21342050.2,
+        "p95": 46749685.399999835
+      },
+      "topic": "/car2/uwb/ranges",
+      "vehicle_id": "car2"
+    },
+    {
+      "experiment_id": "T14",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 50576724.0,
+        "median": 49999565.0,
+        "min": 49372910.0,
+        "n": 3301,
+        "p05": 49928558.0,
+        "p95": 50068301.0
+      },
+      "messages": 3302,
+      "negative_difference_count": 3179,
+      "receive_delta_ns": {
+        "max": 274941559.0,
+        "median": 49956929.0,
+        "min": 5543.0,
+        "n": 3301,
+        "p05": 42925998.0,
+        "p95": 53988506.0
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 1299374927.0,
+        "median": -39096286.5,
+        "min": -44937884.0,
+        "n": 3302,
+        "p05": -40829295.9,
+        "p95": -15543843.050000053
+      },
+      "topic": "/car1/imu",
+      "vehicle_id": "car1"
+    },
+    {
+      "experiment_id": "T14",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 50571567.0,
+        "median": 49999863.0,
+        "min": 49377963.0,
+        "n": 3299,
+        "p05": 49932663.6,
+        "p95": 50065400.8
+      },
+      "messages": 3300,
+      "negative_difference_count": 2691,
+      "receive_delta_ns": {
+        "max": 413748308.0,
+        "median": 50043988.0,
+        "min": 4069.0,
+        "n": 3299,
+        "p05": 42935280.1,
+        "p95": 58023406.89999999
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 1199370385.0,
+        "median": -18560658.0,
+        "min": -41522454.0,
+        "n": 3300,
+        "p05": -40119374.55,
+        "p95": 11093500.899999987
+      },
+      "topic": "/car1/odom",
+      "vehicle_id": "car1"
+    },
+    {
+      "experiment_id": "T14",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 20658970.0,
+        "median": 19998074.0,
+        "min": 19365072.0,
+        "n": 8243,
+        "p05": 19926071.1,
+        "p95": 20082950.9
+      },
+      "messages": 8244,
+      "negative_difference_count": 7876,
+      "receive_delta_ns": {
+        "max": 313796853.0,
+        "median": 19216518.0,
+        "min": 2296.0,
+        "n": 8243,
+        "p05": 6178110.100000001,
+        "p95": 41340497.199999996
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 1083416210.0,
+        "median": -35916579.0,
+        "min": -41918702.0,
+        "n": 8244,
+        "p05": -39749708.7,
+        "p95": -5330108.000000098
+      },
+      "topic": "/car1/uwb/frame3",
+      "vehicle_id": "car1"
+    },
+    {
+      "experiment_id": "T14",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 20658970.0,
+        "median": 19998074.0,
+        "min": 19365072.0,
+        "n": 8237,
+        "p05": 19926071.0,
+        "p95": 20082950.2
+      },
+      "messages": 8238,
+      "negative_difference_count": 7854,
+      "receive_delta_ns": {
+        "max": 275224294.0,
+        "median": 19971497.0,
+        "min": 2438.0,
+        "n": 8237,
+        "p05": 10330352.4,
+        "p95": 23506552.599999998
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 963447758.0,
+        "median": -37546325.0,
+        "min": -42115641.0,
+        "n": 8238,
+        "p05": -40329863.05,
+        "p95": -4567965.900000076
+      },
+      "topic": "/car1/uwb/ranges",
+      "vehicle_id": "car1"
+    },
+    {
+      "experiment_id": "T14",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "n": 0
+      },
+      "messages": 1746,
+      "negative_difference_count": 0,
+      "receive_delta_ns": {
+        "max": 153063536.0,
+        "median": 50062763.0,
+        "min": 25446.0,
+        "n": 1745,
+        "p05": 45979089.6,
+        "p95": 59725755.8
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "n": 0
+      },
+      "topic": "/car2/cmd_vel",
+      "vehicle_id": "car2"
+    },
+    {
+      "experiment_id": "T14",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 50777317.0,
+        "median": 49999266.0,
+        "min": 49160267.0,
+        "n": 3285,
+        "p05": 49914554.4,
+        "p95": 50083698.4
+      },
+      "messages": 3286,
+      "negative_difference_count": 3127,
+      "receive_delta_ns": {
+        "max": 320560082.0,
+        "median": 49931591.0,
+        "min": 3119.0,
+        "n": 3285,
+        "p05": 40971016.0,
+        "p95": 57233846.39999993
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 483615459.0,
+        "median": -34451226.5,
+        "min": -38121776.0,
+        "n": 3286,
+        "p05": -36684494.0,
+        "p95": -2552817.75
+      },
+      "topic": "/car2/imu",
+      "vehicle_id": "car2"
+    },
+    {
+      "experiment_id": "T14",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 21091363.0,
+        "median": 19999809.5,
+        "min": 18949079.0,
+        "n": 8208,
+        "p05": 19973893.85,
+        "p95": 20026206.55
+      },
+      "messages": 8209,
+      "negative_difference_count": 7686,
+      "receive_delta_ns": {
+        "max": 320527676.0,
+        "median": 19981400.5,
+        "min": 1324.0,
+        "n": 8208,
+        "p05": 165886.6,
+        "p95": 24091999.4
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 391139519.0,
+        "median": -21182277.0,
+        "min": -33852013.0,
+        "n": 8209,
+        "p05": -31133185.0,
+        "p95": 11557183.799999962
+      },
+      "topic": "/car2/nlink_linktrack_nodeframe3",
+      "vehicle_id": "car2"
+    },
+    {
+      "experiment_id": "T14",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 50809223.0,
+        "median": 49999290.5,
+        "min": 49168203.0,
+        "n": 3280,
+        "p05": 49927363.85,
+        "p95": 50070880.8
+      },
+      "messages": 3281,
+      "negative_difference_count": 2076,
+      "receive_delta_ns": {
+        "max": 319505817.0,
+        "median": 58089174.5,
+        "min": 3653.0,
+        "n": 3280,
+        "p05": 8646774.9,
+        "p95": 63087254.3
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 301656162.0,
+        "median": -13755758.0,
+        "min": -37988061.0,
+        "n": 3281,
+        "p05": -35838590.0,
+        "p95": 18602015.0
+      },
+      "topic": "/car2/odom",
+      "vehicle_id": "car2"
+    },
+    {
+      "experiment_id": "T14",
+      "header_backwards": 0,
+      "header_delta_ns": {
+        "max": 21091363.0,
+        "median": 19999811.0,
+        "min": 18949079.0,
+        "n": 8193,
+        "p05": 19973915.4,
+        "p95": 20026187.2
+      },
+      "messages": 8194,
+      "negative_difference_count": 7680,
+      "receive_delta_ns": {
+        "max": 319776044.0,
+        "median": 19985274.0,
+        "min": 2459.0,
+        "n": 8193,
+        "p05": 307201.8000000014,
+        "p95": 24308700.2
+      },
+      "receive_minus_header_ns_diagnostic_only": {
+        "max": 308830325.0,
+        "median": -20626376.0,
+        "min": -33507137.0,
+        "n": 8194,
+        "p05": -30922893.15,
+        "p95": 10821598.399999978
+      },
+      "topic": "/car2/uwb/ranges",
+      "vehicle_id": "car2"
+    }
+  ],
+  "vehicles": [
+    {
+      "bridge_minus_raw_receipt_ns_same_recorder": {
+        "max": 39955502.0,
+        "median": -157263.0,
+        "min": -112992043.0,
+        "n": 12189,
+        "p05": -20647778.8,
+        "p95": -10329.799999999996
+      },
+      "bridge_only_header_frames": 0,
+      "device_local_delta_ms": {
+        "max": 21.0,
+        "median": 20.0,
+        "min": 19.0,
+        "n": 12193,
+        "p05": 20.0,
+        "p95": 20.0
+      },
+      "device_system_delta_ms": {
+        "max": 20.0,
+        "median": 20.0,
+        "min": 20.0,
+        "n": 12193,
+        "p05": 20.0,
+        "p95": 20.0
+      },
+      "experiment_id": "T08",
+      "imu_minus_nearest_odom_header_ns": {
+        "max": 104695.0,
+        "median": 29586.0,
+        "min": 23127.0,
+        "n": 4879,
+        "p05": 25471.0,
+        "p95": 40112.19999999997
+      },
+      "nearest_header_pairing": "offline same-host descriptive nearest stamp within 25ms, not proof of common physical sample time",
+      "raw_bridge_identical_header_frames": 12189,
+      "raw_only_header_frames": 5,
+      "receipt_pair_note": "same recorder clock arrival separation, not serial/radio acquisition delay",
+      "vehicle_id": "car1"
+    },
+    {
+      "bridge_minus_raw_receipt_ns_same_recorder": {
+        "max": 64385601.0,
+        "median": 155233.0,
+        "min": -99241436.0,
+        "n": 12145,
+        "p05": -342948.3999999999,
+        "p95": 10285930.0
+      },
+      "bridge_only_header_frames": 0,
+      "device_local_delta_ms": {
+        "max": 21.0,
+        "median": 20.0,
+        "min": 19.0,
+        "n": 12159,
+        "p05": 20.0,
+        "p95": 20.0
+      },
+      "device_system_delta_ms": {
+        "max": 20.0,
+        "median": 20.0,
+        "min": 20.0,
+        "n": 12159,
+        "p05": 20.0,
+        "p95": 20.0
+      },
+      "experiment_id": "T08",
+      "imu_minus_nearest_odom_header_ns": {
+        "max": 483754.0,
+        "median": 44832.0,
+        "min": 12833.0,
+        "n": 4861,
+        "p05": 33153.0,
+        "p95": 63137.0
+      },
+      "nearest_header_pairing": "offline same-host descriptive nearest stamp within 25ms, not proof of common physical sample time",
+      "raw_bridge_identical_header_frames": 12145,
+      "raw_only_header_frames": 15,
+      "receipt_pair_note": "same recorder clock arrival separation, not serial/radio acquisition delay",
+      "vehicle_id": "car2"
+    },
+    {
+      "bridge_minus_raw_receipt_ns_same_recorder": {
+        "max": 14940851.0,
+        "median": -210287.5,
+        "min": -48096813.0,
+        "n": 2892,
+        "p05": -21775938.15,
+        "p95": -5874.300000000045
+      },
+      "bridge_only_header_frames": 0,
+      "device_local_delta_ms": {
+        "max": 20.0,
+        "median": 20.0,
+        "min": 20.0,
+        "n": 2896,
+        "p05": 20.0,
+        "p95": 20.0
+      },
+      "device_system_delta_ms": {
+        "max": 20.0,
+        "median": 20.0,
+        "min": 20.0,
+        "n": 2896,
+        "p05": 20.0,
+        "p95": 20.0
+      },
+      "experiment_id": "T10",
+      "imu_minus_nearest_odom_header_ns": {
+        "max": 131774.0,
+        "median": 30574.0,
+        "min": 23334.0,
+        "n": 1161,
+        "p05": 26094.0,
+        "p95": 42241.0
+      },
+      "nearest_header_pairing": "offline same-host descriptive nearest stamp within 25ms, not proof of common physical sample time",
+      "raw_bridge_identical_header_frames": 2892,
+      "raw_only_header_frames": 5,
+      "receipt_pair_note": "same recorder clock arrival separation, not serial/radio acquisition delay",
+      "vehicle_id": "car1"
+    },
+    {
+      "bridge_minus_raw_receipt_ns_same_recorder": {
+        "max": 27625606.0,
+        "median": 133269.0,
+        "min": -17265244.0,
+        "n": 2855,
+        "p05": -341501.3,
+        "p95": 10240564.699999997
+      },
+      "bridge_only_header_frames": 0,
+      "device_local_delta_ms": {
+        "max": 21.0,
+        "median": 20.0,
+        "min": 19.0,
+        "n": 2867,
+        "p05": 20.0,
+        "p95": 20.0
+      },
+      "device_system_delta_ms": {
+        "max": 20.0,
+        "median": 20.0,
+        "min": 20.0,
+        "n": 2867,
+        "p05": 20.0,
+        "p95": 20.0
+      },
+      "experiment_id": "T10",
+      "imu_minus_nearest_odom_header_ns": {
+        "max": 155106.0,
+        "median": 48096.0,
+        "min": 16545.0,
+        "n": 1145,
+        "p05": 34906.6,
+        "p95": 61946.59999999997
+      },
+      "nearest_header_pairing": "offline same-host descriptive nearest stamp within 25ms, not proof of common physical sample time",
+      "raw_bridge_identical_header_frames": 2855,
+      "raw_only_header_frames": 13,
+      "receipt_pair_note": "same recorder clock arrival separation, not serial/radio acquisition delay",
+      "vehicle_id": "car2"
+    },
+    {
+      "bridge_minus_raw_receipt_ns_same_recorder": {
+        "max": 309533852.0,
+        "median": -226527.5,
+        "min": -213173607.0,
+        "n": 6812,
+        "p05": -21213718.7,
+        "p95": 104279.09999999973
+      },
+      "bridge_only_header_frames": 0,
+      "device_local_delta_ms": {
+        "max": 21.0,
+        "median": 20.0,
+        "min": 19.0,
+        "n": 6817,
+        "p05": 20.0,
+        "p95": 20.0
+      },
+      "device_system_delta_ms": {
+        "max": 20.0,
+        "median": 20.0,
+        "min": 20.0,
+        "n": 6817,
+        "p05": 20.0,
+        "p95": 20.0
+      },
+      "experiment_id": "T12",
+      "imu_minus_nearest_odom_header_ns": {
+        "max": 139900.0,
+        "median": 30366.0,
+        "min": 23021.0,
+        "n": 2730,
+        "p05": 25834.0,
+        "p95": 40573.55
+      },
+      "nearest_header_pairing": "offline same-host descriptive nearest stamp within 25ms, not proof of common physical sample time",
+      "raw_bridge_identical_header_frames": 6812,
+      "raw_only_header_frames": 6,
+      "receipt_pair_note": "same recorder clock arrival separation, not serial/radio acquisition delay",
+      "vehicle_id": "car1"
+    },
+    {
+      "bridge_minus_raw_receipt_ns_same_recorder": {
+        "max": 291870262.0,
+        "median": 133031.0,
+        "min": -158631637.0,
+        "n": 6775,
+        "p05": -328906.6,
+        "p95": 874586.5999999922
+      },
+      "bridge_only_header_frames": 0,
+      "device_local_delta_ms": {
+        "max": 21.0,
+        "median": 20.0,
+        "min": 19.0,
+        "n": 6786,
+        "p05": 20.0,
+        "p95": 20.0
+      },
+      "device_system_delta_ms": {
+        "max": 20.0,
+        "median": 20.0,
+        "min": 20.0,
+        "n": 6786,
+        "p05": 20.0,
+        "p95": 20.0
+      },
+      "experiment_id": "T12",
+      "imu_minus_nearest_odom_header_ns": {
+        "max": 732497.0,
+        "median": 43393.0,
+        "min": 21216.0,
+        "n": 2712,
+        "p05": 33664.55,
+        "p95": 62977.0
+      },
+      "nearest_header_pairing": "offline same-host descriptive nearest stamp within 25ms, not proof of common physical sample time",
+      "raw_bridge_identical_header_frames": 6775,
+      "raw_only_header_frames": 12,
+      "receipt_pair_note": "same recorder clock arrival separation, not serial/radio acquisition delay",
+      "vehicle_id": "car2"
+    },
+    {
+      "bridge_minus_raw_receipt_ns_same_recorder": {
+        "max": 275109014.0,
+        "median": -178135.5,
+        "min": -206614856.0,
+        "n": 8238,
+        "p05": -21005977.6,
+        "p95": -2606.9500000000025
+      },
+      "bridge_only_header_frames": 0,
+      "device_local_delta_ms": {
+        "max": 21.0,
+        "median": 20.0,
+        "min": 19.0,
+        "n": 8243,
+        "p05": 20.0,
+        "p95": 20.0
+      },
+      "device_system_delta_ms": {
+        "max": 20.0,
+        "median": 20.0,
+        "min": 20.0,
+        "n": 8243,
+        "p05": 20.0,
+        "p95": 20.0
+      },
+      "experiment_id": "T14",
+      "imu_minus_nearest_odom_header_ns": {
+        "max": 161462.0,
+        "median": 30262.0,
+        "min": 23334.0,
+        "n": 3300,
+        "p05": 25678.0,
+        "p95": 42397.0
+      },
+      "nearest_header_pairing": "offline same-host descriptive nearest stamp within 25ms, not proof of common physical sample time",
+      "raw_bridge_identical_header_frames": 8238,
+      "raw_only_header_frames": 6,
+      "receipt_pair_note": "same recorder clock arrival separation, not serial/radio acquisition delay",
+      "vehicle_id": "car1"
+    },
+    {
+      "bridge_minus_raw_receipt_ns_same_recorder": {
+        "max": 45952566.0,
+        "median": 153423.5,
+        "min": -99394768.0,
+        "n": 8194,
+        "p05": -477849.85,
+        "p95": 9737053.95
+      },
+      "bridge_only_header_frames": 0,
+      "device_local_delta_ms": {
+        "max": 21.0,
+        "median": 20.0,
+        "min": 19.0,
+        "n": 8208,
+        "p05": 20.0,
+        "p95": 20.0
+      },
+      "device_system_delta_ms": {
+        "max": 20.0,
+        "median": 20.0,
+        "min": 20.0,
+        "n": 8208,
+        "p05": 20.0,
+        "p95": 20.0
+      },
+      "experiment_id": "T14",
+      "imu_minus_nearest_odom_header_ns": {
+        "max": 240484.0,
+        "median": 44961.0,
+        "min": 17696.0,
+        "n": 3281,
+        "p05": 35553.0,
+        "p95": 63553.0
+      },
+      "nearest_header_pairing": "offline same-host descriptive nearest stamp within 25ms, not proof of common physical sample time",
+      "raw_bridge_identical_header_frames": 8194,
+      "raw_only_header_frames": 15,
+      "receipt_pair_note": "same recorder clock arrival separation, not serial/radio acquisition delay",
+      "vehicle_id": "car2"
+    }
+  ]
+}

@@ -172,6 +172,7 @@ def main(argv=None):
     try:
         run=replay.create_run(args.output,CONTRACT,[sys.executable,__file__]+(list(argv) if argv is not None else sys.argv[1:]))
         run["role"]="parameter_clock_preparation"
+        run["config_sha256"]["baseline_field_config.json"]=replay.sha256(interface.BASELINE/"field_config.json")
         run["source_sha256"].update({str(x.relative_to(replay.ROOT)):replay.sha256(x) for x in HERE.glob("*.py")})
         receipt=replay.verify_normalized(args.normalized)
         manifest=json.loads((replay.SESSION/"manifest.json").read_text());geometry=json.loads((replay.SESSION/"geometry.json").read_text())

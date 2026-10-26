@@ -74,6 +74,10 @@ def compile_template(template):
         cc["antenna_body_xy_m"] = copy.deepcopy(src["antenna_body_xy_m"])
         cc["antenna_height_m"] = copy.deepcopy(src["antenna_height_m"])
         binding = src["initial_record_binding"]
+        if binding.get("status") == "provided":
+            if not binding_ready(binding):raise ValueError("complete exact source-record binding required")
+            if binding["source_file_sha256"] != template["source_bag_sha256"]:
+                raise ValueError("initialization binding belongs to a different experiment bag")
         xy,yaw,lever = src["initial_antenna_xy_room_m"],src["initial_body_yaw_room_rad"],src["antenna_body_xy_m"]
         if all(provided(x) for x in (xy,yaw,lever)) and binding_ready(binding):
             p = np.asarray(xy["value"],dtype=float)
@@ -90,7 +94,8 @@ def compile_template(template):
             cc["initial_room_pose"]["source"] = "pending antenna XY/body yaw/XY lever/exact source-record binding; no nominal or endpoint substitution"
             derived[car] = "pending"
         for topic,field in (("odom","odom_clock"),("uwb","range_clock")):
-            group_id = src.get("clock_group_ids",{}).get(topic,src["ros_clock_group_id"])
+            group_id = src.get("clock_group_ids",{}).get(topic) or src.get("ros_clock_group_id")
+            if group_id not in template["clock_groups"]:raise ValueError("explicit clock group required: "+car+":"+topic)
             group = template["clock_groups"][group_id]
             cc[field] = compile_clock(group, src["sample_time_adjustments"][topic],group_id)
     model.validate_config(config)
