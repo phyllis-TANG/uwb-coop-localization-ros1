@@ -98,10 +98,13 @@ def verify_packet(root, expected_run_sha256=None):
     """Accept the portable T10 selection only via its Git-registered run SHA."""
     root=Path(root)
     if expected_run_sha256 is None:
-        expected_run_sha256=json.loads((DOCS/'results/input_packet_identity.json').read_text())['run_sha256']
+        role=json.loads((root/'run.json').read_text()).get('role')
+        ledger={'T10_input_closure':'input_packet_identity.json','T10_portable_inputs':'portable_input_identity.json'}.get(role)
+        if ledger is None:raise ValueError('unknown input packet role')
+        expected_run_sha256=json.loads((DOCS/'results'/ledger).read_text())['run_sha256']
     if sha(root/'run.json')!=expected_run_sha256:raise ValueError('unregistered or modified T10 packet')
     run=json.loads((root/'run.json').read_text())
-    if run['status']!='DONE' or run['role']!='T10_input_closure':raise ValueError('incomplete T10 packet')
+    if run['status']!='DONE' or run['role'] not in ('T10_input_closure','T10_portable_inputs'):raise ValueError('incomplete T10 packet')
     for item in run['outputs']:
         rel=Path(item['relative_path'])
         if rel.is_absolute() or '..' in rel.parts or sha(root/rel)!=item['sha256']:
