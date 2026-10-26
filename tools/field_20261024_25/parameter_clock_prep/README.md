@@ -31,4 +31,4 @@
 
 原PR45标准化输出已按登记产物哈希验证后只读使用；现场原归档SHA也实际重算，并只读提取源码/时钟文本。未重建标准化/QC或重跑PR46实包回放。审计/敏感性正式运行提交为 `510bcfae781623c2596a694a9c905eee7104764b`；后续编译CLI/可选时钟group与测试来源见[阶段哈希](results/source_versions.json)。之后的提交完善接口校验和报告，未改变已运行条件、观测或参数。
 
-本次工作树 `/workspace/work/uwb-parameter-clock-prep-20261026`；日志与完整结果 `/workspace/work/uwb-parameter-clock-prep-20261026-run/`，其中`results/audit`、`results/sensitivity`、`results/compiled`保留run.json、源码/配置/输入/输出SHA及各条件诊断。归档与SHA清单放其`package/`，仅描述当前环境，不是跨窗口共享地址；紧凑证据/四包模板已纳入本目录，另一端可以直接从PR取得接口并在自身已有数据上复现。原有各端结果及旧锁均保留，不自动合并PR。收尾时main另合入可靠性PR47（367c053），只读[merge-tree检查](results/INTEGRATION_CHECK.json)无冲突，未修改其路径或实际merge/rebase。总预算2小时，完成可提前结束。
+本次工作树 `/workspace/work/uwb-parameter-clock-prep-20261026`；日志与完整结果 `/workspace/work/uwb-parameter-clock-prep-20261026-run/`，其中`results/audit`、`results/sensitivity`、`results/compiled`保留run.json、源码/配置/输入/输出SHA及各条件诊断。[归档身份](artifact_manifest.json)与SHA清单放其`package/`，仅描述当前环境，不是跨窗口共享地址；紧凑证据/四包模板已纳入本目录，另一端可以直接从PR取得接口并在自身已有数据上复现。原有各端结果及旧锁均保留，不自动合并PR。收尾时main另合入可靠性PR47（367c053），只读[merge-tree检查](results/INTEGRATION_CHECK.json)无冲突，未修改其路径或实际merge/rebase。总预算2小时，完成可提前结束。
