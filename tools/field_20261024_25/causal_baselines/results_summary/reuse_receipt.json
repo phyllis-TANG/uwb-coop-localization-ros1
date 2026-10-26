@@ -1,0 +1,94 @@
+{
+  "registered_run_sha256": "b7448d932d8c92054b3147d3add1bb755cf39e50f292c8e2151e5c89ea99c11a",
+  "actual_run_sha256": "b7448d932d8c92054b3147d3add1bb755cf39e50f292c8e2151e5c89ea99c11a",
+  "status": "DONE",
+  "outputs_checked": [
+    {
+      "relative_path": "commands.csv",
+      "sha256": "fb126ac1578589d0ec4d267d666095278693fd0f9780c7b383ede3b03974e8d9"
+    },
+    {
+      "relative_path": "counts.json",
+      "sha256": "732ee4249e4491d1431d406b7a4a45e691dea6154cd3096dea974ffd07a1af4a"
+    },
+    {
+      "relative_path": "frames.csv",
+      "sha256": "146b849c81b340ab9021439db1ebe93c95f9db5f56fe2a714246db345d862696"
+    },
+    {
+      "relative_path": "imu.csv",
+      "sha256": "6f24987ee27e918d2cee59ba5fe3aa8bd3809189bc679d2940ee10c42f6966b8"
+    },
+    {
+      "relative_path": "normalization_report.md",
+      "sha256": "46861fd286fe336250b916ce28ca00599e6e51431b341c141ef12bd7c0d40f23"
+    },
+    {
+      "relative_path": "odom.csv",
+      "sha256": "faeaae73bbdfb33d95ca14a7ad58efaa291e72de389d7cfd74450f42cc439e1c"
+    },
+    {
+      "relative_path": "python_packages.txt",
+      "sha256": "d14743fdfb9247ceada5f16be898a84a5bcb8cb1736da203f90e955b446ed177"
+    },
+    {
+      "relative_path": "ranges.csv",
+      "sha256": "b5010808447b1694ce8076a648ba2a3ed1132e7d52ea900efef2fb83d95cc220"
+    },
+    {
+      "relative_path": "time_diagnostics.json",
+      "sha256": "7f10e5d761e5394a8c6db88602b5f608c103357398bd87fe0416b40ee6ba9e9f"
+    }
+  ],
+  "inputs": [
+    {
+      "asset_id": "bags",
+      "experiment_id": "T08",
+      "relative_path": "uwb_field_20261025/bags/T08_C1static_C2L_repeat1_20261025_180633.bag",
+      "sha256": "cf3b4de0f20424d02779aeeb416a4fb16d77bb1f5333344d48ebf446a3884ada"
+    },
+    {
+      "asset_id": "bags",
+      "experiment_id": "T09",
+      "relative_path": "uwb_field_20261025/bags/T09_C1static_C2L_repeat2_holdout_20261025_182408.bag",
+      "sha256": "f4271484e66c3fe83cc6e3121afbd74f12982499122012a9d2b375fa39a03e12"
+    },
+    {
+      "asset_id": "bags",
+      "experiment_id": "T10",
+      "relative_path": "uwb_field_20261025/bags/T10_C2static_C1straight_repeat1_retry_20261025_184755.bag",
+      "sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558"
+    },
+    {
+      "asset_id": "bags",
+      "experiment_id": "T11",
+      "relative_path": "uwb_field_20261025/bags/T11_C2static_C1straight_repeat2_holdout_20261025_185437.bag",
+      "sha256": "f9bf03d97b2da800451762ce89849e05ce225e621a5b8813b055c0549590bcab"
+    },
+    {
+      "asset_id": "bags",
+      "experiment_id": "T12",
+      "relative_path": "uwb_field_20261025/bags/T12_bothmoving_clear_repeat1_20261025_191149.bag",
+      "sha256": "540c2fbdcf67da5f3060f0363517cb65b6cfb0f96d6d35aae8d883ac604b18f1"
+    },
+    {
+      "asset_id": "bags",
+      "experiment_id": "T13",
+      "relative_path": "uwb_field_20261025/bags/T13_bothmoving_clear_repeat2_holdout_20261025_192355.bag",
+      "sha256": "40dc6b1e24ff5a1e0db6781c0834e5f6440d6fe9f22626606ac477013faff6f8"
+    },
+    {
+      "asset_id": "bags",
+      "experiment_id": "T14",
+      "relative_path": "uwb_field_20261025/bags/T14_C1static_C2L_occlusion_repeat1_20261025_194542.bag",
+      "sha256": "793a169da34095585cbd97860fa9e37f07358173c8a91a768aa4f8cf0a5ada83"
+    },
+    {
+      "asset_id": "bags",
+      "experiment_id": "T15",
+      "relative_path": "uwb_field_20261025/bags/T15_C1static_C2L_occlusion_repeat2_holdout_20261025_195528.bag",
+      "sha256": "4b3be332d424648c41827cda7906a9eb90453aa8979eb0a5aebdd8a986d1c3cd"
+    }
+  ],
+  "reuse": "local files found and independently verified; path is not a shared location contract"
+}

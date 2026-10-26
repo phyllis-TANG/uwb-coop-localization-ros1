@@ -1,0 +1,504 @@
+{
+  "T08": {
+    "accuracy_evaluation_performed": false,
+    "estimates": 14568,
+    "experiment_id": "T08",
+    "input_events": 9740,
+    "methods": {
+      "independent": {
+        "blocked_reasons": {
+          "car1": [
+            "car1:initial_room_pose:unknown",
+            "car1:odom_clock:unknown",
+            "car1:antenna_body_xyz_m:unknown",
+            "car1:base_height_m:unknown",
+            "car1:range_clock:unknown"
+          ],
+          "car2": [
+            "car2:initial_room_pose:unknown",
+            "car2:odom_clock:unknown",
+            "car2:antenna_body_xyz_m:unknown",
+            "car2:base_height_m:unknown",
+            "car2:range_clock:unknown"
+          ]
+        },
+        "events": {
+          "BLOCKED": 9740
+        },
+        "states": {
+          "car1": {
+            "fallback_counts": {
+              "BLOCKED": 2428
+            },
+            "rows": 2428,
+            "valid_rows": 0
+          },
+          "car2": {
+            "fallback_counts": {
+              "BLOCKED": 2428
+            },
+            "rows": 2428,
+            "valid_rows": 0
+          }
+        },
+        "status": "BLOCKED"
+      },
+      "joint": {
+        "blocked_reasons": {
+          "car1": [
+            "car1:antenna_body_xyz_m:unknown",
+            "car1:base_height_m:unknown",
+            "car1:initial_room_pose:unknown",
+            "car1:odom_clock:unknown",
+            "car1:range_clock:unknown",
+            "car2:antenna_body_xyz_m:unknown",
+            "car2:base_height_m:unknown",
+            "car2:initial_room_pose:unknown",
+            "car2:odom_clock:unknown",
+            "car2:range_clock:unknown"
+          ],
+          "car2": [
+            "car1:antenna_body_xyz_m:unknown",
+            "car1:base_height_m:unknown",
+            "car1:initial_room_pose:unknown",
+            "car1:odom_clock:unknown",
+            "car1:range_clock:unknown",
+            "car2:antenna_body_xyz_m:unknown",
+            "car2:base_height_m:unknown",
+            "car2:initial_room_pose:unknown",
+            "car2:odom_clock:unknown",
+            "car2:range_clock:unknown"
+          ]
+        },
+        "events": {
+          "BLOCKED": 9740
+        },
+        "states": {
+          "car1": {
+            "fallback_counts": {
+              "BLOCKED": 2428
+            },
+            "rows": 2428,
+            "valid_rows": 0
+          },
+          "car2": {
+            "fallback_counts": {
+              "BLOCKED": 2428
+            },
+            "rows": 2428,
+            "valid_rows": 0
+          }
+        },
+        "status": "BLOCKED"
+      },
+      "odom_only": {
+        "blocked_reasons": {
+          "car1": [],
+          "car2": []
+        },
+        "events": {
+          "initialized": 2,
+          "odometry_observed": 9738
+        },
+        "states": {
+          "car1": {
+            "fallback_counts": {
+              "source_odometry_hold": 2425,
+              "stale_odometry_hold": 2,
+              "uninitialized": 1
+            },
+            "rows": 2428,
+            "valid_rows": 2425
+          },
+          "car2": {
+            "fallback_counts": {
+              "source_odometry_hold": 2424,
+              "stale_odometry_hold": 3,
+              "uninitialized": 1
+            },
+            "rows": 2428,
+            "valid_rows": 2424
+          }
+        },
+        "status": "DONE"
+      }
+    },
+    "publication_state_policy": "hold last odometry-anchored posterior; per-vehicle state time recorded"
+  },
+  "T10": {
+    "accuracy_evaluation_performed": false,
+    "estimates": 3426,
+    "experiment_id": "T10",
+    "input_events": 2306,
+    "methods": {
+      "independent": {
+        "blocked_reasons": {
+          "car1": [
+            "car1:initial_room_pose:unknown",
+            "car1:odom_clock:unknown",
+            "car1:antenna_body_xyz_m:unknown",
+            "car1:base_height_m:unknown",
+            "car1:range_clock:unknown"
+          ],
+          "car2": [
+            "car2:initial_room_pose:unknown",
+            "car2:odom_clock:unknown",
+            "car2:antenna_body_xyz_m:unknown",
+            "car2:base_height_m:unknown",
+            "car2:range_clock:unknown"
+          ]
+        },
+        "events": {
+          "BLOCKED": 2306
+        },
+        "states": {
+          "car1": {
+            "fallback_counts": {
+              "BLOCKED": 571
+            },
+            "rows": 571,
+            "valid_rows": 0
+          },
+          "car2": {
+            "fallback_counts": {
+              "BLOCKED": 571
+            },
+            "rows": 571,
+            "valid_rows": 0
+          }
+        },
+        "status": "BLOCKED"
+      },
+      "joint": {
+        "blocked_reasons": {
+          "car1": [
+            "car1:antenna_body_xyz_m:unknown",
+            "car1:base_height_m:unknown",
+            "car1:initial_room_pose:unknown",
+            "car1:odom_clock:unknown",
+            "car1:range_clock:unknown",
+            "car2:antenna_body_xyz_m:unknown",
+            "car2:base_height_m:unknown",
+            "car2:initial_room_pose:unknown",
+            "car2:odom_clock:unknown",
+            "car2:range_clock:unknown"
+          ],
+          "car2": [
+            "car1:antenna_body_xyz_m:unknown",
+            "car1:base_height_m:unknown",
+            "car1:initial_room_pose:unknown",
+            "car1:odom_clock:unknown",
+            "car1:range_clock:unknown",
+            "car2:antenna_body_xyz_m:unknown",
+            "car2:base_height_m:unknown",
+            "car2:initial_room_pose:unknown",
+            "car2:odom_clock:unknown",
+            "car2:range_clock:unknown"
+          ]
+        },
+        "events": {
+          "BLOCKED": 2306
+        },
+        "states": {
+          "car1": {
+            "fallback_counts": {
+              "BLOCKED": 571
+            },
+            "rows": 571,
+            "valid_rows": 0
+          },
+          "car2": {
+            "fallback_counts": {
+              "BLOCKED": 571
+            },
+            "rows": 571,
+            "valid_rows": 0
+          }
+        },
+        "status": "BLOCKED"
+      },
+      "odom_only": {
+        "blocked_reasons": {
+          "car1": [],
+          "car2": []
+        },
+        "events": {
+          "initialized": 2,
+          "odometry_observed": 2304
+        },
+        "states": {
+          "car1": {
+            "fallback_counts": {
+              "source_odometry_hold": 570,
+              "uninitialized": 1
+            },
+            "rows": 571,
+            "valid_rows": 570
+          },
+          "car2": {
+            "fallback_counts": {
+              "source_odometry_hold": 570,
+              "uninitialized": 1
+            },
+            "rows": 571,
+            "valid_rows": 570
+          }
+        },
+        "status": "DONE"
+      }
+    },
+    "publication_state_policy": "hold last odometry-anchored posterior; per-vehicle state time recorded"
+  },
+  "T12": {
+    "accuracy_evaluation_performed": false,
+    "estimates": 8112,
+    "experiment_id": "T12",
+    "input_events": 5442,
+    "methods": {
+      "independent": {
+        "blocked_reasons": {
+          "car1": [
+            "car1:initial_room_pose:unknown",
+            "car1:odom_clock:unknown",
+            "car1:antenna_body_xyz_m:unknown",
+            "car1:base_height_m:unknown",
+            "car1:range_clock:unknown"
+          ],
+          "car2": [
+            "car2:initial_room_pose:unknown",
+            "car2:odom_clock:unknown",
+            "car2:antenna_body_xyz_m:unknown",
+            "car2:base_height_m:unknown",
+            "car2:range_clock:unknown"
+          ]
+        },
+        "events": {
+          "BLOCKED": 5442
+        },
+        "states": {
+          "car1": {
+            "fallback_counts": {
+              "BLOCKED": 1352
+            },
+            "rows": 1352,
+            "valid_rows": 0
+          },
+          "car2": {
+            "fallback_counts": {
+              "BLOCKED": 1352
+            },
+            "rows": 1352,
+            "valid_rows": 0
+          }
+        },
+        "status": "BLOCKED"
+      },
+      "joint": {
+        "blocked_reasons": {
+          "car1": [
+            "car1:antenna_body_xyz_m:unknown",
+            "car1:base_height_m:unknown",
+            "car1:initial_room_pose:unknown",
+            "car1:odom_clock:unknown",
+            "car1:range_clock:unknown",
+            "car2:antenna_body_xyz_m:unknown",
+            "car2:base_height_m:unknown",
+            "car2:initial_room_pose:unknown",
+            "car2:odom_clock:unknown",
+            "car2:range_clock:unknown"
+          ],
+          "car2": [
+            "car1:antenna_body_xyz_m:unknown",
+            "car1:base_height_m:unknown",
+            "car1:initial_room_pose:unknown",
+            "car1:odom_clock:unknown",
+            "car1:range_clock:unknown",
+            "car2:antenna_body_xyz_m:unknown",
+            "car2:base_height_m:unknown",
+            "car2:initial_room_pose:unknown",
+            "car2:odom_clock:unknown",
+            "car2:range_clock:unknown"
+          ]
+        },
+        "events": {
+          "BLOCKED": 5442
+        },
+        "states": {
+          "car1": {
+            "fallback_counts": {
+              "BLOCKED": 1352
+            },
+            "rows": 1352,
+            "valid_rows": 0
+          },
+          "car2": {
+            "fallback_counts": {
+              "BLOCKED": 1352
+            },
+            "rows": 1352,
+            "valid_rows": 0
+          }
+        },
+        "status": "BLOCKED"
+      },
+      "odom_only": {
+        "blocked_reasons": {
+          "car1": [],
+          "car2": []
+        },
+        "events": {
+          "initialized": 2,
+          "odometry_observed": 5440
+        },
+        "states": {
+          "car1": {
+            "fallback_counts": {
+              "source_odometry_hold": 1348,
+              "stale_odometry_hold": 3,
+              "uninitialized": 1
+            },
+            "rows": 1352,
+            "valid_rows": 1348
+          },
+          "car2": {
+            "fallback_counts": {
+              "source_odometry_hold": 1345,
+              "stale_odometry_hold": 6,
+              "uninitialized": 1
+            },
+            "rows": 1352,
+            "valid_rows": 1345
+          }
+        },
+        "status": "DONE"
+      }
+    },
+    "publication_state_policy": "hold last odometry-anchored posterior; per-vehicle state time recorded"
+  },
+  "T14": {
+    "accuracy_evaluation_performed": false,
+    "estimates": 9834,
+    "experiment_id": "T14",
+    "input_events": 6581,
+    "methods": {
+      "independent": {
+        "blocked_reasons": {
+          "car1": [
+            "car1:initial_room_pose:unknown",
+            "car1:odom_clock:unknown",
+            "car1:antenna_body_xyz_m:unknown",
+            "car1:base_height_m:unknown",
+            "car1:range_clock:unknown"
+          ],
+          "car2": [
+            "car2:initial_room_pose:unknown",
+            "car2:odom_clock:unknown",
+            "car2:antenna_body_xyz_m:unknown",
+            "car2:base_height_m:unknown",
+            "car2:range_clock:unknown"
+          ]
+        },
+        "events": {
+          "BLOCKED": 6581
+        },
+        "states": {
+          "car1": {
+            "fallback_counts": {
+              "BLOCKED": 1639
+            },
+            "rows": 1639,
+            "valid_rows": 0
+          },
+          "car2": {
+            "fallback_counts": {
+              "BLOCKED": 1639
+            },
+            "rows": 1639,
+            "valid_rows": 0
+          }
+        },
+        "status": "BLOCKED"
+      },
+      "joint": {
+        "blocked_reasons": {
+          "car1": [
+            "car1:antenna_body_xyz_m:unknown",
+            "car1:base_height_m:unknown",
+            "car1:initial_room_pose:unknown",
+            "car1:odom_clock:unknown",
+            "car1:range_clock:unknown",
+            "car2:antenna_body_xyz_m:unknown",
+            "car2:base_height_m:unknown",
+            "car2:initial_room_pose:unknown",
+            "car2:odom_clock:unknown",
+            "car2:range_clock:unknown"
+          ],
+          "car2": [
+            "car1:antenna_body_xyz_m:unknown",
+            "car1:base_height_m:unknown",
+            "car1:initial_room_pose:unknown",
+            "car1:odom_clock:unknown",
+            "car1:range_clock:unknown",
+            "car2:antenna_body_xyz_m:unknown",
+            "car2:base_height_m:unknown",
+            "car2:initial_room_pose:unknown",
+            "car2:odom_clock:unknown",
+            "car2:range_clock:unknown"
+          ]
+        },
+        "events": {
+          "BLOCKED": 6581
+        },
+        "states": {
+          "car1": {
+            "fallback_counts": {
+              "BLOCKED": 1639
+            },
+            "rows": 1639,
+            "valid_rows": 0
+          },
+          "car2": {
+            "fallback_counts": {
+              "BLOCKED": 1639
+            },
+            "rows": 1639,
+            "valid_rows": 0
+          }
+        },
+        "status": "BLOCKED"
+      },
+      "odom_only": {
+        "blocked_reasons": {
+          "car1": [],
+          "car2": []
+        },
+        "events": {
+          "initialized": 2,
+          "odometry_observed": 6579
+        },
+        "states": {
+          "car1": {
+            "fallback_counts": {
+              "source_odometry_hold": 1635,
+              "stale_odometry_hold": 3,
+              "uninitialized": 1
+            },
+            "rows": 1639,
+            "valid_rows": 1635
+          },
+          "car2": {
+            "fallback_counts": {
+              "source_odometry_hold": 1635,
+              "stale_odometry_hold": 3,
+              "uninitialized": 1
+            },
+            "rows": 1639,
+            "valid_rows": 1635
+          }
+        },
+        "status": "DONE"
+      }
+    },
+    "publication_state_policy": "hold last odometry-anchored posterior; per-vehicle state time recorded"
+  }
+}

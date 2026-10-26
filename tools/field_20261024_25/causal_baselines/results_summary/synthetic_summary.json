@@ -1,0 +1,565 @@
+{
+  "runs": [
+    {
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "fixture_sha256": "27274f709cce3f20101f5d7df700c3b193dc85403620ea79b68fef11be8f5390",
+      "metrics": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09103118247052419,
+          "xy_rmse_m": 0.038620334279941396
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08515531855869915,
+          "xy_rmse_m": 0.03666673989883483
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.13133050761664303,
+          "xy_rmse_m": 0.07859786863754063
+        }
+      },
+      "run": "noisy_nominal_seed_7",
+      "scenario": "noisy_nominal",
+      "seed": 7
+    },
+    {
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "fixture_sha256": "0e47e032496f506b00a6c61e138d31f1e2d6c12b9d7a21701452e65b898715ea",
+      "metrics": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.06722811437486181,
+          "xy_rmse_m": 0.03372304165798898
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.0654141269703685,
+          "xy_rmse_m": 0.03142076141114167
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09427203245925464,
+          "xy_rmse_m": 0.04495772997129351
+        }
+      },
+      "run": "noisy_nominal_seed_19",
+      "scenario": "noisy_nominal",
+      "seed": 19
+    },
+    {
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "fixture_sha256": "ce4af8e98620c2f582e1d3971810684a80a442dc1ecd8235dbcb41fc718c92ba",
+      "metrics": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.05917896271252632,
+          "xy_rmse_m": 0.028765619130359098
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.05957590784575769,
+          "xy_rmse_m": 0.028099606985477216
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09228274499573129,
+          "xy_rmse_m": 0.044882961322393874
+        }
+      },
+      "run": "noisy_nominal_seed_43",
+      "scenario": "noisy_nominal",
+      "seed": 43
+    },
+    {
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "fixture_sha256": "292f44a4775e9858f0bd7d1ce6bf6b40ecd1027392971ffe080efded900d60ee",
+      "metrics": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.06722466950403609,
+          "xy_rmse_m": 0.03415404183241839
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.06692123765486464,
+          "xy_rmse_m": 0.03432430226054918
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.13551836745686244,
+          "xy_rmse_m": 0.05874828379546699
+        }
+      },
+      "run": "noisy_nominal_seed_91",
+      "scenario": "noisy_nominal",
+      "seed": 91
+    },
+    {
+      "event_status": {
+        "independent": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_fixed_rate_thinning": 480,
+          "excluded_independent_peer": 240,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "wall_updated": 480
+        },
+        "joint": {
+          "excluded_bridge_duplicate": 110,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 540,
+          "initialized": 2,
+          "odometry_predicted": 480,
+          "peer_updated": 60,
+          "wall_updated": 480
+        },
+        "odom_only": {
+          "excluded_odom_only": 1310,
+          "initialized": 2,
+          "odometry_predicted": 480
+        }
+      },
+      "fixture_sha256": "dbf085c1819aa1dccc2d12b94eb508b268673ead8c56b9dde57edca1f0f3fae1",
+      "metrics": {
+        "independent": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08544639217969341,
+          "xy_rmse_m": 0.03561145053730403
+        },
+        "joint": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.08387998506196978,
+          "xy_rmse_m": 0.03476605011433411
+        },
+        "odom_only": {
+          "rows": 244,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.10830034697934869,
+          "xy_rmse_m": 0.0444588872700936
+        }
+      },
+      "run": "noisy_nominal_seed_137",
+      "scenario": "noisy_nominal",
+      "seed": 137
+    },
+    {
+      "event_status": {
+        "independent": {
+          "duplicate_or_out_of_order_odometry": 12,
+          "duplicate_trace": 40,
+          "excluded_bridge_duplicate": 100,
+          "excluded_fixed_rate_thinning": 376,
+          "excluded_independent_peer": 220,
+          "initialized": 2,
+          "measurement_before_odometry_anchor:car1": 28,
+          "measurement_before_odometry_anchor:car2": 32,
+          "odometry_predicted": 448,
+          "stale_odometry_support:car2": 52,
+          "wall_updated": 392
+        },
+        "joint": {
+          "duplicate_or_out_of_order_odometry": 12,
+          "duplicate_trace": 40,
+          "excluded_bridge_duplicate": 100,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 417,
+          "initialized": 2,
+          "measurement_before_odometry_anchor:car1": 35,
+          "measurement_before_odometry_anchor:car2": 32,
+          "odometry_predicted": 448,
+          "peer_updated": 43,
+          "stale_odometry_support:car2": 61,
+          "wall_updated": 392
+        },
+        "odom_only": {
+          "duplicate_or_out_of_order_odometry": 12,
+          "duplicate_trace": 40,
+          "excluded_odom_only": 1200,
+          "initialized": 2,
+          "odometry_predicted": 448
+        }
+      },
+      "fixture_sha256": "42f0330206fb610b226f03ccc790ce20c48751087b6ea18c6b76910577324b82",
+      "metrics": {
+        "independent": {
+          "rows": 235,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.05822460310576054,
+          "xy_rmse_m": 0.03068756922140959
+        },
+        "joint": {
+          "rows": 235,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.05959546423401817,
+          "xy_rmse_m": 0.03035416435351847
+        },
+        "odom_only": {
+          "rows": 235,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.13218537066520744,
+          "xy_rmse_m": 0.07643667528695461
+        }
+      },
+      "run": "noisy_delay_dropout_seed_7",
+      "scenario": "noisy_delay_dropout",
+      "seed": 7
+    },
+    {
+      "event_status": {
+        "independent": {
+          "duplicate_or_out_of_order_odometry": 12,
+          "duplicate_trace": 40,
+          "excluded_bridge_duplicate": 100,
+          "excluded_fixed_rate_thinning": 376,
+          "excluded_independent_peer": 220,
+          "initialized": 2,
+          "measurement_before_odometry_anchor:car1": 28,
+          "measurement_before_odometry_anchor:car2": 32,
+          "odometry_predicted": 448,
+          "stale_odometry_support:car2": 52,
+          "wall_updated": 392
+        },
+        "joint": {
+          "duplicate_or_out_of_order_odometry": 12,
+          "duplicate_trace": 40,
+          "excluded_bridge_duplicate": 100,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 417,
+          "initialized": 2,
+          "measurement_before_odometry_anchor:car1": 35,
+          "measurement_before_odometry_anchor:car2": 32,
+          "odometry_predicted": 448,
+          "peer_updated": 43,
+          "stale_odometry_support:car2": 61,
+          "wall_updated": 392
+        },
+        "odom_only": {
+          "duplicate_or_out_of_order_odometry": 12,
+          "duplicate_trace": 40,
+          "excluded_odom_only": 1200,
+          "initialized": 2,
+          "odometry_predicted": 448
+        }
+      },
+      "fixture_sha256": "c734959976889b0b5dbb7803450c438caaf44b860d7a9726b24a226e1986c6b0",
+      "metrics": {
+        "independent": {
+          "rows": 235,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.07374692567562646,
+          "xy_rmse_m": 0.03336997022648602
+        },
+        "joint": {
+          "rows": 235,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.0635477687094681,
+          "xy_rmse_m": 0.028379761732133267
+        },
+        "odom_only": {
+          "rows": 235,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09398317267223998,
+          "xy_rmse_m": 0.04249819891158674
+        }
+      },
+      "run": "noisy_delay_dropout_seed_19",
+      "scenario": "noisy_delay_dropout",
+      "seed": 19
+    },
+    {
+      "event_status": {
+        "independent": {
+          "duplicate_or_out_of_order_odometry": 12,
+          "duplicate_trace": 40,
+          "excluded_bridge_duplicate": 100,
+          "excluded_fixed_rate_thinning": 376,
+          "excluded_independent_peer": 220,
+          "initialized": 2,
+          "measurement_before_odometry_anchor:car1": 28,
+          "measurement_before_odometry_anchor:car2": 32,
+          "odometry_predicted": 448,
+          "stale_odometry_support:car2": 52,
+          "wall_updated": 392
+        },
+        "joint": {
+          "duplicate_or_out_of_order_odometry": 12,
+          "duplicate_trace": 40,
+          "excluded_bridge_duplicate": 100,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 417,
+          "initialized": 2,
+          "measurement_before_odometry_anchor:car1": 35,
+          "measurement_before_odometry_anchor:car2": 32,
+          "odometry_predicted": 448,
+          "peer_updated": 43,
+          "stale_odometry_support:car2": 61,
+          "wall_updated": 392
+        },
+        "odom_only": {
+          "duplicate_or_out_of_order_odometry": 12,
+          "duplicate_trace": 40,
+          "excluded_odom_only": 1200,
+          "initialized": 2,
+          "odometry_predicted": 448
+        }
+      },
+      "fixture_sha256": "435dd380d63d6ca97cbcf5483183e3db72dc49d746f777bb9479209c73e8f85b",
+      "metrics": {
+        "independent": {
+          "rows": 235,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.10311257596613194,
+          "xy_rmse_m": 0.03851680203419259
+        },
+        "joint": {
+          "rows": 235,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.10485751521071329,
+          "xy_rmse_m": 0.03784553495210066
+        },
+        "odom_only": {
+          "rows": 235,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09228274499573119,
+          "xy_rmse_m": 0.04529420505367806
+        }
+      },
+      "run": "noisy_delay_dropout_seed_43",
+      "scenario": "noisy_delay_dropout",
+      "seed": 43
+    },
+    {
+      "event_status": {
+        "independent": {
+          "duplicate_or_out_of_order_odometry": 12,
+          "duplicate_trace": 40,
+          "excluded_bridge_duplicate": 100,
+          "excluded_fixed_rate_thinning": 376,
+          "excluded_independent_peer": 220,
+          "initialized": 2,
+          "measurement_before_odometry_anchor:car1": 28,
+          "measurement_before_odometry_anchor:car2": 32,
+          "odometry_predicted": 448,
+          "stale_odometry_support:car2": 52,
+          "wall_updated": 392
+        },
+        "joint": {
+          "duplicate_or_out_of_order_odometry": 12,
+          "duplicate_trace": 40,
+          "excluded_bridge_duplicate": 100,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 417,
+          "initialized": 2,
+          "measurement_before_odometry_anchor:car1": 35,
+          "measurement_before_odometry_anchor:car2": 32,
+          "odometry_predicted": 448,
+          "peer_updated": 43,
+          "stale_odometry_support:car2": 61,
+          "wall_updated": 392
+        },
+        "odom_only": {
+          "duplicate_or_out_of_order_odometry": 12,
+          "duplicate_trace": 40,
+          "excluded_odom_only": 1200,
+          "initialized": 2,
+          "odometry_predicted": 448
+        }
+      },
+      "fixture_sha256": "de1687183a83f7fd52b0933ca69abcdd25df71360bcb1bebf717518a4d57f18c",
+      "metrics": {
+        "independent": {
+          "rows": 235,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.05472141535983936,
+          "xy_rmse_m": 0.02665135291791183
+        },
+        "joint": {
+          "rows": 235,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.05559512776537583,
+          "xy_rmse_m": 0.026610208359250737
+        },
+        "odom_only": {
+          "rows": 235,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.13551836745686258,
+          "xy_rmse_m": 0.05797523540792257
+        }
+      },
+      "run": "noisy_delay_dropout_seed_91",
+      "scenario": "noisy_delay_dropout",
+      "seed": 91
+    },
+    {
+      "event_status": {
+        "independent": {
+          "duplicate_or_out_of_order_odometry": 12,
+          "duplicate_trace": 40,
+          "excluded_bridge_duplicate": 100,
+          "excluded_fixed_rate_thinning": 376,
+          "excluded_independent_peer": 220,
+          "initialized": 2,
+          "measurement_before_odometry_anchor:car1": 28,
+          "measurement_before_odometry_anchor:car2": 32,
+          "odometry_predicted": 448,
+          "stale_odometry_support:car2": 52,
+          "wall_updated": 392
+        },
+        "joint": {
+          "duplicate_or_out_of_order_odometry": 12,
+          "duplicate_trace": 40,
+          "excluded_bridge_duplicate": 100,
+          "excluded_correlated_reverse_direction": 120,
+          "excluded_fixed_rate_thinning": 417,
+          "initialized": 2,
+          "measurement_before_odometry_anchor:car1": 35,
+          "measurement_before_odometry_anchor:car2": 32,
+          "odometry_predicted": 448,
+          "peer_updated": 43,
+          "stale_odometry_support:car2": 61,
+          "wall_updated": 392
+        },
+        "odom_only": {
+          "duplicate_or_out_of_order_odometry": 12,
+          "duplicate_trace": 40,
+          "excluded_odom_only": 1200,
+          "initialized": 2,
+          "odometry_predicted": 448
+        }
+      },
+      "fixture_sha256": "de692091f084ed4a90ae4f90afc24ce6e2f53c54f04d6952ce7b34b72e2160bb",
+      "metrics": {
+        "independent": {
+          "rows": 235,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.09076380772582555,
+          "xy_rmse_m": 0.038091757875703
+        },
+        "joint": {
+          "rows": 235,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.0961110984347229,
+          "xy_rmse_m": 0.03642316141154298
+        },
+        "odom_only": {
+          "rows": 235,
+          "scope": "generated_synthetic_truth_only",
+          "xy_max_m": 0.10830034697934847,
+          "xy_rmse_m": 0.04507806387374196
+        }
+      },
+      "run": "noisy_delay_dropout_seed_137",
+      "scenario": "noisy_delay_dropout",
+      "seed": 137
+    }
+  ],
+  "scope": "synthetic_only"
+}
