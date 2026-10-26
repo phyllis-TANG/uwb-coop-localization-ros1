@@ -56,7 +56,8 @@ def compile_clock(group, adjustment, source_id):
 def binding_ready(binding):
     return (binding.get("status") == "provided" and bool(binding.get("source"))
         and isinstance(binding.get("source_file_sha256"),str) and len(binding["source_file_sha256"])==64
-        and all(isinstance(binding.get(k),int) and not isinstance(binding[k],bool) for k in ("record_index","header_epoch_ns","receive_epoch_ns")))
+        and all(c in "0123456789abcdef" for c in binding["source_file_sha256"])
+        and all(isinstance(binding.get(k),int) and not isinstance(binding[k],bool) and binding[k]>=0 for k in ("record_index","header_epoch_ns","receive_epoch_ns")))
 
 
 def compile_template(template):
@@ -88,11 +89,41 @@ def compile_template(template):
         else:
             cc["initial_room_pose"]["source"] = "pending antenna XY/body yaw/XY lever/exact source-record binding; no nominal or endpoint substitution"
             derived[car] = "pending"
-        group = template["clock_groups"][src["ros_clock_group_id"]]
         for topic,field in (("odom","odom_clock"),("uwb","range_clock")):
-            cc[field] = compile_clock(group, src["sample_time_adjustments"][topic],src["ros_clock_group_id"])
+            group_id = src.get("clock_group_ids",{}).get(topic,src["ros_clock_group_id"])
+            group = template["clock_groups"][group_id]
+            cc[field] = compile_clock(group, src["sample_time_adjustments"][topic],group_id)
     model.validate_config(config)
     return config, {"methods":model.readiness(config),"derived":derived,
         "minimal_geometry":["body-frame base-to-antenna XY","absolute antenna Z","initial antenna XY plus body yaw and source-record binding, or directly surveyed base pose"],
         "evaluation_only_pending":["accepted independent reference","reference space/time uncertainty and evaluation window"],
         "experiment_notes":template["experiment_notes"]}
+
+
+def main(argv=None):
+    import argparse
+    import time
+    import replay
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--template",type=Path,required=True)
+    parser.add_argument("--output",type=Path,required=True)
+    args=parser.parse_args(argv);started=time.monotonic();run=None
+    try:
+        run=replay.create_run(args.output,args.template,[sys.executable,__file__]+(list(argv) if argv is not None else sys.argv[1:]))
+        run["role"]="minimal_parameter_compilation"
+        run["source_sha256"].update({str(p.relative_to(replay.ROOT)):replay.sha256(p) for p in Path(__file__).parent.glob("*.py")})
+        run["config_sha256"]["baseline_field_config.json"]=replay.sha256(BASELINE/"field_config.json")
+        run["inputs"]=[{"asset_id":"parameter_template","relative_path":args.template.name,"sha256":replay.sha256(args.template)}]
+        config,ready=compile_template(json.loads(args.template.read_text()))
+        replay.atomic_json(args.output/"baseline_config.json",config)
+        replay.atomic_json(args.output/"readiness.json",ready)
+        run["blocked_reasons"]=sorted({reason for method in ready["methods"].values() for reasons in method.values() for reason in reasons})
+        status="BLOCKED" if run["blocked_reasons"] else "DONE"
+        replay.finish(args.output,run,status,started)
+        return 2 if status=="BLOCKED" else 0
+    except (Exception,KeyboardInterrupt) as error:
+        if run is not None:replay.finish(args.output,run,"FAILED",started,error)
+        print("ERROR: "+str(error),file=sys.stderr);return 1
+
+
+if __name__=="__main__":sys.exit(main())

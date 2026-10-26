@@ -135,5 +135,16 @@ class MinimalGeometryTests(unittest.TestCase):
         np.testing.assert_allclose(c["vehicles"]["car1"]["initial_room_pose"]["value"],[1.2,1.9,np.pi/2],atol=1e-14)
         self.assertTrue(r["methods"]["independent"]["car1"])  # clocks remain pending
 
+    def test_per_topic_clock_groups_do_not_force_unproven_shared_clock(self):
+        import audit
+        manifest=json.loads((audit.replay.SESSION/"manifest.json").read_text())
+        geometry=json.loads((audit.replay.SESSION/"geometry.json").read_text())
+        t=audit.templates(geometry,manifest,{})["T08"]
+        t["vehicles"]["car2"]["clock_group_ids"]={"odom":"car2_ros_host","uwb":"unconfirmed_nlink_clock"}
+        t["clock_groups"]["unconfirmed_nlink_clock"]={"status":"pending"}
+        c,r=interface.compile_template(t)
+        self.assertEqual(c["vehicles"]["car2"]["range_clock"]["source_clock_id"],"unconfirmed_nlink_clock")
+        self.assertEqual(c["vehicles"]["car2"]["range_clock"]["status"],"pending")
+
 
 if __name__=="__main__":unittest.main()

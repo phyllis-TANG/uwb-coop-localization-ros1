@@ -79,7 +79,8 @@
     ],
     "offset_sign": "negative if physical sample occurred before host header stamp",
     "uncertainty_combination": "sum of declared absolute bounds; no independence assumption",
-    "pending_policy": "NTP synchronized, negative receipt-header or its median cannot supply these fields"
+    "pending_policy": "NTP synchronized, negative receipt-header or its median cannot supply these fields",
+    "optional_per_topic_groups": "vehicles.<car>.clock_group_ids={odom:<group>,uwb:<group>} overrides shared candidate ros_clock_group_id; do not confirm shared clock without source/time-mode evidence"
   },
   "provenance_requirements": [
     "asset or document identity and SHA256",
@@ -87,7 +88,8 @@
     "applicable experiment and mounting state",
     "units and point/frame definitions",
     "source and clock validity interval",
-    "uncertainty value or null plus reason"
+    "uncertainty value or null plus reason",
+    "calibration fit point IDs and independent validation point IDs must be separately listed when reference observations are used"
   ],
   "not_algorithm_prerequisites": [
     "independent video accuracy acceptance",
