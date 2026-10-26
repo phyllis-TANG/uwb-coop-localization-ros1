@@ -1,0 +1,22 @@
+test_base_height_and_lever_z_are_unidentifiable_separately (test_minimal_interface.MinimalGeometryTests.test_base_height_and_lever_z_are_unidentifiable_separately) ... ok
+test_base_initialization_is_derived_only_with_complete_bound_inputs (test_minimal_interface.MinimalGeometryTests.test_base_initialization_is_derived_only_with_complete_bound_inputs) ... ok
+test_boolean_is_not_a_provided_metric_height (test_minimal_interface.MinimalGeometryTests.test_boolean_is_not_a_provided_metric_height) ... ok
+test_calibrated_clock_interval_is_enforced_without_extrapolation (test_minimal_interface.MinimalGeometryTests.test_calibrated_clock_interval_is_enforced_without_extrapolation) ... ok
+test_clock_derivation_does_not_promote_engineering_assumptions (test_minimal_interface.MinimalGeometryTests.test_clock_derivation_does_not_promote_engineering_assumptions) ... ok
+test_clock_pending_and_declared_signed_adjustment (test_minimal_interface.MinimalGeometryTests.test_clock_pending_and_declared_signed_adjustment) ... ok
+test_conflicting_old_and_new_values_are_rejected (test_minimal_interface.MinimalGeometryTests.test_conflicting_old_and_new_values_are_rejected) ... ok
+test_exact_initial_binding_is_enforced (test_minimal_interface.MinimalGeometryTests.test_exact_initial_binding_is_enforced) ... ok
+test_initial_binding_cannot_be_copied_from_another_bag (test_minimal_interface.MinimalGeometryTests.test_initial_binding_cannot_be_copied_from_another_bag) ... ok
+test_known_minimal_geometry_needs_no_fake_legacy_fields (test_minimal_interface.MinimalGeometryTests.test_known_minimal_geometry_needs_no_fake_legacy_fields) ... ok
+test_minimal_and_legacy_predictions_and_jacobians_match (test_minimal_interface.MinimalGeometryTests.test_minimal_and_legacy_predictions_and_jacobians_match) ... ok
+test_minimal_height_removes_only_vertical_blocker (test_minimal_interface.MinimalGeometryTests.test_minimal_height_removes_only_vertical_blocker) ... ok
+test_only_one_sensitivity_leaf_changes (test_minimal_interface.MinimalGeometryTests.test_only_one_sensitivity_leaf_changes) ... ok
+test_per_topic_clock_groups_do_not_force_unproven_shared_clock (test_minimal_interface.MinimalGeometryTests.test_per_topic_clock_groups_do_not_force_unproven_shared_clock) ... ok
+test_synthetic_initial_pose_cannot_be_hidden_by_base_derivation (test_minimal_interface.MinimalGeometryTests.test_synthetic_initial_pose_cannot_be_hidden_by_base_derivation) ... ok
+test_templates_preserve_manual_height_but_not_nominal_initialization (test_minimal_interface.MinimalGeometryTests.test_templates_preserve_manual_height_but_not_nominal_initialization) ... ok
+test_unknown_uncertainty_does_not_become_zero (test_minimal_interface.MinimalGeometryTests.test_unknown_uncertainty_does_not_become_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.054s
+
+OK

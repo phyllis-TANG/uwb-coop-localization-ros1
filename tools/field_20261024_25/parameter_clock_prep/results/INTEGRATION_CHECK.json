@@ -1,0 +1,17 @@
+{
+  "base_commit": "a82ec421f5e93e9a4432f508f54a037cccc8f0a1",
+  "observed_new_main": "367c0536239ba8702b6f0841f2c2c777a3a06b21",
+  "new_main_change": "merged reliability PR47",
+  "check_command": [
+    "git",
+    "merge-tree",
+    "--write-tree",
+    "HEAD",
+    "origin/main"
+  ],
+  "status": "clean_no_conflicts",
+  "merge_tree": "77dff204e4d122c8fd3e03f3fa59a2e098ff4139",
+  "actual_merge_or_rebase_performed": false,
+  "protected_reliability_and_video_paths_modified": false,
+  "compatibility_note": "PR47 engine imports PR45 comparison_adapter; this PR leaves that module unchanged"
+}

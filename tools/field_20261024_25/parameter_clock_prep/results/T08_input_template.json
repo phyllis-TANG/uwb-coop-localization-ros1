@@ -1,0 +1,224 @@
+{
+  "clock_groups": {
+    "car1_ros_host": {
+      "deployment_grouping_status": "host grouping from session topology; per-node binary/time-mode confirmation still required",
+      "destination_origin_ns": null,
+      "rate_denominator": null,
+      "rate_numerator": null,
+      "source": "host/recorder clock relation and ROS time mode pending; NTP status is not a millisecond bound",
+      "source_kind": "unknown",
+      "source_origin_ns": null,
+      "status": "pending",
+      "uncertainty_ns": null,
+      "valid_source_interval_ns": [
+        null,
+        null
+      ]
+    },
+    "car2_ros_host": {
+      "deployment_grouping_status": "host grouping from session topology; per-node binary/time-mode confirmation still required",
+      "destination_origin_ns": null,
+      "rate_denominator": null,
+      "rate_numerator": null,
+      "source": "host/recorder clock relation and ROS time mode pending; NTP status is not a millisecond bound",
+      "source_kind": "unknown",
+      "source_origin_ns": null,
+      "status": "pending",
+      "uncertainty_ns": null,
+      "valid_source_interval_ns": [
+        null,
+        null
+      ]
+    }
+  },
+  "experiment_id": "T08",
+  "experiment_notes": [
+    "confirm actual first-pose placement and heading; do not promote nominal guidance to measurement"
+  ],
+  "schema_version": 1,
+  "source_bag_sha256": "cf3b4de0f20424d02779aeeb416a4fb16d77bb1f5333344d48ebf446a3884ada",
+  "vehicles": {
+    "car1": {
+      "antenna_body_xy_m": {
+        "candidate_records": [],
+        "source": "physical odometry/base origin to antenna XY not established",
+        "source_kind": "unknown",
+        "status": "pending",
+        "uncertainty": null,
+        "uncertainty_reason": "not independently measured",
+        "value": null
+      },
+      "antenna_height_m": {
+        "applicability": "same mounting state assumed; no per-run fresh Z survey",
+        "source": "geometry.json mounts.car1.antenna_reference_height_m; SESSION_LOG_ARCHIVE.md section 54",
+        "source_kind": "operator_record",
+        "status": "provided",
+        "uncertainty_m": null,
+        "uncertainty_reason": "operator approximate height; instrument uncertainty not reported",
+        "value": 0.17
+      },
+      "initial_antenna_xy_room_m": {
+        "candidate_records": [
+          {
+            "classification": "nominal route guidance; actual per-bag confirmation pending",
+            "value": [
+              1.5,
+              4.0
+            ]
+          }
+        ],
+        "source": "actual start at bound source record pending",
+        "source_kind": "unknown",
+        "status": "pending",
+        "uncertainty": null,
+        "uncertainty_reason": "not independently measured",
+        "value": null
+      },
+      "initial_body_yaw_room_rad": {
+        "candidate_records": [
+          {
+            "classification": "planned body heading; not marker orientation",
+            "value": -1.5707963267948966
+          }
+        ],
+        "source": "actual body heading at same bound source record pending",
+        "source_kind": "unknown",
+        "status": "pending",
+        "uncertainty": null,
+        "uncertainty_reason": "not independently measured",
+        "value": null
+      },
+      "initial_record_binding": {
+        "first_arrived_candidate": {
+          "header_epoch_ns": 1792922799635030478,
+          "receive_epoch_ns": 1792922800964388377,
+          "record_index": 4,
+          "source_file_sha256": "cf3b4de0f20424d02779aeeb416a4fb16d77bb1f5333344d48ebf446a3884ada",
+          "topic": "/car1/odom"
+        },
+        "header_epoch_ns": null,
+        "receive_epoch_ns": null,
+        "record_index": null,
+        "source": "first accepted odometry record must be explicitly confirmed after clock-model validation",
+        "source_file_sha256": "cf3b4de0f20424d02779aeeb416a4fb16d77bb1f5333344d48ebf446a3884ada",
+        "status": "pending",
+        "video_trace": {
+          "frame_index": null,
+          "pts_ticks": null,
+          "time_base_den": null,
+          "time_base_num": null,
+          "time_mapping_id": null,
+          "video_sha256": null
+        }
+      },
+      "ros_clock_group_id": "car1_ros_host",
+      "sample_time_adjustments": {
+        "odom": {
+          "offset_ns": null,
+          "semantics": null,
+          "source": "sampling-to-header relation not calibrated; no receipt-header median correction",
+          "status": "pending",
+          "uncertainty_ns": null
+        },
+        "uwb": {
+          "offset_ns": null,
+          "semantics": null,
+          "source": "sampling-to-header relation not calibrated; no receipt-header median correction",
+          "status": "pending",
+          "uncertainty_ns": null
+        }
+      }
+    },
+    "car2": {
+      "antenna_body_xy_m": {
+        "candidate_records": [],
+        "source": "physical odometry/base origin to antenna XY not established",
+        "source_kind": "unknown",
+        "status": "pending",
+        "uncertainty": null,
+        "uncertainty_reason": "not independently measured",
+        "value": null
+      },
+      "antenna_height_m": {
+        "applicability": "same mounting state assumed; no per-run fresh Z survey",
+        "source": "geometry.json mounts.car2.antenna_reference_height_m; SESSION_LOG_ARCHIVE.md section 55",
+        "source_kind": "operator_record",
+        "status": "provided",
+        "uncertainty_m": null,
+        "uncertainty_reason": "operator approximate height; instrument uncertainty not reported",
+        "value": 0.2
+      },
+      "initial_antenna_xy_room_m": {
+        "candidate_records": [
+          {
+            "classification": "nominal route guidance; actual per-bag confirmation pending",
+            "value": [
+              2.0,
+              2.0
+            ]
+          }
+        ],
+        "source": "actual start at bound source record pending",
+        "source_kind": "unknown",
+        "status": "pending",
+        "uncertainty": null,
+        "uncertainty_reason": "not independently measured",
+        "value": null
+      },
+      "initial_body_yaw_room_rad": {
+        "candidate_records": [
+          {
+            "classification": "planned body heading; not marker orientation",
+            "value": 1.5707963267948966
+          }
+        ],
+        "source": "actual body heading at same bound source record pending",
+        "source_kind": "unknown",
+        "status": "pending",
+        "uncertainty": null,
+        "uncertainty_reason": "not independently measured",
+        "value": null
+      },
+      "initial_record_binding": {
+        "first_arrived_candidate": {
+          "header_epoch_ns": 1792922800607668913,
+          "receive_epoch_ns": 1792922800969076596,
+          "record_index": 155,
+          "source_file_sha256": "cf3b4de0f20424d02779aeeb416a4fb16d77bb1f5333344d48ebf446a3884ada",
+          "topic": "/car2/odom"
+        },
+        "header_epoch_ns": null,
+        "receive_epoch_ns": null,
+        "record_index": null,
+        "source": "first accepted odometry record must be explicitly confirmed after clock-model validation",
+        "source_file_sha256": "cf3b4de0f20424d02779aeeb416a4fb16d77bb1f5333344d48ebf446a3884ada",
+        "status": "pending",
+        "video_trace": {
+          "frame_index": null,
+          "pts_ticks": null,
+          "time_base_den": null,
+          "time_base_num": null,
+          "time_mapping_id": null,
+          "video_sha256": null
+        }
+      },
+      "ros_clock_group_id": "car2_ros_host",
+      "sample_time_adjustments": {
+        "odom": {
+          "offset_ns": null,
+          "semantics": null,
+          "source": "sampling-to-header relation not calibrated; no receipt-header median correction",
+          "status": "pending",
+          "uncertainty_ns": null
+        },
+        "uwb": {
+          "offset_ns": null,
+          "semantics": null,
+          "source": "sampling-to-header relation not calibrated; no receipt-header median correction",
+          "status": "pending",
+          "uncertainty_ns": null
+        }
+      }
+    }
+  }
+}

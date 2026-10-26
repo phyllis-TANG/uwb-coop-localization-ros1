@@ -59,19 +59,26 @@ def twist_translation(twist, dt):
 
 
 def antenna_at(state, twist, dt, car_config):
-    lever = np.asarray(car_config["antenna_body_xyz_m"]["value"], dtype=float)
-    displacement = twist_translation(twist, dt)+rotation(twist[2]*dt) @ lever[:2]
+    lever_xy = antenna_offset_xy(car_config)
+    displacement = twist_translation(twist, dt)+rotation(twist[2]*dt) @ lever_xy
     offset = rotation(state[2]) @ displacement
-    position = np.r_[state[:2]+offset, car_config["base_height_m"]["value"]+lever[2]]
+    position = np.r_[state[:2]+offset, antenna_height(car_config)]
     jacobian = np.zeros((3, 3))
     jacobian[:2, :2] = np.eye(2)
     jacobian[:2, 2] = [-offset[1], offset[0]]
     return position, jacobian
 
 
+class ClockIntervalError(ValueError):
+    """A timestamp is outside the explicitly calibrated source interval."""
+
+
 def map_time(row, model):
     """Integer, origin-centered affine mapping; no float epoch arithmetic."""
     value = int(row[model["field"]])
+    interval = model.get("valid_source_interval_ns")
+    if interval is not None and not interval[0] <= value <= interval[1]:
+        raise ClockIntervalError("source time outside calibrated clock interval")
     delta = (value-int(model["source_origin_ns"]))*int(model["rate_numerator"])
     denominator = int(model["rate_denominator"])
     # Nearest integer, ties away from zero, for both signed directions.
@@ -82,6 +89,24 @@ def map_time(row, model):
 def known(item):
     return (isinstance(item, dict) and item.get("status") == "provided"
             and item.get("value") is not None and bool(item.get("source")))
+
+
+def antenna_offset_xy(car_config):
+    """Minimal planar lever arm, or the unchanged legacy XYZ interface."""
+    if known(car_config.get("antenna_body_xy_m")):
+        return np.asarray(car_config["antenna_body_xy_m"]["value"], dtype=float)
+    if known(car_config.get("antenna_body_xyz_m")):
+        return np.asarray(car_config["antenna_body_xyz_m"]["value"][:2], dtype=float)
+    raise ValueError("horizontal base-to-antenna lever arm unknown")
+
+
+def antenna_height(car_config):
+    """The planar model needs only absolute antenna Z, not its decomposition."""
+    if known(car_config.get("antenna_height_m")):
+        return float(car_config["antenna_height_m"]["value"])
+    if known(car_config.get("base_height_m")) and known(car_config.get("antenna_body_xyz_m")):
+        return float(car_config["base_height_m"]["value"]+car_config["antenna_body_xyz_m"]["value"][2])
+    raise ValueError("absolute antenna height unknown")
 
 
 def clock_ready(clock):
@@ -108,9 +133,16 @@ def readiness(config):
             if not clock_ready(cc.get("odom_clock")):
                 out[method][car].append(car+":odom_clock:unknown")
             if method != "odom_only":
-                for name in ("antenna_body_xyz_m", "base_height_m"):
-                    if not known(cc.get(name)):
-                        out[method][car].append(car+":"+name+":unknown")
+                if "antenna_body_xy_m" in cc or "antenna_height_m" in cc:
+                    if not (known(cc.get("antenna_body_xy_m")) or known(cc.get("antenna_body_xyz_m"))):
+                        out[method][car].append(car+":antenna_body_xy_m:unknown")
+                    if not (known(cc.get("antenna_height_m")) or
+                            known(cc.get("base_height_m")) and known(cc.get("antenna_body_xyz_m"))):
+                        out[method][car].append(car+":antenna_height_m:unknown")
+                else:
+                    for name in ("antenna_body_xyz_m", "base_height_m"):
+                        if not known(cc.get(name)):
+                            out[method][car].append(car+":"+name+":unknown")
                 if not clock_ready(cc.get("range_clock")):
                     out[method][car].append(car+":range_clock:unknown")
                 if not known(config.get("anchors_xyz_m")):
@@ -155,6 +187,10 @@ def validate_config(config):
                 raise ValueError("invalid provided clock model: "+car+":"+key)
             if clock_ready(cc.get(key)) and cc[key]["destination_clock_id"] != config["master_clock_id"]:
                 raise ValueError("clock destination must match replay master clock")
+            interval = cc.get(key, {}).get("valid_source_interval_ns")
+            if interval is not None and (not isinstance(interval,list) or len(interval)!=2 or
+                    not all(isinstance(v,int) and not isinstance(v,bool) for v in interval) or interval[0]>interval[1]):
+                raise ValueError("invalid calibrated clock interval")
         for key in ("initial_room_pose", "initial_covariance_diagonal", "antenna_body_xyz_m"):
             if known(cc.get(key)):
                 v = np.asarray(cc[key]["value"], dtype=float)
@@ -164,6 +200,18 @@ def validate_config(config):
                     raise ValueError("initial covariance must be positive")
         if known(cc.get("base_height_m")) and not math.isfinite(cc["base_height_m"]["value"]):
             raise ValueError("invalid base height")
+        if known(cc.get("antenna_body_xy_m")):
+            v = np.asarray(cc["antenna_body_xy_m"]["value"], dtype=float)
+            if v.shape != (2,) or not np.isfinite(v).all():raise ValueError("invalid horizontal antenna lever arm")
+            if known(cc.get("antenna_body_xyz_m")) and not np.allclose(v, cc["antenna_body_xyz_m"]["value"][:2], atol=1e-12, rtol=0):
+                raise ValueError("conflicting minimal and legacy horizontal lever arms")
+        if known(cc.get("antenna_height_m")):
+            height = cc["antenna_height_m"]["value"]
+            if isinstance(height, bool) or not isinstance(height, (float, int)) or not math.isfinite(height):raise ValueError("invalid antenna height")
+            if known(cc.get("base_height_m")) and known(cc.get("antenna_body_xyz_m")):
+                legacy = cc["base_height_m"]["value"]+cc["antenna_body_xyz_m"]["value"][2]
+                if not math.isclose(height, legacy, abs_tol=1e-12, rel_tol=0):
+                    raise ValueError("conflicting minimal antenna height and legacy height sum")
     if known(config.get("anchors_xyz_m")):
         for target, xyz in config["anchors_xyz_m"]["value"].items():
             if target not in WALLS or np.asarray(xyz).shape != (3,) or not np.isfinite(xyz).all():
@@ -236,7 +284,8 @@ class Baseline:
             if car in self.last_header and header <= self.last_header[car]:
                 return result("duplicate_or_out_of_order_odometry")
             cc = self.config["vehicles"][car]
-            measured = receive if self.local else map_time(row, cc["odom_clock"])
+            try:measured = receive if self.local else map_time(row, cc["odom_clock"])
+            except ClockIntervalError:return result("clock_outside_valid_interval")
             details["measurement_epoch_ns"] = None if self.local else measured
             if not self.local and measured > receive:return result("future_measurement_time")
             if not self.local and receive-measured > self.config["max_measurement_latency_ns"]:
@@ -244,6 +293,15 @@ class Baseline:
             if car in self.anchor_ns and measured <= self.anchor_ns[car]:return result("out_of_order_measurement_time")
             sl = self._slice(car)
             if car not in self.odom:
+                binding = cc.get("initial_record_binding")
+                if binding is not None:
+                    fields = ("source_file_sha256", "record_index", "header_epoch_ns", "receive_epoch_ns")
+                    matches = binding.get("status") == "provided" and bool(binding.get("source"))
+                    for field in fields:
+                        expected = binding.get(field)
+                        actual = row.get(field)
+                        matches = matches and expected is not None and str(expected) == str(actual)
+                    if not matches:return result("initial_binding_mismatch")
                 self.x[sl] = pose if self.local else cc["initial_room_pose"]["value"]
                 if not self.local:self.P[sl, sl] = np.diag(cc["initial_covariance_diagonal"]["value"])
                 status = "initialized"
@@ -282,7 +340,8 @@ class Baseline:
         peer = target == TAGS["car2" if car == "car1" else "car1"]
         if target not in WALLS and not peer:return result("unknown_range_target")
         cc = self.config["vehicles"][car]
-        measured = map_time(row, cc["range_clock"])
+        try:measured = map_time(row, cc["range_clock"])
+        except ClockIntervalError:return result("clock_outside_valid_interval")
         details["measurement_epoch_ns"] = measured
         if measured > receive:return result("future_measurement_time")
         if receive-measured > self.config["max_measurement_latency_ns"]:return result("stale_measurement_on_arrival")

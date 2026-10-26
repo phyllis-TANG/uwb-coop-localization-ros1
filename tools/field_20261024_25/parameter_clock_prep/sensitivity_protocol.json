@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "scope": "synthetic model sensitivity only; assumed perturbations are not real calibration error ranges",
+  "seeds": [
+    7,
+    19,
+    43,
+    91,
+    137
+  ],
+  "scenario": "noisy_nominal",
+  "duration_s": 12,
+  "conditions": [
+    {
+      "id": "reference",
+      "path": null,
+      "delta": 0
+    },
+    {
+      "id": "uwb_clock_car2_minus20ms",
+      "path": [
+        "vehicles",
+        "car2",
+        "range_clock",
+        "destination_origin_ns"
+      ],
+      "delta": -20000000
+    },
+    {
+      "id": "uwb_clock_car2_plus20ms",
+      "path": [
+        "vehicles",
+        "car2",
+        "range_clock",
+        "destination_origin_ns"
+      ],
+      "delta": 20000000
+    },
+    {
+      "id": "lever_car2_x_minus5cm",
+      "path": [
+        "vehicles",
+        "car2",
+        "antenna_body_xy_m",
+        "value",
+        0
+      ],
+      "delta": -0.05
+    },
+    {
+      "id": "lever_car2_x_plus5cm",
+      "path": [
+        "vehicles",
+        "car2",
+        "antenna_body_xy_m",
+        "value",
+        0
+      ],
+      "delta": 0.05
+    },
+    {
+      "id": "heading_car2_minus5deg",
+      "path": [
+        "vehicles",
+        "car2",
+        "initial_room_pose",
+        "value",
+        2
+      ],
+      "delta": -0.08726646259971647
+    },
+    {
+      "id": "heading_car2_plus5deg",
+      "path": [
+        "vehicles",
+        "car2",
+        "initial_room_pose",
+        "value",
+        2
+      ],
+      "delta": 0.08726646259971647
+    }
+  ],
+  "fixed_conditions": [
+    "same observation bytes, arrival order and seed within each seed block",
+    "same base initial XY, noise parameters, thinning and rejection rules",
+    "clock perturbation is the Car2 UWB stamp-to-master offset only, not an NTP estimate",
+    "lever/yaw perturbations hold base initial XY fixed; no compensating fit or observation regeneration"
+  ],
+  "checks": [
+    "one configuration leaf changed per perturbed condition",
+    "same fixture SHA for all conditions of each seed",
+    "no field/holdout data",
+    "Car1 independent solution invariant to Car2-only changes",
+    "Odom-only invariant to clock/lever-only changes"
+  ],
+  "run_count": 35
+}

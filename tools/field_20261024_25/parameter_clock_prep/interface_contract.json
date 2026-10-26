@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "contract_id": "minimal_geometry_clock_inputs_v1",
+  "scope": "parameter preparation only; no field replay or reference acceptance",
+  "coordinate_convention": {
+    "room": "historical room right-handed frame, z-up; confirm floor-zero relationship",
+    "body": "base_footprint axes x forward, y left, z up",
+    "yaw": "body +X toward room +X is 0 rad; +Y pi/2; -Y -pi/2",
+    "point": "UWB antenna reference center; not marker center, enclosure center or chassis geometric center"
+  },
+  "geometry": {
+    "antenna_body_xy_m": {
+      "shape": [
+        2
+      ],
+      "units": "m",
+      "definition": "vector from physical odometry/base_footprint origin to antenna, expressed in body axes",
+      "not_substitutes": [
+        "marker-to-antenna body-aligned translation",
+        "geometric-center offset without base origin validation"
+      ]
+    },
+    "antenna_height_m": {
+      "shape": [],
+      "units": "m",
+      "definition": "absolute antenna Z in room/floor frame; planar model uses only this sum",
+      "legacy_equivalence": "base_height_m + antenna_body_xyz_m[2]",
+      "uncertainty_policy": "null plus reason if not measured; never insert zero uncertainty"
+    },
+    "initial_antenna_xy_room_m": {
+      "shape": [
+        2
+      ],
+      "units": "m",
+      "definition": "actual antenna XY at the explicitly bound odometry record; nominal route is only a candidate"
+    },
+    "initial_body_yaw_room_rad": {
+      "units": "rad",
+      "definition": "actual vehicle/body heading at same bound record; marker yaw needs an independently supplied marker-to-body rotation"
+    },
+    "initial_record_binding": {
+      "required": [
+        "source_file_sha256",
+        "record_index",
+        "header_epoch_ns",
+        "receive_epoch_ns",
+        "source"
+      ],
+      "optional_video_trace": [
+        "video_sha256",
+        "frame_index",
+        "pts_ticks",
+        "time_base_num",
+        "time_base_den",
+        "time_mapping_id"
+      ],
+      "policy": "initialization only at matching arrived source record; no endpoint-derived initialization"
+    },
+    "initial_base_derivation": "p_base_xy = p_antenna_xy - R(body_yaw)*antenna_body_xy; uncertainty/correlation must be separately assessed"
+  },
+  "clock": {
+    "grouping": "one host ROS clock per vehicle can be shared only after deployment/time-mode evidence; per-topic sampling-to-stamp semantics remain separate",
+    "master": "bag_receive_epoch_ns recorder ROS clock; not an independently calibrated physical time guarantee",
+    "model": "sample_master_ns = dst_origin + round((header_host_ns-src_origin)*rate_numerator/rate_denominator) + sample_offset_ns",
+    "required_host_mapping": [
+      "source_origin_ns",
+      "destination_origin_ns",
+      "rate_numerator",
+      "rate_denominator",
+      "uncertainty_ns",
+      "valid_source_interval_ns",
+      "source"
+    ],
+    "required_sample_adjustment": [
+      "offset_ns",
+      "uncertainty_ns",
+      "semantics",
+      "source"
+    ],
+    "offset_sign": "negative if physical sample occurred before host header stamp",
+    "uncertainty_combination": "sum of declared absolute bounds; no independence assumption",
+    "pending_policy": "NTP synchronized, negative receipt-header or its median cannot supply these fields",
+    "optional_per_topic_groups": "vehicles.<car>.clock_group_ids={odom:<group>,uwb:<group>} overrides shared candidate ros_clock_group_id; do not confirm shared clock without source/time-mode evidence"
+  },
+  "provenance_requirements": [
+    "asset or document identity and SHA256",
+    "measurement/derivation/engineering/pending classification",
+    "applicable experiment and mounting state",
+    "units and point/frame definitions",
+    "source and clock validity interval",
+    "uncertainty value or null plus reason",
+    "calibration fit point IDs and independent validation point IDs must be separately listed when reference observations are used"
+  ],
+  "not_algorithm_prerequisites": [
+    "independent video accuracy acceptance",
+    "continuous reference trajectory",
+    "base_height and lever_z separately if antenna_height is provided"
+  ],
+  "evaluation_prerequisites": [
+    "independent reference validation",
+    "space/time uncertainty and common valid evaluation window"
+  ]
+}
