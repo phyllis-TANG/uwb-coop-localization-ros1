@@ -37,7 +37,7 @@
       "availability": "additional local archive; canonical cross-environment delivery is the Git input/review archives above"
     }
   ],
-  "remote_readback": "pending_push",
+  "remote_readback": "DONE",
   "review_archive_scope": "compact B-owned evidence/config/tests/source plus the T10 input transfer archive; excludes raw media, venv, original eight-bag tables and full historic replay outputs",
   "review_archive_exclusions": [
     "this external ARTIFACTS registry and its later remote-readback receipt, to avoid recursive hashing",
@@ -45,5 +45,9 @@
   ],
   "old_results_preserved": true,
   "previous_input_archive_001": "preserved in this task cloud package/history_inputs_001; superseded by v2 after operator clarification",
-  "local_complete_results_members": "all 103 file members verified; raw ZIP/MOV/venv excluded"
+  "local_complete_results_members": "all 103 file members verified; raw ZIP/MOV/venv excluded",
+  "remote_receipt": "results/remote_archive_readback.json",
+  "verified_remote_commit": "85ca0147b91902608bdd4bc94e3edbfc07e9ee17",
+  "verified_remote_archives": 2,
+  "verified_remote_members": 62
 }

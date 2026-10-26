@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "status": "DONE",
+  "field_fusion_status": "BLOCKED",
+  "task_start_utc": "2026-10-26T18:16:00Z",
+  "computation_and_transfer_completed_utc": "2026-10-26T18:49:11.870414+00:00",
+  "new_estimator_runs": 0,
+  "test_count": 86,
+  "remote_archives_verified": 2,
+  "remote_archive_members_verified": 62,
+  "reference_metric_scope": "not_accepted",
+  "remaining": [
+    "PR registration only"
+  ],
+  "old_worktrees": [
+    {
+      "path": "/workspace/uwb-coop-localization-ros1",
+      "head": "f14f8bd7c2a33c96f759919b50dff9cc00580014",
+      "status_porcelain": ""
+    },
+    {
+      "path": "/workspace/work/uwb-sandbox-20261026",
+      "head": "9d58f62f745fd46f2915933b2e1227ac84dda554",
+      "status_porcelain": ""
+    },
+    {
+      "path": "/workspace/work/uwb-field-baselines-20261026",
+      "head": "5e4c7b8e8f3b76d33cfb4c8984beb7e9468991ce",
+      "status_porcelain": ""
+    },
+    {
+      "path": "/workspace/work/uwb-parameter-clock-prep-20261026",
+      "head": "2672afd91a01f33838e6b467772574e630962599",
+      "status_porcelain": ""
+    }
+  ],
+  "main_checked": "534850729ff96ea93489d69058cf6e68b27a83d9",
+  "merge_tree_no_conflict": true,
+  "actual_merge_or_rebase": false
+}
