@@ -1,0 +1,17 @@
+{
+  "status": "BLOCKED",
+  "new_estimator_runs": 0,
+  "reason": "strict room prerequisites incomplete; no repeated source odometry replay",
+  "blocked_fields": [
+    "car1:antenna_body_xy_m:unknown",
+    "car1:initial_room_pose:unknown",
+    "car1:odom_clock:unknown",
+    "car1:range_clock:unknown",
+    "car2:antenna_body_xy_m:unknown",
+    "car2:initial_room_pose:unknown",
+    "car2:odom_clock:unknown",
+    "car2:range_clock:unknown"
+  ],
+  "exploration_config": null,
+  "exploration_reason": "no defensible physical base-origin/actual-init/measurement-clock convention to instantiate unknown values"
+}

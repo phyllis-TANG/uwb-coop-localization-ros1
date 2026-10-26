@@ -1,0 +1,1402 @@
+{
+  "schema_version": 1,
+  "archive_sha256": "b7cec6f75584e583e66946fd669dc7495d10e3bcbebc0b67fa480b65b53fd1bf",
+  "successful_bag_sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+  "verified_source_files": [
+    {
+      "relative_path": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_raw_wrapper_v2.py",
+      "sha256": "71d0d3d644fbf0eae1efde7e88518bc0758ed1b99da87fc288c248912b73a5a5",
+      "bytes": 6876
+    },
+    {
+      "relative_path": "uwb_field_20261024/setup_evidence_20261024_030824/car1_clock.txt",
+      "sha256": "eb4e0df1375b11b987534fcda039b66a1d6b76cb52fa294cb2a58788c2122f61",
+      "bytes": 357
+    },
+    {
+      "relative_path": "uwb_field_20261024/setup_evidence_20261024_030824/car2_clock.txt",
+      "sha256": "7bc8f56b86497f97f9c7c0cff71f7dea9b911a9cc7de5bf87602ca02102444a4",
+      "bytes": 381
+    },
+    {
+      "relative_path": "uwb_field_20261024/setup_evidence_20261024_030824/vm_clock.txt",
+      "sha256": "8a85ee45dadffba3639dc36ccbe454d86f138293303d8fd0d1e01973d2251e03",
+      "bytes": 362
+    },
+    {
+      "relative_path": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz",
+      "sha256": "1075a2dc3cb47bd260a9de34199e484e8256898eeb26f14b07ae65240c47f211",
+      "bytes": 48459
+    },
+    {
+      "relative_path": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "sha256": "4b70a6d4d3ee418a08fa5e753b133a0b726057cc3c4a60bcbefd81e62d9ca63e",
+      "bytes": 43434
+    },
+    {
+      "relative_path": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "sha256": "0c8b25b57d87206c967a2e52547ad80209896c662c1f446f60b6f6739bf1f14d",
+      "bytes": 1144
+    },
+    {
+      "relative_path": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "sha256": "22db3dbbf711793234534bbfe30ef843a295b78402f468211f12babc0d7f6e05",
+      "bytes": 3736
+    },
+    {
+      "relative_path": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz",
+      "sha256": "f07a5f0aa7d899d05353d7332e90717db43d89670ccbabe7e703a83fc1cd3fdc",
+      "bytes": 2972
+    },
+    {
+      "relative_path": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "sha256": "3b5e4178703e92f8aa955e145938b7842159d7a3d6b2973c1f2cbfd79c916eac",
+      "bytes": 4650
+    },
+    {
+      "relative_path": "uwb_field_20261024/setup_evidence_20261024_030824/V550_mec_robot.urdf",
+      "sha256": "b3c4e428b1c8ccf43a8f7da9a66a0b95efed70fa432aa8f002f7c3fa799fdc58",
+      "bytes": 11251
+    },
+    {
+      "relative_path": "ros_ws/src/uwb_coop_localization/scripts/nlink_frame3_bridge.py",
+      "sha256": "527e56b50a1153fbd337c138d7a517df6aa0c65dc6089dbf9628019589bc76be",
+      "bytes": 3260
+    }
+  ],
+  "mechanical": {
+    "urdf_link_names": [
+      "base_link",
+      "lf_wheel_link",
+      "lb_wheel_link",
+      "rb_wheel_link",
+      "rf_wheel_link",
+      "camera_link",
+      "laser",
+      "controller_link"
+    ],
+    "urdf_uwb_or_antenna_links": [],
+    "base_origin_to_physical_antenna_xy_m": {
+      "car1": null,
+      "car2": null
+    },
+    "conclusion": "CAD link origins/inertial centers and launch zero transforms do not identify the physical odometry integration point relative to the installed antenna; no antenna link in this URDF"
+  },
+  "timestamp_excerpts": [
+    {
+      "line": 14,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_raw_wrapper_v2.py",
+      "text": "JSON stamp_secs/stamp_nsecs exactly match the simplified range message stamp."
+    },
+    {
+      "line": 37,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_raw_wrapper_v2.py",
+      "text": "        'stamp_secs': int(message.header.stamp.secs),"
+    },
+    {
+      "line": 38,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_raw_wrapper_v2.py",
+      "text": "        'stamp_nsecs': int(message.header.stamp.nsecs),"
+    },
+    {
+      "line": 65,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_raw_wrapper_v2.py",
+      "text": "            self.original_publisher.publish(message)"
+    },
+    {
+      "line": 72,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_raw_wrapper_v2.py",
+      "text": "                self.owner.raw_publisher.publish(string_type(data=encoded))"
+    },
+    {
+      "line": 1,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_clock.txt",
+      "text": "                      Local time: Sat 2026-10-24 18:11:19 HKT"
+    },
+    {
+      "line": 2,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_clock.txt",
+      "text": "                  Universal time: Sat 2026-10-24 10:11:19 UTC"
+    },
+    {
+      "line": 3,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_clock.txt",
+      "text": "                        RTC time: Sat 2026-10-24 10:11:19"
+    },
+    {
+      "line": 4,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_clock.txt",
+      "text": "                       Time zone: Asia/Hong_Kong (HKT, +0800)"
+    },
+    {
+      "line": 5,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_clock.txt",
+      "text": "       System clock synchronized: yes"
+    },
+    {
+      "line": 6,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_clock.txt",
+      "text": "systemd-timesyncd.service active: yes"
+    },
+    {
+      "line": 7,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_clock.txt",
+      "text": "                 RTC in local TZ: no"
+    },
+    {
+      "line": 1,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_clock.txt",
+      "text": "               Local time: 六 2026-10-24 18:11:31 CST"
+    },
+    {
+      "line": 2,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_clock.txt",
+      "text": "           Universal time: 六 2026-10-24 10:11:31 UTC"
+    },
+    {
+      "line": 3,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_clock.txt",
+      "text": "                 RTC time: 六 2026-10-24 10:11:31    "
+    },
+    {
+      "line": 4,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_clock.txt",
+      "text": "                Time zone: Asia/Shanghai (CST, +0800)"
+    },
+    {
+      "line": 5,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_clock.txt",
+      "text": "System clock synchronized: yes                       "
+    },
+    {
+      "line": 6,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_clock.txt",
+      "text": "              NTP service: active                    "
+    },
+    {
+      "line": 7,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_clock.txt",
+      "text": "          RTC in local TZ: no                        "
+    },
+    {
+      "line": 1,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/vm_clock.txt",
+      "text": "                      Local time: 六 2026-10-24 03:11:05 PDT"
+    },
+    {
+      "line": 2,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/vm_clock.txt",
+      "text": "                  Universal time: 六 2026-10-24 10:11:05 UTC"
+    },
+    {
+      "line": 3,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/vm_clock.txt",
+      "text": "                        RTC time: 六 2026-10-24 10:11:05"
+    },
+    {
+      "line": 4,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/vm_clock.txt",
+      "text": "                       Time zone: America/Los_Angeles (PDT, -0700)"
+    },
+    {
+      "line": 5,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/vm_clock.txt",
+      "text": "       System clock synchronized: yes"
+    },
+    {
+      "line": 6,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/vm_clock.txt",
+      "text": "systemd-timesyncd.service active: yes"
+    },
+    {
+      "line": 7,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/vm_clock.txt",
+      "text": "                 RTC in local TZ: no"
+    },
+    {
+      "line": 255,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "Function: Publish the IMU data topic"
+    },
+    {
+      "line": 256,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "功能: 发布IMU数据话题"
+    },
+    {
+      "line": 257,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "***************************************/"
+    },
+    {
+      "line": 258,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "void turn_on_robot::Publish_ImuSensor()"
+    },
+    {
+      "line": 259,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "{"
+    },
+    {
+      "line": 260,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  sensor_msgs::Imu Imu_Data_Pub; //Instantiate IMU topic data //实例化IMU话题数据"
+    },
+    {
+      "line": 261,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  Imu_Data_Pub.header.stamp = ros::Time::now(); "
+    },
+    {
+      "line": 262,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  Imu_Data_Pub.header.frame_id = gyro_frame_id; //IMU corresponds to TF coordinates, which is required to use the robot_pose_ekf feature pack "
+    },
+    {
+      "line": 263,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "                                                //IMU对应TF坐标，使用robot_pose_ekf功能包需要设置此项"
+    },
+    {
+      "line": 264,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  Imu_Data_Pub.orientation.x = Mpu6050.orientation.x; //A quaternion represents a three-axis attitude //四元数表达三轴姿态"
+    },
+    {
+      "line": 265,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  Imu_Data_Pub.orientation.y = Mpu6050.orientation.y; "
+    },
+    {
+      "line": 266,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  Imu_Data_Pub.orientation.z = Mpu6050.orientation.z;"
+    },
+    {
+      "line": 267,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  Imu_Data_Pub.orientation.w = Mpu6050.orientation.w;"
+    },
+    {
+      "line": 268,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  Imu_Data_Pub.orientation_covariance[0] = 1e6; //Three-axis attitude covariance matrix //三轴姿态协方差矩阵"
+    },
+    {
+      "line": 269,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  Imu_Data_Pub.orientation_covariance[4] = 1e6;"
+    },
+    {
+      "line": 270,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  Imu_Data_Pub.orientation_covariance[8] = 1e-6;"
+    },
+    {
+      "line": 271,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  Imu_Data_Pub.angular_velocity.x = Mpu6050.angular_velocity.x; //Triaxial angular velocity //三轴角速度"
+    },
+    {
+      "line": 272,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  Imu_Data_Pub.angular_velocity.y = Mpu6050.angular_velocity.y;"
+    },
+    {
+      "line": 273,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  Imu_Data_Pub.angular_velocity.z = Mpu6050.angular_velocity.z;"
+    },
+    {
+      "line": 274,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  Imu_Data_Pub.angular_velocity_covariance[0] = 1e6; //Triaxial angular velocity covariance matrix //三轴角速度协方差矩阵"
+    },
+    {
+      "line": 275,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  Imu_Data_Pub.angular_velocity_covariance[4] = 1e6;"
+    },
+    {
+      "line": 276,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  Imu_Data_Pub.angular_velocity_covariance[8] = 1e-6;"
+    },
+    {
+      "line": 277,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  Imu_Data_Pub.linear_acceleration.x = Mpu6050.linear_acceleration.x; //Triaxial acceleration //三轴线性加速度"
+    },
+    {
+      "line": 278,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  Imu_Data_Pub.linear_acceleration.y = Mpu6050.linear_acceleration.y; "
+    },
+    {
+      "line": 279,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  Imu_Data_Pub.linear_acceleration.z = Mpu6050.linear_acceleration.z;  "
+    },
+    {
+      "line": 280,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "  imu_publisher.publish(Imu_Data_Pub); //Pub IMU topic //发布IMU话题"
+    },
+    {
+      "line": 287,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "void turn_on_robot::Publish_Odom()"
+    },
+    {
+      "line": 288,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "{"
+    },
+    {
+      "line": 289,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    //Convert the Z-axis rotation Angle into a quaternion for expression "
+    },
+    {
+      "line": 290,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    //把Z轴转角转换为四元数进行表达"
+    },
+    {
+      "line": 291,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    geometry_msgs::Quaternion odom_quat = tf::createQuaternionMsgFromYaw(Robot_Pos.Z);"
+    },
+    {
+      "line": 292,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": ""
+    },
+    {
+      "line": 293,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    nav_msgs::Odometry odom; //Instance the odometer topic data //实例化里程计话题数据"
+    },
+    {
+      "line": 294,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    odom.header.stamp = ros::Time::now(); "
+    },
+    {
+      "line": 295,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    odom.header.frame_id = odom_frame_id; // Odometer TF parent coordinates //里程计TF父坐标"
+    },
+    {
+      "line": 296,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    odom.pose.pose.position.x = Robot_Pos.X; //Position //位置"
+    },
+    {
+      "line": 297,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    odom.pose.pose.position.y = Robot_Pos.Y;"
+    },
+    {
+      "line": 298,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    odom.pose.pose.position.z = Robot_Pos.Z;"
+    },
+    {
+      "line": 299,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    odom.pose.pose.orientation = odom_quat; //Posture, Quaternion converted by Z-axis rotation //姿态，通过Z轴转角转换的四元数"
+    },
+    {
+      "line": 300,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": ""
+    },
+    {
+      "line": 301,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    odom.child_frame_id = robot_frame_id; // Odometer TF subcoordinates //里程计TF子坐标"
+    },
+    {
+      "line": 302,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    odom.twist.twist.linear.x =  Robot_Vel.X; //Speed in the X direction //X方向速度"
+    },
+    {
+      "line": 303,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    odom.twist.twist.linear.y =  Robot_Vel.Y; //Speed in the Y direction //Y方向速度"
+    },
+    {
+      "line": 304,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    odom.twist.twist.angular.z = Robot_Vel.Z; //Angular velocity around the Z axis //绕Z轴角速度 "
+    },
+    {
+      "line": 305,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": ""
+    },
+    {
+      "line": 306,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    //There are two types of this matrix, which are used when the robot is at rest and when it is moving.Extended Kalman Filtering officially provides 2 matrices for the robot_pose_ekf feature pack"
+    },
+    {
+      "line": 307,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    //这个矩阵有两种，分别在机器人静止和运动的时候使用。扩展卡尔曼滤波官方提供的2个矩阵，用于robot_pose_ekf功能包"
+    },
+    {
+      "line": 308,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    if(Robot_Vel.X== 0&&Robot_Vel.Y== 0&&Robot_Vel.Z== 0)"
+    },
+    {
+      "line": 309,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      //If the velocity is zero, it means that the error of the encoder will be relatively small, and the data of the encoder will be considered more reliable"
+    },
+    {
+      "line": 310,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      //如果velocity是零，说明编码器的误差会比较小，认为编码器数据更可靠"
+    },
+    {
+      "line": 311,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      memcpy(&odom.pose.covariance, odom_pose_covariance2, sizeof(odom_pose_covariance2)),"
+    },
+    {
+      "line": 663,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    if (true == Get_Sensor_Data_New()) //The serial port reads and verifies the data sent by the lower computer, and then the data is converted to international units"
+    },
+    {
+      "line": 664,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "                                       //通过串口读取并校验下位机发送过来的数据，然后数据转换为国际单位"
+    },
+    {
+      "line": 665,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "    {"
+    },
+    {
+      "line": 666,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      _Now = ros::Time::now();"
+    },
+    {
+      "line": 667,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      if(_Last_Time.toSec()==0) _Last_Time=_Now; //Perform this operation when entering for the first time to avoid excessive integration time"
+    },
+    {
+      "line": 668,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "                                                 //首次进入时进行此操作，避免积分时间过大"
+    },
+    {
+      "line": 669,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      Sampling_Time = (_Now - _Last_Time).toSec(); //Retrieves time interval, which is used to integrate velocity to obtain displacement (mileage) "
+    },
+    {
+      "line": 670,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "                                                   //获取时间间隔，用于积分速度获得位移(里程)"
+    },
+    {
+      "line": 671,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      "
+    },
+    {
+      "line": 672,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      //Odometer correction parameters"
+    },
+    {
+      "line": 673,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      //里程计误差修正"
+    },
+    {
+      "line": 674,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      Robot_Vel.X=Robot_Vel.X*odom_x_scale;"
+    },
+    {
+      "line": 675,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      Robot_Vel.Y=Robot_Vel.Y*odom_y_scale;"
+    },
+    {
+      "line": 676,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      if(Robot_Vel.Z>=0)"
+    },
+    {
+      "line": 677,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "        Robot_Vel.Z=Robot_Vel.Z*odom_z_scale_positive;"
+    },
+    {
+      "line": 678,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      else"
+    },
+    {
+      "line": 679,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "        Robot_Vel.Z=Robot_Vel.Z*odom_z_scale_negative;"
+    },
+    {
+      "line": 680,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": ""
+    },
+    {
+      "line": 681,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      //Speed * Time = displacement (odometer)"
+    },
+    {
+      "line": 682,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      //速度*时间=位移（里程计）"
+    },
+    {
+      "line": 683,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      Robot_Pos.X+=(Robot_Vel.X * cos(Robot_Pos.Z) - Robot_Vel.Y * sin(Robot_Pos.Z)) * Sampling_Time; //Calculate the displacement in the X direction, unit: m //计算X方向的位移，单位：m"
+    },
+    {
+      "line": 684,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      Robot_Pos.Y+=(Robot_Vel.X * sin(Robot_Pos.Z) + Robot_Vel.Y * cos(Robot_Pos.Z)) * Sampling_Time; //Calculate the displacement in the Y direction, unit: m //计算Y方向的位移，单位：m"
+    },
+    {
+      "line": 685,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      Robot_Pos.Z+=Robot_Vel.Z * Sampling_Time; //The angular displacement about the Z axis, in rad //绕Z轴的角位移，单位：rad "
+    },
+    {
+      "line": 686,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": ""
+    },
+    {
+      "line": 687,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      //Calculate the three-axis attitude from the IMU with the angular velocity around the three-axis and the three-axis acceleration"
+    },
+    {
+      "line": 688,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      //通过IMU绕三轴角速度与三轴加速度计算三轴姿态"
+    },
+    {
+      "line": 689,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      Quaternion_Solution(Mpu6050.angular_velocity.x, Mpu6050.angular_velocity.y, Mpu6050.angular_velocity.z,\\"
+    },
+    {
+      "line": 690,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "                Mpu6050.linear_acceleration.x, Mpu6050.linear_acceleration.y, Mpu6050.linear_acceleration.z);"
+    },
+    {
+      "line": 691,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": ""
+    },
+    {
+      "line": 692,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      Publish_Odom();      //Pub the speedometer topic //发布里程计话题"
+    },
+    {
+      "line": 693,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      Publish_ImuSensor(); //Pub the IMU topic //发布IMU话题    "
+    },
+    {
+      "line": 694,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      Publish_Voltage();   //Pub the topic of power supply voltage //发布电源电压话题"
+    },
+    {
+      "line": 695,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": ""
+    },
+    {
+      "line": 696,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!src/wheeltec_robot.cpp",
+      "text": "      _Last_Time = _Now; //Record the time and use it to calculate the time interval //记录时间，用于计算时间间隔"
+    },
+    {
+      "line": 1,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "cmake_minimum_required(VERSION 2.8.3)"
+    },
+    {
+      "line": 2,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "project(turn_on_wheeltec_robot)"
+    },
+    {
+      "line": 3,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": ""
+    },
+    {
+      "line": 4,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "find_package(catkin REQUIRED COMPONENTS"
+    },
+    {
+      "line": 5,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "  actionlib"
+    },
+    {
+      "line": 6,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "  actionlib_msgs"
+    },
+    {
+      "line": 7,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "  geometry_msgs"
+    },
+    {
+      "line": 8,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "  message_generation"
+    },
+    {
+      "line": 9,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "  nav_msgs"
+    },
+    {
+      "line": 10,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "  nav_msgs"
+    },
+    {
+      "line": 11,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "  roscpp"
+    },
+    {
+      "line": 12,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "  serial"
+    },
+    {
+      "line": 13,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "  roslib"
+    },
+    {
+      "line": 14,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "  rospy"
+    },
+    {
+      "line": 15,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "  sensor_msgs"
+    },
+    {
+      "line": 16,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "  std_msgs"
+    },
+    {
+      "line": 17,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "  tf"
+    },
+    {
+      "line": 18,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": ")"
+    },
+    {
+      "line": 19,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": ""
+    },
+    {
+      "line": 20,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "add_message_files(FILES supersonic.msg)"
+    },
+    {
+      "line": 21,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": ""
+    },
+    {
+      "line": 22,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "generate_messages(DEPENDENCIES std_msgs)"
+    },
+    {
+      "line": 23,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": ""
+    },
+    {
+      "line": 24,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "# ulimit -c unlimited"
+    },
+    {
+      "line": 25,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "# ssh firefly@192.168.1.76"
+    },
+    {
+      "line": 26,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "add_compile_options(-g -std=c++11)    #-g -> core dumped"
+    },
+    {
+      "line": 27,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": ""
+    },
+    {
+      "line": 28,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "catkin_package("
+    },
+    {
+      "line": 29,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "  #INCLUDE_DIRS include"
+    },
+    {
+      "line": 30,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "  #LIBRARIES turn_on_wheeltec_robot"
+    },
+    {
+      "line": 31,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "  #CATKIN_DEPENDS geometry_msgs message_generation nav_msgs nav_msgs roscpp roslib rospy sensor_msgs std_msgs tf"
+    },
+    {
+      "line": 32,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "  #DEPENDS system_lib"
+    },
+    {
+      "line": 33,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": ")"
+    },
+    {
+      "line": 34,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": ""
+    },
+    {
+      "line": 35,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "# defind robot status massage"
+    },
+    {
+      "line": 36,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "# command atkin_make -DCATKIN_WHITELIST_PACKAGES=\"new_msg\""
+    },
+    {
+      "line": 37,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "include_directories(include ${catkin_INCLUDE_DIRS} ${PCL_INCLUDE_DIRS})"
+    },
+    {
+      "line": 38,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "include_directories(include/${PROJECT_NAME})"
+    },
+    {
+      "line": 39,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": ""
+    },
+    {
+      "line": 40,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "add_executable(wheeltec_robot_node src/wheeltec_robot.cpp src/Quaternion_Solution.cpp)"
+    },
+    {
+      "line": 41,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "target_link_libraries(wheeltec_robot_node ${catkin_LIBRARIES})"
+    },
+    {
+      "line": 42,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": ""
+    },
+    {
+      "line": 43,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "add_executable(twist_transform src/twist_transform.cpp)"
+    },
+    {
+      "line": 44,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!CMakeLists.txt",
+      "text": "target_link_libraries(twist_transform ${catkin_LIBRARIES})"
+    },
+    {
+      "line": 1,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "<launch>"
+    },
+    {
+      "line": 2,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <!--打开节点wheeltec_robot，初始化串口等操作-->"
+    },
+    {
+      "line": 3,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <arg name=\"smoother\"  default=\"false\"/> <!-- 是否开启速度平滑功能 -->"
+    },
+    {
+      "line": 4,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <arg name=\"odom_frame_id\"  default=\"odom_combined\"/> <!-- 设置里程计话题起点TF坐标 -->"
+    },
+    {
+      "line": 5,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <arg name=\"Ultrasonic_Avoid\" default=\"false\"/><!-- 是否开启超声波避障功能 -->"
+    },
+    {
+      "line": 6,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <arg name=\"use_N_series_IMU\"  default=\"false\"/> <!-- 是否使用轮趣N系列的惯导，默认false：使用小车控制板板载的IMU芯片 -->"
+    },
+    {
+      "line": 7,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <arg name=\"use_H_series_IMU\"   default=\"false\"/> <!-- 是否使用轮趣H系列的惯导，默认false：使用小车控制板板载的IMU芯片 -->"
+    },
+    {
+      "line": 8,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <arg name=\"use_wheeltec_gnss\"  default=\"false\"/> <!-- 是否使用轮趣gnss模块，默认false -->"
+    },
+    {
+      "line": 9,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <arg name=\"car_mode\"  default=\"senior_diff\"/>"
+    },
+    {
+      "line": 10,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <!-- 超声波开启避障距离设定 -->"
+    },
+    {
+      "line": 11,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <arg name=\"start_avoid\"     default=\"0.3\"/><!-- 超声波正前方避障距离 单位是m-->"
+    },
+    {
+      "line": 12,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <arg name=\"start_avoidLR\"   default=\"0.35\"/><!-- 超声波  侧方避障距离 单位是m-->"
+    },
+    {
+      "line": 13,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": ""
+    },
+    {
+      "line": 14,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <node pkg=\"turn_on_wheeltec_robot\" type=\"wheeltec_robot_node\" name=\"wheeltec_robot\" output=\"screen\" respawn=\"false\">"
+    },
+    {
+      "line": 15,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <param name=\"usart_port_name\"    type=\"string\" value=\"/dev/wheeltec_controller\"/>  "
+    },
+    {
+      "line": 16,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <param name=\"serial_baud_rate\"   type=\"int\"    value=\"115200\"/>"
+    },
+    {
+      "line": 17,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <param name=\"odom_frame_id\"      type=\"string\" value=\"$(arg odom_frame_id)\"/> "
+    },
+    {
+      "line": 18,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <param name=\"robot_frame_id\"     type=\"string\" value=\"base_footprint\"/> "
+    },
+    {
+      "line": 19,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <param name=\"gyro_frame_id\"      type=\"string\" value=\"gyro_link\"/> "
+    },
+    {
+      "line": 20,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <param name=\"car_mode\"           type=\"string\" value=\"$(arg car_mode)\"/>"
+    },
+    {
+      "line": 21,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <!-- 里程计修正参数，对来自运动底盘的速度信息进行手动修正 -->"
+    },
+    {
+      "line": 22,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <param name=\"odom_x_scale\"      type=\"double\" value=\"1.0\"/> "
+    },
+    {
+      "line": 23,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <param name=\"odom_y_scale\"      type=\"double\" value=\"1.0\"/> "
+    },
+    {
+      "line": 24,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <param name=\"odom_z_scale_positive\"      type=\"double\" value=\"1.0\"/> "
+    },
+    {
+      "line": 25,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <param name=\"odom_z_scale_negative\"      type=\"double\" value=\"1.0\"/> "
+    },
+    {
+      "line": 26,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": ""
+    },
+    {
+      "line": 27,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": ""
+    },
+    {
+      "line": 28,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <!-- 如果开启了超声波避障功能，则订阅超声波避障速度 -->"
+    },
+    {
+      "line": 29,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <remap if=\"$(arg Ultrasonic_Avoid)\" from=\"cmd_vel\" to=\"change_cmd_vel\"/>"
+    },
+    {
+      "line": 30,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <!-- 如果开启了平滑功能，则订阅平滑速度 -->"
+    },
+    {
+      "line": 31,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <remap if=\"$(arg smoother)\" from=\"cmd_vel\" to=\"smoother_cmd_vel\"/>"
+    },
+    {
+      "line": 32,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": ""
+    },
+    {
+      "line": 33,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <!-- 如果使用轮趣N系列、H系列的惯导、GNSS/RTK模块，对板载IMU话题进行重命名，避免相关节点订阅板载IMU话题 -->"
+    },
+    {
+      "line": 34,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <remap if=\"$(arg use_N_series_IMU)\" from=\"imu\" to=\"imu_on_board\"/>"
+    },
+    {
+      "line": 35,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <remap if=\"$(arg use_H_series_IMU)\" from=\"imu\" to=\"imu_on_board\"/>"
+    },
+    {
+      "line": 36,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  </node>"
+    },
+    {
+      "line": 37,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": ""
+    },
+    {
+      "line": 38,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <!-- 如果使用轮趣N系列的惯导、H系列的惯导、GNSS/RTK模块，启动相关launch文件，该节点发布的IMU话题名称就是【/imu】 -->"
+    },
+    {
+      "line": 39,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <include if=\"$(arg use_N_series_IMU)\" "
+    },
+    {
+      "line": 40,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    file=\"$(find fdilink_ahrs)/launch/ahrs_data.launch\" >"
+    },
+    {
+      "line": 41,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  </include>"
+    },
+    {
+      "line": 42,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <include if=\"$(arg use_H_series_IMU)\" "
+    },
+    {
+      "line": 43,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    file=\"$(find yesense_imu)/launch/yesense_ahrs.launch\" >"
+    },
+    {
+      "line": 44,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  </include>"
+    },
+    {
+      "line": 45,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <include if=\"$(arg use_wheeltec_gnss)\" "
+    },
+    {
+      "line": 46,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    file=\"$(find wheeltec_gps_driver)/launch/wheeltec_nmea_driver.launch\" >"
+    },
+    {
+      "line": 47,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  </include>  "
+    },
+    {
+      "line": 48,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": ""
+    },
+    {
+      "line": 49,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <!-- 如果开启了超声波避障功能，则运行避障功能包 -->"
+    },
+    {
+      "line": 50,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <node if=\"$(arg Ultrasonic_Avoid)\" pkg=\"turn_on_wheeltec_robot\" type=\"supersonic_avoid.py\" output=\"screen\" name=\"avoid\">"
+    },
+    {
+      "line": 51,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <param name=\"start_avoid\"  value=\"$(arg start_avoid)\"/>"
+    },
+    {
+      "line": 52,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <param name=\"start_avoidLR\" value=\"$(arg start_avoidLR)\"/>"
+    },
+    {
+      "line": 53,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    <param name=\"car_mode\"     type=\"string\" value=\"$(arg car_mode)\"/> "
+    },
+    {
+      "line": 54,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  </node>"
+    },
+    {
+      "line": 55,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": ""
+    },
+    {
+      "line": 56,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <!-- 如果开启了速度平滑功能，则运行速度平滑功能包 -->"
+    },
+    {
+      "line": 57,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  <include if=\"$(arg smoother)\" "
+    },
+    {
+      "line": 58,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "    file=\"$(find turn_on_wheeltec_robot)/launch/include/velocity_smoother.launch\" >"
+    },
+    {
+      "line": 59,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "  </include>"
+    },
+    {
+      "line": 60,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": ""
+    },
+    {
+      "line": 61,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car2_base_source.tar.gz!launch/include/base_serial.launch",
+      "text": "</launch>"
+    },
+    {
+      "line": 69,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "    def read_chunk(self):"
+    },
+    {
+      "line": 70,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        \"\"\"Wait for one byte, then drain only bytes already buffered."
+    },
+    {
+      "line": 71,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": ""
+    },
+    {
+      "line": 72,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        Asking pyserial for the full configured read size with a timeout makes"
+    },
+    {
+      "line": 73,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        it wait for that size or the timeout.  At 50 Hz this groups several"
+    },
+    {
+      "line": 74,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        complete frames into a burst and gives them nearly identical ROS"
+    },
+    {
+      "line": 75,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        timestamps.  Waiting for one byte preserves the reconnect-friendly"
+    },
+    {
+      "line": 76,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        timeout while draining the immediately available remainder keeps"
+    },
+    {
+      "line": 77,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        latency low."
+    },
+    {
+      "line": 78,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        \"\"\""
+    },
+    {
+      "line": 79,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        data = self.serial_port.read(1)"
+    },
+    {
+      "line": 80,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        if not data or self.read_size == 1:"
+    },
+    {
+      "line": 81,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "            return data"
+    },
+    {
+      "line": 82,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": ""
+    },
+    {
+      "line": 83,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        waiting = self.serial_port.inWaiting()"
+    },
+    {
+      "line": 84,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        if waiting > 0:"
+    },
+    {
+      "line": 85,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "            data += self.serial_port.read(min(waiting, self.read_size - 1))"
+    },
+    {
+      "line": 86,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        return data"
+    },
+    {
+      "line": 87,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": ""
+    },
+    {
+      "line": 88,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "    def publish_frame(self, frame):"
+    },
+    {
+      "line": 89,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        message = UwbRangeArray()"
+    },
+    {
+      "line": 90,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        message.header.stamp = rospy.Time.now()"
+    },
+    {
+      "line": 91,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        message.header.frame_id = self.frame_id"
+    },
+    {
+      "line": 92,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        message.tag_id = self.node_prefix + str(frame.node_id)"
+    },
+    {
+      "line": 93,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": ""
+    },
+    {
+      "line": 94,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        for node in frame.measurements:"
+    },
+    {
+      "line": 95,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "            measurement = UwbRange()"
+    },
+    {
+      "line": 96,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "            measurement.anchor_id = self.node_prefix + str(node.node_id)"
+    },
+    {
+      "line": 97,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "            measurement.range = node.distance_m"
+    },
+    {
+      "line": 98,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "            measurement.quality = float(\"nan\")"
+    },
+    {
+      "line": 99,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "            message.ranges.append(measurement)"
+    },
+    {
+      "line": 100,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": ""
+    },
+    {
+      "line": 101,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        self.publisher.publish(message)"
+    },
+    {
+      "line": 102,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": ""
+    },
+    {
+      "line": 103,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "    def run(self):"
+    },
+    {
+      "line": 104,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "        while not rospy.is_shutdown():"
+    },
+    {
+      "line": 105,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "            try:"
+    },
+    {
+      "line": 106,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "                if self.serial_port is None or not self.serial_port.isOpen():"
+    },
+    {
+      "line": 107,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "                    self.open()"
+    },
+    {
+      "line": 108,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": ""
+    },
+    {
+      "line": 109,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "                data = self.read_chunk()"
+    },
+    {
+      "line": 110,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "                for frame in self.parser.feed(data):"
+    },
+    {
+      "line": 111,
+      "source": "uwb_field_20261024/setup_evidence_20261024_030824/car1_uwb_source_20261024_044515.tar.gz!uwb_linktrack_driver.py",
+      "text": "                    self.publish_frame(frame)"
+    }
+  ],
+  "source_deployment_limits": [
+    "Car2 vendor source not bound to running binary",
+    "Car1 base source and deployed nlink_parser source not found in registered archive",
+    "NTP snapshots are from Oct24, not dynamic Oct25 offset measurements"
+  ],
+  "T10_logs": [
+    {
+      "relative_path": "uwb_field_20261025/car_logs/car1/T10_motion_retry_20261025_184808.log",
+      "sha256": "c2c3a5d6d96dd75e7c3dbd05b20326fe9b9527c5c9dfc61a400b43b7811c4889",
+      "text": "Car1 forward 1.00 m at 0.045 m/s (odom feedback)\nReady: holding zero velocity for 5 s before forward motion.\nStopped: odom projected distance 0.977 m; lateral 0.026 m\nCompleted according to odom feedback; measure antenna endpoint.\n",
+      "limitation": "control completion/operator notes, not independent initialization or time calibration"
+    },
+    {
+      "relative_path": "uwb_field_20261025/bags/T10_C2static_C1straight_repeat1_retry_20261025_184755.bag.notes.txt",
+      "sha256": "1accc38107d31eb896e982aa46dedba718a977d2002ded1b270aea04b5954848",
+      "text": "experiment: T10_C2static_C1straight_repeat1_retry\nstart_antenna_distance_m: 1.75\nstart_distance_source: carried_forward_from_T09_endpoint\nmotion: Car1_forward_1m_zero_angular_command\nspeed_mps: 0.045\nreason_for_retry: Car1_base_node_restarted_after_connection_refused\n",
+      "limitation": "control completion/operator notes, not independent initialization or time calibration"
+    }
+  ],
+  "new_ros_or_archive_code_executed": false
+}

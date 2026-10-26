@@ -1,0 +1,92 @@
+{
+  "car1": {
+    "selected_source_record": {
+      "vehicle_id": "car1",
+      "source_file_sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+      "topic": "/car1/odom",
+      "record_index": 3,
+      "header_epoch_ns": 1792925284331894800,
+      "receive_epoch_ns": 1792925285431505126,
+      "frame_id": "car1/odom",
+      "child_frame_id": "car1/base_footprint"
+    },
+    "record_selection": "first arrived own-car odometry in successful retry; identity selected, actual room pose unestablished",
+    "adopted_as_actual_room_initialization": false,
+    "actual_initial_antenna_xy_room_m": null,
+    "actual_initial_body_yaw_room_rad": null,
+    "reason": "no independent actual pose at this record; nominal start and endpoint cannot establish it",
+    "source_pose_raw": {
+      "position_x": "0.0",
+      "position_y": "0.0",
+      "position_z": "0.0",
+      "position_z_semantics": "source_odom_z_not_antenna_height",
+      "orientation_x": "0.0",
+      "orientation_y": "0.0",
+      "orientation_z": "0.0",
+      "orientation_w": "1.0",
+      "linear_x": "0.0",
+      "linear_y": "0.0",
+      "linear_z": "0.0",
+      "angular_x": "0.0",
+      "angular_y": "0.0",
+      "angular_z": "0.0"
+    },
+    "conditional_video_candidate": {
+      "video_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+      "mapping_id": "T10_pts_to_receive_events_v1",
+      "mapping_status": "event_alignment_candidate_not_accepted",
+      "frame_index": 749,
+      "pts_ticks": 14980,
+      "time_base_num": 1,
+      "time_base_den": 600,
+      "status": "not_adopted_for_pose_binding",
+      "time_uncertainty_ns": null,
+      "reason": "nearest PTS under event candidate only; not independent synchronization"
+    }
+  },
+  "car2": {
+    "selected_source_record": {
+      "vehicle_id": "car2",
+      "source_file_sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+      "topic": "/car2/odom",
+      "record_index": 117,
+      "header_epoch_ns": 1792925285157573158,
+      "receive_epoch_ns": 1792925285433124538,
+      "frame_id": "car2/odom",
+      "child_frame_id": "car2/base_footprint"
+    },
+    "record_selection": "first arrived own-car odometry in successful retry; identity selected, actual room pose unestablished",
+    "adopted_as_actual_room_initialization": false,
+    "actual_initial_antenna_xy_room_m": null,
+    "actual_initial_body_yaw_room_rad": null,
+    "reason": "no independent actual pose at this record; nominal start and endpoint cannot establish it",
+    "source_pose_raw": {
+      "position_x": "-0.13334991037845612",
+      "position_y": "-1.957391619682312",
+      "position_z": "-3.213017463684082",
+      "position_z_semantics": "driver_yaw_related_not_height",
+      "orientation_x": "0.0",
+      "orientation_y": "-0.0",
+      "orientation_z": "-0.9993623798343106",
+      "orientation_w": "-0.03570481440790504",
+      "linear_x": "0.0",
+      "linear_y": "0.0",
+      "linear_z": "0.0",
+      "angular_x": "0.0",
+      "angular_y": "0.0",
+      "angular_z": "0.0"
+    },
+    "conditional_video_candidate": {
+      "video_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+      "mapping_id": "T10_pts_to_receive_events_v1",
+      "mapping_status": "event_alignment_candidate_not_accepted",
+      "frame_index": 749,
+      "pts_ticks": 14980,
+      "time_base_num": 1,
+      "time_base_den": 600,
+      "status": "not_adopted_for_pose_binding",
+      "time_uncertainty_ns": null,
+      "reason": "nearest PTS under event candidate only; not independent synchronization"
+    }
+  }
+}
