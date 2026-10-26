@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "scope": "field",
+  "state_definition": "[base_footprint x_room_m,y_room_m,yaw_room_rad] per vehicle; z not estimated; planar yaw rotation only",
+  "odom_only_frame": "source_odometry",
+  "initialization_binding": "first_accepted_odometry_measurement",
+  "peer_source_vehicle": "car1",
+  "peer_correlation_policy": "only car1->car2 updates joint state; reverse kept in observation audit, never averaged or counted as an independent simultaneous factor",
+  "range_timing_policy": "individual mapped header time; bounded constant-body-twist projection from each latest arrived odometry anchor; reject older or unsupported measurements",
+  "publication_policy": "hold per-vehicle last odometry-anchored posterior; publish receipt time and state measurement time separately",
+  "publish_period_ns": 100000000,
+  "max_publish_age_ns": 200000000,
+  "max_extrapolation_ns": 60000000,
+  "min_range_spacing_ns": 200000000,
+  "geometry_window_ns": 1000000000,
+  "max_events": 2000000,
+  "anchors_xyz_m": {
+    "status": "provided",
+    "value": {
+      "node_10": [
+        3.26,
+        0.1,
+        2.355
+      ],
+      "node_2": [
+        5.28,
+        5.16,
+        2.755
+      ],
+      "node_3": [
+        5.28,
+        2.86,
+        2.355
+      ],
+      "node_8": [
+        0.1,
+        2.41,
+        2.3
+      ]
+    },
+    "source": "geometry.json anchors.xyz_m; historical measured mounts reused, uncertainty unknown",
+    "source_kind": "operator_record"
+  },
+  "weights": {
+    "wall_sigma_m": {
+      "status": "provided",
+      "value": 0.2,
+      "source": "predeclared uncalibrated fixed baseline variance; no field or holdout error fitting",
+      "source_kind": "engineering"
+    },
+    "peer_sigma_m": {
+      "status": "provided",
+      "value": 0.25,
+      "source": "predeclared uncalibrated fixed baseline variance; no field or holdout error fitting",
+      "source_kind": "engineering"
+    },
+    "odom_xy_sigma_sqrt_s": {
+      "status": "provided",
+      "value": 0.04,
+      "source": "predeclared uncalibrated fixed baseline variance; no field or holdout error fitting",
+      "source_kind": "engineering"
+    },
+    "odom_yaw_sigma_sqrt_s": {
+      "status": "provided",
+      "value": 0.025,
+      "source": "predeclared uncalibrated fixed baseline variance; no field or holdout error fitting",
+      "source_kind": "engineering"
+    }
+  },
+  "vehicles": {
+    "car1": {
+      "initial_room_pose": {
+        "status": "unknown",
+        "value": null,
+        "source": "no independently established base_footprint start pose",
+        "source_kind": "engineering"
+      },
+      "initial_covariance_diagonal": {
+        "status": "provided",
+        "value": [
+          0.0016,
+          0.0016,
+          0.0009
+        ],
+        "source": "predeclared engineering prior variance; only meaningful with provided pose",
+        "source_kind": "engineering"
+      },
+      "antenna_body_xyz_m": {
+        "status": "unknown",
+        "value": null,
+        "source": "geometry.json odometry_limits.base_footprint_to_antenna not independently established; marker offsets are not this transform",
+        "source_kind": "engineering"
+      },
+      "base_height_m": {
+        "status": "unknown",
+        "value": null,
+        "source": "unknown base height; antenna height is not base height",
+        "source_kind": "engineering"
+      },
+      "odom_clock": {
+        "status": "unknown",
+        "field": "header_epoch_ns",
+        "source_origin_ns": null,
+        "destination_origin_ns": null,
+        "rate_numerator": null,
+        "rate_denominator": null,
+        "uncertainty_ns": null,
+        "source": "not calibrated; do not infer constant delay from receive-header",
+        "source_clock_id": "car1:odom_header",
+        "destination_clock_id": "bag_receive_epoch_ns"
+      },
+      "range_clock": {
+        "status": "unknown",
+        "field": "header_epoch_ns",
+        "source_origin_ns": null,
+        "destination_origin_ns": null,
+        "rate_numerator": null,
+        "rate_denominator": null,
+        "uncertainty_ns": null,
+        "source": "not calibrated; do not infer constant delay from receive-header",
+        "source_clock_id": "car1:uwb_header",
+        "destination_clock_id": "bag_receive_epoch_ns"
+      }
+    },
+    "car2": {
+      "initial_room_pose": {
+        "status": "unknown",
+        "value": null,
+        "source": "no independently established base_footprint start pose",
+        "source_kind": "engineering"
+      },
+      "initial_covariance_diagonal": {
+        "status": "provided",
+        "value": [
+          0.0016,
+          0.0016,
+          0.0009
+        ],
+        "source": "predeclared engineering prior variance; only meaningful with provided pose",
+        "source_kind": "engineering"
+      },
+      "antenna_body_xyz_m": {
+        "status": "unknown",
+        "value": null,
+        "source": "geometry.json odometry_limits.base_footprint_to_antenna not independently established; marker offsets are not this transform",
+        "source_kind": "engineering"
+      },
+      "base_height_m": {
+        "status": "unknown",
+        "value": null,
+        "source": "unknown base height; antenna height is not base height",
+        "source_kind": "engineering"
+      },
+      "odom_clock": {
+        "status": "unknown",
+        "field": "header_epoch_ns",
+        "source_origin_ns": null,
+        "destination_origin_ns": null,
+        "rate_numerator": null,
+        "rate_denominator": null,
+        "uncertainty_ns": null,
+        "source": "not calibrated; do not infer constant delay from receive-header",
+        "source_clock_id": "car2:odom_header",
+        "destination_clock_id": "bag_receive_epoch_ns"
+      },
+      "range_clock": {
+        "status": "unknown",
+        "field": "header_epoch_ns",
+        "source_origin_ns": null,
+        "destination_origin_ns": null,
+        "rate_numerator": null,
+        "rate_denominator": null,
+        "uncertainty_ns": null,
+        "source": "not calibrated; do not infer constant delay from receive-header",
+        "source_clock_id": "car2:uwb_header",
+        "destination_clock_id": "bag_receive_epoch_ns"
+      }
+    }
+  },
+  "experiment_notes": {
+    "T08": [
+      "room start only nominal; base/antenna relation not established"
+    ],
+    "T10": [
+      "start distance carried from T09; not a new base pose survey"
+    ],
+    "T12": [
+      "actual_initial_XY_unknown: separate blocker; do not invert terminal points or copy T13"
+    ],
+    "T14": [
+      "actual occlusion material/geometry/times unknown; no NLOS labels"
+    ]
+  },
+  "master_clock_id": "bag_receive_epoch_ns",
+  "body_twist_convention": "x forward, y left, z up; yaw/omega CCW rad; twist in vehicle body frame",
+  "range_geometry": "Euclidean 3D antenna-to-anchor or antenna-to-antenna slant distance; planar yaw only; fixed provided base height and rotated rigid lever arm"
+}
