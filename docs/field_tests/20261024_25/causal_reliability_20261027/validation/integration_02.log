@@ -1,0 +1,27 @@
+test_80_planned_rows_60_unique_and_duplicate_inputs_really_identical (test_integration.CausalityAndFaultTests) ... ok
+test_all_states_finite_symmetric_psd_with_turn_wrap_levers_and_noise (test_integration.CausalityAndFaultTests) ... ok
+test_estimator_has_no_truth_labels_or_simulator_import (test_integration.CausalityAndFaultTests) ... ok
+test_fault_timing_sign_and_seed_identical_pairing (test_integration.CausalityAndFaultTests) ... ok
+test_future_append_and_mutation_do_not_change_past_outputs (test_integration.CausalityAndFaultTests) ... ok
+test_holdout_library_gate_rejects_before_any_processing (test_integration.CausalityAndFaultTests) ... ok
+test_raw_bridge_duplicate_stale_async_rejections_precede_policy (test_integration.CausalityAndFaultTests) ... ok
+test_fingerprint_changes_for_source_or_protocol_changes_and_output_stays_external (test_integration.EvidenceTests) ... ok
+test_independent_reader_checks_real_rows_and_detects_hash_tampering (test_integration.EvidenceTests) ... ok
+test_verifier_does_not_import_generator_engine_or_evaluator (test_integration.EvidenceTests) ... ok
+test_all_peer_candidates_match_independent_when_no_peer (test_integration.OriginalPathTests) ... ok
+test_default_none_reproduces_original_all_three_methods_bitwise (test_integration.OriginalPathTests) ... ok
+test_instances_do_not_retain_gate_or_shadow_across_runs (test_integration.OriginalPathTests) ... ok
+test_shadow_matches_independent_after_every_event_without_shared_memory (test_integration.OriginalPathTests) ... ok
+test_cap_scales_actual_gain_and_yaw_uses_scaled_gain_joseph (test_integration.PolicySemanticsTests) ... ok
+test_gate_quarantine_three_bad_reopens_four_good_per_direction (test_integration.PolicySemanticsTests) ... ok
+test_gate_rejection_consumes_shared_rate_slot_not_extra_good_samples (test_integration.PolicySemanticsTests) ... ok
+test_huber_on_same_six_state_filter_increases_only_peer_effective_R (test_integration.PolicySemanticsTests) ... ok
+test_nonfeedback_output_is_null_covariance_and_expires_without_state_reset (test_integration.PolicySemanticsTests) ... ok
+test_reverse_direction_fault_is_unconsumed_negative_control (test_integration.PolicySemanticsTests) ... ok
+test_shadow_control_shares_nonfeedback_hold_policy (test_integration.PolicySemanticsTests) ... ok
+test_wall_rank_is_geometry_only_and_can_be_weak (test_integration.PolicySemanticsTests) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 1.465s
+
+OK
