@@ -18,7 +18,7 @@
 
 **验证**：15项新增接口/模板测试及47项原baseline测试通过；35个单因素合成条件完成，观测SHA、单叶变更和车辆隔离检查通过。四包模板实际编译返回预期的BLOCKED，已提供高度后剩余真实未知项仍在。没有未解决的执行失败；没有留出定位评价或现场精度结论。[测试/来源/矩阵证据](results/source_versions.json)。
 
-实际执行命令（同一隔离venv；所有输出为新的Git外目录）：
+完整执行argv见[COMMANDS.json](results/COMMANDS.json)，绝对路径仅为本机来源记录，不是共享数据协议。实际执行命令（同一隔离venv；所有输出为新的Git外目录）：
 
 ```bash
 "$PYTHON" -m unittest discover -s tools/field_20261024_25/parameter_clock_prep -p 'test_*.py' -v
@@ -31,4 +31,4 @@
 
 原PR45标准化输出已按登记产物哈希验证后只读使用；现场原归档SHA也实际重算，并只读提取源码/时钟文本。未重建标准化/QC或重跑PR46实包回放。审计/敏感性正式运行提交为 `510bcfae781623c2596a694a9c905eee7104764b`；后续编译CLI/可选时钟group与测试来源见[阶段哈希](results/source_versions.json)。之后的提交完善接口校验和报告，未改变已运行条件、观测或参数。
 
-本次工作树 `/workspace/work/uwb-parameter-clock-prep-20261026`；日志与完整结果 `/workspace/work/uwb-parameter-clock-prep-20261026-run/`，其中`results/audit`、`results/sensitivity`、`results/compiled`保留run.json、源码/配置/输入/输出SHA及各条件诊断。归档与SHA清单放其`package/`，仅描述当前环境，不是跨窗口共享地址；紧凑证据/四包模板已纳入本目录，另一端可以直接从PR取得接口并在自身已有数据上复现。原有各端结果及旧锁均保留，不自动合并PR。总预算2小时，完成可提前结束。
+本次工作树 `/workspace/work/uwb-parameter-clock-prep-20261026`；日志与完整结果 `/workspace/work/uwb-parameter-clock-prep-20261026-run/`，其中`results/audit`、`results/sensitivity`、`results/compiled`保留run.json、源码/配置/输入/输出SHA及各条件诊断。归档与SHA清单放其`package/`，仅描述当前环境，不是跨窗口共享地址；紧凑证据/四包模板已纳入本目录，另一端可以直接从PR取得接口并在自身已有数据上复现。原有各端结果及旧锁均保留，不自动合并PR。收尾时main另合入可靠性PR47（367c053），只读[merge-tree检查](results/INTEGRATION_CHECK.json)无冲突，未修改其路径或实际merge/rebase。总预算2小时，完成可提前结束。

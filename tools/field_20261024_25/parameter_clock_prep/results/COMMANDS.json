@@ -1,0 +1,75 @@
+{
+  "paths_are_execution_provenance_not_shared_storage": true,
+  "commands": {
+    "audit": [
+      "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+      "/workspace/work/uwb-parameter-clock-prep-20261026/tools/field_20261024_25/parameter_clock_prep/audit.py",
+      "--normalized",
+      "/workspace/work/uwb-handoff-20261026/results/normalized",
+      "--data-root",
+      "/workspace/work/uwb-handoff-20261026/data",
+      "--output",
+      "/workspace/work/uwb-parameter-clock-prep-20261026-run/results/audit"
+    ],
+    "sensitivity": [
+      "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+      "/workspace/work/uwb-parameter-clock-prep-20261026/tools/field_20261024_25/parameter_clock_prep/sensitivity.py",
+      "--output",
+      "/workspace/work/uwb-parameter-clock-prep-20261026-run/results/sensitivity"
+    ],
+    "compiled/T08": [
+      "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+      "/workspace/work/uwb-parameter-clock-prep-20261026/tools/field_20261024_25/parameter_clock_prep/interface.py",
+      "--template",
+      "/workspace/work/uwb-parameter-clock-prep-20261026-run/results/audit/T08_input_template.json",
+      "--output",
+      "/workspace/work/uwb-parameter-clock-prep-20261026-run/results/compiled/T08"
+    ],
+    "compiled/T10": [
+      "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+      "/workspace/work/uwb-parameter-clock-prep-20261026/tools/field_20261024_25/parameter_clock_prep/interface.py",
+      "--template",
+      "/workspace/work/uwb-parameter-clock-prep-20261026-run/results/audit/T10_input_template.json",
+      "--output",
+      "/workspace/work/uwb-parameter-clock-prep-20261026-run/results/compiled/T10"
+    ],
+    "compiled/T12": [
+      "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+      "/workspace/work/uwb-parameter-clock-prep-20261026/tools/field_20261024_25/parameter_clock_prep/interface.py",
+      "--template",
+      "/workspace/work/uwb-parameter-clock-prep-20261026-run/results/audit/T12_input_template.json",
+      "--output",
+      "/workspace/work/uwb-parameter-clock-prep-20261026-run/results/compiled/T12"
+    ],
+    "compiled/T14": [
+      "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+      "/workspace/work/uwb-parameter-clock-prep-20261026/tools/field_20261024_25/parameter_clock_prep/interface.py",
+      "--template",
+      "/workspace/work/uwb-parameter-clock-prep-20261026-run/results/audit/T14_input_template.json",
+      "--output",
+      "/workspace/work/uwb-parameter-clock-prep-20261026-run/results/compiled/T14"
+    ],
+    "preparation_tests": [
+      "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/field_20261024_25/parameter_clock_prep",
+      "-p",
+      "test_*.py",
+      "-v"
+    ],
+    "baseline_regression": [
+      "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/field_20261024_25/causal_baselines",
+      "-p",
+      "test_*.py",
+      "-v"
+    ]
+  }
+}
