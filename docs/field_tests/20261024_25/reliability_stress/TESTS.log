@@ -1,0 +1,50 @@
+专项测试（冻结源码对应 24 项）
+test_async_transport_noiseless_constant_velocity (test_reliability.ReliabilityTests.test_async_transport_noiseless_constant_velocity) ... ok
+test_deterministic_generation_and_disjoint_seeds (test_reliability.ReliabilityTests.test_deterministic_generation_and_disjoint_seeds) ... ok
+test_direction_priority_is_fixed_and_alternates (test_reliability.ReliabilityTests.test_direction_priority_is_fixed_and_alternates) ... ok
+test_duplicate_and_bridge_never_count_twice (test_reliability.ReliabilityTests.test_duplicate_and_bridge_never_count_twice) ... ok
+test_finite_positive_ranges_only (test_reliability.ReliabilityTests.test_finite_positive_ranges_only) ... ok
+test_firewall_bound_and_shadow_invariance_under_repeated_peer (test_reliability.ReliabilityTests.test_firewall_bound_and_shadow_invariance_under_repeated_peer) ... ok
+test_future_arrival_is_not_read (test_reliability.ReliabilityTests.test_future_arrival_is_not_read) ... ok
+test_future_sample_and_old_sample_rejected (test_reliability.ReliabilityTests.test_future_sample_and_old_sample_rejected) ... ok
+test_future_stream_extension_does_not_change_prefix (test_reliability.ReliabilityTests.test_future_stream_extension_does_not_change_prefix) ... ok
+test_geometry_fault_is_removed_and_truth_not_changed (test_reliability.ReliabilityTests.test_geometry_fault_is_removed_and_truth_not_changed) ... ok
+test_huber_limits_single_spike_compared_with_fixed (test_reliability.ReliabilityTests.test_huber_limits_single_spike_compared_with_fixed) ... ok
+test_identity_and_self_peer_rejected (test_reliability.ReliabilityTests.test_identity_and_self_peer_rejected) ... ok
+test_independent_peer_invariance (test_reliability.ReliabilityTests.test_independent_peer_invariance) ... ok
+test_independent_vehicle_isolation (test_reliability.ReliabilityTests.test_independent_vehicle_isolation) ... ok
+test_integer_monotonic_cutoff (test_reliability.ReliabilityTests.test_integer_monotonic_cutoff) ... ok
+test_joint_preserves_cross_vehicle_covariance (test_reliability.ReliabilityTests.test_joint_preserves_cross_vehicle_covariance) ... ok
+test_missing_observations_predict_without_failure (test_reliability.ReliabilityTests.test_missing_observations_predict_without_failure) ... ok
+test_online_configuration_has_no_truth_fault_or_seed (test_reliability.ReliabilityTests.test_online_configuration_has_no_truth_fault_or_seed) ... ok
+test_quarantine_requires_good_observations_to_reopen (test_reliability.ReliabilityTests.test_quarantine_requires_good_observations_to_reopen) ... ok
+test_reciprocal_late_is_not_second_factor (test_reliability.ReliabilityTests.test_reciprocal_late_is_not_second_factor) ... ok
+test_recovery_requires_full_dwell_and_reports_censoring (test_reliability.ReliabilityTests.test_recovery_requires_full_dwell_and_reports_censoring) ... ok
+test_same_budget_every_method (test_reliability.ReliabilityTests.test_same_budget_every_method) ... ok
+test_summary_strict_json_and_all_seed_blocks_retained (test_reliability.ReliabilityTests.test_summary_strict_json_and_all_seed_blocks_retained) ... ok
+test_unknown_clock_blocks_observation (test_reliability.ReliabilityTests.test_unknown_clock_blocks_observation) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.589s
+
+OK
+
+PR45未修改适配器回归（13 项）
+test_collinear_local_geometry_is_reported_degraded (test_comparison_adapter.AdapterTests.test_collinear_local_geometry_is_reported_degraded) ... ok
+test_directional_peer_is_one_factor_and_changes_joint (test_comparison_adapter.AdapterTests.test_directional_peer_is_one_factor_and_changes_joint) ... ok
+test_field_configuration_cannot_be_assumed (test_comparison_adapter.AdapterTests.test_field_configuration_cannot_be_assumed) ... ok
+test_future_stale_bridge_and_ambiguous_are_not_consumed (test_comparison_adapter.AdapterTests.test_future_stale_bridge_and_ambiguous_are_not_consumed) ... ok
+test_identity_and_duplicate_trace_rows_are_rejected (test_comparison_adapter.AdapterTests.test_identity_and_duplicate_trace_rows_are_rejected) ... ok
+test_independent_car1_does_not_change_with_car2_wall_data (test_comparison_adapter.AdapterTests.test_independent_car1_does_not_change_with_car2_wall_data) ... ok
+test_independent_is_invariant_to_peer_value (test_comparison_adapter.AdapterTests.test_independent_is_invariant_to_peer_value) ... ok
+test_lever_arm_rotation_and_slant_geometry (test_comparison_adapter.AdapterTests.test_lever_arm_rotation_and_slant_geometry) ... ok
+test_missing_links_predict_and_report_degradation (test_comparison_adapter.AdapterTests.test_missing_links_predict_and_report_degradation) ... ok
+test_noiseless_fixture_reproducible_all_methods (test_comparison_adapter.AdapterTests.test_noiseless_fixture_reproducible_all_methods) ... ok
+test_odom_alignment_reverse_and_yaw_wrap (test_comparison_adapter.AdapterTests.test_odom_alignment_reverse_and_yaw_wrap) ... ok
+test_odometry_never_interpolates_future_and_ignores_driver_z (test_comparison_adapter.AdapterTests.test_odometry_never_interpolates_future_and_ignores_driver_z) ... ok
+test_one_wall_factor_stays_marked_underconstrained (test_comparison_adapter.AdapterTests.test_one_wall_factor_stays_marked_underconstrained) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.082s
+
+OK

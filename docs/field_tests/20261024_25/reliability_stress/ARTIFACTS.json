@@ -1,0 +1,35 @@
+{
+  "file_name": "UWB_reliability_stress_20261026_baf181.tar.gz",
+  "size_bytes": 142385029,
+  "sha256": "8754e35d967220b141e0699eb171c860345579c5da3b5de833d16d9d9887d366",
+  "indexed_files": 4584,
+  "created_elapsed_s": 7.2981756669978495,
+  "schema_version": 1,
+  "status": "DONE",
+  "library_file_id": "libfile_2f26d1af266081919fc177f9673a8402",
+  "library_path": "/UWB_reliability_stress_20261026_baf181.tar.gz",
+  "download_url": "https://chatgpt.com/library?file_id=libfile_2f26d1af266081919fc177f9673a8402&account_id=personal",
+  "source_freeze_commit": "62f1a1368596c6729365a8f55f9926c05ae113f2",
+  "validation_run_sha256": "2218afa1b76179819da2e965f7fbe5f5335807e149677836d41429b8d722df39",
+  "payload_root": "uwb-reliability-20261026-baf181",
+  "integrity_index": "ARCHIVE_INDEX.json",
+  "source_checkpoints": "source_checkpoints.bundle",
+  "reporting_provenance": "reporting/run.json",
+  "reporting_snapshot_note": "archive contains compact report before archive identity was known; this ARTIFACTS.json is outside the archive to avoid a recursive hash",
+  "contains": [
+    "all generated observations, Odom and evaluation-only truth",
+    "all five-method estimates and diagnostics for every seed",
+    "4 successful smoke,72 development,480 validation trials",
+    "failed launches and original failed smoke outputs",
+    "independent output readback runs",
+    "source/config snapshots and immutable checkpoint bundle",
+    "actual commands, environment, elapsed time and SHA256 manifests"
+  ],
+  "field_assets_used": [],
+  "holdouts_untouched": [
+    "T09",
+    "T11",
+    "T13",
+    "T15"
+  ]
+}

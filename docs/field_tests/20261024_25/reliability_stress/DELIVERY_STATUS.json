@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-26T06:43:22.777584+00:00",
+  "status": "DONE",
+  "blocked_stage": null,
+  "local_report_commit": "64e187a0638d2ab4164da77901547fedf46588bd",
+  "source_freeze_commit": "62f1a1368596c6729365a8f55f9926c05ae113f2",
+  "last_verified_remote_branch_head": "06b535402a460ced9cc09e6ad613ba4b313d717d",
+  "branch": "analysis/reliability-stress-20261026-baf181",
+  "pull_request_url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/47",
+  "automatic_review_rejection": {
+    "action": "github.create_tree: add nine compact report files on own branch",
+    "reason": "Reviewer treated latest user question as a status-only request and did not accept publication authorization from prior task context",
+    "attempts": 1,
+    "retry_performed": true,
+    "resolved_by": "Explicit user authorization in the next turn"
+  },
+  "next_step": "Coordinator reviews draft PR47 and synthetic ablation evidence; real-data calibration and reference acceptance remain separate. Do not merge automatically or tune against validation.",
+  "completed": [
+    "24 dedicated tests and 13 PR45 adapter tests",
+    "4 successful smoke, 72 development, 480 validation trials",
+    "independent validation readback: 1156800 estimate rows, 14400 metrics, 231360 bound checks",
+    "archive saved and 4584 member hashes verified"
+  ],
+  "archive_library_file_id": "libfile_2f26d1af266081919fc177f9673a8402",
+  "archive_sha256": "8754e35d967220b141e0699eb171c860345579c5da3b5de833d16d9d9887d366",
+  "publishing_authorization": {
+    "user_instruction": "允许发布并创建pr",
+    "received_date": "2026-10-26",
+    "scope": "publish completed results to own branch and create draft PR; do not merge"
+  },
+  "pull_request_number": 47,
+  "pull_request_draft": true,
+  "pull_request_merged": false,
+  "published_report_commit": "06b535402a460ced9cc09e6ad613ba4b313d717d",
+  "published_at_utc": "2026-10-26T06:55:28.987713+00:00",
+  "publication_provenance": "GitHub API commit has exactly the same tree as local authorized checkpoint be1f41fa4f5f4ca684bba3ca8d0103d931bdc34e; final delivery metadata is a separate descendant commit.",
+  "main_at_publication": "a82ec421f5e93e9a4432f508f54a037cccc8f0a1",
+  "main_changes_reviewed": "PR46 added causal_baselines/ only; no file overlap or new numerical dependency."
+}
