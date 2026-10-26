@@ -1,0 +1,32 @@
+{
+  "status": "DONE",
+  "all_passed": true,
+  "packet": {
+    "status": "DONE",
+    "packet_run_sha256": "0378a2f9f5ffd9b7ade3697f529d5b9e47c496cdc36a66ae23fe06c2e6460f21",
+    "bag_sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+    "normalization_rebuilt": false,
+    "normalization_root_kind": "verified_T10_selection_from_PR45"
+  },
+  "selected_rows_compared_to_originals": {
+    "odom.csv": 2306,
+    "ranges.csv": 57090,
+    "frames.csv": 11512,
+    "imu.csv": 2313,
+    "commands.csv": 666,
+    "marker_observations.csv": 388
+  },
+  "PTS_rows_verified": 2903,
+  "initial_record_identities_verified": 2,
+  "targeted_video_PTS_verified": 8,
+  "old_T10_source_replay": {
+    "rows": 3426,
+    "source_pose_rows_verified": 1140,
+    "blocked_rows_verified": 2284,
+    "valid_source_rows": 1140
+  },
+  "strict_unknowns_and_nulls_verified": true,
+  "new_estimator_runs": 0,
+  "holdout_replay_or_error_evaluation": false,
+  "field_accuracy_evaluated": false
+}

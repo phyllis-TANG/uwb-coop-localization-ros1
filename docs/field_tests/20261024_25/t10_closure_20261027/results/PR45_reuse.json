@@ -1,0 +1,55 @@
+{
+  "status": "DONE",
+  "parent_run_sha256": "b7448d932d8c92054b3147d3add1bb755cf39e50f292c8e2151e5c89ea99c11a",
+  "outputs_checked": [
+    {
+      "relative_path": "commands.csv",
+      "sha256": "fb126ac1578589d0ec4d267d666095278693fd0f9780c7b383ede3b03974e8d9"
+    },
+    {
+      "relative_path": "counts.json",
+      "sha256": "732ee4249e4491d1431d406b7a4a45e691dea6154cd3096dea974ffd07a1af4a"
+    },
+    {
+      "relative_path": "frames.csv",
+      "sha256": "146b849c81b340ab9021439db1ebe93c95f9db5f56fe2a714246db345d862696"
+    },
+    {
+      "relative_path": "imu.csv",
+      "sha256": "6f24987ee27e918d2cee59ba5fe3aa8bd3809189bc679d2940ee10c42f6966b8"
+    },
+    {
+      "relative_path": "normalization_report.md",
+      "sha256": "46861fd286fe336250b916ce28ca00599e6e51431b341c141ef12bd7c0d40f23"
+    },
+    {
+      "relative_path": "odom.csv",
+      "sha256": "faeaae73bbdfb33d95ca14a7ad58efaa291e72de389d7cfd74450f42cc439e1c"
+    },
+    {
+      "relative_path": "python_packages.txt",
+      "sha256": "d14743fdfb9247ceada5f16be898a84a5bcb8cb1736da203f90e955b446ed177"
+    },
+    {
+      "relative_path": "ranges.csv",
+      "sha256": "b5010808447b1694ce8076a648ba2a3ed1132e7d52ea900efef2fb83d95cc220"
+    },
+    {
+      "relative_path": "time_diagnostics.json",
+      "sha256": "7f10e5d761e5394a8c6db88602b5f608c103357398bd87fe0416b40ee6ba9e9f"
+    }
+  ],
+  "current_manifest_sha256": "53220244947eb712e7a2912783b8721aae0eb365de656cf248155f3740867cd4",
+  "current_geometry_sha256": "bd59d654a6794cc61a5680816d479a7ae3a4b5a0376a3d5ebd517b6c3842266c",
+  "manifest_changed_fields": [
+    "assets",
+    "coordinator_reconciliation",
+    "motion_videos",
+    "pending_qc_video_assets",
+    "pending_videos"
+  ],
+  "formal_bags_unchanged": true,
+  "normalization_executed": false,
+  "old_run_mutated": false,
+  "policy": "verify registered bytes plus explicit media-only compatibility; do not rewrite run.json"
+}

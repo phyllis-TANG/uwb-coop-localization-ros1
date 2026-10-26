@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "experiment_id": "T10",
+  "bag_attempt": "successful_retry_184755_only",
+  "baseline_policy": "unchanged PR46/48; execute room fusion only when strict inputs are complete",
+  "existing_source_odometry": "verify and reuse PR46 T10 output; do not repeat the same replay",
+  "exploration_policy": "no numeric exploration without a defensible physical base origin, actual initialization and sampling-clock convention; no zero/default substitutions",
+  "video_review": {
+    "method": "PyAV sequential decode in memory; select existing observation frames by integer PTS; overlay PR49 corners without re-detection",
+    "sample_targets_s": [0.5, 24.5, 30.0, 35.5, 45.0, 59.5, 65.0, 75.0],
+    "output": "one reduced contact sheet, CSV/JSON; never all 4K frames",
+    "media_integrity_recheck": false,
+    "evidence_and_targeted_review_max_seconds": 5400
+  },
+  "reference_policy": "keep not_accepted unless new independent spatial/time evidence resolves prerequisites; qualitative pixel-stage observations may be reported separately",
+  "holdout_replay": false,
+  "field_accuracy_metrics": null
+}

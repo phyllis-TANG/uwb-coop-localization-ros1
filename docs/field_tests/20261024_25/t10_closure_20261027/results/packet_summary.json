@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "experiment_id": "T10",
+  "bag_sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+  "mov_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+  "table_rows": {
+    "odom.csv": 2306,
+    "ranges.csv": 57090,
+    "frames.csv": 11512,
+    "imu.csv": 2313,
+    "commands.csv": 666,
+    "marker_observations.csv": 388
+  },
+  "normalization_rebuilt": false,
+  "new_estimator_runs": 0,
+  "table_lineage": "exact T10 rows selected from verified PR45 tables; packet is NOT a new normalization root",
+  "old_run_lineage": "reused_PR46_T10 contains exact historic bytes; see existing_T10_readback.json",
+  "reference_accepted": false,
+  "raw_bag_or_MOV_included": false
+}

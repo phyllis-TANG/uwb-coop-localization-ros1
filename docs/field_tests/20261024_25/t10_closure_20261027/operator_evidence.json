@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "source_kind": "user_evidence_clarification",
+  "source": "User answers to the three asynchronous B-end evidence questions in this task, 2026-10-26 UTC",
+  "is_new_calibration": false,
+  "mounts": {
+    "axes": "x forward, y left",
+    "car1_geometric_center_to_antenna_xy_m": [
+      0.08,
+      -0.06
+    ],
+    "car1_measurement_date": "2026-10-18",
+    "car2_corrected_geometric_center_to_antenna_xy_m": [
+      -0.12,
+      0.08
+    ],
+    "car2_correction_date": "2026-10-24",
+    "physical_base_to_geometric_center_relation": null,
+    "odom_origin_correspondence": "pending verification",
+    "uncertainty_m": null,
+    "historical_20261021_unchanged_confirmation_applicable_to_T10": null,
+    "post_T10_mounting_unchanged_confirmation": null,
+    "marker_offset_substitution_permitted": false
+  },
+  "T10_initialization": {
+    "car1_B_xy_and_minusY": "guidance, no separate successful-retry start measurement found",
+    "car2_xy_2p98_3p07": "T09 manual endpoint, instructed to keep; no new T10 start measurement",
+    "car2_plusX": "derivable from planned L, actual heading unconfirmed",
+    "car1_endpoint_antenna_xy_m": [
+      1.48,
+      2.97
+    ],
+    "endpoint_pair_distance_m": 1.52,
+    "endpoint_uncertainty_m": null,
+    "endpoint_exact_parking_binding": null,
+    "P_Q_actual_survey": null
+  },
+  "time": {
+    "20261024_timedatectl_snapshots": "present, sequential",
+    "T10_offset_drift_bounds": "not found",
+    "car1_UWB_wrapper_and_car2_base_sources": "archived, SHA available",
+    "T10_deployment_binding": "incomplete",
+    "car1_base_and_nlink_timestamp_implementation": "not found in registered archive",
+    "independent_video_ROS_event_bound": "not found",
+    "PR49_residual_as_bound": false,
+    "approved_mapping": null,
+    "total_error_bound": null
+  },
+  "raw_answers": [
+    "已有相对“近似车体几何中心”的人工测量，坐标为x前、y左：Car1：10月18日记录 [+0.08, −0.06] m，即前8cm、右6cm。Car2：10月24日现场纠正为 [−0.12, +0.08] m，即后12cm、左8cm；不要沿用旧的反号记录。10月18日测量表明确写着 odom_origin_correspondence: pending verification。因此这些不是已确认的物理base→天线外参。10月21日曾确认UWB安装一直未改变，但该确认针对当时历史记录；不能自动延伸成“T10之后安装未变”。marker→天线测量仍单独保留，不替代base偏移",
+    "T10成功重试184755的摆位：Car1天线(1.5,4)m、车头−Y：当时的操作指导，未找到成功重试前单独的新测量确认。Car2天线(2.98,3.07)m：来自T09人工终点；T10安排保持不动，用户明确要求起始间距沿用T09末值1.75m，并非重新测量。Car2朝+X：可以从计划的L形动作推算，但未找到该包实际朝向的单独确认，不能标为实测。T10已明确报告的终点：Car1天线(1.48,2.97)m，两天线间距1.52m。这些是操作员人工读数，误差未量化，尚未绑定到精确停车记录。P/Q已有指导坐标和拍摄完成报告，未找到逐点实际尺量表及量测不确定度。",
+    "保留了10月24日的vm_clock.txt、car1_clock.txt、car2_clock.txt，属于顺序执行的timedatectl状态快照；未找到10月25日T10同期的offset/drift及误差界日志。Car1 UWB驱动/raw wrapper和Car2底盘有归档源码及SHA。前者解析后取ROS时间，wrapper复制header；Car2底盘在读取、积分后另取时间发布odom。上述源码未与T10实际运行版本建立完整绑定；现有登记归档未找到Car1底盘对应源码及实际部署nlink_parser的完整版本/打戳实现。未找到具有独立时间误差界的视频／ROS共同同步事件。PR49运动拟合只是候选，其约±0.1803秒残差不能作为同步误差界，正式映射和总误差界仍为空。请保留这些已有证据；未确认项继续pending，不将几何中心、操作计划或运动拟合升级为实测标定"
+  ],
+  "corroborating_repository_sources": [
+    {
+      "relative_path": "docs/field_tests/20261018/single_car_benefit_20261021/evidence/antenna_mount_survey_20261018.txt",
+      "sha256": "5cc8c640036782b4b564dee126db140c4245dc382b9ef762fd9fd918e9ca2d1b"
+    },
+    {
+      "relative_path": "docs/field_tests/single_car_historical_L_20261021/MOUNT_USER_CONFIRMATION_20261021.md",
+      "sha256": "aca6b305205693573b386d654b6ceab9edb636f2bacf6ea4fe464e4297e9bab5"
+    }
+  ],
+  "raw_answers_format": "verbatim content normalized to single paragraphs; bullets/newlines removed, no facts upgraded"
+}

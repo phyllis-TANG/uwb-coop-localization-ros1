@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1",
+  "branch": "analysis/20261027-b-t10-closure",
+  "artifacts": [
+    {
+      "archive_name": "T10_portable_inputs_v2.tar.gz",
+      "sha256": "67a4aeaaeb2606f3dd971803ccbbf7598220a9b1fe6f6ab215929f6a4b046faf",
+      "size_bytes": 1786970,
+      "source_code_commit": "4283f5cf5fe5917e2149c387b1d1312313fcbe38",
+      "scope": "portable_T10_inputs",
+      "members_individually_verified": 20,
+      "repository_relative_path": "docs/field_tests/20261024_25/t10_closure_20261027/inputs/T10_portable_inputs_v2.tar.gz",
+      "git_branch": "analysis/20261027-b-t10-closure",
+      "retrieval": "git fetch/check out this branch; verify SHA256 before safe extraction into a new directory"
+    },
+    {
+      "archive_name": "T10_closure_review.tar.gz",
+      "sha256": "21515e701e76c26e3c2467e489c876214cc4eaa5b90548c927167e8f6a794711",
+      "size_bytes": 3037768,
+      "source_code_commit": "06dce865c8aa7591a3d6f836957e1b4c8e9c4898",
+      "scope": "portable_compact_review_evidence",
+      "members_individually_verified": 42,
+      "repository_relative_path": "docs/field_tests/20261024_25/t10_closure_20261027/inputs/T10_closure_review.tar.gz",
+      "git_branch": "analysis/20261027-b-t10-closure",
+      "retrieval": "git fetch/check out this branch; verify SHA256 before safe extraction into a new directory"
+    },
+    {
+      "archive_name": "T10_full_local_results.tar.gz",
+      "sha256": "2009003261c12735a4d8a1ce9e545276b00a4e43dfb937e591f395af74c46c32",
+      "size_bytes": 6835083,
+      "source_code_commit": "06dce865c8aa7591a3d6f836957e1b4c8e9c4898",
+      "scope": "additional_full_local_results",
+      "members_individually_verified": 103,
+      "actual_cloud_path": "/workspace/work/uwb-b-t10-closure-20261027-run/package/T10_full_local_results.tar.gz",
+      "cross_environment_shared_path": false,
+      "availability": "additional local archive; canonical cross-environment delivery is the Git input/review archives above"
+    }
+  ],
+  "remote_readback": "DONE",
+  "review_archive_scope": "compact B-owned evidence/config/tests/source plus the T10 input transfer archive; excludes raw media, venv, original eight-bag tables and full historic replay outputs",
+  "review_archive_exclusions": [
+    "this external ARTIFACTS registry and its later remote-readback receipt, to avoid recursive hashing",
+    "later documentation-only commit metadata"
+  ],
+  "old_results_preserved": true,
+  "previous_input_archive_001": "preserved in this task cloud package/history_inputs_001; superseded by v2 after operator clarification",
+  "local_complete_results_members": "all 103 file members verified; raw ZIP/MOV/venv excluded",
+  "remote_receipt": "results/remote_archive_readback.json",
+  "verified_remote_commit": "85ca0147b91902608bdd4bc94e3edbfc07e9ee17",
+  "verified_remote_archives": 2,
+  "verified_remote_members": 62
+}

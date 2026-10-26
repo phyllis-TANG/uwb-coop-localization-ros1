@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "status": "DONE",
+  "all_passed": true,
+  "created_at_utc": "2026-10-26T18:47:55.564862+00:00",
+  "command_argv": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+    "/workspace/work/uwb-b-t10-closure-20261027-run/remote_archive_readback.py",
+    "docs/field_tests/20261024_25/t10_closure_20261027/inputs",
+    "/workspace/work/uwb-b-t10-closure-20261027-run/remote_readback_001",
+    "85ca0147b91902608bdd4bc94e3edbfc07e9ee17"
+  ],
+  "checks": [
+    {
+      "archive": "T10_portable_inputs_v2.tar.gz",
+      "url": "https://api.github.com/repos/phyllis-TANG/uwb-coop-localization-ros1/contents/docs/field_tests/20261024_25/t10_closure_20261027/inputs/T10_portable_inputs_v2.tar.gz?ref=85ca0147b91902608bdd4bc94e3edbfc07e9ee17",
+      "git_commit": "85ca0147b91902608bdd4bc94e3edbfc07e9ee17",
+      "sha256": "67a4aeaaeb2606f3dd971803ccbbf7598220a9b1fe6f6ab215929f6a4b046faf",
+      "size_bytes": 1786970,
+      "members_verified": 20,
+      "status": "DONE"
+    },
+    {
+      "archive": "T10_closure_review.tar.gz",
+      "url": "https://api.github.com/repos/phyllis-TANG/uwb-coop-localization-ros1/contents/docs/field_tests/20261024_25/t10_closure_20261027/inputs/T10_closure_review.tar.gz?ref=85ca0147b91902608bdd4bc94e3edbfc07e9ee17",
+      "git_commit": "85ca0147b91902608bdd4bc94e3edbfc07e9ee17",
+      "sha256": "21515e701e76c26e3c2467e489c876214cc4eaa5b90548c927167e8f6a794711",
+      "size_bytes": 3037768,
+      "members_verified": 42,
+      "status": "DONE"
+    }
+  ],
+  "interpretation": "fresh downloads from GitHub at immutable commit, not a local-path-only handoff"
+}

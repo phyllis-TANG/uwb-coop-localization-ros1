@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "status": "answered_no_new_calibration; do_not_repeat_questions",
+  "groups": [
+    {
+      "id": "rigid_mount",
+      "question": "两车物理 odom/base 积分原点位于实物哪里？相对该点天线中心的水平 XY 是多少（x前/y左，m）？有机械图、尺量或历史原点依据吗？",
+      "required_response": [
+        "每车 physical_base_point 定义及来源",
+        "水平 base→antenna [x,y] m",
+        "测量日期/安装状态与T10是否一致",
+        "不确定度数值或null+原因"
+      ],
+      "can_measure_now": "仅当天线与底盘/原点关系自T10未改变并能证明适用时；marker板已拆不影响底盘天线刚性关系，但不能假定安装未变",
+      "unlocks": [
+        "两车水平杆臂门槛",
+        "已知天线初值到base初值的推导"
+      ],
+      "not_required": [
+        "base高度与杆臂Z分别测量",
+        "重复已报0.17/0.20m天线高度"
+      ],
+      "answer_status": "answered; known records retained, remaining calibration/record-binding/time evidence not supplied"
+    },
+    {
+      "id": "historical_placement",
+      "question": "成功retry184755之前，Car1是否实际在B(1.5,4)m且头-Y？Car2自T09末(2.98,3.07)m是否未搬动，实际车头指向哪里？有当时尺量/起步前影像或停点/PQ读数与同次停车对应记录吗？",
+      "required_response": [
+        "逐车实际起点/朝向与来源，记忆确认和当时实测分开",
+        "确认所指为T10成功重试且录包前至所选odom记录未搬动",
+        "终点如用于参考，确认测量对应同一次停车且之后未搬动；保留读数不确定度",
+        "P/Q若有实测，给实际值/逐片对应/拟合点与独立检查点，不重报指导坐标"
+      ],
+      "historical_only": "现在重新摆到B或由终点回推不能追补T10起点；T09只引用已记录人工末值，不读取其定位结果",
+      "unlocks": [
+        "实际初始化及绑定",
+        "若空间/安装验证通过，可启用独立停点参考；不要求毫秒级连续同步"
+      ],
+      "answer_status": "answered; known records retained, remaining calibration/record-binding/time evidence not supplied"
+    },
+    {
+      "id": "historical_time",
+      "question": "是否保留T10当时跨机偏差日志、ROS time模式、实际底盘/nlink源码/构建身份、采样到header语义或视频与ROS共同可见事件？未记录可明确回答未记录。",
+      "required_response": [
+        "源/目标clock、整数原点/有理数rate、有效header区间",
+        "每话题采样相对header的偏移、来源和非零误差界，无法确定保持null",
+        "实际部署版本/时间模式证据",
+        "共同同步事件如存在：MOV SHA/PTS与对应ROS记录，拟合与独立检验分开"
+      ],
+      "cannot_recover_from_new_measurement": "没有历史同步证据时，现在测钟不能变成T10历史同步真值；NTP状态与receive-header中位数不补充误差界",
+      "unlocks": [
+        "来源支持的room三基线测量时间准入",
+        "空间条件也通过后才可能连续参考评价"
+      ],
+      "answer_status": "answered; known records retained, remaining calibration/record-binding/time evidence not supplied"
+    }
+  ],
+  "optional_future_capture_if_historical_time_irrecoverable": "仅建议协调端另行决定一次小规模补录：保持刚性安装、标清物理base点/天线；静止初值独立尺量和朝向；共同可见并记录的同步事件、保存各主机偏差日志；保留独立检验事件与停点读数。今晚不安排、不启动任何车辆。",
+  "answers_file": "operator_evidence.json"
+}

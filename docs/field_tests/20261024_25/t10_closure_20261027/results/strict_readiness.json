@@ -1,0 +1,66 @@
+{
+  "methods": {
+    "odom_only": {
+      "car1": [
+        "car1:initial_room_pose:unknown",
+        "car1:odom_clock:unknown"
+      ],
+      "car2": [
+        "car2:initial_room_pose:unknown",
+        "car2:odom_clock:unknown"
+      ]
+    },
+    "independent": {
+      "car1": [
+        "car1:initial_room_pose:unknown",
+        "car1:odom_clock:unknown",
+        "car1:antenna_body_xy_m:unknown",
+        "car1:range_clock:unknown"
+      ],
+      "car2": [
+        "car2:initial_room_pose:unknown",
+        "car2:odom_clock:unknown",
+        "car2:antenna_body_xy_m:unknown",
+        "car2:range_clock:unknown"
+      ]
+    },
+    "joint": {
+      "car1": [
+        "car1:antenna_body_xy_m:unknown",
+        "car1:initial_room_pose:unknown",
+        "car1:odom_clock:unknown",
+        "car1:range_clock:unknown",
+        "car2:antenna_body_xy_m:unknown",
+        "car2:initial_room_pose:unknown",
+        "car2:odom_clock:unknown",
+        "car2:range_clock:unknown"
+      ],
+      "car2": [
+        "car1:antenna_body_xy_m:unknown",
+        "car1:initial_room_pose:unknown",
+        "car1:odom_clock:unknown",
+        "car1:range_clock:unknown",
+        "car2:antenna_body_xy_m:unknown",
+        "car2:initial_room_pose:unknown",
+        "car2:odom_clock:unknown",
+        "car2:range_clock:unknown"
+      ]
+    }
+  },
+  "derived": {
+    "car1": "pending",
+    "car2": "pending"
+  },
+  "minimal_geometry": [
+    "body-frame base-to-antenna XY",
+    "absolute antenna Z",
+    "initial antenna XY plus body yaw and source-record binding, or directly surveyed base pose"
+  ],
+  "evaluation_only_pending": [
+    "accepted independent reference",
+    "reference space/time uncertainty and evaluation window"
+  ],
+  "experiment_notes": [
+    "confirm actual first-pose placement and heading; do not promote nominal guidance to measurement"
+  ]
+}

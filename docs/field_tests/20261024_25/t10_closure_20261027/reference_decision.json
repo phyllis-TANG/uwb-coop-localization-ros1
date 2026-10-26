@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "experiment_id": "T10",
+  "independent_decision": true,
+  "reference_scope": "qualitative",
+  "metric_reference_scope": "not_accepted",
+  "supersedes_PR49_metric_approval": false,
+  "new_evidence": [
+    "T10 original SHA verified; 8 exact-PTS PyAV frames directly reviewed",
+    "Car1 image position changes across pre/middle/post samples; Car2 appears at similar image positions"
+  ],
+  "review_scope": "8 samples from 0.5 to 75.0016667 video seconds, not continuous visual inspection",
+  "per_vehicle": {
+    "car1": {
+      "reference_scope": "qualitative",
+      "metric_reference_scope": "not_accepted",
+      "original_PTS_observation_support": {
+        "start_ticks": 0,
+        "end_ticks": 57902,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "source": "PR49 2Hz pixel observations, not a metric validity window"
+      },
+      "actual_metric_valid_intervals": [],
+      "spatial_uncertainty_m": null,
+      "temporal_uncertainty_ns": null,
+      "qualitative_comment": "sparse image-space scene review only; exact physical start/stop or stationary state not calibrated"
+    },
+    "car2": {
+      "reference_scope": "qualitative",
+      "metric_reference_scope": "not_accepted",
+      "original_PTS_observation_support": {
+        "start_ticks": 0,
+        "end_ticks": 57902,
+        "time_base_num": 1,
+        "time_base_den": 600,
+        "source": "PR49 2Hz pixel observations, not a metric validity window"
+      },
+      "actual_metric_valid_intervals": [],
+      "spatial_uncertainty_m": null,
+      "temporal_uncertainty_ns": null,
+      "qualitative_comment": "sparse image-space scene review only; exact physical start/stop or stationary state not calibrated"
+    }
+  },
+  "space": {
+    "formal_T_room_camera": null,
+    "approved_intrinsics": null,
+    "actual_P_survey": null,
+    "actual_Q_survey": null,
+    "fit_point_ids": [
+      "P1",
+      "P2",
+      "P3",
+      "P4"
+    ],
+    "fit_coordinates_status": "nominal_guidance_only",
+    "check_point_ids": [
+      "Q1",
+      "Q2",
+      "Q3"
+    ],
+    "Q_used_for_fitting_or_model_selection": false,
+    "independent_actual_space_error_m": null,
+    "space_error_bound_m": null,
+    "reasons": [
+      "P/Q actual measured coordinates/uncertainty absent, Q clip/headings provisional",
+      "Per-clip T10 transforms are unaccepted; intrinsics stability/imaging equivalence unresolved",
+      "Car1 front side confirmed, full marker-to-body rotation unmeasured; Car2 tilt/bending/rotation unresolved",
+      "Raised marker planes and marker-to-antenna translations are not calibrated base transforms"
+    ]
+  },
+  "time": {
+    "approved_video_to_ROS_model": null,
+    "PR49_candidate_mapping_id": "T10_pts_to_receive_events_v1",
+    "a_candidate": 1.0,
+    "b_relative_s_candidate": -24.954730587166665,
+    "maximum_fit_residual_s": 0.18029631550000147,
+    "independent_time_bound_s": null,
+    "fit_inputs": "original Car1 odom boundaries; not fusion/UWB estimates",
+    "decision": "event fit retained only as navigation candidate; cannot calibrate independent evaluation reference or host/sampling clocks"
+  },
+  "operator_reported_reference": {
+    "car1_endpoint_antenna_xy_room_m": [
+      1.48,
+      2.97
+    ],
+    "source": "SESSION_LOG_ARCHIVE.md section 41; EXPERIMENTS.md T10",
+    "car2_start_candidate_antenna_xy_room_m": [
+      2.98,
+      3.07
+    ],
+    "car2_source": "T09 manual endpoint plus planned unchanged placement, not a new measurement or T09 localization",
+    "start_tape_distance_m": 1.75,
+    "start_tape_status": "explicitly carried, not newly measured",
+    "end_tape_distance_m": 1.52,
+    "measurement_uncertainty_m": null,
+    "metric_checkpoint_accepted": false,
+    "same_park_and_odom_window_binding": null,
+    "reason": "manual report retained; no uncertainty/bound record correspondence; endpoint never used for initialization"
+  },
+  "decisions": [
+    {
+      "requested_use": "continuous antenna position",
+      "decision": "not_accepted",
+      "remaining": "independent surveyed spatial validation and bounded time mapping"
+    },
+    {
+      "requested_use": "metric stationary/end checkpoint",
+      "decision": "not_accepted",
+      "remaining": "independent spatial measurement/uncertainty, confirmed same unaltered parking interval; millisecond continuous sync not required after confirmation"
+    },
+    {
+      "requested_use": "image-space scene/stage diagnostics",
+      "decision": "qualitative",
+      "remaining": "no localization accuracy metric permitted"
+    }
+  ],
+  "field_accuracy_metrics": {
+    "RMSE_m": null,
+    "ATE_m": null,
+    "checkpoint_error_m": null,
+    "improvement_percent": null
+  },
+  "allowed_reports": [
+    "media identity and PTS",
+    "PR49 extraction methods/counts/failures",
+    "qualitative image change at reviewed frames",
+    "unaccepted event candidates and operator readings with caveats"
+  ],
+  "forbidden_reports": [
+    "real localization RMSE/ATE/improvement",
+    "pixel changes converted into room accuracy",
+    "fit residual called independent sync bound",
+    "Odom/UWB/fusion calibrated reference used to evaluate itself"
+  ],
+  "evidence": [
+    {
+      "relative_path": "docs/field_tests/20261024_25/video_reference_20261026/reference_validation.json",
+      "sha256": "fdf9d8a65540a33862f6f2f2c15bfcd68217ed1986e1a28d58c223c1701dcc44"
+    },
+    {
+      "relative_path": "docs/field_tests/20261024_25/video_reference_20261026/time_mapping.json",
+      "sha256": "a6c0b6777feca41ed4203ca72362a662ac8a8ab711abb616d8d61089470d5854"
+    },
+    {
+      "relative_path": "docs/field_tests/20261024_25/video_reference_20261026/frame_transforms.json",
+      "sha256": "40f01472632ec69a769b4e335075fb91217cb4d561561b18a8aae3f1b69f301f"
+    },
+    {
+      "relative_path": "docs/field_tests/20261024_25/video_reference_20261026/source_lineage.json",
+      "sha256": "841ed03ab89aa045ba59c201e1bcec5c50868499aea0717fbd3909a830de44d6"
+    },
+    {
+      "relative_path": "docs/field_tests/20261024_25/video_reference_20261026/calibration_stability.json",
+      "sha256": "80ceb6731aa2790e26822cdec5489d977facf2903d63302cfd376da355a98cfa"
+    },
+    {
+      "relative_path": "docs/field_tests/20261024_25/video_reference_20261026/P_annotations.json",
+      "sha256": "27397a41138d3ec9006ad81d45aa39dc84b8d6e311f7e417a25966642630c910"
+    },
+    {
+      "relative_path": "docs/field_tests/20261024_25/video_reference_20261026/car1_mount_confirmation.json",
+      "sha256": "061d52dc1b98e83e2a82aec803cdabd7cdf8e4c2a173c9089d3873f97b96a0af"
+    }
+  ],
+  "operator_clarification": "operator_evidence.json confirms no new actual P/Q survey, actual T10 start or bounded synchronization; metric acceptance unchanged"
+}

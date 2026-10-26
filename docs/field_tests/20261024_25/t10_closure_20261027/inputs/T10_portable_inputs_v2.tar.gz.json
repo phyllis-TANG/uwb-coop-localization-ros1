@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "status": "DONE",
+  "archive_name": "T10_portable_inputs_v2.tar.gz",
+  "sha256": "67a4aeaaeb2606f3dd971803ccbbf7598220a9b1fe6f6ab215929f6a4b046faf",
+  "size_bytes": 1786970,
+  "source_code_commit": "4283f5cf5fe5917e2149c387b1d1312313fcbe38",
+  "command_argv": [
+    "tools/field_20261024_25/t10_closure/make_archive.py",
+    "--source",
+    "/workspace/work/uwb-b-t10-closure-20261027-run/results/portable_inputs_002",
+    "--archive",
+    "docs/field_tests/20261024_25/t10_closure_20261027/inputs/T10_portable_inputs_v2.tar.gz",
+    "--prefix",
+    "T10_inputs"
+  ],
+  "verified_members": {
+    "T10_inputs/PR45_reuse.json": "d227edfc86c26e61802718dc40657120a802a77cc208d3060cc2275f9f3100d5",
+    "T10_inputs/PR49_reuse.json": "fb118b0a928557560755f3130eeb6cae468830e0846f1b91e78f9dcf80a9e510",
+    "T10_inputs/T10_strict_input_template.json": "b75403ecc8d27dcc7a157b61be5115f4bf2ca3ff509316206297bd970d73382f",
+    "T10_inputs/checkpoint.json": "1616293b16d184745aa5e762cdd052154a09787636450bd09b30cc3d4d04cda0",
+    "T10_inputs/existing_T10_readback.json": "d3cd513b9a2b7052678bb304ffbf8ce03648991d23e7b6dac515aff202aafda7",
+    "T10_inputs/initialization_records.json": "c5d529ee8f46468deb96da836a424ba69e51e5940f52e5419118a8cb7b51507d",
+    "T10_inputs/normalized_T10/commands.csv": "faa8caaf1f21d1597a20d95c355863b9a26cb2cdba183327b9eaeb620985af13",
+    "T10_inputs/normalized_T10/frames.csv": "e97f2b54cb6c6079c3312910c865e28948d8b67d9bc03051c1423ce36064c65d",
+    "T10_inputs/normalized_T10/imu.csv": "020df646e4d81f0fa9ccc730d0195c791fcea073dd86df83536e0310c7dcd740",
+    "T10_inputs/normalized_T10/odom.csv": "8f026b95c4add8f28436ef89448394723c9f1e6a9f1036973d10ef0f42d915b6",
+    "T10_inputs/normalized_T10/ranges.csv": "84eb1bfef278225ff4cc52d3e45fbdaf4eed6d2724d4756a60a2f40ed7a272e2",
+    "T10_inputs/operator_evidence.json": "80d4a9c851104914eca2886fad657355dfa2e5487df92bd80776b030e2bde140",
+    "T10_inputs/packet.json": "48815922daa7bbd642495f2a55cd6b51fb8763ea12d39f6187fafa6f1a03c174",
+    "T10_inputs/parent_intake_run.json": "0378a2f9f5ffd9b7ade3697f529d5b9e47c496cdc36a66ae23fe06c2e6460f21",
+    "T10_inputs/run.json": "b9c7b241ff170e17a1d8bc078859c480951db0bdf42f19c2566c13a50fdf2b95",
+    "T10_inputs/source_evidence.json": "dc7e59a8ccd2b887a40f7b296d21d0b02f984d57ffa4c10c9b5c9bc9f1b7841b",
+    "T10_inputs/video_T10/frame_pts.csv": "445570cd89b1197eb404da85ea8c2c36482f20c497a5d85e371fed15e046dd1f",
+    "T10_inputs/video_T10/marker_observations.csv": "9df8ac97f987e138c2fac964a61f3d95f609595716d45e40e49f0021bea14889",
+    "T10_inputs/video_T10/spatial_candidates.json": "32a5f2426594fe387ec2555a4713a6b5d24a6847f38cf60edf88136cf7d2083c",
+    "T10_inputs/video_T10/time_candidate.json": "347f24733d3f9b1e79a3864cd77129c1b0149dd1a8fa15251cf3822ac02ec799"
+  },
+  "raw_media_included": false
+}

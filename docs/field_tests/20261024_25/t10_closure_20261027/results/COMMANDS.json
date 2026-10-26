@@ -1,0 +1,304 @@
+{
+  "schema_version": 1,
+  "commands": [
+    {
+      "operation": "create isolated video venv",
+      "argv": [
+        "python",
+        "-m",
+        "venv",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/video-venv"
+      ],
+      "exit_code": 0
+    },
+    {
+      "operation": "install video dependencies only in new venv",
+      "argv": [
+        "/workspace/work/uwb-b-t10-closure-20261027-run/video-venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "tools/field_video_20261026/requirements-video.txt"
+      ],
+      "exit_code": 0,
+      "log": "video_dependencies.log"
+    },
+    {
+      "operation": "T10-only original intake",
+      "argv": [
+        "python",
+        "tools/field_20261024_25/prepare.py",
+        "--data-root",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/data",
+        "--assets",
+        "T10_video",
+        "--extract"
+      ],
+      "exit_code": 0,
+      "log": "T10_prepare.log"
+    },
+    {
+      "operation": "compile_PR48_001",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "/workspace/work/uwb-b-t10-closure-20261027/tools/field_20261024_25/parameter_clock_prep/interface.py",
+        "--template",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/intake_001/T10_strict_input_template.json",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/compile_PR48_001"
+      ],
+      "exit_code": 2,
+      "run_sha256": "86f6ad98b9fb5ffedd9750290442e81fc84cc05e5208893e29f714d978145c8f"
+    },
+    {
+      "operation": "handoff_strict_003",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/run_ready.py",
+        "--template",
+        "docs/field_tests/20261024_25/t10_closure_20261027/T10_strict_input_template.json",
+        "--packet",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/portable_inputs_001",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/handoff_strict_003"
+      ],
+      "exit_code": 2,
+      "run_sha256": "20a3ba6146fcca7460f7505797058df2dd5742c5c9844e6564a0743bc175892b"
+    },
+    {
+      "operation": "independent_readback_001",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/readback.py",
+        "--packet",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/intake_001",
+        "--normalized",
+        "/workspace/work/uwb-handoff-20261026/results/normalized",
+        "--review",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/video_review_001",
+        "--strict-run",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/portable_strict_002",
+        "--reference-decision",
+        "docs/field_tests/20261024_25/t10_closure_20261027/reference_decision.json",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/independent_readback_001"
+      ],
+      "exit_code": 0,
+      "run_sha256": "ba93a8bf84e4d47736ad4043590a5c94c0993bc54e64b9cbfd95691c828730e5"
+    },
+    {
+      "operation": "independent_readback_002",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/readback.py",
+        "--packet",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/intake_001",
+        "--normalized",
+        "/workspace/work/uwb-handoff-20261026/results/normalized",
+        "--review",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/video_review_001",
+        "--strict-run",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/transfer_strict_004",
+        "--reference-decision",
+        "docs/field_tests/20261024_25/t10_closure_20261027/reference_decision.json",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/independent_readback_002"
+      ],
+      "exit_code": 0,
+      "run_sha256": "08183c01ef1aab030369b81f9edb1ac0efce28e497f5027b19d0c5b18075a4c0"
+    },
+    {
+      "operation": "intake_001",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/intake.py",
+        "--normalized",
+        "/workspace/work/uwb-handoff-20261026/results/normalized",
+        "--data-root",
+        "/workspace/work/uwb-handoff-20261026/data",
+        "--baseline-run",
+        "/workspace/work/uwb-baselines-20261026-run/results/field_release/T10",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/intake_001"
+      ],
+      "exit_code": 0,
+      "run_sha256": "0378a2f9f5ffd9b7ade3697f529d5b9e47c496cdc36a66ae23fe06c2e6460f21"
+    },
+    {
+      "operation": "portable_inputs_001",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/package_inputs.py",
+        "--packet",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/intake_001",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/portable_inputs_001"
+      ],
+      "exit_code": 0,
+      "run_sha256": "4d85acd0deb9149dec9652721a31fc8b94424274fbea66ca8e8b61e25b940ae7"
+    },
+    {
+      "operation": "portable_inputs_002",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/package_inputs.py",
+        "--packet",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/intake_001",
+        "--strict-template",
+        "docs/field_tests/20261024_25/t10_closure_20261027/T10_strict_input_template.json",
+        "--operator-evidence",
+        "docs/field_tests/20261024_25/t10_closure_20261027/operator_evidence.json",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/portable_inputs_002"
+      ],
+      "exit_code": 0,
+      "run_sha256": "b9c7b241ff170e17a1d8bc078859c480951db0bdf42f19c2566c13a50fdf2b95"
+    },
+    {
+      "operation": "portable_strict_002",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/run_ready.py",
+        "--template",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/intake_001/T10_strict_input_template.json",
+        "--packet",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/intake_001",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/portable_strict_002"
+      ],
+      "exit_code": 2,
+      "run_sha256": "5710eeb763703d3c7cc67512e18801c220865ee91518603fbedbd1ca60fc6aa1"
+    },
+    {
+      "operation": "strict_ready_001",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/run_ready.py",
+        "--template",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/intake_001/T10_strict_input_template.json",
+        "--normalized",
+        "/workspace/work/uwb-handoff-20261026/results/normalized",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/strict_ready_001"
+      ],
+      "exit_code": 2,
+      "run_sha256": "c18bdeaa5e50c6100f4a230adbeb0b4a885b967e4cea7afbfb5091b2428dbc33"
+    },
+    {
+      "operation": "transfer_strict_004",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/run_ready.py",
+        "--template",
+        "docs/field_tests/20261024_25/t10_closure_20261027/T10_strict_input_template.json",
+        "--packet",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/transfer_test_001/T10_inputs",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/transfer_strict_004"
+      ],
+      "exit_code": 2,
+      "run_sha256": "76fcd07547b6c1e0e2787b2c269107df84ee2a3f3acbdd1ab16c025e790badef"
+    },
+    {
+      "operation": "video_review_001",
+      "argv": [
+        "/workspace/work/uwb-b-t10-closure-20261027-run/video-venv/bin/python",
+        "tools/field_20261024_25/t10_closure/inspect_video.py",
+        "--mov",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/data/extracted/T10_video/IMG_7347.MOV",
+        "--output",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/video_review_001"
+      ],
+      "exit_code": 0,
+      "run_sha256": "498d061c246d72143bfd8520cbe164a9f0008ee94870c20813aefa81c1e4f5db"
+    },
+    {
+      "operation": "final relevant tests t10_closure",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/field_20261024_25/t10_closure",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "tests": 22,
+      "log": "B_TESTS_OPERATOR_FINAL.log"
+    },
+    {
+      "operation": "final relevant tests causal_baselines",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/field_20261024_25/causal_baselines",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "tests": 47,
+      "log": "BASELINE_TESTS.log"
+    },
+    {
+      "operation": "final relevant tests parameter_clock_prep",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/field_20261024_25/parameter_clock_prep",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "tests": 17,
+      "log": "INTERFACE_TESTS.log"
+    },
+    {
+      "operation": "portable input archive with full member readback",
+      "argv": [
+        "/workspace/work/uwb-handoff-20261026/venv/bin/python",
+        "tools/field_20261024_25/t10_closure/make_archive.py",
+        "--source",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/results/portable_inputs_002",
+        "--archive",
+        "docs/field_tests/20261024_25/t10_closure_20261027/inputs/T10_portable_inputs_v2.tar.gz",
+        "--prefix",
+        "T10_inputs"
+      ],
+      "exit_code": 0,
+      "archive_sha256": "67a4aeaaeb2606f3dd971803ccbbf7598220a9b1fe6f6ab215929f6a4b046faf",
+      "members_verified": 20
+    },
+    {
+      "operation": "transfer extraction to an empty directory, preserve any existing files",
+      "argv": [
+        "tar",
+        "--keep-old-files",
+        "-xzf",
+        "docs/field_tests/20261024_25/t10_closure_20261027/inputs/T10_portable_inputs_v2.tar.gz",
+        "-C",
+        "/workspace/work/uwb-b-t10-closure-20261027-run/transfer_test_001"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "earlier_smoke_test_logs_retained_outside_git": [
+    "B_TESTS_001.log",
+    "B_TESTS_002.log",
+    "B_TESTS_FINAL.log"
+  ],
+  "real_replay_command_executed": false,
+  "old_PR46_run_verified_and_reused": true,
+  "actual_absolute_paths_are_provenance_not_shared_data_contract": true
+}
