@@ -25,6 +25,8 @@
 
 每个配置保存原格式base状态CSV、全部准入/拒绝压缩记录、诊断、假设配置、输出响应指标和独立回读。回读核验已接受odom的as-of关系、原始记录/纳秒身份、raw/bridge排除、固定peer方向、支持年龄、状态有限性及每车协方差PSD。PSD不表示统计可信。
 
-`peer_vs_independent_output_shift_m`仅表示加入peer改变了输出多少，**不是准确度收益或损害**。末10秒输出变化也不自动成为真实静止误差。所有实测RMSE/ATE/提升均为空；人工终点和视频没有参与初始化、拟合、阈值选择或评价。
+`peer_vs_independent_output_shift_m`仅表示加入peer改变了输出多少，**不是准确度收益或损害**。末10秒输出变化也不自动成为真实静止误差。所有实测RMSE/ATE/提升均为空；T10本包的人工终点和视频没有参与初始化、拟合、阈值选择或评价。Car2的T09人工末点确实作为未验证的T10起点候选被消费；没有读取T09定位输出。
+
+运行协议`not_used_as_inputs`里的“operator endpoint coordinates”措辞过宽，具体限定见[协议来源澄清](../../../docs/field_tests/20261024_25/t10_exploratory_20261027/PROTOCOL_CLARIFICATION.md)。正式数值配置及执行SHA保留，不覆盖历史协议或结果。
 
 完整结果保存在Git外新目录；来源提交、实际dirty状态、代码/输入/配置/输出SHA登记在run.json。正式运行应先固定源码，再保存紧凑报告；不改原件和已完成结果。
