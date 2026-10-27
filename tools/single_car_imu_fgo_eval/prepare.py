@@ -41,6 +41,17 @@ def legacy_view(row):
     return {'received_s':row['receive_relative_s'],'kind':kind,'header_s':header,'value':value}
 
 
+def required_numeric_status(kind,message):
+    """Unknown UWB quality and unused attitude/acceleration are not range/gyro rejection."""
+    if kind=='other':return 'not_a_fusion_measurement'
+    if kind=='uwb':values=[entry['range'] for entry in message['ranges']]
+    elif kind=='imu':values=[message['angular_velocity']['z']]
+    else:
+        p,q=message['pose']['pose']['position'],message['pose']['pose']['orientation']
+        values=[p['x'],p['y'],*[q[k] for k in 'xyzw'],message['twist']['twist']['angular']['z']]
+    return 'required_values_finite' if all(v is not None and math.isfinite(float(v)) for v in values) else 'invalid_required_values_preserved'
+
+
 def write_case(case,output):
     from rosbags.rosbag1 import Reader
     from rosbags.highlevel import AnyReader
@@ -69,7 +80,8 @@ def write_case(case,output):
                 'receive_epoch_ns':int(receive),'header_epoch_ns':header,'receive_relative_s':(int(receive)-origin)/1e9,
                 'header_relative_s':None if header is None else (header-origin)/1e9,
                 'raw_message_sha256':hashlib.sha256(raw).hexdigest(),'message':message,
-                'nonfinite_values':invalid,'numeric_status':'invalid_preserved' if invalid else 'finite_or_nonfusion',
+                'nonfinite_values':invalid,'numeric_status':'nonfinite_fields_preserved' if invalid else 'finite_or_nonfusion',
+                'measurement_numeric_status':required_numeric_status(kind,message),
                 'payload_policy':'full_original_fields' if kind!='other' else 'nonfusion payload omitted; original identity and clock cadence retained'}
             encoded=(json.dumps(row,sort_keys=True,separators=(',',':'),allow_nan=False)+'\n').encode();out.write(encoded);digest.update(encoded)
             view=legacy_view(row);encoded=(json.dumps(view,sort_keys=True,separators=(',',':'),allow_nan=False)+'\n').encode();old.write(encoded);legacy_digest.update(encoded)
@@ -81,7 +93,8 @@ def write_case(case,output):
         'origin_bag_receive_epoch_ns':origin,'records':sum(counts.values()),'kind_counts':dict(counts),
         'raw_IMU_fields_preserved':True,'old_IMU_placeholder_is_fusion_measurement':False,
         'event_uncompressed_sha256':digest.hexdigest(),'legacy_event_uncompressed_sha256':legacy_digest.hexdigest(),
-        'nonfinite_rows':invalid_rows,'source_units':{'gyro':'published rad/s; may already have MCU compensation','linear_velocity':'published m/s','time':'integer ns plus centered s'},
+        'nonfinite_rows':invalid_rows,'nonfinite_policy':'unknown UWB quality is preserved as null plus source path; it is not an invalid range or zero-quality measurement',
+        'source_units':{'gyro':'published rad/s; may already have MCU compensation','linear_velocity':'published m/s','time':'integer ns plus centered s'},
         'physical_axes_clock_noise_bias_approved':False,
         'time_mapping':'none, inherits old uncorrected host header/receipt policy; not a calibrated physical time relation',
         'files':[{'relative_path':p.name,'sha256':sha(p),'bytes':p.stat().st_size} for p in (events_path,legacy_path,output/'timing_identity.json')]}

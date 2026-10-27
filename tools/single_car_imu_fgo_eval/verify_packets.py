@@ -72,6 +72,8 @@ def verify_case(directory,case):
             if expected_kind=='uwb' and m['tag_id']!='node_0':expected_kind='other'
             if r['kind']!=expected_kind:raise ValueError('wrong measurement kind')
             if r['kind']!='other':equal_raw(r['message'],m)
+            if r['kind']=='uwb' and all(math.isfinite(entry['range']) for entry in m['ranges']):
+                if r.get('measurement_numeric_status')!='required_values_finite':raise ValueError('unknown quality incorrectly invalidated finite ranges')
             if old!=independent_old_view(r,m):raise ValueError('old input view differs')
             if r['kind']=='imu' and ('angular_velocity' not in r['message'] or 'orientation_covariance' not in r['message']):raise ValueError('placeholder IMU instead of actual fields')
             counts[r['kind']]+=1

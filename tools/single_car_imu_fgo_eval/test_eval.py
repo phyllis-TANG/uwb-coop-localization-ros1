@@ -4,7 +4,7 @@ import math
 import unittest
 import numpy as np
 
-from prepare import plain,legacy_view
+from prepare import plain,legacy_view,required_numeric_status
 from verify_packets import equal_raw
 from verify_baseline import compare_publications,interpolate
 from audit_contract import heading_sources,dependency_cutoff,marginal_prior,factor_accounting,coverage
@@ -40,6 +40,12 @@ class EvalTests(unittest.TestCase):
 
     def test_raw_message_covariance_numeric_check(self):
         with self.assertRaises(ValueError):equal_raw({'cov':[1.,0.]},{'cov':[0.,0.]})
+
+    def test_unknown_quality_is_not_invalid_range(self):
+        m={'ranges':[{'anchor_id':'node_2','range':3.2,'quality':None}]}
+        self.assertEqual(required_numeric_status('uwb',m),'required_values_finite')
+        m['ranges'][0]['range']=None
+        self.assertEqual(required_numeric_status('uwb',m),'invalid_required_values_preserved')
 
     def test_interpolation_only_uses_given_arrived_bracket(self):
         available=[{'header_s':0.,'received_s':0.,'value':[0.,0.,0.]}, {'header_s':2.,'received_s':3.,'value':[2.,4.,1.]}]
