@@ -1,3 +1,5 @@
+> **任务已更正：用户要求在现有单车固定窗口因子图中加入IMU。请先读[FGO_REDIRECT.md](FGO_REDIRECT.md)，下方EKF主线安排仅作历史记录，已被覆盖。保存已有工作并按更正任务继续。**
+
 # B窗口：Codex云端，实包准备与独立核验
 
 请用中文作为“IMU实包输入与独立核验端”自主完成本任务。仓库https://github.com/phyllis-TANG/uwb-coop-localization-ros1。先读同目录README.md、CONTRACT.json，以及imu_odom_audit_20261027的已有结果。A正在另一窗口实现内核；你先做不依赖A的输入/核验工作，不另写第二套定位器。

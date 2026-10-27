@@ -1,3 +1,5 @@
+> **任务已更正：用户要求在现有单车固定窗口因子图中加入IMU。请先读[FGO_REDIRECT.md](FGO_REDIRECT.md)，下方EKF主线安排仅作历史记录，已被覆盖。保存已有工作并按更正任务继续。**
+
 # A窗口：沙盒Codex，IMU模型与合成验证
 
 请用中文作为“IMU因果模型实现端”自主完成本任务。仓库https://github.com/phyllis-TANG/uwb-coop-localization-ros1。先读同目录README.md和CONTRACT.json，再读imu_odom_audit_20261027下REPORT、OFFLINE_EVIDENCE、VM_SOURCE_EVIDENCE、INTEGRATION_PLAN。不要重新做资料大搜索。
