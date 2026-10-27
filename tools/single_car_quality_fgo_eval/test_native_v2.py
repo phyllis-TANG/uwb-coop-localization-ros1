@@ -46,3 +46,15 @@ class NativeExposureTests(unittest.TestCase):
         result,*_=actions(rows,a,'004023','Q3');s=result['per_link']['node_10']['exposure_link_seconds'];self.assertEqual(s['known_attenuation'],2.);self.assertEqual(s['unknown_hold_attenuation'],3.);self.assertEqual(s.get('known_disabled',0),0.)
     def test_normal_onset_is_not_third_normal_confirmation(self):
         actions,rows,a=self.data(['disabled','recovering','normal','normal','normal'],[0.,.25,1.,1.,1.]);_,_,recovery,_,_=actions(rows,a,'004023','Q3');normal=next(x for x in recovery if x['event']=='policy_normal_onset');self.assertEqual(normal['available_receive_epoch_ns'],a[2]['available_receive_epoch_ns']);self.assertEqual(normal['third_known_normal_confirmation_epoch_ns'],a[4]['available_receive_epoch_ns'])
+
+class NativePublicationBindingTests(unittest.TestCase):
+    def data(self):
+        row=dict(pose=[1.,2.,3.],antenna_xy_m=[1.1,2.1],bias_rad_s=None,status='graph',estimate_valid=True);graph=dict(record_id='g',role='main',state_epoch_ns=1,row=row);pub=dict(graph_record_id='g',state_epoch_ns=1,availability_cutoff_epoch_ns=1000000001,publication_id='p',row=copy.deepcopy(row));csv=dict(state_epoch_ns='1',availability_cutoff_epoch_ns='1000000001',publication_id='p',base_x_m='1',base_y_m='2',yaw_rad='3',antenna_x_m='1.1',antenna_y_m='2.1',bias_rad_s='',status='graph',estimate_valid='True');return graph,pub,csv
+    def test_native_published_graph_association_not_only_file_SHA(self):
+        from native_v2.bindings import publication_binding
+        g,p,c=self.data();publication_binding([g],[p],[c]);p['row']['pose'][0]+=.01
+        with self.assertRaisesRegex(ValueError,'solved main graph'):publication_binding([g],[p],[c])
+    def test_CSV_cannot_silently_differ_from_json_publication(self):
+        from native_v2.bindings import publication_binding
+        g,p,c=self.data();c['base_x_m']='0'
+        with self.assertRaisesRegex(ValueError,'CSV numerical'):publication_binding([g],[p],[c])
