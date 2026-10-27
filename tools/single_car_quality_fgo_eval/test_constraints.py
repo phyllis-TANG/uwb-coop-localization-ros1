@@ -59,7 +59,7 @@ class ConstraintTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError,'original raw median'):self.check(f)
     def test_duplicate_scalar_support_not_extra_samples(self):
         f=example();f['decisions'][0]['support_record_ids']=['target_0_0']*5
-        with self.assertRaisesRegex(ValueError,'unique scalar supports'):self.check(f)
+        with self.assertRaisesRegex(ValueError,'duplicate scalar supports'):self.check(f)
     def test_weighted_objective_uses_actual_effective_weight(self):
         f=example();row=f['decisions'][1];factor,cost=objective_example(row)
         factor_cost([factor],{row['constraint_id']:row},0.,cost,[row['constraint_id']])
@@ -82,3 +82,14 @@ class ConstraintTests(unittest.TestCase):
     def test_multi_anchor_message_projects_distinct_scalar_identities(self):
         r=dict(case_id='004023',source_file_sha256='a',record_index=1,topic='uwb',header_epoch_ns=1,receive_epoch_ns=2,raw_message_sha256='b',kind='uwb',message={'ranges':[{'anchor_id':'node_2','range':3.},{'anchor_id':'node_10','range':4.}]})
         p=project(r);self.assertNotEqual(p[0][0],p[1][0]);self.assertEqual(p[0][1]['record_index'],p[1][1]['record_index']);self.assertEqual([x[1]['link_id'] for x in p],['node_2','node_10'])
+
+    def test_all_arrived_support_required_not_best_five(self):
+        f=example();r=f['decisions'][0];extra=copy.deepcopy(f['catalog']['target_0_0']);extra['record_index']=99;f['catalog']['extra']=extra
+        with self.assertRaisesRegex(ValueError,'cherry-picks'):self.check(f)
+    def test_missing_constraint_explicit_null_not_zero(self):
+        f=example();r=f['decisions'][0]
+        for key in r['support_record_ids']:del f['catalog'][key]
+        r.update(constraint_exists=False,support_record_ids=[],raw_range_m=None,unknown_reason='no_target_measurement',score=None,health='unknown',bad_count=0,good_count=0,reason='no_target_measurement',old_information_multiplier=None,new_information_multiplier=None,entered_graph=False)
+        decision(r,dict(health='unknown',bad_count=0,good_count=0),f['policy'],f['nodes'],f['catalog'])
+        r['new_information_multiplier']=0.
+        with self.assertRaisesRegex(ValueError,'absent factor weight must stay null'):decision(r,dict(health='unknown',bad_count=0,good_count=0),f['policy'],f['nodes'],f['catalog'])

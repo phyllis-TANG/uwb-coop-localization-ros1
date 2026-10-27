@@ -41,7 +41,12 @@
     "old_information_multiplier",
     "new_information_multiplier",
     "entered_graph",
-    "fallback_reason"
+    "fallback_reason",
+    "constraint_exists",
+    "raw_range_m",
+    "P1_m",
+    "score_form",
+    "score_variance_sources"
   ],
   "raw_identity": [
     "case_id",
@@ -76,5 +81,7 @@
   "event_language": "trigger events, not false positive/false negative rates",
   "reference_policy": "manual endpoints and frozen stop windows exist only in offline evaluation, never quality policy/config/threshold selection",
   "new_field_runs": 0,
-  "counterfactual_canonicalization": "Compare effective non-target scalar values + stable original identities, and numerical shadow states/guesses/priors/cache content. Ignore global input-file/message-envelope SHA differences caused solely by a private target intervention, and ignore timing. Preserve separate actual altered-input SHA; never label altered events as unchanged raw data."
+  "counterfactual_canonicalization": "Compare effective non-target scalar values + stable original identities, and numerical shadow states/guesses/priors/cache content. Ignore global input-file/message-envelope SHA differences caused solely by a private target intervention, and ignore timing. Preserve separate actual altered-input SHA; never label altered events as unchanged raw data.",
+  "missing_constraint": "No admissible five-sample median: constraint_exists=false, raw range and actual old/new factor weights null, explicit unknown reason and no graph factor. Do not invent a zero measurement/weight.",
+  "support_policy": "Full original arrived bin support, not selected best five. Scalar identity includes message SHA/physical record index plus field component; a message with multiple anchors cannot hide target input as a generic frame."
 }

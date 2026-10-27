@@ -24,7 +24,7 @@ def example():
             nodes[key]=dict(kind=kind,case_id='004023',parents=parents);roots[category]=dict(node_ids=[key],not_used_reason=None)
         nodes[f'main_{i}']=dict(kind='state',case_id='004023',parents=[support[0],other])
         w=policy['weights'][health[i]]
-        rows.append(dict(constraint_id=f'c{i}',quality_arm='Q3',case_id='004023',link_id='node_10',state_epoch_ns=epoch,cutoff_epoch_ns=epoch+1000000000,
+        rows.append(dict(constraint_exists=True,constraint_id=f'c{i}',quality_arm='Q3',case_id='004023',link_id='node_10',state_epoch_ns=epoch,cutoff_epoch_ns=epoch+1000000000,
           support_record_ids=support,decision_dependencies=[other],shadow_roots=roots,shadow_pose=[0.,0.,0.],anchor_xyz_m=[3.1,0.,0.],lever_xy_m=[.1,0.],antenna_height_m=0.,raw_range_m=raw,P1_m=.2,
           predicted_slant_range_m=3.,innovation_m=None if score is None else raw-.2-3.,measurement_variance_m2=.04,prediction_variance_m2=None if score is None else 0.,score_form='absolute_standardized_innovation',
           unknown_reason='prediction_variance_unavailable' if score is None else None,score=score,health=health[i],bad_count=bad[i],good_count=good[i],reason=reasons[i],

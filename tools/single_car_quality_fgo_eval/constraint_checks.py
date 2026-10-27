@@ -95,25 +95,34 @@ def decision(row,previous,policy,nodes,catalog):
         require(rid in catalog,'decision input absent');source=catalog[rid]
         for k in ('record_index','header_epoch_ns','receive_epoch_ns'):integer(source[k],k)
         require(source['case_id']==row['case_id'] and source['receive_epoch_ns']<=row['cutoff_epoch_ns'],'future/cross-case decision data')
-    require(bool(row['support_record_ids']),'constraint must bind actual original messages')
-    require(len(row['support_record_ids'])==len(set(row['support_record_ids']))>=5,'constraint needs original five unique scalar supports')
-    require(len({(catalog[k]['source_file_sha256'],catalog[k]['record_index']) for k in row['support_record_ids']})==len(row['support_record_ids']),'same physical frame counted repeatedly')
-    require(all(catalog[k]['link_id']==row['link_id'] and catalog[k]['kind']=='uwb_component' for k in row['support_record_ids']),'constraint support link identity')
-    support=[catalog[k] for k in row['support_record_ids']]
-    require(all(abs(s['header_epoch_ns']-row['state_epoch_ns'])<=400000000 and not s['ambiguous_link_in_frame'] for s in support),'support outside frozen bin or duplicate link ambiguity')
-    require(all(s['component_value'] is not None and math.isfinite(s['component_value']) and s['component_value']>0 and s['component_value']-row['P1_m']>0 for s in support),'invalid raw range support')
-    require(row['raw_range_m']==statistics.median(s['component_value'] for s in support),'quality statistic differs from original raw median')
+    require(type(row['constraint_exists']) is bool,'explicit constraint existence required')
+    support_ids=row['support_record_ids'];support=[catalog[k] for k in support_ids]
+    require(len(support_ids)==len(set(support_ids)),'duplicate scalar supports')
+    require(len({(s['source_file_sha256'],s['record_index']) for s in support})==len(support),'same physical frame counted repeatedly')
+    eligible={k for k,s in catalog.items() if s['kind']=='uwb_component' and s['case_id']==row['case_id'] and s['link_id']==row['link_id']
+        and s['receive_epoch_ns']<=row['cutoff_epoch_ns'] and abs(s['header_epoch_ns']-row['state_epoch_ns'])<=400000000
+        and not s['ambiguous_link_in_frame'] and s['component_value'] is not None and math.isfinite(s['component_value'])
+        and s['component_value']>0 and (row['P1_m'] is None or s['component_value']-row['P1_m']>0)}
+    require(set(support_ids)==eligible,'support omits/cherry-picks original arrived bin samples')
+    if row['constraint_exists']:
+        require(len(support)>=5,'constraint needs original five unique scalar supports')
+        require(row['raw_range_m']==statistics.median(s['component_value'] for s in support),'quality statistic differs from original raw median')
+    else:
+        require(len(support)<5 and row['raw_range_m'] is None and row['unknown_reason'],'missing measurement must stay null/unknown')
     provenance=closure(row['shadow_roots'],nodes,catalog,row['link_id'],row['cutoff_epoch_ns'],row['case_id'])
     score=score_of(row);require(row['score'] is None if score is None else row['score'] is not None and math.isclose(row['score'],score,rel_tol=1e-11,abs_tol=1e-11),'independent consistency score mismatch/null filled zero')
     if row['score'] is not None:require(isinstance(row['score'],(int,float)) and not isinstance(row['score'],bool) and math.isfinite(row['score']) and row['score']>=0,'invalid numeric score')
     for key in ('bad_count','good_count'):integer(row[key],key)
     require(type(row['entered_graph']) is bool,'explicit graph admission boolean required')
-    for key in ('old_information_multiplier','new_information_multiplier'):require(isinstance(row[key],(int,float)) and not isinstance(row[key],bool) and math.isfinite(row[key]),'explicit numeric information weight required')
+    if row['constraint_exists']:
+        for key in ('old_information_multiplier','new_information_multiplier'):require(isinstance(row[key],(int,float)) and not isinstance(row[key],bool) and math.isfinite(row[key]),'explicit numeric information weight required')
     expected=transition(previous,score,policy)
     for key in ('health','bad_count','good_count'):require(row[key]==expected[key],'independent health transition/hysteresis mismatch')
     require(row['reason']==expected['reason'] or score is None and row['reason']==row['unknown_reason'],'quality reason mismatch')
-    require(row['old_information_multiplier']==1. and row['new_information_multiplier']==expected['information_multiplier'],'recorded weight differs from declared policy')
-    require(row['entered_graph']==(row['new_information_multiplier']>0),'graph admission contradicts effective weight')
+    if row['constraint_exists']:
+        require(row['old_information_multiplier']==1. and row['new_information_multiplier']==expected['information_multiplier'],'recorded weight differs from declared policy')
+        require(row['entered_graph']==(row['new_information_multiplier']>0),'graph admission contradicts effective weight')
+    else:require(row['old_information_multiplier'] is None and row['new_information_multiplier'] is None and not row['entered_graph'],'absent factor weight must stay null, not invented zero')
     require(not row['fallback_reason'] or row['fallback_reason'] in policy.get('allowed_fallback_reasons',[]),'unapproved quality fallback')
     return expected,provenance
 
