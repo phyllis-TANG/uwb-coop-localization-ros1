@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "redirect_commit": "112586ceb9ce674a083fb43f7d8afb7768a15aaf",
+  "cases": ["004023", "005135"],
+  "legacy_protocol": "docs/field_tests/single_car_fixed_lag_20261022/protocol.json",
+  "legacy_protocol_sha256": "71175af3a690f1666967b6ed905233de8a8cb1b84c31e5a72eaacdccad0a2f50",
+  "source_topics": ["/car2/odom", "/car2/imu", "/car2/uwb/ranges"],
+  "data_policy": "only historical Car2 development cases; inherited P1/geometry/time settings not transferred to T08/T10",
+  "event_policy": "receive-ordered JSONL.gz, original physical record_index and arrival_order_index separate; all records retain source SHA/receive ns and raw-message SHA; motion/UWB topics retain full fields",
+  "time_policy": "integer epoch ns and centered relative seconds; no clock correction or receive-header calibration",
+  "gap_diagnostic_ns": 100000000,
+  "release_delay_ns": 1000000000,
+  "max_stage_seconds": 7200,
+  "baseline_max_seconds": 1200,
+  "new_model_modes": ["F0", "F1", "F2", "F3"],
+  "A_frozen_interface": null,
+  "new_model_field_execution": "pending A exact FGO commit/protocol; no substitute optimizer",
+  "mandatory_review": [
+    "F2/F3 keyframe prediction, optimizer initialization, startup and fallback must expose any Odom heading dependency",
+    "retained marginal prior must include position/yaw/bias cross-information and affine residual",
+    "incident factors eliminated once, retained factors not counted twice",
+    "each dependency arrived by original one-second publication cutoff; no published-history rewrite",
+    "same translation/UWB/evaluation policy in F0-F3",
+    "all coverage/failure/fallback intervals plus common-valid intervals, never favorable-only selection"
+  ],
+  "calibration": "gyro axes/noise/clock/bias parameters not inferred from endpoint or unaccepted video",
+  "field_RMSE_ATE_or_gain_percent": false,
+  "historical_endpoint_policy": "frozen manual stopping window may be reported as uncertain development endpoint diagnostic; never tune parameters with it"
+}
