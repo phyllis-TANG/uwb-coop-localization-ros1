@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "A_commit": "e3a20fe04a6d53973696ec055dbc71eb135e0f77",
+  "nominal_matrix": "field_protocol.json: eight already-frozen nominal runs; no parameter revisions",
+  "prefix_checks": {"cases": ["004023", "005135"], "arms": ["F0", "F1", "F2", "F3"], "receive_horizon_from_origin_ns": 41000000000, "controls": 8, "policy": "same byte-valued input records/config; stop at last recorded receive <= horizon, no timer advance to unavailable future; compare every emitted non-timing record with full input run"},
+  "independent_readback": {"marginalizations": "all F1-F3", "numeric_jacobian_step": 0.000001, "information_rtol": 0.00001, "information_atol": 0.03, "gradient_atol": 0.001, "constant_atol": 0.001, "objective_cost_atol": 0.0000001},
+  "not_additional_field_parameter_experiments": true,
+  "no_endpoint_selection_or_accuracy_evaluation": true
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "scope": "static audit of frozen F0 only; A F2/F3 not yet available",
+  "sources": {
+    "tools/single_car_fixed_lag.py": {
+      "sha256": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+      "unchanged_from_redirect_commit": true
+    },
+    "tools/single_car_sequential_replay.py": {
+      "sha256": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+      "unchanged_from_redirect_commit": true
+    },
+    "tools/run_single_car_fixed_lag.py": {
+      "sha256": "454c8601a4f53cdf0084e35487240424d70fed7ee37ca342aeb9172fa38aed97",
+      "unchanged_from_redirect_commit": true
+    }
+  },
+  "dependencies": [
+    {
+      "path": "tools/single_car_sequential_replay.py",
+      "line": 56,
+      "phase": "prediction",
+      "evidence": "predict() rotates translation by previous Odom yaw and adds wrapped local Odom yaw increment"
+    },
+    {
+      "path": "tools/single_car_fixed_lag.py",
+      "line": 190,
+      "phase": "new_keyframe_and_optimizer_initial_guess",
+      "evidence": "WindowGraph.update uses predict(last state, last local Odom, new local Odom)"
+    },
+    {
+      "path": "tools/single_car_fixed_lag.py",
+      "line": 207,
+      "phase": "startup_and_failed_solve",
+      "evidence": "default maintained guess remains when warmup/failed/error; old path derives it from Odom yaw"
+    },
+    {
+      "path": "tools/single_car_fixed_lag.py",
+      "line": 383,
+      "phase": "alignment_and_output_prediction",
+      "evidence": "aligned source yaw/local increment used for startup/reference and correction diagnostics"
+    },
+    {
+      "path": "tools/single_car_fixed_lag.py",
+      "line": 67,
+      "phase": "translation_factor_representation",
+      "evidence": "body translation measurement rotates source XY differences by old Odom yaw; preserve/disclose in all F0-F3"
+    }
+  ],
+  "F2_F3_acceptance": "removing only measured_yaw factor is insufficient if keyframe guess/startup/fallback still silently consume Odom angular changes",
+  "startup_clarification": "first prior/keyframe uses the frozen external +Y heading; second warmup/new-keyframe guesses, optimization guesses and failed-solve predictions then use Odom angular increments in F0"
+}

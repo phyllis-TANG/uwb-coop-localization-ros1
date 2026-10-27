@@ -1,0 +1,18 @@
+{
+  "status": "DONE",
+  "checks": [
+    {
+      "case_id": "004023",
+      "legacy_view_gzip_byte_identical": true,
+      "sha256": "241bb9d1538ebd30e9a561c4a55d288ab575c93c01159ded0a33e6c2084f5666",
+      "change": "only rich numeric-status metadata distinguishes unknown quality from required numeric fields"
+    },
+    {
+      "case_id": "005135",
+      "legacy_view_gzip_byte_identical": true,
+      "sha256": "6d6f47800d5dcaca563e32018c28fda30b1b0766b54b34911d320f86ea988590",
+      "change": "only rich numeric-status metadata distinguishes unknown quality from required numeric fields"
+    }
+  ],
+  "old_solver_rerun_for_metadata_change": false
+}

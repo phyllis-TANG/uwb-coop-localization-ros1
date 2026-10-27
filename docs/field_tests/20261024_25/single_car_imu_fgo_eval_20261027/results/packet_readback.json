@@ -1,0 +1,36 @@
+{
+  "status": "DONE",
+  "all_passed": true,
+  "checks": [
+    {
+      "case_id": "004023",
+      "all_records_verified": 10672,
+      "kind_counts": {
+        "imu": 1968,
+        "odom": 1966,
+        "uwb": 4908,
+        "other": 1830
+      },
+      "raw_decoder": "existing field_20261024_25/bag_decoder.py, separate from exporter rosbags",
+      "all_motion_and_UWB_fields_covariances_and_integer_identities": true,
+      "old_placeholder_view_preserved_but_not_used_as_IMU": true,
+      "online_optimizer_or_jacobian_imported": false
+    },
+    {
+      "case_id": "005135",
+      "all_records_verified": 10322,
+      "kind_counts": {
+        "other": 1815,
+        "imu": 1894,
+        "odom": 1891,
+        "uwb": 4722
+      },
+      "raw_decoder": "existing field_20261024_25/bag_decoder.py, separate from exporter rosbags",
+      "all_motion_and_UWB_fields_covariances_and_integer_identities": true,
+      "old_placeholder_view_preserved_but_not_used_as_IMU": true,
+      "online_optimizer_or_jacobian_imported": false
+    }
+  ],
+  "shared_code": "IO/hash only; rosbags exporter vs independent field bag decoder and own old-view formulas",
+  "field_accuracy_evaluated": false
+}

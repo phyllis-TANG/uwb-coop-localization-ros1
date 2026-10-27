@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "mutation": "gyro_sign",
+      "status": "REJECTED",
+      "reason": "angular sign/rate/units",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "future_dependency",
+      "status": "REJECTED",
+      "reason": "angular dependency raw identity",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "hidden_odom_yaw",
+      "status": "REJECTED",
+      "reason": "hidden Odom yaw in startup/keyframe/initial guess/fallback",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "lost_bias_cross_information",
+      "status": "REJECTED",
+      "reason": "independent marginal information/cross terms",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "lost_affine_offset",
+      "status": "REJECTED",
+      "reason": "independent marginal affine gradient",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "retained_UWB_double_count",
+      "status": "REJECTED",
+      "reason": "retained UWB double counted",
+      "hashes_resealed": true
+    }
+  ],
+  "original_unchanged": true,
+  "real_additional_estimator_runs": 0
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "status": "PENDING_A_FROZEN_FGO_HANDOFF",
+  "A_code_commit": null,
+  "A_protocol_sha256": null,
+  "A_entrypoint": null,
+  "B_frozen_checker_commit": "db626e8919180e9f379c1ef6beb4dab720f11590",
+  "new_IMU_FGO_runs": 0,
+  "modes": [
+    "F0",
+    "F1",
+    "F2",
+    "F3"
+  ],
+  "requirements": {
+    "heading_dependency": {
+      "every_published_record_requires": [
+        "startup",
+        "keyframe_prediction",
+        "optimizer_initial_guess",
+        "failure_recovery"
+      ],
+      "F2_F3_rule": "gyro/optimized/external-initial heading only, or explicit odom_heading_fallback=true plus reason and separate result partition",
+      "translation_dependency": "inherited body translation representation can depend on Odom yaw; declare separately, never call this removed upstream correlation"
+    },
+    "gyro_factors": [
+      "interval start/end integer ns and integration boundary rule",
+      "all dependency original record IDs/header/receive ns",
+      "signed gyro scale/axis, noise units, bias prior/random walk with provenance",
+      "gyro angular increment/residual/Jacobian or independently reconstructable factor definition"
+    ],
+    "marginalization": [
+      "complete [x,y,yaw,bias] linearization chart/point",
+      "incident factor identities and retained factor identities",
+      "incident residual/Jacobian or sufficient independent reconstruction inputs",
+      "4x4 boundary square-root prior with full cross terms and affine offset",
+      "discarded constant cost and rank/weak-information status"
+    ],
+    "causality": [
+      "original one-second state+waiting cutoff",
+      "all dependency arrivals <= publication cutoff",
+      "prefix/history immutability and late-data rejection",
+      "no hidden update of previously published state"
+    ],
+    "comparison": [
+      "same translation/UWB/P1/initial conditions/stop windows in F0-F3",
+      "F0 archived reproduction",
+      "per-mode all scheduled publications, missing/rejected/fallback/failure counts",
+      "common finite-pose and common accepted-graph intervals in addition to full coverage",
+      "IMU-missing/odom-fallback cases never silently omitted",
+      "no parameter selection against manual endpoints"
+    ]
+  },
+  "neutral_checker_functions": [
+    "audit_contract.heading_sources",
+    "audit_contract.dependency_cutoff",
+    "audit_contract.marginal_prior",
+    "audit_contract.factor_accounting",
+    "audit_contract.coverage"
+  ],
+  "schema_note": "B acceptance interface proposal; not claimed to be A native log schema. Bind a separate frozen adapter to actual A handoff before numerical comparison."
+}

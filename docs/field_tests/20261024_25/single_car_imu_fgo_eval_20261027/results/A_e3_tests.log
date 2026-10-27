@@ -1,0 +1,48 @@
+test_F1_F2_same_rate_and_translation (__main__.FactorTests.test_F1_F2_same_rate_and_translation) ... ok
+test_F1_equals_old_objective_when_angles_match (__main__.FactorTests.test_F1_equals_old_objective_when_angles_match) ... ok
+test_augmented_analytic_jacobian_and_cross_prior (__main__.FactorTests.test_augmented_analytic_jacobian_and_cross_prior) ... ok
+test_bias_sign_and_RW_whitening (__main__.FactorTests.test_bias_sign_and_RW_whitening) ... ok
+test_interval_dt_mismatch_rejected (__main__.FactorTests.test_interval_dt_mismatch_rejected) ... ok
+test_missing_angular_is_not_zero_factor (__main__.FactorTests.test_missing_angular_is_not_zero_factor) ... ok
+test_nonfinite_prior_rejected (__main__.FactorTests.test_nonfinite_prior_rejected) ... ok
+test_stationary_zero_lever_no_bias_information_gain (__main__.FactorTests.test_stationary_zero_lever_no_bias_information_gain) ... ok
+test_wrap_crosses_pi (__main__.FactorTests.test_wrap_crosses_pi) ... ok
+test_constant_and_split_composition (__main__.IntegrationTests.test_constant_and_split_composition) ... ok
+test_duplicates_and_out_of_order (__main__.IntegrationTests.test_duplicates_and_out_of_order) ... ok
+test_equal_cutoff_and_exact_hold_boundary (__main__.IntegrationTests.test_equal_cutoff_and_exact_hold_boundary) ... ok
+test_exact_ns_and_prune (__main__.IntegrationTests.test_exact_ns_and_prune) ... ok
+test_future_source_rejected (__main__.IntegrationTests.test_future_source_rejected) ... ok
+test_gap_and_recovery (__main__.IntegrationTests.test_gap_and_recovery) ... ok
+test_invalid_integration_interval (__main__.IntegrationTests.test_invalid_integration_interval) ... ok
+test_joint_angle_bias_covariance_numerical_integral (__main__.IntegrationTests.test_joint_angle_bias_covariance_numerical_integral) ... ok
+test_later_receipt_is_invisible (__main__.IntegrationTests.test_later_receipt_is_invisible) ... ok
+test_new_endpoint_not_used_backwards (__main__.IntegrationTests.test_new_endpoint_not_used_backwards) ... ok
+test_nonfinite_and_capacity (__main__.IntegrationTests.test_nonfinite_and_capacity) ... ok
+test_before_first_marginalization_identical_to_full_history (__main__.MarginalTests.test_before_first_marginalization_identical_to_full_history) ... ok
+test_bias_cross_information_propagates_over_many_marginalizations (__main__.MarginalTests.test_bias_cross_information_propagates_over_many_marginalizations) ... ok
+test_exact_nonlinear_full_history_and_fixed_window (__main__.MarginalTests.test_exact_nonlinear_full_history_and_fixed_window) ... ok
+test_full_linearized_information_affine_cost_and_no_double_count (__main__.MarginalTests.test_full_linearized_information_affine_cost_and_no_double_count) ... ok
+test_missing_stationary_yaw_rank_is_reported (__main__.MarginalTests.test_missing_stationary_yaw_rank_is_reported) ... ok
+test_rank_deficient_prior_retained_without_invention (__main__.MarginalTests.test_rank_deficient_prior_retained_without_invention) ... ok
+test_F0_original_default_exact_including_fallback (__main__.ReplayTests.test_F0_original_default_exact_including_fallback) ... ok
+test_F3_no_imu_quaternion_or_odom_angular_z_observation (__main__.ReplayTests.test_F3_no_imu_quaternion_or_odom_angular_z_observation) ... ok
+test_axis_sign_units_and_nonfinite_negative (__main__.ReplayTests.test_axis_sign_units_and_nonfinite_negative) ... ok
+test_cli_outputs_and_no_overwrite (__main__.ReplayTests.test_cli_outputs_and_no_overwrite) ... ok
+test_eof_missing_odom_no_extrapolation (__main__.ReplayTests.test_eof_missing_odom_no_extrapolation) ... ok
+test_frontend_same_bins_and_translation_all_arms (__main__.ReplayTests.test_frontend_same_bins_and_translation_all_arms) ... ok
+test_gap_recovery_and_frozen_publications (__main__.ReplayTests.test_gap_recovery_and_frozen_publications) ... ok
+test_generator_bias_drift_and_range_sign (__main__.ReplayTests.test_generator_bias_drift_and_range_sign) ... ok
+test_generator_determinism_and_no_labels (__main__.ReplayTests.test_generator_determinism_and_no_labels) ... ok
+test_integer_mapping_and_holdout_reject (__main__.ReplayTests.test_integer_mapping_and_holdout_reject) ... ok
+test_invalid_axis_and_noise_units_rejected (__main__.ReplayTests.test_invalid_axis_and_noise_units_rejected) ... ok
+test_legacy_pose_translation_yaw_dependency_disclosed_not_erased (__main__.ReplayTests.test_legacy_pose_translation_yaw_dependency_disclosed_not_erased) ... ok
+test_missing_gyro_prediction_holds_not_odom_fallback (__main__.ReplayTests.test_missing_gyro_prediction_holds_not_odom_fallback) ... ok
+test_new_config_cannot_promote_synthetic_to_field (__main__.ReplayTests.test_new_config_cannot_promote_synthetic_to_field) ... ok
+test_nonfinite_quality_is_preserved_as_flag (__main__.ReplayTests.test_nonfinite_quality_is_preserved_as_flag) ... ok
+test_prefix_invariance_after_marginalization (__main__.ReplayTests.test_prefix_invariance_after_marginalization) ... ok
+test_start_prediction_and_failed_solve_do_not_use_odom_yaw (__main__.ReplayTests.test_start_prediction_and_failed_solve_do_not_use_odom_yaw) ... ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 3.414s
+
+OK

@@ -1,0 +1,57 @@
+{
+  "status": "DONE",
+  "all_negative_copies_rejected": true,
+  "checks": [
+    {
+      "case": "gyro_sign",
+      "rejected": true,
+      "reason": "raw field changed message.angular_velocity.z",
+      "file_hashes_resealed_to_test_payload_not_just_checksums": true
+    },
+    {
+      "case": "gyro_degrees_as_radians",
+      "rejected": true,
+      "reason": "raw field changed message.angular_velocity.z",
+      "file_hashes_resealed_to_test_payload_not_just_checksums": true
+    },
+    {
+      "case": "covariance",
+      "rejected": true,
+      "reason": "raw field changed message.angular_velocity_covariance[8]",
+      "file_hashes_resealed_to_test_payload_not_just_checksums": true
+    },
+    {
+      "case": "missing_IMU",
+      "rejected": true,
+      "reason": "receive stream order changed",
+      "file_hashes_resealed_to_test_payload_not_just_checksums": true
+    },
+    {
+      "case": "duplicate_record",
+      "rejected": true,
+      "reason": "duplicate/absent physical record",
+      "file_hashes_resealed_to_test_payload_not_just_checksums": true
+    },
+    {
+      "case": "float_epoch",
+      "rejected": true,
+      "reason": "float/bool record or epoch",
+      "file_hashes_resealed_to_test_payload_not_just_checksums": true
+    },
+    {
+      "case": "future_receive_identity",
+      "rejected": true,
+      "reason": "physical identity changed",
+      "file_hashes_resealed_to_test_payload_not_just_checksums": true
+    },
+    {
+      "case": "reordered_records",
+      "rejected": true,
+      "reason": "receive stream order changed",
+      "file_hashes_resealed_to_test_payload_not_just_checksums": true
+    }
+  ],
+  "original_packet_modified": false,
+  "A_F2_F3_causality_proved": false,
+  "scope": "B readback guards only; no optimization or field parameter selection"
+}

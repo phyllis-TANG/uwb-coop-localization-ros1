@@ -1,0 +1,197 @@
+{
+  "code_commit": "f00c8743ac9c47d967817af448d3cd3fc80e8b79",
+  "dirty": false,
+  "A_commit": "e3a20fe04a6d53973696ec055dbc71eb135e0f77",
+  "protocol_sha256": "86599d9db8ef7bfc9755eb401f65814d7e5c8483d9566ca689cb533f96f47a03",
+  "status": "DONE",
+  "commands": [
+    {
+      "case_id": "004023",
+      "arm": "F0",
+      "argv": [
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_imu_fgo/replay.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/004023/events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/004023/F0.json",
+        "--output",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/F0_F3_001/004023_F0",
+        "--max-seconds",
+        "120"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.3674798011779785
+    },
+    {
+      "case_id": "005135",
+      "arm": "F0",
+      "argv": [
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_imu_fgo/replay.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/005135/events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/005135/F0.json",
+        "--output",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/F0_F3_001/005135_F0",
+        "--max-seconds",
+        "120"
+      ],
+      "exit_code": 0,
+      "wall_s": 1.3751311302185059
+    },
+    {
+      "case_id": "004023",
+      "arm": "F1",
+      "argv": [
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_imu_fgo/replay.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/004023/events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/004023/F1.json",
+        "--output",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/F0_F3_001/004023_F1",
+        "--max-seconds",
+        "120"
+      ],
+      "exit_code": 0,
+      "wall_s": 3.0215420722961426
+    },
+    {
+      "case_id": "005135",
+      "arm": "F1",
+      "argv": [
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_imu_fgo/replay.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/005135/events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/005135/F1.json",
+        "--output",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/F0_F3_001/005135_F1",
+        "--max-seconds",
+        "120"
+      ],
+      "exit_code": 0,
+      "wall_s": 2.873124361038208
+    },
+    {
+      "case_id": "004023",
+      "arm": "F2",
+      "argv": [
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_imu_fgo/replay.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/004023/events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/004023/F2.json",
+        "--output",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/F0_F3_001/004023_F2",
+        "--max-seconds",
+        "120"
+      ],
+      "exit_code": 0,
+      "wall_s": 3.0225958824157715
+    },
+    {
+      "case_id": "005135",
+      "arm": "F2",
+      "argv": [
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_imu_fgo/replay.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/005135/events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/005135/F2.json",
+        "--output",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/F0_F3_001/005135_F2",
+        "--max-seconds",
+        "120"
+      ],
+      "exit_code": 0,
+      "wall_s": 3.0726826190948486
+    },
+    {
+      "case_id": "004023",
+      "arm": "F3",
+      "argv": [
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_imu_fgo/replay.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/004023/events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/004023/F3.json",
+        "--output",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/F0_F3_001/004023_F3",
+        "--max-seconds",
+        "120"
+      ],
+      "exit_code": 0,
+      "wall_s": 3.6258389949798584
+    },
+    {
+      "case_id": "005135",
+      "arm": "F3",
+      "argv": [
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_imu_fgo/replay.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/005135/events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/005135/F3.json",
+        "--output",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/F0_F3_001/005135_F3",
+        "--max-seconds",
+        "120"
+      ],
+      "exit_code": 0,
+      "wall_s": 3.376222848892212
+    }
+  ],
+  "F0_regression": [
+    {
+      "case_id": "004023",
+      "result": {
+        "rows": 96,
+        "max_abs_component_difference": {
+          "base_x_m": 0.0,
+          "base_y_m": 0.0,
+          "yaw_rad": 0.0,
+          "antenna_x_m": 0.0,
+          "antenna_y_m": 0.0,
+          "aligned_odom_antenna_x_m": 0.0,
+          "aligned_odom_antenna_y_m": 0.0
+        },
+        "status_counts": {
+          "predict_only_warmup": 2,
+          "graph": 94
+        },
+        "timing_and_iteration_counts_excluded_from_numerical_equality": true,
+        "tolerance_from_old_protocol": 1e-06
+      }
+    },
+    {
+      "case_id": "005135",
+      "result": {
+        "rows": 92,
+        "max_abs_component_difference": {
+          "base_x_m": 0.0,
+          "base_y_m": 0.0,
+          "yaw_rad": 0.0,
+          "antenna_x_m": 0.0,
+          "antenna_y_m": 0.0,
+          "aligned_odom_antenna_x_m": 0.0,
+          "aligned_odom_antenna_y_m": 0.0
+        },
+        "status_counts": {
+          "predict_only_warmup": 2,
+          "graph": 90
+        },
+        "timing_and_iteration_counts_excluded_from_numerical_equality": true,
+        "tolerance_from_old_protocol": 1e-06
+      }
+    }
+  ]
+}

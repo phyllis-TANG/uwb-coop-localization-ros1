@@ -1,0 +1,168 @@
+{
+  "status": "PASS",
+  "controls": [
+    {
+      "case_id": "004023",
+      "arm": "F0",
+      "input_records": 4436,
+      "publications_identical": 38,
+      "command_argv": [
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-imu-fgo-execution-20261027/tools/single_car_imu_fgo/replay.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/prefix_controls_001/004023_prefix_events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/004023/F0.json",
+        "--output",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/prefix_controls_001/004023_F0",
+        "--max-seconds",
+        "120"
+      ],
+      "exit_code": 0,
+      "run_sha256": "d71949dac6f318a70cc16153ba662055aa37d9cf1f10fa45b939c5c1917bd238"
+    },
+    {
+      "case_id": "004023",
+      "arm": "F1",
+      "input_records": 4436,
+      "publications_identical": 38,
+      "command_argv": [
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-imu-fgo-execution-20261027/tools/single_car_imu_fgo/replay.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/prefix_controls_001/004023_prefix_events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/004023/F1.json",
+        "--output",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/prefix_controls_001/004023_F1",
+        "--max-seconds",
+        "120"
+      ],
+      "exit_code": 0,
+      "run_sha256": "57a4f8533b79e5be62744707bac264a2e8f3feab50d05a5a8bed12d1e6101202"
+    },
+    {
+      "case_id": "004023",
+      "arm": "F2",
+      "input_records": 4436,
+      "publications_identical": 38,
+      "command_argv": [
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-imu-fgo-execution-20261027/tools/single_car_imu_fgo/replay.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/prefix_controls_001/004023_prefix_events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/004023/F2.json",
+        "--output",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/prefix_controls_001/004023_F2",
+        "--max-seconds",
+        "120"
+      ],
+      "exit_code": 0,
+      "run_sha256": "c2143b9854b992278c053a52f2b36657951cdf38e8fa420be6b8bfefd14c39f3"
+    },
+    {
+      "case_id": "004023",
+      "arm": "F3",
+      "input_records": 4436,
+      "publications_identical": 38,
+      "command_argv": [
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-imu-fgo-execution-20261027/tools/single_car_imu_fgo/replay.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/prefix_controls_001/004023_prefix_events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/004023/F3.json",
+        "--output",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/prefix_controls_001/004023_F3",
+        "--max-seconds",
+        "120"
+      ],
+      "exit_code": 0,
+      "run_sha256": "80b69c1eda89acf031f84ccfa3924460590fb83ad5dddc7f0cf4c23321c0936c"
+    },
+    {
+      "case_id": "005135",
+      "arm": "F0",
+      "input_records": 4380,
+      "publications_identical": 38,
+      "command_argv": [
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-imu-fgo-execution-20261027/tools/single_car_imu_fgo/replay.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/prefix_controls_001/005135_prefix_events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/005135/F0.json",
+        "--output",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/prefix_controls_001/005135_F0",
+        "--max-seconds",
+        "120"
+      ],
+      "exit_code": 0,
+      "run_sha256": "71e3b2a7327aed9036bd71ea7d8d97f90d912817af7796ff7c44c4935fc75fed"
+    },
+    {
+      "case_id": "005135",
+      "arm": "F1",
+      "input_records": 4380,
+      "publications_identical": 38,
+      "command_argv": [
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-imu-fgo-execution-20261027/tools/single_car_imu_fgo/replay.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/prefix_controls_001/005135_prefix_events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/005135/F1.json",
+        "--output",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/prefix_controls_001/005135_F1",
+        "--max-seconds",
+        "120"
+      ],
+      "exit_code": 0,
+      "run_sha256": "5157361eca498b7f0a3bee56362ee67ccc4d6cf9604d3558ded73c2365669ab5"
+    },
+    {
+      "case_id": "005135",
+      "arm": "F2",
+      "input_records": 4380,
+      "publications_identical": 38,
+      "command_argv": [
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-imu-fgo-execution-20261027/tools/single_car_imu_fgo/replay.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/prefix_controls_001/005135_prefix_events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/005135/F2.json",
+        "--output",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/prefix_controls_001/005135_F2",
+        "--max-seconds",
+        "120"
+      ],
+      "exit_code": 0,
+      "run_sha256": "3b95fc5fab7a8ac406b70043eb32786f02ab22ed517d63b588bfc620183c5c9d"
+    },
+    {
+      "case_id": "005135",
+      "arm": "F3",
+      "input_records": 4380,
+      "publications_identical": 38,
+      "command_argv": [
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-imu-fgo-execution-20261027/tools/single_car_imu_fgo/replay.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/prefix_controls_001/005135_prefix_events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/A_inputs_001/005135/F3.json",
+        "--output",
+        "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/results/prefix_controls_001/005135_F3",
+        "--max-seconds",
+        "120"
+      ],
+      "exit_code": 0,
+      "run_sha256": "2489c50e0e4b6869d60ced51e0ce4385a713828599682e4a5925ebff960a322a"
+    }
+  ],
+  "execution_commit": "f00c8743ac9c47d967817af448d3cd3fc80e8b79",
+  "all_non_timing_publication_fields_identical": true,
+  "control_purpose": "remove future records after 41s receipt horizon, real marginalizations included; not a new parameter experiment"
+}

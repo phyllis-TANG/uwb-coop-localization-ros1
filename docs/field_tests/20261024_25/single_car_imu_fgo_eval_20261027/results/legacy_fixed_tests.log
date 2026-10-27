@@ -1,0 +1,20 @@
+test_analytic_jacobians_match_central_differences_for_both_priors (test_single_car_fixed_lag.FixedLagTests.test_analytic_jacobians_match_central_differences_for_both_priors) ... ok
+test_bootstrap_buffer_overflow_and_keyframe_spacing_are_explicit (test_single_car_fixed_lag.FixedLagTests.test_bootstrap_buffer_overflow_and_keyframe_spacing_are_explicit) ... ok
+test_boundary_covariance_grows_under_pure_odom_instead_of_resetting (test_single_car_fixed_lag.FixedLagTests.test_boundary_covariance_grows_under_pure_odom_instead_of_resetting) ... ok
+test_equal_deadline_and_late_closed_bin (test_single_car_fixed_lag.FixedLagTests.test_equal_deadline_and_late_closed_bin) ... ok
+test_exact_nonlinear_motion_remains_exact_after_elimination (test_single_car_fixed_lag.FixedLagTests.test_exact_nonlinear_motion_remains_exact_after_elimination) ... ok
+test_frontend_matches_legacy_inputs_and_deadlines (test_single_car_fixed_lag.FixedLagTests.test_frontend_matches_legacy_inputs_and_deadlines) ... ok
+test_future_mutation_and_truncation_after_marginalization (test_single_car_fixed_lag.FixedLagTests.test_future_mutation_and_truncation_after_marginalization) ... ok
+test_identical_before_first_marginalization (test_single_car_fixed_lag.FixedLagTests.test_identical_before_first_marginalization) ... ok
+test_iteration_budget_failure_is_not_accepted (test_single_car_fixed_lag.FixedLagTests.test_iteration_budget_failure_is_not_accepted) ... ok
+test_long_running_estimator_has_no_internal_output_history (test_single_car_fixed_lag.FixedLagTests.test_long_running_estimator_has_no_internal_output_history) ... ok
+test_missing_bracket_is_not_extrapolated_and_eof_is_not_extended (test_single_car_fixed_lag.FixedLagTests.test_missing_bracket_is_not_extrapolated_and_eof_is_not_extended) ... ok
+test_pruned_odom_buffer_preserves_heading_unwrap_across_pi (test_single_car_fixed_lag.FixedLagTests.test_pruned_odom_buffer_preserves_heading_unwrap_across_pi) ... ok
+test_rank_failure_is_not_replaced_by_an_invented_prior (test_single_car_fixed_lag.FixedLagTests.test_rank_failure_is_not_replaced_by_an_invented_prior) ... ok
+test_residual_matches_captured_unmodified_legacy_objective (test_single_car_fixed_lag.FixedLagTests.test_residual_matches_captured_unmodified_legacy_objective) ... ok
+test_square_root_prior_matches_full_schur_without_double_counting (test_single_car_fixed_lag.FixedLagTests.test_square_root_prior_matches_full_schur_without_double_counting) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.574s
+
+OK
