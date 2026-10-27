@@ -1,0 +1,1318 @@
+{
+  "scope": "T10 hypothesis-only output diagnostics, not real accuracy or robust-candidate validation",
+  "source_commit": "98f1aaaf4ef48bacbdf84b3efdc2bee01292f993",
+  "source_dirty": false,
+  "algorithm_base_commit": "8dd0bbcc495996a0ffff0bd900fc70409e907814",
+  "protocol_sha256": "99ea7a6e802badaae3f859376a6586a59a735a7ac2dddbffe0c9a893eca921f1",
+  "source_sha256": {
+    "tools/field_20261024_25/t10_exploratory/pilot.py": "b4c28727bf44742074a853519ba1707438b53c2dd10c6fe508b66fd813a05d9f",
+    "tools/field_20261024_25/t10_exploratory/protocol.json": "99ea7a6e802badaae3f859376a6586a59a735a7ac2dddbffe0c9a893eca921f1",
+    "tools/field_20261024_25/causal_baselines/model.py": "3c900b18ba2a7cde25e6f27063420e6ffad81a4bfd214e0ccfeb6463bcb0d44c",
+    "tools/field_20261024_25/causal_baselines/replay.py": "ade3c2405041d5d99491731dc7be3f4678c6847fb90e04e356cfac985516a6f4",
+    "tools/field_20261024_25/t10_closure/common.py": "ad296d4c6704864792211172b5841993db255fd0380181d71bf9f14b474ecb57"
+  },
+  "kernel_unchanged_sha256": {
+    "tools/field_20261024_25/causal_baselines/model.py": "3c900b18ba2a7cde25e6f27063420e6ffad81a4bfd214e0ccfeb6463bcb0d44c",
+    "tools/field_20261024_25/causal_baselines/replay.py": "ade3c2405041d5d99491731dc7be3f4678c6847fb90e04e356cfac985516a6f4"
+  },
+  "input_packet": {
+    "status": "DONE",
+    "packet_run_sha256": "b9c7b241ff170e17a1d8bc078859c480951db0bdf42f19c2566c13a50fdf2b95",
+    "bag_sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+    "normalization_rebuilt": false,
+    "normalization_root_kind": "verified_T10_selection_from_PR45"
+  },
+  "profiles": 7,
+  "method_configurations": 21,
+  "independent_field_trials": 1,
+  "verified_estimate_rows": 23982,
+  "numerical_failure_events": 0,
+  "elapsed_seconds": 63.151506772002904,
+  "uwb_only": {
+    "car1": {
+      "selected_frames": 267,
+      "optimizer_converged": 267,
+      "median_range_fit_residual_m": 0.26178270807488685,
+      "residual_is_position_error": false
+    },
+    "car2": {
+      "selected_frames": 270,
+      "optimizer_converged": 270,
+      "median_range_fit_residual_m": 0.3743777508130297,
+      "residual_is_position_error": false
+    }
+  },
+  "profiles_summary": {
+    "nominal": {
+      "input_events": {
+        "odom": 2306,
+        "range": 57090
+      },
+      "metrics": {
+        "scope": "output response under hypotheses; no true-position errors",
+        "methods": {
+          "odom_only": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.5290001002576576,
+                2.9856099597513803
+              ],
+              "terminal_10s_output_excursion_m": 0.0,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.98,
+                3.07
+              ],
+              "terminal_10s_output_excursion_m": 0.0,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          },
+          "independent": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.1651966097188928,
+                3.302287023153303
+              ],
+              "terminal_10s_output_excursion_m": 0.08726012745595375,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.8144643051096856,
+                3.518671477728235
+              ],
+              "terminal_10s_output_excursion_m": 0.01424276631302413,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          },
+          "joint": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.2019526766594402,
+                3.311405953536592
+              ],
+              "terminal_10s_output_excursion_m": 0.08221096587623965,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.7647839078383236,
+                3.527609711046849
+              ],
+              "terminal_10s_output_excursion_m": 0.02455685898765043,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          }
+        },
+        "event_counts": {
+          "odom_only": {
+            "stale_measurement_on_arrival": 21,
+            "excluded_odom_only": 57090,
+            "initial_binding_mismatch": 86,
+            "initialized": 2,
+            "odometry_predicted": 2197
+          },
+          "independent": {
+            "stale_measurement_on_arrival": 286,
+            "excluded_bridge_duplicate": 28500,
+            "initial_binding_mismatch": 86,
+            "excluded_independent_peer": 5484,
+            "missing_odometry_support:car2": 436,
+            "missing_odometry_support:car1": 436,
+            "initialized": 2,
+            "wall_updated": 2036,
+            "excluded_fixed_rate_thinning": 14654,
+            "odometry_predicted": 2197,
+            "stale_odometry_support:car2": 2576,
+            "measurement_before_odometry_anchor:car2": 492,
+            "measurement_before_odometry_anchor:car1": 292,
+            "stale_odometry_support:car1": 1919
+          },
+          "joint": {
+            "stale_measurement_on_arrival": 286,
+            "excluded_bridge_duplicate": 28500,
+            "initial_binding_mismatch": 86,
+            "excluded_correlated_reverse_direction": 2630,
+            "missing_odometry_support:car2": 436,
+            "missing_odometry_support:car1": 545,
+            "initialized": 2,
+            "wall_updated": 2036,
+            "peer_updated": 242,
+            "excluded_fixed_rate_thinning": 15948,
+            "stale_odometry_support:car2": 3135,
+            "odometry_predicted": 2197,
+            "measurement_before_odometry_anchor:car2": 590,
+            "measurement_before_odometry_anchor:car1": 365,
+            "stale_odometry_support:car1": 2398
+          }
+        },
+        "peer_vs_independent_output_shift_m": {
+          "car1": {
+            "samples": 550,
+            "median": 0.029354158858542416,
+            "p95": 0.05126216754015673,
+            "maximum": 0.06856472316918935,
+            "is_accuracy_gain_or_harm": false
+          },
+          "car2": {
+            "samples": 550,
+            "median": 0.048792368968695696,
+            "p95": 0.0730260931270577,
+            "maximum": 0.08075841524153066,
+            "is_accuracy_gain_or_harm": false
+          }
+        }
+      },
+      "verification": {
+        "rows": 3426,
+        "existing_poses": 3300,
+        "update_identity_support_and_direction_checks": {
+          "independent:wall_updated": 2036,
+          "joint:wall_updated": 2036,
+          "joint:peer_updated": 242
+        },
+        "numerical_failure_events": 0,
+        "provenance_and_accepted_asof_verified": true,
+        "per_car_covariance_PSD_checked": true,
+        "field_accuracy_evaluated": false
+      }
+    },
+    "car1_lever_x_minus_5cm": {
+      "input_events": {
+        "odom": 2306,
+        "range": 57090
+      },
+      "metrics": {
+        "scope": "output response under hypotheses; no true-position errors",
+        "methods": {
+          "odom_only": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.527552427266639,
+                2.9855889977864516
+              ],
+              "terminal_10s_output_excursion_m": 0.0,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.98,
+                3.07
+              ],
+              "terminal_10s_output_excursion_m": 0.0,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          },
+          "independent": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.1652047621561799,
+                3.3022644949356046
+              ],
+              "terminal_10s_output_excursion_m": 0.08723629024646293,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.8144643051096856,
+                3.518671477728235
+              ],
+              "terminal_10s_output_excursion_m": 0.01424276631302413,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          },
+          "joint": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.2019609915777434,
+                3.311385116216525
+              ],
+              "terminal_10s_output_excursion_m": 0.08219354507735828,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.7647855207181786,
+                3.5276084675450043
+              ],
+              "terminal_10s_output_excursion_m": 0.024555187705379816,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          }
+        },
+        "event_counts": {
+          "odom_only": {
+            "stale_measurement_on_arrival": 21,
+            "excluded_odom_only": 57090,
+            "initial_binding_mismatch": 86,
+            "initialized": 2,
+            "odometry_predicted": 2197
+          },
+          "independent": {
+            "stale_measurement_on_arrival": 286,
+            "excluded_bridge_duplicate": 28500,
+            "initial_binding_mismatch": 86,
+            "excluded_independent_peer": 5484,
+            "missing_odometry_support:car2": 436,
+            "missing_odometry_support:car1": 436,
+            "initialized": 2,
+            "wall_updated": 2036,
+            "excluded_fixed_rate_thinning": 14654,
+            "odometry_predicted": 2197,
+            "stale_odometry_support:car2": 2576,
+            "measurement_before_odometry_anchor:car2": 492,
+            "measurement_before_odometry_anchor:car1": 292,
+            "stale_odometry_support:car1": 1919
+          },
+          "joint": {
+            "stale_measurement_on_arrival": 286,
+            "excluded_bridge_duplicate": 28500,
+            "initial_binding_mismatch": 86,
+            "excluded_correlated_reverse_direction": 2630,
+            "missing_odometry_support:car2": 436,
+            "missing_odometry_support:car1": 545,
+            "initialized": 2,
+            "wall_updated": 2036,
+            "peer_updated": 242,
+            "excluded_fixed_rate_thinning": 15948,
+            "stale_odometry_support:car2": 3135,
+            "odometry_predicted": 2197,
+            "measurement_before_odometry_anchor:car2": 590,
+            "measurement_before_odometry_anchor:car1": 365,
+            "stale_odometry_support:car1": 2398
+          }
+        },
+        "peer_vs_independent_output_shift_m": {
+          "car1": {
+            "samples": 550,
+            "median": 0.029353097112465785,
+            "p95": 0.05120614479324386,
+            "maximum": 0.06848511181086198,
+            "is_accuracy_gain_or_harm": false
+          },
+          "car2": {
+            "samples": 550,
+            "median": 0.04875184215112281,
+            "p95": 0.07301629116054863,
+            "maximum": 0.08068613308200424,
+            "is_accuracy_gain_or_harm": false
+          }
+        }
+      },
+      "verification": {
+        "rows": 3426,
+        "existing_poses": 3300,
+        "update_identity_support_and_direction_checks": {
+          "independent:wall_updated": 2036,
+          "joint:wall_updated": 2036,
+          "joint:peer_updated": 242
+        },
+        "numerical_failure_events": 0,
+        "provenance_and_accepted_asof_verified": true,
+        "per_car_covariance_PSD_checked": true,
+        "field_accuracy_evaluated": false
+      }
+    },
+    "car1_lever_x_plus_5cm": {
+      "input_events": {
+        "odom": 2306,
+        "range": 57090
+      },
+      "metrics": {
+        "scope": "output response under hypotheses; no true-position errors",
+        "methods": {
+          "odom_only": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.5304477732486763,
+                2.985630921716309
+              ],
+              "terminal_10s_output_excursion_m": 0.0,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.98,
+                3.07
+              ],
+              "terminal_10s_output_excursion_m": 0.0,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          },
+          "independent": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.1651730854782112,
+                3.3023145467888377
+              ],
+              "terminal_10s_output_excursion_m": 0.08735366656878034,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.8144643051096856,
+                3.518671477728235
+              ],
+              "terminal_10s_output_excursion_m": 0.01424276631302413,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          },
+          "joint": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.201930791255181,
+                3.311431460547185
+              ],
+              "terminal_10s_output_excursion_m": 0.08228783696427136,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.764778997547209,
+                3.5276114031402535
+              ],
+              "terminal_10s_output_excursion_m": 0.02456336265419153,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          }
+        },
+        "event_counts": {
+          "odom_only": {
+            "stale_measurement_on_arrival": 21,
+            "excluded_odom_only": 57090,
+            "initial_binding_mismatch": 86,
+            "initialized": 2,
+            "odometry_predicted": 2197
+          },
+          "independent": {
+            "stale_measurement_on_arrival": 286,
+            "excluded_bridge_duplicate": 28500,
+            "initial_binding_mismatch": 86,
+            "excluded_independent_peer": 5484,
+            "missing_odometry_support:car2": 436,
+            "missing_odometry_support:car1": 436,
+            "initialized": 2,
+            "wall_updated": 2036,
+            "excluded_fixed_rate_thinning": 14654,
+            "odometry_predicted": 2197,
+            "stale_odometry_support:car2": 2576,
+            "measurement_before_odometry_anchor:car2": 492,
+            "measurement_before_odometry_anchor:car1": 292,
+            "stale_odometry_support:car1": 1919
+          },
+          "joint": {
+            "stale_measurement_on_arrival": 286,
+            "excluded_bridge_duplicate": 28500,
+            "initial_binding_mismatch": 86,
+            "excluded_correlated_reverse_direction": 2630,
+            "missing_odometry_support:car2": 436,
+            "missing_odometry_support:car1": 545,
+            "initialized": 2,
+            "wall_updated": 2036,
+            "peer_updated": 242,
+            "excluded_fixed_rate_thinning": 15948,
+            "stale_odometry_support:car2": 3135,
+            "odometry_predicted": 2197,
+            "measurement_before_odometry_anchor:car2": 590,
+            "measurement_before_odometry_anchor:car1": 365,
+            "stale_odometry_support:car1": 2398
+          }
+        },
+        "peer_vs_independent_output_shift_m": {
+          "car1": {
+            "samples": 550,
+            "median": 0.029353912940695396,
+            "p95": 0.05132879981268793,
+            "maximum": 0.06867362278459381,
+            "is_accuracy_gain_or_harm": false
+          },
+          "car2": {
+            "samples": 550,
+            "median": 0.048843912635752,
+            "p95": 0.07301620051512303,
+            "maximum": 0.08084185523046274,
+            "is_accuracy_gain_or_harm": false
+          }
+        }
+      },
+      "verification": {
+        "rows": 3426,
+        "existing_poses": 3300,
+        "update_identity_support_and_direction_checks": {
+          "independent:wall_updated": 2036,
+          "joint:wall_updated": 2036,
+          "joint:peer_updated": 242
+        },
+        "numerical_failure_events": 0,
+        "provenance_and_accepted_asof_verified": true,
+        "per_car_covariance_PSD_checked": true,
+        "field_accuracy_evaluated": false
+      }
+    },
+    "car2_lever_x_minus_5cm": {
+      "input_events": {
+        "odom": 2306,
+        "range": 57090
+      },
+      "metrics": {
+        "scope": "output response under hypotheses; no true-position errors",
+        "methods": {
+          "odom_only": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.5290001002576576,
+                2.9856099597513803
+              ],
+              "terminal_10s_output_excursion_m": 0.0,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.98,
+                3.07
+              ],
+              "terminal_10s_output_excursion_m": 0.0,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          },
+          "independent": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.1651966097188928,
+                3.302287023153303
+              ],
+              "terminal_10s_output_excursion_m": 0.08726012745595375,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.8144676651159943,
+                3.51863279281974
+              ],
+              "terminal_10s_output_excursion_m": 0.014266759381473567,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          },
+          "joint": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.2019527452969254,
+                3.311404641456889
+              ],
+              "terminal_10s_output_excursion_m": 0.08221136349069737,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.7647874432564885,
+                3.527567842226002
+              ],
+              "terminal_10s_output_excursion_m": 0.02455968501601265,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          }
+        },
+        "event_counts": {
+          "odom_only": {
+            "stale_measurement_on_arrival": 21,
+            "excluded_odom_only": 57090,
+            "initial_binding_mismatch": 86,
+            "initialized": 2,
+            "odometry_predicted": 2197
+          },
+          "independent": {
+            "stale_measurement_on_arrival": 286,
+            "excluded_bridge_duplicate": 28500,
+            "initial_binding_mismatch": 86,
+            "excluded_independent_peer": 5484,
+            "missing_odometry_support:car2": 436,
+            "missing_odometry_support:car1": 436,
+            "initialized": 2,
+            "wall_updated": 2036,
+            "excluded_fixed_rate_thinning": 14654,
+            "odometry_predicted": 2197,
+            "stale_odometry_support:car2": 2576,
+            "measurement_before_odometry_anchor:car2": 492,
+            "measurement_before_odometry_anchor:car1": 292,
+            "stale_odometry_support:car1": 1919
+          },
+          "joint": {
+            "stale_measurement_on_arrival": 286,
+            "excluded_bridge_duplicate": 28500,
+            "initial_binding_mismatch": 86,
+            "excluded_correlated_reverse_direction": 2630,
+            "missing_odometry_support:car2": 436,
+            "missing_odometry_support:car1": 545,
+            "initialized": 2,
+            "wall_updated": 2036,
+            "peer_updated": 242,
+            "excluded_fixed_rate_thinning": 15948,
+            "stale_odometry_support:car2": 3135,
+            "odometry_predicted": 2197,
+            "measurement_before_odometry_anchor:car2": 590,
+            "measurement_before_odometry_anchor:car1": 365,
+            "stale_odometry_support:car1": 2398
+          }
+        },
+        "peer_vs_independent_output_shift_m": {
+          "car1": {
+            "samples": 550,
+            "median": 0.029333907537436872,
+            "p95": 0.051262008421064785,
+            "maximum": 0.06856378534264054,
+            "is_accuracy_gain_or_harm": false
+          },
+          "car2": {
+            "samples": 550,
+            "median": 0.048790189122249916,
+            "p95": 0.07295055782036075,
+            "maximum": 0.08075230161488953,
+            "is_accuracy_gain_or_harm": false
+          }
+        }
+      },
+      "verification": {
+        "rows": 3426,
+        "existing_poses": 3300,
+        "update_identity_support_and_direction_checks": {
+          "independent:wall_updated": 2036,
+          "joint:wall_updated": 2036,
+          "joint:peer_updated": 242
+        },
+        "numerical_failure_events": 0,
+        "provenance_and_accepted_asof_verified": true,
+        "per_car_covariance_PSD_checked": true,
+        "field_accuracy_evaluated": false
+      }
+    },
+    "car2_lever_x_plus_5cm": {
+      "input_events": {
+        "odom": 2306,
+        "range": 57090
+      },
+      "metrics": {
+        "scope": "output response under hypotheses; no true-position errors",
+        "methods": {
+          "odom_only": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.5290001002576576,
+                2.9856099597513803
+              ],
+              "terminal_10s_output_excursion_m": 0.0,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.98,
+                3.07
+              ],
+              "terminal_10s_output_excursion_m": 0.0,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          },
+          "independent": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.1651966097188928,
+                3.302287023153303
+              ],
+              "terminal_10s_output_excursion_m": 0.08726012745595375,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.8144627023734055,
+                3.518699578425029
+              ],
+              "terminal_10s_output_excursion_m": 0.014223756302931632,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          },
+          "joint": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.2019527272075436,
+                3.311406896473729
+              ],
+              "terminal_10s_output_excursion_m": 0.0822106160078122,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.764781968779796,
+                3.527640860105664
+              ],
+              "terminal_10s_output_excursion_m": 0.02455428736676089,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          }
+        },
+        "event_counts": {
+          "odom_only": {
+            "stale_measurement_on_arrival": 21,
+            "excluded_odom_only": 57090,
+            "initial_binding_mismatch": 86,
+            "initialized": 2,
+            "odometry_predicted": 2197
+          },
+          "independent": {
+            "stale_measurement_on_arrival": 286,
+            "excluded_bridge_duplicate": 28500,
+            "initial_binding_mismatch": 86,
+            "excluded_independent_peer": 5484,
+            "missing_odometry_support:car2": 436,
+            "missing_odometry_support:car1": 436,
+            "initialized": 2,
+            "wall_updated": 2036,
+            "excluded_fixed_rate_thinning": 14654,
+            "odometry_predicted": 2197,
+            "stale_odometry_support:car2": 2576,
+            "measurement_before_odometry_anchor:car2": 492,
+            "measurement_before_odometry_anchor:car1": 292,
+            "stale_odometry_support:car1": 1919
+          },
+          "joint": {
+            "stale_measurement_on_arrival": 286,
+            "excluded_bridge_duplicate": 28500,
+            "initial_binding_mismatch": 86,
+            "excluded_correlated_reverse_direction": 2630,
+            "missing_odometry_support:car2": 436,
+            "missing_odometry_support:car1": 545,
+            "initialized": 2,
+            "wall_updated": 2036,
+            "peer_updated": 242,
+            "excluded_fixed_rate_thinning": 15948,
+            "stale_odometry_support:car2": 3135,
+            "odometry_predicted": 2197,
+            "measurement_before_odometry_anchor:car2": 590,
+            "measurement_before_odometry_anchor:car1": 365,
+            "stale_odometry_support:car1": 2398
+          }
+        },
+        "peer_vs_independent_output_shift_m": {
+          "car1": {
+            "samples": 550,
+            "median": 0.02936411567172837,
+            "p95": 0.05126240130043346,
+            "maximum": 0.06856560564142467,
+            "is_accuracy_gain_or_harm": false
+          },
+          "car2": {
+            "samples": 550,
+            "median": 0.04879364314961596,
+            "p95": 0.07306484705313288,
+            "maximum": 0.08076327193137582,
+            "is_accuracy_gain_or_harm": false
+          }
+        }
+      },
+      "verification": {
+        "rows": 3426,
+        "existing_poses": 3300,
+        "update_identity_support_and_direction_checks": {
+          "independent:wall_updated": 2036,
+          "joint:wall_updated": 2036,
+          "joint:peer_updated": 242
+        },
+        "numerical_failure_events": 0,
+        "provenance_and_accepted_asof_verified": true,
+        "per_car_covariance_PSD_checked": true,
+        "field_accuracy_evaluated": false
+      }
+    },
+    "car2_time_minus_20ms": {
+      "input_events": {
+        "odom": 2306,
+        "range": 57090
+      },
+      "metrics": {
+        "scope": "output response under hypotheses; no true-position errors",
+        "methods": {
+          "odom_only": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.5290001002576576,
+                2.9856099597513803
+              ],
+              "terminal_10s_output_excursion_m": 0.0,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.98,
+                3.07
+              ],
+              "terminal_10s_output_excursion_m": 0.0,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          },
+          "independent": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.1651966097188928,
+                3.302287023153303
+              ],
+              "terminal_10s_output_excursion_m": 0.08726012745595375,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.8144643051096856,
+                3.518671477728235
+              ],
+              "terminal_10s_output_excursion_m": 0.01424276631302413,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          },
+          "joint": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.2015325178423475,
+                3.3113128466010453
+              ],
+              "terminal_10s_output_excursion_m": 0.08859097573427543,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.7654535492092807,
+                3.526958230941261
+              ],
+              "terminal_10s_output_excursion_m": 0.02239361811699446,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          }
+        },
+        "event_counts": {
+          "odom_only": {
+            "stale_measurement_on_arrival": 22,
+            "excluded_odom_only": 57090,
+            "initial_binding_mismatch": 85,
+            "initialized": 2,
+            "odometry_predicted": 2197
+          },
+          "independent": {
+            "stale_measurement_on_arrival": 292,
+            "excluded_bridge_duplicate": 28500,
+            "missing_odometry_support:car1": 436,
+            "excluded_independent_peer": 5483,
+            "missing_odometry_support:car2": 432,
+            "initial_binding_mismatch": 85,
+            "initialized": 2,
+            "wall_updated": 2036,
+            "excluded_fixed_rate_thinning": 14654,
+            "odometry_predicted": 2197,
+            "stale_odometry_support:car2": 2576,
+            "measurement_before_odometry_anchor:car2": 492,
+            "measurement_before_odometry_anchor:car1": 292,
+            "stale_odometry_support:car1": 1919
+          },
+          "joint": {
+            "stale_measurement_on_arrival": 292,
+            "excluded_bridge_duplicate": 28500,
+            "missing_odometry_support:car1": 545,
+            "excluded_correlated_reverse_direction": 2629,
+            "missing_odometry_support:car2": 432,
+            "initial_binding_mismatch": 85,
+            "initialized": 2,
+            "wall_updated": 2036,
+            "peer_updated": 228,
+            "excluded_fixed_rate_thinning": 15606,
+            "stale_odometry_support:car2": 3582,
+            "odometry_predicted": 2197,
+            "measurement_before_odometry_anchor:car2": 499,
+            "measurement_before_odometry_anchor:car1": 365,
+            "stale_odometry_support:car1": 2398
+          }
+        },
+        "peer_vs_independent_output_shift_m": {
+          "car1": {
+            "samples": 550,
+            "median": 0.028316799480630914,
+            "p95": 0.0469113011567378,
+            "maximum": 0.05625286833642777,
+            "is_accuracy_gain_or_harm": false
+          },
+          "car2": {
+            "samples": 550,
+            "median": 0.046844891832690146,
+            "p95": 0.0700547829797385,
+            "maximum": 0.07779081785830305,
+            "is_accuracy_gain_or_harm": false
+          }
+        }
+      },
+      "verification": {
+        "rows": 3426,
+        "existing_poses": 3300,
+        "update_identity_support_and_direction_checks": {
+          "independent:wall_updated": 2036,
+          "joint:wall_updated": 2036,
+          "joint:peer_updated": 228
+        },
+        "numerical_failure_events": 0,
+        "provenance_and_accepted_asof_verified": true,
+        "per_car_covariance_PSD_checked": true,
+        "field_accuracy_evaluated": false
+      }
+    },
+    "car2_time_plus_20ms": {
+      "input_events": {
+        "odom": 2306,
+        "range": 57090
+      },
+      "metrics": {
+        "scope": "output response under hypotheses; no true-position errors",
+        "methods": {
+          "odom_only": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.5290001002576576,
+                2.9856099597513803
+              ],
+              "terminal_10s_output_excursion_m": 0.0,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.98,
+                3.07
+              ],
+              "terminal_10s_output_excursion_m": 0.0,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          },
+          "independent": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.1651966097188928,
+                3.302287023153303
+              ],
+              "terminal_10s_output_excursion_m": 0.08726012745595375,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.8144630472331116,
+                3.51867434575018
+              ],
+              "terminal_10s_output_excursion_m": 0.014248084222431361,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          },
+          "joint": {
+            "car1": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                1.2049243393607822,
+                3.312034153014809
+              ],
+              "terminal_10s_output_excursion_m": 0.08226562049679931,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            },
+            "car2": {
+              "valid_rows": 550,
+              "final_antenna_xy_m": [
+                2.7613951578105924,
+                3.527711673698249
+              ],
+              "terminal_10s_output_excursion_m": 0.021988257468565968,
+              "terminal_window_is_independently_validated_stationary_truth": false
+            }
+          }
+        },
+        "event_counts": {
+          "odom_only": {
+            "stale_measurement_on_arrival": 21,
+            "excluded_odom_only": 57090,
+            "initial_binding_mismatch": 86,
+            "initialized": 2,
+            "odometry_predicted": 2197
+          },
+          "independent": {
+            "stale_measurement_on_arrival": 281,
+            "excluded_bridge_duplicate": 28500,
+            "excluded_independent_peer": 5406,
+            "missing_odometry_support:car2": 208,
+            "initial_binding_mismatch": 86,
+            "missing_odometry_support:car1": 436,
+            "future_measurement_time": 395,
+            "initialized": 2,
+            "wall_updated": 2032,
+            "excluded_fixed_rate_thinning": 14602,
+            "odometry_predicted": 2197,
+            "stale_odometry_support:car2": 2548,
+            "measurement_before_odometry_anchor:car2": 492,
+            "measurement_before_odometry_anchor:car1": 292,
+            "stale_odometry_support:car1": 1919
+          },
+          "joint": {
+            "stale_measurement_on_arrival": 281,
+            "excluded_bridge_duplicate": 28500,
+            "excluded_correlated_reverse_direction": 2552,
+            "missing_odometry_support:car2": 208,
+            "initial_binding_mismatch": 86,
+            "missing_odometry_support:car1": 545,
+            "future_measurement_time": 395,
+            "initialized": 2,
+            "wall_updated": 2032,
+            "peer_updated": 247,
+            "excluded_fixed_rate_thinning": 15878,
+            "odometry_predicted": 2197,
+            "stale_odometry_support:car2": 2703,
+            "measurement_before_odometry_anchor:car2": 1007,
+            "measurement_before_odometry_anchor:car1": 365,
+            "stale_odometry_support:car1": 2398
+          }
+        },
+        "peer_vs_independent_output_shift_m": {
+          "car1": {
+            "samples": 550,
+            "median": 0.0313991355239491,
+            "p95": 0.05206235591743053,
+            "maximum": 0.06778221426151292,
+            "is_accuracy_gain_or_harm": false
+          },
+          "car2": {
+            "samples": 550,
+            "median": 0.049441729718257235,
+            "p95": 0.07702975247083575,
+            "maximum": 0.08058884989427319,
+            "is_accuracy_gain_or_harm": false
+          }
+        }
+      },
+      "verification": {
+        "rows": 3426,
+        "existing_poses": 3300,
+        "update_identity_support_and_direction_checks": {
+          "independent:wall_updated": 2032,
+          "joint:wall_updated": 2032,
+          "joint:peer_updated": 247
+        },
+        "numerical_failure_events": 0,
+        "provenance_and_accepted_asof_verified": true,
+        "per_car_covariance_PSD_checked": true,
+        "field_accuracy_evaluated": false
+      }
+    }
+  },
+  "sensitivity_vs_nominal": {
+    "nominal": {
+      "odom_only:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "odom_only:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "independent:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "independent:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "joint:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "joint:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      }
+    },
+    "car1_lever_x_minus_5cm": {
+      "odom_only:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0015577480633735402,
+        "p95_output_shift_m": 0.0015327465651294736,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "odom_only:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "independent:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.000722991754289129,
+        "p95_output_shift_m": 0.0005248603717914621,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "independent:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "joint:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0007050687834182595,
+        "p95_output_shift_m": 0.00043499070168624015,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "joint:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 7.64179362274054e-05,
+        "p95_output_shift_m": 5.9516172012186535e-05,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      }
+    },
+    "car1_lever_x_plus_5cm": {
+      "odom_only:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0015577480633735333,
+        "p95_output_shift_m": 0.0015327465651293803,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "odom_only:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "independent:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0007751478255235975,
+        "p95_output_shift_m": 0.0005744186199860034,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "independent:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "joint:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0007133388841875049,
+        "p95_output_shift_m": 0.0004845356215417477,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "joint:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 8.887384228222449e-05,
+        "p95_output_shift_m": 7.345039093605155e-05,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      }
+    },
+    "car2_lever_x_minus_5cm": {
+      "odom_only:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "odom_only:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "independent:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "independent:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0005997843585403165,
+        "p95_output_shift_m": 0.0005528113869201502,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "joint:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 6.487600884099076e-05,
+        "p95_output_shift_m": 5.745296586115215e-05,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "joint:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0006401816017167029,
+        "p95_output_shift_m": 0.0005623305696788368,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      }
+    },
+    "car2_lever_x_plus_5cm": {
+      "odom_only:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "odom_only:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "independent:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "independent:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.00037502940506313964,
+        "p95_output_shift_m": 0.00033769425867373443,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "joint:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 3.1062197294448426e-05,
+        "p95_output_shift_m": 2.7435250039446732e-05,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "joint:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0004036367390798304,
+        "p95_output_shift_m": 0.0003530525809578287,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      }
+    },
+    "car2_time_minus_20ms": {
+      "odom_only:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "odom_only:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "independent:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "independent:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "joint:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.012329125241626266,
+        "p95_output_shift_m": 0.006020604449218535,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "joint:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.013993191256205392,
+        "p95_output_shift_m": 0.008247331476819367,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      }
+    },
+    "car2_time_plus_20ms": {
+      "odom_only:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "odom_only:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "independent:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.0,
+        "p95_output_shift_m": 0.0,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "independent:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.006133465862934367,
+        "p95_output_shift_m": 0.0018922753834964476,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "joint:car1": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.009567690909563952,
+        "p95_output_shift_m": 0.005642356411423137,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      },
+      "joint:car2": {
+        "paired_publications": 550,
+        "maximum_output_shift_m": 0.010983706715752823,
+        "p95_output_shift_m": 0.007394438203330534,
+        "compared_at_same_publication_not_necessarily_same_hypothesized_measurement_epoch": true
+      }
+    }
+  },
+  "reference_approved": false,
+  "holdout_localization_used": false,
+  "RMSE_m": null,
+  "ATE_m": null,
+  "accuracy_improvement_percent": null,
+  "postprocess_source_sha256": "929e4dfbc7e5ecb4327b9f646e6bd8420b9d38ae44cd628404dae00fc03cc0bf",
+  "postprocess_worktree_dirty": true
+}
