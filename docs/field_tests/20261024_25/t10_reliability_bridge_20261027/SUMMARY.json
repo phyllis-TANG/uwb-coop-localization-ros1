@@ -1,0 +1,793 @@
+{
+  "scope": "T10 conditional output response; no accuracy evaluation",
+  "code_commit": "e038868f2b1995a0b88f962ce80203a6e2a6460e",
+  "run_sha256": "65376e6c8cb8b0c4448a48dd9d0d4d1d1e4dad40c985d85d667a751bb93d061c",
+  "audit_sha256": "6845c9a4a4e4ae1ac9d7a4bd0013d0e4fad15ebe505655383544a8efca4c74e1",
+  "actual_elapsed_s": 383.6032315760003,
+  "field_accuracy_evaluated": false,
+  "nominal": {
+    "shift_to_independent": {
+      "cap_only": {
+        "car1": {
+          "samples": 550,
+          "median_m": 0.029354158858542204,
+          "p95_m": 0.051262167540156646,
+          "maximum_m": 0.06856472316918935,
+          "is_accuracy_gain": false
+        },
+        "car2": {
+          "samples": 550,
+          "median_m": 0.04879236896869585,
+          "p95_m": 0.07302609312705767,
+          "maximum_m": 0.08075841524153066,
+          "is_accuracy_gain": false
+        }
+      },
+      "gate_cap": {
+        "car1": {
+          "samples": 550,
+          "median_m": 0.029354158858542204,
+          "p95_m": 0.051262167540156646,
+          "maximum_m": 0.06856472316918935,
+          "is_accuracy_gain": false
+        },
+        "car2": {
+          "samples": 550,
+          "median_m": 0.04879236896869585,
+          "p95_m": 0.07302609312705767,
+          "maximum_m": 0.08075841524153066,
+          "is_accuracy_gain": false
+        }
+      },
+      "gate_cap_shadow": {
+        "car1": {
+          "samples": 550,
+          "median_m": 0.005933365778424859,
+          "p95_m": 0.010715889481470422,
+          "maximum_m": 0.01604352856092314,
+          "is_accuracy_gain": false
+        },
+        "car2": {
+          "samples": 550,
+          "median_m": 0.006846009580201665,
+          "p95_m": 0.012649381379694626,
+          "maximum_m": 0.01683033772869804,
+          "is_accuracy_gain": false
+        }
+      },
+      "gate_only": {
+        "car1": {
+          "samples": 550,
+          "median_m": 0.029354158858542204,
+          "p95_m": 0.051262167540156646,
+          "maximum_m": 0.06856472316918935,
+          "is_accuracy_gain": false
+        },
+        "car2": {
+          "samples": 550,
+          "median_m": 0.04879236896869585,
+          "p95_m": 0.07302609312705767,
+          "maximum_m": 0.08075841524153066,
+          "is_accuracy_gain": false
+        }
+      },
+      "huber": {
+        "car1": {
+          "samples": 550,
+          "median_m": 0.029354158858542204,
+          "p95_m": 0.051262167540156646,
+          "maximum_m": 0.06856472316918935,
+          "is_accuracy_gain": false
+        },
+        "car2": {
+          "samples": 550,
+          "median_m": 0.04879236896869585,
+          "p95_m": 0.07302609312705767,
+          "maximum_m": 0.08075841524153066,
+          "is_accuracy_gain": false
+        }
+      },
+      "independent": {
+        "car1": {
+          "samples": 550,
+          "median_m": 0.0,
+          "p95_m": 0.0,
+          "maximum_m": 0.0,
+          "is_accuracy_gain": false
+        },
+        "car2": {
+          "samples": 550,
+          "median_m": 0.0,
+          "p95_m": 0.0,
+          "maximum_m": 0.0,
+          "is_accuracy_gain": false
+        }
+      },
+      "joint": {
+        "car1": {
+          "samples": 550,
+          "median_m": 0.029354158858542204,
+          "p95_m": 0.051262167540156646,
+          "maximum_m": 0.06856472316918935,
+          "is_accuracy_gain": false
+        },
+        "car2": {
+          "samples": 550,
+          "median_m": 0.04879236896869585,
+          "p95_m": 0.07302609312705767,
+          "maximum_m": 0.08075841524153066,
+          "is_accuracy_gain": false
+        }
+      },
+      "odom_only": {
+        "car1": {
+          "samples": 550,
+          "median_m": 0.47467413127734726,
+          "p95_m": 0.5180487204456097,
+          "maximum_m": 0.5690992889671662,
+          "is_accuracy_gain": false
+        },
+        "car2": {
+          "samples": 550,
+          "median_m": 0.4722055623464012,
+          "p95_m": 0.482209945746588,
+          "maximum_m": 0.4843774432202965,
+          "is_accuracy_gain": false
+        }
+      },
+      "shadow_only": {
+        "car1": {
+          "samples": 550,
+          "median_m": 0.005933365778424859,
+          "p95_m": 0.010715889481470422,
+          "maximum_m": 0.01604352856092314,
+          "is_accuracy_gain": false
+        },
+        "car2": {
+          "samples": 550,
+          "median_m": 0.006846009580201665,
+          "p95_m": 0.012649381379694626,
+          "maximum_m": 0.01683033772869804,
+          "is_accuracy_gain": false
+        }
+      }
+    },
+    "valid_rows": {
+      "cap_only:car1": 550,
+      "gate_cap:car1": 550,
+      "gate_cap_shadow:car1": 550,
+      "gate_only:car1": 550,
+      "huber:car1": 550,
+      "independent:car1": 550,
+      "joint:car1": 550,
+      "odom_only:car1": 550,
+      "shadow_only:car1": 550,
+      "cap_only:car2": 550,
+      "gate_cap:car2": 550,
+      "gate_cap_shadow:car2": 550,
+      "gate_only:car2": 550,
+      "huber:car2": 550,
+      "independent:car2": 550,
+      "joint:car2": 550,
+      "odom_only:car2": 550,
+      "shadow_only:car2": 550
+    },
+    "null_covariance_valid_rows": {
+      "cap_only:car1": 0,
+      "gate_cap:car1": 0,
+      "gate_cap_shadow:car1": 483,
+      "gate_only:car1": 0,
+      "huber:car1": 0,
+      "independent:car1": 0,
+      "joint:car1": 0,
+      "odom_only:car1": 0,
+      "shadow_only:car1": 483,
+      "cap_only:car2": 0,
+      "gate_cap:car2": 0,
+      "gate_cap_shadow:car2": 483,
+      "gate_only:car2": 0,
+      "huber:car2": 0,
+      "independent:car2": 0,
+      "joint:car2": 0,
+      "odom_only:car2": 0,
+      "shadow_only:car2": 483
+    },
+    "final_antenna_xy_under_hypotheses": {
+      "cap_only": {
+        "car1": [
+          1.2019526766594402,
+          3.311405953536592
+        ],
+        "car2": [
+          2.764783907838324,
+          3.527609711046849
+        ]
+      },
+      "gate_cap": {
+        "car1": [
+          1.2019526766594402,
+          3.311405953536592
+        ],
+        "car2": [
+          2.764783907838324,
+          3.527609711046849
+        ]
+      },
+      "gate_cap_shadow": {
+        "car1": [
+          1.1731939903493371,
+          3.303851068977125
+        ],
+        "car2": [
+          2.805967491084073,
+          3.5182825877698036
+        ]
+      },
+      "gate_only": {
+        "car1": [
+          1.2019526766594402,
+          3.311405953536592
+        ],
+        "car2": [
+          2.764783907838324,
+          3.527609711046849
+        ]
+      },
+      "huber": {
+        "car1": [
+          1.2019526766594402,
+          3.311405953536592
+        ],
+        "car2": [
+          2.764783907838324,
+          3.527609711046849
+        ]
+      },
+      "independent": {
+        "car1": [
+          1.1651966097188928,
+          3.302287023153303
+        ],
+        "car2": [
+          2.8144643051096856,
+          3.518671477728235
+        ]
+      },
+      "joint": {
+        "car1": [
+          1.2019526766594402,
+          3.311405953536592
+        ],
+        "car2": [
+          2.764783907838324,
+          3.527609711046849
+        ]
+      },
+      "odom_only": {
+        "car1": [
+          1.5290001002576576,
+          2.9856099597513803
+        ],
+        "car2": [
+          2.98,
+          3.07
+        ]
+      },
+      "shadow_only": {
+        "car1": [
+          1.1731939903493371,
+          3.303851068977125
+        ],
+        "car2": [
+          2.805967491084073,
+          3.5182825877698036
+        ]
+      }
+    },
+    "event_status_counts": {
+      "cap_only:stale_measurement_on_arrival": 286,
+      "gate_cap:stale_measurement_on_arrival": 286,
+      "gate_cap_shadow:stale_measurement_on_arrival": 286,
+      "gate_only:stale_measurement_on_arrival": 286,
+      "huber:stale_measurement_on_arrival": 286,
+      "independent:stale_measurement_on_arrival": 286,
+      "joint:stale_measurement_on_arrival": 286,
+      "odom_only:stale_measurement_on_arrival": 21,
+      "shadow_only:stale_measurement_on_arrival": 286,
+      "odom_only:excluded_odom_only": 57090,
+      "cap_only:excluded_bridge_duplicate": 28500,
+      "gate_cap:excluded_bridge_duplicate": 28500,
+      "gate_cap_shadow:excluded_bridge_duplicate": 28500,
+      "gate_only:excluded_bridge_duplicate": 28500,
+      "huber:excluded_bridge_duplicate": 28500,
+      "independent:excluded_bridge_duplicate": 28500,
+      "joint:excluded_bridge_duplicate": 28500,
+      "shadow_only:excluded_bridge_duplicate": 28500,
+      "cap_only:initial_binding_mismatch": 86,
+      "gate_cap:initial_binding_mismatch": 86,
+      "gate_cap_shadow:initial_binding_mismatch": 86,
+      "gate_only:initial_binding_mismatch": 86,
+      "huber:initial_binding_mismatch": 86,
+      "independent:initial_binding_mismatch": 86,
+      "joint:initial_binding_mismatch": 86,
+      "odom_only:initial_binding_mismatch": 86,
+      "shadow_only:initial_binding_mismatch": 86,
+      "cap_only:excluded_correlated_reverse_direction": 2630,
+      "gate_cap:excluded_correlated_reverse_direction": 2630,
+      "gate_cap_shadow:excluded_correlated_reverse_direction": 2630,
+      "gate_only:excluded_correlated_reverse_direction": 2630,
+      "huber:excluded_correlated_reverse_direction": 2630,
+      "independent:excluded_independent_peer": 5484,
+      "joint:excluded_correlated_reverse_direction": 2630,
+      "shadow_only:excluded_correlated_reverse_direction": 2630,
+      "cap_only:missing_odometry_support:car2": 436,
+      "gate_cap:missing_odometry_support:car2": 436,
+      "gate_cap_shadow:missing_odometry_support:car2": 436,
+      "gate_only:missing_odometry_support:car2": 436,
+      "huber:missing_odometry_support:car2": 436,
+      "independent:missing_odometry_support:car2": 436,
+      "joint:missing_odometry_support:car2": 436,
+      "shadow_only:missing_odometry_support:car2": 436,
+      "cap_only:missing_odometry_support:car1": 545,
+      "gate_cap:missing_odometry_support:car1": 545,
+      "gate_cap_shadow:missing_odometry_support:car1": 545,
+      "gate_only:missing_odometry_support:car1": 545,
+      "huber:missing_odometry_support:car1": 545,
+      "independent:missing_odometry_support:car1": 436,
+      "joint:missing_odometry_support:car1": 545,
+      "shadow_only:missing_odometry_support:car1": 545,
+      "cap_only:initialized": 2,
+      "gate_cap:initialized": 2,
+      "gate_cap_shadow:initialized": 2,
+      "gate_only:initialized": 2,
+      "huber:initialized": 2,
+      "independent:initialized": 2,
+      "joint:initialized": 2,
+      "odom_only:initialized": 2,
+      "shadow_only:initialized": 2,
+      "cap_only:wall_updated": 2036,
+      "gate_cap:wall_updated": 2036,
+      "gate_cap_shadow:wall_updated": 2036,
+      "gate_only:wall_updated": 2036,
+      "huber:wall_updated": 2036,
+      "independent:wall_updated": 2036,
+      "joint:wall_updated": 2036,
+      "shadow_only:wall_updated": 2036,
+      "cap_only:peer_updated": 242,
+      "cap_only:clipped_car1": 0,
+      "cap_only:clipped_car2": 0,
+      "gate_cap:peer_updated": 242,
+      "gate_cap:clipped_car1": 0,
+      "gate_cap:clipped_car2": 0,
+      "gate_cap_shadow:peer_output_only": 242,
+      "gate_cap_shadow:clipped_car1": 0,
+      "gate_cap_shadow:clipped_car2": 0,
+      "gate_only:peer_updated": 242,
+      "gate_only:clipped_car1": 0,
+      "gate_only:clipped_car2": 0,
+      "huber:peer_updated": 242,
+      "huber:clipped_car1": 0,
+      "huber:clipped_car2": 0,
+      "joint:peer_updated": 242,
+      "shadow_only:peer_output_only": 242,
+      "shadow_only:clipped_car1": 0,
+      "shadow_only:clipped_car2": 0,
+      "cap_only:excluded_fixed_rate_thinning": 15948,
+      "gate_cap:excluded_fixed_rate_thinning": 15948,
+      "gate_cap_shadow:excluded_fixed_rate_thinning": 15948,
+      "gate_only:excluded_fixed_rate_thinning": 15948,
+      "huber:excluded_fixed_rate_thinning": 15948,
+      "independent:excluded_fixed_rate_thinning": 14654,
+      "joint:excluded_fixed_rate_thinning": 15948,
+      "shadow_only:excluded_fixed_rate_thinning": 15948,
+      "cap_only:stale_odometry_support:car2": 3135,
+      "gate_cap:stale_odometry_support:car2": 3135,
+      "gate_cap_shadow:stale_odometry_support:car2": 3135,
+      "gate_only:stale_odometry_support:car2": 3135,
+      "huber:stale_odometry_support:car2": 3135,
+      "joint:stale_odometry_support:car2": 3135,
+      "shadow_only:stale_odometry_support:car2": 3135,
+      "cap_only:odometry_predicted": 2197,
+      "gate_cap:odometry_predicted": 2197,
+      "gate_cap_shadow:odometry_predicted": 2197,
+      "gate_only:odometry_predicted": 2197,
+      "huber:odometry_predicted": 2197,
+      "independent:odometry_predicted": 2197,
+      "joint:odometry_predicted": 2197,
+      "odom_only:odometry_predicted": 2197,
+      "shadow_only:odometry_predicted": 2197,
+      "independent:stale_odometry_support:car2": 2576,
+      "cap_only:measurement_before_odometry_anchor:car2": 590,
+      "gate_cap:measurement_before_odometry_anchor:car2": 590,
+      "gate_cap_shadow:measurement_before_odometry_anchor:car2": 590,
+      "gate_only:measurement_before_odometry_anchor:car2": 590,
+      "huber:measurement_before_odometry_anchor:car2": 590,
+      "joint:measurement_before_odometry_anchor:car2": 590,
+      "shadow_only:measurement_before_odometry_anchor:car2": 590,
+      "independent:measurement_before_odometry_anchor:car2": 492,
+      "cap_only:measurement_before_odometry_anchor:car1": 365,
+      "gate_cap:measurement_before_odometry_anchor:car1": 365,
+      "gate_cap_shadow:measurement_before_odometry_anchor:car1": 365,
+      "gate_only:measurement_before_odometry_anchor:car1": 365,
+      "huber:measurement_before_odometry_anchor:car1": 365,
+      "independent:measurement_before_odometry_anchor:car1": 292,
+      "joint:measurement_before_odometry_anchor:car1": 365,
+      "shadow_only:measurement_before_odometry_anchor:car1": 365,
+      "cap_only:stale_odometry_support:car1": 2398,
+      "gate_cap:stale_odometry_support:car1": 2398,
+      "gate_cap_shadow:stale_odometry_support:car1": 2398,
+      "gate_only:stale_odometry_support:car1": 2398,
+      "huber:stale_odometry_support:car1": 2398,
+      "independent:stale_odometry_support:car1": 1919,
+      "joint:stale_odometry_support:car1": 2398,
+      "shadow_only:stale_odometry_support:car1": 2398
+    },
+    "maximum_abs_policy_z": {
+      "cap_only": 1.0102006711560736,
+      "gate_cap": 1.0102006711560736,
+      "gate_cap_shadow": 1.424458936404772,
+      "gate_only": 1.0102006711560736,
+      "huber": 1.0102006711560736,
+      "shadow_only": 1.424458936404772
+    }
+  },
+  "profile_admissions": {
+    "nominal": {
+      "joint": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "huber": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_only": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "cap_only": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_cap": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "shadow_only": {
+        "peer_updated": 0,
+        "peer_output_only": 242,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_cap_shadow": {
+        "peer_updated": 0,
+        "peer_output_only": 242,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      }
+    },
+    "car1_lever_x_minus_5cm": {
+      "joint": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "huber": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_only": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "cap_only": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_cap": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "shadow_only": {
+        "peer_updated": 0,
+        "peer_output_only": 242,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_cap_shadow": {
+        "peer_updated": 0,
+        "peer_output_only": 242,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      }
+    },
+    "car1_lever_x_plus_5cm": {
+      "joint": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "huber": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_only": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "cap_only": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_cap": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "shadow_only": {
+        "peer_updated": 0,
+        "peer_output_only": 242,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_cap_shadow": {
+        "peer_updated": 0,
+        "peer_output_only": 242,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      }
+    },
+    "car2_lever_x_minus_5cm": {
+      "joint": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "huber": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_only": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "cap_only": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_cap": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "shadow_only": {
+        "peer_updated": 0,
+        "peer_output_only": 242,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_cap_shadow": {
+        "peer_updated": 0,
+        "peer_output_only": 242,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      }
+    },
+    "car2_lever_x_plus_5cm": {
+      "joint": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "huber": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_only": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "cap_only": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_cap": {
+        "peer_updated": 242,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "shadow_only": {
+        "peer_updated": 0,
+        "peer_output_only": 242,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_cap_shadow": {
+        "peer_updated": 0,
+        "peer_output_only": 242,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      }
+    },
+    "car2_time_minus_20ms": {
+      "joint": {
+        "peer_updated": 228,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "huber": {
+        "peer_updated": 228,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_only": {
+        "peer_updated": 228,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "cap_only": {
+        "peer_updated": 228,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_cap": {
+        "peer_updated": 228,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "shadow_only": {
+        "peer_updated": 0,
+        "peer_output_only": 228,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_cap_shadow": {
+        "peer_updated": 0,
+        "peer_output_only": 228,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      }
+    },
+    "car2_time_plus_20ms": {
+      "joint": {
+        "peer_updated": 247,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "huber": {
+        "peer_updated": 247,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_only": {
+        "peer_updated": 247,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "cap_only": {
+        "peer_updated": 247,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_cap": {
+        "peer_updated": 247,
+        "peer_output_only": 0,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "shadow_only": {
+        "peer_updated": 0,
+        "peer_output_only": 247,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      },
+      "gate_cap_shadow": {
+        "peer_updated": 0,
+        "peer_output_only": 247,
+        "peer_gate_rejected": 0,
+        "clipped_car1": 0,
+        "clipped_car2": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "scope": "T10_exploratory_policy_response_NOT_accuracy",
+  "experiment_id": "T10",
+  "bag_sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+  "pr52_head": "df23323da8daabd1d9d00b3bc7a5b8c1c40707ce",
+  "pr53_head": "01b2ddcb40df7b383a59b2741d9cbe8a41752fd2",
+  "pr53_execution_source": "98f1aaaf4ef48bacbdf84b3efdc2bee01292f993",
+  "pr53_run_sha256": "b54de470c11b317b1a8e53178e9c9ad74a737b455bc96f5a419d74c89cb0231b",
+  "pr53_protocol_sha256": "99ea7a6e802badaae3f859376a6586a59a735a7ac2dddbffe0c9a893eca921f1",
+  "profiles": [
+    {
+      "id": "nominal",
+      "change": null
+    },
+    {
+      "id": "car1_lever_x_minus_5cm",
+      "change": {
+        "kind": "lever_x",
+        "car": "car1",
+        "delta": -0.05
+      }
+    },
+    {
+      "id": "car1_lever_x_plus_5cm",
+      "change": {
+        "kind": "lever_x",
+        "car": "car1",
+        "delta": 0.05
+      }
+    },
+    {
+      "id": "car2_lever_x_minus_5cm",
+      "change": {
+        "kind": "lever_x",
+        "car": "car2",
+        "delta": -0.05
+      }
+    },
+    {
+      "id": "car2_lever_x_plus_5cm",
+      "change": {
+        "kind": "lever_x",
+        "car": "car2",
+        "delta": 0.05
+      }
+    },
+    {
+      "id": "car2_time_minus_20ms",
+      "change": {
+        "kind": "clock_ns",
+        "car": "car2",
+        "delta": -20000000
+      }
+    },
+    {
+      "id": "car2_time_plus_20ms",
+      "change": {
+        "kind": "clock_ns",
+        "car": "car2",
+        "delta": 20000000
+      }
+    }
+  ],
+  "policy": {
+    "huber_delta": 1.5,
+    "gate_z": 3.0,
+    "quarantine_bad_count": 3,
+    "reopen_good_count": 4,
+    "healthy_information_min": 18.0,
+    "healthy_shift_cap_m": 0.06,
+    "weak_shift_cap_m": 0.35,
+    "output_hold_ns": 200000000
+  },
+  "methods": [
+    "odom_only",
+    "independent",
+    "joint",
+    "huber",
+    "gate_only",
+    "cap_only",
+    "gate_cap",
+    "shadow_only",
+    "gate_cap_shadow"
+  ],
+  "budget_seconds": 1800,
+  "development_only": true,
+  "field_accuracy_evaluated": false,
+  "reference_status": "not_accepted",
+  "tuning_permitted": false,
+  "holdouts": [
+    "T09",
+    "T11",
+    "T13",
+    "T15"
+  ],
+  "evaluation": "Per-publication output differences to independent at equal source epochs; policy gate/cap/hold audit; no measured position error",
+  "assumptions": "Exactly PR53 hypotheses including T09 manual endpoint as Car2 initial hypothesis; no T09 localization replay. Time and lever steps are not uncertainty bounds.",
+  "old_budget": "This is a separately frozen T10 real-input task, not a resume/reset of the PR52 synthetic matrix."
+}

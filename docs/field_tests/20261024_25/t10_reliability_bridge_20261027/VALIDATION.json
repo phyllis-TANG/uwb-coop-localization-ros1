@@ -1,0 +1,73 @@
+{
+  "status": "DONE",
+  "formal_execution_profiles": 7,
+  "methods": 9,
+  "real_development_bags": 1,
+  "verified_publication_rows": 71946,
+  "valid_publication_rows": 69300,
+  "total_input_events_read": 415772,
+  "total_method_decisions": 3741948,
+  "numerical_failures": 0,
+  "all_original_baseline_rows_verified": 23982,
+  "original_baseline_maximum_pose_difference": 0.0,
+  "tests_passed": 101,
+  "formal_run_seconds": 383.6032315760003,
+  "independent_readback_seconds": 134.97277659300016,
+  "field_accuracy_evaluated": false,
+  "strict_source_based_entry": "BLOCKED unchanged; exit 2; 14 source parameter groups missing",
+  "reference_status": "not_accepted",
+  "holdout_localization_used": false,
+  "assumption_steps_are_uncertainty_bounds": false,
+  "source_modified_during_run": false,
+  "source_identity": {
+    "local_execution_commit": "e038868f2b1995a0b88f962ce80203a6e2a6460e",
+    "published_equivalent_source_commit": "db2aac52cbd687f53f0456f00875859212487a84",
+    "entire_git_tree_sha": "237185c828ff8ef377c492471b833b1dd0d18227",
+    "equivalence": "Full source tree identity; commit metadata differs because CLI push had no credentials and authenticated GitHub API published the identical tree. No execution/source was restarted or altered.",
+    "pr52_head": "df23323da8daabd1d9d00b3bc7a5b8c1c40707ce",
+    "pr53_head": "01b2ddcb40df7b383a59b2741d9cbe8a41752fd2",
+    "unchanged_sources": {
+      "tools/field_20261024_25/causal_baselines/model.py": "1bbc0c0b6b4d76a4d7c7d25e35260e80c1e601dccb86f223087e4651ea0d82c2",
+      "tools/field_20261024_25/causal_reliability/engine.py": "418780a477c14328cf3389d7f3fcf0d11966227f8ca5fa3ca4d596e3f6906091",
+      "tools/field_20261024_25/t10_exploratory/pilot.py": "b4c28727bf44742074a853519ba1707438b53c2dd10c6fe508b66fd813a05d9f"
+    }
+  },
+  "full_independent_audit_sha256": "6845c9a4a4e4ae1ac9d7a4bd0013d0e4fad15ebe505655383544a8efca4c74e1",
+  "profile_parity": {
+    "nominal": {
+      "rows": 3426,
+      "maximum_pose_component_difference": 0.0,
+      "all_base_rows_equal_within_2e_10": true
+    },
+    "car1_lever_x_minus_5cm": {
+      "rows": 3426,
+      "maximum_pose_component_difference": 0.0,
+      "all_base_rows_equal_within_2e_10": true
+    },
+    "car1_lever_x_plus_5cm": {
+      "rows": 3426,
+      "maximum_pose_component_difference": 0.0,
+      "all_base_rows_equal_within_2e_10": true
+    },
+    "car2_lever_x_minus_5cm": {
+      "rows": 3426,
+      "maximum_pose_component_difference": 0.0,
+      "all_base_rows_equal_within_2e_10": true
+    },
+    "car2_lever_x_plus_5cm": {
+      "rows": 3426,
+      "maximum_pose_component_difference": 0.0,
+      "all_base_rows_equal_within_2e_10": true
+    },
+    "car2_time_minus_20ms": {
+      "rows": 3426,
+      "maximum_pose_component_difference": 0.0,
+      "all_base_rows_equal_within_2e_10": true
+    },
+    "car2_time_plus_20ms": {
+      "rows": 3426,
+      "maximum_pose_component_difference": 0.0,
+      "all_base_rows_equal_within_2e_10": true
+    }
+  }
+}
