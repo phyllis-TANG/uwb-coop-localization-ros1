@@ -1,0 +1,2602 @@
+{
+  "status": "DONE",
+  "cases": [
+    {
+      "case_id": "004023",
+      "common_valid_state_epoch_ns": [
+        1792309249383504223,
+        1792309250383504223,
+        1792309251383504223,
+        1792309252383504223,
+        1792309253383504223,
+        1792309254383504223,
+        1792309255383504223,
+        1792309256383504223,
+        1792309257383504223,
+        1792309258383504223,
+        1792309259383504223,
+        1792309260383504223,
+        1792309261383504223,
+        1792309262383504223,
+        1792309263383504223,
+        1792309264383504223,
+        1792309265383504223,
+        1792309266383504223,
+        1792309267383504223,
+        1792309268383504223,
+        1792309269383504223,
+        1792309270383504223,
+        1792309271383504223,
+        1792309272383504223,
+        1792309273383504223,
+        1792309274383504223,
+        1792309275383504223,
+        1792309276383504223,
+        1792309277383504223,
+        1792309278383504223,
+        1792309279383504223,
+        1792309280383504223,
+        1792309281383504223,
+        1792309282383504223,
+        1792309283383504223,
+        1792309284383504223,
+        1792309285383504223,
+        1792309286383504223,
+        1792309287383504223,
+        1792309288383504223,
+        1792309289383504223,
+        1792309290383504223,
+        1792309291383504223,
+        1792309292383504223,
+        1792309293383504223,
+        1792309294383504223,
+        1792309295383504223,
+        1792309296383504223,
+        1792309297383504223,
+        1792309298383504223,
+        1792309299383504223,
+        1792309300383504223,
+        1792309301383504223,
+        1792309302383504223,
+        1792309303383504223,
+        1792309304383504223,
+        1792309305383504223,
+        1792309306383504223,
+        1792309307383504223,
+        1792309308383504223,
+        1792309309383504223,
+        1792309310383504223,
+        1792309311383504223,
+        1792309312383504223,
+        1792309313383504223,
+        1792309314383504223,
+        1792309315383504223,
+        1792309316383504223,
+        1792309317383504223,
+        1792309318383504223,
+        1792309319383504223,
+        1792309320383504223,
+        1792309321383504223,
+        1792309322383504223,
+        1792309323383504223,
+        1792309324383504223,
+        1792309325383504223,
+        1792309326383504223,
+        1792309327383504223,
+        1792309328383504223,
+        1792309329383504223,
+        1792309330383504223,
+        1792309331383504223,
+        1792309332383504223,
+        1792309333383504223,
+        1792309334383504223,
+        1792309335383504223,
+        1792309336383504223,
+        1792309337383504223,
+        1792309338383504223,
+        1792309339383504223,
+        1792309340383504223,
+        1792309341383504223,
+        1792309342383504223
+      ],
+      "modes": {
+        "Q0": {
+          "published": 96,
+          "finite_pose_outputs": 96,
+          "estimate_valid_outputs": 94,
+          "accepted_graph_outputs": 94,
+          "common_valid_outputs": 94,
+          "warmup_outputs": 2,
+          "solver_failures": 0,
+          "fallback_outputs": 0,
+          "status_counts": {
+            "predict_only_warmup": 2,
+            "graph": 94
+          },
+          "first_accepted": {
+            "state_time_s": 4.0,
+            "position_correction_m": 0.10975610401527529,
+            "yaw_correction_deg": 0.1961087604387731,
+            "step_from_previous_publication_m": 0.10975610401527529
+          },
+          "max_adjacent_publication_jump_m": 0.10975610401527529,
+          "bias_rad_s": null,
+          "quality": {
+            "per_link": {
+              "node_10": {
+                "publications": 96,
+                "state_counts": {
+                  "unmonitored": 96
+                },
+                "exposure_link_seconds": {
+                  "unmonitored": 95.01096287899999,
+                  "unmonitored_total": 95.01096287899999
+                },
+                "known_attenuation_intervals": 0,
+                "trigger_events": 0,
+                "observed_exposure_s": 95.010962879
+              },
+              "node_2": {
+                "publications": 96,
+                "state_counts": {
+                  "unmonitored": 96
+                },
+                "exposure_link_seconds": {
+                  "unmonitored": 95.01096287899999,
+                  "unmonitored_total": 95.01096287899999
+                },
+                "known_attenuation_intervals": 0,
+                "trigger_events": 0,
+                "observed_exposure_s": 95.010962879
+              },
+              "node_3": {
+                "publications": 96,
+                "state_counts": {
+                  "unmonitored": 96
+                },
+                "exposure_link_seconds": {
+                  "unmonitored": 95.01096287899999,
+                  "unmonitored_total": 95.01096287899999
+                },
+                "known_attenuation_intervals": 0,
+                "trigger_events": 0,
+                "observed_exposure_s": 95.010962879
+              },
+              "node_8": {
+                "publications": 96,
+                "state_counts": {
+                  "unmonitored": 96
+                },
+                "exposure_link_seconds": {
+                  "unmonitored": 95.01096287899999,
+                  "unmonitored_total": 95.01096287899999
+                },
+                "known_attenuation_intervals": 0,
+                "trigger_events": 0,
+                "observed_exposure_s": 95.010962879
+              }
+            },
+            "trigger_events": 0,
+            "vehicle_any_link_attenuation_s": 0.0,
+            "vehicle_any_unknown_s": 0.0,
+            "link_seconds_are_not_vehicle_seconds": true,
+            "normal_completion_is_not_fault_free_label": true
+          },
+          "stop_window": {
+            "frozen_window_s": [
+              81.848289054,
+              86.848289054
+            ],
+            "outputs": 5,
+            "valid_outputs": 5,
+            "median_xy_m": [
+              3.0043774896370192,
+              2.9878616539572573
+            ],
+            "manual_endpoint_xy_m": [
+              2.97,
+              3.11
+            ],
+            "manual_endpoint_distance_m": 0.1268841493954232,
+            "manual_uncertainty_m": null,
+            "scatter_about_component_median_m": {
+              "median": 0.008013836090028814,
+              "rms": 0.007892262774325306,
+              "maximum": 0.011805521853229185
+            },
+            "candidate_static_net_displacement_m": 0.013750622319011783,
+            "candidate_static_max_displacement_from_first_m": 0.017099745420329167,
+            "candidate_static_elapsed_s": 4.0,
+            "static_confirmation": "frozen historical stop window only; no independent exact standstill/parking-time bound",
+            "reference": "uncertain operator endpoint, development diagnostic only; not continuous RMSE/ATE"
+          },
+          "paired_baseline_group": "Q0",
+          "all_output_change_vs_paired_baseline": {
+            "publications": 96,
+            "base_shift_m": {
+              "n": 96,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 96,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_bias_change_rad_s": null,
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "common_valid_change_vs_paired_baseline": {
+            "publications": 94,
+            "base_shift_m": {
+              "n": 94,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 94,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_bias_change_rad_s": null,
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "all_output_change_vs_Q0": {
+            "publications": 96,
+            "base_shift_m": {
+              "n": 96,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 96,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_bias_change_rad_s": null,
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "timing": {
+            "actual_release_delay_s": {
+              "n": 96,
+              "minimum": 1.008634384,
+              "median": 1.0189710760000001,
+              "mean": 1.0210745622708333,
+              "p95": 1.03017340125,
+              "maximum": 1.171573244
+            },
+            "post_cutoff_total_s": {
+              "n": 96,
+              "minimum": 0.008634384,
+              "median": 0.018971076,
+              "mean": 0.021074562270833333,
+              "p95": 0.03017340125,
+              "maximum": 0.171573244
+            },
+            "complete_publication_cycle_wall_s": {
+              "n": 96,
+              "minimum": 0.008533375,
+              "median": 0.0188654115,
+              "mean": 0.02084407582291667,
+              "p95": 0.029636634,
+              "maximum": 0.168691392
+            },
+            "complete_publication_cycle_wall_s_sum": 2.0010312789999998,
+            "pre_main_shadows_quality_and_graph_logging_s": {
+              "n": 96,
+              "minimum": 0.001672278,
+              "median": 0.0025620415,
+              "mean": 0.0026102156979166667,
+              "p95": 0.0038470612499999996,
+              "maximum": 0.009560314
+            },
+            "main_phase_s": {
+              "n": 96,
+              "minimum": 0.004622127,
+              "median": 0.0140676945,
+              "mean": 0.01610997122916667,
+              "p95": 0.02454696525,
+              "maximum": 0.157357619
+            },
+            "post_main_diagnostic_and_flush_s": {
+              "n": 96,
+              "minimum": 0.00114913,
+              "median": 0.0021753695,
+              "mean": 0.0021238888958333333,
+              "p95": 0.00252351075,
+              "maximum": 0.005820741
+            },
+            "role_solver_costs": {
+              "main": {
+                "solve_wall_s": 0.8521796618879307,
+                "marginal_wall_s": 0.0661096559924772,
+                "max_keyframes": 21,
+                "scalar_dimension": 3
+              }
+            },
+            "CLI_elapsed_including_pacing_and_IO_s": 102.90082348199212,
+            "original_incomplete_processor_column_s": {
+              "n": 96,
+              "minimum": 0.024284742,
+              "median": 0.034512516,
+              "mean": 0.03751438459375,
+              "p95": 0.050336438000000004,
+              "maximum": 0.188528462
+            },
+            "beyond_next_cutoff_count": 0,
+            "output_after_recorded_EOF_count": 0,
+            "caveat": "cycle wall includes shadow/quality/main/diagnostics/write, excludes earlier inter-publication ingest; original incomplete column retained separately and is not additive. Actual end-to-end delay includes original1s wait and scheduling; not physical ROS latency or pure CPU time."
+          },
+          "reference_coverage": {
+            "continuous_state_truth": 0,
+            "continuous_available_time_truth": 0,
+            "frozen_stop_reference_samples": 5,
+            "all_publications": 96,
+            "manual_uncertainty_m": null,
+            "actual_available_reference_error": null
+          },
+          "field_accuracy_assessment": "尚不能判断"
+        },
+        "Q1": {
+          "published": 96,
+          "finite_pose_outputs": 96,
+          "estimate_valid_outputs": 94,
+          "accepted_graph_outputs": 94,
+          "common_valid_outputs": 94,
+          "warmup_outputs": 2,
+          "solver_failures": 0,
+          "fallback_outputs": 0,
+          "status_counts": {
+            "predict_only_warmup": 2,
+            "graph": 94
+          },
+          "first_accepted": {
+            "state_time_s": 4.0,
+            "position_correction_m": 0.10979639747915486,
+            "yaw_correction_deg": 0.23668554160512453,
+            "step_from_previous_publication_m": 0.10979639747915486
+          },
+          "max_adjacent_publication_jump_m": 0.10979639747915486,
+          "bias_rad_s": {
+            "n": 96,
+            "minimum": -0.008877944367102512,
+            "median": -0.00041212669989511513,
+            "mean": -0.0014521470379627519,
+            "p95": 0.0025092792821514165,
+            "maximum": 0.003480131035991735,
+            "last": -0.000281028255951661
+          },
+          "quality": {
+            "per_link": {
+              "node_10": {
+                "publications": 96,
+                "state_counts": {
+                  "unmonitored": 96
+                },
+                "exposure_link_seconds": {
+                  "unmonitored": 95.03652372000002,
+                  "unmonitored_total": 95.03652372000002
+                },
+                "known_attenuation_intervals": 0,
+                "trigger_events": 0,
+                "observed_exposure_s": 95.03652372
+              },
+              "node_2": {
+                "publications": 96,
+                "state_counts": {
+                  "unmonitored": 96
+                },
+                "exposure_link_seconds": {
+                  "unmonitored": 95.03652372000002,
+                  "unmonitored_total": 95.03652372000002
+                },
+                "known_attenuation_intervals": 0,
+                "trigger_events": 0,
+                "observed_exposure_s": 95.03652372
+              },
+              "node_3": {
+                "publications": 96,
+                "state_counts": {
+                  "unmonitored": 96
+                },
+                "exposure_link_seconds": {
+                  "unmonitored": 95.03652372000002,
+                  "unmonitored_total": 95.03652372000002
+                },
+                "known_attenuation_intervals": 0,
+                "trigger_events": 0,
+                "observed_exposure_s": 95.03652372
+              },
+              "node_8": {
+                "publications": 96,
+                "state_counts": {
+                  "unmonitored": 96
+                },
+                "exposure_link_seconds": {
+                  "unmonitored": 95.03652372000002,
+                  "unmonitored_total": 95.03652372000002
+                },
+                "known_attenuation_intervals": 0,
+                "trigger_events": 0,
+                "observed_exposure_s": 95.03652372
+              }
+            },
+            "trigger_events": 0,
+            "vehicle_any_link_attenuation_s": 0.0,
+            "vehicle_any_unknown_s": 0.0,
+            "link_seconds_are_not_vehicle_seconds": true,
+            "normal_completion_is_not_fault_free_label": true
+          },
+          "stop_window": {
+            "frozen_window_s": [
+              81.848289054,
+              86.848289054
+            ],
+            "outputs": 5,
+            "valid_outputs": 5,
+            "median_xy_m": [
+              3.0047606633484354,
+              2.9863036642951197
+            ],
+            "manual_endpoint_xy_m": [
+              2.97,
+              3.11
+            ],
+            "manual_endpoint_distance_m": 0.1284876927306178,
+            "manual_uncertainty_m": null,
+            "scatter_about_component_median_m": {
+              "median": 0.007990060378473718,
+              "rms": 0.007991210052664245,
+              "maximum": 0.011982186526179378
+            },
+            "candidate_static_net_displacement_m": 0.01389606858241181,
+            "candidate_static_max_displacement_from_first_m": 0.017137817823300525,
+            "candidate_static_elapsed_s": 4.0,
+            "static_confirmation": "frozen historical stop window only; no independent exact standstill/parking-time bound",
+            "reference": "uncertain operator endpoint, development diagnostic only; not continuous RMSE/ATE"
+          },
+          "paired_baseline_group": "Q1",
+          "all_output_change_vs_paired_baseline": {
+            "publications": 96,
+            "base_shift_m": {
+              "n": 96,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 96,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_bias_change_rad_s": {
+              "n": 96,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "common_valid_change_vs_paired_baseline": {
+            "publications": 94,
+            "base_shift_m": {
+              "n": 94,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 94,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_bias_change_rad_s": {
+              "n": 94,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "all_output_change_vs_Q0": {
+            "publications": 96,
+            "base_shift_m": {
+              "n": 96,
+              "minimum": 0.0,
+              "median": 0.002584600425475203,
+              "mean": 0.003890531710634292,
+              "p95": 0.011313097964769987,
+              "maximum": 0.013328228093972492
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 96,
+              "minimum": 0.0,
+              "median": 2.055681516969995,
+              "mean": 2.591616233781165,
+              "p95": 6.266430366273769,
+              "maximum": 6.969586769241309
+            },
+            "absolute_bias_change_rad_s": null,
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "timing": {
+            "actual_release_delay_s": {
+              "n": 96,
+              "minimum": 1.008779743,
+              "median": 1.0507152905,
+              "mean": 1.0517332231666667,
+              "p95": 1.0900649897499999,
+              "maximum": 1.168100518
+            },
+            "post_cutoff_total_s": {
+              "n": 96,
+              "minimum": 0.008779743,
+              "median": 0.050715290499999996,
+              "mean": 0.05173322316666667,
+              "p95": 0.09006498975,
+              "maximum": 0.168100518
+            },
+            "complete_publication_cycle_wall_s": {
+              "n": 96,
+              "minimum": 0.008598843,
+              "median": 0.050397027,
+              "mean": 0.05153952579166666,
+              "p95": 0.0899723875,
+              "maximum": 0.16798817
+            },
+            "complete_publication_cycle_wall_s_sum": 4.947794476,
+            "pre_main_shadows_quality_and_graph_logging_s": {
+              "n": 96,
+              "minimum": 0.001669774,
+              "median": 0.002529638,
+              "mean": 0.0024997410833333335,
+              "p95": 0.00361884975,
+              "maximum": 0.006320438
+            },
+            "main_phase_s": {
+              "n": 96,
+              "minimum": 0.00492281,
+              "median": 0.0457913955,
+              "mean": 0.046214447875,
+              "p95": 0.08547234225,
+              "maximum": 0.160349472
+            },
+            "post_main_diagnostic_and_flush_s": {
+              "n": 96,
+              "minimum": 0.001232745,
+              "median": 0.002972424,
+              "mean": 0.002825336833333333,
+              "p95": 0.0034204862500000002,
+              "maximum": 0.004219762
+            },
+            "role_solver_costs": {
+              "main": {
+                "solve_wall_s": 1.961736664918135,
+                "marginal_wall_s": 0.10902950790477917,
+                "max_keyframes": 21,
+                "scalar_dimension": 4
+              }
+            },
+            "CLI_elapsed_including_pacing_and_IO_s": 102.88242764500319,
+            "original_incomplete_processor_column_s": {
+              "n": 96,
+              "minimum": 0.027365,
+              "median": 0.068507258,
+              "mean": 0.06977902123958334,
+              "p95": 0.10433322,
+              "maximum": 0.18805554300000002
+            },
+            "beyond_next_cutoff_count": 0,
+            "output_after_recorded_EOF_count": 0,
+            "caveat": "cycle wall includes shadow/quality/main/diagnostics/write, excludes earlier inter-publication ingest; original incomplete column retained separately and is not additive. Actual end-to-end delay includes original1s wait and scheduling; not physical ROS latency or pure CPU time."
+          },
+          "reference_coverage": {
+            "continuous_state_truth": 0,
+            "continuous_available_time_truth": 0,
+            "frozen_stop_reference_samples": 5,
+            "all_publications": 96,
+            "manual_uncertainty_m": null,
+            "actual_available_reference_error": null
+          },
+          "field_accuracy_assessment": "尚不能判断"
+        },
+        "Q2": {
+          "published": 96,
+          "finite_pose_outputs": 96,
+          "estimate_valid_outputs": 94,
+          "accepted_graph_outputs": 94,
+          "common_valid_outputs": 94,
+          "warmup_outputs": 2,
+          "solver_failures": 0,
+          "fallback_outputs": 0,
+          "status_counts": {
+            "predict_only_warmup": 2,
+            "graph": 94
+          },
+          "first_accepted": {
+            "state_time_s": 4.0,
+            "position_correction_m": 0.10975610401527529,
+            "yaw_correction_deg": 0.1961087604387731,
+            "step_from_previous_publication_m": 0.10975610401527529
+          },
+          "max_adjacent_publication_jump_m": 0.10975610401527529,
+          "bias_rad_s": null,
+          "quality": {
+            "per_link": {
+              "node_10": {
+                "publications": 96,
+                "state_counts": {
+                  "unknown": 2,
+                  "unknown_total": 2,
+                  "normal": 24,
+                  "known_total": 94,
+                  "downweighted": 64,
+                  "known_attenuation": 70,
+                  "recovering": 6
+                },
+                "exposure_link_seconds": {
+                  "unknown": 2.026852714,
+                  "unknown_total": 2.026852714,
+                  "normal": 24.032362344000003,
+                  "known_total": 93.04625124299997,
+                  "downweighted": 63.09438429700001,
+                  "known_attenuation": 69.01388889899998,
+                  "recovering": 5.919504602
+                },
+                "known_attenuation_intervals": 3,
+                "trigger_events": 3,
+                "observed_exposure_s": 95.073103957
+              },
+              "node_2": {
+                "publications": 96,
+                "state_counts": {
+                  "unknown": 2,
+                  "unknown_total": 2,
+                  "normal": 83,
+                  "known_total": 94,
+                  "downweighted": 8,
+                  "known_attenuation": 11,
+                  "recovering": 3
+                },
+                "exposure_link_seconds": {
+                  "unknown": 2.026852714,
+                  "unknown_total": 2.026852714,
+                  "normal": 82.02159175499999,
+                  "known_total": 93.04625124299997,
+                  "downweighted": 8.015283959,
+                  "known_attenuation": 11.024659488,
+                  "recovering": 3.0093755289999997
+                },
+                "known_attenuation_intervals": 1,
+                "trigger_events": 1,
+                "observed_exposure_s": 95.073103957
+              },
+              "node_3": {
+                "publications": 96,
+                "state_counts": {
+                  "unknown": 2,
+                  "unknown_total": 2,
+                  "normal": 74,
+                  "known_total": 94,
+                  "downweighted": 17,
+                  "known_attenuation": 20,
+                  "recovering": 3
+                },
+                "exposure_link_seconds": {
+                  "unknown": 2.026852714,
+                  "unknown_total": 2.026852714,
+                  "normal": 73.074243742,
+                  "known_total": 93.04625124299997,
+                  "downweighted": 17.0157631,
+                  "known_attenuation": 19.972007501000004,
+                  "recovering": 2.956244401
+                },
+                "known_attenuation_intervals": 1,
+                "trigger_events": 1,
+                "observed_exposure_s": 95.073103957
+              },
+              "node_8": {
+                "publications": 96,
+                "state_counts": {
+                  "unknown": 2,
+                  "unknown_total": 2,
+                  "normal": 66,
+                  "known_total": 94,
+                  "downweighted": 18,
+                  "known_attenuation": 28,
+                  "recovering": 10
+                },
+                "exposure_link_seconds": {
+                  "unknown": 2.026852714,
+                  "unknown_total": 2.026852714,
+                  "normal": 65.060105285,
+                  "known_total": 93.04625124299997,
+                  "downweighted": 17.997810346,
+                  "known_attenuation": 27.986145958000005,
+                  "recovering": 9.988335612
+                },
+                "known_attenuation_intervals": 1,
+                "trigger_events": 1,
+                "observed_exposure_s": 95.073103957
+              }
+            },
+            "trigger_events": 6,
+            "vehicle_any_link_attenuation_s": 72.01167585999998,
+            "vehicle_any_unknown_s": 2.026852714,
+            "link_seconds_are_not_vehicle_seconds": true,
+            "normal_completion_is_not_fault_free_label": true
+          },
+          "stop_window": {
+            "frozen_window_s": [
+              81.848289054,
+              86.848289054
+            ],
+            "outputs": 5,
+            "valid_outputs": 5,
+            "median_xy_m": [
+              3.053801421735078,
+              3.0331972995456287
+            ],
+            "manual_endpoint_xy_m": [
+              2.97,
+              3.11
+            ],
+            "manual_endpoint_distance_m": 0.11367204177766947,
+            "manual_uncertainty_m": null,
+            "scatter_about_component_median_m": {
+              "median": 0.006694042977859305,
+              "rms": 0.007327877284529725,
+              "maximum": 0.012080440034675075
+            },
+            "candidate_static_net_displacement_m": 0.020667564220425236,
+            "candidate_static_max_displacement_from_first_m": 0.020667564220425236,
+            "candidate_static_elapsed_s": 4.0,
+            "static_confirmation": "frozen historical stop window only; no independent exact standstill/parking-time bound",
+            "reference": "uncertain operator endpoint, development diagnostic only; not continuous RMSE/ATE"
+          },
+          "paired_baseline_group": "Q0",
+          "all_output_change_vs_paired_baseline": {
+            "publications": 96,
+            "base_shift_m": {
+              "n": 96,
+              "minimum": 0.0,
+              "median": 0.05272962467252245,
+              "mean": 0.06498451129467712,
+              "p95": 0.1812796197957429,
+              "maximum": 0.2131107596412017
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 96,
+              "minimum": 0.0,
+              "median": 1.4716269505105735,
+              "mean": 1.499444599244607,
+              "p95": 3.1024460502886635,
+              "maximum": 3.2631213324895243
+            },
+            "absolute_bias_change_rad_s": null,
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "common_valid_change_vs_paired_baseline": {
+            "publications": 94,
+            "base_shift_m": {
+              "n": 94,
+              "minimum": 0.0,
+              "median": 0.05330109085163234,
+              "mean": 0.0663671604711596,
+              "p95": 0.18226996302540924,
+              "maximum": 0.2131107596412017
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 94,
+              "minimum": 0.0,
+              "median": 1.5293279953733308,
+              "mean": 1.5313476758242794,
+              "p95": 3.1143733731614773,
+              "maximum": 3.2631213324895243
+            },
+            "absolute_bias_change_rad_s": null,
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "all_output_change_vs_Q0": {
+            "publications": 96,
+            "base_shift_m": {
+              "n": 96,
+              "minimum": 0.0,
+              "median": 0.05272962467252245,
+              "mean": 0.06498451129467712,
+              "p95": 0.1812796197957429,
+              "maximum": 0.2131107596412017
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 96,
+              "minimum": 0.0,
+              "median": 1.4716269505105735,
+              "mean": 1.499444599244607,
+              "p95": 3.1024460502886635,
+              "maximum": 3.2631213324895243
+            },
+            "absolute_bias_change_rad_s": null,
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "timing": {
+            "actual_release_delay_s": {
+              "n": 96,
+              "minimum": 1.021703927,
+              "median": 1.093126427,
+              "mean": 1.0913837205625,
+              "p95": 1.144064596,
+              "maximum": 1.15441216
+            },
+            "post_cutoff_total_s": {
+              "n": 96,
+              "minimum": 0.021703927,
+              "median": 0.093126427,
+              "mean": 0.0913837205625,
+              "p95": 0.144064596,
+              "maximum": 0.15441216
+            },
+            "complete_publication_cycle_wall_s": {
+              "n": 96,
+              "minimum": 0.021579862,
+              "median": 0.09302892400000001,
+              "mean": 0.09121884578125,
+              "p95": 0.14396212425,
+              "maximum": 0.154319547
+            },
+            "complete_publication_cycle_wall_s_sum": 8.757009195,
+            "pre_main_shadows_quality_and_graph_logging_s": {
+              "n": 96,
+              "minimum": 0.016610052,
+              "median": 0.0728480215,
+              "mean": 0.07110407021875,
+              "p95": 0.10957999175,
+              "maximum": 0.131681422
+            },
+            "main_phase_s": {
+              "n": 96,
+              "minimum": 0.003387779,
+              "median": 0.0171405795,
+              "mean": 0.017627961,
+              "p95": 0.02269293425,
+              "maximum": 0.069414445
+            },
+            "post_main_diagnostic_and_flush_s": {
+              "n": 96,
+              "minimum": 0.001386097,
+              "median": 0.0025244395,
+              "mean": 0.0024868145625,
+              "p95": 0.00298959975,
+              "maximum": 0.003438656
+            },
+            "role_solver_costs": {
+              "main": {
+                "solve_wall_s": 0.695548746996792,
+                "marginal_wall_s": 0.051425900019239634,
+                "max_keyframes": 21,
+                "scalar_dimension": 3
+              },
+              "node_10": {
+                "solve_wall_s": 0.8224715549877146,
+                "marginal_wall_s": 0.0595950729039032,
+                "max_keyframes": 21,
+                "scalar_dimension": 3
+              },
+              "node_2": {
+                "solve_wall_s": 0.6870991811447311,
+                "marginal_wall_s": 0.051676082075573504,
+                "max_keyframes": 21,
+                "scalar_dimension": 3
+              },
+              "node_3": {
+                "solve_wall_s": 0.6836141289386433,
+                "marginal_wall_s": 0.04869034988223575,
+                "max_keyframes": 21,
+                "scalar_dimension": 3
+              },
+              "node_8": {
+                "solve_wall_s": 0.608468539925525,
+                "marginal_wall_s": 0.04561039601685479,
+                "max_keyframes": 21,
+                "scalar_dimension": 3
+              }
+            },
+            "CLI_elapsed_including_pacing_and_IO_s": 102.88480309399893,
+            "original_incomplete_processor_column_s": {
+              "n": 96,
+              "minimum": 0.053235331000000004,
+              "median": 0.1269959805,
+              "mean": 0.12739537867708334,
+              "p95": 0.18436563375,
+              "maximum": 0.209153327
+            },
+            "beyond_next_cutoff_count": 0,
+            "output_after_recorded_EOF_count": 0,
+            "caveat": "cycle wall includes shadow/quality/main/diagnostics/write, excludes earlier inter-publication ingest; original incomplete column retained separately and is not additive. Actual end-to-end delay includes original1s wait and scheduling; not physical ROS latency or pure CPU time."
+          },
+          "reference_coverage": {
+            "continuous_state_truth": 0,
+            "continuous_available_time_truth": 0,
+            "frozen_stop_reference_samples": 5,
+            "all_publications": 96,
+            "manual_uncertainty_m": null,
+            "actual_available_reference_error": null
+          },
+          "field_accuracy_assessment": "尚不能判断"
+        },
+        "Q3": {
+          "published": 96,
+          "finite_pose_outputs": 96,
+          "estimate_valid_outputs": 94,
+          "accepted_graph_outputs": 94,
+          "common_valid_outputs": 94,
+          "warmup_outputs": 2,
+          "solver_failures": 0,
+          "fallback_outputs": 0,
+          "status_counts": {
+            "predict_only_warmup": 2,
+            "graph": 94
+          },
+          "first_accepted": {
+            "state_time_s": 4.0,
+            "position_correction_m": 0.10979639747915486,
+            "yaw_correction_deg": 0.23668554160512453,
+            "step_from_previous_publication_m": 0.10979639747915486
+          },
+          "max_adjacent_publication_jump_m": 0.10979639747915486,
+          "bias_rad_s": {
+            "n": 96,
+            "minimum": -0.007153401809253631,
+            "median": -0.0023009577611110372,
+            "mean": -0.0015461339151367154,
+            "p95": 0.004681610962382075,
+            "maximum": 0.005390369973419166,
+            "last": -0.0025713956847328097
+          },
+          "quality": {
+            "per_link": {
+              "node_10": {
+                "publications": 96,
+                "state_counts": {
+                  "unknown": 2,
+                  "unknown_total": 2,
+                  "normal": 23,
+                  "known_total": 94,
+                  "downweighted": 43,
+                  "known_attenuation": 71,
+                  "recovering": 6,
+                  "disabled": 22,
+                  "known_disabled": 22
+                },
+                "exposure_link_seconds": {
+                  "unknown": 2.040129633,
+                  "unknown_total": 2.040129633,
+                  "normal": 23.11069858,
+                  "known_total": 93.16558508500005,
+                  "downweighted": 43.10845615,
+                  "known_attenuation": 70.05488650500001,
+                  "recovering": 5.952190388,
+                  "disabled": 20.994239967,
+                  "known_disabled": 20.994239967
+                },
+                "known_attenuation_intervals": 3,
+                "trigger_events": 4,
+                "observed_exposure_s": 95.205714718
+              },
+              "node_2": {
+                "publications": 96,
+                "state_counts": {
+                  "unknown": 2,
+                  "unknown_total": 2,
+                  "normal": 83,
+                  "known_total": 94,
+                  "downweighted": 8,
+                  "known_attenuation": 11,
+                  "recovering": 3
+                },
+                "exposure_link_seconds": {
+                  "unknown": 2.040129633,
+                  "unknown_total": 2.040129633,
+                  "normal": 82.05531622800002,
+                  "known_total": 93.16558508500005,
+                  "downweighted": 8.09069268,
+                  "known_attenuation": 11.110268857000001,
+                  "recovering": 3.0195761770000002
+                },
+                "known_attenuation_intervals": 1,
+                "trigger_events": 1,
+                "observed_exposure_s": 95.205714718
+              },
+              "node_3": {
+                "publications": 96,
+                "state_counts": {
+                  "unknown": 2,
+                  "unknown_total": 2,
+                  "normal": 74,
+                  "known_total": 94,
+                  "downweighted": 17,
+                  "known_attenuation": 20,
+                  "recovering": 3
+                },
+                "exposure_link_seconds": {
+                  "unknown": 2.040129633,
+                  "unknown_total": 2.040129633,
+                  "normal": 73.31920952800002,
+                  "known_total": 93.16558508500005,
+                  "downweighted": 16.872950924,
+                  "known_attenuation": 19.846375557000002,
+                  "recovering": 2.9734246329999996
+                },
+                "known_attenuation_intervals": 1,
+                "trigger_events": 1,
+                "observed_exposure_s": 95.205714718
+              },
+              "node_8": {
+                "publications": 96,
+                "state_counts": {
+                  "unknown": 2,
+                  "unknown_total": 2,
+                  "normal": 66,
+                  "known_total": 94,
+                  "downweighted": 18,
+                  "known_attenuation": 28,
+                  "recovering": 10
+                },
+                "exposure_link_seconds": {
+                  "unknown": 2.040129633,
+                  "unknown_total": 2.040129633,
+                  "normal": 65.17438452100001,
+                  "known_total": 93.16558508500005,
+                  "downweighted": 18.018457449,
+                  "known_attenuation": 27.991200564000003,
+                  "recovering": 9.972743115
+                },
+                "known_attenuation_intervals": 1,
+                "trigger_events": 1,
+                "observed_exposure_s": 95.205714718
+              }
+            },
+            "trigger_events": 7,
+            "vehicle_any_link_attenuation_s": 71.11900505000001,
+            "vehicle_any_unknown_s": 2.040129633,
+            "link_seconds_are_not_vehicle_seconds": true,
+            "normal_completion_is_not_fault_free_label": true
+          },
+          "stop_window": {
+            "frozen_window_s": [
+              81.848289054,
+              86.848289054
+            ],
+            "outputs": 5,
+            "valid_outputs": 5,
+            "median_xy_m": [
+              3.027912626537409,
+              3.0856992813366038
+            ],
+            "manual_endpoint_xy_m": [
+              2.97,
+              3.11
+            ],
+            "manual_endpoint_distance_m": 0.06280443646764844,
+            "manual_uncertainty_m": null,
+            "scatter_about_component_median_m": {
+              "median": 0.006867193807257259,
+              "rms": 0.008651825528512892,
+              "maximum": 0.014197950815325211
+            },
+            "candidate_static_net_displacement_m": 0.024690818242375304,
+            "candidate_static_max_displacement_from_first_m": 0.024690818242375304,
+            "candidate_static_elapsed_s": 4.0,
+            "static_confirmation": "frozen historical stop window only; no independent exact standstill/parking-time bound",
+            "reference": "uncertain operator endpoint, development diagnostic only; not continuous RMSE/ATE"
+          },
+          "paired_baseline_group": "Q1",
+          "all_output_change_vs_paired_baseline": {
+            "publications": 96,
+            "base_shift_m": {
+              "n": 96,
+              "minimum": 0.0,
+              "median": 0.08703888855648192,
+              "mean": 0.0765135239755295,
+              "p95": 0.17848036268014988,
+              "maximum": 0.2106291910482855
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 96,
+              "minimum": 0.0,
+              "median": 5.530920715461048,
+              "mean": 5.157638268279391,
+              "p95": 10.549578313735612,
+              "maximum": 11.095375460057753
+            },
+            "absolute_bias_change_rad_s": {
+              "n": 96,
+              "minimum": 0.0,
+              "median": 0.0019489329438548552,
+              "mean": 0.0023098729831151827,
+              "p95": 0.005915417819749986,
+              "maximum": 0.0070776858260584805
+            },
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "common_valid_change_vs_paired_baseline": {
+            "publications": 94,
+            "base_shift_m": {
+              "n": 94,
+              "minimum": 0.0,
+              "median": 0.08727970287060367,
+              "mean": 0.07814147129415777,
+              "p95": 0.17941065032547676,
+              "maximum": 0.2106291910482855
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 94,
+              "minimum": 0.0,
+              "median": 5.576073763196973,
+              "mean": 5.267375252710867,
+              "p95": 10.58256335047718,
+              "maximum": 11.095375460057753
+            },
+            "absolute_bias_change_rad_s": {
+              "n": 94,
+              "minimum": 0.0,
+              "median": 0.0019552337931521024,
+              "mean": 0.0023590192167984845,
+              "p95": 0.005915528741560769,
+              "maximum": 0.0070776858260584805
+            },
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "all_output_change_vs_Q0": {
+            "publications": 96,
+            "base_shift_m": {
+              "n": 96,
+              "minimum": 0.0,
+              "median": 0.08728783416117297,
+              "mean": 0.0782396837224787,
+              "p95": 0.17939498312511376,
+              "maximum": 0.21168298577689867
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 96,
+              "minimum": 0.0,
+              "median": 5.890053584661274,
+              "mean": 5.901937453294079,
+              "p95": 11.245718866779395,
+              "maximum": 13.71513395708607
+            },
+            "absolute_bias_change_rad_s": null,
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "timing": {
+            "actual_release_delay_s": {
+              "n": 96,
+              "minimum": 1.025285612,
+              "median": 1.2358916815,
+              "mean": 1.2237739015833333,
+              "p95": 1.292727762,
+              "maximum": 1.393557716
+            },
+            "post_cutoff_total_s": {
+              "n": 96,
+              "minimum": 0.025285612,
+              "median": 0.2358916815,
+              "mean": 0.22377390158333332,
+              "p95": 0.292727762,
+              "maximum": 0.393557716
+            },
+            "complete_publication_cycle_wall_s": {
+              "n": 96,
+              "minimum": 0.025148063,
+              "median": 0.23576414299999998,
+              "mean": 0.22355362244791666,
+              "p95": 0.29253434575000004,
+              "maximum": 0.39334057
+            },
+            "complete_publication_cycle_wall_s_sum": 21.461147755,
+            "pre_main_shadows_quality_and_graph_logging_s": {
+              "n": 96,
+              "minimum": 0.020345043,
+              "median": 0.18683904950000002,
+              "mean": 0.17785003229166665,
+              "p95": 0.2383593725,
+              "maximum": 0.322948974
+            },
+            "main_phase_s": {
+              "n": 96,
+              "minimum": 0.003272536,
+              "median": 0.041980182500000005,
+              "mean": 0.04291774486458333,
+              "p95": 0.07106130025,
+              "maximum": 0.089038956
+            },
+            "post_main_diagnostic_and_flush_s": {
+              "n": 96,
+              "minimum": 0.001530484,
+              "median": 0.002706639,
+              "mean": 0.0027858452916666664,
+              "p95": 0.003722062,
+              "maximum": 0.005351755
+            },
+            "role_solver_costs": {
+              "main": {
+                "solve_wall_s": 1.6239696419797838,
+                "marginal_wall_s": 0.09453570692858193,
+                "max_keyframes": 21,
+                "scalar_dimension": 4
+              },
+              "node_10": {
+                "solve_wall_s": 1.898193232002086,
+                "marginal_wall_s": 0.12885611699311994,
+                "max_keyframes": 21,
+                "scalar_dimension": 4
+              },
+              "node_2": {
+                "solve_wall_s": 1.6799653979105642,
+                "marginal_wall_s": 0.11153351896791719,
+                "max_keyframes": 21,
+                "scalar_dimension": 4
+              },
+              "node_3": {
+                "solve_wall_s": 1.502140410040738,
+                "marginal_wall_s": 0.1091681350080762,
+                "max_keyframes": 21,
+                "scalar_dimension": 4
+              },
+              "node_8": {
+                "solve_wall_s": 1.3848591660353122,
+                "marginal_wall_s": 0.10253509398899041,
+                "max_keyframes": 21,
+                "scalar_dimension": 4
+              }
+            },
+            "CLI_elapsed_including_pacing_and_IO_s": 102.85885663599765,
+            "original_incomplete_processor_column_s": {
+              "n": 96,
+              "minimum": 0.07802982400000001,
+              "median": 0.2745172425,
+              "mean": 0.26662054021875,
+              "p95": 0.3407568225,
+              "maximum": 0.468832545
+            },
+            "beyond_next_cutoff_count": 0,
+            "output_after_recorded_EOF_count": 0,
+            "caveat": "cycle wall includes shadow/quality/main/diagnostics/write, excludes earlier inter-publication ingest; original incomplete column retained separately and is not additive. Actual end-to-end delay includes original1s wait and scheduling; not physical ROS latency or pure CPU time."
+          },
+          "reference_coverage": {
+            "continuous_state_truth": 0,
+            "continuous_available_time_truth": 0,
+            "frozen_stop_reference_samples": 5,
+            "all_publications": 96,
+            "manual_uncertainty_m": null,
+            "actual_available_reference_error": null
+          },
+          "field_accuracy_assessment": "尚不能判断"
+        }
+      }
+    },
+    {
+      "case_id": "005135",
+      "common_valid_state_epoch_ns": [
+        1792309935472145834,
+        1792309936472145834,
+        1792309937472145834,
+        1792309938472145834,
+        1792309939472145834,
+        1792309940472145834,
+        1792309941472145834,
+        1792309942472145834,
+        1792309943472145834,
+        1792309944472145834,
+        1792309945472145834,
+        1792309946472145834,
+        1792309947472145834,
+        1792309948472145834,
+        1792309949472145834,
+        1792309950472145834,
+        1792309951472145834,
+        1792309952472145834,
+        1792309953472145834,
+        1792309954472145834,
+        1792309955472145834,
+        1792309956472145834,
+        1792309957472145834,
+        1792309958472145834,
+        1792309959472145834,
+        1792309960472145834,
+        1792309961472145834,
+        1792309962472145834,
+        1792309963472145834,
+        1792309964472145834,
+        1792309965472145834,
+        1792309966472145834,
+        1792309967472145834,
+        1792309968472145834,
+        1792309969472145834,
+        1792309970472145834,
+        1792309971472145834,
+        1792309972472145834,
+        1792309973472145834,
+        1792309974472145834,
+        1792309975472145834,
+        1792309976472145834,
+        1792309977472145834,
+        1792309978472145834,
+        1792309979472145834,
+        1792309980472145834,
+        1792309981472145834,
+        1792309982472145834,
+        1792309983472145834,
+        1792309984472145834,
+        1792309985472145834,
+        1792309986472145834,
+        1792309987472145834,
+        1792309988472145834,
+        1792309989472145834,
+        1792309990472145834,
+        1792309991472145834,
+        1792309992472145834,
+        1792309993472145834,
+        1792309994472145834,
+        1792309995472145834,
+        1792309996472145834,
+        1792309997472145834,
+        1792309998472145834,
+        1792309999472145834,
+        1792310000472145834,
+        1792310001472145834,
+        1792310002472145834,
+        1792310003472145834,
+        1792310004472145834,
+        1792310005472145834,
+        1792310006472145834,
+        1792310007472145834,
+        1792310008472145834,
+        1792310009472145834,
+        1792310010472145834,
+        1792310011472145834,
+        1792310012472145834,
+        1792310013472145834,
+        1792310014472145834,
+        1792310015472145834,
+        1792310016472145834,
+        1792310017472145834,
+        1792310018472145834,
+        1792310019472145834,
+        1792310020472145834,
+        1792310021472145834,
+        1792310022472145834,
+        1792310023472145834,
+        1792310024472145834
+      ],
+      "modes": {
+        "Q0": {
+          "published": 92,
+          "finite_pose_outputs": 92,
+          "estimate_valid_outputs": 90,
+          "accepted_graph_outputs": 90,
+          "common_valid_outputs": 90,
+          "warmup_outputs": 2,
+          "solver_failures": 0,
+          "fallback_outputs": 0,
+          "status_counts": {
+            "predict_only_warmup": 2,
+            "graph": 90
+          },
+          "first_accepted": {
+            "state_time_s": 4.0,
+            "position_correction_m": 0.14649569689914319,
+            "yaw_correction_deg": 0.2429104812435107,
+            "step_from_previous_publication_m": 0.14649569689914319
+          },
+          "max_adjacent_publication_jump_m": 0.14649569689914319,
+          "bias_rad_s": null,
+          "quality": {
+            "per_link": {
+              "node_10": {
+                "publications": 92,
+                "state_counts": {
+                  "unmonitored": 92
+                },
+                "exposure_link_seconds": {
+                  "unmonitored": 91.00350285500001,
+                  "unmonitored_total": 91.00350285500001
+                },
+                "known_attenuation_intervals": 0,
+                "trigger_events": 0,
+                "observed_exposure_s": 91.003502855
+              },
+              "node_2": {
+                "publications": 92,
+                "state_counts": {
+                  "unmonitored": 92
+                },
+                "exposure_link_seconds": {
+                  "unmonitored": 91.00350285500001,
+                  "unmonitored_total": 91.00350285500001
+                },
+                "known_attenuation_intervals": 0,
+                "trigger_events": 0,
+                "observed_exposure_s": 91.003502855
+              },
+              "node_3": {
+                "publications": 92,
+                "state_counts": {
+                  "unmonitored": 92
+                },
+                "exposure_link_seconds": {
+                  "unmonitored": 91.00350285500001,
+                  "unmonitored_total": 91.00350285500001
+                },
+                "known_attenuation_intervals": 0,
+                "trigger_events": 0,
+                "observed_exposure_s": 91.003502855
+              },
+              "node_8": {
+                "publications": 92,
+                "state_counts": {
+                  "unmonitored": 92
+                },
+                "exposure_link_seconds": {
+                  "unmonitored": 91.00350285500001,
+                  "unmonitored_total": 91.00350285500001
+                },
+                "known_attenuation_intervals": 0,
+                "trigger_events": 0,
+                "observed_exposure_s": 91.003502855
+              }
+            },
+            "trigger_events": 0,
+            "vehicle_any_link_attenuation_s": 0.0,
+            "vehicle_any_unknown_s": 0.0,
+            "link_seconds_are_not_vehicle_seconds": true,
+            "normal_completion_is_not_fault_free_label": true
+          },
+          "stop_window": {
+            "frozen_window_s": [
+              83.81404534,
+              88.81404534
+            ],
+            "outputs": 5,
+            "valid_outputs": 5,
+            "median_xy_m": [
+              2.914909445590865,
+              2.994628422133806
+            ],
+            "manual_endpoint_xy_m": [
+              2.93,
+              3.04
+            ],
+            "manual_endpoint_distance_m": 0.04781532087566875,
+            "manual_uncertainty_m": null,
+            "scatter_about_component_median_m": {
+              "median": 0.004010844074771993,
+              "rms": 0.005431848871278238,
+              "maximum": 0.010285467978876327
+            },
+            "candidate_static_net_displacement_m": 0.0142657571306326,
+            "candidate_static_max_displacement_from_first_m": 0.014265757130632602,
+            "candidate_static_elapsed_s": 4.0,
+            "static_confirmation": "frozen historical stop window only; no independent exact standstill/parking-time bound",
+            "reference": "uncertain operator endpoint, development diagnostic only; not continuous RMSE/ATE"
+          },
+          "paired_baseline_group": "Q0",
+          "all_output_change_vs_paired_baseline": {
+            "publications": 92,
+            "base_shift_m": {
+              "n": 92,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 92,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_bias_change_rad_s": null,
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "common_valid_change_vs_paired_baseline": {
+            "publications": 90,
+            "base_shift_m": {
+              "n": 90,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 90,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_bias_change_rad_s": null,
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "all_output_change_vs_Q0": {
+            "publications": 92,
+            "base_shift_m": {
+              "n": 92,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 92,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_bias_change_rad_s": null,
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "timing": {
+            "actual_release_delay_s": {
+              "n": 92,
+              "minimum": 1.008815607,
+              "median": 1.0183179405,
+              "mean": 1.0193322582608695,
+              "p95": 1.0247645673999999,
+              "maximum": 1.094669948
+            },
+            "post_cutoff_total_s": {
+              "n": 92,
+              "minimum": 0.008815607,
+              "median": 0.018317940499999998,
+              "mean": 0.019332258260869564,
+              "p95": 0.024764567400000003,
+              "maximum": 0.094669948
+            },
+            "complete_publication_cycle_wall_s": {
+              "n": 92,
+              "minimum": 0.008732174,
+              "median": 0.018217092999999997,
+              "mean": 0.019166150467391306,
+              "p95": 0.024134536200000004,
+              "maximum": 0.093151975
+            },
+            "complete_publication_cycle_wall_s_sum": 1.763285843,
+            "pre_main_shadows_quality_and_graph_logging_s": {
+              "n": 92,
+              "minimum": 0.001735012,
+              "median": 0.0025647804999999997,
+              "mean": 0.0024520749999999997,
+              "p95": 0.0029850454,
+              "maximum": 0.003457043
+            },
+            "main_phase_s": {
+              "n": 92,
+              "minimum": 0.004632413,
+              "median": 0.0132463525,
+              "mean": 0.014541395293478265,
+              "p95": 0.019904643700000006,
+              "maximum": 0.087506827
+            },
+            "post_main_diagnostic_and_flush_s": {
+              "n": 92,
+              "minimum": 0.001474199,
+              "median": 0.0021759705,
+              "mean": 0.002172680173913044,
+              "p95": 0.0031018813000000004,
+              "maximum": 0.004412281
+            },
+            "role_solver_costs": {
+              "main": {
+                "solve_wall_s": 0.7248863870336208,
+                "marginal_wall_s": 0.04762379004387185,
+                "max_keyframes": 21,
+                "scalar_dimension": 3
+              }
+            },
+            "CLI_elapsed_including_pacing_and_IO_s": 99.1637716510013,
+            "original_incomplete_processor_column_s": {
+              "n": 92,
+              "minimum": 0.025013851,
+              "median": 0.0343236435,
+              "mean": 0.03576712877173913,
+              "p95": 0.0418755808,
+              "maximum": 0.11258285
+            },
+            "beyond_next_cutoff_count": 0,
+            "output_after_recorded_EOF_count": 0,
+            "caveat": "cycle wall includes shadow/quality/main/diagnostics/write, excludes earlier inter-publication ingest; original incomplete column retained separately and is not additive. Actual end-to-end delay includes original1s wait and scheduling; not physical ROS latency or pure CPU time."
+          },
+          "reference_coverage": {
+            "continuous_state_truth": 0,
+            "continuous_available_time_truth": 0,
+            "frozen_stop_reference_samples": 5,
+            "all_publications": 92,
+            "manual_uncertainty_m": null,
+            "actual_available_reference_error": null
+          },
+          "field_accuracy_assessment": "尚不能判断"
+        },
+        "Q1": {
+          "published": 92,
+          "finite_pose_outputs": 92,
+          "estimate_valid_outputs": 90,
+          "accepted_graph_outputs": 90,
+          "common_valid_outputs": 90,
+          "warmup_outputs": 2,
+          "solver_failures": 0,
+          "fallback_outputs": 0,
+          "status_counts": {
+            "predict_only_warmup": 2,
+            "graph": 90
+          },
+          "first_accepted": {
+            "state_time_s": 4.0,
+            "position_correction_m": 0.14649437667543314,
+            "yaw_correction_deg": 0.29253558693853615,
+            "step_from_previous_publication_m": 0.14649437667543314
+          },
+          "max_adjacent_publication_jump_m": 0.14649437667543314,
+          "bias_rad_s": {
+            "n": 92,
+            "minimum": -0.011021952005649741,
+            "median": -0.0020290943000043915,
+            "mean": -0.0023186372756352274,
+            "p95": 0.002669286062514181,
+            "maximum": 0.0034296255201281918,
+            "last": 0.0010929043309478058
+          },
+          "quality": {
+            "per_link": {
+              "node_10": {
+                "publications": 92,
+                "state_counts": {
+                  "unmonitored": 92
+                },
+                "exposure_link_seconds": {
+                  "unmonitored": 91.08776031800008,
+                  "unmonitored_total": 91.08776031800008
+                },
+                "known_attenuation_intervals": 0,
+                "trigger_events": 0,
+                "observed_exposure_s": 91.087760318
+              },
+              "node_2": {
+                "publications": 92,
+                "state_counts": {
+                  "unmonitored": 92
+                },
+                "exposure_link_seconds": {
+                  "unmonitored": 91.08776031800008,
+                  "unmonitored_total": 91.08776031800008
+                },
+                "known_attenuation_intervals": 0,
+                "trigger_events": 0,
+                "observed_exposure_s": 91.087760318
+              },
+              "node_3": {
+                "publications": 92,
+                "state_counts": {
+                  "unmonitored": 92
+                },
+                "exposure_link_seconds": {
+                  "unmonitored": 91.08776031800008,
+                  "unmonitored_total": 91.08776031800008
+                },
+                "known_attenuation_intervals": 0,
+                "trigger_events": 0,
+                "observed_exposure_s": 91.087760318
+              },
+              "node_8": {
+                "publications": 92,
+                "state_counts": {
+                  "unmonitored": 92
+                },
+                "exposure_link_seconds": {
+                  "unmonitored": 91.08776031800008,
+                  "unmonitored_total": 91.08776031800008
+                },
+                "known_attenuation_intervals": 0,
+                "trigger_events": 0,
+                "observed_exposure_s": 91.087760318
+              }
+            },
+            "trigger_events": 0,
+            "vehicle_any_link_attenuation_s": 0.0,
+            "vehicle_any_unknown_s": 0.0,
+            "link_seconds_are_not_vehicle_seconds": true,
+            "normal_completion_is_not_fault_free_label": true
+          },
+          "stop_window": {
+            "frozen_window_s": [
+              83.81404534,
+              88.81404534
+            ],
+            "outputs": 5,
+            "valid_outputs": 5,
+            "median_xy_m": [
+              2.9148657268510814,
+              2.9872718482452303
+            ],
+            "manual_endpoint_xy_m": [
+              2.93,
+              3.04
+            ],
+            "manual_endpoint_distance_m": 0.05485712543708531,
+            "manual_uncertainty_m": null,
+            "scatter_about_component_median_m": {
+              "median": 0.002179193163647744,
+              "rms": 0.0040810616476731855,
+              "maximum": 0.008029693990926567
+            },
+            "candidate_static_net_displacement_m": 0.010171143643463783,
+            "candidate_static_max_displacement_from_first_m": 0.010171143643463783,
+            "candidate_static_elapsed_s": 4.0,
+            "static_confirmation": "frozen historical stop window only; no independent exact standstill/parking-time bound",
+            "reference": "uncertain operator endpoint, development diagnostic only; not continuous RMSE/ATE"
+          },
+          "paired_baseline_group": "Q1",
+          "all_output_change_vs_paired_baseline": {
+            "publications": 92,
+            "base_shift_m": {
+              "n": 92,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 92,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_bias_change_rad_s": {
+              "n": 92,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "common_valid_change_vs_paired_baseline": {
+            "publications": 90,
+            "base_shift_m": {
+              "n": 90,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 90,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "absolute_bias_change_rad_s": {
+              "n": 90,
+              "minimum": 0.0,
+              "median": 0.0,
+              "mean": 0.0,
+              "p95": 0.0,
+              "maximum": 0.0
+            },
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "all_output_change_vs_Q0": {
+            "publications": 92,
+            "base_shift_m": {
+              "n": 92,
+              "minimum": 0.0,
+              "median": 0.005515492680758751,
+              "mean": 0.005171489911258324,
+              "p95": 0.012010506646316008,
+              "maximum": 0.014731318659117063
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 92,
+              "minimum": 0.0,
+              "median": 2.653615285649763,
+              "mean": 3.16321827763283,
+              "p95": 8.044522684313694,
+              "maximum": 8.778374959586536
+            },
+            "absolute_bias_change_rad_s": null,
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "timing": {
+            "actual_release_delay_s": {
+              "n": 92,
+              "minimum": 1.010393412,
+              "median": 1.049930558,
+              "mean": 1.0491859817282607,
+              "p95": 1.08091062225,
+              "maximum": 1.110690461
+            },
+            "post_cutoff_total_s": {
+              "n": 92,
+              "minimum": 0.010393412,
+              "median": 0.049930558,
+              "mean": 0.049185981728260865,
+              "p95": 0.08091062225000005,
+              "maximum": 0.110690461
+            },
+            "complete_publication_cycle_wall_s": {
+              "n": 92,
+              "minimum": 0.009352417,
+              "median": 0.0493578105,
+              "mean": 0.0490316904021739,
+              "p95": 0.08081432390000004,
+              "maximum": 0.110557077
+            },
+            "complete_publication_cycle_wall_s_sum": 4.510915517,
+            "pre_main_shadows_quality_and_graph_logging_s": {
+              "n": 92,
+              "minimum": 0.001745678,
+              "median": 0.002569718,
+              "mean": 0.0024122799021739126,
+              "p95": 0.0029093011,
+              "maximum": 0.003288119
+            },
+            "main_phase_s": {
+              "n": 92,
+              "minimum": 0.005253197,
+              "median": 0.044580581999999994,
+              "mean": 0.04380367738043479,
+              "p95": 0.07609460565000005,
+              "maximum": 0.10420058
+            },
+            "post_main_diagnostic_and_flush_s": {
+              "n": 92,
+              "minimum": 0.001335841,
+              "median": 0.003007371,
+              "mean": 0.002815733119565218,
+              "p95": 0.0036093328000000005,
+              "maximum": 0.004672613
+            },
+            "role_solver_costs": {
+              "main": {
+                "solve_wall_s": 1.7536721839860547,
+                "marginal_wall_s": 0.10033209797984455,
+                "max_keyframes": 21,
+                "scalar_dimension": 4
+              }
+            },
+            "CLI_elapsed_including_pacing_and_IO_s": 99.16602574799617,
+            "original_incomplete_processor_column_s": {
+              "n": 92,
+              "minimum": 0.032064712,
+              "median": 0.067494357,
+              "mean": 0.0679223341847826,
+              "p95": 0.10018961030000004,
+              "maximum": 0.135857572
+            },
+            "beyond_next_cutoff_count": 0,
+            "output_after_recorded_EOF_count": 0,
+            "caveat": "cycle wall includes shadow/quality/main/diagnostics/write, excludes earlier inter-publication ingest; original incomplete column retained separately and is not additive. Actual end-to-end delay includes original1s wait and scheduling; not physical ROS latency or pure CPU time."
+          },
+          "reference_coverage": {
+            "continuous_state_truth": 0,
+            "continuous_available_time_truth": 0,
+            "frozen_stop_reference_samples": 5,
+            "all_publications": 92,
+            "manual_uncertainty_m": null,
+            "actual_available_reference_error": null
+          },
+          "field_accuracy_assessment": "尚不能判断"
+        },
+        "Q2": {
+          "published": 92,
+          "finite_pose_outputs": 92,
+          "estimate_valid_outputs": 90,
+          "accepted_graph_outputs": 90,
+          "common_valid_outputs": 90,
+          "warmup_outputs": 2,
+          "solver_failures": 0,
+          "fallback_outputs": 0,
+          "status_counts": {
+            "predict_only_warmup": 2,
+            "graph": 90
+          },
+          "first_accepted": {
+            "state_time_s": 4.0,
+            "position_correction_m": 0.14649569689914319,
+            "yaw_correction_deg": 0.2429104812435107,
+            "step_from_previous_publication_m": 0.14649569689914319
+          },
+          "max_adjacent_publication_jump_m": 0.14649569689914319,
+          "bias_rad_s": null,
+          "quality": {
+            "per_link": {
+              "node_10": {
+                "publications": 92,
+                "state_counts": {
+                  "unknown": 2,
+                  "unknown_total": 2,
+                  "normal": 47,
+                  "known_total": 90,
+                  "downweighted": 37,
+                  "known_attenuation": 43,
+                  "recovering": 6
+                },
+                "exposure_link_seconds": {
+                  "unknown": 2.015624089,
+                  "unknown_total": 2.015624089,
+                  "normal": 45.97593758299999,
+                  "known_total": 89.057263132,
+                  "downweighted": 37.07521187000001,
+                  "known_attenuation": 43.08132554900001,
+                  "recovering": 6.006113679
+                },
+                "known_attenuation_intervals": 2,
+                "trigger_events": 2,
+                "observed_exposure_s": 91.072887221
+              },
+              "node_2": {
+                "publications": 92,
+                "state_counts": {
+                  "unknown": 2,
+                  "unknown_total": 2,
+                  "normal": 80,
+                  "known_total": 90,
+                  "downweighted": 7,
+                  "known_attenuation": 10,
+                  "recovering": 3
+                },
+                "exposure_link_seconds": {
+                  "unknown": 2.015624089,
+                  "unknown_total": 2.015624089,
+                  "normal": 78.99450699699999,
+                  "known_total": 89.057263132,
+                  "downweighted": 7.0184572,
+                  "known_attenuation": 10.062756135,
+                  "recovering": 3.0442989349999996
+                },
+                "known_attenuation_intervals": 1,
+                "trigger_events": 1,
+                "observed_exposure_s": 91.072887221
+              },
+              "node_3": {
+                "publications": 92,
+                "state_counts": {
+                  "unknown": 2,
+                  "unknown_total": 2,
+                  "normal": 90,
+                  "known_total": 90
+                },
+                "exposure_link_seconds": {
+                  "unknown": 2.015624089,
+                  "unknown_total": 2.015624089,
+                  "normal": 89.057263132,
+                  "known_total": 89.057263132
+                },
+                "known_attenuation_intervals": 0,
+                "trigger_events": 0,
+                "observed_exposure_s": 91.072887221
+              },
+              "node_8": {
+                "publications": 92,
+                "state_counts": {
+                  "unknown": 2,
+                  "unknown_total": 2,
+                  "normal": 78,
+                  "known_total": 90,
+                  "downweighted": 9,
+                  "known_attenuation": 12,
+                  "recovering": 3
+                },
+                "exposure_link_seconds": {
+                  "unknown": 2.015624089,
+                  "unknown_total": 2.015624089,
+                  "normal": 77.071139513,
+                  "known_total": 89.057263132,
+                  "downweighted": 8.977317704,
+                  "known_attenuation": 11.986123619,
+                  "recovering": 3.008805915
+                },
+                "known_attenuation_intervals": 1,
+                "trigger_events": 1,
+                "observed_exposure_s": 91.072887221
+              }
+            },
+            "trigger_events": 4,
+            "vehicle_any_link_attenuation_s": 47.09996349400001,
+            "vehicle_any_unknown_s": 2.015624089,
+            "link_seconds_are_not_vehicle_seconds": true,
+            "normal_completion_is_not_fault_free_label": true
+          },
+          "stop_window": {
+            "frozen_window_s": [
+              83.81404534,
+              88.81404534
+            ],
+            "outputs": 5,
+            "valid_outputs": 5,
+            "median_xy_m": [
+              2.8991370366738662,
+              3.080517590771512
+            ],
+            "manual_endpoint_xy_m": [
+              2.93,
+              3.04
+            ],
+            "manual_endpoint_distance_m": 0.050933266802729305,
+            "manual_uncertainty_m": null,
+            "scatter_about_component_median_m": {
+              "median": 0.009121745593820785,
+              "rms": 0.01243362912636149,
+              "maximum": 0.01884900427324616
+            },
+            "candidate_static_net_displacement_m": 0.035265626311315273,
+            "candidate_static_max_displacement_from_first_m": 0.035265626311315273,
+            "candidate_static_elapsed_s": 4.0,
+            "static_confirmation": "frozen historical stop window only; no independent exact standstill/parking-time bound",
+            "reference": "uncertain operator endpoint, development diagnostic only; not continuous RMSE/ATE"
+          },
+          "paired_baseline_group": "Q0",
+          "all_output_change_vs_paired_baseline": {
+            "publications": 92,
+            "base_shift_m": {
+              "n": 92,
+              "minimum": 0.0,
+              "median": 0.04951717685830683,
+              "mean": 0.058918771851611075,
+              "p95": 0.16704074069339453,
+              "maximum": 0.17966509868507974
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 92,
+              "minimum": 0.0,
+              "median": 2.1707418630912105,
+              "mean": 2.0509979196691654,
+              "p95": 4.80577379413701,
+              "maximum": 5.713293281432356
+            },
+            "absolute_bias_change_rad_s": null,
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "common_valid_change_vs_paired_baseline": {
+            "publications": 90,
+            "base_shift_m": {
+              "n": 90,
+              "minimum": 0.0,
+              "median": 0.05223434644478535,
+              "mean": 0.06022807789275799,
+              "p95": 0.16711515628006138,
+              "maximum": 0.17966509868507974
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 90,
+              "minimum": 0.0,
+              "median": 2.1731303267746176,
+              "mean": 2.0965756512173694,
+              "p95": 4.811998783021422,
+              "maximum": 5.713293281432356
+            },
+            "absolute_bias_change_rad_s": null,
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "all_output_change_vs_Q0": {
+            "publications": 92,
+            "base_shift_m": {
+              "n": 92,
+              "minimum": 0.0,
+              "median": 0.04951717685830683,
+              "mean": 0.058918771851611075,
+              "p95": 0.16704074069339453,
+              "maximum": 0.17966509868507974
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 92,
+              "minimum": 0.0,
+              "median": 2.1707418630912105,
+              "mean": 2.0509979196691654,
+              "p95": 4.80577379413701,
+              "maximum": 5.713293281432356
+            },
+            "absolute_bias_change_rad_s": null,
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "timing": {
+            "actual_release_delay_s": {
+              "n": 92,
+              "minimum": 1.019983648,
+              "median": 1.0948039705000001,
+              "mean": 1.089971315097826,
+              "p95": 1.13358060995,
+              "maximum": 1.151454705
+            },
+            "post_cutoff_total_s": {
+              "n": 92,
+              "minimum": 0.019983648,
+              "median": 0.0948039705,
+              "mean": 0.08997131509782609,
+              "p95": 0.13358060995,
+              "maximum": 0.151454705
+            },
+            "complete_publication_cycle_wall_s": {
+              "n": 92,
+              "minimum": 0.019889859,
+              "median": 0.094704598,
+              "mean": 0.08984980566304347,
+              "p95": 0.13329484655,
+              "maximum": 0.151351031
+            },
+            "complete_publication_cycle_wall_s_sum": 8.266182121,
+            "pre_main_shadows_quality_and_graph_logging_s": {
+              "n": 92,
+              "minimum": 0.015071987,
+              "median": 0.0711364635,
+              "mean": 0.06810534899999998,
+              "p95": 0.0940308413,
+              "maximum": 0.125823874
+            },
+            "main_phase_s": {
+              "n": 92,
+              "minimum": 0.003439978,
+              "median": 0.0182540975,
+              "mean": 0.019201714239130436,
+              "p95": 0.03392691480000005,
+              "maximum": 0.065808533
+            },
+            "post_main_diagnostic_and_flush_s": {
+              "n": 92,
+              "minimum": 0.001224924,
+              "median": 0.0025913654999999997,
+              "mean": 0.0025427424239130433,
+              "p95": 0.0031584756500000004,
+              "maximum": 0.004822619
+            },
+            "role_solver_costs": {
+              "main": {
+                "solve_wall_s": 0.7062972230341984,
+                "marginal_wall_s": 0.04737698694225401,
+                "max_keyframes": 21,
+                "scalar_dimension": 3
+              },
+              "node_10": {
+                "solve_wall_s": 0.705228170947521,
+                "marginal_wall_s": 0.05412619194248691,
+                "max_keyframes": 21,
+                "scalar_dimension": 3
+              },
+              "node_2": {
+                "solve_wall_s": 0.6350340119242901,
+                "marginal_wall_s": 0.04843354396871291,
+                "max_keyframes": 21,
+                "scalar_dimension": 3
+              },
+              "node_3": {
+                "solve_wall_s": 0.606363758968655,
+                "marginal_wall_s": 0.04482454298704397,
+                "max_keyframes": 21,
+                "scalar_dimension": 3
+              },
+              "node_8": {
+                "solve_wall_s": 0.6026358029921539,
+                "marginal_wall_s": 0.04550277291855309,
+                "max_keyframes": 21,
+                "scalar_dimension": 3
+              }
+            },
+            "CLI_elapsed_including_pacing_and_IO_s": 99.1576651649957,
+            "original_incomplete_processor_column_s": {
+              "n": 92,
+              "minimum": 0.053818799,
+              "median": 0.1293125725,
+              "mean": 0.1272587913804348,
+              "p95": 0.16930836175,
+              "maximum": 0.20395558900000002
+            },
+            "beyond_next_cutoff_count": 0,
+            "output_after_recorded_EOF_count": 0,
+            "caveat": "cycle wall includes shadow/quality/main/diagnostics/write, excludes earlier inter-publication ingest; original incomplete column retained separately and is not additive. Actual end-to-end delay includes original1s wait and scheduling; not physical ROS latency or pure CPU time."
+          },
+          "reference_coverage": {
+            "continuous_state_truth": 0,
+            "continuous_available_time_truth": 0,
+            "frozen_stop_reference_samples": 5,
+            "all_publications": 92,
+            "manual_uncertainty_m": null,
+            "actual_available_reference_error": null
+          },
+          "field_accuracy_assessment": "尚不能判断"
+        },
+        "Q3": {
+          "published": 92,
+          "finite_pose_outputs": 92,
+          "estimate_valid_outputs": 90,
+          "accepted_graph_outputs": 90,
+          "common_valid_outputs": 90,
+          "warmup_outputs": 2,
+          "solver_failures": 0,
+          "fallback_outputs": 0,
+          "status_counts": {
+            "predict_only_warmup": 2,
+            "graph": 90
+          },
+          "first_accepted": {
+            "state_time_s": 4.0,
+            "position_correction_m": 0.14649437667543314,
+            "yaw_correction_deg": 0.29253558693853615,
+            "step_from_previous_publication_m": 0.14649437667543314
+          },
+          "max_adjacent_publication_jump_m": 0.14649437667543314,
+          "bias_rad_s": {
+            "n": 92,
+            "minimum": -0.006285623017677613,
+            "median": -0.002161967363505383,
+            "mean": -0.002500702177569259,
+            "p95": 9.913686023772251e-05,
+            "maximum": 0.00045995882993204356,
+            "last": 0.00045995882993204356
+          },
+          "quality": {
+            "per_link": {
+              "node_10": {
+                "publications": 92,
+                "state_counts": {
+                  "unknown": 2,
+                  "unknown_total": 2,
+                  "normal": 45,
+                  "known_total": 90,
+                  "downweighted": 39,
+                  "known_attenuation": 45,
+                  "recovering": 6
+                },
+                "exposure_link_seconds": {
+                  "unknown": 2.0270213239999997,
+                  "unknown_total": 2.0270213239999997,
+                  "normal": 44.058801773999996,
+                  "known_total": 89.15816723,
+                  "downweighted": 39.13971574599999,
+                  "known_attenuation": 45.09936545599999,
+                  "recovering": 5.959649710000001
+                },
+                "known_attenuation_intervals": 2,
+                "trigger_events": 2,
+                "observed_exposure_s": 91.185188554
+              },
+              "node_2": {
+                "publications": 92,
+                "state_counts": {
+                  "unknown": 2,
+                  "unknown_total": 2,
+                  "normal": 80,
+                  "known_total": 90,
+                  "downweighted": 7,
+                  "known_attenuation": 10,
+                  "recovering": 3
+                },
+                "exposure_link_seconds": {
+                  "unknown": 2.0270213239999997,
+                  "unknown_total": 2.0270213239999997,
+                  "normal": 79.10816327,
+                  "known_total": 89.15816723,
+                  "downweighted": 7.023398896,
+                  "known_attenuation": 10.05000396,
+                  "recovering": 3.026605064
+                },
+                "known_attenuation_intervals": 1,
+                "trigger_events": 1,
+                "observed_exposure_s": 91.185188554
+              },
+              "node_3": {
+                "publications": 92,
+                "state_counts": {
+                  "unknown": 2,
+                  "unknown_total": 2,
+                  "normal": 90,
+                  "known_total": 90
+                },
+                "exposure_link_seconds": {
+                  "unknown": 2.0270213239999997,
+                  "unknown_total": 2.0270213239999997,
+                  "normal": 89.15816723,
+                  "known_total": 89.15816723
+                },
+                "known_attenuation_intervals": 0,
+                "trigger_events": 0,
+                "observed_exposure_s": 91.185188554
+              },
+              "node_8": {
+                "publications": 92,
+                "state_counts": {
+                  "unknown": 2,
+                  "unknown_total": 2,
+                  "normal": 78,
+                  "known_total": 90,
+                  "downweighted": 9,
+                  "known_attenuation": 12,
+                  "recovering": 3
+                },
+                "exposure_link_seconds": {
+                  "unknown": 2.0270213239999997,
+                  "unknown_total": 2.0270213239999997,
+                  "normal": 77.155992355,
+                  "known_total": 89.15816723,
+                  "downweighted": 9.021506201000001,
+                  "known_attenuation": 12.002174875000001,
+                  "recovering": 2.9806686740000004
+                },
+                "known_attenuation_intervals": 1,
+                "trigger_events": 1,
+                "observed_exposure_s": 91.185188554
+              }
+            },
+            "trigger_events": 4,
+            "vehicle_any_link_attenuation_s": 47.08967394199999,
+            "vehicle_any_unknown_s": 2.0270213239999997,
+            "link_seconds_are_not_vehicle_seconds": true,
+            "normal_completion_is_not_fault_free_label": true
+          },
+          "stop_window": {
+            "frozen_window_s": [
+              83.81404534,
+              88.81404534
+            ],
+            "outputs": 5,
+            "valid_outputs": 5,
+            "median_xy_m": [
+              2.8959468437989933,
+              3.090821525673232
+            ],
+            "manual_endpoint_xy_m": [
+              2.93,
+              3.04
+            ],
+            "manual_endpoint_distance_m": 0.06117552549022493,
+            "manual_uncertainty_m": null,
+            "scatter_about_component_median_m": {
+              "median": 0.012805351216988559,
+              "rms": 0.017252578774926863,
+              "maximum": 0.027593513305989567
+            },
+            "candidate_static_net_displacement_m": 0.04883512599537052,
+            "candidate_static_max_displacement_from_first_m": 0.04883512599537052,
+            "candidate_static_elapsed_s": 4.0,
+            "static_confirmation": "frozen historical stop window only; no independent exact standstill/parking-time bound",
+            "reference": "uncertain operator endpoint, development diagnostic only; not continuous RMSE/ATE"
+          },
+          "paired_baseline_group": "Q1",
+          "all_output_change_vs_paired_baseline": {
+            "publications": 92,
+            "base_shift_m": {
+              "n": 92,
+              "minimum": 0.0,
+              "median": 0.05923545016689296,
+              "mean": 0.07213549679940826,
+              "p95": 0.17462376066936952,
+              "maximum": 0.1856029876899809
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 92,
+              "minimum": 0.0,
+              "median": 5.132131092746574,
+              "mean": 5.6723820155059075,
+              "p95": 15.456518497516477,
+              "maximum": 18.415234302025805
+            },
+            "absolute_bias_change_rad_s": {
+              "n": 92,
+              "minimum": 0.0,
+              "median": 0.0019749355546136416,
+              "mean": 0.002489308917267452,
+              "p95": 0.005045247623049178,
+              "maximum": 0.005596769892125958
+            },
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "common_valid_change_vs_paired_baseline": {
+            "publications": 90,
+            "base_shift_m": {
+              "n": 90,
+              "minimum": 0.0,
+              "median": 0.06104099489382948,
+              "mean": 0.07373850783939512,
+              "p95": 0.17512753041112214,
+              "maximum": 0.1856029876899809
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 90,
+              "minimum": 0.0,
+              "median": 5.167755193281436,
+              "mean": 5.798434949183818,
+              "p95": 15.588602659569483,
+              "maximum": 18.415234302025805
+            },
+            "absolute_bias_change_rad_s": {
+              "n": 90,
+              "minimum": 0.0,
+              "median": 0.0019892608542593096,
+              "mean": 0.002544626893206729,
+              "p95": 0.005060113903714383,
+              "maximum": 0.005596769892125958
+            },
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "all_output_change_vs_Q0": {
+            "publications": 92,
+            "base_shift_m": {
+              "n": 92,
+              "minimum": 0.0,
+              "median": 0.05870173644122746,
+              "mean": 0.06969177763015916,
+              "p95": 0.171780552170855,
+              "maximum": 0.17914795275189485
+            },
+            "absolute_wrapped_yaw_change_deg": {
+              "n": 92,
+              "minimum": 0.0,
+              "median": 2.5533686915254834,
+              "mean": 3.7991598691935384,
+              "p95": 15.142022343669126,
+              "maximum": 18.426943607191337
+            },
+            "absolute_bias_change_rad_s": null,
+            "interpretation": "output difference, not error against truth or accuracy improvement"
+          },
+          "timing": {
+            "actual_release_delay_s": {
+              "n": 92,
+              "minimum": 1.032279375,
+              "median": 1.2340797635,
+              "mean": 1.2216214583043479,
+              "p95": 1.32163553995,
+              "maximum": 1.331257092
+            },
+            "post_cutoff_total_s": {
+              "n": 92,
+              "minimum": 0.032279375,
+              "median": 0.23407976349999998,
+              "mean": 0.22162145830434787,
+              "p95": 0.32163553995,
+              "maximum": 0.331257092
+            },
+            "complete_publication_cycle_wall_s": {
+              "n": 92,
+              "minimum": 0.032191756,
+              "median": 0.233987355,
+              "mean": 0.22145434755434779,
+              "p95": 0.32145773545,
+              "maximum": 0.331190263
+            },
+            "complete_publication_cycle_wall_s_sum": 20.373799975,
+            "pre_main_shadows_quality_and_graph_logging_s": {
+              "n": 92,
+              "minimum": 0.026809824,
+              "median": 0.1865284415,
+              "mean": 0.17660385192391304,
+              "p95": 0.2613658663,
+              "maximum": 0.281424615
+            },
+            "main_phase_s": {
+              "n": 92,
+              "minimum": 0.003375927,
+              "median": 0.0410194885,
+              "mean": 0.04199510656521739,
+              "p95": 0.07103012650000001,
+              "maximum": 0.095449919
+            },
+            "post_main_diagnostic_and_flush_s": {
+              "n": 92,
+              "minimum": 0.00157461,
+              "median": 0.0027454525000000004,
+              "mean": 0.0028553890652173917,
+              "p95": 0.00398392125,
+              "maximum": 0.006740756
+            },
+            "role_solver_costs": {
+              "main": {
+                "solve_wall_s": 1.56977046301472,
+                "marginal_wall_s": 0.09786992297449615,
+                "max_keyframes": 21,
+                "scalar_dimension": 4
+              },
+              "node_10": {
+                "solve_wall_s": 1.8319361709582154,
+                "marginal_wall_s": 0.15836336805659812,
+                "max_keyframes": 21,
+                "scalar_dimension": 4
+              },
+              "node_2": {
+                "solve_wall_s": 1.4893918180459877,
+                "marginal_wall_s": 0.10328510499675758,
+                "max_keyframes": 21,
+                "scalar_dimension": 4
+              },
+              "node_3": {
+                "solve_wall_s": 1.3433235549746314,
+                "marginal_wall_s": 0.09314131691644434,
+                "max_keyframes": 21,
+                "scalar_dimension": 4
+              },
+              "node_8": {
+                "solve_wall_s": 1.409547389994259,
+                "marginal_wall_s": 0.09341821004636586,
+                "max_keyframes": 21,
+                "scalar_dimension": 4
+              }
+            },
+            "CLI_elapsed_including_pacing_and_IO_s": 99.15780203000759,
+            "original_incomplete_processor_column_s": {
+              "n": 92,
+              "minimum": 0.076777544,
+              "median": 0.27636816350000004,
+              "mean": 0.2649634830434783,
+              "p95": 0.36757824825,
+              "maximum": 0.390053084
+            },
+            "beyond_next_cutoff_count": 0,
+            "output_after_recorded_EOF_count": 0,
+            "caveat": "cycle wall includes shadow/quality/main/diagnostics/write, excludes earlier inter-publication ingest; original incomplete column retained separately and is not additive. Actual end-to-end delay includes original1s wait and scheduling; not physical ROS latency or pure CPU time."
+          },
+          "reference_coverage": {
+            "continuous_state_truth": 0,
+            "continuous_available_time_truth": 0,
+            "frozen_stop_reference_samples": 5,
+            "all_publications": 92,
+            "manual_uncertainty_m": null,
+            "actual_available_reference_error": null
+          },
+          "field_accuracy_assessment": "尚不能判断"
+        }
+      }
+    }
+  ],
+  "main_performance_runs": 8,
+  "all_publications": 752,
+  "known_fault_labels": null,
+  "continuous_trajectory_truth": null,
+  "thresholds_tuned_on_field": false,
+  "interpretation": "actions are trigger events; stop-distance changes are uncertain development observations, not overall field precision improvement",
+  "field_accuracy_assessment": "尚不能判断"
+}

@@ -1,0 +1,51 @@
+test_all_arrived_support_required_not_best_five (test_constraints.ConstraintTests.test_all_arrived_support_required_not_best_five) ... ok
+test_bad_score_not_hidden (test_constraints.ConstraintTests.test_bad_score_not_hidden) ... ok
+test_cross_case_leak_rejected (test_constraints.ConstraintTests.test_cross_case_leak_rejected) ... ok
+test_disabled_constraint_does_not_keep_full_factor (test_constraints.ConstraintTests.test_disabled_constraint_does_not_keep_full_factor) ... ok
+test_duplicate_scalar_support_not_extra_samples (test_constraints.ConstraintTests.test_duplicate_scalar_support_not_extra_samples) ... ok
+test_each_shadow_influence_category_excludes_target (test_constraints.ConstraintTests.test_each_shadow_influence_category_excludes_target) ... ok
+test_float_epoch_rejected (test_constraints.ConstraintTests.test_float_epoch_rejected) ... ok
+test_future_support_rejected (test_constraints.ConstraintTests.test_future_support_rejected) ... ok
+test_intervention_checks_prior_and_optimizer_initial_guess (test_constraints.ConstraintTests.test_intervention_checks_prior_and_optimizer_initial_guess) ... ok
+test_literal_FSM_known_sequence (test_constraints.ConstraintTests.test_literal_FSM_known_sequence) ... ok
+test_main_postfit_innovation_not_shadow (test_constraints.ConstraintTests.test_main_postfit_innovation_not_shadow) ... ok
+test_missing_constraint_explicit_null_not_zero (test_constraints.ConstraintTests.test_missing_constraint_explicit_null_not_zero) ... ok
+test_missing_variance_not_zero_filled (test_constraints.ConstraintTests.test_missing_variance_not_zero_filled) ... ok
+test_multi_anchor_message_projects_distinct_scalar_identities (test_constraints.ConstraintTests.test_multi_anchor_message_projects_distinct_scalar_identities) ... ok
+test_objective_omitted_constraint_rejected (test_constraints.ConstraintTests.test_objective_omitted_constraint_rejected) ... ok
+test_prefix_includes_quality_decisions_not_only_pose (test_constraints.ConstraintTests.test_prefix_includes_quality_decisions_not_only_pose) ... ok
+test_provenance_cycle_rejected (test_constraints.ConstraintTests.test_provenance_cycle_rejected) ... ok
+test_raw_median_and_original_bin_not_reselected (test_constraints.ConstraintTests.test_raw_median_and_original_bin_not_reselected) ... ok
+test_recovery_hysteresis_not_skipped (test_constraints.ConstraintTests.test_recovery_hysteresis_not_skipped) ... ok
+test_shadow_incomplete_initialization_ledger_rejected (test_constraints.ConstraintTests.test_shadow_incomplete_initialization_ledger_rejected) ... ok
+test_target_in_marginalized_prior_rejected_even_low_current_score (test_constraints.ConstraintTests.test_target_in_marginalized_prior_rejected_even_low_current_score) ... ok
+test_undeclared_state_origin_rejected (test_constraints.ConstraintTests.test_undeclared_state_origin_rejected) ... ok
+test_unknown_not_healthy (test_constraints.ConstraintTests.test_unknown_not_healthy) ... ok
+test_unknown_zero_score_rejected (test_constraints.ConstraintTests.test_unknown_zero_score_rejected) ... ok
+test_weighted_objective_uses_actual_effective_weight (test_constraints.ConstraintTests.test_weighted_objective_uses_actual_effective_weight) ... ok
+test_empty_window_is_explicit_null (test_endpoints.EndpointTests.test_empty_window_is_explicit_null) ... ok
+test_frozen_fractional_window_not_reselected (test_endpoints.EndpointTests.test_frozen_fractional_window_not_reselected) ... ok
+test_nonfinite_preserved_in_denominator (test_endpoints.EndpointTests.test_nonfinite_preserved_in_denominator) ... ok
+test_reference_never_declared_exact (test_endpoints.EndpointTests.test_reference_never_declared_exact) ... ok
+test_reuse_full_Q0_Q1_and_only_old_publications_F1_F2 (test_endpoints.EndpointTests.test_reuse_full_Q0_Q1_and_only_old_publications_F1_F2) ... ok
+test_unknown_validity_not_silently_healthy (test_endpoints.EndpointTests.test_unknown_validity_not_silently_healthy) ... ok
+test_valid_denominator_separate_from_finite (test_endpoints.EndpointTests.test_valid_denominator_separate_from_finite) ... ok
+test_no_manual_reference_or_truth_passed_to_estimator (test_endpoints.InputReferenceTests.test_no_manual_reference_or_truth_passed_to_estimator) ... ok
+test_normal_onset_is_not_third_normal_confirmation (test_native_v2.NativeExposureTests.test_normal_onset_is_not_third_normal_confirmation) ... ok
+test_unknown_held_exposure_is_separate_and_last_sample_zero (test_native_v2.NativeExposureTests.test_unknown_held_exposure_is_separate_and_last_sample_zero) ... ok
+test_CSV_cannot_silently_differ_from_json_publication (test_native_v2.NativePublicationBindingTests.test_CSV_cannot_silently_differ_from_json_publication) ... ok
+test_native_published_graph_association_not_only_file_SHA (test_native_v2.NativePublicationBindingTests.test_native_published_graph_association_not_only_file_SHA) ... ok
+test_initial_unknown_keeps_unity_without_normal_claim (test_native_v2.NativeV2Tests.test_initial_unknown_keeps_unity_without_normal_claim) ... ok
+test_missing_measurement_has_priority (test_native_v2.NativeV2Tests.test_missing_measurement_has_priority) ... ok
+test_native_warn_confirm_and_unknown_holds_gain (test_native_v2.NativeV2Tests.test_native_warn_confirm_and_unknown_holds_gain) ... ok
+test_not_accepted_shadow_never_scores_main_residual (test_native_v2.NativeV2Tests.test_not_accepted_shadow_never_scores_main_residual) ... ok
+test_policy_score_roundoff_does_not_relax_discrete_states (test_native_v2.NativeV2Tests.test_policy_score_roundoff_does_not_relax_discrete_states) ... ok
+test_recovery_relapse_is_immediate (test_native_v2.NativeV2Tests.test_recovery_relapse_is_immediate) ... ok
+test_recovery_requires_three_plus_three (test_native_v2.NativeV2Tests.test_recovery_requires_three_plus_three) ... ok
+test_unknown_resets_confirmation (test_native_v2.NativeV2Tests.test_unknown_resets_confirmation) ... ok
+test_zero_gain_is_zero_information_not_missing_factor (test_native_v2.NativeV2Tests.test_zero_gain_is_zero_information_not_missing_factor) ... ok
+
+----------------------------------------------------------------------
+Ran 46 tests in 0.021s
+
+OK

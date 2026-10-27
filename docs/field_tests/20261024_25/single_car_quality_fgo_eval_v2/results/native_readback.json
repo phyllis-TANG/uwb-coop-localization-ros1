@@ -1,0 +1,225 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "status": "PASS",
+      "group": "Q0",
+      "case_id": "004023",
+      "counts": {
+        "original_scalar_bindings": 19626,
+        "graph_publications": 96,
+        "objective_costs": 94,
+        "legacy_Q0_marginals_without_new_incident_detail": 75,
+        "quality_decisions": 384,
+        "weighted_factor_diagnostics": 384
+      },
+      "maximum_absolute_errors": {
+        "objective_cost_abs": 1.4210854715202004e-14
+      },
+      "A_online_policy_graph_Jacobian_or_qaudit_imported": false,
+      "shared_formula_scope": "B PR59 independent scalar residuals plus B native quality formula; original JSON parsing/hash only shared",
+      "limitations": [
+        "Q0 old F0 supplies no per-step incident-factor detail; all publication regression plus fixed source and original PR59 marginal evidence retained",
+        "dependency completeness also requires fixed-source inspection and executed cache/target intervention, reported separately",
+        "physical axes/clock/geometry are inherited conditional assumptions, not calibrated by this audit"
+      ]
+    },
+    {
+      "status": "PASS",
+      "group": "Q1",
+      "case_id": "004023",
+      "counts": {
+        "original_scalar_bindings": 19626,
+        "graph_publications": 96,
+        "independent_gyro_segments": 1995,
+        "gyro_gaps": 0,
+        "objective_costs": 94,
+        "marginalizations": 75,
+        "quality_decisions": 384,
+        "weighted_factor_diagnostics": 384
+      },
+      "maximum_absolute_errors": {
+        "objective_cost_abs": 1.4210854715202004e-14,
+        "information_abs": 6.660008011749596e-08,
+        "gradient_abs": 2.7791493550921587e-09,
+        "constant_abs": 6.217248937900877e-15,
+        "bias_cross_max": 650.7134288483184
+      },
+      "A_online_policy_graph_Jacobian_or_qaudit_imported": false,
+      "shared_formula_scope": "B PR59 independent scalar residuals plus B native quality formula; original JSON parsing/hash only shared",
+      "limitations": [
+        "Q0 old F0 supplies no per-step incident-factor detail; all publication regression plus fixed source and original PR59 marginal evidence retained",
+        "dependency completeness also requires fixed-source inspection and executed cache/target intervention, reported separately",
+        "physical axes/clock/geometry are inherited conditional assumptions, not calibrated by this audit"
+      ]
+    },
+    {
+      "status": "PASS",
+      "group": "Q2",
+      "case_id": "004023",
+      "counts": {
+        "original_scalar_bindings": 19626,
+        "graph_publications": 480,
+        "full_optimizer_initial_guesses": 470,
+        "objective_costs": 470,
+        "marginalizations": 375,
+        "quality_decisions": 384,
+        "weighted_factor_diagnostics": 384
+      },
+      "maximum_absolute_errors": {
+        "objective_cost_abs": 1.4210854715202004e-14,
+        "information_abs": 6.079869763198076e-08,
+        "gradient_abs": 2.9548630209319526e-09,
+        "constant_abs": 8.881784197001252e-15
+      },
+      "A_online_policy_graph_Jacobian_or_qaudit_imported": false,
+      "shared_formula_scope": "B PR59 independent scalar residuals plus B native quality formula; original JSON parsing/hash only shared",
+      "limitations": [
+        "Q0 old F0 supplies no per-step incident-factor detail; all publication regression plus fixed source and original PR59 marginal evidence retained",
+        "dependency completeness also requires fixed-source inspection and executed cache/target intervention, reported separately",
+        "physical axes/clock/geometry are inherited conditional assumptions, not calibrated by this audit"
+      ]
+    },
+    {
+      "status": "PASS",
+      "group": "Q3",
+      "case_id": "004023",
+      "counts": {
+        "original_scalar_bindings": 19626,
+        "graph_publications": 480,
+        "independent_gyro_segments": 9975,
+        "gyro_gaps": 0,
+        "full_optimizer_initial_guesses": 470,
+        "objective_costs": 470,
+        "marginalizations": 375,
+        "quality_decisions": 384,
+        "weighted_factor_diagnostics": 384
+      },
+      "maximum_absolute_errors": {
+        "objective_cost_abs": 1.0658141036401503e-14,
+        "information_abs": 6.672152608189208e-08,
+        "gradient_abs": 2.854950054143046e-09,
+        "constant_abs": 5.329070518200751e-15,
+        "bias_cross_max": 655.7731851989477
+      },
+      "A_online_policy_graph_Jacobian_or_qaudit_imported": false,
+      "shared_formula_scope": "B PR59 independent scalar residuals plus B native quality formula; original JSON parsing/hash only shared",
+      "limitations": [
+        "Q0 old F0 supplies no per-step incident-factor detail; all publication regression plus fixed source and original PR59 marginal evidence retained",
+        "dependency completeness also requires fixed-source inspection and executed cache/target intervention, reported separately",
+        "physical axes/clock/geometry are inherited conditional assumptions, not calibrated by this audit"
+      ]
+    },
+    {
+      "status": "PASS",
+      "group": "Q0",
+      "case_id": "005135",
+      "counts": {
+        "original_scalar_bindings": 18882,
+        "graph_publications": 92,
+        "objective_costs": 90,
+        "legacy_Q0_marginals_without_new_incident_detail": 71,
+        "quality_decisions": 368,
+        "weighted_factor_diagnostics": 368
+      },
+      "maximum_absolute_errors": {
+        "objective_cost_abs": 1.0658141036401503e-14
+      },
+      "A_online_policy_graph_Jacobian_or_qaudit_imported": false,
+      "shared_formula_scope": "B PR59 independent scalar residuals plus B native quality formula; original JSON parsing/hash only shared",
+      "limitations": [
+        "Q0 old F0 supplies no per-step incident-factor detail; all publication regression plus fixed source and original PR59 marginal evidence retained",
+        "dependency completeness also requires fixed-source inspection and executed cache/target intervention, reported separately",
+        "physical axes/clock/geometry are inherited conditional assumptions, not calibrated by this audit"
+      ]
+    },
+    {
+      "status": "PASS",
+      "group": "Q1",
+      "case_id": "005135",
+      "counts": {
+        "original_scalar_bindings": 18882,
+        "graph_publications": 92,
+        "independent_gyro_segments": 1911,
+        "gyro_gaps": 0,
+        "objective_costs": 90,
+        "marginalizations": 71,
+        "quality_decisions": 368,
+        "weighted_factor_diagnostics": 368
+      },
+      "maximum_absolute_errors": {
+        "objective_cost_abs": 1.0658141036401503e-14,
+        "information_abs": 5.8746280728882994e-08,
+        "gradient_abs": 3.478291432656988e-09,
+        "constant_abs": 4.440892098500626e-15,
+        "bias_cross_max": 658.443667112699
+      },
+      "A_online_policy_graph_Jacobian_or_qaudit_imported": false,
+      "shared_formula_scope": "B PR59 independent scalar residuals plus B native quality formula; original JSON parsing/hash only shared",
+      "limitations": [
+        "Q0 old F0 supplies no per-step incident-factor detail; all publication regression plus fixed source and original PR59 marginal evidence retained",
+        "dependency completeness also requires fixed-source inspection and executed cache/target intervention, reported separately",
+        "physical axes/clock/geometry are inherited conditional assumptions, not calibrated by this audit"
+      ]
+    },
+    {
+      "status": "PASS",
+      "group": "Q2",
+      "case_id": "005135",
+      "counts": {
+        "original_scalar_bindings": 18882,
+        "graph_publications": 460,
+        "full_optimizer_initial_guesses": 450,
+        "objective_costs": 450,
+        "marginalizations": 355,
+        "quality_decisions": 368,
+        "weighted_factor_diagnostics": 368
+      },
+      "maximum_absolute_errors": {
+        "objective_cost_abs": 1.1546319456101628e-14,
+        "information_abs": 6.235475780158595e-08,
+        "gradient_abs": 3.3515625830204954e-09,
+        "constant_abs": 6.217248937900877e-15
+      },
+      "A_online_policy_graph_Jacobian_or_qaudit_imported": false,
+      "shared_formula_scope": "B PR59 independent scalar residuals plus B native quality formula; original JSON parsing/hash only shared",
+      "limitations": [
+        "Q0 old F0 supplies no per-step incident-factor detail; all publication regression plus fixed source and original PR59 marginal evidence retained",
+        "dependency completeness also requires fixed-source inspection and executed cache/target intervention, reported separately",
+        "physical axes/clock/geometry are inherited conditional assumptions, not calibrated by this audit"
+      ]
+    },
+    {
+      "status": "PASS",
+      "group": "Q3",
+      "case_id": "005135",
+      "counts": {
+        "original_scalar_bindings": 18882,
+        "graph_publications": 460,
+        "independent_gyro_segments": 9555,
+        "gyro_gaps": 0,
+        "full_optimizer_initial_guesses": 450,
+        "objective_costs": 450,
+        "marginalizations": 355,
+        "quality_decisions": 368,
+        "weighted_factor_diagnostics": 368
+      },
+      "maximum_absolute_errors": {
+        "objective_cost_abs": 1.4210854715202004e-14,
+        "information_abs": 5.907617151024169e-08,
+        "gradient_abs": 3.64349617143489e-09,
+        "constant_abs": 4.884981308350689e-15,
+        "bias_cross_max": 662.7034123295838
+      },
+      "A_online_policy_graph_Jacobian_or_qaudit_imported": false,
+      "shared_formula_scope": "B PR59 independent scalar residuals plus B native quality formula; original JSON parsing/hash only shared",
+      "limitations": [
+        "Q0 old F0 supplies no per-step incident-factor detail; all publication regression plus fixed source and original PR59 marginal evidence retained",
+        "dependency completeness also requires fixed-source inspection and executed cache/target intervention, reported separately",
+        "physical axes/clock/geometry are inherited conditional assumptions, not calibrated by this audit"
+      ]
+    }
+  ],
+  "performance_matrix_sha256": "092f160ffe7aeda661ec63961df73e0bda1c80194c5d898f376f9b8f709a8670",
+  "A_execution_commit": "12a1d94379b58c5a759b1698425fb90d48587609"
+}

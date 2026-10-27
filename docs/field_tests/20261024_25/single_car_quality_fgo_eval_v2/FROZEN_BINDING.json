@@ -1,0 +1,169 @@
+{
+  "status": "BOUND_ACTUAL_NATIVE_RULES",
+  "A_execution_commit": "12a1d94379b58c5a759b1698425fb90d48587609",
+  "A_delivery_commit": "c5563df609f52df64727cf2618381abfda3cd3bb",
+  "A_protocol_sha256": "ddb533f94d4b2b5f36b5cf3922dad1d72361ce674f908dc1ba40514324bcfb31",
+  "A_config_schema_sha256": "ef63944a2a06cf640677ce409c6838e166832d7d43f66282cfd4e736f6591313",
+  "source_sha256": {
+    "bridge.py": "b3624162550ca2354f25da9f1e16980ba609e45fd2e14ea35d072dd650c781a7",
+    "check_matrix.py": "dc324091e3c170c71a34f61016f215dc2ef5c5e0d6ba8cebf21ba1de8fa22445",
+    "negative_logs.py": "605845fa09148ea096f99c036c3e1025dbde1ea07b78d5275b1bc6d0b1927535",
+    "qaudit.py": "45d52866f3cce7caa7d731ce56319575ff310e1024a192d8c7b49756fa112bd9",
+    "qconfig.py": "cfd9de7d6f6c209ed663c6229918caff0eb6d5d78f2a748b713bd0ad72635e1a",
+    "qevaluate.py": "63ed9b0699a527e8dcde7b9e4249193dda94d33dd04ec1b474ad43bc5113b868",
+    "qfrontend.py": "2886bcc65fe49d2c0e4732036feeee12d1ca5bd771b00b80a7890635d397d9e9",
+    "qgraph.py": "0785f57c257d86bb606442a61943a6f5342852101eb748a2085f9a65dd1e9ef9",
+    "qio.py": "453ba746f905d2a9792052d7bff1abdf2c75d133da47a39bf9661fab0d05c8b3",
+    "qpolicy.py": "a9ddec196dce989508739241dacab2f3b08c258248f5f93be0223ca7c8b1b740",
+    "qreport.py": "96e8ee2d7954c2610850087d63a077e6b465967a825c81e5ded2bba873b598d2",
+    "qrun.py": "86c72607ea8fa5902727c225e53bf25edd397705a3574efcd6b4ddcac3f165d9",
+    "qsimulate.py": "904d7e728eef01c8cc91fb0873726e796000570a5487da409896a77fcdeb70bf",
+    "qtests.py": "01019c566c5b87f201d9c4d7e96117cf3b0ad7f9acac8d65fa214ed38e8596f1",
+    "run_matrix.py": "87abe3369a72f0b9748361052c489bdfc3fae247644006af73c86cabba4113c9"
+  },
+  "archive_verification": [
+    {
+      "sha256": "635b2a542f514ac29f54d368da805ec0cc34e3495e5dccb3531cd053d2b8ab75",
+      "members": 142
+    },
+    {
+      "sha256": "1ff7558e155b20297c580df6e92cde3560e04342a059522d0bc897ceccc87ff5",
+      "members": 364
+    }
+  ],
+  "native_rule": "abs(excluded shadow slant innovation)/.20m; warn1.5x2,disable3x2,clear.75x3+3; unknown holds previous gain; actual missing multiplier null; sqrt(g) post-pseudoHuber exactly once",
+  "B_fixture_policy_used": false,
+  "physical_clock_error_bound_ns": null,
+  "physical_axes_verified": false,
+  "baseline_remeasurement_reason": "prior numeric outputs/config/source can be reused, but prior available times were virtual; run four groups under shared same-host paced anchor to measure comparable actual delays",
+  "performance_runs": 8,
+  "control_plan": {
+    "receive_prefix_ns": 41000000000,
+    "groups": [
+      "Q2",
+      "Q3"
+    ],
+    "cases": [
+      "004023",
+      "005135"
+    ],
+    "target_intervention": "node_10 raw range +1.7m only, private serialized prefix copy; original files immutable",
+    "counterfactual_scope": "controls not performance runs; use original A Pipeline and read-only buffer observer, no second estimator"
+  },
+  "casefacts": [
+    {
+      "case_id": "004023",
+      "records": 10672,
+      "duration_s": 98.349152395,
+      "origin_receive_epoch_ns": 1792309245383504223,
+      "max_seconds": 326,
+      "event_sha256": "fb1d42cff69c19bb785b0c3bfb584a1c4531b27cb7b17dc01fa4a20e369e0ad4"
+    },
+    {
+      "case_id": "005135",
+      "records": 10322,
+      "duration_s": 94.675573429,
+      "origin_receive_epoch_ns": 1792309931472145834,
+      "max_seconds": 315,
+      "event_sha256": "78276cb443c63cf580f0468682239eafa7150180d051a1445771cdcce03452ea"
+    }
+  ],
+  "matrix": [
+    {
+      "case_id": "004023",
+      "group": "Q0",
+      "base_arm": "F0",
+      "events_relative_path": "stage1/ready_for_A_001/004023/events.jsonl.gz",
+      "input_sha256": "fb1d42cff69c19bb785b0c3bfb584a1c4531b27cb7b17dc01fa4a20e369e0ad4",
+      "config_relative_path": "configs/004023_Q0.json",
+      "config_sha256": "08c9895f9e9d1d4793970dadd37a033654a7df93f36657347cbb4dc2e696000a",
+      "prior_base_config_sha256": "487676dce88f8199f5a68bbebcc027e7ddfda992d1fb3033ad521438cc7c2034",
+      "prior_publication_sha256": "c65d32f6372fd87c4824fdc312e7e382bbe1027e51871f5279b8b95ddaf6f1b9",
+      "max_seconds": 326
+    },
+    {
+      "case_id": "004023",
+      "group": "Q1",
+      "base_arm": "F3",
+      "events_relative_path": "stage1/ready_for_A_001/004023/events.jsonl.gz",
+      "input_sha256": "fb1d42cff69c19bb785b0c3bfb584a1c4531b27cb7b17dc01fa4a20e369e0ad4",
+      "config_relative_path": "configs/004023_Q1.json",
+      "config_sha256": "ddbf1d3a373c03729be53690b93510ffe629ae9edf3193ef4a6e933a1cfd4068",
+      "prior_base_config_sha256": "175cade3d241792f7b3a3704a38cd664ae87e5f3daa721a9eea3a93f1b231e53",
+      "prior_publication_sha256": "21f4c6e4c95dc1b66583c39f152dd14ef3c06ac954b9fb6d8f217615d44d8d5d",
+      "max_seconds": 326
+    },
+    {
+      "case_id": "004023",
+      "group": "Q2",
+      "base_arm": "F0",
+      "events_relative_path": "stage1/ready_for_A_001/004023/events.jsonl.gz",
+      "input_sha256": "fb1d42cff69c19bb785b0c3bfb584a1c4531b27cb7b17dc01fa4a20e369e0ad4",
+      "config_relative_path": "configs/004023_Q2.json",
+      "config_sha256": "8c33089e0cf814ade3b76c4c73361dc79d0af8af4516ea135f1077291bbef10c",
+      "prior_base_config_sha256": "487676dce88f8199f5a68bbebcc027e7ddfda992d1fb3033ad521438cc7c2034",
+      "prior_publication_sha256": "c65d32f6372fd87c4824fdc312e7e382bbe1027e51871f5279b8b95ddaf6f1b9",
+      "max_seconds": 326
+    },
+    {
+      "case_id": "004023",
+      "group": "Q3",
+      "base_arm": "F3",
+      "events_relative_path": "stage1/ready_for_A_001/004023/events.jsonl.gz",
+      "input_sha256": "fb1d42cff69c19bb785b0c3bfb584a1c4531b27cb7b17dc01fa4a20e369e0ad4",
+      "config_relative_path": "configs/004023_Q3.json",
+      "config_sha256": "514468967313de8ced8ad73f7cd2f6997581b031b4ddcd976a2884f52fcaa2b5",
+      "prior_base_config_sha256": "175cade3d241792f7b3a3704a38cd664ae87e5f3daa721a9eea3a93f1b231e53",
+      "prior_publication_sha256": "21f4c6e4c95dc1b66583c39f152dd14ef3c06ac954b9fb6d8f217615d44d8d5d",
+      "max_seconds": 326
+    },
+    {
+      "case_id": "005135",
+      "group": "Q0",
+      "base_arm": "F0",
+      "events_relative_path": "stage1/ready_for_A_001/005135/events.jsonl.gz",
+      "input_sha256": "78276cb443c63cf580f0468682239eafa7150180d051a1445771cdcce03452ea",
+      "config_relative_path": "configs/005135_Q0.json",
+      "config_sha256": "08c9895f9e9d1d4793970dadd37a033654a7df93f36657347cbb4dc2e696000a",
+      "prior_base_config_sha256": "487676dce88f8199f5a68bbebcc027e7ddfda992d1fb3033ad521438cc7c2034",
+      "prior_publication_sha256": "8a01b0bbb03da6006aa13fe18910727d728ba669ed5badaef8363aab0b82c3d7",
+      "max_seconds": 315
+    },
+    {
+      "case_id": "005135",
+      "group": "Q1",
+      "base_arm": "F3",
+      "events_relative_path": "stage1/ready_for_A_001/005135/events.jsonl.gz",
+      "input_sha256": "78276cb443c63cf580f0468682239eafa7150180d051a1445771cdcce03452ea",
+      "config_relative_path": "configs/005135_Q1.json",
+      "config_sha256": "ddbf1d3a373c03729be53690b93510ffe629ae9edf3193ef4a6e933a1cfd4068",
+      "prior_base_config_sha256": "175cade3d241792f7b3a3704a38cd664ae87e5f3daa721a9eea3a93f1b231e53",
+      "prior_publication_sha256": "c801eebc58496560c59b874676705d6de5e5944f570918e78b671f09037e548e",
+      "max_seconds": 315
+    },
+    {
+      "case_id": "005135",
+      "group": "Q2",
+      "base_arm": "F0",
+      "events_relative_path": "stage1/ready_for_A_001/005135/events.jsonl.gz",
+      "input_sha256": "78276cb443c63cf580f0468682239eafa7150180d051a1445771cdcce03452ea",
+      "config_relative_path": "configs/005135_Q2.json",
+      "config_sha256": "8c33089e0cf814ade3b76c4c73361dc79d0af8af4516ea135f1077291bbef10c",
+      "prior_base_config_sha256": "487676dce88f8199f5a68bbebcc027e7ddfda992d1fb3033ad521438cc7c2034",
+      "prior_publication_sha256": "8a01b0bbb03da6006aa13fe18910727d728ba669ed5badaef8363aab0b82c3d7",
+      "max_seconds": 315
+    },
+    {
+      "case_id": "005135",
+      "group": "Q3",
+      "base_arm": "F3",
+      "events_relative_path": "stage1/ready_for_A_001/005135/events.jsonl.gz",
+      "input_sha256": "78276cb443c63cf580f0468682239eafa7150180d051a1445771cdcce03452ea",
+      "config_relative_path": "configs/005135_Q3.json",
+      "config_sha256": "514468967313de8ced8ad73f7cd2f6997581b031b4ddcd976a2884f52fcaa2b5",
+      "prior_base_config_sha256": "175cade3d241792f7b3a3704a38cd664ae87e5f3daa721a9eea3a93f1b231e53",
+      "prior_publication_sha256": "c801eebc58496560c59b874676705d6de5e5944f570918e78b671f09037e548e",
+      "max_seconds": 315
+    }
+  ]
+}
