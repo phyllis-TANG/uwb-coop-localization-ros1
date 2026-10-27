@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "case_id": "004023",
+      "group": "Q0",
+      "graph_records_certified": 96,
+      "declared_full_rank_flags_checked": 0
+    },
+    {
+      "case_id": "004023",
+      "group": "Q1",
+      "graph_records_certified": 96,
+      "declared_full_rank_flags_checked": 94
+    },
+    {
+      "case_id": "004023",
+      "group": "Q2",
+      "graph_records_certified": 480,
+      "declared_full_rank_flags_checked": 470
+    },
+    {
+      "case_id": "004023",
+      "group": "Q3",
+      "graph_records_certified": 480,
+      "declared_full_rank_flags_checked": 470
+    },
+    {
+      "case_id": "005135",
+      "group": "Q0",
+      "graph_records_certified": 92,
+      "declared_full_rank_flags_checked": 0
+    },
+    {
+      "case_id": "005135",
+      "group": "Q1",
+      "graph_records_certified": 92,
+      "declared_full_rank_flags_checked": 90
+    },
+    {
+      "case_id": "005135",
+      "group": "Q2",
+      "graph_records_certified": 460,
+      "declared_full_rank_flags_checked": 450
+    },
+    {
+      "case_id": "005135",
+      "group": "Q3",
+      "graph_records_certified": 460,
+      "declared_full_rank_flags_checked": 450
+    }
+  ],
+  "online_Jacobian_imported": false,
+  "certificate": "full-column-rank prior + positive whitened invertible right-state transition blocks; checked coverage and positive dt. Adding nonnegative ranges cannot decrease rank.",
+  "limitation": "Numerical full rank is not statistical independence, physical calibration or guaranteed estimation accuracy. Certificate is intentionally rejected on uncovered F3 edges."
+}

@@ -1,0 +1,92 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "mutation": "score",
+      "status": "REJECTED",
+      "reason": "native consistency score mismatch",
+      "output_manifest_SHA_resealed": true
+    },
+    {
+      "mutation": "unknown_gain",
+      "status": "REJECTED",
+      "reason": "native state/persistence/unknown/hysteresis differs",
+      "output_manifest_SHA_resealed": true
+    },
+    {
+      "mutation": "unknown_zero_score",
+      "status": "REJECTED",
+      "reason": "native consistency score mismatch",
+      "output_manifest_SHA_resealed": true
+    },
+    {
+      "mutation": "recovery_skip",
+      "status": "REJECTED",
+      "reason": "native state/persistence/unknown/hysteresis differs",
+      "output_manifest_SHA_resealed": true
+    },
+    {
+      "mutation": "future_support",
+      "status": "REJECTED",
+      "reason": "dependency original identity mismatch receive_epoch_ns",
+      "output_manifest_SHA_resealed": true
+    },
+    {
+      "mutation": "actual_gain",
+      "status": "REJECTED",
+      "reason": "actual factor information gain/null differs",
+      "output_manifest_SHA_resealed": true
+    },
+    {
+      "mutation": "weighted_objective",
+      "status": "REJECTED",
+      "reason": "independent weighted objective cost mismatch",
+      "output_manifest_SHA_resealed": true
+    },
+    {
+      "mutation": "shadow_initial_guess",
+      "status": "REJECTED",
+      "reason": "optimization initial guess absorbed main/target/other history",
+      "output_manifest_SHA_resealed": true
+    },
+    {
+      "mutation": "shadow_prior",
+      "status": "REJECTED",
+      "reason": "current prior differs from own carried chain",
+      "output_manifest_SHA_resealed": true
+    },
+    {
+      "mutation": "zero_information_admission",
+      "status": "REJECTED",
+      "reason": "positive information/admission mismatch",
+      "output_manifest_SHA_resealed": true
+    },
+    {
+      "mutation": "fake_availability",
+      "status": "REJECTED",
+      "reason": "actual host elapsed mapping mismatch",
+      "output_manifest_SHA_resealed": true
+    },
+    {
+      "mutation": "ledger_omission",
+      "status": "REJECTED",
+      "reason": "every publication every link ledger coverage",
+      "output_manifest_SHA_resealed": true
+    },
+    {
+      "mutation": "postfit_weight",
+      "status": "REJECTED",
+      "reason": "sqrt(g) not realized in post-fit objective diagnostic",
+      "output_manifest_SHA_resealed": true
+    },
+    {
+      "mutation": "message_SHA",
+      "status": "REJECTED",
+      "reason": "actual estimator input content/order changed",
+      "output_manifest_SHA_resealed": true
+    }
+  ],
+  "original_results_unchanged": true,
+  "new_estimator_runs": 0,
+  "A_policy_graph_or_qaudit_imported": false
+}
