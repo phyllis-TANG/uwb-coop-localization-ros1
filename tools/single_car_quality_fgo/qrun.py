@@ -21,7 +21,7 @@ def main(argv=None):
     try:
         config=json.loads(a.config.read_text());validate(config);events=list(read_jsonl(a.events_jsonl));base_replay.validate_events(events,config['base']);root=external_path(a.output);root.mkdir(parents=True,exist_ok=False)
         origin=events[0]['receive_epoch_ns'];lock=sources();anchor=a.anchor_monotonic_ns if a.anchor_monotonic_ns is not None else time.monotonic_ns();hostanchor=a.anchor_host_epoch_ns if a.anchor_host_epoch_ns is not None else time.time_ns()
-        meta=dict(schema_version=1,interface_version='quality_fgo_v1',status='IN_PROGRESS',created_at_utc=utc(),**git_state(),group=config['group'],source_sha256=lock,config_sha256=sha(a.config),input_sha256=sha(a.events_jsonl),
+        meta=dict(schema_version=1,interface_version='quality_fgo_v1',status='IN_PROGRESS',created_at_utc=utc(),**git_state(),group=config['group'],source_sha256=lock,config_sha256=sha(a.config),input_sha256=sha(a.events_jsonl),input_case_id=events[0]['case_id'],
             command_argv=[sys.executable,__file__]+(list(argv) if argv is not None else sys.argv[1:]),environment=dict(python=sys.version,packages=packages()),origin_receive_epoch_ns=origin,
             host_anchor_monotonic_ns=anchor,host_anchor_epoch_ns=hostanchor,timing_mode='paced_actual' if config['timing']['paced'] else 'accelerated_development_virtual',publications=0,field_accuracy_evaluated=False)
         dump(root/'run.json',meta);dump(root/'config.json',config);state_counts=Counter();reason_counts=Counter();pose_status=Counter()

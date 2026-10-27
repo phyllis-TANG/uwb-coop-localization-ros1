@@ -54,6 +54,7 @@ class Pipeline:
         self.anchor_mono_ns=time.monotonic_ns() if anchor_mono_ns is None else anchor_mono_ns;self.anchor_epoch_ns=time.time_ns() if anchor_epoch_ns is None else anchor_epoch_ns
         self.recent=RecentInputs(self.base,origin);self.links=sorted(self.base['model']['anchors_xyz_m']);self.policy={k:LinkPolicy(self.p) for k in self.links} if self.enabled else {}
         self.pending={};self.last_graph_id={};self.shadows={};self.source_roots={k:'0'*64 for k in self.links};self.current_decisions=None;self.pending_main=None;self.last_receive=None
+        self.diag_gyro=base_frontend.AngularBuffer(self.base['angular']['max_hold_ns']['value'],self.base['frontend']['max_sensor_samples_per_stream']);self.diag_odom=base_frontend.AngularBuffer(self.base['angular']['max_hold_ns']['value'],self.base['frontend']['max_sensor_samples_per_stream']);self.last_diag_epoch=None;self.last_diag_local=None
         self.publications=0;self.last_available=None;self.ingest_cost_ns=0;self.worker_finish_ns=origin;self.current_cycle_start=None
         self.main=base_replay.make_replay(self.base,lambda r:self._graph_output('main',r),origin)
         if self.enabled:
@@ -77,6 +78,7 @@ class Pipeline:
         snapshot=copy.deepcopy(row.get('objective_snapshot'))
         if snapshot is None:
             snapshot=dict(times_s=list(g.times),local_odom=np.asarray(g.local).tolist(),observations=copy.deepcopy(g.observations),states=np.asarray(g.states).tolist(),candidate_states=None,prior=prior_record(g.prior),quality_weights=[{k:1. for k in o} for o in g.observations])
+        snapshot.setdefault('quality_weights',[{k:1. for k in o} for o in snapshot['observations']])
         # Intervals are logged once at creation, not copied 21 times per update.
         if snapshot.get('intervals') is not None:
             snapshot['interval_end_epochs_ns']=[self.origin+round(t*1e9) for t in g.times[1:]];snapshot.pop('intervals',None)
@@ -109,6 +111,27 @@ class Pipeline:
         if ratio<self.p['min_xy_singular_ratio']:return None,'WEAK_SHADOW_XY_GEOMETRY',dict(other_links=others,singular_values=singular.tolist(),ratio=ratio)
         delta=np.r_[tagxy,height]-np.asarray(self.base['model']['anchors_xyz_m'][target]);pred=float(np.linalg.norm(delta))
         return pred,None,dict(other_links=others,singular_values=singular.tolist(),ratio=ratio)
+    def _motion_diagnostic(self,epoch):
+        cutoff=epoch+10**9;local,_=self.main._interpolate((epoch-self.origin)/1e9);result=dict(not_used_for_quality=True,comparison_is_not_truth=True,state_epoch_ns=epoch,gyro_interval=None,odom_rate_interval=None,odom_pose_delta_yaw_rad=None,raw_odom_rate_minus_gyro_rad=None,raw_odom_pose_minus_gyro_rad=None)
+        if self.last_diag_epoch is not None:
+            gyro=self.diag_gyro.integrate(self.last_diag_epoch,epoch,cutoff);odom=self.diag_odom.integrate(self.last_diag_epoch,epoch,cutoff);result['gyro_interval']=gyro;result['odom_rate_interval']=odom
+            if local is not None and self.last_diag_local is not None:result['odom_pose_delta_yaw_rad']=math.atan2(math.sin(local[2]-self.last_diag_local[2]),math.cos(local[2]-self.last_diag_local[2]))
+            if gyro['valid'] and odom['valid']:result['raw_odom_rate_minus_gyro_rad']=odom['raw_angle_rad']-gyro['raw_angle_rad']
+            if gyro['valid'] and result['odom_pose_delta_yaw_rad'] is not None:result['raw_odom_pose_minus_gyro_rad']=result['odom_pose_delta_yaw_rad']-gyro['raw_angle_rad']
+        self.last_diag_epoch=epoch;self.last_diag_local=local.copy() if local is not None else None;self.diag_gyro.prune(epoch);self.diag_odom.prune(epoch)
+        return result
+    def _diagnostic_ingest(self,raw):
+        kind=raw['kind']
+        if kind not in ('odom','imu'):return
+        try:
+            event=base_frontend.convert(raw,self.base,self.origin)
+            if kind=='odom':self.diag_odom.add(event.identity,float(raw['value']['angular_z_rad_s']))
+            else:
+                value=raw['value']
+                if value.get('units','rad/s')!='rad/s' or value.get('frame_id')!=self.base['angular']['imu_frame_id']['value']:return
+                vector=np.asarray(value['angular_velocity_rad_s'],dtype=float)
+                if vector.shape==(3,) and np.isfinite(vector).all():self.diag_gyro.add(event.identity,float(vector@self.base['angular']['body_z_in_imu_frame']['value']))
+        except (ValueError,TypeError,KeyError):return
     def _prepare(self,epoch):
         support=self.recent.support(epoch);current=self.pending.get(epoch,{});rows={};cutoff=epoch+1_000_000_000
         for target in self.links:
@@ -132,7 +155,7 @@ class Pipeline:
                 actual_output_available_epoch_ns=None,availability_reason='joined later via immutable publication_id',
                 original_link_quality=None,original_link_quality_status='NaN_or_unavailable_not_used_for_quality',
                 raw_aggregate_m=aggregate,P1_subtracted_m=self.base['model']['range_bias_m'][target],corrected_aggregate_m=aggregate-self.base['model']['range_bias_m'][target] if aggregate is not None else None,
-                raw_signed_consistency_residual_m=signed,engineering_score=score,score_scale_m=self.p['score_scale_m'],score_semantics='fixed-scale engineering consistency, not calibrated NIS/PL',
+                raw_signed_consistency_residual_m=signed,raw_residual_sign='corrected_measurement_minus_excluded_prediction',engineering_score=score,score_scale_m=self.p['score_scale_m'],score_semantics='fixed-scale engineering consistency, not calibrated NIS/PL',
                 reference_record_id=reference['record_id'] if reference else None,reference_excluded_target=target if self.enabled else None,reference_geometry=geometry,
                 target_dependencies=support['range_support'].get(target,[]),shared_input_prefix=dict(count=support['input_prefix_count'],digest=support['input_prefix_digest']),
                 policy=decision,original_sigma_m=sigma,base_nominal_information_per_m2=1/sigma**2,
@@ -141,7 +164,7 @@ class Pipeline:
                 information_admitted=bool(aggregate is not None and gain>0),factor_action='absent_no_factor' if aggregate is None else 'zero_information_row' if gain==0 else 'weighted_pseudo_huber_row',
                 frozen_before_main_solve=True,no_history_rollback=True)
             rows[target]=row;self.ledger_sink(clean(row))
-        self.current_decisions=dict(epoch=epoch,support=support,rows=rows)
+        self.current_decisions=dict(epoch=epoch,support=support,rows=rows,motion_diagnostic=self._motion_diagnostic(epoch))
     def _wait(self,receive_ns):
         if not self.config['timing']['paced']:return
         deadline=self.anchor_mono_ns+receive_ns-self.origin
@@ -160,16 +183,17 @@ class Pipeline:
         output=dict(record_type='main_publication',publication_id=f'{self.group}|{epoch}',group=self.group,state_epoch_ns=epoch,availability_cutoff_epoch_ns=cutoff,
             available_receive_epoch_ns=available,host_data_ready_epoch_ns=time.time_ns(),host_data_ready_monotonic_ns=time.monotonic_ns(),timing_mode=timing,
             measured_complete_processor_wall_s=compute_ns/1e9,processing_cycle_start_monotonic_ns=start_ns,monitoring_and_shadow_included=self.enabled,
-            graph_record_id=record['record_id'],frozen_factor_ids=[r['factor_id'] for r in self.current_decisions['rows'].values()],row=row)
+            main_solve_start_monotonic_ns=self.current_decisions['main_solve_start_monotonic_ns'],main_solve_finish_monotonic_ns=self.current_decisions['main_solve_finish_monotonic_ns'],graph_record_id=record['record_id'],frozen_factor_ids=[r['factor_id'] for r in self.current_decisions['rows'].values()],row=row)
         diagnostics=[]
         if row.get('pose') is not None:
             model=self.base['model'];xy=antenna(row['pose'],model['base_to_antenna_body_xy_m']);sigma=model['graph_parameters']['range_sigma_m']
             for target,decision in self.current_decisions['rows'].items():
                 if decision['raw_aggregate_m'] is None:continue
                 delta=np.r_[xy,model['antenna_height_m']]-np.asarray(model['anchors_xyz_m'][target]);error=float(np.linalg.norm(delta))-decision['corrected_aggregate_m'];z=error/sigma;s=math.sqrt(1+z*z);original=z*math.sqrt(2/(s+1));derivative=math.sqrt((s+1)/2)/s/sigma;gain=decision['actual_information_multiplier']
-                diagnostics.append(dict(factor_id=decision['factor_id'],postfit_signed_raw_residual_m=error,original_pseudo_huber_residual=original,actual_weighted_residual=math.sqrt(gain)*original,
+                diagnostics.append(dict(factor_id=decision['factor_id'],postfit_signed_raw_residual_m=error,residual_sign='main_prediction_minus_corrected_measurement',original_pseudo_huber_residual=original,actual_weighted_residual=math.sqrt(gain)*original,
                     original_robust_J_scale_per_m=derivative,actual_robust_J_scale_per_m=math.sqrt(gain)*derivative,quality_information_multiplier=gain,not_used_for_quality=True))
         output['postfit_factor_diagnostics']=diagnostics
+        output['motion_conflict_diagnostic']=self.current_decisions['motion_diagnostic']
         # sink flushes actual pose/graphs/ledger before recording final availability.
         final=self.publication_sink(clean(output))
         if isinstance(final,dict):self.worker_finish_ns=final['available_receive_epoch_ns']
@@ -178,7 +202,7 @@ class Pipeline:
         self._wait(cutoff);start=time.monotonic_ns();raw=dict(kind='clock',case_id='scheduler',record_index=-1,receive_epoch_ns=cutoff+1,value=None)
         event=base_frontend.convert(raw,self.base,self.origin)
         for front in self.shadows.values():front.ingest(event)
-        epoch=cutoff-1_000_000_000;self._prepare(epoch);self.main.ingest(event);self._commit(start)
+        epoch=cutoff-1_000_000_000;self._prepare(epoch);self.current_decisions['main_solve_start_monotonic_ns']=time.monotonic_ns();self.main.ingest(event);self.current_decisions['main_solve_finish_monotonic_ns']=time.monotonic_ns();self._commit(start)
     def ingest(self,raw):
         receive=raw['receive_epoch_ns']
         if self.last_receive is not None and receive<self.last_receive:raise ValueError('recorded receive order required')
@@ -186,7 +210,7 @@ class Pipeline:
             deadline=self.origin+round((self.main.next_state+self.main.delay)*1e9)
             if deadline>=receive:break
             self._clock(deadline)
-        self._wait(receive);start=time.monotonic_ns();self.recent.add(raw)
+        self._wait(receive);start=time.monotonic_ns();self.recent.add(raw);self._diagnostic_ingest(raw)
         for target,front in self.shadows.items():
             filtered=copy.deepcopy(raw)
             if raw['kind']=='uwb':filtered['value']={k:v for k,v in raw['value'].items() if k!=target}

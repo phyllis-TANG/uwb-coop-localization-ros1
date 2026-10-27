@@ -1,6 +1,9 @@
 """One explicit engineering consistency policy; frozen F0/F3 baselines."""
 import copy
 import math
+import json
+from pathlib import Path
+import jsonschema
 from bridge import base_config
 
 GROUPS={'Q0':'F0','Q1':'F3','Q2':'F0','Q3':'F3'}
@@ -24,6 +27,8 @@ def values(config):return {k:v['value'] for k,v in config['controller'].items()}
 
 
 def validate(config):
+    try:jsonschema.Draft202012Validator(json.loads(Path(__file__).with_name('config.schema.json').read_text())).validate(config)
+    except jsonschema.ValidationError as error:raise ValueError('quality config schema: '+error.message) from error
     if config.get('interface_version')!='quality_fgo_v1' or config.get('schema_version')!=1 or config.get('group') not in GROUPS:raise ValueError('quality interface/group')
     if config['base'].get('arm','F0')!=GROUPS[config['group']]:raise ValueError('Q0/Q2 must F0; Q1/Q3 must F3')
     if type(config['quality_enabled']) is not bool or config['group'] in ('Q0','Q1') and config['quality_enabled']:raise ValueError('baseline quality disabled')

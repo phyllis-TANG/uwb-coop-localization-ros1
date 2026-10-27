@@ -1,0 +1,431 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "assumptions": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "base": {
+      "type": "object"
+    },
+    "controller": {
+      "additionalProperties": false,
+      "properties": {
+        "clear_count": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "const": "engineering_assumption"
+            },
+            "units": {
+              "const": "count"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "clear_score": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "const": "engineering_assumption"
+            },
+            "units": {
+              "const": "dimensionless"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "disable_count": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "const": "engineering_assumption"
+            },
+            "units": {
+              "const": "count"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "disable_score": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "const": "engineering_assumption"
+            },
+            "units": {
+              "const": "dimensionless"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "lowered_information": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "const": "engineering_assumption"
+            },
+            "units": {
+              "const": "dimensionless"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "min_other_links": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "const": "engineering_assumption"
+            },
+            "units": {
+              "const": "count"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "min_xy_singular_ratio": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "const": "engineering_assumption"
+            },
+            "units": {
+              "const": "dimensionless"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "recover_count": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "const": "engineering_assumption"
+            },
+            "units": {
+              "const": "count"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "recovery_information": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "const": "engineering_assumption"
+            },
+            "units": {
+              "const": "dimensionless"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "score_scale_m": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "const": "engineering_assumption"
+            },
+            "units": {
+              "const": "m"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "warn_count": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "const": "engineering_assumption"
+            },
+            "units": {
+              "const": "count"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "warn_score": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "const": "engineering_assumption"
+            },
+            "units": {
+              "const": "dimensionless"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "score_scale_m",
+        "warn_score",
+        "disable_score",
+        "clear_score",
+        "warn_count",
+        "disable_count",
+        "clear_count",
+        "recover_count",
+        "lowered_information",
+        "recovery_information",
+        "min_other_links",
+        "min_xy_singular_ratio"
+      ],
+      "type": "object"
+    },
+    "group": {
+      "enum": [
+        "Q0",
+        "Q1",
+        "Q2",
+        "Q3"
+      ]
+    },
+    "interface_version": {
+      "const": "quality_fgo_v1"
+    },
+    "quality_enabled": {
+      "type": "boolean"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "timing": {
+      "additionalProperties": false,
+      "properties": {
+        "paced": {
+          "type": "boolean"
+        },
+        "scope": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "paced",
+        "scope"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "interface_version",
+    "group",
+    "quality_enabled",
+    "base",
+    "controller",
+    "reference",
+    "timing",
+    "assumptions"
+  ],
+  "type": "object"
+}
