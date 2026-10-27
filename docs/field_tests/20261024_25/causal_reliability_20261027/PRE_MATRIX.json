@@ -1,0 +1,41 @@
+{
+  "status": "PRE_MATRIX_FROZEN",
+  "base_commit": "32445a299b3f4674b865c4d78c4f662e51b5b857",
+  "algorithm_base": "7128abc769121f1f39c3959ce195ac545656c86c",
+  "protocol_sha256": "d325758e35673b8f71177b3553478eaa726ebb667c74a6aa4ef75b1ae507bf5b",
+  "formal_source_fingerprint": "c1211f6b7584830b0dadc2022aaf18eef7208a36db8df771520448e93cb2a0f0",
+  "tests": {
+    "baseline": 47,
+    "parameter": 17,
+    "integration": 25,
+    "total_distinct_current_tests": 89
+  },
+  "smokes": [
+    {
+      "version": "v1",
+      "runs": 4,
+      "status": "DONE",
+      "independent_readback": "DONE",
+      "fingerprint": "b59270ede1cb3cff73b24f55fd696e203513af7ed800b4e6fc8d30740cc8dea2",
+      "source_snapshot": "archive/source_history/smoke_v1"
+    },
+    {
+      "version": "v2",
+      "runs": 4,
+      "status": "DONE",
+      "independent_readback": "DONE",
+      "fingerprint": "c1211f6b7584830b0dadc2022aaf18eef7208a36db8df771520448e93cb2a0f0"
+    }
+  ],
+  "changes_v1_to_v2": "diagnostics only: preserve rejected uncapped proposals, audit every successful range admission, add related assertions, improve optional external template-path handling; no threshold, event input or estimator gain change",
+  "matrix_status": "NOT_STARTED",
+  "planned_rows": 80,
+  "unique_inputs": 60,
+  "deduplicated_rows": 20,
+  "failures_preserved": [
+    "ensurepip unavailable; isolated installation succeeded",
+    "first integration suite had generic import collision and missing fresh-odom test support; corrected and logs retained"
+  ],
+  "T10_status": "BLOCKED",
+  "resume_rule": "exact source/config/dependency/input/output identities; source changed smoke_v1 resume explicitly rejected"
+}

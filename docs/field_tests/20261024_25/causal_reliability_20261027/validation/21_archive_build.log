@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "DONE",
+  "created_at_utc": "2026-10-26T19:26:28.959598+00:00",
+  "archive_filename": "a_se2_causal_7896c82_c1211f6b_20261027.tar.gz",
+  "archive_sha256": "861aaff8ce47d9091dcf66d8a000b64c733f46847a6ad22894b3d4f209556064",
+  "size_bytes": 672094589,
+  "payload_files": 780,
+  "execution_commit": "7896c82d2454b67ea388341484a93c2265a209fb",
+  "source_fingerprint": "c1211f6b7584830b0dadc2022aaf18eef7208a36db8df771520448e93cb2a0f0",
+  "protocol_sha256": "d325758e35673b8f71177b3553478eaa726ebb667c74a6aa4ef75b1ae507bf5b",
+  "local_archive": "/home/ubuntu22/uwb-a-nightly-20261027-artifacts/a_se2_causal_7896c82_c1211f6b_20261027.tar.gz",
+  "NAS_local_mount_path": "/home/ubuntu22/nas/data/uwb_coop_artifacts/a_causal_reliability_20261027/a_se2_causal_7896c82_c1211f6b_20261027.tar.gz",
+  "network_share": "//10.22.5.135/data",
+  "network_relative_path": "uwb_coop_artifacts/a_causal_reliability_20261027/a_se2_causal_7896c82_c1211f6b_20261027.tar.gz",
+  "SMB_URI": "smb://10.22.5.135/data/uwb_coop_artifacts/a_causal_reliability_20261027/a_se2_causal_7896c82_c1211f6b_20261027.tar.gz",
+  "retrieval_scope": "authenticated existing NAS share, LAN/VPN required; no public HTTP URL",
+  "NAS_copy_sha256_verified": true,
+  "elapsed_s": 32.00069623201853,
+  "contents": [
+    "full 60-condition inputs/truth/labels/estimates/events/states/metrics",
+    "old/new smokes and source histories",
+    "independent all-row readback",
+    "reviewed per-car tables and figures",
+    "89-test logs and initial failures",
+    "source snapshots/protocol/dependencies/command checkpoints"
+  ]
+}

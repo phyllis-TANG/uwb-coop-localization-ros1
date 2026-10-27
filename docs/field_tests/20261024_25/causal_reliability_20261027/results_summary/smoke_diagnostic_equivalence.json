@@ -1,0 +1,30 @@
+{
+  "status": "DONE",
+  "scope": "diagnostic source change v1->v2; no threshold/input/estimate change",
+  "runs": [
+    {
+      "run_id": "coherent_fault__car1__17",
+      "input_sha256": "79a12cce1e0bbbc0e4f32a875a190d5aca38985ccdaa73db16bc767f9269e70c",
+      "state_json_decompressed_sha256": "f72406a2341fda7090867cfa747d72d64cb309a41434691df806104e5fa3da4e",
+      "all_published_states_and_metrics_bitwise_identical": true
+    },
+    {
+      "run_id": "normal__car1__17",
+      "input_sha256": "aad88dc30d84a34efd08e77a32b27d95f57ca89aeac01796f7b64b0c0c6f17a7",
+      "state_json_decompressed_sha256": "816a5f98145e50bd7d07727c96bdaa619f8f64532cca02ada0258602b389d1ea",
+      "all_published_states_and_metrics_bitwise_identical": true
+    },
+    {
+      "run_id": "peer_bias__car1__17",
+      "input_sha256": "9bd243ffb3eae41eafe1f4c8d341e332cbb15d15f5016828eefca3ac5f8aade8",
+      "state_json_decompressed_sha256": "896a6b9d2a520e5dae0805af8fb23ce6fa462cdfd6d1acb60420d64be2ce5849",
+      "all_published_states_and_metrics_bitwise_identical": true
+    },
+    {
+      "run_id": "weak_wall_correct_peer__car1__17",
+      "input_sha256": "2352da2514f1e285e9bcf76bd9dac00ffe96e6e95e25c56706f23e643f8f18d4",
+      "state_json_decompressed_sha256": "799da0b3e89aa6dd5c171e1dd88ff151369b3178073be0159ecaa6746592bd15",
+      "all_published_states_and_metrics_bitwise_identical": true
+    }
+  ]
+}

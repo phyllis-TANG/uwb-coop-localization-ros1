@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "status": "DONE_SYNTHETIC_DEVELOPMENT",
+  "execution_commit": "7896c82d2454b67ea388341484a93c2265a209fb",
+  "base_commit": "32445a299b3f4674b865c4d78c4f662e51b5b857",
+  "source_fingerprint": "c1211f6b7584830b0dadc2022aaf18eef7208a36db8df771520448e93cb2a0f0",
+  "protocol_sha256": "d325758e35673b8f71177b3553478eaa726ebb667c74a6aa4ef75b1ae507bf5b",
+  "planned_rows": 80,
+  "actual_inputs": 60,
+  "deduplicated": 20,
+  "methods": 9,
+  "method_trajectories": 540,
+  "independent_seed_clusters": 5,
+  "formal_runs_failed": 0,
+  "formal_runs_timed_out": 0,
+  "input_events": 417300,
+  "per_method_event_decisions": 3755700,
+  "publication_records": 29040,
+  "per_vehicle_published_states": 522720,
+  "per_car_phase_metric_rows": 3240,
+  "paired_summary_rows": 648,
+  "independent_readback_status": "DONE",
+  "independent_readback_elapsed_s": 162.34474188799504,
+  "state_status_rows": {
+    "uninitialized": 1080,
+    "stale_odometry_hold": 3690,
+    "filtered_odometry_anchor_hold": 490430,
+    "dead_reckoning_degraded_geometry": 27520
+  },
+  "numerical_failures": 0,
+  "gate_quarantines_reopens": {
+    "gate_only": [
+      8,
+      8
+    ],
+    "gate_cap": [
+      8,
+      8
+    ],
+    "gate_cap_shadow": [
+      29,
+      29
+    ]
+  },
+  "clip_events_per_car": {
+    "cap_only": [
+      2,
+      24
+    ],
+    "gate_cap": [
+      0,
+      1
+    ],
+    "gate_cap_shadow": [
+      23,
+      2
+    ]
+  },
+  "tests": {
+    "original_baselines": 47,
+    "parameter_interface": 17,
+    "integration": 25,
+    "total_distinct_current_tests": 89
+  },
+  "T10_status": "BLOCKED",
+  "T10_parameter_groups_missing": 14,
+  "T10_baseline_blockers": 8,
+  "field_accuracy_metrics": null,
+  "holdout_localization_runs": 0,
+  "initial_failures": [
+    "venv ensurepip missing; isolated installation fallback succeeded",
+    "first integration suite had one import error and one fixture assertion failure; fixed and retained logs"
+  ],
+  "expected_rejections": [
+    "changed-source resume refused with exit 1",
+    "T10 strict compilation BLOCKED exit 2"
+  ],
+  "report_only_source": {
+    "relative_path": "docs/field_tests/20261024_25/causal_reliability_20261027/plot_reviewed_summary.py",
+    "sha256": "015f32846f166d238c44dd62e0c88eb57e9105bed367dfb6d889a26bab631694"
+  },
+  "full_result_location": "artifact_manifest.json (archive and SHA)"
+}
