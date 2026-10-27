@@ -1,0 +1,332 @@
+{
+  "status": "DONE",
+  "task": "literature_scope_only",
+  "started_at_utc": "2026-10-27T16:30:50.677279+00:00",
+  "budget_hours": 4,
+  "base_commit": "74fa210e7cf6aa322eaebce19530510edb605d22",
+  "branch": "research/20261028-literature-scope",
+  "initial_git_status": "?? docs/field_tests/integrity_feasibility_v1_1_20261022/runs/test_nominal_1002/output/.updates.jsonl.wee8fI\n?? docs/field_tests/two_car_independent_integrity_bridge_20261023/results/.peer_diagnostic_only.csv.qMbsib\n",
+  "main_observed": "7b67c66f2470d23f6c876f45b6543f72fab66391",
+  "fixed_pr64": "d9eea02092511c6571fe1b06e5164ccb5007e1e7",
+  "fixed_pr65": "b2efc577e667c339a45741760e8c7623625f03bc",
+  "pr64_pr65_observed_merged": true,
+  "applicable_AGENTS": "none found in repository or checked ancestor paths",
+  "python": "3.12.14",
+  "pdf_text_tool": "/usr/bin/pdftotext",
+  "initial_space_available_gib_approx": 30,
+  "process_observation": "system/application/sync services only; no localization experiment process observed",
+  "write_boundary": "docs/research/paper_scope_20261028/literature/",
+  "inputs": [
+    {
+      "commit": "74fa210e7cf6aa322eaebce19530510edb605d22",
+      "path": "docs/research/LUNAR_COOPERATIVE_LOCALIZATION_OUTLOOK.md",
+      "sha256": "51f1f857e6de492e718d50e0987e95f2622b311b7da01933f73304e443521a58",
+      "read_scope": "complete Markdown"
+    },
+    {
+      "commit": "74fa210e7cf6aa322eaebce19530510edb605d22",
+      "path": "docs/field_tests/20261024_25/two_car_fixed_lag_fgo_v1/REPORT.md",
+      "sha256": "bb32bb71e0a8d033f067c36f7515b69e534d236e22fcbcc7044aca85789341d3",
+      "read_scope": "complete Markdown"
+    },
+    {
+      "commit": "74fa210e7cf6aa322eaebce19530510edb605d22",
+      "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/REPORT.md",
+      "sha256": "b60344abe8b8f63e04479574218535a294910d7c29a32768ac268b43ab29899b",
+      "read_scope": "complete Markdown"
+    },
+    {
+      "commit": "b2efc577e667c339a45741760e8c7623625f03bc",
+      "path": "docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/REPORT.md",
+      "sha256": "d5caa74442f8b8af6de6ef46c77d2f3408b202ddbd2f59ac07f62f178c8cf0d1",
+      "read_scope": "complete Markdown"
+    },
+    {
+      "commit": "d9eea02092511c6571fe1b06e5164ccb5007e1e7",
+      "path": "docs/field_tests/20261024_25/video_reference_20261027/README.md",
+      "sha256": "5e932b7e507965457a8b022f873b0134e156a7b88371757f55200b1530fe50ad",
+      "read_scope": "complete Markdown"
+    }
+  ],
+  "completed_at_utc": "2026-10-27T16:56:08.208509+00:00",
+  "paper_count": 9,
+  "full_text_read": [
+    "P1",
+    "P2",
+    "P3",
+    "P5",
+    "P8"
+  ],
+  "selected_preprint_read": [
+    "P6"
+  ],
+  "abstract_preview_only": [
+    "P4",
+    "P7",
+    "P9"
+  ],
+  "publication": {
+    "status": "PREPARED",
+    "draft": true,
+    "merged": false,
+    "branch": "research/20261028-literature-scope",
+    "url": null
+  },
+  "checks": {
+    "local_markdown_links": "PASS",
+    "comparison_dimensions_and_ids": "PASS:9 papers",
+    "bibtex_entry_count_and_balanced_braces": "PASS:9 entries",
+    "verified_dois_match_catalogue": "PASS",
+    "field_estimator_runs": 0,
+    "localization_matrices_run": 0,
+    "algorithm_or_existing_result_files_modified": 0,
+    "publisher_pdf_files_uploaded": 0
+  },
+  "source_recovery_note": "Old scratch checkout was absent after workspace maintenance. New isolated checkout fetched specified repository commit; no old computational results needed for this task.",
+  "external_sources": [
+    {
+      "paper_or_scope": "P1",
+      "source_url": "https://par.nsf.gov/servlets/purl/10203881",
+      "access_date_local": "2026-10-28",
+      "reading_scope": "FULL",
+      "retrieved_sha256": "3f7fbdcc64cd90c6ad277226c5d01a67eb0134b5be1db86c772383b5229c9651",
+      "retrieved_bytes": 1188055,
+      "cache_filename": "hafez2020.pdf",
+      "raw_source_not_committed": true
+    },
+    {
+      "paper_or_scope": "P2",
+      "source_url": "https://ira.lib.polyu.edu.hk/bitstream/10397/93579/1/Wen_Integrity_Monitoring_Gnss.pdf",
+      "access_date_local": "2026-10-28",
+      "reading_scope": "FULL",
+      "retrieved_sha256": "840e6b1f5b4a97381735541412d43dc8ff2542cadda110de9da7e397d9e8ad44",
+      "retrieved_bytes": 1044232,
+      "cache_filename": "wen2021.pdf",
+      "raw_source_not_committed": true
+    },
+    {
+      "paper_or_scope": "P2",
+      "source_url": "https://www.ion.org/publications/abstract.cfm?articleID=18157",
+      "access_date_local": "2026-10-28",
+      "reading_scope": "publisher metadata",
+      "retrieved_sha256": "7379e7f97fc56e7c8f2281aaca55da9212ee681c6700cc9f4de99a1e15061995",
+      "retrieved_bytes": 30285,
+      "cache_filename": "wen2021_ion.html",
+      "raw_source_not_committed": true
+    },
+    {
+      "paper_or_scope": "P3",
+      "source_url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2023.1190296/full",
+      "access_date_local": "2026-10-28",
+      "reading_scope": "FULL",
+      "retrieved_sha256": "34aa5159f0789accd0e7912c0d092f2685a471373b756520ef81c6b2f2b73f90",
+      "retrieved_bytes": 716535,
+      "cache_filename": "salimpour2023.html",
+      "raw_source_not_committed": true
+    },
+    {
+      "paper_or_scope": "P3",
+      "source_url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2023.1190296/pdf",
+      "access_date_local": "2026-10-28",
+      "reading_scope": "FULL; algorithm-page visual check",
+      "retrieved_sha256": "8318d5e0da751b11162bc2a41ece7b6e6a252e7a5630a6fa4c9d8c2ceafcf83a",
+      "retrieved_bytes": 4978419,
+      "cache_filename": "salimpour2023.pdf",
+      "raw_source_not_committed": true
+    },
+    {
+      "paper_or_scope": "P4",
+      "source_url": "https://api.crossref.org/works/10.1016/j.asr.2026.09.026",
+      "access_date_local": "2026-10-28",
+      "reading_scope": "bibliographic registration",
+      "retrieved_sha256": "c81ca800590d9a9f39f2486b0e7609542c3920ee3e8eb130b607f0a970ac59a6",
+      "retrieved_bytes": 18660,
+      "cache_filename": "wang2026_crossref.json",
+      "raw_source_not_committed": true
+    },
+    {
+      "paper_or_scope": "P4",
+      "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0273117726013074",
+      "access_date_local": "2026-10-28",
+      "reading_scope": "public abstract/contributions via search-service publisher index; NOT full paper",
+      "retrieved_sha256": "bc9dc320d2ff3a7e67f1e4cf81226d693fa06ce980b3275b9838050e9b5b0e43",
+      "retrieved_bytes": 4882,
+      "cache_filename": "wang2026_public_preview_index.txt",
+      "raw_source_not_committed": true
+    },
+    {
+      "paper_or_scope": "P5",
+      "source_url": "https://www.mdpi.com/2076-3417/16/10/5137",
+      "access_date_local": "2026-10-28",
+      "reading_scope": "FULL official HTML",
+      "retrieved_sha256": "6e8136de5ebbf124e45d3fa67baa3ed84bf34e4636f7716bde56f83075a70e24",
+      "retrieved_bytes": 655692,
+      "cache_filename": "olawoye2026.html",
+      "raw_source_not_committed": true
+    },
+    {
+      "paper_or_scope": "P6",
+      "source_url": "https://arxiv.org/pdf/2009.03538v3",
+      "access_date_local": "2026-10-28",
+      "reading_scope": "selected author-preprint sections; formal version not fully read",
+      "retrieved_sha256": "f56af97976c83cf8bb3453939a808331fd601b7611b01e42ad33d0636e7af096",
+      "retrieved_bytes": 5680488,
+      "cache_filename": "zhu2020.pdf",
+      "raw_source_not_committed": true
+    },
+    {
+      "paper_or_scope": "P6",
+      "source_url": "https://api.crossref.org/works/10.1109/JSEN.2021.3083724",
+      "access_date_local": "2026-10-28",
+      "reading_scope": "formal bibliographic registration",
+      "retrieved_sha256": "6e1c2b18fe68db385321e16cf8f1a94e15aa298154ff7e692ef302344363a3b9",
+      "retrieved_bytes": 6491,
+      "cache_filename": "zhu_formal_crossref.json",
+      "raw_source_not_committed": true
+    },
+    {
+      "paper_or_scope": "P7",
+      "source_url": "https://www.ion.org/publications/abstract.cfm?articleID=18610",
+      "access_date_local": "2026-10-28",
+      "reading_scope": "publisher abstract; cache filename is not publication year, verified year=2023",
+      "retrieved_sha256": "8b00f2375994a71abeae297005748869b7670607cc12038e892d0ba21de20b34",
+      "retrieved_bytes": 36180,
+      "cache_filename": "uwb_integrity2022.html",
+      "raw_source_not_committed": true
+    },
+    {
+      "paper_or_scope": "P8",
+      "source_url": "https://arxiv.org/pdf/2610.32259v1",
+      "access_date_local": "2026-10-28",
+      "reading_scope": "FULL author preprint; no verified formal journal publication",
+      "retrieved_sha256": "c2c47f5ae7f18179821bab3aa3636687544ab292dd21284a9d8587ac6f8dba54",
+      "retrieved_bytes": 2683915,
+      "cache_filename": "hu2026.pdf",
+      "raw_source_not_committed": true
+    },
+    {
+      "paper_or_scope": "P9",
+      "source_url": "https://link.springer.com/article/10.1007/s10514-025-10196-6",
+      "access_date_local": "2026-10-28",
+      "reading_scope": "abstract, metadata and code-availability only; subscription body not read",
+      "retrieved_sha256": "90887e0305c53d10e6d2137174af27534a23e5d00fbb6ac1faebf1f89d8efe7e",
+      "retrieved_bytes": 308340,
+      "cache_filename": "elmawas2025.html",
+      "raw_source_not_committed": true
+    },
+    {
+      "paper_or_scope": "P9",
+      "source_url": "https://api.crossref.org/works/10.1007/s10514-025-10196-6",
+      "access_date_local": "2026-10-28",
+      "reading_scope": "bibliographic registration",
+      "retrieved_sha256": "c979320a5539201c4540bdaa357a9c46eff9252e8e74869823f0f973469fb989",
+      "retrieved_bytes": 14733,
+      "cache_filename": "elmawas2025_crossref.json",
+      "raw_source_not_committed": true
+    },
+    {
+      "paper_or_scope": "IV2027",
+      "source_url": "https://ieee-iv.org/2027/announcements/",
+      "access_date_local": "2026-10-28",
+      "reading_scope": "FULL official public announcement",
+      "retrieved_sha256": "754da44d1e26f219a08e51c8d1d6fb5410a189db610ff937f26a676d33ccab3e",
+      "retrieved_bytes": 108582,
+      "cache_filename": "iv2027.html",
+      "raw_source_not_committed": true
+    },
+    {
+      "paper_or_scope": "IV2027",
+      "source_url": "https://ieee-iv.org/2027/contributions/call-for-papers/",
+      "access_date_local": "2026-10-28",
+      "reading_scope": "FULL official CFP",
+      "retrieved_sha256": "029c3a4abc3e863e459715d8e6f6273f4f3e8b72c83551507c5ee77819ac3f2a",
+      "retrieved_bytes": 117141,
+      "cache_filename": "iv2027_cfp.html",
+      "raw_source_not_committed": true
+    },
+    {
+      "paper_or_scope": "IV2027",
+      "source_url": "https://ieee-iv.org/2027/contributions/information-for-authors/",
+      "access_date_local": "2026-10-28",
+      "reading_scope": "FULL official author instructions",
+      "retrieved_sha256": "2be3f682c6d86328def313fe5469ee80f8ff84ea8383cf35d2106e450cba3549",
+      "retrieved_bytes": 114968,
+      "cache_filename": "iv2027_authors.html",
+      "raw_source_not_committed": true
+    }
+  ],
+  "access_failures": [
+    {
+      "source": "P4 publisher/Elsevier public API",
+      "observed": "403/195-byte robot-denial HTML; not article or abstract content",
+      "resolution": "used public publisher-index abstract/contributions and Crossref; full text remains unavailable; no paywall bypass"
+    },
+    {
+      "source": "MDPI and IV2027 via search-service open",
+      "observed": "429/400",
+      "resolution": "normal public HTTPS returned official complete HTML; no authentication or evasion"
+    },
+    {
+      "source": "P7/P9 full texts",
+      "observed": "publisher download credit/subscription required",
+      "resolution": "abstract/metadata only; no bypass"
+    },
+    {
+      "source": "Hafez PLANS2020 discovered paper",
+      "observed": "author PDF URL404",
+      "resolution": "not in nine-paper main comparison; metadata/partial discovery only"
+    },
+    {
+      "source": "Hafez code recursive tree",
+      "observed": "truncated index",
+      "resolution": "inspected root and relevant SS directory, recorded license=null; not claiming exhaustive absence"
+    }
+  ],
+  "external_code_audit": {
+    "P1": {
+      "repository": "mspenko/RoboticsLab-Integrity-Evaluation",
+      "commit": "9737f3497c00eff81a32df0d6dbbf3720cfc485e",
+      "tree": "578d2d0971edad4cb2196629988c52e1ba22754a",
+      "repository_license": null,
+      "read_only": true,
+      "executed": false
+    },
+    "P5": {
+      "repository": "wvu-navLab/FDE",
+      "commit": "880203341da70e97065bc608c1ce5689ecc90499",
+      "tree": "c99841f92757c7e44732a4d983724bf67b2d99cc",
+      "repository_license": null,
+      "read_only": true,
+      "executed": false,
+      "checked_file_git_blobs": {
+        "run_cooperative_raim.m": "0a2cd1e859038b585ff92c2871fb2716ce003dd9",
+        "enumerate_subsets.m": "920160cf41e22a8558a0c4d3c82f2a4900308c47",
+        "identify_fault.m": "abda24e69d21218c327d0e07bca5f4705edc1637",
+        "cluster_estimates.m": "5ebc5900ef9d4abf426be785a6ad36c601b469ce",
+        "wls_position.m": "91051c50f3af805401f0bc3756ef0a444ff403ed",
+        "chi2_detect.m": "d05e10239a0197bf8a499ae2ec436cf71595a82d"
+      }
+    }
+  },
+  "document_checks_note": "Schema/DOI/local-link and write-boundary checks only; these are not numerical estimator tests or method reproductions.",
+  "reference_conflicts": [
+    "P4 online corrected proof dated September; Crossref assigns future December issue, retained as assigned metadata not claimed already printed",
+    "P6 formal 2022 Sensors Journal title differs from 2020 author preprint; read version explicitly separated",
+    "P8 author title page Qian Meng vs arXiv metadata Meng Qian; formal publication unverified despite journal template",
+    "P5 publication vs current repository defaults/fallback/voting differ; not treated as a faithful ready-to-run baseline"
+  ],
+  "elapsed_hours_since_first_saved_checkpoint": 0.4215454066666667,
+  "budget_note": "Four-hour maximum respected; initial environment discovery preceded the first saved checkpoint; no new phase restart or overnight scheduling created.",
+  "output_sha256_excluding_self_and_handoff": {
+    "BASELINES.md": "1b109a678cc887ec229844df48760040a684f294c99422e3878fb86888372e41",
+    "COMPARISON.csv": "997aac597f00d9ef471a68e8a2e41c3f864fbbcf399c247eb5f19f06161c5ef5",
+    "CONFERENCE_SCOPE.md": "09bc342112448bf070715c4733f90e2c6932e6e7d56ce9b1bd8115f50ef5f411",
+    "PAPERS.md": "9a18cca53e42b667b177fee544ca0920ab4489e393953166ba46992f1fada89b",
+    "READING_LOG.md": "95d52129b793bd0475da710b9ab9f1099acff05d843e9cf6f24a30707c40c708",
+    "README.md": "3cbe85b8ea0bafa366f927f534a85c23138f8a22395bfac589d7613bcbcbb495",
+    "REFERENCES.bib": "cf150db74d33bf7716fc601d7fe2ebd0d669731a36f5e49a2fcd4c1d45b45073",
+    "SUPERVISOR_BRIEF.md": "17e6334dc53ff5a2184204d63c6f50309e1c7f05d4ea798006cc9d61acb392a4",
+    "TALK_5MIN.md": "59e3a882ce72df3e2b70b7c0ad2ef6e7fcb18e7cc07da265d64e75351698aabd",
+    "catalog.json": "0e5ac6d6773dace43e70f4796b23345b4e506e5b67a67311b2a647f85084a722"
+  }
+}
