@@ -1,0 +1,184 @@
+{
+  "angular": {
+    "angle_noise_density_rad_sqrt_s": {
+      "frozen_before_field_run": true,
+      "source": "frozen exploratory engineering assumption; not calibrated",
+      "source_kind": "engineering_assumption",
+      "units": "rad/sqrt(s)",
+      "value": 0.03490658503988659
+    },
+    "bias_initial_rad_s": {
+      "frozen_before_field_run": true,
+      "source": "frozen exploratory engineering assumption; not calibrated",
+      "source_kind": "engineering_assumption",
+      "units": "rad/s",
+      "value": 0.0
+    },
+    "bias_initial_sigma_rad_s": {
+      "frozen_before_field_run": true,
+      "source": "frozen exploratory engineering assumption; not calibrated",
+      "source_kind": "engineering_assumption",
+      "units": "rad/s",
+      "value": 0.03
+    },
+    "bias_random_walk_rad_s_sqrt_s": {
+      "frozen_before_field_run": true,
+      "source": "frozen exploratory engineering assumption; not calibrated",
+      "source_kind": "engineering_assumption",
+      "units": "(rad/s)/sqrt(s)",
+      "value": 0.0007
+    },
+    "body_z_in_imu_frame": {
+      "frozen_before_field_run": true,
+      "source": "frozen exploratory engineering assumption; not calibrated",
+      "source_kind": "synthetic_design",
+      "units": "dimensionless",
+      "value": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "imu_frame_id": {
+      "frozen_before_field_run": true,
+      "source": "frozen exploratory engineering assumption; not calibrated",
+      "source_kind": "synthetic_design",
+      "units": "frame_id",
+      "value": "car2/imu_link"
+    },
+    "max_hold_ns": {
+      "frozen_before_field_run": true,
+      "source": "frozen exploratory engineering assumption; not calibrated",
+      "source_kind": "engineering_assumption",
+      "units": "ns",
+      "value": 100000000
+    }
+  },
+  "arm": "F0",
+  "assumptions": [
+    "Odom body translation expression still depends on upstream Odom yaw; gyro/Odom correlation uncalibrated",
+    "pose/yaw initial prior is external and uncertain; no artificial endpoint factor",
+    "IMU replaces Odom yaw factor; no IMU orientation or acceleration factor",
+    "missing angular edge has no yaw factor; held-yaw prediction only, no Odom yaw fallback"
+  ],
+  "clock_maps": {
+    "imu": {
+      "frozen_before_field_run": true,
+      "source": "generated shared clock; field must explicitly redeclare its assumption",
+      "source_kind": "synthetic_design",
+      "units": "ns",
+      "value": {
+        "destination_origin_ns": 0,
+        "rate_denominator": 1,
+        "rate_numerator": 1,
+        "source_origin_ns": 0,
+        "uncertainty_ns": 0
+      }
+    },
+    "odom": {
+      "frozen_before_field_run": true,
+      "source": "generated shared clock; field must explicitly redeclare its assumption",
+      "source_kind": "synthetic_design",
+      "units": "ns",
+      "value": {
+        "destination_origin_ns": 0,
+        "rate_denominator": 1,
+        "rate_numerator": 1,
+        "source_origin_ns": 0,
+        "uncertainty_ns": 0
+      }
+    },
+    "uwb": {
+      "frozen_before_field_run": true,
+      "source": "generated shared clock; field must explicitly redeclare its assumption",
+      "source_kind": "synthetic_design",
+      "units": "ns",
+      "value": {
+        "destination_origin_ns": 0,
+        "rate_denominator": 1,
+        "rate_numerator": 1,
+        "source_origin_ns": 0,
+        "uncertainty_ns": 0
+      }
+    }
+  },
+  "fixed_lag_s": 20.0,
+  "frontend": {
+    "max_sensor_samples_per_stream": 512,
+    "output_history": "external sink; estimator retains last valid publication only"
+  },
+  "model": {
+    "anchors_xyz_m": {
+      "node_10": [
+        3.26,
+        0.1,
+        2.355
+      ],
+      "node_2": [
+        5.28,
+        5.16,
+        2.755
+      ],
+      "node_3": [
+        5.28,
+        2.86,
+        2.355
+      ],
+      "node_8": [
+        0.1,
+        2.41,
+        2.3
+      ]
+    },
+    "antenna_height_m": 0.2,
+    "base_to_antenna_body_xy_m": [
+      0.12,
+      -0.08
+    ],
+    "graph_parameters": {
+      "keyframe_step_s": 1,
+      "odom_translation_sigma_m": 0.03,
+      "odom_yaw_sigma_deg": 2,
+      "prior_heading_sigma_deg": 5,
+      "prior_position_sigma_m": 0.2,
+      "range_bin_half_width_s": 0.4,
+      "range_sigma_m": 0.2
+    },
+    "initial_heading_deg": 90,
+    "range_bias_m": {
+      "node_10": 0.6088636183798282,
+      "node_2": 0.449737490591974,
+      "node_3": 0.2012859604623305,
+      "node_8": 0.3685143909425328
+    },
+    "start_antenna_xyz_m": [
+      2,
+      2,
+      0.2
+    ]
+  },
+  "optimizer": {
+    "ftol": 1e-07,
+    "gtol": 1e-07,
+    "initialization": "previous accepted active estimates plus Odom prediction",
+    "jacobian": "analytic",
+    "linear_solver": "exact dense",
+    "max_nfev": 50,
+    "method": "trf",
+    "xtol": 1e-07
+  },
+  "replay": {
+    "backend": "arm-specific; see arms",
+    "clock_correction": "none",
+    "closed_bin_policy": "immutable; count late packets",
+    "eof_policy": "no timer advance beyond last recorded receipt",
+    "first_keyframe_margin_s": 1,
+    "imu": "diagnostic messages only; zero independent IMU factors",
+    "keyframe_step_s": 1,
+    "minimum_samples_per_link": 5,
+    "range_bin_half_width_s": 0.4,
+    "release_delay_s": 1
+  },
+  "schema_version": 1,
+  "scope": "synthetic"
+}
