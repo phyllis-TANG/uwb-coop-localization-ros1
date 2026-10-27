@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "A_commit": "e3a20fe04a6d53973696ec055dbc71eb135e0f77",
+  "cases": ["004023", "005135"],
+  "arms": ["F0", "F1", "F2", "F3"],
+  "runs": 8,
+  "max_seconds_per_run": 120,
+  "scope": "conditional historical development response, not accepted physical calibration or accuracy evaluation",
+  "strict_physical_branch": "BLOCKED: historical physical gyro axis/sign, true sampling clocks/delays and odom-origin correspondence unverified",
+  "axis_hypothesis": [0.0, 0.0, 1.0],
+  "clock_hypothesis": "uncorrected identity of recorded header epochs as in frozen legacy policy; no inferred delay",
+  "clock_API_disclosure_scale_ns": 100000000,
+  "clock_API_disclosure_scale_is_error_bound": false,
+  "physical_clock_error_bound_ns": null,
+  "angular_numeric_source": "A exact frozen config.template.json at A_commit; no endpoint-based fit or selection",
+  "same_conditions": ["raw packets and arrival cadence", "external initial pose/heading and prior", "historical geometry/P1", "Odom pose-derived body translation", "UWB medians/weights", "20s/1s grid/wait", "optimizer limits", "all publication denominators"],
+  "comparison": "all output, all estimate-valid, explicit fallbacks, common estimate-valid; no RMSE/ATE or gain percentage",
+  "marginal_readback": "every F1-F3 marginalization, independent finite differences and Schur projection; no online factor/Jacobian imports",
+  "failed_run_policy": "preserve partial directory; no automatic rerun or parameter change"
+}
