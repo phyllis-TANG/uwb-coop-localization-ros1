@@ -1,0 +1,1402 @@
+{
+  "schema_version": 1,
+  "mappings": [
+    {
+      "status": "event_alignment_candidate_not_accepted",
+      "model": null,
+      "candidate_model": {
+        "a": 1.0,
+        "b_relative_s": 83.29397982366667,
+        "clock_scale_status": "assumed_unity_not_measured",
+        "events": [
+          {
+            "vehicle_id": "car2",
+            "kind": "motion_start",
+            "video_s": 100.00333333333333,
+            "ros_relative_s": 183.052018276,
+            "initial_abs_residual_s": 0.0
+          },
+          {
+            "vehicle_id": "car2",
+            "kind": "motion_end",
+            "video_s": 123.00333333333333,
+            "ros_relative_s": 206.542608038,
+            "initial_abs_residual_s": 0.49058976199998483
+          }
+        ],
+        "plausible_clock_scale": true,
+        "residual_s": [
+          -0.24529488100000663,
+          0.2452948809999782
+        ],
+        "max_abs_residual_s": 0.24529488100000663
+      },
+      "accepted_for_continuous_reference": false,
+      "uncertainty": {
+        "video_sampling_interval_s": 0.5,
+        "odom_displacement_window_s": 0.25,
+        "visual_median_filter_span_s": 1.0,
+        "stationary_boundary_guard_s": 1.0,
+        "event_fit_assumed_sigma_s": 0.75,
+        "total_bound_s": null,
+        "unbounded_components": [
+          "Visual/odom physical-onset difference",
+          "Unmeasured timestamp/host latency",
+          "Feature/board motion and visibility-dependent event selection"
+        ]
+      },
+      "unmatched_video_events": 0,
+      "unmatched_odom_events": 4,
+      "experiment_id": "T08",
+      "video_sha256": "6eb5ebde83006e5e78ada49318a3c9a3d291492c41311b33893aaaf6c6b575f7",
+      "mapping_id": "T08_pts_to_receive_events_v1",
+      "source_clock": "original_video_PTS",
+      "destination_clock": "bag_receive_ROS_record_clock",
+      "destination_origin_epoch_ns": "1792922800963481831",
+      "mapping_formula": "receive_epoch_ns = destination_origin_epoch_ns + round(1e9*(a*video_time_s+b_relative_s))",
+      "original_odom_only": true,
+      "fusion_estimates_used": false,
+      "video_motion": {
+        "car1": {
+          "valid_fraction": 1.0,
+          "threshold_px_s": 3.0,
+          "intervals": [],
+          "events": []
+        },
+        "car2": {
+          "valid_fraction": 0.47619047619047616,
+          "threshold_px_s": 3.0,
+          "intervals": [
+            {
+              "start_s": 86.00166666666667,
+              "end_s": 90.50166666666667,
+              "start_has_stationary_observation": false,
+              "end_has_stationary_observation": false
+            },
+            {
+              "start_s": 100.00333333333333,
+              "end_s": 123.00333333333333,
+              "start_has_stationary_observation": true,
+              "end_has_stationary_observation": true
+            }
+          ],
+          "events": [
+            {
+              "vehicle_id": "car2",
+              "kind": "motion_start",
+              "time_s": 100.00333333333333
+            },
+            {
+              "vehicle_id": "car2",
+              "kind": "motion_end",
+              "time_s": 123.00333333333333
+            }
+          ]
+        }
+      },
+      "video_events": [
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 100.00333333333333
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 123.00333333333333
+        }
+      ],
+      "odom_events": [
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 134.892227377
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 156.483491774
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 163.092886658
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 174.584805372
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 183.052018276
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 206.542608038
+        }
+      ],
+      "candidate_video_interval_s": [
+        0.0,
+        167.505
+      ],
+      "candidate_mapped_ros_relative_interval_s": [
+        83.29397982366667,
+        250.79897982366668
+      ],
+      "nominal_motion_span_covered": true,
+      "coverage_caveat": "Temporal-span coverage is not continuous marker visibility or spatial validation"
+    },
+    {
+      "status": "event_alignment_candidate_not_accepted",
+      "model": null,
+      "candidate_model": {
+        "a": 1.0,
+        "b_relative_s": -25.488074775833333,
+        "clock_scale_status": "assumed_unity_not_measured",
+        "events": [
+          {
+            "vehicle_id": "car2",
+            "kind": "motion_start",
+            "video_s": 107.50333333333333,
+            "ros_relative_s": 81.99492357,
+            "initial_abs_residual_s": 0.0
+          },
+          {
+            "vehicle_id": "car2",
+            "kind": "motion_end",
+            "video_s": 130.50333333333333,
+            "ros_relative_s": 105.035593545,
+            "initial_abs_residual_s": 0.040669975000000136
+          }
+        ],
+        "plausible_clock_scale": true,
+        "residual_s": [
+          -0.020334987500007173,
+          0.020334987499992963
+        ],
+        "max_abs_residual_s": 0.020334987500007173
+      },
+      "accepted_for_continuous_reference": false,
+      "uncertainty": {
+        "video_sampling_interval_s": 0.5,
+        "odom_displacement_window_s": 0.25,
+        "visual_median_filter_span_s": 1.0,
+        "stationary_boundary_guard_s": 1.0,
+        "event_fit_assumed_sigma_s": 0.75,
+        "total_bound_s": null,
+        "unbounded_components": [
+          "Visual/odom physical-onset difference",
+          "Unmeasured timestamp/host latency",
+          "Feature/board motion and visibility-dependent event selection"
+        ]
+      },
+      "unmatched_video_events": 0,
+      "unmatched_odom_events": 4,
+      "experiment_id": "T09",
+      "video_sha256": "803dbffc21ae0fb313d2f52c23b6f5682639025247db5b365dffff71595cf9e0",
+      "mapping_id": "T09_pts_to_receive_events_v1",
+      "source_clock": "original_video_PTS",
+      "destination_clock": "bag_receive_ROS_record_clock",
+      "destination_origin_epoch_ns": "1792923852736080064",
+      "mapping_formula": "receive_epoch_ns = destination_origin_epoch_ns + round(1e9*(a*video_time_s+b_relative_s))",
+      "original_odom_only": true,
+      "fusion_estimates_used": false,
+      "video_motion": {
+        "car1": {
+          "valid_fraction": 1.0,
+          "threshold_px_s": 3.0,
+          "intervals": [],
+          "events": []
+        },
+        "car2": {
+          "valid_fraction": 0.4441340782122905,
+          "threshold_px_s": 3.0,
+          "intervals": [
+            {
+              "start_s": 107.50333333333333,
+              "end_s": 130.50333333333333,
+              "start_has_stationary_observation": true,
+              "end_has_stationary_observation": true
+            }
+          ],
+          "events": [
+            {
+              "vehicle_id": "car2",
+              "kind": "motion_start",
+              "time_s": 107.50333333333333
+            },
+            {
+              "vehicle_id": "car2",
+              "kind": "motion_end",
+              "time_s": 130.50333333333333
+            }
+          ]
+        }
+      },
+      "video_events": [
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 107.50333333333333
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 130.50333333333333
+        }
+      ],
+      "odom_events": [
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 35.596286219
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 57.638155063
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 64.404182734
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 76.084933235
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 81.99492357
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 105.035593545
+        }
+      ],
+      "candidate_video_interval_s": [
+        0.0,
+        178.505
+      ],
+      "candidate_mapped_ros_relative_interval_s": [
+        -25.488074775833333,
+        153.01692522416667
+      ],
+      "nominal_motion_span_covered": true,
+      "coverage_caveat": "Temporal-span coverage is not continuous marker visibility or spatial validation"
+    },
+    {
+      "status": "event_alignment_candidate_not_accepted",
+      "model": null,
+      "candidate_model": {
+        "a": 1.0,
+        "b_relative_s": -24.954730587166665,
+        "clock_scale_status": "assumed_unity_not_measured",
+        "events": [
+          {
+            "vehicle_id": "car1",
+            "kind": "motion_start",
+            "video_s": 35.501666666666665,
+            "ros_relative_s": 10.366639764,
+            "initial_abs_residual_s": 0.36059263100000116
+          },
+          {
+            "vehicle_id": "car1",
+            "kind": "motion_end",
+            "video_s": 59.001666666666665,
+            "ros_relative_s": 34.227232395,
+            "initial_abs_residual_s": 0.0
+          }
+        ],
+        "plausible_clock_scale": true,
+        "residual_s": [
+          -0.1802963154999997,
+          0.18029631550000147
+        ],
+        "max_abs_residual_s": 0.18029631550000147
+      },
+      "accepted_for_continuous_reference": false,
+      "uncertainty": {
+        "video_sampling_interval_s": 0.5,
+        "odom_displacement_window_s": 0.25,
+        "visual_median_filter_span_s": 1.0,
+        "stationary_boundary_guard_s": 1.0,
+        "event_fit_assumed_sigma_s": 0.75,
+        "total_bound_s": null,
+        "unbounded_components": [
+          "Visual/odom physical-onset difference",
+          "Unmeasured timestamp/host latency",
+          "Feature/board motion and visibility-dependent event selection"
+        ]
+      },
+      "unmatched_video_events": 0,
+      "unmatched_odom_events": 0,
+      "experiment_id": "T10",
+      "video_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+      "mapping_id": "T10_pts_to_receive_events_v1",
+      "source_clock": "original_video_PTS",
+      "destination_clock": "bag_receive_ROS_record_clock",
+      "destination_origin_epoch_ns": "1792925285431466217",
+      "mapping_formula": "receive_epoch_ns = destination_origin_epoch_ns + round(1e9*(a*video_time_s+b_relative_s))",
+      "original_odom_only": true,
+      "fusion_estimates_used": false,
+      "video_motion": {
+        "car1": {
+          "valid_fraction": 1.0,
+          "threshold_px_s": 3.0,
+          "intervals": [
+            {
+              "start_s": 35.501666666666665,
+              "end_s": 59.001666666666665,
+              "start_has_stationary_observation": true,
+              "end_has_stationary_observation": true
+            }
+          ],
+          "events": [
+            {
+              "vehicle_id": "car1",
+              "kind": "motion_start",
+              "time_s": 35.501666666666665
+            },
+            {
+              "vehicle_id": "car1",
+              "kind": "motion_end",
+              "time_s": 59.001666666666665
+            }
+          ]
+        },
+        "car2": {
+          "valid_fraction": 1.0,
+          "threshold_px_s": 3.0,
+          "intervals": [],
+          "events": []
+        }
+      },
+      "video_events": [
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_start",
+          "time_s": 35.501666666666665
+        },
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_end",
+          "time_s": 59.001666666666665
+        }
+      ],
+      "odom_events": [
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_start",
+          "time_s": 10.366639764
+        },
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_end",
+          "time_s": 34.227232395
+        }
+      ],
+      "candidate_video_interval_s": [
+        0.0,
+        96.50333333333333
+      ],
+      "candidate_mapped_ros_relative_interval_s": [
+        -24.954730587166665,
+        71.54860274616667
+      ],
+      "nominal_motion_span_covered": true,
+      "coverage_caveat": "Temporal-span coverage is not continuous marker visibility or spatial validation",
+      "v2_raw_input_audit": {
+        "file": "T10_time_audit.json",
+        "raw_records_compared": 2972,
+        "original_bag_SHA_verified": true,
+        "candidate_reproduced": true,
+        "acceptance_unchanged": true
+      }
+    },
+    {
+      "status": "event_alignment_candidate_not_accepted",
+      "model": null,
+      "candidate_model": {
+        "a": 1.0,
+        "b_relative_s": -16.799337795333333,
+        "clock_scale_status": "assumed_unity_not_measured",
+        "events": [
+          {
+            "vehicle_id": "car1",
+            "kind": "motion_start",
+            "video_s": 30.0,
+            "ros_relative_s": 12.79167846,
+            "initial_abs_residual_s": 0.0
+          },
+          {
+            "vehicle_id": "car1",
+            "kind": "motion_end",
+            "video_s": 53.001666666666665,
+            "ros_relative_s": 36.611312616,
+            "initial_abs_residual_s": 0.8179674893333342
+          }
+        ],
+        "plausible_clock_scale": true,
+        "residual_s": [
+          -0.4089837446666671,
+          0.40898374466666354
+        ],
+        "max_abs_residual_s": 0.4089837446666671
+      },
+      "accepted_for_continuous_reference": false,
+      "uncertainty": {
+        "video_sampling_interval_s": 0.5,
+        "odom_displacement_window_s": 0.25,
+        "visual_median_filter_span_s": 1.0,
+        "stationary_boundary_guard_s": 1.0,
+        "event_fit_assumed_sigma_s": 0.75,
+        "total_bound_s": null,
+        "unbounded_components": [
+          "Visual/odom physical-onset difference",
+          "Unmeasured timestamp/host latency",
+          "Feature/board motion and visibility-dependent event selection"
+        ]
+      },
+      "unmatched_video_events": 0,
+      "unmatched_odom_events": 0,
+      "experiment_id": "T11",
+      "video_sha256": "5ce17f35864f50c925e6ccb725f623c3f739b2500c82de96b59da854df91a077",
+      "mapping_id": "T11_pts_to_receive_events_v1",
+      "source_clock": "original_video_PTS",
+      "destination_clock": "bag_receive_ROS_record_clock",
+      "destination_origin_epoch_ns": "1792925680870004735",
+      "mapping_formula": "receive_epoch_ns = destination_origin_epoch_ns + round(1e9*(a*video_time_s+b_relative_s))",
+      "original_odom_only": true,
+      "fusion_estimates_used": false,
+      "video_motion": {
+        "car1": {
+          "valid_fraction": 1.0,
+          "threshold_px_s": 3.0,
+          "intervals": [
+            {
+              "start_s": 30.0,
+              "end_s": 53.001666666666665,
+              "start_has_stationary_observation": true,
+              "end_has_stationary_observation": true
+            }
+          ],
+          "events": [
+            {
+              "vehicle_id": "car1",
+              "kind": "motion_start",
+              "time_s": 30.0
+            },
+            {
+              "vehicle_id": "car1",
+              "kind": "motion_end",
+              "time_s": 53.001666666666665
+            }
+          ]
+        },
+        "car2": {
+          "valid_fraction": 1.0,
+          "threshold_px_s": 3.0,
+          "intervals": [],
+          "events": []
+        }
+      },
+      "video_events": [
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_start",
+          "time_s": 30.0
+        },
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_end",
+          "time_s": 53.001666666666665
+        }
+      ],
+      "odom_events": [
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_start",
+          "time_s": 12.79167846
+        },
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_end",
+          "time_s": 36.611312616
+        }
+      ],
+      "candidate_video_interval_s": [
+        0.0,
+        83.00166666666667
+      ],
+      "candidate_mapped_ros_relative_interval_s": [
+        -16.799337795333333,
+        66.20232887133334
+      ],
+      "nominal_motion_span_covered": true,
+      "coverage_caveat": "Temporal-span coverage is not continuous marker visibility or spatial validation"
+    },
+    {
+      "status": "event_alignment_candidate_not_accepted",
+      "model": null,
+      "candidate_model": {
+        "a": 1.0096107579176685,
+        "b_relative_s": -27.14625316926602,
+        "residual_s": [
+          -0.03841823197895877,
+          0.05870575195582717,
+          -0.020287519976946555
+        ],
+        "rms_s": 0.042165978892559026,
+        "max_abs_residual_s": 0.05870575195582717,
+        "formal_parameter_covariance": [
+          [
+            0.0002357872673045249,
+            -0.02251820799928725
+          ],
+          [
+            -0.022518207999287252,
+            2.3380389043941534
+          ]
+        ],
+        "qualification": "Event-based candidate; uncertainty excludes unmeasured camera/host latency unless separately bounded",
+        "clock_scale_status": "fitted_from_events_not_independent_clock_calibration",
+        "events": [
+          {
+            "vehicle_id": "car1",
+            "kind": "motion_start",
+            "video_s": 65.00166666666667,
+            "ros_relative_s": 38.441710548,
+            "initial_abs_residual_s": 0.3229767949999953
+          },
+          {
+            "vehicle_id": "car1",
+            "kind": "motion_end",
+            "video_s": 88.50166666666667,
+            "ros_relative_s": 62.264687343,
+            "initial_abs_residual_s": 0.0
+          },
+          {
+            "vehicle_id": "car2",
+            "kind": "motion_end",
+            "video_s": 133.00333333333333,
+            "ros_relative_s": 107.115055483,
+            "initial_abs_residual_s": 0.34870147333334955
+          }
+        ],
+        "plausible_clock_scale": true
+      },
+      "accepted_for_continuous_reference": false,
+      "uncertainty": {
+        "video_sampling_interval_s": 0.5,
+        "odom_displacement_window_s": 0.25,
+        "visual_median_filter_span_s": 1.0,
+        "stationary_boundary_guard_s": 1.0,
+        "event_fit_assumed_sigma_s": 0.75,
+        "total_bound_s": null,
+        "unbounded_components": [
+          "Visual/odom physical-onset difference",
+          "Unmeasured timestamp/host latency",
+          "Feature/board motion and visibility-dependent event selection"
+        ]
+      },
+      "unmatched_video_events": 0,
+      "unmatched_odom_events": 5,
+      "experiment_id": "T12",
+      "video_sha256": "ef4cece5d7da94ea7cfcc32c5cb8164d663cfe6fb332bf6b242411b363f9e4cd",
+      "mapping_id": "T12_pts_to_receive_events_v1",
+      "source_clock": "original_video_PTS",
+      "destination_clock": "bag_receive_ROS_record_clock",
+      "destination_origin_epoch_ns": "1792926714033038898",
+      "mapping_formula": "receive_epoch_ns = destination_origin_epoch_ns + round(1e9*(a*video_time_s+b_relative_s))",
+      "original_odom_only": true,
+      "fusion_estimates_used": false,
+      "video_motion": {
+        "car1": {
+          "valid_fraction": 0.9832869080779945,
+          "threshold_px_s": 3.0,
+          "intervals": [
+            {
+              "start_s": 65.00166666666667,
+              "end_s": 88.50166666666667,
+              "start_has_stationary_observation": true,
+              "end_has_stationary_observation": true
+            }
+          ],
+          "events": [
+            {
+              "vehicle_id": "car1",
+              "kind": "motion_start",
+              "time_s": 65.00166666666667
+            },
+            {
+              "vehicle_id": "car1",
+              "kind": "motion_end",
+              "time_s": 88.50166666666667
+            }
+          ]
+        },
+        "car2": {
+          "valid_fraction": 0.298050139275766,
+          "threshold_px_s": 3.0,
+          "intervals": [
+            {
+              "start_s": 126.50333333333333,
+              "end_s": 133.00333333333333,
+              "start_has_stationary_observation": false,
+              "end_has_stationary_observation": true
+            }
+          ],
+          "events": [
+            {
+              "vehicle_id": "car2",
+              "kind": "motion_end",
+              "time_s": 133.00333333333333
+            }
+          ]
+        }
+      },
+      "video_events": [
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_start",
+          "time_s": 65.00166666666667
+        },
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_end",
+          "time_s": 88.50166666666667
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 133.00333333333333
+        }
+      ],
+      "odom_events": [
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_start",
+          "time_s": 38.441710548
+        },
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_end",
+          "time_s": 62.264687343
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 35.581419763
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 57.510544218
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 65.712299574
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 78.172216624
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 84.115907137
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 107.115055483
+        }
+      ],
+      "candidate_video_interval_s": [
+        0.0,
+        179.005
+      ],
+      "candidate_mapped_ros_relative_interval_s": [
+        -27.14625316926602,
+        153.57912055178622
+      ],
+      "nominal_motion_span_covered": true,
+      "coverage_caveat": "Temporal-span coverage is not continuous marker visibility or spatial validation"
+    },
+    {
+      "status": "event_alignment_candidate_not_accepted",
+      "model": null,
+      "candidate_model": {
+        "a": 0.999691057542847,
+        "b_relative_s": -12.104069347939852,
+        "residual_s": [
+          -0.089287029765174,
+          0.13591297397792346,
+          -0.04662594421276367
+        ],
+        "rms_s": 0.097670344959533,
+        "max_abs_residual_s": 0.13591297397792346,
+        "formal_parameter_covariance": [
+          [
+            0.00023212217885037028,
+            -0.016287755376398427
+          ],
+          [
+            -0.016287755376398427,
+            1.3303936972559038
+          ]
+        ],
+        "qualification": "Event-based candidate; uncertainty excludes unmeasured camera/host latency unless separately bounded",
+        "clock_scale_status": "fitted_from_events_not_independent_clock_calibration",
+        "events": [
+          {
+            "vehicle_id": "car1",
+            "kind": "motion_start",
+            "video_s": 39.501666666666665,
+            "ros_relative_s": 27.296106547,
+            "initial_abs_residual_s": 0.02149801233333193
+          },
+          {
+            "vehicle_id": "car1",
+            "kind": "motion_end",
+            "video_s": 63.001666666666665,
+            "ros_relative_s": 51.014046403,
+            "initial_abs_residual_s": 0.19644184366666906
+          },
+          {
+            "vehicle_id": "car2",
+            "kind": "motion_end",
+            "video_s": 108.00333333333333,
+            "ros_relative_s": 95.819271226,
+            "initial_abs_residual_s": 0.0
+          }
+        ],
+        "plausible_clock_scale": true
+      },
+      "accepted_for_continuous_reference": false,
+      "uncertainty": {
+        "video_sampling_interval_s": 0.5,
+        "odom_displacement_window_s": 0.25,
+        "visual_median_filter_span_s": 1.0,
+        "stationary_boundary_guard_s": 1.0,
+        "event_fit_assumed_sigma_s": 0.75,
+        "total_bound_s": null,
+        "unbounded_components": [
+          "Visual/odom physical-onset difference",
+          "Unmeasured timestamp/host latency",
+          "Feature/board motion and visibility-dependent event selection"
+        ]
+      },
+      "unmatched_video_events": 0,
+      "unmatched_odom_events": 5,
+      "experiment_id": "T13",
+      "video_sha256": "1fca28d78157cd9b73e7955e59c1b9194cb1fb8a5ae80386926934f7d40d54c2",
+      "mapping_id": "T13_pts_to_receive_events_v1",
+      "source_clock": "original_video_PTS",
+      "destination_clock": "bag_receive_ROS_record_clock",
+      "destination_origin_epoch_ns": "1792927440026568428",
+      "mapping_formula": "receive_epoch_ns = destination_origin_epoch_ns + round(1e9*(a*video_time_s+b_relative_s))",
+      "original_odom_only": true,
+      "fusion_estimates_used": false,
+      "video_motion": {
+        "car1": {
+          "valid_fraction": 1.0,
+          "threshold_px_s": 3.0,
+          "intervals": [
+            {
+              "start_s": 39.501666666666665,
+              "end_s": 63.001666666666665,
+              "start_has_stationary_observation": true,
+              "end_has_stationary_observation": true
+            }
+          ],
+          "events": [
+            {
+              "vehicle_id": "car1",
+              "kind": "motion_start",
+              "time_s": 39.501666666666665
+            },
+            {
+              "vehicle_id": "car1",
+              "kind": "motion_end",
+              "time_s": 63.001666666666665
+            }
+          ]
+        },
+        "car2": {
+          "valid_fraction": 0.2951388888888889,
+          "threshold_px_s": 3.0,
+          "intervals": [
+            {
+              "start_s": 102.00333333333333,
+              "end_s": 108.00333333333333,
+              "start_has_stationary_observation": false,
+              "end_has_stationary_observation": true
+            }
+          ],
+          "events": [
+            {
+              "vehicle_id": "car2",
+              "kind": "motion_end",
+              "time_s": 108.00333333333333
+            }
+          ]
+        }
+      },
+      "video_events": [
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_start",
+          "time_s": 39.501666666666665
+        },
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_end",
+          "time_s": 63.001666666666665
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 108.00333333333333
+        }
+      ],
+      "odom_events": [
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_start",
+          "time_s": 27.296106547
+        },
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_end",
+          "time_s": 51.014046403
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 26.21193749
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 47.744235806
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 55.252033659
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 67.39258763
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 72.451359924
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 95.819271226
+        }
+      ],
+      "candidate_video_interval_s": [
+        0.0,
+        143.50333333333333
+      ],
+      "candidate_mapped_ros_relative_interval_s": [
+        -12.104069347939852,
+        131.35492971298385
+      ],
+      "nominal_motion_span_covered": true,
+      "coverage_caveat": "Temporal-span coverage is not continuous marker visibility or spatial validation"
+    },
+    {
+      "status": "pending_single_event_stage_ambiguity",
+      "model": null,
+      "candidate_model": null,
+      "candidate_offset_family": [
+        {
+          "a": 1.0,
+          "b_relative_s": -63.47172370966666,
+          "clock_scale_status": "assumed_only",
+          "pairing": [
+            {
+              "video_event": {
+                "vehicle_id": "car2",
+                "kind": "motion_end",
+                "time_s": 155.03166666666667
+              },
+              "odom_event": {
+                "vehicle_id": "car2",
+                "kind": "motion_end",
+                "time_s": 91.559942957
+              }
+            }
+          ]
+        },
+        {
+          "a": 1.0,
+          "b_relative_s": -43.36237684666666,
+          "clock_scale_status": "assumed_only",
+          "pairing": [
+            {
+              "video_event": {
+                "vehicle_id": "car2",
+                "kind": "motion_end",
+                "time_s": 155.03166666666667
+              },
+              "odom_event": {
+                "vehicle_id": "car2",
+                "kind": "motion_end",
+                "time_s": 111.66928982
+              }
+            }
+          ]
+        },
+        {
+          "a": 1.0,
+          "b_relative_s": -13.749963868666669,
+          "clock_scale_status": "assumed_only",
+          "pairing": [
+            {
+              "video_event": {
+                "vehicle_id": "car2",
+                "kind": "motion_end",
+                "time_s": 155.03166666666667
+              },
+              "odom_event": {
+                "vehicle_id": "car2",
+                "kind": "motion_end",
+                "time_s": 141.281702798
+              }
+            }
+          ]
+        }
+      ],
+      "accepted_for_continuous_reference": false,
+      "reason": "One observed boundary cannot identify which repeated movement stage it corresponds to",
+      "uncertainty": {
+        "total_bound_s": null,
+        "clock_scale": null
+      },
+      "unmatched_video_events": 3,
+      "unmatched_odom_events": 5,
+      "experiment_id": "T14",
+      "video_sha256": "ab15655b3f3d35846058b348a1e0f59282f25854eacbfd64467a960a1bc06848",
+      "mapping_id": "T14_pts_to_receive_events_v1",
+      "source_clock": "original_video_PTS",
+      "destination_clock": "bag_receive_ROS_record_clock",
+      "destination_origin_epoch_ns": "1792928746481439126",
+      "mapping_formula": "receive_epoch_ns = destination_origin_epoch_ns + round(1e9*(a*video_time_s+b_relative_s))",
+      "original_odom_only": true,
+      "fusion_estimates_used": false,
+      "video_motion": {
+        "car1": {
+          "valid_fraction": 0.9917808219178083,
+          "threshold_px_s": 3.0,
+          "intervals": [
+            {
+              "start_s": 20.008333333333333,
+              "end_s": 23.51,
+              "start_has_stationary_observation": true,
+              "end_has_stationary_observation": true
+            },
+            {
+              "start_s": 170.005,
+              "end_s": 171.505,
+              "start_has_stationary_observation": false,
+              "end_has_stationary_observation": true
+            }
+          ],
+          "events": [
+            {
+              "vehicle_id": "car1",
+              "kind": "motion_start",
+              "time_s": 20.008333333333333
+            },
+            {
+              "vehicle_id": "car1",
+              "kind": "motion_end",
+              "time_s": 23.51
+            },
+            {
+              "vehicle_id": "car1",
+              "kind": "motion_end",
+              "time_s": 171.505
+            }
+          ]
+        },
+        "car2": {
+          "valid_fraction": 0.21095890410958903,
+          "threshold_px_s": 3.0,
+          "intervals": [
+            {
+              "start_s": 143.52666666666667,
+              "end_s": 155.03166666666667,
+              "start_has_stationary_observation": false,
+              "end_has_stationary_observation": true
+            }
+          ],
+          "events": [
+            {
+              "vehicle_id": "car2",
+              "kind": "motion_end",
+              "time_s": 155.03166666666667
+            }
+          ]
+        }
+      },
+      "video_events": [
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_start",
+          "time_s": 20.008333333333333
+        },
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_end",
+          "time_s": 23.51
+        },
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_end",
+          "time_s": 171.505
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 155.03166666666667
+        }
+      ],
+      "odom_events": [
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 70.189264181
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 91.559942957
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 99.940857091
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 111.66928982
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 117.908881121
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 141.281702798
+        }
+      ]
+    },
+    {
+      "status": "pending_single_event_stage_ambiguity",
+      "model": null,
+      "candidate_model": null,
+      "candidate_offset_family": [
+        {
+          "a": 1.0,
+          "b_relative_s": -62.92664497833333,
+          "clock_scale_status": "assumed_only",
+          "pairing": [
+            {
+              "video_event": {
+                "vehicle_id": "car2",
+                "kind": "motion_end",
+                "time_s": 127.50333333333333
+              },
+              "odom_event": {
+                "vehicle_id": "car2",
+                "kind": "motion_end",
+                "time_s": 64.576688355
+              }
+            }
+          ]
+        },
+        {
+          "a": 1.0,
+          "b_relative_s": -43.26569589133334,
+          "clock_scale_status": "assumed_only",
+          "pairing": [
+            {
+              "video_event": {
+                "vehicle_id": "car2",
+                "kind": "motion_end",
+                "time_s": 127.50333333333333
+              },
+              "odom_event": {
+                "vehicle_id": "car2",
+                "kind": "motion_end",
+                "time_s": 84.237637442
+              }
+            }
+          ]
+        },
+        {
+          "a": 1.0,
+          "b_relative_s": -15.036539166333327,
+          "clock_scale_status": "assumed_only",
+          "pairing": [
+            {
+              "video_event": {
+                "vehicle_id": "car2",
+                "kind": "motion_end",
+                "time_s": 127.50333333333333
+              },
+              "odom_event": {
+                "vehicle_id": "car2",
+                "kind": "motion_end",
+                "time_s": 112.466794167
+              }
+            }
+          ]
+        },
+        {
+          "a": 1.0,
+          "b_relative_s": -59.26569589133334,
+          "clock_scale_status": "assumed_only",
+          "pairing": [
+            {
+              "video_event": {
+                "vehicle_id": "car2",
+                "kind": "motion_end",
+                "time_s": 143.50333333333333
+              },
+              "odom_event": {
+                "vehicle_id": "car2",
+                "kind": "motion_end",
+                "time_s": 84.237637442
+              }
+            }
+          ]
+        },
+        {
+          "a": 1.0,
+          "b_relative_s": -31.036539166333327,
+          "clock_scale_status": "assumed_only",
+          "pairing": [
+            {
+              "video_event": {
+                "vehicle_id": "car2",
+                "kind": "motion_end",
+                "time_s": 143.50333333333333
+              },
+              "odom_event": {
+                "vehicle_id": "car2",
+                "kind": "motion_end",
+                "time_s": 112.466794167
+              }
+            }
+          ]
+        }
+      ],
+      "accepted_for_continuous_reference": false,
+      "reason": "One observed boundary cannot identify which repeated movement stage it corresponds to",
+      "uncertainty": {
+        "total_bound_s": null,
+        "clock_scale": null
+      },
+      "unmatched_video_events": 2,
+      "unmatched_odom_events": 5,
+      "experiment_id": "T15",
+      "video_sha256": "8fba8eaffbf12c98420caeb3c359649fbf7cd4b27ab97b03db309a28491106be",
+      "mapping_id": "T15_pts_to_receive_events_v1",
+      "source_clock": "original_video_PTS",
+      "destination_clock": "bag_receive_ROS_record_clock",
+      "destination_origin_epoch_ns": "1792929333624676843",
+      "mapping_formula": "receive_epoch_ns = destination_origin_epoch_ns + round(1e9*(a*video_time_s+b_relative_s))",
+      "original_odom_only": true,
+      "fusion_estimates_used": false,
+      "video_motion": {
+        "car1": {
+          "valid_fraction": 0.9870967741935484,
+          "threshold_px_s": 3.0,
+          "intervals": [
+            {
+              "start_s": 142.00333333333333,
+              "end_s": 144.00333333333333,
+              "start_has_stationary_observation": false,
+              "end_has_stationary_observation": true
+            }
+          ],
+          "events": [
+            {
+              "vehicle_id": "car1",
+              "kind": "motion_end",
+              "time_s": 144.00333333333333
+            }
+          ]
+        },
+        "car2": {
+          "valid_fraction": 0.24193548387096775,
+          "threshold_px_s": 3.0,
+          "intervals": [
+            {
+              "start_s": 116.50333333333333,
+              "end_s": 127.50333333333333,
+              "start_has_stationary_observation": false,
+              "end_has_stationary_observation": true
+            },
+            {
+              "start_s": 142.00333333333333,
+              "end_s": 143.50333333333333,
+              "start_has_stationary_observation": false,
+              "end_has_stationary_observation": true
+            }
+          ],
+          "events": [
+            {
+              "vehicle_id": "car2",
+              "kind": "motion_end",
+              "time_s": 127.50333333333333
+            },
+            {
+              "vehicle_id": "car2",
+              "kind": "motion_end",
+              "time_s": 143.50333333333333
+            }
+          ]
+        }
+      },
+      "video_events": [
+        {
+          "vehicle_id": "car1",
+          "kind": "motion_end",
+          "time_s": 144.00333333333333
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 127.50333333333333
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 143.50333333333333
+        }
+      ],
+      "odom_events": [
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 43.259037263
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 64.576688355
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 71.508276196
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 84.237637442
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_start",
+          "time_s": 89.588614733
+        },
+        {
+          "vehicle_id": "car2",
+          "kind": "motion_end",
+          "time_s": 112.466794167
+        }
+      ]
+    }
+  ],
+  "policy": "Candidates retained; no fusion trajectory, filename clock or nominal sleep used as synchronization evidence",
+  "non_ROS_reference_clips": [
+    {
+      "video_sha256": "8683bb28af0a32003ee8f4ece2241a3986279e774f16d4e1160e8e30f2b65cf0",
+      "relative_path": "extracted/camera_reference/IMG_7364.MOV",
+      "status": "not_applicable_no_corresponding_ROS_experiment",
+      "model": null
+    },
+    {
+      "video_sha256": "5f5c2ad9bd1a4cdce4c774abc9308b436a018ca165d9d55168b7543c97b139dd",
+      "relative_path": "extracted/camera_reference/IMG_7365.MOV",
+      "status": "not_applicable_no_corresponding_ROS_experiment",
+      "model": null
+    },
+    {
+      "video_sha256": "8250c1077bac3cfb2fb103b2604a18348c3a9542ad06a77ea7cb243204dd5253",
+      "relative_path": "extracted/camera_reference/IMG_7366.MOV",
+      "status": "not_applicable_no_corresponding_ROS_experiment",
+      "model": null
+    },
+    {
+      "video_sha256": "64b6dba40a4b3719c132ad65a3ef7a132b07e416d98c683dc37525e1e4397408",
+      "relative_path": "extracted/camera_reference/IMG_7367.MOV",
+      "status": "not_applicable_no_corresponding_ROS_experiment",
+      "model": null
+    },
+    {
+      "video_sha256": "6d1317720c9c4f69852292e118d1429983ecafea78cc2cc279b2aa29cb526e33",
+      "relative_path": "extracted/camera_reference/IMG_7369.MOV",
+      "status": "not_applicable_no_corresponding_ROS_experiment",
+      "model": null
+    },
+    {
+      "video_sha256": "05d4101fe3801896276e327836ca8a35c3edd5ef8abea9908b80427681ebe717",
+      "relative_path": "extracted/camera_reference/IMG_7370.MOV",
+      "status": "not_applicable_no_corresponding_ROS_experiment",
+      "model": null
+    },
+    {
+      "video_sha256": "a63ade1c2f8c5dd555478e18bf01d41429f576bdf15cdfa1dcf50ee69b9da96e",
+      "relative_path": "extracted/camera_reference/IMG_7371.MOV",
+      "status": "not_applicable_no_corresponding_ROS_experiment",
+      "model": null
+    },
+    {
+      "video_sha256": "07700f5211f6d958e0866c0bb6a30fd0f4f283b91696bff92e18943754006bd9",
+      "relative_path": "extracted/camera_reference/IMG_7373.MOV",
+      "status": "not_applicable_no_corresponding_ROS_experiment",
+      "model": null
+    },
+    {
+      "video_sha256": "c2b63890aa764c2128b6103163540073607dd7a131cdcdf05cf14ee916dc72c8",
+      "relative_path": "extracted/IMG_7336/IMG_7336.MOV",
+      "status": "not_applicable_no_corresponding_ROS_experiment",
+      "model": null
+    },
+    {
+      "video_sha256": "3abd6bfe961b6b7a5a9d184f1cd6dda61fc8569d4bf5e41f5024fcb4ddd03dd6",
+      "relative_path": "extracted/IMG_7337/IMG_7337.MOV",
+      "status": "not_applicable_no_corresponding_ROS_experiment",
+      "model": null
+    }
+  ],
+  "version": "video_reference_20261027_v2",
+  "baseline_commit": "868349b543a03a6a713d1675e1d4ada7d905410c",
+  "T14_T15_policy": "Inherited candidate families preserved byte-for-JSON-value unchanged; no new evidence to select a phase"
+}

@@ -1,0 +1,30 @@
+test_failed_row_preserves_missing_not_zero_corners (test_video_reference.Contracts.test_failed_row_preserves_missing_not_zero_corners) ... ok
+test_output_cannot_overwrite_an_existing_run (test_video_reference.Contracts.test_output_cannot_overwrite_an_existing_run) ... ok
+test_range_response_exact_identity (test_video_reference.Contracts.test_range_response_exact_identity) ... ok
+test_strict_json_cannot_hide_nan (test_video_reference.Contracts.test_strict_json_cannot_hide_nan) ... ok
+test_synthetic_decoded_marker_identity (test_video_reference.Contracts.test_synthetic_decoded_marker_identity) ... ok
+test_tracking_never_claims_decoded_detection (test_video_reference.Contracts.test_tracking_never_claims_decoded_detection) ... ok
+test_actual_not_nominal_marker_size (test_video_reference.Coordinates.test_actual_not_nominal_marker_size) ... ok
+test_body_offset_rotates_before_room_translation (test_video_reference.Coordinates.test_body_offset_rotates_before_room_translation) ... ok
+test_camera_to_room_direction_and_raised_plane (test_video_reference.Coordinates.test_camera_to_room_direction_and_raised_plane) ... ok
+test_nominal_room_pose_direction (test_video_reference.Coordinates.test_nominal_room_pose_direction) ... ok
+test_plane_behind_camera_rejected (test_video_reference.Coordinates.test_plane_behind_camera_rejected) ... ok
+test_rotation_matches_actual_pixel_arrays (test_video_reference.Coordinates.test_rotation_matches_actual_pixel_arrays) ... ok
+test_rotation_round_trip (test_video_reference.Coordinates.test_rotation_round_trip) ... ok
+test_unhandled_rotation_rejected (test_video_reference.Coordinates.test_unhandled_rotation_rejected) ... ok
+test_candidate_event_fit_is_not_approved_clock_sync (test_video_reference.Timing.test_candidate_event_fit_is_not_approved_clock_sync) ... ok
+test_cropped_flow_preserves_global_pixel_coordinates (test_video_reference.Timing.test_cropped_flow_preserves_global_pixel_coordinates) ... ok
+test_event_offset_and_drift_recovered_without_positions (test_video_reference.Timing.test_event_offset_and_drift_recovered_without_positions) ... ok
+test_matching_never_reuses_one_odom_event (test_video_reference.Timing.test_matching_never_reuses_one_odom_event) ... ok
+test_missing_events_not_fabricated (test_video_reference.Timing.test_missing_events_not_fabricated) ... ok
+test_no_video_events_does_not_forge_sync (test_video_reference.Timing.test_no_video_events_does_not_forge_sync) ... ok
+test_real_observation_boundaries (test_video_reference.Timing.test_real_observation_boundaries) ... ok
+test_short_event_span_rejected (test_video_reference.Timing.test_short_event_span_rejected) ... ok
+test_single_boundary_cannot_pick_one_repeated_stage (test_video_reference.Timing.test_single_boundary_cannot_pick_one_repeated_stage) ... ok
+test_two_events_cannot_validate_drift (test_video_reference.Timing.test_two_events_cannot_validate_drift) ... ok
+test_visibility_recovery_is_not_a_motion_onset (test_video_reference.Timing.test_visibility_recovery_is_not_a_motion_onset) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 0.121s
+
+OK

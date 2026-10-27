@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "baseline_commit": "868349b543a03a6a713d1675e1d4ada7d905410c",
+  "prior_commit": "0fa1a0a71813553b6586a0865a9aacacb0b8aae0",
+  "primary_camera_candidate": "IMG_7337_all",
+  "camera_sensitivity_candidates": ["IMG_7337_all", "IMG_7336_all", "both_all"],
+  "camera_pose_sample_policy": "Use the first existing per-clip pose sample (0.5 s), fixed before examining output discrepancies; other samples are sensitivity only",
+  "t10_review_target_s": [0.5, 35.0, 35.5, 36.0, 48.4, 58.5, 59.0, 59.5, 75.0],
+  "reference_review_videos": ["IMG_7364.MOV", "IMG_7365.MOV", "IMG_7366.MOV", "IMG_7367.MOV"],
+  "height_sensitivity_delta_m": [-0.02, 0.0, 0.02],
+  "pixel_sensitivity_delta_px": 1.0,
+  "car1_heading_sensitivity_delta_deg": [-10.0, 0.0, 10.0, 180.0],
+  "car2_unknown_heading_sweep_deg": [0.0, 90.0, 180.0, 270.0],
+  "video_speed_threshold_sensitivity_px_s": [2.0, 3.0, 5.0],
+  "odom_speed_threshold_sensitivity_m_s": [0.003, 0.005, 0.01],
+  "sensitivity_policy": "Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories",
+  "acceptance_tolerance_m": null,
+  "operator_confirmation": {
+    "source": "User task instruction in this chat, 2026-10-27 Asia/Shanghai",
+    "verbatim": "Car1标题边朝车头，车头为红色支架/机械臂侧，保留该人工来源。",
+    "front_edge": "printed_title_edge",
+    "body_front": "red_support_mechanical_arm_side",
+    "numeric_angle_uncertainty_rad": null,
+    "precedence": "This explicit current operator statement supersedes the prior report's opposite-edge inference. Retain prior source and opposite-direction sensitivity; never select direction by positional error."
+  }
+}

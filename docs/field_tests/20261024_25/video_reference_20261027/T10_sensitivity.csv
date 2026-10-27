@@ -1,0 +1,91 @@
+vehicle_id,frame_index,kind,assumed_value,delta_marker_xy_m,note
+car1,15,camera_model,IMG_7337_all,0.0,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car1,15,camera_model,IMG_7336_all,0.10422769949850676,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car1,15,camera_model,both_all,0.028421603408578713,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car1,15,board_height_delta_m,-0.02,0.052216517077229255,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car1,15,board_height_delta_m,0.0,0.0,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car1,15,board_height_delta_m,0.02,0.052216517077229255,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car1,15,wrong_ground_plane,0,0.9660055659287441,Diagnostic of applying a ground plane to an elevated marker; not an uncertainty estimate
+car1,15,existing_per_clip_pose_sample,15,0.0,Observed registration/model variation only; floor homography is not applied to marker pixels
+car1,15,existing_per_clip_pose_sample,150,0.0008790582030065723,Observed registration/model variation only; floor homography is not applied to marker pixels
+car1,15,existing_per_clip_pose_sample,1452,0.006198207220834802,Observed registration/model variation only; floor homography is not applied to marker pixels
+car1,15,one_corner_one_axis_1px_max,1.0,0.0018628523756325569,"Max of 16 deterministic perturbations; Car1 includes lever arm, Car2 is marker-only; not a bound"
+car1,15,body_heading_delta_deg,-10.0,0.025736782407047718,Current title-edge direction plus hypothetical angle; 180deg preserves the old opposite inference
+car1,15,body_heading_delta_deg,0.0,0.0,Current title-edge direction plus hypothetical angle; 180deg preserves the old opposite inference
+car1,15,body_heading_delta_deg,10.0,0.025736782407048527,Current title-edge direction plus hypothetical angle; 180deg preserves the old opposite inference
+car1,15,body_heading_delta_deg,180.0,0.2952964612046676,Current title-edge direction plus hypothetical angle; 180deg preserves the old opposite inference
+car2,15,camera_model,IMG_7337_all,0.0,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car2,15,camera_model,IMG_7336_all,0.11099357832471303,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car2,15,camera_model,both_all,0.027796614285369007,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car2,15,board_height_delta_m,-0.02,0.021693250583558185,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car2,15,board_height_delta_m,0.0,0.0,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car2,15,board_height_delta_m,0.02,0.02169325058355801,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car2,15,wrong_ground_plane,0,0.24947238171091693,Diagnostic of applying a ground plane to an elevated marker; not an uncertainty estimate
+car2,15,existing_per_clip_pose_sample,15,0.0,Observed registration/model variation only; floor homography is not applied to marker pixels
+car2,15,existing_per_clip_pose_sample,150,0.0004706492783163077,Observed registration/model variation only; floor homography is not applied to marker pixels
+car2,15,existing_per_clip_pose_sample,1452,0.003987064912143617,Observed registration/model variation only; floor homography is not applied to marker pixels
+car2,15,one_corner_one_axis_1px_max,1.0,0.0003796762678665494,"Max of 16 deterministic perturbations; Car1 includes lever arm, Car2 is marker-only; not a bound"
+car2,15,unknown_body_yaw_example_deg,0.0,0.17182840277439573,Example yaw locus under flat-body assumption; no angle selected; not a measured or bounded reference
+car2,15,unknown_body_yaw_example_deg,90.0,0.17182840277439573,Example yaw locus under flat-body assumption; no angle selected; not a measured or bounded reference
+car2,15,unknown_body_yaw_example_deg,180.0,0.17182840277439573,Example yaw locus under flat-body assumption; no angle selected; not a measured or bounded reference
+car2,15,unknown_body_yaw_example_deg,270.0,0.17182840277439573,Example yaw locus under flat-body assumption; no angle selected; not a measured or bounded reference
+car1,1455,camera_model,IMG_7337_all,0.0,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car1,1455,camera_model,IMG_7336_all,0.0794604544256146,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car1,1455,camera_model,both_all,0.018814304812328996,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car1,1455,board_height_delta_m,-0.02,0.052275797206484835,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car1,1455,board_height_delta_m,0.0,0.0,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car1,1455,board_height_delta_m,0.02,0.05227579720648486,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car1,1455,wrong_ground_plane,0,0.9671022483199687,Diagnostic of applying a ground plane to an elevated marker; not an uncertainty estimate
+car1,1455,existing_per_clip_pose_sample,15,0.0,Observed registration/model variation only; floor homography is not applied to marker pixels
+car1,1455,existing_per_clip_pose_sample,150,0.0006517332630716446,Observed registration/model variation only; floor homography is not applied to marker pixels
+car1,1455,existing_per_clip_pose_sample,1452,0.004751990725707545,Observed registration/model variation only; floor homography is not applied to marker pixels
+car1,1455,one_corner_one_axis_1px_max,1.0,0.0017788007416507773,"Max of 16 deterministic perturbations; Car1 includes lever arm, Car2 is marker-only; not a bound"
+car1,1455,body_heading_delta_deg,-10.0,0.025736782407047736,Current title-edge direction plus hypothetical angle; 180deg preserves the old opposite inference
+car1,1455,body_heading_delta_deg,0.0,0.0,Current title-edge direction plus hypothetical angle; 180deg preserves the old opposite inference
+car1,1455,body_heading_delta_deg,10.0,0.02573678240704783,Current title-edge direction plus hypothetical angle; 180deg preserves the old opposite inference
+car1,1455,body_heading_delta_deg,180.0,0.29529646120466785,Current title-edge direction plus hypothetical angle; 180deg preserves the old opposite inference
+car2,1455,camera_model,IMG_7337_all,0.0,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car2,1455,camera_model,IMG_7336_all,0.11102234748783371,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car2,1455,camera_model,both_all,0.02780349573091969,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car2,1455,board_height_delta_m,-0.02,0.02168025218439797,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car2,1455,board_height_delta_m,0.0,0.0,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car2,1455,board_height_delta_m,0.02,0.021680252184398185,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car2,1455,wrong_ground_plane,0,0.24932290012057845,Diagnostic of applying a ground plane to an elevated marker; not an uncertainty estimate
+car2,1455,existing_per_clip_pose_sample,15,0.0,Observed registration/model variation only; floor homography is not applied to marker pixels
+car2,1455,existing_per_clip_pose_sample,150,0.00047099382087662927,Observed registration/model variation only; floor homography is not applied to marker pixels
+car2,1455,existing_per_clip_pose_sample,1452,0.0039868390142929954,Observed registration/model variation only; floor homography is not applied to marker pixels
+car2,1455,one_corner_one_axis_1px_max,1.0,0.00037918629022586786,"Max of 16 deterministic perturbations; Car1 includes lever arm, Car2 is marker-only; not a bound"
+car2,1455,unknown_body_yaw_example_deg,0.0,0.17182840277439573,Example yaw locus under flat-body assumption; no angle selected; not a measured or bounded reference
+car2,1455,unknown_body_yaw_example_deg,90.0,0.17182840277439573,Example yaw locus under flat-body assumption; no angle selected; not a measured or bounded reference
+car2,1455,unknown_body_yaw_example_deg,180.0,0.17182840277439573,Example yaw locus under flat-body assumption; no angle selected; not a measured or bounded reference
+car2,1455,unknown_body_yaw_example_deg,270.0,0.17182840277439573,Example yaw locus under flat-body assumption; no angle selected; not a measured or bounded reference
+car1,2250,camera_model,IMG_7337_all,0.0,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car1,2250,camera_model,IMG_7336_all,0.08791175365227233,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car1,2250,camera_model,both_all,0.022262290002065362,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car1,2250,board_height_delta_m,-0.02,0.05400857919004853,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car1,2250,board_height_delta_m,0.0,0.0,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car1,2250,board_height_delta_m,0.02,0.0540085791900482,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car1,2250,wrong_ground_plane,0,0.9991587150158904,Diagnostic of applying a ground plane to an elevated marker; not an uncertainty estimate
+car1,2250,existing_per_clip_pose_sample,15,0.0,Observed registration/model variation only; floor homography is not applied to marker pixels
+car1,2250,existing_per_clip_pose_sample,150,0.00046209189587512146,Observed registration/model variation only; floor homography is not applied to marker pixels
+car1,2250,existing_per_clip_pose_sample,1452,0.004006956454829071,Observed registration/model variation only; floor homography is not applied to marker pixels
+car1,2250,one_corner_one_axis_1px_max,1.0,0.0018246845725333064,"Max of 16 deterministic perturbations; Car1 includes lever arm, Car2 is marker-only; not a bound"
+car1,2250,body_heading_delta_deg,-10.0,0.025736782407047833,Current title-edge direction plus hypothetical angle; 180deg preserves the old opposite inference
+car1,2250,body_heading_delta_deg,0.0,0.0,Current title-edge direction plus hypothetical angle; 180deg preserves the old opposite inference
+car1,2250,body_heading_delta_deg,10.0,0.025736782407048187,Current title-edge direction plus hypothetical angle; 180deg preserves the old opposite inference
+car1,2250,body_heading_delta_deg,180.0,0.29529646120466796,Current title-edge direction plus hypothetical angle; 180deg preserves the old opposite inference
+car2,2250,camera_model,IMG_7337_all,0.0,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car2,2250,camera_model,IMG_7336_all,0.1110131059073277,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car2,2250,camera_model,both_all,0.027801457798075538,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car2,2250,board_height_delta_m,-0.02,0.021681408810167765,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car2,2250,board_height_delta_m,0.0,0.0,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car2,2250,board_height_delta_m,0.02,0.02168140881016798,"Illustrative assumed perturbations, not measured uncertainty, tolerance, confidence interval, or error bound; no selection using Q, endpoints, fusion, or estimated trajectories"
+car2,2250,wrong_ground_plane,0,0.24933620131692985,Diagnostic of applying a ground plane to an elevated marker; not an uncertainty estimate
+car2,2250,existing_per_clip_pose_sample,15,0.0,Observed registration/model variation only; floor homography is not applied to marker pixels
+car2,2250,existing_per_clip_pose_sample,150,0.00047095116409706433,Observed registration/model variation only; floor homography is not applied to marker pixels
+car2,2250,existing_per_clip_pose_sample,1452,0.003986749106339803,Observed registration/model variation only; floor homography is not applied to marker pixels
+car2,2250,one_corner_one_axis_1px_max,1.0,0.00037909921479890727,"Max of 16 deterministic perturbations; Car1 includes lever arm, Car2 is marker-only; not a bound"
+car2,2250,unknown_body_yaw_example_deg,0.0,0.17182840277439573,Example yaw locus under flat-body assumption; no angle selected; not a measured or bounded reference
+car2,2250,unknown_body_yaw_example_deg,90.0,0.17182840277439573,Example yaw locus under flat-body assumption; no angle selected; not a measured or bounded reference
+car2,2250,unknown_body_yaw_example_deg,180.0,0.17182840277439573,Example yaw locus under flat-body assumption; no angle selected; not a measured or bounded reference
+car2,2250,unknown_body_yaw_example_deg,270.0,0.17182840277439573,Example yaw locus under flat-body assumption; no angle selected; not a measured or bounded reference

@@ -1,0 +1,919 @@
+{
+  "schema_version": 1,
+  "run_id": "video_reference_20261027_001",
+  "role": "local_video",
+  "status": "BLOCKED",
+  "processing_status": "DONE",
+  "approved_scope": "not_accepted",
+  "created_at_utc": "2026-10-27T14:29:28.427453+00:00",
+  "code_commit": "868349b543a03a6a713d1675e1d4ada7d905410c",
+  "worktree_dirty": true,
+  "source_sha256": {
+    "tools/field_video_20261027/evidence.py": "bc7117eeb0a0eb69ec20905e6f9aeaad5344d1e1727f994b790973c9ce3d438b",
+    "tools/field_video_20261027/run_case.py": "9f73acf5ebd45c2fa3994245b1bd90107efd1614c3ac156968b9b4f02873e570",
+    "tools/field_video_20261027/test_case.py": "47560089e0a44d45f145e9261b87fb636ed5073e93a594d59fc65d722972f4d1",
+    "tools/field_video_20261027/verify_case.py": "a03cf08ee6d7c76ed0fa9b4f513b1432a84e8d008f10724e040fa436ab9a6064",
+    "tools/field_video_20261027/case_config.json": "93bbcf1587cdd893432a2d44880397c33d84f675993511e2e57dde754e255187",
+    "tools/field_video_20261026/annotate_floor.py": "36840a3eb512c6ef23c32bb02adb44194e63ed5aab11a8cdf60472286af1457a",
+    "tools/field_video_20261026/assemble.py": "97a512acdbd55b68d38f0b2e18ae79ef74a1bdfd7878f3fd9fa5fa55ae9ebfb3",
+    "tools/field_video_20261026/background_geometry.py": "b1f984526ce46ab29b0c43b662b6d3f1680c9ea4db9b10cd91704d3fa7954be2",
+    "tools/field_video_20261026/calibrate.py": "a55bd24da4a7bf55c96e1b99e11e25995042808186fd4f64f096a33f58eed2d5",
+    "tools/field_video_20261026/common.py": "f71f8e9208d9aa953487d748987ad68ac6933d7ca830d6761dec88701ad5980e",
+    "tools/field_video_20261026/diagnose_markers.py": "3597ded576a7031adcc5ca425bb28eef1b53e17aec4e140db2d0246177bf448f",
+    "tools/field_video_20261026/download_ranges.py": "3177a5f53390db26d47a5562bf75bd38f82ebc01cb1ad215cc9716db0a4d3632",
+    "tools/field_video_20261026/event_sync.py": "18abe8ea31f8dbcd09e5dd7363aebd52dd0b13c2aff42491f6ef83c09d29d23b",
+    "tools/field_video_20261026/intake.py": "397a7f4b16c81a30d65ec777c52cafc1d98a4ef0af38da01d01f0be8b476dda3",
+    "tools/field_video_20261026/intake_local_calibration.py": "442fef761266f8afe1f6211f4e75130c6e9a887546ef65d86dbf72050e1d5d1c",
+    "tools/field_video_20261026/manifest_patch.py": "4a634966e8e3ddb41de94cba450dff931a026029bc7abb1e17968eeed6270b2c",
+    "tools/field_video_20261026/manual_sync_candidate.py": "52c4723058daf4e7368db2d9083e2eee6316e5f3b01d89a573e3e582dbf038e4",
+    "tools/field_video_20261026/manual_timing.py": "5d70bf47ea4db51d3fe980eab55f40954018c007f3ece91798a8bc14374ee7e6",
+    "tools/field_video_20261026/media_audit.py": "21d5d15a3c7be49eb97ea81fdde84b42b43423f70050a2146e30ce7d198a22bb",
+    "tools/field_video_20261026/nominal_checks.py": "cfef342893745e32e4b4e47dc9369a29c10569cd74d3264eaea7c586ae58321f",
+    "tools/field_video_20261026/observations.py": "20c040da4835fa02afa353070182ad887fb615b0f6992e3d2611defaf079283e",
+    "tools/field_video_20261026/test_video_reference.py": "a2858bf7129a6f3ee3c83fd9f699f651a2778c6f51114b765360f8f799ea1ca3",
+    "tools/field_video_20261026/time_events.py": "46f6e7a572cccb18653d2d7e5fb11f713403f5f5b5f005357ace21ec311ce37f",
+    "tools/field_video_20261026/observation_config.json": "3dfff6f6a29382732ce38b59a5468a56f73771da4d978073308146f99da0cc05",
+    "tools/field_20261024_25/bag_decoder.py": "42a558fc0450927dd6a529ea2978361d2a1454fb6396e5237c5bf9aa9ffd2bc3"
+  },
+  "config_sha256": {
+    "manifest.json": "2a69ced619f26489ee24d988c8c66d80edf51161d1e491daa28628de2264a8a7",
+    "geometry.json": "0d85db448252f80c6ab456880d611efa4bace594adab83a305a95c9b13ab9f98"
+  },
+  "inputs": {
+    "schema_version": 1,
+    "baseline_commit": "868349b543a03a6a713d1675e1d4ada7d905410c",
+    "source_sha256": {
+      "docs/field_tests/20261024_25/RESULT_CONTRACT.md": "6ffdc4a706c672ffd5a02ebacbd7f24d21fc48287d2c045da8ef2e0f422fd2ac",
+      "docs/field_tests/20261024_25/geometry.json": "0d85db448252f80c6ab456880d611efa4bace594adab83a305a95c9b13ab9f98",
+      "docs/field_tests/20261024_25/RUNBOOK_LOCAL_VIDEO.md": "a077f0ee1bf27ae2392f2e3cb9361d0c29ec4875bf9e97c9c17a52a5d898a383",
+      "docs/field_tests/20261024_25/EXPERIMENTS.md": "c7f66ae2caed02c78c466be294a90462063ef3daeff893fa48ae6a89814143f7",
+      "docs/field_tests/20261024_25/SESSION_LOG_ARCHIVE.md": "27b6f980f5954fdb5a3b1fa3923730c0fc7305bf43ea4f13cc787c956d537753",
+      "docs/field_tests/20261024_25/manifest.json": "2a69ced619f26489ee24d988c8c66d80edf51161d1e491daa28628de2264a8a7",
+      "docs/field_tests/20261024_25/video_reference_20261026/README.md": "62a649532a6b9d452fcdc4174d583f5e2c50b27ceb87e8e663f072ff35e1cd36",
+      "docs/field_tests/20261024_25/video_reference_20261026/HANDOFF.md": "c294637a2fbc7c239be9917731f7f1a538c8606c6c2aaa1c2fb1640d6f8978ad",
+      "docs/field_tests/20261024_25/video_reference_20261026/reference_validation.json": "fdf9d8a65540a33862f6f2f2c15bfcd68217ed1986e1a28d58c223c1701dcc44",
+      "docs/field_tests/20261024_25/video_reference_20261026/calibration_stability.json": "80ceb6731aa2790e26822cdec5489d977facf2903d63302cfd376da355a98cfa",
+      "docs/field_tests/20261024_25/video_reference_20261026/frame_transforms.json": "40f01472632ec69a769b4e335075fb91217cb4d561561b18a8aae3f1b69f301f",
+      "docs/field_tests/20261024_25/video_reference_20261026/time_mapping.json": "a6c0b6777feca41ed4203ca72362a662ac8a8ab711abb616d8d61089470d5854",
+      "docs/field_tests/20261024_25/video_reference_20261026/marker_observations.csv": "7540db7355edc361e63c45dcc482d64b3bd75d43090551e7926024d34eb7be8a",
+      "docs/field_tests/20261024_25/video_reference_20261026/video_inventory.csv": "ab64ee72180df5552bdf17d075e7bd831705475350f83c8a12853a3ef8b19d2e",
+      "docs/field_tests/20261024_25/video_reference_20261026/source_lineage.json": "841ed03ab89aa045ba59c201e1bcec5c50868499aea0717fbd3909a830de44d6",
+      "docs/field_tests/20261024_25/video_reference_20261026/P_annotations.json": "27397a41138d3ec9006ad81d45aa39dc84b8d6e311f7e417a25966642630c910",
+      "docs/field_tests/20261024_25/video_reference_20261026/car1_mount_confirmation.json": "061d52dc1b98e83e2a82aec803cdabd7cdf8e4c2a173c9089d3873f97b96a0af",
+      "docs/field_tests/20261024_25/t10_closure_20261027/operator_evidence.json": "410f190e227a32332557f16cdb192a4357d4b5b02539ecf725b547751d333e8c",
+      "docs/field_tests/20261024_25/t10_closure_20261027/reference_decision.json": "d2bf51d35f60123e2d1f57f26e2a61238ee8b781e1c6938b8064246094e3267d",
+      "docs/field_tests/20261024_25/t10_closure_20261027/HANDOFF.md": "aca8e7468c83909366b19116f81d1fe49c86e806986c89776303094611b09461",
+      "results/media_001/T10_video__IMG_7347/frame_pts.csv": "445570cd89b1197eb404da85ea8c2c36482f20c497a5d85e371fed15e046dd1f",
+      "results/odom_events_001/T10_car1_odom.csv": "1656b1de2b62b2664829276f720bf51ef3d03048edcee42cc14eae8f159c8280",
+      "results/odom_events_001/T10_car2_odom.csv": "ee5c4b12807a82b427da87eaa1ed647ae77a80cc2f62f5e707220d2674503b36",
+      "results/odom_events_001/T10_car1_commands.csv": "14e647f195f218fd220e54a3757c5f2c71990fb874d2e6629ce54a7be57c765c",
+      "results/odom_events_001/odom_events.json": "3d171c7095ea5d10c671c018791f7d8d6086023e8b6bc17c16bbe453e64e994f"
+    },
+    "raw_media": [
+      {
+        "asset_id": "IMG_7336",
+        "experiment_id": "",
+        "logical_path": "calibration_data/extracted/IMG_7336/IMG_7336.MOV",
+        "expected_sha256": "c2b63890aa764c2128b6103163540073607dd7a131cdcdf05cf14ee916dc72c8",
+        "expected_size_bytes": 79918414,
+        "actual_size_bytes": 79918414,
+        "sha256_verified_this_run": true,
+        "actual_sha256": "c2b63890aa764c2128b6103163540073607dd7a131cdcdf05cf14ee916dc72c8",
+        "inherited_full_decode_status": "passed",
+        "full_decode_repeated": false,
+        "local_status": "present_size_matches"
+      },
+      {
+        "asset_id": "IMG_7337",
+        "experiment_id": "",
+        "logical_path": "calibration_data/extracted/IMG_7337/IMG_7337.MOV",
+        "expected_sha256": "3abd6bfe961b6b7a5a9d184f1cd6dda61fc8569d4bf5e41f5024fcb4ddd03dd6",
+        "expected_size_bytes": 76156170,
+        "actual_size_bytes": 76156170,
+        "sha256_verified_this_run": true,
+        "actual_sha256": "3abd6bfe961b6b7a5a9d184f1cd6dda61fc8569d4bf5e41f5024fcb4ddd03dd6",
+        "inherited_full_decode_status": "passed",
+        "full_decode_repeated": false,
+        "local_status": "present_size_matches"
+      },
+      {
+        "asset_id": "camera_reference",
+        "experiment_id": "",
+        "logical_path": "data/extracted/camera_reference/IMG_7364.MOV",
+        "expected_sha256": "8683bb28af0a32003ee8f4ece2241a3986279e774f16d4e1160e8e30f2b65cf0",
+        "expected_size_bytes": 120227964,
+        "actual_size_bytes": 120227964,
+        "sha256_verified_this_run": true,
+        "actual_sha256": "8683bb28af0a32003ee8f4ece2241a3986279e774f16d4e1160e8e30f2b65cf0",
+        "inherited_full_decode_status": "passed",
+        "full_decode_repeated": false,
+        "local_status": "present_size_matches"
+      },
+      {
+        "asset_id": "T08_video",
+        "experiment_id": "T08",
+        "logical_path": "data/extracted/T08_video/IMG_7341.MOV",
+        "expected_sha256": "6eb5ebde83006e5e78ada49318a3c9a3d291492c41311b33893aaaf6c6b575f7",
+        "expected_size_bytes": 961714936,
+        "actual_size_bytes": 961714936,
+        "sha256_verified_this_run": false,
+        "actual_sha256": null,
+        "inherited_full_decode_status": "passed",
+        "full_decode_repeated": false,
+        "local_status": "present_size_matches"
+      },
+      {
+        "asset_id": "T09_video",
+        "experiment_id": "T09",
+        "logical_path": "data/extracted/T09_video/IMG_7343.MOV",
+        "expected_sha256": "803dbffc21ae0fb313d2f52c23b6f5682639025247db5b365dffff71595cf9e0",
+        "expected_size_bytes": 1023594048,
+        "actual_size_bytes": 1023594048,
+        "sha256_verified_this_run": false,
+        "actual_sha256": null,
+        "inherited_full_decode_status": "passed",
+        "full_decode_repeated": false,
+        "local_status": "present_size_matches"
+      },
+      {
+        "asset_id": "T10_video",
+        "experiment_id": "T10",
+        "logical_path": "data/extracted/T10_video/IMG_7347.MOV",
+        "expected_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+        "expected_size_bytes": 556644048,
+        "actual_size_bytes": 556644048,
+        "sha256_verified_this_run": true,
+        "actual_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+        "inherited_full_decode_status": "passed",
+        "full_decode_repeated": false,
+        "local_status": "present_size_matches"
+      },
+      {
+        "asset_id": "T11_video",
+        "experiment_id": "T11",
+        "logical_path": "data/extracted/T11_video/IMG_7350.MOV",
+        "expected_sha256": "5ce17f35864f50c925e6ccb725f623c3f739b2500c82de96b59da854df91a077",
+        "expected_size_bytes": 476838991,
+        "actual_size_bytes": 476838991,
+        "sha256_verified_this_run": false,
+        "actual_sha256": null,
+        "inherited_full_decode_status": "passed",
+        "full_decode_repeated": false,
+        "local_status": "present_size_matches"
+      },
+      {
+        "asset_id": "T12_video",
+        "experiment_id": "T12",
+        "logical_path": "data/extracted/T12_video/IMG_7352.MOV",
+        "expected_sha256": "ef4cece5d7da94ea7cfcc32c5cb8164d663cfe6fb332bf6b242411b363f9e4cd",
+        "expected_size_bytes": 1027002267,
+        "actual_size_bytes": 1027002267,
+        "sha256_verified_this_run": false,
+        "actual_sha256": null,
+        "inherited_full_decode_status": "passed",
+        "full_decode_repeated": false,
+        "local_status": "present_size_matches"
+      },
+      {
+        "asset_id": "T13_video",
+        "experiment_id": "T13",
+        "logical_path": "data/extracted/T13_video/IMG_7353.MOV",
+        "expected_sha256": "1fca28d78157cd9b73e7955e59c1b9194cb1fb8a5ae80386926934f7d40d54c2",
+        "expected_size_bytes": 823259653,
+        "actual_size_bytes": 823259653,
+        "sha256_verified_this_run": false,
+        "actual_sha256": null,
+        "inherited_full_decode_status": "passed",
+        "full_decode_repeated": false,
+        "local_status": "present_size_matches"
+      },
+      {
+        "asset_id": "T14_video",
+        "experiment_id": "T14",
+        "logical_path": "data/extracted/T14_video/IMG_7357.MOV",
+        "expected_sha256": "ab15655b3f3d35846058b348a1e0f59282f25854eacbfd64467a960a1bc06848",
+        "expected_size_bytes": 1040203691,
+        "actual_size_bytes": 1040203691,
+        "sha256_verified_this_run": false,
+        "actual_sha256": null,
+        "inherited_full_decode_status": "passed",
+        "full_decode_repeated": false,
+        "local_status": "present_size_matches"
+      },
+      {
+        "asset_id": "T15_video",
+        "experiment_id": "T15",
+        "logical_path": "data/extracted/T15_video/IMG_7358.MOV",
+        "expected_sha256": "8fba8eaffbf12c98420caeb3c359649fbf7cd4b27ab97b03db309a28491106be",
+        "expected_size_bytes": 885859287,
+        "actual_size_bytes": 885859287,
+        "sha256_verified_this_run": false,
+        "actual_sha256": null,
+        "inherited_full_decode_status": "passed",
+        "full_decode_repeated": false,
+        "local_status": "present_size_matches"
+      },
+      {
+        "asset_id": "camera_reference",
+        "experiment_id": "",
+        "logical_path": "data/extracted/camera_reference/IMG_7369.MOV",
+        "expected_sha256": "6d1317720c9c4f69852292e118d1429983ecafea78cc2cc279b2aa29cb526e33",
+        "expected_size_bytes": 118867585,
+        "actual_size_bytes": 118867585,
+        "sha256_verified_this_run": false,
+        "actual_sha256": null,
+        "inherited_full_decode_status": "passed",
+        "full_decode_repeated": false,
+        "local_status": "present_size_matches"
+      },
+      {
+        "asset_id": "camera_reference",
+        "experiment_id": "",
+        "logical_path": "data/extracted/camera_reference/IMG_7370.MOV",
+        "expected_sha256": "05d4101fe3801896276e327836ca8a35c3edd5ef8abea9908b80427681ebe717",
+        "expected_size_bytes": 121023422,
+        "actual_size_bytes": 121023422,
+        "sha256_verified_this_run": false,
+        "actual_sha256": null,
+        "inherited_full_decode_status": "passed",
+        "full_decode_repeated": false,
+        "local_status": "present_size_matches"
+      },
+      {
+        "asset_id": "camera_reference",
+        "experiment_id": "",
+        "logical_path": "data/extracted/camera_reference/IMG_7371.MOV",
+        "expected_sha256": "a63ade1c2f8c5dd555478e18bf01d41429f576bdf15cdfa1dcf50ee69b9da96e",
+        "expected_size_bytes": 120635835,
+        "actual_size_bytes": 120635835,
+        "sha256_verified_this_run": false,
+        "actual_sha256": null,
+        "inherited_full_decode_status": "passed",
+        "full_decode_repeated": false,
+        "local_status": "present_size_matches"
+      },
+      {
+        "asset_id": "camera_reference",
+        "experiment_id": "",
+        "logical_path": "data/extracted/camera_reference/IMG_7373.MOV",
+        "expected_sha256": "07700f5211f6d958e0866c0bb6a30fd0f4f283b91696bff92e18943754006bd9",
+        "expected_size_bytes": 119976934,
+        "actual_size_bytes": 119976934,
+        "sha256_verified_this_run": false,
+        "actual_sha256": null,
+        "inherited_full_decode_status": "passed",
+        "full_decode_repeated": false,
+        "local_status": "present_size_matches"
+      },
+      {
+        "asset_id": "camera_reference",
+        "experiment_id": "",
+        "logical_path": "data/extracted/camera_reference/IMG_7365.MOV",
+        "expected_sha256": "5f5c2ad9bd1a4cdce4c774abc9308b436a018ca165d9d55168b7543c97b139dd",
+        "expected_size_bytes": 120776991,
+        "actual_size_bytes": 120776991,
+        "sha256_verified_this_run": true,
+        "actual_sha256": "5f5c2ad9bd1a4cdce4c774abc9308b436a018ca165d9d55168b7543c97b139dd",
+        "inherited_full_decode_status": "passed",
+        "full_decode_repeated": false,
+        "local_status": "present_size_matches"
+      },
+      {
+        "asset_id": "camera_reference",
+        "experiment_id": "",
+        "logical_path": "data/extracted/camera_reference/IMG_7366.MOV",
+        "expected_sha256": "8250c1077bac3cfb2fb103b2604a18348c3a9542ad06a77ea7cb243204dd5253",
+        "expected_size_bytes": 124500201,
+        "actual_size_bytes": 124500201,
+        "sha256_verified_this_run": true,
+        "actual_sha256": "8250c1077bac3cfb2fb103b2604a18348c3a9542ad06a77ea7cb243204dd5253",
+        "inherited_full_decode_status": "passed",
+        "full_decode_repeated": false,
+        "local_status": "present_size_matches"
+      },
+      {
+        "asset_id": "camera_reference",
+        "experiment_id": "",
+        "logical_path": "data/extracted/camera_reference/IMG_7367.MOV",
+        "expected_sha256": "64b6dba40a4b3719c132ad65a3ef7a132b07e416d98c683dc37525e1e4397408",
+        "expected_size_bytes": 120288518,
+        "actual_size_bytes": 120288518,
+        "sha256_verified_this_run": true,
+        "actual_sha256": "64b6dba40a4b3719c132ad65a3ef7a132b07e416d98c683dc37525e1e4397408",
+        "inherited_full_decode_status": "passed",
+        "full_decode_repeated": false,
+        "local_status": "present_size_matches"
+      }
+    ],
+    "bag": {
+      "logical_path": "bag_data/extracted/bags/uwb_field_20261025/bags/T10_C2static_C1straight_repeat1_retry_20261025_184755.bag",
+      "sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+      "size_bytes": 7002834
+    },
+    "pts_validation": {
+      "observations": 388,
+      "ledger_frames": 2903,
+      "first_pts_ticks": 0,
+      "last_pts_ticks": 58042,
+      "unique_vehicle_frame_pairs": 388,
+      "status": "passed"
+    },
+    "raw_location_policy": "Legacy I: copies reused read-only in place; no copies to data, downloads or extraction",
+    "all_raw_inputs_ready": true,
+    "acceptance_inputs_ready": false
+  },
+  "commands": [
+    {
+      "stage": "intake",
+      "argv": [
+        "tools/field_video_20261027/run_case.py",
+        "intake",
+        "--legacy",
+        "I:\\UWB\\project\\outputs\\video_reference_20261026",
+        "--output",
+        "I:\\UWB\\project\\outputs\\video_reference_20261027"
+      ],
+      "started_at_utc": "2026-10-27T14:29:28.427453+00:00",
+      "code_commit": "868349b543a03a6a713d1675e1d4ada7d905410c",
+      "worktree_dirty": true,
+      "source_sha256": {
+        "tools/field_video_20261027/evidence.py": "f98f52686dd044a89630ca389761c1cd1ec0e5e02e1140407b2279f1081bcbcc",
+        "tools/field_video_20261027/run_case.py": "86a2ed30439f88f87c81c276f35136f5f6f734b7a1ec0127a42fdd1705a86a74",
+        "tools/field_video_20261027/case_config.json": "93bbcf1587cdd893432a2d44880397c33d84f675993511e2e57dde754e255187",
+        "tools/field_video_20261026/annotate_floor.py": "36840a3eb512c6ef23c32bb02adb44194e63ed5aab11a8cdf60472286af1457a",
+        "tools/field_video_20261026/assemble.py": "97a512acdbd55b68d38f0b2e18ae79ef74a1bdfd7878f3fd9fa5fa55ae9ebfb3",
+        "tools/field_video_20261026/background_geometry.py": "b1f984526ce46ab29b0c43b662b6d3f1680c9ea4db9b10cd91704d3fa7954be2",
+        "tools/field_video_20261026/calibrate.py": "a55bd24da4a7bf55c96e1b99e11e25995042808186fd4f64f096a33f58eed2d5",
+        "tools/field_video_20261026/common.py": "f71f8e9208d9aa953487d748987ad68ac6933d7ca830d6761dec88701ad5980e",
+        "tools/field_video_20261026/diagnose_markers.py": "3597ded576a7031adcc5ca425bb28eef1b53e17aec4e140db2d0246177bf448f",
+        "tools/field_video_20261026/download_ranges.py": "3177a5f53390db26d47a5562bf75bd38f82ebc01cb1ad215cc9716db0a4d3632",
+        "tools/field_video_20261026/event_sync.py": "18abe8ea31f8dbcd09e5dd7363aebd52dd0b13c2aff42491f6ef83c09d29d23b",
+        "tools/field_video_20261026/intake.py": "397a7f4b16c81a30d65ec777c52cafc1d98a4ef0af38da01d01f0be8b476dda3",
+        "tools/field_video_20261026/intake_local_calibration.py": "442fef761266f8afe1f6211f4e75130c6e9a887546ef65d86dbf72050e1d5d1c",
+        "tools/field_video_20261026/manifest_patch.py": "4a634966e8e3ddb41de94cba450dff931a026029bc7abb1e17968eeed6270b2c",
+        "tools/field_video_20261026/manual_sync_candidate.py": "52c4723058daf4e7368db2d9083e2eee6316e5f3b01d89a573e3e582dbf038e4",
+        "tools/field_video_20261026/manual_timing.py": "5d70bf47ea4db51d3fe980eab55f40954018c007f3ece91798a8bc14374ee7e6",
+        "tools/field_video_20261026/media_audit.py": "21d5d15a3c7be49eb97ea81fdde84b42b43423f70050a2146e30ce7d198a22bb",
+        "tools/field_video_20261026/nominal_checks.py": "cfef342893745e32e4b4e47dc9369a29c10569cd74d3264eaea7c586ae58321f",
+        "tools/field_video_20261026/observations.py": "20c040da4835fa02afa353070182ad887fb615b0f6992e3d2611defaf079283e",
+        "tools/field_video_20261026/test_video_reference.py": "a2858bf7129a6f3ee3c83fd9f699f651a2778c6f51114b765360f8f799ea1ca3",
+        "tools/field_video_20261026/time_events.py": "46f6e7a572cccb18653d2d7e5fb11f713403f5f5b5f005357ace21ec311ce37f",
+        "tools/field_video_20261026/observation_config.json": "3dfff6f6a29382732ce38b59a5468a56f73771da4d978073308146f99da0cc05",
+        "tools/field_20261024_25/bag_decoder.py": "42a558fc0450927dd6a529ea2978361d2a1454fb6396e5237c5bf9aa9ffd2bc3"
+      },
+      "environment": {
+        "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+        "opencv": "4.12.0",
+        "numpy": "2.2.6",
+        "TEMP": "I:\\UWB\\temp",
+        "TMP": "I:\\UWB\\temp"
+      },
+      "exit_code": 0,
+      "elapsed_s": 3.8280000000377186
+    },
+    {
+      "stage": "diagnose",
+      "argv": [
+        "tools/field_video_20261027/run_case.py",
+        "diagnose",
+        "--legacy",
+        "I:\\UWB\\project\\outputs\\video_reference_20261026",
+        "--output",
+        "I:\\UWB\\project\\outputs\\video_reference_20261027"
+      ],
+      "started_at_utc": "2026-10-27T14:32:19.298659+00:00",
+      "code_commit": "868349b543a03a6a713d1675e1d4ada7d905410c",
+      "worktree_dirty": true,
+      "source_sha256": {
+        "tools/field_video_20261027/evidence.py": "f98f52686dd044a89630ca389761c1cd1ec0e5e02e1140407b2279f1081bcbcc",
+        "tools/field_video_20261027/run_case.py": "ac2c4c1dbfd0c62b7bcb6c8b3a36de4b1900cf8a49a5035164fe740c78730ee7",
+        "tools/field_video_20261027/case_config.json": "93bbcf1587cdd893432a2d44880397c33d84f675993511e2e57dde754e255187",
+        "tools/field_video_20261026/annotate_floor.py": "36840a3eb512c6ef23c32bb02adb44194e63ed5aab11a8cdf60472286af1457a",
+        "tools/field_video_20261026/assemble.py": "97a512acdbd55b68d38f0b2e18ae79ef74a1bdfd7878f3fd9fa5fa55ae9ebfb3",
+        "tools/field_video_20261026/background_geometry.py": "b1f984526ce46ab29b0c43b662b6d3f1680c9ea4db9b10cd91704d3fa7954be2",
+        "tools/field_video_20261026/calibrate.py": "a55bd24da4a7bf55c96e1b99e11e25995042808186fd4f64f096a33f58eed2d5",
+        "tools/field_video_20261026/common.py": "f71f8e9208d9aa953487d748987ad68ac6933d7ca830d6761dec88701ad5980e",
+        "tools/field_video_20261026/diagnose_markers.py": "3597ded576a7031adcc5ca425bb28eef1b53e17aec4e140db2d0246177bf448f",
+        "tools/field_video_20261026/download_ranges.py": "3177a5f53390db26d47a5562bf75bd38f82ebc01cb1ad215cc9716db0a4d3632",
+        "tools/field_video_20261026/event_sync.py": "18abe8ea31f8dbcd09e5dd7363aebd52dd0b13c2aff42491f6ef83c09d29d23b",
+        "tools/field_video_20261026/intake.py": "397a7f4b16c81a30d65ec777c52cafc1d98a4ef0af38da01d01f0be8b476dda3",
+        "tools/field_video_20261026/intake_local_calibration.py": "442fef761266f8afe1f6211f4e75130c6e9a887546ef65d86dbf72050e1d5d1c",
+        "tools/field_video_20261026/manifest_patch.py": "4a634966e8e3ddb41de94cba450dff931a026029bc7abb1e17968eeed6270b2c",
+        "tools/field_video_20261026/manual_sync_candidate.py": "52c4723058daf4e7368db2d9083e2eee6316e5f3b01d89a573e3e582dbf038e4",
+        "tools/field_video_20261026/manual_timing.py": "5d70bf47ea4db51d3fe980eab55f40954018c007f3ece91798a8bc14374ee7e6",
+        "tools/field_video_20261026/media_audit.py": "21d5d15a3c7be49eb97ea81fdde84b42b43423f70050a2146e30ce7d198a22bb",
+        "tools/field_video_20261026/nominal_checks.py": "cfef342893745e32e4b4e47dc9369a29c10569cd74d3264eaea7c586ae58321f",
+        "tools/field_video_20261026/observations.py": "20c040da4835fa02afa353070182ad887fb615b0f6992e3d2611defaf079283e",
+        "tools/field_video_20261026/test_video_reference.py": "a2858bf7129a6f3ee3c83fd9f699f651a2778c6f51114b765360f8f799ea1ca3",
+        "tools/field_video_20261026/time_events.py": "46f6e7a572cccb18653d2d7e5fb11f713403f5f5b5f005357ace21ec311ce37f",
+        "tools/field_video_20261026/observation_config.json": "3dfff6f6a29382732ce38b59a5468a56f73771da4d978073308146f99da0cc05",
+        "tools/field_20261024_25/bag_decoder.py": "42a558fc0450927dd6a529ea2978361d2a1454fb6396e5237c5bf9aa9ffd2bc3"
+      },
+      "environment": {
+        "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+        "opencv": "4.12.0",
+        "numpy": "2.2.6",
+        "TEMP": "I:\\UWB\\temp",
+        "TMP": "I:\\UWB\\temp"
+      },
+      "exit_code": 0,
+      "elapsed_s": 30.67200000002049
+    },
+    {
+      "stage": "geometry",
+      "argv": [
+        "tools/field_video_20261027/run_case.py",
+        "geometry",
+        "--legacy",
+        "I:\\UWB\\project\\outputs\\video_reference_20261026",
+        "--output",
+        "I:\\UWB\\project\\outputs\\video_reference_20261027"
+      ],
+      "started_at_utc": "2026-10-27T14:34:49.807961+00:00",
+      "code_commit": "868349b543a03a6a713d1675e1d4ada7d905410c",
+      "worktree_dirty": true,
+      "source_sha256": {
+        "tools/field_video_20261027/evidence.py": "f98f52686dd044a89630ca389761c1cd1ec0e5e02e1140407b2279f1081bcbcc",
+        "tools/field_video_20261027/run_case.py": "35d0a502f26ec60b9de9a36518455470a2eb4792e7322ec13a5c3295b1e31b45",
+        "tools/field_video_20261027/case_config.json": "93bbcf1587cdd893432a2d44880397c33d84f675993511e2e57dde754e255187",
+        "tools/field_video_20261026/annotate_floor.py": "36840a3eb512c6ef23c32bb02adb44194e63ed5aab11a8cdf60472286af1457a",
+        "tools/field_video_20261026/assemble.py": "97a512acdbd55b68d38f0b2e18ae79ef74a1bdfd7878f3fd9fa5fa55ae9ebfb3",
+        "tools/field_video_20261026/background_geometry.py": "b1f984526ce46ab29b0c43b662b6d3f1680c9ea4db9b10cd91704d3fa7954be2",
+        "tools/field_video_20261026/calibrate.py": "a55bd24da4a7bf55c96e1b99e11e25995042808186fd4f64f096a33f58eed2d5",
+        "tools/field_video_20261026/common.py": "f71f8e9208d9aa953487d748987ad68ac6933d7ca830d6761dec88701ad5980e",
+        "tools/field_video_20261026/diagnose_markers.py": "3597ded576a7031adcc5ca425bb28eef1b53e17aec4e140db2d0246177bf448f",
+        "tools/field_video_20261026/download_ranges.py": "3177a5f53390db26d47a5562bf75bd38f82ebc01cb1ad215cc9716db0a4d3632",
+        "tools/field_video_20261026/event_sync.py": "18abe8ea31f8dbcd09e5dd7363aebd52dd0b13c2aff42491f6ef83c09d29d23b",
+        "tools/field_video_20261026/intake.py": "397a7f4b16c81a30d65ec777c52cafc1d98a4ef0af38da01d01f0be8b476dda3",
+        "tools/field_video_20261026/intake_local_calibration.py": "442fef761266f8afe1f6211f4e75130c6e9a887546ef65d86dbf72050e1d5d1c",
+        "tools/field_video_20261026/manifest_patch.py": "4a634966e8e3ddb41de94cba450dff931a026029bc7abb1e17968eeed6270b2c",
+        "tools/field_video_20261026/manual_sync_candidate.py": "52c4723058daf4e7368db2d9083e2eee6316e5f3b01d89a573e3e582dbf038e4",
+        "tools/field_video_20261026/manual_timing.py": "5d70bf47ea4db51d3fe980eab55f40954018c007f3ece91798a8bc14374ee7e6",
+        "tools/field_video_20261026/media_audit.py": "21d5d15a3c7be49eb97ea81fdde84b42b43423f70050a2146e30ce7d198a22bb",
+        "tools/field_video_20261026/nominal_checks.py": "cfef342893745e32e4b4e47dc9369a29c10569cd74d3264eaea7c586ae58321f",
+        "tools/field_video_20261026/observations.py": "20c040da4835fa02afa353070182ad887fb615b0f6992e3d2611defaf079283e",
+        "tools/field_video_20261026/test_video_reference.py": "a2858bf7129a6f3ee3c83fd9f699f651a2778c6f51114b765360f8f799ea1ca3",
+        "tools/field_video_20261026/time_events.py": "46f6e7a572cccb18653d2d7e5fb11f713403f5f5b5f005357ace21ec311ce37f",
+        "tools/field_video_20261026/observation_config.json": "3dfff6f6a29382732ce38b59a5468a56f73771da4d978073308146f99da0cc05",
+        "tools/field_20261024_25/bag_decoder.py": "42a558fc0450927dd6a529ea2978361d2a1454fb6396e5237c5bf9aa9ffd2bc3"
+      },
+      "environment": {
+        "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+        "opencv": "4.12.0",
+        "numpy": "2.2.6",
+        "TEMP": "I:\\UWB\\temp",
+        "TMP": "I:\\UWB\\temp"
+      },
+      "exit_code": 0,
+      "elapsed_s": 0.9370000000344589
+    },
+    {
+      "stage": "timing",
+      "argv": [
+        "tools/field_video_20261027/run_case.py",
+        "timing",
+        "--legacy",
+        "I:\\UWB\\project\\outputs\\video_reference_20261026",
+        "--output",
+        "I:\\UWB\\project\\outputs\\video_reference_20261027"
+      ],
+      "started_at_utc": "2026-10-27T14:37:39.757238+00:00",
+      "code_commit": "868349b543a03a6a713d1675e1d4ada7d905410c",
+      "worktree_dirty": true,
+      "source_sha256": {
+        "tools/field_video_20261027/evidence.py": "bc7117eeb0a0eb69ec20905e6f9aeaad5344d1e1727f994b790973c9ce3d438b",
+        "tools/field_video_20261027/run_case.py": "45c57ff702f30a8b67b5126c90ef4134550e22df4e86a8e2d6b97bdb5a00bb3c",
+        "tools/field_video_20261027/case_config.json": "93bbcf1587cdd893432a2d44880397c33d84f675993511e2e57dde754e255187",
+        "tools/field_video_20261026/annotate_floor.py": "36840a3eb512c6ef23c32bb02adb44194e63ed5aab11a8cdf60472286af1457a",
+        "tools/field_video_20261026/assemble.py": "97a512acdbd55b68d38f0b2e18ae79ef74a1bdfd7878f3fd9fa5fa55ae9ebfb3",
+        "tools/field_video_20261026/background_geometry.py": "b1f984526ce46ab29b0c43b662b6d3f1680c9ea4db9b10cd91704d3fa7954be2",
+        "tools/field_video_20261026/calibrate.py": "a55bd24da4a7bf55c96e1b99e11e25995042808186fd4f64f096a33f58eed2d5",
+        "tools/field_video_20261026/common.py": "f71f8e9208d9aa953487d748987ad68ac6933d7ca830d6761dec88701ad5980e",
+        "tools/field_video_20261026/diagnose_markers.py": "3597ded576a7031adcc5ca425bb28eef1b53e17aec4e140db2d0246177bf448f",
+        "tools/field_video_20261026/download_ranges.py": "3177a5f53390db26d47a5562bf75bd38f82ebc01cb1ad215cc9716db0a4d3632",
+        "tools/field_video_20261026/event_sync.py": "18abe8ea31f8dbcd09e5dd7363aebd52dd0b13c2aff42491f6ef83c09d29d23b",
+        "tools/field_video_20261026/intake.py": "397a7f4b16c81a30d65ec777c52cafc1d98a4ef0af38da01d01f0be8b476dda3",
+        "tools/field_video_20261026/intake_local_calibration.py": "442fef761266f8afe1f6211f4e75130c6e9a887546ef65d86dbf72050e1d5d1c",
+        "tools/field_video_20261026/manifest_patch.py": "4a634966e8e3ddb41de94cba450dff931a026029bc7abb1e17968eeed6270b2c",
+        "tools/field_video_20261026/manual_sync_candidate.py": "52c4723058daf4e7368db2d9083e2eee6316e5f3b01d89a573e3e582dbf038e4",
+        "tools/field_video_20261026/manual_timing.py": "5d70bf47ea4db51d3fe980eab55f40954018c007f3ece91798a8bc14374ee7e6",
+        "tools/field_video_20261026/media_audit.py": "21d5d15a3c7be49eb97ea81fdde84b42b43423f70050a2146e30ce7d198a22bb",
+        "tools/field_video_20261026/nominal_checks.py": "cfef342893745e32e4b4e47dc9369a29c10569cd74d3264eaea7c586ae58321f",
+        "tools/field_video_20261026/observations.py": "20c040da4835fa02afa353070182ad887fb615b0f6992e3d2611defaf079283e",
+        "tools/field_video_20261026/test_video_reference.py": "a2858bf7129a6f3ee3c83fd9f699f651a2778c6f51114b765360f8f799ea1ca3",
+        "tools/field_video_20261026/time_events.py": "46f6e7a572cccb18653d2d7e5fb11f713403f5f5b5f005357ace21ec311ce37f",
+        "tools/field_video_20261026/observation_config.json": "3dfff6f6a29382732ce38b59a5468a56f73771da4d978073308146f99da0cc05",
+        "tools/field_20261024_25/bag_decoder.py": "42a558fc0450927dd6a529ea2978361d2a1454fb6396e5237c5bf9aa9ffd2bc3"
+      },
+      "environment": {
+        "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+        "opencv": "4.12.0",
+        "numpy": "2.2.6",
+        "TEMP": "I:\\UWB\\temp",
+        "TMP": "I:\\UWB\\temp"
+      },
+      "exit_code": 0,
+      "elapsed_s": 1.6559999999590218
+    },
+    {
+      "stage": "review",
+      "argv": [
+        "tools/field_video_20261027/run_case.py",
+        "review",
+        "--legacy",
+        "I:\\UWB\\project\\outputs\\video_reference_20261026",
+        "--output",
+        "I:\\UWB\\project\\outputs\\video_reference_20261027"
+      ],
+      "started_at_utc": "2026-10-27T14:39:27.506597+00:00",
+      "code_commit": "868349b543a03a6a713d1675e1d4ada7d905410c",
+      "worktree_dirty": true,
+      "source_sha256": {
+        "tools/field_video_20261027/evidence.py": "bc7117eeb0a0eb69ec20905e6f9aeaad5344d1e1727f994b790973c9ce3d438b",
+        "tools/field_video_20261027/run_case.py": "96bac4aa65e0ce0ba167a25986149af2d1e9890978bb1962293e861dddfd237a",
+        "tools/field_video_20261027/case_config.json": "93bbcf1587cdd893432a2d44880397c33d84f675993511e2e57dde754e255187",
+        "tools/field_video_20261026/annotate_floor.py": "36840a3eb512c6ef23c32bb02adb44194e63ed5aab11a8cdf60472286af1457a",
+        "tools/field_video_20261026/assemble.py": "97a512acdbd55b68d38f0b2e18ae79ef74a1bdfd7878f3fd9fa5fa55ae9ebfb3",
+        "tools/field_video_20261026/background_geometry.py": "b1f984526ce46ab29b0c43b662b6d3f1680c9ea4db9b10cd91704d3fa7954be2",
+        "tools/field_video_20261026/calibrate.py": "a55bd24da4a7bf55c96e1b99e11e25995042808186fd4f64f096a33f58eed2d5",
+        "tools/field_video_20261026/common.py": "f71f8e9208d9aa953487d748987ad68ac6933d7ca830d6761dec88701ad5980e",
+        "tools/field_video_20261026/diagnose_markers.py": "3597ded576a7031adcc5ca425bb28eef1b53e17aec4e140db2d0246177bf448f",
+        "tools/field_video_20261026/download_ranges.py": "3177a5f53390db26d47a5562bf75bd38f82ebc01cb1ad215cc9716db0a4d3632",
+        "tools/field_video_20261026/event_sync.py": "18abe8ea31f8dbcd09e5dd7363aebd52dd0b13c2aff42491f6ef83c09d29d23b",
+        "tools/field_video_20261026/intake.py": "397a7f4b16c81a30d65ec777c52cafc1d98a4ef0af38da01d01f0be8b476dda3",
+        "tools/field_video_20261026/intake_local_calibration.py": "442fef761266f8afe1f6211f4e75130c6e9a887546ef65d86dbf72050e1d5d1c",
+        "tools/field_video_20261026/manifest_patch.py": "4a634966e8e3ddb41de94cba450dff931a026029bc7abb1e17968eeed6270b2c",
+        "tools/field_video_20261026/manual_sync_candidate.py": "52c4723058daf4e7368db2d9083e2eee6316e5f3b01d89a573e3e582dbf038e4",
+        "tools/field_video_20261026/manual_timing.py": "5d70bf47ea4db51d3fe980eab55f40954018c007f3ece91798a8bc14374ee7e6",
+        "tools/field_video_20261026/media_audit.py": "21d5d15a3c7be49eb97ea81fdde84b42b43423f70050a2146e30ce7d198a22bb",
+        "tools/field_video_20261026/nominal_checks.py": "cfef342893745e32e4b4e47dc9369a29c10569cd74d3264eaea7c586ae58321f",
+        "tools/field_video_20261026/observations.py": "20c040da4835fa02afa353070182ad887fb615b0f6992e3d2611defaf079283e",
+        "tools/field_video_20261026/test_video_reference.py": "a2858bf7129a6f3ee3c83fd9f699f651a2778c6f51114b765360f8f799ea1ca3",
+        "tools/field_video_20261026/time_events.py": "46f6e7a572cccb18653d2d7e5fb11f713403f5f5b5f005357ace21ec311ce37f",
+        "tools/field_video_20261026/observation_config.json": "3dfff6f6a29382732ce38b59a5468a56f73771da4d978073308146f99da0cc05",
+        "tools/field_20261024_25/bag_decoder.py": "42a558fc0450927dd6a529ea2978361d2a1454fb6396e5237c5bf9aa9ffd2bc3"
+      },
+      "environment": {
+        "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+        "opencv": "4.12.0",
+        "numpy": "2.2.6",
+        "TEMP": "I:\\UWB\\temp",
+        "TMP": "I:\\UWB\\temp"
+      },
+      "exit_code": 0,
+      "elapsed_s": 1.6089999999967404
+    },
+    {
+      "stage": "tests",
+      "argv": [
+        "tools/field_video_20261027/run_case.py",
+        "tests",
+        "--legacy",
+        "I:\\UWB\\project\\outputs\\video_reference_20261026",
+        "--output",
+        "I:\\UWB\\project\\outputs\\video_reference_20261027"
+      ],
+      "started_at_utc": "2026-10-27T14:46:22.511197+00:00",
+      "code_commit": "868349b543a03a6a713d1675e1d4ada7d905410c",
+      "worktree_dirty": true,
+      "source_sha256": {
+        "tools/field_video_20261027/evidence.py": "bc7117eeb0a0eb69ec20905e6f9aeaad5344d1e1727f994b790973c9ce3d438b",
+        "tools/field_video_20261027/run_case.py": "ff733558ec2490dfa9ef4362772bd11b0c90f722b0449baab7fa8580ec325366",
+        "tools/field_video_20261027/test_case.py": "47560089e0a44d45f145e9261b87fb636ed5073e93a594d59fc65d722972f4d1",
+        "tools/field_video_20261027/verify_case.py": "a03cf08ee6d7c76ed0fa9b4f513b1432a84e8d008f10724e040fa436ab9a6064",
+        "tools/field_video_20261027/case_config.json": "93bbcf1587cdd893432a2d44880397c33d84f675993511e2e57dde754e255187",
+        "tools/field_video_20261026/annotate_floor.py": "36840a3eb512c6ef23c32bb02adb44194e63ed5aab11a8cdf60472286af1457a",
+        "tools/field_video_20261026/assemble.py": "97a512acdbd55b68d38f0b2e18ae79ef74a1bdfd7878f3fd9fa5fa55ae9ebfb3",
+        "tools/field_video_20261026/background_geometry.py": "b1f984526ce46ab29b0c43b662b6d3f1680c9ea4db9b10cd91704d3fa7954be2",
+        "tools/field_video_20261026/calibrate.py": "a55bd24da4a7bf55c96e1b99e11e25995042808186fd4f64f096a33f58eed2d5",
+        "tools/field_video_20261026/common.py": "f71f8e9208d9aa953487d748987ad68ac6933d7ca830d6761dec88701ad5980e",
+        "tools/field_video_20261026/diagnose_markers.py": "3597ded576a7031adcc5ca425bb28eef1b53e17aec4e140db2d0246177bf448f",
+        "tools/field_video_20261026/download_ranges.py": "3177a5f53390db26d47a5562bf75bd38f82ebc01cb1ad215cc9716db0a4d3632",
+        "tools/field_video_20261026/event_sync.py": "18abe8ea31f8dbcd09e5dd7363aebd52dd0b13c2aff42491f6ef83c09d29d23b",
+        "tools/field_video_20261026/intake.py": "397a7f4b16c81a30d65ec777c52cafc1d98a4ef0af38da01d01f0be8b476dda3",
+        "tools/field_video_20261026/intake_local_calibration.py": "442fef761266f8afe1f6211f4e75130c6e9a887546ef65d86dbf72050e1d5d1c",
+        "tools/field_video_20261026/manifest_patch.py": "4a634966e8e3ddb41de94cba450dff931a026029bc7abb1e17968eeed6270b2c",
+        "tools/field_video_20261026/manual_sync_candidate.py": "52c4723058daf4e7368db2d9083e2eee6316e5f3b01d89a573e3e582dbf038e4",
+        "tools/field_video_20261026/manual_timing.py": "5d70bf47ea4db51d3fe980eab55f40954018c007f3ece91798a8bc14374ee7e6",
+        "tools/field_video_20261026/media_audit.py": "21d5d15a3c7be49eb97ea81fdde84b42b43423f70050a2146e30ce7d198a22bb",
+        "tools/field_video_20261026/nominal_checks.py": "cfef342893745e32e4b4e47dc9369a29c10569cd74d3264eaea7c586ae58321f",
+        "tools/field_video_20261026/observations.py": "20c040da4835fa02afa353070182ad887fb615b0f6992e3d2611defaf079283e",
+        "tools/field_video_20261026/test_video_reference.py": "a2858bf7129a6f3ee3c83fd9f699f651a2778c6f51114b765360f8f799ea1ca3",
+        "tools/field_video_20261026/time_events.py": "46f6e7a572cccb18653d2d7e5fb11f713403f5f5b5f005357ace21ec311ce37f",
+        "tools/field_video_20261026/observation_config.json": "3dfff6f6a29382732ce38b59a5468a56f73771da4d978073308146f99da0cc05",
+        "tools/field_20261024_25/bag_decoder.py": "42a558fc0450927dd6a529ea2978361d2a1454fb6396e5237c5bf9aa9ffd2bc3"
+      },
+      "environment": {
+        "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+        "opencv": "4.12.0",
+        "numpy": "2.2.6",
+        "TEMP": "I:\\UWB\\temp",
+        "TMP": "I:\\UWB\\temp"
+      },
+      "exit_code": 0,
+      "elapsed_s": 4.155999999959022
+    },
+    {
+      "stage": "metadata",
+      "argv": [
+        "tools/field_video_20261027/run_case.py",
+        "metadata",
+        "--legacy",
+        "I:\\UWB\\project\\outputs\\video_reference_20261026",
+        "--output",
+        "I:\\UWB\\project\\outputs\\video_reference_20261027"
+      ],
+      "started_at_utc": "2026-10-27T14:49:43.951454+00:00",
+      "code_commit": "868349b543a03a6a713d1675e1d4ada7d905410c",
+      "worktree_dirty": true,
+      "source_sha256": {
+        "tools/field_video_20261027/evidence.py": "bc7117eeb0a0eb69ec20905e6f9aeaad5344d1e1727f994b790973c9ce3d438b",
+        "tools/field_video_20261027/run_case.py": "9f73acf5ebd45c2fa3994245b1bd90107efd1614c3ac156968b9b4f02873e570",
+        "tools/field_video_20261027/test_case.py": "47560089e0a44d45f145e9261b87fb636ed5073e93a594d59fc65d722972f4d1",
+        "tools/field_video_20261027/verify_case.py": "a03cf08ee6d7c76ed0fa9b4f513b1432a84e8d008f10724e040fa436ab9a6064",
+        "tools/field_video_20261027/case_config.json": "93bbcf1587cdd893432a2d44880397c33d84f675993511e2e57dde754e255187",
+        "tools/field_video_20261026/annotate_floor.py": "36840a3eb512c6ef23c32bb02adb44194e63ed5aab11a8cdf60472286af1457a",
+        "tools/field_video_20261026/assemble.py": "97a512acdbd55b68d38f0b2e18ae79ef74a1bdfd7878f3fd9fa5fa55ae9ebfb3",
+        "tools/field_video_20261026/background_geometry.py": "b1f984526ce46ab29b0c43b662b6d3f1680c9ea4db9b10cd91704d3fa7954be2",
+        "tools/field_video_20261026/calibrate.py": "a55bd24da4a7bf55c96e1b99e11e25995042808186fd4f64f096a33f58eed2d5",
+        "tools/field_video_20261026/common.py": "f71f8e9208d9aa953487d748987ad68ac6933d7ca830d6761dec88701ad5980e",
+        "tools/field_video_20261026/diagnose_markers.py": "3597ded576a7031adcc5ca425bb28eef1b53e17aec4e140db2d0246177bf448f",
+        "tools/field_video_20261026/download_ranges.py": "3177a5f53390db26d47a5562bf75bd38f82ebc01cb1ad215cc9716db0a4d3632",
+        "tools/field_video_20261026/event_sync.py": "18abe8ea31f8dbcd09e5dd7363aebd52dd0b13c2aff42491f6ef83c09d29d23b",
+        "tools/field_video_20261026/intake.py": "397a7f4b16c81a30d65ec777c52cafc1d98a4ef0af38da01d01f0be8b476dda3",
+        "tools/field_video_20261026/intake_local_calibration.py": "442fef761266f8afe1f6211f4e75130c6e9a887546ef65d86dbf72050e1d5d1c",
+        "tools/field_video_20261026/manifest_patch.py": "4a634966e8e3ddb41de94cba450dff931a026029bc7abb1e17968eeed6270b2c",
+        "tools/field_video_20261026/manual_sync_candidate.py": "52c4723058daf4e7368db2d9083e2eee6316e5f3b01d89a573e3e582dbf038e4",
+        "tools/field_video_20261026/manual_timing.py": "5d70bf47ea4db51d3fe980eab55f40954018c007f3ece91798a8bc14374ee7e6",
+        "tools/field_video_20261026/media_audit.py": "21d5d15a3c7be49eb97ea81fdde84b42b43423f70050a2146e30ce7d198a22bb",
+        "tools/field_video_20261026/nominal_checks.py": "cfef342893745e32e4b4e47dc9369a29c10569cd74d3264eaea7c586ae58321f",
+        "tools/field_video_20261026/observations.py": "20c040da4835fa02afa353070182ad887fb615b0f6992e3d2611defaf079283e",
+        "tools/field_video_20261026/test_video_reference.py": "a2858bf7129a6f3ee3c83fd9f699f651a2778c6f51114b765360f8f799ea1ca3",
+        "tools/field_video_20261026/time_events.py": "46f6e7a572cccb18653d2d7e5fb11f713403f5f5b5f005357ace21ec311ce37f",
+        "tools/field_video_20261026/observation_config.json": "3dfff6f6a29382732ce38b59a5468a56f73771da4d978073308146f99da0cc05",
+        "tools/field_20261024_25/bag_decoder.py": "42a558fc0450927dd6a529ea2978361d2a1454fb6396e5237c5bf9aa9ffd2bc3"
+      },
+      "environment": {
+        "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+        "opencv": "4.12.0",
+        "numpy": "2.2.6",
+        "TEMP": "I:\\UWB\\temp",
+        "TMP": "I:\\UWB\\temp"
+      },
+      "exit_code": 0,
+      "elapsed_s": 1.8589999999967404
+    },
+    {
+      "stage": "package",
+      "argv": [
+        "tools/field_video_20261027/run_case.py",
+        "package",
+        "--legacy",
+        "I:\\UWB\\project\\outputs\\video_reference_20261026",
+        "--output",
+        "I:\\UWB\\project\\outputs\\video_reference_20261027"
+      ],
+      "started_at_utc": "2026-10-27T14:50:19.786289+00:00",
+      "code_commit": "868349b543a03a6a713d1675e1d4ada7d905410c",
+      "worktree_dirty": true,
+      "source_sha256": {
+        "tools/field_video_20261027/evidence.py": "bc7117eeb0a0eb69ec20905e6f9aeaad5344d1e1727f994b790973c9ce3d438b",
+        "tools/field_video_20261027/run_case.py": "9f73acf5ebd45c2fa3994245b1bd90107efd1614c3ac156968b9b4f02873e570",
+        "tools/field_video_20261027/test_case.py": "47560089e0a44d45f145e9261b87fb636ed5073e93a594d59fc65d722972f4d1",
+        "tools/field_video_20261027/verify_case.py": "a03cf08ee6d7c76ed0fa9b4f513b1432a84e8d008f10724e040fa436ab9a6064",
+        "tools/field_video_20261027/case_config.json": "93bbcf1587cdd893432a2d44880397c33d84f675993511e2e57dde754e255187",
+        "tools/field_video_20261026/annotate_floor.py": "36840a3eb512c6ef23c32bb02adb44194e63ed5aab11a8cdf60472286af1457a",
+        "tools/field_video_20261026/assemble.py": "97a512acdbd55b68d38f0b2e18ae79ef74a1bdfd7878f3fd9fa5fa55ae9ebfb3",
+        "tools/field_video_20261026/background_geometry.py": "b1f984526ce46ab29b0c43b662b6d3f1680c9ea4db9b10cd91704d3fa7954be2",
+        "tools/field_video_20261026/calibrate.py": "a55bd24da4a7bf55c96e1b99e11e25995042808186fd4f64f096a33f58eed2d5",
+        "tools/field_video_20261026/common.py": "f71f8e9208d9aa953487d748987ad68ac6933d7ca830d6761dec88701ad5980e",
+        "tools/field_video_20261026/diagnose_markers.py": "3597ded576a7031adcc5ca425bb28eef1b53e17aec4e140db2d0246177bf448f",
+        "tools/field_video_20261026/download_ranges.py": "3177a5f53390db26d47a5562bf75bd38f82ebc01cb1ad215cc9716db0a4d3632",
+        "tools/field_video_20261026/event_sync.py": "18abe8ea31f8dbcd09e5dd7363aebd52dd0b13c2aff42491f6ef83c09d29d23b",
+        "tools/field_video_20261026/intake.py": "397a7f4b16c81a30d65ec777c52cafc1d98a4ef0af38da01d01f0be8b476dda3",
+        "tools/field_video_20261026/intake_local_calibration.py": "442fef761266f8afe1f6211f4e75130c6e9a887546ef65d86dbf72050e1d5d1c",
+        "tools/field_video_20261026/manifest_patch.py": "4a634966e8e3ddb41de94cba450dff931a026029bc7abb1e17968eeed6270b2c",
+        "tools/field_video_20261026/manual_sync_candidate.py": "52c4723058daf4e7368db2d9083e2eee6316e5f3b01d89a573e3e582dbf038e4",
+        "tools/field_video_20261026/manual_timing.py": "5d70bf47ea4db51d3fe980eab55f40954018c007f3ece91798a8bc14374ee7e6",
+        "tools/field_video_20261026/media_audit.py": "21d5d15a3c7be49eb97ea81fdde84b42b43423f70050a2146e30ce7d198a22bb",
+        "tools/field_video_20261026/nominal_checks.py": "cfef342893745e32e4b4e47dc9369a29c10569cd74d3264eaea7c586ae58321f",
+        "tools/field_video_20261026/observations.py": "20c040da4835fa02afa353070182ad887fb615b0f6992e3d2611defaf079283e",
+        "tools/field_video_20261026/test_video_reference.py": "a2858bf7129a6f3ee3c83fd9f699f651a2778c6f51114b765360f8f799ea1ca3",
+        "tools/field_video_20261026/time_events.py": "46f6e7a572cccb18653d2d7e5fb11f713403f5f5b5f005357ace21ec311ce37f",
+        "tools/field_video_20261026/observation_config.json": "3dfff6f6a29382732ce38b59a5468a56f73771da4d978073308146f99da0cc05",
+        "tools/field_20261024_25/bag_decoder.py": "42a558fc0450927dd6a529ea2978361d2a1454fb6396e5237c5bf9aa9ffd2bc3"
+      },
+      "environment": {
+        "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+        "opencv": "4.12.0",
+        "numpy": "2.2.6",
+        "TEMP": "I:\\UWB\\temp",
+        "TMP": "I:\\UWB\\temp"
+      },
+      "exit_code": 0,
+      "elapsed_s": 2.4060000000172295
+    }
+  ],
+  "outputs": [
+    {
+      "relative_path": "calibration_review.json",
+      "sha256": "27b538cbed522fec8e8fda1a05ad3ec3b4b4bf065383dd0656280bd6ee455779"
+    },
+    {
+      "relative_path": "checkpoint_001.json",
+      "sha256": "e9446af0a16cdebdd0de79f318b2fe1ef5968293ece2fc683754ca3baa7a76be"
+    },
+    {
+      "relative_path": "commands.jsonl",
+      "sha256": "2a4c2fe70c08e21a5940cd285aed56ac0d306c793003b0110630fa73d4426bf4"
+    },
+    {
+      "relative_path": "diagnostics_001/car1_front_evidence.json",
+      "sha256": "6d265ae14a3aabb0e5c0451db421199418cb734664d4d4576c41ff932a377238"
+    },
+    {
+      "relative_path": "diagnostics_001/edge_profiles.json",
+      "sha256": "b3330a4a3c51896b61843f5f5e30c7d0f2996e9ea94e70cd4e7aa814852603f6"
+    },
+    {
+      "relative_path": "diagnostics_001/extraction_summary.json",
+      "sha256": "bca50979a27957a827b3907ec863f1bbe1b9eb32845c47b930894dca3405ef04"
+    },
+    {
+      "relative_path": "diagnostics_001/IMG_7365_Car2_native_crop.png",
+      "sha256": "e48b2d20105a82776974bde683a9b30945163f0bca449e740aa3c4d2ac14719c"
+    },
+    {
+      "relative_path": "diagnostics_001/IMG_7366_Car2_native_crop.png",
+      "sha256": "3e9ca06985e99aa1387c3e4dbe99c14a28b525652ccd2895b89da2b049044046"
+    },
+    {
+      "relative_path": "diagnostics_001/IMG_7367_Car2_native_crop.png",
+      "sha256": "3d9d28e09b9709544bfe1c7d4347a11bfe8ed2e3c18cf972613b3e3e80bbb960"
+    },
+    {
+      "relative_path": "diagnostics_001/original_frame_contact_sheet.jpg",
+      "sha256": "227f48e339cbccc61354e1aae71147f2940f0fe502e8184675501ec99d8b193a"
+    },
+    {
+      "relative_path": "diagnostics_001/sample_recheck_observations.csv",
+      "sha256": "b2254341bf07151c39f918e9537192776ca0ce4a86a30cc8f5b9a069d4dee1b6"
+    },
+    {
+      "relative_path": "diagnostics_001/selected_frames.json",
+      "sha256": "715132ccc7d74a1a745f6d1b1195162e2f6971fc256bea8c73eb3ae047b834cd"
+    },
+    {
+      "relative_path": "frame_transforms.json",
+      "sha256": "f7cf3ba1859b11534cda5decca9d569cb0505fa02d1f795ee37486c6e4deb9e3"
+    },
+    {
+      "relative_path": "HANDOFF.md",
+      "sha256": "fa55d33c0240ef2a89c84a4c6c8f62d6fe729f80670315de4e553ee30331af3e"
+    },
+    {
+      "relative_path": "input_evidence.json",
+      "sha256": "679980c4b6c5ad62a6f531b8887b1ab3c0646f9b56ad317e24908c7d6f6c2c49"
+    },
+    {
+      "relative_path": "marker_observations.csv",
+      "sha256": "7540db7355edc361e63c45dcc482d64b3bd75d43090551e7926024d34eb7be8a"
+    },
+    {
+      "relative_path": "missing_evidence.csv",
+      "sha256": "6a4e24182da91480ed5642a0bd4a2299d0f318e97dbbdeb37f1d84cc58b7ca19"
+    },
+    {
+      "relative_path": "missing_evidence.json",
+      "sha256": "b11e44dd529ecc06e46967f22b38eba802e6f336ee912be2627777b308e5eee1"
+    },
+    {
+      "relative_path": "MISSING_EVIDENCE.md",
+      "sha256": "332d5e6674988040705b07f21c0dab875c659b8c4c20d76bb7d33adb8eb6c76e"
+    },
+    {
+      "relative_path": "prior_status.json",
+      "sha256": "981c8d306e7adde9888a3f1fcdf87a1bf8a92127bb20f4d2a12a60972df20d35"
+    },
+    {
+      "relative_path": "python_packages.txt",
+      "sha256": "fd3acf66ca85bf5e34d66da85518ca900a376eb15317610252e0fab429b0c183"
+    },
+    {
+      "relative_path": "README.md",
+      "sha256": "5e932b7e507965457a8b022f873b0134e156a7b88371757f55200b1530fe50ad"
+    },
+    {
+      "relative_path": "reference_validation.json",
+      "sha256": "f2418a29bdf090b2acbe6937be33b93287cbd179ee05507fd1e8067d508c678b"
+    },
+    {
+      "relative_path": "review_001/crop_provenance.json",
+      "sha256": "eb3e989bbdaa9771ab1aead44f6147f847bc97895efcac0c43e6d74de3cc0eb4"
+    },
+    {
+      "relative_path": "review_001/T10_frame_1452_car1_native_crop.png",
+      "sha256": "33d17b9dbf826d330edb2acc56201fac07daa2708d17da9ec8111066b4401aef"
+    },
+    {
+      "relative_path": "review_001/T10_frame_1452_car2_native_crop.png",
+      "sha256": "71717f4b7d38fb07d72f4f5906e958835461e037884d9a39160569341e79625c"
+    },
+    {
+      "relative_path": "review_001/T10_frame_15_car1_native_crop.png",
+      "sha256": "74e5585b91caba9d6ba0a4fce00d6d1e957686ce76487719ed994af0e597d0c0"
+    },
+    {
+      "relative_path": "review_001/T10_frame_15_car2_native_crop.png",
+      "sha256": "31e62152d757b08658dd01fcab4ba05e00118004c19ec4e5a42b1232d216d0ec"
+    },
+    {
+      "relative_path": "rotation_spotcheck.json",
+      "sha256": "02e265fe4a918f0e42555dcf25cdf10fe7ae70733e458e95acb04a296603af59"
+    },
+    {
+      "relative_path": "source_lineage.json",
+      "sha256": "3e9fd9ee7e6cec7ddfc7c89cb70186858e15e6f4a491771c6573cab7bf117a5c"
+    },
+    {
+      "relative_path": "T10_candidate_geometry.csv",
+      "sha256": "e909a0888642f2229cb7c2e75aba0d1688e4ef47a399fa278fb9cd6d12c6289c"
+    },
+    {
+      "relative_path": "T10_frame_pts.csv",
+      "sha256": "445570cd89b1197eb404da85ea8c2c36482f20c497a5d85e371fed15e046dd1f"
+    },
+    {
+      "relative_path": "T10_geometry_summary.json",
+      "sha256": "b087613b5e1e8cca6391cf4a8bcfe488197d6eb309c449b9de855031fba2f699"
+    },
+    {
+      "relative_path": "T10_original_odom_cmd.csv",
+      "sha256": "81deee58268e60c6723a03594bca168fd710a419f12c29dd95587cef50714c2e"
+    },
+    {
+      "relative_path": "T10_sensitivity.csv",
+      "sha256": "ead0a0ea5c93d544f9395570bbe0d0bc43b87fe885ca250c1bde3bccf768b74f"
+    },
+    {
+      "relative_path": "T10_square_pose_diagnostics.json",
+      "sha256": "c9bb83080af3a6882f628f08ee12ef28484c529b6b67ed3995a70cd467b6f564"
+    },
+    {
+      "relative_path": "T10_time_audit.json",
+      "sha256": "da29ff8f6a04be4e2be9024941c0d693c756a657e03a6deb18bf2fbde881d868"
+    },
+    {
+      "relative_path": "tests_001/new.log",
+      "sha256": "ba3fa7093387ce8c52765299d2d8145ec23090866c4caefb6d025fdfe8c2252b"
+    },
+    {
+      "relative_path": "tests_001/prior.log",
+      "sha256": "c76baaa520e06a440e125daf00fe6ee0b94edb6c5f51f7eb814010c2891c8180"
+    },
+    {
+      "relative_path": "tests_001/test_results.json",
+      "sha256": "0d387d25736933e03a9ceb5c99e31e9723805c29781d04861dad6f97d5c9cc0f"
+    },
+    {
+      "relative_path": "time_mapping.json",
+      "sha256": "4affe31a6ff4b13557203c860bb6a6ff504e426da05237a2fe9081e15edc6780"
+    },
+    {
+      "relative_path": "verification.json",
+      "sha256": "034f57f1b96b57878b87be249419c4743758351814aff2f96ee9f56b557fd755"
+    },
+    {
+      "relative_path": "video_inventory.csv",
+      "sha256": "de4e52c2b2318c7f6cff7c038ad3adc2d6e845b48ae7f35a6086ad74c2832102"
+    },
+    {
+      "relative_path": "visual_review.json",
+      "sha256": "0d166d84b17c560a607cbac51fb1d022b8d6c3723ed35893997c63ea12127baf"
+    }
+  ],
+  "manifest_policy": "run.json excludes itself and final SHA256SUMS to avoid cycles; SHA256SUMS includes run.json and excludes itself",
+  "blocked_reasons": [
+    "实际逐点尺量、点位误差和像素标注不确定度未提供，已在B端补证中确认",
+    "实际坐标/测量不确定度及逐片实际位置朝向未确认；Car2三Q片提取失败",
+    "稳定内参与逐片成像等价性未验证；棋盘平整性不明；T10外参依赖传播的名义P且P2在画外",
+    "完整角度/水平性/偏移测量不确定度仍未知；旧报告相反边推断已保留并按最新人工来源更新",
+    "刚性板形状、倾角、marker→body旋转、角点/中心偏差及各测量不确定度未知",
+    "独立同步事件、T10同期offset/drift及打戳/物理事件差的界未取得，先前补证已明确未找到",
+    "精确同次未挪动停车窗绑定和量测不确定度不明；实际T10起始几何未单独确认",
+    "针对用途的独立验收容差和总不确定度模型未批准"
+  ],
+  "completed_effective_subtasks": [
+    "raw identity",
+    "PTS/observation consistency",
+    "targeted original 4K extraction diagnostics",
+    "conditional room/height/lever-arm computation with declared assumptions",
+    "original odom/cmd event reproduction",
+    "independent numerical readback and negative tests"
+  ],
+  "limitations": [
+    "No independently accepted metric video reference",
+    "No algorithm runs or holdout localization tuning"
+  ],
+  "future_reproduction": "Run code at its submitted commit, with identical source/config hashes and original assets; original runs used explicitly recorded dirty working sources at the common baseline"
+}

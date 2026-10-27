@@ -1,0 +1,114 @@
+{
+  "records": [
+    {
+      "video": "IMG_7336.MOV",
+      "video_sha256": "c2b63890aa764c2128b6103163540073607dd7a131cdcdf05cf14ee916dc72c8",
+      "first_pts_ticks": 0,
+      "time_base_num": 1,
+      "time_base_den": 600,
+      "encoded_size_wh": [
+        3840,
+        2160
+      ],
+      "rotation_ccw_deg": 0,
+      "encoded_to_display": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "display_size_wh": [
+        3840,
+        2160
+      ],
+      "decoded_frames_for_metadata": 1,
+      "image_saved": false,
+      "full_decode_repeated": false
+    },
+    {
+      "video": "IMG_7337.MOV",
+      "video_sha256": "3abd6bfe961b6b7a5a9d184f1cd6dda61fc8569d4bf5e41f5024fcb4ddd03dd6",
+      "first_pts_ticks": 0,
+      "time_base_num": 1,
+      "time_base_den": 600,
+      "encoded_size_wh": [
+        3840,
+        2160
+      ],
+      "rotation_ccw_deg": -90,
+      "encoded_to_display": [
+        [
+          0.0,
+          -1.0,
+          2159.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "display_size_wh": [
+        2160,
+        3840
+      ],
+      "decoded_frames_for_metadata": 1,
+      "image_saved": false,
+      "full_decode_repeated": false
+    },
+    {
+      "video": "IMG_7347.MOV",
+      "video_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+      "first_pts_ticks": 0,
+      "time_base_num": 1,
+      "time_base_den": 600,
+      "encoded_size_wh": [
+        3840,
+        2160
+      ],
+      "rotation_ccw_deg": 0,
+      "encoded_to_display": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "display_size_wh": [
+        3840,
+        2160
+      ],
+      "decoded_frames_for_metadata": 1,
+      "image_saved": false,
+      "full_decode_repeated": false
+    }
+  ],
+  "status": "passed",
+  "purpose": "Targeted first-frame original metadata verification only; not a repeated media integrity audit"
+}

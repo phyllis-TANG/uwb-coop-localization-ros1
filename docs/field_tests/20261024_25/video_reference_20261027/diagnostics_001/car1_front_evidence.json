@@ -1,0 +1,72 @@
+{
+  "operator_current": {
+    "source": "User task instruction in this chat, 2026-10-27 Asia/Shanghai",
+    "verbatim": "Car1标题边朝车头，车头为红色支架/机械臂侧，保留该人工来源。",
+    "front_edge": "printed_title_edge",
+    "body_front": "red_support_mechanical_arm_side",
+    "numeric_angle_uncertainty_rad": null,
+    "precedence": "This explicit current operator statement supersedes the prior report's opposite-edge inference. Retain prior source and opposite-direction sensitivity; never select direction by positional error."
+  },
+  "prior_operator_and_inference": {
+    "schema_version": 1,
+    "source": "operator reply in this guidance chat on 2026-10-26",
+    "operator_verbatim": "指的是车头方向car1车头是红色支架一侧 也就是机械臂一侧",
+    "directly_confirmed_fact": "Car1 body +X points toward the red support / mechanical-arm side",
+    "visual_inference_separate_from_operator_measurement": {
+      "evidence": "docs/field_tests/20261024_25/evidence/car1_top.jpg and car1_side.jpg; corresponding raw video views",
+      "marker_ID0_canonical_top_edge": "toward printed title / mast side in installation image",
+      "body_front_side": "opposite canonical marker +Y edge",
+      "nominal_hypothesis": "body_front_marker_minus_Y",
+      "nominal_R_body_marker": [
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "angle_uncertainty_rad": null,
+      "status": "qualitative_front_side_resolved_not_a_measured_full_rotation"
+    },
+    "Q_positions_or_discrepancies_used_to_choose_rotation": false,
+    "public_geometry_modified": false,
+    "Car2_rotation_status": "still_unknown"
+  },
+  "installation_image": "docs/field_tests/20261024_25/evidence/car1_top.jpg",
+  "image_sha256": "ff905204d2f64d0d383da04fc936fc2b624c9dd16949a9e96797906ac3dcccbb",
+  "automatically_decoded_ID": 0,
+  "corners_encoded_px": [
+    [
+      357.2110290527344,
+      551.6748046875
+    ],
+    [
+      598.6168212890625,
+      548.5617065429688
+    ],
+    [
+      611.5895385742188,
+      784.1442260742188
+    ],
+    [
+      357.5736999511719,
+      789.4013061523438
+    ]
+  ],
+  "analyst_visual_read": "Printed CAR 1 title lies beyond edge corners 0-1 in the original installation image; therefore title side is canonical marker +Y under the declared corner convention",
+  "new_conditional_relation": "body +X toward canonical marker +Y, from current explicit user title-edge statement and this installation-image reading",
+  "full_3D_rotation_measured": false,
+  "angle_uncertainty_rad": null,
+  "public_geometry_changed": false,
+  "selected_using_Q_or_fusion": false,
+  "previous_opposite_direction_retained_as_sensitivity": true
+}

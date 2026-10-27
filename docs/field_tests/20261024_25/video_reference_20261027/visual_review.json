@@ -1,0 +1,25 @@
+{
+  "observer": "assistant visual review in this task, not a new human field measurement",
+  "inputs": [
+    "diagnostics_001/original_frame_contact_sheet.jpg",
+    "diagnostics_001/IMG_7365_Car2_native_crop.png",
+    "diagnostics_001/IMG_7367_Car2_native_crop.png",
+    "review_001/T10_frame_15_car2_native_crop.png",
+    "repository/evidence/car1_top.jpg",
+    "repository/evidence/car1_side.jpg"
+  ],
+  "findings": [
+    "Q1/Q3 native crops show a non-straight sheet outline and black-border curves; a rigid tilted plane alone is not established",
+    "T10 ID1 is readable from this viewing direction; slight border/sheet curvature remains visible and does not define a metric bend",
+    "Contact sheet shows Car1 image movement and approximately stationary Car2 at these samples only",
+    "Car1 installation title is beyond decoded edge 0-1; current user explicitly states this side is forward"
+  ],
+  "unknowns": [
+    "3D curvature and tilt cannot be quantified uniquely from these views",
+    "lens distortion, blur and corner/chord offsets confound image-only edge profiles",
+    "sampled stationary appearance is not an independently calibrated continuous stationary interval"
+  ],
+  "manual_human_corner_annotations": 0,
+  "spatial_accuracy_accepted": false,
+  "native_crop_provenance_file": "review_001/crop_provenance.json"
+}

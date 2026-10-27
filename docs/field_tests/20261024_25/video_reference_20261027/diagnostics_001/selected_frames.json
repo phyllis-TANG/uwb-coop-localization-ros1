@@ -1,0 +1,474 @@
+[
+  {
+    "video": "IMG_7347.MOV",
+    "video_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+    "frame_index": 15,
+    "pts_ticks": 300,
+    "time_base_num": 1,
+    "time_base_den": 600,
+    "video_time_s": 0.5,
+    "frame_png_sha256": "06a303f7e23d10fe27aef9e597d824c2dcdec7844d97630a9ee448e9d5a8f441",
+    "encoded_size_wh": [
+      3840,
+      2160
+    ],
+    "pixel_representation": "BGR24 lossless PNG then cv2.COLOR_BGR2GRAY; prior extraction used PyAV gray",
+    "source": {
+      "frame_index": "15",
+      "pts_ticks": "300",
+      "time_base_num": "1",
+      "time_base_den": "600",
+      "video_time_s": "0.5",
+      "source_kind": "existing_original_4K_lossless_frame",
+      "decoded_frames_after_seek": 0,
+      "rotation_ccw_deg": 0
+    },
+    "rejected_candidate_counts": [
+      5
+    ],
+    "decoded_marker_ids": [
+      0,
+      1
+    ],
+    "coordinate_convention": "encoded_pixels"
+  },
+  {
+    "video": "IMG_7347.MOV",
+    "video_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+    "frame_index": 1050,
+    "pts_ticks": 21001,
+    "time_base_num": 1,
+    "time_base_den": 600,
+    "video_time_s": 35.001666666666665,
+    "frame_png_sha256": "08613196dfaf6bd53647bb12b3869d589bc8c6af3c5cc3fd4ba21f82bd219a11",
+    "encoded_size_wh": [
+      3840,
+      2160
+    ],
+    "pixel_representation": "BGR24 lossless PNG then cv2.COLOR_BGR2GRAY; prior extraction used PyAV gray",
+    "source": {
+      "pts_ticks": 21001,
+      "time_base_num": 1,
+      "time_base_den": 600,
+      "rotation_ccw_deg": 0,
+      "decoded_frames_after_seek": 7,
+      "decoder": "PyAV 16.0.1",
+      "frame_index": 1050,
+      "video_time_s": 35.001666666666665,
+      "source_kind": "exact_original_PTS_seek"
+    },
+    "rejected_candidate_counts": [
+      9
+    ],
+    "decoded_marker_ids": [
+      0,
+      1
+    ],
+    "coordinate_convention": "encoded_pixels"
+  },
+  {
+    "video": "IMG_7347.MOV",
+    "video_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+    "frame_index": 1065,
+    "pts_ticks": 21301,
+    "time_base_num": 1,
+    "time_base_den": 600,
+    "video_time_s": 35.501666666666665,
+    "frame_png_sha256": "075ea87a3f6bd8410297161c740a29a8d83567d9564ac10c85733f74f55fd775",
+    "encoded_size_wh": [
+      3840,
+      2160
+    ],
+    "pixel_representation": "BGR24 lossless PNG then cv2.COLOR_BGR2GRAY; prior extraction used PyAV gray",
+    "source": {
+      "pts_ticks": 21301,
+      "time_base_num": 1,
+      "time_base_den": 600,
+      "rotation_ccw_deg": 0,
+      "decoded_frames_after_seek": 22,
+      "decoder": "PyAV 16.0.1",
+      "frame_index": 1065,
+      "video_time_s": 35.501666666666665,
+      "source_kind": "exact_original_PTS_seek"
+    },
+    "rejected_candidate_counts": [
+      12
+    ],
+    "decoded_marker_ids": [
+      0,
+      1
+    ],
+    "coordinate_convention": "encoded_pixels"
+  },
+  {
+    "video": "IMG_7347.MOV",
+    "video_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+    "frame_index": 1080,
+    "pts_ticks": 21601,
+    "time_base_num": 1,
+    "time_base_den": 600,
+    "video_time_s": 36.001666666666665,
+    "frame_png_sha256": "97f27579a4767eb67739a270fe72aba45e421ba9db411bc30bef12068ffb24f7",
+    "encoded_size_wh": [
+      3840,
+      2160
+    ],
+    "pixel_representation": "BGR24 lossless PNG then cv2.COLOR_BGR2GRAY; prior extraction used PyAV gray",
+    "source": {
+      "pts_ticks": 21601,
+      "time_base_num": 1,
+      "time_base_den": 600,
+      "rotation_ccw_deg": 0,
+      "decoded_frames_after_seek": 8,
+      "decoder": "PyAV 16.0.1",
+      "frame_index": 1080,
+      "video_time_s": 36.001666666666665,
+      "source_kind": "exact_original_PTS_seek"
+    },
+    "rejected_candidate_counts": [
+      7
+    ],
+    "decoded_marker_ids": [
+      0,
+      1
+    ],
+    "coordinate_convention": "encoded_pixels"
+  },
+  {
+    "video": "IMG_7347.MOV",
+    "video_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+    "frame_index": 1452,
+    "pts_ticks": 29041,
+    "time_base_num": 1,
+    "time_base_den": 600,
+    "video_time_s": 48.401666666666664,
+    "frame_png_sha256": "5519028d25758435fa1ea66e637ddf57a1cc076553292a368f86150f482d40da",
+    "encoded_size_wh": [
+      3840,
+      2160
+    ],
+    "pixel_representation": "BGR24 lossless PNG then cv2.COLOR_BGR2GRAY; prior extraction used PyAV gray",
+    "source": {
+      "frame_index": "1452",
+      "pts_ticks": "29041",
+      "time_base_num": "1",
+      "time_base_den": "600",
+      "video_time_s": "48.401666666666664",
+      "source_kind": "existing_original_4K_lossless_frame",
+      "decoded_frames_after_seek": 0,
+      "rotation_ccw_deg": 0
+    },
+    "rejected_candidate_counts": [
+      13
+    ],
+    "decoded_marker_ids": [
+      0,
+      1
+    ],
+    "coordinate_convention": "encoded_pixels"
+  },
+  {
+    "video": "IMG_7347.MOV",
+    "video_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+    "frame_index": 1755,
+    "pts_ticks": 35101,
+    "time_base_num": 1,
+    "time_base_den": 600,
+    "video_time_s": 58.501666666666665,
+    "frame_png_sha256": "73a14269ea7d9d999e92e89b46ea58ee1642cbd0c174d6d712ab455267e09888",
+    "encoded_size_wh": [
+      3840,
+      2160
+    ],
+    "pixel_representation": "BGR24 lossless PNG then cv2.COLOR_BGR2GRAY; prior extraction used PyAV gray",
+    "source": {
+      "pts_ticks": 35101,
+      "time_base_num": 1,
+      "time_base_den": 600,
+      "rotation_ccw_deg": 0,
+      "decoded_frames_after_seek": 16,
+      "decoder": "PyAV 16.0.1",
+      "frame_index": 1755,
+      "video_time_s": 58.501666666666665,
+      "source_kind": "exact_original_PTS_seek"
+    },
+    "rejected_candidate_counts": [
+      12
+    ],
+    "decoded_marker_ids": [
+      0,
+      1
+    ],
+    "coordinate_convention": "encoded_pixels"
+  },
+  {
+    "video": "IMG_7347.MOV",
+    "video_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+    "frame_index": 1770,
+    "pts_ticks": 35401,
+    "time_base_num": 1,
+    "time_base_den": 600,
+    "video_time_s": 59.001666666666665,
+    "frame_png_sha256": "a9c67ceca16235205570e8231331e2b032796e9d83fcc198a157ccd4125db617",
+    "encoded_size_wh": [
+      3840,
+      2160
+    ],
+    "pixel_representation": "BGR24 lossless PNG then cv2.COLOR_BGR2GRAY; prior extraction used PyAV gray",
+    "source": {
+      "pts_ticks": 35401,
+      "time_base_num": 1,
+      "time_base_den": 600,
+      "rotation_ccw_deg": 0,
+      "decoded_frames_after_seek": 2,
+      "decoder": "PyAV 16.0.1",
+      "frame_index": 1770,
+      "video_time_s": 59.001666666666665,
+      "source_kind": "exact_original_PTS_seek"
+    },
+    "rejected_candidate_counts": [
+      11
+    ],
+    "decoded_marker_ids": [
+      0,
+      1
+    ],
+    "coordinate_convention": "encoded_pixels"
+  },
+  {
+    "video": "IMG_7347.MOV",
+    "video_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+    "frame_index": 1785,
+    "pts_ticks": 35701,
+    "time_base_num": 1,
+    "time_base_den": 600,
+    "video_time_s": 59.501666666666665,
+    "frame_png_sha256": "5cbbccf51cc37d193c178451c6b14f1615396e3071c426c0604a7edc10c7e52e",
+    "encoded_size_wh": [
+      3840,
+      2160
+    ],
+    "pixel_representation": "BGR24 lossless PNG then cv2.COLOR_BGR2GRAY; prior extraction used PyAV gray",
+    "source": {
+      "pts_ticks": 35701,
+      "time_base_num": 1,
+      "time_base_den": 600,
+      "rotation_ccw_deg": 0,
+      "decoded_frames_after_seek": 17,
+      "decoder": "PyAV 16.0.1",
+      "frame_index": 1785,
+      "video_time_s": 59.501666666666665,
+      "source_kind": "exact_original_PTS_seek"
+    },
+    "rejected_candidate_counts": [
+      12
+    ],
+    "decoded_marker_ids": [
+      0,
+      1
+    ],
+    "coordinate_convention": "encoded_pixels"
+  },
+  {
+    "video": "IMG_7347.MOV",
+    "video_sha256": "f7ec52ce2393d78eb250fce0e25ce4616e1c34f2ddf3e37cd2c73e147fc64967",
+    "frame_index": 2250,
+    "pts_ticks": 45001,
+    "time_base_num": 1,
+    "time_base_den": 600,
+    "video_time_s": 75.00166666666667,
+    "frame_png_sha256": "8f4593f8e06e0d349bebc0ced3e1c4a866abc187103e1287b64e2cf124f102cb",
+    "encoded_size_wh": [
+      3840,
+      2160
+    ],
+    "pixel_representation": "BGR24 lossless PNG then cv2.COLOR_BGR2GRAY; prior extraction used PyAV gray",
+    "source": {
+      "pts_ticks": 45001,
+      "time_base_num": 1,
+      "time_base_den": 600,
+      "rotation_ccw_deg": 0,
+      "decoded_frames_after_seek": 18,
+      "decoder": "PyAV 16.0.1",
+      "frame_index": 2250,
+      "video_time_s": 75.00166666666667,
+      "source_kind": "exact_original_PTS_seek"
+    },
+    "rejected_candidate_counts": [
+      8
+    ],
+    "decoded_marker_ids": [
+      0,
+      1
+    ],
+    "coordinate_convention": "encoded_pixels"
+  },
+  {
+    "video": "IMG_7364.MOV",
+    "video_sha256": "8683bb28af0a32003ee8f4ece2241a3986279e774f16d4e1160e8e30f2b65cf0",
+    "frame_index": 15,
+    "pts_ticks": 300,
+    "time_base_num": 1,
+    "time_base_den": 600,
+    "video_time_s": 0.5,
+    "frame_png_sha256": "55e7689835c2f268bed1303d5f88d6054792f82c9a515526eb11fdbee4ddba40",
+    "encoded_size_wh": [
+      3840,
+      2160
+    ],
+    "pixel_representation": "BGR24 lossless PNG then cv2.COLOR_BGR2GRAY; prior extraction used PyAV gray",
+    "source": {
+      "path": "diagnostic_0_frame_000015.png",
+      "frame_index": 15,
+      "pts_ticks": 300,
+      "time_base_num": 1,
+      "time_base_den": 600,
+      "video_time_s": 0.5,
+      "sha256": "55e7689835c2f268bed1303d5f88d6054792f82c9a515526eb11fdbee4ddba40",
+      "source_kind": "existing_original_4K_lossless_frame",
+      "decoded_frames_after_seek": 0,
+      "rotation_ccw_deg": 0
+    },
+    "rejected_candidate_counts": [
+      15,
+      61
+    ],
+    "decoded_marker_ids": [],
+    "coordinate_convention": "encoded_pixels"
+  },
+  {
+    "video": "IMG_7365.MOV",
+    "video_sha256": "5f5c2ad9bd1a4cdce4c774abc9308b436a018ca165d9d55168b7543c97b139dd",
+    "frame_index": 15,
+    "pts_ticks": 300,
+    "time_base_num": 1,
+    "time_base_den": 600,
+    "video_time_s": 0.5,
+    "frame_png_sha256": "1bbde865ff29308debddd42c55aa53018efc27b0197f9fc98e15a5c60c2a8ef7",
+    "encoded_size_wh": [
+      3840,
+      2160
+    ],
+    "pixel_representation": "BGR24 lossless PNG then cv2.COLOR_BGR2GRAY; prior extraction used PyAV gray",
+    "source": {
+      "path": "diagnostic_0_frame_000015.png",
+      "frame_index": 15,
+      "pts_ticks": 300,
+      "time_base_num": 1,
+      "time_base_den": 600,
+      "video_time_s": 0.5,
+      "sha256": "1bbde865ff29308debddd42c55aa53018efc27b0197f9fc98e15a5c60c2a8ef7",
+      "source_kind": "existing_original_4K_lossless_frame",
+      "decoded_frames_after_seek": 0,
+      "rotation_ccw_deg": 0
+    },
+    "rejected_candidate_counts": [
+      14,
+      51
+    ],
+    "decoded_marker_ids": [],
+    "coordinate_convention": "encoded_pixels",
+    "manual_ROI": {
+      "xyxy_encoded_px": [
+        1350,
+        690,
+        1900,
+        960
+      ],
+      "source": "analyst visual selection from original full frame for inspection only",
+      "corner_annotation": false,
+      "metric_use": false,
+      "crop_sha256": "e48b2d20105a82776974bde683a9b30945163f0bca449e740aa3c4d2ac14719c"
+    }
+  },
+  {
+    "video": "IMG_7366.MOV",
+    "video_sha256": "8250c1077bac3cfb2fb103b2604a18348c3a9542ad06a77ea7cb243204dd5253",
+    "frame_index": 15,
+    "pts_ticks": 300,
+    "time_base_num": 1,
+    "time_base_den": 600,
+    "video_time_s": 0.5,
+    "frame_png_sha256": "1b40b8a5e154e15d1997247287cc76cf1d21e59423f4a28c2a83a17e1be160c2",
+    "encoded_size_wh": [
+      3840,
+      2160
+    ],
+    "pixel_representation": "BGR24 lossless PNG then cv2.COLOR_BGR2GRAY; prior extraction used PyAV gray",
+    "source": {
+      "path": "diagnostic_0_frame_000015.png",
+      "frame_index": 15,
+      "pts_ticks": 300,
+      "time_base_num": 1,
+      "time_base_den": 600,
+      "video_time_s": 0.5,
+      "sha256": "1b40b8a5e154e15d1997247287cc76cf1d21e59423f4a28c2a83a17e1be160c2",
+      "source_kind": "existing_original_4K_lossless_frame",
+      "decoded_frames_after_seek": 0,
+      "rotation_ccw_deg": 0
+    },
+    "rejected_candidate_counts": [
+      14,
+      65
+    ],
+    "decoded_marker_ids": [],
+    "coordinate_convention": "encoded_pixels",
+    "manual_ROI": {
+      "xyxy_encoded_px": [
+        2500,
+        650,
+        3060,
+        950
+      ],
+      "source": "analyst visual selection from original full frame for inspection only",
+      "corner_annotation": false,
+      "metric_use": false,
+      "crop_sha256": "3e9ca06985e99aa1387c3e4dbe99c14a28b525652ccd2895b89da2b049044046"
+    }
+  },
+  {
+    "video": "IMG_7367.MOV",
+    "video_sha256": "64b6dba40a4b3719c132ad65a3ef7a132b07e416d98c683dc37525e1e4397408",
+    "frame_index": 15,
+    "pts_ticks": 300,
+    "time_base_num": 1,
+    "time_base_den": 600,
+    "video_time_s": 0.5,
+    "frame_png_sha256": "82e3adb6de65def21cde51eb57d1c3adf87725bf53bae012a037109022ce814a",
+    "encoded_size_wh": [
+      3840,
+      2160
+    ],
+    "pixel_representation": "BGR24 lossless PNG then cv2.COLOR_BGR2GRAY; prior extraction used PyAV gray",
+    "source": {
+      "path": "diagnostic_0_frame_000015.png",
+      "frame_index": 15,
+      "pts_ticks": 300,
+      "time_base_num": 1,
+      "time_base_den": 600,
+      "video_time_s": 0.5,
+      "sha256": "82e3adb6de65def21cde51eb57d1c3adf87725bf53bae012a037109022ce814a",
+      "source_kind": "existing_original_4K_lossless_frame",
+      "decoded_frames_after_seek": 0,
+      "rotation_ccw_deg": 0
+    },
+    "rejected_candidate_counts": [
+      19,
+      62
+    ],
+    "decoded_marker_ids": [],
+    "coordinate_convention": "encoded_pixels",
+    "manual_ROI": {
+      "xyxy_encoded_px": [
+        1800,
+        950,
+        2390,
+        1270
+      ],
+      "source": "analyst visual selection from original full frame for inspection only",
+      "corner_annotation": false,
+      "metric_use": false,
+      "crop_sha256": "3d9d28e09b9709544bfe1c7d4347a11bfe8ed2e3c18cf972613b3e3e80bbb960"
+    }
+  }
+]

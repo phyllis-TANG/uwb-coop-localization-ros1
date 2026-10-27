@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "experiment_id": "T10",
+  "approved_scope": "not_accepted",
+  "conditional_rows": 1164,
+  "actual_independent_position_error_m": null,
+  "formal_T_room_camera": null,
+  "uncertainty_model": null,
+  "sampling_policy": "Use the first existing per-clip pose sample (0.5 s), fixed before examining output discrepancies; other samples are sensitivity only",
+  "fit_point_ids": [
+    "P1",
+    "P2",
+    "P3",
+    "P4"
+  ],
+  "fit_coordinate_status": "instructed_not_precisely_surveyed",
+  "independent_check_ids": [
+    "Q1",
+    "Q2",
+    "Q3"
+  ],
+  "Q_used_for_fit_or_model_selection": false,
+  "per_vehicle": {
+    "car1": {
+      "observed_frames": 194,
+      "conditional_edge_length_m": {
+        "min": 0.14547244372163287,
+        "median": 0.14940481793379706,
+        "max": 0.15694761651305408
+      },
+      "reported_marker_height_m": 0.37,
+      "reported_antenna_height_m": 0.17,
+      "sensitivity_xy_m": {
+        "board_height_delta_m": {
+          "min": 0.0,
+          "median": 0.052216517077229255,
+          "max": 0.05400857919004853
+        },
+        "body_heading_delta_deg": {
+          "min": 0.0,
+          "median": 0.025736782407047833,
+          "max": 0.29529646120466796
+        },
+        "camera_model": {
+          "min": 0.0,
+          "median": 0.022262290002065362,
+          "max": 0.10422769949850676
+        },
+        "existing_per_clip_pose_sample": {
+          "min": 0.0,
+          "median": 0.0006517332630716446,
+          "max": 0.006198207220834802
+        },
+        "one_corner_one_axis_1px_max": {
+          "min": 0.0017788007416507773,
+          "median": 0.0018246845725333064,
+          "max": 0.0018628523756325569
+        },
+        "wrong_ground_plane": {
+          "min": 0.9660055659287441,
+          "median": 0.9671022483199687,
+          "max": 0.9991587150158904
+        }
+      },
+      "antenna_candidate_computed": true,
+      "antenna_rotation_status": "current_operator_title_edge_relation_only_full_angle_unknown",
+      "actual_position_error_m": null,
+      "total_error_bound_m": null
+    },
+    "car2": {
+      "observed_frames": 194,
+      "conditional_edge_length_m": {
+        "min": 0.13439479609191038,
+        "median": 0.14261055345499657,
+        "max": 0.14879934771760434
+      },
+      "reported_marker_height_m": 0.23,
+      "reported_antenna_height_m": 0.2,
+      "sensitivity_xy_m": {
+        "board_height_delta_m": {
+          "min": 0.0,
+          "median": 0.021680252184398185,
+          "max": 0.021693250583558185
+        },
+        "camera_model": {
+          "min": 0.0,
+          "median": 0.027801457798075538,
+          "max": 0.11102234748783371
+        },
+        "existing_per_clip_pose_sample": {
+          "min": 0.0,
+          "median": 0.00047095116409706433,
+          "max": 0.003987064912143617
+        },
+        "one_corner_one_axis_1px_max": {
+          "min": 0.00037909921479890727,
+          "median": 0.00037918629022586786,
+          "max": 0.0003796762678665494
+        },
+        "unknown_body_yaw_example_deg": {
+          "min": 0.17182840277439573,
+          "median": 0.17182840277439573,
+          "max": 0.17182840277439573
+        },
+        "wrong_ground_plane": {
+          "min": 0.24932290012057845,
+          "median": 0.24933620131692985,
+          "max": 0.24947238171091693
+        }
+      },
+      "antenna_candidate_computed": false,
+      "antenna_rotation_status": "unknown_not_zero_no_antenna_position",
+      "actual_position_error_m": null,
+      "total_error_bound_m": null
+    }
+  },
+  "spatial_tolerance_m": null,
+  "floor_registration_note": "T10 per-clip nominal P pixels propagated through existing floor-only registration. At least P2 lies outside the T10 image; extrapolation and distortion remain unvalidated. Ground homography never acts on elevated marker pixels.",
+  "per_clip_registration": [
+    {
+      "frame_index": 15,
+      "video_time_s": 0.5,
+      "median_floor_transfer_residual_px": 1.042458016425267,
+      "p95_floor_transfer_residual_px": 2.378529166628681,
+      "P_fit_reprojection_rms_px": 16.325144644030544
+    },
+    {
+      "frame_index": 150,
+      "video_time_s": 5.0,
+      "median_floor_transfer_residual_px": 1.0575588587514761,
+      "p95_floor_transfer_residual_px": 2.6562747555901787,
+      "P_fit_reprojection_rms_px": 16.88321132305485
+    },
+    {
+      "frame_index": 1452,
+      "video_time_s": 48.401666666666664,
+      "median_floor_transfer_residual_px": 1.1989635470233506,
+      "p95_floor_transfer_residual_px": 2.686759432527184,
+      "P_fit_reprojection_rms_px": 14.882178437865191
+    }
+  ],
+  "centering_change_from_PR49": "Diagonal intersection after per-corner undistortion; PR49 formed a pixel-space homography before undistortion. This is a model-consistent candidate computation, not an accuracy validation.",
+  "car2_flat_yaw_locus_radius_m": 0.17182840277439584
+}

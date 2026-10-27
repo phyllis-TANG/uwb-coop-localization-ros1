@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "phase": "input_and_identity_complete",
+  "repository": "I:\\UWB\\project\\worktrees\\video-reference-v2",
+  "branch": "analysis/20261027-video-reference-v2",
+  "HEAD": "868349b543a03a6a713d1675e1d4ada7d905410c",
+  "worktree_status": "?? tools/field_video_20261027/",
+  "free_bytes_I": 229858332672,
+  "TEMP": "I:\\UWB\\temp",
+  "TMP": "I:\\UWB\\temp",
+  "pts": {
+    "observations": 388,
+    "ledger_frames": 2903,
+    "first_pts_ticks": 0,
+    "last_pts_ticks": 58042,
+    "unique_vehicle_frame_pairs": 388,
+    "status": "passed"
+  },
+  "full_decode_reruns": 0,
+  "confirmed_missing": [
+    "actual P/Q survey and uncertainty",
+    "validated imaging and mount transforms",
+    "independently bounded video/ROS synchronization"
+  ],
+  "next": [
+    "targeted original frames",
+    "conditional geometry and sensitivity",
+    "original T10 odom/cmd event verification",
+    "contract and gap-table packaging"
+  ]
+}
