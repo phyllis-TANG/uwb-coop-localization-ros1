@@ -1,0 +1,24 @@
+{
+  "actual_utc_date": "2026-10-27",
+  "applicable_AGENTS_files": [],
+  "branch": "docs/20261028-evidence-midterm",
+  "created_at_utc": "2026-10-27T16:42:51.011065+00:00",
+  "disk_snapshot": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/nvme0n1p7  300G  262G   22G  93% /\n/dev/nvme0n1p7  300G  262G   22G  93% /\n/dev/nvme0n1p3  601G   88G  513G  15% /media/ubuntu22/2098883D98881386\n/dev/nvme0n1p8  404G  207G  197G  52% /media/ubuntu22/2D90B9A1270C50CE\n/dev/nvme0n1p5   91G  1.7G   90G   2% /media/ubuntu22/71A83DE97CFBAE64\n",
+  "existing_processes": [
+    "  59092   59069  6-01:12:08  0.1 roslaunch       /usr/bin/python3 /opt/ros/noetic/bin/roslaunch uwb_coop_localization uwb_visualization_demo.launch rviz:=false",
+    "  59734   59092  6-01:12:04  0.4 uwb_simulator.p /usr/bin/python3 /tmp/uwb_ws/devel/lib/uwb_coop_localization/uwb_simulator.py __name:=uwb_simulator __log:=/root/.ros/log/6321306c-cd64-11f1-9c7c-864305f198db/uwb_simulator-2.log",
+    "  59736   59092  6-01:12:04  0.6 uwb_visualizer. /usr/bin/python3 /tmp/uwb_ws/devel/lib/uwb_coop_localization/uwb_visualizer.py __name:=uwb_visualizer __log:=/root/.ros/log/6321306c-cd64-11f1-9c7c-864305f198db/uwb_visualizer-4.log",
+    "  61169   61095  6-01:09:21  0.5 play            /opt/ros/noetic/lib/rosbag/play --loop --queue 100 --rate 2.0 --delay 0.2 --start 0.0 --topics /car2/odom /car2/uwb/ranges /car2/imu --bags /repo/datasets/field_raw/20261011/bags/CAR2_auto_Lshape_20261011_091958.bag --rate-control-max-delay 1.0"
+  ],
+  "initial_head": "7b67c66f2470d23f6c876f45b6543f72fab66391",
+  "new_estimator_runs": 0,
+  "new_video_processing_runs": 0,
+  "original_branch": "experiment/two-car-independent-integrity-bridge-20261023",
+  "original_head": "115b17deb2f848e596d1638a0b45cf360deae947",
+  "original_status": "clean",
+  "original_worktree": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1",
+  "processes_modified": false,
+  "storage_policy": "small owned docs only; no original media copy/extraction; Linux mounts not asserted to be Windows I; no disk/system changes",
+  "task_label": "20261028",
+  "worktree": "/home/ubuntu22/uwb-evidence-midterm-20261028"
+}

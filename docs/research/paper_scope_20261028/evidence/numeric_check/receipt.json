@@ -1,0 +1,89 @@
+{
+  "archive_sha_checks": [
+    {
+      "bytes": 540322,
+      "kind": "review",
+      "sha256": "a0f97e9e4905e4f0a112a559b58b2c49f32a36f84c1718daefe085f5da2302db"
+    },
+    {
+      "bytes": 45204449,
+      "kind": "performance",
+      "sha256": "00d708c02915febc95fd944107fd784991a4c2e0e382d1aa0eaa41e0fa85d7db"
+    },
+    {
+      "bytes": 38620622,
+      "kind": "controls",
+      "sha256": "b46a0c2bc8d1aaad1d6e358fb1f85f402ba096f2273687dcb9ba55c6f39ff709"
+    }
+  ],
+  "complete_fault_labels": null,
+  "continuous_trajectory_truth": null,
+  "estimator_runs": 0,
+  "limitations": [
+    "same frozen candidate stop windows, not a new reference acceptance",
+    "scatter is about own median, not ground-truth RMSE",
+    "normal completion is not fault-free",
+    "archived semantic/optimization readback results are cited, not repeated here"
+  ],
+  "manual_endpoint_uncertainty_m": null,
+  "max_abs_difference_vs_original_table_m": 6.938893903907228e-18,
+  "paired_stop_differences": [
+    {
+      "case_id": "004023",
+      "comparison": "Q0→Q2",
+      "drift_change_m": 0.006916941901413454,
+      "manual_stop_distance_change_m": -0.013212107617753724,
+      "scatter_change_m": -0.0005643854897955805
+    },
+    {
+      "case_id": "004023",
+      "comparison": "Q1→Q3",
+      "drift_change_m": 0.010794749659963493,
+      "manual_stop_distance_change_m": -0.06568325626296936,
+      "scatter_change_m": 0.0006606154758486468
+    },
+    {
+      "case_id": "005135",
+      "comparison": "Q0→Q2",
+      "drift_change_m": 0.020999869180682675,
+      "manual_stop_distance_change_m": 0.0031179459270605572,
+      "scatter_change_m": 0.007001780255083248
+    },
+    {
+      "case_id": "005135",
+      "comparison": "Q1→Q3",
+      "drift_change_m": 0.038663982351906746,
+      "manual_stop_distance_change_m": 0.0063184000531396195,
+      "scatter_change_m": 0.013171517127253677
+    }
+  ],
+  "performance_runs": 8,
+  "published": 752,
+  "read_scope": "compact tables, frozen configs and eight archived run manifests; no raw bag, video or full graph journal reread",
+  "rows_read": 752,
+  "source_script_sha256": "1d98274fa0142327220af9b73e3ba7135898d1b321cba53265e1e20cafde2ec4",
+  "source_sha256": {
+    "docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/ARTIFACTS.json": "e69dc7e13baf8f04e7b8461de25e719d6122856c563e4306314be0b3c4acaef3",
+    "docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/artifacts/quality-field-v2-controls.tar.gz": "b46a0c2bc8d1aaad1d6e358fb1f85f402ba096f2273687dcb9ba55c6f39ff709",
+    "docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/artifacts/quality-field-v2-performance.tar.gz": "00d708c02915febc95fd944107fd784991a4c2e0e382d1aa0eaa41e0fa85d7db",
+    "docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/artifacts/quality-field-v2-review.tar.gz": "a0f97e9e4905e4f0a112a559b58b2c49f32a36f84c1718daefe085f5da2302db",
+    "docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/frozen_configs/004023_Q0.json": "08c9895f9e9d1d4793970dadd37a033654a7df93f36657347cbb4dc2e696000a",
+    "docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/frozen_configs/004023_Q1.json": "ddbf1d3a373c03729be53690b93510ffe629ae9edf3193ef4a6e933a1cfd4068",
+    "docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/frozen_configs/004023_Q2.json": "8c33089e0cf814ade3b76c4c73361dc79d0af8af4516ea135f1077291bbef10c",
+    "docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/frozen_configs/004023_Q3.json": "514468967313de8ced8ad73f7cd2f6997581b031b4ddcd976a2884f52fcaa2b5",
+    "docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/frozen_configs/005135_Q0.json": "08c9895f9e9d1d4793970dadd37a033654a7df93f36657347cbb4dc2e696000a",
+    "docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/frozen_configs/005135_Q1.json": "ddbf1d3a373c03729be53690b93510ffe629ae9edf3193ef4a6e933a1cfd4068",
+    "docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/frozen_configs/005135_Q2.json": "8c33089e0cf814ade3b76c4c73361dc79d0af8af4516ea135f1077291bbef10c",
+    "docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/frozen_configs/005135_Q3.json": "514468967313de8ced8ad73f7cd2f6997581b031b4ddcd976a2884f52fcaa2b5",
+    "docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/results/four_groups.csv": "cea64e8c2a56138d492de80d04237e55527609ac34d1e8bac734c83bdb81c226",
+    "docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/results/performance_matrix.json": "092f160ffe7aeda661ec63961df73e0bda1c80194c5d898f376f9b8f709a8670",
+    "docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/results/publication_diagnostics.csv": "e17fb0109621bf9d8d6a51d828a0518bac8658b88698fc112ce130f8a5b2508f",
+    "docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/results/summary.json": "442bdaf684c6325a9c9056ef229a5ee961ec103f8c819bfb82aaf596b22c3c96",
+    "docs/field_tests/single_car_fixed_lag_20261022/protocol.json": "71175af3a690f1666967b6ed905233de8a8cb1b84c31e5a72eaacdccad0a2f50"
+  },
+  "status": "PASS",
+  "stop_samples": 40,
+  "valid": 736,
+  "video_processing_runs": 0,
+  "warmup": 16
+}
