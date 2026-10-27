@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "probe_tests": 10,
+  "frozen_tests": 27,
+  "index_negative_tests": 3,
+  "archived_export_tests": 1,
+  "execution_source_sha256": {
+    "frozen_manifest.json": "9404f412665715f57af7300a0311711a03bac6bed0d55c4f61e97f3cdaef013b",
+    "index_contract.py": "3a299d22441b26eceab0eceb4ce60eb6b9e5e0f2c00d6f61f7fde8296e719b66",
+    "pinned.py": "1ee41ca0f6ece4f3c8f62091d29e23d344185a8b2abb83dd003bfbc3089cad48",
+    "prepare.py": "dc358fc535ae0f7817cced4e1d15d2697876fcf4c800509a6c790a5e40bd21dd",
+    "probe.py": "f401f723b39342da60568834b76ae79b412617554c296f25c439812451b4d38d",
+    "records.py": "0f643c4830e006675c7c3e8320b901bb13cc312adf03712e8fcd05eccd580458",
+    "runner.py": "7e3d5193ce222db352a6c793378587934ad5df62995439798e38a459c5fa15e5",
+    "test_export.py": "7ec6ba2a8954905ee9d31191bd3c79ee6bf4dec72ed0f100a5dcb7bb93dd6da0",
+    "test_index.py": "96ed310afba6a76c176c5004fb48e1e32ddc1647751b220dc5ffb1c03fde9824",
+    "test_probe.py": "6c50ce9714d3a437d962923a81f521fee9219424827e6b8e3eef786d4afef57d"
+  },
+  "frozen_source_sha256": {
+    "docs/field_tests/single_car_historical_L_20261021/results/evidence/new_graph.py": "cc8934e0ee34eabddd46ed09e0de1ca69e9a74b00e93147f7d99f5a04d77e903",
+    "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+    "tools/single_car_imu_fgo/configuration.py": "e7f32bdd4cbc69378b35d53023afa116d6138e9d26e4509766cfe0c02d13a2c4",
+    "tools/single_car_imu_fgo/replay.py": "09b8cfed9125afc74a4e3050b84ee095f8459bcbc556b77eb489cba6be9aefcd",
+    "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+    "tools/two_car_fixed_lag_fgo_v1/audit.py": "d5c2479c5428f12f44800315ed932f77e6d9f3f5c9fd4e85aef7e5f540eeecb4",
+    "tools/two_car_fixed_lag_fgo_v1/batch.py": "41cdfc6ff3d63f3c274b830c2c664845bd1e2ca7db5e1c539d0548f7d4465692",
+    "tools/two_car_fixed_lag_fgo_v1/config.json": "20a9f64ac55cc43415dc34733bf436ad5c7181cebe06187e5895b6094c1075fa",
+    "tools/two_car_fixed_lag_fgo_v1/dependency_lock.json": "d2606e4328892d0e3b196fa42cd19360a64b22b9b27b2af1814f956d188c7a4e",
+    "tools/two_car_fixed_lag_fgo_v1/frontend.py": "4023914fd3ce68930af0c6a2e336c4b04a98679bab90950d09ea202a2e46b803",
+    "tools/two_car_fixed_lag_fgo_v1/graph.py": "5c80d6b4f947824d581f268c9fac2760d4df9ccc540abb12ccfee689b4234e2a",
+    "tools/two_car_fixed_lag_fgo_v1/io_utils.py": "953ba7afbba739bacb0cca26fbd27a9f1c3b887d14a484d2574a9af7cb003ae9",
+    "tools/two_car_fixed_lag_fgo_v1/legacy.py": "335fce6b33d4af8977ac54591413bfcdcfc0ffcb62a3f469356943c1f5326ce2",
+    "tools/two_car_fixed_lag_fgo_v1/replay.py": "f41ba8f610ec46b22090b2dfe0a6518e844d2dbd33d860020bb417e0de1f4cb2",
+    "tools/two_car_fixed_lag_fgo_v1/report.py": "d3af3996e259b7d96c871c179495364931f8f44138079e9123c6b2e92341a859",
+    "tools/two_car_fixed_lag_fgo_v1/requirements.txt": "ac6f20cbcd6657f774aa875d61bc5bf336718f504af6e8ab5d6575f5d8da7118",
+    "tools/two_car_fixed_lag_fgo_v1/simulate.py": "61288a3a21110da5fcc730b82113468168325ad72e72f4fd957d3ac6f8b0e679",
+    "tools/two_car_fixed_lag_fgo_v1/test_joint.py": "67b10b5d1221d569b6c7ba1c9af4bf3cded6dd673525f46e57fbffa15fede95f",
+    "tools/two_car_fixed_lag_fgo_v1/test_simulate.py": "04effd758ba5827c9bd32fa214c79a22c71ca40844194d79679a1e7ce8250c9a"
+  },
+  "export_test_publications": 1512,
+  "prior_failure": {
+    "log": "tests-v1/frozen.log",
+    "errors": 3,
+    "cause": "CLI git_state requires real Git checkout; extracted source has no .git",
+    "algorithm_changes": false
+  },
+  "independent_validation": false
+}
