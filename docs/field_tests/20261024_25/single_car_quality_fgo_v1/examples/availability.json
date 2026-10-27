@@ -1,0 +1,18 @@
+{
+  "actual_release_delay_s": 1.024350946,
+  "availability_cutoff_epoch_ns": 1792925287441466217,
+  "available_receive_epoch_ns": 1792925287465817163,
+  "complete_processor_wall_s": 0.024350946,
+  "data_flushed_host_epoch_ns": 1793101730703937613,
+  "data_flushed_host_monotonic_ns": 520336822667495,
+  "group": "Q3",
+  "host_anchor_epoch_ns": 1793101730631734630,
+  "host_anchor_monotonic_ns": 520336750464202,
+  "includes_graph_ledger_pose_data_flush": true,
+  "interpretation": "paced: measured host elapsed mapped to declared receive origin; accelerated: virtual FIFO plus measured compute, not actual reception latency",
+  "publication_id": "Q3|1792925286441466217",
+  "queue_or_scheduling_excess_s": 0.024350946,
+  "record_type": "actual_output_available",
+  "state_epoch_ns": 1792925286441466217,
+  "timing_mode": "development_virtual_fifo_plus_measured_compute"
+}

@@ -1,0 +1,252 @@
+{
+  "actual_available_receive_epoch_ns": null,
+  "availability_cutoff_epoch_ns": 1792925287441466217,
+  "availability_record_required": true,
+  "compute_ready_receive_epoch_ns": 1792925287465533137,
+  "frozen_factor_ids": [
+    "Q3|1792925286441466217|node_10",
+    "Q3|1792925286441466217|node_2",
+    "Q3|1792925286441466217|node_3",
+    "Q3|1792925286441466217|node_8"
+  ],
+  "graph_record_id": "ebed86da752d16c559ab46a7db9e542f9e0393fe64c24f4584ec07dc7dbf5529",
+  "group": "Q3",
+  "host_data_ready_epoch_ns": 1793101730703592984,
+  "host_data_ready_monotonic_ns": 520336822323107,
+  "measured_complete_processor_wall_s": 0.02406692,
+  "monitoring_and_shadow_included": true,
+  "processing_cycle_start_monotonic_ns": 520336815426564,
+  "publication_id": "Q3|1792925286441466217",
+  "record_type": "main_publication",
+  "row": {
+    "accepted_graph": false,
+    "aligned_odom_antenna_xy_m": [
+      2.0,
+      2.0
+    ],
+    "aligned_odom_pose": [
+      2.1042850761481104,
+      1.9003775984389917,
+      2.9670597283903604
+    ],
+    "aligned_odom_role": "diagnostic_only_not_new_yaw_prediction_or_factor",
+    "angular_interval": null,
+    "angular_rejections_cumulative": {
+      "angular_control_accepted": 40
+    },
+    "angular_source": "projected_imu",
+    "angular_valid": true,
+    "antenna_xy_m": [
+      2.0,
+      2.0
+    ],
+    "arm": "F3",
+    "availability_cutoff_epoch_ns": 1792925287441466217,
+    "availability_cutoff_s": 2.0,
+    "bias_rad_s": 0.0,
+    "candidate_bias_rad_s": null,
+    "candidate_pose": null,
+    "dependency_receipt_max_s": 1.405,
+    "estimate_valid": false,
+    "estimated_worker_finish_s": 2.0001873390283436,
+    "estimated_worker_queue_s": 0.0,
+    "estimated_worker_start_s": 2.0,
+    "fallback_yaw_source": "declared_external_initial_heading",
+    "field_accuracy_evaluated": false,
+    "graph_states": 1,
+    "graph_time_span_s": 0.0,
+    "local_odom": [
+      -0.001009395802491235,
+      -0.0021901619310950916,
+      0.0005892164520873957
+    ],
+    "marginal_wall_s": 5.280016921460629e-07,
+    "marginalization_details": [],
+    "marginalizations": 0,
+    "missing_angular_edges_cumulative": 0,
+    "numerical_full_rank": false,
+    "numerical_rank": null,
+    "objective_snapshot": {
+      "candidate_states": null,
+      "interval_end_epochs_ns": [],
+      "local_odom": [
+        [
+          -0.001009395802491235,
+          -0.0021901619310950916,
+          0.0005892164520873957
+        ]
+      ],
+      "observations": [
+        {
+          "node_10": 3.6118568072420345,
+          "node_2": 5.8321687499750485,
+          "node_3": 4.30953854424865,
+          "node_8": 3.219007150795902
+        }
+      ],
+      "prior": {
+        "matrix": [
+          [
+            5.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            5.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            11.459155902616464,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            33.333333333333336
+          ]
+        ],
+        "offset": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "point": [
+          2.1042850761481104,
+          1.9003775984389917,
+          2.9670597283903604,
+          0.0
+        ]
+      },
+      "quality_factor_ids": [
+        {
+          "node_10": "Q3|1792925286441466217|node_10",
+          "node_2": "Q3|1792925286441466217|node_2",
+          "node_3": "Q3|1792925286441466217|node_3",
+          "node_8": "Q3|1792925286441466217|node_8"
+        }
+      ],
+      "quality_weights": [
+        {
+          "node_10": 1.0,
+          "node_2": 1.0,
+          "node_3": 1.0,
+          "node_8": 1.0
+        }
+      ],
+      "states": [
+        [
+          2.1042850761481104,
+          1.9003775984389917,
+          2.9670597283903604,
+          0.0
+        ]
+      ],
+      "times_s": [
+        1.0
+      ]
+    },
+    "odom_yaw_fallback": false,
+    "optimizer": {},
+    "optimizer_initial_guess": null,
+    "pose": [
+      2.1042850761481104,
+      1.9003775984389917,
+      2.9670597283903604
+    ],
+    "position_correction_m": 0.0,
+    "prediction_pose": [
+      2.1042850761481104,
+      1.9003775984389917,
+      2.9670597283903604
+    ],
+    "prediction_yaw_source": "declared_external_initial_heading",
+    "prior_matrix": [
+      [
+        5.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        11.459155902616464,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        33.333333333333336
+      ]
+    ],
+    "prior_offset": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "prior_point": [
+      2.1042850761481104,
+      1.9003775984389917,
+      2.9670597283903604,
+      0.0
+    ],
+    "quality_factor_ids": [
+      {
+        "node_10": "Q3|1792925286441466217|node_10",
+        "node_2": "Q3|1792925286441466217|node_2",
+        "node_3": "Q3|1792925286441466217|node_3",
+        "node_8": "Q3|1792925286441466217|node_8"
+      }
+    ],
+    "quality_weights": [
+      {
+        "node_10": 1.0,
+        "node_2": 1.0,
+        "node_3": 1.0,
+        "node_8": 1.0
+      }
+    ],
+    "range_medians_m": {
+      "node_10": 3.6118568072420345,
+      "node_2": 5.8321687499750485,
+      "node_3": 4.30953854424865,
+      "node_8": 3.219007150795902
+    },
+    "range_sample_counts": {
+      "node_10": 16,
+      "node_2": 16,
+      "node_3": 16,
+      "node_8": 16
+    },
+    "scalar_variables": 4,
+    "sensor_buffer_counts": {
+      "angular": 20,
+      "odom": 1,
+      "uwb": 7
+    },
+    "solve_wall_s": 1.8702121451497078e-07,
+    "state_dimension_per_keyframe": 4,
+    "state_epoch_ns": 1792925286441466217,
+    "state_time_s": 1.0,
+    "status": "predict_only_warmup",
+    "update_wall_s": 0.0001873390283435583,
+    "yaw_correction_deg": 0.0
+  },
+  "state_epoch_ns": 1792925286441466217,
+  "timing_mode": "development_virtual_fifo_plus_measured_compute"
+}
