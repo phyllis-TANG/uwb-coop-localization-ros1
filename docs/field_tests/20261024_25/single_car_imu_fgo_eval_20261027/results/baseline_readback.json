@@ -1,0 +1,171 @@
+{
+  "status": "DONE",
+  "all_passed": true,
+  "checks": [
+    {
+      "case_id": "005135",
+      "arm": "legacy_cold_full_history",
+      "numerical": {
+        "rows": 92,
+        "max_abs_component_difference": {
+          "base_x_m": 0.0,
+          "base_y_m": 0.0,
+          "yaw_rad": 0.0,
+          "antenna_x_m": 0.0,
+          "antenna_y_m": 0.0,
+          "aligned_odom_antenna_x_m": 0.0,
+          "aligned_odom_antenna_y_m": 0.0
+        },
+        "status_counts": {
+          "predict_only_warmup": 2,
+          "graph": 90
+        },
+        "timing_and_iteration_counts_excluded_from_numerical_equality": true,
+        "tolerance_from_old_protocol": 1e-06
+      },
+      "independent_frontend": {
+        "publications_with_independent_bracket_and_range_reconstruction": 92,
+        "late_or_future_data_used": false,
+        "header_not_reinterpreted_as_calibrated_physical_time": true
+      }
+    },
+    {
+      "case_id": "005135",
+      "arm": "analytic_warm_full_history",
+      "numerical": {
+        "rows": 92,
+        "max_abs_component_difference": {
+          "base_x_m": 0.0,
+          "base_y_m": 0.0,
+          "yaw_rad": 0.0,
+          "antenna_x_m": 0.0,
+          "antenna_y_m": 0.0,
+          "aligned_odom_antenna_x_m": 0.0,
+          "aligned_odom_antenna_y_m": 0.0
+        },
+        "status_counts": {
+          "predict_only_warmup": 2,
+          "graph": 90
+        },
+        "timing_and_iteration_counts_excluded_from_numerical_equality": true,
+        "tolerance_from_old_protocol": 1e-06
+      },
+      "independent_frontend": {
+        "publications_with_independent_bracket_and_range_reconstruction": 92,
+        "late_or_future_data_used": false,
+        "header_not_reinterpreted_as_calibrated_physical_time": true
+      }
+    },
+    {
+      "case_id": "005135",
+      "arm": "analytic_warm_fixed_20s",
+      "numerical": {
+        "rows": 92,
+        "max_abs_component_difference": {
+          "base_x_m": 0.0,
+          "base_y_m": 0.0,
+          "yaw_rad": 0.0,
+          "antenna_x_m": 0.0,
+          "antenna_y_m": 0.0,
+          "aligned_odom_antenna_x_m": 0.0,
+          "aligned_odom_antenna_y_m": 0.0
+        },
+        "status_counts": {
+          "predict_only_warmup": 2,
+          "graph": 90
+        },
+        "timing_and_iteration_counts_excluded_from_numerical_equality": true,
+        "tolerance_from_old_protocol": 1e-06
+      },
+      "independent_frontend": {
+        "publications_with_independent_bracket_and_range_reconstruction": 92,
+        "late_or_future_data_used": false,
+        "header_not_reinterpreted_as_calibrated_physical_time": true
+      }
+    },
+    {
+      "case_id": "004023",
+      "arm": "legacy_cold_full_history",
+      "numerical": {
+        "rows": 96,
+        "max_abs_component_difference": {
+          "base_x_m": 0.0,
+          "base_y_m": 0.0,
+          "yaw_rad": 0.0,
+          "antenna_x_m": 0.0,
+          "antenna_y_m": 0.0,
+          "aligned_odom_antenna_x_m": 0.0,
+          "aligned_odom_antenna_y_m": 0.0
+        },
+        "status_counts": {
+          "predict_only_warmup": 2,
+          "graph": 94
+        },
+        "timing_and_iteration_counts_excluded_from_numerical_equality": true,
+        "tolerance_from_old_protocol": 1e-06
+      },
+      "independent_frontend": {
+        "publications_with_independent_bracket_and_range_reconstruction": 96,
+        "late_or_future_data_used": false,
+        "header_not_reinterpreted_as_calibrated_physical_time": true
+      }
+    },
+    {
+      "case_id": "004023",
+      "arm": "analytic_warm_full_history",
+      "numerical": {
+        "rows": 96,
+        "max_abs_component_difference": {
+          "base_x_m": 0.0,
+          "base_y_m": 0.0,
+          "yaw_rad": 0.0,
+          "antenna_x_m": 0.0,
+          "antenna_y_m": 0.0,
+          "aligned_odom_antenna_x_m": 0.0,
+          "aligned_odom_antenna_y_m": 0.0
+        },
+        "status_counts": {
+          "predict_only_warmup": 2,
+          "graph": 94
+        },
+        "timing_and_iteration_counts_excluded_from_numerical_equality": true,
+        "tolerance_from_old_protocol": 1e-06
+      },
+      "independent_frontend": {
+        "publications_with_independent_bracket_and_range_reconstruction": 96,
+        "late_or_future_data_used": false,
+        "header_not_reinterpreted_as_calibrated_physical_time": true
+      }
+    },
+    {
+      "case_id": "004023",
+      "arm": "analytic_warm_fixed_20s",
+      "numerical": {
+        "rows": 96,
+        "max_abs_component_difference": {
+          "base_x_m": 0.0,
+          "base_y_m": 0.0,
+          "yaw_rad": 0.0,
+          "antenna_x_m": 0.0,
+          "antenna_y_m": 0.0,
+          "aligned_odom_antenna_x_m": 0.0,
+          "aligned_odom_antenna_y_m": 0.0
+        },
+        "status_counts": {
+          "predict_only_warmup": 2,
+          "graph": 94
+        },
+        "timing_and_iteration_counts_excluded_from_numerical_equality": true,
+        "tolerance_from_old_protocol": 1e-06
+      },
+      "independent_frontend": {
+        "publications_with_independent_bracket_and_range_reconstruction": 96,
+        "late_or_future_data_used": false,
+        "header_not_reinterpreted_as_calibrated_physical_time": true
+      }
+    }
+  ],
+  "online_optimizer_or_jacobian_imported": false,
+  "new_IMU_FGO_runs": 0,
+  "scope": "all original three-arm outputs and old frontend; F1-F3/4D bias marginalization not executed"
+}

@@ -1,0 +1,300 @@
+{
+  "status": "DONE",
+  "cases": [
+    {
+      "case_id": "005135",
+      "streams": {
+        "odom": {
+          "count": 1891,
+          "header_coverage_ns": [
+            1792309931624098821,
+            1792310026123246878
+          ],
+          "receive_coverage_ns": [
+            1792309931645908085,
+            1792310026137061659
+          ],
+          "header_rate_hz": 20.00018030702234,
+          "header_delta_ns": {
+            "n": 1890,
+            "median": 49999614.0,
+            "p95": 50087569.15,
+            "minimum": 49173511.0,
+            "maximum": 50746429.0
+          },
+          "receive_delta_ns": {
+            "n": 1890,
+            "median": 58702938.5,
+            "p95": 62436630.6,
+            "minimum": 4454.0,
+            "maximum": 78499399.0
+          },
+          "header_duplicate_count": 0,
+          "header_backwards_count": 0,
+          "arrival_batch_candidates": 107,
+          "receive_minus_header_ns": {
+            "n": 1891,
+            "median": 34049347.0,
+            "p95": 72932724.5,
+            "minimum": 11319782.0,
+            "maximum": 84650990.0
+          },
+          "receipt_header_is_latency_bound": false,
+          "header_gaps": [],
+          "nonfinite_payload_rows": 0
+        },
+        "imu": {
+          "count": 1894,
+          "header_coverage_ns": [
+            1792309931474094911,
+            1792310026123293759
+          ],
+          "receive_coverage_ns": [
+            1792309931496824664,
+            1792310026137262816
+          ],
+          "header_rate_hz": 20.000169288701805,
+          "header_delta_ns": {
+            "n": 1893,
+            "median": 49999117.0,
+            "p95": 50102056.6,
+            "minimum": 49165415.0,
+            "maximum": 50753981.0
+          },
+          "receive_delta_ns": {
+            "n": 1893,
+            "median": 49944027.0,
+            "p95": 58107831.199999996,
+            "minimum": 29545744.0,
+            "maximum": 69893406.0
+          },
+          "header_duplicate_count": 0,
+          "header_backwards_count": 0,
+          "arrival_batch_candidates": 0,
+          "receive_minus_header_ns": {
+            "n": 1894,
+            "median": 21840599.5,
+            "p95": 24884772.299999997,
+            "minimum": 11421281.0,
+            "maximum": 35803794.0
+          },
+          "receipt_header_is_latency_bound": false,
+          "header_gaps": [],
+          "nonfinite_payload_rows": 0
+        },
+        "uwb": {
+          "count": 4722,
+          "header_coverage_ns": [
+            1792309931698734331,
+            1792310026120695352
+          ],
+          "receive_coverage_ns": [
+            1792309931736046838,
+            1792310026147719263
+          ],
+          "header_rate_hz": 49.99896156520221,
+          "header_delta_ns": {
+            "n": 4721,
+            "median": 19999767.0,
+            "p95": 20024703.0,
+            "minimum": 18001359.0,
+            "maximum": 22003386.0
+          },
+          "receive_delta_ns": {
+            "n": 4721,
+            "median": 20006210.0,
+            "p95": 23675334.0,
+            "minimum": 3193.0,
+            "maximum": 55598549.0
+          },
+          "header_duplicate_count": 0,
+          "header_backwards_count": 0,
+          "arrival_batch_candidates": 79,
+          "receive_minus_header_ns": {
+            "n": 4722,
+            "median": 28454684.5,
+            "p95": 39366265.449999996,
+            "minimum": 15703256.0,
+            "maximum": 66412078.0
+          },
+          "receipt_header_is_latency_bound": false,
+          "header_gaps": [],
+          "nonfinite_payload_rows": 4722
+        }
+      },
+      "gyro_units": "published rad/s, not asserted to be unprocessed ADC",
+      "IMU_frame_ids": [
+        "gyro_link"
+      ],
+      "gyro_z_published_rad_s": {
+        "n": 1894,
+        "median": 0.0002664400089997798,
+        "p95": 0.0173186007887125,
+        "minimum": -0.40339016914367676,
+        "maximum": 0.14361116290092468
+      },
+      "observed_IMU_covariance_variants": [
+        "[1000000.0, 0.0, 0.0, 0.0, 1000000.0, 0.0, 0.0, 0.0, 1e-06]"
+      ],
+      "axis_mount_clock_noise_bias_calibration": false,
+      "bias_trajectory": null,
+      "bias_reason": "new A FGO estimator not yet frozen/executed",
+      "publication_grid_IMU_coverage": {
+        "scheduled_intervals": 92,
+        "with_both_arrived_brackets": 92,
+        "diagnostic_gap_intervals": 0,
+        "note": "coverage only under inherited uncorrected source clock policy; not an A integration decision or approved physical synchronization"
+      }
+    },
+    {
+      "case_id": "004023",
+      "streams": {
+        "odom": {
+          "count": 1966,
+          "header_coverage_ns": [
+            1792309245415192392,
+            1792309343659924420
+          ],
+          "receive_coverage_ns": [
+            1792309245460894518,
+            1792309343716603636
+          ],
+          "header_rate_hz": 20.001072418213425,
+          "header_delta_ns": {
+            "n": 1965,
+            "median": 49997525.0,
+            "p95": 50086701.6,
+            "minimum": 49400638.0,
+            "maximum": 50546894.0
+          },
+          "receive_delta_ns": {
+            "n": 1965,
+            "median": 58396093.0,
+            "p95": 64203595.8,
+            "minimum": 3345.0,
+            "maximum": 427184083.0
+          },
+          "header_duplicate_count": 0,
+          "header_backwards_count": 0,
+          "arrival_batch_candidates": 133,
+          "receive_minus_header_ns": {
+            "n": 1966,
+            "median": 63639248.0,
+            "p95": 100379328.5,
+            "minimum": 39152740.0,
+            "maximum": 476012119.0
+          },
+          "receipt_header_is_latency_bound": false,
+          "header_gaps": [],
+          "nonfinite_payload_rows": 0
+        },
+        "imu": {
+          "count": 1968,
+          "header_coverage_ns": [
+            1792309245315195262,
+            1792309343659972387
+          ],
+          "receive_coverage_ns": [
+            1792309245383504223,
+            1792309343704270898
+          ],
+          "header_rate_hz": 20.001062156049905,
+          "header_delta_ns": {
+            "n": 1967,
+            "median": 49997493.0,
+            "p95": 50101732.0,
+            "minimum": 49398302.0,
+            "maximum": 50546413.0
+          },
+          "receive_delta_ns": {
+            "n": 1967,
+            "median": 49993351.0,
+            "p95": 59647241.9,
+            "minimum": 3802.0,
+            "maximum": 428741748.0
+          },
+          "header_duplicate_count": 0,
+          "header_backwards_count": 0,
+          "arrival_batch_candidates": 41,
+          "receive_minus_header_ns": {
+            "n": 1968,
+            "median": 47645707.5,
+            "p95": 60464210.99999999,
+            "minimum": 39106755.0,
+            "maximum": 477725720.0
+          },
+          "receipt_header_is_latency_bound": false,
+          "header_gaps": [],
+          "nonfinite_payload_rows": 0
+        },
+        "uwb": {
+          "count": 4908,
+          "header_coverage_ns": [
+            1792309245528744913,
+            1792309343666981471
+          ],
+          "receive_coverage_ns": [
+            1792309245593105523,
+            1792309343732656618
+          ],
+          "header_rate_hz": 50.00089844797596,
+          "header_delta_ns": {
+            "n": 4907,
+            "median": 19999650.0,
+            "p95": 20026488.1,
+            "minimum": 18973841.0,
+            "maximum": 21088051.0
+          },
+          "receive_delta_ns": {
+            "n": 4907,
+            "median": 19956387.0,
+            "p95": 24005880.399999995,
+            "minimum": 2933.0,
+            "maximum": 428870088.0
+          },
+          "header_duplicate_count": 0,
+          "header_backwards_count": 0,
+          "arrival_batch_candidates": 231,
+          "receive_minus_header_ns": {
+            "n": 4908,
+            "median": 57584508.0,
+            "p95": 76622309.69999999,
+            "minimum": 41531171.0,
+            "maximum": 529864651.0
+          },
+          "receipt_header_is_latency_bound": false,
+          "header_gaps": [],
+          "nonfinite_payload_rows": 4908
+        }
+      },
+      "gyro_units": "published rad/s, not asserted to be unprocessed ADC",
+      "IMU_frame_ids": [
+        "gyro_link"
+      ],
+      "gyro_z_published_rad_s": {
+        "n": 1968,
+        "median": 0.0005328800179995596,
+        "p95": 0.014920640736818314,
+        "minimum": -0.42230740189552307,
+        "maximum": 0.138815239071846
+      },
+      "observed_IMU_covariance_variants": [
+        "[1000000.0, 0.0, 0.0, 0.0, 1000000.0, 0.0, 0.0, 0.0, 1e-06]"
+      ],
+      "axis_mount_clock_noise_bias_calibration": false,
+      "bias_trajectory": null,
+      "bias_reason": "new A FGO estimator not yet frozen/executed",
+      "publication_grid_IMU_coverage": {
+        "scheduled_intervals": 96,
+        "with_both_arrived_brackets": 96,
+        "diagnostic_gap_intervals": 0,
+        "note": "coverage only under inherited uncorrected source clock policy; not an A integration decision or approved physical synchronization"
+      }
+    }
+  ],
+  "IMU_integration_or_optimization_run": false,
+  "one_second_wait_preserved": true,
+  "no_window_removed_for_missing_IMU": true,
+  "field_accuracy_evaluated": false,
+  "clock_note": "integer source/receive epochs retained; no median delay correction or calibrated axis/noise claim"
+}

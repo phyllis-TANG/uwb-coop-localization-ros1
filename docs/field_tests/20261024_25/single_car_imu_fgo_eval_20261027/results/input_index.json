@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "status": "DONE",
+  "cases": [
+    {
+      "schema_version": 1,
+      "case_id": "004023",
+      "source_bag_relative_path": "datasets/field_raw/20261018/bags/CAR2_auto_Lshape_repeat_20261018_004023.bag",
+      "source_bag_sha256": "72d4a051005b0b109461842b6489aa2d07b08dd6f6e750c4b9a82aac8d8e1d82",
+      "origin_bag_receive_epoch_ns": 1792309245383504223,
+      "records": 10672,
+      "kind_counts": {
+        "imu": 1968,
+        "odom": 1966,
+        "uwb": 4908,
+        "other": 1830
+      },
+      "raw_IMU_fields_preserved": true,
+      "old_IMU_placeholder_is_fusion_measurement": false,
+      "event_uncompressed_sha256": "a5fa6a44dfd2053a00916de8200384051f491a27e7a9063d31ef45ecf8606e3b",
+      "legacy_event_uncompressed_sha256": "4e9af6bbff0d1d3fc2c2181b43ac1f7fc6989d33d48f6629a6633af3e3e12c68",
+      "nonfinite_policy": "unknown UWB quality is preserved as null plus source path; it is not an invalid range or zero-quality measurement",
+      "source_units": {
+        "gyro": "published rad/s; may already have MCU compensation",
+        "linear_velocity": "published m/s",
+        "time": "integer ns plus centered s"
+      },
+      "physical_axes_clock_noise_bias_approved": false,
+      "time_mapping": "none, inherits old uncorrected host header/receipt policy; not a calibrated physical time relation",
+      "files": [
+        {
+          "relative_path": "events.jsonl.gz",
+          "sha256": "d4ae01199343894f6111803487f048d7713a7ecc3343e39eb1bf3f5d2058c9d6",
+          "bytes": 1345762
+        },
+        {
+          "relative_path": "legacy_events.jsonl.gz",
+          "sha256": "241bb9d1538ebd30e9a561c4a55d288ab575c93c01159ded0a33e6c2084f5666",
+          "bytes": 229886
+        },
+        {
+          "relative_path": "timing_identity.json",
+          "sha256": "2350d9ecd674d35e3469cb9cdd710b41e0441469f53142e1acff97ffe2f33c6e",
+          "bytes": 1175680
+        }
+      ],
+      "nonfinite_payload_row_count": 4908,
+      "nonfinite_payload_examples": [
+        {
+          "record_index": 8,
+          "kind": "uwb",
+          "nonfinite_values": [
+            {
+              "path": "message.ranges[0].quality",
+              "source_nonfinite": "nan"
+            },
+            {
+              "path": "message.ranges[1].quality",
+              "source_nonfinite": "nan"
+            },
+            {
+              "path": "message.ranges[2].quality",
+              "source_nonfinite": "nan"
+            },
+            {
+              "path": "message.ranges[3].quality",
+              "source_nonfinite": "nan"
+            }
+          ]
+        },
+        {
+          "record_index": 10,
+          "kind": "uwb",
+          "nonfinite_values": [
+            {
+              "path": "message.ranges[0].quality",
+              "source_nonfinite": "nan"
+            },
+            {
+              "path": "message.ranges[1].quality",
+              "source_nonfinite": "nan"
+            },
+            {
+              "path": "message.ranges[2].quality",
+              "source_nonfinite": "nan"
+            },
+            {
+              "path": "message.ranges[3].quality",
+              "source_nonfinite": "nan"
+            }
+          ]
+        }
+      ],
+      "full_nonfinite_paths_location": "events.jsonl.gz and input_manifest.json in input archive"
+    },
+    {
+      "schema_version": 1,
+      "case_id": "005135",
+      "source_bag_relative_path": "datasets/field_raw/20261018/bags/CAR2_auto_Lshape_repeat2_20261018_005135.bag",
+      "source_bag_sha256": "63880adf78d5f07a9b12a87f7352f49e8f7be82d223bcdf60d96e257ba38b2ff",
+      "origin_bag_receive_epoch_ns": 1792309931472145834,
+      "records": 10322,
+      "kind_counts": {
+        "other": 1815,
+        "imu": 1894,
+        "odom": 1891,
+        "uwb": 4722
+      },
+      "raw_IMU_fields_preserved": true,
+      "old_IMU_placeholder_is_fusion_measurement": false,
+      "event_uncompressed_sha256": "7b300932b8e4fa9900e2af2b3151bea920240e4f031dbddf048babd5eb8e5857",
+      "legacy_event_uncompressed_sha256": "b2f071e4bc07c497957b001e931c70ccf3970198a00034f637397d1946573588",
+      "nonfinite_policy": "unknown UWB quality is preserved as null plus source path; it is not an invalid range or zero-quality measurement",
+      "source_units": {
+        "gyro": "published rad/s; may already have MCU compensation",
+        "linear_velocity": "published m/s",
+        "time": "integer ns plus centered s"
+      },
+      "physical_axes_clock_noise_bias_approved": false,
+      "time_mapping": "none, inherits old uncorrected host header/receipt policy; not a calibrated physical time relation",
+      "files": [
+        {
+          "relative_path": "events.jsonl.gz",
+          "sha256": "964cc748fa9de8e4fbbfdc14812ce4984353dd83625dd3fcf7f50e5ec55a6829",
+          "bytes": 1293373
+        },
+        {
+          "relative_path": "legacy_events.jsonl.gz",
+          "sha256": "6d6f47800d5dcaca563e32018c28fda30b1b0766b54b34911d320f86ea988590",
+          "bytes": 217779
+        },
+        {
+          "relative_path": "timing_identity.json",
+          "sha256": "583b2409f93c2654a087728904ce9acac1fe7a40d5cbd4de3178ba7fa0e79cd9",
+          "bytes": 1130727
+        }
+      ],
+      "nonfinite_payload_row_count": 4722,
+      "nonfinite_payload_examples": [
+        {
+          "record_index": 8,
+          "kind": "uwb",
+          "nonfinite_values": [
+            {
+              "path": "message.ranges[0].quality",
+              "source_nonfinite": "nan"
+            },
+            {
+              "path": "message.ranges[1].quality",
+              "source_nonfinite": "nan"
+            },
+            {
+              "path": "message.ranges[2].quality",
+              "source_nonfinite": "nan"
+            },
+            {
+              "path": "message.ranges[3].quality",
+              "source_nonfinite": "nan"
+            }
+          ]
+        },
+        {
+          "record_index": 11,
+          "kind": "uwb",
+          "nonfinite_values": [
+            {
+              "path": "message.ranges[0].quality",
+              "source_nonfinite": "nan"
+            },
+            {
+              "path": "message.ranges[1].quality",
+              "source_nonfinite": "nan"
+            },
+            {
+              "path": "message.ranges[2].quality",
+              "source_nonfinite": "nan"
+            },
+            {
+              "path": "message.ranges[3].quality",
+              "source_nonfinite": "nan"
+            }
+          ]
+        }
+      ],
+      "full_nonfinite_paths_location": "events.jsonl.gz and input_manifest.json in input archive"
+    }
+  ],
+  "new_IMU_FGO_runs": 0,
+  "A_interface": "pending frozen FGO source/protocol; packet adapts input fields only, not optimizer"
+}

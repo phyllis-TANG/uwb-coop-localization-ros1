@@ -1,0 +1,376 @@
+{
+  "schema_version": 1,
+  "redirect_commit": "112586ceb9ce674a083fb43f7d8afb7768a15aaf",
+  "legacy_frozen_kernel_commit": "397beb6dbe0a60dd64e39eb186345014d3a54b16",
+  "B_code_checkpoint_commit": "43b5adc27717028f63d6f4f234a1fcdedfa38528",
+  "legacy_reproduction": {
+    "execution_head": "112586ceb9ce674a083fb43f7d8afb7768a15aaf",
+    "source_files": {
+      "tools/run_single_car_fixed_lag.py": "454c8601a4f53cdf0084e35487240424d70fed7ee37ca342aeb9172fa38aed97",
+      "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+      "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+      "tools/run_single_car_sequential_baseline.py": "651ebd8613c9247bf70a4c873a4d3cc56eca48725fedf08f047c1867864eced5",
+      "tools/test_single_car_fixed_lag.py": "e576f5ddfaaf24b538d446b3d748e48e9f6be5cbcfb31d9d8f6312b1dd841a33",
+      "tools/test_single_car_sequential_replay.py": "148cd4ca3bff47c6dce8c2102daf289f55f39dbcbc4f2eca1cca621a5e31525b",
+      "tools/plot_single_car_fixed_lag.py": "a02c0bab22c042b1291fe40020942baa1b33cb390588034021f5d8f4acc35a59",
+      "docs/field_tests/single_car_historical_L_20261021/results/evidence/new_graph.py": "cc8934e0ee34eabddd46ed09e0de1ca69e9a74b00e93147f7d99f5a04d77e903"
+    },
+    "protocol_sha256": "71175af3a690f1666967b6ed905233de8a8cb1b84c31e5a72eaacdccad0a2f50",
+    "runtime": {
+      "python": "3.12.14",
+      "numpy": "2.3.5",
+      "scipy": "1.17.0",
+      "rosbags": "0.11.8",
+      "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+      "thread_environment": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1"
+      }
+    },
+    "source_and_protocol_unchanged_during_run": true,
+    "whole_tree_cleanliness": "not recorded by original runner; unrelated new B tools were being authored, frozen legacy files unchanged"
+  },
+  "phases": [
+    {
+      "run_id": "baseline_readback_001",
+      "status": "DONE",
+      "code_commit": "282fde4d56d7e7917e0e10c07bd6397dfa18b40e",
+      "worktree_dirty": false,
+      "source_sha256": {
+        "tools/single_car_imu_fgo_eval/test_eval.py": "39e23ce79ae0468798fe802ca0ebf121422ca216a355874c7a91bce675ab3ec9",
+        "tools/single_car_imu_fgo_eval/verify_packets.py": "8e06dca633f7b59d9d73bc9f64c73723aa9834f9e8098ccec3ee6d0949e9bc12",
+        "tools/single_car_imu_fgo_eval/meta.py": "9e9e08a8839d10d3b495b62f8d677f950fcfbf9d250dea656be1786f920982a7",
+        "tools/single_car_imu_fgo_eval/audit_contract.py": "0c14021e07e4a22fd3486bb49abde65e430cfd4ba150fd92b1c9cc1e2256e89a",
+        "tools/single_car_imu_fgo_eval/verify_baseline.py": "bfc4e66c19bcf3395c597231bf27ad66add89108e7b0cb40470f158790db3644",
+        "tools/single_car_imu_fgo_eval/prepare.py": "e6f8e7d41878e7c42f30bfee7c677b4712a60c2d589663b89d8d001d963dd1ae",
+        "tools/single_car_imu_fgo_eval/protocol.json": "af239cf7c8b3b7cc315f67416c8ee38dd6c050f15938adcf16b75c6c7b349552",
+        "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+        "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+        "tools/run_single_car_fixed_lag.py": "454c8601a4f53cdf0084e35487240424d70fed7ee37ca342aeb9172fa38aed97",
+        "tools/run_single_car_sequential_baseline.py": "651ebd8613c9247bf70a4c873a4d3cc56eca48725fedf08f047c1867864eced5"
+      },
+      "run_sha256": "a8adf3b88e9c2dbab196fd26a8c98707da2da76afef3fcca921d0fbbc50c7bea",
+      "elapsed_s": 0.6860122220023186,
+      "actual_input_bindings": [
+        {
+          "relative_path": "004023/input_manifest.json",
+          "sha256": "52b2833ec231c8e0445ef044eff5f359f8be23b0b420f49f43622dd855c9d685"
+        },
+        {
+          "relative_path": "005135/input_manifest.json",
+          "sha256": "59c9d272737f481f2206adb65aa64a1d7bd8c041bc676310a0ebd04d4be85391"
+        }
+      ],
+      "input_binding_collection": "post-run, checked against immutable packet manifests and independent raw readback",
+      "new_IMU_FGO_runs": 0
+    },
+    {
+      "run_id": "baseline_readback_002",
+      "status": "DONE",
+      "code_commit": "43b5adc27717028f63d6f4f234a1fcdedfa38528",
+      "worktree_dirty": true,
+      "source_sha256": {
+        "tools/single_car_imu_fgo_eval/test_eval.py": "882be5d2ab388cd3cc7addce2686126f4d754484fd1f331afb478e6c8e88295e",
+        "tools/single_car_imu_fgo_eval/negative_checks.py": "ab2353ad4e6ed4264c5f8911f12bcbc8a0425679c639bb5455073f8b8b63ec83",
+        "tools/single_car_imu_fgo_eval/diagnose.py": "288be01af9da5441edf61e89814b98b8afa5246c4beb61d01f9994069b3a4f67",
+        "tools/single_car_imu_fgo_eval/verify_packets.py": "916bc80418e4d610c8ad74ff78a330e081d0345e1f160ddc6830163a00c077a4",
+        "tools/single_car_imu_fgo_eval/meta.py": "9e9e08a8839d10d3b495b62f8d677f950fcfbf9d250dea656be1786f920982a7",
+        "tools/single_car_imu_fgo_eval/audit_contract.py": "4de75b9842fcede3d21be50ccafe92f29d66cb8b2826940bf24b756b9b1c0f17",
+        "tools/single_car_imu_fgo_eval/verify_baseline.py": "bfc4e66c19bcf3395c597231bf27ad66add89108e7b0cb40470f158790db3644",
+        "tools/single_car_imu_fgo_eval/prepare.py": "536788077beb12a395b6698fd5524ce85123d7f3be7c744979bc497d4c399afd",
+        "tools/single_car_imu_fgo_eval/protocol.json": "af239cf7c8b3b7cc315f67416c8ee38dd6c050f15938adcf16b75c6c7b349552",
+        "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+        "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+        "tools/run_single_car_fixed_lag.py": "454c8601a4f53cdf0084e35487240424d70fed7ee37ca342aeb9172fa38aed97",
+        "tools/run_single_car_sequential_baseline.py": "651ebd8613c9247bf70a4c873a4d3cc56eca48725fedf08f047c1867864eced5"
+      },
+      "run_sha256": "e7f7e664ea32493ff0543ab3149e25167834615ac65537f64d8050c54e61c7eb",
+      "elapsed_s": 0.7410302909993334,
+      "actual_input_bindings": [
+        {
+          "relative_path": "004023/input_manifest.json",
+          "sha256": "7b7915919706d9f60a7c7dd0a4a4efcfbb902612a25654c18c6a89828835811c"
+        },
+        {
+          "relative_path": "005135/input_manifest.json",
+          "sha256": "7ac6d68571b10e00d2234032424ef81f9cf6762f459773d2e53f08a92f70a820"
+        }
+      ],
+      "input_binding_collection": "post-run, checked against immutable packet manifests and independent raw readback",
+      "new_IMU_FGO_runs": 0
+    },
+    {
+      "run_id": "diagnostics_001",
+      "status": "DONE",
+      "code_commit": "f1f06fec1d1132df2fcdbd2167f76277487e4747",
+      "worktree_dirty": false,
+      "source_sha256": {
+        "tools/single_car_imu_fgo_eval/test_eval.py": "76e5f9bfadc84dc727d2f9c1f87ebec6cb3640db6f0aaa3f8f9f81ea30d9f383",
+        "tools/single_car_imu_fgo_eval/negative_checks.py": "ab2353ad4e6ed4264c5f8911f12bcbc8a0425679c639bb5455073f8b8b63ec83",
+        "tools/single_car_imu_fgo_eval/diagnose.py": "288be01af9da5441edf61e89814b98b8afa5246c4beb61d01f9994069b3a4f67",
+        "tools/single_car_imu_fgo_eval/verify_packets.py": "8e06dca633f7b59d9d73bc9f64c73723aa9834f9e8098ccec3ee6d0949e9bc12",
+        "tools/single_car_imu_fgo_eval/meta.py": "9e9e08a8839d10d3b495b62f8d677f950fcfbf9d250dea656be1786f920982a7",
+        "tools/single_car_imu_fgo_eval/audit_contract.py": "0c14021e07e4a22fd3486bb49abde65e430cfd4ba150fd92b1c9cc1e2256e89a",
+        "tools/single_car_imu_fgo_eval/verify_baseline.py": "bfc4e66c19bcf3395c597231bf27ad66add89108e7b0cb40470f158790db3644",
+        "tools/single_car_imu_fgo_eval/prepare.py": "e6f8e7d41878e7c42f30bfee7c677b4712a60c2d589663b89d8d001d963dd1ae",
+        "tools/single_car_imu_fgo_eval/protocol.json": "af239cf7c8b3b7cc315f67416c8ee38dd6c050f15938adcf16b75c6c7b349552",
+        "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+        "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+        "tools/run_single_car_fixed_lag.py": "454c8601a4f53cdf0084e35487240424d70fed7ee37ca342aeb9172fa38aed97",
+        "tools/run_single_car_sequential_baseline.py": "651ebd8613c9247bf70a4c873a4d3cc56eca48725fedf08f047c1867864eced5"
+      },
+      "run_sha256": "e5c6c34c1d961882136a6697066ba9bdaf90da07f03c9c4b2d3eb3958dc3fde6",
+      "elapsed_s": 1.5271465580008226,
+      "actual_input_bindings": [
+        {
+          "relative_path": "004023/input_manifest.json",
+          "sha256": "52b2833ec231c8e0445ef044eff5f359f8be23b0b420f49f43622dd855c9d685"
+        },
+        {
+          "relative_path": "005135/input_manifest.json",
+          "sha256": "59c9d272737f481f2206adb65aa64a1d7bd8c041bc676310a0ebd04d4be85391"
+        }
+      ],
+      "input_binding_collection": "post-run, checked against immutable packet manifests and independent raw readback",
+      "new_IMU_FGO_runs": 0
+    },
+    {
+      "run_id": "diagnostics_002",
+      "status": "DONE",
+      "code_commit": "43b5adc27717028f63d6f4f234a1fcdedfa38528",
+      "worktree_dirty": true,
+      "source_sha256": {
+        "tools/single_car_imu_fgo_eval/test_eval.py": "882be5d2ab388cd3cc7addce2686126f4d754484fd1f331afb478e6c8e88295e",
+        "tools/single_car_imu_fgo_eval/negative_checks.py": "ab2353ad4e6ed4264c5f8911f12bcbc8a0425679c639bb5455073f8b8b63ec83",
+        "tools/single_car_imu_fgo_eval/diagnose.py": "288be01af9da5441edf61e89814b98b8afa5246c4beb61d01f9994069b3a4f67",
+        "tools/single_car_imu_fgo_eval/verify_packets.py": "916bc80418e4d610c8ad74ff78a330e081d0345e1f160ddc6830163a00c077a4",
+        "tools/single_car_imu_fgo_eval/meta.py": "9e9e08a8839d10d3b495b62f8d677f950fcfbf9d250dea656be1786f920982a7",
+        "tools/single_car_imu_fgo_eval/audit_contract.py": "4de75b9842fcede3d21be50ccafe92f29d66cb8b2826940bf24b756b9b1c0f17",
+        "tools/single_car_imu_fgo_eval/verify_baseline.py": "bfc4e66c19bcf3395c597231bf27ad66add89108e7b0cb40470f158790db3644",
+        "tools/single_car_imu_fgo_eval/prepare.py": "536788077beb12a395b6698fd5524ce85123d7f3be7c744979bc497d4c399afd",
+        "tools/single_car_imu_fgo_eval/protocol.json": "af239cf7c8b3b7cc315f67416c8ee38dd6c050f15938adcf16b75c6c7b349552",
+        "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+        "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+        "tools/run_single_car_fixed_lag.py": "454c8601a4f53cdf0084e35487240424d70fed7ee37ca342aeb9172fa38aed97",
+        "tools/run_single_car_sequential_baseline.py": "651ebd8613c9247bf70a4c873a4d3cc56eca48725fedf08f047c1867864eced5"
+      },
+      "run_sha256": "2b096ef6eb76828d4c101efc5cbdae8b990b542e51a425ba6f34e5e57d60e092",
+      "elapsed_s": 1.5825758230057545,
+      "actual_input_bindings": [
+        {
+          "relative_path": "004023/input_manifest.json",
+          "sha256": "7b7915919706d9f60a7c7dd0a4a4efcfbb902612a25654c18c6a89828835811c"
+        },
+        {
+          "relative_path": "005135/input_manifest.json",
+          "sha256": "7ac6d68571b10e00d2234032424ef81f9cf6762f459773d2e53f08a92f70a820"
+        }
+      ],
+      "input_binding_collection": "post-run, checked against immutable packet manifests and independent raw readback",
+      "new_IMU_FGO_runs": 0
+    },
+    {
+      "run_id": "inputs_001",
+      "status": "DONE",
+      "code_commit": "282fde4d56d7e7917e0e10c07bd6397dfa18b40e",
+      "worktree_dirty": false,
+      "source_sha256": {
+        "tools/single_car_imu_fgo_eval/test_eval.py": "39e23ce79ae0468798fe802ca0ebf121422ca216a355874c7a91bce675ab3ec9",
+        "tools/single_car_imu_fgo_eval/verify_packets.py": "8e06dca633f7b59d9d73bc9f64c73723aa9834f9e8098ccec3ee6d0949e9bc12",
+        "tools/single_car_imu_fgo_eval/meta.py": "9e9e08a8839d10d3b495b62f8d677f950fcfbf9d250dea656be1786f920982a7",
+        "tools/single_car_imu_fgo_eval/audit_contract.py": "0c14021e07e4a22fd3486bb49abde65e430cfd4ba150fd92b1c9cc1e2256e89a",
+        "tools/single_car_imu_fgo_eval/verify_baseline.py": "bfc4e66c19bcf3395c597231bf27ad66add89108e7b0cb40470f158790db3644",
+        "tools/single_car_imu_fgo_eval/prepare.py": "e6f8e7d41878e7c42f30bfee7c677b4712a60c2d589663b89d8d001d963dd1ae",
+        "tools/single_car_imu_fgo_eval/protocol.json": "af239cf7c8b3b7cc315f67416c8ee38dd6c050f15938adcf16b75c6c7b349552",
+        "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+        "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+        "tools/run_single_car_fixed_lag.py": "454c8601a4f53cdf0084e35487240424d70fed7ee37ca342aeb9172fa38aed97",
+        "tools/run_single_car_sequential_baseline.py": "651ebd8613c9247bf70a4c873a4d3cc56eca48725fedf08f047c1867864eced5"
+      },
+      "run_sha256": "6d17145b38cee6c8fbb3afeeb40651b8ecfde580af3a342d9749873eecdcc10e",
+      "elapsed_s": 2.8188865769989206,
+      "actual_input_bindings": [],
+      "input_binding_collection": "post-run, checked against immutable packet manifests and independent raw readback",
+      "new_IMU_FGO_runs": 0
+    },
+    {
+      "run_id": "inputs_002",
+      "status": "DONE",
+      "code_commit": "43b5adc27717028f63d6f4f234a1fcdedfa38528",
+      "worktree_dirty": true,
+      "source_sha256": {
+        "tools/single_car_imu_fgo_eval/test_eval.py": "882be5d2ab388cd3cc7addce2686126f4d754484fd1f331afb478e6c8e88295e",
+        "tools/single_car_imu_fgo_eval/negative_checks.py": "ab2353ad4e6ed4264c5f8911f12bcbc8a0425679c639bb5455073f8b8b63ec83",
+        "tools/single_car_imu_fgo_eval/diagnose.py": "288be01af9da5441edf61e89814b98b8afa5246c4beb61d01f9994069b3a4f67",
+        "tools/single_car_imu_fgo_eval/verify_packets.py": "916bc80418e4d610c8ad74ff78a330e081d0345e1f160ddc6830163a00c077a4",
+        "tools/single_car_imu_fgo_eval/meta.py": "9e9e08a8839d10d3b495b62f8d677f950fcfbf9d250dea656be1786f920982a7",
+        "tools/single_car_imu_fgo_eval/audit_contract.py": "4de75b9842fcede3d21be50ccafe92f29d66cb8b2826940bf24b756b9b1c0f17",
+        "tools/single_car_imu_fgo_eval/verify_baseline.py": "bfc4e66c19bcf3395c597231bf27ad66add89108e7b0cb40470f158790db3644",
+        "tools/single_car_imu_fgo_eval/prepare.py": "536788077beb12a395b6698fd5524ce85123d7f3be7c744979bc497d4c399afd",
+        "tools/single_car_imu_fgo_eval/protocol.json": "af239cf7c8b3b7cc315f67416c8ee38dd6c050f15938adcf16b75c6c7b349552",
+        "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+        "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+        "tools/run_single_car_fixed_lag.py": "454c8601a4f53cdf0084e35487240424d70fed7ee37ca342aeb9172fa38aed97",
+        "tools/run_single_car_sequential_baseline.py": "651ebd8613c9247bf70a4c873a4d3cc56eca48725fedf08f047c1867864eced5"
+      },
+      "run_sha256": "ef19665218644a5d9ebb9c75ad9dfe8959e1d5471da3d55555763e9b66c012ae",
+      "elapsed_s": 3.0526581829981296,
+      "actual_input_bindings": [],
+      "input_binding_collection": "post-run, checked against immutable packet manifests and independent raw readback",
+      "new_IMU_FGO_runs": 0
+    },
+    {
+      "run_id": "negative_checks_001",
+      "status": "DONE",
+      "code_commit": "f1f06fec1d1132df2fcdbd2167f76277487e4747",
+      "worktree_dirty": false,
+      "source_sha256": {
+        "tools/single_car_imu_fgo_eval/test_eval.py": "76e5f9bfadc84dc727d2f9c1f87ebec6cb3640db6f0aaa3f8f9f81ea30d9f383",
+        "tools/single_car_imu_fgo_eval/negative_checks.py": "ab2353ad4e6ed4264c5f8911f12bcbc8a0425679c639bb5455073f8b8b63ec83",
+        "tools/single_car_imu_fgo_eval/diagnose.py": "288be01af9da5441edf61e89814b98b8afa5246c4beb61d01f9994069b3a4f67",
+        "tools/single_car_imu_fgo_eval/verify_packets.py": "8e06dca633f7b59d9d73bc9f64c73723aa9834f9e8098ccec3ee6d0949e9bc12",
+        "tools/single_car_imu_fgo_eval/meta.py": "9e9e08a8839d10d3b495b62f8d677f950fcfbf9d250dea656be1786f920982a7",
+        "tools/single_car_imu_fgo_eval/audit_contract.py": "0c14021e07e4a22fd3486bb49abde65e430cfd4ba150fd92b1c9cc1e2256e89a",
+        "tools/single_car_imu_fgo_eval/verify_baseline.py": "bfc4e66c19bcf3395c597231bf27ad66add89108e7b0cb40470f158790db3644",
+        "tools/single_car_imu_fgo_eval/prepare.py": "e6f8e7d41878e7c42f30bfee7c677b4712a60c2d589663b89d8d001d963dd1ae",
+        "tools/single_car_imu_fgo_eval/protocol.json": "af239cf7c8b3b7cc315f67416c8ee38dd6c050f15938adcf16b75c6c7b349552",
+        "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+        "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+        "tools/run_single_car_fixed_lag.py": "454c8601a4f53cdf0084e35487240424d70fed7ee37ca342aeb9172fa38aed97",
+        "tools/run_single_car_sequential_baseline.py": "651ebd8613c9247bf70a4c873a4d3cc56eca48725fedf08f047c1867864eced5"
+      },
+      "run_sha256": "74a350901b6e239d0140a51cb2831acf71e0bdd138c035b3d655737dcc3660cc",
+      "elapsed_s": 10.445391601002484,
+      "actual_input_bindings": [
+        {
+          "relative_path": "004023/input_manifest.json",
+          "sha256": "52b2833ec231c8e0445ef044eff5f359f8be23b0b420f49f43622dd855c9d685"
+        },
+        {
+          "relative_path": "005135/input_manifest.json",
+          "sha256": "59c9d272737f481f2206adb65aa64a1d7bd8c041bc676310a0ebd04d4be85391"
+        }
+      ],
+      "input_binding_collection": "post-run, checked against immutable packet manifests and independent raw readback",
+      "new_IMU_FGO_runs": 0
+    },
+    {
+      "run_id": "negative_checks_002",
+      "status": "DONE",
+      "code_commit": "43b5adc27717028f63d6f4f234a1fcdedfa38528",
+      "worktree_dirty": true,
+      "source_sha256": {
+        "tools/single_car_imu_fgo_eval/test_eval.py": "882be5d2ab388cd3cc7addce2686126f4d754484fd1f331afb478e6c8e88295e",
+        "tools/single_car_imu_fgo_eval/negative_checks.py": "ab2353ad4e6ed4264c5f8911f12bcbc8a0425679c639bb5455073f8b8b63ec83",
+        "tools/single_car_imu_fgo_eval/diagnose.py": "288be01af9da5441edf61e89814b98b8afa5246c4beb61d01f9994069b3a4f67",
+        "tools/single_car_imu_fgo_eval/verify_packets.py": "916bc80418e4d610c8ad74ff78a330e081d0345e1f160ddc6830163a00c077a4",
+        "tools/single_car_imu_fgo_eval/meta.py": "9e9e08a8839d10d3b495b62f8d677f950fcfbf9d250dea656be1786f920982a7",
+        "tools/single_car_imu_fgo_eval/audit_contract.py": "4de75b9842fcede3d21be50ccafe92f29d66cb8b2826940bf24b756b9b1c0f17",
+        "tools/single_car_imu_fgo_eval/verify_baseline.py": "bfc4e66c19bcf3395c597231bf27ad66add89108e7b0cb40470f158790db3644",
+        "tools/single_car_imu_fgo_eval/prepare.py": "536788077beb12a395b6698fd5524ce85123d7f3be7c744979bc497d4c399afd",
+        "tools/single_car_imu_fgo_eval/protocol.json": "af239cf7c8b3b7cc315f67416c8ee38dd6c050f15938adcf16b75c6c7b349552",
+        "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+        "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+        "tools/run_single_car_fixed_lag.py": "454c8601a4f53cdf0084e35487240424d70fed7ee37ca342aeb9172fa38aed97",
+        "tools/run_single_car_sequential_baseline.py": "651ebd8613c9247bf70a4c873a4d3cc56eca48725fedf08f047c1867864eced5"
+      },
+      "run_sha256": "584cf413e1d83cb87d48a0c7da497ac1adf4b5d8ebf678c5e64be86e97259d94",
+      "elapsed_s": 10.49444000699441,
+      "actual_input_bindings": [
+        {
+          "relative_path": "004023/input_manifest.json",
+          "sha256": "7b7915919706d9f60a7c7dd0a4a4efcfbb902612a25654c18c6a89828835811c"
+        },
+        {
+          "relative_path": "005135/input_manifest.json",
+          "sha256": "7ac6d68571b10e00d2234032424ef81f9cf6762f459773d2e53f08a92f70a820"
+        }
+      ],
+      "input_binding_collection": "post-run, checked against immutable packet manifests and independent raw readback",
+      "new_IMU_FGO_runs": 0
+    },
+    {
+      "run_id": "packet_readback_001",
+      "status": "DONE",
+      "code_commit": "282fde4d56d7e7917e0e10c07bd6397dfa18b40e",
+      "worktree_dirty": false,
+      "source_sha256": {
+        "tools/single_car_imu_fgo_eval/test_eval.py": "39e23ce79ae0468798fe802ca0ebf121422ca216a355874c7a91bce675ab3ec9",
+        "tools/single_car_imu_fgo_eval/verify_packets.py": "8e06dca633f7b59d9d73bc9f64c73723aa9834f9e8098ccec3ee6d0949e9bc12",
+        "tools/single_car_imu_fgo_eval/meta.py": "9e9e08a8839d10d3b495b62f8d677f950fcfbf9d250dea656be1786f920982a7",
+        "tools/single_car_imu_fgo_eval/audit_contract.py": "0c14021e07e4a22fd3486bb49abde65e430cfd4ba150fd92b1c9cc1e2256e89a",
+        "tools/single_car_imu_fgo_eval/verify_baseline.py": "bfc4e66c19bcf3395c597231bf27ad66add89108e7b0cb40470f158790db3644",
+        "tools/single_car_imu_fgo_eval/prepare.py": "e6f8e7d41878e7c42f30bfee7c677b4712a60c2d589663b89d8d001d963dd1ae",
+        "tools/single_car_imu_fgo_eval/protocol.json": "af239cf7c8b3b7cc315f67416c8ee38dd6c050f15938adcf16b75c6c7b349552",
+        "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+        "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+        "tools/run_single_car_fixed_lag.py": "454c8601a4f53cdf0084e35487240424d70fed7ee37ca342aeb9172fa38aed97",
+        "tools/run_single_car_sequential_baseline.py": "651ebd8613c9247bf70a4c873a4d3cc56eca48725fedf08f047c1867864eced5"
+      },
+      "run_sha256": "4009f38a80bc76885dfaf3a24bc2234dced2f5b33468202fbc8d9cc7b26e8b4b",
+      "elapsed_s": 2.289992866004468,
+      "actual_input_bindings": [
+        {
+          "relative_path": "004023/input_manifest.json",
+          "sha256": "52b2833ec231c8e0445ef044eff5f359f8be23b0b420f49f43622dd855c9d685"
+        },
+        {
+          "relative_path": "005135/input_manifest.json",
+          "sha256": "59c9d272737f481f2206adb65aa64a1d7bd8c041bc676310a0ebd04d4be85391"
+        }
+      ],
+      "input_binding_collection": "post-run, checked against immutable packet manifests and independent raw readback",
+      "new_IMU_FGO_runs": 0
+    },
+    {
+      "run_id": "packet_readback_002",
+      "status": "DONE",
+      "code_commit": "43b5adc27717028f63d6f4f234a1fcdedfa38528",
+      "worktree_dirty": true,
+      "source_sha256": {
+        "tools/single_car_imu_fgo_eval/test_eval.py": "882be5d2ab388cd3cc7addce2686126f4d754484fd1f331afb478e6c8e88295e",
+        "tools/single_car_imu_fgo_eval/negative_checks.py": "ab2353ad4e6ed4264c5f8911f12bcbc8a0425679c639bb5455073f8b8b63ec83",
+        "tools/single_car_imu_fgo_eval/diagnose.py": "288be01af9da5441edf61e89814b98b8afa5246c4beb61d01f9994069b3a4f67",
+        "tools/single_car_imu_fgo_eval/verify_packets.py": "916bc80418e4d610c8ad74ff78a330e081d0345e1f160ddc6830163a00c077a4",
+        "tools/single_car_imu_fgo_eval/meta.py": "9e9e08a8839d10d3b495b62f8d677f950fcfbf9d250dea656be1786f920982a7",
+        "tools/single_car_imu_fgo_eval/audit_contract.py": "4de75b9842fcede3d21be50ccafe92f29d66cb8b2826940bf24b756b9b1c0f17",
+        "tools/single_car_imu_fgo_eval/verify_baseline.py": "bfc4e66c19bcf3395c597231bf27ad66add89108e7b0cb40470f158790db3644",
+        "tools/single_car_imu_fgo_eval/prepare.py": "536788077beb12a395b6698fd5524ce85123d7f3be7c744979bc497d4c399afd",
+        "tools/single_car_imu_fgo_eval/protocol.json": "af239cf7c8b3b7cc315f67416c8ee38dd6c050f15938adcf16b75c6c7b349552",
+        "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+        "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+        "tools/run_single_car_fixed_lag.py": "454c8601a4f53cdf0084e35487240424d70fed7ee37ca342aeb9172fa38aed97",
+        "tools/run_single_car_sequential_baseline.py": "651ebd8613c9247bf70a4c873a4d3cc56eca48725fedf08f047c1867864eced5"
+      },
+      "run_sha256": "e4cb2cf72c87e3478cbd6431061f54ad6aff1ce7045f510cf96f546d7bc0b568",
+      "elapsed_s": 2.2301633410024806,
+      "actual_input_bindings": [
+        {
+          "relative_path": "004023/input_manifest.json",
+          "sha256": "7b7915919706d9f60a7c7dd0a4a4efcfbb902612a25654c18c6a89828835811c"
+        },
+        {
+          "relative_path": "005135/input_manifest.json",
+          "sha256": "7ac6d68571b10e00d2234032424ef81f9cf6762f459773d2e53f08a92f70a820"
+        }
+      ],
+      "input_binding_collection": "post-run, checked against immutable packet manifests and independent raw readback",
+      "new_IMU_FGO_runs": 0
+    }
+  ],
+  "selected_input_revision": "inputs_002",
+  "original_revision_preserved": "inputs_001",
+  "source_of_revision": "distinguish unknown quality from required numeric fields; legacy event bytes unchanged",
+  "older_EKF_draft": {
+    "commit": "6b96801",
+    "branch": "analysis/20261027-b-imu-field",
+    "new_model_runs": 0,
+    "preserved": true
+  },
+  "A_interface": {
+    "status": "NOT_RECEIVED",
+    "last_checked_at_utc": "2026-10-27T10:14:54Z",
+    "FGO_frozen_head_found": null,
+    "F1_F3_runs": 0
+  }
+}
