@@ -8,7 +8,7 @@
 
 实际路径`/workspace/scratch/baf181dcbfd0/literature-scope-20261028-baf181`，分支`research/20261028-literature-scope`，remote `https://github.com/phyllis-TANG/uwb-coop-localization-ros1.git`。旧scratch仓库已不在，单独初始化/获取指定基准，没有恢复或改动旧计算工作端。起点完整HEAD：`74fa210e7cf6aa322eaebce19530510edb605d22`。初始HEAD处无tracked修改，有两项范围外未跟踪临时文件，原样保留；初始进程观察只有系统/应用/同步服务，未见定位进程，可用空间约30GiB。无适用AGENTS；Python3.12.14及pdftotext可执行，未安装共享依赖。
 
-PR64固定head `d9eea02092511c6571fe1b06e5164ccb5007e1e7`、PR65固定head `b2efc577e667c339a45741760e8c7623625f03bc`均以git show只读。接口当时均显示已合并，远端main观察为`7b67c66f2470d23f6c876f45b6543f72fab66391`；仍保留用户指定起点，不等待、不自行合并或切换其他工作端。阶段提交e371a71、8b37ca8。最终完整提交/草稿PR由provenance publication字段及同名远端HEAD登记；本交接文件不能自引用自身最终commit SHA。
+PR64固定head `d9eea02092511c6571fe1b06e5164ccb5007e1e7`、PR65固定head `b2efc577e667c339a45741760e8c7623625f03bc`均以git show只读。接口当时均显示已合并，远端main观察为`7b67c66f2470d23f6c876f45b6543f72fab66391`；仍保留用户指定起点，不等待、不自行合并或切换其他工作端。阶段提交e371a71、8b37ca8。文献报告发布提交为`be76b9745f31d087fd97854e418290b6bd857310`，随后补充本发布登记。草稿[PR #67](https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/67)已创建，未合并；最终完整HEAD以该PR的同名远端分支为准。为保留阶段历史，本地检查点分支使用`research/20261028-literature-scope-local-checkpoints`；交付分支与远端同名跟踪。
 
 ## 修改文件
 

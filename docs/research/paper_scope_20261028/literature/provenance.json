@@ -66,11 +66,13 @@
     "P9"
   ],
   "publication": {
-    "status": "PREPARED",
+    "status": "PUBLISHED_DRAFT",
     "draft": true,
     "merged": false,
     "branch": "research/20261028-literature-scope",
-    "url": null
+    "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/67",
+    "report_commit": "be76b9745f31d087fd97854e418290b6bd857310",
+    "head_resolution": "Final branch head includes the publication-metadata follow-up commit; use the PR head ref for the current complete SHA."
   },
   "checks": {
     "local_markdown_links": "PASS",
@@ -328,5 +330,7 @@
     "SUPERVISOR_BRIEF.md": "17e6334dc53ff5a2184204d63c6f50309e1c7f05d4ea798006cc9d61acb392a4",
     "TALK_5MIN.md": "59e3a882ce72df3e2b70b7c0ad2ef6e7fcb18e7cc07da265d64e75351698aabd",
     "catalog.json": "0e5ac6d6773dace43e70f4796b23345b4e506e5b67a67311b2a647f85084a722"
-  }
+  },
+  "publication_recorded_at_utc": "2026-10-27T17:02:06.361640+00:00",
+  "date_convention": "20261028 is the user-requested task label. Retrieval timestamps are UTC in this file; human source access-date labels use UTC+8 (2026-10-27 afternoon UTC is 2026-10-28 in UTC+8). Runtime timezone remains UTC."
 }
