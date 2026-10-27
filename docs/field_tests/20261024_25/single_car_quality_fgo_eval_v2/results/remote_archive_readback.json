@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "checked_at_utc": "2026-10-27T15:11:16.070644+00:00",
+  "artifacts": [
+    {
+      "kind": "review",
+      "status": "PASS",
+      "url": "https://raw.githubusercontent.com/phyllis-TANG/uwb-coop-localization-ros1/921ee3e57520c1e5d45e6b96f1cefc34559966d0/docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/artifacts/quality-field-v2-review.tar.gz",
+      "commit": "921ee3e57520c1e5d45e6b96f1cefc34559966d0",
+      "http_status": 200,
+      "sha256": "a0f97e9e4905e4f0a112a559b58b2c49f32a36f84c1718daefe085f5da2302db",
+      "bytes": 540322,
+      "members_verified": 75,
+      "all_member_hashes_match": true,
+      "extracted_to_fresh_portable_root": false
+    },
+    {
+      "kind": "performance",
+      "status": "PASS",
+      "url": "https://raw.githubusercontent.com/phyllis-TANG/uwb-coop-localization-ros1/921ee3e57520c1e5d45e6b96f1cefc34559966d0/docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/artifacts/quality-field-v2-performance.tar.gz",
+      "commit": "921ee3e57520c1e5d45e6b96f1cefc34559966d0",
+      "http_status": 200,
+      "sha256": "00d708c02915febc95fd944107fd784991a4c2e0e382d1aa0eaa41e0fa85d7db",
+      "bytes": 45204449,
+      "members_verified": 223,
+      "all_member_hashes_match": true,
+      "extracted_to_fresh_portable_root": true
+    },
+    {
+      "kind": "controls",
+      "status": "PASS",
+      "url": "https://raw.githubusercontent.com/phyllis-TANG/uwb-coop-localization-ros1/921ee3e57520c1e5d45e6b96f1cefc34559966d0/docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/artifacts/quality-field-v2-controls.tar.gz",
+      "commit": "921ee3e57520c1e5d45e6b96f1cefc34559966d0",
+      "http_status": 200,
+      "sha256": "b46a0c2bc8d1aaad1d6e358fb1f85f402ba096f2273687dcb9ba55c6f39ff709",
+      "bytes": 38620622,
+      "members_verified": 188,
+      "all_member_hashes_match": true,
+      "extracted_to_fresh_portable_root": true
+    }
+  ],
+  "total_members_verified": 486
+}

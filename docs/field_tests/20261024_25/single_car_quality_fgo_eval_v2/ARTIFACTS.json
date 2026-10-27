@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "LOCAL_MEMBER_READBACK_PASS_REMOTE_PENDING",
+  "status": "PASS_LOCAL_REMOTE_AND_PORTABLE_COMPLETE_INVENTORY",
   "artifacts": [
     {
       "kind": "review",
@@ -9,7 +9,19 @@
       "bytes": 540322,
       "members": 75,
       "receipt_relative_path": "artifacts/quality-field-v2-review.tar.gz.json",
-      "remote_readback": null
+      "remote_readback": {
+        "kind": "review",
+        "status": "PASS",
+        "url": "https://raw.githubusercontent.com/phyllis-TANG/uwb-coop-localization-ros1/921ee3e57520c1e5d45e6b96f1cefc34559966d0/docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/artifacts/quality-field-v2-review.tar.gz",
+        "commit": "921ee3e57520c1e5d45e6b96f1cefc34559966d0",
+        "http_status": 200,
+        "sha256": "a0f97e9e4905e4f0a112a559b58b2c49f32a36f84c1718daefe085f5da2302db",
+        "bytes": 540322,
+        "members_verified": 75,
+        "all_member_hashes_match": true,
+        "extracted_to_fresh_portable_root": false
+      },
+      "download_url": "https://raw.githubusercontent.com/phyllis-TANG/uwb-coop-localization-ros1/921ee3e57520c1e5d45e6b96f1cefc34559966d0/docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/artifacts/quality-field-v2-review.tar.gz"
     },
     {
       "kind": "performance",
@@ -18,7 +30,19 @@
       "bytes": 45204449,
       "members": 223,
       "receipt_relative_path": "artifacts/quality-field-v2-performance.tar.gz.json",
-      "remote_readback": null
+      "remote_readback": {
+        "kind": "performance",
+        "status": "PASS",
+        "url": "https://raw.githubusercontent.com/phyllis-TANG/uwb-coop-localization-ros1/921ee3e57520c1e5d45e6b96f1cefc34559966d0/docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/artifacts/quality-field-v2-performance.tar.gz",
+        "commit": "921ee3e57520c1e5d45e6b96f1cefc34559966d0",
+        "http_status": 200,
+        "sha256": "00d708c02915febc95fd944107fd784991a4c2e0e382d1aa0eaa41e0fa85d7db",
+        "bytes": 45204449,
+        "members_verified": 223,
+        "all_member_hashes_match": true,
+        "extracted_to_fresh_portable_root": true
+      },
+      "download_url": "https://raw.githubusercontent.com/phyllis-TANG/uwb-coop-localization-ros1/921ee3e57520c1e5d45e6b96f1cefc34559966d0/docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/artifacts/quality-field-v2-performance.tar.gz"
     },
     {
       "kind": "controls",
@@ -27,7 +51,19 @@
       "bytes": 38620622,
       "members": 188,
       "receipt_relative_path": "artifacts/quality-field-v2-controls.tar.gz.json",
-      "remote_readback": null
+      "remote_readback": {
+        "kind": "controls",
+        "status": "PASS",
+        "url": "https://raw.githubusercontent.com/phyllis-TANG/uwb-coop-localization-ros1/921ee3e57520c1e5d45e6b96f1cefc34559966d0/docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/artifacts/quality-field-v2-controls.tar.gz",
+        "commit": "921ee3e57520c1e5d45e6b96f1cefc34559966d0",
+        "http_status": 200,
+        "sha256": "b46a0c2bc8d1aaad1d6e358fb1f85f402ba096f2273687dcb9ba55c6f39ff709",
+        "bytes": 38620622,
+        "members_verified": 188,
+        "all_member_hashes_match": true,
+        "extracted_to_fresh_portable_root": true
+      },
+      "download_url": "https://raw.githubusercontent.com/phyllis-TANG/uwb-coop-localization-ros1/921ee3e57520c1e5d45e6b96f1cefc34559966d0/docs/field_tests/20261024_25/single_car_quality_fgo_eval_v2/artifacts/quality-field-v2-controls.tar.gz"
     }
   ],
   "primary_review_archive_pending": false,
@@ -39,5 +75,19 @@
   "payload": "performance: exact prepared inputs/configs, all8 timed results and independent reads/source snapshot. controls: complete4prefix+16target interventions with original private cache snapshots and all20 original run manifests. review: small tables/commands/tests/source/receipts.",
   "path_policy": "Unpack performance and controls to SEPARATE fresh roots. B inventory resolves control event/config basenames relative to supplied roots, not producer absolute argv. B tools need documented Git checkout.",
   "no_more_estimator_runs_needed": true,
-  "field_accuracy_assessment": "尚不能判断"
+  "field_accuracy_assessment": "尚不能判断",
+  "remote_total_members_verified": 486,
+  "portable_inventory": {
+    "status": "PASS",
+    "main_run_count": 8,
+    "control_run_count": 20,
+    "producer_absolute_paths_required": false
+  },
+  "PR": {
+    "number": 65,
+    "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/65",
+    "base": "main",
+    "draft": true,
+    "merged": false
+  }
 }

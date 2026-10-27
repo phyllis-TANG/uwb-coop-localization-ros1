@@ -17,3 +17,5 @@
 Git外根`/workspace/work/uwb-b-quality-fgo-field-20261027-run/`，`results/prepared_001`、`performance_001`、`readback_001`、`controls_development_001`、`all_wall_controls_001`、`negative_001`、`report_001`、`inventory_002`、`publication_binding_001`、`rank_certificate_001`；日志`logs/`。`development`是初始命名的真实输入控制，不是调参/合成。移机使用[ARTIFACTS](ARTIFACTS.json)与相对路径，不要求共享这些绝对路径。[精确命令与SHA](results/SOURCE_VERSIONS.json)、[续接读取命令](../../../../tools/single_car_quality_fgo_eval/native_v2/README.md)。当前计算已结束，不需恢复或重跑矩阵；缺的仍是物理标定和合格连续参考，不是更多同包运行。
 
 只新增B原生工具/测试及本目录；A内核、旧结果、公共几何、双车工具、T08/T10/留出、其他工作树/进程未修改。草稿PR目标main，不自动合并。归档下载、完整SHA和远端读回结果见ARTIFACTS，最终分支交付提交见CHECKPOINT/PR HEAD。
+
+最终草稿[PR65](https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/65)已提交，未合并。小审查包540,322字节，三包均从GitHub固定提交921ee3e实取，486成员哈希全匹配；在新解压根目录再次核对8性能/20控制全集PASS，无原producer绝对路径依赖。阶段约1小时，最终时间/来源见[CHECKPOINT](CHECKPOINT.json)。

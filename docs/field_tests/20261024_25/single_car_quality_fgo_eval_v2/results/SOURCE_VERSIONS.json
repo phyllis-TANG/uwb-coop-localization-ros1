@@ -578,5 +578,15 @@
   "gyro_axes_calibrated": false,
   "manual_endpoint_uncertainty_m": null,
   "continuous_reference": null,
-  "field_accuracy_assessment": "尚不能判断"
+  "field_accuracy_assessment": "尚不能判断",
+  "remote_archive_receipt": {
+    "path": "remote_archive_readback.json",
+    "members": 486,
+    "source_archive_commit": "921ee3e57520c1e5d45e6b96f1cefc34559966d0"
+  },
+  "portable_inventory_receipt": {
+    "path": "portable_inventory.json",
+    "run_sha256": "258178c5df97fce04fc9d7681c254d00c5a3ca997444c50f41143cf44aa07b67",
+    "new_estimator_runs": 0
+  }
 }

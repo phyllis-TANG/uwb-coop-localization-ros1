@@ -1,0 +1,576 @@
+{
+  "status": "PASS",
+  "execution_commit": "5e91a26851bf0ac9813388d505e32f2c86c3f808",
+  "main_runs": [
+    {
+      "case_id": "004023",
+      "group": "Q0",
+      "run_sha256": "0fb6baa26df697fe835cdb855166b39ea235e63a872909b8f8c4643085c11e08",
+      "publications": 96,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo/qrun.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/prepared_001/stage1/ready_for_A_001/004023/events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/prepared_001/configs/004023_Q0.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/performance_001/004023_Q0",
+        "--anchor-monotonic-ns",
+        "72979293171461",
+        "--anchor-host-epoch-ns",
+        "1793111236338109503",
+        "--max-seconds",
+        "326"
+      ]
+    },
+    {
+      "case_id": "004023",
+      "group": "Q1",
+      "run_sha256": "1f4128657b28ee6f91e9241a68d5a3541f476d48cf3ef867a66d7d4f33ba021a",
+      "publications": 96,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo/qrun.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/prepared_001/stage1/ready_for_A_001/004023/events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/prepared_001/configs/004023_Q1.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/performance_001/004023_Q1",
+        "--anchor-monotonic-ns",
+        "72979293171461",
+        "--anchor-host-epoch-ns",
+        "1793111236338109503",
+        "--max-seconds",
+        "326"
+      ]
+    },
+    {
+      "case_id": "004023",
+      "group": "Q2",
+      "run_sha256": "afa954cb2aca923166929828b79bb12ae05b262b9851feab9968ef182ec2975f",
+      "publications": 96,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo/qrun.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/prepared_001/stage1/ready_for_A_001/004023/events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/prepared_001/configs/004023_Q2.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/performance_001/004023_Q2",
+        "--anchor-monotonic-ns",
+        "72979293171461",
+        "--anchor-host-epoch-ns",
+        "1793111236338109503",
+        "--max-seconds",
+        "326"
+      ]
+    },
+    {
+      "case_id": "004023",
+      "group": "Q3",
+      "run_sha256": "de1c0234380e51775b856bd26f49a26f3ca407a0c87df1cede6bf5d59a0fc0f1",
+      "publications": 96,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo/qrun.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/prepared_001/stage1/ready_for_A_001/004023/events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/prepared_001/configs/004023_Q3.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/performance_001/004023_Q3",
+        "--anchor-monotonic-ns",
+        "72979293171461",
+        "--anchor-host-epoch-ns",
+        "1793111236338109503",
+        "--max-seconds",
+        "326"
+      ]
+    },
+    {
+      "case_id": "005135",
+      "group": "Q0",
+      "run_sha256": "9630645a1bad69b8a89acc1d83727187bc1fc0fbaedfefa7d7ccacd10f06d6b2",
+      "publications": 92,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo/qrun.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/prepared_001/stage1/ready_for_A_001/005135/events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/prepared_001/configs/005135_Q0.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/performance_001/005135_Q0",
+        "--anchor-monotonic-ns",
+        "73082819973896",
+        "--anchor-host-epoch-ns",
+        "1793111339864905418",
+        "--max-seconds",
+        "315"
+      ]
+    },
+    {
+      "case_id": "005135",
+      "group": "Q1",
+      "run_sha256": "2becdd9ade2bef78414274934c586c9bbbf0eebf403fea727eddaa5e5990701e",
+      "publications": 92,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo/qrun.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/prepared_001/stage1/ready_for_A_001/005135/events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/prepared_001/configs/005135_Q1.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/performance_001/005135_Q1",
+        "--anchor-monotonic-ns",
+        "73082819973896",
+        "--anchor-host-epoch-ns",
+        "1793111339864905418",
+        "--max-seconds",
+        "315"
+      ]
+    },
+    {
+      "case_id": "005135",
+      "group": "Q2",
+      "run_sha256": "2202dad6148cc18bebeaa1df6f6f54f5e7e68cc0979f8f9c45e92ae80aae30a7",
+      "publications": 92,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo/qrun.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/prepared_001/stage1/ready_for_A_001/005135/events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/prepared_001/configs/005135_Q2.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/performance_001/005135_Q2",
+        "--anchor-monotonic-ns",
+        "73082819973896",
+        "--anchor-host-epoch-ns",
+        "1793111339864905418",
+        "--max-seconds",
+        "315"
+      ]
+    },
+    {
+      "case_id": "005135",
+      "group": "Q3",
+      "run_sha256": "400e3a874e895af9eb5cd87614dfd6ca8122f0823646a347551c73c86bec1387",
+      "publications": 92,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo/qrun.py",
+        "--events-jsonl",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/prepared_001/stage1/ready_for_A_001/005135/events.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/prepared_001/configs/005135_Q3.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/performance_001/005135_Q3",
+        "--anchor-monotonic-ns",
+        "73082819973896",
+        "--anchor-host-epoch-ns",
+        "1793111339864905418",
+        "--max-seconds",
+        "315"
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "name": "004023_Q2_intervention",
+      "run_sha256": "2f5285d5fc9c74bf00026aab07d7973800cd0e1fd38d9644c7a1047fe35f51d7",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/004023_node10_intervention.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/004023_Q2_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/004023_Q2_intervention"
+      ],
+      "input_sha256": "bca5863411364cccfa75ef38b229930b18254a65b0ac26982859f19a0989a8b9",
+      "config_sha256": "4035a905ae99e218d6a1d2363d8a3f471b9ee8b257661b4773812889e518603f"
+    },
+    {
+      "name": "004023_Q2_prefix",
+      "run_sha256": "44e3790620c1e22e97f95bf4c08733d6fb9293ede0e60cdb387ee1435db6862e",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/004023_prefix.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/004023_Q2_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/004023_Q2_prefix"
+      ],
+      "input_sha256": "d1a469825604a6383388df2f88ff451b4c88859337c1ac7c95591cddf4c2fd40",
+      "config_sha256": "4035a905ae99e218d6a1d2363d8a3f471b9ee8b257661b4773812889e518603f"
+    },
+    {
+      "name": "004023_Q3_intervention",
+      "run_sha256": "f07e3cc975298362146a35a1e52704b9f95471b7266b21a2a4a21a117e7b02ed",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/004023_node10_intervention.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/004023_Q3_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/004023_Q3_intervention"
+      ],
+      "input_sha256": "bca5863411364cccfa75ef38b229930b18254a65b0ac26982859f19a0989a8b9",
+      "config_sha256": "d82939734ace7a272f2d1cb9f9a95bc1d5457414ed46f71eade870674216062f"
+    },
+    {
+      "name": "004023_Q3_prefix",
+      "run_sha256": "729c1d540a79934643ccffe6618fcba50d46cf5dc886a1a78424d3c7545c7326",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/004023_prefix.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/004023_Q3_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/004023_Q3_prefix"
+      ],
+      "input_sha256": "d1a469825604a6383388df2f88ff451b4c88859337c1ac7c95591cddf4c2fd40",
+      "config_sha256": "d82939734ace7a272f2d1cb9f9a95bc1d5457414ed46f71eade870674216062f"
+    },
+    {
+      "name": "005135_Q2_intervention",
+      "run_sha256": "c0b07c789ec973b2dbd61ed8dcb243a59319bfb6a8e2bae29de1760ecf4f87d4",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/005135_node10_intervention.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/005135_Q2_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/005135_Q2_intervention"
+      ],
+      "input_sha256": "fe6fe62ed759ecc9742f3b7f1e3dcdfeff743d7e2a12857e10c0b2c02c7c124f",
+      "config_sha256": "4035a905ae99e218d6a1d2363d8a3f471b9ee8b257661b4773812889e518603f"
+    },
+    {
+      "name": "005135_Q2_prefix",
+      "run_sha256": "25ca0e992fcb605eca50cc29de97ee096ec35e4b66ef4de7cd7118624cb9b17f",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/005135_prefix.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/005135_Q2_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/005135_Q2_prefix"
+      ],
+      "input_sha256": "d952218eaef053164105656145c4cc9f34f967799ac26c5aea7ff314b9c69482",
+      "config_sha256": "4035a905ae99e218d6a1d2363d8a3f471b9ee8b257661b4773812889e518603f"
+    },
+    {
+      "name": "005135_Q3_intervention",
+      "run_sha256": "8e52a6f2c1e03ffa00d547f66c21c320d2a5d938e6395b38e09c5e29c3375dfc",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/005135_node10_intervention.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/005135_Q3_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/005135_Q3_intervention"
+      ],
+      "input_sha256": "fe6fe62ed759ecc9742f3b7f1e3dcdfeff743d7e2a12857e10c0b2c02c7c124f",
+      "config_sha256": "d82939734ace7a272f2d1cb9f9a95bc1d5457414ed46f71eade870674216062f"
+    },
+    {
+      "name": "005135_Q3_prefix",
+      "run_sha256": "b751719f679da652b541c72198ed2de5426d0880090edbb5f2234138fc86969e",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/005135_prefix.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/005135_Q3_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/005135_Q3_prefix"
+      ],
+      "input_sha256": "d952218eaef053164105656145c4cc9f34f967799ac26c5aea7ff314b9c69482",
+      "config_sha256": "d82939734ace7a272f2d1cb9f9a95bc1d5457414ed46f71eade870674216062f"
+    },
+    {
+      "name": "004023_Q2_node_2",
+      "run_sha256": "11ad5d2ee8251f2abcb5252c5c4fd8fe27fcde274cabcca30e3d14359bbc57f8",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/004023_node_2_intervention.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/004023_Q2_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/004023_Q2_node_2"
+      ],
+      "input_sha256": "a2d4654f29c54840a9b79bbbd9251c14c579108fee06d7085ff0ddcc5e1587aa",
+      "config_sha256": "4035a905ae99e218d6a1d2363d8a3f471b9ee8b257661b4773812889e518603f"
+    },
+    {
+      "name": "004023_Q2_node_3",
+      "run_sha256": "c5bb768416f5ba6f3393bc881d9d02983b7f52adfa7716a2707425c00df49de6",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/004023_node_3_intervention.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/004023_Q2_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/004023_Q2_node_3"
+      ],
+      "input_sha256": "2949fe6ac33c8419cf82443a2da3b0efc919c1be97aac3cf2e5500e77fa5d007",
+      "config_sha256": "4035a905ae99e218d6a1d2363d8a3f471b9ee8b257661b4773812889e518603f"
+    },
+    {
+      "name": "004023_Q2_node_8",
+      "run_sha256": "dbd3e0b83bcd8032e869d144b9a69e09652643efc53235862803b09a687d0359",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/004023_node_8_intervention.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/004023_Q2_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/004023_Q2_node_8"
+      ],
+      "input_sha256": "6493074d4d654693d82854527bf4854eaec03b0e3824121f843e0c6a63fb0a2b",
+      "config_sha256": "4035a905ae99e218d6a1d2363d8a3f471b9ee8b257661b4773812889e518603f"
+    },
+    {
+      "name": "004023_Q3_node_2",
+      "run_sha256": "78452b5b7e0cc035b41d56e206587c2968c77287a076fe9a7247f0af93ad6437",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/004023_node_2_intervention.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/004023_Q3_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/004023_Q3_node_2"
+      ],
+      "input_sha256": "a2d4654f29c54840a9b79bbbd9251c14c579108fee06d7085ff0ddcc5e1587aa",
+      "config_sha256": "d82939734ace7a272f2d1cb9f9a95bc1d5457414ed46f71eade870674216062f"
+    },
+    {
+      "name": "004023_Q3_node_3",
+      "run_sha256": "1a7baa0da3d410a2eac68b2392a9c7ee4ed5bc6a8663bcad3a57d6da3f3eab47",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/004023_node_3_intervention.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/004023_Q3_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/004023_Q3_node_3"
+      ],
+      "input_sha256": "2949fe6ac33c8419cf82443a2da3b0efc919c1be97aac3cf2e5500e77fa5d007",
+      "config_sha256": "d82939734ace7a272f2d1cb9f9a95bc1d5457414ed46f71eade870674216062f"
+    },
+    {
+      "name": "004023_Q3_node_8",
+      "run_sha256": "b79a0c54019ee3ca5d3e93603225c025310d62c87a164c2d01176337b309f69e",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/004023_node_8_intervention.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/004023_Q3_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/004023_Q3_node_8"
+      ],
+      "input_sha256": "6493074d4d654693d82854527bf4854eaec03b0e3824121f843e0c6a63fb0a2b",
+      "config_sha256": "d82939734ace7a272f2d1cb9f9a95bc1d5457414ed46f71eade870674216062f"
+    },
+    {
+      "name": "005135_Q2_node_2",
+      "run_sha256": "ea83533371398d9ab453eb135b88cb229595459c90693350c94ee367bbb0d3cb",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/005135_node_2_intervention.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/005135_Q2_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/005135_Q2_node_2"
+      ],
+      "input_sha256": "0c53bb85bdd503a33a0e37cd0a4395c49646d395970fbbe78f9df47cff6f8147",
+      "config_sha256": "4035a905ae99e218d6a1d2363d8a3f471b9ee8b257661b4773812889e518603f"
+    },
+    {
+      "name": "005135_Q2_node_3",
+      "run_sha256": "a174eda0b725ee6b3ab81951e54e8997f53ff9b61870fe20046e00156440a609",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/005135_node_3_intervention.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/005135_Q2_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/005135_Q2_node_3"
+      ],
+      "input_sha256": "c8ebad284dcfd7b0af0b48963b13859fc5601442df564fe470fb82fcdba1ea0e",
+      "config_sha256": "4035a905ae99e218d6a1d2363d8a3f471b9ee8b257661b4773812889e518603f"
+    },
+    {
+      "name": "005135_Q2_node_8",
+      "run_sha256": "22db5f3470916414c5f82d78f481e2f264c4378e74123d4f66cf2862b1fabac3",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/005135_node_8_intervention.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/005135_Q2_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/005135_Q2_node_8"
+      ],
+      "input_sha256": "c883e7cea340b5c87fdf7bb8e65ce791437a53e64754389a68d7529fdb6f74a4",
+      "config_sha256": "4035a905ae99e218d6a1d2363d8a3f471b9ee8b257661b4773812889e518603f"
+    },
+    {
+      "name": "005135_Q3_node_2",
+      "run_sha256": "c8e213da9049e05662eca2d3ec0065b6458ff4a5ccd93ee0b376fdf14049704c",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/005135_node_2_intervention.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/005135_Q3_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/005135_Q3_node_2"
+      ],
+      "input_sha256": "0c53bb85bdd503a33a0e37cd0a4395c49646d395970fbbe78f9df47cff6f8147",
+      "config_sha256": "d82939734ace7a272f2d1cb9f9a95bc1d5457414ed46f71eade870674216062f"
+    },
+    {
+      "name": "005135_Q3_node_3",
+      "run_sha256": "c4569c7b62a41ebc174df4565e084a769f3ea4ccd615fe490ac9dfe98cda98fb",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/005135_node_3_intervention.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/005135_Q3_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/005135_Q3_node_3"
+      ],
+      "input_sha256": "c8ebad284dcfd7b0af0b48963b13859fc5601442df564fe470fb82fcdba1ea0e",
+      "config_sha256": "d82939734ace7a272f2d1cb9f9a95bc1d5457414ed46f71eade870674216062f"
+    },
+    {
+      "name": "005135_Q3_node_8",
+      "run_sha256": "8079f878487c9055cc6ad126402757021bc62205ff892f18638dc524705d1dc1",
+      "publications": 38,
+      "actual_command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/venv/bin/python",
+        "/workspace/work/uwb-b-quality-fgo-field-execution-20261027/tools/single_car_quality_fgo_eval/native_v2/probe_runner.py",
+        "--events",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/005135_node_8_intervention.jsonl.gz",
+        "--config",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/controls_development_001/005135_Q3_control_config.json",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-field-20261027-run/results/all_wall_controls_001/005135_Q3_node_8"
+      ],
+      "input_sha256": "c883e7cea340b5c87fdf7bb8e65ce791437a53e64754389a68d7529fdb6f74a4",
+      "config_sha256": "d82939734ace7a272f2d1cb9f9a95bc1d5457414ed46f71eade870674216062f"
+    }
+  ],
+  "main_run_count": 8,
+  "main_publications": 752,
+  "control_run_count": 20,
+  "control_publications": 760,
+  "missing_duplicate_extra_or_failed": 0,
+  "all_source_sha256": {
+    "docs/field_tests/20261024_25/imu_parallel_20261027/FGO_REDIRECT.md": "7830a421f403bf0043dc285c2964d5e4644e85aa9df90a87967b7ebe671d84e6",
+    "docs/field_tests/single_car_fixed_lag_20261022/protocol.json": "71175af3a690f1666967b6ed905233de8a8cb1b84c31e5a72eaacdccad0a2f50",
+    "docs/field_tests/single_car_historical_L_20261021/results/evidence/new_graph.py": "cc8934e0ee34eabddd46ed09e0de1ca69e9a74b00e93147f7d99f5a04d77e903",
+    "docs/field_tests/single_car_sequential_replay_20261022/protocol.json": "18cb20774cb9337733ea5b696bdc3407451693271b543c306326d246e87e7fef",
+    "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+    "tools/single_car_imu_fgo/audit.py": "66aa45427dd5a88e95e8d29439e5683ad5f2ae619653643886018ad096255359",
+    "tools/single_car_imu_fgo/batch.py": "adc6b0e1564972ffce3c275b904aa334b16ebd9adea0bf4cba0c31fe21e84f26",
+    "tools/single_car_imu_fgo/check_matrix.py": "ee68a8ca5bc349583bddc1b22f460c2fe2f50110615d81c96c4c4a32f73d0a09",
+    "tools/single_car_imu_fgo/config.schema.json": "44f8c1b37f047f57fe2f3b929cd936f81b7176114bf5fe24fd9688f55d05de60",
+    "tools/single_car_imu_fgo/config.template.json": "cd4ec7160ced3f788fdeeb898d29db69a5ac691d54dba321810babd3a4ffb3a1",
+    "tools/single_car_imu_fgo/configuration.py": "e7f32bdd4cbc69378b35d53023afa116d6138e9d26e4509766cfe0c02d13a2c4",
+    "tools/single_car_imu_fgo/evaluate.py": "596a667aa1c609eb4e8c21433fc0c61a1281576aff9d5a65d905cb758471a54e",
+    "tools/single_car_imu_fgo/frontend.py": "1fbdcaf648ee07d320fc8babecb4937bdd4bd4086728ef8785ab196aed5ebe09",
+    "tools/single_car_imu_fgo/graph.py": "36af00d40e1c76b611ae1cb2c6aeac6e216a1d9b20b8a384ee00ee2444cabe49",
+    "tools/single_car_imu_fgo/integration.py": "31b000725ccba2c1d6cf1fbfb75bf8da110a3648b7bd189c875677bc9b3d732c",
+    "tools/single_car_imu_fgo/io_utils.py": "c7a72dca7f7cc07208fb3ead102914ebb39b80397e1ea03f14dcbedafe4ee798",
+    "tools/single_car_imu_fgo/legacy.py": "f3c5d01dca96c7f03b0273d0336f02eabb27d350465a182f9bc7fd79e6a02bac",
+    "tools/single_car_imu_fgo/protocol.json": "b377df4988b6307d8edb31f6291c79237324de962a2f41d8397836353e260520",
+    "tools/single_car_imu_fgo/replay.py": "09b8cfed9125afc74a4e3050b84ee095f8459bcbc556b77eb489cba6be9aefcd",
+    "tools/single_car_imu_fgo/report.py": "53ca1c92cf869793a7876af2b93159ea522541b29035a15144c3d1028ef92c22",
+    "tools/single_car_imu_fgo/simulate.py": "abf17e9fd0b4445769272cd9aa910c573af0c4fbb3794ce4ae85e364f92b29ff",
+    "tools/single_car_imu_fgo/tests.py": "35655265d13e684a91e4a1fc30d45f8be85dfea685cf1ad5e07fa4fffdbd6159",
+    "tools/single_car_imu_fgo_eval/field_protocol.json": "86599d9db8ef7bfc9755eb401f65814d7e5c8483d9566ca689cb533f96f47a03",
+    "tools/single_car_quality_fgo/bridge.py": "b3624162550ca2354f25da9f1e16980ba609e45fd2e14ea35d072dd650c781a7",
+    "tools/single_car_quality_fgo/check_matrix.py": "dc324091e3c170c71a34f61016f215dc2ef5c5e0d6ba8cebf21ba1de8fa22445",
+    "tools/single_car_quality_fgo/config.schema.json": "ef63944a2a06cf640677ce409c6838e166832d7d43f66282cfd4e736f6591313",
+    "tools/single_car_quality_fgo/config.template.json": "762cfcfef11fceddc91ed6d201546746f0f30e8b61bde4a85be253452739775d",
+    "tools/single_car_quality_fgo/negative_logs.py": "605845fa09148ea096f99c036c3e1025dbde1ea07b78d5275b1bc6d0b1927535",
+    "tools/single_car_quality_fgo/protocol.json": "ddb533f94d4b2b5f36b5cf3922dad1d72361ce674f908dc1ba40514324bcfb31",
+    "tools/single_car_quality_fgo/qaudit.py": "45d52866f3cce7caa7d731ce56319575ff310e1024a192d8c7b49756fa112bd9",
+    "tools/single_car_quality_fgo/qconfig.py": "cfd9de7d6f6c209ed663c6229918caff0eb6d5d78f2a748b713bd0ad72635e1a",
+    "tools/single_car_quality_fgo/qevaluate.py": "63ed9b0699a527e8dcde7b9e4249193dda94d33dd04ec1b474ad43bc5113b868",
+    "tools/single_car_quality_fgo/qfrontend.py": "2886bcc65fe49d2c0e4732036feeee12d1ca5bd771b00b80a7890635d397d9e9",
+    "tools/single_car_quality_fgo/qgraph.py": "0785f57c257d86bb606442a61943a6f5342852101eb748a2085f9a65dd1e9ef9",
+    "tools/single_car_quality_fgo/qio.py": "453ba746f905d2a9792052d7bff1abdf2c75d133da47a39bf9661fab0d05c8b3",
+    "tools/single_car_quality_fgo/qpolicy.py": "a9ddec196dce989508739241dacab2f3b08c258248f5f93be0223ca7c8b1b740",
+    "tools/single_car_quality_fgo/qreport.py": "96e8ee2d7954c2610850087d63a077e6b465967a825c81e5ded2bba873b598d2",
+    "tools/single_car_quality_fgo/qrun.py": "86c72607ea8fa5902727c225e53bf25edd397705a3574efcd6b4ddcac3f165d9",
+    "tools/single_car_quality_fgo/qsimulate.py": "904d7e728eef01c8cc91fb0873726e796000570a5487da409896a77fcdeb70bf",
+    "tools/single_car_quality_fgo/qtests.py": "01019c566c5b87f201d9c4d7e96117cf3b0ad7f9acac8d65fa214ed38e8596f1",
+    "tools/single_car_quality_fgo/run_matrix.py": "87abe3369a72f0b9748361052c489bdfc3fae247644006af73c86cabba4113c9",
+    "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+    "tools/test_single_car_fixed_lag.py": "e576f5ddfaaf24b538d446b3d748e48e9f6be5cbcfb31d9d8f6312b1dd841a33",
+    "tools/test_single_car_sequential_replay.py": "148cd4ca3bff47c6dce8c2102daf289f55f39dbcbc4f2eca1cca621a5e31525b"
+  },
+  "no_new_estimator_runs": true
+}
