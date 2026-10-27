@@ -219,10 +219,12 @@ def validate_config(config):
 
 
 class Baseline:
-    def __init__(self, method, config):
+    def __init__(self, method, config, peer_policy=None):
         validate_config(config)
         if method not in METHODS:raise ValueError("unknown method")
         self.method, self.config = method, copy.deepcopy(config)
+        # Optional online peer gain/output policy. None preserves the original path.
+        self.peer_policy = peer_policy
         self.blocked = readiness(config)[method]
         self.local = method == "odom_only" and config["odom_only_frame"] == "source_odometry"
         self.x, self.P = np.zeros(6), np.zeros((6, 6))
@@ -381,6 +383,15 @@ class Baseline:
         if not math.isfinite(innovation_variance) or innovation_variance <= 0:return result("numerical_range_failed_hold")
         K = self.P @ H/innovation_variance
         innovation = value-expected
+        peer_control = None
+        if peer and self.peer_policy is not None:
+            peer_control = self.peer_policy.gain(self, row, measured, H, expected, innovation, variance, K)
+            details["reliability"] = peer_control["diagnostics"]
+            if not peer_control["accepted"]:
+                # A policy rejection consumes an eligible sample, not extra gate rate.
+                self.link_time[key] = measured
+                return result("peer_gate_rejected")
+            K, variance = peer_control["gain"], peer_control["variance"]
         proposal = self.x+K*innovation
         proposal[2], proposal[5] = wrap(proposal[2]), wrap(proposal[5])
         J = np.eye(6)-np.outer(K, H)
@@ -391,12 +402,16 @@ class Baseline:
         except np.linalg.LinAlgError:covariance_valid = False
         if not np.isfinite(proposal).all() or not covariance_valid:
             return result("numerical_range_failed_hold")
-        self.x, self.P = proposal, covariance
+        if peer_control is None or peer_control["commit"]:
+            self.x, self.P = proposal, covariance
+        if peer_control is not None:
+            self.peer_policy.record_proposal(proposal, covariance, peer_control)
         self.link_time[key] = measured
         if not peer:self.wall_geometry[(car, target)] = (measured, H[self._slice(car)][:2].copy())
         details.update(expected_range_m=expected, innovation_m=innovation, fixed_variance_m2=variance,
                        support_age_ns=ages, correlation_policy="fixed_single_direction" if peer else "fixed_rate_per_directed_link")
-        return result("peer_updated" if peer else "wall_updated")
+        return result("peer_output_only" if peer_control is not None and not peer_control["commit"]
+                      else "peer_updated" if peer else "wall_updated")
 
     def snapshot(self, publication_ns):
         if not isinstance(publication_ns, int):raise ValueError("publication must be exact integer ns")
