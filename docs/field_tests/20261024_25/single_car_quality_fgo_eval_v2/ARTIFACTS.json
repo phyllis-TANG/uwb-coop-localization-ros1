@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "status": "LOCAL_MEMBER_READBACK_PASS_REMOTE_PENDING",
+  "artifacts": [
+    {
+      "kind": "review",
+      "relative_path": "artifacts/quality-field-v2-review.tar.gz",
+      "sha256": "a0f97e9e4905e4f0a112a559b58b2c49f32a36f84c1718daefe085f5da2302db",
+      "bytes": 540322,
+      "members": 75,
+      "receipt_relative_path": "artifacts/quality-field-v2-review.tar.gz.json",
+      "remote_readback": null
+    },
+    {
+      "kind": "performance",
+      "relative_path": "artifacts/quality-field-v2-performance.tar.gz",
+      "sha256": "00d708c02915febc95fd944107fd784991a4c2e0e382d1aa0eaa41e0fa85d7db",
+      "bytes": 45204449,
+      "members": 223,
+      "receipt_relative_path": "artifacts/quality-field-v2-performance.tar.gz.json",
+      "remote_readback": null
+    },
+    {
+      "kind": "controls",
+      "relative_path": "artifacts/quality-field-v2-controls.tar.gz",
+      "sha256": "b46a0c2bc8d1aaad1d6e358fb1f85f402ba096f2273687dcb9ba55c6f39ff709",
+      "bytes": 38620622,
+      "members": 188,
+      "receipt_relative_path": "artifacts/quality-field-v2-controls.tar.gz.json",
+      "remote_readback": null
+    }
+  ],
+  "primary_review_archive_pending": false,
+  "A_execution_commit": "12a1d94379b58c5a759b1698425fb90d48587609",
+  "execution_combination_commit": "5e91a26851bf0ac9813388d505e32f2c86c3f808",
+  "B_source_snapshot_commit": "149def08d4e88259c6a4ff80d960e1f41fbb1de3",
+  "archive_prefix": "FGO_B_20261027/",
+  "raw_bags_videos_venv_included": false,
+  "payload": "performance: exact prepared inputs/configs, all8 timed results and independent reads/source snapshot. controls: complete4prefix+16target interventions with original private cache snapshots and all20 original run manifests. review: small tables/commands/tests/source/receipts.",
+  "path_policy": "Unpack performance and controls to SEPARATE fresh roots. B inventory resolves control event/config basenames relative to supplied roots, not producer absolute argv. B tools need documented Git checkout.",
+  "no_more_estimator_runs_needed": true,
+  "field_accuracy_assessment": "尚不能判断"
+}
