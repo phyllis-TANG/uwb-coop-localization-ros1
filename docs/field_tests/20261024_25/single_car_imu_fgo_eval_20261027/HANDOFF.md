@@ -14,4 +14,4 @@ A为PR58冻结执行`e3a20fe04a6d53973696ec055dbc71eb135e0f77`；B八运行协�
 
 Git外根`/workspace/work/uwb-b-imu-fgo-eval-20261027-run/`：`results/inputs_002`、`A_inputs_001`、`F0_F3_001`、`F0_F3_readback_002`、`prefix_controls_001`、`FGO_negative_001`、`FGO_report_001`；日志在`logs/`。旧版本和开发回读001保留。可迁移归档/完整SHA/远端实取核验见[ARTIFACTS](ARTIFACTS.json)，不是要求其他窗口使用云端绝对路径。
 
-续跑只新建目录，不加resume：从本分支取得B工具，按[README](../../../../tools/single_car_imu_fgo_eval/README.md)取得确切A或组合提交、校验归档和输入SHA后运行。当前名义和核验已经结束，无需凑时长重跑。若补证或改模型，另冻结新协议，不覆盖本结果或恢复旧EKF。PR目标main、依赖PR58，保持草稿，不自动合并。会话开始09:37 UTC，阶段完成约10:45 UTC，最终归档及PR时间另列检查点，低于本轮预算。
+续跑只新建目录，不加resume：从本分支取得B工具，按[README](../../../../tools/single_car_imu_fgo_eval/README.md)取得确切A或组合提交、校验归档和输入SHA后运行。当前名义和核验已经结束，无需凑时长重跑。若补证或改模型，另冻结新协议，不覆盖本结果或恢复旧EKF。草稿[PR59](https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/59)目标main、依赖PR58，未合并。GitHub固定提交实际重新下载40,991,617字节归档并核对364个成员全部通过。会话自09:37 UTC至约10:50 UTC约73分钟；最终时间/来源见[CHECKPOINT](CHECKPOINT.json)，低于预算。

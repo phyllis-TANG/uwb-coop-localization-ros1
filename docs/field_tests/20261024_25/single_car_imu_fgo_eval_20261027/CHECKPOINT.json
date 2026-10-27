@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETE_conditional_historical_FGO_B",
+  "created_at_utc": "2026-10-27T10:49:40.454175+00:00",
+  "budget_start_utc": "2026-10-27T09:37:00+00:00",
+  "elapsed_minutes": 72.67423624999999,
+  "PR": {
+    "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/59",
+    "draft": true,
+    "base": "main",
+    "depends_on_A_PR": 58
+  },
+  "B_branch": "analysis/20261027-single-car-imu-fgo-eval",
+  "B_pre_final_metadata_commit": "8087c1c302605824a16eb21fa5f2dc7b817b07e8",
+  "execution_branch": "execution/20261027-fgo-e3a20fe-b-stage1",
+  "execution_commit": "f00c8743ac9c47d967817af448d3cd3fc80e8b79",
+  "A_commit": "e3a20fe04a6d53973696ec055dbc71eb135e0f77",
+  "previous_checkpoints": {
+    "EKF": "6b96801",
+    "stage1": "eca7e8b",
+    "field_adapter": "db36166",
+    "formal_readback": "ed08c1a",
+    "source_package": "edf5f30",
+    "artifact_commit": "8087c1c302605824a16eb21fa5f2dc7b817b07e8"
+  },
+  "cloud_result_root": "/workspace/work/uwb-b-imu-fgo-eval-20261027-run",
+  "selected_outputs": [
+    "results/inputs_002",
+    "results/A_inputs_001",
+    "results/legacy_reproduction_001",
+    "results/F0_F3_001",
+    "results/F0_F3_readback_002",
+    "results/prefix_controls_001",
+    "results/FGO_negative_001",
+    "results/FGO_report_001",
+    "remote_readback_001"
+  ],
+  "logs": "/workspace/work/uwb-b-imu-fgo-eval-20261027-run/logs",
+  "archive": {
+    "relative_path": "artifacts/b-imu-fgo-historical-v1.tar.gz",
+    "sha256": "1ff7558e155b20297c580df6e92cde3560e04342a059522d0bc897ceccc87ff5",
+    "bytes": 40991617,
+    "git_blob_sha1": "9bc9ba1ca56fe5b072637e7f1247d2064b9000ed"
+  },
+  "download_url": "https://raw.githubusercontent.com/phyllis-TANG/uwb-coop-localization-ros1/8087c1c302605824a16eb21fa5f2dc7b817b07e8/docs/field_tests/20261024_25/single_car_imu_fgo_eval_20261027/artifacts/b-imu-fgo-historical-v1.tar.gz",
+  "archive_member_readback": "364/364 PASS locally and actual HTTP200 download",
+  "nominal_runs": 8,
+  "nominal_publications": 752,
+  "prefix_verification_runs": 8,
+  "prefix_publications": 304,
+  "old_reproduction_rows": 564,
+  "raw_records": 20994,
+  "independent_marginalizations": 438,
+  "tests": {
+    "B": 33,
+    "A_new": 43,
+    "old_fixed": 15,
+    "old_sequential": 10
+  },
+  "blocked": [
+    "strict physical gyro axis/sign",
+    "historical physical clock model and uncertainty bound",
+    "odom origin correspondence",
+    "field precision conclusions require independent accepted reference"
+  ],
+  "physical_clock_error_bound_ns": null,
+  "new_EKF_runs_after_redirect": 0,
+  "T08_T10_FGO_runs": 0,
+  "holdout_replays": 0,
+  "hardware_ROS_serial_video_actions": 0,
+  "original_data_and_other_worktrees_preserved": true,
+  "original_output_dirs_preserved": true,
+  "automatic_merge": false,
+  "continuation": "No remaining nominal cell. README gives new-directory replay and independent readback; use pinned execution/source/input/config SHA. For new evidence/model, freeze a new protocol. No resume for this completed task or old EKF."
+}
