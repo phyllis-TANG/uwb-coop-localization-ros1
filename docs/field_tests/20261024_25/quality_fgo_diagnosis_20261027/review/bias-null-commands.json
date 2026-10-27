@@ -1,0 +1,117 @@
+{
+  "commands": [
+    {
+      "argv": [
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/venv/bin/python",
+        "tools/single_car_quality_diagnosis/test_bias_semantics.py"
+      ],
+      "cwd": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027",
+      "source_sha256": "c8488e09d5c23a1178a312dcc2628ab8969f89a069cac4933620970bf119eac8",
+      "log": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/bias-null-revision/tests.log",
+      "returncode": 0,
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "MPLCONFIGDIR": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/mpl-cache"
+      }
+    },
+    {
+      "argv": [
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/venv/bin/python",
+        "tools/single_car_quality_diagnosis/analyze_logs.py",
+        "--experiment",
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/validation-v1",
+        "--output",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/bias-null-revision/analysis"
+      ],
+      "cwd": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027",
+      "source_sha256": "d6a2441df865e1988b94ab1b0f4f514801c9cbbb9b4e29c5976e0f72b73c901c",
+      "log": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/bias-null-revision/analysis.log",
+      "returncode": 0,
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "argv": [
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/venv/bin/python",
+        "tools/single_car_quality_diagnosis/reexport_solutions.py",
+        "--experiment",
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/validation-v1",
+        "--saved",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/interventions-v1",
+        "--output",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/bias-null-revision/saved-solutions"
+      ],
+      "cwd": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027",
+      "source_sha256": "ac850f593c1fba4340530641e7d6209e305b849dbad8e7fb4d0042180faaaed4",
+      "log": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/bias-null-revision/saved-solutions.log",
+      "returncode": 0,
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "argv": [
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/venv/bin/python",
+        "tools/single_car_quality_diagnosis/make_delivery.py",
+        "--original",
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts",
+        "--analysis",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/bias-null-revision/analysis",
+        "--interventions",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/bias-null-revision/saved-solutions",
+        "--mechanics",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/mechanics-v1",
+        "--verification",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/verification.json",
+        "--output",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/bias-null-revision/delivery"
+      ],
+      "cwd": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027",
+      "source_sha256": "98445f75aee2e8c9458893dace933061be8855c0856220733808abcb311c388d",
+      "log": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/bias-null-revision/delivery.log",
+      "returncode": 0,
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "MPLCONFIGDIR": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/mpl-cache"
+      }
+    },
+    {
+      "argv": [
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/venv/bin/python",
+        "tools/single_car_quality_diagnosis/validate.py",
+        "--experiment",
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/validation-v1",
+        "--analysis",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/bias-null-revision/analysis",
+        "--interventions",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/bias-null-revision/saved-solutions",
+        "--output",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/bias-null-revision/validation.json"
+      ],
+      "cwd": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027",
+      "source_sha256": "eaa6f8ce51bd17d29d32999ff095bfbeeb802b246732dc05ee77bea284c49176",
+      "log": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/bias-null-revision/validation.log",
+      "returncode": 0,
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    }
+  ],
+  "not_executed": [
+    "run_matrix.py",
+    "intervene.py",
+    "least_squares"
+  ],
+  "note": "Tests and read-only validation repeated after final source edits; no estimator or diagnostic solve rerun"
+}

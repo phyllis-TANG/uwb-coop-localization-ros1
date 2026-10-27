@@ -1,0 +1,92 @@
+[
+  {
+    "scenario": "uwb_step",
+    "seed": 401,
+    "raw_records": 3603,
+    "uwb_scalars": 4804,
+    "changed_uwb_scalars": 400,
+    "nonfault_sensor_values_exact_equal": true,
+    "truth_bytes_exact_equal": true,
+    "max_injection_subtraction_error_m": 3.3306690738754696e-16
+  },
+  {
+    "scenario": "uwb_ramp",
+    "seed": 401,
+    "raw_records": 3603,
+    "uwb_scalars": 4804,
+    "changed_uwb_scalars": 399,
+    "nonfault_sensor_values_exact_equal": true,
+    "truth_bytes_exact_equal": true,
+    "max_injection_subtraction_error_m": 4.440892098500626e-16
+  },
+  {
+    "scenario": "multi_common_uwb",
+    "seed": 401,
+    "raw_records": 3603,
+    "uwb_scalars": 4804,
+    "changed_uwb_scalars": 1600,
+    "nonfault_sensor_values_exact_equal": true,
+    "truth_bytes_exact_equal": true,
+    "max_injection_subtraction_error_m": 7.216449660063518e-16
+  },
+  {
+    "scenario": "uwb_step",
+    "seed": 419,
+    "raw_records": 3603,
+    "uwb_scalars": 4804,
+    "changed_uwb_scalars": 400,
+    "nonfault_sensor_values_exact_equal": true,
+    "truth_bytes_exact_equal": true,
+    "max_injection_subtraction_error_m": 3.3306690738754696e-16
+  },
+  {
+    "scenario": "uwb_ramp",
+    "seed": 419,
+    "raw_records": 3603,
+    "uwb_scalars": 4804,
+    "changed_uwb_scalars": 399,
+    "nonfault_sensor_values_exact_equal": true,
+    "truth_bytes_exact_equal": true,
+    "max_injection_subtraction_error_m": 4.440892098500626e-16
+  },
+  {
+    "scenario": "multi_common_uwb",
+    "seed": 419,
+    "raw_records": 3603,
+    "uwb_scalars": 4804,
+    "changed_uwb_scalars": 1600,
+    "nonfault_sensor_values_exact_equal": true,
+    "truth_bytes_exact_equal": true,
+    "max_injection_subtraction_error_m": 7.216449660063518e-16
+  },
+  {
+    "scenario": "uwb_step",
+    "seed": 443,
+    "raw_records": 3603,
+    "uwb_scalars": 4804,
+    "changed_uwb_scalars": 400,
+    "nonfault_sensor_values_exact_equal": true,
+    "truth_bytes_exact_equal": true,
+    "max_injection_subtraction_error_m": 3.3306690738754696e-16
+  },
+  {
+    "scenario": "uwb_ramp",
+    "seed": 443,
+    "raw_records": 3603,
+    "uwb_scalars": 4804,
+    "changed_uwb_scalars": 399,
+    "nonfault_sensor_values_exact_equal": true,
+    "truth_bytes_exact_equal": true,
+    "max_injection_subtraction_error_m": 4.440892098500626e-16
+  },
+  {
+    "scenario": "multi_common_uwb",
+    "seed": 443,
+    "raw_records": 3603,
+    "uwb_scalars": 4804,
+    "changed_uwb_scalars": 1600,
+    "nonfault_sensor_values_exact_equal": true,
+    "truth_bytes_exact_equal": true,
+    "max_injection_subtraction_error_m": 7.216449660063518e-16
+  }
+]
