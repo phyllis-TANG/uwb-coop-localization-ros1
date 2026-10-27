@@ -13,7 +13,7 @@
       "gyro_bias_handling_required": true,
       "absolute_IMU_yaw_approved": false,
       "full_acceleration_integration_approved": false,
-      "next_action": "collect current Car1 source and optional active binary identity; no need to run base/ROS or repeat route"
+      "next_action": "proceed with opt-in offline gyro/bias prototype under explicit assumptions; actual source/binary capture optional parallel follow-up, not a coding gate"
     },
     "car2": {
       "raw_IMU_available": true,
@@ -24,11 +24,15 @@
       "gyro_bias_handling_required": true,
       "absolute_IMU_yaw_approved": false,
       "full_acceleration_integration_approved": false,
-      "next_action": "compare current source/binary metadata to archived source; verify gyro body Z convention"
+      "next_action": "proceed with opt-in offline gyro/bias prototype; current source/binary and body-Z convention remain parallel confirmation"
     }
   },
   "next_prototype": "opt-in wheel/body vx,vy plus gyro_z minus bias propagation; replace odom heading input rather than add another independent absolute yaw update",
   "covariance_policy": "recorded fixed values are not calibrated; zero accelerometer covariance means unknown, not zero noise",
   "independent_accuracy_evaluated": false,
-  "IMU_fusion_gain_claimed": false
+  "IMU_fusion_gain_claimed": false,
+  "offline_prototype_can_proceed_without_lab": true,
+  "source_capture_is_required_before_offline_prototype": false,
+  "conditional_model_assumptions_are_calibration": false,
+  "additional_existing_file_evidence": "OFFLINE_EVIDENCE.md"
 }

@@ -1,0 +1,621 @@
+{
+  "scope": "passive reported-signal consistency only; no firmware/accuracy claim",
+  "execution_commit": "b9bb51cf3001991a101c8395f495998fbb809089",
+  "source_sha256": "7199e16eb051f91c3ba88767fe9dfeb2861397a2ba31ac35f0d7705282227173",
+  "base_audit_source_sha256": "9f9e59ef68360ea30138a45363e297b2b7ff4effa8e441081664b31626a2ac95",
+  "inputs": {
+    "TWO_CAR_C2_static_C1_keyboard_return_20261018_025148.bag": {
+      "sha256": "6016eaa875030a985f958a36948dc7dfecac43e09ff4c72dfb92ef4a70fa5ee1",
+      "scope": "historical source-diagnostic example; no localization evaluation",
+      "inventory": {
+        "bag_message_count": 16510,
+        "selected_topics": {
+          "/car1/cmd_vel": {
+            "type": "geometry_msgs/Twist",
+            "md5sum": "9f195f881246fdfa2798d1d3eebca84a",
+            "callerid": "/car1/turtlebot_teleop_keyboard"
+          },
+          "/car1/imu": {
+            "type": "sensor_msgs/Imu",
+            "md5sum": "6a62c6daae103f4ff57a132d6f95cec2",
+            "callerid": "/car1/wheeltec_robot"
+          },
+          "/car1/odom": {
+            "type": "nav_msgs/Odometry",
+            "md5sum": "cd5e73d190d741a2f92e81eda573aca7",
+            "callerid": "/car1/wheeltec_robot"
+          },
+          "/car2/imu": {
+            "type": "sensor_msgs/Imu",
+            "md5sum": "6a62c6daae103f4ff57a132d6f95cec2",
+            "callerid": "/car2/wheeltec_robot"
+          },
+          "/car2/odom": {
+            "type": "nav_msgs/Odometry",
+            "md5sum": "cd5e73d190d741a2f92e81eda573aca7",
+            "callerid": "/car2/wheeltec_robot"
+          }
+        }
+      },
+      "vehicles": {
+        "car1": {
+          "paired_rows": 1654,
+          "eligible_adjacent_intervals": 1653,
+          "relative_published_IMU_minus_odom_yaw_rad": {
+            "n": 1654,
+            "mean": 0.114022482277274,
+            "std": 0.058769266848595854,
+            "minimum": 0.0,
+            "median": 0.12609962793661977,
+            "maximum": 0.19894920952030493
+          },
+          "rate_difference_rad_s": {
+            "n": 1654,
+            "mean": 0.002399664184825631,
+            "std": 0.006102318237202274,
+            "minimum": -0.0324467197060585,
+            "median": 0.0018650800921022892,
+            "maximum": 0.10369052551686764
+          },
+          "odom_yaw_current_reported_rate_step_residual_rad": {
+            "rms": 1.2520483491879327e-08,
+            "stats": {
+              "n": 1653,
+              "mean": -3.1549244657016726e-11,
+              "std": 1.2520443742758655e-08,
+              "minimum": -2.5713598703069884e-07,
+              "median": 0.0,
+              "maximum": 2.6110750582053303e-07
+            }
+          },
+          "odom_xy_current_body_velocity_step_residual_m": {
+            "rms": 1.0125483370550562e-07,
+            "stats": {
+              "n": 1653,
+              "mean": 1.9825002953076828e-08,
+              "std": 9.92950683903289e-08,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 1.9693557723830433e-06
+            }
+          },
+          "odom_yaw_raw_IMU_current_rate_step_residual_rad": {
+            "rms": 0.00032784204942110963,
+            "stats": {
+              "n": 1653,
+              "mean": -0.00012000052479441175,
+              "std": 0.0003050906150927934,
+              "minimum": -0.005168745487903429,
+              "median": -9.307402437622659e-05,
+              "maximum": 0.0016204774141531549
+            }
+          },
+          "odom_heading_net_change_rad": -0.00514238327741623,
+          "IMU_heading_net_change_rad": 0.1938068262428887,
+          "firmware_identified": false,
+          "independent_sensors_proven": false,
+          "actual_attitude_error_evaluated": false
+        },
+        "car2": {
+          "paired_rows": 1644,
+          "eligible_adjacent_intervals": 1643,
+          "relative_published_IMU_minus_odom_yaw_rad": {
+            "n": 1644,
+            "mean": -0.0009951601296372783,
+            "std": 0.0015701164350043167,
+            "minimum": -0.004000169479216886,
+            "median": -0.0013102825861692757,
+            "maximum": 0.0012926151876850867
+          },
+          "rate_difference_rad_s": {
+            "n": 1644,
+            "mean": -9.0596086688061e-05,
+            "std": 0.0003816383153415378,
+            "minimum": -0.0010657600359991193,
+            "median": 0.0,
+            "maximum": 0.0010657600359991193
+          },
+          "odom_yaw_current_reported_rate_step_residual_rad": {
+            "rms": 0.0,
+            "stats": {
+              "n": 1643,
+              "mean": 0.0,
+              "std": 0.0,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.0
+            }
+          },
+          "odom_xy_current_body_velocity_step_residual_m": {
+            "rms": 0.0,
+            "stats": {
+              "n": 1643,
+              "mean": 0.0,
+              "std": 0.0,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.0
+            }
+          },
+          "odom_yaw_raw_IMU_current_rate_step_residual_rad": {
+            "rms": 1.9606642401471897e-05,
+            "stats": {
+              "n": 1643,
+              "mean": 4.516329604426325e-06,
+              "std": 1.9079391844694053e-05,
+              "minimum": -5.33275969168134e-05,
+              "median": 0.0,
+              "maximum": 5.3437173034914654e-05
+            }
+          },
+          "odom_heading_net_change_rad": 0.0,
+          "IMU_heading_net_change_rad": -0.003982301081952855,
+          "firmware_identified": false,
+          "independent_sensors_proven": false,
+          "actual_attitude_error_evaluated": false
+        }
+      }
+    },
+    "TWO_CAR_both_motion_20261018_045116.bag": {
+      "sha256": "0e42309e71c9f5d4abd95047ff54bcad8e5aee3f4f5190603583af69cc00f94c",
+      "scope": "historical source-diagnostic example; no localization evaluation",
+      "inventory": {
+        "bag_message_count": 23470,
+        "selected_topics": {
+          "/car1/odom": {
+            "type": "nav_msgs/Odometry",
+            "md5sum": "cd5e73d190d741a2f92e81eda573aca7",
+            "callerid": "/car1/wheeltec_robot"
+          },
+          "/car2/imu": {
+            "type": "sensor_msgs/Imu",
+            "md5sum": "6a62c6daae103f4ff57a132d6f95cec2",
+            "callerid": "/car2/wheeltec_robot"
+          },
+          "/car1/imu": {
+            "type": "sensor_msgs/Imu",
+            "md5sum": "6a62c6daae103f4ff57a132d6f95cec2",
+            "callerid": "/car1/wheeltec_robot"
+          },
+          "/car2/odom": {
+            "type": "nav_msgs/Odometry",
+            "md5sum": "cd5e73d190d741a2f92e81eda573aca7",
+            "callerid": "/car2/wheeltec_robot"
+          },
+          "/car2/cmd_vel": {
+            "type": "geometry_msgs/Twist",
+            "md5sum": "9f195f881246fdfa2798d1d3eebca84a",
+            "callerid": "/car2_relative_motion_102320_1792324312763"
+          },
+          "/car1/cmd_vel": {
+            "type": "geometry_msgs/Twist",
+            "md5sum": "9f195f881246fdfa2798d1d3eebca84a",
+            "callerid": "/car1_straight_motion_14980_1792324317029"
+          }
+        }
+      },
+      "vehicles": {
+        "car1": {
+          "paired_rows": 2310,
+          "eligible_adjacent_intervals": 2309,
+          "relative_published_IMU_minus_odom_yaw_rad": {
+            "n": 2310,
+            "mean": 0.08633972530846795,
+            "std": 0.044805596561231564,
+            "minimum": 0.0,
+            "median": 0.07891929220709826,
+            "maximum": 0.18283274374270375
+          },
+          "rate_difference_rad_s": {
+            "n": 2310,
+            "mean": 0.0015632354757432055,
+            "std": 0.004081517972667255,
+            "minimum": -0.06894220213871449,
+            "median": 0.0021315200719982386,
+            "maximum": 0.02485488075762987
+          },
+          "odom_yaw_current_reported_rate_step_residual_rad": {
+            "rms": 4.295531523453181e-09,
+            "stats": {
+              "n": 2309,
+              "mean": -7.599894328849268e-11,
+              "std": 4.294859162952732e-09,
+              "minimum": -1.3662519862819248e-07,
+              "median": 0.0,
+              "maximum": 4.4603462928216424e-08
+            }
+          },
+          "odom_xy_current_body_velocity_step_residual_m": {
+            "rms": 3.784162587904094e-08,
+            "stats": {
+              "n": 2309,
+              "mean": 1.1541615968455489e-08,
+              "std": 3.6038586959063665e-08,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 6.67731253440949e-07
+            }
+          },
+          "odom_yaw_raw_IMU_current_rate_step_residual_rad": {
+            "rms": 0.0002185322700547674,
+            "stats": {
+              "n": 2309,
+              "mean": -7.814866272817189e-05,
+              "std": 0.00020408120827035555,
+              "minimum": -0.001243503358637042,
+              "median": -0.00010671782855094248,
+              "maximum": 0.003446432718535788
+            }
+          },
+          "odom_heading_net_change_rad": 0.00709283165633679,
+          "IMU_heading_net_change_rad": 0.18992557539904054,
+          "firmware_identified": false,
+          "independent_sensors_proven": false,
+          "actual_attitude_error_evaluated": false
+        },
+        "car2": {
+          "paired_rows": 2299,
+          "eligible_adjacent_intervals": 2298,
+          "relative_published_IMU_minus_odom_yaw_rad": {
+            "n": 2299,
+            "mean": -0.04824492396778951,
+            "std": 0.06372363657529533,
+            "minimum": -0.1389108657523066,
+            "median": -0.003156860136174666,
+            "maximum": 0.03443633916916178
+          },
+          "rate_difference_rad_s": {
+            "n": 2299,
+            "mean": -0.001227266459235425,
+            "std": 0.013821475100798564,
+            "minimum": -0.10240145027637482,
+            "median": -0.0002664400089997798,
+            "maximum": 0.11586616933345795
+          },
+          "odom_yaw_current_reported_rate_step_residual_rad": {
+            "rms": 2.855021483751822e-07,
+            "stats": {
+              "n": 2298,
+              "mean": 1.3610558135468295e-09,
+              "std": 2.8549890412034327e-07,
+              "minimum": -5.122138321399239e-06,
+              "median": 0.0,
+              "maximum": 5.254368685960777e-06
+            }
+          },
+          "odom_xy_current_body_velocity_step_residual_m": {
+            "rms": 2.923665104315875e-07,
+            "stats": {
+              "n": 2298,
+              "mean": 7.495312253588887e-08,
+              "std": 2.825954809335485e-07,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 4.0019203316446504e-06
+            }
+          },
+          "odom_yaw_raw_IMU_current_rate_step_residual_rad": {
+            "rms": 0.0006939579678656445,
+            "stats": {
+              "n": 2298,
+              "mean": 6.139938732339962e-05,
+              "std": 0.0006912364113677217,
+              "minimum": -0.005795128546021952,
+              "median": 1.3312700095034846e-05,
+              "maximum": 0.005117783051139177
+            }
+          },
+          "odom_heading_net_change_rad": -1.5700382860377433,
+          "IMU_heading_net_change_rad": -1.7072025114962264,
+          "firmware_identified": false,
+          "independent_sensors_proven": false,
+          "actual_attitude_error_evaluated": false
+        }
+      }
+    },
+    "T08": {
+      "sha256": "cf3b4de0f20424d02779aeeb416a4fb16d77bb1f5333344d48ebf446a3884ada",
+      "scope": "development source diagnostic",
+      "inventory": {
+        "bag_message_count": 70766,
+        "selected_topics": {
+          "/car1/imu": {
+            "type": "sensor_msgs/Imu",
+            "md5sum": "6a62c6daae103f4ff57a132d6f95cec2",
+            "callerid": "/car1/wheeltec_robot"
+          },
+          "/car1/odom": {
+            "type": "nav_msgs/Odometry",
+            "md5sum": "cd5e73d190d741a2f92e81eda573aca7",
+            "callerid": "/car1/wheeltec_robot"
+          },
+          "/car2/imu": {
+            "type": "sensor_msgs/Imu",
+            "md5sum": "6a62c6daae103f4ff57a132d6f95cec2",
+            "callerid": "/car2/wheeltec_robot"
+          },
+          "/car2/odom": {
+            "type": "nav_msgs/Odometry",
+            "md5sum": "cd5e73d190d741a2f92e81eda573aca7",
+            "callerid": "/car2/wheeltec_robot"
+          },
+          "/car2/cmd_vel": {
+            "type": "geometry_msgs/Twist",
+            "md5sum": "9f195f881246fdfa2798d1d3eebca84a",
+            "callerid": "/car2_relative_motion_61227_1792922928172"
+          }
+        }
+      },
+      "vehicles": {
+        "car1": {
+          "paired_rows": 4879,
+          "eligible_adjacent_intervals": 4878,
+          "relative_published_IMU_minus_odom_yaw_rad": {
+            "n": 4879,
+            "mean": -0.10300279834286667,
+            "std": 0.05553499227495117,
+            "minimum": -0.1923781405937561,
+            "median": -0.10572014426893678,
+            "maximum": 0.0
+          },
+          "rate_difference_rad_s": {
+            "n": 4879,
+            "mean": -0.000799975348870818,
+            "std": 0.0004323657638367637,
+            "minimum": -0.0026644000317901373,
+            "median": -0.0007993200561031699,
+            "maximum": 0.0007993200561031699
+          },
+          "odom_yaw_current_reported_rate_step_residual_rad": {
+            "rms": 0.0,
+            "stats": {
+              "n": 4878,
+              "mean": 0.0,
+              "std": 0.0,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.0
+            }
+          },
+          "odom_xy_current_body_velocity_step_residual_m": {
+            "rms": 0.0,
+            "stats": {
+              "n": 4878,
+              "mean": 0.0,
+              "std": 0.0,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.0
+            }
+          },
+          "odom_yaw_raw_IMU_current_rate_step_residual_rad": {
+            "rms": 4.546932566473104e-05,
+            "stats": {
+              "n": 4878,
+              "mean": 4.0000014211219444e-05,
+              "std": 2.1620787208323633e-05,
+              "minimum": -3.9921474283473104e-05,
+              "median": 3.9969013044489774e-05,
+              "maximum": 0.00013329967247925745
+            }
+          },
+          "odom_heading_net_change_rad": 0.0,
+          "IMU_heading_net_change_rad": -0.1923781405937561,
+          "firmware_identified": false,
+          "independent_sensors_proven": false,
+          "actual_attitude_error_evaluated": false
+        },
+        "car2": {
+          "paired_rows": 4861,
+          "eligible_adjacent_intervals": 4860,
+          "relative_published_IMU_minus_odom_yaw_rad": {
+            "n": 4861,
+            "mean": -0.27151593837347227,
+            "std": 0.17889134543982624,
+            "minimum": -0.5780581767159891,
+            "median": -0.23423162443181278,
+            "maximum": 0.0
+          },
+          "rate_difference_rad_s": {
+            "n": 4861,
+            "mean": -0.0023656410982361383,
+            "std": 0.009539830827621824,
+            "minimum": -0.11622455716133118,
+            "median": -0.0018650800921022892,
+            "maximum": 0.12997950613498688
+          },
+          "odom_yaw_current_reported_rate_step_residual_rad": {
+            "rms": 2.767444148325245e-07,
+            "stats": {
+              "n": 4860,
+              "mean": -7.881261914298186e-10,
+              "std": 2.7674329259821777e-07,
+              "minimum": -5.995989132374924e-06,
+              "median": 0.0,
+              "maximum": 5.317532165942732e-06
+            }
+          },
+          "odom_xy_current_body_velocity_step_residual_m": {
+            "rms": 2.9719085536819067e-07,
+            "stats": {
+              "n": 4860,
+              "mean": 4.365131345469832e-08,
+              "std": 2.9396762976245613e-07,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 7.950658319434195e-06
+            }
+          },
+          "odom_yaw_raw_IMU_current_rate_step_residual_rad": {
+            "rms": 0.0004914528865706237,
+            "stats": {
+              "n": 4860,
+              "mean": 0.00011829891310895283,
+              "std": 0.0004770024181027166,
+              "minimum": -0.006498887654175013,
+              "median": 9.328317072759475e-05,
+              "maximum": 0.005815581735523637
+            }
+          },
+          "odom_heading_net_change_rad": -1.6164111178368332,
+          "IMU_heading_net_change_rad": -2.1944692945528224,
+          "firmware_identified": false,
+          "independent_sensors_proven": false,
+          "actual_attitude_error_evaluated": false
+        }
+      }
+    },
+    "T10": {
+      "sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+      "scope": "development source diagnostic",
+      "inventory": {
+        "bag_message_count": 16998,
+        "selected_topics": {
+          "/car1/imu": {
+            "type": "sensor_msgs/Imu",
+            "md5sum": "6a62c6daae103f4ff57a132d6f95cec2",
+            "callerid": "/car1/wheeltec_robot"
+          },
+          "/car1/odom": {
+            "type": "nav_msgs/Odometry",
+            "md5sum": "cd5e73d190d741a2f92e81eda573aca7",
+            "callerid": "/car1/wheeltec_robot"
+          },
+          "/car2/imu": {
+            "type": "sensor_msgs/Imu",
+            "md5sum": "6a62c6daae103f4ff57a132d6f95cec2",
+            "callerid": "/car2/wheeltec_robot"
+          },
+          "/car2/odom": {
+            "type": "nav_msgs/Odometry",
+            "md5sum": "cd5e73d190d741a2f92e81eda573aca7",
+            "callerid": "/car2/wheeltec_robot"
+          },
+          "/car1/cmd_vel": {
+            "type": "geometry_msgs/Twist",
+            "md5sum": "9f195f881246fdfa2798d1d3eebca84a",
+            "callerid": "/car1_straight_motion_12347_1792925289002"
+          }
+        }
+      },
+      "vehicles": {
+        "car1": {
+          "paired_rows": 1161,
+          "eligible_adjacent_intervals": 1160,
+          "relative_published_IMU_minus_odom_yaw_rad": {
+            "n": 1161,
+            "mean": -0.08404709396987646,
+            "std": 0.04857815850063116,
+            "minimum": -0.14037878384443542,
+            "median": -0.10437280502085791,
+            "maximum": 0.0
+          },
+          "rate_difference_rad_s": {
+            "n": 1161,
+            "mean": -0.0024289637638332563,
+            "std": 0.0044007730351201405,
+            "minimum": -0.06861000112257898,
+            "median": -0.0012664400564972311,
+            "maximum": 0.019450120627880096
+          },
+          "odom_yaw_current_reported_rate_step_residual_rad": {
+            "rms": 1.5102752431426186e-08,
+            "stats": {
+              "n": 1160,
+              "mean": 3.3462784052733845e-10,
+              "std": 1.509904484440303e-08,
+              "minimum": -5.2485595571733976e-08,
+              "median": 0.0,
+              "maximum": 5.017388484198108e-07
+            }
+          },
+          "odom_xy_current_body_velocity_step_residual_m": {
+            "rms": 5.647740846702449e-08,
+            "stats": {
+              "n": 1160,
+              "mean": 1.737686138414347e-08,
+              "std": 5.373771818366866e-08,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 1.1710001291764982e-06
+            }
+          },
+          "odom_yaw_raw_IMU_current_rate_step_residual_rad": {
+            "rms": 0.0002514499519705549,
+            "stats": {
+              "n": 1160,
+              "mean": 0.00012155957293878647,
+              "std": 0.0002201143988314581,
+              "minimum": -0.0009725031138759107,
+              "median": 6.334231504533813e-05,
+              "maximum": 0.0034308684915121315
+            }
+          },
+          "odom_heading_net_change_rad": 0.028957506641745574,
+          "IMU_heading_net_change_rad": -0.11142127720268985,
+          "firmware_identified": false,
+          "independent_sensors_proven": false,
+          "actual_attitude_error_evaluated": false
+        },
+        "car2": {
+          "paired_rows": 1145,
+          "eligible_adjacent_intervals": 1144,
+          "relative_published_IMU_minus_odom_yaw_rad": {
+            "n": 1145,
+            "mean": -0.06234490901041873,
+            "std": 0.0364820031039301,
+            "minimum": -0.12543750178829116,
+            "median": -0.06207445087933383,
+            "maximum": 0.0
+          },
+          "rate_difference_rad_s": {
+            "n": 1145,
+            "mean": -0.002138268330752622,
+            "std": 0.00038448019436452803,
+            "minimum": -0.003463720204308629,
+            "median": -0.0021315200719982386,
+            "maximum": -0.0007993200561031699
+          },
+          "odom_yaw_current_reported_rate_step_residual_rad": {
+            "rms": 0.0,
+            "stats": {
+              "n": 1144,
+              "mean": 0.0,
+              "std": 0.0,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.0
+            }
+          },
+          "odom_xy_current_body_velocity_step_residual_m": {
+            "rms": 0.0,
+            "stats": {
+              "n": 1144,
+              "mean": 0.0,
+              "std": 0.0,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.0
+            }
+          },
+          "odom_yaw_raw_IMU_current_rate_step_residual_rad": {
+            "rms": 0.00010863802418043955,
+            "stats": {
+              "n": 1144,
+              "mean": 0.00010692285450306526,
+              "std": 1.9228194994489464e-05,
+              "minimum": 3.994120230177778e-05,
+              "median": 0.00010658341596096231,
+              "maximum": 0.00017339545098502538
+            }
+          },
+          "odom_heading_net_change_rad": 0.0,
+          "IMU_heading_net_change_rad": -0.12543750178829116,
+          "firmware_identified": false,
+          "independent_sensors_proven": false,
+          "actual_attitude_error_evaluated": false
+        }
+      }
+    }
+  }
+}
