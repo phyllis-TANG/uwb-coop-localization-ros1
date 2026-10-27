@@ -1,0 +1,167 @@
+{
+  "development_seed": 7,
+  "scenario": "nominal",
+  "car_bins": 126,
+  "differing_car_bins": 26,
+  "omitted_boundary_samples_total": 48,
+  "scope": "per-car UWB messages; applies identically to D0 and D1; each message contains all wall links and one peer",
+  "policy": "preserve exact inherited F0 centered-float +/-0.4s bin membership; integer arrival cutoffs unchanged",
+  "rows": [
+    {
+      "time_s": 4.0,
+      "car": "car1",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 16
+    },
+    {
+      "time_s": 4.0,
+      "car": "car2",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 16
+    },
+    {
+      "time_s": 5.0,
+      "car": "car1",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 5.0,
+      "car": "car2",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 6.0,
+      "car": "car1",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 6.0,
+      "car": "car2",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 7.0,
+      "car": "car1",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 7.0,
+      "car": "car2",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 8.0,
+      "car": "car1",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 8.0,
+      "car": "car2",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 9.0,
+      "car": "car1",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 9.0,
+      "car": "car2",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 10.0,
+      "car": "car1",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 10.0,
+      "car": "car2",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 11.0,
+      "car": "car1",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 11.0,
+      "car": "car2",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 12.0,
+      "car": "car1",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 12.0,
+      "car": "car2",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 13.0,
+      "car": "car1",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 13.0,
+      "car": "car2",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 14.0,
+      "car": "car1",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 14.0,
+      "car": "car2",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 15.0,
+      "car": "car1",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 15.0,
+      "car": "car2",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 15
+    },
+    {
+      "time_s": 16.0,
+      "car": "car1",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 16
+    },
+    {
+      "time_s": 16.0,
+      "car": "car2",
+      "integer_ns_closed_count": 17,
+      "inherited_f0_float_count": 16
+    }
+  ]
+}

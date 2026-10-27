@@ -1,0 +1,113 @@
+{
+  "checks": [
+    {
+      "exact_all_pose_equal": true,
+      "max_pose_abs_by_car": {
+        "car1": 0.0,
+        "car2": 0.0
+      },
+      "requirement": "all two-car pose publications byte-value equal as parsed floats; peer excluded",
+      "same_state_keys": true,
+      "scenario": "peer_bias",
+      "seed": 101,
+      "status": "PASS"
+    },
+    {
+      "exact_all_pose_equal": true,
+      "max_pose_abs_by_car": {
+        "car1": 0.0,
+        "car2": 0.0
+      },
+      "requirement": "all two-car pose publications byte-value equal as parsed floats; peer excluded",
+      "same_state_keys": true,
+      "scenario": "peer_gap",
+      "seed": 101,
+      "status": "PASS"
+    },
+    {
+      "exact_all_pose_equal": null,
+      "max_pose_abs_by_car": {
+        "car1": 0.14855689107897785,
+        "car2": 1.2773776805197201e-06
+      },
+      "requirement": "unaffected Car2 same to 1e-5; same single-car objective with shared numerical stopping rule",
+      "same_state_keys": true,
+      "scenario": "wall_bias",
+      "seed": 101,
+      "status": "PASS"
+    },
+    {
+      "exact_all_pose_equal": true,
+      "max_pose_abs_by_car": {
+        "car1": 0.0,
+        "car2": 0.0
+      },
+      "requirement": "all two-car pose publications byte-value equal as parsed floats; peer excluded",
+      "same_state_keys": true,
+      "scenario": "peer_bias",
+      "seed": 211,
+      "status": "PASS"
+    },
+    {
+      "exact_all_pose_equal": true,
+      "max_pose_abs_by_car": {
+        "car1": 0.0,
+        "car2": 0.0
+      },
+      "requirement": "all two-car pose publications byte-value equal as parsed floats; peer excluded",
+      "same_state_keys": true,
+      "scenario": "peer_gap",
+      "seed": 211,
+      "status": "PASS"
+    },
+    {
+      "exact_all_pose_equal": null,
+      "max_pose_abs_by_car": {
+        "car1": 0.15179030502998536,
+        "car2": 4.005198427359247e-06
+      },
+      "requirement": "unaffected Car2 same to 1e-5; same single-car objective with shared numerical stopping rule",
+      "same_state_keys": true,
+      "scenario": "wall_bias",
+      "seed": 211,
+      "status": "PASS"
+    },
+    {
+      "exact_all_pose_equal": true,
+      "max_pose_abs_by_car": {
+        "car1": 0.0,
+        "car2": 0.0
+      },
+      "requirement": "all two-car pose publications byte-value equal as parsed floats; peer excluded",
+      "same_state_keys": true,
+      "scenario": "peer_bias",
+      "seed": 307,
+      "status": "PASS"
+    },
+    {
+      "exact_all_pose_equal": true,
+      "max_pose_abs_by_car": {
+        "car1": 0.0,
+        "car2": 0.0
+      },
+      "requirement": "all two-car pose publications byte-value equal as parsed floats; peer excluded",
+      "same_state_keys": true,
+      "scenario": "peer_gap",
+      "seed": 307,
+      "status": "PASS"
+    },
+    {
+      "exact_all_pose_equal": null,
+      "max_pose_abs_by_car": {
+        "car1": 0.14587117383392556,
+        "car2": 5.607511859739844e-06
+      },
+      "requirement": "unaffected Car2 same to 1e-5; same single-car objective with shared numerical stopping rule",
+      "same_state_keys": true,
+      "scenario": "wall_bias",
+      "seed": 307,
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}
