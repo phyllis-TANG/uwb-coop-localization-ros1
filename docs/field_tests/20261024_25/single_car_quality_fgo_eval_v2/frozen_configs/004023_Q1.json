@@ -1,0 +1,296 @@
+{
+  "assumptions": [
+    "no independent ground truth or calibrated prediction covariance in shadow",
+    "engineering score, not NIS/PL/integrity guarantee",
+    "same upstream Odom/gyro and correlated wall failures can fool shadows",
+    "unknown holds last information multiplier; initial unknown keeps baseline1, not a healthy claim",
+    "new multiplier frozen once at factor creation; no history rollback or bias locking",
+    "Inherited PR59 conditional geometry/lever/initial pose/clock/axes are unchanged; physical uncertainty remains unknown",
+    "No manual endpoint/window/fault label passed to estimator or shadow; no tuning from these bags"
+  ],
+  "base": {
+    "angular": {
+      "angle_noise_density_rad_sqrt_s": {
+        "frozen_before_field_run": true,
+        "source": "A e3a20fe04a6d53973696ec055dbc71eb135e0f77 frozen v1; uncalibrated engineering design, not inferred from these bags",
+        "source_kind": "engineering_assumption",
+        "units": "rad/sqrt(s)",
+        "value": 0.03490658503988659
+      },
+      "bias_initial_rad_s": {
+        "frozen_before_field_run": true,
+        "source": "A e3a20fe04a6d53973696ec055dbc71eb135e0f77 frozen v1; uncalibrated engineering design, not inferred from these bags",
+        "source_kind": "engineering_assumption",
+        "units": "rad/s",
+        "value": 0.0
+      },
+      "bias_initial_sigma_rad_s": {
+        "frozen_before_field_run": true,
+        "source": "A e3a20fe04a6d53973696ec055dbc71eb135e0f77 frozen v1; uncalibrated engineering design, not inferred from these bags",
+        "source_kind": "engineering_assumption",
+        "units": "rad/s",
+        "value": 0.03
+      },
+      "bias_random_walk_rad_s_sqrt_s": {
+        "frozen_before_field_run": true,
+        "source": "A e3a20fe04a6d53973696ec055dbc71eb135e0f77 frozen v1; uncalibrated engineering design, not inferred from these bags",
+        "source_kind": "engineering_assumption",
+        "units": "(rad/s)/sqrt(s)",
+        "value": 0.0007
+      },
+      "body_z_in_imu_frame": {
+        "frozen_before_field_run": true,
+        "source": "Conditional published gyro +Z = planar body +Z hypothesis; physical installation/sign not verified",
+        "source_kind": "engineering_assumption",
+        "units": "dimensionless",
+        "value": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "imu_frame_id": {
+        "frozen_before_field_run": true,
+        "source": "Exact observed ROS frame label from verified historical bag; label is not a physical extrinsic calibration",
+        "source_kind": "measured",
+        "units": "frame_id",
+        "value": "gyro_link"
+      },
+      "max_hold_ns": {
+        "frozen_before_field_run": true,
+        "source": "A e3a20fe04a6d53973696ec055dbc71eb135e0f77 frozen v1; uncalibrated engineering design, not inferred from these bags",
+        "source_kind": "engineering_assumption",
+        "units": "ns",
+        "value": 100000000
+      }
+    },
+    "arm": "F3",
+    "assumptions": [
+      "Odom body translation expression still depends on upstream Odom yaw; gyro/Odom correlation uncalibrated",
+      "pose/yaw initial prior is external and uncertain; no artificial endpoint factor",
+      "IMU replaces Odom yaw factor; no IMU orientation or acceleration factor",
+      "missing angular edge has no yaw factor; held-yaw prediction only, no Odom yaw fallback",
+      "CONDITIONAL exploration only; strict physical branch remains BLOCKED",
+      "Historical [.12,-.08]m lever is inherited near geometric center, odom physical correspondence unverified; no later session correction transferred",
+      "Same uncorrected recorded header epochs as legacy, no receive-header median delay correction; true sampling time and uncertainty pending",
+      "Published gyro units rad/s; board compensation and historical deployed source binding unverified",
+      "All four arms use identical Odom pose-derived translation and UWB; upstream Odom yaw remains in translation expression",
+      "No endpoint, video or IMU quaternion used for initialization, factors or tuning; no field accuracy claims"
+    ],
+    "clock_maps": {
+      "imu": {
+        "value": {
+          "source_origin_ns": 0,
+          "destination_origin_ns": 0,
+          "rate_numerator": 1,
+          "rate_denominator": 1,
+          "uncertainty_ns": 100000000
+        },
+        "units": "ns",
+        "source_kind": "engineering_assumption",
+        "source": "Inherited uncorrected recorded epoch hypothesis. uncertainty_ns is an unverified API disclosure scale, NOT a physical error bound, not used to map or weight data; physical bound remains null.",
+        "frozen_before_field_run": true
+      },
+      "odom": {
+        "value": {
+          "source_origin_ns": 0,
+          "destination_origin_ns": 0,
+          "rate_numerator": 1,
+          "rate_denominator": 1,
+          "uncertainty_ns": 100000000
+        },
+        "units": "ns",
+        "source_kind": "engineering_assumption",
+        "source": "Inherited uncorrected recorded epoch hypothesis. uncertainty_ns is an unverified API disclosure scale, NOT a physical error bound, not used to map or weight data; physical bound remains null.",
+        "frozen_before_field_run": true
+      },
+      "uwb": {
+        "value": {
+          "source_origin_ns": 0,
+          "destination_origin_ns": 0,
+          "rate_numerator": 1,
+          "rate_denominator": 1,
+          "uncertainty_ns": 100000000
+        },
+        "units": "ns",
+        "source_kind": "engineering_assumption",
+        "source": "Inherited uncorrected recorded epoch hypothesis. uncertainty_ns is an unverified API disclosure scale, NOT a physical error bound, not used to map or weight data; physical bound remains null.",
+        "frozen_before_field_run": true
+      }
+    },
+    "fixed_lag_s": 20.0,
+    "frontend": {
+      "max_sensor_samples_per_stream": 512,
+      "output_history": "external sink; estimator retains last valid publication only"
+    },
+    "model": {
+      "anchors_xyz_m": {
+        "node_10": [
+          3.26,
+          0.1,
+          2.355
+        ],
+        "node_2": [
+          5.28,
+          5.16,
+          2.755
+        ],
+        "node_3": [
+          5.28,
+          2.86,
+          2.355
+        ],
+        "node_8": [
+          0.1,
+          2.41,
+          2.3
+        ]
+      },
+      "range_bias_m": {
+        "node_10": 0.6088636183798282,
+        "node_2": 0.449737490591974,
+        "node_3": 0.2012859604623305,
+        "node_8": 0.3685143909425328
+      },
+      "start_antenna_xyz_m": [
+        2,
+        2,
+        0.2
+      ],
+      "initial_heading_deg": 90,
+      "base_to_antenna_body_xy_m": [
+        0.12,
+        -0.08
+      ],
+      "antenna_height_m": 0.2,
+      "graph_parameters": {
+        "keyframe_step_s": 1,
+        "odom_translation_sigma_m": 0.03,
+        "odom_yaw_sigma_deg": 2,
+        "prior_heading_sigma_deg": 5,
+        "prior_position_sigma_m": 0.2,
+        "range_bin_half_width_s": 0.4,
+        "range_sigma_m": 0.2
+      }
+    },
+    "optimizer": {
+      "method": "trf",
+      "jacobian": "analytic",
+      "linear_solver": "exact dense",
+      "max_nfev": 50,
+      "ftol": 1e-07,
+      "xtol": 1e-07,
+      "gtol": 1e-07,
+      "initialization": "F0 legacy Odom; F1-F3 selected angular prediction; actual source logged per update"
+    },
+    "replay": {
+      "keyframe_step_s": 1,
+      "first_keyframe_margin_s": 1,
+      "range_bin_half_width_s": 0.4,
+      "minimum_samples_per_link": 5,
+      "release_delay_s": 1,
+      "clock_correction": "none",
+      "closed_bin_policy": "immutable; count late packets",
+      "eof_policy": "no timer advance beyond last recorded receipt",
+      "backend": "arm-specific; see arms",
+      "imu": "diagnostic messages only; zero independent IMU factors"
+    },
+    "schema_version": 1,
+    "scope": "field"
+  },
+  "controller": {
+    "clear_count": {
+      "frozen_before_field_run": true,
+      "source": "A exact frozen 12a1d94379b58c5a759b1698425fb90d48587609 engineering design; not selected from field residuals/endpoints",
+      "source_kind": "engineering_assumption",
+      "units": "count",
+      "value": 3
+    },
+    "clear_score": {
+      "frozen_before_field_run": true,
+      "source": "A exact frozen 12a1d94379b58c5a759b1698425fb90d48587609 engineering design; not selected from field residuals/endpoints",
+      "source_kind": "engineering_assumption",
+      "units": "dimensionless",
+      "value": 0.75
+    },
+    "disable_count": {
+      "frozen_before_field_run": true,
+      "source": "A exact frozen 12a1d94379b58c5a759b1698425fb90d48587609 engineering design; not selected from field residuals/endpoints",
+      "source_kind": "engineering_assumption",
+      "units": "count",
+      "value": 2
+    },
+    "disable_score": {
+      "frozen_before_field_run": true,
+      "source": "A exact frozen 12a1d94379b58c5a759b1698425fb90d48587609 engineering design; not selected from field residuals/endpoints",
+      "source_kind": "engineering_assumption",
+      "units": "dimensionless",
+      "value": 3.0
+    },
+    "lowered_information": {
+      "frozen_before_field_run": true,
+      "source": "A exact frozen 12a1d94379b58c5a759b1698425fb90d48587609 engineering design; not selected from field residuals/endpoints",
+      "source_kind": "engineering_assumption",
+      "units": "dimensionless",
+      "value": 0.1
+    },
+    "min_other_links": {
+      "frozen_before_field_run": true,
+      "source": "A exact frozen 12a1d94379b58c5a759b1698425fb90d48587609 engineering design; not selected from field residuals/endpoints",
+      "source_kind": "engineering_assumption",
+      "units": "count",
+      "value": 3
+    },
+    "min_xy_singular_ratio": {
+      "frozen_before_field_run": true,
+      "source": "A exact frozen 12a1d94379b58c5a759b1698425fb90d48587609 engineering design; not selected from field residuals/endpoints",
+      "source_kind": "engineering_assumption",
+      "units": "dimensionless",
+      "value": 0.15
+    },
+    "recover_count": {
+      "frozen_before_field_run": true,
+      "source": "A exact frozen 12a1d94379b58c5a759b1698425fb90d48587609 engineering design; not selected from field residuals/endpoints",
+      "source_kind": "engineering_assumption",
+      "units": "count",
+      "value": 3
+    },
+    "recovery_information": {
+      "frozen_before_field_run": true,
+      "source": "A exact frozen 12a1d94379b58c5a759b1698425fb90d48587609 engineering design; not selected from field residuals/endpoints",
+      "source_kind": "engineering_assumption",
+      "units": "dimensionless",
+      "value": 0.25
+    },
+    "score_scale_m": {
+      "frozen_before_field_run": true,
+      "source": "A exact frozen 12a1d94379b58c5a759b1698425fb90d48587609 engineering design; not selected from field residuals/endpoints",
+      "source_kind": "engineering_assumption",
+      "units": "m",
+      "value": 0.2
+    },
+    "warn_count": {
+      "frozen_before_field_run": true,
+      "source": "A exact frozen 12a1d94379b58c5a759b1698425fb90d48587609 engineering design; not selected from field residuals/endpoints",
+      "source_kind": "engineering_assumption",
+      "units": "count",
+      "value": 2
+    },
+    "warn_score": {
+      "frozen_before_field_run": true,
+      "source": "A exact frozen 12a1d94379b58c5a759b1698425fb90d48587609 engineering design; not selected from field residuals/endpoints",
+      "source_kind": "engineering_assumption",
+      "units": "dimensionless",
+      "value": 1.5
+    }
+  },
+  "group": "Q1",
+  "interface_version": "quality_fgo_v1",
+  "quality_enabled": false,
+  "reference": "independent-from-initialization same F0/F3 skeleton, one excluded wall per shadow, all remaining factors original pseudo-Huber only",
+  "schema_version": 1,
+  "timing": {
+    "paced": true,
+    "scope": "same-host recorded-receive paced historical development; host mapping is not physical clock calibration"
+  }
+}
