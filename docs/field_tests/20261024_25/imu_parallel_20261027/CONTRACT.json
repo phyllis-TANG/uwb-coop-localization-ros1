@@ -1,0 +1,147 @@
+{
+  "contract_id": "imu_parallel_v1_20261027",
+  "status": "TASK_INTERFACE_NOT_IMPLEMENTATION",
+  "algorithm_base_commit": "1c56e47784880862ac934385b64636845cedb342",
+  "audit_checkpoint": "047ce90bbf1e7a21c9a0f9a399d76d9650273cc3",
+  "experiment_allowlist": [
+    "T08",
+    "T10"
+  ],
+  "holdouts": [
+    "T09",
+    "T11",
+    "T13",
+    "T15"
+  ],
+  "motion_modes": [
+    "legacy_odom_pose",
+    "body_odom_rate",
+    "body_imu_fixed_bias",
+    "body_imu_bias"
+  ],
+  "initial_fusion_methods": [
+    "independent",
+    "joint"
+  ],
+  "imu_enabled_by_default": false,
+  "per_car_state": [
+    "x_m",
+    "y_m",
+    "yaw_rad",
+    "gyro_residual_bias_rad_s"
+  ],
+  "joint_state_order": [
+    "car1_x",
+    "car1_y",
+    "car1_yaw",
+    "car1_bias",
+    "car2_x",
+    "car2_y",
+    "car2_yaw",
+    "car2_bias"
+  ],
+  "event_format": {
+    "container": "UTF-8 JSONL, one wrapper per event",
+    "wrapper_fields": [
+      "kind",
+      "row"
+    ],
+    "kind_values": [
+      "odom",
+      "imu",
+      "range"
+    ],
+    "row_identity_fields": [
+      "experiment_id",
+      "vehicle_id",
+      "source_file_sha256",
+      "topic",
+      "record_index",
+      "receive_epoch_ns",
+      "header_epoch_ns"
+    ],
+    "integer_fields": [
+      "record_index",
+      "receive_epoch_ns",
+      "header_epoch_ns"
+    ],
+    "optional_integer_fields": [
+      "link_index"
+    ],
+    "ordering": [
+      "receive_epoch_ns",
+      "record_index",
+      "link_index_default_0"
+    ],
+    "odom_body_velocity_fields": [
+      "linear_x",
+      "linear_y"
+    ],
+    "odom_rate_control_field": "angular_z",
+    "imu_angular_velocity_fields": [
+      "angular_velocity_x",
+      "angular_velocity_y",
+      "angular_velocity_z"
+    ],
+    "units": {
+      "linear_velocity": "m/s",
+      "angular_velocity": "rad/s",
+      "timestamps": "integer epoch ns"
+    },
+    "other_fields": "Preserve existing normalized row fields; no renaming or float epoch conversion. Range rows retain the existing PR45 schema.",
+    "missing_or_nonfinite": "Explicit rejection/status; do not silently drop, zero-fill, interpolate or insert a future record. Keep original table identity."
+  },
+  "required_new_entrypoint": {
+    "path": "tools/field_20261024_25/imu_prototype/replay.py",
+    "arguments": [
+      "--events-jsonl",
+      "--config",
+      "--output"
+    ],
+    "output_creation": "new external directory only",
+    "configuration": "baseline configuration plus a separately validated imu_prototype object; A freezes and supplies its exact schema and parameter protocol before B numerical replay"
+  },
+  "required_outputs": [
+    "run.json",
+    "config.json",
+    "estimate.csv",
+    "decisions.jsonl.gz",
+    "summary.json"
+  ],
+  "estimate_schema": {
+    "base": "Preserve causal_baselines.replay.ESTIMATE_COLUMNS and meanings",
+    "extra_fields": [
+      "motion_mode",
+      "imu_mode_status",
+      "gyro_bias_rad_s",
+      "gyro_bias_variance",
+      "last_imu_record_index",
+      "last_imu_header_epoch_ns",
+      "last_imu_receive_epoch_ns",
+      "last_velocity_record_index",
+      "last_velocity_header_epoch_ns",
+      "last_velocity_receive_epoch_ns",
+      "assumption_profile_id"
+    ],
+    "covariance": "Pose marginal covariance stays 3x3; augmented state/covariance is separately named in decisions. Invalid/undefined values use blank/null with reason, not a fabricated bound.",
+    "legacy_mode": "Bias/IMU provenance fields blank with explicit legacy_not_used status; do not pretend the frozen six-state posterior is eight-state calibrated."
+  },
+  "parameter_provenance_fields": [
+    "value",
+    "units",
+    "source_kind",
+    "source",
+    "frozen_before_field_run"
+  ],
+  "parameter_source_kinds": [
+    "engineering_assumption",
+    "measured",
+    "manufacturer_generic",
+    "synthetic_design"
+  ],
+  "field_configuration_rule": "Synthetic-design values require explicit engineering assumption declaration before field use; no silent promotion to measured. Same-host mapping, mounting/sign and historical calibration remain conditional.",
+  "observability_rule": "Report weak/unobservable bias under stationary/straight/weak UWB geometry; no forced convergence and no covariance-as-certified-accuracy claim.",
+  "field_accuracy_evaluated": false,
+  "shared_files_mutation_allowed": false,
+  "integration_base_commit": "21df0e6e3530aa30a4424f4c7093f88f1d509dca"
+}
