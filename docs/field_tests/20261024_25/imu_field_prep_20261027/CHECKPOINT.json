@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "status": "STOPPED_FOR_FGO_REDIRECT",
+  "at_utc": "2026-10-27T09:51:56.236731+00:00",
+  "base_commit": "d079c26ff1f279fbe5db131b43f809d77b561345",
+  "branch": "analysis/20261027-b-imu-field",
+  "new_model_field_replays": 0,
+  "formal_input_packets_generated": 0,
+  "behavior_tests_executed": 0,
+  "syntax_check": "compileall passed",
+  "venv": "/workspace/work/uwb-b-imu-field-20261027-run/venv",
+  "installed": [
+    "numpy==2.2.6",
+    "rosbags==0.11.9"
+  ],
+  "preserved_sources": [
+    "imu_field_prep/prepare_inputs.py",
+    "imu_field_prep/diagnose.py",
+    "imu_field_prep/provenance.py",
+    "imu_field_prep/protocol.json",
+    "imu_verification/verify_inputs.py",
+    "imu_verification/raw_motion.py",
+    "imu_verification/causal_usage.py",
+    "imu_verification/verify_estimates.py"
+  ],
+  "actual_done": [
+    "read IMU dispatch contract and existing audits",
+    "new independent checkout and venv",
+    "located registered PR45 tables and original T08/T10 bags",
+    "one read-only rosbags index/IMU message probe of T10",
+    "syntax check of draft tools"
+  ],
+  "not_done": [
+    "formal export/diagnostics/raw readback",
+    "behavior/negative tests",
+    "A freeze and numerical replay"
+  ],
+  "next": "read 112586c:FGO_REDIRECT.md in full; new FGO B checkout, 004023/005135 baseline reproduction",
+  "data_preservation": "old PR45/51 data/results unchanged; draft source retains potential T08/T10 reuse, do not report tested packets"
+}

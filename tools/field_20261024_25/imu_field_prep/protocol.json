@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "contract_id": "imu_parallel_v1_20261027",
+  "stage": "input_preparation_and_independent_verification_before_A_freeze",
+  "experiments": ["T08", "T10"],
+  "bag_sha256": {
+    "T08": "cf3b4de0f20424d02779aeeb416a4fb16d77bb1f5333344d48ebf446a3884ada",
+    "T10": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558"
+  },
+  "archive_sha256": "b7cec6f75584e583e66946fd669dc7495d10e3bcbebc0b67fa480b65b53fd1bf",
+  "normalized_registered_run_sha256": "b7448d932d8c92054b3147d3add1bb755cf39e50f292c8e2151e5c89ea99c11a",
+  "tables": ["odom", "imu", "ranges", "frames", "commands"],
+  "event_kinds": ["odom", "imu", "range"],
+  "event_row_policy": "all original CSV columns/lexemes retained; record/header/receive and range link_index converted only by exact decimal-integer parsing; numeric invalidity adds input_numeric_status/errors, never removes an event",
+  "ordering": ["receive_epoch_ns", "record_index", "link_index_default_0"],
+  "diagnostic_gap_ns": 100000000,
+  "diagnostic_batch_receive_ns": 1000000,
+  "diagnostic_header_progress_ns": 10000000,
+  "offline_pair_tolerance_ns": 2000000,
+  "pairing_is_online_admission": false,
+  "header_is_calibrated_measurement_time": false,
+  "gyro_units": "rad/s as published in sensor_msgs/Imu; not asserted to be unprocessed ADC",
+  "clock_axis_noise_bias_calibration": "not performed; no static candidate or covariance constant promoted to calibration",
+  "output_budget_bytes": 2147483648,
+  "maximum_stage_seconds": 10800,
+  "maximum_events_per_trial": 1000000,
+  "A_numeric_field_run": "pending exact source commit, frozen protocol/schema, and combined execution checkout",
+  "field_accuracy_evaluated": false,
+  "design_note": "existing T08/T10 audit influenced these diagnostics; not blind preregistration"
+}
