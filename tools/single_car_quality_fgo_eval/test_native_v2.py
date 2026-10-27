@@ -33,3 +33,16 @@ class NativeV2Tests(unittest.TestCase):
         result=self.sequence([(2,None)])[0];actual=copy.deepcopy(result);actual['score']+=2.3e-15;check_policy(actual,result)
         actual['state']='disabled'
         with self.assertRaisesRegex(ValueError,'state/persistence'):check_policy(actual,result)
+
+class NativeExposureTests(unittest.TestCase):
+    def data(self,states,gains):
+        from native_v2.summarize import actions
+        rows=[];availability=[]
+        for i,(state,gain) in enumerate(zip(states,gains)):
+            t=1700000000000000000+i*10**9;availability.append(dict(state_epoch_ns=t,available_receive_epoch_ns=t+10**9));rows.append(dict(target='node_10',state_epoch_ns=t,actual_information_multiplier=gain,factor_action='weighted_pseudo_huber_row',engineering_score=None if state=='unknown' else 2.,policy=dict(state=state,policy_mode_held='downweighted' if state=='unknown' else state,information_multiplier=gain,monitorable=state!='unknown',reason='fixture')))
+        return actions,rows,availability
+    def test_unknown_held_exposure_is_separate_and_last_sample_zero(self):
+        actions,rows,a=self.data(['downweighted','unknown','disabled'],[.1,.1,0.]);a[1]['available_receive_epoch_ns']+=10**9;a[2]['available_receive_epoch_ns']+=3*10**9
+        result,*_=actions(rows,a,'004023','Q3');s=result['per_link']['node_10']['exposure_link_seconds'];self.assertEqual(s['known_attenuation'],2.);self.assertEqual(s['unknown_hold_attenuation'],3.);self.assertEqual(s.get('known_disabled',0),0.)
+    def test_normal_onset_is_not_third_normal_confirmation(self):
+        actions,rows,a=self.data(['disabled','recovering','normal','normal','normal'],[0.,.25,1.,1.,1.]);_,_,recovery,_,_=actions(rows,a,'004023','Q3');normal=next(x for x in recovery if x['event']=='policy_normal_onset');self.assertEqual(normal['available_receive_epoch_ns'],a[2]['available_receive_epoch_ns']);self.assertEqual(normal['third_known_normal_confirmation_epoch_ns'],a[4]['available_receive_epoch_ns'])
