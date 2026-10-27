@@ -5,7 +5,7 @@ and prior-only snapshot substitutions. Never writes to original runs.
 import argparse,copy,json,sys
 from pathlib import Path
 import numpy as np
-from analyze_logs import load,read,dump,write_csv,error,SEEDS,digest
+from analyze_logs import load,read,dump,write_csv,error,state_row,SEEDS,digest
 
 def main():
  ap=argparse.ArgumentParser();ap.add_argument('--experiment',type=Path,required=True);ap.add_argument('--analysis',type=Path,required=True);ap.add_argument('--output',type=Path,required=True);a=ap.parse_args();a.output.mkdir(exist_ok=False)
@@ -48,7 +48,7 @@ def main():
    state=res.x.reshape(-1,d)[-1];orig=np.array(g['row']['pose']+([g['row']['bias_rad_s']] if d==4 else []));nomstate=np.array(ng['row']['pose']+([ng['row']['bias_rad_s']] if d==4 else []));delta=float(np.max(np.abs(state-orig)));delta_nom=float(np.max(np.abs(state-nomstate)))
    if name=='original_prior_control':assert delta<2e-5,(sc,seed,q,role,delta)
    if name=='nominal_prior_only' and sameobs and sameweights:assert delta_nom<2e-5,(sc,seed,q,role,delta_nom)
-   item=dict(scenario=sc,seed=seed,group=q,role=role,state_epoch_ns=ep,arm=name,current_observations_equal_nominal=sameobs,current_weights_equal_nominal=sameweights,prior_sha256=digest(p),current_factors_sha256=digest(dict(times=s['times_s'],local=s['local_odom'],observations=s['observations'],weights=s['quality_weights'],angular=[{k:i[k] for k in ('valid','dt_ns','raw_angle_rad')} for i in intervals])),**error(dict(pose=state[:3].tolist(),bias_rad_s=float(state[3]) if d==4 else None),truth),max_state_delta_original=delta,max_state_delta_nominal=delta_nom,cost=float(res.cost),optimality=float(res.optimality),nfev=res.nfev)
+   item=dict(scenario=sc,seed=seed,group=q,role=role,state_epoch_ns=ep,arm=name,current_observations_equal_nominal=sameobs,current_weights_equal_nominal=sameweights,prior_sha256=digest(p),current_factors_sha256=digest(dict(times=s['times_s'],local=s['local_odom'],observations=s['observations'],weights=s['quality_weights'],angular=[{k:i[k] for k in ('valid','dt_ns','raw_angle_rad')} for i in intervals])),bias=state_row(state)['bias_rad_s'],**error(state_row(state),truth),max_state_delta_original=delta,max_state_delta_nominal=delta_nom,cost=float(res.cost),optimality=float(res.optimality),nfev=res.nfev)
    snapshots.append(item);pair.append(item);fitted.append(dict(kind='D2',scenario=sc,seed=seed,group=q,role=role,arm=name,x=res.x.reshape(-1,d).tolist(),initial_states=s['states'],prior=p))
   # Analytic objective derivatives are checked independently by central differences.
   obj=objective(s['prior']);J=obj.jac(x0);worst=0.

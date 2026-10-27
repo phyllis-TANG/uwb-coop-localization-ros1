@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "independent_FSM_decisions": 4248,
+  "independent_sqrt_gain_residual_and_J_checks": 4248,
+  "original_full_run_metric_comparisons": 90,
+  "D1_control_and_negative_control_rows": 354,
+  "D2_snapshot_rows": 28,
+  "healthy_episode_count": 8,
+  "healthy_duration_seconds": {
+    "Q2_uwb_step": 40.010224861,
+    "Q3_uwb_step": 121.065614781,
+    "Q3_uwb_ramp": 10.989941383
+  },
+  "analysis_checks": {
+    "graph_previous_id": 6372,
+    "raw_dependency": 135936,
+    "actual_graph_gain": 8496,
+    "prior_chain": 3762,
+    "shadow_target_exclusion_and_unity": 4248,
+    "same_state_cutoff_shadow": 4248,
+    "score_recomputed": 4104
+  },
+  "bias_export_checks": {
+    "main_history.csv": {
+      "rows": 2124,
+      "missing_bias_rows": 1062
+    },
+    "shadow_history.csv": {
+      "rows": 4248,
+      "missing_bias_rows": 2124
+    },
+    "timeline.csv": {
+      "rows": 8496,
+      "missing_bias_rows": 4248
+    },
+    "D2_snapshots.csv": {
+      "rows": 28,
+      "missing_bias_rows": 4
+    },
+    "valid_zero_bias_rows_preserved": 264
+  },
+  "interventions_are_independent_validation": false
+}

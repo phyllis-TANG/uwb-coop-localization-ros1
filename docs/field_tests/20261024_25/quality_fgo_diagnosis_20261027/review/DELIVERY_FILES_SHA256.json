@@ -1,10 +1,10 @@
 {
-  "scope": "All diagnosis files in the two authorized directories; excludes this self-referential index only",
+  "scope": "All current diagnosis files in the two authorized directories; excludes this self-referential index only. Supersedes pre-bias-null export checksums.",
   "files": [
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/ARTIFACTS.json",
-      "size_bytes": 3231,
-      "sha256": "9e94c3c3a87e9ef5ddbb0263ab1644e6e63659678b3ac9d436b1a86360016dc9"
+      "size_bytes": 4667,
+      "sha256": "2ac72c433dad52c641315997d7ff0c6868bb21b3ad005764fea58d032d0b6c31"
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/CHECKPOINT_01.md",
@@ -13,23 +13,28 @@
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/COMMANDS.md",
-      "size_bytes": 5448,
-      "sha256": "6c0a1f95ce54a79979ca27ba28046858b9bce9443269c0060e05177d525c2106"
+      "size_bytes": 7093,
+      "sha256": "03f9e437057d04036defaf735fe148f856c862495712413f820e207a69ac7bf5"
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/CONCLUSION.md",
-      "size_bytes": 2703,
-      "sha256": "a8ba24b070391f21ead5842c92aab5ee589bf11ae85c28b75fe9b5005cced61b"
+      "size_bytes": 2896,
+      "sha256": "d028327f9fa3171df92bfa945986e874211318f75b61c5e45132350e6d5799fb"
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/EVENTS.md",
-      "size_bytes": 5838,
-      "sha256": "2c18d73631881b668e7e05a9ed04bdf466e6e5471cb6b94830c30becfef5d710"
+      "size_bytes": 5901,
+      "sha256": "5686ba99fa86899569628555ada27862750a80b677cf04e57b41c520404212e5"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/EXPORT_SEMANTICS_REVISION.md",
+      "size_bytes": 3179,
+      "sha256": "5c77b34314157106803cde649e68bd69c9c4cbec4e80940322b6665157bf778d"
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/HANDOFF.md",
-      "size_bytes": 3446,
-      "sha256": "701b1235cda19e5bbf09cebe2c4b8367ca5e43bd57cb8859a9e212f1f5a9c004"
+      "size_bytes": 4301,
+      "sha256": "fef680ba05d78e4cf26855f0131aefae72f052d73e3fc4b31eea08708ac04120"
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/INTERVENTION_REGISTER.md",
@@ -38,13 +43,18 @@
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/REPORT.md",
-      "size_bytes": 11875,
-      "sha256": "8dedd78c4ba6f647454d2d1956eb56edf4c7a069cec59ffe2d56ab916dee2f67"
+      "size_bytes": 12400,
+      "sha256": "b60344abe8b8f63e04479574218535a294910d7c29a32768ac268b43ab29899b"
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/D1_controls.json",
       "size_bytes": 1568,
       "sha256": "4163def5bb03c7def13fc552cbe179113f769023ffeecd3870444ae86b65f0f9"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/D1_series.json",
+      "size_bytes": 154845,
+      "sha256": "7fd825342466032c3605553412d9ed9481654cc5e5c84e425114ab449fd05587"
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/D1_summary.csv",
@@ -53,13 +63,48 @@
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/D2_snapshots.csv",
-      "size_bytes": 10145,
-      "sha256": "c2a3ddb4dbd263bc6e529aa1e427e3a8c0d4784e75d24ed6e8baa3dbc5d2249c"
+      "size_bytes": 10680,
+      "sha256": "b9ac6c8b940d035e658952cfa36060caeea020754e0e00f473ecf5bfb3b8eb60"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/D2_snapshots.json",
+      "size_bytes": 23109,
+      "sha256": "33e3d774e09c295c3d3b5b8176c88b23a944ab79e504ab66a568ab8b33304625"
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/angular_geometry.csv",
       "size_bytes": 128993,
       "sha256": "a8b4e4bbc9ed8b90fdadc8bdb5d5245c4055b420d538fbe865f4260fda149c56"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/bias-null-commands.json",
+      "size_bytes": 5254,
+      "sha256": "aa047f5ca86828ffbc010ba66365b48b389e75988e48c662e3bd755cd888f920"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/bias-null-comparison.json",
+      "size_bytes": 375,
+      "sha256": "eec54953da0867f6ecf4ba59befdcdc03b305a256b211a60e5083efea311a539"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/bias-null-provenance.json",
+      "size_bytes": 6414,
+      "sha256": "cfb0007afd9f577dd64bc9f53eddf4d1df7e84a9983bf996838e5664257a689a"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/bias-null-tests.log",
+      "size_bytes": 211,
+      "sha256": "18a8b210d0477c1c181ef0697f7788fe9303f1bd95e3fa0e8b10327826523fad"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/bias-null-validation.json",
+      "size_bytes": 1118,
+      "sha256": "a2b90122668a78cd015814fa6b543ad1e4909efe8570a2073f43488f6d97c192"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/bias-null-validation.log",
+      "size_bytes": 1118,
+      "sha256": "a2b90122668a78cd015814fa6b543ad1e4909efe8570a2073f43488f6d97c192"
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/checks.json",
@@ -78,13 +123,13 @@
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/delivery_receipt.json",
-      "size_bytes": 859,
-      "sha256": "cbc3f504952446c13cd87e2109f9213eef44bd48d3ec18e2e7bcd7869d0e4dc8"
+      "size_bytes": 1334,
+      "sha256": "67f8914afffad8a8819b48712d15f69ea59034a1de5c5b5cac8da934c6cb0bdb"
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/event_trigger_trace.csv",
-      "size_bytes": 12073,
-      "sha256": "3f14a3fdf0b794e98af3632cf234a017cbe3d81f664259c1f6cabb73b180504b"
+      "size_bytes": 12335,
+      "sha256": "1d698447c49142e3ea64770e689f9de943048442d6ff8c2e245bd0c5b05a18ff"
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/figures/D1_all_seeds.png",
@@ -113,13 +158,13 @@
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/figures/uwb_step_419_Q2_node_2_03.png",
-      "size_bytes": 420152,
-      "sha256": "653bebd627dff527e47d2636f8d238bb7b882c348a311778046af990896125fe"
+      "size_bytes": 405402,
+      "sha256": "64ac1bfb1d18cf71c511af7d248bb6daeb03c720c61e889503e07fbe18b81bee"
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/figures/uwb_step_419_Q2_node_3_04.png",
-      "size_bytes": 411652,
-      "sha256": "b552963ae925f97403bcc30678096b669231b22cd51a75d6ddd0dfc0de359b17"
+      "size_bytes": 397017,
+      "sha256": "c635b6aa2a7b7324454423bfc03db4b1636164ac32abff4e422a0f97a9856585"
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/figures/uwb_step_419_Q3_node_2_05.png",
@@ -153,8 +198,8 @@
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/main_history.csv.gz",
-      "size_bytes": 431579,
-      "sha256": "3ed45e75c06a8d7c1f3e351cb3a6ad4078a0d0fd27a58e51d1f37fd294f5c6ec"
+      "size_bytes": 430446,
+      "sha256": "152fddeb39a1eb6076b032ce209d83b9e92b96388a16dc5c17020420caa76fc2"
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/marginal_history.csv.gz",
@@ -173,8 +218,8 @@
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/provenance.json",
-      "size_bytes": 104460,
-      "sha256": "f35241d97c2633129c8f05b820b3ad5210cab008b2688641d586b5f7c0952a0a"
+      "size_bytes": 104693,
+      "sha256": "287d8e88b9dbc21246fe3dfcda5be0f303c7309d088975c93e3b87246ca81cd6"
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/receipt.json",
@@ -187,9 +232,14 @@
       "sha256": "4644c4e1b3bae0175c3f9207c588730605412eedd1c564b02f039c9a43d266d4"
     },
     {
+      "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/reexport_receipt.json",
+      "size_bytes": 553,
+      "sha256": "b62a8607a748392e2bf9ba870da342f5613664e2295b1b92105e75191a5d9ebd"
+    },
+    {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/shadow_history.csv.gz",
-      "size_bytes": 730722,
-      "sha256": "e1d75a7c812a5a24437cc8c4a789c28e11385cbfaf2eddb2b73c41913940ae41"
+      "size_bytes": 736247,
+      "sha256": "f89d3cd50264b762bd583e445e0c606169b6655707abc40832452584f17f87cf"
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/tests-v1.json",
@@ -203,8 +253,8 @@
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/timeline.csv.gz",
-      "size_bytes": 1217064,
-      "sha256": "7ac9f6ca64643a7b9184f3a7e8693d6830fd1ca177540826e89660b6a5b9e7a5"
+      "size_bytes": 1222290,
+      "sha256": "489c62be47e52b56b9ba915bcb4a2f3b63b3a67de3b7054bde0f03992f395f49"
     },
     {
       "path": "docs/field_tests/20261024_25/quality_fgo_diagnosis_20261027/review/verification_summary.json",
@@ -213,23 +263,28 @@
     },
     {
       "path": "tools/single_car_quality_diagnosis/README.md",
-      "size_bytes": 1581,
-      "sha256": "d2b4f0b809570f1c8062079dd50f620894cb632c29a6f57fbd39ec0b17260e9e"
+      "size_bytes": 1742,
+      "sha256": "97cbec19ffd802aa7fe37d5d7534ffdb251fcf8d189659dca40e3934a0e08eff"
     },
     {
       "path": "tools/single_car_quality_diagnosis/analyze_logs.py",
-      "size_bytes": 16196,
-      "sha256": "9e604b20fa3334ecbfaba7149ef45ea88ed2958967234946f685947f34bc5466"
+      "size_bytes": 16548,
+      "sha256": "d6a2441df865e1988b94ab1b0f4f514801c9cbbb9b4e29c5976e0f72b73c901c"
+    },
+    {
+      "path": "tools/single_car_quality_diagnosis/archive_export_revision.py",
+      "size_bytes": 2297,
+      "sha256": "8e93a6b3781f10a1465c756f05126130ad1bb79d3a938de5c0e122258d7c7610"
     },
     {
       "path": "tools/single_car_quality_diagnosis/intervene.py",
-      "size_bytes": 6670,
-      "sha256": "fa4a16e9abf18f09461c688df837b89b6896e3b8d1e2741cb6953e873e1bac8c"
+      "size_bytes": 6658,
+      "sha256": "a98f8d94833feb5b1a2f20daae9d8163cc853a74f4d6c50fb1be8f51439c0100"
     },
     {
       "path": "tools/single_car_quality_diagnosis/make_delivery.py",
-      "size_bytes": 9900,
-      "sha256": "277d9e3ab33e6073adb700dc646ae41bcc3fd4ceda48e927795e9fc057f1e32e"
+      "size_bytes": 10163,
+      "sha256": "98445f75aee2e8c9458893dace933061be8855c0856220733808abcb311c388d"
     },
     {
       "path": "tools/single_car_quality_diagnosis/mechanics.py",
@@ -242,9 +297,19 @@
       "sha256": "a5845c029d53ebc854a6ea124ad57c08183dd4ce2bed33d926c1b43484e23f9f"
     },
     {
+      "path": "tools/single_car_quality_diagnosis/reexport_solutions.py",
+      "size_bytes": 2625,
+      "sha256": "ac850f593c1fba4340530641e7d6209e305b849dbad8e7fb4d0042180faaaed4"
+    },
+    {
+      "path": "tools/single_car_quality_diagnosis/test_bias_semantics.py",
+      "size_bytes": 1864,
+      "sha256": "c8488e09d5c23a1178a312dcc2628ab8969f89a069cac4933620970bf119eac8"
+    },
+    {
       "path": "tools/single_car_quality_diagnosis/validate.py",
-      "size_bytes": 4359,
-      "sha256": "a6719557f7760fc28c0068fdf3e8cebbc110c263dda9f2bcc92e4b32819142af"
+      "size_bytes": 5393,
+      "sha256": "eaa6f8ce51bd17d29d32999ff095bfbeeb802b246732dc05ee77bea284c49176"
     },
     {
       "path": "tools/single_car_quality_diagnosis/verify_evidence.py",

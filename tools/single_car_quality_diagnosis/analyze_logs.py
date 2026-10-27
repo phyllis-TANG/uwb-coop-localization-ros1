@@ -23,7 +23,14 @@ def wrap(a):return math.atan2(math.sin(a),math.cos(a))
 def distance(pose,model,k):
  lx,ly=model['base_to_antenna_body_xy_m'];c,s=math.cos(pose[2]),math.sin(pose[2]);p=np.array([pose[0]+c*lx-s*ly,pose[1]+s*lx+c*ly,model['antenna_height_m']]);return float(np.linalg.norm(p-model['anchors_xyz_m'][k]))
 def error(row,truth):
- return dict(xy_error_m=math.dist(row['pose'][:2],truth['pose'][:2]),yaw_error_rad=wrap(row['pose'][2]-truth['pose'][2]),bias_error_rad_s=(row.get('bias_rad_s') or 0)-truth['bias_rad_s'])
+ bias=row.get('bias_rad_s');true_bias=truth.get('bias_rad_s')
+ return dict(xy_error_m=math.dist(row['pose'][:2],truth['pose'][:2]),yaw_error_rad=wrap(row['pose'][2]-truth['pose'][2]),bias_error_rad_s=None if bias is None or true_bias is None else bias-true_bias)
+def state_row(state):
+ """A three-component pose has no bias; a fourth component may validly be zero."""
+ return dict(pose=list(state[:3]),bias_rad_s=float(state[3]) if len(state)==4 else None)
+def rmse_values(values):
+ present=[v for v in values if v is not None]
+ return float(np.sqrt(np.mean(np.square(present)))) if present else None
 def load(root,scenario,seed,group):
  p=root/'runs'/f'{scenario}_seed{seed}__{group}';graphs=read(p/'graphs.jsonl.gz');pubs=read(p/'publications.jsonl.gz');led=read(p/'quality_ledger.jsonl.gz');avs=read(p/'availability.jsonl.gz')
  return dict(path=p,graphs={(g['state_epoch_ns'],g['role']):g for g in graphs},graph_ids={g['record_id']:g for g in graphs},pubs={r['state_epoch_ns']:r for r in pubs},ledger={(r['state_epoch_ns'],r['target']):r for r in led},avs={r['state_epoch_ns']:r for r in avs},config=json.loads((p/'config.json').read_text()))
@@ -84,7 +91,7 @@ def main():
        for key in obs:
         deps=r['graphs'][(ep,role)]['support_new']['range_support'][key]
         affected_current+=bool(ww[key]>0 and (sc=='multi_common_uwb' or key=='node_10') and any(12<=(z['identity']['header_epoch_ns']-origin)/1e9<32 for z in deps))
-      shadow_history.append(dict(scenario=sc,seed=seed,group=q,role=role,t_s=t,record_id=g['record_id'],window_start_s=s['times_s'][0]+.01,window_fault_affected_positive_factors=affected_current,prior_fault_affected_positive_ancestors=len(chain_fault[role]),**error(g['row'],truth[epoch]),**prior_stats(g,ng)))
+      shadow_history.append(dict(scenario=sc,seed=seed,group=q,role=role,t_s=t,record_id=g['record_id'],window_start_s=s['times_s'][0]+.01,window_fault_affected_positive_factors=affected_current,prior_fault_affected_positive_ancestors=len(chain_fault[role]),bias=g['row'].get('bias_rad_s'),**error(g['row'],truth[epoch]),**prior_stats(g,ng)))
      if role=='main':
       e=error(g['row'],truth[epoch]);ne=error(ng['row'],truth[epoch]);pr=prior_stats(g,ng);window_fault=0;window_down=0
       for ktime,o,w in zip(s['times_s'],s['observations'],s['quality_weights']):
@@ -93,7 +100,7 @@ def main():
         deps=r['graphs'][(ep,role)]['support_new']['range_support'][k]
         affected=any(12<=(z['identity']['header_epoch_ns']-origin)/1e9<32 for z in deps) and (sc=='multi_common_uwb' or k=='node_10')
         window_fault+=affected and w[k]>0;window_down+=w[k]<1
-      item=dict(scenario=sc,seed=seed,group=q,t_s=t,state_epoch_ns=epoch,cutoff_epoch_ns=g['availability_cutoff_epoch_ns'],available_epoch_ns=r['avs'][epoch]['available_receive_epoch_ns'],**e,nominal_xy_error_m=ne['xy_error_m'],nominal_yaw_error_rad=ne['yaw_error_rad'],nominal_bias_error_rad_s=ne['bias_error_rad_s'],x=g['row']['pose'][0],y=g['row']['pose'][1],yaw=g['row']['pose'][2],bias=g['row'].get('bias_rad_s',0),window_start_s=s['times_s'][0]+.01,window_fault_affected_positive_factors=window_fault,window_nonunit_factors=window_down,prior_fault_affected_positive_ancestors=len(chain_fault[role]),marginalizations=g['row']['marginalizations'],**pr)
+      item=dict(scenario=sc,seed=seed,group=q,t_s=t,state_epoch_ns=epoch,cutoff_epoch_ns=g['availability_cutoff_epoch_ns'],available_epoch_ns=r['avs'][epoch]['available_receive_epoch_ns'],**e,nominal_xy_error_m=ne['xy_error_m'],nominal_yaw_error_rad=ne['yaw_error_rad'],nominal_bias_error_rad_s=ne['bias_error_rad_s'],x=g['row']['pose'][0],y=g['row']['pose'][1],yaw=g['row']['pose'][2],bias=g['row'].get('bias_rad_s'),window_start_s=s['times_s'][0]+.01,window_fault_affected_positive_factors=window_fault,window_nonunit_factors=window_down,prior_fault_affected_positive_ancestors=len(chain_fault[role]),marginalizations=g['row']['marginalizations'],**pr)
       series.append(item);prior_rows.append(item)
     for (epoch,k),l in r['ledger'].items():
      t=(epoch-origin)/1e9;main=r['graphs'][(epoch,'main')];nom=n['ledger'][(epoch,k)];g=r['graph_ids'].get(l['reference_record_id']);ng=n['graph_ids'].get(nom['reference_record_id']);true_range=distance(truth[epoch]['pose'],model,k);me=l['corrected_aggregate_m']-true_range;prediction=None;pred_error=None;npred=None
@@ -113,7 +120,7 @@ def main():
        if fid in frozen:assert frozen[fid]==ww[target]
        else:frozen[fid]=ww[target]
      p=l['policy'];m=error(main['row'],truth[epoch]);post=next(z for z in r['pubs'][epoch]['postfit_factor_diagnostics'] if z['factor_id']==l['factor_id'])
-     tl=dict(scenario=sc,seed=seed,group=q,target=k,t_s=t,state_epoch_ns=epoch,cutoff_epoch_ns=l['availability_cutoff_epoch_ns'],available_epoch_ns=r['avs'][epoch]['available_receive_epoch_ns'],raw_median_m=l['raw_aggregate_m'],P1_m=l['P1_subtracted_m'],corrected_m=l['corrected_aggregate_m'],truth_range_m=true_range,measurement_error_m=me,excluded_prediction_m=prediction,excluded_prediction_error_m=pred_error,nominal_excluded_prediction_m=npred,nominal_score=nom['engineering_score'],signed_score_residual_m=l['raw_signed_consistency_residual_m'],score=l['engineering_score'],state=p['state'],gain=l['actual_information_multiplier'],reason=p['reason'],persistence=p.get('persistence'),reference_id=l['reference_record_id'],main_id=main['record_id'],other_links=l['reference_geometry']['other_links'] if l['reference_geometry'] else None,main_postfit_m=post['postfit_signed_raw_residual_m'],main_original_huber=post['original_pseudo_huber_residual'],main_weighted_huber=post['actual_weighted_residual'],**m)
+     tl=dict(scenario=sc,seed=seed,group=q,target=k,t_s=t,state_epoch_ns=epoch,cutoff_epoch_ns=l['availability_cutoff_epoch_ns'],available_epoch_ns=r['avs'][epoch]['available_receive_epoch_ns'],raw_median_m=l['raw_aggregate_m'],P1_m=l['P1_subtracted_m'],corrected_m=l['corrected_aggregate_m'],truth_range_m=true_range,measurement_error_m=me,excluded_prediction_m=prediction,excluded_prediction_error_m=pred_error,nominal_excluded_prediction_m=npred,nominal_score=nom['engineering_score'],signed_score_residual_m=l['raw_signed_consistency_residual_m'],score=l['engineering_score'],state=p['state'],gain=l['actual_information_multiplier'],reason=p['reason'],persistence=p.get('persistence'),reference_id=l['reference_record_id'],main_id=main['record_id'],other_links=l['reference_geometry']['other_links'] if l['reference_geometry'] else None,main_postfit_m=post['postfit_signed_raw_residual_m'],main_original_huber=post['original_pseudo_huber_residual'],main_weighted_huber=post['actual_weighted_residual'],bias=main['row'].get('bias_rad_s'),**m)
      timelines.append(tl)
     if q in ('Q2','Q3'):
      rows=[z for z in timelines if (z['scenario'],z['seed'],z['group'])==(sc,seed,q)]
@@ -136,8 +143,7 @@ def main():
      xs=[s for s in series if lo<=s['t_s']<hi]
      row=dict(scenario=sc,seed=seed,group=q,period=name,n=len(xs))
      for field in ('xy_error_m','yaw_error_rad','bias_error_rad_s'):
-      row[field+'_rmse']=float(np.sqrt(np.mean([s[field]**2 for s in xs])));row['nominal_'+field+'_rmse']=float(np.sqrt(np.mean([s['nominal_'+field]**2 for s in xs])))
-     if q in ('Q0','Q2'):row['bias_error_rad_s_rmse']=row['nominal_bias_error_rad_s_rmse']=None
+      row[field+'_rmse']=rmse_values([s[field] for s in xs]);row['nominal_'+field+'_rmse']=rmse_values([s['nominal_'+field] for s in xs])
      row['max_prior_fault_ancestors']=max(s['prior_fault_affected_positive_ancestors'] for s in xs);row['max_window_fault_factors']=max(s['window_fault_affected_positive_factors'] for s in xs);periods.append(row)
     print(sc,seed,q,'done',flush=True)
  write_csv(out/'shadow_history.csv',shadow_history);write_csv(out/'timeline.csv',timelines);write_csv(out/'healthy_events.csv',events);write_csv(out/'periods.csv',periods);write_csv(out/'main_history.csv',prior_rows);write_csv(out/'marginal_history.csv',marginal_rows);dump(out/'paired_input_checks.json',pairchecks);dump(out/'checks.json',dict(checks));dump(out/'healthy_events.json',events)

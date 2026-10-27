@@ -43,7 +43,7 @@ Q1/Q3的59输出全计入；恢复段[32,52)有20个状态，[52,60)有8个。�
 | 443 | Q1 | 0.136564 / 0.089434 / 0.002698 | 0.012164 / 0.045599 / 0.000774 |
 | 443 | Q3 | 0.117058 / 0.056262 / 0.001722 | 0.007632 / 0.067659 / 0.001543 |
 
-step/ramp/common全部3seed、Q0–Q3、全程/故障/两恢复段共144行见[periods.csv](review/periods.csv)。[recovery.csv](review/recovery.csv)分别记录当前策略恢复、实际可获得时刻、冻结倍率窗口清除、raw支持退出；null表示60秒尾段未观察到/不适用。F0的bias为空，不把0当估计。
+step/ramp/common全部3seed、Q0–Q3、全程/故障/两恢复段共144行见[periods.csv](review/periods.csv)。[recovery.csv](review/recovery.csv)分别记录当前策略恢复、实际可获得时刻、冻结倍率窗口清除、raw支持退出；null表示60秒尾段未观察到/不适用。Q0/Q2的bias与bias_error均为空，相关图不绘制伪零线；有效零估计仍计算误差。
 
 ## 反例与末期prior检验
 

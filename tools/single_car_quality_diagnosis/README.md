@@ -10,6 +10,6 @@
 - `validate.py`：不导入在线规则，独立校验FSM、sqrt(g)、原指标、事件时长及干预控制。
 - `package_evidence.py`：新证据打包、每成员实读核验、可选复制到独立NAS目录。
 
-真实执行命令、先后顺序、已知schema边界见诊断文档COMMANDS.md、REPORT.md。所有诊断使用已暴露seed，仅支持归因，不调v1参数、不报告为独立验证。F0没有bias状态；periods表该指标为空，timeline/history中的0仅为兼容绘图占位，不能解释为bias估计。14个快照中2个Q2影子的bias列同为不适用。
+真实执行命令、先后顺序、已知schema边界见诊断文档COMMANDS.md、REPORT.md。所有诊断使用已暴露seed，仅支持归因，不调v1参数、不报告为独立验证。Q0/Q2没有bias状态，bias及bias_error在JSON中为null、CSV中为空，图中不绘制bias曲线；有效0.0仍计算estimate−truth。14对快照中2对Q2影子同样为空。`reexport_solutions.py`从原保存的354条D1和28条D2解重新导出，不调用求解器；`test_bias_semantics.py`分别测试缺失bias和有效零bias。
 
 复用原venv（NumPy/SciPy/Matplotlib等版本见原run.json）；设置`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1`，避免写入冻结源码的pycache。诊断用的truth、labels只在离线评价中使用。

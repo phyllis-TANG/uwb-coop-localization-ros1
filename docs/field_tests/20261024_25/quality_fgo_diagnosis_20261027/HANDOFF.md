@@ -13,3 +13,7 @@
 分支仅新增用户指定`tools/single_car_quality_diagnosis/`和本目录。线上内核、B端、双车工具和公共几何/清单没有变化。结果约7MB入Git；47文件大证据在Git外。结果提交`2006474b31f312e5a85295845ef2d648ba0bd406`已推送并创建[草稿PR #63](https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/63)。交付收据与SHA索引为随后纯元数据提交，最终HEAD以PR分支为准；未自动合并。
 
 继续工作时先读INTERVENTION_REGISTER和REPORT的未知项。不要再跑正式96组或用本轮暴露数据调阈值；已有归因试验不是独立验证。两项下一版建议都需要另建版本、预冻结和未暴露seed验证。当前没有待补的授权范围内分析项；真实数据/B外部验收、在线参照可靠性规则和可因果重建prior尚未验证，不能把它们当本轮完成的功能。
+
+合并前导出口径修订：Q0/Q2的缺失bias/误差不再用0占位；时序、快照和两张Q2图已同步重新导出，两个针对性测试通过。有效零bias仍计算误差。原两份证据归档保持原SHA；本次正式矩阵、主图重建、快照求解新增次数均为0。现行导出及补充归档以EXPORT_SEMANTICS_REVISION.md、review/bias-null-provenance.json及ARTIFACTS.json为准；旧review/provenance.json中的源码SHA描述修订前实际计算，不能混称现行导出源码。PR #63继续保持草稿、未合并。
+
+本次独立补充归档：13,166,330字节，70文件加manifest，SHA256 `014373c58d9a3a0fdfd997ec4cbe7e5e0eae0878319003951c65a64f51db0d0a`，NAS完整读回匹配。路径见ARTIFACTS.json。旧归档只保留历史导出口径；现行时序、快照与Q2图应读取本分支/补充归档。

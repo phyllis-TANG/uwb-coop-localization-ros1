@@ -51,11 +51,31 @@ def main():
  for i in range(0,28,2):
   x,y=d2[i:i+2];assert x['current_factors_sha256']==y['current_factors_sha256'];assert x['prior_sha256']!=y['prior_sha256'];assert float(x['max_state_delta_original'])<2e-5
   if y['current_weights_equal_nominal']=='True' and y['current_observations_equal_nominal']=='True':assert float(y['max_state_delta_nominal'])<2e-5
+ bias_checks={};valid_zero_bias_rows=0
+ for name in ('main_history.csv','shadow_history.csv','timeline.csv'):
+  rows=table(a.analysis/name);missing=0
+  for row in rows:
+   if row['group'] in ('Q0','Q2'):
+    assert row['bias']==row['bias_error_rad_s']=='';missing+=1
+    if 'nominal_bias_error_rad_s' in row:assert row['nominal_bias_error_rad_s']==''
+   else:
+    assert row['bias']!='' and row['bias_error_rad_s']!=''
+    valid_zero_bias_rows+=float(row['bias'])==0.
+  bias_checks[name]=dict(rows=len(rows),missing_bias_rows=missing)
+ for row in d2:
+  if row['group']=='Q2':assert row['bias']==row['bias_error_rad_s']==''
+  else:assert row['bias']!='' and row['bias_error_rad_s']!=''
+ for row in d1:
+  assert row['bias']!='' and row['bias_error_rad_s']!=''
+  valid_zero_bias_rows+=float(row['bias'])==0.
+ assert valid_zero_bias_rows>0
+ bias_checks['D2_snapshots.csv']=dict(rows=28,missing_bias_rows=sum(r['group']=='Q2' for r in d2))
+ bias_checks['valid_zero_bias_rows_preserved']=valid_zero_bias_rows
  ev=json.loads((a.analysis/'healthy_events.json').read_text());assert len(ev)==8
  exposure={(q,sc):sum(e['available_duration_s'] for e in ev if e['group']==q and e['scenario']==sc) for q,sc in [('Q2','uwb_step'),('Q3','uwb_step'),('Q3','uwb_ramp')]}
  expected={('Q2','uwb_step'):40.010224861,('Q3','uwb_step'):121.065614781,('Q3','uwb_ramp'):10.989941383}
  for k,v in exposure.items():assert abs(v-expected[k])<1e-8,(k,v)
  for p in Path(__file__).parent.glob('*.py'):ast.parse(p.read_text())
- result=dict(status='PASS',independent_FSM_decisions=decisions,independent_sqrt_gain_residual_and_J_checks=weighted,original_full_run_metric_comparisons=metricchecks,D1_control_and_negative_control_rows=354,D2_snapshot_rows=28,healthy_episode_count=8,healthy_duration_seconds={q+'_'+sc:v for (q,sc),v in exposure.items()},analysis_checks=json.loads((a.analysis/'checks.json').read_text()),interventions_are_independent_validation=False)
+ result=dict(status='PASS',independent_FSM_decisions=decisions,independent_sqrt_gain_residual_and_J_checks=weighted,original_full_run_metric_comparisons=metricchecks,D1_control_and_negative_control_rows=354,D2_snapshot_rows=28,healthy_episode_count=8,healthy_duration_seconds={q+'_'+sc:v for (q,sc),v in exposure.items()},analysis_checks=json.loads((a.analysis/'checks.json').read_text()),bias_export_checks=bias_checks,interventions_are_independent_validation=False)
  a.output.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
 if __name__=='__main__':main()

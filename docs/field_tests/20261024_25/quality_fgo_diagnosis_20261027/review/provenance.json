@@ -2075,5 +2075,7 @@
       ]
     }
   ],
-  "diagnosis_independent_validation": false
+  "diagnosis_independent_validation": false,
+  "bias_null_export_revision": "bias-null-provenance.json",
+  "source_SHA_scope_note": "diagnosis_sources_sha256 records original historical computations; corrected export sources are separately hashed in bias-null-provenance.json"
 }

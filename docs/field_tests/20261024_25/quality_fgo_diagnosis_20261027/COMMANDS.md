@@ -62,3 +62,21 @@ git diff --check
 ```
 
 归档receipt在ARTIFACTS.json，逐文件SHA在归档manifest。最终提交/推送/草稿PR收据在HANDOFF和review/delivery_receipt.json；不自动合并，不改ROS/串口/实车。
+
+## 合并前bias缺失语义修订：仅重新导出
+
+实际新目录`N=/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/bias-null-revision`。以下数值命令使用前述单线程/PYTHONDONTWRITEBYTECODE设置，测试和画图也使用原MPLCONFIGDIR；结构化argv与源码SHA见review/bias-null-commands.json。复核时将N换成自己的全新Git外目录。
+
+```bash
+$P tools/single_car_quality_diagnosis/test_bias_semantics.py > "$N/tests.log" 2>&1
+$P tools/single_car_quality_diagnosis/analyze_logs.py --experiment "$O/validation-v1" --output "$N/analysis" > "$N/analysis.log" 2>&1
+$P tools/single_car_quality_diagnosis/reexport_solutions.py --experiment "$O/validation-v1" --saved "$A/interventions-v1" --output "$N/saved-solutions" > "$N/saved-solutions.log" 2>&1
+$P tools/single_car_quality_diagnosis/make_delivery.py --original "$O" --analysis "$N/analysis" --interventions "$N/saved-solutions" --mechanics "$A/mechanics-v1" --verification "$A/verification.json" --output "$N/delivery" > "$N/delivery.log" 2>&1
+$P tools/single_car_quality_diagnosis/validate.py --experiment "$O/validation-v1" --analysis "$N/analysis" --interventions "$N/saved-solutions" --output "$N/validation.json" > "$N/validation.log" 2>&1
+```
+
+仅从原保存解重导出，未调用intervene.py或任何求解器。原两份归档保留并重新核验SHA。新增补充归档使用独立目录：
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 tools/single_car_quality_diagnosis/archive_export_revision.py --revision "$N" --nas /home/ubuntu22/nas/data/uwb_coop_artifacts/quality_fgo_diagnosis_20261027_bias_null_export > "$N/archive.log" 2>&1
+```

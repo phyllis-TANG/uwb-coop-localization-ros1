@@ -47,5 +47,33 @@
   },
   "reproduction": "COMMANDS.md; use new external output paths; never rerun formal matrix",
   "compact_file_SHA_index": "review/DELIVERY_FILES_SHA256.json (excludes itself)",
-  "independent_validation": false
+  "independent_validation": false,
+  "bias_null_export_revision": {
+    "status": "PASS",
+    "archive": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/bias-null-revision/archives/quality_fgo_bias_null_export_20261027.tar.gz",
+    "NAS_archive": "/home/ubuntu22/nas/data/uwb_coop_artifacts/quality_fgo_diagnosis_20261027_bias_null_export/quality_fgo_bias_null_export_20261027.tar.gz",
+    "sha256": "014373c58d9a3a0fdfd997ec4cbe7e5e0eae0878319003951c65a64f51db0d0a",
+    "size_bytes": 13166330,
+    "manifest_sha256": "6503cf3e1f3ac9bb23e7ecea868aedbd5771e9c08dc6c63eb80e37b89c3313e4",
+    "verified_files": 70,
+    "NAS_readback_SHA_matches": true,
+    "formal_matrix_restarts": 0,
+    "main_reconstructions_this_revision": 0,
+    "snapshot_solves_this_revision": 0,
+    "scope": "Corrected exports and source only; old evidence archives retained separately",
+    "bias_semantics": "Q0/Q2: bias and bias_error null/CSV empty; valid zero still evaluated",
+    "revision_record": "EXPORT_SEMANTICS_REVISION.md",
+    "source_and_input_SHA": "review/bias-null-provenance.json",
+    "command_argv": "review/bias-null-commands.json",
+    "original_archives_retained": true,
+    "fetch_argv": [
+      "cp",
+      "/home/ubuntu22/nas/data/uwb_coop_artifacts/quality_fgo_diagnosis_20261027_bias_null_export/quality_fgo_bias_null_export_20261027.tar.gz",
+      "<new-local-path>"
+    ],
+    "verify_argv": [
+      "sha256sum",
+      "<retrieved-archive>"
+    ]
+  }
 }

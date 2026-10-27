@@ -17,7 +17,7 @@ def style(ax):
 def save(fig,p):fig.tight_layout();fig.savefig(p,dpi=130);plt.close(fig)
 def rmse(rows,k):return float(np.sqrt(np.mean(np.square(vals(rows,k)))))
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--original',type=Path,required=True);ap.add_argument('--analysis',type=Path,required=True);ap.add_argument('--interventions',type=Path,required=True);ap.add_argument('--mechanics',type=Path,required=True);ap.add_argument('--output',type=Path,required=True);a=ap.parse_args();a.output.mkdir(exist_ok=False);figs=a.output/'figures';figs.mkdir();tl=csvs(a.analysis/'timeline.csv');mh=csvs(a.analysis/'main_history.csv');sh=csvs(a.analysis/'shadow_history.csv');events=json.loads((a.analysis/'healthy_events.json').read_text());periods=csvs(a.analysis/'periods.csv');triggers=[];counter=[]
+ ap=argparse.ArgumentParser();ap.add_argument('--original',type=Path,required=True);ap.add_argument('--analysis',type=Path,required=True);ap.add_argument('--interventions',type=Path,required=True);ap.add_argument('--mechanics',type=Path,required=True);ap.add_argument('--verification',type=Path);ap.add_argument('--output',type=Path,required=True);a=ap.parse_args();a.output.mkdir(exist_ok=False);figs=a.output/'figures';figs.mkdir();tl=csvs(a.analysis/'timeline.csv');mh=csvs(a.analysis/'main_history.csv');sh=csvs(a.analysis/'shadow_history.csv');events=json.loads((a.analysis/'healthy_events.json').read_text());periods=csvs(a.analysis/'periods.csv');triggers=[];counter=[]
  for ev in events:
   sc,seed,q,k=[ev[x] for x in ('scenario','seed','group','target')];rr=select(tl,scenario=sc,seed=seed,group=q,target=k);main=select(mh,scenario=sc,seed=seed,group=q);baseq='Q0' if q=='Q2' else 'Q1';baseline=select(mh,scenario=sc,seed=seed,group=baseq);shadow=select(sh,scenario=sc,seed=seed,group=q,role=k)
   inp=a.original/'validation-v1/inputs'/f'{sc}_seed{seed}';labels=json.loads((inp/'labels.json').read_text());origin=labels['origin_epoch_ns'];truth={t['epoch_ns']:t for t in read(inp/'truth.jsonl.gz')};raw=read(inp/'events.jsonl.gz');model=json.loads((inp/f'{q}.json').read_text())['base']['model'];rx=[];ry=[]
@@ -31,7 +31,8 @@ def main():
   line(axs[2],rr,'gain',f'{k} actual graph g',color='tab:green',drawstyle='steps-post');fault=select(tl,scenario=sc,seed=seed,group=q,target='node_10');line(axs[2],fault,'gain','node_10 main g',color='tab:red',drawstyle='steps-post');axs[2].axhline(1,color='tab:orange',ls='--',label='node_10 in healthy shadow: always g=1');axs[2].set_ylabel('information g');axs[2].legend(fontsize=7,ncol=3)
   for ax,key,label in zip(axs[3:6],('xy_error_m','yaw_error_rad','bias_error_rad_s'),('base XY m','yaw rad','bias rad/s')):
    line(ax,main,key,q,color='tab:blue');line(ax,baseline,key,baseq,color='.4');line(ax,main,'nominal_'+key,'paired nominal',color='tab:green',ls=':');ax.set_ylabel(label);ax.legend(fontsize=7,ncol=3)
-  if q=='Q2':axs[5].text(.3,.5,'Q0/Q2 have no bias state; zero line is not a bias estimate',transform=axs[5].transAxes,fontsize=8)
+  if q=='Q2':
+   axs[5].clear();axs[5].set_ylabel('bias rad/s');axs[5].text(.2,.5,'Q0/Q2: bias state absent (null); no bias curve',transform=axs[5].transAxes,fontsize=8)
   line(axs[6],main,'window_nonunit_factors','main retained nonunit factors',color='tab:green');line(axs[6],shadow,'window_fault_affected_positive_factors','shadow active fault-support factors',color='tab:red');line(axs[6],shadow,'prior_fault_affected_positive_ancestors','shadow direct fault ancestors in prior',color='tab:orange',ls='--');axs[6].set_ylabel('factor counts');axs[6].legend(fontsize=7,ncol=2)
   for ax in axs:
    style(ax);ax.axvline(ev['onset_s'],color='tab:purple',ls='--',lw=.7);ax.axvline(ev['end_s'],color='tab:green',ls=':',lw=.7)
@@ -75,9 +76,11 @@ def main():
  write_csv(a.output/'event_trigger_trace.csv',triggers);write_csv(a.output/'counterexamples.csv',counter);write_csv(a.output/'D1_summary.csv',d1summary)
  for src in ['healthy_events.csv','healthy_events.json','periods.csv','checks.json','paired_input_checks.json']:shutil.copyfile(a.analysis/src,a.output/src)
  for src in ['D2_snapshots.csv','D1_controls.json','jacobian_checks.json','receipt.json']:shutil.copyfile(a.interventions/src,a.output/src)
+ for src in ['D1_series.json','D2_snapshots.json','reexport_receipt.json']:
+  if (a.interventions/src).exists():shutil.copyfile(a.interventions/src,a.output/src)
  shutil.copyfile(a.mechanics/'recovery.csv',a.output/'recovery.csv');shutil.copyfile(a.mechanics/'angular_geometry.csv',a.output/'angular_geometry.csv')
  for src in ['timeline.csv','main_history.csv','shadow_history.csv','marginal_history.csv']:
   with (a.analysis/src).open('rb') as f,gzip.GzipFile(filename='',fileobj=(a.output/(src+'.gz')).open('xb'),mode='wb',mtime=0) as g:shutil.copyfileobj(f,g)
- v=json.loads((a.analysis.parent/'verification.json').read_text());dump(a.output/'verification_summary.json',{k:v[k] for k in v if k not in ('runs','reused_files')})
+ v=json.loads((a.verification or a.analysis.parent/'verification.json').read_text());dump(a.output/'verification_summary.json',{k:v[k] for k in v if k not in ('runs','reused_files')})
  print('PASS: 10 figures, 8 complete event traces, all seeds and compact records')
 if __name__=='__main__':main()
