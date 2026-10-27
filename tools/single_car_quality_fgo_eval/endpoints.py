@@ -44,7 +44,8 @@ def main():
         write(a.output/'diagnostics.json',dict(status='DONE',reference_protocol_sha256=reference['protocol_sha256'],rows=results,quality_rule_uses_manual_endpoint=False,full_trajectory_RMSE_or_accepted_accuracy=False))
         with (a.output/'diagnostics.csv').open('x',newline='') as f:w=csv.DictWriter(f,fieldnames=list(flat[0]));w.writeheader();w.writerows(flat)
         md=['# 冻结停止窗末端开发诊断','', '人工参考不确定度未知，历史几何/odom原点仍有条件假设。本表不是全程RMSE或已验收精度；终点/停止窗不进入质量规则、阈值或参数选择。散布RMS是相对窗口自身XY中位数的散布。','', '| 包 | 臂 | 冻结窗口s | 发布/有限/有效 | 天线XY中位数m | 对人工末点平面距离差m | 散布中位/RMS/最大m |','|---|---|---|---|---|---:|---|']
-        for x in flat:md.append(f"| {x['case_id']} | {x['arm']} | [{x['window_start_s']},{x['window_end_s']}] | {x['outputs']}/{x['finite_outputs']}/{x['estimate_valid_outputs']} | ({x['antenna_median_x_m']:.6f},{x['antenna_median_y_m']:.6f}) | {x['distance_to_manual_endpoint_m']:.6f} | {x['radial_scatter_median_m']:.6f}/{x['radial_scatter_rms_m']:.6f}/{x['radial_scatter_max_m']:.6f} |")
+        def fmt(value):return 'null' if value is None else f'{value:.6f}'
+        for x in flat:md.append(f"| {x['case_id']} | {x['arm']} | [{x['window_start_s']},{x['window_end_s']}] | {x['outputs']}/{x['finite_outputs']}/{x['estimate_valid_outputs']} | ({fmt(x['antenna_median_x_m'])},{fmt(x['antenna_median_y_m'])}) | {fmt(x['distance_to_manual_endpoint_m'])} | {fmt(x['radial_scatter_median_m'])}/{fmt(x['radial_scatter_rms_m'])}/{fmt(x['radial_scatter_max_m'])} |")
         (a.output/'TABLE.md').write_text('\n'.join(md)+'\n');v['inputs']=[dict(path=str(a.reused/'reuse_manifest.json'),sha256=sha(a.reused/'reuse_manifest.json')),dict(path=str(a.reused/'evaluation_only.json'),sha256=sha(a.reused/'evaluation_only.json'))];finish(a.output,v);return 0
     except Exception as e:finish(a.output,v,e);raise
 
