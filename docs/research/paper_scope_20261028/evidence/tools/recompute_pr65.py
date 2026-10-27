@@ -77,7 +77,7 @@ def audit(output):
         case = cases[c]; low, high = map(lambda x: Decimal(str(x)), case['evaluation_window_s'])
         groups = {g: [r for r in rows if r['case_id'] == c and r['group'] == g] for g in ('Q0','Q1','Q2','Q3')}
         common = set.intersection(*[{int(r['state_epoch_ns']) for r in v if boolean(r['estimate_valid'])} for v in groups.values()])
-        assert len(common) == len(original[c]['Q0'] and next(x for x in summary['cases'] if x['case_id']==c)['common_valid_state_epoch_ns'])
+        assert common == set(next(x for x in summary['cases'] if x['case_id']==c)['common_valid_state_epoch_ns'])
         assert len({manifests[c,g]['input_sha256'] for g in groups}) == 1
         for g, values in groups.items():
             epochs = [int(r['state_epoch_ns']) for r in values]
@@ -109,7 +109,7 @@ def audit(output):
                 antenna_x_m=r['antenna_x_m'],antenna_y_m=r['antenna_y_m']) for r in selected)
     for name, data in [('recomputed_eight_groups.csv',recomputed),('selected_stop_samples.csv',selected_all)]:
         with (output/name).open('x',newline='') as f:
-            w=csv.DictWriter(f,fieldnames=list(data[0]));w.writeheader();w.writerows(data)
+            w=csv.DictWriter(f,fieldnames=list(data[0]),lineterminator='\n');w.writeheader();w.writerows(data)
     deltas=[]
     for c in ('004023','005135'):
         for a,b in [('Q0','Q2'),('Q1','Q3')]:
