@@ -1,0 +1,7 @@
+group,scenario,all_link_fault_events,detected_all,missed_all,monitorable_link_fault_events,detected_monitorable,missed_monitorable,not_monitorable,timely_active_alerts,median_actual_alarm_delay_s,max_actual_alarm_delay_s,alert_but_XY_worse_events,denominator_note
+Q2,uwb_step,3,3,0,3,3,0,0,3,2.042164683,2.053106879,0,multiple links/common cause and same seeds correlated; not independent probability trials
+Q2,uwb_ramp,3,3,0,3,3,0,0,3,8.063507187,9.054346096,0,multiple links/common cause and same seeds correlated; not independent probability trials
+Q2,multi_common_uwb,12,6,6,12,6,6,0,6,3.053627145,5.050816694,0,multiple links/common cause and same seeds correlated; not independent probability trials
+Q3,uwb_step,3,3,0,3,3,0,0,3,2.087266952,2.097235666,0,multiple links/common cause and same seeds correlated; not independent probability trials
+Q3,uwb_ramp,3,3,0,3,3,0,0,3,8.125138698,8.128470783,0,multiple links/common cause and same seeds correlated; not independent probability trials
+Q3,multi_common_uwb,12,7,5,12,7,5,0,7,3.105859272,6.116494881,2,multiple links/common cause and same seeds correlated; not independent probability trials

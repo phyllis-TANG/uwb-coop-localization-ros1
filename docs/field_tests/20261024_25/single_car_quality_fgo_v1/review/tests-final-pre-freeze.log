@@ -1,0 +1,35 @@
+test_common_angle_fault_can_have_small_motion_disagreement (__main__.DiagnosticTests) ... ok
+test_raw_motion_conflict_never_controls_UWB (__main__.DiagnosticTests) ... ok
+test_alarm_delay_uses_available_not_state_time (__main__.EvaluationTests) ... ok
+test_conditional_fault_denominator_requires_consecutive_known (__main__.EvaluationTests) ... ok
+test_thirteen_consecutive_seconds_is_one_episode (__main__.EvaluationTests) ... ok
+test_bad_units_and_reference_scale_rejected (__main__.PipelineTests) ... ok
+test_buffers_and_total_graph_bound (__main__.PipelineTests) ... ok
+test_cli_outputs_and_paced_available_time (__main__.PipelineTests) ... ok
+test_disabled_path_native_F0_F3_exact (__main__.PipelineTests) ... ok
+test_enable_with_all_unit_weights_same_as_frozen (__main__.PipelineTests) ... ok
+test_excluded_shadow_never_consumes_target_in_history_or_prior (__main__.PipelineTests) ... ok
+test_generator_injections_sign_and_common_error (__main__.PipelineTests) ... ok
+test_ledger_frozen_before_main_and_source_cutoff (__main__.PipelineTests) ... ok
+test_no_truth_labels_in_online_events (__main__.PipelineTests) ... ok
+test_postfit_residual_is_diagnostic_only (__main__.PipelineTests) ... ok
+test_prefix_no_future_mutation (__main__.PipelineTests) ... ok
+test_quality_off_explicit_ablation (__main__.PipelineTests) ... ok
+test_unknown_geometry_and_missing_are_not_healthy (__main__.PipelineTests) ... ok
+test_no_rewrite_same_factor (__main__.PolicyTests) ... ok
+test_persistence_and_disable (__main__.PolicyTests) ... ok
+test_recovery_hysteresis (__main__.PolicyTests) ... ok
+test_recovery_relapse (__main__.PolicyTests) ... ok
+test_unknown_breaks_persistence (__main__.PolicyTests) ... ok
+test_unknown_not_healthy_and_holds_gain (__main__.PolicyTests) ... ok
+test_information_gain_exactly_once_and_cache (__main__.WeightTests) ... ok
+test_old_weights_not_revised_on_new_policy (__main__.WeightTests) ... ok
+test_only_UWB_rows_change (__main__.WeightTests) ... ok
+test_unit_gain_graph_regression_through_marginalization (__main__.WeightTests) ... ok
+test_weighted_jacobians_finite_difference (__main__.WeightTests) ... ok
+test_weighted_marginal_information_affine_no_double_count (__main__.WeightTests) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 41.271s
+
+OK

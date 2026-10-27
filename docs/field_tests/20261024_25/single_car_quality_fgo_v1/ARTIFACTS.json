@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "status": "AVAILABLE_AND_ACTUALLY_RETRIEVED",
+  "execution_commit": "12a1d94379b58c5a759b1698425fb90d48587609",
+  "protocol_sha256": "ddb533f94d4b2b5f36b5cf3922dad1d72361ce674f908dc1ba40514324bcfb31",
+  "full_evidence_archive": {
+    "local_file": "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/archives/single_car_quality_fgo_v1_evidence_20261027.tar.gz",
+    "NAS_file": "/home/ubuntu22/nas/data/uwb_coop_artifacts/single_car_quality_fgo_v1_20261027_12a1d943/single_car_quality_fgo_v1_evidence_20261027.tar.gz",
+    "NAS_share": "//10.22.5.135/data",
+    "share_relative_path": "uwb_coop_artifacts/single_car_quality_fgo_v1_20261027_12a1d943/single_car_quality_fgo_v1_evidence_20261027.tar.gz",
+    "access": "LAN/VPN + existing authorized SMB mount; not a public HTTP URL, no Release changes",
+    "size_bytes": 293750470,
+    "sha256": "7a5ff137f2f7fb250ebda466e163f94d137d59f660b48eb4f9150847bbdc3ab8",
+    "tar_regular_members": 2139,
+    "evidence_files_verified": 2138,
+    "plus_input_manifest": true,
+    "manifest_sha256": "1d24a1fcb887b00aec65b9c920da367b684a17ea7ed2b87583b829449105dbd5"
+  },
+  "readback": {
+    "status": "PASS",
+    "archive_reader": "qaudit.py from retrieved frozen source, uwb_step_seed401 Q3, same host/venv, new directory",
+    "all_source_SHA_matches": true,
+    "online_formula_modules_imported": [],
+    "estimator_reruns": 0,
+    "receipt": "review/remote_readback.json"
+  },
+  "public_small_results": {
+    "base": "review/",
+    "files": [
+      "metrics.csv",
+      "run_index.csv",
+      "readback_index.csv",
+      "all_truth_evaluation.csv.gz",
+      "factor_timeline.csv.gz",
+      "acceptance.json",
+      "available_reference_and_backlog.csv",
+      "known_unknown_exposure.csv",
+      "recovery_onset_and_confirmation.csv",
+      "experiment_file_manifest.json",
+      "all_errors.png",
+      "uwb_step_trajectory.png",
+      "uwb_step_timeline.png",
+      "multi_common_uwb_timeline.png",
+      "weak_missing_timeline.png",
+      "nominal_cost_corrected.png"
+    ]
+  },
+  "snapshot_scope": "Archive contains all original execution evidence, failures/development, v1.1 source/results and report snapshot before NAS receipt/final editorial addenda; receipts/final delivery index live beside archive and in PR. No evidence replaced.",
+  "fetch_and_verify_argv": [
+    "cp",
+    "/home/ubuntu22/nas/data/uwb_coop_artifacts/single_car_quality_fgo_v1_20261027_12a1d943/single_car_quality_fgo_v1_evidence_20261027.tar.gz",
+    "<new-local-path>"
+  ],
+  "check_sha256_command": "sha256sum <retrieved-archive>",
+  "archive_expected_sha256": "7a5ff137f2f7fb250ebda466e163f94d137d59f660b48eb4f9150847bbdc3ab8"
+}
