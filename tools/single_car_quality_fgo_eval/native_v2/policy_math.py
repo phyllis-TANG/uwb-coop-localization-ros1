@@ -61,3 +61,9 @@ def score_gate(ledger,shadow,base,p,has_odom=True):
                 else:
                     prediction=float(np.linalg.norm(point-base['model']['anchors_xyz_m'][target]));signed=value-base['model']['range_bias_m'][target]-prediction;score=abs(signed)/p['score_scale_m'];reason=None
     return score,reason,geometry,signed,prediction
+
+
+def check_policy(actual,expected):
+    require({k:x for k,x in actual.items() if k!='score'}=={k:x for k,x in expected.items() if k!='score'},'native state/persistence/unknown/hysteresis differs')
+    score=expected['score'];require(actual['score'] is None if score is None else actual['score'] is not None and abs(actual['score']-score)<1e-10,'policy score differs')
+    return True

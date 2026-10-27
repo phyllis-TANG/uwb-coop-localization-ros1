@@ -27,3 +27,9 @@ class NativeV2Tests(unittest.TestCase):
     def test_zero_gain_is_zero_information_not_missing_factor(self):
         import math
         self.assertEqual(math.sqrt(0.)*7.,0.);self.assertNotEqual(0.,None)
+
+    def test_policy_score_roundoff_does_not_relax_discrete_states(self):
+        from native_v2.policy_math import check_policy
+        result=self.sequence([(2,None)])[0];actual=copy.deepcopy(result);actual['score']+=2.3e-15;check_policy(actual,result)
+        actual['state']='disabled'
+        with self.assertRaisesRegex(ValueError,'state/persistence'):check_policy(actual,result)
