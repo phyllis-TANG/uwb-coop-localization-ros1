@@ -1,0 +1,104 @@
+{
+  "status": "PASS_SYNTHETIC_NEGATIVES_ONLY",
+  "checks": [
+    {
+      "mutation": "future_arrival",
+      "status": "REJECTED",
+      "reason": "future/cross-case decision data",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "header_float_epoch",
+      "status": "REJECTED",
+      "reason": "exact integer header_epoch_ns",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "unknown_filled_zero",
+      "status": "REJECTED",
+      "reason": "independent consistency score mismatch/null filled zero",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "unknown_promoted_healthy",
+      "status": "REJECTED",
+      "reason": "independent health transition/hysteresis mismatch",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "main_postfit_residual",
+      "status": "REJECTED",
+      "reason": "innovation must not use post-fit main residual",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "skipped_recovery",
+      "status": "REJECTED",
+      "reason": "independent health transition/hysteresis mismatch",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "weight_logged_not_applied",
+      "status": "REJECTED",
+      "reason": "recorded weight not really applied in objective",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "weighted_residual_not_applied",
+      "status": "REJECTED",
+      "reason": "objective ignored or double-applied weight",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "omitted_objective_constraint",
+      "status": "REJECTED",
+      "reason": "objective constraint omission or repeated decision",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "target_leak_external_initialization",
+      "status": "REJECTED",
+      "reason": "excluded link leaked through shadow dependency closure",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "target_leak_prediction",
+      "status": "REJECTED",
+      "reason": "excluded link leaked through shadow dependency closure",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "target_leak_optimizer_initial_guess",
+      "status": "REJECTED",
+      "reason": "excluded link leaked through shadow dependency closure",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "target_leak_history",
+      "status": "REJECTED",
+      "reason": "excluded link leaked through shadow dependency closure",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "target_leak_cache",
+      "status": "REJECTED",
+      "reason": "excluded link leaked through shadow dependency closure",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "target_leak_marginal_prior",
+      "status": "REJECTED",
+      "reason": "excluded link leaked through shadow dependency closure",
+      "hashes_resealed": true
+    },
+    {
+      "mutation": "target_leak_score_pose",
+      "status": "REJECTED",
+      "reason": "excluded link leaked through shadow dependency closure",
+      "hashes_resealed": true
+    }
+  ],
+  "original_unchanged": true,
+  "field_A_quality_runs": 0,
+  "field_semantic_acceptance": "PENDING"
+}

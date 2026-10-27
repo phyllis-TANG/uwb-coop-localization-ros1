@@ -1,0 +1,21 @@
+{
+  "status": "PASS_SYNTHETIC_CONTRACT_ONLY",
+  "counts": {
+    "decisions": 8,
+    "unknown": 1,
+    "disabled": 1,
+    "recovering": 1,
+    "weighted_objectives": 7
+  },
+  "real_A_quality_runs": 0,
+  "real_A_semantic_acceptance": "PENDING_NATIVE_FREEZE_AND_ADAPTER",
+  "all_declared_shadow_closures_checked": true,
+  "A_detector_or_optimizer_imported": false,
+  "shared_code": "B fixtures/IO and B independent formulas only; no A production parser or quality function",
+  "caveats": [
+    "complete declared DAG traversal does not prove the producer logged every real influence",
+    "actual source review plus executed target-only interventions after marginalization and real receive-prefix runs remain mandatory",
+    "fixture score/FSM parameters are examples, not field thresholds",
+    "representative fixture other-cost is known synthetic arithmetic; actual full non-UWB cost must be independently reconstructed by native adapter"
+  ]
+}

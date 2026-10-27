@@ -1,0 +1,74 @@
+{
+  "status": "READY_INPUTS_ONLY",
+  "cases": [
+    {
+      "case_id": "004023",
+      "records": 10672,
+      "files": {
+        "events.jsonl.gz": {
+          "sha256": "fb1d42cff69c19bb785b0c3bfb584a1c4531b27cb7b17dc01fa4a20e369e0ad4",
+          "bytes": 778953
+        },
+        "rich_events.jsonl.gz": {
+          "sha256": "d4ae01199343894f6111803487f048d7713a7ecc3343e39eb1bf3f5d2058c9d6",
+          "bytes": 1345762
+        },
+        "scalar_catalog.json.gz": {
+          "sha256": "3c40a10f73e312b9f824c15d14d2ff788739bbbe9518e5dabc4b388905f4caba",
+          "bytes": 860387
+        },
+        "F0_baseline_config.json": {
+          "sha256": "487676dce88f8199f5a68bbebcc027e7ddfda992d1fb3033ad521438cc7c2034",
+          "bytes": 6816
+        },
+        "F3_baseline_config.json": {
+          "sha256": "175cade3d241792f7b3a3704a38cd664ae87e5f3daa721a9eea3a93f1b231e53",
+          "bytes": 6816
+        }
+      },
+      "quality_config": null,
+      "quality_config_pending_reason": "requires actual A quality freeze; no fixture parameters transferred",
+      "strict_physical_calibration_status": "still pending axes/clock/odom-origin; inherited conditional historical model only"
+    },
+    {
+      "case_id": "005135",
+      "records": 10322,
+      "files": {
+        "events.jsonl.gz": {
+          "sha256": "78276cb443c63cf580f0468682239eafa7150180d051a1445771cdcce03452ea",
+          "bytes": 745016
+        },
+        "rich_events.jsonl.gz": {
+          "sha256": "964cc748fa9de8e4fbbfdc14812ce4984353dd83625dd3fcf7f50e5ec55a6829",
+          "bytes": 1293373
+        },
+        "scalar_catalog.json.gz": {
+          "sha256": "acccac828c0db671e75d73b20546eed222e4417f9e6aad9ab856ec68d79b64dc",
+          "bytes": 824909
+        },
+        "F0_baseline_config.json": {
+          "sha256": "487676dce88f8199f5a68bbebcc027e7ddfda992d1fb3033ad521438cc7c2034",
+          "bytes": 6816
+        },
+        "F3_baseline_config.json": {
+          "sha256": "175cade3d241792f7b3a3704a38cd664ae87e5f3daa721a9eea3a93f1b231e53",
+          "bytes": 6816
+        }
+      },
+      "quality_config": null,
+      "quality_config_pending_reason": "requires actual A quality freeze; no fixture parameters transferred",
+      "strict_physical_calibration_status": "still pending axes/clock/odom-origin; inherited conditional historical model only"
+    }
+  ],
+  "old_A_commit": "e3a20fe04a6d53973696ec055dbc71eb135e0f77",
+  "Q0": "F0 baseline available",
+  "Q1": "F3 baseline available",
+  "Q2_Q3": "NOT_EXECUTED; A quality native freeze pending",
+  "reference_evaluation_included": false,
+  "policy_configuration_included": false,
+  "A_quality_commit": null,
+  "quality_parameters": null,
+  "old_P1_transferred_to_other_sessions": false,
+  "inherited_clock_mapping": "original recorded epochs uncorrected; not measured physical clock calibration",
+  "new_estimator_runs": 0
+}

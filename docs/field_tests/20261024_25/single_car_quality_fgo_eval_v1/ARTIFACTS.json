@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "status": "PASS_LOCAL_AND_ACTUAL_REMOTE_MEMBER_READBACK",
+  "archive_relative_path": "artifacts/b-quality-fgo-stage1-v1.tar.gz",
+  "sha256": "635b2a542f514ac29f54d368da805ec0cc34e3495e5dccb3531cd053d2b8ab75",
+  "bytes": 6094539,
+  "receipt_relative_path": "artifacts/b-quality-fgo-stage1-v1.tar.gz.json",
+  "members_verified": 142,
+  "archive_prefix": "FGO_B_20261027/",
+  "code_snapshot_commit": "e94f6ed4c173c5ad0c8bbd2ac3d84c4d639b0f74",
+  "common_base": "2b43ec9fef0ea22f0d35318b2f11e35c646cce6c",
+  "new_quality_combination_commit": null,
+  "A_quality_commit": null,
+  "actual_new_estimator_runs": 0,
+  "prior_full_archive_dependency": {
+    "sha256": "1ff7558e155b20297c580df6e92cde3560e04342a059522d0bc897ceccc87ff5",
+    "url": "https://raw.githubusercontent.com/phyllis-TANG/uwb-coop-localization-ros1/8087c1c302605824a16eb21fa5f2dc7b817b07e8/docs/field_tests/20261024_25/single_car_imu_fgo_eval_20261027/artifacts/b-imu-fgo-historical-v1.tar.gz"
+  },
+  "contents": "Reference-free A inputs, scalar catalogs, F0/F3 configs; 8 old publication CSV with source/config/input bindings; frozen stop diagnostics and independent check; proposed semantic fixtures/16 negative cases/prefix guard; source/commands/environment. Actual field quality policy/run absent.",
+  "unknown_parameters_are_null": true,
+  "quality_improvement": "尚不能判断",
+  "raw_bags_videos_venv_included": false,
+  "remote_readback": {
+    "status": "PASS",
+    "checked_at_utc": "2026-10-27T11:42:56.296805+00:00",
+    "commit": "d183d153fad12453f4ce2c018779a6152468c43b",
+    "url": "https://raw.githubusercontent.com/phyllis-TANG/uwb-coop-localization-ros1/d183d153fad12453f4ce2c018779a6152468c43b/docs/field_tests/20261024_25/single_car_quality_fgo_eval_v1/artifacts/b-quality-fgo-stage1-v1.tar.gz",
+    "http_status": 200,
+    "bytes": 6094539,
+    "sha256": "635b2a542f514ac29f54d368da805ec0cc34e3495e5dccb3531cd053d2b8ab75",
+    "members_verified": 142,
+    "all_member_hashes_match": true,
+    "extracted_into_existing_paths": false
+  },
+  "download_url": "https://raw.githubusercontent.com/phyllis-TANG/uwb-coop-localization-ros1/d183d153fad12453f4ce2c018779a6152468c43b/docs/field_tests/20261024_25/single_car_quality_fgo_eval_v1/artifacts/b-quality-fgo-stage1-v1.tar.gz",
+  "PR": {
+    "number": 60,
+    "url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/60",
+    "base": "main",
+    "draft": true,
+    "merged": false
+  }
+}

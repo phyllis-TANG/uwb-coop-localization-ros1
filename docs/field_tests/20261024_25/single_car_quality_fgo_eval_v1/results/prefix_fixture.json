@@ -1,0 +1,10 @@
+{
+  "status": "PASS_SYNTHETIC_RECORD_GUARD_ONLY",
+  "recorded_receive_cutoff_epoch_ns": 1700000004000000000,
+  "quality_decisions_identical": 4,
+  "closed_weight_mutation_rejected": "future input changed closed decision/publication",
+  "actual_new_estimator_prefix_runs": 0,
+  "actual_A_quality_prefix_status": "PENDING_NATIVE_FREEZE",
+  "reused_prior_baseline_prefix_evidence": "PR59: 8 real original FGO controls, 304 publications. Not rerun or counted as new quality controls.",
+  "limitation": "This tests the extended record comparison and deadline guard, not an A quality estimator execution. The native A CLI must still run real recorded prefixes after freeze."
+}

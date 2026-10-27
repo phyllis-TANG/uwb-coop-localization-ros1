@@ -1,0 +1,415 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-27T11:38:25.276640+00:00",
+  "common_base": "2b43ec9fef0ea22f0d35318b2f11e35c646cce6c",
+  "current_checkout": "/workspace/work/uwb-b-quality-fgo-eval-20261027",
+  "branch": "analysis/20261027-single-car-quality-fgo-eval",
+  "phases": [
+    {
+      "name": "reused_PR59_001",
+      "run_sha256": "b4dd8d118c33e9d3d376ed61a585bc043dc553e13fd9b3137d93b2fd21e7bdf6",
+      "role": "PR59_hash_verified_reuse_no_estimator",
+      "status": "DONE",
+      "code_commit": "e84fa2f9d9c55c58c9a97aca24e52e8aabc7a468",
+      "dirty": false,
+      "command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_quality_fgo_eval/prepare_reuse.py",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/reused_PR59_001"
+      ],
+      "source_sha256": {
+        "tools/single_car_quality_fgo_eval/endpoints.py": "7bf60e2da7f92012b0dc4adfbf463cc9b771541641622d7b77aad6aa00172d47",
+        "tools/single_car_quality_fgo_eval/evidence.py": "a10e11dedf92aa3978b519128b25394af25902064e90c2fe870445e230d1b231",
+        "tools/single_car_quality_fgo_eval/prepare_reuse.py": "774ad10c3722b752001f5b49fb0444db5a096944ad9f006f161b043ef4e6e9cf",
+        "tools/single_car_quality_fgo_eval/test_endpoints.py": "caa6c887742b763cd5304260de67d0c6589da6b1b898d0e70515cba70d40bcd4"
+      },
+      "inputs": [
+        {
+          "path": "/workspace/work/uwb-b-quality-fgo-eval-20261027/docs/field_tests/20261024_25/single_car_imu_fgo_eval_20261027/artifacts/b-imu-fgo-historical-v1.tar.gz",
+          "sha256": "1ff7558e155b20297c580df6e92cde3560e04342a059522d0bc897ceccc87ff5"
+        }
+      ],
+      "elapsed_s": 0.29064607900363626,
+      "estimator_runs": 0
+    },
+    {
+      "name": "stop_diagnostics_001",
+      "run_sha256": "685b46d5b9ee1c8618b56c708550ba6993e9e76ed13cfd20922c86c8d4eb1234",
+      "role": "frozen_PR59_stop_diagnostics_no_estimator",
+      "status": "DONE",
+      "code_commit": "e84fa2f9d9c55c58c9a97aca24e52e8aabc7a468",
+      "dirty": false,
+      "command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_quality_fgo_eval/endpoints.py",
+        "--reused",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/reused_PR59_001",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/stop_diagnostics_001"
+      ],
+      "source_sha256": {
+        "tools/single_car_quality_fgo_eval/endpoints.py": "7bf60e2da7f92012b0dc4adfbf463cc9b771541641622d7b77aad6aa00172d47",
+        "tools/single_car_quality_fgo_eval/evidence.py": "a10e11dedf92aa3978b519128b25394af25902064e90c2fe870445e230d1b231",
+        "tools/single_car_quality_fgo_eval/prepare_reuse.py": "774ad10c3722b752001f5b49fb0444db5a096944ad9f006f161b043ef4e6e9cf",
+        "tools/single_car_quality_fgo_eval/test_endpoints.py": "caa6c887742b763cd5304260de67d0c6589da6b1b898d0e70515cba70d40bcd4"
+      },
+      "inputs": [
+        {
+          "path": "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/reused_PR59_001/reuse_manifest.json",
+          "sha256": "b04c4abe8840794c3943e2ae1808ed37c37358a4f4cd35b94776d085382a299a"
+        },
+        {
+          "path": "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/reused_PR59_001/evaluation_only.json",
+          "sha256": "567c7ed04cba80e066ef04d9c2afd5c3fe0f7d4397cd330a80417dd4d0ca3f80"
+        }
+      ],
+      "elapsed_s": 0.009605117003957275,
+      "estimator_runs": 0
+    },
+    {
+      "name": "stop_readback_001",
+      "run_sha256": "c07de73987fced71243b6c459bbd0df350d65daf4904bfa48f9bea818856344c",
+      "role": "B_independent_stop_table_readback",
+      "status": "DONE",
+      "code_commit": "d1e0eeb1d8a485b5e4385e72ab7470fc30235662",
+      "dirty": false,
+      "command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_quality_fgo_eval/verify_endpoints.py",
+        "--reused",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/reused_PR59_001",
+        "--diagnostics",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/stop_diagnostics_001",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/stop_readback_001"
+      ],
+      "source_sha256": {
+        "tools/single_car_quality_fgo_eval/CONTRACT.json": "4d1a2ba6b46a5c3e37988617a5f52b6050a800d33ff29067d4411832caba5e2e",
+        "tools/single_car_quality_fgo_eval/check_contract.py": "1ae5f5f411951c1c3b1719c4f5da07d9799a8f3715227972ac43dbcf15777a64",
+        "tools/single_car_quality_fgo_eval/constraint_checks.py": "19210634d42ec2bee94438c7bd51da3503b728b8c03f80610576a0eae6240335",
+        "tools/single_car_quality_fgo_eval/endpoints.py": "7bf60e2da7f92012b0dc4adfbf463cc9b771541641622d7b77aad6aa00172d47",
+        "tools/single_car_quality_fgo_eval/evidence.py": "a10e11dedf92aa3978b519128b25394af25902064e90c2fe870445e230d1b231",
+        "tools/single_car_quality_fgo_eval/fixtures.py": "cdcc02c873293365ca08b50dca4b4aec5c7699654afa06807e39b8022ff9bd0a",
+        "tools/single_car_quality_fgo_eval/input_facts.py": "1c763c4f3ad9dc085efcc80cb47380b79dfe9e2e5c643fc8353f86a982b5db16",
+        "tools/single_car_quality_fgo_eval/negative_contract.py": "cd95430d65e208b7c2572bd9f4d96d317e3fc071f0b3f2841d76e73b3f545132",
+        "tools/single_car_quality_fgo_eval/prepare_reuse.py": "774ad10c3722b752001f5b49fb0444db5a096944ad9f006f161b043ef4e6e9cf",
+        "tools/single_car_quality_fgo_eval/test_constraints.py": "03979f6afbca2d2f03630762cc1fdd74e4ea5055bbea2c3566ef36d9686f4718",
+        "tools/single_car_quality_fgo_eval/test_endpoints.py": "caa6c887742b763cd5304260de67d0c6589da6b1b898d0e70515cba70d40bcd4",
+        "tools/single_car_quality_fgo_eval/verify_endpoints.py": "abee7e3a5dee422dc123d324feb26200a0d86a334f1f0461b51bc6303c17d393"
+      },
+      "inputs": [
+        {
+          "path": "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/stop_diagnostics_001/diagnostics.json",
+          "sha256": "819801eb12e8bc3fb44ce086c4b5a36e66e7029b6585f66bf449d3820dda424d"
+        }
+      ],
+      "elapsed_s": 0.021090150003146846,
+      "estimator_runs": 0
+    },
+    {
+      "name": "input_facts_001",
+      "run_sha256": "3f1e0332c9252d6504dbdcbd380557ce36f1d38701b337983814c0bc6b548d03",
+      "role": "B_quality_scalar_catalog_not_new_export",
+      "status": "DONE",
+      "code_commit": "0e3ea87369d4073b866036c78efdc98118b7e2b7",
+      "dirty": false,
+      "command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_quality_fgo_eval/input_facts.py",
+        "--reused",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/reused_PR59_001",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/input_facts_001"
+      ],
+      "source_sha256": {
+        "tools/single_car_quality_fgo_eval/CONTRACT.json": "c2de435ceac6145c2873fd0d15cc20f5fdf312ad4443f3a8569482d5afac7275",
+        "tools/single_car_quality_fgo_eval/check_contract.py": "1ae5f5f411951c1c3b1719c4f5da07d9799a8f3715227972ac43dbcf15777a64",
+        "tools/single_car_quality_fgo_eval/constraint_checks.py": "6e7cc74b42126290a9b31c81e060d1693773135c7852ef5eab7b01e99f0cc2d6",
+        "tools/single_car_quality_fgo_eval/endpoints.py": "7bf60e2da7f92012b0dc4adfbf463cc9b771541641622d7b77aad6aa00172d47",
+        "tools/single_car_quality_fgo_eval/evidence.py": "a10e11dedf92aa3978b519128b25394af25902064e90c2fe870445e230d1b231",
+        "tools/single_car_quality_fgo_eval/fixtures.py": "be74b4a9db28e672b5f92739c2f47013070ef72cbff82d670cb30756a7a336fc",
+        "tools/single_car_quality_fgo_eval/input_facts.py": "1c763c4f3ad9dc085efcc80cb47380b79dfe9e2e5c643fc8353f86a982b5db16",
+        "tools/single_car_quality_fgo_eval/negative_contract.py": "cd95430d65e208b7c2572bd9f4d96d317e3fc071f0b3f2841d76e73b3f545132",
+        "tools/single_car_quality_fgo_eval/prepare_reuse.py": "774ad10c3722b752001f5b49fb0444db5a096944ad9f006f161b043ef4e6e9cf",
+        "tools/single_car_quality_fgo_eval/test_constraints.py": "646ceb2d3aa974377b0a616c4d7de8501906dc67bd6fc5bd32ee2178e20a3380",
+        "tools/single_car_quality_fgo_eval/test_endpoints.py": "caa6c887742b763cd5304260de67d0c6589da6b1b898d0e70515cba70d40bcd4"
+      },
+      "inputs": [
+        {
+          "path": "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/reused_PR59_001/reuse_manifest.json",
+          "sha256": "b04c4abe8840794c3943e2ae1808ed37c37358a4f4cd35b94776d085382a299a"
+        }
+      ],
+      "elapsed_s": 0.8696035429966287,
+      "estimator_runs": 0
+    },
+    {
+      "name": "contract_fixture_001",
+      "run_sha256": "ba2f10d9dc8b5a676ee4b0df37663f71c47ee5c55d6049710f205c140b786eec",
+      "role": "B_semantic_fixture_contract_no_field_quality_run",
+      "status": "DONE",
+      "code_commit": "0e3ea87369d4073b866036c78efdc98118b7e2b7",
+      "dirty": false,
+      "command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_quality_fgo_eval/check_contract.py",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/contract_fixture_001"
+      ],
+      "source_sha256": {
+        "tools/single_car_quality_fgo_eval/CONTRACT.json": "c2de435ceac6145c2873fd0d15cc20f5fdf312ad4443f3a8569482d5afac7275",
+        "tools/single_car_quality_fgo_eval/check_contract.py": "1ae5f5f411951c1c3b1719c4f5da07d9799a8f3715227972ac43dbcf15777a64",
+        "tools/single_car_quality_fgo_eval/constraint_checks.py": "6e7cc74b42126290a9b31c81e060d1693773135c7852ef5eab7b01e99f0cc2d6",
+        "tools/single_car_quality_fgo_eval/endpoints.py": "7bf60e2da7f92012b0dc4adfbf463cc9b771541641622d7b77aad6aa00172d47",
+        "tools/single_car_quality_fgo_eval/evidence.py": "a10e11dedf92aa3978b519128b25394af25902064e90c2fe870445e230d1b231",
+        "tools/single_car_quality_fgo_eval/fixtures.py": "be74b4a9db28e672b5f92739c2f47013070ef72cbff82d670cb30756a7a336fc",
+        "tools/single_car_quality_fgo_eval/input_facts.py": "1c763c4f3ad9dc085efcc80cb47380b79dfe9e2e5c643fc8353f86a982b5db16",
+        "tools/single_car_quality_fgo_eval/negative_contract.py": "cd95430d65e208b7c2572bd9f4d96d317e3fc071f0b3f2841d76e73b3f545132",
+        "tools/single_car_quality_fgo_eval/prepare_reuse.py": "774ad10c3722b752001f5b49fb0444db5a096944ad9f006f161b043ef4e6e9cf",
+        "tools/single_car_quality_fgo_eval/test_constraints.py": "646ceb2d3aa974377b0a616c4d7de8501906dc67bd6fc5bd32ee2178e20a3380",
+        "tools/single_car_quality_fgo_eval/test_endpoints.py": "caa6c887742b763cd5304260de67d0c6589da6b1b898d0e70515cba70d40bcd4"
+      },
+      "inputs": [],
+      "elapsed_s": 0.003852487003314309,
+      "estimator_runs": 0
+    },
+    {
+      "name": "contract_fixture_002",
+      "run_sha256": "46f1e70d6a69cb04951417cf3e30f951502937b0394e82913f5b7154da9b8df5",
+      "role": "B_semantic_fixture_contract_no_field_quality_run",
+      "status": "DONE",
+      "code_commit": "d1e0eeb1d8a485b5e4385e72ab7470fc30235662",
+      "dirty": false,
+      "command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_quality_fgo_eval/check_contract.py",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/contract_fixture_002"
+      ],
+      "source_sha256": {
+        "tools/single_car_quality_fgo_eval/CONTRACT.json": "4d1a2ba6b46a5c3e37988617a5f52b6050a800d33ff29067d4411832caba5e2e",
+        "tools/single_car_quality_fgo_eval/check_contract.py": "1ae5f5f411951c1c3b1719c4f5da07d9799a8f3715227972ac43dbcf15777a64",
+        "tools/single_car_quality_fgo_eval/constraint_checks.py": "19210634d42ec2bee94438c7bd51da3503b728b8c03f80610576a0eae6240335",
+        "tools/single_car_quality_fgo_eval/endpoints.py": "7bf60e2da7f92012b0dc4adfbf463cc9b771541641622d7b77aad6aa00172d47",
+        "tools/single_car_quality_fgo_eval/evidence.py": "a10e11dedf92aa3978b519128b25394af25902064e90c2fe870445e230d1b231",
+        "tools/single_car_quality_fgo_eval/fixtures.py": "cdcc02c873293365ca08b50dca4b4aec5c7699654afa06807e39b8022ff9bd0a",
+        "tools/single_car_quality_fgo_eval/input_facts.py": "1c763c4f3ad9dc085efcc80cb47380b79dfe9e2e5c643fc8353f86a982b5db16",
+        "tools/single_car_quality_fgo_eval/negative_contract.py": "cd95430d65e208b7c2572bd9f4d96d317e3fc071f0b3f2841d76e73b3f545132",
+        "tools/single_car_quality_fgo_eval/prepare_reuse.py": "774ad10c3722b752001f5b49fb0444db5a096944ad9f006f161b043ef4e6e9cf",
+        "tools/single_car_quality_fgo_eval/test_constraints.py": "03979f6afbca2d2f03630762cc1fdd74e4ea5055bbea2c3566ef36d9686f4718",
+        "tools/single_car_quality_fgo_eval/test_endpoints.py": "caa6c887742b763cd5304260de67d0c6589da6b1b898d0e70515cba70d40bcd4",
+        "tools/single_car_quality_fgo_eval/verify_endpoints.py": "abee7e3a5dee422dc123d324feb26200a0d86a334f1f0461b51bc6303c17d393"
+      },
+      "inputs": [],
+      "elapsed_s": 0.0051949780026916414,
+      "estimator_runs": 0
+    },
+    {
+      "name": "contract_negative_001",
+      "run_sha256": "0a89c70556492768782e4895b24ef596206a43fe05abf01da9ecb078c1022a2e",
+      "role": "B_resealed_semantic_fixture_negative_checks",
+      "status": "DONE",
+      "code_commit": "0e3ea87369d4073b866036c78efdc98118b7e2b7",
+      "dirty": false,
+      "command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_quality_fgo_eval/negative_contract.py",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/contract_negative_001"
+      ],
+      "source_sha256": {
+        "tools/single_car_quality_fgo_eval/CONTRACT.json": "c2de435ceac6145c2873fd0d15cc20f5fdf312ad4443f3a8569482d5afac7275",
+        "tools/single_car_quality_fgo_eval/check_contract.py": "1ae5f5f411951c1c3b1719c4f5da07d9799a8f3715227972ac43dbcf15777a64",
+        "tools/single_car_quality_fgo_eval/constraint_checks.py": "6e7cc74b42126290a9b31c81e060d1693773135c7852ef5eab7b01e99f0cc2d6",
+        "tools/single_car_quality_fgo_eval/endpoints.py": "7bf60e2da7f92012b0dc4adfbf463cc9b771541641622d7b77aad6aa00172d47",
+        "tools/single_car_quality_fgo_eval/evidence.py": "a10e11dedf92aa3978b519128b25394af25902064e90c2fe870445e230d1b231",
+        "tools/single_car_quality_fgo_eval/fixtures.py": "be74b4a9db28e672b5f92739c2f47013070ef72cbff82d670cb30756a7a336fc",
+        "tools/single_car_quality_fgo_eval/input_facts.py": "1c763c4f3ad9dc085efcc80cb47380b79dfe9e2e5c643fc8353f86a982b5db16",
+        "tools/single_car_quality_fgo_eval/negative_contract.py": "cd95430d65e208b7c2572bd9f4d96d317e3fc071f0b3f2841d76e73b3f545132",
+        "tools/single_car_quality_fgo_eval/prepare_reuse.py": "774ad10c3722b752001f5b49fb0444db5a096944ad9f006f161b043ef4e6e9cf",
+        "tools/single_car_quality_fgo_eval/test_constraints.py": "646ceb2d3aa974377b0a616c4d7de8501906dc67bd6fc5bd32ee2178e20a3380",
+        "tools/single_car_quality_fgo_eval/test_endpoints.py": "caa6c887742b763cd5304260de67d0c6589da6b1b898d0e70515cba70d40bcd4"
+      },
+      "inputs": [],
+      "elapsed_s": 0.07533074199454859,
+      "estimator_runs": 0
+    },
+    {
+      "name": "contract_negative_002",
+      "run_sha256": "27a2e36bb35eebbc330d12a63d68a1c6ad284d087810f953e5400b1522785c5d",
+      "role": "B_resealed_semantic_fixture_negative_checks",
+      "status": "DONE",
+      "code_commit": "d1e0eeb1d8a485b5e4385e72ab7470fc30235662",
+      "dirty": false,
+      "command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_quality_fgo_eval/negative_contract.py",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/contract_negative_002"
+      ],
+      "source_sha256": {
+        "tools/single_car_quality_fgo_eval/CONTRACT.json": "4d1a2ba6b46a5c3e37988617a5f52b6050a800d33ff29067d4411832caba5e2e",
+        "tools/single_car_quality_fgo_eval/check_contract.py": "1ae5f5f411951c1c3b1719c4f5da07d9799a8f3715227972ac43dbcf15777a64",
+        "tools/single_car_quality_fgo_eval/constraint_checks.py": "19210634d42ec2bee94438c7bd51da3503b728b8c03f80610576a0eae6240335",
+        "tools/single_car_quality_fgo_eval/endpoints.py": "7bf60e2da7f92012b0dc4adfbf463cc9b771541641622d7b77aad6aa00172d47",
+        "tools/single_car_quality_fgo_eval/evidence.py": "a10e11dedf92aa3978b519128b25394af25902064e90c2fe870445e230d1b231",
+        "tools/single_car_quality_fgo_eval/fixtures.py": "cdcc02c873293365ca08b50dca4b4aec5c7699654afa06807e39b8022ff9bd0a",
+        "tools/single_car_quality_fgo_eval/input_facts.py": "1c763c4f3ad9dc085efcc80cb47380b79dfe9e2e5c643fc8353f86a982b5db16",
+        "tools/single_car_quality_fgo_eval/negative_contract.py": "cd95430d65e208b7c2572bd9f4d96d317e3fc071f0b3f2841d76e73b3f545132",
+        "tools/single_car_quality_fgo_eval/prepare_reuse.py": "774ad10c3722b752001f5b49fb0444db5a096944ad9f006f161b043ef4e6e9cf",
+        "tools/single_car_quality_fgo_eval/test_constraints.py": "03979f6afbca2d2f03630762cc1fdd74e4ea5055bbea2c3566ef36d9686f4718",
+        "tools/single_car_quality_fgo_eval/test_endpoints.py": "caa6c887742b763cd5304260de67d0c6589da6b1b898d0e70515cba70d40bcd4",
+        "tools/single_car_quality_fgo_eval/verify_endpoints.py": "abee7e3a5dee422dc123d324feb26200a0d86a334f1f0461b51bc6303c17d393"
+      },
+      "inputs": [],
+      "elapsed_s": 0.06937036800081842,
+      "estimator_runs": 0
+    },
+    {
+      "name": "prefix_fixture_001",
+      "run_sha256": "a13afc05b5d0fda4b0a89b0ca3b61b70ab80fcd4638a44264e895c180f3937ea",
+      "role": "B_synthetic_quality_record_prefix_guard",
+      "status": "DONE",
+      "code_commit": "a2c1e8a73ea0dc1c72cddbfb4b06064d62dcdd08",
+      "dirty": false,
+      "command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_quality_fgo_eval/prefix_fixture_controls.py",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/prefix_fixture_001"
+      ],
+      "source_sha256": {
+        "tools/single_car_quality_fgo_eval/CONTRACT.json": "4d1a2ba6b46a5c3e37988617a5f52b6050a800d33ff29067d4411832caba5e2e",
+        "tools/single_car_quality_fgo_eval/check_contract.py": "1ae5f5f411951c1c3b1719c4f5da07d9799a8f3715227972ac43dbcf15777a64",
+        "tools/single_car_quality_fgo_eval/constraint_checks.py": "19210634d42ec2bee94438c7bd51da3503b728b8c03f80610576a0eae6240335",
+        "tools/single_car_quality_fgo_eval/endpoints.py": "7bf60e2da7f92012b0dc4adfbf463cc9b771541641622d7b77aad6aa00172d47",
+        "tools/single_car_quality_fgo_eval/evidence.py": "a10e11dedf92aa3978b519128b25394af25902064e90c2fe870445e230d1b231",
+        "tools/single_car_quality_fgo_eval/fixtures.py": "cdcc02c873293365ca08b50dca4b4aec5c7699654afa06807e39b8022ff9bd0a",
+        "tools/single_car_quality_fgo_eval/input_facts.py": "1c763c4f3ad9dc085efcc80cb47380b79dfe9e2e5c643fc8353f86a982b5db16",
+        "tools/single_car_quality_fgo_eval/negative_contract.py": "cd95430d65e208b7c2572bd9f4d96d317e3fc071f0b3f2841d76e73b3f545132",
+        "tools/single_car_quality_fgo_eval/prefix_fixture_controls.py": "efc0b4c1a17d7952c103628d8e788d08fd82267e78ae0c575ae36f9a639827aa",
+        "tools/single_car_quality_fgo_eval/prepare_reuse.py": "774ad10c3722b752001f5b49fb0444db5a096944ad9f006f161b043ef4e6e9cf",
+        "tools/single_car_quality_fgo_eval/readiness.py": "92bada39918e22df7876d73fccb1024c661d541ab686f18f7e5b93aa7d808492",
+        "tools/single_car_quality_fgo_eval/test_constraints.py": "03979f6afbca2d2f03630762cc1fdd74e4ea5055bbea2c3566ef36d9686f4718",
+        "tools/single_car_quality_fgo_eval/test_endpoints.py": "caa6c887742b763cd5304260de67d0c6589da6b1b898d0e70515cba70d40bcd4",
+        "tools/single_car_quality_fgo_eval/verify_endpoints.py": "abee7e3a5dee422dc123d324feb26200a0d86a334f1f0461b51bc6303c17d393"
+      },
+      "inputs": [],
+      "elapsed_s": 0.007895916998677421,
+      "estimator_runs": 0
+    },
+    {
+      "name": "readiness_001",
+      "run_sha256": "7827a61a618e890662453817bb704f05fe683a3103574d2545edcf70f89da1bf",
+      "role": "B_quality_input_readiness_no_new_estimator",
+      "status": "DONE",
+      "code_commit": "a2c1e8a73ea0dc1c72cddbfb4b06064d62dcdd08",
+      "dirty": false,
+      "command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_quality_fgo_eval/readiness.py",
+        "--reused",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/reused_PR59_001",
+        "--facts",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/input_facts_001",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/readiness_001"
+      ],
+      "source_sha256": {
+        "tools/single_car_quality_fgo_eval/CONTRACT.json": "4d1a2ba6b46a5c3e37988617a5f52b6050a800d33ff29067d4411832caba5e2e",
+        "tools/single_car_quality_fgo_eval/check_contract.py": "1ae5f5f411951c1c3b1719c4f5da07d9799a8f3715227972ac43dbcf15777a64",
+        "tools/single_car_quality_fgo_eval/constraint_checks.py": "19210634d42ec2bee94438c7bd51da3503b728b8c03f80610576a0eae6240335",
+        "tools/single_car_quality_fgo_eval/endpoints.py": "7bf60e2da7f92012b0dc4adfbf463cc9b771541641622d7b77aad6aa00172d47",
+        "tools/single_car_quality_fgo_eval/evidence.py": "a10e11dedf92aa3978b519128b25394af25902064e90c2fe870445e230d1b231",
+        "tools/single_car_quality_fgo_eval/fixtures.py": "cdcc02c873293365ca08b50dca4b4aec5c7699654afa06807e39b8022ff9bd0a",
+        "tools/single_car_quality_fgo_eval/input_facts.py": "1c763c4f3ad9dc085efcc80cb47380b79dfe9e2e5c643fc8353f86a982b5db16",
+        "tools/single_car_quality_fgo_eval/negative_contract.py": "cd95430d65e208b7c2572bd9f4d96d317e3fc071f0b3f2841d76e73b3f545132",
+        "tools/single_car_quality_fgo_eval/prefix_fixture_controls.py": "efc0b4c1a17d7952c103628d8e788d08fd82267e78ae0c575ae36f9a639827aa",
+        "tools/single_car_quality_fgo_eval/prepare_reuse.py": "774ad10c3722b752001f5b49fb0444db5a096944ad9f006f161b043ef4e6e9cf",
+        "tools/single_car_quality_fgo_eval/readiness.py": "92bada39918e22df7876d73fccb1024c661d541ab686f18f7e5b93aa7d808492",
+        "tools/single_car_quality_fgo_eval/test_constraints.py": "03979f6afbca2d2f03630762cc1fdd74e4ea5055bbea2c3566ef36d9686f4718",
+        "tools/single_car_quality_fgo_eval/test_endpoints.py": "caa6c887742b763cd5304260de67d0c6589da6b1b898d0e70515cba70d40bcd4",
+        "tools/single_car_quality_fgo_eval/verify_endpoints.py": "abee7e3a5dee422dc123d324feb26200a0d86a334f1f0461b51bc6303c17d393"
+      },
+      "inputs": [
+        {
+          "path": "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/reused_PR59_001/reuse_manifest.json",
+          "sha256": "b04c4abe8840794c3943e2ae1808ed37c37358a4f4cd35b94776d085382a299a"
+        },
+        {
+          "path": "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/input_facts_001/index.json",
+          "sha256": "faa83a9a03bb97e4d4fbb648192ff83fc16ddffc8224b72ca0933d39ebd63eba"
+        }
+      ],
+      "elapsed_s": 0.0046365789967239834,
+      "estimator_runs": 0
+    },
+    {
+      "name": "ready_for_A_001",
+      "run_sha256": "4c2b54021124a1834ba83d0fc2aee06ca6095912d674ff759a80f1480e42138c",
+      "role": "B_A_consumable_input_bundle_without_manual_references",
+      "status": "DONE",
+      "code_commit": "3cfab321d599b955be981cea9a8ae5c650cef8ea",
+      "dirty": false,
+      "command_argv": [
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/venv/bin/python",
+        "tools/single_car_quality_fgo_eval/prepare_ready.py",
+        "--reused",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/reused_PR59_001",
+        "--facts",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/input_facts_001",
+        "--output",
+        "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/ready_for_A_001"
+      ],
+      "source_sha256": {
+        "tools/single_car_quality_fgo_eval/A_BINDING_TEMPLATE.json": "5e23fc71cc54708a04983aa0ec31e90bcf764a8587ba0cd80c663eaa75838159",
+        "tools/single_car_quality_fgo_eval/CONTRACT.json": "4d1a2ba6b46a5c3e37988617a5f52b6050a800d33ff29067d4411832caba5e2e",
+        "tools/single_car_quality_fgo_eval/check_contract.py": "1ae5f5f411951c1c3b1719c4f5da07d9799a8f3715227972ac43dbcf15777a64",
+        "tools/single_car_quality_fgo_eval/constraint_checks.py": "19210634d42ec2bee94438c7bd51da3503b728b8c03f80610576a0eae6240335",
+        "tools/single_car_quality_fgo_eval/endpoints.py": "7bf60e2da7f92012b0dc4adfbf463cc9b771541641622d7b77aad6aa00172d47",
+        "tools/single_car_quality_fgo_eval/evidence.py": "a10e11dedf92aa3978b519128b25394af25902064e90c2fe870445e230d1b231",
+        "tools/single_car_quality_fgo_eval/fixtures.py": "cdcc02c873293365ca08b50dca4b4aec5c7699654afa06807e39b8022ff9bd0a",
+        "tools/single_car_quality_fgo_eval/input_facts.py": "1c763c4f3ad9dc085efcc80cb47380b79dfe9e2e5c643fc8353f86a982b5db16",
+        "tools/single_car_quality_fgo_eval/negative_contract.py": "cd95430d65e208b7c2572bd9f4d96d317e3fc071f0b3f2841d76e73b3f545132",
+        "tools/single_car_quality_fgo_eval/prefix_fixture_controls.py": "efc0b4c1a17d7952c103628d8e788d08fd82267e78ae0c575ae36f9a639827aa",
+        "tools/single_car_quality_fgo_eval/prepare_ready.py": "f6297621c3a0ba9ce457833d541ebb2877937580cd2ee36ca793630d89289899",
+        "tools/single_car_quality_fgo_eval/prepare_reuse.py": "774ad10c3722b752001f5b49fb0444db5a096944ad9f006f161b043ef4e6e9cf",
+        "tools/single_car_quality_fgo_eval/readiness.py": "92bada39918e22df7876d73fccb1024c661d541ab686f18f7e5b93aa7d808492",
+        "tools/single_car_quality_fgo_eval/test_constraints.py": "03979f6afbca2d2f03630762cc1fdd74e4ea5055bbea2c3566ef36d9686f4718",
+        "tools/single_car_quality_fgo_eval/test_endpoints.py": "cd7cf9e04f7789646f5c2220af15c7af144fed823872f27398812fa6b8d520c9",
+        "tools/single_car_quality_fgo_eval/verify_endpoints.py": "abee7e3a5dee422dc123d324feb26200a0d86a334f1f0461b51bc6303c17d393"
+      },
+      "inputs": [
+        {
+          "path": "/workspace/work/uwb-b-quality-fgo-eval-20261027-run/results/reused_PR59_001/reuse_manifest.json",
+          "sha256": "b04c4abe8840794c3943e2ae1808ed37c37358a4f4cd35b94776d085382a299a"
+        }
+      ],
+      "elapsed_s": 0.17273469000065234,
+      "estimator_runs": 0
+    }
+  ],
+  "selected_fixture_version": "002 after full-support/missing-factor checks; 001 historical fixture retained",
+  "actual_new_estimator_runs": 0,
+  "reused_old_runs": 8,
+  "A_quality_commit": null,
+  "A_quality_protocol_sha256": null,
+  "new_quality_combination_commit": null,
+  "old_FGO_combination_commit": "f00c8743ac9c47d967817af448d3cd3fc80e8b79",
+  "actual_tests": 33,
+  "unit_test_counts_not_accumulated": [
+    7,
+    30,
+    32,
+    33
+  ],
+  "parsed_data_scope": "PR59 verified JSON events only; no new normalization, no A policy functions/graph/Jacobian imports; endpoint independent check uses NumPy order statistics",
+  "source_state_note": "Inputs and diagnostics frozen e84fa2f; scalar facts and first fixtures 0e3ea87; final semantic fixtures d1e0eeb; prefix/readiness a2c1e8a; ready inputs 3cfab32. Later empty-table text rendering changed without rerunning unchanged real table.",
+  "A_discovery": "At 2026-10-27T11:33:43Z no native single-car quality branch/freeze available through remote heads. Existing fix/quality-note-record-sim-validation is unrelated and untouched; recheck before handoff.",
+  "A_last_availability_check": {
+    "at_utc": "2026-10-27T11:43:51Z",
+    "method": "all remote heads + GitHub open PR discovery",
+    "result": "no A native single-car quality freeze; only B PR60 open; unrelated historical quality-note branch untouched"
+  }
+}
