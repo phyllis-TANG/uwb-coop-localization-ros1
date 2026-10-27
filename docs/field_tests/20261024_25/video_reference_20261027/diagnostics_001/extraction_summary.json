@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "original_4K_frames_reviewed": 13,
+  "new_targeted_decoded_frames_including_preroll": 90,
+  "full_video_decode_repeated": false,
+  "tracker_runs": 0,
+  "manual_corner_annotations": 0,
+  "manual_inspection_ROIs": 3,
+  "counts": {
+    "T10_car1_decoded": 9,
+    "T10_car2_decoded": 9,
+    "Q_car2_failed": 3
+  },
+  "coverage_scope": "Only these selected frames; the complete 2Hz observations are inherited from PR49",
+  "Q_metric_errors_used_for_detector_selection": false,
+  "fallback_detector": "fixed PR49 recovery preset only"
+}

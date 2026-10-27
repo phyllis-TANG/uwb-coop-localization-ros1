@@ -1,0 +1,20 @@
+test_raw_event_readback_preserves_epoch (test_case.ActualOutputTests.test_raw_event_readback_preserves_epoch) ... ok
+test_reused_T10_observations_and_ledger (test_case.ActualOutputTests.test_reused_T10_observations_and_ledger) ... ok
+test_sample_failures_are_explicit (test_case.ActualOutputTests.test_sample_failures_are_explicit) ... ok
+test_unknown_car2_rotation_does_not_produce_antenna (test_case.ActualOutputTests.test_unknown_car2_rotation_does_not_produce_antenna) ... ok
+test_body_lever_rotates_and_unknown_rejected (test_case.GeometryTests.test_body_lever_rotates_and_unknown_rejected) ... ok
+test_camera_ray_behind_plane_rejected (test_case.GeometryTests.test_camera_ray_behind_plane_rejected) ... ok
+test_degenerate_quad_rejected (test_case.GeometryTests.test_degenerate_quad_rejected) ... ok
+test_distorted_raised_plane_inverse (test_case.GeometryTests.test_distorted_raised_plane_inverse) ... ok
+test_ground_plane_creates_height_bias (test_case.GeometryTests.test_ground_plane_creates_height_bias) ... ok
+test_title_edge_is_canonical_plus_y (test_case.GeometryTests.test_title_edge_is_canonical_plus_y) ... ok
+test_integer_epoch_never_rounded_as_float (test_case.ProvenanceTests.test_integer_epoch_never_rounded_as_float) ... ok
+test_nonmonotonic_ledger_rejected (test_case.ProvenanceTests.test_nonmonotonic_ledger_rejected) ... ok
+test_pts_irregular_ticks_preserved (test_case.ProvenanceTests.test_pts_irregular_ticks_preserved) ... ok
+test_strict_json_and_exclusive_outputs (test_case.ProvenanceTests.test_strict_json_and_exclusive_outputs) ... ok
+test_wrong_pts_and_duplicate_observation_rejected (test_case.ProvenanceTests.test_wrong_pts_and_duplicate_observation_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.514s
+
+OK

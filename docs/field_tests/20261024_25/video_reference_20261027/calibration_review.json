@@ -1,0 +1,108 @@
+{
+  "source_sha256": "80ceb6731aa2790e26822cdec5489d977facf2903d63302cfd376da355a98cfa",
+  "recalibration_run": false,
+  "checkerboard_pitch_xy_m": [
+    0.019200000000000002,
+    0.019142857142857145
+  ],
+  "intrinsics_approved": false,
+  "models": {
+    "IMG_7336_all": {
+      "n_views": 26,
+      "rms_px": 5.083586730010794,
+      "fx_px": 4569.472485072437,
+      "fy_px": 4496.878349753364,
+      "cx_px": 2602.8608658813423,
+      "cy_px": 1054.5114815577242
+    },
+    "IMG_7336_interleaved_even": {
+      "n_views": 13,
+      "rms_px": 5.199435511272027,
+      "fx_px": 4371.699170303394,
+      "fy_px": 4333.798520416642,
+      "cx_px": 2510.0992876493115,
+      "cy_px": 1052.8828298459057
+    },
+    "IMG_7336_interleaved_odd": {
+      "n_views": 13,
+      "rms_px": 4.934294049052619,
+      "fx_px": 4519.742048912712,
+      "fy_px": 4449.4088735024225,
+      "cx_px": 2558.6740963825628,
+      "cy_px": 1053.0351349579767
+    },
+    "IMG_7336_early": {
+      "n_views": 13,
+      "rms_px": 5.583445742511561,
+      "fx_px": 3514.9531686683113,
+      "fy_px": 3564.819116765395,
+      "cx_px": 1923.1178944000055,
+      "cy_px": 1280.767329683787
+    },
+    "IMG_7336_late": {
+      "n_views": 13,
+      "rms_px": 3.7151380133154475,
+      "fx_px": 3381.9788677529755,
+      "fy_px": 3406.0847975222123,
+      "cx_px": 1616.6198293693465,
+      "cy_px": 1884.4522679282918
+    },
+    "IMG_7337_all": {
+      "n_views": 28,
+      "rms_px": 2.0872819146262533,
+      "fx_px": 3173.3403469206737,
+      "fy_px": 3179.123955239008,
+      "cx_px": 1927.277652169493,
+      "cy_px": 1013.6705105799704
+    },
+    "IMG_7337_interleaved_even": {
+      "n_views": 14,
+      "rms_px": 2.1534200741534044,
+      "fx_px": 3238.289811191176,
+      "fy_px": 3249.9345470817975,
+      "cx_px": 1887.097803157514,
+      "cy_px": 999.492895517659
+    },
+    "IMG_7337_interleaved_odd": {
+      "n_views": 14,
+      "rms_px": 1.9672667877112202,
+      "fx_px": 3128.2810846794196,
+      "fy_px": 3128.975284497202,
+      "cx_px": 1963.1936353136293,
+      "cy_px": 1023.0761278287712
+    },
+    "IMG_7337_early": {
+      "n_views": 14,
+      "rms_px": 0.9312782211116973,
+      "fx_px": 3247.810409017668,
+      "fy_px": 3251.596883939301,
+      "cx_px": 1910.4174261953085,
+      "cy_px": 1127.7011072312866
+    },
+    "IMG_7337_late": {
+      "n_views": 14,
+      "rms_px": 2.6247846611214274,
+      "fx_px": 3160.742480543488,
+      "fy_px": 3163.717359025038,
+      "cx_px": 2007.4663369861921,
+      "cy_px": 845.1724096175785
+    },
+    "both_all": {
+      "n_views": 54,
+      "rms_px": 3.96739386236294,
+      "fx_px": 3318.035922196797,
+      "fy_px": 3312.8861867025685,
+      "cx_px": 1969.0798044567046,
+      "cy_px": 1102.9486930694698
+    }
+  },
+  "7337_interleaved_fx_relative_difference": 0.03466653887866327,
+  "7336_to_7337_fx_ratio": 1.4399566341840808,
+  "model_choice": "IMG_7337_all",
+  "choice_source": "Preserved PR49 pre-Q primary; all other models sensitivity only",
+  "limitations": [
+    "RMS and split differences are fit diagnostics, not independent spatial accuracy",
+    "Same 4K dimensions do not establish lens, stabilization or processing equivalence",
+    "Handheld checkerboard flatness and measurement uncertainty remain unknown"
+  ]
+}
