@@ -1,0 +1,227 @@
+{
+  "P1_subtracted_m": 0.6088636183798282,
+  "actual_information_multiplier": 1.0,
+  "actual_nominal_information_per_m2": 24.999999999999996,
+  "actual_output_available_epoch_ns": null,
+  "actual_residual_sqrt_multiplier": 1.0,
+  "availability_cutoff_epoch_ns": 1792925287441466217,
+  "availability_reason": "joined later via immutable publication_id",
+  "base_nominal_information_per_m2": 24.999999999999996,
+  "corrected_aggregate_m": 3.0029931888622063,
+  "engineering_score": null,
+  "factor_action": "weighted_pseudo_huber_row",
+  "factor_id": "Q3|1792925286441466217|node_10",
+  "frozen_before_main_solve": true,
+  "frozen_host_epoch_ns": 1793104904788794283,
+  "frozen_host_monotonic_ns": 523510907524557,
+  "group": "Q3",
+  "information_admitted": true,
+  "interface_version": "quality_fgo_v1",
+  "no_history_rollback": true,
+  "original_link_quality": null,
+  "original_link_quality_status": "NaN_or_unavailable_not_used_for_quality",
+  "original_sigma_m": 0.2,
+  "policy": {
+    "information_multiplier": 1.0,
+    "monitorable": false,
+    "policy_mode_held": "normal",
+    "reason": "SHADOW_SOLVE_NOT_ACCEPTED",
+    "score": null,
+    "state": "unknown",
+    "transition": false
+  },
+  "publication_id": "Q3|1792925286441466217",
+  "raw_aggregate_m": 3.6118568072420345,
+  "raw_residual_sign": "corrected_measurement_minus_excluded_prediction",
+  "raw_signed_consistency_residual_m": null,
+  "record_type": "frozen_quality_factor",
+  "reference_excluded_target": "node_10",
+  "reference_geometry": null,
+  "reference_record_id": "15c72ed54a9949d73e950a244ad99d8df59cd96e39963eba1909a36d83523e71",
+  "score_scale_m": 0.2,
+  "score_semantics": "fixed-scale engineering consistency, not calibrated NIS/PL",
+  "shared_input_prefix": {
+    "count": 121,
+    "digest": "86853f240503e012733a13bdb7aee6b7e5752061f949064fde0f6f865532d324"
+  },
+  "state_epoch_ns": 1792925286441466217,
+  "target": "node_10",
+  "target_dependencies": [
+    {
+      "identity": {
+        "header_epoch_ns": 1792925286081466217,
+        "mapped_header_epoch_ns": 1792925286081466217,
+        "receive_epoch_ns": 1792925286096466217,
+        "record_index": 216,
+        "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+        "topic": "/car2/uwb"
+      },
+      "raw_range_m": 3.5987002212757675
+    },
+    {
+      "identity": {
+        "header_epoch_ns": 1792925286131466217,
+        "mapped_header_epoch_ns": 1792925286131466217,
+        "receive_epoch_ns": 1792925286146466217,
+        "record_index": 217,
+        "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+        "topic": "/car2/uwb"
+      },
+      "raw_range_m": 3.5953425244408663
+    },
+    {
+      "identity": {
+        "header_epoch_ns": 1792925286181466217,
+        "mapped_header_epoch_ns": 1792925286181466217,
+        "receive_epoch_ns": 1792925286196466217,
+        "record_index": 218,
+        "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+        "topic": "/car2/uwb"
+      },
+      "raw_range_m": 3.6250133932083015
+    },
+    {
+      "identity": {
+        "header_epoch_ns": 1792925286231466217,
+        "mapped_header_epoch_ns": 1792925286231466217,
+        "receive_epoch_ns": 1792925286246466217,
+        "record_index": 219,
+        "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+        "topic": "/car2/uwb"
+      },
+      "raw_range_m": 3.6806266633840767
+    },
+    {
+      "identity": {
+        "header_epoch_ns": 1792925286281466217,
+        "mapped_header_epoch_ns": 1792925286281466217,
+        "receive_epoch_ns": 1792925286296466217,
+        "record_index": 220,
+        "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+        "topic": "/car2/uwb"
+      },
+      "raw_range_m": 3.5000077789608017
+    },
+    {
+      "identity": {
+        "header_epoch_ns": 1792925286331466217,
+        "mapped_header_epoch_ns": 1792925286331466217,
+        "receive_epoch_ns": 1792925286346466217,
+        "record_index": 221,
+        "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+        "topic": "/car2/uwb"
+      },
+      "raw_range_m": 3.665213966597581
+    },
+    {
+      "identity": {
+        "header_epoch_ns": 1792925286381466217,
+        "mapped_header_epoch_ns": 1792925286381466217,
+        "receive_epoch_ns": 1792925286396466217,
+        "record_index": 222,
+        "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+        "topic": "/car2/uwb"
+      },
+      "raw_range_m": 3.694688643749126
+    },
+    {
+      "identity": {
+        "header_epoch_ns": 1792925286431466217,
+        "mapped_header_epoch_ns": 1792925286431466217,
+        "receive_epoch_ns": 1792925286446466217,
+        "record_index": 223,
+        "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+        "topic": "/car2/uwb"
+      },
+      "raw_range_m": 3.7036556499199227
+    },
+    {
+      "identity": {
+        "header_epoch_ns": 1792925286481466217,
+        "mapped_header_epoch_ns": 1792925286481466217,
+        "receive_epoch_ns": 1792925286496466217,
+        "record_index": 224,
+        "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+        "topic": "/car2/uwb"
+      },
+      "raw_range_m": 3.5665980289851413
+    },
+    {
+      "identity": {
+        "header_epoch_ns": 1792925286531466217,
+        "mapped_header_epoch_ns": 1792925286531466217,
+        "receive_epoch_ns": 1792925286546466217,
+        "record_index": 225,
+        "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+        "topic": "/car2/uwb"
+      },
+      "raw_range_m": 3.530787276041586
+    },
+    {
+      "identity": {
+        "header_epoch_ns": 1792925286581466217,
+        "mapped_header_epoch_ns": 1792925286581466217,
+        "receive_epoch_ns": 1792925286596466217,
+        "record_index": 226,
+        "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+        "topic": "/car2/uwb"
+      },
+      "raw_range_m": 3.555728520787126
+    },
+    {
+      "identity": {
+        "header_epoch_ns": 1792925286631466217,
+        "mapped_header_epoch_ns": 1792925286631466217,
+        "receive_epoch_ns": 1792925286646466217,
+        "record_index": 227,
+        "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+        "topic": "/car2/uwb"
+      },
+      "raw_range_m": 3.683172734448723
+    },
+    {
+      "identity": {
+        "header_epoch_ns": 1792925286681466217,
+        "mapped_header_epoch_ns": 1792925286681466217,
+        "receive_epoch_ns": 1792925286696466217,
+        "record_index": 228,
+        "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+        "topic": "/car2/uwb"
+      },
+      "raw_range_m": 3.794069900317724
+    },
+    {
+      "identity": {
+        "header_epoch_ns": 1792925286731466217,
+        "mapped_header_epoch_ns": 1792925286731466217,
+        "receive_epoch_ns": 1792925286746466217,
+        "record_index": 229,
+        "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+        "topic": "/car2/uwb"
+      },
+      "raw_range_m": 3.5828315189863087
+    },
+    {
+      "identity": {
+        "header_epoch_ns": 1792925286781466217,
+        "mapped_header_epoch_ns": 1792925286781466217,
+        "receive_epoch_ns": 1792925286796466217,
+        "record_index": 230,
+        "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+        "topic": "/car2/uwb"
+      },
+      "raw_range_m": 3.646107684789753
+    },
+    {
+      "identity": {
+        "header_epoch_ns": 1792925286831466217,
+        "mapped_header_epoch_ns": 1792925286831466217,
+        "receive_epoch_ns": 1792925286846466217,
+        "record_index": 231,
+        "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+        "topic": "/car2/uwb"
+      },
+      "raw_range_m": 3.5588479945032403
+    }
+  ]
+}

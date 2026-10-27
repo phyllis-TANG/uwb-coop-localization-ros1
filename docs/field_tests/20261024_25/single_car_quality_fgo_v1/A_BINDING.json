@@ -1,0 +1,102 @@
+{
+  "status": "A_FROZEN_SYNTHETIC_INTERFACE_FIELD_ADAPTATION_NOT_EXECUTED",
+  "quality_execution_commit": "12a1d94379b58c5a759b1698425fb90d48587609",
+  "protocol_sha256": "ddb533f94d4b2b5f36b5cf3922dad1d72361ce674f908dc1ba40514324bcfb31",
+  "native_schema_sha256": "ef63944a2a06cf640677ce409c6838e166832d7d43f66282cfd4e736f6591313",
+  "native_interface_version": "quality_fgo_v1",
+  "native_cli_argv": [
+    "python",
+    "tools/single_car_quality_fgo/qrun.py",
+    "--events-jsonl",
+    "<original-events.jsonl.gz>",
+    "--config",
+    "<frozen-case-Qconfig.json>",
+    "--output",
+    "<new-Git-external-dir>",
+    "--max-seconds",
+    "90"
+  ],
+  "quality_source_sha256": {
+    "bridge.py": "b3624162550ca2354f25da9f1e16980ba609e45fd2e14ea35d072dd650c781a7",
+    "check_matrix.py": "dc324091e3c170c71a34f61016f215dc2ef5c5e0d6ba8cebf21ba1de8fa22445",
+    "negative_logs.py": "605845fa09148ea096f99c036c3e1025dbde1ea07b78d5275b1bc6d0b1927535",
+    "qaudit.py": "45d52866f3cce7caa7d731ce56319575ff310e1024a192d8c7b49756fa112bd9",
+    "qconfig.py": "cfd9de7d6f6c209ed663c6229918caff0eb6d5d78f2a748b713bd0ad72635e1a",
+    "qevaluate.py": "63ed9b0699a527e8dcde7b9e4249193dda94d33dd04ec1b474ad43bc5113b868",
+    "qfrontend.py": "2886bcc65fe49d2c0e4732036feeee12d1ca5bd771b00b80a7890635d397d9e9",
+    "qgraph.py": "0785f57c257d86bb606442a61943a6f5342852101eb748a2085f9a65dd1e9ef9",
+    "qio.py": "453ba746f905d2a9792052d7bff1abdf2c75d133da47a39bf9661fab0d05c8b3",
+    "qpolicy.py": "a9ddec196dce989508739241dacab2f3b08c258248f5f93be0223ca7c8b1b740",
+    "qreport.py": "96e8ee2d7954c2610850087d63a077e6b465967a825c81e5ded2bba873b598d2",
+    "qrun.py": "86c72607ea8fa5902727c225e53bf25edd397705a3574efcd6b4ddcac3f165d9",
+    "qsimulate.py": "904d7e728eef01c8cc91fb0873726e796000570a5487da409896a77fcdeb70bf",
+    "qtests.py": "01019c566c5b87f201d9c4d7e96117cf3b0ad7f9acac8d65fa214ed38e8596f1",
+    "run_matrix.py": "87abe3369a72f0b9748361052c489bdfc3fae247644006af73c86cabba4113c9"
+  },
+  "score_formula_and_units": "abs(raw_aggregate_m-P1_subtracted_m-excluded_shadow_slant_prediction_m)/0.20m; engineering dimensionless consistency",
+  "score_variance_provenance": null,
+  "score_variance_reason": "fixed exploration scale, no reliable predictive covariance; not NIS/PL",
+  "health_transition_rule_and_parameters": {
+    "score": "abs(corrected aggregated link - excluded-from-start shadow range)/.20m; engineering not calibrated NIS/PL",
+    "reference": "same F0/F3 skeleton, independent per-wall history/prior; other UWB original pseudo-Huber only gain1; no copying main prior",
+    "known_condition": "shadow accepted/full numeric rank, F3 angular covered,>=3 other current walls,XY H singular ratio>=.15; otherwise unknown",
+    "thresholds": {
+      "warn": 1.5,
+      "disable": 3,
+      "clear": 0.75
+    },
+    "consecutive": {
+      "warn": 2,
+      "disable": 2,
+      "clear_before_trial": 3,
+      "trial_clear_before_normal": 3
+    },
+    "information_gains": {
+      "normal": 1,
+      "downweighted": 0.1,
+      "disabled": 0,
+      "recovering": 0.25
+    },
+    "unknown": "reset persistence, hold previous policy gain; initialunknown gain1 explicitly not healthy; missing actualgain null",
+    "recovery_relapse": "one score>=warn returns.1, >=disable returns0",
+    "weight_application": "sqrt(g) multiplies original pseudo-Huber residual/J once, frozen at first graph entry; zero-info rows explicit; no rollback, switching, or bias reset/locking"
+  },
+  "information_or_residual_weight_semantics": "information gain g: sqrt(g) multiplies original pseudo-Huber residual and J exactly once; frozen on first factor insertion; absent factor actual gain null; zero gain explicit zero-information row",
+  "baseline_quality_off_route_evidence": [
+    "qtests.PipelineTests.test_disabled_path_native_F0_F3_exact",
+    "qtests.PipelineTests.test_quality_off_explicit_ablation",
+    "qtests.WeightTests.test_unit_gain_graph_regression_through_marginalization"
+  ],
+  "executed_target_only_intervention_receipts": [
+    "qtests.PipelineTests.test_excluded_shadow_never_consumes_target_in_history_or_prior; Q2/Q3,35s,+1.7m onlynode10; after actual marginalization entire shadow semantic records equal"
+  ],
+  "executed_receive_prefix_receipts": [
+    "qtests.PipelineTests.test_prefix_no_future_mutation;35s input,30s receive cutoff, mutate future UWB and gyro, all earlier outputs/graphs/ledger unchanged"
+  ],
+  "test_log": "tests-final-pre-freeze.log",
+  "test_log_sha256": "800fb1c30cff7a79671456a70f26cb4db9e9791897436688e1006adc6db35c76",
+  "actual_objective_snapshot_fields": "graphs.row.objective_snapshot; times/local/observations/states/quality_weights/prior; interval_end_epochs_ns resolve prior graph angular_interval; marginalization_details incident factors/linearization/full prior matrix offset constant",
+  "minimal_mapping": {
+    "constraint_id": "quality_ledger.factor_id",
+    "link_id": "quality_ledger.target",
+    "cutoff_epoch_ns": "quality_ledger.availability_cutoff_epoch_ns",
+    "support_record_ids": "quality_ledger.target (scalar component key) + target_dependencies[].identity + raw_range_m; individual support objects do not have their own target field",
+    "decision_dependencies": "reference_record_id -> graphs previous_record_id/prior/source roots and support_new; shared_input_prefix is additional provenance, not all raw target-link data consumed by shadow",
+    "score": "engineering_score",
+    "health": "policy.state; unknown explicit",
+    "old_information_multiplier": "implicit baseline unity, base_nominal_information_per_m2=1/original_sigma_m^2. No literal original_information_multiplier field; absent original factor has null actual information.",
+    "new_information_multiplier": "actual_information_multiplier; policy.information_multiplier may be held for missing factor but actual is null",
+    "entered_graph": "information_admitted means positive information; factor_action zero_information_row separately exists with g0",
+    "fallback": "publication.row status/angular_status plus per-ledger reason; quality never changes angular fallback policy",
+    "available_time": "join immutable publication_id with availability.available_receive_epoch_ns, not ledger null"
+  },
+  "field_parameters_frozen_before_runs": "controller/protocol frozen before any new field run; no new field run executed; B must bind its input-specific original config without tuning endpoints",
+  "field_adapter_limitations": [
+    "Native identity preserves case/source_file_sha256/physical record_index/topic/header/receive; scalar target is explicit dependency component. B richer message_sha256/catalog fields need retained sidecar mapping; do not fabricate absent metadata.",
+    "Current intervention tests preserve original stable identities while altering target values. New altered-file/global-envelope SHA must be recorded separately; B canonicalizes non-target scalar influences without treating altered input as unchanged raw.",
+    "B proposed score/FSM are placeholders, not this native policy. Adapt independently to declared frozen formula/state machine.",
+    "Rank/geometry are engineering gating; priors/shared Odom/gyro/otherwall inputs remain correlated.",
+    "Full field quality replay and real-input prefix/intervention/B independent evaluation remain for B."
+  ],
+  "native_schema_scope": "config.schema.json validates configuration, not a JSON-Schema of every output log. Output contract is versioned INTERFACE.md + examples + independent executable qaudit."
+}

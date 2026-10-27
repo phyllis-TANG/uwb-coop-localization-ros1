@@ -1,0 +1,1253 @@
+{
+  "availability_cutoff_epoch_ns": 1792925289441466217,
+  "excluded_target": "node_10",
+  "input_prefix_count": 241,
+  "input_prefix_digest": "8ce9656c30ba540af9b26026223e776a914d0d5093950ea6b4fc2a9bb348df3a",
+  "previous_record_id": "d429c7fbb2f98eceaefabec931e4536e3732055b19ea77b777abbadec117fbcc",
+  "record_id": "6320bcb52661374f87b40f322528105b1b6c9fd3156c92b14fe8ffe637605150",
+  "record_type": "graph_publication",
+  "role": "node_10",
+  "row": {
+    "accepted_graph": true,
+    "aligned_odom_antenna_xy_m": [
+      1.9982636758632302,
+      2.003936106142832
+    ],
+    "aligned_odom_pose": [
+      2.102460534765394,
+      1.9042214402459712,
+      2.966174622159868
+    ],
+    "aligned_odom_role": "diagnostic_only_not_new_yaw_prediction_or_factor",
+    "angular_interval": {
+      "dt_ns": 1000000000,
+      "end_epoch_ns": 1792925288441466217,
+      "gaps": [],
+      "partial_angle_rad": -0.0006571996856820292,
+      "raw_angle_rad": -0.0006571996856820292,
+      "rule": "arrived left-hold; no future endpoint; no partial angle factor on gaps",
+      "segments": [
+        {
+          "angle_rad": -0.00017668886079617315,
+          "dependency": {
+            "header_epoch_ns": 1792925287431466217,
+            "mapped_header_epoch_ns": 1792925287431466217,
+            "receive_epoch_ns": 1792925287451466217,
+            "record_index": 142,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 30000000,
+          "end_epoch_ns": 1792925287471466217,
+          "rate_rad_s": -0.005889628693205772,
+          "start_epoch_ns": 1792925287441466217
+        },
+        {
+          "angle_rad": 0.00022058549066499825,
+          "dependency": {
+            "header_epoch_ns": 1792925287471466217,
+            "mapped_header_epoch_ns": 1792925287471466217,
+            "receive_epoch_ns": 1792925287491466217,
+            "record_index": 143,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 60000000,
+          "end_epoch_ns": 1792925287531466217,
+          "rate_rad_s": 0.0036764248444166375,
+          "start_epoch_ns": 1792925287471466217
+        },
+        {
+          "angle_rad": 3.815686066813358e-05,
+          "dependency": {
+            "header_epoch_ns": 1792925287531466217,
+            "mapped_header_epoch_ns": 1792925287531466217,
+            "receive_epoch_ns": 1792925287551466217,
+            "record_index": 144,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 45000000,
+          "end_epoch_ns": 1792925287576466217,
+          "rate_rad_s": 0.0008479302370696352,
+          "start_epoch_ns": 1792925287531466217
+        },
+        {
+          "angle_rad": 0.0004715275738279944,
+          "dependency": {
+            "header_epoch_ns": 1792925287576466217,
+            "mapped_header_epoch_ns": 1792925287576466217,
+            "receive_epoch_ns": 1792925287596466217,
+            "record_index": 145,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 55000000,
+          "end_epoch_ns": 1792925287631466217,
+          "rate_rad_s": 0.008573228615054444,
+          "start_epoch_ns": 1792925287576466217
+        },
+        {
+          "angle_rad": -0.0003243403048318058,
+          "dependency": {
+            "header_epoch_ns": 1792925287631466217,
+            "mapped_header_epoch_ns": 1792925287631466217,
+            "receive_epoch_ns": 1792925287651466217,
+            "record_index": 146,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 40000000,
+          "end_epoch_ns": 1792925287671466217,
+          "rate_rad_s": -0.008108507620795145,
+          "start_epoch_ns": 1792925287631466217
+        },
+        {
+          "angle_rad": 0.00011072042028990255,
+          "dependency": {
+            "header_epoch_ns": 1792925287671466217,
+            "mapped_header_epoch_ns": 1792925287671466217,
+            "receive_epoch_ns": 1792925287691466217,
+            "record_index": 147,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 60000000,
+          "end_epoch_ns": 1792925287731466217,
+          "rate_rad_s": 0.0018453403381650426,
+          "start_epoch_ns": 1792925287671466217
+        },
+        {
+          "angle_rad": -0.00031560991004579724,
+          "dependency": {
+            "header_epoch_ns": 1792925287731466217,
+            "mapped_header_epoch_ns": 1792925287731466217,
+            "receive_epoch_ns": 1792925287751466217,
+            "record_index": 148,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 45000000,
+          "end_epoch_ns": 1792925287776466217,
+          "rate_rad_s": -0.007013553556573272,
+          "start_epoch_ns": 1792925287731466217
+        },
+        {
+          "angle_rad": -0.00011311005330613051,
+          "dependency": {
+            "header_epoch_ns": 1792925287776466217,
+            "mapped_header_epoch_ns": 1792925287776466217,
+            "receive_epoch_ns": 1792925287796466217,
+            "record_index": 149,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 55000000,
+          "end_epoch_ns": 1792925287831466217,
+          "rate_rad_s": -0.0020565464237478274,
+          "start_epoch_ns": 1792925287776466217
+        },
+        {
+          "angle_rad": 0.00016614752418358942,
+          "dependency": {
+            "header_epoch_ns": 1792925287831466217,
+            "mapped_header_epoch_ns": 1792925287831466217,
+            "receive_epoch_ns": 1792925287851466217,
+            "record_index": 150,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 40000000,
+          "end_epoch_ns": 1792925287871466217,
+          "rate_rad_s": 0.004153688104589735,
+          "start_epoch_ns": 1792925287831466217
+        },
+        {
+          "angle_rad": 0.0004425626453390152,
+          "dependency": {
+            "header_epoch_ns": 1792925287871466217,
+            "mapped_header_epoch_ns": 1792925287871466217,
+            "receive_epoch_ns": 1792925287891466217,
+            "record_index": 151,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 60000000,
+          "end_epoch_ns": 1792925287931466217,
+          "rate_rad_s": 0.007376044088983587,
+          "start_epoch_ns": 1792925287871466217
+        },
+        {
+          "angle_rad": 3.839637054970409e-05,
+          "dependency": {
+            "header_epoch_ns": 1792925287931466217,
+            "mapped_header_epoch_ns": 1792925287931466217,
+            "receive_epoch_ns": 1792925287951466217,
+            "record_index": 152,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 45000000,
+          "end_epoch_ns": 1792925287976466217,
+          "rate_rad_s": 0.0008532526788823131,
+          "start_epoch_ns": 1792925287931466217
+        },
+        {
+          "angle_rad": -0.00023275662019035017,
+          "dependency": {
+            "header_epoch_ns": 1792925287976466217,
+            "mapped_header_epoch_ns": 1792925287976466217,
+            "receive_epoch_ns": 1792925287996466217,
+            "record_index": 153,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 55000000,
+          "end_epoch_ns": 1792925288031466217,
+          "rate_rad_s": -0.0042319385489154576,
+          "start_epoch_ns": 1792925287976466217
+        },
+        {
+          "angle_rad": 0.00018456728382645242,
+          "dependency": {
+            "header_epoch_ns": 1792925288031466217,
+            "mapped_header_epoch_ns": 1792925288031466217,
+            "receive_epoch_ns": 1792925288051466217,
+            "record_index": 154,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 40000000,
+          "end_epoch_ns": 1792925288071466217,
+          "rate_rad_s": 0.00461418209566131,
+          "start_epoch_ns": 1792925288031466217
+        },
+        {
+          "angle_rad": 0.00013618347319687267,
+          "dependency": {
+            "header_epoch_ns": 1792925288071466217,
+            "mapped_header_epoch_ns": 1792925288071466217,
+            "receive_epoch_ns": 1792925288091466217,
+            "record_index": 155,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 60000000,
+          "end_epoch_ns": 1792925288131466217,
+          "rate_rad_s": 0.002269724553281211,
+          "start_epoch_ns": 1792925288071466217
+        },
+        {
+          "angle_rad": -0.0003143227621280418,
+          "dependency": {
+            "header_epoch_ns": 1792925288131466217,
+            "mapped_header_epoch_ns": 1792925288131466217,
+            "receive_epoch_ns": 1792925288151466217,
+            "record_index": 156,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 45000000,
+          "end_epoch_ns": 1792925288176466217,
+          "rate_rad_s": -0.00698495026951204,
+          "start_epoch_ns": 1792925288131466217
+        },
+        {
+          "angle_rad": -0.00021224037221449475,
+          "dependency": {
+            "header_epoch_ns": 1792925288176466217,
+            "mapped_header_epoch_ns": 1792925288176466217,
+            "receive_epoch_ns": 1792925288196466217,
+            "record_index": 157,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 55000000,
+          "end_epoch_ns": 1792925288231466217,
+          "rate_rad_s": -0.003858915858445359,
+          "start_epoch_ns": 1792925288176466217
+        },
+        {
+          "angle_rad": 0.00013538997423774923,
+          "dependency": {
+            "header_epoch_ns": 1792925288231466217,
+            "mapped_header_epoch_ns": 1792925288231466217,
+            "receive_epoch_ns": 1792925288251466217,
+            "record_index": 158,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 40000000,
+          "end_epoch_ns": 1792925288271466217,
+          "rate_rad_s": 0.003384749355943731,
+          "start_epoch_ns": 1792925288231466217
+        },
+        {
+          "angle_rad": 0.00017995439345743622,
+          "dependency": {
+            "header_epoch_ns": 1792925288271466217,
+            "mapped_header_epoch_ns": 1792925288271466217,
+            "receive_epoch_ns": 1792925288291466217,
+            "record_index": 159,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 60000000,
+          "end_epoch_ns": 1792925288331466217,
+          "rate_rad_s": 0.0029992398909572705,
+          "start_epoch_ns": 1792925288271466217
+        },
+        {
+          "angle_rad": -0.00041130310754696603,
+          "dependency": {
+            "header_epoch_ns": 1792925288331466217,
+            "mapped_header_epoch_ns": 1792925288331466217,
+            "receive_epoch_ns": 1792925288351466217,
+            "record_index": 160,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 45000000,
+          "end_epoch_ns": 1792925288376466217,
+          "rate_rad_s": -0.009140069056599245,
+          "start_epoch_ns": 1792925288331466217
+        },
+        {
+          "angle_rad": -0.0006979303179797304,
+          "dependency": {
+            "header_epoch_ns": 1792925288376466217,
+            "mapped_header_epoch_ns": 1792925288376466217,
+            "receive_epoch_ns": 1792925288396466217,
+            "record_index": 161,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 55000000,
+          "end_epoch_ns": 1792925288431466217,
+          "rate_rad_s": -0.012689642145086007,
+          "start_epoch_ns": 1792925288376466217
+        },
+        {
+          "angle_rad": 1.6910613115612607e-05,
+          "dependency": {
+            "header_epoch_ns": 1792925288431466217,
+            "mapped_header_epoch_ns": 1792925288431466217,
+            "receive_epoch_ns": 1792925288451466217,
+            "record_index": 162,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/imu"
+          },
+          "dt_ns": 10000000,
+          "end_epoch_ns": 1792925288441466217,
+          "rate_rad_s": 0.0016910613115612607,
+          "start_epoch_ns": 1792925288431466217
+        }
+      ],
+      "start_epoch_ns": 1792925287441466217,
+      "valid": true
+    },
+    "angular_rejections_cumulative": {
+      "angular_control_accepted": 80
+    },
+    "angular_source": "projected_imu",
+    "angular_valid": true,
+    "antenna_xy_m": [
+      1.902626131771089,
+      1.909489761121516
+    ],
+    "arm": "F3",
+    "availability_cutoff_epoch_ns": 1792925289441466217,
+    "availability_cutoff_s": 4.0,
+    "bias_rad_s": -0.000489575913088055,
+    "candidate_bias_rad_s": -0.000489575913088055,
+    "candidate_pose": [
+      2.0072669410285644,
+      1.8102410783194725,
+      2.9706372492863236
+    ],
+    "dependency_receipt_max_s": 3.405,
+    "estimate_valid": true,
+    "estimated_worker_finish_s": 4.002731356013101,
+    "estimated_worker_queue_s": 0.0,
+    "estimated_worker_start_s": 4.0,
+    "fallback_yaw_source": "integrated_angular_minus_bias",
+    "field_accuracy_evaluated": false,
+    "graph_states": 3,
+    "graph_time_span_s": 2.0,
+    "local_odom": [
+      0.0014569461601897167,
+      -0.005657326250455588,
+      -0.00029588977840472357
+    ],
+    "marginal_wall_s": 3.7800054997205734e-07,
+    "marginalization_details": [],
+    "marginalizations": 0,
+    "missing_angular_edges_cumulative": 0,
+    "numerical_full_rank": true,
+    "numerical_rank": 12,
+    "objective_snapshot": {
+      "candidate_states": [
+        [
+          2.011955700104294,
+          1.808362854105026,
+          2.9707027388057967,
+          -0.0004893648275572912
+        ],
+        [
+          2.007272840491252,
+          1.808249861268336,
+          2.9706112499442843,
+          -0.0004895369783130906
+        ],
+        [
+          2.0072669410285644,
+          1.8102410783194725,
+          2.9706372492863236,
+          -0.000489575913088055
+        ]
+      ],
+      "interval_end_epochs_ns": [
+        1792925287441466217,
+        1792925288441466217
+      ],
+      "local_odom": [
+        [
+          -0.001009395802491235,
+          -0.0021901619310950916,
+          0.0005892164520873957
+        ],
+        [
+          0.001799929891129656,
+          -0.002962517501166058,
+          -0.00010049290861001699
+        ],
+        [
+          0.0014569461601897167,
+          -0.005657326250455588,
+          -0.00029588977840472357
+        ]
+      ],
+      "observations": [
+        {
+          "node_2": 5.8321687499750485,
+          "node_3": 4.30953854424865,
+          "node_8": 3.219007150795902
+        },
+        {
+          "node_2": 5.825567254251269,
+          "node_3": 4.365654393136365,
+          "node_8": 3.187863345285763
+        },
+        {
+          "node_2": 5.834603470700372,
+          "node_3": 4.322010116004794,
+          "node_8": 3.1739316596350546
+        }
+      ],
+      "prior": {
+        "matrix": [
+          [
+            5.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            5.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            11.459155902616464,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            33.333333333333336
+          ]
+        ],
+        "offset": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "point": [
+          2.1042850761481104,
+          1.9003775984389917,
+          2.9670597283903604,
+          0.0
+        ]
+      },
+      "quality_factor_ids": [
+        {
+          "node_2": "Q3:shadow:node_10|1792925286441466217|node_2",
+          "node_3": "Q3:shadow:node_10|1792925286441466217|node_3",
+          "node_8": "Q3:shadow:node_10|1792925286441466217|node_8"
+        },
+        {
+          "node_2": "Q3:shadow:node_10|1792925287441466217|node_2",
+          "node_3": "Q3:shadow:node_10|1792925287441466217|node_3",
+          "node_8": "Q3:shadow:node_10|1792925287441466217|node_8"
+        },
+        {
+          "node_2": "Q3:shadow:node_10|1792925288441466217|node_2",
+          "node_3": "Q3:shadow:node_10|1792925288441466217|node_3",
+          "node_8": "Q3:shadow:node_10|1792925288441466217|node_8"
+        }
+      ],
+      "quality_weights": [
+        {
+          "node_2": 1.0,
+          "node_3": 1.0,
+          "node_8": 1.0
+        },
+        {
+          "node_2": 1.0,
+          "node_3": 1.0,
+          "node_8": 1.0
+        },
+        {
+          "node_2": 1.0,
+          "node_3": 1.0,
+          "node_8": 1.0
+        }
+      ],
+      "states": [
+        [
+          2.011955700104294,
+          1.808362854105026,
+          2.9707027388057967,
+          -0.0004893648275572912
+        ],
+        [
+          2.007272840491252,
+          1.808249861268336,
+          2.9706112499442843,
+          -0.0004895369783130906
+        ],
+        [
+          2.0072669410285644,
+          1.8102410783194725,
+          2.9706372492863236,
+          -0.000489575913088055
+        ]
+      ],
+      "times_s": [
+        1.0,
+        2.0,
+        3.0
+      ]
+    },
+    "odom_yaw_fallback": false,
+    "optimizer": {
+      "optimizer_cost": 0.32883571646688686,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "optimizer_nfev": 5,
+      "optimizer_njev": 5,
+      "optimizer_optimality": 1.6169268725052532e-06,
+      "optimizer_status": 2,
+      "optimizer_success": true
+    },
+    "optimizer_initial_guess": [
+      [
+        2.1042850761481104,
+        1.9003775984389917,
+        2.9670597283903604,
+        0.0
+      ],
+      [
+        2.1016532846293217,
+        1.9016276053914076,
+        2.9660098798892482,
+        0.0
+      ],
+      [
+        2.1024614688544787,
+        1.9042211493553967,
+        2.965352680203566,
+        0.0
+      ]
+    ],
+    "pose": [
+      2.0072669410285644,
+      1.8102410783194725,
+      2.9706372492863236
+    ],
+    "position_correction_m": 0.13376939814440422,
+    "prediction_pose": [
+      2.1024614688544787,
+      1.9042211493553967,
+      2.965352680203566
+    ],
+    "prediction_yaw_source": "integrated_angular_minus_bias",
+    "prior_matrix": [
+      [
+        5.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        11.459155902616464,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        33.333333333333336
+      ]
+    ],
+    "prior_offset": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "prior_point": [
+      2.1042850761481104,
+      1.9003775984389917,
+      2.9670597283903604,
+      0.0
+    ],
+    "quality_factor_ids": [
+      {
+        "node_2": "Q3:shadow:node_10|1792925286441466217|node_2",
+        "node_3": "Q3:shadow:node_10|1792925286441466217|node_3",
+        "node_8": "Q3:shadow:node_10|1792925286441466217|node_8"
+      },
+      {
+        "node_2": "Q3:shadow:node_10|1792925287441466217|node_2",
+        "node_3": "Q3:shadow:node_10|1792925287441466217|node_3",
+        "node_8": "Q3:shadow:node_10|1792925287441466217|node_8"
+      },
+      {
+        "node_2": "Q3:shadow:node_10|1792925288441466217|node_2",
+        "node_3": "Q3:shadow:node_10|1792925288441466217|node_3",
+        "node_8": "Q3:shadow:node_10|1792925288441466217|node_8"
+      }
+    ],
+    "quality_weights": [
+      {
+        "node_2": 1.0,
+        "node_3": 1.0,
+        "node_8": 1.0
+      },
+      {
+        "node_2": 1.0,
+        "node_3": 1.0,
+        "node_8": 1.0
+      },
+      {
+        "node_2": 1.0,
+        "node_3": 1.0,
+        "node_8": 1.0
+      }
+    ],
+    "range_medians_m": {
+      "node_2": 5.834603470700372,
+      "node_3": 4.322010116004794,
+      "node_8": 3.1739316596350546
+    },
+    "range_sample_counts": {
+      "node_10": 0,
+      "node_2": 16,
+      "node_3": 16,
+      "node_8": 16
+    },
+    "scalar_variables": 12,
+    "sensor_buffer_counts": {
+      "angular": 20,
+      "odom": 1,
+      "uwb": 7
+    },
+    "solve_wall_s": 0.0019447699887678027,
+    "state_dimension_per_keyframe": 4,
+    "state_epoch_ns": 1792925288441466217,
+    "state_time_s": 3.0,
+    "status": "graph",
+    "update_wall_s": 0.0027313560131005943,
+    "yaw_correction_deg": 0.3027835049873213
+  },
+  "shadow_weights_adaptive": false,
+  "state_epoch_ns": 1792925288441466217,
+  "support_new": {
+    "availability_cutoff_epoch_ns": 1792925289441466217,
+    "input_prefix_count": 241,
+    "input_prefix_digest": "8ce9656c30ba540af9b26026223e776a914d0d5093950ea6b4fc2a9bb348df3a",
+    "odom_endpoints": [
+      {
+        "header_epoch_ns": 1792925288431466217,
+        "mapped_header_epoch_ns": 1792925288431466217,
+        "receive_epoch_ns": 1792925288441466217,
+        "record_index": 61,
+        "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+        "topic": "/car2/odom"
+      },
+      {
+        "header_epoch_ns": 1792925288481466217,
+        "mapped_header_epoch_ns": 1792925288481466217,
+        "receive_epoch_ns": 1792925288491466217,
+        "record_index": 62,
+        "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+        "topic": "/car2/odom"
+      }
+    ],
+    "range_medians": {
+      "node_2": 5.834603470700372,
+      "node_3": 4.322010116004794,
+      "node_8": 3.1739316596350546
+    },
+    "range_support": {
+      "node_2": [
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288081466217,
+            "mapped_header_epoch_ns": 1792925288081466217,
+            "receive_epoch_ns": 1792925288096466217,
+            "record_index": 256,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 5.945734761276091
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288131466217,
+            "mapped_header_epoch_ns": 1792925288131466217,
+            "receive_epoch_ns": 1792925288146466217,
+            "record_index": 257,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 5.928155535277133
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288181466217,
+            "mapped_header_epoch_ns": 1792925288181466217,
+            "receive_epoch_ns": 1792925288196466217,
+            "record_index": 258,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 5.679775340622119
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288231466217,
+            "mapped_header_epoch_ns": 1792925288231466217,
+            "receive_epoch_ns": 1792925288246466217,
+            "record_index": 259,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 5.7903523318773065
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288281466217,
+            "mapped_header_epoch_ns": 1792925288281466217,
+            "receive_epoch_ns": 1792925288296466217,
+            "record_index": 260,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 5.84843215184469
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288331466217,
+            "mapped_header_epoch_ns": 1792925288331466217,
+            "receive_epoch_ns": 1792925288346466217,
+            "record_index": 261,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 5.793689253575644
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288381466217,
+            "mapped_header_epoch_ns": 1792925288381466217,
+            "receive_epoch_ns": 1792925288396466217,
+            "record_index": 262,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 5.818030827310098
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288431466217,
+            "mapped_header_epoch_ns": 1792925288431466217,
+            "receive_epoch_ns": 1792925288446466217,
+            "record_index": 263,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 5.7463597991162265
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288481466217,
+            "mapped_header_epoch_ns": 1792925288481466217,
+            "receive_epoch_ns": 1792925288496466217,
+            "record_index": 264,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 5.873849882779566
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288531466217,
+            "mapped_header_epoch_ns": 1792925288531466217,
+            "receive_epoch_ns": 1792925288546466217,
+            "record_index": 265,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 5.781136672079333
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288581466217,
+            "mapped_header_epoch_ns": 1792925288581466217,
+            "receive_epoch_ns": 1792925288596466217,
+            "record_index": 266,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 5.855580871537091
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288631466217,
+            "mapped_header_epoch_ns": 1792925288631466217,
+            "receive_epoch_ns": 1792925288646466217,
+            "record_index": 267,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 5.919545508116608
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288681466217,
+            "mapped_header_epoch_ns": 1792925288681466217,
+            "receive_epoch_ns": 1792925288696466217,
+            "record_index": 268,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 5.820774789556055
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288731466217,
+            "mapped_header_epoch_ns": 1792925288731466217,
+            "receive_epoch_ns": 1792925288746466217,
+            "record_index": 269,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 5.798094595729722
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288781466217,
+            "mapped_header_epoch_ns": 1792925288781466217,
+            "receive_epoch_ns": 1792925288796466217,
+            "record_index": 270,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 5.901327185014429
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288831466217,
+            "mapped_header_epoch_ns": 1792925288831466217,
+            "receive_epoch_ns": 1792925288846466217,
+            "record_index": 271,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 5.8926467414779795
+        }
+      ],
+      "node_3": [
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288081466217,
+            "mapped_header_epoch_ns": 1792925288081466217,
+            "receive_epoch_ns": 1792925288096466217,
+            "record_index": 256,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 4.263365650264622
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288131466217,
+            "mapped_header_epoch_ns": 1792925288131466217,
+            "receive_epoch_ns": 1792925288146466217,
+            "record_index": 257,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 4.356921913130198
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288181466217,
+            "mapped_header_epoch_ns": 1792925288181466217,
+            "receive_epoch_ns": 1792925288196466217,
+            "record_index": 258,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 4.311994703683302
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288231466217,
+            "mapped_header_epoch_ns": 1792925288231466217,
+            "receive_epoch_ns": 1792925288246466217,
+            "record_index": 259,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 4.324657004297279
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288281466217,
+            "mapped_header_epoch_ns": 1792925288281466217,
+            "receive_epoch_ns": 1792925288296466217,
+            "record_index": 260,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 4.225538036177842
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288331466217,
+            "mapped_header_epoch_ns": 1792925288331466217,
+            "receive_epoch_ns": 1792925288346466217,
+            "record_index": 261,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 4.361052927395282
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288381466217,
+            "mapped_header_epoch_ns": 1792925288381466217,
+            "receive_epoch_ns": 1792925288396466217,
+            "record_index": 262,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 4.352910833450956
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288431466217,
+            "mapped_header_epoch_ns": 1792925288431466217,
+            "receive_epoch_ns": 1792925288446466217,
+            "record_index": 263,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 4.349132058370169
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288481466217,
+            "mapped_header_epoch_ns": 1792925288481466217,
+            "receive_epoch_ns": 1792925288496466217,
+            "record_index": 264,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 4.409359099893335
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288531466217,
+            "mapped_header_epoch_ns": 1792925288531466217,
+            "receive_epoch_ns": 1792925288546466217,
+            "record_index": 265,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 4.231123012835596
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288581466217,
+            "mapped_header_epoch_ns": 1792925288581466217,
+            "receive_epoch_ns": 1792925288596466217,
+            "record_index": 266,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 4.319363227712309
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288631466217,
+            "mapped_header_epoch_ns": 1792925288631466217,
+            "receive_epoch_ns": 1792925288646466217,
+            "record_index": 267,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 4.445439925602696
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288681466217,
+            "mapped_header_epoch_ns": 1792925288681466217,
+            "receive_epoch_ns": 1792925288696466217,
+            "record_index": 268,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 4.2841110304293455
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288731466217,
+            "mapped_header_epoch_ns": 1792925288731466217,
+            "receive_epoch_ns": 1792925288746466217,
+            "record_index": 269,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 4.504911002214434
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288781466217,
+            "mapped_header_epoch_ns": 1792925288781466217,
+            "receive_epoch_ns": 1792925288796466217,
+            "record_index": 270,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 4.280547424985847
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288831466217,
+            "mapped_header_epoch_ns": 1792925288831466217,
+            "receive_epoch_ns": 1792925288846466217,
+            "record_index": 271,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 4.282818243860432
+        }
+      ],
+      "node_8": [
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288081466217,
+            "mapped_header_epoch_ns": 1792925288081466217,
+            "receive_epoch_ns": 1792925288096466217,
+            "record_index": 256,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 3.1726096048059955
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288131466217,
+            "mapped_header_epoch_ns": 1792925288131466217,
+            "receive_epoch_ns": 1792925288146466217,
+            "record_index": 257,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 3.2219612153414094
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288181466217,
+            "mapped_header_epoch_ns": 1792925288181466217,
+            "receive_epoch_ns": 1792925288196466217,
+            "record_index": 258,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 3.2664537862467053
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288231466217,
+            "mapped_header_epoch_ns": 1792925288231466217,
+            "receive_epoch_ns": 1792925288246466217,
+            "record_index": 259,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 3.2398190185558624
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288281466217,
+            "mapped_header_epoch_ns": 1792925288281466217,
+            "receive_epoch_ns": 1792925288296466217,
+            "record_index": 260,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 3.1485696011548794
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288331466217,
+            "mapped_header_epoch_ns": 1792925288331466217,
+            "receive_epoch_ns": 1792925288346466217,
+            "record_index": 261,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 3.0777883016910916
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288381466217,
+            "mapped_header_epoch_ns": 1792925288381466217,
+            "receive_epoch_ns": 1792925288396466217,
+            "record_index": 262,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 3.1149649069360645
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288431466217,
+            "mapped_header_epoch_ns": 1792925288431466217,
+            "receive_epoch_ns": 1792925288446466217,
+            "record_index": 263,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 3.1316015470897787
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288481466217,
+            "mapped_header_epoch_ns": 1792925288481466217,
+            "receive_epoch_ns": 1792925288496466217,
+            "record_index": 264,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 3.2768868350701097
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288531466217,
+            "mapped_header_epoch_ns": 1792925288531466217,
+            "receive_epoch_ns": 1792925288546466217,
+            "record_index": 265,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 3.1752537144641133
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288581466217,
+            "mapped_header_epoch_ns": 1792925288581466217,
+            "receive_epoch_ns": 1792925288596466217,
+            "record_index": 266,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 3.1911901372349347
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288631466217,
+            "mapped_header_epoch_ns": 1792925288631466217,
+            "receive_epoch_ns": 1792925288646466217,
+            "record_index": 267,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 3.156797058512531
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288681466217,
+            "mapped_header_epoch_ns": 1792925288681466217,
+            "receive_epoch_ns": 1792925288696466217,
+            "record_index": 268,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 3.068708575640333
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288731466217,
+            "mapped_header_epoch_ns": 1792925288731466217,
+            "receive_epoch_ns": 1792925288746466217,
+            "record_index": 269,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 3.151014147657517
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288781466217,
+            "mapped_header_epoch_ns": 1792925288781466217,
+            "receive_epoch_ns": 1792925288796466217,
+            "record_index": 270,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 3.3317161915240288
+        },
+        {
+          "identity": {
+            "header_epoch_ns": 1792925288831466217,
+            "mapped_header_epoch_ns": 1792925288831466217,
+            "receive_epoch_ns": 1792925288846466217,
+            "record_index": 271,
+            "source_file_sha256": "8af3f55f8fbe4526a62cc9303382902321d87ea7a4f1d2f7b042ae44df21dac9",
+            "topic": "/car2/uwb"
+          },
+          "raw_range_m": 3.214803022280045
+        }
+      ]
+    },
+    "state_epoch_ns": 1792925288441466217
+  }
+}
