@@ -1,0 +1,135 @@
+causal_baselines.log
+test_car2_disconnect_does_not_block_car1_wall_update (test_model.CausalFilterTests.test_car2_disconnect_does_not_block_car1_wall_update) ... ok
+test_collinear_wall_geometry_stays_degraded (test_model.CausalFilterTests.test_collinear_wall_geometry_stays_degraded) ... ok
+test_cross_car_tag_identity_is_rejected (test_model.CausalFilterTests.test_cross_car_tag_identity_is_rejected) ... ok
+test_future_measurement_time_and_stale_peer_support (test_model.CausalFilterTests.test_future_measurement_time_and_stale_peer_support) ... ok
+test_independent_peer_and_other_vehicle_are_isolated (test_model.CausalFilterTests.test_independent_peer_and_other_vehicle_are_isolated) ... ok
+test_invalid_quaternion_does_not_initialize_zero_yaw (test_model.CausalFilterTests.test_invalid_quaternion_does_not_initialize_zero_yaw) ... ok
+test_late_range_and_out_of_order_odometry_are_rejected (test_model.CausalFilterTests.test_late_range_and_out_of_order_odometry_are_rejected) ... ok
+test_nonfinite_range_is_null_in_strict_json_audit (test_model.CausalFilterTests.test_nonfinite_range_is_null_in_strict_json_audit) ... ok
+test_numerical_failure_preserves_pose_and_marks_fallback (test_model.CausalFilterTests.test_numerical_failure_preserves_pose_and_marks_fallback) ... ok
+test_peer_projects_both_vehicles_to_one_directed_measurement_time (test_model.CausalFilterTests.test_peer_projects_both_vehicles_to_one_directed_measurement_time) ... ok
+test_recent_arrival_with_old_measurement_does_not_hide_state_age (test_model.CausalFilterTests.test_recent_arrival_with_old_measurement_does_not_hide_state_age) ... ok
+test_reverse_peer_is_logged_with_own_time_and_never_averaged (test_model.CausalFilterTests.test_reverse_peer_is_logged_with_own_time_and_never_averaged) ... ok
+test_same_header_different_trace_and_fixed_rate_are_explicit (test_model.CausalFilterTests.test_same_header_different_trace_and_fixed_rate_are_explicit) ... ok
+test_snapshot_cannot_publish_state_before_admitted_data (test_model.CausalFilterTests.test_snapshot_cannot_publish_state_before_admitted_data) ... ok
+test_source_local_odom_keeps_original_frame_z_and_unmapped_clock (test_model.CausalFilterTests.test_source_local_odom_keeps_original_frame_z_and_unmapped_clock) ... ok
+test_trace_and_bridge_duplicates_do_not_halve_covariance (test_model.CausalFilterTests.test_trace_and_bridge_duplicates_do_not_halve_covariance) ... ok
+test_uninitialized_is_null_not_zero (test_model.CausalFilterTests.test_uninitialized_is_null_not_zero) ... ok
+test_very_late_initialization_and_range_are_not_treated_as_current (test_model.CausalFilterTests.test_very_late_initialization_and_range_are_not_treated_as_current) ... ok
+test_exact_integer_affine_clock_at_epoch_and_negative_delta (test_model.ClockAndReadinessTests.test_exact_integer_affine_clock_at_epoch_and_negative_delta) ... ok
+test_independent_vehicle_readiness_is_not_coupled (test_model.ClockAndReadinessTests.test_independent_vehicle_readiness_is_not_coupled) ... ok
+test_invalid_covariance_or_weight_is_rejected (test_model.ClockAndReadinessTests.test_invalid_covariance_or_weight_is_rejected) ... ok
+test_synthetic_parameters_cannot_be_relabelled_as_field (test_model.ClockAndReadinessTests.test_synthetic_parameters_cannot_be_relabelled_as_field) ... ok
+test_unknown_field_values_block_room_but_allow_local_odom (test_model.ClockAndReadinessTests.test_unknown_field_values_block_room_but_allow_local_odom) ... ok
+test_visual_reference_absence_does_not_block_known_models (test_model.ClockAndReadinessTests.test_visual_reference_absence_does_not_block_known_models) ... ok
+test_asynchronous_projection_jacobian_matches_numeric (test_model.GeometryTests.test_asynchronous_projection_jacobian_matches_numeric) ... ok
+test_nonzero_heading_reverse_and_relative_odom_frame (test_model.GeometryTests.test_nonzero_heading_reverse_and_relative_odom_frame) ... ok
+test_rotated_lever_and_slant_not_horizontal (test_model.GeometryTests.test_rotated_lever_and_slant_not_horizontal) ... ok
+test_yaw_crosses_both_sides_without_two_pi_jump (test_model.GeometryTests.test_yaw_crosses_both_sides_without_two_pi_jump) ... ok
+test_zero_angular_rate_limit (test_model.GeometryTests.test_zero_angular_rate_limit) ... ok
+test_disturbance_fixture_exercises_delay_duplicate_and_disconnect (test_replay.NoisySyntheticTests.test_disturbance_fixture_exercises_delay_duplicate_and_disconnect) ... ok
+test_noisy_reproducible_and_covariance_finite (test_replay.NoisySyntheticTests.test_noisy_reproducible_and_covariance_finite) ... ok
+test_blocked_methods_write_null_rows_and_per_tick_reasons (test_replay.ReplayTests.test_blocked_methods_write_null_rows_and_per_tick_reasons) ... ok
+test_deadline_is_bounded (test_replay.ReplayTests.test_deadline_is_bounded) ... ok
+test_duplicate_rows_do_not_change_estimates (test_replay.ReplayTests.test_duplicate_rows_do_not_change_estimates) ... ok
+test_each_measurement_admitted_only_after_its_arrival (test_replay.ReplayTests.test_each_measurement_admitted_only_after_its_arrival) ... ok
+test_existing_output_and_lock_are_preserved (test_replay.ReplayTests.test_existing_output_and_lock_are_preserved) ... ok
+test_field_csv_reader_skips_holdout_and_preserves_exact_epoch (test_replay.ReplayTests.test_field_csv_reader_skips_holdout_and_preserves_exact_epoch) ... ok
+test_future_append_does_not_change_any_earlier_publication (test_replay.ReplayTests.test_future_append_does_not_change_any_earlier_publication) ... ok
+test_holdout_cli_is_rejected_before_output_creation (test_replay.ReplayTests.test_holdout_cli_is_rejected_before_output_creation) ... ok
+test_library_field_replay_also_rejects_holdout (test_replay.ReplayTests.test_library_field_replay_also_rejects_holdout) ... ok
+test_mismatched_input_identity_is_rejected (test_replay.ReplayTests.test_mismatched_input_identity_is_rejected) ... ok
+test_missing_vehicle_is_null_and_does_not_block_independent_car1 (test_replay.ReplayTests.test_missing_vehicle_is_null_and_does_not_block_independent_car1) ... ok
+test_pr45_range_and_odometry_csv_round_trip_drives_all_three_methods (test_replay.ReplayTests.test_pr45_range_and_odometry_csv_round_trip_drives_all_three_methods) ... ok
+test_publication_holds_anchor_and_does_not_interpolate_future_odometry (test_replay.ReplayTests.test_publication_holds_anchor_and_does_not_interpolate_future_odometry) ... ok
+test_unsorted_inputs_have_same_result_as_arrival_order (test_replay.ReplayTests.test_unsorted_inputs_have_same_result_as_arrival_order) ... ok
+test_fabricated_room_state_is_rejected (test_verification.IndependentVerificationTests.test_fabricated_room_state_is_rejected) ... ok
+test_verification_agrees_and_detects_altered_position (test_verification.IndependentVerificationTests.test_verification_agrees_and_detects_altered_position) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 0.486s
+
+OK
+
+parameter_clock_prep.log
+test_base_height_and_lever_z_are_unidentifiable_separately (test_minimal_interface.MinimalGeometryTests.test_base_height_and_lever_z_are_unidentifiable_separately) ... ok
+test_base_initialization_is_derived_only_with_complete_bound_inputs (test_minimal_interface.MinimalGeometryTests.test_base_initialization_is_derived_only_with_complete_bound_inputs) ... ok
+test_boolean_is_not_a_provided_metric_height (test_minimal_interface.MinimalGeometryTests.test_boolean_is_not_a_provided_metric_height) ... ok
+test_calibrated_clock_interval_is_enforced_without_extrapolation (test_minimal_interface.MinimalGeometryTests.test_calibrated_clock_interval_is_enforced_without_extrapolation) ... ok
+test_clock_derivation_does_not_promote_engineering_assumptions (test_minimal_interface.MinimalGeometryTests.test_clock_derivation_does_not_promote_engineering_assumptions) ... ok
+test_clock_pending_and_declared_signed_adjustment (test_minimal_interface.MinimalGeometryTests.test_clock_pending_and_declared_signed_adjustment) ... ok
+test_conflicting_old_and_new_values_are_rejected (test_minimal_interface.MinimalGeometryTests.test_conflicting_old_and_new_values_are_rejected) ... ok
+test_exact_initial_binding_is_enforced (test_minimal_interface.MinimalGeometryTests.test_exact_initial_binding_is_enforced) ... ok
+test_initial_binding_cannot_be_copied_from_another_bag (test_minimal_interface.MinimalGeometryTests.test_initial_binding_cannot_be_copied_from_another_bag) ... ok
+test_known_minimal_geometry_needs_no_fake_legacy_fields (test_minimal_interface.MinimalGeometryTests.test_known_minimal_geometry_needs_no_fake_legacy_fields) ... ok
+test_minimal_and_legacy_predictions_and_jacobians_match (test_minimal_interface.MinimalGeometryTests.test_minimal_and_legacy_predictions_and_jacobians_match) ... ok
+test_minimal_height_removes_only_vertical_blocker (test_minimal_interface.MinimalGeometryTests.test_minimal_height_removes_only_vertical_blocker) ... ok
+test_only_one_sensitivity_leaf_changes (test_minimal_interface.MinimalGeometryTests.test_only_one_sensitivity_leaf_changes) ... ok
+test_per_topic_clock_groups_do_not_force_unproven_shared_clock (test_minimal_interface.MinimalGeometryTests.test_per_topic_clock_groups_do_not_force_unproven_shared_clock) ... ok
+test_synthetic_initial_pose_cannot_be_hidden_by_base_derivation (test_minimal_interface.MinimalGeometryTests.test_synthetic_initial_pose_cannot_be_hidden_by_base_derivation) ... ok
+test_templates_preserve_manual_height_but_not_nominal_initialization (test_minimal_interface.MinimalGeometryTests.test_templates_preserve_manual_height_but_not_nominal_initialization) ... ok
+test_unknown_uncertainty_does_not_become_zero (test_minimal_interface.MinimalGeometryTests.test_unknown_uncertainty_does_not_become_zero) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.021s
+
+OK
+
+causal_reliability.log
+test_80_planned_rows_60_unique_and_duplicate_inputs_really_identical (test_integration.CausalityAndFaultTests.test_80_planned_rows_60_unique_and_duplicate_inputs_really_identical) ... ok
+test_all_states_finite_symmetric_psd_with_turn_wrap_levers_and_noise (test_integration.CausalityAndFaultTests.test_all_states_finite_symmetric_psd_with_turn_wrap_levers_and_noise) ... ok
+test_estimator_has_no_truth_labels_or_simulator_import (test_integration.CausalityAndFaultTests.test_estimator_has_no_truth_labels_or_simulator_import) ... ok
+test_fault_timing_sign_and_seed_identical_pairing (test_integration.CausalityAndFaultTests.test_fault_timing_sign_and_seed_identical_pairing) ... ok
+test_future_append_and_mutation_do_not_change_past_outputs (test_integration.CausalityAndFaultTests.test_future_append_and_mutation_do_not_change_past_outputs) ... ok
+test_holdout_library_gate_rejects_before_any_processing (test_integration.CausalityAndFaultTests.test_holdout_library_gate_rejects_before_any_processing) ... ok
+test_raw_bridge_duplicate_stale_async_rejections_precede_policy (test_integration.CausalityAndFaultTests.test_raw_bridge_duplicate_stale_async_rejections_precede_policy) ... ok
+test_T10_preflight_preserves_pending_and_never_opens_bag (test_integration.EvidenceTests.test_T10_preflight_preserves_pending_and_never_opens_bag) ... ok
+test_fingerprint_changes_for_source_or_protocol_changes_and_output_stays_external (test_integration.EvidenceTests.test_fingerprint_changes_for_source_or_protocol_changes_and_output_stays_external) ... ok
+test_independent_reader_checks_real_rows_and_detects_hash_tampering (test_integration.EvidenceTests.test_independent_reader_checks_real_rows_and_detects_hash_tampering) ... ok
+test_reader_detects_semantic_cap_tamper_even_with_updated_file_hash (test_integration.EvidenceTests.test_reader_detects_semantic_cap_tamper_even_with_updated_file_hash) ... ok
+test_resume_checks_root_and_unit_provenance_before_writing (test_integration.EvidenceTests.test_resume_checks_root_and_unit_provenance_before_writing) ... ok
+test_verifier_does_not_import_generator_engine_or_evaluator (test_integration.EvidenceTests.test_verifier_does_not_import_generator_engine_or_evaluator) ... ok
+test_all_peer_candidates_match_independent_when_no_peer (test_integration.OriginalPathTests.test_all_peer_candidates_match_independent_when_no_peer) ... ok
+test_default_none_reproduces_original_all_three_methods_bitwise (test_integration.OriginalPathTests.test_default_none_reproduces_original_all_three_methods_bitwise) ... ok
+test_instances_do_not_retain_gate_or_shadow_across_runs (test_integration.OriginalPathTests.test_instances_do_not_retain_gate_or_shadow_across_runs) ... ok
+test_shadow_matches_independent_after_every_event_without_shared_memory (test_integration.OriginalPathTests.test_shadow_matches_independent_after_every_event_without_shared_memory) ... ok
+test_cap_scales_actual_gain_and_yaw_uses_scaled_gain_joseph (test_integration.PolicySemanticsTests.test_cap_scales_actual_gain_and_yaw_uses_scaled_gain_joseph) ... ok
+test_gate_quarantine_three_bad_reopens_four_good_per_direction (test_integration.PolicySemanticsTests.test_gate_quarantine_three_bad_reopens_four_good_per_direction) ... ok
+test_gate_rejection_consumes_shared_rate_slot_not_extra_good_samples (test_integration.PolicySemanticsTests.test_gate_rejection_consumes_shared_rate_slot_not_extra_good_samples) ... ok
+test_huber_on_same_six_state_filter_increases_only_peer_effective_R (test_integration.PolicySemanticsTests.test_huber_on_same_six_state_filter_increases_only_peer_effective_R) ... ok
+test_nonfeedback_output_is_null_covariance_and_expires_without_state_reset (test_integration.PolicySemanticsTests.test_nonfeedback_output_is_null_covariance_and_expires_without_state_reset) ... ok
+test_reverse_direction_fault_is_unconsumed_negative_control (test_integration.PolicySemanticsTests.test_reverse_direction_fault_is_unconsumed_negative_control) ... ok
+test_shadow_control_shares_nonfeedback_hold_policy (test_integration.PolicySemanticsTests.test_shadow_control_shares_nonfeedback_hold_policy) ... ok
+test_wall_rank_is_geometry_only_and_can_be_weak (test_integration.PolicySemanticsTests.test_wall_rank_is_geometry_only_and_can_be_weak) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 2.784s
+
+OK
+
+t10_exploratory.log
+test_clock_adjustment_preserves_integer_nanoseconds (test_pilot.PilotChecks.test_clock_adjustment_preserves_integer_nanoseconds) ... ok
+test_every_physical_unknown_is_explicit_assumption (test_pilot.PilotChecks.test_every_physical_unknown_is_explicit_assumption) ... ok
+test_exact_three_dimensional_slant_ranges_recover_antenna_xy (test_pilot.PilotChecks.test_exact_three_dimensional_slant_ranges_recover_antenna_xy) ... ok
+test_holdout_and_wrong_attempt_refused (test_pilot.PilotChecks.test_holdout_and_wrong_attempt_refused) ... ok
+test_initial_antenna_preserved_when_base_lever_changes (test_pilot.PilotChecks.test_initial_antenna_preserved_when_base_lever_changes) ... ok
+test_original_strict_inputs_remain_unprovided (test_pilot.PilotChecks.test_original_strict_inputs_remain_unprovided) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.009s
+
+OK
+
+bridge-tests.log
+test_archive_modified_bytes_are_rejected (test_bridge.BridgeContractTests.test_archive_modified_bytes_are_rejected) ... ok
+test_archive_traversal_is_rejected (test_bridge.BridgeContractTests.test_archive_traversal_is_rejected) ... ok
+test_holdout_event_refused_before_estimator (test_bridge.BridgeContractTests.test_holdout_event_refused_before_estimator) ... ok
+test_old_baseline_parity_detects_changed_state (test_bridge.BridgeContractTests.test_old_baseline_parity_detects_changed_state) ... ok
+test_pr52_policy_and_pr53_hypotheses_remain_frozen (test_bridge.BridgeContractTests.test_pr52_policy_and_pr53_hypotheses_remain_frozen) ... ok
+test_protocol_cannot_be_repurposed_for_other_bag (test_bridge.BridgeContractTests.test_protocol_cannot_be_repurposed_for_other_bag) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.005s
+
+OK

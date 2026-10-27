@@ -1,0 +1,259 @@
+{
+  "scope": "exact output/feedback equivalence, not measured accuracy",
+  "input_run_sha256": "65376e6c8cb8b0c4448a48dd9d0d4d1d1e4dad40c985d85d667a751bb93d061c",
+  "postprocessor_sha256": "1c2f247ca36adb90c2267cccecebdc6fd769336140df5b13eb7c2505aeea6fa9",
+  "profiles": {
+    "nominal": {
+      "publications": 571,
+      "differing_method_publications": {
+        "feedback": 0,
+        "nonfeedback": 0
+      },
+      "final_policy_counts": {
+        "cap_only": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "gate_cap": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "gate_cap_shadow": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "gate_only": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "huber": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "independent": {},
+        "joint": {},
+        "odom_only": {},
+        "shadow_only": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        }
+      }
+    },
+    "car1_lever_x_minus_5cm": {
+      "publications": 571,
+      "differing_method_publications": {
+        "feedback": 0,
+        "nonfeedback": 0
+      },
+      "final_policy_counts": {
+        "cap_only": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "gate_cap": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "gate_cap_shadow": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "gate_only": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "huber": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "independent": {},
+        "joint": {},
+        "odom_only": {},
+        "shadow_only": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        }
+      }
+    },
+    "car1_lever_x_plus_5cm": {
+      "publications": 571,
+      "differing_method_publications": {
+        "feedback": 0,
+        "nonfeedback": 0
+      },
+      "final_policy_counts": {
+        "cap_only": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "gate_cap": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "gate_cap_shadow": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "gate_only": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "huber": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "independent": {},
+        "joint": {},
+        "odom_only": {},
+        "shadow_only": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        }
+      }
+    },
+    "car2_lever_x_minus_5cm": {
+      "publications": 571,
+      "differing_method_publications": {
+        "feedback": 0,
+        "nonfeedback": 0
+      },
+      "final_policy_counts": {
+        "cap_only": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "gate_cap": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "gate_cap_shadow": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "gate_only": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "huber": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "independent": {},
+        "joint": {},
+        "odom_only": {},
+        "shadow_only": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        }
+      }
+    },
+    "car2_lever_x_plus_5cm": {
+      "publications": 571,
+      "differing_method_publications": {
+        "feedback": 0,
+        "nonfeedback": 0
+      },
+      "final_policy_counts": {
+        "cap_only": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "gate_cap": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "gate_cap_shadow": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "gate_only": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "huber": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        },
+        "independent": {},
+        "joint": {},
+        "odom_only": {},
+        "shadow_only": {
+          "eligible_peer": 242,
+          "proposal_valid": 242
+        }
+      }
+    },
+    "car2_time_minus_20ms": {
+      "publications": 571,
+      "differing_method_publications": {
+        "feedback": 0,
+        "nonfeedback": 0
+      },
+      "final_policy_counts": {
+        "cap_only": {
+          "eligible_peer": 228,
+          "proposal_valid": 228
+        },
+        "gate_cap": {
+          "eligible_peer": 228,
+          "proposal_valid": 228
+        },
+        "gate_cap_shadow": {
+          "eligible_peer": 228,
+          "proposal_valid": 228
+        },
+        "gate_only": {
+          "eligible_peer": 228,
+          "proposal_valid": 228
+        },
+        "huber": {
+          "eligible_peer": 228,
+          "proposal_valid": 228
+        },
+        "independent": {},
+        "joint": {},
+        "odom_only": {},
+        "shadow_only": {
+          "eligible_peer": 228,
+          "proposal_valid": 228
+        }
+      }
+    },
+    "car2_time_plus_20ms": {
+      "publications": 571,
+      "differing_method_publications": {
+        "feedback": 0,
+        "nonfeedback": 0
+      },
+      "final_policy_counts": {
+        "cap_only": {
+          "eligible_peer": 247,
+          "proposal_valid": 247
+        },
+        "gate_cap": {
+          "eligible_peer": 247,
+          "proposal_valid": 247
+        },
+        "gate_cap_shadow": {
+          "eligible_peer": 247,
+          "proposal_valid": 247
+        },
+        "gate_only": {
+          "eligible_peer": 247,
+          "proposal_valid": 247
+        },
+        "huber": {
+          "eligible_peer": 247,
+          "proposal_valid": 247
+        },
+        "independent": {},
+        "joint": {},
+        "odom_only": {},
+        "shadow_only": {
+          "eligible_peer": 247,
+          "proposal_valid": 247
+        }
+      }
+    }
+  }
+}
