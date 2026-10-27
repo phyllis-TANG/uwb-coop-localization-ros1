@@ -1,0 +1,130 @@
+{
+  "protocol_id": "single_car_20s_imu_fgo_v1_20261027",
+  "redirect_base_commit": "112586ceb9ce674a083fb43f7d8afb7768a15aaf",
+  "old_kernel_commit": "397beb6dbe0a60dd64e39eb186345014d3a54b16",
+  "scope": "synthetic_development_not_blind_validation_or_field_accuracy",
+  "arms": [
+    "F0",
+    "F1",
+    "F2",
+    "F3"
+  ],
+  "scenarios": [
+    "nominal",
+    "gyro_constant_bias",
+    "gyro_drift",
+    "weak_geometry",
+    "range_bias",
+    "velocity_slip",
+    "imu_gap",
+    "stationary_unobservable"
+  ],
+  "seeds": [
+    31,
+    47,
+    73
+  ],
+  "duration_ns": 50000000000,
+  "truth_extra_horizon_ns": 1000000000,
+  "truth_step_ns": 5000000,
+  "counts": {
+    "inputs": 24,
+    "cli_runs": 96,
+    "expected_publications_per_run": 49,
+    "expected_total_publications": 4704
+  },
+  "source_and_parameter_lock": "commit all formal source/config/protocol before first formal matrix; record entire per-file source SHA and Git commit",
+  "baseline_unchanged": [
+    "20s lag",
+    "1s keyframes",
+    "1s input wait",
+    "+/-0.4s range bins",
+    "minimum5 samples/link",
+    "raw-minus-P1 exactly once",
+    "signed pseudo-Huber UWB",
+    "same Odom body translation",
+    "same initial pose and uncertainty for all four arms",
+    "TRF dense exact analytic max50 nfev, tolerances1e-7"
+  ],
+  "angular_model": {
+    "integration": "arrived left-hold, max100ms, no future endpoint or late backfill",
+    "axis": [
+      0,
+      0,
+      1
+    ],
+    "units": "rad/s",
+    "angle_noise_density_rad_sqrt_s": 0.03490658503988659,
+    "bias_initial_rad_s": 0,
+    "bias_initial_sigma_rad_s": 0.03,
+    "bias_RW_rad_s_sqrt_s": 0.0007,
+    "RW_covariance": "joint angle/bias continuous RW, negative cross -q_b dt^2/2; Cholesky whitening",
+    "missing": "no angle factor, bias RW retained, held-yaw prediction only; no Odom angular fallback; publish and count invalid current edge",
+    "rank": "rank-aware square-root QR marginalization, retain semidefinite prior and affine offset; report missing rank, no invented diagonal constraint"
+  },
+  "generator": {
+    "geometry": "old frozen single-car anchors/P1/lever, new synthetic initial heading170deg for wrap; all arms identical",
+    "initial_pose": "true initial base = declared prior mean + independent N(0,[.10m,.10m,3deg]^2); Odom source pose starts[0,0,0], so no absolute room pose leaked; same input/prior across arms",
+    "motion": "stationary[0,4), forward[4,15), turn+lateral[15,25), reverse+lateral/opposite turn[25,32), forward/lateral/turn[32,42), stationary[42,51]",
+    "odom_period_ns": 50000000,
+    "imu_period_pattern_ns": [
+      40000000,
+      60000000,
+      45000000,
+      55000000
+    ],
+    "uwb_period_ns": 50000000,
+    "receive_delay_ns": {
+      "odom": 10000000,
+      "imu": 20000000,
+      "uwb": 15000000
+    },
+    "clock": "exact shared synthetic epoch plus identity header mapping; field identity mapping remains a declared unverified assumption unless B supplies accepted evidence",
+    "odom_noise_std": {
+      "vx_m_s": 0.008,
+      "vy_m_s": 0.008,
+      "omega_rad_s": 0.004
+    },
+    "gyro_noise_std_rad_s": 0.006,
+    "uwb_noise_std_m": 0.08,
+    "odom_pose": "integrate previous noisy/slipped twist independently of online factors; Odom.angular_z is that measured rate",
+    "noise_limit": "nominal sensor draws synthetic independent; real upstream dependence unknown. Drift/gap alter RNG consumption, so scenario-to-scenario noise not strictly paired; methods within a scenario share identical inputs",
+    "constant_bias_rad_s": 0.025,
+    "gyro_drift": "initial.010 + RW.0015(rad/s)/sqrt(s) + .015sin(t/8); deliberately different from estimator RW",
+    "weak_geometry": "only node_2 wall throughout",
+    "range_bias": "node_10 +0.30m [12,35)s",
+    "velocity_slip": "noisy vx/vy*1.25 plus vy.05m/s [15,35)s; same contamination enters odom.pose",
+    "imu_gap": "no sources[18,22)s; source19s late arrival24s retained as explicit out-of-order negative",
+    "stationary_unobservable": "true motion0, XY lever0, gyro bias.025; noisy measured odom retains artificial weak excitation; exact-unobservable unit test uses exact-zero displacement"
+  },
+  "evaluation": {
+    "all": "every deadline retained; all-finite output errors include warmup, gaps and failed-solver predictions; finite pose coverage and solver/angle/valid coverage always reported",
+    "common": "four-arm intersection of estimate_valid at same state_epoch_ns, report count and errors alongside all-finite results; not the sole score",
+    "truth": "5ms independently generated truth, offline-only interpolation for virtual compute-available timestamps; never passed to optimizer",
+    "timing": "separate exact source/header/receive/state/cutoff and virtual compute+queue available time; one-second wait retained",
+    "metrics": [
+      "baseXY RMSE/max at state epoch",
+      "wrapped yaw RMSE",
+      "residual bias RMSE F2/F3",
+      "XY RMSE at virtual available time",
+      "all coverage/failure counts",
+      "common-valid errors",
+      "recovery38-49s",
+      "compute/queue/delay",
+      "oldest incident-factor marginalization information and offset"
+    ],
+    "readback": "all input/output SHA, source identities, integral segments, prediction and objective costs; every13th marginalization independently finite-differenced without online factor imports",
+    "no_improvement_requirement": true,
+    "no_threshold_or_endpoint_tuning": true
+  },
+  "budgets": {
+    "max_cli_seconds": 120,
+    "max_batch_seconds": 7200,
+    "max_independent_readback_seconds": 1800,
+    "max_effective_task_seconds": 18000,
+    "automatic_retries": 0
+  },
+  "resume": "only exact source/protocol and indexed input/output SHA match; no rerun of completed/failed cells; retain unindexed partial evidence",
+  "field_bags_run": false,
+  "field_accuracy_evaluated": false
+}

@@ -1,0 +1,505 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "angular": {
+      "additionalProperties": false,
+      "properties": {
+        "angle_noise_density_rad_sqrt_s": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "enum": [
+                "engineering_assumption",
+                "measured",
+                "manufacturer_generic",
+                "synthetic_design"
+              ]
+            },
+            "units": {
+              "const": "rad/sqrt(s)"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "bias_initial_rad_s": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "enum": [
+                "engineering_assumption",
+                "measured",
+                "manufacturer_generic",
+                "synthetic_design"
+              ]
+            },
+            "units": {
+              "const": "rad/s"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "bias_initial_sigma_rad_s": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "enum": [
+                "engineering_assumption",
+                "measured",
+                "manufacturer_generic",
+                "synthetic_design"
+              ]
+            },
+            "units": {
+              "const": "rad/s"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "bias_random_walk_rad_s_sqrt_s": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "enum": [
+                "engineering_assumption",
+                "measured",
+                "manufacturer_generic",
+                "synthetic_design"
+              ]
+            },
+            "units": {
+              "const": "(rad/s)/sqrt(s)"
+            },
+            "value": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "body_z_in_imu_frame": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "enum": [
+                "engineering_assumption",
+                "measured",
+                "manufacturer_generic",
+                "synthetic_design"
+              ]
+            },
+            "units": {
+              "const": "dimensionless"
+            },
+            "value": {
+              "items": {
+                "type": "number"
+              },
+              "maxItems": 3,
+              "minItems": 3,
+              "type": "array"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "imu_frame_id": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "enum": [
+                "engineering_assumption",
+                "measured",
+                "manufacturer_generic",
+                "synthetic_design"
+              ]
+            },
+            "units": {
+              "const": "frame_id"
+            },
+            "value": {
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "max_hold_ns": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "enum": [
+                "engineering_assumption",
+                "measured",
+                "manufacturer_generic",
+                "synthetic_design"
+              ]
+            },
+            "units": {
+              "const": "ns"
+            },
+            "value": {
+              "minimum": 1,
+              "type": "integer"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "angle_noise_density_rad_sqrt_s",
+        "bias_initial_rad_s",
+        "bias_initial_sigma_rad_s",
+        "bias_random_walk_rad_s_sqrt_s",
+        "max_hold_ns",
+        "body_z_in_imu_frame",
+        "imu_frame_id"
+      ],
+      "type": "object"
+    },
+    "arm": {
+      "enum": [
+        "F0",
+        "F1",
+        "F2",
+        "F3"
+      ]
+    },
+    "assumptions": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "clock_maps": {
+      "additionalProperties": false,
+      "properties": {
+        "imu": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "enum": [
+                "engineering_assumption",
+                "measured",
+                "manufacturer_generic",
+                "synthetic_design"
+              ]
+            },
+            "units": {
+              "const": "ns"
+            },
+            "value": {
+              "additionalProperties": false,
+              "properties": {
+                "destination_origin_ns": {
+                  "type": "integer"
+                },
+                "rate_denominator": {
+                  "type": "integer"
+                },
+                "rate_numerator": {
+                  "type": "integer"
+                },
+                "source_origin_ns": {
+                  "type": "integer"
+                },
+                "uncertainty_ns": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "source_origin_ns",
+                "destination_origin_ns",
+                "rate_numerator",
+                "rate_denominator",
+                "uncertainty_ns"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "odom": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "enum": [
+                "engineering_assumption",
+                "measured",
+                "manufacturer_generic",
+                "synthetic_design"
+              ]
+            },
+            "units": {
+              "const": "ns"
+            },
+            "value": {
+              "additionalProperties": false,
+              "properties": {
+                "destination_origin_ns": {
+                  "type": "integer"
+                },
+                "rate_denominator": {
+                  "type": "integer"
+                },
+                "rate_numerator": {
+                  "type": "integer"
+                },
+                "source_origin_ns": {
+                  "type": "integer"
+                },
+                "uncertainty_ns": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "source_origin_ns",
+                "destination_origin_ns",
+                "rate_numerator",
+                "rate_denominator",
+                "uncertainty_ns"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        },
+        "uwb": {
+          "additionalProperties": false,
+          "properties": {
+            "frozen_before_field_run": {
+              "const": true
+            },
+            "source": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "source_kind": {
+              "enum": [
+                "engineering_assumption",
+                "measured",
+                "manufacturer_generic",
+                "synthetic_design"
+              ]
+            },
+            "units": {
+              "const": "ns"
+            },
+            "value": {
+              "additionalProperties": false,
+              "properties": {
+                "destination_origin_ns": {
+                  "type": "integer"
+                },
+                "rate_denominator": {
+                  "type": "integer"
+                },
+                "rate_numerator": {
+                  "type": "integer"
+                },
+                "source_origin_ns": {
+                  "type": "integer"
+                },
+                "uncertainty_ns": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "source_origin_ns",
+                "destination_origin_ns",
+                "rate_numerator",
+                "rate_denominator",
+                "uncertainty_ns"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "value",
+            "units",
+            "source_kind",
+            "source",
+            "frozen_before_field_run"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "odom",
+        "uwb",
+        "imu"
+      ],
+      "type": "object"
+    },
+    "fixed_lag_s": {
+      "const": 20.0
+    },
+    "frontend": {
+      "type": "object"
+    },
+    "model": {
+      "type": "object"
+    },
+    "optimizer": {
+      "type": "object"
+    },
+    "replay": {
+      "type": "object"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "scope": {
+      "enum": [
+        "synthetic",
+        "field"
+      ]
+    }
+  },
+  "required": [
+    "model",
+    "replay",
+    "optimizer",
+    "frontend",
+    "schema_version",
+    "scope",
+    "fixed_lag_s",
+    "assumptions",
+    "angular",
+    "clock_maps"
+  ],
+  "type": "object"
+}
