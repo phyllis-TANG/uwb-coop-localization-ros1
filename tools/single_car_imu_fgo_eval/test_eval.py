@@ -92,8 +92,14 @@ class EvalTests(unittest.TestCase):
 
     def test_factor_double_counting_omission_and_duplicate(self):
         factor_accounting(['prior','gyro'],['prior','gyro'],['retained_uwb'])
-        for eliminated,retained in [(['prior','gyro'],['gyro']),(['prior'],[]),(['prior','gyro','gyro'],[])]:
+        for eliminated,retained in [(['prior','gyro'],['gyro']),(['prior'],[]),(['prior','gyro','gyro'],[]),(['prior','gyro'],['kept','kept'])]:
             with self.assertRaises(ValueError):factor_accounting(eliminated,['prior','gyro'],retained)
+
+    def test_condensed_constant_preserved(self):
+        j,r,a,c=self.system();left=j[:,:4];g=left.T@r
+        constant=float(r@r-g@np.linalg.solve(left.T@left,g)-c@c)
+        self.assertTrue(marginal_prior(j,r,a,c,discarded_constant=constant)['constant_cost_checked'])
+        with self.assertRaises(ValueError):marginal_prior(j,r,a,c,discarded_constant=constant+1)
 
     def test_full_coverage_not_favorable_subset(self):
         good=lambda t:{'state_time_s':t,'pose':[0,0,0],'accepted_graph':True,'status':'graph'}
