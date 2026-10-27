@@ -1,0 +1,674 @@
+{
+  "car2_archive_sha256": "1075a2dc3cb47bd260a9de34199e484e8256898eeb26f14b07ae65240c47f211",
+  "files": {
+    "src/wheeltec_robot.cpp": "4b70a6d4d3ee418a08fa5e753b133a0b726057cc3c4a60bcbefd81e62d9ca63e",
+    "src/Quaternion_Solution.cpp": "6aa43dbc2053807977f978e21feab8f9a91e7d52c43b0ce77eba0d7fb4eb96f9",
+    "include/wheeltec_robot.h": "99cb1778aa99a3e03804982cf173c28c55f59a93ef51572ccf17e72031f347ae"
+  },
+  "findings": {
+    "host_odom_heading": "integral of serial Robot_Vel.Z; separate packet field from gyro_z",
+    "host_imu_orientation": "gyro+accelerometer attitude; fixed 20Hz timestep; integral feedback gain zero",
+    "upstream_board_fusion": "UNKNOWN: MCU firmware not present; different fields do not prove statistical independence",
+    "car1_host_source": "NOT_IN_REGISTERED_ARCHIVE",
+    "deployed_binary_source_binding": "UNKNOWN for both vehicles",
+    "gravity_removal": "not performed in archived host publisher",
+    "covariance": "hardcoded placeholders; no calibration accepted",
+    "fast_inverse_sqrt": "uses long pointer reinterpretation; target-width and aliasing portability risk requires deployed-source/compiler/sizeof evidence; not diagnosed as a field failure"
+  },
+  "line_excerpts": {
+    "src/wheeltec_robot.cpp": [
+      {
+        "line": 258,
+        "text": "void turn_on_robot::Publish_ImuSensor()"
+      },
+      {
+        "line": 259,
+        "text": "{"
+      },
+      {
+        "line": 260,
+        "text": "  sensor_msgs::Imu Imu_Data_Pub; //Instantiate IMU topic data //实例化IMU话题数据"
+      },
+      {
+        "line": 261,
+        "text": "  Imu_Data_Pub.header.stamp = ros::Time::now(); "
+      },
+      {
+        "line": 262,
+        "text": "  Imu_Data_Pub.header.frame_id = gyro_frame_id; //IMU corresponds to TF coordinates, which is required to use the robot_pose_ekf feature pack "
+      },
+      {
+        "line": 263,
+        "text": "                                                //IMU对应TF坐标，使用robot_pose_ekf功能包需要设置此项"
+      },
+      {
+        "line": 264,
+        "text": "  Imu_Data_Pub.orientation.x = Mpu6050.orientation.x; //A quaternion represents a three-axis attitude //四元数表达三轴姿态"
+      },
+      {
+        "line": 265,
+        "text": "  Imu_Data_Pub.orientation.y = Mpu6050.orientation.y; "
+      },
+      {
+        "line": 266,
+        "text": "  Imu_Data_Pub.orientation.z = Mpu6050.orientation.z;"
+      },
+      {
+        "line": 267,
+        "text": "  Imu_Data_Pub.orientation.w = Mpu6050.orientation.w;"
+      },
+      {
+        "line": 268,
+        "text": "  Imu_Data_Pub.orientation_covariance[0] = 1e6; //Three-axis attitude covariance matrix //三轴姿态协方差矩阵"
+      },
+      {
+        "line": 269,
+        "text": "  Imu_Data_Pub.orientation_covariance[4] = 1e6;"
+      },
+      {
+        "line": 270,
+        "text": "  Imu_Data_Pub.orientation_covariance[8] = 1e-6;"
+      },
+      {
+        "line": 271,
+        "text": "  Imu_Data_Pub.angular_velocity.x = Mpu6050.angular_velocity.x; //Triaxial angular velocity //三轴角速度"
+      },
+      {
+        "line": 272,
+        "text": "  Imu_Data_Pub.angular_velocity.y = Mpu6050.angular_velocity.y;"
+      },
+      {
+        "line": 273,
+        "text": "  Imu_Data_Pub.angular_velocity.z = Mpu6050.angular_velocity.z;"
+      },
+      {
+        "line": 274,
+        "text": "  Imu_Data_Pub.angular_velocity_covariance[0] = 1e6; //Triaxial angular velocity covariance matrix //三轴角速度协方差矩阵"
+      },
+      {
+        "line": 275,
+        "text": "  Imu_Data_Pub.angular_velocity_covariance[4] = 1e6;"
+      },
+      {
+        "line": 276,
+        "text": "  Imu_Data_Pub.angular_velocity_covariance[8] = 1e-6;"
+      },
+      {
+        "line": 277,
+        "text": "  Imu_Data_Pub.linear_acceleration.x = Mpu6050.linear_acceleration.x; //Triaxial acceleration //三轴线性加速度"
+      },
+      {
+        "line": 278,
+        "text": "  Imu_Data_Pub.linear_acceleration.y = Mpu6050.linear_acceleration.y; "
+      },
+      {
+        "line": 279,
+        "text": "  Imu_Data_Pub.linear_acceleration.z = Mpu6050.linear_acceleration.z;  "
+      },
+      {
+        "line": 280,
+        "text": "  imu_publisher.publish(Imu_Data_Pub); //Pub IMU topic //发布IMU话题"
+      },
+      {
+        "line": 287,
+        "text": "void turn_on_robot::Publish_Odom()"
+      },
+      {
+        "line": 288,
+        "text": "{"
+      },
+      {
+        "line": 289,
+        "text": "    //Convert the Z-axis rotation Angle into a quaternion for expression "
+      },
+      {
+        "line": 290,
+        "text": "    //把Z轴转角转换为四元数进行表达"
+      },
+      {
+        "line": 291,
+        "text": "    geometry_msgs::Quaternion odom_quat = tf::createQuaternionMsgFromYaw(Robot_Pos.Z);"
+      },
+      {
+        "line": 292,
+        "text": ""
+      },
+      {
+        "line": 293,
+        "text": "    nav_msgs::Odometry odom; //Instance the odometer topic data //实例化里程计话题数据"
+      },
+      {
+        "line": 294,
+        "text": "    odom.header.stamp = ros::Time::now(); "
+      },
+      {
+        "line": 295,
+        "text": "    odom.header.frame_id = odom_frame_id; // Odometer TF parent coordinates //里程计TF父坐标"
+      },
+      {
+        "line": 296,
+        "text": "    odom.pose.pose.position.x = Robot_Pos.X; //Position //位置"
+      },
+      {
+        "line": 297,
+        "text": "    odom.pose.pose.position.y = Robot_Pos.Y;"
+      },
+      {
+        "line": 298,
+        "text": "    odom.pose.pose.position.z = Robot_Pos.Z;"
+      },
+      {
+        "line": 299,
+        "text": "    odom.pose.pose.orientation = odom_quat; //Posture, Quaternion converted by Z-axis rotation //姿态，通过Z轴转角转换的四元数"
+      },
+      {
+        "line": 300,
+        "text": ""
+      },
+      {
+        "line": 301,
+        "text": "    odom.child_frame_id = robot_frame_id; // Odometer TF subcoordinates //里程计TF子坐标"
+      },
+      {
+        "line": 302,
+        "text": "    odom.twist.twist.linear.x =  Robot_Vel.X; //Speed in the X direction //X方向速度"
+      },
+      {
+        "line": 303,
+        "text": "    odom.twist.twist.linear.y =  Robot_Vel.Y; //Speed in the Y direction //Y方向速度"
+      },
+      {
+        "line": 304,
+        "text": "    odom.twist.twist.angular.z = Robot_Vel.Z; //Angular velocity around the Z axis //绕Z轴角速度 "
+      },
+      {
+        "line": 596,
+        "text": "        Receive_Data.Flag_Stop=Receive_Data.rx[1]; //set aside //预留位"
+      },
+      {
+        "line": 597,
+        "text": "        Robot_Vel.X = Odom_Trans(Receive_Data.rx[2],Receive_Data.rx[3]); //Get the speed of the moving chassis in the X direction //获取运动底盘X方向速度"
+      },
+      {
+        "line": 598,
+        "text": "          "
+      },
+      {
+        "line": 599,
+        "text": "        Robot_Vel.Y = Odom_Trans(Receive_Data.rx[4],Receive_Data.rx[5]); //Get the speed of the moving chassis in the Y direction, The Y speed is only valid in the omnidirectional mobile robot chassis"
+      },
+      {
+        "line": 600,
+        "text": "                                                                          //获取运动底盘Y方向速度，Y速度仅在全向移动机器人底盘有效"
+      },
+      {
+        "line": 601,
+        "text": "        Robot_Vel.Z = Odom_Trans(Receive_Data.rx[6],Receive_Data.rx[7]); //Get the speed of the moving chassis in the Z direction //获取运动底盘Z方向速度   "
+      },
+      {
+        "line": 602,
+        "text": "          "
+      },
+      {
+        "line": 603,
+        "text": "        //MPU6050 stands for IMU only and does not refer to a specific model. It can be either MPU6050 or MPU9250"
+      },
+      {
+        "line": 604,
+        "text": "        //Mpu6050仅代表IMU，不指代特定型号，既可以是MPU6050也可以是MPU9250"
+      },
+      {
+        "line": 605,
+        "text": "        Mpu6050_Data.accele_x_data = IMU_Trans(Receive_Data.rx[8],Receive_Data.rx[9]);   //Get the X-axis acceleration of the IMU     //获取IMU的X轴加速度  "
+      },
+      {
+        "line": 606,
+        "text": "        Mpu6050_Data.accele_y_data = IMU_Trans(Receive_Data.rx[10],Receive_Data.rx[11]); //Get the Y-axis acceleration of the IMU     //获取IMU的Y轴加速度"
+      },
+      {
+        "line": 607,
+        "text": "        Mpu6050_Data.accele_z_data = IMU_Trans(Receive_Data.rx[12],Receive_Data.rx[13]); //Get the Z-axis acceleration of the IMU     //获取IMU的Z轴加速度"
+      },
+      {
+        "line": 608,
+        "text": "        Mpu6050_Data.gyros_x_data = IMU_Trans(Receive_Data.rx[14],Receive_Data.rx[15]);  //Get the X-axis angular velocity of the IMU //获取IMU的X轴角速度  "
+      },
+      {
+        "line": 609,
+        "text": "        Mpu6050_Data.gyros_y_data = IMU_Trans(Receive_Data.rx[16],Receive_Data.rx[17]);  //Get the Y-axis angular velocity of the IMU //获取IMU的Y轴角速度  "
+      },
+      {
+        "line": 610,
+        "text": "        Mpu6050_Data.gyros_z_data = IMU_Trans(Receive_Data.rx[18],Receive_Data.rx[19]);  //Get the Z-axis angular velocity of the IMU //获取IMU的Z轴角速度  "
+      },
+      {
+        "line": 611,
+        "text": "        //Linear acceleration unit conversion is related to the range of IMU initialization of STM32, where the range is ±2g=19.6m/s^2"
+      },
+      {
+        "line": 612,
+        "text": "        //线性加速度单位转化，和STM32的IMU初始化的时候的量程有关,这里量程±2g=19.6m/s^2"
+      },
+      {
+        "line": 613,
+        "text": "        Mpu6050.linear_acceleration.x = Mpu6050_Data.accele_x_data / ACCEl_RATIO;"
+      },
+      {
+        "line": 614,
+        "text": "        Mpu6050.linear_acceleration.y = Mpu6050_Data.accele_y_data / ACCEl_RATIO;"
+      },
+      {
+        "line": 615,
+        "text": "        Mpu6050.linear_acceleration.z = Mpu6050_Data.accele_z_data / ACCEl_RATIO;"
+      },
+      {
+        "line": 616,
+        "text": "        //The gyroscope unit conversion is related to the range of STM32's IMU when initialized. Here, the range of IMU's gyroscope is ±500°/s"
+      },
+      {
+        "line": 617,
+        "text": "        //Because the robot generally has a slow Z-axis speed, reducing the range can improve the accuracy"
+      },
+      {
+        "line": 618,
+        "text": "        //陀螺仪单位转化，和STM32的IMU初始化的时候的量程有关，这里IMU的陀螺仪的量程是±500°/s"
+      },
+      {
+        "line": 619,
+        "text": "        //因为机器人一般Z轴速度不快，降低量程可以提高精度"
+      },
+      {
+        "line": 620,
+        "text": "        Mpu6050.angular_velocity.x =  Mpu6050_Data.gyros_x_data * GYROSCOPE_RATIO;"
+      },
+      {
+        "line": 621,
+        "text": "        Mpu6050.angular_velocity.y =  Mpu6050_Data.gyros_y_data * GYROSCOPE_RATIO;"
+      },
+      {
+        "line": 622,
+        "text": "        Mpu6050.angular_velocity.z =  Mpu6050_Data.gyros_z_data * GYROSCOPE_RATIO;"
+      },
+      {
+        "line": 663,
+        "text": "    if (true == Get_Sensor_Data_New()) //The serial port reads and verifies the data sent by the lower computer, and then the data is converted to international units"
+      },
+      {
+        "line": 664,
+        "text": "                                       //通过串口读取并校验下位机发送过来的数据，然后数据转换为国际单位"
+      },
+      {
+        "line": 665,
+        "text": "    {"
+      },
+      {
+        "line": 666,
+        "text": "      _Now = ros::Time::now();"
+      },
+      {
+        "line": 667,
+        "text": "      if(_Last_Time.toSec()==0) _Last_Time=_Now; //Perform this operation when entering for the first time to avoid excessive integration time"
+      },
+      {
+        "line": 668,
+        "text": "                                                 //首次进入时进行此操作，避免积分时间过大"
+      },
+      {
+        "line": 669,
+        "text": "      Sampling_Time = (_Now - _Last_Time).toSec(); //Retrieves time interval, which is used to integrate velocity to obtain displacement (mileage) "
+      },
+      {
+        "line": 670,
+        "text": "                                                   //获取时间间隔，用于积分速度获得位移(里程)"
+      },
+      {
+        "line": 671,
+        "text": "      "
+      },
+      {
+        "line": 672,
+        "text": "      //Odometer correction parameters"
+      },
+      {
+        "line": 673,
+        "text": "      //里程计误差修正"
+      },
+      {
+        "line": 674,
+        "text": "      Robot_Vel.X=Robot_Vel.X*odom_x_scale;"
+      },
+      {
+        "line": 675,
+        "text": "      Robot_Vel.Y=Robot_Vel.Y*odom_y_scale;"
+      },
+      {
+        "line": 676,
+        "text": "      if(Robot_Vel.Z>=0)"
+      },
+      {
+        "line": 677,
+        "text": "        Robot_Vel.Z=Robot_Vel.Z*odom_z_scale_positive;"
+      },
+      {
+        "line": 678,
+        "text": "      else"
+      },
+      {
+        "line": 679,
+        "text": "        Robot_Vel.Z=Robot_Vel.Z*odom_z_scale_negative;"
+      },
+      {
+        "line": 680,
+        "text": ""
+      },
+      {
+        "line": 681,
+        "text": "      //Speed * Time = displacement (odometer)"
+      },
+      {
+        "line": 682,
+        "text": "      //速度*时间=位移（里程计）"
+      },
+      {
+        "line": 683,
+        "text": "      Robot_Pos.X+=(Robot_Vel.X * cos(Robot_Pos.Z) - Robot_Vel.Y * sin(Robot_Pos.Z)) * Sampling_Time; //Calculate the displacement in the X direction, unit: m //计算X方向的位移，单位：m"
+      },
+      {
+        "line": 684,
+        "text": "      Robot_Pos.Y+=(Robot_Vel.X * sin(Robot_Pos.Z) + Robot_Vel.Y * cos(Robot_Pos.Z)) * Sampling_Time; //Calculate the displacement in the Y direction, unit: m //计算Y方向的位移，单位：m"
+      },
+      {
+        "line": 685,
+        "text": "      Robot_Pos.Z+=Robot_Vel.Z * Sampling_Time; //The angular displacement about the Z axis, in rad //绕Z轴的角位移，单位：rad "
+      },
+      {
+        "line": 686,
+        "text": ""
+      },
+      {
+        "line": 687,
+        "text": "      //Calculate the three-axis attitude from the IMU with the angular velocity around the three-axis and the three-axis acceleration"
+      },
+      {
+        "line": 688,
+        "text": "      //通过IMU绕三轴角速度与三轴加速度计算三轴姿态"
+      },
+      {
+        "line": 689,
+        "text": "      Quaternion_Solution(Mpu6050.angular_velocity.x, Mpu6050.angular_velocity.y, Mpu6050.angular_velocity.z,\\"
+      },
+      {
+        "line": 690,
+        "text": "                Mpu6050.linear_acceleration.x, Mpu6050.linear_acceleration.y, Mpu6050.linear_acceleration.z);"
+      },
+      {
+        "line": 691,
+        "text": ""
+      },
+      {
+        "line": 692,
+        "text": "      Publish_Odom();      //Pub the speedometer topic //发布里程计话题"
+      },
+      {
+        "line": 693,
+        "text": "      Publish_ImuSensor(); //Pub the IMU topic //发布IMU话题    "
+      },
+      {
+        "line": 694,
+        "text": "      Publish_Voltage();   //Pub the topic of power supply voltage //发布电源电压话题"
+      },
+      {
+        "line": 695,
+        "text": ""
+      },
+      {
+        "line": 696,
+        "text": "      _Last_Time = _Now; //Record the time and use it to calculate the time interval //记录时间，用于计算时间间隔"
+      }
+    ],
+    "src/Quaternion_Solution.cpp": [
+      {
+        "line": 1,
+        "text": ""
+      },
+      {
+        "line": 2,
+        "text": "#include \"Quaternion_Solution.h\""
+      },
+      {
+        "line": 3,
+        "text": "#define SAMPLING_FREQ 20.0f // 采样频率"
+      },
+      {
+        "line": 4,
+        "text": "/**************************************"
+      },
+      {
+        "line": 5,
+        "text": "Date: May 31, 2020"
+      },
+      {
+        "line": 6,
+        "text": "Function: 平方根倒数 求四元数用到"
+      },
+      {
+        "line": 7,
+        "text": "***************************************/"
+      },
+      {
+        "line": 8,
+        "text": "float InvSqrt(float number)"
+      },
+      {
+        "line": 9,
+        "text": "{"
+      },
+      {
+        "line": 10,
+        "text": "  volatile long i;"
+      },
+      {
+        "line": 11,
+        "text": "    volatile float x, y;"
+      },
+      {
+        "line": 12,
+        "text": "    volatile const float f = 1.5F;"
+      },
+      {
+        "line": 13,
+        "text": "    x = number * 0.5F;"
+      },
+      {
+        "line": 14,
+        "text": "    y = number;"
+      },
+      {
+        "line": 15,
+        "text": "    i = * (( long * ) &y);"
+      },
+      {
+        "line": 16,
+        "text": "    i = 0x5f375a86 - ( i >> 1 );"
+      },
+      {
+        "line": 17,
+        "text": "    y = * (( float * ) &i);"
+      },
+      {
+        "line": 18,
+        "text": "    y = y * ( f - ( x * y * y ) );"
+      },
+      {
+        "line": 19,
+        "text": ""
+      },
+      {
+        "line": 20,
+        "text": "  return y;"
+      },
+      {
+        "line": 21,
+        "text": "}"
+      },
+      {
+        "line": 22,
+        "text": "/**************************************"
+      },
+      {
+        "line": 23,
+        "text": "Date: May 31, 2020"
+      },
+      {
+        "line": 24,
+        "text": "Function: 四元数解算"
+      },
+      {
+        "line": 25,
+        "text": "***************************************/"
+      },
+      {
+        "line": 26,
+        "text": "volatile float twoKp = 1.0f;     // 2 * proportional gain (Kp)"
+      },
+      {
+        "line": 27,
+        "text": "volatile float twoKi = 0.0f;     // 2 * integral gain (Ki)"
+      },
+      {
+        "line": 70,
+        "text": "  // Integrate rate of change of quaternion"
+      },
+      {
+        "line": 71,
+        "text": "  gx *= (0.5f * (1.0f / SAMPLING_FREQ));   // pre-multiply common factors"
+      },
+      {
+        "line": 72,
+        "text": "  gy *= (0.5f * (1.0f / SAMPLING_FREQ));"
+      },
+      {
+        "line": 73,
+        "text": "  gz *= (0.5f * (1.0f / SAMPLING_FREQ));"
+      },
+      {
+        "line": 74,
+        "text": "  qa = q0;"
+      },
+      {
+        "line": 75,
+        "text": "  qb = q1;"
+      },
+      {
+        "line": 76,
+        "text": "  qc = q2;"
+      },
+      {
+        "line": 77,
+        "text": "  q0 += (-qb * gx - qc * gy - q3 * gz);"
+      },
+      {
+        "line": 78,
+        "text": "  q1 += (qa * gx + qc * gz - q3 * gy);"
+      },
+      {
+        "line": 79,
+        "text": "  q2 += (qa * gy - qb * gz + q3 * gx);"
+      },
+      {
+        "line": 80,
+        "text": "  q3 += (qa * gz + qb * gy - qc * gx); "
+      },
+      {
+        "line": 81,
+        "text": "  // Normalise quaternion"
+      },
+      {
+        "line": 82,
+        "text": "  recipNorm = InvSqrt(q0 * q0 + q1 * q1 + q2 * q2 + q3 * q3);"
+      },
+      {
+        "line": 83,
+        "text": "  q0 *= recipNorm;"
+      },
+      {
+        "line": 84,
+        "text": "  q1 *= recipNorm;"
+      },
+      {
+        "line": 85,
+        "text": "  q2 *= recipNorm;"
+      },
+      {
+        "line": 86,
+        "text": "  q3 *= recipNorm;"
+      },
+      {
+        "line": 87,
+        "text": "  Mpu6050.orientation.w = q0;"
+      },
+      {
+        "line": 88,
+        "text": "  Mpu6050.orientation.x = q1;"
+      },
+      {
+        "line": 89,
+        "text": "  Mpu6050.orientation.y = q2;"
+      },
+      {
+        "line": 90,
+        "text": "  Mpu6050.orientation.z = q3;"
+      },
+      {
+        "line": 91,
+        "text": "}"
+      }
+    ],
+    "include/wheeltec_robot.h": [
+      {
+        "line": 64,
+        "text": "//Relative to the range set by the IMU gyroscope, the range is ±500°, corresponding data range is ±32768"
+      },
+      {
+        "line": 65,
+        "text": "//The gyroscope raw data is converted in radian (rad) units, 1/65.5/57.30=0.00026644"
+      },
+      {
+        "line": 66,
+        "text": "//与IMU陀螺仪设置的量程有关，量程±500°，对应数据范围±32768"
+      },
+      {
+        "line": 67,
+        "text": "//陀螺仪原始数据转换位弧度(rad)单位，1/65.5/57.30=0.00026644"
+      },
+      {
+        "line": 68,
+        "text": "#define GYROSCOPE_RATIO   0.00026644f"
+      },
+      {
+        "line": 69,
+        "text": "//Relates to the range set by the IMU accelerometer, range is ±2g, corresponding data range is ±32768"
+      },
+      {
+        "line": 70,
+        "text": "//Accelerometer original data conversion bit m/s^2 units, 32768/2g=32768/19.6=1671.84\t"
+      },
+      {
+        "line": 71,
+        "text": "//与IMU加速度计设置的量程有关，量程±2g，对应数据范围±32768"
+      },
+      {
+        "line": 72,
+        "text": "//加速度计原始数据转换位m/s^2单位，32768/2g=32768/19.6=1671.84"
+      },
+      {
+        "line": 73,
+        "text": "#define ACCEl_RATIO \t  1671.84f  \t"
+      },
+      {
+        "line": 74,
+        "text": ""
+      }
+    ]
+  }
+}

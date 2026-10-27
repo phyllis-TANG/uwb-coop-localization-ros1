@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "scope": "source and sensor-readiness diagnosis only; not localization or calibration",
+  "experiments": ["T08", "T10"],
+  "archive_sha256": "b7cec6f75584e583e66946fd669dc7495d10e3bcbebc0b67fa480b65b53fd1bf",
+  "nearest_header_tolerance_ns": 2000000,
+  "pairing_semantics": "offline nearest header, one-to-one, same host; never a causal fusion admission rule or independent synchronization bound",
+  "quiet_candidate_duration_ns": 5000000000,
+  "quiet_candidate_semantics": "first 5s recorder interval if no recorded nonzero command; not proof of physical rest or accepted bias/noise calibration",
+  "derivative_maximum_header_gap_ns": 100000000,
+  "quaternion_handling": "normalize only temporary diagnostic copy; preserve original norm and bytes",
+  "holdout_policy": "T09 T11 T13 T15 not decoded or evaluated",
+  "fusion_parameters_fitted": false,
+  "estimator_modified": false
+}

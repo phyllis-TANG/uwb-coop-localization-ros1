@@ -1,0 +1,115 @@
+{
+  "source_execution_commit": "d3439ebefc36eeee184131038b2f209838431cc4",
+  "original_data_or_estimator_modified": false,
+  "tests": 18,
+  "postprocessing_plot_reviewed": true,
+  "VM_command_bash_syntax_checked": true,
+  "raw_bag_archive": "field-data-20261025/UWB_field_20261024_25_20261025_071212.tar.gz",
+  "input_archive_sha256": "b7cec6f75584e583e66946fd669dc7495d10e3bcbebc0b67fa480b65b53fd1bf",
+  "files": {
+    "VM_COMMANDS.md": {
+      "sha256": "94e1024a1486b268ef6215bceec546dfd964fccbb27f827ca5680c7aafdda2da",
+      "bytes": 2395
+    },
+    "COLLECTOR_CHECK.json": {
+      "sha256": "bc700e77052b6b3739a48aea3ee9d4e6f2489cc7978e866b00c015393609d0b2",
+      "bytes": 222
+    },
+    "INTEGRATION_PLAN.md": {
+      "sha256": "dc0bf67dacb9cb213fab9c631781cee669552a8969b0b0e11058c54330cbf5f9",
+      "bytes": 2454
+    },
+    "audit.json": {
+      "sha256": "ead7e89540e328ee774daf5f00d8e1100fea278f6682faf50e937502501cd52b",
+      "bytes": 24339
+    },
+    "PR51_value_crosscheck.json": {
+      "sha256": "2e48e28cb92afc54375c9f81711a1351af41403679db37d73cac6ca05653d65e",
+      "bytes": 266
+    },
+    "HANDOFF.md": {
+      "sha256": "a994c521d80f5a6d5e77636d79760fc8a735c38be38ea26c3eedae76835e93e6",
+      "bytes": 2401
+    },
+    "existing_files_extension.json": {
+      "sha256": "6af13eb3096dcbd87374d72cd98cecad5e16394ae1271b30146038605ad8920f",
+      "bytes": 22184
+    },
+    "source_audit.json": {
+      "sha256": "3e5e853e235a26d45610a821b689db0bb1db490c5a6cafdb4a837ba6f6f1ab2d",
+      "bytes": 21262
+    },
+    "READINESS.json": {
+      "sha256": "0257efdaf68978aa916631d200998e271acaaeb1a80d23ff3857331c0b080442",
+      "bytes": 2319
+    },
+    "imu_odom_signals.png": {
+      "sha256": "7119f4c74f10c4e856fbc0a269b05496e045fac917402eb60071c75c13154f4e",
+      "bytes": 220233
+    },
+    "OFFLINE_TESTS.log": {
+      "sha256": "794891d17c05d75e387b8545017abe3ecfa14060cfd2bdd443b5e4ce620974a2",
+      "bytes": 1205
+    },
+    "plot_audit.py": {
+      "sha256": "2b4bcf5b4f3e1f2257e90abf2683da4d1cdf3e8383a990ee0246e78c1e0f1864",
+      "bytes": 1971
+    },
+    "pair_observations.csv.gz": {
+      "sha256": "d8c61f56601035752cc7b522f306171c43bc7988919a367ac69285bf6932a798",
+      "bytes": 361847
+    },
+    "OFFLINE_EVIDENCE.md": {
+      "sha256": "c428122333e7e882124b94fe41fd7b30f85f852861c3a776169e81fc232ce668",
+      "bytes": 5528
+    },
+    "REPORT.md": {
+      "sha256": "40862265406fa93be041ede2550214077022bbb36d1a1162e44577b1c31b43c3",
+      "bytes": 6790
+    },
+    "TESTS.log": {
+      "sha256": "224b57ea9866ff6d9e2e3dd8181bab965b6099d8995d6df2573b48e90ba52f79",
+      "bytes": 2307
+    },
+    "PAIR_READBACK.json": {
+      "sha256": "4abe2c3d40d0b9ee61e77bb84307be8e6fada101d06e70a7f05c44aa0d078720",
+      "bytes": 182
+    },
+    "VM_SOURCE_EVIDENCE.md": {
+      "sha256": "8e54983b84320a0a18ae6bf5e9f0f8a65718ab3596060c10ed1915fc4c79e800",
+      "bytes": 4220
+    },
+    "vm_source_comparison.json": {
+      "sha256": "9b880814e87ca745a26f47b739ca85b7d72f9f1e1a76db0006f91bd7e1072de1",
+      "bytes": 4400
+    },
+    "LAB_RECHECK_CHECKLIST.md": {
+      "sha256": "470dd0871a9b07b4ca0ef6c6356fee8af7606a89699cf0865f88ff0bfc88d3de",
+      "bytes": 12737
+    }
+  },
+  "offline_extension_execution_commit": "b9bb51cf3001991a101c8395f495998fbb809089",
+  "offline_association_signal_tests": 8,
+  "offline_pair_rows": 19953,
+  "source_capture_required_for_prototype": false,
+  "original_audit_tests": 16,
+  "new_additional_tests": 2,
+  "vm_reference_source_comparison": {
+    "auditor_path": "tools/field_20261024_25/imu_odom_audit/vm_source_audit.py",
+    "auditor_sha256": "b5710aa05443a4b366e8327098c09e0319ad49383b882ba42be6f512ab09c7ab",
+    "uploaded_files": 4,
+    "total_uploaded_bytes": 46235,
+    "comparison_executed": true,
+    "vendor_code_executed": false,
+    "new_unit_tests": 0,
+    "fusion_implemented": false,
+    "historical_deployment_proved": false
+  },
+  "next_lab_checklist": {
+    "path": "LAB_RECHECK_CHECKLIST.md",
+    "executed_on_vehicles": false,
+    "bash_blocks_syntax_checked": 4,
+    "vehicle_commands_executed": false,
+    "new_algorithm_tests": 0
+  }
+}

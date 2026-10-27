@@ -1,0 +1,641 @@
+{
+  "scope": "source/data readiness audit only; no IMU fusion implemented",
+  "base_commit": "d3439ebefc36eeee184131038b2f209838431cc4",
+  "source_sha256": {
+    "tools/field_20261024_25/imu_odom_audit/audit.py": "9f9e59ef68360ea30138a45363e297b2b7ff4effa8e441081664b31626a2ac95",
+    "tools/field_20261024_25/imu_odom_audit/test_audit.py": "5edf66b155ee000528ca5e97c5a7ac51bbfdb7e850cf03ea8ca2dc3450d77574",
+    "tools/field_20261024_25/imu_odom_audit/collect_car_sources.py": "d5dad52ca8bad95953a175a1c545de5cc30268b04e393cde30fb5a2c4ad6b889",
+    "tools/field_20261024_25/imu_odom_audit/protocol.json": "7da0ba5f6fa6f68f17fd81a8af67f5f620c749eb4f226403544c2e13e9da5c44",
+    "tools/field_20261024_25/bag_decoder.py": "acbe5b1727c4e1fbebc4a3bdc9c735ad9cde682e8c46baeff5654742297143d0"
+  },
+  "protocol": {
+    "schema_version": 1,
+    "scope": "source and sensor-readiness diagnosis only; not localization or calibration",
+    "experiments": [
+      "T08",
+      "T10"
+    ],
+    "archive_sha256": "b7cec6f75584e583e66946fd669dc7495d10e3bcbebc0b67fa480b65b53fd1bf",
+    "nearest_header_tolerance_ns": 2000000,
+    "pairing_semantics": "offline nearest header, one-to-one, same host; never a causal fusion admission rule or independent synchronization bound",
+    "quiet_candidate_duration_ns": 5000000000,
+    "quiet_candidate_semantics": "first 5s recorder interval if no recorded nonzero command; not proof of physical rest or accepted bias/noise calibration",
+    "derivative_maximum_header_gap_ns": 100000000,
+    "quaternion_handling": "normalize only temporary diagnostic copy; preserve original norm and bytes",
+    "holdout_policy": "T09 T11 T13 T15 not decoded or evaluated",
+    "fusion_parameters_fitted": false,
+    "estimator_modified": false
+  },
+  "archive_sha256": "b7cec6f75584e583e66946fd669dc7495d10e3bcbebc0b67fa480b65b53fd1bf",
+  "source_findings": {
+    "host_odom_heading": "integral of serial Robot_Vel.Z; separate packet field from gyro_z",
+    "host_imu_orientation": "gyro+accelerometer attitude; fixed 20Hz timestep; integral feedback gain zero",
+    "upstream_board_fusion": "UNKNOWN: MCU firmware not present; different fields do not prove statistical independence",
+    "car1_host_source": "NOT_IN_REGISTERED_ARCHIVE",
+    "deployed_binary_source_binding": "UNKNOWN for both vehicles",
+    "gravity_removal": "not performed in archived host publisher",
+    "covariance": "hardcoded placeholders; no calibration accepted",
+    "fast_inverse_sqrt": "uses long pointer reinterpretation; target-width and aliasing portability risk requires deployed-source/compiler/sizeof evidence; not diagnosed as a field failure"
+  },
+  "experiments": {
+    "T08": {
+      "input_sha256": "cf3b4de0f20424d02779aeeb416a4fb16d77bb1f5333344d48ebf446a3884ada",
+      "origin_receive_ns": 1792922800963481831,
+      "inventory": {
+        "bag_message_count": 70766,
+        "selected_topics": {
+          "/car1/imu": {
+            "type": "sensor_msgs/Imu",
+            "md5sum": "6a62c6daae103f4ff57a132d6f95cec2",
+            "callerid": "/car1/wheeltec_robot"
+          },
+          "/car1/odom": {
+            "type": "nav_msgs/Odometry",
+            "md5sum": "cd5e73d190d741a2f92e81eda573aca7",
+            "callerid": "/car1/wheeltec_robot"
+          },
+          "/car2/imu": {
+            "type": "sensor_msgs/Imu",
+            "md5sum": "6a62c6daae103f4ff57a132d6f95cec2",
+            "callerid": "/car2/wheeltec_robot"
+          },
+          "/car2/odom": {
+            "type": "nav_msgs/Odometry",
+            "md5sum": "cd5e73d190d741a2f92e81eda573aca7",
+            "callerid": "/car2/wheeltec_robot"
+          },
+          "/car2/cmd_vel": {
+            "type": "geometry_msgs/Twist",
+            "md5sum": "9f195f881246fdfa2798d1d3eebca84a",
+            "callerid": "/car2_relative_motion_61227_1792922928172"
+          }
+        }
+      },
+      "vehicles": {
+        "car1": {
+          "imu_timing": {
+            "count": 4883,
+            "header_delta_ns": {
+              "n": 4882,
+              "mean": 50001643.58582548,
+              "std": 97415.6576646784,
+              "minimum": 46252549.0,
+              "median": 50001391.5,
+              "maximum": 53703582.0
+            },
+            "nonpositive_header_steps": 0,
+            "gaps_over_100ms": 0,
+            "nominal_header_rate_hz": 19.999342587280093
+          },
+          "odom_timing": {
+            "count": 4879,
+            "header_delta_ns": {
+              "n": 4878,
+              "mean": 50001658.45694957,
+              "std": 96480.23295153375,
+              "minimum": 46264424.0,
+              "median": 50001616.5,
+              "maximum": 53684727.0
+            },
+            "nonpositive_header_steps": 0,
+            "gaps_over_100ms": 0,
+            "nominal_header_rate_hz": 19.999336639223277
+          },
+          "imu_frames": [
+            "car1/gyro_link"
+          ],
+          "odom_frames": [
+            "car1/odom"
+          ],
+          "odom_children": [
+            "car1/base_footprint"
+          ],
+          "quaternion_norm": {
+            "n": 4883,
+            "mean": 0.9983133658550567,
+            "std": 2.8374241746443673e-08,
+            "minimum": 0.9983132733974653,
+            "median": 0.998313364978333,
+            "maximum": 0.9983134560079557
+          },
+          "acceleration_norm_m_s2": {
+            "n": 4883,
+            "mean": 9.787777172617519,
+            "std": 0.01793440883597422,
+            "minimum": 9.629316299255372,
+            "median": 9.787396244920393,
+            "maximum": 9.924810617059824
+          },
+          "gyro_z_rad_s": {
+            "n": 4883,
+            "mean": -0.0007999202472332006,
+            "std": 0.0004323064362584393,
+            "minimum": -0.0026644000317901373,
+            "median": -0.0007993200561031699,
+            "maximum": 0.0007993200561031699
+          },
+          "covariance_values": {
+            "orientation_covariance": {
+              "[1000000.0, 0.0, 0.0, 0.0, 1000000.0, 0.0, 0.0, 0.0, 1e-06]": 4883
+            },
+            "angular_velocity_covariance": {
+              "[1000000.0, 0.0, 0.0, 0.0, 1000000.0, 0.0, 0.0, 0.0, 1e-06]": 4883
+            },
+            "linear_acceleration_covariance": {
+              "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]": 4883
+            }
+          },
+          "quiet_candidate": {
+            "scope": "first recorder-domain 5s without recorded nonzero command; NOT independent proof of physical rest",
+            "accepted": true,
+            "gyro_z": {
+              "n": 130,
+              "mean": -0.0007644778771254306,
+              "std": 0.0003715322117807157,
+              "minimum": -0.0018650800921022892,
+              "median": -0.0007993200561031699,
+              "maximum": 0.0
+            },
+            "noise_calibration_accepted": false,
+            "bias_applied_to_any_estimator": false
+          },
+          "relation": {
+            "paired_rows": 4879,
+            "nearest_pairing_offline_only": true,
+            "imu_minus_odom_header_ns": {
+              "n": 4879,
+              "mean": 31180.608116417297,
+              "std": 5748.6569880955485,
+              "minimum": 23127.0,
+              "median": 29586.0,
+              "maximum": 104695.0
+            },
+            "gyro_z_minus_odom_angular_z": {
+              "n": 4879,
+              "mean": -0.000799975348870818,
+              "std": 0.0004323657638367637,
+              "minimum": -0.0026644000317901373,
+              "median": -0.0007993200561031699,
+              "maximum": 0.0007993200561031699
+            },
+            "gyro_z_on_odom_rate": {
+              "identifiable": false,
+              "correlation": null,
+              "slope": null,
+              "intercept": null
+            },
+            "rate_equality_fraction": 0.043041606886657105,
+            "physical_clock_offset_estimated": false,
+            "source_independence_confirmed": false,
+            "odom_yaw_increment_minus_current_rate_dt_rad": {
+              "n": 4878,
+              "mean": 0.0,
+              "std": 0.0,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.0
+            },
+            "accepted_odom_intervals": 4878,
+            "odom_accepted_increment_sum_rad": 0.0,
+            "gyro_trapezoid_sum_rad": -0.19527453456669405,
+            "integral_comparison_is_ground_truth": false
+          }
+        },
+        "car2": {
+          "imu_timing": {
+            "count": 4867,
+            "header_delta_ns": {
+              "n": 4866,
+              "mean": 49999189.976366624,
+              "std": 59425.02290641135,
+              "minimum": 49472309.0,
+              "median": 49999115.0,
+              "maximum": 50597227.0
+            },
+            "nonpositive_header_steps": 0,
+            "gaps_over_100ms": 0,
+            "nominal_header_rate_hz": 20.000324014702542
+          },
+          "odom_timing": {
+            "count": 4861,
+            "header_delta_ns": {
+              "n": 4860,
+              "mean": 49999183.36934157,
+              "std": 52202.845366603855,
+              "minimum": 49470262.0,
+              "median": 49999285.0,
+              "maximum": 50581131.0
+            },
+            "nonpositive_header_steps": 0,
+            "gaps_over_100ms": 0,
+            "nominal_header_rate_hz": 20.000326657598546
+          },
+          "imu_frames": [
+            "car2/gyro_link"
+          ],
+          "odom_frames": [
+            "car2/odom"
+          ],
+          "odom_children": [
+            "car2/base_footprint"
+          ],
+          "quaternion_norm": {
+            "n": 4867,
+            "mean": 0.9983133694021259,
+            "std": 3.1961878786610784e-08,
+            "minimum": 0.9983131674567445,
+            "median": 0.9983133703856396,
+            "maximum": 0.9983134977790167
+          },
+          "acceleration_norm_m_s2": {
+            "n": 4867,
+            "mean": 9.75802530969555,
+            "std": 0.018069327028055658,
+            "minimum": 9.664838240485492,
+            "median": 9.76064674239907,
+            "maximum": 9.828982195872424
+          },
+          "gyro_z_rad_s": {
+            "n": 4867,
+            "mean": -0.009007391256827708,
+            "std": 0.038813457756821074,
+            "minimum": -0.4668028950691223,
+            "median": -0.0018650800921022892,
+            "maximum": 0.13801592588424683
+          },
+          "covariance_values": {
+            "orientation_covariance": {
+              "[1000000.0, 0.0, 0.0, 0.0, 1000000.0, 0.0, 0.0, 0.0, 1e-06]": 4867
+            },
+            "angular_velocity_covariance": {
+              "[1000000.0, 0.0, 0.0, 0.0, 1000000.0, 0.0, 0.0, 0.0, 1e-06]": 4867
+            },
+            "linear_acceleration_covariance": {
+              "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]": 4867
+            }
+          },
+          "quiet_candidate": {
+            "scope": "first recorder-domain 5s without recorded nonzero command; NOT independent proof of physical rest",
+            "accepted": true,
+            "gyro_z": {
+              "n": 114,
+              "mean": -0.0017996386741288006,
+              "std": 0.0003710767724813613,
+              "minimum": -0.0026644000317901373,
+              "median": -0.0018650800921022892,
+              "maximum": -0.0007993200561031699
+            },
+            "noise_calibration_accepted": false,
+            "bias_applied_to_any_estimator": false
+          },
+          "relation": {
+            "paired_rows": 4861,
+            "nearest_pairing_offline_only": true,
+            "imu_minus_odom_header_ns": {
+              "n": 4861,
+              "mean": 46283.827196050195,
+              "std": 12308.140403903011,
+              "minimum": 12833.0,
+              "median": 44832.0,
+              "maximum": 483754.0
+            },
+            "gyro_z_minus_odom_angular_z": {
+              "n": 4861,
+              "mean": -0.0023656410982361383,
+              "std": 0.009539830827621824,
+              "minimum": -0.11622455716133118,
+              "median": -0.0018650800921022892,
+              "maximum": 0.12997950613498688
+            },
+            "gyro_z_on_odom_rate": {
+              "identifiable": true,
+              "correlation": 0.9694120553110205,
+              "slope": 0.9898371256822043,
+              "intercept": -0.0024332333070366,
+              "fit_is_calibration": false,
+              "correlation_proves_independence": false
+            },
+            "rate_equality_fraction": 0.0,
+            "physical_clock_offset_estimated": false,
+            "source_independence_confirmed": false,
+            "odom_yaw_increment_minus_current_rate_dt_rad": {
+              "n": 4860,
+              "mean": -7.881261914298186e-10,
+              "std": 2.7674329259821777e-07,
+              "minimum": -5.995989132374924e-06,
+              "median": 0.0,
+              "maximum": 5.317532165942732e-06
+            },
+            "accepted_odom_intervals": 4860,
+            "odom_accepted_increment_sum_rad": -1.6164111178368332,
+            "gyro_trapezoid_sum_rad": -2.191812546061585,
+            "integral_comparison_is_ground_truth": false
+          }
+        }
+      }
+    },
+    "T10": {
+      "input_sha256": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558",
+      "origin_receive_ns": 1792925285431466217,
+      "inventory": {
+        "bag_message_count": 16998,
+        "selected_topics": {
+          "/car1/imu": {
+            "type": "sensor_msgs/Imu",
+            "md5sum": "6a62c6daae103f4ff57a132d6f95cec2",
+            "callerid": "/car1/wheeltec_robot"
+          },
+          "/car1/odom": {
+            "type": "nav_msgs/Odometry",
+            "md5sum": "cd5e73d190d741a2f92e81eda573aca7",
+            "callerid": "/car1/wheeltec_robot"
+          },
+          "/car2/imu": {
+            "type": "sensor_msgs/Imu",
+            "md5sum": "6a62c6daae103f4ff57a132d6f95cec2",
+            "callerid": "/car2/wheeltec_robot"
+          },
+          "/car2/odom": {
+            "type": "nav_msgs/Odometry",
+            "md5sum": "cd5e73d190d741a2f92e81eda573aca7",
+            "callerid": "/car2/wheeltec_robot"
+          },
+          "/car1/cmd_vel": {
+            "type": "geometry_msgs/Twist",
+            "md5sum": "9f195f881246fdfa2798d1d3eebca84a",
+            "callerid": "/car1_straight_motion_12347_1792925289002"
+          }
+        }
+      },
+      "vehicles": {
+        "car1": {
+          "imu_timing": {
+            "count": 1163,
+            "header_delta_ns": {
+              "n": 1162,
+              "mean": 49999643.72375215,
+              "std": 45366.96879620538,
+              "minimum": 49749320.0,
+              "median": 49998678.0,
+              "maximum": 50263137.0
+            },
+            "nonpositive_header_steps": 0,
+            "gaps_over_100ms": 0,
+            "nominal_header_rate_hz": 20.00014251151461
+          },
+          "odom_timing": {
+            "count": 1161,
+            "header_delta_ns": {
+              "n": 1160,
+              "mean": 49999630.97413793,
+              "std": 44203.73472682293,
+              "minimum": 49753903.0,
+              "median": 49998546.5,
+              "maximum": 50255013.0
+            },
+            "nonpositive_header_steps": 0,
+            "gaps_over_100ms": 0,
+            "nominal_header_rate_hz": 20.000147611434276
+          },
+          "imu_frames": [
+            "car1/gyro_link"
+          ],
+          "odom_frames": [
+            "car1/odom"
+          ],
+          "odom_children": [
+            "car1/base_footprint"
+          ],
+          "quaternion_norm": {
+            "n": 1163,
+            "mean": 0.9983133742275155,
+            "std": 2.8731496046733687e-08,
+            "minimum": 0.9983132903224842,
+            "median": 0.9983133752154375,
+            "maximum": 0.9983134548244665
+          },
+          "acceleration_norm_m_s2": {
+            "n": 1163,
+            "mean": 9.791923403339604,
+            "std": 0.026449812054232056,
+            "minimum": 9.631125041150334,
+            "median": 9.792230763809984,
+            "maximum": 9.95473496371645
+          },
+          "gyro_z_rad_s": {
+            "n": 1163,
+            "mean": -0.0019271654010408414,
+            "std": 0.003676673981345783,
+            "minimum": -0.06661000102758408,
+            "median": -0.0010657600359991193,
+            "maximum": 0.020782319828867912
+          },
+          "covariance_values": {
+            "orientation_covariance": {
+              "[1000000.0, 0.0, 0.0, 0.0, 1000000.0, 0.0, 0.0, 0.0, 1e-06]": 1163
+            },
+            "angular_velocity_covariance": {
+              "[1000000.0, 0.0, 0.0, 0.0, 1000000.0, 0.0, 0.0, 0.0, 1e-06]": 1163
+            },
+            "linear_acceleration_covariance": {
+              "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]": 1163
+            }
+          },
+          "quiet_candidate": {
+            "scope": "first recorder-domain 5s without recorded nonzero command; NOT independent proof of physical rest",
+            "accepted": true,
+            "gyro_z": {
+              "n": 124,
+              "mean": -0.0007993200361529636,
+              "std": 0.0004003756128777753,
+              "minimum": -0.0015986401122063398,
+              "median": -0.0007993200561031699,
+              "maximum": 0.0002664400089997798
+            },
+            "noise_calibration_accepted": false,
+            "bias_applied_to_any_estimator": false
+          },
+          "relation": {
+            "paired_rows": 1161,
+            "nearest_pairing_offline_only": true,
+            "imu_minus_odom_header_ns": {
+              "n": 1161,
+              "mean": 32154.95865633075,
+              "std": 6553.951378376661,
+              "minimum": 23334.0,
+              "median": 30574.0,
+              "maximum": 131774.0
+            },
+            "gyro_z_minus_odom_angular_z": {
+              "n": 1161,
+              "mean": -0.0024289637638332563,
+              "std": 0.0044007730351201405,
+              "minimum": -0.06861000112257898,
+              "median": -0.0012664400564972311,
+              "maximum": 0.019450120627880096
+            },
+            "gyro_z_on_odom_rate": {
+              "identifiable": true,
+              "correlation": 0.25701843934435165,
+              "slope": 0.26719835910953155,
+              "intercept": -0.0020635097102263264,
+              "fit_is_calibration": false,
+              "correlation_proves_independence": false
+            },
+            "rate_equality_fraction": 0.013781223083548665,
+            "physical_clock_offset_estimated": false,
+            "source_independence_confirmed": false,
+            "odom_yaw_increment_minus_current_rate_dt_rad": {
+              "n": 1160,
+              "mean": 3.3462784052733845e-10,
+              "std": 1.509904484440303e-08,
+              "minimum": -5.2485595571733976e-08,
+              "median": 0.0,
+              "maximum": 5.017388484198108e-07
+            },
+            "accepted_odom_intervals": 1160,
+            "odom_accepted_increment_sum_rad": 0.028957506641745574,
+            "gyro_trapezoid_sum_rad": -0.11202441622819745,
+            "integral_comparison_is_ground_truth": false
+          }
+        },
+        "car2": {
+          "imu_timing": {
+            "count": 1150,
+            "header_delta_ns": {
+              "n": 1149,
+              "mean": 49998957.089643165,
+              "std": 57063.10821608749,
+              "minimum": 49448007.0,
+              "median": 49999869.0,
+              "maximum": 50387554.0
+            },
+            "nonpositive_header_steps": 0,
+            "gaps_over_100ms": 0,
+            "nominal_header_rate_hz": 20.00041717284421
+          },
+          "odom_timing": {
+            "count": 1145,
+            "header_delta_ns": {
+              "n": 1144,
+              "mean": 49998917.17307692,
+              "std": 51876.581381420954,
+              "minimum": 49476679.0,
+              "median": 49999661.0,
+              "maximum": 50366369.0
+            },
+            "nonpositive_header_steps": 0,
+            "gaps_over_100ms": 0,
+            "nominal_header_rate_hz": 20.000433140149546
+          },
+          "imu_frames": [
+            "car2/gyro_link"
+          ],
+          "odom_frames": [
+            "car2/odom"
+          ],
+          "odom_children": [
+            "car2/base_footprint"
+          ],
+          "quaternion_norm": {
+            "n": 1150,
+            "mean": 0.9983133633470429,
+            "std": 2.7299076440802473e-08,
+            "minimum": 0.9983132927873883,
+            "median": 0.9983133633775263,
+            "maximum": 0.9983134401642338
+          },
+          "acceleration_norm_m_s2": {
+            "n": 1150,
+            "mean": 9.755628760949286,
+            "std": 0.01017106590544611,
+            "minimum": 9.726340196355789,
+            "median": 9.754976339703646,
+            "maximum": 9.803378623001333
+          },
+          "gyro_z_rad_s": {
+            "n": 1150,
+            "mean": -0.0021370805558019682,
+            "std": 0.0003842249849307666,
+            "minimum": -0.003463720204308629,
+            "median": -0.0021315200719982386,
+            "maximum": -0.0007993200561031699
+          },
+          "covariance_values": {
+            "orientation_covariance": {
+              "[1000000.0, 0.0, 0.0, 0.0, 1000000.0, 0.0, 0.0, 0.0, 1e-06]": 1150
+            },
+            "angular_velocity_covariance": {
+              "[1000000.0, 0.0, 0.0, 0.0, 1000000.0, 0.0, 0.0, 0.0, 1e-06]": 1150
+            },
+            "linear_acceleration_covariance": {
+              "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]": 1150
+            }
+          },
+          "quiet_candidate": {
+            "scope": "first recorder-domain 5s without recorded nonzero command; NOT independent proof of physical rest",
+            "accepted": true,
+            "gyro_z": {
+              "n": 111,
+              "mean": -0.002057108900148992,
+              "std": 0.00040490029395266465,
+              "minimum": -0.0029308400116860867,
+              "median": -0.0021315200719982386,
+              "maximum": -0.0007993200561031699
+            },
+            "noise_calibration_accepted": false,
+            "bias_applied_to_any_estimator": false
+          },
+          "relation": {
+            "paired_rows": 1145,
+            "nearest_pairing_offline_only": true,
+            "imu_minus_odom_header_ns": {
+              "n": 1145,
+              "mean": 48987.76768558952,
+              "std": 9759.063323682094,
+              "minimum": 16545.0,
+              "median": 48096.0,
+              "maximum": 155106.0
+            },
+            "gyro_z_minus_odom_angular_z": {
+              "n": 1145,
+              "mean": -0.002138268330752622,
+              "std": 0.00038448019436452803,
+              "minimum": -0.003463720204308629,
+              "median": -0.0021315200719982386,
+              "maximum": -0.0007993200561031699
+            },
+            "gyro_z_on_odom_rate": {
+              "identifiable": false,
+              "correlation": null,
+              "slope": null,
+              "intercept": null
+            },
+            "rate_equality_fraction": 0.0,
+            "physical_clock_offset_estimated": false,
+            "source_independence_confirmed": false,
+            "odom_yaw_increment_minus_current_rate_dt_rad": {
+              "n": 1144,
+              "mean": 0.0,
+              "std": 0.0,
+              "minimum": 0.0,
+              "median": 0.0,
+              "maximum": 0.0
+            },
+            "accepted_odom_intervals": 1144,
+            "odom_accepted_increment_sum_rad": 0.0,
+            "gyro_trapezoid_sum_rad": -0.12276635961709512,
+            "integral_comparison_is_ground_truth": false
+          }
+        }
+      }
+    }
+  },
+  "field_accuracy_evaluated": false,
+  "output_sha256": {
+    "source_audit.json": "3e5e853e235a26d45610a821b689db0bb1db490c5a6cafdb4a837ba6f6f1ab2d",
+    "pair_observations.csv.gz": "d8c61f56601035752cc7b522f306171c43bc7988919a367ac69285bf6932a798",
+    "selected_inputs/T08_C1static_C2L_repeat1_20261025_180633.bag": "cf3b4de0f20424d02779aeeb416a4fb16d77bb1f5333344d48ebf446a3884ada",
+    "selected_inputs/T10_C2static_C1straight_repeat1_retry_20261025_184755.bag": "f2853240661be0cef53e77cee9a5a33f74cfb1524231d2eb94b2dcacaa57c558"
+  }
+}

@@ -1,0 +1,27 @@
+test_beyond_tolerance_is_missing_not_interpolated (test_audit.AssociationTests.test_beyond_tolerance_is_missing_not_interpolated) ... ok
+test_each_imu_record_is_paired_at_most_once (test_audit.AssociationTests.test_each_imu_record_is_paired_at_most_once) ... ok
+test_exact_integer_epoch_pairing_retains_nanoseconds (test_audit.AssociationTests.test_exact_integer_epoch_pairing_retains_nanoseconds) ... ok
+test_constant_rate_does_not_prove_zero_correlation (test_audit.SignalTests.test_constant_rate_does_not_prove_zero_correlation) ... ok
+test_normalization_is_only_a_temporary_copy (test_audit.SignalTests.test_normalization_is_only_a_temporary_copy) ... ok
+test_yaw_wrap_is_not_a_spurious_full_turn (test_audit.SignalTests.test_yaw_wrap_is_not_a_spurious_full_turn) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.004s
+
+OK
+
+test_compressed_chunk_fails_with_clear_message (test_audit_bags.BagParsingTests.test_compressed_chunk_fails_with_clear_message) ... ok
+test_message_length_and_extra_bytes_are_checked (test_audit_bags.BagParsingTests.test_message_length_and_extra_bytes_are_checked) ... ok
+test_tiny_bag_schema_and_every_message_byte (test_audit_bags.BagParsingTests.test_tiny_bag_schema_and_every_message_byte) ... ok
+test_truncated_record_is_not_silently_accepted (test_audit_bags.BagParsingTests.test_truncated_record_is_not_silently_accepted) ... ok
+test_all_hashes_checked_before_any_decode (test_audit_bags.InputGuardTests.test_all_hashes_checked_before_any_decode) ... ok
+test_existing_output_is_preserved_without_overwrite (test_audit_bags.InputGuardTests.test_existing_output_is_preserved_without_overwrite) ... ok
+test_refuse_symlink_escape_using_python38_path_api (test_audit_bags.InputGuardTests.test_refuse_symlink_escape_using_python38_path_api) ... ok
+test_refuse_traversal_manifest_path (test_audit_bags.InputGuardTests.test_refuse_traversal_manifest_path) ... ok
+test_discontinuities_remain_visible (test_audit_bags.PacketAndContinuityTests.test_discontinuities_remain_visible) ... ok
+test_packet_checksum_and_decoded_json_consistency (test_audit_bags.PacketAndContinuityTests.test_packet_checksum_and_decoded_json_consistency) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.009s
+
+OK

@@ -1,0 +1,47 @@
+{
+  "status": "AUDIT_COMPLETE_FUSION_NOT_IMPLEMENTED",
+  "source_commit": "d3439ebefc36eeee184131038b2f209838431cc4",
+  "existing_estimator_or_parameters_modified": false,
+  "holdout_decoded": false,
+  "fields": {
+    "car1": {
+      "raw_IMU_available": true,
+      "rate_hz": 20,
+      "archived_host_source_available": false,
+      "host_odom_IMU_dependency": "UNKNOWN; source capture required",
+      "upstream_firmware_dependency": "UNKNOWN",
+      "gyro_bias_handling_required": true,
+      "absolute_IMU_yaw_approved": false,
+      "full_acceleration_integration_approved": false,
+      "next_action": "proceed with opt-in offline gyro/bias prototype under explicit assumptions; actual source/binary capture optional parallel follow-up, not a coding gate"
+    },
+    "car2": {
+      "raw_IMU_available": true,
+      "rate_hz": 20,
+      "archived_host_source_available": true,
+      "host_odom_IMU_dependency": "archived host integrates separate serial angular-rate field, not IMU quaternion; MCU source dependence UNKNOWN",
+      "deployed_binary_source_binding": "UNKNOWN",
+      "gyro_bias_handling_required": true,
+      "absolute_IMU_yaw_approved": false,
+      "full_acceleration_integration_approved": false,
+      "next_action": "proceed with opt-in offline gyro/bias prototype; current source/binary and body-Z convention remain parallel confirmation"
+    }
+  },
+  "next_prototype": "opt-in wheel/body vx,vy plus gyro_z minus bias propagation; replace odom heading input rather than add another independent absolute yaw update",
+  "covariance_policy": "recorded fixed values are not calibrated; zero accelerometer covariance means unknown, not zero noise",
+  "independent_accuracy_evaluated": false,
+  "IMU_fusion_gain_claimed": false,
+  "offline_prototype_can_proceed_without_lab": true,
+  "source_capture_is_required_before_offline_prototype": false,
+  "conditional_model_assumptions_are_calibration": false,
+  "additional_existing_file_evidence": "OFFLINE_EVIDENCE.md",
+  "VM_reference_source_evidence": {
+    "report": "VM_SOURCE_EVIDENCE.md",
+    "comparison": "vm_source_comparison.json",
+    "uploaded_files": 4,
+    "quaternion_files_byte_identical_to_car2": true,
+    "car1_deployment_binding_accepted": false,
+    "MCU_firmware_identified": false,
+    "offline_prototype_blocked": false
+  }
+}

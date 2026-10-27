@@ -1,0 +1,13 @@
+test_beyond_tolerance_is_missing_not_interpolated (test_audit.AssociationTests.test_beyond_tolerance_is_missing_not_interpolated) ... ok
+test_each_imu_record_is_paired_at_most_once (test_audit.AssociationTests.test_each_imu_record_is_paired_at_most_once) ... ok
+test_exact_integer_epoch_pairing_retains_nanoseconds (test_audit.AssociationTests.test_exact_integer_epoch_pairing_retains_nanoseconds) ... ok
+test_constant_rate_does_not_prove_zero_correlation (test_audit.SignalTests.test_constant_rate_does_not_prove_zero_correlation) ... ok
+test_normalization_is_only_a_temporary_copy (test_audit.SignalTests.test_normalization_is_only_a_temporary_copy) ... ok
+test_yaw_wrap_is_not_a_spurious_full_turn (test_audit.SignalTests.test_yaw_wrap_is_not_a_spurious_full_turn) ... ok
+test_long_gap_does_not_become_an_integration_check (test_existing_files.RelationshipTests.test_long_gap_does_not_become_an_integration_check) ... ok
+test_reported_velocity_integrator_and_biased_gyro_are_distinguished (test_existing_files.RelationshipTests.test_reported_velocity_integrator_and_biased_gyro_are_distinguished) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.005s
+
+OK
