@@ -28,8 +28,8 @@
       "bytes": 266
     },
     "HANDOFF.md": {
-      "sha256": "c126261d0ffc3ca89da7686ff31b03c6ff9381119f3d1c21a3bfaae310d4dd7a",
-      "bytes": 1996
+      "sha256": "a994c521d80f5a6d5e77636d79760fc8a735c38be38ea26c3eedae76835e93e6",
+      "bytes": 2401
     },
     "existing_files_extension.json": {
       "sha256": "6af13eb3096dcbd87374d72cd98cecad5e16394ae1271b30146038605ad8920f",
@@ -64,8 +64,8 @@
       "bytes": 5528
     },
     "REPORT.md": {
-      "sha256": "740fa72fb71f4b043de7c171392d3535d2d7925ede4096d957680b62c836deff",
-      "bytes": 6598
+      "sha256": "40862265406fa93be041ede2550214077022bbb36d1a1162e44577b1c31b43c3",
+      "bytes": 6790
     },
     "TESTS.log": {
       "sha256": "224b57ea9866ff6d9e2e3dd8181bab965b6099d8995d6df2573b48e90ba52f79",
@@ -82,6 +82,10 @@
     "vm_source_comparison.json": {
       "sha256": "9b880814e87ca745a26f47b739ca85b7d72f9f1e1a76db0006f91bd7e1072de1",
       "bytes": 4400
+    },
+    "LAB_RECHECK_CHECKLIST.md": {
+      "sha256": "470dd0871a9b07b4ca0ef6c6356fee8af7606a89699cf0865f88ff0bfc88d3de",
+      "bytes": 12737
     }
   },
   "offline_extension_execution_commit": "b9bb51cf3001991a101c8395f495998fbb809089",
@@ -100,5 +104,12 @@
     "new_unit_tests": 0,
     "fusion_implemented": false,
     "historical_deployment_proved": false
+  },
+  "next_lab_checklist": {
+    "path": "LAB_RECHECK_CHECKLIST.md",
+    "executed_on_vehicles": false,
+    "bash_blocks_syntax_checked": 4,
+    "vehicle_commands_executed": false,
+    "new_algorithm_tests": 0
   }
 }
