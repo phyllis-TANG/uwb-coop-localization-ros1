@@ -406,5 +406,10 @@
   ],
   "parsed_data_scope": "PR59 verified JSON events only; no new normalization, no A policy functions/graph/Jacobian imports; endpoint independent check uses NumPy order statistics",
   "source_state_note": "Inputs and diagnostics frozen e84fa2f; scalar facts and first fixtures 0e3ea87; final semantic fixtures d1e0eeb; prefix/readiness a2c1e8a; ready inputs 3cfab32. Later empty-table text rendering changed without rerunning unchanged real table.",
-  "A_discovery": "At 2026-10-27T11:33:43Z no native single-car quality branch/freeze available through remote heads. Existing fix/quality-note-record-sim-validation is unrelated and untouched; recheck before handoff."
+  "A_discovery": "At 2026-10-27T11:33:43Z no native single-car quality branch/freeze available through remote heads. Existing fix/quality-note-record-sim-validation is unrelated and untouched; recheck before handoff.",
+  "A_last_availability_check": {
+    "at_utc": "2026-10-27T11:43:51Z",
+    "method": "all remote heads + GitHub open PR discovery",
+    "result": "no A native single-car quality freeze; only B PR60 open; unrelated historical quality-note branch untouched"
+  }
 }
