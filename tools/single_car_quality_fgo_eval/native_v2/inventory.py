@@ -22,7 +22,9 @@ def main():
             for name in sorted(names):
                 folder=root/name;meta=json.loads((folder/'run.json').read_text());s=json.loads((folder/'summary.json').read_text());require(meta['status']=='DONE' and not meta['dirty'] and meta['code_commit']==matrix['execution_commit'],'control original clean execution/source');require(s['source_sha256']==source,'control kernel differs from main');require(s['publications']==38,'unexpected control prefix coverage')
                 for item in meta['outputs']:require(sha(folder/item['relative_path'])==item['sha256'],'control output checksum')
-                for item in meta['inputs']:require(sha(item['path'])==item['sha256'],'actual control input/config SHA changed')
+                for item in meta['inputs']:
+                    candidates=[root/Path(item['path']).name for root in (a.controls,a.all_wall)]
+                    require(any(p.is_file() and sha(p)==item['sha256'] for p in candidates),'actual control input/config SHA changed or portable input absent')
                 controls.append(dict(name=name,run_sha256=sha(folder/'run.json'),publications=s['publications'],actual_command_argv=meta['command_argv'],input_sha256=s['input_sha256'],config_sha256=s['config_sha256']))
         require(len(controls)==20,'all twenty controls required');write(a.output/'verification.json',dict(status='PASS',execution_commit=matrix['execution_commit'],main_runs=rows,controls=controls,main_run_count=8,main_publications=sum(r['publications'] for r in rows),control_run_count=20,control_publications=sum(r['publications'] for r in controls),missing_duplicate_extra_or_failed=0,all_source_sha256=source,no_new_estimator_runs=True));finish(a.output,v);return 0
     except Exception as e:finish(a.output,v,e);raise
