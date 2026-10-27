@@ -1,0 +1,43 @@
+{
+  "created_at_utc": "2026-10-27T09:50:33.248501+00:00",
+  "execution_commit": "b7a56b22d55e033f267ffb87055af64da313ef81",
+  "indexed_cells": 37,
+  "indexed_status_counts": {
+    "DONE": 37
+  },
+  "no_new_ekf_batches": true,
+  "original_checkpoint_sha256": "a27a8a23f1284dbe469fec6bd0a1973e6a5208db35c82f6185b71489b5f443de",
+  "protocol_sha256": "2a897ff6e84c2e952d7595b85ef770a8c4b8d1dcb4ecdb3a50ad753b51f9f0f0",
+  "redirect_commit": "112586ceb9ce674a083fb43f7d8afb7768a15aaf",
+  "resume_authorized": false,
+  "status": "STOPPED_FOR_USER_FGO_REDIRECT",
+  "tests": {
+    "count": 44,
+    "log_sha256": "71f8845a8900cd21da48bdc92d168dc4330b2b4d5713d51f32e74e6a73ffd425",
+    "status": "PASS"
+  },
+  "unindexed_cells": [
+    {
+      "files": [
+        {
+          "path": "runs/gyro_timevarying_bias_seed31__body_odom_rate/config.json",
+          "sha256": "8a317ee707e445125423a78b95af304a714778edc40b8dd8f705b003f710471c"
+        },
+        {
+          "path": "runs/gyro_timevarying_bias_seed31__body_odom_rate/decisions.jsonl.gz",
+          "sha256": "c183b615f0234c724349bb7089cff487c11e8a152da614dd025f1be45b74dde7"
+        },
+        {
+          "path": "runs/gyro_timevarying_bias_seed31__body_odom_rate/estimate.csv",
+          "sha256": "ff0dcc41715c2a3bc629cd43c307bf025fb18ba877d5017bd02b607f0f3dfc84"
+        },
+        {
+          "path": "runs/gyro_timevarying_bias_seed31__body_odom_rate/run.json",
+          "sha256": "23803b2c91b56833ed48b9ea439bf683fe8fb0740bd34c5b042c93c036c7a5b3"
+        }
+      ],
+      "relative_path": "runs/gyro_timevarying_bias_seed31__body_odom_rate",
+      "status": "IN_PROGRESS"
+    }
+  ]
+}
