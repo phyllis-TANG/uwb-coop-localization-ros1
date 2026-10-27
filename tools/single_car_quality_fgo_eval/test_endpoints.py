@@ -22,3 +22,10 @@ class EndpointTests(unittest.TestCase):
         v=endpoint([self.row(11,3,4)],self.case());self.assertIsNone(v['manual_reference_uncertainty_m']);self.assertEqual(v['all_finite']['distance_to_manual_endpoint_m'],0.)
     def test_reuse_full_Q0_Q1_and_only_old_publications_F1_F2(self):
         self.assertTrue(selected('F0_F3/004023_F3/updates.jsonl.gz'));self.assertTrue(selected('F0_F3/005135_F2/published.csv'));self.assertFalse(selected('F0_F3/005135_F2/updates.jsonl.gz'))
+
+class InputReferenceTests(unittest.TestCase):
+    def test_no_manual_reference_or_truth_passed_to_estimator(self):
+        from prepare_ready import no_reference_keys
+        no_reference_keys({'model':{'start_antenna_xyz_m':[2.,2.,.2]}})
+        for key in ('evaluation_window_s','end_antenna_xyz_m','fault_label','truth'):
+            with self.assertRaisesRegex(ValueError,'reference/fault label'):no_reference_keys({'nested':[{key:None}]})

@@ -1,0 +1,31 @@
+{
+  "status": "PENDING_ACTUAL_A_QUALITY_FREEZE",
+  "quality_execution_commit": null,
+  "quality_source_sha256": null,
+  "protocol_sha256": null,
+  "native_schema_sha256": null,
+  "native_cli_argv": null,
+  "native_adapter_source_sha256": null,
+  "score_formula_and_units": null,
+  "score_variance_provenance": null,
+  "health_transition_rule_and_parameters": null,
+  "unknown_and_missing_factor_policy": null,
+  "information_or_residual_weight_semantics": null,
+  "baseline_quality_off_route_evidence": null,
+  "shadow_full_dependency_source_audit": null,
+  "executed_target_only_intervention_receipts": null,
+  "executed_receive_prefix_receipts": null,
+  "actual_objective_snapshot_fields": null,
+  "field_parameters_frozen_before_runs": null,
+  "minimal_native_fields": {
+    "run": "exact Git commit + all source/protocol/config/input SHA + full CLI/environment + immutable output SHA",
+    "original_support": "source bag SHA, case, physical record_index, message SHA, component path/link; exact integer header/receive ns, complete eligible bin support",
+    "decision": "state/cutoff integer ns; all dependencies and shadow identity; raw/corrected range, prediction, innovation, exact consistency formula, variance source and score; explicit null/unknown",
+    "action": "health before/after, persistence/hysteresis counters, reason, actual old/new weight and meaning, factor existence, graph admission/rejection/recovery/fallback and factor ID",
+    "shadow": "excluded link, all external init/prediction/optimizer initial guess/history/cache/prior/score-pose roots, complete incident factor lineage; own state/prior and geometry; no main posterior reuse",
+    "objective": "all active factor IDs, realized weights, state, raw/P1 inputs, priors, angular and other factors, independent-cost snapshots including rejected/absent constraint ledger"
+  },
+  "unverified_values_are_not_zero": true,
+  "fixture_contract_is_not_field_policy": true,
+  "no_fault_timeline_labels_available": true
+}
