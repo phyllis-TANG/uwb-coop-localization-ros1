@@ -1,0 +1,522 @@
+{
+  "version": "quality_fgo_acceptance_v1.1",
+  "status": "PASS",
+  "complete_matrix_pass": true,
+  "existing_reader_subset_pass": true,
+  "expected_cells": 96,
+  "actual_cells": 96,
+  "expected_publications": 5664,
+  "actual_publications": 5664,
+  "missing": [],
+  "duplicates": {},
+  "failed_cells": [],
+  "checkpoint_status": "DONE",
+  "errors": [],
+  "cell_checks": [
+    {
+      "cell_id": "nominal_seed401__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "nominal_seed401__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "nominal_seed401__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "nominal_seed401__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "nominal_seed419__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "nominal_seed419__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "nominal_seed419__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "nominal_seed419__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "nominal_seed443__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "nominal_seed443__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "nominal_seed443__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "nominal_seed443__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_step_seed401__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_step_seed401__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_step_seed401__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_step_seed401__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_step_seed419__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_step_seed419__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_step_seed419__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_step_seed419__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_step_seed443__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_step_seed443__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_step_seed443__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_step_seed443__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_ramp_seed401__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_ramp_seed401__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_ramp_seed401__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_ramp_seed401__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_ramp_seed419__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_ramp_seed419__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_ramp_seed419__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_ramp_seed419__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_ramp_seed443__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_ramp_seed443__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_ramp_seed443__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "uwb_ramp_seed443__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "gyro_drift_seed401__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "gyro_drift_seed401__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "gyro_drift_seed401__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "gyro_drift_seed401__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "gyro_drift_seed419__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "gyro_drift_seed419__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "gyro_drift_seed419__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "gyro_drift_seed419__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "gyro_drift_seed443__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "gyro_drift_seed443__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "gyro_drift_seed443__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "gyro_drift_seed443__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "odom_turn_bias_seed401__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "odom_turn_bias_seed401__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "odom_turn_bias_seed401__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "odom_turn_bias_seed401__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "odom_turn_bias_seed419__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "odom_turn_bias_seed419__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "odom_turn_bias_seed419__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "odom_turn_bias_seed419__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "odom_turn_bias_seed443__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "odom_turn_bias_seed443__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "odom_turn_bias_seed443__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "odom_turn_bias_seed443__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "common_turn_error_seed401__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "common_turn_error_seed401__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "common_turn_error_seed401__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "common_turn_error_seed401__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "common_turn_error_seed419__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "common_turn_error_seed419__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "common_turn_error_seed419__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "common_turn_error_seed419__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "common_turn_error_seed443__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "common_turn_error_seed443__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "common_turn_error_seed443__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "common_turn_error_seed443__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "multi_common_uwb_seed401__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "multi_common_uwb_seed401__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "multi_common_uwb_seed401__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "multi_common_uwb_seed401__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "multi_common_uwb_seed419__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "multi_common_uwb_seed419__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "multi_common_uwb_seed419__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "multi_common_uwb_seed419__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "multi_common_uwb_seed443__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "multi_common_uwb_seed443__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "multi_common_uwb_seed443__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "multi_common_uwb_seed443__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "weak_missing_seed401__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "weak_missing_seed401__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "weak_missing_seed401__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "weak_missing_seed401__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "weak_missing_seed419__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "weak_missing_seed419__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "weak_missing_seed419__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "weak_missing_seed419__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "weak_missing_seed443__Q0",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "weak_missing_seed443__Q1",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "weak_missing_seed443__Q2",
+      "status": "CHECKED",
+      "publications": 59
+    },
+    {
+      "cell_id": "weak_missing_seed443__Q3",
+      "status": "CHECKED",
+      "publications": 59
+    }
+  ],
+  "execution_commit": "12a1d94379b58c5a759b1698425fb90d48587609",
+  "protocol_sha256": "ddb533f94d4b2b5f36b5cf3922dad1d72361ce674f908dc1ba40514324bcfb31",
+  "acceptance_source_sha256": {
+    "acceptance.py": "836018181dcc68425011d27b03d81aa272cb1f3615c9feb8912db32357bacc35",
+    "test_acceptance.py": "0228def536f8a42c765bb62a6568b61e21c2d6a0c00f63a66d8d790c4fc9b3e3"
+  },
+  "output_sha256": {
+    "known_unknown_exposure.csv": "5fa44237746b0a4c80585cf8a7391aee840b6a4701e439ae128080e205032d95",
+    "available_reference_and_backlog.csv": "9302c6b769d99e150365035210a334b65d60ad2df45b483990f3656c94660577",
+    "experiment_file_manifest.json": "d71da1a5a4e9ab3cd616aab46dd0fb63af01241df640c2cfcdd84c09e33eeb3c",
+    "recovery_onset_and_confirmation.csv": "cde6e6f782f1aa06530effa82573357d7c503108bc6156ef808f192372ae81e8"
+  },
+  "coverage_totals": {
+    "covered": 5664,
+    "missing": 0,
+    "overdue_past_next_cutoff": 0,
+    "after_input_EOF": 96
+  },
+  "notes": [
+    "Legacy reader passing a subset does not prove full matrix completion.",
+    "Recovery onset is retrospective candidate; online confirmation available only after third consecutive known normal output.",
+    "known/unknown segments split at availability changes; these are exposure segments, not independent fault events.",
+    "Post-cutoff delay combines processing+scheduling+queue; no unsupported separation of pure queue.",
+    "This version only reads preserved v1 outputs; no estimator execution or evidence rewrites."
+  ]
+}

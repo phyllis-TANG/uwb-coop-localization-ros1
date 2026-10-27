@@ -1,0 +1,21 @@
+{
+  "status": "FORMAL_COMPLETE_AND_INDEPENDENTLY_ACCEPTED",
+  "created_at_utc": "2026-10-27T13:24:27.096533+00:00",
+  "execution_commit": "12a1d94379b58c5a759b1698425fb90d48587609",
+  "protocol_sha256": "ddb533f94d4b2b5f36b5cf3922dad1d72361ce674f908dc1ba40514324bcfb31",
+  "formal_runs": 96,
+  "publications": 5664,
+  "formal_reader": "96/96 PASS",
+  "strict_full_matrix_acceptance": "v1.1 PASS",
+  "reference_covered": 5664,
+  "reference_missing": 0,
+  "estimator_reruns": 0,
+  "new_acceptance_tests": 10,
+  "original_tests": 110,
+  "negative_logs": "6/6 resigned corruption cases rejected",
+  "acceptance_source_sha256": {
+    "acceptance.py": "836018181dcc68425011d27b03d81aa272cb1f3615c9feb8912db32357bacc35",
+    "test_acceptance.py": "0228def536f8a42c765bb62a6568b61e21c2d6a0c00f63a66d8d790c4fc9b3e3"
+  },
+  "next": "immutable archive, NAS retrieval and archived-reader validation, docs-only delivery commit and draftPR update"
+}

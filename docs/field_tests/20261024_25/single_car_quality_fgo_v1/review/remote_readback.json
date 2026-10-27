@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "archive_sha256": "7a5ff137f2f7fb250ebda466e163f94d137d59f660b48eb4f9150847bbdc3ab8",
+  "NAS_archive": "/home/ubuntu22/nas/data/uwb_coop_artifacts/single_car_quality_fgo_v1_20261027_12a1d943/single_car_quality_fgo_v1_evidence_20261027.tar.gz",
+  "archive_size_bytes": 293750470,
+  "all_manifest_members_verified": 2138,
+  "selected_files_extracted": 55,
+  "archived_source_SHA_matches": true,
+  "archived_reader": {
+    "F0_native_marginalization_detail": "unmodified native F0 has no per-marginal record; covered by closing regression and existing PR58/59, not counted as new numerical audit",
+    "counts": {
+      "availability_records": 59,
+      "factor_visits": 16464,
+      "graph_publications": 295,
+      "marginalizations": 190,
+      "objective_cost_checks": 285,
+      "quality_decisions": 236,
+      "sampled_marginalizations": 25
+    },
+    "errors": [],
+    "marginalization_sampling_stride": 7,
+    "maximum_absolute_errors": {
+      "marginal_affine_abs": 2.4123707476064737e-09,
+      "marginal_information_abs": 1.8016726244241e-07,
+      "objective_cost_abs": 1.2434497875801753e-14
+    },
+    "online_formula_or_J_used": false,
+    "online_module_names_already_in_process": [],
+    "shared_offline_formula": "read-only PR58 independent audit.residual, not live Objective/Jacobian",
+    "status": "PASS"
+  },
+  "command_argv": [
+    "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/venv/bin/python",
+    "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/archive-retrieved-v1/validation-v1/source/tools/single_car_quality_fgo/qaudit.py",
+    "--run",
+    "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/archive-retrieved-v1/validation-v1/runs/uwb_step_seed401__Q3",
+    "--events-jsonl",
+    "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/archive-retrieved-v1/validation-v1/inputs/uwb_step_seed401/events.jsonl.gz",
+    "--output",
+    "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/archive-retrieved-v1/archived_reader.json"
+  ],
+  "estimator_reruns": 0,
+  "access": "LAN/VPN mounted SMB //10.22.5.135/data; not a public HTTP download",
+  "independence": "fresh directory + retrieved archived reader + full member SHA; same host/venv, not external B execution"
+}

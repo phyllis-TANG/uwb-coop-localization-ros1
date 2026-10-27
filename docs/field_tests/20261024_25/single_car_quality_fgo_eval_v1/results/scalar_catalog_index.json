@@ -1,0 +1,33 @@
+{
+  "status": "DONE",
+  "cases": [
+    {
+      "case_id": "004023",
+      "original_records": 10672,
+      "projected_kinds": {
+        "imu": 1968,
+        "odom": 1966,
+        "uwb_component": 19626
+      },
+      "catalog_sha256": "3c40a10f73e312b9f824c15d14d2ff788739bbbe9518e5dabc4b388905f4caba",
+      "catalog_file": "004023_catalog.json.gz",
+      "source_rich_packet_sha256": "d4ae01199343894f6111803487f048d7713a7ecc3343e39eb1bf3f5d2058c9d6"
+    },
+    {
+      "case_id": "005135",
+      "original_records": 10322,
+      "projected_kinds": {
+        "imu": 1894,
+        "odom": 1891,
+        "uwb_component": 18882
+      },
+      "catalog_sha256": "acccac828c0db671e75d73b20546eed222e4417f9e6aad9ab856ec68d79b64dc",
+      "catalog_file": "005135_catalog.json.gz",
+      "source_rich_packet_sha256": "964cc748fa9de8e4fbbfdc14812ce4984353dd83625dd3fcf7f50e5ec55a6829"
+    }
+  ],
+  "all_original_fields_remain_in_reused_packet": true,
+  "original_normalization_not_redeveloped": true,
+  "manual_endpoint_or_window_in_catalog": false,
+  "projection": "message identity plus scalar field path. A full UWB frame cannot be treated as a link-free source just because its shared message contains other anchors. Unused Odom/IMU values remain in rich packet, not invented here."
+}

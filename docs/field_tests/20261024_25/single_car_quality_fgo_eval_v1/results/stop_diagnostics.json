@@ -1,0 +1,496 @@
+{
+  "status": "DONE",
+  "reference_protocol_sha256": "71175af3a690f1666967b6ed905233de8a8cb1b84c31e5a72eaacdccad0a2f50",
+  "rows": [
+    {
+      "case_id": "004023",
+      "frozen_window_s": [
+        81.848289054,
+        86.848289054
+      ],
+      "manual_endpoint_xy_m": [
+        2.97,
+        3.11
+      ],
+      "manual_reference_uncertainty_m": null,
+      "scheduled_window_outputs": 5,
+      "finite_outputs": 5,
+      "valid_outputs": 5,
+      "all_finite": {
+        "count": 5,
+        "median_xy_m": [
+          3.0043774896370192,
+          2.9878616539572573
+        ],
+        "distance_to_manual_endpoint_m": 0.1268841493954232,
+        "radial_spread_about_component_median_m": {
+          "median": 0.008013836090028814,
+          "rms": 0.007892262774325306,
+          "maximum": 0.011805521853229183
+        },
+        "axis_span_m": [
+          0.019688826000229476,
+          0.0034514143408710396
+        ]
+      },
+      "estimate_valid_only": {
+        "count": 5,
+        "median_xy_m": [
+          3.0043774896370192,
+          2.9878616539572573
+        ],
+        "distance_to_manual_endpoint_m": 0.1268841493954232,
+        "radial_spread_about_component_median_m": {
+          "median": 0.008013836090028814,
+          "rms": 0.007892262774325306,
+          "maximum": 0.011805521853229183
+        },
+        "axis_span_m": [
+          0.019688826000229476,
+          0.0034514143408710396
+        ]
+      },
+      "selected_state_times_s": [
+        82.0,
+        83.0,
+        84.0,
+        85.0,
+        86.0
+      ],
+      "scatter_definition": "componentwise antenna XY median; radial distances about this median; RMS is within-window scatter, NOT trajectory/reference RMSE",
+      "reference_status": "uncertainty unknown; historical geometry/odom-origin conditional; development stop diagnostic only",
+      "arm": "F0",
+      "quality_comparison_arm": "Q0",
+      "publication_sha256": "c65d32f6372fd87c4824fdc312e7e382bbe1027e51871f5279b8b95ddaf6f1b9"
+    },
+    {
+      "case_id": "004023",
+      "frozen_window_s": [
+        81.848289054,
+        86.848289054
+      ],
+      "manual_endpoint_xy_m": [
+        2.97,
+        3.11
+      ],
+      "manual_reference_uncertainty_m": null,
+      "scheduled_window_outputs": 5,
+      "finite_outputs": 5,
+      "valid_outputs": 5,
+      "all_finite": {
+        "count": 5,
+        "median_xy_m": [
+          3.0043779915326945,
+          2.9878953064636677
+        ],
+        "distance_to_manual_endpoint_m": 0.12685189192685928,
+        "radial_spread_about_component_median_m": {
+          "median": 0.008014522237732358,
+          "rms": 0.00789141782527366,
+          "maximum": 0.011803654219061944
+        },
+        "axis_span_m": [
+          0.019688382757708123,
+          0.003433533778603337
+        ]
+      },
+      "estimate_valid_only": {
+        "count": 5,
+        "median_xy_m": [
+          3.0043779915326945,
+          2.9878953064636677
+        ],
+        "distance_to_manual_endpoint_m": 0.12685189192685928,
+        "radial_spread_about_component_median_m": {
+          "median": 0.008014522237732358,
+          "rms": 0.00789141782527366,
+          "maximum": 0.011803654219061944
+        },
+        "axis_span_m": [
+          0.019688382757708123,
+          0.003433533778603337
+        ]
+      },
+      "selected_state_times_s": [
+        82.0,
+        83.0,
+        84.0,
+        85.0,
+        86.0
+      ],
+      "scatter_definition": "componentwise antenna XY median; radial distances about this median; RMS is within-window scatter, NOT trajectory/reference RMSE",
+      "reference_status": "uncertainty unknown; historical geometry/odom-origin conditional; development stop diagnostic only",
+      "arm": "F1",
+      "quality_comparison_arm": null,
+      "publication_sha256": "b931ddb630d8a62f34e6abb59f69705716a15136bdf9c835589cfd93a57bf8f6"
+    },
+    {
+      "case_id": "004023",
+      "frozen_window_s": [
+        81.848289054,
+        86.848289054
+      ],
+      "manual_endpoint_xy_m": [
+        2.97,
+        3.11
+      ],
+      "manual_reference_uncertainty_m": null,
+      "scheduled_window_outputs": 5,
+      "finite_outputs": 5,
+      "valid_outputs": 5,
+      "all_finite": {
+        "count": 5,
+        "median_xy_m": [
+          3.0048991766529567,
+          2.983828140725472
+        ],
+        "distance_to_manual_endpoint_m": 0.13090947484367016,
+        "radial_spread_about_component_median_m": {
+          "median": 0.007994419045682655,
+          "rms": 0.008089796675556421,
+          "maximum": 0.011985963685173424
+        },
+        "axis_span_m": [
+          0.019739402564468822,
+          0.005759795642617416
+        ]
+      },
+      "estimate_valid_only": {
+        "count": 5,
+        "median_xy_m": [
+          3.0048991766529567,
+          2.983828140725472
+        ],
+        "distance_to_manual_endpoint_m": 0.13090947484367016,
+        "radial_spread_about_component_median_m": {
+          "median": 0.007994419045682655,
+          "rms": 0.008089796675556421,
+          "maximum": 0.011985963685173424
+        },
+        "axis_span_m": [
+          0.019739402564468822,
+          0.005759795642617416
+        ]
+      },
+      "selected_state_times_s": [
+        82.0,
+        83.0,
+        84.0,
+        85.0,
+        86.0
+      ],
+      "scatter_definition": "componentwise antenna XY median; radial distances about this median; RMS is within-window scatter, NOT trajectory/reference RMSE",
+      "reference_status": "uncertainty unknown; historical geometry/odom-origin conditional; development stop diagnostic only",
+      "arm": "F2",
+      "quality_comparison_arm": null,
+      "publication_sha256": "8f79df67ef19eb13c723b82c9652696d40b6f71f3d851ae87499e5e5e722d7b7"
+    },
+    {
+      "case_id": "004023",
+      "frozen_window_s": [
+        81.848289054,
+        86.848289054
+      ],
+      "manual_endpoint_xy_m": [
+        2.97,
+        3.11
+      ],
+      "manual_reference_uncertainty_m": null,
+      "scheduled_window_outputs": 5,
+      "finite_outputs": 5,
+      "valid_outputs": 5,
+      "all_finite": {
+        "count": 5,
+        "median_xy_m": [
+          3.0047606633484354,
+          2.9863036642951197
+        ],
+        "distance_to_manual_endpoint_m": 0.1284876927306178,
+        "radial_spread_about_component_median_m": {
+          "median": 0.007990060378473718,
+          "rms": 0.007991210052664245,
+          "maximum": 0.01198218652617938
+        },
+        "axis_span_m": [
+          0.01974693384083004,
+          0.004827724593313487
+        ]
+      },
+      "estimate_valid_only": {
+        "count": 5,
+        "median_xy_m": [
+          3.0047606633484354,
+          2.9863036642951197
+        ],
+        "distance_to_manual_endpoint_m": 0.1284876927306178,
+        "radial_spread_about_component_median_m": {
+          "median": 0.007990060378473718,
+          "rms": 0.007991210052664245,
+          "maximum": 0.01198218652617938
+        },
+        "axis_span_m": [
+          0.01974693384083004,
+          0.004827724593313487
+        ]
+      },
+      "selected_state_times_s": [
+        82.0,
+        83.0,
+        84.0,
+        85.0,
+        86.0
+      ],
+      "scatter_definition": "componentwise antenna XY median; radial distances about this median; RMS is within-window scatter, NOT trajectory/reference RMSE",
+      "reference_status": "uncertainty unknown; historical geometry/odom-origin conditional; development stop diagnostic only",
+      "arm": "F3",
+      "quality_comparison_arm": "Q1",
+      "publication_sha256": "21f4c6e4c95dc1b66583c39f152dd14ef3c06ac954b9fb6d8f217615d44d8d5d"
+    },
+    {
+      "case_id": "005135",
+      "frozen_window_s": [
+        83.81404534,
+        88.81404534
+      ],
+      "manual_endpoint_xy_m": [
+        2.93,
+        3.04
+      ],
+      "manual_reference_uncertainty_m": null,
+      "scheduled_window_outputs": 5,
+      "finite_outputs": 5,
+      "valid_outputs": 5,
+      "all_finite": {
+        "count": 5,
+        "median_xy_m": [
+          2.914909445590865,
+          2.994628422133806
+        ],
+        "distance_to_manual_endpoint_m": 0.04781532087566875,
+        "radial_spread_about_component_median_m": {
+          "median": 0.004010844074771993,
+          "rms": 0.005431848871278238,
+          "maximum": 0.010285467978876327
+        },
+        "axis_span_m": [
+          0.001123144580207125,
+          0.014243205150650695
+        ]
+      },
+      "estimate_valid_only": {
+        "count": 5,
+        "median_xy_m": [
+          2.914909445590865,
+          2.994628422133806
+        ],
+        "distance_to_manual_endpoint_m": 0.04781532087566875,
+        "radial_spread_about_component_median_m": {
+          "median": 0.004010844074771993,
+          "rms": 0.005431848871278238,
+          "maximum": 0.010285467978876327
+        },
+        "axis_span_m": [
+          0.001123144580207125,
+          0.014243205150650695
+        ]
+      },
+      "selected_state_times_s": [
+        84.0,
+        85.0,
+        86.0,
+        87.0,
+        88.0
+      ],
+      "scatter_definition": "componentwise antenna XY median; radial distances about this median; RMS is within-window scatter, NOT trajectory/reference RMSE",
+      "reference_status": "uncertainty unknown; historical geometry/odom-origin conditional; development stop diagnostic only",
+      "arm": "F0",
+      "quality_comparison_arm": "Q0",
+      "publication_sha256": "8a01b0bbb03da6006aa13fe18910727d728ba669ed5badaef8363aab0b82c3d7"
+    },
+    {
+      "case_id": "005135",
+      "frozen_window_s": [
+        83.81404534,
+        88.81404534
+      ],
+      "manual_endpoint_xy_m": [
+        2.93,
+        3.04
+      ],
+      "manual_reference_uncertainty_m": null,
+      "scheduled_window_outputs": 5,
+      "finite_outputs": 5,
+      "valid_outputs": 5,
+      "all_finite": {
+        "count": 5,
+        "median_xy_m": [
+          2.9149007692047557,
+          2.9946633382621735
+        ],
+        "distance_to_manual_endpoint_m": 0.047784931392000206,
+        "radial_spread_about_component_median_m": {
+          "median": 0.004019635660529193,
+          "rms": 0.005439444277490507,
+          "maximum": 0.0102986051496592
+        },
+        "axis_span_m": [
+          0.0011212900631645262,
+          0.01426554829954263
+        ]
+      },
+      "estimate_valid_only": {
+        "count": 5,
+        "median_xy_m": [
+          2.9149007692047557,
+          2.9946633382621735
+        ],
+        "distance_to_manual_endpoint_m": 0.047784931392000206,
+        "radial_spread_about_component_median_m": {
+          "median": 0.004019635660529193,
+          "rms": 0.005439444277490507,
+          "maximum": 0.0102986051496592
+        },
+        "axis_span_m": [
+          0.0011212900631645262,
+          0.01426554829954263
+        ]
+      },
+      "selected_state_times_s": [
+        84.0,
+        85.0,
+        86.0,
+        87.0,
+        88.0
+      ],
+      "scatter_definition": "componentwise antenna XY median; radial distances about this median; RMS is within-window scatter, NOT trajectory/reference RMSE",
+      "reference_status": "uncertainty unknown; historical geometry/odom-origin conditional; development stop diagnostic only",
+      "arm": "F1",
+      "quality_comparison_arm": null,
+      "publication_sha256": "f0f77d2c6dda7739fb28dfc864083692b2f66dbe5e8506baebba0efe1416981b"
+    },
+    {
+      "case_id": "005135",
+      "frozen_window_s": [
+        83.81404534,
+        88.81404534
+      ],
+      "manual_endpoint_xy_m": [
+        2.93,
+        3.04
+      ],
+      "manual_reference_uncertainty_m": null,
+      "scheduled_window_outputs": 5,
+      "finite_outputs": 5,
+      "valid_outputs": 5,
+      "all_finite": {
+        "count": 5,
+        "median_xy_m": [
+          2.9150756974080747,
+          2.9894251699083005
+        ],
+        "distance_to_manual_endpoint_m": 0.052730904094843906,
+        "radial_spread_about_component_median_m": {
+          "median": 0.0025298125010509245,
+          "rms": 0.004189293074310297,
+          "maximum": 0.008140357413480181
+        },
+        "axis_span_m": [
+          0.0009414696740663864,
+          0.010633916996390713
+        ]
+      },
+      "estimate_valid_only": {
+        "count": 5,
+        "median_xy_m": [
+          2.9150756974080747,
+          2.9894251699083005
+        ],
+        "distance_to_manual_endpoint_m": 0.052730904094843906,
+        "radial_spread_about_component_median_m": {
+          "median": 0.0025298125010509245,
+          "rms": 0.004189293074310297,
+          "maximum": 0.008140357413480181
+        },
+        "axis_span_m": [
+          0.0009414696740663864,
+          0.010633916996390713
+        ]
+      },
+      "selected_state_times_s": [
+        84.0,
+        85.0,
+        86.0,
+        87.0,
+        88.0
+      ],
+      "scatter_definition": "componentwise antenna XY median; radial distances about this median; RMS is within-window scatter, NOT trajectory/reference RMSE",
+      "reference_status": "uncertainty unknown; historical geometry/odom-origin conditional; development stop diagnostic only",
+      "arm": "F2",
+      "quality_comparison_arm": null,
+      "publication_sha256": "9f3d4af391f7cdbef07ec041790cc7ffb276cf247e18153021cacc2345241d8b"
+    },
+    {
+      "case_id": "005135",
+      "frozen_window_s": [
+        83.81404534,
+        88.81404534
+      ],
+      "manual_endpoint_xy_m": [
+        2.93,
+        3.04
+      ],
+      "manual_reference_uncertainty_m": null,
+      "scheduled_window_outputs": 5,
+      "finite_outputs": 5,
+      "valid_outputs": 5,
+      "all_finite": {
+        "count": 5,
+        "median_xy_m": [
+          2.9148657268510814,
+          2.9872718482452303
+        ],
+        "distance_to_manual_endpoint_m": 0.05485712543708531,
+        "radial_spread_about_component_median_m": {
+          "median": 0.002179193163647744,
+          "rms": 0.0040810616476731855,
+          "maximum": 0.008029693990926567
+        },
+        "axis_span_m": [
+          0.0009554346820199733,
+          0.010160989070305604
+        ]
+      },
+      "estimate_valid_only": {
+        "count": 5,
+        "median_xy_m": [
+          2.9148657268510814,
+          2.9872718482452303
+        ],
+        "distance_to_manual_endpoint_m": 0.05485712543708531,
+        "radial_spread_about_component_median_m": {
+          "median": 0.002179193163647744,
+          "rms": 0.0040810616476731855,
+          "maximum": 0.008029693990926567
+        },
+        "axis_span_m": [
+          0.0009554346820199733,
+          0.010160989070305604
+        ]
+      },
+      "selected_state_times_s": [
+        84.0,
+        85.0,
+        86.0,
+        87.0,
+        88.0
+      ],
+      "scatter_definition": "componentwise antenna XY median; radial distances about this median; RMS is within-window scatter, NOT trajectory/reference RMSE",
+      "reference_status": "uncertainty unknown; historical geometry/odom-origin conditional; development stop diagnostic only",
+      "arm": "F3",
+      "quality_comparison_arm": "Q1",
+      "publication_sha256": "c801eebc58496560c59b874676705d6de5e5944f570918e78b671f09037e548e"
+    }
+  ],
+  "quality_rule_uses_manual_endpoint": false,
+  "full_trajectory_RMSE_or_accepted_accuracy": false
+}
