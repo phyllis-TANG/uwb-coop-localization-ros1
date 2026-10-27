@@ -17,10 +17,10 @@ def main():
     receipt=args.archive.with_suffix(args.archive.suffix+'.json')
     if args.archive.exists() or receipt.exists():raise FileExistsError('new archive required')
     args.archive.parent.mkdir(parents=True,exist_ok=True)
-    expected={'FGO_B_stage1/'+str(x.relative_to(args.source)):sha(x) for x in files}
+    expected={'FGO_B_20261027/'+str(x.relative_to(args.source)):sha(x) for x in files}
     with args.archive.open('xb') as raw,gzip.GzipFile(fileobj=raw,mode='wb',filename='',mtime=0) as compressed,tarfile.open(fileobj=compressed,mode='w|') as out:
         for path in files:
-            info=out.gettarinfo(str(path),arcname='FGO_B_stage1/'+str(path.relative_to(args.source)))
+            info=out.gettarinfo(str(path),arcname='FGO_B_20261027/'+str(path.relative_to(args.source)))
             info.uid=info.gid=info.mtime=0;info.uname=info.gname='';info.mode=0o644
             with path.open('rb') as f:out.addfile(info,f)
     seen={}

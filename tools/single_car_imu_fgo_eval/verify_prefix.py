@@ -34,6 +34,7 @@ def main():
             for arm in protocol['prefix_checks']['arms']:
                 dest=a.output/(case+'_'+arm);args=[sys.executable,str(a.execution_checkout/'tools/single_car_imu_fgo/replay.py'),'--events-jsonl',str(path),'--config',str(a.adapted/case/(arm+'.json')),'--output',str(dest),'--max-seconds','120']
                 with (a.output/(case+'_'+arm+'.log')).open('x') as log:process=subprocess.run(args,cwd=a.execution_checkout,stdout=log,stderr=subprocess.STDOUT,timeout=150)
+                run['new_IMU_FGO_runs']+=1
                 require(process.returncode==0,'prefix CLI failed (partial directory preserved)')
                 count=compare(loadlines(a.matrix/(case+'_'+arm)/'updates.jsonl.gz'),loadlines(dest/'updates.jsonl.gz'))
                 checks.append(dict(case_id=case,arm=arm,input_records=len(selected),publications_identical=count,command_argv=args,exit_code=process.returncode,run_sha256=sha(dest/'run.json')))

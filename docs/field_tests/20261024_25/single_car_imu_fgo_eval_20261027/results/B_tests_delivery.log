@@ -1,0 +1,38 @@
+test_absolute_IMU_yaw_not_a_room_reference (test_eval.EvalTests.test_absolute_IMU_yaw_not_a_room_reference) ... ok
+test_actual_imu_versus_legacy_placeholder (test_eval.EvalTests.test_actual_imu_versus_legacy_placeholder) ... ok
+test_all_four_modes_required (test_eval.EvalTests.test_all_four_modes_required) ... ok
+test_condensed_constant_preserved (test_eval.EvalTests.test_condensed_constant_preserved) ... ok
+test_covariance_and_exact_integer_mutations (test_eval.EvalTests.test_covariance_and_exact_integer_mutations) ... ok
+test_duplicate_UWB_source_entries_retained (test_eval.EvalTests.test_duplicate_UWB_source_entries_retained) ... ok
+test_explicit_odom_fallback_separate (test_eval.EvalTests.test_explicit_odom_fallback_separate) ... ok
+test_factor_double_counting_omission_and_duplicate (test_eval.EvalTests.test_factor_double_counting_omission_and_duplicate) ... ok
+test_full_bias_marginal_cross_terms (test_eval.EvalTests.test_full_bias_marginal_cross_terms) ... ok
+test_full_coverage_not_favorable_subset (test_eval.EvalTests.test_full_coverage_not_favorable_subset) ... ok
+test_future_dependency_rejected (test_eval.EvalTests.test_future_dependency_rejected) ... ok
+test_gyro_sign_and_units_mutations_caught (test_eval.EvalTests.test_gyro_sign_and_units_mutations_caught) ... ok
+test_heading_coverage_requires_every_phase (test_eval.EvalTests.test_heading_coverage_requires_every_phase) ... ok
+test_hidden_odom_in_prediction_or_optimization_rejected (test_eval.EvalTests.test_hidden_odom_in_prediction_or_optimization_rejected) ... ok
+test_integer_epoch_not_float (test_eval.EvalTests.test_integer_epoch_not_float) ... ok
+test_interpolation_only_uses_given_arrived_bracket (test_eval.EvalTests.test_interpolation_only_uses_given_arrived_bracket) ... ok
+test_lost_cross_information_or_affine_offset_rejected (test_eval.EvalTests.test_lost_cross_information_or_affine_offset_rejected) ... ok
+test_missing_IMU_dependency_not_fabricated (test_eval.EvalTests.test_missing_IMU_dependency_not_fabricated) ... ok
+test_nonfinite_preserved_with_reason (test_eval.EvalTests.test_nonfinite_preserved_with_reason) ... ok
+test_rank_degenerate_elimination_explicit (test_eval.EvalTests.test_rank_degenerate_elimination_explicit) ... ok
+test_raw_message_covariance_numeric_check (test_eval.EvalTests.test_raw_message_covariance_numeric_check) ... ok
+test_release_cutoff_excludes_late_IMU_bracket (test_eval.EvalTests.test_release_cutoff_excludes_late_IMU_bracket) ... ok
+test_release_equality_and_missing_IMU (test_eval.EvalTests.test_release_equality_and_missing_IMU) ... ok
+test_support_gap_kept_as_bad_interval (test_eval.EvalTests.test_support_gap_kept_as_bad_interval) ... ok
+test_unknown_quality_is_not_invalid_range (test_eval.EvalTests.test_unknown_quality_is_not_invalid_range) ... ok
+test_adapter_does_not_normalize_sign_or_units (test_field.FieldTests.test_adapter_does_not_normalize_sign_or_units) ... ok
+test_adapter_real_vector_and_exact_identity (test_field.FieldTests.test_adapter_real_vector_and_exact_identity) ... ok
+test_adapter_refuses_float_epoch (test_field.FieldTests.test_adapter_refuses_float_epoch) ... ok
+test_declared_unknown_physics_not_zero_error (test_field.FieldTests.test_declared_unknown_physics_not_zero_error) ... ok
+test_arrival_cutoff_and_latest_left_hold (test_readback.ReadbackTests.test_arrival_cutoff_and_latest_left_hold) ... ok
+test_axis_sign_mutation_not_hidden_by_resealing (test_readback.ReadbackTests.test_axis_sign_mutation_not_hidden_by_resealing) ... ok
+test_delayed_sample_and_expired_hold_create_gaps (test_readback.ReadbackTests.test_delayed_sample_and_expired_hold_create_gaps) ... ok
+test_future_endpoint_not_interpolated (test_readback.ReadbackTests.test_future_endpoint_not_interpolated) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.009s
+
+OK

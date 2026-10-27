@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "A_commit": "e3a20fe04a6d53973696ec055dbc71eb135e0f77",
+  "heading_sources": {
+    "F0": "unchanged legacy Odom yaw residual/prediction; external first prior",
+    "F1": "arrived Odom angular_z, same integration as IMU arms",
+    "F2_F3": {
+      "startup": {
+        "source": "declared external initial +90deg prior",
+        "file": "tools/single_car_imu_fgo/graph.py",
+        "line": 116
+      },
+      "keyframe_prediction": {
+        "source": "previous optimized yaw + integrated gyro minus previous bias*dt; hold on missing interval",
+        "file": "tools/single_car_imu_fgo/graph.py",
+        "line": 96
+      },
+      "optimizer_initial_guess": {
+        "source": "active accepted states warmstart plus the same new gyro prediction; no old-yaw prediction call",
+        "file": "tools/single_car_imu_fgo/graph.py",
+        "line": 129
+      },
+      "failed_solver_fallback": {
+        "source": "leave active states unchanged after predicted append; candidate never adopted unless success",
+        "file": "tools/single_car_imu_fgo/graph.py",
+        "line": 134
+      },
+      "diagnostic_aligned_odom": "frontend.py:80-86 diagnostic_only; not a yaw factor or initial guess",
+      "remaining_translation_dependency": "graph.py:97 and old Objective.measured_body use upstream Odom yaw to express unchanged body translation; independence NOT claimed"
+    }
+  },
+  "factor_policy": {
+    "angular_yaw_rows": "graph.py:53 explicitly keeps only old translation/UWB, excludes old yaw residual",
+    "marginal_incident": "graph.py:78 only old prior, oldest UWB, first translation/angular/bias, second UWB empty",
+    "carried_information": "full 3D/4D M and offset from rank-aware QR, point at boundary; discarded constant retained",
+    "input_deadline": "frontend.py:75 cumulative receipts checked; AngularBuffer integrates only actual arrivals by t+1s",
+    "actual_full_warmstart_vector_logged": false
+  },
+  "source_sha256": {
+    "tools/single_car_imu_fgo/audit.py": "66aa45427dd5a88e95e8d29439e5683ad5f2ae619653643886018ad096255359",
+    "tools/single_car_imu_fgo/batch.py": "adc6b0e1564972ffce3c275b904aa334b16ebd9adea0bf4cba0c31fe21e84f26",
+    "tools/single_car_imu_fgo/check_matrix.py": "ee68a8ca5bc349583bddc1b22f460c2fe2f50110615d81c96c4c4a32f73d0a09",
+    "tools/single_car_imu_fgo/configuration.py": "e7f32bdd4cbc69378b35d53023afa116d6138e9d26e4509766cfe0c02d13a2c4",
+    "tools/single_car_imu_fgo/evaluate.py": "596a667aa1c609eb4e8c21433fc0c61a1281576aff9d5a65d905cb758471a54e",
+    "tools/single_car_imu_fgo/frontend.py": "1fbdcaf648ee07d320fc8babecb4937bdd4bd4086728ef8785ab196aed5ebe09",
+    "tools/single_car_imu_fgo/graph.py": "36af00d40e1c76b611ae1cb2c6aeac6e216a1d9b20b8a384ee00ee2444cabe49",
+    "tools/single_car_imu_fgo/integration.py": "31b000725ccba2c1d6cf1fbfb75bf8da110a3648b7bd189c875677bc9b3d732c",
+    "tools/single_car_imu_fgo/io_utils.py": "c7a72dca7f7cc07208fb3ead102914ebb39b80397e1ea03f14dcbedafe4ee798",
+    "tools/single_car_imu_fgo/legacy.py": "f3c5d01dca96c7f03b0273d0336f02eabb27d350465a182f9bc7fd79e6a02bac",
+    "tools/single_car_imu_fgo/replay.py": "09b8cfed9125afc74a4e3050b84ee095f8459bcbc556b77eb489cba6be9aefcd",
+    "tools/single_car_imu_fgo/report.py": "53ca1c92cf869793a7876af2b93159ea522541b29035a15144c3d1028ef92c22",
+    "tools/single_car_imu_fgo/simulate.py": "abf17e9fd0b4445769272cd9aa910c573af0c4fbb3794ce4ae85e364f92b29ff",
+    "tools/single_car_imu_fgo/tests.py": "35655265d13e684a91e4a1fc30d45f8be85dfea685cf1ad5e07fa4fffdbd6159"
+  },
+  "numerical_readback": "all publication prediction/fallback yaw; 438 finite-difference marginalizations; full active initial vector only frozen-source inspection",
+  "field_accuracy_evaluated": false
+}
