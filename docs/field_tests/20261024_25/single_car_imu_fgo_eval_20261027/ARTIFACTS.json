@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "local_archive_member_readback_PASS_remote_pending",
+  "archive": {
+    "relative_path": "artifacts/b-imu-fgo-historical-v1.tar.gz",
+    "sha256": "1ff7558e155b20297c580df6e92cde3560e04342a059522d0bc897ceccc87ff5",
+    "bytes": 40991617,
+    "git_blob_sha1": "9bc9ba1ca56fe5b072637e7f1247d2064b9000ed"
+  },
+  "receipt_relative_path": "artifacts/b-imu-fgo-historical-v1.tar.gz.json",
+  "members_checked": 364,
+  "member_readback": "every tar member hash matches staged delivery file; no extraction into existing paths",
+  "packaged_B_source_commit": "edf5f30626ac73707f27826f293eb1a0b0626112",
+  "A_frozen_commit": "e3a20fe04a6d53973696ec055dbc71eb135e0f77",
+  "execution_commit": "f00c8743ac9c47d967817af448d3cd3fc80e8b79",
+  "raw_bags_videos_venv_included": false,
+  "EKF_checkpoint": "6b96801",
+  "input_packet_version": "inputs_002",
+  "nominal_runs": 8,
+  "prefix_verification_runs": 8,
+  "remote_readback": null,
+  "usage": "Archive is self-contained input/config/publication evidence plus frozen source snapshots. To run B git-bound readers, use exact B and execution checkouts in README. Raw bags remain Git-registered and are excluded. Original absolute paths are provenance only."
+}
