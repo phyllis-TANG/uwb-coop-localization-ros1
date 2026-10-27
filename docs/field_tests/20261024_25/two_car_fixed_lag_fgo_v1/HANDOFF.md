@@ -3,6 +3,8 @@
 本轮合成工作完成：模型/接口先提交，20秒联合图、必要测试、3个新seed×4场景×D0/D1共24组、
 逐车/逐seed/分窗评价、同期传播图和独立回读均已交付。历史两包清点完成，实包四组NOT_RUN/BLOCKED。
 
+已推送指定分支，草稿PR：[#62](https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/62)，目标main共同基准，未合并。
+
 最重要结果：正常场景收益小且部分yaw退化；无质量抑制的peer +1.2m偏差会明显污染两车。
 Car2故障窗相对正常RMSE增量 .1379–.1575m，恢复初期仍残留 .0494–.0740m，不能写成统一精度改善。
 见 [FINDINGS.md](FINDINGS.md)、[完整报告](REPORT.md)、[同期传播图](car2_fault_propagation.png)。
