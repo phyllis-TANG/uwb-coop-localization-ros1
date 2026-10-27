@@ -118,21 +118,27 @@
     "contract_version": "imu_parallel_v1_20261027",
     "files": {
       "docs/field_tests/20261024_25/imu_parallel_20261027/A_SANDBOX.md": {
-        "sha256": "3c46880001e00c54f97ee184c06e6866dab8a134391793752190c9bfd3082ba4",
-        "bytes": 4132
+        "sha256": "ac878476685804ea5b4956264605e65fa834e7b4a17e21ffbd0f15fbd5685796",
+        "bytes": 4369
       },
       "docs/field_tests/20261024_25/imu_parallel_20261027/B_CLOUD.md": {
-        "sha256": "7578ffbe731574df439f7078904172f0e9d9ad2747b06d121cceb031c01da563",
-        "bytes": 4989
+        "sha256": "3b91b53cdfd9606862c17b558bac629df837974f6b90c7487e3dbb80373bdb94",
+        "bytes": 5226
       },
       "docs/field_tests/20261024_25/imu_parallel_20261027/CONTRACT.json": {
-        "sha256": "b2a1724cfe62811cd78078e22b7de7b6ab53b08c2829d6eba81949d910b6fff9",
-        "bytes": 4377
+        "sha256": "14a61ba43e2819f9fbb544087a23baaaa34388f7cf774aeb902650ec35798c82",
+        "bytes": 4485
+      },
+      "docs/field_tests/20261024_25/imu_parallel_20261027/FGO_REDIRECT.md": {
+        "sha256": "7830a421f403bf0043dc285c2964d5e4644e85aa9df90a87967b7ebe671d84e6",
+        "bytes": 7838
       },
       "docs/field_tests/20261024_25/imu_parallel_20261027/README.md": {
-        "sha256": "977804fd283c8012eb8fb2ac540a1ff037f9d41834eb8ff3fec819366a4ef69e",
-        "bytes": 7699
+        "sha256": "1058b5d42dcc11f9192a8d70902d837785431c68d55b1e05aea0d1b679664ce4",
+        "bytes": 7936
       }
-    }
+    },
+    "status": "SUPERSEDED_EKF_TASKS_USE_FGO_REDIRECT",
+    "current_task": "docs/field_tests/20261024_25/imu_parallel_20261027/FGO_REDIRECT.md"
   }
 }
