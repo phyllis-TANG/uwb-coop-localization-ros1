@@ -1,0 +1,165 @@
+{
+  "kind": "Recorded actual successful command inventory, not an inferred shell history",
+  "commands": [
+    {
+      "script": "verify_evidence.py",
+      "argv": [
+        "python3",
+        "tools/single_car_quality_diagnosis/verify_evidence.py",
+        "--original",
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts",
+        "--output",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/verification.json"
+      ],
+      "cwd": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027",
+      "log": "verification.log",
+      "source_sha256": "a0d501f572378e903c45fd2499ebb7a94ca6bbc63eab867a3ced470fb8bb4cef",
+      "returncode": 0,
+      "environment_overrides": {}
+    },
+    {
+      "script": "analyze_logs.py",
+      "argv": [
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/venv/bin/python",
+        "tools/single_car_quality_diagnosis/analyze_logs.py",
+        "--experiment",
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/validation-v1",
+        "--output",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/log-analysis-v6"
+      ],
+      "cwd": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027",
+      "log": "log-analysis-v6.log",
+      "source_sha256": "9e604b20fa3334ecbfaba7149ef45ea88ed2958967234946f685947f34bc5466",
+      "returncode": 0,
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "script": "intervene.py",
+      "argv": [
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/venv/bin/python",
+        "tools/single_car_quality_diagnosis/intervene.py",
+        "--experiment",
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/validation-v1",
+        "--analysis",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/log-analysis-v4",
+        "--output",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/interventions-v1"
+      ],
+      "cwd": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027",
+      "log": "interventions-v1.log",
+      "source_sha256": "fa4a16e9abf18f09461c688df837b89b6896e3b8d1e2741cb6953e873e1bac8c",
+      "returncode": 0,
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "script": "mechanics.py",
+      "argv": [
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/venv/bin/python",
+        "tools/single_car_quality_diagnosis/mechanics.py",
+        "--experiment",
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/validation-v1",
+        "--output",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/mechanics-v1"
+      ],
+      "cwd": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027",
+      "log": "mechanics-v1.log",
+      "source_sha256": "ca3bcb7893907a939bbf369b5fe0b3e1d55abef85157ccc4b2fd3a29fa375b64",
+      "returncode": 0,
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "script": "make_delivery.py",
+      "argv": [
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/venv/bin/python",
+        "tools/single_car_quality_diagnosis/make_delivery.py",
+        "--original",
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts",
+        "--analysis",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/log-analysis-v6",
+        "--interventions",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/interventions-v1",
+        "--mechanics",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/mechanics-v1",
+        "--output",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/delivery-final"
+      ],
+      "cwd": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027",
+      "log": "make_delivery-final.log",
+      "source_sha256": "277d9e3ab33e6073adb700dc646ae41bcc3fd4ceda48e927795e9fc057f1e32e",
+      "returncode": 0,
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1",
+        "MPLCONFIGDIR": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/mpl-cache"
+      }
+    },
+    {
+      "script": "validate.py",
+      "argv": [
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/venv/bin/python",
+        "tools/single_car_quality_diagnosis/validate.py",
+        "--experiment",
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/validation-v1",
+        "--analysis",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/log-analysis-v6",
+        "--interventions",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/interventions-v1",
+        "--output",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/tests-v1.json"
+      ],
+      "cwd": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027",
+      "log": "tests-v1.log",
+      "source_sha256": "a6719557f7760fc28c0068fdf3e8cebbc110c263dda9f2bcc92e4b32819142af",
+      "returncode": 0,
+      "environment_overrides": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      }
+    },
+    {
+      "script": "verify_evidence.py",
+      "argv": [
+        "python3",
+        "tools/single_car_quality_diagnosis/verify_evidence.py",
+        "--original",
+        "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts",
+        "--output",
+        "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/verification_after.json"
+      ],
+      "cwd": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027",
+      "log": "verification_after.log",
+      "source_sha256": "a0d501f572378e903c45fd2499ebb7a94ca6bbc63eab867a3ced470fb8bb4cef",
+      "returncode": 0,
+      "environment_overrides": {}
+    }
+  ],
+  "registration_commit": "88a0e73",
+  "analysis_attempt_logs": [
+    "log-analysis-v1.log",
+    "log-analysis-v2.log",
+    "log-analysis-v3.log",
+    "log-analysis-v4.log",
+    "log-analysis-v5.log",
+    "log-analysis-v6.log"
+  ],
+  "notes": [
+    "v1/v3/v5 parser failures retained; v2/v4 completed; v6 final with native prior handling",
+    "D1/D2 executed once against completed v4; final event IDs and numerical results match v6; no intervention repeated",
+    "initial make_delivery-v1 completed, final generation repeats figures with editorial dead-code cleanup only",
+    "first commit attempt lacked git author identity; used per-command Codex identity; no global/repository config changed"
+  ]
+}

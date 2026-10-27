@@ -48,19 +48,21 @@ def prior_stats(g,nominal):
  s=g['row']['objective_snapshot'];p=s['prior'];n=nominal['row']['objective_snapshot']['prior'];M=np.array(p['matrix']);N=np.array(n['matrix']);point=np.array(p['point']);npnt=np.array(n['point']);delta=npnt-point;delta[2]=wrap(delta[2]);r=M@delta+np.array(p['offset']);rn=np.array(n['offset']);H=M.T@M
  d=len(point);return dict(prior_digest=digest(p),nominal_prior_digest=digest(n),prior_H_delta_fro=float(np.linalg.norm(H-N.T@N)),prior_residual_at_nominal_boundary_norm=float(np.linalg.norm(r)),nominal_prior_residual_at_own_point_norm=float(np.linalg.norm(rn)),prior_gradient_at_nominal_x=float((M.T@r)[0]),prior_gradient_at_nominal_y=float((M.T@r)[1]),prior_gradient_at_nominal_yaw=float((M.T@r)[2]),prior_gradient_at_nominal_bias=float((M.T@r)[3]) if d==4 else None,prior_xy_yaw_cross_norm=float(np.linalg.norm(H[:2,2])),prior_xy_bias_cross_norm=float(np.linalg.norm(H[:2,3])) if d==4 else None,prior_yaw_bias_cross=float(H[2,3]) if d==4 else None)
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--experiment',type=Path,required=True);ap.add_argument('--output',type=Path,required=True);a=ap.parse_args();out=a.output;out.mkdir(exist_ok=False);timelines=[];events=[];periods=[];prior_rows=[];pairchecks=[];details=[];raw_evidence=[];marginal_rows=[];checks=defaultdict(int)
+ ap=argparse.ArgumentParser();ap.add_argument('--experiment',type=Path,required=True);ap.add_argument('--output',type=Path,required=True);a=ap.parse_args();out=a.output;out.mkdir(exist_ok=False);timelines=[];events=[];periods=[];prior_rows=[];pairchecks=[];details=[];raw_evidence=[];marginal_rows=[];shadow_history=[];checks=defaultdict(int)
  for seed in SEEDS:
   nominal={q:load(a.experiment,'nominal',seed,q) for q in GROUPS}
   for sc in SCENARIOS[1:]:
    pairchecks.append(check_pair(a.experiment,sc,seed));inp=a.experiment/'inputs'/f'{sc}_seed{seed}';labels=json.loads((inp/'labels.json').read_text());origin=labels['origin_epoch_ns'];truth={t['epoch_ns']:t for t in read(inp/'truth.jsonl.gz')};raw={e['record_index']:e for e in read(inp/'events.jsonl.gz')}
    for q in GROUPS:
-    r=load(a.experiment,sc,seed,q);n=nominal[q];model=r['config']['base']['model'];frozen={};consumed=defaultdict(list);last={};chain_fault=defaultdict(set);series=[]
+    r=load(a.experiment,sc,seed,q);n=nominal[q];model=r['config']['base']['model'];frozen={};consumed=defaultdict(list);last={};last_prior={};chain_fault=defaultdict(set);series=[]
     for (epoch,role),g in r['graphs'].items():
      previous=last.get(role);assert g['previous_record_id']==previous;last[role]=g['record_id'];checks['graph_previous_id']+=1
      s=g['row']['objective_snapshot'];ng=n['graphs'][(epoch,role)];t=(epoch-origin)/1e9;assert g['availability_cutoff_epoch_ns']==epoch+10**9
      if role!='main':
       assert all(role not in o for o in s['observations']);assert all(all(v==1 for v in w.values()) for w in s['quality_weights']);checks['shadow_target_exclusion_and_unity']+=1
      for md in g['row'].get('marginalization_details',[]):
+      before=digest(md['linearization_input']['prior']);after=digest(md['prior_after'])
+      assert before==last_prior[role],(sc,seed,q,role,t,'prior chain');last_prior[role]=after;checks['prior_chain']+=1
       lin=md['linearization_input'];old=lin['times_s'][0]+.01
       # Raw fault may straddle the bin at 12.01/32.01. Conservatively track any contributing injected sample.
       faults=[]
@@ -73,6 +75,16 @@ def main():
        if affected and gain>0:chain_fault[role].add(fid);faults.append(fid)
       if role=='main' or faults:
        marginal_rows.append(dict(scenario=sc,seed=seed,group=q,role=role,t_s=t,old_state_t_s=old,consumed=md_ids,fault_affected_positive_consumed=faults,cumulative_fault_affected_positive_prior=len(chain_fault[role]),prior_before=md.get('prior_before_digest',digest(lin['prior'])),prior_after=md.get('prior_after_digest',digest(md['prior_after']))))
+     if role in last_prior and q!='Q0':assert last_prior[role]==digest(s['prior'])
+     last_prior[role]=digest(s['prior'])
+     if role!='main':
+      affected_current=0
+      for kt,obs,ww in zip(s['times_s'],s['observations'],s['quality_weights']):
+       ep=origin+10_000_000+round(kt*1e9)
+       for key in obs:
+        deps=r['graphs'][(ep,role)]['support_new']['range_support'][key]
+        affected_current+=bool(ww[key]>0 and (sc=='multi_common_uwb' or key=='node_10') and any(12<=(z['identity']['header_epoch_ns']-origin)/1e9<32 for z in deps))
+      shadow_history.append(dict(scenario=sc,seed=seed,group=q,role=role,t_s=t,record_id=g['record_id'],window_start_s=s['times_s'][0]+.01,window_fault_affected_positive_factors=affected_current,prior_fault_affected_positive_ancestors=len(chain_fault[role]),**error(g['row'],truth[epoch]),**prior_stats(g,ng)))
      if role=='main':
       e=error(g['row'],truth[epoch]);ne=error(ng['row'],truth[epoch]);pr=prior_stats(g,ng);window_fault=0;window_down=0
       for ktime,o,w in zip(s['times_s'],s['observations'],s['quality_weights']):
@@ -128,7 +140,7 @@ def main():
      if q in ('Q0','Q2'):row['bias_error_rad_s_rmse']=row['nominal_bias_error_rad_s_rmse']=None
      row['max_prior_fault_ancestors']=max(s['prior_fault_affected_positive_ancestors'] for s in xs);row['max_window_fault_factors']=max(s['window_fault_affected_positive_factors'] for s in xs);periods.append(row)
     print(sc,seed,q,'done',flush=True)
- write_csv(out/'timeline.csv',timelines);write_csv(out/'healthy_events.csv',events);write_csv(out/'periods.csv',periods);write_csv(out/'main_history.csv',prior_rows);write_csv(out/'marginal_history.csv',marginal_rows);dump(out/'paired_input_checks.json',pairchecks);dump(out/'checks.json',dict(checks));dump(out/'healthy_events.json',events)
+ write_csv(out/'shadow_history.csv',shadow_history);write_csv(out/'timeline.csv',timelines);write_csv(out/'healthy_events.csv',events);write_csv(out/'periods.csv',periods);write_csv(out/'main_history.csv',prior_rows);write_csv(out/'marginal_history.csv',marginal_rows);dump(out/'paired_input_checks.json',pairchecks);dump(out/'checks.json',dict(checks));dump(out/'healthy_events.json',events)
  with gzip.open(out/'event_full_evidence.json.gz','wt') as f:json.dump(details,f,sort_keys=True)
  assert len(events)==8 and sum(e['scenario']=='uwb_step' and e['group']=='Q2' for e in events)==2 and sum(e['scenario']=='uwb_step' and e['group']=='Q3' for e in events)==5 and sum(e['scenario']=='uwb_ramp' and e['group']=='Q3' for e in events)==1
  print(json.dumps(dict(status='PASS',healthy_episodes=len(events),checks=checks)))

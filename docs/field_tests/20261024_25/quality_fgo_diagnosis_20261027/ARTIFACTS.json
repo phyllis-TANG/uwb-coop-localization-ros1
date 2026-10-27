@@ -1,0 +1,51 @@
+{
+  "status": "AVAILABLE_AND_NAS_READBACK_VERIFIED",
+  "common_base": "868349b543a03a6a713d1675e1d4ada7d905410c",
+  "frozen_execution_commit": "12a1d94379b58c5a759b1698425fb90d48587609",
+  "protocol_sha256": "ddb533f94d4b2b5f36b5cf3922dad1d72361ce674f908dc1ba40514324bcfb31",
+  "new_diagnosis_archive": {
+    "status": "PASS",
+    "archive": "/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts/archives/quality_fgo_diagnosis_20261027_evidence.tar.gz",
+    "sha256": "d71635a4883cf0ad1ac2227dcd1f855da1164e9eeea2ae1528aa317418eb1def",
+    "size_bytes": 13286380,
+    "evidence_files_verified": 47,
+    "manifest_sha256": "e511e0ce2e5cf7de4d019bfdaa17a19a977d63d90bef5bdffd3096b75fceffbf",
+    "original_archive_sha256": "7a5ff137f2f7fb250ebda466e163f94d137d59f660b48eb4f9150847bbdc3ab8",
+    "original_formal_matrix_restarts": 0,
+    "diagnostic_main_reconstructions": 6,
+    "diagnostic_snapshot_solves": 28,
+    "NAS_archive": "/home/ubuntu22/nas/data/uwb_coop_artifacts/quality_fgo_diagnosis_20261027_12a1d943/quality_fgo_diagnosis_20261027_evidence.tar.gz",
+    "NAS_readback_sha256": "d71635a4883cf0ad1ac2227dcd1f855da1164e9eeea2ae1528aa317418eb1def",
+    "access": "Existing authorized SMB mount //10.22.5.135/data; LAN/VPN; not public HTTP"
+  },
+  "original_archive": {
+    "local_file": "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/archives/single_car_quality_fgo_v1_evidence_20261027.tar.gz",
+    "NAS_file": "/home/ubuntu22/nas/data/uwb_coop_artifacts/single_car_quality_fgo_v1_20261027_12a1d943/single_car_quality_fgo_v1_evidence_20261027.tar.gz",
+    "sha256": "7a5ff137f2f7fb250ebda466e163f94d137d59f660b48eb4f9150847bbdc3ab8",
+    "size_bytes": 293750470,
+    "evidence_files_verified": 2138
+  },
+  "fetch_argv": [
+    "cp",
+    "/home/ubuntu22/nas/data/uwb_coop_artifacts/quality_fgo_diagnosis_20261027_12a1d943/quality_fgo_diagnosis_20261027_evidence.tar.gz",
+    "<new-local-path>"
+  ],
+  "verify_argv": [
+    "sha256sum",
+    "<retrieved-archive>"
+  ],
+  "original_reuse_verification": "verification.json and verification_after.json: exact equality; all 1298 reused formal files and 96 run code/config bindings",
+  "archive_scope": "47 diagnosis evidence/source/log files plus manifest. Original full archive referenced, not duplicated. Final editorial documents/figures/PR receipts live on this Git branch; package-v1.log was still empty when captured, final archive.json lives beside archive.",
+  "access": "LAN/VPN + existing authorized SMB mount //10.22.5.135/data; not a public HTTP URL; no Release changes",
+  "important_members": {
+    "events": "log-analysis-v6/event_full_evidence.json.gz",
+    "complete_time_traces": "log-analysis-v6/timeline.csv and shadow_history.csv and main_history.csv",
+    "marginalization": "log-analysis-v6/marginal_history.csv",
+    "full_diagnostic_solves": "interventions-v1/full_intervention_results.json.gz",
+    "input_config_source_sha": "verification.json, provenance.json, commands.json",
+    "diagnostic_source": "executed-source/"
+  },
+  "reproduction": "COMMANDS.md; use new external output paths; never rerun formal matrix",
+  "compact_file_SHA_index": "review/DELIVERY_FILES_SHA256.json (excludes itself)",
+  "independent_validation": false
+}

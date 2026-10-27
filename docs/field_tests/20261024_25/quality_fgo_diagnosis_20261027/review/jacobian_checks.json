@@ -1,0 +1,100 @@
+[
+  {
+    "scenario": "multi_common_uwb",
+    "seed": 401,
+    "group": "Q1",
+    "role": "main",
+    "max_abs_jacobian_fd_error": 4.004228060239257e-09
+  },
+  {
+    "scenario": "multi_common_uwb",
+    "seed": 401,
+    "group": "Q3",
+    "role": "main",
+    "max_abs_jacobian_fd_error": 5.369634514806876e-09
+  },
+  {
+    "scenario": "multi_common_uwb",
+    "seed": 419,
+    "group": "Q1",
+    "role": "main",
+    "max_abs_jacobian_fd_error": 4.004228060239257e-09
+  },
+  {
+    "scenario": "multi_common_uwb",
+    "seed": 419,
+    "group": "Q3",
+    "role": "main",
+    "max_abs_jacobian_fd_error": 4.004228060239257e-09
+  },
+  {
+    "scenario": "multi_common_uwb",
+    "seed": 443,
+    "group": "Q1",
+    "role": "main",
+    "max_abs_jacobian_fd_error": 4.221591964892468e-09
+  },
+  {
+    "scenario": "multi_common_uwb",
+    "seed": 443,
+    "group": "Q3",
+    "role": "main",
+    "max_abs_jacobian_fd_error": 4.004228060239257e-09
+  },
+  {
+    "scenario": "uwb_step",
+    "seed": 401,
+    "group": "Q3",
+    "role": "node_2",
+    "max_abs_jacobian_fd_error": 4.0094292330650205e-09
+  },
+  {
+    "scenario": "uwb_step",
+    "seed": 401,
+    "group": "Q3",
+    "role": "node_3",
+    "max_abs_jacobian_fd_error": 5.243222675477277e-09
+  },
+  {
+    "scenario": "uwb_step",
+    "seed": 419,
+    "group": "Q2",
+    "role": "node_2",
+    "max_abs_jacobian_fd_error": 4.004327536222263e-09
+  },
+  {
+    "scenario": "uwb_step",
+    "seed": 419,
+    "group": "Q2",
+    "role": "node_3",
+    "max_abs_jacobian_fd_error": 4.022378874424248e-09
+  },
+  {
+    "scenario": "uwb_step",
+    "seed": 419,
+    "group": "Q3",
+    "role": "node_2",
+    "max_abs_jacobian_fd_error": 4.004228060239257e-09
+  },
+  {
+    "scenario": "uwb_step",
+    "seed": 419,
+    "group": "Q3",
+    "role": "node_3",
+    "max_abs_jacobian_fd_error": 4.004228060239257e-09
+  },
+  {
+    "scenario": "uwb_step",
+    "seed": 443,
+    "group": "Q3",
+    "role": "node_2",
+    "max_abs_jacobian_fd_error": 4.306823342403732e-09
+  },
+  {
+    "scenario": "uwb_ramp",
+    "seed": 443,
+    "group": "Q3",
+    "role": "node_2",
+    "max_abs_jacobian_fd_error": 4.0094292330650205e-09
+  }
+]
