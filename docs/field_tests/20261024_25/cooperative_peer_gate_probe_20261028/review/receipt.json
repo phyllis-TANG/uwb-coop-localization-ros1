@@ -1,0 +1,24 @@
+{
+  "checks": {
+    "FD_Schur": 120,
+    "auxiliary_equal_G0_pose_prior": 945,
+    "complete_runs": 45,
+    "independent_adapter_changed_scalars": 3360,
+    "independent_gate_formula": 876,
+    "independent_objective_cost": 3660,
+    "input_SHA": 180,
+    "output_SHA": 135,
+    "peer_raw_cutoffs": 44973,
+    "prior_source_chain": 3780,
+    "receive_prefix_bins": 2835
+  },
+  "estimator_imports": [],
+  "joint_publications": 2835,
+  "matrix_cells": 45,
+  "per_car_publications": 5670,
+  "scope": "same-host independent equations and artifact checks; exposed development seeds, not new independent validation",
+  "shared_accepted_state_epochs": 915,
+  "source_sha256": "2e14fd53e2787d015b658e7284676d131111809aebaa22aababb9d5ec2f46c81",
+  "status": "PASS",
+  "unique_inputs": 15
+}

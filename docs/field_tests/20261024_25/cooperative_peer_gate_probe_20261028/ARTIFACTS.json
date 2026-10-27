@@ -1,0 +1,55 @@
+{
+  "status": "AVAILABLE_NAS_SHA_AND_RELOCATED_READER_VERIFIED",
+  "algorithm_reading_commit": "74fa210e7cf6aa322eaebce19530510edb605d22",
+  "wrapper_execution_commit": "d78a5df8d51fbb98e160ab67d547e73a0bffc803",
+  "current_main_at_task_start": "7b67c66f2470d23f6c876f45b6543f72fab66391",
+  "evidence_archive": {
+    "status": "PASS",
+    "archive": "/home/ubuntu22/uwb-peer-gate-probe-20261028-artifacts/archives-v1/cooperative_peer_gate_probe_20261028_74fa210e.tar.gz",
+    "NAS_archive": "/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_peer_gate_probe_20261028_74fa210e/cooperative_peer_gate_probe_20261028_74fa210e.tar.gz",
+    "size_bytes": 29660829,
+    "sha256": "a1c75087eb2a54ff0512e2065cca770d45f5b7d26dabf0e27d3d474c0f52a26f",
+    "manifest_sha256": "f47c60a5800975fbf28fec407321384d0f8239cb25ed8964b726c33906ce1472",
+    "verified_files": 387,
+    "old_reuse_archive": {
+      "local": "/home/ubuntu22/uwb-two-car-fixed-lag-fgo-v1-artifacts/two-car-fixed-lag-fgo-v1-1595c98.tar.gz",
+      "NAS_archive": "/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_peer_gate_probe_20261028_74fa210e/two-car-fixed-lag-fgo-v1-1595c98.tar.gz",
+      "sha256": "0e0156d75374cbe8e2180ef0eb36a7f282b5c59c842b6392d1ae4ae1956c8f8b",
+      "size_bytes": 12915946
+    },
+    "NAS_full_readback_SHA_matches": true,
+    "access": "Existing authorized SMB //10.22.5.135/data; LAN/VPN; not a public HTTP URL",
+    "archive_scope": "Frozen source, original/copied/adapted synthetic inputs, all 45 normalized outputs, all failures/tests, independent v1/v2 evaluations and compact figures; original reuse archive separately retained"
+  },
+  "remote_readback": "review/remote_readback.json",
+  "fetch_argv": [
+    "cp",
+    "/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_peer_gate_probe_20261028_74fa210e/cooperative_peer_gate_probe_20261028_74fa210e.tar.gz",
+    "<new-local-file>"
+  ],
+  "verify_argv": [
+    "sha256sum",
+    "<retrieved-archive>"
+  ],
+  "extraction_prefix": "cooperative_peer_gate_probe_20261028/",
+  "readback": "Run extracted delivery-source/evaluate.py --matrix <root>/matrix-v1 --frozen-source <root>/frozen-source --output <new-external-directory>; do not run the estimator again",
+  "access": "Existing authorized SMB //10.22.5.135/data; LAN/VPN; not a public HTTP URL",
+  "important_members": {
+    "input_bindings": "input_index.json + inputs/*",
+    "exact_45_outputs": "matrix-v1/index.json + runs/*/run.json + updates.jsonl.gz",
+    "actual_auxiliary_factor_prior_histories": "matrix-v1/runs/*/updates.jsonl.gz",
+    "frozen_19_source": "frozen-source/",
+    "wrapper_10_sources_at_execution": "matrix-v1/source/",
+    "failures": "tests-v1/frozen.log",
+    "reader_versions": "evaluation-v1/executed_evaluator.py and delivery-source/evaluate.py",
+    "source_SHA": "execution_provenance.json and matrix-v1/index.json",
+    "original_reuse_run_manifests": "reused-original-manifests/"
+  },
+  "scope_note": "Final editorial documents, this receipt, relocated readback receipts and final Git file checksum index are stored on the branch or beside the immutable archive; source/data/results archive is never overwritten",
+  "development_evidence_only": true,
+  "comparison_cells": 45,
+  "reused": 24,
+  "new_replay": 21,
+  "readback_estimator_reruns": 0,
+  "compact_file_checksums": "review/DELIVERY_FILES_SHA256.json"
+}
