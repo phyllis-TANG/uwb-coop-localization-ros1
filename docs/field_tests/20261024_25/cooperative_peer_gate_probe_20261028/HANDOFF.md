@@ -14,4 +14,4 @@ G2辅助从初始化起never-peer，不消费主图状态/prior/权重；同stat
 
 任务开始2026-10-27 16:34:27 UTC，6小时硬截止22:34:27 UTC；约一小时内完成矩阵、评价与归档回读，后续只做交付。无待补比较单元。后续不要再次run已完成矩阵；读取归档到新目录运行独立evaluate即可。若继续可信性研究需另版、预登记未暴露数据与保护目标，不以这3个暴露seed调门限或回滚时刻。真实同步、安装、现场输入、长期误报率与净prior因果贡献均未验证，不能把这些写成本轮保证。
 
-交付提交/草稿PR以review/delivery_receipt.json及分支HEAD为准；不自动合并。
+结果提交`acc3c255ad5379340bf20a3cf59ceb5bebd5ee9d`已推送并创建[草稿PR #68](https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/68)。本收据/SHA清单为随后的纯元数据提交，最终HEAD以分支/PR为准；不自动合并。
