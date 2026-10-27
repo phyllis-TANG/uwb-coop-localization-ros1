@@ -10,6 +10,6 @@
 
 新证据本地根`/home/ubuntu22/uwb-quality-fgo-diagnosis-20261027-artifacts`；归档13,286,380字节，SHA256 `d71635a4883cf0ad1ac2227dcd1f855da1164e9eeea2ae1528aa317418eb1def`，47份新证据/source/log加manifest逐项核验。已写入NAS独立`quality_fgo_diagnosis_20261027_12a1d943`目录并完整读回SHA匹配。还需原v1归档（293,750,470字节，SHA `7a5ff137…dc3ab8`）取得全部原输入/图；新归档不重复这些大数据。精确路径、SHA、取得命令见ARTIFACTS.json。
 
-分支仅新增用户指定`tools/single_car_quality_diagnosis/`和本目录。线上内核、B端、双车工具和公共几何/清单没有变化。结果约7MB入Git；47文件大证据在Git外。交付Git提交与PR状态另见review/delivery_receipt.json；未自动合并。
+分支仅新增用户指定`tools/single_car_quality_diagnosis/`和本目录。线上内核、B端、双车工具和公共几何/清单没有变化。结果约7MB入Git；47文件大证据在Git外。结果提交`2006474b31f312e5a85295845ef2d648ba0bd406`已推送并创建[草稿PR #63](https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/63)。交付收据与SHA索引为随后纯元数据提交，最终HEAD以PR分支为准；未自动合并。
 
 继续工作时先读INTERVENTION_REGISTER和REPORT的未知项。不要再跑正式96组或用本轮暴露数据调阈值；已有归因试验不是独立验证。两项下一版建议都需要另建版本、预冻结和未暴露seed验证。当前没有待补的授权范围内分析项；真实数据/B外部验收、在线参照可靠性规则和可因果重建prior尚未验证，不能把它们当本轮完成的功能。
