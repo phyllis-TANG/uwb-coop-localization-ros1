@@ -19,6 +19,12 @@ def semantic(value):
 def compare(original,altered,full_graphs,full_ledger,target='node_10'):
     graphs=lines(original/'graphs.jsonl.gz');other=lines(altered/'graphs.jsonl.gz');ledger=lines(original/'ledger.jsonl.gz');caches=lines(original/'caches.jsonl.gz');changed_cache=lines(altered/'caches.jsonl.gz');epochs={g['state_epoch_ns'] for g in graphs};want=[r for r in full_graphs if r['state_epoch_ns'] in epochs]
     require(semantic(graphs)==semantic(want),'real receive-prefix graph/prior/initial guess changed');require(semantic(ledger)==semantic([r for r in full_ledger if r['state_epoch_ns'] in epochs]),'real receive-prefix quality decisions changed')
+    for snapshots,records in ((caches,graphs),(changed_cache,other)):
+        graphmap={r['record_id']:r for r in records}
+        for item in snapshots:
+            graph=graphmap[item['record_id']];deadline=graph['row']['availability_cutoff_s'];cache=item['cache']
+            require(all(r[2]<=deadline+1e-12 for name in ('odom','ranges') for r in cache.get(name,[])),'future record in actual private cache')
+            require(all(r['identity']['receive_epoch_ns']<=graph['availability_cutoff_epoch_ns'] for r in cache.get('angular_rows',[])),'future gyro in actual cache')
     before=[g for g in graphs if g['role']==target];after=[g for g in other if g['role']==target];require(bool(before) and semantic(before)==semantic(after),'target-excluded shadow numeric history/initial guess/prior changed')
     c0=[c for c in caches if c['role']==target];c1=[c for c in changed_cache if c['role']==target];require(c0==c1,'target-excluded actual private cache changed')
     for item in c0:
