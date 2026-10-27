@@ -1,0 +1,327 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:uwb:imu-prototype:v1",
+  "title": "imu_prototype object only (root baseline config remains unchanged)",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "enabled",
+    "motion_mode"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "motion_mode": {
+      "enum": [
+        "legacy_odom_pose",
+        "body_odom_rate",
+        "body_imu_fixed_bias",
+        "body_imu_bias"
+      ]
+    },
+    "fusion_methods": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "independent",
+          "joint"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "frame_mode": {
+      "enum": [
+        "room",
+        "source_odometry_motion_only"
+      ]
+    },
+    "ranges_enabled": {
+      "type": "boolean"
+    },
+    "assumption_profile_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "input_correlation_assumption": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parameters": {
+      "type": "object",
+      "required": [
+        "velocity_noise",
+        "heading_noise",
+        "bias_random_walk",
+        "gap_xy_noise",
+        "gap_yaw_noise",
+        "max_control_hold_ns",
+        "max_control_latency_ns"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "velocity_noise": {
+          "$ref": "#/$defs/parameter"
+        },
+        "heading_noise": {
+          "$ref": "#/$defs/parameter"
+        },
+        "bias_random_walk": {
+          "$ref": "#/$defs/parameter"
+        },
+        "gap_xy_noise": {
+          "$ref": "#/$defs/parameter"
+        },
+        "gap_yaw_noise": {
+          "$ref": "#/$defs/parameter"
+        },
+        "max_control_hold_ns": {
+          "$ref": "#/$defs/parameter"
+        },
+        "max_control_latency_ns": {
+          "$ref": "#/$defs/parameter"
+        }
+      }
+    },
+    "vehicles": {
+      "type": "object",
+      "required": [
+        "car1",
+        "car2"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "car1": {
+          "$ref": "#/$defs/vehicle"
+        },
+        "car2": {
+          "$ref": "#/$defs/vehicle"
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "enabled": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "fusion_methods",
+          "frame_mode",
+          "ranges_enabled",
+          "assumption_profile_id",
+          "input_correlation_assumption",
+          "parameters",
+          "vehicles"
+        ]
+      },
+      "else": {
+        "properties": {
+          "motion_mode": {
+            "const": "legacy_odom_pose"
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "parameter": {
+      "type": "object",
+      "required": [
+        "value",
+        "units",
+        "source_kind",
+        "source",
+        "frozen_before_field_run"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "type": [
+            "number",
+            "string",
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "number"
+          }
+        },
+        "units": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_kind": {
+          "enum": [
+            "engineering_assumption",
+            "measured",
+            "manufacturer_generic",
+            "synthetic_design"
+          ]
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "frozen_before_field_run": {
+          "const": true
+        },
+        "status": {
+          "enum": [
+            "provided",
+            "pending"
+          ]
+        },
+        "uncertainty_description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "derived_from": {
+          "type": "string"
+        }
+      }
+    },
+    "clock": {
+      "type": "object",
+      "required": [
+        "status",
+        "field",
+        "source_origin_ns",
+        "destination_origin_ns",
+        "rate_numerator",
+        "rate_denominator",
+        "uncertainty_ns",
+        "source_clock_id",
+        "destination_clock_id",
+        "source",
+        "source_kind",
+        "units",
+        "frozen_before_field_run"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "source_origin_ns": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "destination_origin_ns": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "rate_numerator": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "rate_denominator": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "uncertainty_ns": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "status": {
+          "enum": [
+            "provided",
+            "pending",
+            "unknown"
+          ]
+        },
+        "field": {
+          "const": "header_epoch_ns"
+        },
+        "source_clock_id": {
+          "type": "string"
+        },
+        "destination_clock_id": {
+          "type": "string"
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_kind": {
+          "enum": [
+            "engineering_assumption",
+            "measured",
+            "manufacturer_generic",
+            "synthetic_design"
+          ]
+        },
+        "units": {
+          "const": "ns"
+        },
+        "frozen_before_field_run": {
+          "const": true
+        },
+        "valid_source_interval_ns": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "sample_time_semantics": {
+          "type": "string"
+        }
+      }
+    },
+    "vehicle": {
+      "type": "object",
+      "required": [
+        "gyro_axis_body_z_in_imu_frame",
+        "imu_frame_id",
+        "bias_initial",
+        "bias_initial_sigma",
+        "imu_clock"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "gyro_axis_body_z_in_imu_frame": {
+          "$ref": "#/$defs/parameter"
+        },
+        "imu_frame_id": {
+          "$ref": "#/$defs/parameter"
+        },
+        "bias_initial": {
+          "$ref": "#/$defs/parameter"
+        },
+        "bias_initial_sigma": {
+          "$ref": "#/$defs/parameter"
+        },
+        "imu_clock": {
+          "$ref": "#/$defs/clock"
+        }
+      }
+    }
+  }
+}
