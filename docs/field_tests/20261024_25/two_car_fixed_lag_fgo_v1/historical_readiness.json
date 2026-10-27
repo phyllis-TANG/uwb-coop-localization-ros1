@@ -1,0 +1,769 @@
+{
+  "schema_version": 1,
+  "status": "BLOCKED",
+  "inventory_status": "DONE",
+  "strict_field_execution_status": "BLOCKED",
+  "run_id": "historical-readiness-015334-033248-v1",
+  "role": "two_car_input_readiness",
+  "created_at_utc": "2026-10-27T14:21:45.080276+00:00",
+  "code_commit": "214965852656156968bb198f9dac822e5a6909bf",
+  "worktree_dirty": true,
+  "command_argv": [
+    "/home/ubuntu22/uwb-single-car-imu-fgo-20261027-artifacts/venv/bin/python",
+    "docs/field_tests/20261024_25/two_car_fixed_lag_fgo_v1/historical_input_audit.py"
+  ],
+  "environment": {
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "rosbags": "0.10.11"
+  },
+  "common_base_commit": "868349b543a03a6a713d1675e1d4ada7d905410c",
+  "reader": {
+    "rosbags": "0.10.11",
+    "mode": "read-only; no optimizer/ROS process"
+  },
+  "inputs": [
+    {
+      "asset_id": "015334",
+      "relative_path": "datasets/field_raw/20261018/bags/TWO_CAR_C1_static_C2_auto_L_20261018_015334.bag",
+      "sha256": "bb2f8cbfecf3e73cdf1b12f4c290b51d0c74215006746abba72c0b9c7a0946e6",
+      "bytes": 6721576,
+      "sha256_matches_source_manifest": true,
+      "receive_start_epoch_ns": 1792313648982309104,
+      "receive_end_exclusive_epoch_ns": 1792313743790058776,
+      "duration_ns": 94807749672,
+      "topics": {
+        "/car1/PowerVoltage": {
+          "type": "std_msgs/msg/Float32",
+          "connection_count": 160
+        },
+        "/car1/imu": {
+          "type": "sensor_msgs/msg/Imu",
+          "connection_count": 1910
+        },
+        "/car1/odom": {
+          "type": "nav_msgs/msg/Odometry",
+          "connection_count": 1908
+        },
+        "/car1/uwb/ranges": {
+          "type": "uwb_coop_localization/msg/UwbRangeArray",
+          "connection_count": 4760
+        },
+        "/car2/PowerVoltage": {
+          "type": "std_msgs/msg/Float32",
+          "connection_count": 159
+        },
+        "/car2/imu": {
+          "type": "sensor_msgs/msg/Imu",
+          "connection_count": 1896
+        },
+        "/car2/odom": {
+          "type": "nav_msgs/msg/Odometry",
+          "connection_count": 1893
+        },
+        "/car2/uwb/ranges": {
+          "type": "uwb_coop_localization/msg/UwbRangeArray",
+          "connection_count": 4729
+        },
+        "/car2/cmd_vel": {
+          "type": "geometry_msgs/msg/Twist",
+          "connection_count": 1645
+        }
+      },
+      "raw_topics_present": [],
+      "normalized_joint_events_status": "NOT_EXPORTED",
+      "strict_D0_D1_execution_status": "BLOCKED",
+      "conditional_D0_D1_runs": 0,
+      "input_scan": {
+        "/car1/odom": {
+          "frame_ids": [
+            "car1/odom_combined"
+          ],
+          "child_frame_ids": [
+            "base_footprint"
+          ],
+          "duplicate_header_seq_stamp": 0,
+          "duplicate_link_ids": 0,
+          "valid_link_counts": {},
+          "nonfinite_quality_entries": 0,
+          "tag_ids": [],
+          "first_odom_pose": [
+            0.016048932448029518,
+            -6.744640995748341e-05,
+            -0.0041997404769063,
+            -0.0041997404769063
+          ],
+          "last_odom_pose": [
+            0.016048932448029518,
+            -6.744640995748341e-05,
+            -0.0041997404769063,
+            -0.0041997404769063
+          ],
+          "odom_xy_path_m": 0.0,
+          "message_count": 1908,
+          "receive_range_epoch_ns": [
+            1792313648982533307,
+            1792313743781699432
+          ],
+          "header_range_epoch_ns": [
+            1792313648607387237,
+            1792313743955110292
+          ],
+          "receive_minus_header_ns": {
+            "min": -194965201,
+            "median": -164588902.5,
+            "max": 375146070
+          },
+          "header_backwards_count": 0,
+          "header_equal_count": 0,
+          "receive_backwards_count": 0,
+          "max_receive_gap_ns": 273916261,
+          "max_header_gap_ns": 50165651
+        },
+        "/car1/uwb/ranges": {
+          "frame_ids": [
+            "car1/uwb_linktrack"
+          ],
+          "child_frame_ids": [],
+          "duplicate_header_seq_stamp": 0,
+          "duplicate_link_ids": 0,
+          "valid_link_counts": {
+            "node_2": 4757,
+            "node_3": 4758,
+            "node_8": 4758,
+            "node_10": 4759,
+            "node_0": 4748
+          },
+          "nonfinite_quality_entries": 23780,
+          "tag_ids": [
+            "node_1"
+          ],
+          "message_count": 4760,
+          "receive_range_epoch_ns": [
+            1792313648982851833,
+            1792313743790058775
+          ],
+          "header_range_epoch_ns": [
+            1792313648806664943,
+            1792313743987207889
+          ],
+          "receive_minus_header_ns": {
+            "min": -197279201,
+            "median": -194013227.0,
+            "max": 176186890
+          },
+          "header_backwards_count": 0,
+          "header_equal_count": 0,
+          "receive_backwards_count": 0,
+          "max_receive_gap_ns": 254949673,
+          "max_header_gap_ns": 22650003
+        },
+        "/car1/imu": {
+          "frame_ids": [
+            "gyro_link"
+          ],
+          "child_frame_ids": [],
+          "duplicate_header_seq_stamp": 0,
+          "duplicate_link_ids": 0,
+          "valid_link_counts": {},
+          "nonfinite_quality_entries": 0,
+          "tag_ids": [],
+          "message_count": 1910,
+          "receive_range_epoch_ns": [
+            1792313648982405195,
+            1792313743760762685
+          ],
+          "header_range_epoch_ns": [
+            1792313648507389844,
+            1792313743955139199
+          ],
+          "receive_minus_header_ns": {
+            "min": -195103154,
+            "median": -193371688.0,
+            "max": 475015351
+          },
+          "header_backwards_count": 0,
+          "header_equal_count": 0,
+          "receive_backwards_count": 0,
+          "max_receive_gap_ns": 241928273,
+          "max_header_gap_ns": 50181480
+        },
+        "/car2/odom": {
+          "frame_ids": [
+            "car2/odom_combined"
+          ],
+          "child_frame_ids": [
+            "base_footprint"
+          ],
+          "duplicate_header_seq_stamp": 0,
+          "duplicate_link_ids": 0,
+          "valid_link_counts": {},
+          "nonfinite_quality_entries": 0,
+          "tag_ids": [],
+          "first_odom_pose": [
+            0.005822518840432167,
+            -1.9672132730484009,
+            -3.1930322647094727,
+            3.090153042470114
+          ],
+          "last_odom_pose": [
+            -0.9714967012405396,
+            -0.9312838315963745,
+            -4.744874954223633,
+            1.5383103529559536
+          ],
+          "odom_xy_path_m": 2.1118004501194285,
+          "message_count": 1893,
+          "receive_range_epoch_ns": [
+            1792313649114568079,
+            1792313743740518625
+          ],
+          "header_range_epoch_ns": [
+            1792313649294560116,
+            1792313743887442457
+          ],
+          "receive_minus_header_ns": {
+            "min": -180701674,
+            "median": -157877810,
+            "max": 80010323
+          },
+          "header_backwards_count": 0,
+          "header_equal_count": 0,
+          "receive_backwards_count": 0,
+          "max_receive_gap_ns": 232298879,
+          "max_header_gap_ns": 50303910
+        },
+        "/car2/uwb/ranges": {
+          "frame_ids": [
+            "car2/uwb_linktrack"
+          ],
+          "child_frame_ids": [],
+          "duplicate_header_seq_stamp": 0,
+          "duplicate_link_ids": 0,
+          "valid_link_counts": {
+            "node_1": 3830,
+            "node_2": 4723,
+            "node_3": 4727,
+            "node_8": 4728,
+            "node_10": 4727
+          },
+          "nonfinite_quality_entries": 22735,
+          "tag_ids": [
+            "node_0"
+          ],
+          "message_count": 4729,
+          "receive_range_epoch_ns": [
+            1792313649233773250,
+            1792313743781684541
+          ],
+          "header_range_epoch_ns": [
+            1792313649398821512,
+            1792313743954665596
+          ],
+          "receive_minus_header_ns": {
+            "min": -176217579,
+            "median": -164755888,
+            "max": 160953940
+          },
+          "header_backwards_count": 0,
+          "header_equal_count": 0,
+          "receive_backwards_count": 0,
+          "max_receive_gap_ns": 269049468,
+          "max_header_gap_ns": 23312464
+        },
+        "/car2/imu": {
+          "frame_ids": [
+            "gyro_link"
+          ],
+          "child_frame_ids": [],
+          "duplicate_header_seq_stamp": 0,
+          "duplicate_link_ids": 0,
+          "valid_link_counts": {},
+          "nonfinite_quality_entries": 0,
+          "tag_ids": [],
+          "message_count": 1896,
+          "receive_range_epoch_ns": [
+            1792313649015094111,
+            1792313743760613494
+          ],
+          "header_range_epoch_ns": [
+            1792313649194529370,
+            1792313743937584204
+          ],
+          "receive_minus_header_ns": {
+            "min": -180955302,
+            "median": -178251871.5,
+            "max": 115304655
+          },
+          "header_backwards_count": 0,
+          "header_equal_count": 0,
+          "receive_backwards_count": 0,
+          "max_receive_gap_ns": 268089097,
+          "max_header_gap_ns": 50305094
+        }
+      }
+    },
+    {
+      "asset_id": "033248",
+      "relative_path": "datasets/field_raw/20261018/bags/TWO_CAR_C2_static_C1_auto_straight_aligned_20261018_033248.bag",
+      "sha256": "4e1283bbd58f9a64187a872cd9edeccaccdd5c438149d871761c6e2e11a67bbd",
+      "bytes": 4066007,
+      "sha256_matches_source_manifest": true,
+      "receive_start_epoch_ns": 1792319570409833299,
+      "receive_end_exclusive_epoch_ns": 1792319627867112297,
+      "duration_ns": 57457278998,
+      "topics": {
+        "/car1/imu": {
+          "type": "sensor_msgs/msg/Imu",
+          "connection_count": 1160
+        },
+        "/car1/PowerVoltage": {
+          "type": "std_msgs/msg/Float32",
+          "connection_count": 97
+        },
+        "/car1/odom": {
+          "type": "nav_msgs/msg/Odometry",
+          "connection_count": 1158
+        },
+        "/car1/uwb/ranges": {
+          "type": "uwb_coop_localization/msg/UwbRangeArray",
+          "connection_count": 2888
+        },
+        "/car2/imu": {
+          "type": "sensor_msgs/msg/Imu",
+          "connection_count": 1150
+        },
+        "/car2/PowerVoltage": {
+          "type": "std_msgs/msg/Float32",
+          "connection_count": 96
+        },
+        "/car2/odom": {
+          "type": "nav_msgs/msg/Odometry",
+          "connection_count": 1147
+        },
+        "/car2/uwb/ranges": {
+          "type": "uwb_coop_localization/msg/UwbRangeArray",
+          "connection_count": 2861
+        },
+        "/car1/cmd_vel": {
+          "type": "geometry_msgs/msg/Twist",
+          "connection_count": 671
+        }
+      },
+      "raw_topics_present": [],
+      "normalized_joint_events_status": "NOT_EXPORTED",
+      "strict_D0_D1_execution_status": "BLOCKED",
+      "conditional_D0_D1_runs": 0,
+      "input_scan": {
+        "/car1/odom": {
+          "frame_ids": [
+            "car1/odom_combined"
+          ],
+          "child_frame_ids": [
+            "base_footprint"
+          ],
+          "duplicate_header_seq_stamp": 0,
+          "duplicate_link_ids": 0,
+          "valid_link_counts": {},
+          "nonfinite_quality_entries": 0,
+          "tag_ids": [],
+          "first_odom_pose": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "last_odom_pose": [
+            1.0129607915878296,
+            0.015215369872748852,
+            0.020048484206199646,
+            0.02004848420619965
+          ],
+          "odom_xy_path_m": 1.01308672503096,
+          "message_count": 1158,
+          "receive_range_epoch_ns": [
+            1792319570410133144,
+            1792319627866895476
+          ],
+          "header_range_epoch_ns": [
+            1792319570022866369,
+            1792319627872031614
+          ],
+          "receive_minus_header_ns": {
+            "min": -7379611,
+            "median": 17370681.0,
+            "max": 387266775
+          },
+          "header_backwards_count": 0,
+          "header_equal_count": 0,
+          "receive_backwards_count": 0,
+          "max_receive_gap_ns": 362013747,
+          "max_header_gap_ns": 56967383
+        },
+        "/car1/uwb/ranges": {
+          "frame_ids": [
+            "car1/uwb_linktrack"
+          ],
+          "child_frame_ids": [],
+          "duplicate_header_seq_stamp": 0,
+          "duplicate_link_ids": 0,
+          "valid_link_counts": {
+            "node_2": 2884,
+            "node_3": 2888,
+            "node_8": 2887,
+            "node_10": 2885,
+            "node_0": 2877
+          },
+          "nonfinite_quality_entries": 14421,
+          "tag_ids": [
+            "node_1"
+          ],
+          "message_count": 2888,
+          "receive_range_epoch_ns": [
+            1792319570410212453,
+            1792319627866625893
+          ],
+          "header_range_epoch_ns": [
+            1792319570130918025,
+            1792319627871660947
+          ],
+          "receive_minus_header_ns": {
+            "min": -11435075,
+            "median": -4899040.5,
+            "max": 316737284
+          },
+          "header_backwards_count": 0,
+          "header_equal_count": 0,
+          "receive_backwards_count": 0,
+          "max_receive_gap_ns": 342320468,
+          "max_header_gap_ns": 21023988
+        },
+        "/car1/imu": {
+          "frame_ids": [
+            "gyro_link"
+          ],
+          "child_frame_ids": [],
+          "duplicate_header_seq_stamp": 0,
+          "duplicate_link_ids": 0,
+          "valid_link_counts": {},
+          "nonfinite_quality_entries": 0,
+          "tag_ids": [],
+          "message_count": 1160,
+          "receive_range_epoch_ns": [
+            1792319570409833299,
+            1792319627867112296
+          ],
+          "header_range_epoch_ns": [
+            1792319569922827837,
+            1792319627872065833
+          ],
+          "receive_minus_header_ns": {
+            "min": -7514069,
+            "median": -5954274.0,
+            "max": 487005462
+          },
+          "header_backwards_count": 0,
+          "header_equal_count": 0,
+          "receive_backwards_count": 0,
+          "max_receive_gap_ns": 451521163,
+          "max_header_gap_ns": 56967383
+        },
+        "/car2/odom": {
+          "frame_ids": [
+            "car2/odom_combined"
+          ],
+          "child_frame_ids": [
+            "base_footprint"
+          ],
+          "duplicate_header_seq_stamp": 0,
+          "duplicate_link_ids": 0,
+          "valid_link_counts": {},
+          "nonfinite_quality_entries": 0,
+          "tag_ids": [],
+          "first_odom_pose": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "last_odom_pose": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "odom_xy_path_m": 0.0,
+          "message_count": 1147,
+          "receive_range_epoch_ns": [
+            1792319570525649783,
+            1792319627836244511
+          ],
+          "header_range_epoch_ns": [
+            1792319570444207248,
+            1792319627746155582
+          ],
+          "receive_minus_header_ns": {
+            "min": 59273510,
+            "median": 80705326,
+            "max": 465192148
+          },
+          "header_backwards_count": 0,
+          "header_equal_count": 0,
+          "receive_backwards_count": 0,
+          "max_receive_gap_ns": 454298745,
+          "max_header_gap_ns": 50324077
+        },
+        "/car2/uwb/ranges": {
+          "frame_ids": [
+            "car2/uwb_linktrack"
+          ],
+          "child_frame_ids": [],
+          "duplicate_header_seq_stamp": 0,
+          "duplicate_link_ids": 0,
+          "valid_link_counts": {
+            "node_1": 2814,
+            "node_2": 2854,
+            "node_3": 2860,
+            "node_8": 2860,
+            "node_10": 2860
+          },
+          "nonfinite_quality_entries": 14248,
+          "tag_ids": [
+            "node_0"
+          ],
+          "message_count": 2861,
+          "receive_range_epoch_ns": [
+            1792319570646407621,
+            1792319627856379228
+          ],
+          "header_range_epoch_ns": [
+            1792319570585158389,
+            1792319627788075150
+          ],
+          "receive_minus_header_ns": {
+            "min": 57432703,
+            "median": 69781055,
+            "max": 484260672
+          },
+          "header_backwards_count": 0,
+          "header_equal_count": 0,
+          "receive_backwards_count": 0,
+          "max_receive_gap_ns": 425765681,
+          "max_header_gap_ns": 21079300
+        },
+        "/car2/imu": {
+          "frame_ids": [
+            "gyro_link"
+          ],
+          "child_frame_ids": [],
+          "duplicate_header_seq_stamp": 0,
+          "duplicate_link_ids": 0,
+          "valid_link_counts": {},
+          "nonfinite_quality_entries": 0,
+          "tag_ids": [],
+          "message_count": 1150,
+          "receive_range_epoch_ns": [
+            1792319570410614018,
+            1792319627856157650
+          ],
+          "header_range_epoch_ns": [
+            1792319570344318262,
+            1792319627796199334
+          ],
+          "receive_minus_header_ns": {
+            "min": 59397690,
+            "median": 61348702.5,
+            "max": 466159903
+          },
+          "header_backwards_count": 0,
+          "header_equal_count": 0,
+          "receive_backwards_count": 0,
+          "max_receive_gap_ns": 454824987,
+          "max_header_gap_ns": 50359151
+        }
+      }
+    }
+  ],
+  "evidence": {
+    "docs/field_tests/20261018/README.md": {
+      "sha256": "f728b33f24b927deb9a04f3b600ef8a1fef965d7ed0f317cce9a7982e25fdcb9",
+      "source_commit": "868349b543a03a6a713d1675e1d4ada7d905410c"
+    },
+    "docs/field_tests/20261018/results/two_car_graph_summary.json": {
+      "sha256": "9354acf5f658b99101a61646e1600b706c04d87d71cd4b860752156639e4aa67",
+      "source_commit": "868349b543a03a6a713d1675e1d4ada7d905410c"
+    },
+    "docs/field_tests/20261017/session_config.json": {
+      "sha256": "4b0a97be01b3541937345080af27b747ee8294fd7dcd58f3c53338f8339a9c94",
+      "source_commit": "868349b543a03a6a713d1675e1d4ada7d905410c"
+    },
+    "docs/field_tests/20261024_25/RESULT_CONTRACT.md": {
+      "sha256": "f8daef477973b46cf7eb22a45eb36d24a28e62ee09548750be4ec3530905e355",
+      "source_commit": "868349b543a03a6a713d1675e1d4ada7d905410c"
+    },
+    "docs/field_tests/20261024_25/geometry.json": {
+      "sha256": "bd59d654a6794cc61a5680816d479a7ae3a4b5a0376a3d5ebd517b6c3842266c",
+      "source_commit": "868349b543a03a6a713d1675e1d4ada7d905410c"
+    },
+    "tools/two_car_offline_graph.py": {
+      "sha256": "c8c07e97cfd0a6e7cc40e863eaa04bc054afac340e56fd312589cffebb758672",
+      "source_commit": "868349b543a03a6a713d1675e1d4ada7d905410c"
+    },
+    "datasets/field_raw/20261018/README.md": {
+      "sha256": "09f497c3983f8f0b9059ca76f7cb8234f3fd3b7e1e20cf9258ab59022e0d14bd",
+      "source_commit": "868349b543a03a6a713d1675e1d4ada7d905410c"
+    },
+    "datasets/field_raw/20261018/metadata/live_field/BAG_SHA256SUMS.txt": {
+      "sha256": "711d4d18653cb40d48e1fb73d8979825dd604af6908debc795c2bf7b60745667",
+      "source_commit": "868349b543a03a6a713d1675e1d4ada7d905410c"
+    },
+    "datasets/field_raw/20261018/notes/live_field/antenna_mount_survey_20261018.txt": {
+      "sha256": "5cc8c640036782b4b564dee126db140c4245dc382b9ef762fd9fd918e9ca2d1b",
+      "source_commit": "868349b543a03a6a713d1675e1d4ada7d905410c"
+    },
+    "datasets/field_raw/20261018/notes/live_field/clock_status_end_20261018_055752.txt": {
+      "sha256": "a8c6909f85bb97812066c04a98d5dd4ff70f5bb93621585e6eee28c8af02962d",
+      "source_commit": "868349b543a03a6a713d1675e1d4ada7d905410c"
+    },
+    "datasets/field_raw/provenance/user_confirmations_20261020.md": {
+      "sha256": "49d08fe83985b730d64750e3afd77dfae5082d091b7eceff15bc0e80b200fcf8",
+      "source_commit": "868349b543a03a6a713d1675e1d4ada7d905410c"
+    },
+    "datasets/field_raw/20261018/notes/live_field/TWO_CAR_C1_static_C2_auto_L_20261018_015334_notes.txt": {
+      "sha256": "6b2874aeb432670d3b958a052a6369bb1560543e4a257983b74b778aae165b9b",
+      "source_commit": "868349b543a03a6a713d1675e1d4ada7d905410c"
+    },
+    "datasets/field_raw/20261018/notes/live_field/TWO_CAR_C2_static_C1_auto_straight_aligned_20261018_033248_notes.txt": {
+      "sha256": "b95edcda8a415e223fa9ef4195f524fba836423ed0a96138299737205e0b0d46",
+      "source_commit": "868349b543a03a6a713d1675e1d4ada7d905410c"
+    },
+    "docs/field_tests/20261024_25/two_car_fixed_lag_fgo_v1/historical_input_audit.py": {
+      "sha256": "d53ebdd1160f35106612246cc9eb52c83a1f5e40a0c78f8fc01664e7f9796039",
+      "source_commit": "this task; see delivery commit"
+    }
+  },
+  "historical_assumptions": {
+    "room_anchor_source": "docs/field_tests/20261017/session_config.json; user confirmed October 17 wall placements unchanged",
+    "initial_antenna_xyz_m": {
+      "015334": {
+        "car1": [
+          1.5,
+          4.0,
+          0.17
+        ],
+        "car2": [
+          2,
+          2,
+          0.2
+        ]
+      },
+      "033248": {
+        "car1": [
+          1.5,
+          4.0,
+          0.17
+        ],
+        "car2": [
+          2.95,
+          3.04,
+          0.2
+        ]
+      }
+    },
+    "initial_yaw_deg": {
+      "015334": {
+        "car1": 0,
+        "car2": 90
+      },
+      "033248": {
+        "car1": -90,
+        "car2": 0
+      }
+    },
+    "initial_yaw_status": "placement hypotheses, not independent surveyed yaw; no endpoint-based initialization",
+    "historical_body_antenna_xy_m": {
+      "car1": [
+        0.08,
+        -0.06
+      ],
+      "car2": [
+        0.12,
+        -0.08
+      ]
+    },
+    "later_car2_body_antenna_xy_m": [
+      -0.12,
+      0.08
+    ],
+    "later_car2_status": "operator correction in 20261024_25 geometry.json; odom-origin transform unverified; do not silently transplant",
+    "clock_policy_old_batch": "common bag receipt time for all association; headers unsynchronized; not causal-prefix acceptance",
+    "raw_bridge_policy": "only /carN/uwb/ranges present in these bags; no raw topic to independently pair; do not count bridge+raw twice if later added",
+    "primary_peer_direction": "Car1 node_1 to Car2 node_0; reverse diagnostic only",
+    "correction_policy": "first proposed historical diagnostic raw wall and peer; historical Car2-only P1 explicitly separate, not for Car1 or 20261024_25",
+    "car2_only_P1": {
+      "source_asset_id": "CAR2_P1_REINSTALL_STATIC_20261017_045257.bag",
+      "source_sha256": "f7250698ae484b7ace3bf152b1ff216f5470b5d75f0b90a66483edb402d1ec33",
+      "source_antenna_xyz_m": [
+        2.0,
+        2.0,
+        0.2
+      ],
+      "bias_m": {
+        "node_10": 0.608864,
+        "node_2": 0.449738,
+        "node_3": 0.201286,
+        "node_8": 0.368514
+      },
+      "status": "historical diagnostic correction only; no transfer validation; not applied by inventory"
+    },
+    "manual_endpoint_antenna_xyz_m": {
+      "015334": {
+        "car1": [
+          1.5,
+          4.0,
+          0.17
+        ],
+        "car2": [
+          2.95,
+          3.04,
+          0.2
+        ]
+      },
+      "033248": {
+        "car1": [
+          1.45,
+          2.98,
+          0.17
+        ],
+        "car2": [
+          2.95,
+          3.04,
+          0.2
+        ]
+      }
+    },
+    "manual_endpoint_tape_m": {
+      "015334": 1.743,
+      "033248": 1.54
+    },
+    "manual_reference_uncertainty": "unknown; not continuous truth; endpoint never estimator input"
+  },
+  "blocked_reasons": [
+    "No accepted per-car odom/base-to-survey-center transform; Car2 lever sign conflicts with later operator correction.",
+    "Global initial yaws are only historical hypotheses; strict provenance/uncertainty configuration not frozen for this joint causal runner.",
+    "No validated per-stream header-to-common-clock mapping with uncertainty; NTP status and receipt pairing do not prove synchronized measurement.",
+    "No normalized joint receive-order event bundle/config with dependency and raw/bridge identity validation has been exported or accepted.",
+    "Only manual stop/checkpoint references with unknown uncertainty; no accepted continuous truth. Field trajectory RMSE/ATE remains forbidden."
+  ],
+  "run_policy": {
+    "four_conditional_diagnostic_runs": "NOT_RUN; no strict validator bypass",
+    "held_out_sessions": "T09/T11/T13/T15 untouched",
+    "video": "no download/read/accuracy use",
+    "hardware": "no ROS, serial or vehicle start"
+  },
+  "storage": {
+    "new_large_files_created": false,
+    "existing_bags": "read in place from base commit; not copied or modified",
+    "local_future_large_outputs": "I drive required; no I-drive alias inferred here",
+    "cloud_future_outputs": "separate Git-external directory required"
+  }
+}

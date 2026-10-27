@@ -64,3 +64,9 @@ IMU事件目前只有diagnostic_ignored，不增因子；后续扩展必须新�
 大型产物Git外；此Linux环境无已确认I盘映射，不写未知盘符、不复制原视频/大bag。
 合成小文件及运行产物放 /home/ubuntu22/uwb-two-car-fixed-lag-fgo-v1-artifacts，归档SHA登记。
 历史015334/033248只交就绪/缺项；origin/mount/heading/clock未明确前不跑条件性4组。
+
+实现验收备注（正式seed生成前）：继承F0统计窗以中心化float秒判断
+`abs(header_s-state_s)<=0.4`，数学恰好±0.4s的输入可能受浮点舍入排除；
+本轮两臂墙距和peer采用同一原判断，不为改变样本数改核心。原始整数ns仍完整保留，
+接收截止用整数身份独立复核；每窗实际样本数保存而非假定固定数。开发测试使用seed7/8，
+正式101/211/307未参与开发。
