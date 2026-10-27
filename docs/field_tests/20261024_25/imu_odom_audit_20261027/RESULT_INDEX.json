@@ -28,8 +28,8 @@
       "bytes": 266
     },
     "HANDOFF.md": {
-      "sha256": "a994c521d80f5a6d5e77636d79760fc8a735c38be38ea26c3eedae76835e93e6",
-      "bytes": 2401
+      "sha256": "634f6f4b3a171a75df7eb6ab58a9c3338034faf97134f2569e7b893f6958a4ee",
+      "bytes": 2841
     },
     "existing_files_extension.json": {
       "sha256": "6af13eb3096dcbd87374d72cd98cecad5e16394ae1271b30146038605ad8920f",
@@ -111,5 +111,28 @@
     "bash_blocks_syntax_checked": 4,
     "vehicle_commands_executed": false,
     "new_algorithm_tests": 0
+  },
+  "imu_parallel_dispatch": {
+    "implementation_started": false,
+    "external_windows_started": false,
+    "contract_version": "imu_parallel_v1_20261027",
+    "files": {
+      "docs/field_tests/20261024_25/imu_parallel_20261027/A_SANDBOX.md": {
+        "sha256": "3c46880001e00c54f97ee184c06e6866dab8a134391793752190c9bfd3082ba4",
+        "bytes": 4132
+      },
+      "docs/field_tests/20261024_25/imu_parallel_20261027/B_CLOUD.md": {
+        "sha256": "7578ffbe731574df439f7078904172f0e9d9ad2747b06d121cceb031c01da563",
+        "bytes": 4989
+      },
+      "docs/field_tests/20261024_25/imu_parallel_20261027/CONTRACT.json": {
+        "sha256": "1d7ff6134a493ade066a763300dcafc4e4d408414fc93630b8dcad784064f6e1",
+        "bytes": 3804
+      },
+      "docs/field_tests/20261024_25/imu_parallel_20261027/README.md": {
+        "sha256": "321d7f38ecdbc9db16f69e58f3a52d37778e6e265f87533cb1773926a51dba99",
+        "bytes": 7673
+      }
+    }
   }
 }
