@@ -2,6 +2,9 @@
 
 状态：讨论材料完成；不是新算法/参考轨迹验收。本轮定位运行0、视频处理0、原始bag/MOV读取0；未启动或停止既有实车/ROS进程，未改系统/磁盘配置，未合并PR。
 
+草稿PR：[#66](https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/66)，分支已推送，未自动合并。
+数值核对与格式修订交付提交为 `4776d6d8ed03501eb386180ac88d4dae734b114a`；后续仅补此链接及本包SHA。
+
 ## 基准与保护
 
 原实际目录 `/home/ubuntu22/双车协同/uwb-coop-localization-ros1`，分支
