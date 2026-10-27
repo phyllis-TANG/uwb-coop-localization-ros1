@@ -1,0 +1,38 @@
+{
+  "access_scope": "existing authorized LAN/VPN SMB share, not a public HTTP URL; B-cloud download not asserted",
+  "archive_filename": "single-car-imu-fgo-e3a20fe-v1.tar.gz",
+  "archive_sha256": "9466aa40cbc95ed4de24f9c42780c6fa493c7fcd04cd2d6124f10bd61676a7ad",
+  "copy_sha_verified": true,
+  "created_at_utc": "2026-10-27T10:34:34.625906+00:00",
+  "execution_commit": "e3a20fe04a6d53973696ec055dbc71eb135e0f77",
+  "local_path": "/home/ubuntu22/uwb-single-car-imu-fgo-20261027-artifacts/archives/single-car-imu-fgo-e3a20fe-v1.tar.gz",
+  "nas_path": "/home/ubuntu22/nas/data/uwb_coop_artifacts/single_car_imu_fgo_20261027/single-car-imu-fgo-e3a20fe-v1.tar.gz",
+  "package_manifest_sha256": "899c0e98964bb60577bec958b4b35bb46ed8d54826614c09b0652b44b9281c93",
+  "payload_file_count": 1492,
+  "protocol_source_sha256": "b377df4988b6307d8edb31f6291c79237324de962a2f41d8397836353e260520",
+  "retrieval_verification": {
+    "all_frozen_source_files_verified": 25,
+    "all_selected_payload_hashes_verified": true,
+    "archived_reader_command": [
+      "/home/ubuntu22/uwb-single-car-imu-fgo-20261027-artifacts/venv/bin/python",
+      "/home/ubuntu22/uwb-single-car-imu-fgo-20261027-artifacts/retrieval-from-nas-v1/formal-v1/source/tools/single_car_imu_fgo/audit.py",
+      "--run",
+      "/home/ubuntu22/uwb-single-car-imu-fgo-20261027-artifacts/retrieval-from-nas-v1/formal-v1/runs/nominal_seed31__F3",
+      "--input",
+      "/home/ubuntu22/uwb-single-car-imu-fgo-20261027-artifacts/retrieval-from-nas-v1/formal-v1/inputs/nominal_seed31/events.jsonl.gz",
+      "--output",
+      "/home/ubuntu22/uwb-single-car-imu-fgo-20261027-artifacts/retrieval-from-nas-v1/retrieved-readback.json"
+    ],
+    "from_actual_NAS_archive": true,
+    "limitation": "fresh directory on same host and venv, not a separate B machine",
+    "new_directory": "/home/ubuntu22/uwb-single-car-imu-fgo-20261027-artifacts/retrieval-from-nas-v1",
+    "no_estimator_replayed": true,
+    "reader_returncode": 0,
+    "reader_status": "PASS",
+    "selected_files": 35
+  },
+  "size_bytes": 126637922,
+  "smb_unc": "//10.22.5.135/data/uwb_coop_artifacts/single_car_imu_fgo_20261027/single-car-imu-fgo-e3a20fe-v1.tar.gz",
+  "status": "VERIFIED",
+  "wall_elapsed_since_original_task_start_s": 5405.62623
+}

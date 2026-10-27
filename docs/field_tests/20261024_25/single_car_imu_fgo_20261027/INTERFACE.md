@@ -40,7 +40,7 @@ scope=field只允许004023、005135、T08、T10，留出拒绝；A本轮没有�
 
 必需输出：run.json/config.json/published.csv/updates.jsonl.gz/input_decisions.jsonl.gz/final_active_graph.json/summary.json。输出目录必须不存在、位于Git外；无静默覆盖或原地重跑。run保存命令/环境/源码/配置/输入哈希/耗时和失败。单CLI返回0完成、1失败，部分证据保留。
 
-published.csv保留原state_time_s/availability_cutoff_s、base/antenna XY、yaw、求解状态、耗时/队列及原中位数/样本计数；现在也保留缺Odom的行，pose列为空。另有arm、整数state_epoch_ns/availability_cutoff_epoch_ns、bias_rad_s、bias_estimated、angular_valid、estimate_valid、odom_yaw_fallback、prediction_yaw_source、missing_angular_edges_cumulative、scalar_variables、state_dimension_per_keyframe、numerical_rank、angular_source。F0 bias空；F1/F2的0是设计固定，不是测量确定为0。
+published.csv保留原state_time_s/availability_cutoff_s、base/antenna XY、yaw、求解状态、耗时/队列及原中位数/样本计数；现在也保留缺Odom的行，pose列为空。另有arm、整数state_epoch_ns/availability_cutoff_epoch_ns、bias_rad_s、bias_estimated、angular_valid、estimate_valid、odom_yaw_fallback、prediction_yaw_source、missing_angular_edges_cumulative、scalar_variables、state_dimension_per_keyframe、numerical_rank、angular_source。F0 bias空；F1/F2的0是设计固定，不是测量确定为0。CSV布尔值为True/False，未知数值为空；JSON对应bool/null，不可用bool("False")解析。
 
 estimated_available_epoch_ns/publication_delay_s由原虚拟单工作者耗时/排队模型计算，含1s等待+实测update计算+估计排队；不是ROS部署实际接收时刻或硬实时保证。真实源/receive身份在input_decisions；优化只见中心化相对时间。EOF不得超出最后记录接收时刻产生cutoff。
 

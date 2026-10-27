@@ -1,0 +1,41 @@
+{
+  "F0_F1_synthetic_equivalence": {
+    "max_XY_delta_m": 2.0114655421281033e-15,
+    "max_yaw_delta_rad": 2.021286199229721e-15,
+    "reason": "generator odom pose integrates previous measured rate, so rate integral and pose angular increment agree by construction; not evidence real upstream is equivalent",
+    "status_identical": true
+  },
+  "all_run_commit_clean_and_same": true,
+  "all_source_fingerprints_unchanged": true,
+  "branch": "analysis/20261027-single-car-imu-fgo",
+  "code_commit": "e3a20fe04a6d53973696ec055dbc71eb135e0f77",
+  "created_at_utc": "2026-10-27T10:23:14.484798+00:00",
+  "formal_cells": 96,
+  "protocol_JSON_semantically_identical": true,
+  "protocol_artifact_canonical_copy_sha256": "81d651d7ce3d560e9edbc2cef62d025d24b1f5c7d28fc16731a63f2d5f2579bb",
+  "protocol_copy_note": "artifact protocol.json is a sorted-key canonical serialization; original source byte SHA remains the execution lock, source snapshot keeps exact original bytes; no content changed",
+  "protocol_source_sha256": "b377df4988b6307d8edb31f6291c79237324de962a2f41d8397836353e260520",
+  "readback": {
+    "cells": 96,
+    "counts": {
+      "angular_intervals": 3456,
+      "gaps": 24,
+      "marginalizations": 2016,
+      "objective_cost_checks": 3408,
+      "original_frontend_checks": 4704,
+      "publications": 4704,
+      "sampled_marginalizations": 144,
+      "segments": 72078
+    },
+    "elapsed_s": 10.098386497003958,
+    "maximum_absolute_errors": {
+      "final_F0_cost_abs": 2.6645352591003757e-15,
+      "marginal_gradient_abs": 3.4991529673789046e-09,
+      "marginal_information_abs": 1.073281055141706e-07,
+      "objective_cost_abs": 1.0658141036401503e-14
+    },
+    "status": "PASS"
+  },
+  "status": "PASS",
+  "worktree_dirty": false
+}
