@@ -1,0 +1,98 @@
+{
+  "scope": "static reference-source comparison only",
+  "auditor_sha256": "b5710aa05443a4b366e8327098c09e0319ad49383b882ba42be6f512ab09c7ab",
+  "vendor_code_executed": false,
+  "estimator_modified": false,
+  "car1_deployed_source_identified": false,
+  "historical_firmware_identified": false,
+  "upstream_gyro_independence_proven": false,
+  "raw_vendor_sources_republished": false,
+  "files": {
+    "wheeltec_robot.cpp": {
+      "uploaded_sha256": "584701a68881acaa1a623782f46d44ac31963e1bce02a88a3163f47d53105a0d",
+      "archived_car2_sha256": "4b70a6d4d3ee418a08fa5e753b133a0b726057cc3c4a60bcbefd81e62d9ca63e",
+      "uploaded_bytes": 35128,
+      "archived_car2_bytes": 43434,
+      "byte_identical": false
+    },
+    "wheeltec_robot.h": {
+      "uploaded_sha256": "61fe366d22e2f2014ef25102a951ab993b388a64dc32bcf33afe611bfd39dd14",
+      "archived_car2_sha256": "99cb1778aa99a3e03804982cf173c28c55f59a93ef51572ccf17e72031f347ae",
+      "uploaded_bytes": 7603,
+      "archived_car2_bytes": 11432,
+      "byte_identical": false
+    },
+    "Quaternion_Solution.cpp": {
+      "uploaded_sha256": "6aa43dbc2053807977f978e21feab8f9a91e7d52c43b0ce77eba0d7fb4eb96f9",
+      "archived_car2_sha256": "6aa43dbc2053807977f978e21feab8f9a91e7d52c43b0ce77eba0d7fb4eb96f9",
+      "uploaded_bytes": 3284,
+      "archived_car2_bytes": 3284,
+      "byte_identical": true
+    },
+    "Quaternion_Solution.h": {
+      "uploaded_sha256": "507169c19cbee265611029c402d4e7509e9c2dc83a8f7eed9f17037bf92134ad",
+      "archived_car2_sha256": "507169c19cbee265611029c402d4e7509e9c2dc83a8f7eed9f17037bf92134ad",
+      "uploaded_bytes": 220,
+      "archived_car2_bytes": 220,
+      "byte_identical": true
+    }
+  },
+  "functions": {
+    "IMU_Trans": {
+      "comments_and_whitespace_ignored": true,
+      "uploaded_normalized_sha256": "d130c10fab23a6ea901c9617648e134752e49e89141f83b2ccf5f0a95fa8151a",
+      "car2_normalized_sha256": "d130c10fab23a6ea901c9617648e134752e49e89141f83b2ccf5f0a95fa8151a",
+      "equal": true
+    },
+    "Odom_Trans": {
+      "comments_and_whitespace_ignored": true,
+      "uploaded_normalized_sha256": "ff99526b8275a92c58af9bb6733dcc78264c4b0fa1582ea2260a5a9abe585530",
+      "car2_normalized_sha256": "ff99526b8275a92c58af9bb6733dcc78264c4b0fa1582ea2260a5a9abe585530",
+      "equal": true
+    },
+    "Publish_ImuSensor": {
+      "comments_and_whitespace_ignored": true,
+      "uploaded_normalized_sha256": "127231462cf8717467f034168b3075ca6875e648e00c0579857fa632448df17d",
+      "car2_normalized_sha256": "127231462cf8717467f034168b3075ca6875e648e00c0579857fa632448df17d",
+      "equal": true
+    },
+    "Publish_Odom": {
+      "comments_and_whitespace_ignored": true,
+      "uploaded_normalized_sha256": "c86dd6a0ec98a17a8352934ccd2c3e07eb2f7a910d0551ce26b2477cc140f2d3",
+      "car2_normalized_sha256": "c86dd6a0ec98a17a8352934ccd2c3e07eb2f7a910d0551ce26b2477cc140f2d3",
+      "equal": true
+    },
+    "Get_Sensor_Data_New": {
+      "comments_and_whitespace_ignored": true,
+      "uploaded_normalized_sha256": "f50a6bfabbd3e813c6626d01f463c8013d9df4fa43e2622862dd68d2cd331df3",
+      "car2_normalized_sha256": "e5cdef15a45fa6442b004d209eb2f99cba612b151aedc7a1beba5125c60ce0ec",
+      "equal": false
+    },
+    "Control": {
+      "comments_and_whitespace_ignored": true,
+      "uploaded_normalized_sha256": "f0f1b42ef327b829b6a7dc1ed7abef28ed5b80d9a814735d1a6ea1c1eac30466",
+      "car2_normalized_sha256": "be5fcb186ddded2e8566552bb1370e3e54965dc501c630ecbeea7c4742675617",
+      "equal": false
+    }
+  },
+  "reviewed_pattern_matches": {
+    "separate_odom_rate_field": true,
+    "separate_gyro_z_field": true,
+    "odom_heading_integration": true,
+    "IMU_orientation_calculated_separately": true,
+    "fixed_20Hz_attitude_step": true,
+    "proportional_gain_1": true,
+    "integral_gain_0": true
+  },
+  "first_sample_time_guard": {
+    "uploaded_present": false,
+    "archived_car2_present": true,
+    "field_failure_diagnosed": false
+  },
+  "interpretation": {
+    "covariance_switch": "Publish_Odom changes declared covariance; no IMU state fusion in that branch",
+    "attitude_feedback": "gyro plus gravity-direction feedback; gain is not an encoder/IMU percentage",
+    "Ki_zero": "this host attitude routine has integral feedback disabled; MCU bias compensation unknown",
+    "provenance": "user supplied VM ZIP members; ZIP filename/dates are not deployed firmware identity"
+  }
+}

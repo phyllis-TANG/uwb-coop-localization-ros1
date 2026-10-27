@@ -34,5 +34,14 @@
   "offline_prototype_can_proceed_without_lab": true,
   "source_capture_is_required_before_offline_prototype": false,
   "conditional_model_assumptions_are_calibration": false,
-  "additional_existing_file_evidence": "OFFLINE_EVIDENCE.md"
+  "additional_existing_file_evidence": "OFFLINE_EVIDENCE.md",
+  "VM_reference_source_evidence": {
+    "report": "VM_SOURCE_EVIDENCE.md",
+    "comparison": "vm_source_comparison.json",
+    "uploaded_files": 4,
+    "quaternion_files_byte_identical_to_car2": true,
+    "car1_deployment_binding_accepted": false,
+    "MCU_firmware_identified": false,
+    "offline_prototype_blocked": false
+  }
 }

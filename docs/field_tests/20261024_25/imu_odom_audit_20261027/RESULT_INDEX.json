@@ -28,8 +28,8 @@
       "bytes": 266
     },
     "HANDOFF.md": {
-      "sha256": "1801d6ce4156bd1f046811e8d4b682478d9689cda678856add229486bf9de953",
-      "bytes": 1445
+      "sha256": "c126261d0ffc3ca89da7686ff31b03c6ff9381119f3d1c21a3bfaae310d4dd7a",
+      "bytes": 1996
     },
     "existing_files_extension.json": {
       "sha256": "6af13eb3096dcbd87374d72cd98cecad5e16394ae1271b30146038605ad8920f",
@@ -40,8 +40,8 @@
       "bytes": 21262
     },
     "READINESS.json": {
-      "sha256": "2cf267c6438c5f3654c5ff80428784c8263746e9c9cfb3e2ac64ee7ba9de3786",
-      "bytes": 1990
+      "sha256": "0257efdaf68978aa916631d200998e271acaaeb1a80d23ff3857331c0b080442",
+      "bytes": 2319
     },
     "imu_odom_signals.png": {
       "sha256": "7119f4c74f10c4e856fbc0a269b05496e045fac917402eb60071c75c13154f4e",
@@ -64,8 +64,8 @@
       "bytes": 5528
     },
     "REPORT.md": {
-      "sha256": "d893eaf43ecafaf4df2b220d526d57fee74e4f1325b0b969be1289a75cddb640",
-      "bytes": 6366
+      "sha256": "740fa72fb71f4b043de7c171392d3535d2d7925ede4096d957680b62c836deff",
+      "bytes": 6598
     },
     "TESTS.log": {
       "sha256": "224b57ea9866ff6d9e2e3dd8181bab965b6099d8995d6df2573b48e90ba52f79",
@@ -74,6 +74,14 @@
     "PAIR_READBACK.json": {
       "sha256": "4abe2c3d40d0b9ee61e77bb84307be8e6fada101d06e70a7f05c44aa0d078720",
       "bytes": 182
+    },
+    "VM_SOURCE_EVIDENCE.md": {
+      "sha256": "8e54983b84320a0a18ae6bf5e9f0f8a65718ab3596060c10ed1915fc4c79e800",
+      "bytes": 4220
+    },
+    "vm_source_comparison.json": {
+      "sha256": "9b880814e87ca745a26f47b739ca85b7d72f9f1e1a76db0006f91bd7e1072de1",
+      "bytes": 4400
     }
   },
   "offline_extension_execution_commit": "b9bb51cf3001991a101c8395f495998fbb809089",
@@ -81,5 +89,16 @@
   "offline_pair_rows": 19953,
   "source_capture_required_for_prototype": false,
   "original_audit_tests": 16,
-  "new_additional_tests": 2
+  "new_additional_tests": 2,
+  "vm_reference_source_comparison": {
+    "auditor_path": "tools/field_20261024_25/imu_odom_audit/vm_source_audit.py",
+    "auditor_sha256": "b5710aa05443a4b366e8327098c09e0319ad49383b882ba42be6f512ab09c7ab",
+    "uploaded_files": 4,
+    "total_uploaded_bytes": 46235,
+    "comparison_executed": true,
+    "vendor_code_executed": false,
+    "new_unit_tests": 0,
+    "fusion_implemented": false,
+    "historical_deployment_proved": false
+  }
 }
