@@ -8,6 +8,7 @@ from prepare import plain,legacy_view
 from verify_packets import equal_raw
 from verify_baseline import compare_publications,interpolate
 from audit_contract import heading_sources,dependency_cutoff,marginal_prior,factor_accounting,coverage
+from diagnose import interval_coverage
 
 
 class EvalTests(unittest.TestCase):
@@ -104,6 +105,24 @@ class EvalTests(unittest.TestCase):
 
     def test_all_four_modes_required(self):
         with self.assertRaises(ValueError):coverage({'F0':[]})
+
+    def sample(self,h,receive,index):
+        return {'header_epoch_ns':h,'receive_epoch_ns':receive,'record_index':index,'nonfinite_values':[]}
+
+    def test_release_cutoff_excludes_late_IMU_bracket(self):
+        rows=[self.sample(0,0,1),self.sample(50,50,2),self.sample(100,201,3)]
+        result=interval_coverage(rows,0,100,200,100)
+        self.assertFalse(result['both_arrived_boundary_brackets']);self.assertIsNone(result['right_bracket_record_index'])
+        self.assertEqual(result,interval_coverage(rows+[self.sample(150,250,4)],0,100,200,100))
+
+    def test_release_equality_and_missing_IMU(self):
+        rows=[self.sample(0,0,1),self.sample(100,200,2)]
+        self.assertTrue(interval_coverage(rows,0,100,200,100)['both_arrived_boundary_brackets'])
+        self.assertFalse(interval_coverage([],0,100,200,100)['both_arrived_boundary_brackets'])
+
+    def test_support_gap_kept_as_bad_interval(self):
+        result=interval_coverage([self.sample(0,0,1),self.sample(1000,1000,2)],0,1000,2000,100)
+        self.assertTrue(result['both_arrived_boundary_brackets']);self.assertTrue(result['support_gap_over_diagnostic_threshold'])
 
 
 if __name__=='__main__':unittest.main()
