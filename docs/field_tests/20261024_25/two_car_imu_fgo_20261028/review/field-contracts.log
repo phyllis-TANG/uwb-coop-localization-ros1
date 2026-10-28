@@ -1,0 +1,23 @@
+test_Jacobian_and_full_linear_system_Schur_no_double_consumption (test_contract.Contracts) ... ok
+test_constant_bias_sign_and_wrap (test_contract.Contracts) ... ok
+test_disabled_exact_original_six_dimensional (test_contract.Contracts) ... ok
+test_gyro_axis_unit_frame_negative_and_duplicates (test_contract.Contracts) ... ok
+test_independent_F3_objective_and_solution (test_contract.Contracts) ... ok
+test_independent_reader_rejects_semantic_corruption (test_contract.Contracts) ... ok
+test_independent_stop_keeps_objective_prior_once (test_contract.Contracts) ... ok
+test_input_matching_and_bounded_eight_dimensional_cache (test_contract.Contracts) ... ok
+test_missing_and_valid_zero_bias_semantics (test_contract.Contracts) ... ok
+test_missing_gyro_holds_startup_and_failed_prediction (test_contract.Contracts) ... ok
+test_moving_independent_F3_through_marginalization (test_contract.Contracts) ... ok
+test_peer_really_adds_one_objective_row_and_bias_cross_prior (test_contract.Contracts) ... ok
+test_prefix_after_marginalization_and_no_future (test_contract.Contracts) ... ok
+test_rank_deficient_elimination_does_not_invent_information (test_contract.Contracts) ... ok
+test_serialized_contract_and_independent_complete_readback (test_contract.Contracts) ... ok
+test_false_availability_and_undeclared_clock_blocked (test_field_contract.FieldContracts) ... ok
+test_field_cannot_default_to_synthetic_axis_clock (test_field_contract.FieldContracts) ... ok
+test_physical_order_receive_reversal_no_reordering_or_future (test_field_contract.FieldContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 11.786s
+
+OK

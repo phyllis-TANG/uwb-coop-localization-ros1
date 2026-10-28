@@ -97,7 +97,7 @@ def controls(events,config):
 
 
 def edge_check(edge,control,cutoff,hold):
-    eligible=[e for e in control if e['receive_epoch_ns']<=cutoff];ts=[e['mapped_header_epoch_ns'] for e in eligible]
+    eligible=[e for e in control if e.get('availability_epoch_ns',e['receive_epoch_ns'])<=cutoff];ts=[e['mapped_header_epoch_ns'] for e in eligible]
     cursor=edge['start_epoch_ns'];end=edge['end_epoch_ns'];segments=[];gaps=[];integral=0.
     while cursor<end:
         i=bisect.bisect_right(ts,cursor)-1;next_t=ts[i+1] if i+1<len(ts) else end
@@ -120,7 +120,7 @@ def edge_check(edge,control,cutoff,hold):
 def bins_check(row,events,config,origin):
     cutoff=row['availability_cutoff_epoch_ns'];t=row['state_time_s'];state=row['state_epoch_ns'];half=config['replay']['range_bin_half_width_s']
     for c in CARS:
-        selected=[e for e in events if e.get('vehicle_id')==c and e['kind']=='uwb' and e['receive_epoch_ns']<=cutoff and e.get('representation')=='bridge' and abs((mapped(e,config)-origin)/1e9-t)<=half]
+        selected=[e for e in events if e.get('vehicle_id')==c and e['kind']=='uwb' and e.get('availability_epoch_ns',e['receive_epoch_ns'])<=cutoff and e['record_index']<=row.get('availability_prefix_max_record_index',10**30) and e.get('representation')=='bridge' and abs((mapped(e,config)-origin)/1e9-t)<=half]
         grouped={k:[] for k in config['models'][c]['anchors_xyz_m']};ps=[];ids=[];peer_key='node_0' if c=='car1' else 'node_1'
         for e in selected:
             for k,v in e['value'].items():
@@ -134,7 +134,7 @@ def bins_check(row,events,config,origin):
         require((float(np.median(ps)) if len(ps)>=5 else None)==row[target],'peer aggregation')
         deps=row['peer_dependencies' if c=='car1' else 'reverse_diagnostic_dependencies']
         require(ids==[p['identity']['source_observation_id'] for p in deps],'peer identities')
-        odom=[e for e in events if e.get('vehicle_id')==c and e['kind']=='odom' and e['receive_epoch_ns']<=cutoff]
+        odom=[e for e in events if e.get('vehicle_id')==c and e['kind']=='odom' and e.get('availability_epoch_ns',e['receive_epoch_ns'])<=cutoff and e['record_index']<=row.get('availability_prefix_max_record_index',10**30)]
         ts=[mapped(e,config) for e in odom];values=np.array([e['value']['pose'] for e in odom],float)
         for i in range(1,len(values)):values[i,2]=values[i-1,2]+wrap(values[i,2]-values[i-1,2])
         k=bisect.bisect_left(ts,state)

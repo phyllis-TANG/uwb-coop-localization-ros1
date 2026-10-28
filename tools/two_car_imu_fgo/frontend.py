@@ -20,6 +20,8 @@ class JointReplay(f0_front.JointReplay):
         self.angular={c:integration.AngularBuffer(config['angular'][c]['max_hold_ns']['value'],config['frontend']['max_sensor_samples_per_stream']) for c in CARS}
         self.angular_decisions={c:collections.Counter() for c in CARS}
         self.current_intervals=None;self.original_case=None
+        self.available_ns=None;self.completed_index=None
+        self.original_peer_ids={c:collections.OrderedDict() for c in CARS}
 
     def ingest(self,raw):
         case=raw.get('case_id');self.original_case=case
@@ -28,6 +30,9 @@ class JointReplay(f0_front.JointReplay):
                 raise ValueError('BLOCKED field model/allowlist')
         elif not isinstance(case,str) or not case.startswith('synthetic_'):raise ValueError('synthetic case required')
         view=copy.deepcopy(raw)
+        available=raw['receive_epoch_ns'] if self.available_ns is None else max(self.available_ns,raw['receive_epoch_ns'])
+        if raw.get('availability_epoch_ns',available)!=available:raise ValueError('prefix availability inconsistent with original physical order')
+        view['receive_epoch_ns']=available;self.available_ns=available
         if self.config['scope']=='field':view['case_id']='synthetic_adapter_'+case
         car=raw.get('vehicle_id');kind=raw['kind']
         # Explicitly configured association policy, separately recorded per car.
@@ -35,6 +40,10 @@ class JointReplay(f0_front.JointReplay):
             policy=self.config['clock_policy'][car][kind]
             if policy['kind']=='bag_receipt_association':view['header_epoch_ns']=raw['receive_epoch_ns']
             elif policy['kind']!='shared_synthetic_header':raise ValueError('no undeclared identity clock map')
+        if kind=='uwb':
+            ids=self.original_peer_ids[car];ids[raw['record_index']]={k:raw.get(k) for k in ('header_epoch_ns','receive_epoch_ns','raw_message_sha256')}
+            ids[raw['record_index']]['availability_epoch_ns']=available
+            if len(ids)>512:ids.popitem(last=False)
         result=super().ingest(view)
         angular='disabled'
         if kind=='imu':
@@ -46,11 +55,11 @@ class JointReplay(f0_front.JointReplay):
                     v=np.asarray(value['angular_velocity_rad_s'],float)
                     if v.shape!=(3,) or not np.isfinite(v).all():raise ValueError('vector')
                     ident={k:raw.get(k) for k in ('record_index','header_epoch_ns','receive_epoch_ns','source_file_sha256','topic','raw_message_sha256','source_observation_id')}
-                    ident['mapped_header_epoch_ns']=view['header_epoch_ns']
+                    ident['mapped_header_epoch_ns']=view['header_epoch_ns'];ident['availability_epoch_ns']=available
                     angular=self.angular[car].add(ident,float(v@np.asarray(c['body_z_in_imu_frame']['value']))) if self.d==8 else 'disabled'
                 except (KeyError,ValueError,TypeError):angular='invalid_gyro_vector'
             self.angular_decisions[car][angular]+=1
-        self.last_angular_decision=angular
+        self.last_angular_decision=angular;self.completed_index=raw['record_index']
         return result
 
     def _emit(self,stamp,bins):
@@ -66,6 +75,11 @@ class JointReplay(f0_front.JointReplay):
 
     def _forward(self,row):
         row['method_id']=self.method;row['experiment_id']=self.original_case
+        row['availability_prefix_max_record_index']=self.completed_index
+        for name,car in [('peer_dependencies','car1'),('reverse_diagnostic_dependencies','car2')]:
+            for dependency in row[name]:
+                ident=dependency['identity'];ident['mapped_header_epoch_ns']=ident['header_epoch_ns']
+                ident.update(self.original_peer_ids[car][ident['record_index']])
         row['state_dimension_per_keyframe']=self.d;row['scalar_variables']=self.d*row['graph_states']
         row['angular_intervals']=copy.deepcopy(self.current_intervals)
         row['angular_decisions_cumulative']={c:dict(v) for c,v in self.angular_decisions.items()}
