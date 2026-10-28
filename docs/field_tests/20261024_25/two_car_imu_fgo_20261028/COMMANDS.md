@@ -32,3 +32,14 @@ export TMPDIR="$TASK_ART/tmp" MPLCONFIGDIR="$TASK_ART/mpl-cache"
 复取时先核ARTIFACTS.json归档SHA，解压到新的Git外目录，再核包内EVIDENCE_MANIFEST.json所有成员SHA。可直接以包内final-source/tools/two_car_imu_fgo/evaluate.py / evaluate_field.py读selected-v2索引，输出到新的目录；不需要重新优化。selected索引相对artifact_root可搬迁，run.json中的原绝对输入路径仅历史记录，不用于读回定位。
 
 原始bag不重复塞进证据归档：18日两包在冻结仓库datasets/field_raw/20261018/bags；T08/T10按FIELD_INPUTS及manifest的Release archive/精确成员SHA取得。不要下载视频或提取其他包。完整原消息字段包已在证据归档中；若需再次双解码核验才读取这四个原bag。
+
+交付归档实际执行（只读核验不重跑优化）：
+
+```bash
+python3 tools/two_car_imu_fgo/evidence.py pack --root "$TASK_ART" --archive "$TASK_ART/delivery/two_car_imu_fgo_evidence_v1.tar.gz"
+python3 tools/two_car_imu_fgo/evidence.py verify --archive "$TASK_ART/delivery/two_car_imu_fgo_evidence_v1.tar.gz" --extract "$TASK_ART/delivery/readback"
+"$TASK_PY" "$TASK_ART/delivery/readback/two_car_imu_fgo_evidence/final-source/tools/two_car_imu_fgo/evaluate.py" --matrix "$TASK_ART/delivery/readback/two_car_imu_fgo_evidence/synthetic-selected-v2" --output "$TASK_ART/delivery/portable-synthetic"
+"$TASK_PY" "$TASK_ART/delivery/readback/two_car_imu_fgo_evidence/final-source/tools/two_car_imu_fgo/evaluate_field.py" --matrix "$TASK_ART/delivery/readback/two_car_imu_fgo_evidence/old-selected-v2" --output "$TASK_ART/delivery/portable-old"
+```
+
+NAS写入使用Python `Path.mkdir(exist_ok=False)`与`open('xb')`新建唯一目录，复制完成后完整重读SHA相等。归档824个证据文件加1份manifest；201199076字节。移动解压后40+8单元独立再读回成功，10个统计/审计文件逐字节相同，两个timeline解压内容相同，见review/portable-readback.json。此步不启动求解器。

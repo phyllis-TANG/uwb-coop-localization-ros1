@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "PRESERVED_AND_VERIFIED",
+  "archive": {
+    "filename": "two_car_imu_fgo_evidence_v1.tar.gz",
+    "status": "PACKED",
+    "archive_sha256": "f47516cd04d6459a284afa84576370cf987245d8a8e28dd3e4e3d981cafa89b2",
+    "size_bytes": 201199076,
+    "files": 824,
+    "manifest_sha256": "8ab5189eb38b6e13ba0ae5432cd044bcb3ef654be08d50953300ebc3fac5aee8",
+    "local_path": "/home/ubuntu22/uwb-two-car-imu-fgo-20261028-artifacts/delivery/two_car_imu_fgo_evidence_v1.tar.gz",
+    "nas_path": "/home/ubuntu22/nas/data/uwb_coop_artifacts/two_car_imu_fgo_20261028_ca8fbac4_v1/two_car_imu_fgo_evidence_v1.tar.gz",
+    "windows_unc": "\\\\10.22.5.135\\data\\uwb_coop_artifacts\\two_car_imu_fgo_20261028_ca8fbac4_v1\\two_car_imu_fgo_evidence_v1.tar.gz",
+    "access": "existing data NAS share; configured VPN/LAN/credentials required, not an anonymous public download",
+    "top_directory": "two_car_imu_fgo_evidence",
+    "source_snapshot_commit": "a9f72b70a1b7e5baef1333d4264779bdba296543"
+  },
+  "verified": {
+    "nas_full_file_reread_sha": true,
+    "portable_extracted_40_synthetic_8_old_independent_readback": true,
+    "payload_files": 824,
+    "additional_manifest_member": 1
+  },
+  "originals": "all v1 failed outputs, prior source/tests and four separate repairs retained; no matrix rerun during archive verification",
+  "original_bag_retrieval": {
+    "old_repository_base": "ca8fbac4dbdf678074be5fb80bf6aff472d258e6",
+    "old_directory": "datasets/field_raw/20261018/bags",
+    "new_release_archive_url": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/releases/download/field-data-20261025/UWB_field_20261024_25_20261025_071212.tar.gz",
+    "new_archive_sha256": "b7cec6f75584e583e66946fd669dc7495d10e3bcbebc0b67fa480b65b53fd1bf",
+    "exact_allowed_members": [
+      "uwb_field_20261025/bags/T08_C1static_C2L_repeat1_20261025_180633.bag",
+      "uwb_field_20261025/bags/T10_C2static_C1straight_repeat1_retry_20261025_184755.bag"
+    ],
+    "bag_SHA_and_sizes": "FIELD_INPUTS.json; archive SHA is distinct from bag SHA"
+  },
+  "portable_instructions": "COMMANDS.md, HANDOFF.md; verify then extract to new external directory; run final-source scalar readers only",
+  "excludes": [
+    "raw bag duplicate bytes",
+    "videos",
+    "other bag extraction",
+    "venv",
+    "temporary plotting cache"
+  ]
+}
