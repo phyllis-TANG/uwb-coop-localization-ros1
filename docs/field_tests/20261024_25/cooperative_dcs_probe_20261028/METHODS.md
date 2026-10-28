@@ -14,7 +14,7 @@ kernel.WindowGraph在自己目录构造原update函数的私有globals，复用�
 
 例如Phi=1、e=3，chi²=9，s=.2，w=.04，rho=2.6，F=1.3，真实dF/de=.12，局部GN曲率=.04；直接把s(e)e平方求导会得到−.096，方向相反。e=1两支rho和梯度连续，曲率代理保持正半定；true rho二阶与GN代理不同。SciPy custom loss第三行0是有意的IRLS曲率代理，不声称rho''=0。测试验证真实SciPy内部缩放为sJ,se且trial cost取rho。
 
-边缘化只消费最老联合帧incident因子，保留原完整6×6联合prior及affine项。DCS旧peer消元时用固定sJ,se；另保留rho−we²常数以匹配线性化点目标。常数是平方和约定，完整F除2；已消元项不能重权或撤销。最高求解21×6=126标量，消元前22×6=132；D2辅助图另有126。各更新实际窗口、active/prior身份、消元前后prior、常数、来源链均写updates。极小信息权触及SciPy EPS曲率下限时显式报错而非暗中裁剪；本轮未触发。
+边缘化只消费最老联合帧incident因子，保留原完整6×6联合prior及affine项。DCS旧peer消元时用固定sJ,se；另保留rho−we²常数以匹配线性化点目标。常数是平方和约定，完整F除2；已消元项不能重权或撤销。 日志optimizer.cost/true_cost是当前活动窗加prior的优化目标，沿用原实现不含历史eliminated_constant/2；完整历史二次近似账目须另加该常数。常数不参与本次接受差分，但逐次来源和累计和已独立核验，不能把原始非线性历史重新优化值与该近似账目混同。最高求解21×6=126标量，消元前22×6=132；D2辅助图另有126。各更新实际窗口、active/prior身份、消元前后prior、常数、来源链均写updates。极小信息权触及SciPy EPS曲率下限时显式报错而非暗中裁剪；本轮未触发。
 
 ## 独立核验与共享范围
 
