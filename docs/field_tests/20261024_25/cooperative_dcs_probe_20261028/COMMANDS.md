@@ -16,3 +16,12 @@ python tools/cooperative_dcs_probe_20261028/pack.py --artifacts /home/ubuntu22/u
 freeze/run的实际argv和输入/源码身份见RUN_PLAN与各run.json；测试日志见review，v1/v2/v3原日志在归档。作者PDF来自LITERATURE.json的URL，下载原文件SHA固定；无bag/视频下载。
 
 可迁移回读只运行解包后的`delivery-source-v1/tools/cooperative_dcs_probe_20261028/evaluate.py --matrix <解包根>/evidence-v1 --output <全新输出目录>`，随后present.py使用该评价输出；不运行在线求解器。源码路径保持归档层级，独立audit由相同相对根解析。完整逐文件MANIFEST和归档SHA先核对，portable回读记录另见ARTIFACTS.json/review。
+
+最终额外的artifact-only绑定/迁移一致性检查实际命令：
+
+```bash
+python tools/cooperative_dcs_probe_20261028/verify_delivery.py --matrix /home/ubuntu22/uwb-peer-dcs-minimal-20261028-artifacts/evidence-v1 --original-evaluation /home/ubuntu22/uwb-peer-dcs-minimal-20261028-artifacts/evaluation-v1 --relocated-evaluation /home/ubuntu22/uwb-peer-dcs-minimal-20261028-artifacts/relocated-evaluation-v1 --output /home/ubuntu22/uwb-peer-dcs-minimal-20261028-artifacts/delivery_verification.json
+git -c core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol diff ca8fbac4dbdf678074be5fb80bf6aff472d258e6 --check
+```
+
+CSV由Python csv标准方言导出，保留CRLF原字节，默认git whitespace检查将CR误报为行尾空白；使用上述单次cr-at-eol选项检查通过，未修改共享Git配置或重写原CSV/产物SHA。
