@@ -1,0 +1,39 @@
+{
+  "M0_M1": "original six dimensional code path unchanged",
+  "M2": [
+    {
+      "bitwise_equal_marginals": 42,
+      "run_id": "car1_common_wall_bias_seed101_M2"
+    },
+    {
+      "bitwise_equal_marginals": 42,
+      "run_id": "car1_common_wall_bias_seed211_M2"
+    },
+    {
+      "bitwise_equal_marginals": 42,
+      "run_id": "gyro_constant_bias_seed101_M2"
+    },
+    {
+      "bitwise_equal_marginals": 42,
+      "run_id": "gyro_constant_bias_seed211_M2"
+    },
+    {
+      "bitwise_equal_marginals": 42,
+      "run_id": "nominal_seed101_M2"
+    },
+    {
+      "bitwise_equal_marginals": 42,
+      "run_id": "nominal_seed211_M2"
+    },
+    {
+      "bitwise_equal_marginals": 42,
+      "run_id": "peer_bias_seed101_M2"
+    },
+    {
+      "bitwise_equal_marginals": 42,
+      "run_id": "peer_bias_seed211_M2"
+    }
+  ],
+  "M3": "canonicalization guard excludes peer_enabled",
+  "status": "PASS"
+}

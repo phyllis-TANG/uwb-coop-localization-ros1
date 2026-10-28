@@ -1,0 +1,72 @@
+{
+  "checks": {
+    "101": {
+      "healthy_independent_state_max_abs_difference": {
+        "M0": 7.682065660263859e-07,
+        "M2": 1.3322676295501878e-15
+      },
+      "inputs": {
+        "car1_common_wall_bias": {
+          "modified_values": 280,
+          "omitted_records": 0,
+          "records": 7687
+        },
+        "car1_gyro_gap": {
+          "modified_values": 0,
+          "omitted_records": 280,
+          "records": 7407
+        },
+        "gyro_constant_bias": {
+          "modified_values": 2562,
+          "omitted_records": 0,
+          "records": 7687
+        },
+        "nominal": {
+          "modified_values": 0,
+          "omitted_records": 0,
+          "records": 7687
+        },
+        "peer_bias": {
+          "modified_values": 280,
+          "omitted_records": 0,
+          "records": 7687
+        }
+      }
+    },
+    "211": {
+      "healthy_independent_state_max_abs_difference": {
+        "M0": 1.3297261091116397e-06,
+        "M2": 1.4432899320127035e-15
+      },
+      "inputs": {
+        "car1_common_wall_bias": {
+          "modified_values": 280,
+          "omitted_records": 0,
+          "records": 7687
+        },
+        "car1_gyro_gap": {
+          "modified_values": 0,
+          "omitted_records": 280,
+          "records": 7407
+        },
+        "gyro_constant_bias": {
+          "modified_values": 2562,
+          "omitted_records": 0,
+          "records": 7687
+        },
+        "nominal": {
+          "modified_values": 0,
+          "omitted_records": 0,
+          "records": 7687
+        },
+        "peer_bias": {
+          "modified_values": 280,
+          "omitted_records": 0,
+          "records": 7687
+        }
+      }
+    }
+  },
+  "scope": "saved inputs only; metadata case/source recipe differs intentionally; no fresh experimental execution",
+  "status": "PASS"
+}

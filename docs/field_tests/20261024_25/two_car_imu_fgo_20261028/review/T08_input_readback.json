@@ -1,0 +1,263 @@
+{
+  "case_id": "T08",
+  "conditional_model_inputs": "ready only if separately frozen numeric geometry/clock/axis assumptions exist",
+  "counts": {
+    "imu": 9750,
+    "odom": 9740,
+    "other": 26942,
+    "uwb": 24334
+  },
+  "decoder_sha256": "acbe5b1727c4e1fbebc4a3bdc9c735ad9cde682e8c46baeff5654742297143d0",
+  "online_optimizer_or_Jacobian_imported": false,
+  "packets_checked": 70766,
+  "raw_bag_sha256": "cf3b4de0f20424d02779aeeb416a4fb16d77bb1f5333344d48ebf446a3884ada",
+  "sharing": "bag-envelope traversal shared with adapter; ROS field decoding independent (rosbags producer vs embedded-schema reader)",
+  "status": "PASS",
+  "strict_physical_branch": "BLOCKED",
+  "timing": {
+    "car1": {
+      "gyro_signal": {
+        "bias_calibrated": false,
+        "covariance_semantics": "fixed publisher fields only, not calibrated noise",
+        "frame_labels": [
+          "car1/gyro_link"
+        ],
+        "native_header_left_hold_angle_rad": -0.19525586934504005,
+        "physical_axis_approved": false,
+        "published_units": "rad/s",
+        "quaternion_is_absolute_room_yaw": false,
+        "shared_controller_independence_approved": false,
+        "z_rate_rad_s": {
+          "max": 0.0007993200561031699,
+          "median": -0.0007993200561031699,
+          "min": -0.0026644000317901373,
+          "n": 4883
+        }
+      },
+      "imu": {
+        "backward_header": 0,
+        "duplicate_header": 0,
+        "header_dt_ns": {
+          "max": 53703582.0,
+          "median": 50001391.5,
+          "min": 46252549.0,
+          "n": 4882
+        },
+        "header_first_last_ns": [
+          1792922799485082138,
+          1792923043593106124
+        ],
+        "mapped_dt_semantics": "NO estimator clock mapping registered for this new session; native and receipt statistics only",
+        "messages": 4883,
+        "receive_dt_ns": {
+          "max": 426583516.0,
+          "median": 49984866.0,
+          "min": 3206.0,
+          "n": 4882
+        },
+        "receive_first_last_ns": [
+          1792922800963945732,
+          1792923043577108425
+        ],
+        "receive_gaps_over_100ms": 5,
+        "receive_minus_header_ns": {
+          "max": 1478863594.0,
+          "median": -13367381.0,
+          "min": -20347228.0,
+          "n": 4883
+        },
+        "source_gaps_over_100ms": 0
+      },
+      "odom": {
+        "backward_header": 0,
+        "duplicate_header": 0,
+        "header_dt_ns": {
+          "max": 53684727.0,
+          "median": 50001616.5,
+          "min": 46264424.0,
+          "n": 4878
+        },
+        "header_first_last_ns": [
+          1792922799635030478,
+          1792923043543120431
+        ],
+        "mapped_dt_semantics": "NO estimator clock mapping registered for this new session; native and receipt statistics only",
+        "messages": 4879,
+        "receive_dt_ns": {
+          "max": 417817288.0,
+          "median": 50021723.0,
+          "min": 3986.0,
+          "n": 4878
+        },
+        "receive_first_last_ns": [
+          1792922800964388377,
+          1792923043566416387
+        ],
+        "receive_gaps_over_100ms": 8,
+        "receive_minus_header_ns": {
+          "max": 1329357899.0,
+          "median": 6675760.0,
+          "min": -16698368.0,
+          "n": 4879
+        },
+        "source_gaps_over_100ms": 0
+      },
+      "uwb": {
+        "backward_header": 0,
+        "duplicate_header": 0,
+        "header_dt_ns": {
+          "max": 23122788.0,
+          "median": 19999028.0,
+          "min": 16836166.0,
+          "n": 12188
+        },
+        "header_first_last_ns": [
+          1792922799831070899,
+          1792923043606792926
+        ],
+        "mapped_dt_semantics": "NO estimator clock mapping registered for this new session; native and receipt statistics only",
+        "messages": 12189,
+        "receive_dt_ns": {
+          "max": 388217282.0,
+          "median": 19993060.5,
+          "min": 1773.0,
+          "n": 12188
+        },
+        "receive_first_last_ns": [
+          1792922800965997561,
+          1792923043589243928
+        ],
+        "receive_gaps_over_100ms": 3,
+        "receive_minus_header_ns": {
+          "max": 1134926662.0,
+          "median": -13015249.0,
+          "min": -20497519.0,
+          "n": 12189
+        },
+        "source_gaps_over_100ms": 0
+      }
+    },
+    "car2": {
+      "gyro_signal": {
+        "bias_calibrated": false,
+        "covariance_semantics": "fixed publisher fields only, not calibrated noise",
+        "frame_labels": [
+          "car2/gyro_link"
+        ],
+        "native_header_left_hold_angle_rad": -2.191801659948068,
+        "physical_axis_approved": false,
+        "published_units": "rad/s",
+        "quaternion_is_absolute_room_yaw": false,
+        "shared_controller_independence_approved": false,
+        "z_rate_rad_s": {
+          "max": 0.13801592588424683,
+          "median": -0.0018650800921022892,
+          "min": -0.4668028950691223,
+          "n": 4867
+        }
+      },
+      "imu": {
+        "backward_header": 0,
+        "duplicate_header": 0,
+        "header_dt_ns": {
+          "max": 50597227.0,
+          "median": 49999115.0,
+          "min": 49472309.0,
+          "n": 4866
+        },
+        "header_first_last_ns": [
+          1792922800307698304,
+          1792923043603756729
+        ],
+        "mapped_dt_semantics": "NO estimator clock mapping registered for this new session; native and receipt statistics only",
+        "messages": 4867,
+        "receive_dt_ns": {
+          "max": 407062281.0,
+          "median": 49989082.0,
+          "min": 4486.0,
+          "n": 4866
+        },
+        "receive_first_last_ns": [
+          1792922800967986301,
+          1792923043596538764
+        ],
+        "receive_gaps_over_100ms": 5,
+        "receive_minus_header_ns": {
+          "max": 660287997.0,
+          "median": -9041943.0,
+          "min": -13415112.0,
+          "n": 4867
+        },
+        "source_gaps_over_100ms": 0
+      },
+      "odom": {
+        "backward_header": 0,
+        "duplicate_header": 0,
+        "header_dt_ns": {
+          "max": 50581131.0,
+          "median": 49999285.0,
+          "min": 49470262.0,
+          "n": 4860
+        },
+        "header_first_last_ns": [
+          1792922800607668913,
+          1792923043603700088
+        ],
+        "mapped_dt_semantics": "NO estimator clock mapping registered for this new session; native and receipt statistics only",
+        "messages": 4861,
+        "receive_dt_ns": {
+          "max": 398564783.0,
+          "median": 58187510.5,
+          "min": 3949.0,
+          "n": 4860
+        },
+        "receive_first_last_ns": [
+          1792922800969076596,
+          1792923043596505818
+        ],
+        "receive_gaps_over_100ms": 5,
+        "receive_minus_header_ns": {
+          "max": 361407683.0,
+          "median": 10530941.0,
+          "min": -13369334.0,
+          "n": 4861
+        },
+        "source_gaps_over_100ms": 0
+      },
+      "uwb": {
+        "backward_header": 0,
+        "duplicate_header": 0,
+        "header_dt_ns": {
+          "max": 21341263.0,
+          "median": 19999602.0,
+          "min": 18663354.0,
+          "n": 12144
+        },
+        "header_first_last_ns": [
+          1792922800715487463,
+          1792923043598293482
+        ],
+        "mapped_dt_semantics": "NO estimator clock mapping registered for this new session; native and receipt statistics only",
+        "messages": 12145,
+        "receive_dt_ns": {
+          "max": 396987983.0,
+          "median": 19999396.0,
+          "min": 2716.0,
+          "n": 12144
+        },
+        "receive_first_last_ns": [
+          1792922800968985057,
+          1792923043596681551
+        ],
+        "receive_gaps_over_100ms": 2,
+        "receive_minus_header_ns": {
+          "max": 377104361.0,
+          "median": 4625700.0,
+          "min": -13898413.0,
+          "n": 12145
+        },
+        "source_gaps_over_100ms": 0
+      }
+    }
+  }
+}

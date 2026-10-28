@@ -164,6 +164,27 @@ class Contracts(unittest.TestCase):
         a=[];execute(e,c,'M0',a.append);self.assertTrue(all(x['bias_rad_s'] is None for r in a for x in csv_rows(r,c)))
         b=[];execute(e,c,'M2',b.append);self.assertEqual(b[0]['bias_rad_s']['car1'],0.);self.assertEqual(list(csv_rows(b[0],c))[0]['bias_rad_s'],0.)
 
+    def test_missing_bias_error_remains_null_in_evaluation(self):
+        from evaluate import errors,rmse
+        from replay import csv_rows
+        c,e,truth,_=make_case(11,'nominal');e=[x for x in e if x['receive_epoch_ns']<=f0_sim.EPOCH_NS+3*10**9]
+        rows=[];execute(e,c,'M0',rows.append);row=rows[0]
+        ref=next(t for t in truth if t['state_epoch_ns']==row['state_epoch_ns'])
+        self.assertIsNone(errors(row,ref,c)['car1']['bias_rad_s'])
+        self.assertIsNone(rmse([None,None]))
+        import csv,io
+        out=io.StringIO();writer=csv.DictWriter(out,fieldnames=['bias_rad_s']);writer.writeheader();writer.writerow({'bias_rad_s':list(csv_rows(row,c))[0]['bias_rad_s']})
+        self.assertEqual(list(csv.DictReader(io.StringIO(out.getvalue())))[0]['bias_rad_s'],'')
+
+    def test_valid_zero_bias_error_is_computed(self):
+        from evaluate import errors,rmse
+        c,e,truth,_=make_case(11,'nominal');e=[x for x in e if x['receive_epoch_ns']<=f0_sim.EPOCH_NS+3*10**9]
+        rows=[];execute(e,c,'M2',rows.append);row=rows[0]
+        ref=copy.deepcopy(next(t for t in truth if t['state_epoch_ns']==row['state_epoch_ns']));ref['cars']['car1']['bias_rad_s']=.025
+        self.assertEqual(row['bias_rad_s']['car1'],0.)
+        self.assertEqual(errors(row,ref,c)['car1']['bias_rad_s'],-.025)
+        self.assertEqual(rmse([0.,0.]),0.)
+
     def test_independent_reader_rejects_semantic_corruption(self):
         c,t,l,o,p,e,x,pr=fixture()
         _,_,m=eliminate(x,t,l,o,p,e,c,pr,True)
