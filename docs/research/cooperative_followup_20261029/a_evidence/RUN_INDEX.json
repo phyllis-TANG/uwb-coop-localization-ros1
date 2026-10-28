@@ -1,0 +1,81 @@
+{
+  "kind": "readback_index_not_new_experiment_matrix",
+  "estimator_runs": 0,
+  "original_logical_units": 16,
+  "original_seeds": [
+    101
+  ],
+  "original_conditions": [
+    "nominal",
+    "car1_common_wall_bias"
+  ],
+  "original_run_index_sha256": "180f0129df18c9a56c9a51c30c10c9f9ab614ac0d955a29f3aa4b7497d444b52",
+  "original_run_identity_receipt": "checks/EXTRACTION_CHECK.json:source_runs",
+  "stages": [
+    {
+      "id": "prepare-v1",
+      "status": "PASS",
+      "estimator_runs": 0,
+      "checks": [
+        "public fixed revision",
+        "archive SHA and 239 members",
+        "16 run/input/source identities"
+      ]
+    },
+    {
+      "id": "extract-v1-cli",
+      "status": "CLI_ERROR",
+      "reason": "missing --evidence, usage only, no output directory"
+    },
+    {
+      "id": "analysis-v1",
+      "status": "FAILED_READER",
+      "source_commit": "17eec4082379ae1a265a7cdf4bb5b192bf8dfc0a",
+      "reason": "offline truth variable collision; local signals only; preserved"
+    },
+    {
+      "id": "analysis-v2",
+      "status": "PASS",
+      "source_commit": "cb1b67b5b740ec616e1c13291f348d349de328ba",
+      "source_sha256": "bc381970ce55dbd4000aa7260bedd79fe95a69a01515dbdeebfb30b1bfe55f6f",
+      "diagnostics_rows": 1260,
+      "local_rows": 252
+    },
+    {
+      "id": "summary-v1",
+      "status": "SUPERSEDED_EXPORT",
+      "reason": "ns represented as float; original whole-second values unchanged; preserved"
+    },
+    {
+      "id": "summary-v2",
+      "status": "PASS",
+      "reason": "integer ns, descriptive tables and 5 figures"
+    },
+    {
+      "id": "semantics-v1",
+      "status": "PASS",
+      "reason": "8 yaw controls and virtual-publication output identity"
+    },
+    {
+      "id": "tests-v2",
+      "status": "PASS",
+      "tests": 8
+    },
+    {
+      "id": "package-v1",
+      "status": "PASS",
+      "reason": "derived archive and verified new NAS copy"
+    }
+  ],
+  "reader_files": {
+    "tools/cooperative_followup_20261029/a_evidence/audit_semantics.py": "05c67cddfea2b842e0de845205aa17a7924424535b0162827da428567cf53bb0",
+    "tools/cooperative_followup_20261029/a_evidence/extract.py": "bc381970ce55dbd4000aa7260bedd79fe95a69a01515dbdeebfb30b1bfe55f6f",
+    "tools/cooperative_followup_20261029/a_evidence/io_evidence.py": "4734e68376a72b71a8fa6181c3d75029e93661038addaf755fe494b36d9eba00",
+    "tools/cooperative_followup_20261029/a_evidence/package_readback.py": "2bef0db15b86ff614d8fb77b5d4762a0a3e9f759cf3184854de182be59827240",
+    "tools/cooperative_followup_20261029/a_evidence/prepare.py": "b82d2061f659c94fb1ffd8c64e77b4a6b108f1eefcdfcef39b973c20571de233",
+    "tools/cooperative_followup_20261029/a_evidence/signals.py": "22e25e059ae613df8711782ec62cd86cb27cb23d61f4e7d8f16f663d4e0cfbd7",
+    "tools/cooperative_followup_20261029/a_evidence/summarize.py": "2faece894df892e9e635ca3ad2170864f5421ed292c9e5d1f4d12649d2ea31ff",
+    "tools/cooperative_followup_20261029/a_evidence/test_delivery.py": "4dd59f8dc0fefd2d2d78a54f678faee77d51cb4fca3e29dc0dbeea566f87bb9e",
+    "tools/cooperative_followup_20261029/a_evidence/test_readonly.py": "f933a5a2a91ca94675fca061a11c8d048e9e3a360258e8353ecd95cfcb20892c"
+  }
+}

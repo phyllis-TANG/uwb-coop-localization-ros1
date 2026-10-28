@@ -1,0 +1,23 @@
+{
+  "original_archive": {
+    "size_bytes": 54249275,
+    "sha256": "50c671e3687c3342b8abe99986ecd6a6488de23e24fe112b16b44d9f8fb3f320",
+    "nas_path": "/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_influence_probe_20261028_v1/cooperative_influence_probe_20261028_v1.tar.gz",
+    "smb_path": "//10.22.5.135/data/uwb_coop_artifacts/cooperative_influence_probe_20261028_v1/cooperative_influence_probe_20261028_v1.tar.gz",
+    "copy_in_task": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/cooperative_influence_probe_20261028_v1.tar.gz",
+    "modification": "unchanged",
+    "members_verified": 239
+  },
+  "derived_readback_archive": {
+    "size_bytes": 3835744,
+    "sha256": "2d1e4e20333341f280c0cc6c3c78f2bc167fd954504b1025a34798164644bffe",
+    "manifest_sha256": "1ee58182f63314e63ecbcaf7e7fcbfb24245b1dd3aa8f908711013e982a92892",
+    "members": 58,
+    "local_path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/package-v1/cooperative_followup_20261029_a_evidence_v1.tar.gz",
+    "nas_path": "/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_followup_20261029_a_evidence_v1/cooperative_followup_20261029_a_evidence_v1.tar.gz",
+    "smb_path": "//10.22.5.135/data/uwb_coop_artifacts/cooperative_followup_20261029_a_evidence_v1/cooperative_followup_20261029_a_evidence_v1.tar.gz",
+    "contents": "Own derived outputs including failed/earlier versions, logs and readers; excludes original archive and raw input duplication; report/HANDOFF in Git"
+  },
+  "retrieval": "Use existing authorized NAS mount; no public shared link created. Verify size and SHA before extracting into a new directory. If NAS unavailable, Git compact CSV/figures/checks remain readable; full input recomputation needs original archive.",
+  "estimator_runs": 0
+}

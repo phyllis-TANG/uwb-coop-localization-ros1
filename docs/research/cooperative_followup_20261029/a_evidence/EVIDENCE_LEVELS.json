@@ -1,0 +1,615 @@
+{
+  "task": "A evidence only",
+  "fixed_PR72_HEAD": "1cc7713a7e48776474788a07a1b41040f9df9330",
+  "original_execution_commit": "312180ef51c6ea4ba394bc85618674ec36ff786d",
+  "actual_main_base": "0ef38e8b84dc88cb7b0e26fea595ac05c5162676",
+  "reader_savepoint_commit": "57fce43f1ebc6cc7bb1a34cb5d40567be92506d0",
+  "estimator_runs": 0,
+  "seed": 101,
+  "conditions": [
+    "nominal",
+    "car1_common_wall_bias"
+  ],
+  "original_archive": {
+    "path": "/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_influence_probe_20261028_v1/cooperative_influence_probe_20261028_v1.tar.gz",
+    "sha256": "50c671e3687c3342b8abe99986ecd6a6488de23e24fe112b16b44d9f8fb3f320",
+    "size_bytes": 54249275
+  },
+  "input_files": {
+    "car1_common_wall_bias_seed101": {
+      "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+      "events.jsonl.gz": "34f3e1a6e2872b1534630691fb6558a28076c268624ec3c00b10e92a1e0736e6",
+      "labels.json": "43fe0acc80463f85ceaa2f695a2d9903cb2343f63eef49ddf7cf54d1dacfabc8",
+      "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+    },
+    "nominal_seed101": {
+      "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+      "events.jsonl.gz": "af00d7597f8de328a0dedef51f344a81a397000358e741c0d82299ba2cbbdd44",
+      "labels.json": "b000339bef9e22d28c8cc206698ac85b95f8c1f0f1b166607e5c633fc7ddf4c7",
+      "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+    }
+  },
+  "original_source_sha256": {
+    "docs/field_tests/single_car_historical_L_20261021/results/evidence/new_graph.py": "cc8934e0ee34eabddd46ed09e0de1ca69e9a74b00e93147f7d99f5a04d77e903",
+    "tools/cooperative_influence_probe_20261028/bindings.py": "2f7454cd451c879583995d2f6ef21aa09eddaf87e7d7ce63197a444bd6734768",
+    "tools/cooperative_influence_probe_20261028/common.py": "96bc8daf0784db2fc9db3a1ced5f1121e7d201b77fdf21f4cd04175e3f4d0539",
+    "tools/cooperative_influence_probe_20261028/core.py": "f4e0221336043a07cb61cf5b87c7de63a716047129573e23bf38f71a32139e0d",
+    "tools/cooperative_influence_probe_20261028/development_config.json": "d474b5af06260ca3b38a133b4f5a006662de42979c535a7901d0a6ad9c17db68",
+    "tools/cooperative_influence_probe_20261028/independent.py": "e8beab5a8891ec64e765a4be3d10090dcfd65d1b5d7188bf61c4808a75ad581f",
+    "tools/cooperative_influence_probe_20261028/prepare.py": "58755e9fe405fa85a0e5e3019f8dc119deb8bff803719ef910831be61b17c408",
+    "tools/cooperative_influence_probe_20261028/replay_control.py": "3b0b0f20f7396108f2dd511cca7accd2e6b27ef1eaeb53aca4ca700ff318f29a",
+    "tools/cooperative_influence_probe_20261028/run_development.py": "b01a6fd6c94707bd5e7a4ab5e350c075fac034eb8666198164de22da513003a6",
+    "tools/cooperative_influence_probe_20261028/source_lock.json": "3d48de1d22a0ddf03b1593ddfcce81327613d35f34519b08bfc360480817931d",
+    "tools/cooperative_influence_probe_20261028/test_contract.py": "23c83bcb73c53b65e84bef903912d6a29a8d9fabcbf9b0a7706ed7774786d223",
+    "tools/cooperative_influence_probe_20261028/test_index.py": "c8333e0e69669aaf5b4bb8d6fe2e2fced25aebaafde75dd6c999e691b182be37",
+    "tools/cooperative_peer_gate_probe_20261028/frozen_manifest.json": "9404f412665715f57af7300a0311711a03bac6bed0d55c4f61e97f3cdaef013b",
+    "tools/cooperative_peer_gate_probe_20261028/index_contract.py": "3a299d22441b26eceab0eceb4ce60eb6b9e5e0f2c00d6f61f7fde8296e719b66",
+    "tools/cooperative_peer_gate_probe_20261028/pinned.py": "1ee41ca0f6ece4f3c8f62091d29e23d344185a8b2abb83dd003bfbc3089cad48",
+    "tools/cooperative_peer_gate_probe_20261028/prepare.py": "dc358fc535ae0f7817cced4e1d15d2697876fcf4c800509a6c790a5e40bd21dd",
+    "tools/cooperative_peer_gate_probe_20261028/probe.py": "f401f723b39342da60568834b76ae79b412617554c296f25c439812451b4d38d",
+    "tools/cooperative_peer_gate_probe_20261028/records.py": "0f643c4830e006675c7c3e8320b901bb13cc312adf03712e8fcd05eccd580458",
+    "tools/cooperative_peer_gate_probe_20261028/runner.py": "7e3d5193ce222db352a6c793378587934ad5df62995439798e38a459c5fa15e5",
+    "tools/cooperative_peer_gate_probe_20261028/test_export.py": "7ec6ba2a8954905ee9d31191bd3c79ee6bf4dec72ed0f100a5dcb7bb93dd6da0",
+    "tools/cooperative_peer_gate_probe_20261028/test_index.py": "96ed310afba6a76c176c5004fb48e1e32ddc1647751b220dc5ffb1c03fde9824",
+    "tools/cooperative_peer_gate_probe_20261028/test_probe.py": "6c50ce9714d3a437d962923a81f521fee9219424827e6b8e3eef786d4afef57d",
+    "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+    "tools/single_car_imu_fgo/configuration.py": "e7f32bdd4cbc69378b35d53023afa116d6138e9d26e4509766cfe0c02d13a2c4",
+    "tools/single_car_imu_fgo/replay.py": "09b8cfed9125afc74a4e3050b84ee095f8459bcbc556b77eb489cba6be9aefcd",
+    "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+    "tools/two_car_fixed_lag_fgo_v1/audit.py": "d5c2479c5428f12f44800315ed932f77e6d9f3f5c9fd4e85aef7e5f540eeecb4",
+    "tools/two_car_fixed_lag_fgo_v1/batch.py": "41cdfc6ff3d63f3c274b830c2c664845bd1e2ca7db5e1c539d0548f7d4465692",
+    "tools/two_car_fixed_lag_fgo_v1/config.json": "20a9f64ac55cc43415dc34733bf436ad5c7181cebe06187e5895b6094c1075fa",
+    "tools/two_car_fixed_lag_fgo_v1/dependency_lock.json": "d2606e4328892d0e3b196fa42cd19360a64b22b9b27b2af1814f956d188c7a4e",
+    "tools/two_car_fixed_lag_fgo_v1/frontend.py": "4023914fd3ce68930af0c6a2e336c4b04a98679bab90950d09ea202a2e46b803",
+    "tools/two_car_fixed_lag_fgo_v1/graph.py": "5c80d6b4f947824d581f268c9fac2760d4df9ccc540abb12ccfee689b4234e2a",
+    "tools/two_car_fixed_lag_fgo_v1/io_utils.py": "953ba7afbba739bacb0cca26fbd27a9f1c3b887d14a484d2574a9af7cb003ae9",
+    "tools/two_car_fixed_lag_fgo_v1/legacy.py": "335fce6b33d4af8977ac54591413bfcdcfc0ffcb62a3f469356943c1f5326ce2",
+    "tools/two_car_fixed_lag_fgo_v1/replay.py": "f41ba8f610ec46b22090b2dfe0a6518e844d2dbd33d860020bb417e0de1f4cb2",
+    "tools/two_car_fixed_lag_fgo_v1/report.py": "d3af3996e259b7d96c871c179495364931f8f44138079e9123c6b2e92341a859",
+    "tools/two_car_fixed_lag_fgo_v1/requirements.txt": "ac6f20cbcd6657f774aa875d61bc5bf336718f504af6e8ab5d6575f5d8da7118",
+    "tools/two_car_fixed_lag_fgo_v1/simulate.py": "61288a3a21110da5fcc730b82113468168325ad72e72f4fd957d3ac6f8b0e679",
+    "tools/two_car_fixed_lag_fgo_v1/test_joint.py": "67b10b5d1221d569b6c7ba1c9af4bf3cded6dd673525f46e57fbffa15fede95f",
+    "tools/two_car_fixed_lag_fgo_v1/test_simulate.py": "04effd758ba5827c9bd32fa214c79a22c71ca40844194d79679a1e7ce8250c9a"
+  },
+  "saved_run_identities": [
+    {
+      "inputs_sha256": {
+        "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "events.jsonl.gz": "af00d7597f8de328a0dedef51f344a81a397000358e741c0d82299ba2cbbdd44",
+        "labels.json": "b000339bef9e22d28c8cc206698ac85b95f8c1f0f1b166607e5c633fc7ddf4c7",
+        "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "method": "I",
+      "path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/unpacked/cooperative_influence_probe_20261028/evidence-v1/reused/nominal_seed101__I",
+      "run_sha256": "db0964a62348592c14cbb40ca5453b0089a501ecd93dade68e5e41dfa24fbece",
+      "scenario": "nominal",
+      "updates_sha256": "c1cd031ecfe9ae066665481e24ffa46d0b8e4918748ba8ec5ae22d3c43a536a2"
+    },
+    {
+      "inputs_sha256": {
+        "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "events.jsonl.gz": "af00d7597f8de328a0dedef51f344a81a397000358e741c0d82299ba2cbbdd44",
+        "labels.json": "b000339bef9e22d28c8cc206698ac85b95f8c1f0f1b166607e5c633fc7ddf4c7",
+        "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "method": "J",
+      "path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/unpacked/cooperative_influence_probe_20261028/evidence-v1/reused/nominal_seed101__J",
+      "run_sha256": "2666f189882dce72144daec4d01d5006a84f06e93610659ca1657ed82fbb8dec",
+      "scenario": "nominal",
+      "updates_sha256": "a6e9a6dbf7c3c9afb773384cc81dbb4861643a8034988440e3b703a89b2576ed"
+    },
+    {
+      "inputs_sha256": {
+        "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "events.jsonl.gz": "af00d7597f8de328a0dedef51f344a81a397000358e741c0d82299ba2cbbdd44",
+        "labels.json": "b000339bef9e22d28c8cc206698ac85b95f8c1f0f1b166607e5c633fc7ddf4c7",
+        "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "method": "W025",
+      "path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/unpacked/cooperative_influence_probe_20261028/evidence-v1/runs/nominal_seed101__W025",
+      "run_sha256": "30a3baccaa3e7f1152fd1a2ba953c410637cb577c31721633125d5826b7f8b6b",
+      "scenario": "nominal",
+      "updates_sha256": "899ba2172ec0cc4748db8dcb3ccd40c42cad2a27c4fc0d5d851ed5725b7e1175"
+    },
+    {
+      "inputs_sha256": {
+        "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "events.jsonl.gz": "af00d7597f8de328a0dedef51f344a81a397000358e741c0d82299ba2cbbdd44",
+        "labels.json": "b000339bef9e22d28c8cc206698ac85b95f8c1f0f1b166607e5c633fc7ddf4c7",
+        "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "method": "U",
+      "path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/unpacked/cooperative_influence_probe_20261028/evidence-v1/runs/nominal_seed101__U",
+      "run_sha256": "7ae7f44829a3c9eabb048d29660ee480dce02eda35af50cbfe9e3282a1bb3e9a",
+      "scenario": "nominal",
+      "updates_sha256": "bd99ac95e6de292a6d9dddac6cc861f4e53319b64717064560f91158d2a3daf2"
+    },
+    {
+      "inputs_sha256": {
+        "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "events.jsonl.gz": "af00d7597f8de328a0dedef51f344a81a397000358e741c0d82299ba2cbbdd44",
+        "labels.json": "b000339bef9e22d28c8cc206698ac85b95f8c1f0f1b166607e5c633fc7ddf4c7",
+        "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "method": "C004",
+      "path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/unpacked/cooperative_influence_probe_20261028/evidence-v1/derived/nominal_seed101__C004",
+      "run_sha256": "386ff0edc55d3e5ec961fdff33a03dd3d3a113f95b8d48fe2b4ad3c84571e888",
+      "scenario": "nominal",
+      "updates_sha256": "cb44fd14da3bfecb9269c8d85117176368749f3878ce9b5116a526091a4dea63"
+    },
+    {
+      "inputs_sha256": {
+        "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "events.jsonl.gz": "af00d7597f8de328a0dedef51f344a81a397000358e741c0d82299ba2cbbdd44",
+        "labels.json": "b000339bef9e22d28c8cc206698ac85b95f8c1f0f1b166607e5c633fc7ddf4c7",
+        "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "method": "C100",
+      "path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/unpacked/cooperative_influence_probe_20261028/evidence-v1/derived/nominal_seed101__C100",
+      "run_sha256": "0b101027719cf545f42230f58a624c74e732ce2f90a40bdfa54d2ac89c207b54",
+      "scenario": "nominal",
+      "updates_sha256": "0ece039b4462e67a9a6447984f47ca2928b09599b37750d014c58a8bba9145de"
+    },
+    {
+      "inputs_sha256": {
+        "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "events.jsonl.gz": "af00d7597f8de328a0dedef51f344a81a397000358e741c0d82299ba2cbbdd44",
+        "labels.json": "b000339bef9e22d28c8cc206698ac85b95f8c1f0f1b166607e5c633fc7ddf4c7",
+        "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "method": "K004",
+      "path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/unpacked/cooperative_influence_probe_20261028/evidence-v1/runs/nominal_seed101__K004",
+      "run_sha256": "8e7d7e15a2ac602ce9f63ae6b358007bb0d0907ca4178af0d9f46d48c77a1afa",
+      "scenario": "nominal",
+      "updates_sha256": "909efde0c12424ff30928dbf03e04c56174fb2603932be6df89743a6362ebd0a"
+    },
+    {
+      "inputs_sha256": {
+        "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "events.jsonl.gz": "af00d7597f8de328a0dedef51f344a81a397000358e741c0d82299ba2cbbdd44",
+        "labels.json": "b000339bef9e22d28c8cc206698ac85b95f8c1f0f1b166607e5c633fc7ddf4c7",
+        "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "method": "K100",
+      "path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/unpacked/cooperative_influence_probe_20261028/evidence-v1/runs/nominal_seed101__K100",
+      "run_sha256": "fa4284878556a5a7d552790b1323624034fdceef564b95234a3017416ca6d105",
+      "scenario": "nominal",
+      "updates_sha256": "50f822d0e7b90674afb75b01365cc9de869f225955981cb0a2a17833685fafe4"
+    },
+    {
+      "inputs_sha256": {
+        "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "events.jsonl.gz": "34f3e1a6e2872b1534630691fb6558a28076c268624ec3c00b10e92a1e0736e6",
+        "labels.json": "43fe0acc80463f85ceaa2f695a2d9903cb2343f63eef49ddf7cf54d1dacfabc8",
+        "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "method": "I",
+      "path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/unpacked/cooperative_influence_probe_20261028/evidence-v1/reused/car1_common_wall_bias_seed101__I",
+      "run_sha256": "09319ecd669767940a8a188b8e56ac7d42185702d2019f46c39cab189d2b7c88",
+      "scenario": "car1_common_wall_bias",
+      "updates_sha256": "ac1f91bba1ce7028b81b29bfe19a6273b449f1166281f01c521a1922b81922c5"
+    },
+    {
+      "inputs_sha256": {
+        "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "events.jsonl.gz": "34f3e1a6e2872b1534630691fb6558a28076c268624ec3c00b10e92a1e0736e6",
+        "labels.json": "43fe0acc80463f85ceaa2f695a2d9903cb2343f63eef49ddf7cf54d1dacfabc8",
+        "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "method": "J",
+      "path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/unpacked/cooperative_influence_probe_20261028/evidence-v1/reused/car1_common_wall_bias_seed101__J",
+      "run_sha256": "d5ca0bc4103e7abbb86c525927d2cfa9522e148355c5304f35f4db2231101c2d",
+      "scenario": "car1_common_wall_bias",
+      "updates_sha256": "e308465285f23bedd600e52481fa0bed5ad017def411d6f446ac197407540c61"
+    },
+    {
+      "inputs_sha256": {
+        "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "events.jsonl.gz": "34f3e1a6e2872b1534630691fb6558a28076c268624ec3c00b10e92a1e0736e6",
+        "labels.json": "43fe0acc80463f85ceaa2f695a2d9903cb2343f63eef49ddf7cf54d1dacfabc8",
+        "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "method": "W025",
+      "path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/unpacked/cooperative_influence_probe_20261028/evidence-v1/runs/car1_common_wall_bias_seed101__W025",
+      "run_sha256": "6a270b88c83e9c9f2e39fbbaf4a8dcf64ee3cfe223bf79130b0f604d36a52103",
+      "scenario": "car1_common_wall_bias",
+      "updates_sha256": "450549af82ef994a3aa07352080c2f143d946aa8dfb610cf6b75b19ff455c8f9"
+    },
+    {
+      "inputs_sha256": {
+        "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "events.jsonl.gz": "34f3e1a6e2872b1534630691fb6558a28076c268624ec3c00b10e92a1e0736e6",
+        "labels.json": "43fe0acc80463f85ceaa2f695a2d9903cb2343f63eef49ddf7cf54d1dacfabc8",
+        "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "method": "U",
+      "path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/unpacked/cooperative_influence_probe_20261028/evidence-v1/runs/car1_common_wall_bias_seed101__U",
+      "run_sha256": "ddd585236bfb9b0b95766f77cafdb80044821b232a7ce0c870a025654c25e957",
+      "scenario": "car1_common_wall_bias",
+      "updates_sha256": "326b8fe7133de248cfa4b0c32b9735608733ec001b00e9dc0d35ea2fc4897611"
+    },
+    {
+      "inputs_sha256": {
+        "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "events.jsonl.gz": "34f3e1a6e2872b1534630691fb6558a28076c268624ec3c00b10e92a1e0736e6",
+        "labels.json": "43fe0acc80463f85ceaa2f695a2d9903cb2343f63eef49ddf7cf54d1dacfabc8",
+        "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "method": "C004",
+      "path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/unpacked/cooperative_influence_probe_20261028/evidence-v1/derived/car1_common_wall_bias_seed101__C004",
+      "run_sha256": "70dc2ce249de427e8be7c15df264dc0971271ec85ba1fbc716dc5c92b692b274",
+      "scenario": "car1_common_wall_bias",
+      "updates_sha256": "20f6605ef7ba40635b26b7e361391430008cd2e9e9d534ca16cc1203357e5e72"
+    },
+    {
+      "inputs_sha256": {
+        "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "events.jsonl.gz": "34f3e1a6e2872b1534630691fb6558a28076c268624ec3c00b10e92a1e0736e6",
+        "labels.json": "43fe0acc80463f85ceaa2f695a2d9903cb2343f63eef49ddf7cf54d1dacfabc8",
+        "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "method": "C100",
+      "path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/unpacked/cooperative_influence_probe_20261028/evidence-v1/derived/car1_common_wall_bias_seed101__C100",
+      "run_sha256": "7837a5f5d85cba21a6f8bdc83d2348f38ce737a21477fd704a15a98e7e2ea4d7",
+      "scenario": "car1_common_wall_bias",
+      "updates_sha256": "d132e08ecedbdc288bc6430dd73d15f7b5d2ce30beb331f88b6b2e2b3fdf2627"
+    },
+    {
+      "inputs_sha256": {
+        "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "events.jsonl.gz": "34f3e1a6e2872b1534630691fb6558a28076c268624ec3c00b10e92a1e0736e6",
+        "labels.json": "43fe0acc80463f85ceaa2f695a2d9903cb2343f63eef49ddf7cf54d1dacfabc8",
+        "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "method": "K004",
+      "path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/unpacked/cooperative_influence_probe_20261028/evidence-v1/runs/car1_common_wall_bias_seed101__K004",
+      "run_sha256": "b2170bd122bd9a2a57de3ce2f443703a211ac82b02f921b06b536c643bab14df",
+      "scenario": "car1_common_wall_bias",
+      "updates_sha256": "d8de24b8e05955709c508e830e361da618a7930e03bec8ef009df1b7c136074d"
+    },
+    {
+      "inputs_sha256": {
+        "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "events.jsonl.gz": "34f3e1a6e2872b1534630691fb6558a28076c268624ec3c00b10e92a1e0736e6",
+        "labels.json": "43fe0acc80463f85ceaa2f695a2d9903cb2343f63eef49ddf7cf54d1dacfabc8",
+        "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "method": "K100",
+      "path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/unpacked/cooperative_influence_probe_20261028/evidence-v1/runs/car1_common_wall_bias_seed101__K100",
+      "run_sha256": "cccbe9f19a0df4c3e69dc77eea6d8db732a88f47b114be01b6ca0dbdd5527e06",
+      "scenario": "car1_common_wall_bias",
+      "updates_sha256": "71de4934a7e4be5011f1d3010b4761e9717017e305a7c9e388aea8f0312eb116"
+    }
+  ],
+  "shared_equations": {
+    "path": "original archive: tools/two_car_fixed_lag_fgo_v1/audit.py",
+    "sha256": "d5c2479c5428f12f44800315ed932f77e6d9f3f5c9fd4e85aef7e5f540eeecb4"
+  },
+  "claims": [
+    {
+      "id": "A01",
+      "verification_depth": "actual_recompute_and_identity",
+      "conclusion": "239归档成员、16逻辑单元、公开表/分母吻合；不是独立重复试验",
+      "original_input": {
+        "path": "/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_influence_probe_20261028_v1/cooperative_influence_probe_20261028_v1.tar.gz",
+        "sha256": "50c671e3687c3342b8abe99986ecd6a6488de23e24fe112b16b44d9f8fb3f320",
+        "size_bytes": 54249275
+      },
+      "derived_evidence": [
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/checks/PUBLIC_CHECK.json",
+          "sha256": "85d673dea6eaf007dae0aaa967b623fdbd97e0642a3c037315483c582dcb2841"
+        },
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/checks/ARCHIVE_CHECK.json",
+          "sha256": "c16bdea4224eb9a174fbffdc24c5c046c9b08c85f22164a2dd933fc7c06794e4"
+        },
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/checks/EXTRACTION_CHECK.json",
+          "sha256": "9356b63b33a2e734aed8af96ae568abd78bc05de4294e246eab5bf06d43370f5"
+        },
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/results/publication_counts.csv",
+          "sha256": "91ce934d38415906bc7651e375515c16366a8b066f2af3a246ad555c0cb1482d"
+        }
+      ],
+      "reader_source": [
+        {
+          "path": "tools/cooperative_followup_20261029/a_evidence/prepare.py",
+          "sha256": "b82d2061f659c94fb1ffd8c64e77b4a6b108f1eefcdfcef39b973c20571de233"
+        },
+        {
+          "path": "tools/cooperative_followup_20261029/a_evidence/extract.py",
+          "sha256": "bc381970ce55dbd4000aa7260bedd79fe95a69a01515dbdeebfb30b1bfe55f6f"
+        }
+      ],
+      "limitations": "All 16 saved runs; no original estimator rerun."
+    },
+    {
+      "id": "A02",
+      "verification_depth": "actual_recompute_from_full_logs",
+      "conclusion": "K相对C的XY收益很小且Car2恢复恶化，W亦保留部分协同帮助",
+      "original_input": {
+        "path": "/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_influence_probe_20261028_v1/cooperative_influence_probe_20261028_v1.tar.gz",
+        "sha256": "50c671e3687c3342b8abe99986ecd6a6488de23e24fe112b16b44d9f8fb3f320",
+        "size_bytes": 54249275
+      },
+      "derived_evidence": [
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/results/method_comparison.csv",
+          "sha256": "3f53debbc8ad811ab507724fe4ff0df165b70c8ee82e6720c3e5b7a64305c202"
+        },
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/results/K_C_differences.csv",
+          "sha256": "7221c154f7c65c30cd11f9c8eca6f04d7a601391613acdf013c949ad7bdfcc15"
+        },
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/diagnostics.csv",
+          "sha256": "59e70ac4de7ddc7ebd07dd42cbdd930c192545e437b9a1e56446a7e622bf90f0"
+        }
+      ],
+      "reader_source": [
+        {
+          "path": "tools/cooperative_followup_20261029/a_evidence/extract.py",
+          "sha256": "bc381970ce55dbd4000aa7260bedd79fe95a69a01515dbdeebfb30b1bfe55f6f"
+        },
+        {
+          "path": "tools/cooperative_followup_20261029/a_evidence/summarize.py",
+          "sha256": "2faece894df892e9e635ca3ad2170864f5421ed292c9e5d1f4d12649d2ea31ff"
+        }
+      ],
+      "limitations": "Same input versus I and same method versus nominal are distinct columns; one seed only."
+    },
+    {
+      "id": "A03",
+      "verification_depth": "actual_recompute_from_full_logs",
+      "conclusion": "裁剪与主图分离、yaw保持J；K发布等于内部末帧；均无发布协方差",
+      "original_input": {
+        "path": "/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_influence_probe_20261028_v1/cooperative_influence_probe_20261028_v1.tar.gz",
+        "sha256": "50c671e3687c3342b8abe99986ecd6a6488de23e24fe112b16b44d9f8fb3f320",
+        "size_bytes": 54249275
+      },
+      "derived_evidence": [
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/results/snapshot_identity_checks.csv",
+          "sha256": "0a72b496b4a01231a23012910abde3e7e6c226ecb84269e463eb01ea254dfc7f"
+        },
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/diagnostics.csv",
+          "sha256": "59e70ac4de7ddc7ebd07dd42cbdd930c192545e437b9a1e56446a7e622bf90f0"
+        },
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/checks/PUBLICATION_SEMANTICS.json",
+          "sha256": "1535f5ab77e3c873525baec34d70061d83f22c4331a5674b7f2c88518b5b5301"
+        }
+      ],
+      "reader_source": [
+        {
+          "path": "tools/cooperative_followup_20261029/a_evidence/summarize.py",
+          "sha256": "2faece894df892e9e635ca3ad2170864f5421ed292c9e5d1f4d12649d2ea31ff"
+        },
+        {
+          "path": "tools/cooperative_followup_20261029/a_evidence/audit_semantics.py",
+          "sha256": "05c67cddfea2b842e0de845205aa17a7924424535b0162827da428567cf53bb0"
+        }
+      ],
+      "limitations": "Virtual replay publication only; no controller or hardware receipt."
+    },
+    {
+      "id": "A04",
+      "verification_depth": "actual_recompute_from_full_logs",
+      "conclusion": "K/C yaw最大差2.176/4.497度；本例yaw RMSE变差，不只是U/J数值路径差",
+      "original_input": {
+        "path": "/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_influence_probe_20261028_v1/cooperative_influence_probe_20261028_v1.tar.gz",
+        "sha256": "50c671e3687c3342b8abe99986ecd6a6488de23e24fe112b16b44d9f8fb3f320",
+        "size_bytes": 54249275
+      },
+      "derived_evidence": [
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/results/yaw_solver_controls.csv",
+          "sha256": "e10eab1e9975dae1a15f0772c57e66fe0f518d48be7b29cd949485916bccf59f"
+        },
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/results/K_C_differences.csv",
+          "sha256": "7221c154f7c65c30cd11f9c8eca6f04d7a601391613acdf013c949ad7bdfcc15"
+        },
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/results/method_comparison.csv",
+          "sha256": "3f53debbc8ad811ab507724fe4ff0df165b70c8ee82e6720c3e5b7a64305c202"
+        }
+      ],
+      "reader_source": [
+        {
+          "path": "tools/cooperative_followup_20261029/a_evidence/summarize.py",
+          "sha256": "2faece894df892e9e635ca3ad2170864f5421ed292c9e5d1f4d12649d2ea31ff"
+        },
+        {
+          "path": "tools/cooperative_followup_20261029/a_evidence/audit_semantics.py",
+          "sha256": "05c67cddfea2b842e0de845205aa17a7924424535b0162827da428567cf53bb0"
+        }
+      ],
+      "limitations": "No isolated objective-term attribution. Yaw accuracy here uses synthetic truth only."
+    },
+    {
+      "id": "A05",
+      "verification_depth": "actual_recompute_from_full_logs",
+      "conclusion": "连续发布与Odom冲突、割线速率变化无双车全面改善；不能判物理不可行",
+      "original_input": {
+        "path": "/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_influence_probe_20261028_v1/cooperative_influence_probe_20261028_v1.tar.gz",
+        "sha256": "50c671e3687c3342b8abe99986ecd6a6488de23e24fe112b16b44d9f8fb3f320",
+        "size_bytes": 54249275
+      },
+      "derived_evidence": [
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/results/summary.csv",
+          "sha256": "55ff072f69fd500400cdbdb8bd96240ef5672acb0cfbd8fd7ba3b4b3dafccf07"
+        },
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/diagnostics.csv",
+          "sha256": "59e70ac4de7ddc7ebd07dd42cbdd930c192545e437b9a1e56446a7e622bf90f0"
+        }
+      ],
+      "reader_source": [
+        {
+          "path": "tools/cooperative_followup_20261029/a_evidence/extract.py",
+          "sha256": "bc381970ce55dbd4000aa7260bedd79fe95a69a01515dbdeebfb30b1bfe55f6f"
+        }
+      ],
+      "limitations": "Descriptive finite differences, not instantaneous motion; no independent hardware threshold."
+    },
+    {
+      "id": "A06",
+      "verification_depth": "actual_recompute_and_provenance_readback",
+      "conclusion": "59秒活动窗无改动墙bin，但历史来源/输出尾差仍存在",
+      "original_input": {
+        "path": "/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_influence_probe_20261028_v1/cooperative_influence_probe_20261028_v1.tar.gz",
+        "sha256": "50c671e3687c3342b8abe99986ecd6a6488de23e24fe112b16b44d9f8fb3f320",
+        "size_bytes": 54249275
+      },
+      "derived_evidence": [
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/results/history_readback.csv",
+          "sha256": "80e1f3283bd30a43cdee48b3d93a0c25975eeb1aaa4a32147e477a69577ea412"
+        },
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/results/method_comparison.csv",
+          "sha256": "3f53debbc8ad811ab507724fe4ff0df165b70c8ee82e6720c3e5b7a64305c202"
+        }
+      ],
+      "reader_source": [
+        {
+          "path": "tools/cooperative_followup_20261029/a_evidence/summarize.py",
+          "sha256": "2faece894df892e9e635ca3ad2170864f5421ed292c9e5d1f4d12649d2ea31ff"
+        }
+      ],
+      "limitations": "Prior ID and consumed-factor chain checked; no intervention separating prior from warm states and nonlinear path."
+    },
+    {
+      "id": "A07",
+      "verification_depth": "actual_recompute_from_local_inputs",
+      "conclusion": "本例Car1故障窗墙残差明显增大，存在局部冲突线索",
+      "original_input": {
+        "path": "/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_influence_probe_20261028_v1/cooperative_influence_probe_20261028_v1.tar.gz",
+        "sha256": "50c671e3687c3342b8abe99986ecd6a6488de23e24fe112b16b44d9f8fb3f320",
+        "size_bytes": 54249275
+      },
+      "derived_evidence": [
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/results/local_signals.csv",
+          "sha256": "5449ffe3c79d89e274b9c1826afde8f1a8388d4b9c7f6d1062317a442767c771"
+        },
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/results/local_range_overlap.csv",
+          "sha256": "e67708f1b8acae05e9e58cfd25f36eaea72a1eedff34500be30ba24c5d0e09a0"
+        }
+      ],
+      "reader_source": [
+        {
+          "path": "tools/cooperative_followup_20261029/a_evidence/signals.py",
+          "sha256": "22e25e059ae613df8711782ec62cd86cb27cb23d61f4e7d8f16f663d4e0cfbd7"
+        },
+        {
+          "path": "tools/cooperative_followup_20261029/a_evidence/extract.py",
+          "sha256": "bc381970ce55dbd4000aa7260bedd79fe95a69a01515dbdeebfb30b1bfe55f6f"
+        },
+        {
+          "path": "tools/cooperative_followup_20261029/a_evidence/summarize.py",
+          "sha256": "2faece894df892e9e635ca3ad2170864f5421ed292c9e5d1f4d12649d2ea31ff"
+        }
+      ],
+      "limitations": "Posterior includes current wall observations and retained local prior. Not target excluded and not an alarm classifier."
+    },
+    {
+      "id": "A08",
+      "verification_depth": "actual_recompute_with_offline_truth_join",
+      "conclusion": "37秒信息代理/修正可在正常范围仍有大偏差；54秒小残差仍非误差认证",
+      "original_input": {
+        "path": "/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_influence_probe_20261028_v1/cooperative_influence_probe_20261028_v1.tar.gz",
+        "sha256": "50c671e3687c3342b8abe99986ecd6a6488de23e24fe112b16b44d9f8fb3f320",
+        "size_bytes": 54249275
+      },
+      "derived_evidence": [
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/results/local_signals.csv",
+          "sha256": "5449ffe3c79d89e274b9c1826afde8f1a8388d4b9c7f6d1062317a442767c771"
+        },
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/results/local_signals_offline_join.csv",
+          "sha256": "310236cdcf80720d31c46dc5710b2ef711caf8b52201bbd5a833927d0b88f38a"
+        },
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/results/local_witnesses.csv",
+          "sha256": "d352b589e1dfa03b1cea92d7588122cc0fb1b54bc1ec2da36b3c5385f7a01596"
+        },
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/results/local_range_overlap.csv",
+          "sha256": "e67708f1b8acae05e9e58cfd25f36eaea72a1eedff34500be30ba24c5d0e09a0"
+        }
+      ],
+      "reader_source": [
+        {
+          "path": "tools/cooperative_followup_20261029/a_evidence/signals.py",
+          "sha256": "22e25e059ae613df8711782ec62cd86cb27cb23d61f4e7d8f16f663d4e0cfbd7"
+        },
+        {
+          "path": "tools/cooperative_followup_20261029/a_evidence/extract.py",
+          "sha256": "bc381970ce55dbd4000aa7260bedd79fe95a69a01515dbdeebfb30b1bfe55f6f"
+        },
+        {
+          "path": "tools/cooperative_followup_20261029/a_evidence/summarize.py",
+          "sha256": "2faece894df892e9e635ca3ad2170864f5421ed292c9e5d1f4d12649d2ea31ff"
+        }
+      ],
+      "limitations": "GN proxy is newly computed, not published covariance; shared archived scalar residual equations and stored prior; engineering noise not calibrated."
+    },
+    {
+      "id": "A09",
+      "verification_depth": "public_table_identity_only_and_original_report_reference",
+      "conclusion": "成本记录约35–36秒K主图、约34秒无约束U；本轮没有重新计时",
+      "original_input": {
+        "path": "/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_influence_probe_20261028_v1/cooperative_influence_probe_20261028_v1.tar.gz",
+        "sha256": "50c671e3687c3342b8abe99986ecd6a6488de23e24fe112b16b44d9f8fb3f320",
+        "size_bytes": 54249275
+      },
+      "derived_evidence": [
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/results/costs_identity_only.csv",
+          "sha256": "d652fa4b08b6869d43d8d6d5d013ce673f26555b582d42083079805cb6b87b74"
+        },
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/checks/PUBLIC_CHECK.json",
+          "sha256": "85d673dea6eaf007dae0aaa967b623fdbd97e0642a3c037315483c582dcb2841"
+        }
+      ],
+      "reader_source": [
+        {
+          "path": "tools/cooperative_followup_20261029/a_evidence/prepare.py",
+          "sha256": "b82d2061f659c94fb1ffd8c64e77b4a6b108f1eefcdfcef39b973c20571de233"
+        }
+      ],
+      "limitations": "Historical/mixed timing origins retained; no real-time delay claim; cost numbers are not a new timing experiment."
+    },
+    {
+      "id": "A10",
+      "verification_depth": "new_recommendation",
+      "conclusion": "仅两个缺口：明确消费合同/用途容许限值；可信性解释保留当前观测与历史依赖。当前无图内必要性证据",
+      "original_input": {
+        "path": "/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_influence_probe_20261028_v1/cooperative_influence_probe_20261028_v1.tar.gz",
+        "sha256": "50c671e3687c3342b8abe99986ecd6a6488de23e24fe112b16b44d9f8fb3f320",
+        "size_bytes": 54249275
+      },
+      "derived_evidence": [
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/A_FACTS.md",
+          "sha256": "c1803e75c995f3c40ba01d45e202fe64cc527b9cf68acb331a8e5f24ad5434c4"
+        },
+        {
+          "path": "docs/research/cooperative_followup_20261029/a_evidence/ANALYSIS.md",
+          "sha256": "265ba7f94343d702ef6f13ca8d203923d37495af3b63e882285853cdd1cccb76"
+        }
+      ],
+      "reader_source": [],
+      "limitations": "Recommendation based on A02-A08, not a new validated method; no additional scenarios or experiments prescribed this round."
+    }
+  ]
+}

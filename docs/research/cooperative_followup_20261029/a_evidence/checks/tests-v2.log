@@ -1,0 +1,13 @@
+test_full_publication_denominators_and_unknowns_preserved (test_delivery.DeliveryContracts) ... ok
+test_integer_nanoseconds_are_not_float_coerced (test_delivery.DeliveryContracts) ... ok
+test_recomputed_table_receipt_matches_source (test_delivery.DeliveryContracts) ... ok
+test_summary_epoch_identity_and_tail_history (test_delivery.DeliveryContracts) ... ok
+test_information_proxy_unknown_startup_and_prior_sensitive (test_readonly.ReadOnlyContracts) ... ok
+test_local_signals_ignore_peer_truth_labels_and_future_payload (test_readonly.ReadOnlyContracts) ... ok
+test_local_signals_refuse_peer_enabled_snapshot (test_readonly.ReadOnlyContracts) ... ok
+test_rotated_antenna_and_wrap_not_false_jump (test_readonly.ReadOnlyContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.084s
+
+OK

@@ -1,0 +1,8 @@
+LOCAL_SIGNALS nominal 63 epochs PASS
+LOCAL_SIGNALS car1_common_wall_bias 63 epochs PASS
+Traceback (most recent call last):
+  File "/home/ubuntu22/uwb-cooperative-a-evidence-20261029/tools/cooperative_followup_20261029/a_evidence/extract.py", line 120, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--evidence',type=Path,required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args();extract(a.evidence,a.output)
+  File "/home/ubuntu22/uwb-cooperative-a-evidence-20261029/tools/cooperative_followup_20261029/a_evidence/extract.py", line 49, in extract
+    tr=truths[scenario][ep]['cars'][car];pos=p[3*i:3*i+3] if finite(p) else None;re=antenna(ref['pose'][3*i:3*i+3],c['models'][car]);err=None if pos is None else float(np.linalg.norm(ants[i][:2]-truths[i][:2]));referr=float(np.linalg.norm(re[:2]-truths[i][:2]));sep=None if pos is None else float(np.linalg.norm(ants[i][:2]-re[:2]))
+TypeError: list indices must be integers or slices, not str

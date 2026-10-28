@@ -1,0 +1,11 @@
+scenario,method,denominator,finite,reference_accepted,reference_valid_pairs,reference_valid_triples,normal_joint,independent,post_clip,fallback,unknown,unpublished,timeout,failure,main_success,joint_success
+nominal,I,63,63,61,60,59,0,61,0,0,2,0,0,0,61,0
+nominal,J,63,63,61,60,59,61,0,0,0,2,0,0,0,61,61
+nominal,W025,63,63,61,60,59,61,0,0,0,2,0,0,0,61,61
+nominal,C004,63,63,61,60,59,61,0,0,0,2,0,0,0,61,61
+nominal,K004,63,63,61,60,59,61,0,0,0,2,0,0,0,61,61
+car1_common_wall_bias,I,63,63,61,60,59,0,61,0,0,2,0,0,0,61,0
+car1_common_wall_bias,J,63,63,61,60,59,61,0,0,0,2,0,0,0,61,61
+car1_common_wall_bias,W025,63,63,61,60,59,61,0,0,0,2,0,0,0,61,61
+car1_common_wall_bias,C004,63,63,61,60,59,40,0,21,0,2,0,0,0,61,40
+car1_common_wall_bias,K004,63,63,61,60,59,61,0,0,0,2,0,0,0,61,61
