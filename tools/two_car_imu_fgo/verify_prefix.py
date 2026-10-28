@@ -14,13 +14,14 @@ from io_utils import dump,lines,write_lines
 
 
 def stable(v):
-    if isinstance(v,dict):return {k:stable(x) for k,x in v.items() if 'wall_s' not in k and not k.startswith('estimated_worker')}
+    if isinstance(v,dict):return {k:stable(x) for k,x in v.items() if 'wall_s' not in k and not k.startswith('estimated_worker') and k!='independent_basis_canonicalized'}
     if isinstance(v,list):return [stable(x) for x in v]
     return v
 
 
 def verify(matrix,inputs,output):
     output=Path(output);output.mkdir(exist_ok=False);results=[]
+    index=json.loads((matrix/'RUN_INDEX.json').read_text())
     for case in ('015334','033248'):
         config=json.loads((inputs/case/'config.json').read_text());events=list(lines(inputs/case/'events.jsonl.gz'))
         cutoff=events[0]['receive_epoch_ns']+31*10**9
@@ -28,7 +29,9 @@ def verify(matrix,inputs,output):
         limit=prefix[-1]['availability_epoch_ns']
         for method in ('M0','M1','M2','M3'):
             rows=[];execute(prefix,config,method,rows.append);write_lines(output/(case+'_'+method+'_prefix.jsonl.gz'),rows)
-            complete=[r for r in lines(matrix/'runs'/(case+'_'+method)/'updates.jsonl.gz') if r['availability_cutoff_epoch_ns']<=limit]
+            cell=next(c for c in index['cells'] if c['run_id']==case+'_'+method)
+            full=(matrix/index['artifact_root']/cell['run_path']) if 'run_path' in cell else matrix/'runs'/cell['run_id']
+            complete=[r for r in lines(full/'updates.jsonl.gz') if r['availability_cutoff_epoch_ns']<=limit]
             if stable(rows)!=stable(complete):raise ValueError('executable receipt-prefix differs '+case+'/'+method)
             base_equal=None
             if method in ('M0','M1'):

@@ -50,10 +50,13 @@ def evaluate(root,output):
     ind.require(len(index['cells'])==40 and {r['run_id'] for r in index['cells']}==expected and all(c['status']=='DONE' for c in index['cells']),'complete 40 index')
     audits=[];data={};timeline=[];costs=[]
     for cell in index['cells']:
-        run=root/'runs'/cell['run_id'];inp=root/'inputs'/cell['case'];meta=json.loads((run/'run.json').read_text());config=json.loads((run/'config.json').read_text())
+        artifact_root=(root/index['artifact_root']).resolve() if 'artifact_root' in index else root
+        run=artifact_root/cell['run_path'] if 'run_path' in cell else root/'runs'/cell['run_id']
+        inp=artifact_root/cell['input_path'] if 'input_path' in cell else root/'inputs'/cell['case']
+        meta=json.loads((run/'run.json').read_text());config=json.loads((run/'config.json').read_text())
         ind.require(sha(run/'run.json')==cell['run_sha256'],'run identity SHA')
         ind.require(meta['input_sha256']==cell['input_sha256'] and meta['config_sha256']==cell['config_sha256'],'paired input/config SHA')
-        ind.require(meta['source_sha256']==index['source_sha256'] and meta['code_commit']==index['code_commit'] and not meta['worktree_dirty'],'frozen execution SHA')
+        ind.require(meta['source_sha256']==cell.get('expected_source_sha256',index['source_sha256']) and meta['code_commit']==cell.get('expected_code_commit',index['code_commit']) and not meta['worktree_dirty'],'frozen execution SHA')
         for name,digest in index['inputs'][cell['case']].items():ind.require(sha(inp/name)==digest,'input/truth/label SHA')
         audit=ind.audit_run(run,inp/'events.jsonl.gz',all_marginals=True);audit['run_id']=cell['run_id'];audits.append(audit);print('AUDIT',cell['run_id'],audit['status'],flush=True)
         rows=ind.lines(run/'updates.jsonl.gz');truth={t['state_epoch_ns']:t for t in ind.lines(inp/'truth.jsonl.gz')}

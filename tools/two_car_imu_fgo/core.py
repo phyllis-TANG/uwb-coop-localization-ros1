@@ -116,11 +116,27 @@ def eliminate(states,times,local,observations,peers,intervals,config,prior,peer_
     q2,matrix=np.linalg.qr(projected,mode='reduced'); offset=q2.T@residual
     if len(matrix):
         sign=np.where(np.diag(matrix)<0,-1.,1.);matrix=sign[:,None]*matrix;offset=sign*offset
-    constant=max(0.,float(residual@residual-offset@offset)); after=Prior(states[1],matrix,offset)
+    constant=max(0.,float(residual@residual-offset@offset))
+    basis_canonicalized=False
+    # A rank-deficient QR may rotate residual rows between otherwise independent
+    # cars. For M2 only, recover the exact two-F3 block representation of the
+    # SAME incident objective. M3 always retains the full joint QR untouched.
+    incoming_block = prior.matrix.shape==(8,8) and np.linalg.norm(prior.matrix[:4,4:])+np.linalg.norm(prior.matrix[4:,:4])<=1e-10
+    if not peer_enabled and incoming_block and matrix.shape==(8,8) and np.linalg.norm(matrix[:4,4:])+np.linalg.norm(matrix[4:,:4])>1e-10:
+        block=np.zeros((8,8));off=np.zeros(8);constants=0.
+        for i,car in enumerate(CARS):
+            sl=slice(4*i,4*i+4);cfg=car_config(config,car)
+            before=single.Prior(prior.point[sl],prior.matrix[sl,sl],prior.offset[sl])
+            part,c,_=single.eliminate_oldest(np.asarray(states[:2])[:,sl],times[:2],np.asarray(local[:2])[:,i],
+                [observations[0][car],{}],[intervals[0][car]],config['models'][car],before,cfg)
+            block[sl,sl]=part.matrix;off[sl]=part.offset;constants+=c
+        matrix,offset,constant=block,off,constants;basis_canonicalized=True
+    after=Prior(states[1],matrix,offset)
     detail=dict(times_s=list(times[:2]),states=np.asarray(states[:2]).tolist(),local=np.asarray(local[:2]).tolist(),
         old_observations=copy.deepcopy(observations[0]),old_peer_m=peers[0],intervals=copy.deepcopy(intervals[:1]),
         before=prior.record(),after=after.record(),constant=constant,old_dimension=8,rank_old=rank,
         rank_boundary=int(np.linalg.matrix_rank(matrix)) if matrix.size else 0,
+        independent_basis_canonicalized=basis_canonicalized,
         cross_information_norm=float(np.linalg.norm((matrix.T@matrix)[:4,4:])),
         incident_policy='prior+old_walls+old_peer+first_translations+first_gyro_bias; retained factors excluded')
     return after,constant,detail

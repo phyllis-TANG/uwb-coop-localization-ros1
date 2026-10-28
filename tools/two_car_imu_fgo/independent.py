@@ -171,7 +171,7 @@ def audit_run(root,events_path,all_marginals=True):
             for i,c in enumerate(CARS):
                 edge=current[c];counts['angular_intervals']+=1
                 require(edge['start_epoch_ns']==meta['epoch_origin_ns']+round(snap['times_s'][-2]*1e9) if len(snap['times_s'])>=2 else True,'angular state binding')
-                counts['segments']+=edge_check(edge,controls_by_car[c],cutoff,config['angular'][c]['max_hold_ns']['value'])
+                counts['segments']+=edge_check(edge,[e for e in controls_by_car[c] if e['record_index']<=row.get('availability_prefix_max_record_index',10**30)],cutoff,config['angular'][c]['max_hold_ns']['value'])
                 if previous is not None:
                     want=previous[4*i+2]+(edge['raw_angle_rad']-previous[4*i+3]*(edge['dt_ns']/1e9) if edge['valid'] else 0.)
                     require(abs(wrap(row['prediction_pose'][4*i+2]-want))<1e-10,'hidden odom yaw prediction')

@@ -191,6 +191,20 @@ class Contracts(unittest.TestCase):
                 result=ind.audit_run(root/method,root/'short.jsonl.gz')
                 self.assertEqual(result['status'],'PASS');self.assertGreater(result['counts']['marginalizations'],0)
 
+    def test_missing_edge_rank_deficient_prior_basis_matches_two_F3(self):
+        c,t,l,o,p,e,x,pr=fixture(30);e[3]['car1']=interval(3,valid=False)
+        g=WindowGraph(c,False);others=[single.WindowGraph(car_config(c,car)) for car in CARS];canonicalized=0
+        for k in range(len(t)):
+            g.next_intervals=None if k==0 else e[k-1];r=g.update(t[k],l[k],o[k],p[k])
+            self.assertNotIn('solver_error',r['status'])
+            for item in r['marginalization_details']:
+                ind.marginal(item,c,8,False);canonicalized+=int(item.get('independent_basis_canonicalized',False))
+            for i,car in enumerate(CARS):
+                rr=others[i].update(t[k],l[k,i],o[k][car],None if k==0 else e[k-1][car])
+                np.testing.assert_allclose(np.array(r['pose'])[4*i:4*i+3],rr['pose'],atol=1e-4,rtol=0)
+                self.assertLess(abs(r['pose'][4*i+3]-rr['bias_rad_s']),1e-5)
+        self.assertGreater(canonicalized,0)
+
     def test_rank_deficient_elimination_does_not_invent_information(self):
         from core import Prior
         c,t,l,o,p,e,x,pr=fixture(2);pr=Prior(np.zeros(8),np.zeros((0,8)),np.zeros(0));x=np.zeros((2,8))
