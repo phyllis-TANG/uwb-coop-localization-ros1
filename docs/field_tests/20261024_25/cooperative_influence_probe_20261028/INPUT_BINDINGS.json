@@ -1,0 +1,112 @@
+{
+  "PR70_head": "d946bdcb457f7f51f93a116a359dcabf7647134c",
+  "PR70_index_sha256": "0a539d88db110112741bbd692bfb2f22c06e3487b2f191cfab6623da4c81ea29",
+  "baseline_runs": [
+    {
+      "case": "nominal_seed101",
+      "method": "I",
+      "original_cell": {
+        "case": "nominal_seed101",
+        "config_sha256": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "estimator_executed_this_task": false,
+        "events_sha256": "af00d7597f8de328a0dedef51f344a81a397000358e741c0d82299ba2cbbdd44",
+        "labels_sha256": "b000339bef9e22d28c8cc206698ac85b95f8c1f0f1b166607e5c633fc7ddf4c7",
+        "method": "D0",
+        "original_algorithm_git_HEAD": "d78a5df8d51fbb98e160ab67d547e73a0bffc803",
+        "original_index_sha256": "7d869706cd6f1f963567d7a6dbacc53401379332d4dc1a43442c477f5a26523b",
+        "original_method": "G0",
+        "run_id": "nominal_seed101__D0",
+        "run_path": "reused/nominal_seed101__G0",
+        "run_sha256": "db0964a62348592c14cbb40ca5453b0089a501ecd93dade68e5e41dfa24fbece",
+        "scenario": "nominal",
+        "seed": 101,
+        "status": "REUSED_VERIFIED",
+        "truth_sha256": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "path": "reused/nominal_seed101__I"
+    },
+    {
+      "case": "nominal_seed101",
+      "method": "J",
+      "original_cell": {
+        "case": "nominal_seed101",
+        "config_sha256": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "estimator_executed_this_task": false,
+        "events_sha256": "af00d7597f8de328a0dedef51f344a81a397000358e741c0d82299ba2cbbdd44",
+        "labels_sha256": "b000339bef9e22d28c8cc206698ac85b95f8c1f0f1b166607e5c633fc7ddf4c7",
+        "method": "D1",
+        "original_algorithm_git_HEAD": "d78a5df8d51fbb98e160ab67d547e73a0bffc803",
+        "original_index_sha256": "7d869706cd6f1f963567d7a6dbacc53401379332d4dc1a43442c477f5a26523b",
+        "original_method": "G1",
+        "run_id": "nominal_seed101__D1",
+        "run_path": "reused/nominal_seed101__G1",
+        "run_sha256": "2666f189882dce72144daec4d01d5006a84f06e93610659ca1657ed82fbb8dec",
+        "scenario": "nominal",
+        "seed": 101,
+        "status": "REUSED_VERIFIED",
+        "truth_sha256": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "path": "reused/nominal_seed101__J"
+    },
+    {
+      "case": "car1_common_wall_bias_seed101",
+      "method": "I",
+      "original_cell": {
+        "case": "car1_common_wall_bias_seed101",
+        "config_sha256": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "estimator_executed_this_task": false,
+        "events_sha256": "34f3e1a6e2872b1534630691fb6558a28076c268624ec3c00b10e92a1e0736e6",
+        "labels_sha256": "43fe0acc80463f85ceaa2f695a2d9903cb2343f63eef49ddf7cf54d1dacfabc8",
+        "method": "D0",
+        "original_algorithm_git_HEAD": "d78a5df8d51fbb98e160ab67d547e73a0bffc803",
+        "original_index_sha256": "7d869706cd6f1f963567d7a6dbacc53401379332d4dc1a43442c477f5a26523b",
+        "original_method": "G0",
+        "run_id": "car1_common_wall_bias_seed101__D0",
+        "run_path": "reused/car1_common_wall_bias_seed101__G0",
+        "run_sha256": "09319ecd669767940a8a188b8e56ac7d42185702d2019f46c39cab189d2b7c88",
+        "scenario": "car1_common_wall_bias",
+        "seed": 101,
+        "status": "REUSED_VERIFIED",
+        "truth_sha256": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "path": "reused/car1_common_wall_bias_seed101__I"
+    },
+    {
+      "case": "car1_common_wall_bias_seed101",
+      "method": "J",
+      "original_cell": {
+        "case": "car1_common_wall_bias_seed101",
+        "config_sha256": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+        "estimator_executed_this_task": false,
+        "events_sha256": "34f3e1a6e2872b1534630691fb6558a28076c268624ec3c00b10e92a1e0736e6",
+        "labels_sha256": "43fe0acc80463f85ceaa2f695a2d9903cb2343f63eef49ddf7cf54d1dacfabc8",
+        "method": "D1",
+        "original_algorithm_git_HEAD": "d78a5df8d51fbb98e160ab67d547e73a0bffc803",
+        "original_index_sha256": "7d869706cd6f1f963567d7a6dbacc53401379332d4dc1a43442c477f5a26523b",
+        "original_method": "G1",
+        "run_id": "car1_common_wall_bias_seed101__D1",
+        "run_path": "reused/car1_common_wall_bias_seed101__G1",
+        "run_sha256": "d5ca0bc4103e7abbb86c525927d2cfa9522e148355c5304f35f4db2231101c2d",
+        "scenario": "car1_common_wall_bias",
+        "seed": 101,
+        "status": "REUSED_VERIFIED",
+        "truth_sha256": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+      },
+      "path": "reused/car1_common_wall_bias_seed101__J"
+    }
+  ],
+  "cases": {
+    "car1_common_wall_bias_seed101": {
+      "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+      "events.jsonl.gz": "34f3e1a6e2872b1534630691fb6558a28076c268624ec3c00b10e92a1e0736e6",
+      "labels.json": "43fe0acc80463f85ceaa2f695a2d9903cb2343f63eef49ddf7cf54d1dacfabc8",
+      "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+    },
+    "nominal_seed101": {
+      "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+      "events.jsonl.gz": "af00d7597f8de328a0dedef51f344a81a397000358e741c0d82299ba2cbbdd44",
+      "labels.json": "b000339bef9e22d28c8cc206698ac85b95f8c1f0f1b166607e5c633fc7ddf4c7",
+      "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+# 实现合同中的失败原因分类修正
+
+发生在任何开发主运行之前。tests-v1的6秒确定性fixture强制solver failure；主图保留的预测也超预算时，输出reason先检查预测预算，误标BUDGET_REJECTED，遮蔽真正SOLVER_FAILURE。发布仍回退完整参照，accepted_graph=false，未发生超预算发布或prior清空。最小复现为test_failure_timeout_unknown_and_no_fallback_feedback中的test_fault='failure'。
+
+修正仅分类优先级：TIMEOUT优先；成功候选的实际超预算或显式CONTROL_BUDGET_REJECTED才归预算拒绝；其余求解失败归SOLVER_FAILURE。保留原预算、求解器、阈值及所有历史。test_fault只存在合同fixture，不进入开发运行。另修复测试访问Replay.reference而非Replay.graph.reference的笔误。
+
+v1源和失败日志保存在Git外tests-v1/source及contracts.log。v2九项通过；随后v3增加零权关闭路径、独立FD Schur/保留因子、缺Odom与全局不变性合同。不存在正式16单元被覆盖或择优重跑；完整主运行将在全部合同通过、源码提交和索引冻结之后开始。

@@ -1,0 +1,41 @@
+{
+  "estimator_runs": 0,
+  "numerical_controls": [
+    {
+      "case": "nominal_seed101",
+      "max_abs_xy_yaw_component_difference": [
+        8.93632605780681e-06,
+        1.019157030546225e-05,
+        3.710064746054176e-05,
+        6.7918239392561475e-06,
+        5.11365191169233e-06,
+        4.0642311549654586e-05
+      ],
+      "same_solver_off_vs_original_within_1e_4": true
+    },
+    {
+      "case": "car1_common_wall_bias_seed101",
+      "max_abs_xy_yaw_component_difference": [
+        5.0811390862381955e-05,
+        1.7687327041659984e-05,
+        8.006717492287097e-05,
+        6.7918239392561475e-06,
+        9.64488996446633e-06,
+        4.0642311549654586e-05
+      ],
+      "same_solver_off_vs_original_within_1e_4": true
+    }
+  ],
+  "relocated_identical_files": {
+    "audits.json": "f9d8482e99118fb1409b311c4e988779b5b1c89713f45c08851ca5d3b7697ec8",
+    "contrasts.csv": "b45336d108200b7c57cd0b7180fd1d377a0497c39ff81a03306f855e082a7f72",
+    "costs.csv": "d652fa4b08b6869d43d8d6d5d013ce673f26555b582d42083079805cb6b87b74",
+    "metrics.csv": "36381c44747b1e50a40b99ed64b9bc6f707bcf38b363de1a224fd986933fdbe8",
+    "receipt.json": "2ff4935fb4806ec41470bef7f6f734bdbbcfd5f71d26c488b3e0fa648b6bdb53",
+    "solver_controls.csv": "19e0edb764136b3acef6615a1b0eb4a29c7915b87aa6ec8fc94e5a9f88eb2555"
+  },
+  "script_sha256": "e4be529ebe380f59886624511dc48e31f5fbb944d0b5571ee9e185c67556dacc",
+  "source_files_unchanged": 40,
+  "status": "PASS",
+  "timeline_decompressed_equal": true
+}

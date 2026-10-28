@@ -1,0 +1,43 @@
+{
+  "seed": 101,
+  "scenarios": [
+    "nominal",
+    "car1_common_wall_bias"
+  ],
+  "budgets_m": [
+    0.04,
+    1.0
+  ],
+  "budget_role": "PR71 illustrative 0.04 m and deliberately loose 1 m; development activation check, not paper budget",
+  "fixed_peer_information_weight": 0.25,
+  "weight_placement": "sqrt(.25) outside original signed pseudo-Huber residual/J; original sigma untouched",
+  "solver": {
+    "name": "SLSQP",
+    "maxiter": 300,
+    "ftol": 1e-09,
+    "max_solve_wall_s": 2.0,
+    "analytic_gradient": true
+  },
+  "tolerances": {
+    "published_budget_m": 1e-07,
+    "geometry_J_atol": 3e-06,
+    "geometry_J_rtol": 3e-06,
+    "closed_solver_pose_m_rad": 0.0001,
+    "closed_solver_objective_relative": 1e-06,
+    "FD_Schur_H_atol": 3e-06,
+    "FD_Schur_rtol": 2e-06,
+    "FD_Schur_g_constant_atol": 2e-06
+  },
+  "methods": [
+    "I",
+    "J",
+    "W025",
+    "U",
+    "C004",
+    "C100",
+    "K004",
+    "K100"
+  ],
+  "history": "full joint prior; constraints only on current published frame; output fallback/clipping never fed into main; no prior rollback",
+  "covariance_output": null
+}
