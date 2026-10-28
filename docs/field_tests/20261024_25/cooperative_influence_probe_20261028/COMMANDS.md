@@ -20,3 +20,9 @@ test_contract分v1失败、v2九项通过、v3十三项通过；各原日志与�
 可迁移回读命令：`python <解包根>/delivery-source-v1/tools/cooperative_influence_probe_20261028/evaluate.py --root <解包根>/evidence-v1 --output <全新输出目录>`。读器没有在线solver/Jacobian依赖，不是重跑实验。必须保留归档相对源码目录，先核验归档与MANIFEST SHA。获取方式见ARTIFACTS.json；验证回执见review。
 
 源码、输入与配置身份：RUN_PLAN/RUN_INDEX、INPUT_BINDINGS、FROZEN_CONFIG、READING_SOURCES、tools/source_lock.json；结果逐文件SHA在各run.json；全部交付文件校验见review/DELIVERY_FILES_SHA256.json。计时与dirty=true的真实文档状态见METHODS/CHECKPOINT_03，不改旧记录。
+
+最终绑定/迁移/全姿态数值路径检查：
+
+```bash
+python tools/cooperative_influence_probe_20261028/verify_delivery.py --artifacts /home/ubuntu22/uwb-cooperative-influence-minimal-20261028-artifacts --output /home/ubuntu22/uwb-cooperative-influence-minimal-20261028-artifacts/delivery_verification.json
+```
