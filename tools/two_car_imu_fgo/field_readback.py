@@ -64,7 +64,7 @@ def verify(path,packet):
             timing[car][kind]=dict(messages=len(rs),header_first_last_ns=[h[0],h[-1]],receive_first_last_ns=[r[0],r[-1]],
                 header_dt_ns=stats(dh),receive_dt_ns=stats(dr),receive_minus_header_ns=stats(np.array(r)-np.array(h)),
                 duplicate_header=sum(int(x==0) for x in dh),backward_header=sum(int(x<0) for x in dh),source_gaps_over_100ms=sum(int(x>10**8) for x in dh),
-                receive_gaps_over_100ms=sum(int(x>10**8) for x in dr),mapped_dt_semantics='receipt differences under registered old candidate; physical sample clock not accepted')
+                receive_gaps_over_100ms=sum(int(x>10**8) for x in dr),mapped_dt_semantics=('receipt differences under registered old candidate; physical sample clock not accepted' if manifest['case_id'] in ('015334','033248') else 'NO estimator clock mapping registered for this new session; native and receipt statistics only'))
         imu=parts['imu'];gz=[r['value']['angular_velocity_rad_s'][2] for r in imu]
         timing[car]['gyro_signal']=dict(frame_labels=sorted({r['value']['frame_id'] for r in imu}),published_units='rad/s',
             z_rate_rad_s=stats(gz),native_header_left_hold_angle_rad=sum(a['value']['angular_velocity_rad_s'][2]*(b['header_epoch_ns']-a['header_epoch_ns'])/1e9 for a,b in zip(imu,imu[1:]) if 0<b['header_epoch_ns']-a['header_epoch_ns']<=10**8),
