@@ -1,0 +1,11 @@
+{
+  "phi": 1.0,
+  "source": "Agarwal et al ICRA2013 section V.A default Phi=1",
+  "paper_equation": 15,
+  "peer_loss": "DCS replaces original pseudo-Huber; no stacking",
+  "nominal_sigma_source": "unchanged input config peer.sigma_m",
+  "curvature": "positive IRLS/Gauss-Newton frozen w=s*s at each accepted linearization",
+  "acceptance_objective": "0.5*sum(nonpeer r*r)+0.5*sum(rho(e*e)); rho=t for t<=Phi else 3Phi-4Phi^2/(Phi+t)",
+  "solver": "original scipy TRF exact, same 50 max_nfev and 1e-7 tolerances",
+  "history": "full joint affine prior with fixed marginalization-time peer weight; no rollback"
+}
