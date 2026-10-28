@@ -1,0 +1,33 @@
+test_actual_budget_active_and_prefix (__main__.Contract) ... ok
+test_constraint_J_actual_rotated_antenna_and_clip (__main__.Contract) ... ok
+test_failure_timeout_unknown_and_no_fallback_feedback (__main__.Contract) ... FAIL
+test_full_prior_zero_current_weight_not_peer_free (__main__.Contract) ... ok
+test_old_baselines_exact (__main__.Contract) ... ok
+test_private_reference_peer_perturbation_and_main_prior_across_lag (__main__.Contract) ... ERROR
+test_same_solver_off_small_fixture_vs_original_and_inactive (__main__.Contract) ... ok
+test_symmetric_1d_equals_clipping (__main__.Contract) ... ok
+test_weight_information_outside_huber (__main__.Contract) ... ok
+
+======================================================================
+ERROR: test_private_reference_peer_perturbation_and_main_prior_across_lag (__main__.Contract)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu22/uwb-cooperative-influence-minimal-20261028/tools/cooperative_influence_probe_20261028/test_contract.py", line 36, in test_private_reference_peer_perturbation_and_main_prior_across_lag
+    a,wa=run(e,c,'W025');b,wb=run(alter,c,'W025');self.assertGreater(wa.reference.marginalizations,0)
+AttributeError: 'Replay' object has no attribute 'reference'
+
+======================================================================
+FAIL: test_failure_timeout_unknown_and_no_fallback_feedback (__main__.Contract)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu22/uwb-cooperative-influence-minimal-20261028/tools/cooperative_influence_probe_20261028/test_contract.py", line 62, in test_failure_timeout_unknown_and_no_fallback_feedback
+    self.assertFalse(q['accepted_graph']);self.assertEqual(q['publication_reason'],reason);self.assertEqual(q['pose'],q['reference']['pose'])
+AssertionError: 'BUDGET_REJECTED' != 'SOLVER_FAILURE'
+- BUDGET_REJECTED
++ SOLVER_FAILURE
+
+
+----------------------------------------------------------------------
+Ran 9 tests in 19.142s
+
+FAILED (failures=1, errors=1)

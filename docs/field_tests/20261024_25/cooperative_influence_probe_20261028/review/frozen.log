@@ -1,0 +1,32 @@
+test_failed_run_persists_evidence_and_refuses_existing_directory (test_joint.CliEvidenceTests) ... ok
+test_field_scope_and_holdout_refused_without_outputs (test_joint.CliEvidenceTests) ... ok
+test_independent_auditor_detects_sha_and_rehashed_objective_tampering (test_joint.CliEvidenceTests) ... ok
+test_d0_matches_two_original_f0_graphs_through_marginalization (test_joint.FactorTests) ... ok
+test_full_objective_jacobian_and_d0_block_diagonal (test_joint.FactorTests) ... ok
+test_joint_qr_matches_schur_with_affine_offset_and_constant (test_joint.FactorTests) ... ok
+test_marginalization_failure_transaction_and_recovery (test_joint.FactorTests) ... ok
+test_peer_invalid_and_coincident_guard (test_joint.FactorTests) ... ok
+test_peer_residual_independent_3d_geometry_and_jacobian (test_joint.FactorTests) ... ok
+test_rank_deficiency_reported_not_replaced_with_diagonal (test_joint.FactorTests) ... ok
+test_retained_factors_not_consumed_or_double_counted (test_joint.FactorTests) ... ok
+test_solver_failure_predicts_and_never_accepts_candidate (test_joint.FactorTests) ... ok
+test_bounded_graph_frontend_and_identity_cache_over_120_seconds (test_joint.ReplayTests) ... ok
+test_buffer_overflow_reports_failure (test_joint.ReplayTests) ... ok
+test_deadline_equality_late_count_and_immutable_publication (test_joint.ReplayTests) ... ok
+test_missing_odom_has_explicit_invalid_output_then_recovers (test_joint.ReplayTests) ... ok
+test_peer_gap_and_recovery_no_zero_distance_or_reverse_fallback (test_joint.ReplayTests) ... ok
+test_raw_bridge_and_canonical_duplicate_do_not_double_count (test_joint.ReplayTests) ... ok
+test_receive_prefix_after_multiple_real_marginalizations (test_joint.ReplayTests) ... ok
+test_synthetic_scope_cannot_bypass_holdout_identifier (test_joint.ReplayTests) ... ok
+test_truth_leakage_and_bad_timestamp_identity_rejected (test_joint.ReplayTests) ... ok
+test_two_car_frontend_d0_matches_original_f0 (test_joint.ReplayTests) ... ok
+test_faults_only_change_declared_measurements (test_simulate.SyntheticInputTests) ... ok
+test_immutable_files_and_deterministic_gzip (test_simulate.SyntheticInputTests) ... ok
+test_integer_time_and_unique_record_identity (test_simulate.SyntheticInputTests) ... ok
+test_truth_and_fault_not_in_events (test_simulate.SyntheticInputTests) ... ok
+test_two_dimensional_motion_and_initial_truth (test_simulate.SyntheticInputTests) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 4.181s
+
+OK
