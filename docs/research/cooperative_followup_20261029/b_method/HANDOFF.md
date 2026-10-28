@@ -5,6 +5,9 @@
 算法输入/假设/未知证据和具体实验室信息用途见[B_ASSUMPTIONS.json](B_ASSUMPTIONS.json)。
 这不是“所有约束无用”的判断，也不是新算法贡献或真实精度通过。
 
+独立分支已推送，草稿PR [#74](https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/74)，未合并；
+完整结果提交 `134fd297815f11d5c6a0a6a1adb72f0fd0f89e7e`，后续仅补本链接与交付SHA。
+
 ## 实际基准与保护
 
 - 原cwd `/home/ubuntu22/双车协同/uwb-coop-localization-ros1`；分支
