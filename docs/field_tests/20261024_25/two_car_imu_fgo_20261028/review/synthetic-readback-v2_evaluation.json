@@ -1,0 +1,39 @@
+{
+  "cells": 40,
+  "common_valid": {
+    "car1_common_wall_bias_seed101": 61,
+    "car1_common_wall_bias_seed211": 61,
+    "car1_gyro_gap_seed101": 47,
+    "car1_gyro_gap_seed211": 47,
+    "gyro_constant_bias_seed101": 61,
+    "gyro_constant_bias_seed211": 61,
+    "nominal_seed101": 61,
+    "nominal_seed211": 61,
+    "peer_bias_seed101": 61,
+    "peer_bias_seed211": 61
+  },
+  "counts": {
+    "accepted": 2440,
+    "car1_valid": 2384,
+    "car2_valid": 2440,
+    "finite": 2520,
+    "joint_valid": 2384,
+    "marginal_failed": 0,
+    "missing_gyro_car1": 56,
+    "missing_gyro_car2": 0,
+    "missing_odom": 0,
+    "odom_yaw_fallback": 0,
+    "solve_failed": 0,
+    "warmup": 80
+  },
+  "evaluator_sha256": "4722526f5c91c958c4b40b1239dd6014c422a2af73782078927e7657810c8f2f",
+  "independent_source_sha256": "9a815fd7a96d2d1278058ce83563678e23747ad5a16a9a5b75920b8728af1f69",
+  "limitations": [
+    "already exposed synthetic development seeds, not independent validation",
+    "correlated timestamps not independent trials",
+    "virtual timings not ROS latency",
+    "M2 per-car F3 stopping; M3 joint stopping; identical engineering parameters"
+  ],
+  "publications": 2520,
+  "status": "PASS"
+}

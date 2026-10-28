@@ -1,0 +1,263 @@
+{
+  "case_id": "015334",
+  "conditional_model_inputs": "ready only if separately frozen numeric geometry/clock/axis assumptions exist",
+  "counts": {
+    "imu": 3806,
+    "odom": 3801,
+    "other": 1964,
+    "uwb": 9489
+  },
+  "decoder_sha256": "acbe5b1727c4e1fbebc4a3bdc9c735ad9cde682e8c46baeff5654742297143d0",
+  "online_optimizer_or_Jacobian_imported": false,
+  "packets_checked": 19060,
+  "raw_bag_sha256": "bb2f8cbfecf3e73cdf1b12f4c290b51d0c74215006746abba72c0b9c7a0946e6",
+  "sharing": "bag-envelope traversal shared with adapter; ROS field decoding independent (rosbags producer vs embedded-schema reader)",
+  "status": "PASS",
+  "strict_physical_branch": "BLOCKED",
+  "timing": {
+    "car1": {
+      "gyro_signal": {
+        "bias_calibrated": false,
+        "covariance_semantics": "fixed publisher fields only, not calibrated noise",
+        "frame_labels": [
+          "gyro_link"
+        ],
+        "native_header_left_hold_angle_rad": 0.23832486715301704,
+        "physical_axis_approved": false,
+        "published_units": "rad/s",
+        "quaternion_is_absolute_room_yaw": false,
+        "shared_controller_independence_approved": false,
+        "z_rate_rad_s": {
+          "max": 0.0037301601842045784,
+          "median": 0.002397960051894188,
+          "min": 0.0010657600359991193,
+          "n": 1910
+        }
+      },
+      "imu": {
+        "backward_header": 0,
+        "duplicate_header": 0,
+        "header_dt_ns": {
+          "max": 50181480.0,
+          "median": 49999278.0,
+          "min": 49792412.0,
+          "n": 1909
+        },
+        "header_first_last_ns": [
+          1792313648507389844,
+          1792313743955139199
+        ],
+        "mapped_dt_semantics": "receipt differences under registered old candidate; physical sample clock not accepted",
+        "messages": 1910,
+        "receive_dt_ns": {
+          "max": 241928273.0,
+          "median": 49962326.0,
+          "min": 9746.0,
+          "n": 1909
+        },
+        "receive_first_last_ns": [
+          1792313648982405195,
+          1792313743760762685
+        ],
+        "receive_gaps_over_100ms": 3,
+        "receive_minus_header_ns": {
+          "max": 475015351.0,
+          "median": -193371688.0,
+          "min": -195103154.0,
+          "n": 1910
+        },
+        "source_gaps_over_100ms": 0
+      },
+      "odom": {
+        "backward_header": 0,
+        "duplicate_header": 0,
+        "header_dt_ns": {
+          "max": 50165651.0,
+          "median": 49999065.0,
+          "min": 49817882.0,
+          "n": 1907
+        },
+        "header_first_last_ns": [
+          1792313648607387237,
+          1792313743955110292
+        ],
+        "mapped_dt_semantics": "receipt differences under registered old candidate; physical sample clock not accepted",
+        "messages": 1908,
+        "receive_dt_ns": {
+          "max": 273916261.0,
+          "median": 50003188.0,
+          "min": 5018.0,
+          "n": 1907
+        },
+        "receive_first_last_ns": [
+          1792313648982533307,
+          1792313743781699432
+        ],
+        "receive_gaps_over_100ms": 4,
+        "receive_minus_header_ns": {
+          "max": 375146070.0,
+          "median": -164588902.5,
+          "min": -194965201.0,
+          "n": 1908
+        },
+        "source_gaps_over_100ms": 0
+      },
+      "uwb": {
+        "backward_header": 0,
+        "duplicate_header": 0,
+        "header_dt_ns": {
+          "max": 22650003.0,
+          "median": 19999027.0,
+          "min": 17418146.0,
+          "n": 4759
+        },
+        "header_first_last_ns": [
+          1792313648806664943,
+          1792313743987207889
+        ],
+        "mapped_dt_semantics": "receipt differences under registered old candidate; physical sample clock not accepted",
+        "messages": 4760,
+        "receive_dt_ns": {
+          "max": 254949673.0,
+          "median": 19979931.0,
+          "min": 1808.0,
+          "n": 4759
+        },
+        "receive_first_last_ns": [
+          1792313648982851833,
+          1792313743790058775
+        ],
+        "receive_gaps_over_100ms": 3,
+        "receive_minus_header_ns": {
+          "max": 176186890.0,
+          "median": -194013227.0,
+          "min": -197279201.0,
+          "n": 4760
+        },
+        "source_gaps_over_100ms": 0
+      }
+    },
+    "car2": {
+      "gyro_signal": {
+        "bias_calibrated": false,
+        "covariance_semantics": "fixed publisher fields only, not calibrated noise",
+        "frame_labels": [
+          "gyro_link"
+        ],
+        "native_header_left_hold_angle_rad": -1.6573240367026345,
+        "physical_axis_approved": false,
+        "published_units": "rad/s",
+        "quaternion_is_absolute_room_yaw": false,
+        "shared_controller_independence_approved": false,
+        "z_rate_rad_s": {
+          "max": 0.12336172163486481,
+          "median": 0.0,
+          "min": -0.5493993163108826,
+          "n": 1896
+        }
+      },
+      "imu": {
+        "backward_header": 0,
+        "duplicate_header": 0,
+        "header_dt_ns": {
+          "max": 50305094.0,
+          "median": 49995532.0,
+          "min": 49727469.0,
+          "n": 1895
+        },
+        "header_first_last_ns": [
+          1792313649194529370,
+          1792313743937584204
+        ],
+        "mapped_dt_semantics": "receipt differences under registered old candidate; physical sample clock not accepted",
+        "messages": 1896,
+        "receive_dt_ns": {
+          "max": 268089097.0,
+          "median": 49969376.0,
+          "min": 53873.0,
+          "n": 1895
+        },
+        "receive_first_last_ns": [
+          1792313649015094111,
+          1792313743760613494
+        ],
+        "receive_gaps_over_100ms": 3,
+        "receive_minus_header_ns": {
+          "max": 115304655.0,
+          "median": -178251871.5,
+          "min": -180955302.0,
+          "n": 1896
+        },
+        "source_gaps_over_100ms": 0
+      },
+      "odom": {
+        "backward_header": 0,
+        "duplicate_header": 0,
+        "header_dt_ns": {
+          "max": 50303910.0,
+          "median": 49996032.0,
+          "min": 49747705.0,
+          "n": 1892
+        },
+        "header_first_last_ns": [
+          1792313649294560116,
+          1792313743887442457
+        ],
+        "mapped_dt_semantics": "receipt differences under registered old candidate; physical sample clock not accepted",
+        "messages": 1893,
+        "receive_dt_ns": {
+          "max": 232298879.0,
+          "median": 58089869.0,
+          "min": 4159.0,
+          "n": 1892
+        },
+        "receive_first_last_ns": [
+          1792313649114568079,
+          1792313743740518625
+        ],
+        "receive_gaps_over_100ms": 4,
+        "receive_minus_header_ns": {
+          "max": 80010323.0,
+          "median": -157877810.0,
+          "min": -180701674.0,
+          "n": 1893
+        },
+        "source_gaps_over_100ms": 0
+      },
+      "uwb": {
+        "backward_header": 0,
+        "duplicate_header": 0,
+        "header_dt_ns": {
+          "max": 23312464.0,
+          "median": 19999746.5,
+          "min": 17060485.0,
+          "n": 4728
+        },
+        "header_first_last_ns": [
+          1792313649398821512,
+          1792313743954665596
+        ],
+        "mapped_dt_semantics": "receipt differences under registered old candidate; physical sample clock not accepted",
+        "messages": 4729,
+        "receive_dt_ns": {
+          "max": 269049468.0,
+          "median": 19985947.0,
+          "min": 3984.0,
+          "n": 4728
+        },
+        "receive_first_last_ns": [
+          1792313649233773250,
+          1792313743781684541
+        ],
+        "receive_gaps_over_100ms": 3,
+        "receive_minus_header_ns": {
+          "max": 160953940.0,
+          "median": -164755888.0,
+          "min": -176217579.0,
+          "n": 4729
+        },
+        "source_gaps_over_100ms": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "checks": [
+    {
+      "case": "015334",
+      "cutoff_epoch_ns": 1792313679982309104,
+      "frozen_F0_numeric_equal": true,
+      "marginalizations": 7,
+      "method": "M0",
+      "publications": 28,
+      "raw_prefix_records": 6246,
+      "status": "PASS"
+    },
+    {
+      "case": "015334",
+      "cutoff_epoch_ns": 1792313679982309104,
+      "frozen_F0_numeric_equal": true,
+      "marginalizations": 7,
+      "method": "M1",
+      "publications": 28,
+      "raw_prefix_records": 6246,
+      "status": "PASS"
+    },
+    {
+      "case": "015334",
+      "cutoff_epoch_ns": 1792313679982309104,
+      "frozen_F0_numeric_equal": null,
+      "marginalizations": 7,
+      "method": "M2",
+      "publications": 28,
+      "raw_prefix_records": 6246,
+      "status": "PASS"
+    },
+    {
+      "case": "015334",
+      "cutoff_epoch_ns": 1792313679982309104,
+      "frozen_F0_numeric_equal": null,
+      "marginalizations": 7,
+      "method": "M3",
+      "publications": 28,
+      "raw_prefix_records": 6246,
+      "status": "PASS"
+    },
+    {
+      "case": "033248",
+      "cutoff_epoch_ns": 1792319601409833299,
+      "frozen_F0_numeric_equal": true,
+      "marginalizations": 7,
+      "method": "M0",
+      "publications": 28,
+      "raw_prefix_records": 6185,
+      "status": "PASS"
+    },
+    {
+      "case": "033248",
+      "cutoff_epoch_ns": 1792319601409833299,
+      "frozen_F0_numeric_equal": true,
+      "marginalizations": 7,
+      "method": "M1",
+      "publications": 28,
+      "raw_prefix_records": 6185,
+      "status": "PASS"
+    },
+    {
+      "case": "033248",
+      "cutoff_epoch_ns": 1792319601409833299,
+      "frozen_F0_numeric_equal": null,
+      "marginalizations": 7,
+      "method": "M2",
+      "publications": 28,
+      "raw_prefix_records": 6185,
+      "status": "PASS"
+    },
+    {
+      "case": "033248",
+      "cutoff_epoch_ns": 1792319601409833299,
+      "frozen_F0_numeric_equal": null,
+      "marginalizations": 7,
+      "method": "M3",
+      "publications": 28,
+      "raw_prefix_records": 6185,
+      "status": "PASS"
+    }
+  ],
+  "controls_not_additional_main_runs": true,
+  "independent_evidence": "separate scalar/raw packet readers",
+  "shared_online_code_disclosed": true,
+  "status": "PASS"
+}

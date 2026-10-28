@@ -1,0 +1,69 @@
+{
+  "cells": 8,
+  "common": {
+    "015334": {
+      "all_epochs": 92,
+      "joint_common_accepted": 89,
+      "joint_common_valid": 87
+    },
+    "033248": {
+      "all_epochs": 55,
+      "joint_common_accepted": 53,
+      "joint_common_valid": 48
+    }
+  },
+  "counts": {
+    "accepted": 570,
+    "car1_valid": 556,
+    "car2_valid": 556,
+    "finite": 588,
+    "joint_valid": 556,
+    "missing_gyro_car1": 14,
+    "missing_gyro_car2": 14,
+    "missing_peer": 0,
+    "odom_yaw_fallback": 0,
+    "publications": 588,
+    "solver_failed": 2,
+    "unknown_gyro": 0,
+    "warmup": 16
+  },
+  "endpoint_evaluator_only": {
+    "015334": {
+      "car1": [
+        1.5,
+        4.0,
+        0.17
+      ],
+      "car2": [
+        2.95,
+        3.04,
+        0.2
+      ],
+      "tape_m": 1.743
+    },
+    "033248": {
+      "car1": [
+        1.45,
+        2.98,
+        0.17
+      ],
+      "car2": [
+        2.95,
+        3.04,
+        0.2
+      ],
+      "tape_m": 1.54
+    }
+  },
+  "evaluator_sha256": "b70b2e6d6009e2590600f33152b3dc28bd77a2368685c639b7b564c6b1f9c72f",
+  "execution_level": "conditional_development",
+  "limitations": [
+    "no continuous trajectory/yaw/bias truth",
+    "manual stop discrepancy is uncalibrated development diagnostic; no trajectory RMSE/ATE",
+    "recorded receipt timing not physical sample synchronization",
+    "virtual availability and offline cost are not ROS latency"
+  ],
+  "reader_sha256": "9a815fd7a96d2d1278058ce83563678e23747ad5a16a9a5b75920b8728af1f69",
+  "status": "PASS",
+  "strict_physical_branch": "BLOCKED"
+}

@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "extracted_from_verified_archive": true,
+  "optimizer_executions": 0,
+  "all_48_selected_cells_reaudited": true,
+  "timeline_decoded_bytes_equal": true,
+  "checks": [
+    {
+      "artifact": "synthetic-readback-v2/audits.json",
+      "exact_portable_readback_equal": true,
+      "sha256": "7bc9f226420a18e404f9f87c69a60ba1fa9394ecddfc840b7136ddff8dace3f0"
+    },
+    {
+      "artifact": "synthetic-readback-v2/evaluation.json",
+      "exact_portable_readback_equal": true,
+      "sha256": "43c14e6efd7296ef910426b0dad8f8acf181ef554ee74dc10dd18297a2d4c08b"
+    },
+    {
+      "artifact": "synthetic-readback-v2/costs.csv",
+      "exact_portable_readback_equal": true,
+      "sha256": "e2825632dc36f1423e9635803cd0476e0f51e090cee5f0c130bf4ee54ba4d1f7"
+    },
+    {
+      "artifact": "synthetic-readback-v2/metrics.csv",
+      "exact_portable_readback_equal": true,
+      "sha256": "8ca7d4ee6346533a84f6341b5692c52fb8bdf59ed8bc9782a6652b9732f9cbd5"
+    },
+    {
+      "artifact": "synthetic-readback-v2/contrasts.csv",
+      "exact_portable_readback_equal": true,
+      "sha256": "9ab40a141c41b1ec2792967df2b6934f3462fe6e25da0869a4e3d76fac4856e6"
+    },
+    {
+      "artifact": "synthetic-readback-v2/propagation.csv",
+      "exact_portable_readback_equal": true,
+      "sha256": "ba094497f4092bdd0a4b236cc883af464a030d6633e0cf3b5de26c0a1b2eea19"
+    },
+    {
+      "artifact": "old-readback-v2/audits.json",
+      "exact_portable_readback_equal": true,
+      "sha256": "6c7c17db426ca2f0f849e0416b0537ef57d479b1baa996e68618fa0c4194a665"
+    },
+    {
+      "artifact": "old-readback-v2/evaluation.json",
+      "exact_portable_readback_equal": true,
+      "sha256": "215920f709d05cf0f6748b6d7e0b18fe2975cd6d9c476f546e60184df7faa402"
+    },
+    {
+      "artifact": "old-readback-v2/costs.csv",
+      "exact_portable_readback_equal": true,
+      "sha256": "0dc0a5eef0600f2dd59546dcb0eb154d4f92dbd775e386df79f3d73a38d6b09f"
+    },
+    {
+      "artifact": "old-readback-v2/responses.csv",
+      "exact_portable_readback_equal": true,
+      "sha256": "996f56ba96b04a43a645ec647a6088e03dea91bb3b0b179d2a1426dea7e587fa"
+    }
+  ]
+}
