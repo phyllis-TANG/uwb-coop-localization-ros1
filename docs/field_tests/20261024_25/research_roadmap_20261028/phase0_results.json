@@ -1,0 +1,423 @@
+{
+  "schema": "cooperative-influence-analytic-v1",
+  "status": "ILLUSTRATION_NOT_A_PROPOSED_OR_VALIDATED_FGO_METHOD",
+  "source_data": "none; deterministic analytic surrogate",
+  "units": "positions and errors in m; illustrative inverse-variance weights",
+  "budget_m": 0.04,
+  "budget_status": "EXPLANATORY_ONLY_NOT_FROZEN_RESEARCH_BUDGET",
+  "case_count": 9,
+  "cases": [
+    {
+      "case": "normal",
+      "parameters": {
+        "a": 1.0,
+        "b": 1.0,
+        "gamma": 25.0,
+        "z1_m": 0.0,
+        "z2_m": 0.0
+      },
+      "independent": {
+        "car1_error_m": 0.0,
+        "car2_error_m": 0.0,
+        "car1_abs_error_m": 0.0,
+        "car2_abs_error_m": 0.0,
+        "relative_residual_m": 0.0,
+        "car1_displacement_from_independent_m": 0.0,
+        "car2_displacement_from_independent_m": 0.0
+      },
+      "unconstrained_joint": {
+        "car1_error_m": 0.0,
+        "car2_error_m": 0.0,
+        "car1_abs_error_m": 0.0,
+        "car2_abs_error_m": 0.0,
+        "relative_residual_m": 0.0,
+        "car1_displacement_from_independent_m": 0.0,
+        "car2_displacement_from_independent_m": 0.0
+      },
+      "equal_precision_box": {
+        "car1_error_m": 0.0,
+        "car2_error_m": 0.0,
+        "car1_abs_error_m": 0.0,
+        "car2_abs_error_m": 0.0,
+        "relative_residual_m": 0.0,
+        "car1_displacement_from_independent_m": 0.0,
+        "car2_displacement_from_independent_m": 0.0
+      },
+      "post_clip": {
+        "car1_error_m": 0.0,
+        "car2_error_m": 0.0,
+        "car1_abs_error_m": 0.0,
+        "car2_abs_error_m": 0.0,
+        "relative_residual_m": 0.0,
+        "car1_displacement_from_independent_m": 0.0,
+        "car2_displacement_from_independent_m": 0.0
+      },
+      "box_equals_post_clip_within_1e_12": true
+    },
+    {
+      "case": "car1_bias_peer_off",
+      "parameters": {
+        "a": 1.0,
+        "b": 1.0,
+        "gamma": 0.0,
+        "z1_m": 0.3,
+        "z2_m": 0.0
+      },
+      "independent": {
+        "car1_error_m": 0.3,
+        "car2_error_m": 0.0,
+        "car1_abs_error_m": 0.3,
+        "car2_abs_error_m": 0.0,
+        "relative_residual_m": -0.3,
+        "car1_displacement_from_independent_m": 0.0,
+        "car2_displacement_from_independent_m": 0.0
+      },
+      "unconstrained_joint": {
+        "car1_error_m": 0.3,
+        "car2_error_m": 0.0,
+        "car1_abs_error_m": 0.3,
+        "car2_abs_error_m": 0.0,
+        "relative_residual_m": -0.3,
+        "car1_displacement_from_independent_m": 0.0,
+        "car2_displacement_from_independent_m": 0.0
+      },
+      "equal_precision_box": {
+        "car1_error_m": 0.3,
+        "car2_error_m": 0.0,
+        "car1_abs_error_m": 0.3,
+        "car2_abs_error_m": 0.0,
+        "relative_residual_m": -0.3,
+        "car1_displacement_from_independent_m": 0.0,
+        "car2_displacement_from_independent_m": 0.0
+      },
+      "post_clip": {
+        "car1_error_m": 0.3,
+        "car2_error_m": 0.0,
+        "car1_abs_error_m": 0.3,
+        "car2_abs_error_m": 0.0,
+        "relative_residual_m": -0.3,
+        "car1_displacement_from_independent_m": 0.0,
+        "car2_displacement_from_independent_m": 0.0
+      },
+      "box_equals_post_clip_within_1e_12": true
+    },
+    {
+      "case": "car1_bias_peer_weight_1",
+      "parameters": {
+        "a": 1.0,
+        "b": 1.0,
+        "gamma": 1.0,
+        "z1_m": 0.3,
+        "z2_m": 0.0
+      },
+      "independent": {
+        "car1_error_m": 0.3,
+        "car2_error_m": 0.0,
+        "car1_abs_error_m": 0.3,
+        "car2_abs_error_m": 0.0,
+        "relative_residual_m": -0.3,
+        "car1_displacement_from_independent_m": 0.0,
+        "car2_displacement_from_independent_m": 0.0
+      },
+      "unconstrained_joint": {
+        "car1_error_m": 0.19999999999999998,
+        "car2_error_m": 0.09999999999999999,
+        "car1_abs_error_m": 0.19999999999999998,
+        "car2_abs_error_m": 0.09999999999999999,
+        "relative_residual_m": -0.09999999999999999,
+        "car1_displacement_from_independent_m": -0.1,
+        "car2_displacement_from_independent_m": 0.09999999999999999
+      },
+      "equal_precision_box": {
+        "car1_error_m": 0.26,
+        "car2_error_m": 0.04,
+        "car1_abs_error_m": 0.26,
+        "car2_abs_error_m": 0.04,
+        "relative_residual_m": -0.22,
+        "car1_displacement_from_independent_m": -0.03999999999999998,
+        "car2_displacement_from_independent_m": 0.04
+      },
+      "post_clip": {
+        "car1_error_m": 0.26,
+        "car2_error_m": 0.04,
+        "car1_abs_error_m": 0.26,
+        "car2_abs_error_m": 0.04,
+        "relative_residual_m": -0.22,
+        "car1_displacement_from_independent_m": -0.03999999999999998,
+        "car2_displacement_from_independent_m": 0.04
+      },
+      "box_equals_post_clip_within_1e_12": true
+    },
+    {
+      "case": "car1_bias_peer_weight_25",
+      "parameters": {
+        "a": 1.0,
+        "b": 1.0,
+        "gamma": 25.0,
+        "z1_m": 0.3,
+        "z2_m": 0.0
+      },
+      "independent": {
+        "car1_error_m": 0.3,
+        "car2_error_m": 0.0,
+        "car1_abs_error_m": 0.3,
+        "car2_abs_error_m": 0.0,
+        "relative_residual_m": -0.3,
+        "car1_displacement_from_independent_m": 0.0,
+        "car2_displacement_from_independent_m": 0.0
+      },
+      "unconstrained_joint": {
+        "car1_error_m": 0.15294117647058822,
+        "car2_error_m": 0.14705882352941177,
+        "car1_abs_error_m": 0.15294117647058822,
+        "car2_abs_error_m": 0.14705882352941177,
+        "relative_residual_m": -0.00588235294117645,
+        "car1_displacement_from_independent_m": -0.14705882352941177,
+        "car2_displacement_from_independent_m": 0.14705882352941177
+      },
+      "equal_precision_box": {
+        "car1_error_m": 0.26,
+        "car2_error_m": 0.04,
+        "car1_abs_error_m": 0.26,
+        "car2_abs_error_m": 0.04,
+        "relative_residual_m": -0.22,
+        "car1_displacement_from_independent_m": -0.03999999999999998,
+        "car2_displacement_from_independent_m": 0.04
+      },
+      "post_clip": {
+        "car1_error_m": 0.26,
+        "car2_error_m": 0.04,
+        "car1_abs_error_m": 0.26,
+        "car2_abs_error_m": 0.04,
+        "relative_residual_m": -0.22,
+        "car1_displacement_from_independent_m": -0.03999999999999998,
+        "car2_displacement_from_independent_m": 0.04
+      },
+      "box_equals_post_clip_within_1e_12": true
+    },
+    {
+      "case": "car1_bias_peer_weight_1000",
+      "parameters": {
+        "a": 1.0,
+        "b": 1.0,
+        "gamma": 1000.0,
+        "z1_m": 0.3,
+        "z2_m": 0.0
+      },
+      "independent": {
+        "car1_error_m": 0.3,
+        "car2_error_m": 0.0,
+        "car1_abs_error_m": 0.3,
+        "car2_abs_error_m": 0.0,
+        "relative_residual_m": -0.3,
+        "car1_displacement_from_independent_m": 0.0,
+        "car2_displacement_from_independent_m": 0.0
+      },
+      "unconstrained_joint": {
+        "car1_error_m": 0.15007496251874064,
+        "car2_error_m": 0.14992503748125938,
+        "car1_abs_error_m": 0.15007496251874064,
+        "car2_abs_error_m": 0.14992503748125938,
+        "relative_residual_m": -0.0001499250374812633,
+        "car1_displacement_from_independent_m": -0.14992503748125935,
+        "car2_displacement_from_independent_m": 0.14992503748125938
+      },
+      "equal_precision_box": {
+        "car1_error_m": 0.26,
+        "car2_error_m": 0.04,
+        "car1_abs_error_m": 0.26,
+        "car2_abs_error_m": 0.04,
+        "relative_residual_m": -0.22,
+        "car1_displacement_from_independent_m": -0.03999999999999998,
+        "car2_displacement_from_independent_m": 0.04
+      },
+      "post_clip": {
+        "car1_error_m": 0.26,
+        "car2_error_m": 0.04,
+        "car1_abs_error_m": 0.26,
+        "car2_abs_error_m": 0.04,
+        "relative_residual_m": -0.22,
+        "car1_displacement_from_independent_m": -0.03999999999999998,
+        "car2_displacement_from_independent_m": 0.04
+      },
+      "box_equals_post_clip_within_1e_12": true
+    },
+    {
+      "case": "car1_bias_higher_local_precision",
+      "parameters": {
+        "a": 4.0,
+        "b": 1.0,
+        "gamma": 25.0,
+        "z1_m": 0.3,
+        "z2_m": 0.0
+      },
+      "independent": {
+        "car1_error_m": 0.3,
+        "car2_error_m": 0.0,
+        "car1_abs_error_m": 0.3,
+        "car2_abs_error_m": 0.0,
+        "relative_residual_m": -0.3,
+        "car1_displacement_from_independent_m": 0.0,
+        "car2_displacement_from_independent_m": 0.0
+      },
+      "unconstrained_joint": {
+        "car1_error_m": 0.24186046511627907,
+        "car2_error_m": 0.23255813953488372,
+        "car1_abs_error_m": 0.24186046511627907,
+        "car2_abs_error_m": 0.23255813953488372,
+        "relative_residual_m": -0.009302325581395349,
+        "car1_displacement_from_independent_m": -0.05813953488372092,
+        "car2_displacement_from_independent_m": 0.23255813953488372
+      },
+      "box_status": "NOT_EVALUATED_UNEQUAL_PRECISION"
+    },
+    {
+      "case": "car2_bias_peer_weight_25",
+      "parameters": {
+        "a": 1.0,
+        "b": 1.0,
+        "gamma": 25.0,
+        "z1_m": 0.0,
+        "z2_m": 0.3
+      },
+      "independent": {
+        "car1_error_m": 0.0,
+        "car2_error_m": 0.3,
+        "car1_abs_error_m": 0.0,
+        "car2_abs_error_m": 0.3,
+        "relative_residual_m": 0.3,
+        "car1_displacement_from_independent_m": 0.0,
+        "car2_displacement_from_independent_m": 0.0
+      },
+      "unconstrained_joint": {
+        "car1_error_m": 0.14705882352941177,
+        "car2_error_m": 0.15294117647058822,
+        "car1_abs_error_m": 0.14705882352941177,
+        "car2_abs_error_m": 0.15294117647058822,
+        "relative_residual_m": 0.00588235294117645,
+        "car1_displacement_from_independent_m": 0.14705882352941177,
+        "car2_displacement_from_independent_m": -0.14705882352941177
+      },
+      "equal_precision_box": {
+        "car1_error_m": 0.04,
+        "car2_error_m": 0.26,
+        "car1_abs_error_m": 0.04,
+        "car2_abs_error_m": 0.26,
+        "relative_residual_m": 0.22,
+        "car1_displacement_from_independent_m": 0.04,
+        "car2_displacement_from_independent_m": -0.03999999999999998
+      },
+      "post_clip": {
+        "car1_error_m": 0.04,
+        "car2_error_m": 0.26,
+        "car1_abs_error_m": 0.04,
+        "car2_abs_error_m": 0.26,
+        "relative_residual_m": 0.22,
+        "car1_displacement_from_independent_m": 0.04,
+        "car2_displacement_from_independent_m": -0.03999999999999998
+      },
+      "box_equals_post_clip_within_1e_12": true
+    },
+    {
+      "case": "car1_negative_bias",
+      "parameters": {
+        "a": 1.0,
+        "b": 1.0,
+        "gamma": 25.0,
+        "z1_m": -0.3,
+        "z2_m": 0.0
+      },
+      "independent": {
+        "car1_error_m": -0.3,
+        "car2_error_m": 0.0,
+        "car1_abs_error_m": 0.3,
+        "car2_abs_error_m": 0.0,
+        "relative_residual_m": 0.3,
+        "car1_displacement_from_independent_m": 0.0,
+        "car2_displacement_from_independent_m": 0.0
+      },
+      "unconstrained_joint": {
+        "car1_error_m": -0.15294117647058822,
+        "car2_error_m": -0.14705882352941177,
+        "car1_abs_error_m": 0.15294117647058822,
+        "car2_abs_error_m": 0.14705882352941177,
+        "relative_residual_m": 0.00588235294117645,
+        "car1_displacement_from_independent_m": 0.14705882352941177,
+        "car2_displacement_from_independent_m": -0.14705882352941177
+      },
+      "equal_precision_box": {
+        "car1_error_m": -0.26,
+        "car2_error_m": -0.04,
+        "car1_abs_error_m": 0.26,
+        "car2_abs_error_m": 0.04,
+        "relative_residual_m": 0.22,
+        "car1_displacement_from_independent_m": 0.03999999999999998,
+        "car2_displacement_from_independent_m": -0.04
+      },
+      "post_clip": {
+        "car1_error_m": -0.26,
+        "car2_error_m": -0.04,
+        "car1_abs_error_m": 0.26,
+        "car2_abs_error_m": 0.04,
+        "relative_residual_m": 0.22,
+        "car1_displacement_from_independent_m": 0.03999999999999998,
+        "car2_displacement_from_independent_m": -0.04
+      },
+      "box_equals_post_clip_within_1e_12": true
+    },
+    {
+      "case": "both_same_bias",
+      "parameters": {
+        "a": 1.0,
+        "b": 1.0,
+        "gamma": 25.0,
+        "z1_m": 0.3,
+        "z2_m": 0.3
+      },
+      "independent": {
+        "car1_error_m": 0.3,
+        "car2_error_m": 0.3,
+        "car1_abs_error_m": 0.3,
+        "car2_abs_error_m": 0.3,
+        "relative_residual_m": 0.0,
+        "car1_displacement_from_independent_m": 0.0,
+        "car2_displacement_from_independent_m": 0.0
+      },
+      "unconstrained_joint": {
+        "car1_error_m": 0.3,
+        "car2_error_m": 0.3,
+        "car1_abs_error_m": 0.3,
+        "car2_abs_error_m": 0.3,
+        "relative_residual_m": 0.0,
+        "car1_displacement_from_independent_m": 0.0,
+        "car2_displacement_from_independent_m": 0.0
+      },
+      "equal_precision_box": {
+        "car1_error_m": 0.3,
+        "car2_error_m": 0.3,
+        "car1_abs_error_m": 0.3,
+        "car2_abs_error_m": 0.3,
+        "relative_residual_m": 0.0,
+        "car1_displacement_from_independent_m": 0.0,
+        "car2_displacement_from_independent_m": 0.0
+      },
+      "post_clip": {
+        "car1_error_m": 0.3,
+        "car2_error_m": 0.3,
+        "car1_abs_error_m": 0.3,
+        "car2_abs_error_m": 0.3,
+        "relative_residual_m": 0.0,
+        "car1_displacement_from_independent_m": 0.0,
+        "car2_displacement_from_independent_m": 0.0
+      },
+      "box_equals_post_clip_within_1e_12": true
+    }
+  ],
+  "limitations": [
+    "One-dimensional signed relative displacement with fixed ordering, not arbitrary 2-D UWB geometry.",
+    "Local absolute estimates are a surrogate, not raw wall-anchor observations.",
+    "No temporal state, marginalization, covariance guarantee, IMU, or real-time claim.",
+    "The symmetric box optimum equals post-clipping here; this does not demonstrate an advantage over clipping.",
+    "A displacement bound is relative to the independent reference, not absolute truth or integrity risk."
+  ]
+}
