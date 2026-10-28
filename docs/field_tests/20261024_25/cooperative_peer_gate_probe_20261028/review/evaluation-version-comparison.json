@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "evaluator_v2_reason": "Relocatable archive readback plus independent sidecar/adapter contract",
+  "matrix_and_estimators_rerun": false,
+  "tables_exact_byte_equal": [
+    "metrics.csv",
+    "gate_counts.csv",
+    "paired_deltas.csv",
+    "costs.csv",
+    "timeline.csv",
+    "marginal_FD_checks.json"
+  ]
+}

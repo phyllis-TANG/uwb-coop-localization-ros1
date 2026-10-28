@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "NAS_archive_actually_retrieved": true,
+  "all_extracted_members_verified": 387,
+  "relocated_all_45_readback": {
+    "checks": {
+      "FD_Schur": 120,
+      "auxiliary_equal_G0_pose_prior": 945,
+      "complete_runs": 45,
+      "independent_adapter_changed_scalars": 3360,
+      "independent_gate_formula": 876,
+      "independent_objective_cost": 3660,
+      "input_SHA": 180,
+      "output_SHA": 135,
+      "peer_raw_cutoffs": 44973,
+      "prior_source_chain": 3780,
+      "receive_prefix_bins": 2835
+    },
+    "estimator_imports": [],
+    "joint_publications": 2835,
+    "matrix_cells": 45,
+    "per_car_publications": 5670,
+    "scope": "same-host independent equations and artifact checks; exposed development seeds, not new independent validation",
+    "shared_accepted_state_epochs": 915,
+    "source_sha256": "2e14fd53e2787d015b658e7284676d131111809aebaa22aababb9d5ec2f46c81",
+    "status": "PASS",
+    "unique_inputs": 15
+  },
+  "six_numeric_outputs_exact_byte_equal": true,
+  "estimator_reruns_for_readback": 0,
+  "command_argv": [
+    "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/venv/bin/python",
+    "/home/ubuntu22/uwb-peer-gate-probe-20261028-artifacts/retrieved-v1/delivery-source/evaluate.py",
+    "--matrix",
+    "/home/ubuntu22/uwb-peer-gate-probe-20261028-artifacts/retrieved-v1/matrix-v1",
+    "--frozen-source",
+    "/home/ubuntu22/uwb-peer-gate-probe-20261028-artifacts/retrieved-v1/frozen-source",
+    "--output",
+    "/home/ubuntu22/uwb-peer-gate-probe-20261028-artifacts/retrieved-readback-v1"
+  ]
+}
