@@ -5,7 +5,7 @@ from pathlib import Path
 from io_evidence import *
 NAS=Path('/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_influence_probe_20261028_v1/cooperative_influence_probe_20261028_v1.tar.gz')
 ARCHIVE_SHA='50c671e3687c3342b8abe99986ecd6a6488de23e24fe112b16b44d9f8fb3f320'
-def prepare(out):
+def prepare(out,archive_source=NAS):
  out.mkdir(exist_ok=False);public=out/'public_snapshot';public.mkdir();pubsha={}
  names=['REPORT.md','METHODS.md','FROZEN_CONFIG.json','HANDOFF.md','ARTIFACTS.json','RUN_INDEX.json','RUN_PLAN.json','INPUT_BINDINGS.json','results/metrics.csv','results/contrasts.csv','results/costs.csv','results/solver_controls.csv','results/receipt.json','results/audits.json','review/DELIVERY_FILES_SHA256.json']
  for n in names:
@@ -22,8 +22,8 @@ def prepare(out):
   rows={n:len(table(public/'results'/n)) for n in ['metrics.csv','contrasts.csv','costs.csv','solver_controls.csv']},denominator_totals={k:sum(int(r[k]) for r in costs) for k in ['denominator','finite','reference_accepted','joint_success','post_clip','fallback','unknown','failure','timeout']},estimator_runs=0)
  dump(out/'PUBLIC_CHECK.json',public_receipt)
  # A missing mount ends at the public check, with an accurate blocker.
- if not NAS.is_file():dump(out/'ARCHIVE_CHECK.json',dict(status='BLOCKED',reason='NAS path unavailable',path=str(NAS)));return
- archive=out/NAS.name;shutil.copyfile(NAS,archive);assert archive.stat().st_size==54249275 and sha(archive)==ARCHIVE_SHA
+ if not archive_source.is_file():dump(out/'ARCHIVE_CHECK.json',dict(status='BLOCKED',reason='Archive source path unavailable',path=str(archive_source)));return
+ archive=out/archive_source.name;shutil.copyfile(archive_source,archive);assert archive.stat().st_size==54249275 and sha(archive)==ARCHIVE_SHA
  a=json.loads((public/'ARTIFACTS.json').read_text())['archive'];prefix=a['prefix'];destination=out/'unpacked';destination.mkdir()
  with tarfile.open(archive,'r:gz') as tf:
   manifest_bytes=tf.extractfile(prefix+'/MANIFEST.json').read();assert hashlib.sha256(manifest_bytes).hexdigest()==a['manifest_sha256'];manifest=json.loads(manifest_bytes)
@@ -41,7 +41,7 @@ def prepare(out):
   run=matrix/c['path'];assert sha(run/'run.json')==c['run_sha256'];meta=json.loads((run/'run.json').read_text());outputs=meta['outputs'];outputs=[dict(path=k,**v) for k,v in outputs.items()] if isinstance(outputs,dict) else outputs
   for p in outputs:assert sha(run/p['path'])==p['sha256']
   for p,h in c['input_sha256'].items():assert sha(matrix/'inputs'/c['case']/p)==h
- dump(out/'ARCHIVE_CHECK.json',dict(status='PASS',NAS_path=str(NAS),archive_path=str(archive),sha256=sha(archive),size_bytes=archive.stat().st_size,verified_members=len(manifest['files']),matrix_root=str(matrix),public_all_results_byte_equal=True,execution_source_sha256=index['source_sha256'],inputs={c['case']:c['input_sha256'] for c in index['cells']},estimator_runs=0))
+ dump(out/'ARCHIVE_CHECK.json',dict(status='PASS',NAS_path=str(archive_source),archive_path=str(archive),sha256=sha(archive),size_bytes=archive.stat().st_size,verified_members=len(manifest['files']),matrix_root=str(matrix),public_all_results_byte_equal=True,execution_source_sha256=index['source_sha256'],inputs={c['case']:c['input_sha256'] for c in index['cells']},estimator_runs=0))
  print('PASS public 16 cells, archive 239 members, source/input/run/result identities; no estimator execution')
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('--output',type=Path,default=ART/'evidence-v1');prepare(p.parse_args().output)
+ p=argparse.ArgumentParser();p.add_argument('--output',type=Path,default=ART/'evidence-v1');p.add_argument('--archive',type=Path,default=NAS);a=p.parse_args();prepare(a.output,a.archive)

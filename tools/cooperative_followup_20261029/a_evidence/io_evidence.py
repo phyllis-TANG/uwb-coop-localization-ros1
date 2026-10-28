@@ -1,10 +1,10 @@
 """Task-A immutable inputs; no estimation or control dependencies."""
-import csv,gzip,hashlib,json,subprocess
+import csv,gzip,hashlib,json,subprocess,os
 from pathlib import Path
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[2]
 HEAD='1cc7713a7e48776474788a07a1b41040f9df9330';EXEC='312180ef51c6ea4ba394bc85618674ec36ff786d'
 DOC='docs/field_tests/20261024_25/cooperative_influence_probe_20261028'
-ART=Path('/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts')
+ART=Path(os.environ.get('TASK_A_ARTIFACTS','/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts'))
 SCENARIOS=('nominal','car1_common_wall_bias');METHODS=('I','J','W025','C004','K004')
 def sha(p):
  h=hashlib.sha256()
