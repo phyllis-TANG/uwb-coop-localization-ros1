@@ -1,0 +1,127 @@
+{
+  "caveat": "single exposed seed101/two conditions; main cost has solver-path control U; clipping is derived and J/I costs historical",
+  "contrasts": [
+    {
+      "C004_rmse_m": "0.2594515136253322",
+      "K004_rmse_m": "0.2588725792977502",
+      "K_minus_C_m": "-0.0005789343275820",
+      "K_minus_C_mm": "-0.5789343275820000",
+      "car": "car1",
+      "interpretation": "negative improves, positive worsens; arithmetic on published RMSE only",
+      "n": 14,
+      "period": "fault",
+      "scope": "all_finite equals reference_accepted here"
+    },
+    {
+      "C004_rmse_m": "0.023484255915340656",
+      "K004_rmse_m": "0.023379202532295088",
+      "K_minus_C_m": "-0.000105053383045568",
+      "K_minus_C_mm": "-0.105053383045568000",
+      "car": "car2",
+      "interpretation": "negative improves, positive worsens; arithmetic on published RMSE only",
+      "n": 14,
+      "period": "fault",
+      "scope": "all_finite equals reference_accepted here"
+    },
+    {
+      "C004_rmse_m": "0.18743280585852962",
+      "K004_rmse_m": "0.1873547975096289",
+      "K_minus_C_m": "-0.00007800834890072",
+      "K_minus_C_mm": "-0.07800834890072000",
+      "car": "car1",
+      "interpretation": "negative improves, positive worsens; arithmetic on published RMSE only",
+      "n": 10,
+      "period": "recovery",
+      "scope": "all_finite equals reference_accepted here"
+    },
+    {
+      "C004_rmse_m": "0.03716635197428188",
+      "K004_rmse_m": "0.03816756498020618",
+      "K_minus_C_m": "0.00100121300592430",
+      "K_minus_C_mm": "1.00121300592430000",
+      "car": "car2",
+      "interpretation": "negative improves, positive worsens; arithmetic on published RMSE only",
+      "n": 10,
+      "period": "recovery",
+      "scope": "all_finite equals reference_accepted here"
+    }
+  ],
+  "cost_rows": [
+    {
+      "clip_total_s": "0.0",
+      "kind": "new",
+      "main_total_s": "0.6498736550565809",
+      "method": "W025",
+      "reference_total_s": "0.5074733271030709",
+      "scenario": "nominal",
+      "timing_origin": "current_main_and_private_reference"
+    },
+    {
+      "clip_total_s": "0.0",
+      "kind": "new",
+      "main_total_s": "33.54439776355866",
+      "method": "U",
+      "reference_total_s": "0.5178594985045493",
+      "scenario": "nominal",
+      "timing_origin": "current_main_and_private_reference"
+    },
+    {
+      "clip_total_s": "0.04670846008230001",
+      "kind": "derived",
+      "main_total_s": "0.6567454842152074",
+      "method": "C004",
+      "reference_total_s": "0.5059026968665421",
+      "scenario": "nominal",
+      "timing_origin": "historical_main_reference_plus_current_clip"
+    },
+    {
+      "clip_total_s": "0.0",
+      "kind": "new",
+      "main_total_s": "34.96444374427665",
+      "method": "K004",
+      "reference_total_s": "0.494747027521953",
+      "scenario": "nominal",
+      "timing_origin": "current_main_and_private_reference"
+    },
+    {
+      "clip_total_s": "0.0",
+      "kind": "new",
+      "main_total_s": "0.7855069749057293",
+      "method": "W025",
+      "reference_total_s": "0.6148465097649023",
+      "scenario": "car1_common_wall_bias",
+      "timing_origin": "current_main_and_private_reference"
+    },
+    {
+      "clip_total_s": "0.0",
+      "kind": "new",
+      "main_total_s": "34.4412511276314",
+      "method": "U",
+      "reference_total_s": "0.6223972890293226",
+      "scenario": "car1_common_wall_bias",
+      "timing_origin": "current_main_and_private_reference"
+    },
+    {
+      "clip_total_s": "0.08774989005178213",
+      "kind": "derived",
+      "main_total_s": "0.776948201819323",
+      "method": "C004",
+      "reference_total_s": "0.6211517440387979",
+      "scenario": "car1_common_wall_bias",
+      "timing_origin": "historical_main_reference_plus_current_clip"
+    },
+    {
+      "clip_total_s": "0.0",
+      "kind": "new",
+      "main_total_s": "36.00297872477677",
+      "method": "K004",
+      "reference_total_s": "0.6217275690287352",
+      "scenario": "car1_common_wall_bias",
+      "timing_origin": "current_main_and_private_reference"
+    }
+  ],
+  "original_RMSE_recomputed": false,
+  "original_optimizer_or_prior_audit_repeated": false,
+  "original_timestep_budget_rechecked": false,
+  "status": "PASS_COMPACT_TABLE_ARITHMETIC_ONLY"
+}

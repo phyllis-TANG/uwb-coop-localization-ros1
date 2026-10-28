@@ -1,0 +1,19 @@
+{
+  "check_source_sha256": "a5a12ba0a5c82067658737556afb2fddec1c3dfdef86f737a2379529ef0935bd",
+  "command_argv": [
+    "python3",
+    "tools/cooperative_followup_20261029/b_method/verify.py"
+  ],
+  "compact_difference_rows": 4,
+  "cost_summary_rows": 8,
+  "exact_math_check_classes": 10,
+  "exact_worlds": 2,
+  "frozen_B_source_matches_commit": true,
+  "limitations": "evidence/identity checks only; no original PR72 optimizer or full-journal re-audit, no real accuracy validation",
+  "new_FGO_runs": 0,
+  "new_seeds": 0,
+  "new_static_2D_configs": 0,
+  "original_fixed_source_files": 11,
+  "ownership": "only assigned b_method paths",
+  "status": "PASS"
+}

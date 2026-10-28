@@ -1,0 +1,643 @@
+{
+  "constrained_gradient_and_kkt": [
+    {
+      "box_kkt": true,
+      "displacement": {
+        "decimal": -0.04,
+        "exact": "-1/25"
+      },
+      "gradient": {
+        "decimal": 5.46,
+        "exact": "273/50"
+      },
+      "position": {
+        "decimal": 0.26,
+        "exact": "13/50"
+      },
+      "reference": {
+        "decimal": 0.3,
+        "exact": "3/10"
+      }
+    },
+    {
+      "box_kkt": true,
+      "displacement": {
+        "decimal": 0.04,
+        "exact": "1/25"
+      },
+      "gradient": {
+        "decimal": -5.46,
+        "exact": "-273/50"
+      },
+      "position": {
+        "decimal": 1.04,
+        "exact": "26/25"
+      },
+      "reference": {
+        "decimal": 1.0,
+        "exact": "1"
+      }
+    }
+  ],
+  "exact_checks": [
+    "identical local and peer observations",
+    "opposite accurate source",
+    "translation cancels in common per-car motion increments",
+    "one signed biased source per world",
+    "joint stationarity and SPD",
+    "box KKT",
+    "box equals cheap output clipping",
+    "actual one-dimensional antenna budget",
+    "truth error change triangle inequality",
+    "residual lower bound under protection of either potentially accurate source"
+  ],
+  "hessian_determinant": {
+    "decimal": 51.0,
+    "exact": "51"
+  },
+  "minimum_peer_residual_if_both_potentially_accurate_cars_protected": {
+    "decimal": 0.22,
+    "exact": "11/50"
+  },
+  "no_2D_candidate_or_new_method_validated": true,
+  "online_health_or_truth_used": false,
+  "outputs_computed_from_online_information_once": true,
+  "scope": "exact two-world surrogate, not raw-anchor or real accuracy validation",
+  "status": "PASS",
+  "uniform_zero_harm_requires_both_displacements_zero": true,
+  "world_count": 2,
+  "worlds": [
+    {
+      "accurate_source": "car2",
+      "biases_m": [
+        {
+          "decimal": 0.3,
+          "exact": "3/10"
+        },
+        {
+          "decimal": 0.0,
+          "exact": "0"
+        }
+      ],
+      "outputs": [
+        {
+          "absolute_truth_error_m": [
+            {
+              "decimal": 0.3,
+              "exact": "3/10"
+            },
+            {
+              "decimal": 0.0,
+              "exact": "0"
+            }
+          ],
+          "actual_change_from_private_reference_m": [
+            {
+              "decimal": 0.0,
+              "exact": "0"
+            },
+            {
+              "decimal": 0.0,
+              "exact": "0"
+            }
+          ],
+          "antenna_positions_m": [
+            {
+              "decimal": 0.3,
+              "exact": "3/10"
+            },
+            {
+              "decimal": 1.0,
+              "exact": "1"
+            }
+          ],
+          "budget_holds": [
+            true,
+            true
+          ],
+          "help_signed_m": [
+            {
+              "decimal": 0.0,
+              "exact": "0"
+            },
+            {
+              "decimal": 0.0,
+              "exact": "0"
+            }
+          ],
+          "method": "I",
+          "peer_residual_m": {
+            "decimal": -0.3,
+            "exact": "-3/10"
+          },
+          "signed_truth_error_m": [
+            {
+              "decimal": 0.3,
+              "exact": "3/10"
+            },
+            {
+              "decimal": 0.0,
+              "exact": "0"
+            }
+          ]
+        },
+        {
+          "absolute_truth_error_m": [
+            {
+              "decimal": 0.15294117647058825,
+              "exact": "13/85"
+            },
+            {
+              "decimal": 0.14705882352941177,
+              "exact": "5/34"
+            }
+          ],
+          "actual_change_from_private_reference_m": [
+            {
+              "decimal": -0.14705882352941177,
+              "exact": "-5/34"
+            },
+            {
+              "decimal": 0.14705882352941177,
+              "exact": "5/34"
+            }
+          ],
+          "antenna_positions_m": [
+            {
+              "decimal": 0.15294117647058825,
+              "exact": "13/85"
+            },
+            {
+              "decimal": 1.1470588235294117,
+              "exact": "39/34"
+            }
+          ],
+          "budget_holds": [
+            false,
+            false
+          ],
+          "help_signed_m": [
+            {
+              "decimal": 0.14705882352941177,
+              "exact": "5/34"
+            },
+            {
+              "decimal": -0.14705882352941177,
+              "exact": "-5/34"
+            }
+          ],
+          "method": "J_closed_form",
+          "peer_residual_m": {
+            "decimal": -0.0058823529411764705,
+            "exact": "-1/170"
+          },
+          "signed_truth_error_m": [
+            {
+              "decimal": 0.15294117647058825,
+              "exact": "13/85"
+            },
+            {
+              "decimal": 0.14705882352941177,
+              "exact": "5/34"
+            }
+          ]
+        },
+        {
+          "absolute_truth_error_m": [
+            {
+              "decimal": 0.26,
+              "exact": "13/50"
+            },
+            {
+              "decimal": 0.04,
+              "exact": "1/25"
+            }
+          ],
+          "actual_change_from_private_reference_m": [
+            {
+              "decimal": -0.04,
+              "exact": "-1/25"
+            },
+            {
+              "decimal": 0.04,
+              "exact": "1/25"
+            }
+          ],
+          "antenna_positions_m": [
+            {
+              "decimal": 0.26,
+              "exact": "13/50"
+            },
+            {
+              "decimal": 1.04,
+              "exact": "26/25"
+            }
+          ],
+          "budget_holds": [
+            true,
+            true
+          ],
+          "help_signed_m": [
+            {
+              "decimal": 0.04,
+              "exact": "1/25"
+            },
+            {
+              "decimal": -0.04,
+              "exact": "-1/25"
+            }
+          ],
+          "method": "C_output_clip",
+          "peer_residual_m": {
+            "decimal": -0.22,
+            "exact": "-11/50"
+          },
+          "signed_truth_error_m": [
+            {
+              "decimal": 0.26,
+              "exact": "13/50"
+            },
+            {
+              "decimal": 0.04,
+              "exact": "1/25"
+            }
+          ]
+        },
+        {
+          "absolute_truth_error_m": [
+            {
+              "decimal": 0.26,
+              "exact": "13/50"
+            },
+            {
+              "decimal": 0.04,
+              "exact": "1/25"
+            }
+          ],
+          "actual_change_from_private_reference_m": [
+            {
+              "decimal": -0.04,
+              "exact": "-1/25"
+            },
+            {
+              "decimal": 0.04,
+              "exact": "1/25"
+            }
+          ],
+          "antenna_positions_m": [
+            {
+              "decimal": 0.26,
+              "exact": "13/50"
+            },
+            {
+              "decimal": 1.04,
+              "exact": "26/25"
+            }
+          ],
+          "budget_holds": [
+            true,
+            true
+          ],
+          "help_signed_m": [
+            {
+              "decimal": 0.04,
+              "exact": "1/25"
+            },
+            {
+              "decimal": -0.04,
+              "exact": "-1/25"
+            }
+          ],
+          "method": "K_equal_precision_box_closed_form",
+          "peer_residual_m": {
+            "decimal": -0.22,
+            "exact": "-11/50"
+          },
+          "signed_truth_error_m": [
+            {
+              "decimal": 0.26,
+              "exact": "13/50"
+            },
+            {
+              "decimal": 0.04,
+              "exact": "1/25"
+            }
+          ]
+        }
+      ],
+      "reconstructed_online_observations": {
+        "m_m": [
+          {
+            "decimal": 0.3,
+            "exact": "3/10"
+          },
+          {
+            "decimal": 1.0,
+            "exact": "1"
+          }
+        ],
+        "peer_m": {
+          "decimal": 1.0,
+          "exact": "1"
+        }
+      },
+      "true_positions_m": [
+        {
+          "decimal": 0.0,
+          "exact": "0"
+        },
+        {
+          "decimal": 1.0,
+          "exact": "1"
+        }
+      ],
+      "world": "A"
+    },
+    {
+      "accurate_source": "car1",
+      "biases_m": [
+        {
+          "decimal": 0.0,
+          "exact": "0"
+        },
+        {
+          "decimal": -0.3,
+          "exact": "-3/10"
+        }
+      ],
+      "outputs": [
+        {
+          "absolute_truth_error_m": [
+            {
+              "decimal": 0.0,
+              "exact": "0"
+            },
+            {
+              "decimal": 0.3,
+              "exact": "3/10"
+            }
+          ],
+          "actual_change_from_private_reference_m": [
+            {
+              "decimal": 0.0,
+              "exact": "0"
+            },
+            {
+              "decimal": 0.0,
+              "exact": "0"
+            }
+          ],
+          "antenna_positions_m": [
+            {
+              "decimal": 0.3,
+              "exact": "3/10"
+            },
+            {
+              "decimal": 1.0,
+              "exact": "1"
+            }
+          ],
+          "budget_holds": [
+            true,
+            true
+          ],
+          "help_signed_m": [
+            {
+              "decimal": 0.0,
+              "exact": "0"
+            },
+            {
+              "decimal": 0.0,
+              "exact": "0"
+            }
+          ],
+          "method": "I",
+          "peer_residual_m": {
+            "decimal": -0.3,
+            "exact": "-3/10"
+          },
+          "signed_truth_error_m": [
+            {
+              "decimal": 0.0,
+              "exact": "0"
+            },
+            {
+              "decimal": -0.3,
+              "exact": "-3/10"
+            }
+          ]
+        },
+        {
+          "absolute_truth_error_m": [
+            {
+              "decimal": 0.14705882352941177,
+              "exact": "5/34"
+            },
+            {
+              "decimal": 0.15294117647058825,
+              "exact": "13/85"
+            }
+          ],
+          "actual_change_from_private_reference_m": [
+            {
+              "decimal": -0.14705882352941177,
+              "exact": "-5/34"
+            },
+            {
+              "decimal": 0.14705882352941177,
+              "exact": "5/34"
+            }
+          ],
+          "antenna_positions_m": [
+            {
+              "decimal": 0.15294117647058825,
+              "exact": "13/85"
+            },
+            {
+              "decimal": 1.1470588235294117,
+              "exact": "39/34"
+            }
+          ],
+          "budget_holds": [
+            false,
+            false
+          ],
+          "help_signed_m": [
+            {
+              "decimal": -0.14705882352941177,
+              "exact": "-5/34"
+            },
+            {
+              "decimal": 0.14705882352941177,
+              "exact": "5/34"
+            }
+          ],
+          "method": "J_closed_form",
+          "peer_residual_m": {
+            "decimal": -0.0058823529411764705,
+            "exact": "-1/170"
+          },
+          "signed_truth_error_m": [
+            {
+              "decimal": -0.14705882352941177,
+              "exact": "-5/34"
+            },
+            {
+              "decimal": -0.15294117647058825,
+              "exact": "-13/85"
+            }
+          ]
+        },
+        {
+          "absolute_truth_error_m": [
+            {
+              "decimal": 0.04,
+              "exact": "1/25"
+            },
+            {
+              "decimal": 0.26,
+              "exact": "13/50"
+            }
+          ],
+          "actual_change_from_private_reference_m": [
+            {
+              "decimal": -0.04,
+              "exact": "-1/25"
+            },
+            {
+              "decimal": 0.04,
+              "exact": "1/25"
+            }
+          ],
+          "antenna_positions_m": [
+            {
+              "decimal": 0.26,
+              "exact": "13/50"
+            },
+            {
+              "decimal": 1.04,
+              "exact": "26/25"
+            }
+          ],
+          "budget_holds": [
+            true,
+            true
+          ],
+          "help_signed_m": [
+            {
+              "decimal": -0.04,
+              "exact": "-1/25"
+            },
+            {
+              "decimal": 0.04,
+              "exact": "1/25"
+            }
+          ],
+          "method": "C_output_clip",
+          "peer_residual_m": {
+            "decimal": -0.22,
+            "exact": "-11/50"
+          },
+          "signed_truth_error_m": [
+            {
+              "decimal": -0.04,
+              "exact": "-1/25"
+            },
+            {
+              "decimal": -0.26,
+              "exact": "-13/50"
+            }
+          ]
+        },
+        {
+          "absolute_truth_error_m": [
+            {
+              "decimal": 0.04,
+              "exact": "1/25"
+            },
+            {
+              "decimal": 0.26,
+              "exact": "13/50"
+            }
+          ],
+          "actual_change_from_private_reference_m": [
+            {
+              "decimal": -0.04,
+              "exact": "-1/25"
+            },
+            {
+              "decimal": 0.04,
+              "exact": "1/25"
+            }
+          ],
+          "antenna_positions_m": [
+            {
+              "decimal": 0.26,
+              "exact": "13/50"
+            },
+            {
+              "decimal": 1.04,
+              "exact": "26/25"
+            }
+          ],
+          "budget_holds": [
+            true,
+            true
+          ],
+          "help_signed_m": [
+            {
+              "decimal": -0.04,
+              "exact": "-1/25"
+            },
+            {
+              "decimal": 0.04,
+              "exact": "1/25"
+            }
+          ],
+          "method": "K_equal_precision_box_closed_form",
+          "peer_residual_m": {
+            "decimal": -0.22,
+            "exact": "-11/50"
+          },
+          "signed_truth_error_m": [
+            {
+              "decimal": -0.04,
+              "exact": "-1/25"
+            },
+            {
+              "decimal": -0.26,
+              "exact": "-13/50"
+            }
+          ]
+        }
+      ],
+      "reconstructed_online_observations": {
+        "m_m": [
+          {
+            "decimal": 0.3,
+            "exact": "3/10"
+          },
+          {
+            "decimal": 1.0,
+            "exact": "1"
+          }
+        ],
+        "peer_m": {
+          "decimal": 1.0,
+          "exact": "1"
+        }
+      },
+      "true_positions_m": [
+        {
+          "decimal": 0.3,
+          "exact": "3/10"
+        },
+        {
+          "decimal": 1.3,
+          "exact": "13/10"
+        }
+      ],
+      "world": "B"
+    }
+  ]
+}

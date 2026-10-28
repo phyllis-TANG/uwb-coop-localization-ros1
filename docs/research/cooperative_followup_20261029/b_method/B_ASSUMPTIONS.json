@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "decision": "必须先补可信信息",
+  "candidate_mechanism": null,
+  "candidate_B4_experiment": "NOT_OPENED",
+  "online_inputs_available_in_current_design": [
+    {"input": "each car antenna-XY local peer-free estimate", "available": true, "trusted_absolute_error_bound_m": null, "note": "PR72 reports private references from startup; peer-free is not accuracy certification or statistical independence"},
+    {"input": "directed peer observation and each car Odom increments", "available": true, "certified_fault_class_and_bound": null},
+    {"input": "joint state/prior, residuals, configured weights, time/installation parameters", "available": true, "certified_geometry_and_clock_uncertainty": null, "note": "full joint prior retained; derived history adds no new external observation"},
+    {"input": "independently validated absolute point/initial prior with validity interval", "available_to_B": false, "error_bound_m": null}
+  ],
+  "surrogate_assumptions": {
+    "positions": "one-dimensional antenna-center absolute proxies, not raw four-anchor UWB",
+    "local_errors": "unknown signed additive error; at most one biased proxy; magnitude <=0.30m in the two explanations",
+    "peer": "ideal exact signed displacement with known ordering for the example only, not a real certification claim",
+    "motion": "same observed per-car increments; constant common translation is unobservable without extra absolute information",
+    "initial_absolute_prior": "no independently certified hard absolute prior; such a prior changes the question",
+    "weights": "equal positive design weights, not authenticated covariance",
+    "scope_exclusions": ["arbitrary raw-anchor geometry impossibility theorem", "time-varying fault identifiability", "yaw safety", "full nonlinear history equivalence", "absolute or probabilistic protection"]
+  },
+  "four_condition_behavior_requirements_not_an_adopted_algorithm": [
+    {"condition": "normal", "required_interpretation": "small residual/consistent local estimates alone do not certify health; allow only declared finite influence contract, do not claim absolute safety"},
+    {"condition": "single local source faulty", "required_interpretation": "without independent information keep trusted role unknown; do not infer culprit from this conflict or move the presumed bad car asymmetrically with a uniform protection claim"},
+    {"condition": "common absolute source error", "required_interpretation": "relative consistency and zero cooperative displacement may coexist with large absolute error; no absolute certification"},
+    {"condition": "information missing or insufficient", "required_interpretation": "unknown/no certification; if existing reference fallback is used its absolute accuracy remains unknown and no consistent covariance is fabricated"}
+  ],
+  "operational_scope_distinction": "B2 allows signed local proxy errors with at most one biased source. Under its trusted exact-peer/no-noise/at-most-one-bias assumptions, exactly consistent proxies imply zero local biases. The operational table additionally allows unexcluded common-source errors; the broader claim must not be attributed to the narrower two-world class.",
+  "forbidden_trust_proofs": ["evaluation health labels or truth", "future frames", "reference contaminated by target peer/cooperative posterior", "small unauthenticated covariance", "low residual or successful convergence", "static repeatability alone", "source exposure/ancestor counts as causal error shares"],
+  "why_no_candidate": {
+    "fixed_weight": "positive fixed weight alone gives no hard influence bound over unbounded conflicts; zero removes help; this does not imply a novel rule exists",
+    "same_budget_output_clip": "already satisfies the present symmetric actual-displacement contract; in the registered equal-precision proxy it is exactly the constrained optimum",
+    "unmet_role_specific_requirement": "opposite accurate roles produce identical information, so neither candidate nor baseline can uniformly identify/protect the correct role in this class",
+    "fairness_gate": "any future absolute certificate, bound, timing or installation information must also be provided to fixed weighting and clipping baselines with the same allowed harm and evaluation state",
+    "extra_actual_requirement_beyond_clip": null
+  },
+  "specific_information_needed_if_role_selection_is_required": [
+    {"measurement": "independent surveyed antenna-center position for one car at a recorded same-parking state", "use": "break common-translation/role ambiguity at that state", "required_evidence": "actual ruler/measurement origin and uncertainty, body-to-antenna definition, exact parking binding; being stationary is insufficient", "current_error_bound_m": null, "limit": "does not certify future moving states or retroactively accept old data"},
+    {"measurement": "motion-error bound and certificate validity/expiry after the absolute check", "use": "justify any propagation of a trusted initial point to a later peer evaluation", "current_bound": null, "limit": "shared Odom errors or fault after initialization can reintroduce ambiguity"},
+    {"measurement": "direct independent antenna separation at the same placement plus installation/yaw and clock uncertainty", "use": "bound peer consistency relative to geometry rather than treating a normal label or small fit residual as proof", "current_bound": null, "limit": "the two-world ambiguity remains even with perfect peer unless absolute information is added"},
+    {"measurement": "verified absolute raw-measurement subset and restricted fault model if relying on anchor redundancy", "use": "test identifiability in the actual raw-anchor model instead of extrapolating the proxy example", "current_certified_subset": null, "limit": "four reported wall links alone do not prove which subset is healthy; raw range-bias sign is not global XY-bias sign"},
+    {"measurement": "application allowed influence and admissible absolute error with scope", "use": "justify a future paper budget and whether E_reference + B can meet the requirement", "paper_budget_m": null, "absolute_requirement_m": null, "limit": "0.04m remains illustrative only; no new thresholds selected here"}
+  ],
+  "checkable_next_gates": [
+    "Define which extra observation excludes one of the identical-observation explanations under explicit bounds; otherwise no trusted-role decision",
+    "Use same certified information, budget, error model and evaluation states for any candidate and cheap output clipping",
+    "Define an actual unmet contract/metric beyond internal state difference before adding a mechanism",
+    "Preserve actual antenna checks, complete joint prior, causal prefix, unknown/failure semantics; no peer-history reset",
+    "No large experiment until necessary distinction is demonstrated on registered existing-information examples"
+  ],
+  "new_FGO_runs": 0,
+  "new_static_2D_configs": 0,
+  "new_seeds": 0,
+  "new_lab_routes_designed": 0,
+  "statistical_or_real_accuracy_validation": false
+}
