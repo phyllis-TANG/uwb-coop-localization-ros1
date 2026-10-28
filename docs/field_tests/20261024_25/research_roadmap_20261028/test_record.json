@@ -1,0 +1,8 @@
+{
+  "scope": "analytic surrogate only; no production FGO or sensor tests rerun",
+  "python_version": "3.12.14",
+  "command": "python -m unittest discover -s . -p test_analytic_mechanism.py -v",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "test_box_optimum_satisfies_kkt_and_budget (test_analytic_mechanism.AnalyticChecks.test_box_optimum_satisfies_kkt_and_budget) ... ok\ntest_common_bias_cannot_be_seen_by_relative_measurement (test_analytic_mechanism.AnalyticChecks.test_common_bias_cannot_be_seen_by_relative_measurement) ... ok\ntest_invalid_weights_and_budgets (test_analytic_mechanism.AnalyticChecks.test_invalid_weights_and_budgets) ... ok\ntest_peer_off_is_independent (test_analytic_mechanism.AnalyticChecks.test_peer_off_is_independent) ... ok\ntest_report_exposes_clipping_equivalence (test_analytic_mechanism.AnalyticChecks.test_report_exposes_clipping_equivalence) ... ok\ntest_role_swap_and_translation (test_analytic_mechanism.AnalyticChecks.test_role_swap_and_translation) ... ok\ntest_stationary_and_positive_definite_quadratic (test_analytic_mechanism.AnalyticChecks.test_stationary_and_positive_definite_quadratic) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.001s\n\nOK\n"
+}

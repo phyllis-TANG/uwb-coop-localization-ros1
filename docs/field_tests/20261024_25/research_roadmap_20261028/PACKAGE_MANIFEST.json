@@ -1,0 +1,58 @@
+{
+  "schema": "research-roadmap-package-v1",
+  "date": "2026-10-28",
+  "base_commit": "f11d611cc00036cc72ff43826369c8c2ddb14258",
+  "scope": "original plans plus deterministic phase-0 analytic surrogate; no production solver or sensor data changes",
+  "original_documents_byte_identical": true,
+  "analytic_case_count": 9,
+  "test_count": 7,
+  "test_exit_code": 0,
+  "manifest_self_excluded": true,
+  "files": [
+    {
+      "path": "analytic_mechanism.py",
+      "size_bytes": 5354,
+      "sha256": "274ba7d059d32f4b333722eaba972878d5da18e67bad58f0950a6bbafa127d58"
+    },
+    {
+      "path": "PHASE0_ANALYSIS.md",
+      "size_bytes": 4132,
+      "sha256": "c7ee68f321ef010d857062760c48b6cc3d5c64f9d21e546cf3ccac4799cb2f8f"
+    },
+    {
+      "path": "phase0_results.json",
+      "size_bytes": 14122,
+      "sha256": "c2f04335b81eb48caf42a001b1446a9db04d27f42880a352258ed3e959757427"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 8317,
+      "sha256": "1b05ce5dde381b6bda47a4d16326d9821ef505acea3550122a9bbaafe3de22fc"
+    },
+    {
+      "path": "test_analytic_mechanism.py",
+      "size_bytes": 3893,
+      "sha256": "bf3058d9a293f5c6465e2ef41b8cca9320775c3173dcdfc0b4ddcdbd23606e47"
+    },
+    {
+      "path": "test_record.json",
+      "size_bytes": 1251,
+      "sha256": "da4f5a9e4ef81820f50acb97aa4f961deddde2cde3d0f65f8b83be1990fd4859"
+    },
+    {
+      "path": "两次实验室访问与采集门槛_v1.txt",
+      "size_bytes": 8679,
+      "sha256": "9e82089dbd794fa94cd45285657d0901d3157def7275747e43026159f32065ed"
+    },
+    {
+      "path": "交付校验.json",
+      "size_bytes": 832,
+      "sha256": "70510a1d7d4bb5077f4b813d5fbb9e37debd8c70117cc5a209271430f9310b16"
+    },
+    {
+      "path": "定题与执行路线_v1.txt",
+      "size_bytes": 12657,
+      "sha256": "2d4973fd03277487a7db1b525a4cbafd51112130ab5cafca60b17d46493505e4"
+    }
+  ]
+}
