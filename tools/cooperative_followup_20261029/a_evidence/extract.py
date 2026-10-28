@@ -40,13 +40,13 @@ def extract(evidence,out):
    main_success=row.get('main_accepted_graph',row['accepted_graph']);joint=row.get('joint_optimization_success',bool(method=='J' and row['accepted_graph']))
    vals=dict(t_s=t,finite=finite(p),reference_accepted=known,mode=mode,joint_success=joint,main_accepted=main_success,status=row.get('main_status',row['status']),reason=row.get('publication_reason','BASELINE_ACCEPTED' if row['accepted_graph'] else 'STARTUP'))
    ants=[antenna(p[3*i:3*i+3],c['models'][car]) for i,car in enumerate(CARS)] if finite(p) else None
-   truths=[np.array(truths[scenario][ep]['cars'][car]['antenna_xyz_m']) for car in CARS]
+   truth_antennas=[np.array(truths[scenario][ep]['cars'][car]['antenna_xyz_m']) for car in CARS]
    peer_residual=None if ants is None or row['peer_median_m'] is None else float(np.linalg.norm(ants[0]-ants[1])-row['peer_median_m'])
    relative=None if ants is None else ants[0]-ants[1]
-   vals['relative_xy_rmse_m']=None if ants is None else float(np.linalg.norm(relative[:2]-(truths[0]-truths[1])[:2]));vals['distance_rmse_m']=None if ants is None else float(np.linalg.norm(relative)-np.linalg.norm(truths[0]-truths[1]))
+   vals['relative_xy_rmse_m']=None if ants is None else float(np.linalg.norm(relative[:2]-(truth_antennas[0]-truth_antennas[1])[:2]));vals['distance_rmse_m']=None if ants is None else float(np.linalg.norm(relative)-np.linalg.norm(truth_antennas[0]-truth_antennas[1]))
    if method in METHODS:audit.check_bins(row,c,rawstreams,origin)
    for i,car in enumerate(CARS):
-    tr=truths[scenario][ep]['cars'][car];pos=p[3*i:3*i+3] if finite(p) else None;re=antenna(ref['pose'][3*i:3*i+3],c['models'][car]);err=None if pos is None else float(np.linalg.norm(ants[i][:2]-truths[i][:2]));referr=float(np.linalg.norm(re[:2]-truths[i][:2]));sep=None if pos is None else float(np.linalg.norm(ants[i][:2]-re[:2]))
+    tr=truths[scenario][ep]['cars'][car];pos=p[3*i:3*i+3] if finite(p) else None;re=antenna(ref['pose'][3*i:3*i+3],c['models'][car]);err=None if pos is None else float(np.linalg.norm(ants[i][:2]-truth_antennas[i][:2]));referr=float(np.linalg.norm(re[:2]-truth_antennas[i][:2]));sep=None if pos is None else float(np.linalg.norm(ants[i][:2]-re[:2]))
     val=dict(antenna_xy_rmse_m=err,base_xy_rmse_m=None if pos is None else float(np.linalg.norm(np.array(pos[:2])-tr['pose'][:2])),yaw_rmse_rad=None if pos is None else wrap(pos[2]-tr['pose'][2]),mean_help_m=None if err is None else max(referr-err,0.),mean_harm_m=None if err is None else max(err-referr,0.),max_separation_m=sep,max_excess004_m=None if sep is None else max(0.,sep-.04),max_excess100_m=None if sep is None else max(0.,sep-1.))
     vals[car]=val
     if method not in METHODS:continue
