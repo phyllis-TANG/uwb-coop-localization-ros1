@@ -1,0 +1,48 @@
+test_F1_F2_same_rate_and_translation (tests.FactorTests) ... ok
+test_F1_equals_old_objective_when_angles_match (tests.FactorTests) ... ok
+test_augmented_analytic_jacobian_and_cross_prior (tests.FactorTests) ... ok
+test_bias_sign_and_RW_whitening (tests.FactorTests) ... ok
+test_interval_dt_mismatch_rejected (tests.FactorTests) ... ok
+test_missing_angular_is_not_zero_factor (tests.FactorTests) ... ok
+test_nonfinite_prior_rejected (tests.FactorTests) ... ok
+test_stationary_zero_lever_no_bias_information_gain (tests.FactorTests) ... ok
+test_wrap_crosses_pi (tests.FactorTests) ... ok
+test_constant_and_split_composition (tests.IntegrationTests) ... ok
+test_duplicates_and_out_of_order (tests.IntegrationTests) ... ok
+test_equal_cutoff_and_exact_hold_boundary (tests.IntegrationTests) ... ok
+test_exact_ns_and_prune (tests.IntegrationTests) ... ok
+test_future_source_rejected (tests.IntegrationTests) ... ok
+test_gap_and_recovery (tests.IntegrationTests) ... ok
+test_invalid_integration_interval (tests.IntegrationTests) ... ok
+test_joint_angle_bias_covariance_numerical_integral (tests.IntegrationTests) ... ok
+test_later_receipt_is_invisible (tests.IntegrationTests) ... ok
+test_new_endpoint_not_used_backwards (tests.IntegrationTests) ... ok
+test_nonfinite_and_capacity (tests.IntegrationTests) ... ok
+test_before_first_marginalization_identical_to_full_history (tests.MarginalTests) ... ok
+test_bias_cross_information_propagates_over_many_marginalizations (tests.MarginalTests) ... ok
+test_exact_nonlinear_full_history_and_fixed_window (tests.MarginalTests) ... ok
+test_full_linearized_information_affine_cost_and_no_double_count (tests.MarginalTests) ... ok
+test_missing_stationary_yaw_rank_is_reported (tests.MarginalTests) ... ok
+test_rank_deficient_prior_retained_without_invention (tests.MarginalTests) ... ok
+test_F0_original_default_exact_including_fallback (tests.ReplayTests) ... ok
+test_F3_no_imu_quaternion_or_odom_angular_z_observation (tests.ReplayTests) ... ok
+test_axis_sign_units_and_nonfinite_negative (tests.ReplayTests) ... ok
+test_cli_outputs_and_no_overwrite (tests.ReplayTests) ... ok
+test_eof_missing_odom_no_extrapolation (tests.ReplayTests) ... ok
+test_frontend_same_bins_and_translation_all_arms (tests.ReplayTests) ... ok
+test_gap_recovery_and_frozen_publications (tests.ReplayTests) ... ok
+test_generator_bias_drift_and_range_sign (tests.ReplayTests) ... ok
+test_generator_determinism_and_no_labels (tests.ReplayTests) ... ok
+test_integer_mapping_and_holdout_reject (tests.ReplayTests) ... ok
+test_invalid_axis_and_noise_units_rejected (tests.ReplayTests) ... ok
+test_legacy_pose_translation_yaw_dependency_disclosed_not_erased (tests.ReplayTests) ... ok
+test_missing_gyro_prediction_holds_not_odom_fallback (tests.ReplayTests) ... ok
+test_new_config_cannot_promote_synthetic_to_field (tests.ReplayTests) ... ok
+test_nonfinite_quality_is_preserved_as_flag (tests.ReplayTests) ... ok
+test_prefix_invariance_after_marginalization (tests.ReplayTests) ... ok
+test_start_prediction_and_failed_solve_do_not_use_odom_yaw (tests.ReplayTests) ... ok
+
+----------------------------------------------------------------------
+Ran 43 tests in 1.997s
+
+OK
