@@ -1,0 +1,36 @@
+{
+  "status": "PARTIAL_FREEZE_EVIDENCE_RULES_ONLY",
+  "reason": "No verified paired XY reference uncertainty or comparable localization-error repetitions found in reviewed records; measurement capability alone cannot choose acceptable harm.",
+  "reported_historical_scalar_uncertainty": {
+    "value_m": 0.01,
+    "scope": "20260927 tape range only",
+    "kind": "approximately; coverage factor and confidence unspecified",
+    "approved_for_current_XY": false
+  },
+  "accepted_paired_XY_resolution_m": null,
+  "accepted_real_yaw_resolution_rad": null,
+  "min_meaningful_XY_improvement_m": null,
+  "allowed_companion_XY_degradation_m": null,
+  "allowed_nominal_XY_degradation_m": null,
+  "allowed_yaw_degradation_rad": null,
+  "recovery_deadline_s": null,
+  "development_XY_budget_m": {
+    "value": 0.04,
+    "scope": "existing exposed descriptive budget only; not acceptance"
+  },
+  "fixed_rules": [
+    "Never substitute range MAD/std or fit residual for reference uncertainty",
+    "Do not pool changed operation/pose/date as identical independent repeats",
+    "Keep measurement uncertainty and practical acceptable harm distinct",
+    "Use exact same time indices/reference for paired method comparison",
+    "Keep null when uncertainty source or coverage is unknown",
+    "No new acquisition or estimator run in this audit"
+  ],
+  "conditional_deterministic_rule": {
+    "premise": "independently verified per-time Euclidean antenna-reference error <= epsilon_t, same n timestamps, no alignment/fitted truth",
+    "R": "sqrt(mean(epsilon_t**2))",
+    "bound": "abs((RMSE_A_ref-RMSE_B_ref)-(RMSE_A_true-RMSE_B_true)) <= 2*R",
+    "approval": "not instantiated; approximate 0.01m tape statement is not this premise; 95% intervals are not hard bounds"
+  },
+  "next_minimum": "Recover existing same-session actual XYZ/checkpoint repeated readings, instrument/type of bound and parked-window identity; if absent narrow field accuracy claims, do not auto re-record."
+}
