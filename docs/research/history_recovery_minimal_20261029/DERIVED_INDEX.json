@@ -1,0 +1,89 @@
+{
+  "cells": [
+    {
+      "budgets": [
+        0.04,
+        0.04
+      ],
+      "case": "nominal_seed101",
+      "estimator_run": false,
+      "method": "Nclip",
+      "output": "TIMESERIES.csv",
+      "output_sha256": "c4944b03a7fabd306b1ff3fa6a2b39511925a29b79351f380d75ac85939b2da7",
+      "row_count": 126,
+      "source": "N",
+      "status": "DONE"
+    },
+    {
+      "budgets": [
+        0.0,
+        0.04
+      ],
+      "case": "nominal_seed101",
+      "estimator_run": false,
+      "method": "A0_4",
+      "output": "TIMESERIES.csv",
+      "output_sha256": "c4944b03a7fabd306b1ff3fa6a2b39511925a29b79351f380d75ac85939b2da7",
+      "row_count": 126,
+      "source": "J",
+      "status": "DONE"
+    },
+    {
+      "budgets": [
+        0.04,
+        0.0
+      ],
+      "case": "nominal_seed101",
+      "estimator_run": false,
+      "method": "A4_0",
+      "output": "TIMESERIES.csv",
+      "output_sha256": "c4944b03a7fabd306b1ff3fa6a2b39511925a29b79351f380d75ac85939b2da7",
+      "row_count": 126,
+      "source": "J",
+      "status": "DONE"
+    },
+    {
+      "budgets": [
+        0.04,
+        0.04
+      ],
+      "case": "car1_common_wall_bias_seed101",
+      "estimator_run": false,
+      "method": "Nclip",
+      "output": "TIMESERIES.csv",
+      "output_sha256": "c4944b03a7fabd306b1ff3fa6a2b39511925a29b79351f380d75ac85939b2da7",
+      "row_count": 126,
+      "source": "N",
+      "status": "DONE"
+    },
+    {
+      "budgets": [
+        0.0,
+        0.04
+      ],
+      "case": "car1_common_wall_bias_seed101",
+      "estimator_run": false,
+      "method": "A0_4",
+      "output": "TIMESERIES.csv",
+      "output_sha256": "c4944b03a7fabd306b1ff3fa6a2b39511925a29b79351f380d75ac85939b2da7",
+      "row_count": 126,
+      "source": "J",
+      "status": "DONE"
+    },
+    {
+      "budgets": [
+        0.04,
+        0.0
+      ],
+      "case": "car1_common_wall_bias_seed101",
+      "estimator_run": false,
+      "method": "A4_0",
+      "output": "TIMESERIES.csv",
+      "output_sha256": "c4944b03a7fabd306b1ff3fa6a2b39511925a29b79351f380d75ac85939b2da7",
+      "row_count": 126,
+      "source": "J",
+      "status": "DONE"
+    }
+  ],
+  "selection": "both fixed index assignments; no truth-selected roles"
+}

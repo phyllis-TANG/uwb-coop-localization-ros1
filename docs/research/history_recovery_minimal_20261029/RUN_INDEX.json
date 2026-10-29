@@ -1,0 +1,300 @@
+{
+  "archive_path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/cooperative_influence_probe_20261028_v1.tar.gz",
+  "archive_sha256": "50c671e3687c3342b8abe99986ecd6a6488de23e24fe112b16b44d9f8fb3f320",
+  "base_commit": "ad99174c4f5b111e3e14ce7c2fe56b200c56e794",
+  "cells": [
+    {
+      "id": "nominal_seed101__I",
+      "manifest_sha256": "db0964a62348592c14cbb40ca5453b0089a501ecd93dade68e5e41dfa24fbece",
+      "mode": "verified_reuse",
+      "source_path": "reused/nominal_seed101__I",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "nominal_seed101__J",
+      "manifest_sha256": "2666f189882dce72144daec4d01d5006a84f06e93610659ca1657ed82fbb8dec",
+      "mode": "verified_reuse",
+      "source_path": "reused/nominal_seed101__J",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "nominal_seed101__W025",
+      "manifest_sha256": "30a3baccaa3e7f1152fd1a2ba953c410637cb577c31721633125d5826b7f8b6b",
+      "mode": "verified_reuse",
+      "source_path": "runs/nominal_seed101__W025",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "nominal_seed101__C004",
+      "manifest_sha256": "386ff0edc55d3e5ec961fdff33a03dd3d3a113f95b8d48fe2b4ad3c84571e888",
+      "mode": "verified_reuse",
+      "source_path": "derived/nominal_seed101__C004",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "nominal_seed101__K004",
+      "manifest_sha256": "8e7d7e15a2ac602ce9f63ae6b358007bb0d0907ca4178af0d9f46d48c77a1afa",
+      "mode": "verified_reuse",
+      "source_path": "runs/nominal_seed101__K004",
+      "status": "VERIFIED"
+    },
+    {
+      "elapsed_wall_s": 0.7609468890586868,
+      "id": "nominal_seed101__N",
+      "mode": "new_replay",
+      "path": "nominal_seed101__N.jsonl.gz",
+      "sha256": "be8f921a2a217982d329c8ea230bf26bc9dc7182a356443d6d83d5b4f87beee4",
+      "status": "DONE"
+    },
+    {
+      "elapsed_wall_s": 0.005039294948801398,
+      "id": "nominal_seed101__priorN__initN",
+      "mode": "snapshot",
+      "path": "nominal_seed101__priorN__initN.jsonl.gz",
+      "sha256": "bab5152dd059e14244380d6ad31b5d2c29c2c869662392e7a0ced4a94fbaff32",
+      "status": "DONE"
+    },
+    {
+      "elapsed_wall_s": 0.010903556016273797,
+      "id": "nominal_seed101__priorN__initI",
+      "mode": "snapshot",
+      "path": "nominal_seed101__priorN__initI.jsonl.gz",
+      "sha256": "bbcb08716eebeb174ebf72552e6cce2a7648de6a27d1c2b091a1a4814c2ef660",
+      "status": "DONE"
+    },
+    {
+      "elapsed_wall_s": 0.010566729004494846,
+      "id": "nominal_seed101__priorI__initN",
+      "mode": "snapshot",
+      "path": "nominal_seed101__priorI__initN.jsonl.gz",
+      "sha256": "ae18f5cab97f8c5b6fb44ba647687c288d91f04f8447ca6d18bde5b7486f3d8f",
+      "status": "DONE"
+    },
+    {
+      "elapsed_wall_s": 0.004799990099854767,
+      "id": "nominal_seed101__priorI__initI",
+      "mode": "snapshot",
+      "path": "nominal_seed101__priorI__initI.jsonl.gz",
+      "sha256": "3688b00944b4e683459f52b23cbd0b206d70f7fdd9ac71d1abd96869ce390030",
+      "status": "DONE"
+    },
+    {
+      "id": "car1_common_wall_bias_seed101__I",
+      "manifest_sha256": "09319ecd669767940a8a188b8e56ac7d42185702d2019f46c39cab189d2b7c88",
+      "mode": "verified_reuse",
+      "source_path": "reused/car1_common_wall_bias_seed101__I",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "car1_common_wall_bias_seed101__J",
+      "manifest_sha256": "d5ca0bc4103e7abbb86c525927d2cfa9522e148355c5304f35f4db2231101c2d",
+      "mode": "verified_reuse",
+      "source_path": "reused/car1_common_wall_bias_seed101__J",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "car1_common_wall_bias_seed101__W025",
+      "manifest_sha256": "6a270b88c83e9c9f2e39fbbaf4a8dcf64ee3cfe223bf79130b0f604d36a52103",
+      "mode": "verified_reuse",
+      "source_path": "runs/car1_common_wall_bias_seed101__W025",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "car1_common_wall_bias_seed101__C004",
+      "manifest_sha256": "70dc2ce249de427e8be7c15df264dc0971271ec85ba1fbc716dc5c92b692b274",
+      "mode": "verified_reuse",
+      "source_path": "derived/car1_common_wall_bias_seed101__C004",
+      "status": "VERIFIED"
+    },
+    {
+      "id": "car1_common_wall_bias_seed101__K004",
+      "manifest_sha256": "b2170bd122bd9a2a57de3ce2f443703a211ac82b02f921b06b536c643bab14df",
+      "mode": "verified_reuse",
+      "source_path": "runs/car1_common_wall_bias_seed101__K004",
+      "status": "VERIFIED"
+    },
+    {
+      "elapsed_wall_s": 0.9137472559232265,
+      "id": "car1_common_wall_bias_seed101__N",
+      "mode": "new_replay",
+      "path": "car1_common_wall_bias_seed101__N.jsonl.gz",
+      "sha256": "3b01c9e8e5c46cbe4f30377de724e5c5a436ddfd8f221c038010aeeb56754918",
+      "status": "DONE"
+    },
+    {
+      "elapsed_wall_s": 0.005329493898898363,
+      "id": "car1_common_wall_bias_seed101__priorN__initN",
+      "mode": "snapshot",
+      "path": "car1_common_wall_bias_seed101__priorN__initN.jsonl.gz",
+      "sha256": "cbe757b8f36cc33b7220b5617741528ec892a0bdb19f664fecc3b3fbba0a9096",
+      "status": "DONE"
+    },
+    {
+      "elapsed_wall_s": 0.013857653015293181,
+      "id": "car1_common_wall_bias_seed101__priorN__initI",
+      "mode": "snapshot",
+      "path": "car1_common_wall_bias_seed101__priorN__initI.jsonl.gz",
+      "sha256": "af605de17d09a3f406ebda3dd84af351b90419133debae97f6d1d29f7afb39c0",
+      "status": "DONE"
+    },
+    {
+      "elapsed_wall_s": 0.013348613982088864,
+      "id": "car1_common_wall_bias_seed101__priorI__initN",
+      "mode": "snapshot",
+      "path": "car1_common_wall_bias_seed101__priorI__initN.jsonl.gz",
+      "sha256": "50fab44cdf7218c99a38783ead35047a191eb4156a6e931db97b69ce696ad910",
+      "status": "DONE"
+    },
+    {
+      "elapsed_wall_s": 0.004910480929538608,
+      "id": "car1_common_wall_bias_seed101__priorI__initI",
+      "mode": "snapshot",
+      "path": "car1_common_wall_bias_seed101__priorI__initI.jsonl.gz",
+      "sha256": "89b40a2a187c6db47fcf1bbfb83f61236161e81c0fb77011e65f74007e844fcd",
+      "status": "DONE"
+    },
+    {
+      "elapsed_wall_s": 0.502744500990957,
+      "id": "nominal_prefix46",
+      "mode": "contract_only",
+      "path": "nominal_prefix46.jsonl.gz",
+      "sha256": "aff17a4eb71b07e37322e0f3cae529da8bb42797c320f0e8dc443d635e1aeb44",
+      "status": "DONE"
+    }
+  ],
+  "execution_commit": "b82a03b614732a57c5934c0aac23b0f1912f7854",
+  "inputs": {
+    "car1_common_wall_bias_seed101": {
+      "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+      "events.jsonl.gz": "34f3e1a6e2872b1534630691fb6558a28076c268624ec3c00b10e92a1e0736e6",
+      "labels.json": "43fe0acc80463f85ceaa2f695a2d9903cb2343f63eef49ddf7cf54d1dacfabc8",
+      "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+    },
+    "nominal_seed101": {
+      "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+      "events.jsonl.gz": "af00d7597f8de328a0dedef51f344a81a397000358e741c0d82299ba2cbbdd44",
+      "labels.json": "b000339bef9e22d28c8cc206698ac85b95f8c1f0f1b166607e5c633fc7ddf4c7",
+      "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+    }
+  },
+  "old_execution_commit": "312180ef51c6ea4ba394bc85618674ec36ff786d",
+  "old_source_sha256": {
+    "docs/field_tests/single_car_historical_L_20261021/results/evidence/new_graph.py": "cc8934e0ee34eabddd46ed09e0de1ca69e9a74b00e93147f7d99f5a04d77e903",
+    "tools/cooperative_influence_probe_20261028/bindings.py": "2f7454cd451c879583995d2f6ef21aa09eddaf87e7d7ce63197a444bd6734768",
+    "tools/cooperative_influence_probe_20261028/common.py": "96bc8daf0784db2fc9db3a1ced5f1121e7d201b77fdf21f4cd04175e3f4d0539",
+    "tools/cooperative_influence_probe_20261028/core.py": "f4e0221336043a07cb61cf5b87c7de63a716047129573e23bf38f71a32139e0d",
+    "tools/cooperative_influence_probe_20261028/development_config.json": "d474b5af06260ca3b38a133b4f5a006662de42979c535a7901d0a6ad9c17db68",
+    "tools/cooperative_influence_probe_20261028/independent.py": "e8beab5a8891ec64e765a4be3d10090dcfd65d1b5d7188bf61c4808a75ad581f",
+    "tools/cooperative_influence_probe_20261028/prepare.py": "58755e9fe405fa85a0e5e3019f8dc119deb8bff803719ef910831be61b17c408",
+    "tools/cooperative_influence_probe_20261028/replay_control.py": "3b0b0f20f7396108f2dd511cca7accd2e6b27ef1eaeb53aca4ca700ff318f29a",
+    "tools/cooperative_influence_probe_20261028/run_development.py": "b01a6fd6c94707bd5e7a4ab5e350c075fac034eb8666198164de22da513003a6",
+    "tools/cooperative_influence_probe_20261028/source_lock.json": "3d48de1d22a0ddf03b1593ddfcce81327613d35f34519b08bfc360480817931d",
+    "tools/cooperative_influence_probe_20261028/test_contract.py": "23c83bcb73c53b65e84bef903912d6a29a8d9fabcbf9b0a7706ed7774786d223",
+    "tools/cooperative_influence_probe_20261028/test_index.py": "c8333e0e69669aaf5b4bb8d6fe2e2fced25aebaafde75dd6c999e691b182be37",
+    "tools/cooperative_peer_gate_probe_20261028/frozen_manifest.json": "9404f412665715f57af7300a0311711a03bac6bed0d55c4f61e97f3cdaef013b",
+    "tools/cooperative_peer_gate_probe_20261028/index_contract.py": "3a299d22441b26eceab0eceb4ce60eb6b9e5e0f2c00d6f61f7fde8296e719b66",
+    "tools/cooperative_peer_gate_probe_20261028/pinned.py": "1ee41ca0f6ece4f3c8f62091d29e23d344185a8b2abb83dd003bfbc3089cad48",
+    "tools/cooperative_peer_gate_probe_20261028/prepare.py": "dc358fc535ae0f7817cced4e1d15d2697876fcf4c800509a6c790a5e40bd21dd",
+    "tools/cooperative_peer_gate_probe_20261028/probe.py": "f401f723b39342da60568834b76ae79b412617554c296f25c439812451b4d38d",
+    "tools/cooperative_peer_gate_probe_20261028/records.py": "0f643c4830e006675c7c3e8320b901bb13cc312adf03712e8fcd05eccd580458",
+    "tools/cooperative_peer_gate_probe_20261028/runner.py": "7e3d5193ce222db352a6c793378587934ad5df62995439798e38a459c5fa15e5",
+    "tools/cooperative_peer_gate_probe_20261028/test_export.py": "7ec6ba2a8954905ee9d31191bd3c79ee6bf4dec72ed0f100a5dcb7bb93dd6da0",
+    "tools/cooperative_peer_gate_probe_20261028/test_index.py": "96ed310afba6a76c176c5004fb48e1e32ddc1647751b220dc5ffb1c03fde9824",
+    "tools/cooperative_peer_gate_probe_20261028/test_probe.py": "6c50ce9714d3a437d962923a81f521fee9219424827e6b8e3eef786d4afef57d",
+    "tools/single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+    "tools/single_car_imu_fgo/configuration.py": "e7f32bdd4cbc69378b35d53023afa116d6138e9d26e4509766cfe0c02d13a2c4",
+    "tools/single_car_imu_fgo/replay.py": "09b8cfed9125afc74a4e3050b84ee095f8459bcbc556b77eb489cba6be9aefcd",
+    "tools/single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+    "tools/two_car_fixed_lag_fgo_v1/audit.py": "d5c2479c5428f12f44800315ed932f77e6d9f3f5c9fd4e85aef7e5f540eeecb4",
+    "tools/two_car_fixed_lag_fgo_v1/batch.py": "41cdfc6ff3d63f3c274b830c2c664845bd1e2ca7db5e1c539d0548f7d4465692",
+    "tools/two_car_fixed_lag_fgo_v1/config.json": "20a9f64ac55cc43415dc34733bf436ad5c7181cebe06187e5895b6094c1075fa",
+    "tools/two_car_fixed_lag_fgo_v1/dependency_lock.json": "d2606e4328892d0e3b196fa42cd19360a64b22b9b27b2af1814f956d188c7a4e",
+    "tools/two_car_fixed_lag_fgo_v1/frontend.py": "4023914fd3ce68930af0c6a2e336c4b04a98679bab90950d09ea202a2e46b803",
+    "tools/two_car_fixed_lag_fgo_v1/graph.py": "5c80d6b4f947824d581f268c9fac2760d4df9ccc540abb12ccfee689b4234e2a",
+    "tools/two_car_fixed_lag_fgo_v1/io_utils.py": "953ba7afbba739bacb0cca26fbd27a9f1c3b887d14a484d2574a9af7cb003ae9",
+    "tools/two_car_fixed_lag_fgo_v1/legacy.py": "335fce6b33d4af8977ac54591413bfcdcfc0ffcb62a3f469356943c1f5326ce2",
+    "tools/two_car_fixed_lag_fgo_v1/replay.py": "f41ba8f610ec46b22090b2dfe0a6518e844d2dbd33d860020bb417e0de1f4cb2",
+    "tools/two_car_fixed_lag_fgo_v1/report.py": "d3af3996e259b7d96c871c179495364931f8f44138079e9123c6b2e92341a859",
+    "tools/two_car_fixed_lag_fgo_v1/requirements.txt": "ac6f20cbcd6657f774aa875d61bc5bf336718f504af6e8ab5d6575f5d8da7118",
+    "tools/two_car_fixed_lag_fgo_v1/simulate.py": "61288a3a21110da5fcc730b82113468168325ad72e72f4fd957d3ac6f8b0e679",
+    "tools/two_car_fixed_lag_fgo_v1/test_joint.py": "67b10b5d1221d569b6c7ba1c9af4bf3cded6dd673525f46e57fbffa15fede95f",
+    "tools/two_car_fixed_lag_fgo_v1/test_simulate.py": "04effd758ba5827c9bd32fa214c79a22c71ca40844194d79679a1e7ce8250c9a"
+  },
+  "settings": {
+    "budget_atol_m": 1e-07,
+    "cases": [
+      "nominal_seed101",
+      "car1_common_wall_bias_seed101"
+    ],
+    "cut_new_peer_at_state_s": 39,
+    "periods": {
+      "all": [
+        1,
+        64
+      ],
+      "clean_active_window": [
+        59,
+        64
+      ],
+      "fault": [
+        24,
+        38
+      ],
+      "late": [
+        48,
+        59
+      ],
+      "pre": [
+        1,
+        24
+      ],
+      "recovery": [
+        38,
+        48
+      ]
+    },
+    "prefix_contract_last_receive_s": 46,
+    "publication_budgets_m": {
+      "A0_4": [
+        0.0,
+        0.04
+      ],
+      "A4_0": [
+        0.04,
+        0.0
+      ],
+      "Nclip": [
+        0.04,
+        0.04
+      ]
+    },
+    "regression_atol_m_rad": 1e-10,
+    "reuse_methods": [
+      "I",
+      "J",
+      "W025",
+      "C004",
+      "K004"
+    ],
+    "scope": "exposed paired seed101; offline attribution, not online policy or independent validation",
+    "snapshot_initializations": [
+      "N",
+      "I"
+    ],
+    "snapshot_path_review_m_rad": 0.0001,
+    "snapshot_priors": [
+      "N",
+      "I"
+    ],
+    "snapshot_state_s": 59
+  },
+  "source_sha256": {
+    "tools/history_recovery_minimal_20261029/engine.py": "ca7ad6efc2648850a2c5a64a00a3ecb2b80aba528f0d766a0485b0a4b278c7be",
+    "tools/history_recovery_minimal_20261029/publication.py": "4596396611203e20878fab9acf696857d9f20828a3149fa79c553c50adc1e450",
+    "tools/history_recovery_minimal_20261029/run.py": "10d856a04fda03f584149d5c7bce0fa51a5dafa535f250abf636675554a67eb7",
+    "tools/history_recovery_minimal_20261029/settings.json": "d3e4ea1de21d1ad659ecfb4efb36c1d4732d0094083cd25256d2069ccbfa7d48",
+    "tools/history_recovery_minimal_20261029/support.py": "61aaa48a2814643397e78da7a579173a6ca6a92769f7b2c2c2831f64406b4297",
+    "tools/history_recovery_minimal_20261029/test_contract.py": "0a9fc5a705636139d06a2593145f37e59c3122887a320c7741bec1cc5c6028ce"
+  },
+  "status": "DONE"
+}
