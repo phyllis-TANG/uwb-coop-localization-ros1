@@ -1,0 +1,37 @@
+{
+  "auditor_source_sha256": "d5c2479c5428f12f44800315ed932f77e6d9f3f5c9fd4e85aef7e5f540eeecb4",
+  "cases": [
+    {
+      "case": "nominal_seed101",
+      "exact_archived_J_snapshots_before39": 38,
+      "marginal_max_H_abs": 6.881359126964526e-08,
+      "marginal_max_constant_abs": 3.2057689836051395e-15,
+      "marginal_max_g_abs": 7.833804716028681e-10,
+      "marginalizations_checked": 42,
+      "max_cost_abs": 3.3306690738754696e-15,
+      "objectives": 61,
+      "publications": 63,
+      "receive_bins": 63,
+      "snapshot_objectives": 4,
+      "status": "PASS"
+    },
+    {
+      "case": "car1_common_wall_bias_seed101",
+      "exact_archived_J_snapshots_before39": 38,
+      "marginal_max_H_abs": 6.817157327532186e-08,
+      "marginal_max_constant_abs": 8.881784197001252e-15,
+      "marginal_max_g_abs": 3.873087628392113e-09,
+      "marginalizations_checked": 42,
+      "max_cost_abs": 2.1316282072803006e-14,
+      "objectives": 61,
+      "publications": 63,
+      "receive_bins": 63,
+      "snapshot_objectives": 4,
+      "status": "PASS"
+    }
+  ],
+  "limitations": "Checks artifact consistency and causal prefix, not true accuracy or validity of synthetic assumptions",
+  "prefix_publications": 44,
+  "sharing": "Uses frozen independent scalar audit equations and input schema; no online solver/Jacobian import",
+  "status": "PASS"
+}

@@ -1,0 +1,15 @@
+# 接口与读回口径
+
+运行前方案见PLAN.md，参数与全部状态见FROZEN_INDEX.json，执行索引RUN_INDEX.json。本轮执行提交b82a03b614732a57c5934c0aac23b0f1912f7854；源码逐文件SHA在索引。底层来自PR72归档/source，经原锁完整校验，不从最新main默默换内核。
+
+engine.CutGraph只包装WindowGraph.update的peer实参，t>=39时为None。peer_enabled始终true；原pseudo-Huber、墙/odom、6维状态、20秒窗口、接收与聚合、TRF、初值、边缘化保持原样。主图不读取truth或labels；输出不反馈。原frontend会用原median推断peer_factor_used，本包装器按真实snapshot因子表重建该字段，避免只改日志。原始median、依赖身份与截止仍保存，缺测单列。主回放记录完整states、prior(point/matrix/offset)、消元常数及逐次before/after，没有拆交叉项。Provenance只记录因子历史身份，不代表可线性分解出各peer的最终影响。
+
+8快照：固定N在59秒的times39..59/local/observations/peers(None)。prior、其累积常数分别完整来自N/I。两种完整状态初值分别来自N/I。共同锚点处的prior梯度范数及cross norm仅描述混合坐标量，不是健康评分/保护界。各prior的常数不同，不能用更小目标值判断真精度。先验更换不是公平的在线方法基线，也不建议把Iprior覆盖实际联合prior。
+
+METRICS每车分别列all_finite与common_accepted；共同集合为所有方法主求解及I均accepted的交集。post_clip仍不是joint success，不能因主图accepted给派生发布拼接协方差。分母包括启动1/2秒；all_finite保留其预测。非有限/unknown/失败不会被默默当成功。每车单独分母与共同分母在本样本相同，不据此假设其他资料也相同。CONTRASTS区分同输入相对I与同方法故障相对配对nominal。前者不是后者。故障与正常噪声、轨迹配对，样本相关。
+
+派生A0_4/A4_0保留J的yaw，以底盘XY平移实现实际天线XY投影。零预算不等于整车状态I，也不能称允许单向内部帮助。它们与K004的预算不同，不做同预算胜负判定。Nclip以同样方式处理N。协方差null；启动unknown不认证预算。TIMESERIES记录budget_violation仅对参考accepted时刻有效。
+
+独立verify.py通过文件加载冻结audit.py的标量公式与有限差分，不导入在线graph/legacy/Jacobian/solver。共享范围是模型规范、配置、事件格式和旧独立读器。126次bin检查含原整数receive ns截止；原F0边界关联保留其中心化浮点秒语义。84次消元均检查H、g和常数；不是只查首尾。接收prefix<=46秒实际产生44次发布，所有完整snapshot与全流前缀完全一致。8快照复核保留因子哈希一致及独立完整目标。未另作新的真实同步验收。
+
+没有对59秒之外追加快照或换时刻。尾段当前窗口无有偏bin仅是对已知合成标签的离线说明；线上不能据此认证当前数据健康。保留执行源与原始归档，不重跑PR72、PR76、PR77。

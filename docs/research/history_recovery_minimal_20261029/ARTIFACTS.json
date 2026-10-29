@@ -1,0 +1,31 @@
+{
+  "delivery_source_sha256": {
+    "tools/history_recovery_minimal_20261029/engine.py": "ca7ad6efc2648850a2c5a64a00a3ecb2b80aba528f0d766a0485b0a4b278c7be",
+    "tools/history_recovery_minimal_20261029/evaluate.py": "1e3df6382d8e2fe43ab6bbf36af94b87bed3cf1e9668eda949d3d30e46ef56b8",
+    "tools/history_recovery_minimal_20261029/publication.py": "4596396611203e20878fab9acf696857d9f20828a3149fa79c553c50adc1e450",
+    "tools/history_recovery_minimal_20261029/run.py": "10d856a04fda03f584149d5c7bce0fa51a5dafa535f250abf636675554a67eb7",
+    "tools/history_recovery_minimal_20261029/settings.json": "d3e4ea1de21d1ad659ecfb4efb36c1d4732d0094083cd25256d2069ccbfa7d48",
+    "tools/history_recovery_minimal_20261029/support.py": "61aaa48a2814643397e78da7a579173a6ca6a92769f7b2c2c2831f64406b4297",
+    "tools/history_recovery_minimal_20261029/test_contract.py": "0a9fc5a705636139d06a2593145f37e59c3122887a320c7741bec1cc5c6028ce",
+    "tools/history_recovery_minimal_20261029/verify.py": "11ff41917746005407540f0428616dbeeceaa2ecf431f9ba0a4c406aec570b04"
+  },
+  "new_archive": {
+    "members": [
+      "v1/PRE_EXECUTION.json",
+      "v1/RUN_INDEX.json",
+      "v1/*.jsonl.gz",
+      "delivery-source/*",
+      "*.log"
+    ],
+    "path": "/home/ubuntu22/uwb-history-recovery-minimal-20261029-artifacts/history_recovery_minimal_20261029_v1.tar.gz",
+    "remote_copy": "NOT_UPLOADED: NAS Host is down",
+    "sha256": "c49d928bf5a5be9fcb1faacb8d2d58c8f953c80917632bd2df0d05ec01db9089",
+    "size_bytes": 519347
+  },
+  "retrieval": "Current machine local archive. Compact tables, snapshot outputs and plots are in Git. Obtain original PR72 archive separately; no inputs duplicated or modified.",
+  "source_archive": {
+    "path": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/cooperative_influence_probe_20261028_v1.tar.gz",
+    "sha256": "50c671e3687c3342b8abe99986ecd6a6488de23e24fe112b16b44d9f8fb3f320",
+    "source_root": "/home/ubuntu22/uwb-cooperative-a-evidence-20261029-artifacts/evidence-v1/unpacked/cooperative_influence_probe_20261028/evidence-v1"
+  }
+}
