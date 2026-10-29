@@ -1,0 +1,409 @@
+{
+  "task": "STATIC-TO-METHOD-02",
+  "baseline": "83f64f5af0dda40228ab115a680bb65ef2379e9a",
+  "execution_head": "81cddb372af353181c56c492a18f333d19784cd9",
+  "start_utc": "2026-10-29T13:01:49Z",
+  "elapsed_s": 3.6092119216918945,
+  "inputs": [
+    {
+      "file": "CAR2_P1_REINSTALL_STATIC_20261017_045257.bag",
+      "sha256": "f7250698ae484b7ace3bf152b1ff216f5470b5d75f0b90a66483edb402d1ec33",
+      "path": "/home/ubuntu22/uwb-static-to-method-02-20261029/datasets/field_raw/20261017/bags/CAR2_P1_REINSTALL_STATIC_20261017_045257.bag",
+      "notes": [
+        "datasets/field_raw/20261017/notes/live_field/CAR2_P1_REINSTALL_STATIC_20261017_045257_notes.txt"
+      ],
+      "index_source": "datasets/field_raw/catalog.json#B048",
+      "id": "P1",
+      "start_receive_ns": 1792237995196871952,
+      "end_receive_ns": 1792238024896973305,
+      "duration_s": 29.700101353,
+      "ranges_decoded": 1486,
+      "all_bag_records": 1486,
+      "topic_counts": {
+        "/car2/uwb/ranges": 1486
+      },
+      "decoded_cache_sha256": "13ca985f2697228ee7f422c0220ddc6dbbeded64ed0a2f506e145d665cf3b4fa"
+    },
+    {
+      "file": "CAR2_P4_REINSTALL_STATIC_20261017_053806.bag",
+      "sha256": "4687abd3e2513477d29059789f1bf25539c1193237178f3805dca13fcac2e429",
+      "path": "/home/ubuntu22/uwb-static-to-method-02-20261029/datasets/field_raw/20261017/bags/CAR2_P4_REINSTALL_STATIC_20261017_053806.bag",
+      "notes": [
+        "datasets/field_raw/20261017/notes/live_field/CAR2_P4_REINSTALL_STATIC_20261017_053806_notes.txt",
+        "datasets/field_raw/20261017/notes/live_field/CAR2_P4_REINSTALL_STATIC_20261017_053806_notes_before_height_fix.txt"
+      ],
+      "index_source": "datasets/field_raw/catalog.json#B050",
+      "id": "P4",
+      "start_receive_ns": 1792240726289411024,
+      "end_receive_ns": 1792240756007103111,
+      "duration_s": 29.717692087,
+      "ranges_decoded": 1487,
+      "all_bag_records": 1487,
+      "topic_counts": {
+        "/car2/uwb/ranges": 1487
+      },
+      "decoded_cache_sha256": "bc324e26afd3e812fd7d49181e23fa8d8ab5754eb5f034ae229668de040a7ddc"
+    },
+    {
+      "file": "TWO_CAR_static_clear_A_20261018_054541.bag",
+      "sha256": "89a59ff5966cf1e11434d8b0090970073c3fdcde9141eb5660c1b9ae0bc17155",
+      "path": "/home/ubuntu22/uwb-static-to-method-02-20261029/datasets/field_raw/20261018/bags/TWO_CAR_static_clear_A_20261018_054541.bag",
+      "notes": [],
+      "index_source": "datasets/field_raw/catalog.json#B067",
+      "id": "clear_A",
+      "start_receive_ns": 1792327630997214329,
+      "end_receive_ns": 1792327660984505381,
+      "duration_s": 29.987291052,
+      "ranges_decoded": 3000,
+      "all_bag_records": 5517,
+      "topic_counts": {
+        "/car1/imu": 612,
+        "/car1/odom": 608,
+        "/car1/uwb/ranges": 1513,
+        "/car1/PowerVoltage": 51,
+        "/car2/imu": 600,
+        "/car2/odom": 596,
+        "/car2/uwb/ranges": 1487,
+        "/car2/PowerVoltage": 50
+      },
+      "decoded_cache_sha256": "92a1665adb4b487851c5361375b4b812f0a24ce4764bc94c0e0ff9534b828188"
+    },
+    {
+      "file": "TWO_CAR_static_human_B_20261018_055035.bag",
+      "sha256": "6932c9216b5293c107acebb35526ebca307d3c0c468ba51deabbeb00b50d1c96",
+      "path": "/home/ubuntu22/uwb-static-to-method-02-20261029/datasets/field_raw/20261018/bags/TWO_CAR_static_human_B_20261018_055035.bag",
+      "notes": [],
+      "index_source": "datasets/field_raw/catalog.json#B069",
+      "id": "human_B",
+      "start_receive_ns": 1792327868940953696,
+      "end_receive_ns": 1792327898939166676,
+      "duration_s": 29.99821298,
+      "ranges_decoded": 3000,
+      "all_bag_records": 5517,
+      "topic_counts": {
+        "/car1/PowerVoltage": 51,
+        "/car1/imu": 610,
+        "/car1/odom": 608,
+        "/car1/uwb/ranges": 1513,
+        "/car2/PowerVoltage": 51,
+        "/car2/imu": 600,
+        "/car2/odom": 597,
+        "/car2/uwb/ranges": 1487
+      },
+      "decoded_cache_sha256": "fa813268c74bea9b50ffa825d289c8ee335b3620b2db073093bd817353ef31b7"
+    },
+    {
+      "file": "TWO_CAR_static_human_B_repeat_20261018_055319.bag",
+      "sha256": "847c622cc06235c0bd76ba37dafb80c1b399fbfc1f60c52c2d5ffc68b0ce24cf",
+      "path": "/home/ubuntu22/uwb-static-to-method-02-20261029/datasets/field_raw/20261018/bags/TWO_CAR_static_human_B_repeat_20261018_055319.bag",
+      "notes": [],
+      "index_source": "datasets/field_raw/catalog.json#B070",
+      "id": "human_B_repeat",
+      "start_receive_ns": 1792328012023274417,
+      "end_receive_ns": 1792328042019277919,
+      "duration_s": 29.996003502,
+      "ranges_decoded": 3003,
+      "all_bag_records": 5522,
+      "topic_counts": {
+        "/car1/imu": 611,
+        "/car1/odom": 609,
+        "/car1/uwb/ranges": 1514,
+        "/car1/PowerVoltage": 51,
+        "/car2/imu": 601,
+        "/car2/odom": 597,
+        "/car2/uwb/ranges": 1489,
+        "/car2/PowerVoltage": 50
+      },
+      "decoded_cache_sha256": "bca5bdbcfd8e4bc719c07e447e5a194d8c6814d50b42e86c4d692a1b1c56c03f"
+    },
+    {
+      "file": "TWO_CAR_static_clear_C_20261018_055457.bag",
+      "sha256": "e22d9e59b70576ccb27f4428465045fa9e2215a07e0fa25f6e19ebf94412c554",
+      "path": "/home/ubuntu22/uwb-static-to-method-02-20261029/datasets/field_raw/20261018/bags/TWO_CAR_static_clear_C_20261018_055457.bag",
+      "notes": [],
+      "index_source": "datasets/field_raw/catalog.json#B068",
+      "id": "clear_C",
+      "start_receive_ns": 1792328110323556057,
+      "end_receive_ns": 1792328140322712925,
+      "duration_s": 29.999156868,
+      "ranges_decoded": 3005,
+      "all_bag_records": 5531,
+      "topic_counts": {
+        "/car1/PowerVoltage": 52,
+        "/car1/imu": 612,
+        "/car1/odom": 610,
+        "/car1/uwb/ranges": 1518,
+        "/car2/PowerVoltage": 51,
+        "/car2/imu": 602,
+        "/car2/odom": 599,
+        "/car2/uwb/ranges": 1487
+      },
+      "decoded_cache_sha256": "d1ce80313f17c1aa2384b5e63948f716db3a917ffc769e37546a143c9c3d146f"
+    },
+    {
+      "file": "T01_static_AB_20261024_050058.bag",
+      "sha256": "55a4c7bae4c7783ac9a631c137ad1a43d1795aa9113d2b7c3ef5e465d0387afa",
+      "path": "/home/ubuntu22/uwb-static-to-method-02-20261029-artifacts/input-v1/T01_static_AB_20261024_050058.bag",
+      "notes": [
+        "/home/ubuntu22/uwb-static-to-method-02-20261029-artifacts/input-v1/T01_static_AB_20261024_050058.bag.notes.txt"
+      ],
+      "index_source": "docs/field_tests/20261024_25/manifest.json#uwb_field_20261024/bags/T01_static_AB_20261024_050058.bag",
+      "id": "T01",
+      "start_receive_ns": 1792843278738679991,
+      "end_receive_ns": 1792843368726562499,
+      "duration_s": 89.987882508,
+      "ranges_decoded": 9061,
+      "all_bag_records": 25722,
+      "topic_counts": {
+        "/car1/PowerVoltage": 153,
+        "/car1/odom": 1823,
+        "/car1/uwb/frame3": 4554,
+        "/car1/uwb/ranges": 4548,
+        "/car2/PowerVoltage": 152,
+        "/car2/nlink_linktrack_nodeframe3": 4524,
+        "/car2/odom": 1808,
+        "/car2/uwb/ranges": 4513,
+        "/rosout": 7,
+        "/car1/imu": 1826,
+        "/car2/imu": 1812,
+        "/experiment/events": 2
+      },
+      "decoded_cache_sha256": "13e21d6eb88f0a33359d764efd0e8355b2fb7aae97354e1082da01d6b0014325"
+    },
+    {
+      "file": "T02_controlled_occlusion_20261024_051322.bag",
+      "sha256": "d34f0625bd67e1db81767e105fc6f397b1aa27e95d7f231c27f0002f0d3612cc",
+      "path": "/home/ubuntu22/uwb-static-to-method-02-20261029-artifacts/input-v1/T02_controlled_occlusion_20261024_051322.bag",
+      "notes": [],
+      "index_source": "docs/field_tests/20261024_25/manifest.json#uwb_field_20261024/bags/T02_controlled_occlusion_20261024_051322.bag",
+      "id": "T02",
+      "start_receive_ns": 1792844057253108349,
+      "end_receive_ns": 1792844301007410852,
+      "duration_s": 243.754302503,
+      "ranges_decoded": 24438,
+      "all_bag_records": 69295,
+      "topic_counts": {
+        "/car1/imu": 4904,
+        "/car1/odom": 4902,
+        "/car1/PowerVoltage": 409,
+        "/car1/uwb/frame3": 12243,
+        "/car1/uwb/ranges": 12238,
+        "/car2/imu": 4888,
+        "/car2/PowerVoltage": 408,
+        "/car2/nlink_linktrack_nodeframe3": 12214,
+        "/car2/odom": 4882,
+        "/car2/uwb/ranges": 12200,
+        "/rosout": 7
+      },
+      "decoded_cache_sha256": "ffe8e767d505de63db23d5cfb198203aff4f821d3e3c673f0a506e5905cb12b0"
+    },
+    {
+      "file": "T03_static_A_yaw000_20261024_064946.bag",
+      "sha256": "034e86338fe97cc5eed3a409deda20d9b3ca7780d3c5d0a605e1fcb43fd01994",
+      "path": "/home/ubuntu22/uwb-static-to-method-02-20261029-artifacts/input-v1/T03_static_A_yaw000_20261024_064946.bag",
+      "notes": [
+        "/home/ubuntu22/uwb-static-to-method-02-20261029-artifacts/input-v1/T03_static_A_yaw000_20261024_064946.bag.notes.txt"
+      ],
+      "index_source": "docs/field_tests/20261024_25/manifest.json#uwb_field_20261024/bags/T03_static_A_yaw000_20261024_064946.bag",
+      "id": "T03",
+      "start_receive_ns": 1792849788952885430,
+      "end_receive_ns": 1792849848943388238,
+      "duration_s": 59.990502808,
+      "ranges_decoded": 6065,
+      "all_bag_records": 17230,
+      "topic_counts": {
+        "/car1/imu": 1227,
+        "/car1/odom": 1224,
+        "/car1/PowerVoltage": 102,
+        "/car1/uwb/frame3": 3057,
+        "/car1/uwb/ranges": 3051,
+        "/car2/imu": 1213,
+        "/car2/PowerVoltage": 101,
+        "/car2/nlink_linktrack_nodeframe3": 3026,
+        "/car2/odom": 1208,
+        "/car2/uwb/ranges": 3014,
+        "/rosout": 7
+      },
+      "decoded_cache_sha256": "22489f0bf7f4a2cb93852fb5c76dba3e216425c7967f24592941851cf9d05495"
+    },
+    {
+      "file": "T04_static_A_yaw180_20261024_065307.bag",
+      "sha256": "8b2a91bf24cdf381fc0d5e21bbb93ab39b95d9db08803648d106344ee552ea30",
+      "path": "/home/ubuntu22/uwb-static-to-method-02-20261029-artifacts/input-v1/T04_static_A_yaw180_20261024_065307.bag",
+      "notes": [
+        "/home/ubuntu22/uwb-static-to-method-02-20261029-artifacts/input-v1/T04_static_A_yaw180_20261024_065307.bag.notes.txt"
+      ],
+      "index_source": "docs/field_tests/20261024_25/manifest.json#uwb_field_20261024/bags/T04_static_A_yaw180_20261024_065307.bag",
+      "id": "T04",
+      "start_receive_ns": 1792849990075476221,
+      "end_receive_ns": 1792850050066079814,
+      "duration_s": 59.990603593,
+      "ranges_decoded": 6066,
+      "all_bag_records": 17236,
+      "topic_counts": {
+        "/car1/imu": 1227,
+        "/car1/PowerVoltage": 103,
+        "/car1/odom": 1225,
+        "/car1/uwb/frame3": 3058,
+        "/car1/uwb/ranges": 3052,
+        "/car2/PowerVoltage": 102,
+        "/car2/imu": 1214,
+        "/car2/nlink_linktrack_nodeframe3": 3026,
+        "/car2/odom": 1208,
+        "/car2/uwb/ranges": 3014,
+        "/rosout": 7
+      },
+      "decoded_cache_sha256": "d513ea4b509c9b1b78f1fffcc2f7e4e9fbdee76c158f1f36b28173ffc069c5c1"
+    }
+  ],
+  "scope": "10 exposed static bags; range topics only",
+  "rows": 334,
+  "reused_numeric_rows": 34,
+  "supplemented_rows": 300,
+  "decoded": [
+    {
+      "bag": "P1",
+      "ranges_decoded": 1486,
+      "status": "COMPLETE"
+    },
+    {
+      "bag": "P4",
+      "ranges_decoded": 1487,
+      "status": "COMPLETE"
+    },
+    {
+      "bag": "clear_A",
+      "ranges_decoded": 3000,
+      "status": "COMPLETE"
+    },
+    {
+      "bag": "human_B",
+      "ranges_decoded": 3000,
+      "status": "COMPLETE"
+    },
+    {
+      "bag": "human_B_repeat",
+      "ranges_decoded": 3003,
+      "status": "COMPLETE"
+    },
+    {
+      "bag": "clear_C",
+      "ranges_decoded": 3005,
+      "status": "COMPLETE"
+    },
+    {
+      "bag": "T01",
+      "ranges_decoded": 9061,
+      "status": "COMPLETE"
+    },
+    {
+      "bag": "T02",
+      "ranges_decoded": 24438,
+      "status": "COMPLETE"
+    },
+    {
+      "bag": "T03",
+      "ranges_decoded": 6065,
+      "status": "COMPLETE"
+    },
+    {
+      "bag": "T04",
+      "ranges_decoded": 6066,
+      "status": "COMPLETE"
+    }
+  ],
+  "source_sha256": {
+    "datasets/field_raw/catalog.json": "584605ca9479dd58c413841d81dde1e084220b8d5bc3b3f4f368ffbb02f7f557",
+    "docs/field_tests/20261024_25/EXPERIMENTS.md": "8df52740e7e7d902fb597b261c9b7b71dda77085ddd6ae6aee6cda3234938625",
+    "docs/field_tests/20261024_25/geometry.json": "bd59d654a6794cc61a5680816d479a7ae3a4b5a0376a3d5ebd517b6c3842266c",
+    "docs/field_tests/20261024_25/manifest.json": "53220244947eb712e7a2912783b8721aae0eb365de656cf248155f3740867cd4",
+    "docs/field_tests/20261024_25/SESSION_LOG_ARCHIVE.md": "1ddbb717261744525a06b0738f987af6f9dffb2e247679b2d7c3ac834dc113fa",
+    "docs/field_tests/20261018/single_car_transfer_20261021/results/range_transfer.csv": "81b2c38e09118af5b89487d9474622b60528678e0d2cbcb4bd54e3002d052d9b",
+    "docs/field_tests/20261017/session_config.json": "4b0a97be01b3541937345080af27b747ee8294fd7dcd58f3c53338f8339a9c94",
+    "docs/field_tests/20261018/single_car_transfer_20261021/REPORT.md": "0f0846b4408dde86155a87e0b4a3eb061e4a35e1f0af26d6c615632bb825d42c",
+    "docs/research/static_evidence_to_method_20261029/PREREGISTRATION.md": "dedc7979c81efcdc8f7cbf0f4b2cee2daf5fcded7afcd7a54afa45dc4685bd27",
+    "tools/field_20261024_25/bag_decoder.py": "acbe5b1727c4e1fbebc4a3bdc9c735ad9cde682e8c46baeff5654742297143d0",
+    "docs/research/raw_anchor_trust_check_20261029/TRUST_BASIS.md": "982aba7e464d2527b63d6c54f1e95fe5d899ed466d8fe65c8f0cbd9fe35065a5",
+    "docs/research/raw_anchor_trust_check_20261029/DATA_USE_MATRIX.csv": "280193dfe1135d4e9deefeb6ad4b8b0e4449066fb9d3bd0412bf03a1bdeca7fd",
+    "docs/research/raw_anchor_trust_check_20261029/NEXT_GATE.md": "827db063aaca9f4d6db743992921f908967a139b8c0c13159a43d4a510c187f0",
+    "docs/research/raw_anchor_trust_check_20261029/FIELD_MINIMUM_20261030.md": "832978ab339f53f11fd2367c43711e9ac2f9d777cbd276d7f431792f1964f80e",
+    "docs/research/raw_anchor_trust_check_20261029/HANDOFF.md": "1a1f5d3d1d74b0f5918bb769fd69fe9ec947006ee37450e35ffeb032af30b038",
+    "docs/field_tests/20261024_25/cooperative_dcs_probe_20261028/REPORT.md": "19e0b3b3f726182c1c3bf2e5f2070da49441e32b018dfe37e08c21823873523d",
+    "docs/field_tests/20261024_25/cooperative_influence_probe_20261028/REPORT.md": "8c92fcbb938164006ee8f915476f76fdb426d44f1a8346a06ed5a1552ce43cc6",
+    "docs/research/cooperative_followup_20261029/a_evidence/A_FACTS.md": "c1803e75c995f3c40ba01d45e202fe64cc527b9cf68acb331a8e5f24ad5434c4",
+    "datasets/field_raw/20261017/notes/live_field/CAR2_P1_REINSTALL_STATIC_20261017_045257_notes.txt": "2f32a6196348add72a2c43b401273733d4073a5ce8f30fcdec3684b8aef88f2c",
+    "datasets/field_raw/20261017/notes/live_field/CAR2_P4_REINSTALL_STATIC_20261017_053806_notes.txt": "674c2ea5f7ff89941c92b06fdf6e5b8bce8d78832a3b3e4c8f12a708dba8d85b",
+    "datasets/field_raw/20261017/notes/live_field/CAR2_P4_REINSTALL_STATIC_20261017_053806_notes_before_height_fix.txt": "d3ee600844ca97f78f8d312c23d9022bb3510ef4c12dff50987022a0c7de0fef",
+    "/home/ubuntu22/uwb-static-to-method-02-20261029-artifacts/input-v1/T01_static_AB_20261024_050058.bag.notes.txt": "b2d0923193beb3acf030e5ddef61cbf2bf237198a7171268393adf9371715294",
+    "/home/ubuntu22/uwb-static-to-method-02-20261029-artifacts/input-v1/T03_static_A_yaw000_20261024_064946.bag.notes.txt": "26671c676db2e9c131d9389e3a095d7c4d1af8b27926f36b4c9f1957ff8081bd",
+    "/home/ubuntu22/uwb-static-to-method-02-20261029-artifacts/input-v1/T04_static_A_yaw180_20261024_065307.bag.notes.txt": "c70fe40312fe5bd69ca0dccc29b9690e67b041d48b3085dc4ae2cec49e79d0cd"
+  },
+  "code_sha256": {
+    "analyze.py": "5e55e7f3a97a05d85e5a0b95e42fec79cd8e628804285cc103d16224f240bc8d"
+  },
+  "all_reuse_checks_pass": true,
+  "new_FGO_runs": 0,
+  "new_simulations": 0,
+  "raw_frame_QC_repeated": false,
+  "holdout_bags_opened": [],
+  "note": "Whole-bag and segment rows overlap, not independent experiments; no online classification or certified health.",
+  "supplement_run_receipt_path": "/home/ubuntu22/uwb-static-to-method-02-20261029-artifacts/stats-v1/RUN_MANIFEST.json",
+  "supplement_run_receipt_sha256": "7a2dab28259d44065830e428a0b1e2447b054c6bb3dd154a69867512d4d61b90",
+  "raw_statistics_outputs": {
+    "CONTRASTS.csv": "fb2503233ad9d2488f0805809f0fcad08ee2081938538c783a44c6e45b5b8b94",
+    "OLD_STATIC_EVIDENCE.csv": "4b8cbee516a1abe3d1374373aa2db1fadd7dc27a8d88ad3a0c3b048f155cd9c2",
+    "P4_ranges.jsonl.gz": "bc324e26afd3e812fd7d49181e23fa8d8ab5754eb5f034ae229668de040a7ddc",
+    "T04_ranges.jsonl.gz": "d513ea4b509c9b1b78f1fffcc2f7e4e9fbdee76c158f1f36b28173ffc069c5c1",
+    "P1_ranges.jsonl.gz": "13ca985f2697228ee7f422c0220ddc6dbbeded64ed0a2f506e145d665cf3b4fa",
+    "human_B_ranges.jsonl.gz": "fa813268c74bea9b50ffa825d289c8ee335b3620b2db073093bd817353ef31b7",
+    "human_B_repeat_ranges.jsonl.gz": "bca5bdbcfd8e4bc719c07e447e5a194d8c6814d50b42e86c4d692a1b1c56c03f",
+    "T01_ranges.jsonl.gz": "13e21d6eb88f0a33359d764efd0e8355b2fb7aae97354e1082da01d6b0014325",
+    "COMPACT_RESULTS.csv": "9266f9dfa9032389e3f07658c59e6b5418b1ce357e9422bcc2f949eab37924d8",
+    "clear_C_ranges.jsonl.gz": "d1ce80313f17c1aa2384b5e63948f716db3a917ffc769e37546a143c9c3d146f",
+    "T02_ranges.jsonl.gz": "ffe8e767d505de63db23d5cfb198203aff4f821d3e3c673f0a506e5905cb12b0",
+    "CHECKS.json": "bc904a41c04631c08d00f895be1825120fcd708f15708cf1eec3d5fa6b8b3a9f",
+    "T03_ranges.jsonl.gz": "22489f0bf7f4a2cb93852fb5c76dba3e216425c7967f24592941851cf9d05495",
+    "clear_A_ranges.jsonl.gz": "92a1665adb4b487851c5361375b4b812f0a24ce4764bc94c0e0ff9534b828188"
+  },
+  "external_cache_root": "/home/ubuntu22/uwb-static-to-method-02-20261029-artifacts/stats-v1",
+  "packaging_code_sha256": "9fcb2b400f635e69160ece020ba3c31ee229f4bb57f739ee1910cf38101803f5",
+  "outputs": {
+    "CONTRASTS.csv": "b18be111d0ae93b827e344cc87ee9621cf899cc27682b2b844bfd860a51aef48",
+    "OLD_STATIC_EVIDENCE.csv": "4b8cbee516a1abe3d1374373aa2db1fadd7dc27a8d88ad3a0c3b048f155cd9c2",
+    "COMPACT_RESULTS.csv": "ea3670d5d830359f5f05d22f3eab67306142b3c05f1ee10d0ce55d64d62727ee",
+    "CHECKS.json": "bc904a41c04631c08d00f895be1825120fcd708f15708cf1eec3d5fa6b8b3a9f"
+  },
+  "delivery_code_sha256": {
+    "tools/static_evidence_to_method_20261029/analyze.py": "5e55e7f3a97a05d85e5a0b95e42fec79cd8e628804285cc103d16224f240bc8d",
+    "tools/static_evidence_to_method_20261029/package.py": "9fcb2b400f635e69160ece020ba3c31ee229f4bb57f739ee1910cf38101803f5",
+    "tools/static_evidence_to_method_20261029/plot_evidence.py": "7c268bac1594398d3ae4f05e2b358c79d1fa91e6b26863c9b1d42c842a084a03",
+    "tools/static_evidence_to_method_20261029/test_evidence.py": "8528bd463e4aad75fe13d8ceb419d90b465d92aeeea30d7f7db1c85a673bf0ad"
+  },
+  "delivery_supplements": {
+    "DECISION.md": "9716d01a23181e468b7581114789bcf5d70d415a7aba52e26f54cca541f80b4b",
+    "METHOD_CARD.md": "4ddb2a96c91b14b9f43f6f57af462ddb8f634368a4a98c93da1cfcb49b2d5bae",
+    "LAB_DELTA.md": "de16b76e5f8687f1a1b6c8002cde5387c2693d5716fbdaeda8385ef3fcb4e159",
+    "HANDOFF.md": "534873e9819243791162744aa50e3af7061a132854fc9f2793303c9a3d39ec8b",
+    "COMMANDS.md": "20e4a58ba1b0994190d57824572508f9fa85aedf0909646b7baaf0da73f99af9",
+    "EVIDENCE.png": "fb87e4bcd143c75cbddfd1441212563cd37dbc31d08d3d48063160b6ab224ad2",
+    "INTAKE.json": "b99947fbfb4c06fd1d5e336888866dde9d9e064c4aac4c199ca2a01d947a21b8",
+    "TESTS.log": "e449361fe0012d1704e5e7af6131ebd6f47f570e03afa554a65c6156e19ffcde"
+  },
+  "scope_check": {
+    "applicable_AGENTS_found": false,
+    "cwd": "/home/ubuntu22/uwb-static-to-method-02-20261029",
+    "branch": "analysis/20261029-static-to-method-02",
+    "existing_ROS_processes_untouched": [
+      59721,
+      61095,
+      61169
+    ],
+    "raw_input_statistics_only": true
+  },
+  "tests": {
+    "new_test_cases_passed": 7,
+    "prior_numeric_checks_passed": 29,
+    "independent_readback_rows": 300,
+    "original_decoder_shared": true
+  }
+}
