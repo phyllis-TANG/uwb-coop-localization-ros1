@@ -1,0 +1,208 @@
+{
+  "base_main": "0ef38e8b84dc88cb7b0e26fea595ac05c5162676",
+  "excluded": [
+    "this manifest (avoid self-reference)"
+  ],
+  "files": {
+    "docs/research/cooperative_followup_20261029/a_evidence/ANALYSIS.md": {
+      "sha256": "265ba7f94343d702ef6f13ca8d203923d37495af3b63e882285853cdd1cccb76",
+      "size_bytes": 7635
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/ARTIFACTS.json": {
+      "sha256": "795d3b80fc11c03390d406e8b9bc2c511c5f589af51230f94d950cc1842f707a",
+      "size_bytes": 1798
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/A_FACTS.md": {
+      "sha256": "c1803e75c995f3c40ba01d45e202fe64cc527b9cf68acb331a8e5f24ad5434c4",
+      "size_bytes": 3471
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/COMMANDS.md": {
+      "sha256": "044e39455d7d3be6721af0c068e7caf56389701c5cb6d00a7611438e31044364",
+      "size_bytes": 4157
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/EVIDENCE_LEVELS.json": {
+      "sha256": "a1389c859fead73a138c278bb5ee5ef735322dcb89db3a6e1f81334fcb04b9b6",
+      "size_bytes": 36072
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/HANDOFF.md": {
+      "sha256": "91d1030b97f7bd93dc3aad68564e671c676bbbc261705a3c2d26b670d2d4d7ba",
+      "size_bytes": 3812
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/METHODS.md": {
+      "sha256": "2541974db4bf2ab41b12164d395980344d21a289b4bdaa64025a8a449c282a29",
+      "size_bytes": 8432
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/PREREGISTRATION.md": {
+      "sha256": "f90a4938a10dcc9149034ba75771487aeb19bd4f4e88f7543531b07a69b115aa",
+      "size_bytes": 4942
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/RUN_INDEX.json": {
+      "sha256": "8e203c8ede71d400bcafbd04abb8de156f9aa33282ace7227671d75b498f7e7b",
+      "size_bytes": 3179
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/checks/ARCHIVE_CHECK.json": {
+      "sha256": "c16bdea4224eb9a174fbffdc24c5c046c9b08c85f22164a2dd933fc7c06794e4",
+      "size_bytes": 6542
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/checks/DEPENDENCIES.json": {
+      "sha256": "1085cf59509f8be075fcfb5ef5ed5c12ea11838b6fc2750314dcaed08b401b86",
+      "size_bytes": 285
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/checks/EXTRACTION_CHECK.json": {
+      "sha256": "9356b63b33a2e734aed8af96ae568abd78bc05de4294e246eab5bf06d43370f5",
+      "size_bytes": 14322
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/checks/FINAL_SITE.txt": {
+      "sha256": "1fa884b91fc8a11376d1f7000f74ef419a7fc30169f5cc0c40b76259adcef101",
+      "size_bytes": 1914
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/checks/PACKAGE_CHECK.json": {
+      "sha256": "db44d5e5ddd629f6fe2e3c6313de0631c291250709949a185ef962d483ffa598",
+      "size_bytes": 465
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/checks/PUBLICATION_SEMANTICS.json": {
+      "sha256": "1535f5ab77e3c873525baec34d70061d83f22c4331a5674b7f2c88518b5b5301",
+      "size_bytes": 6407
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/checks/PUBLIC_CHECK.json": {
+      "sha256": "85d673dea6eaf007dae0aaa967b623fdbd97e0642a3c037315483c582dcb2841",
+      "size_bytes": 2020
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/checks/SUMMARY_CHECK.json": {
+      "sha256": "3fdb658f42f9c26d9508846feee77ae776a1d30aaa405b6dfb68d63e9c1ee0e8",
+      "size_bytes": 741
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/checks/extract-v1-cli-failure.log": {
+      "sha256": "ae919b162c320d822d0860b0aede1fa4b9e15477d1b274b53ca5fe04bf6ce11a",
+      "size_bytes": 127
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/checks/extract-v1-failure.log": {
+      "sha256": "2ba60cbd8c261e4cccdd20fb8c322eaa0a5054753c66e64bb3843379d03d1046",
+      "size_bytes": 978
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/checks/extract-v2.log": {
+      "sha256": "a4c479d37a36bdfc3f5bfb33cd2140373c7d0b9170c4e113bfbbf9d715b7c3c2",
+      "size_bytes": 88
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/checks/prepare-v1.log": {
+      "sha256": "d68495c1164fe538a987ab0ccf6fb80400232544714170be7dc97af66793d777",
+      "size_bytes": 102
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/checks/tests-v1.log": {
+      "sha256": "38c6da16ee0e796207fc752f4fb5052c7515c1f963739ec0147dc28eab71e6f4",
+      "size_bytes": 457
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/checks/tests-v2.log": {
+      "sha256": "efa8f467cbd705a13f01d67175031e60fb67cc65017fd443ec92f44a8c064b76",
+      "size_bytes": 836
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/diagnostics.csv": {
+      "sha256": "59e70ac4de7ddc7ebd07dd42cbdd930c192545e437b9a1e56446a7e622bf90f0",
+      "size_bytes": 1262941
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/figures/car1_common_wall_bias_publication.png": {
+      "sha256": "202d24b89a07aede31e6d822fdf507ea5ffea7b3ed7cfcafc7b1c68154f3a2b8",
+      "size_bytes": 432114
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/figures/local_signals.png": {
+      "sha256": "f82b2c6f1bf09c82b09b845b1a338d4e45079dcb60ca27086439fb08b5ace48d",
+      "size_bytes": 311395
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/figures/nominal_publication.png": {
+      "sha256": "9b57980c16caa5b0d50ee398020de0cbcb1104b30b5f78a8e8421f6b960cf3c6",
+      "size_bytes": 363806
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/figures/publication_state_gaps.png": {
+      "sha256": "3e0509ca108a5aca52f5f0ddf80810f1e13dfef5bd29fd9881c50f94c0f84a48",
+      "size_bytes": 367554
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/figures/yaw_and_history_tail.png": {
+      "sha256": "c4bd4db1ea1e27e0a568b3e34ca1f3baf7c2fe9a2e50a5e76ea1498a4cc296b5",
+      "size_bytes": 160177
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/results/K_C_differences.csv": {
+      "sha256": "7221c154f7c65c30cd11f9c8eca6f04d7a601391613acdf013c949ad7bdfcc15",
+      "size_bytes": 43419
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/results/costs_identity_only.csv": {
+      "sha256": "d652fa4b08b6869d43d8d6d5d013ce673f26555b582d42083079805cb6b87b74",
+      "size_bytes": 2998
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/results/history_readback.csv": {
+      "sha256": "80e1f3283bd30a43cdee48b3d93a0c25975eeb1aaa4a32147e477a69577ea412",
+      "size_bytes": 68712
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/results/local_range_overlap.csv": {
+      "sha256": "e67708f1b8acae05e9e58cfd25f36eaea72a1eedff34500be30ba24c5d0e09a0",
+      "size_bytes": 37564
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/results/local_signals.csv": {
+      "sha256": "5449ffe3c79d89e274b9c1826afde8f1a8388d4b9c7f6d1062317a442767c771",
+      "size_bytes": 106391
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/results/local_signals_offline_join.csv": {
+      "sha256": "310236cdcf80720d31c46dc5710b2ef711caf8b52201bbd5a833927d0b88f38a",
+      "size_bytes": 113124
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/results/local_witnesses.csv": {
+      "sha256": "d352b589e1dfa03b1cea92d7588122cc0fb1b54bc1ec2da36b3c5385f7a01596",
+      "size_bytes": 18787
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/results/method_comparison.csv": {
+      "sha256": "3f53debbc8ad811ab507724fe4ff0df165b70c8ee82e6720c3e5b7a64305c202",
+      "size_bytes": 26249
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/results/publication_counts.csv": {
+      "sha256": "91ce934d38415906bc7651e375515c16366a8b066f2af3a246ad555c0cb1482d",
+      "size_bytes": 774
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/results/snapshot_identity_checks.csv": {
+      "sha256": "0a72b496b4a01231a23012910abde3e7e6c226ecb84269e463eb01ea254dfc7f",
+      "size_bytes": 5761
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/results/summary.csv": {
+      "sha256": "55ff072f69fd500400cdbdb8bd96240ef5672acb0cfbd8fd7ba3b4b3dafccf07",
+      "size_bytes": 474485
+    },
+    "docs/research/cooperative_followup_20261029/a_evidence/results/yaw_solver_controls.csv": {
+      "sha256": "e10eab1e9975dae1a15f0772c57e66fe0f518d48be7b29cd949485916bccf59f",
+      "size_bytes": 667
+    },
+    "tools/cooperative_followup_20261029/a_evidence/audit_semantics.py": {
+      "sha256": "05c67cddfea2b842e0de845205aa17a7924424535b0162827da428567cf53bb0",
+      "size_bytes": 2029
+    },
+    "tools/cooperative_followup_20261029/a_evidence/extract.py": {
+      "sha256": "bc381970ce55dbd4000aa7260bedd79fe95a69a01515dbdeebfb30b1bfe55f6f",
+      "size_bytes": 16180
+    },
+    "tools/cooperative_followup_20261029/a_evidence/io_evidence.py": {
+      "sha256": "4734e68376a72b71a8fa6181c3d75029e93661038addaf755fe494b36d9eba00",
+      "size_bytes": 1272
+    },
+    "tools/cooperative_followup_20261029/a_evidence/package_readback.py": {
+      "sha256": "2bef0db15b86ff614d8fb77b5d4762a0a3e9f759cf3184854de182be59827240",
+      "size_bytes": 2498
+    },
+    "tools/cooperative_followup_20261029/a_evidence/prepare.py": {
+      "sha256": "b82d2061f659c94fb1ffd8c64e77b4a6b108f1eefcdfcef39b973c20571de233",
+      "size_bytes": 4887
+    },
+    "tools/cooperative_followup_20261029/a_evidence/signals.py": {
+      "sha256": "22e25e059ae613df8711782ec62cd86cb27cb23d61f4e7d8f16f663d4e0cfbd7",
+      "size_bytes": 4747
+    },
+    "tools/cooperative_followup_20261029/a_evidence/summarize.py": {
+      "sha256": "2faece894df892e9e635ca3ad2170864f5421ed292c9e5d1f4d12649d2ea31ff",
+      "size_bytes": 15671
+    },
+    "tools/cooperative_followup_20261029/a_evidence/test_delivery.py": {
+      "sha256": "4dd59f8dc0fefd2d2d78a54f678faee77d51cb4fca3e29dc0dbeea566f87bb9e",
+      "size_bytes": 2273
+    },
+    "tools/cooperative_followup_20261029/a_evidence/test_readonly.py": {
+      "sha256": "f933a5a2a91ca94675fca061a11c8d048e9e3a360258e8353ecd95cfcb20892c",
+      "size_bytes": 2746
+    }
+  }
+}
