@@ -6,7 +6,7 @@ from publication import antennas,publish
 
 def csvwrite(p,rows):
  with Path(p).open('x',newline='') as f:
-  w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+  w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator="\n");w.writeheader();w.writerows(rows)
 def rms(x):return float(np.sqrt(np.mean(np.square(x)))) if len(x) else None
 def wrap(x):return float(np.arctan2(np.sin(x),np.cos(x)))
 def main():
