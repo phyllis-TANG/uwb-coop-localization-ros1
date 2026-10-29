@@ -1,0 +1,15 @@
+{
+  "cases": ["nominal_seed101", "car1_common_wall_bias_seed101"],
+  "reuse_methods": ["I", "J", "W025", "C004", "K004"],
+  "cut_new_peer_at_state_s": 39,
+  "snapshot_state_s": 59,
+  "snapshot_priors": ["N", "I"],
+  "snapshot_initializations": ["N", "I"],
+  "publication_budgets_m": {"Nclip": [0.04, 0.04], "A0_4": [0.0, 0.04], "A4_0": [0.04, 0.0]},
+  "prefix_contract_last_receive_s": 46,
+  "regression_atol_m_rad": 1e-10,
+  "snapshot_path_review_m_rad": 0.0001,
+  "budget_atol_m": 1e-7,
+  "periods": {"all": [1,64], "pre": [1,24], "fault": [24,38], "recovery": [38,48], "late": [48,59], "clean_active_window": [59,64]},
+  "scope": "exposed paired seed101; offline attribution, not online policy or independent validation"
+}
