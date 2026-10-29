@@ -1,0 +1,10 @@
+<launch>
+  <arg name="replay_csv" />
+  <arg name="loop" default="false" />
+  <arg name="car2_time_offset_s" default="0.0" />
+  <node pkg="uwb_coop_localization" type="replay_moon1_uwb.py" name="replay_moon1_uwb" output="screen">
+    <param name="replay_csv" value="$(arg replay_csv)" />
+    <param name="loop" value="$(arg loop)" />
+    <param name="car2_time_offset_s" value="$(arg car2_time_offset_s)" />
+  </node>
+</launch>
