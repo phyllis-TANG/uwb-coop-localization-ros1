@@ -1,0 +1,17 @@
+id,quantity,unit,value,status,basis,source,forbidden_interpretation,next_minimum_action
+D1,部署允许的逐车绝对误差/新增损害上限,m,,UNSET,近期仅定位研究，无闭环用途容差,docs/field_tests/20261024_25/research_roadmap_20261028/README.md,不能称允许1cm或4cm损害安全,有具体任务时从任务误差预算独立分配；本轮不新增部署要求
+R1,候选相对简单基线最小有意义XY改善,m,,UNSET,尚无批准效应尺度；不是检测显著性阈值,docs/research/cooperative_followup_20261029/c_scope/LAB_PRECHECK_20261030.md,不能用当前0.1–1mm差异倒推通过线,先明确研究希望分辨的效应及配对参考能力；后续验证前冻结
+R2,同伴可容忍的非劣退化界,m,,UNSET,需要用途/科研取舍的独立依据,docs/field_tests/20261024_25/research_roadmap_20261028/README.md,测不清不等于可接受；未显著不等于非劣,没有依据时仅报帮助—代价，不宣布等效或无害
+R3,正常条件逐车退化界,m,,UNSET,正常代价须与故障收益分开,docs/field_tests/20261024_25/research_roadmap_20261028/README.md,不能用团队均值掩盖单车正常退化,固定配对正常条件及指标，容差在新验证前登记
+R4,航向退化界,rad,,UNSET,PR78表明位置和yaw取舍不同；近期无控制指标,docs/research/history_recovery_minimal_20261029/PLAN.md,不能把XY预算换算为yaw保证；不因结果差而临时提升主指标,保持必报副指标；需要硬要求时补用途依据，简单基线同样开放yaw处理
+R5,恢复窗正新增损害累计上限,m*s,,UNSET,按既定窗口描述；1Hz离散和，不是真实连续积分,docs/research/history_recovery_minimal_20261029/PLAN.md,不能用先抵消帮助再求平均隐藏损害；无窗口外保证,报告全部固定恢复/尾段，不按误差截短窗口
+R6,必须恢复的时长,s,,UNSET,无部署恢复时限或在线恢复触发规范,docs/research/history_recovery_minimal_20261029/PLAN.md,20秒窗口不是20秒清历史或自动恢复标准,若以后需要恢复时间，先冻结触发、恢复容差及持续判据
+R7,允许的unknown/回退/漏发布增加,fraction,,UNSET,分母必须完整，尚无容忍增加率,docs/field_tests/20261024_25/research_roadmap_20261028/README.md,不能删除失败后报低RMSE,所有状态保留；样本不足时不估极低概率
+R8,计算时限/资源代价上限,s,,UNSET,现有virtual和跨次历史成本不构成部署deadline,docs/research/history_recovery_minimal_20261029/PLAN.md,1秒关键帧或等待不等于1秒实车端到端验收,需要运行时要求时，另登记硬件及同机同条件计时；本轮不重跑
+U1,方法配对差值的参考及重复性不确定度,m,,NOT_ESTABLISHED,需空间/安装/时钟/重复性及相关性传播,docs/field_tests/20261024_25/video_reference_20261027/MISSING_EVIDENCE.md; docs/research/static_evidence_to_method_20261029/DECISION.md,不能用拟合残差/尺刻度认证；不能把单轨迹U直接当配对U,办公室先核对旧实际XYZ及不确定度记录；无依据则降级真实精度主张
+B1,相对peer-free参照的天线XY开发预算,m,0.04,EXPOSED_DEVELOPMENT_ONLY,PR71/72/78解释性开发设置,docs/field_tests/20261024_25/research_roadmap_20261028/README.md; docs/research/history_recovery_minimal_20261029/PLAN.md,不是绝对误差、部署容差、论文主预算或批准的损害上限,沿用描述，不按本轮结果重新选预算
+N1,旧快照求解路径复核容差,m_or_rad,0.0001,NUMERICAL_CHECK_ONLY,PR78预登记数值复核尺度,docs/research/history_recovery_minimal_20261029/PLAN.md,不是测量不确定度或实际优势/非劣标准,只用于原数值检查，不转为性能判断阈值
+N2,本轮算术关系舍入epsilon,native_unit,1e-12,ROUNDING_ONLY,防止浮点舍入制造严格关系,docs/research/cooperation_cost_criteria_20261029/PLAN.md,不是工程等价或统计门槛,实际优势保持未判定
+E1,旧讨论的可报告改善示例,m,0.02,EXAMPLE_NOT_APPROVED,原文为讨论示例,docs/research/cooperative_followup_20261029/c_scope/LAB_PRECHECK_20261030.md,不是当前冻结的最小改善,若采用须先有独立用途/研究尺度理由，不能因某方法达到而采用
+E2,旧讨论的空间参考U95示例,m,0.005,EXAMPLE_NOT_APPROVED,原文为2cm级改善场景设计示例,docs/research/cooperative_followup_20261029/c_scope/LAB_PRECHECK_20261030.md,不是已达到的参考能力；不能直接等于配对差值U95,核实误差预算及实测独立参考，未知保留null
+E3,不确定度相对最小效应的建议比例,ratio,0.3333333333333333,DRAFT_HEURISTIC_NOT_STANDARD,既有现场设计建议,docs/research/cooperative_followup_20261029/c_scope/LAB_PRECHECK_20261030.md,不是NIST/ISO强制值、现有能力或安全保证,仅作设计讨论；测量与重复性不确定度分别说明再合成
