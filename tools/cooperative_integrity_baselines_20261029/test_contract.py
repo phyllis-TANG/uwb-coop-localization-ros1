@@ -24,6 +24,12 @@ class Contracts(unittest.TestCase):
         peer = float(np.linalg.norm(antenna(pose[:3],config['models']['car1'])-antenna(pose[3:],config['models']['car2'])))
         return config,pose,observations,peer
 
+    def test_cli_import_namespace(self):
+        import run as runner
+        self.assertEqual(runner.evaluate.__module__,'evaluate')
+        from pathlib import Path
+        self.assertEqual(Path(runner.evaluate.__code__.co_filename).parent,Path(__file__).parent)
+
     def test_known_four_anchor_model(self):
         config,p,obs,peer = self.fixture()
         for car in legacy.CARS:
