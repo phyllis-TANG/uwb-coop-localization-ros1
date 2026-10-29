@@ -110,6 +110,24 @@ class Contracts(unittest.TestCase):
         numeric=(residual(plus)-residual(minus))/(2*eps)
         np.testing.assert_allclose(numeric,b[:,Primitives().index['wall|car1|1|node_10']],atol=1e-8)
 
+    def test_missing_odom_does_not_republish_stale_history(self):
+        from engine import IntegrityReplay
+        config,p,obs,peer=self.fixture();saved=[];worker=IntegrityReplay(config,saved.append,0)
+        bins={car:dict(observations={},sample_counts={},local_odom=None) for car in legacy.CARS}
+        worker.publish(dict(state_time_s=3.,accepted_graph=False,status='missing_odom_bracket',
+            bins=bins,availability_cutoff_s=4.,update_wall_s=0.,marginalization_details=[]))
+        row=saved[0]
+        self.assertNotIn('linear_evidence',row)
+        self.assertTrue(all(not ds['available'] for pair in row['monitor']['declarations'].values() for ds in pair))
+        self.assertTrue(all(not details for details in row['marginal_evidence'].values()))
+
+    def test_unsupported_odom_covariance_gap_is_explicit_unknown(self):
+        config,p,obs,peer=self.fixture();g=TrackedGraph(config,Primitives())
+        for stamp in (1,3,4):result=g.update(stamp,np.zeros((2,3)),obs,peer)
+        self.assertTrue(result['accepted_graph'])
+        self.assertIsNone(g.noise.last_k)
+        self.assertIn('odom|',g.noise.record()['failure_reason'])
+
     def test_real_solver_failure_is_unknown(self):
         from unittest.mock import patch
         from engine import MonitoredGraph

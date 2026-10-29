@@ -34,7 +34,14 @@ class TrackedGraph(graph.WindowGraph):
         before = time.perf_counter()
         result = super().update(stamp, local, obs, value)
         self.numeric_wall_s = time.perf_counter()-before
-        if self.noise is not None: self.noise.update(self, result)
+        if self.noise is not None and not getattr(self.noise,'failure_reason',None):
+            try:
+                self.noise.update(self, result)
+            except (KeyError,np.linalg.LinAlgError) as error:
+                # Current primitive model is frozen to adjacent 1s Odom edges.
+                # A gap is unsupported covariance, never a successful zero score.
+                self.noise.failure_reason=type(error).__name__+': '+str(error)
+                self.noise.last_k=None; self.noise.last_rank=None
         self.cost_wall_s = time.perf_counter()-start
         self.latest = result
         return result
@@ -108,9 +115,10 @@ class IntegrityReplay(frontend.JointReplay):
         row['monitor_available_time_virtual_s'] = self.monitor_finish
         row['total_monitored_emit_wall_s'] = cost
         row['monitor'] = monitor
+        current=self.graph.current is not None and self.graph.current['state_time_s']==row['state_time_s']
         row['marginal_evidence'] = {'main':row['marginalization_details'],
-            **{name:g.latest['marginalization_details'] for name,g in self.graph.subsets.items()}}
-        if row['state_time_s'] in (3.,23.,24.,37.,38.,48.,59.,63.):
+            **{name:g.latest['marginalization_details'] if current else [] for name,g in self.graph.subsets.items()}}
+        if current and all(g.noise is not None and g.noise.last_k is not None for g in [self.graph,*self.graph.subsets.values()]) and row['state_time_s'] in (3.,23.,24.,37.,38.,48.,59.,63.):
             row['linear_evidence'] = {name:dict(snapshot=copy.deepcopy(g.snapshot()),
                 prior_b=g.noise.prior_b.tolist(), k=g.noise.last_k.tolist() if g.noise.last_k is not None else None)
                 for name,g in [('main',self.graph),*self.graph.subsets.items()]}

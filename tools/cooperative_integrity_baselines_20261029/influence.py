@@ -110,7 +110,7 @@ class Influence:
         return antenna_jacobian(g.states[-1][3*ci:3*ci+3], g.config['models'][car])@self.last_k[3*ci:3*ci+3]
 
     def record(self):
-        return dict(prior_noise_sha256=digest(self.prior_b.tolist()),
+        return dict(**({'failure_reason':self.failure_reason} if getattr(self,'failure_reason',None) else {}),prior_noise_sha256=digest(self.prior_b.tolist()),
                     prior_noise_columns=[self.primitives.keys[i] for i in np.flatnonzero(np.any(self.prior_b != 0, axis=0))],
                     consumed_ids=sorted(self.consumed), marginalizations=self.marginalizations,
                     graph_rank=self.last_rank)

@@ -1,0 +1,27 @@
+{
+  "date_client": "2026-10-29 Asia/Shanghai",
+  "repository": "/workspace/work/uwb-cooperative-integrity-baselines-20261029",
+  "branch": "analysis/20261029-cooperative-integrity-baselines",
+  "base": "81fb509ba2d2a1b2e1f1151d53a7e73807820bd4",
+  "observed_main": "519113f38d636844285e01b56a193ca26ef2bfb4",
+  "main_difference": "PR79 cooperation_cost_criteria only, not adopted",
+  "kernel": "74fa210e7cf6aa322eaebce19530510edb605d22",
+  "applicable_AGENTS": [],
+  "initial_original_head": "f14f8bd7c2a33c96f759919b50dff9cc00580014",
+  "data_mount": null,
+  "old_NAS_path_exists": false,
+  "original_PR68_archive_local_found": false,
+  "input_access": "RAM controlled reconstruction authorized in chat; no archive download",
+  "temp": "/workspace/work/uwb-cooperative-integrity-baselines-20261029-run/tmp",
+  "outputs": "/workspace/work/uwb-cooperative-integrity-baselines-20261029-run",
+  "disk": {
+    "total": 33770192896,
+    "free": 20382990336
+  },
+  "memory_hard_limit": "17179869184",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "dependencies": "own venv NumPy2.2.6/SciPy1.15.3; Matplotlib3.10.8 inherited for plots",
+  "large_compute": false,
+  "raw_bag_video_downloads": 0,
+  "observed_at_utc": "2026-10-29T16:04:24.140129+00:00"
+}

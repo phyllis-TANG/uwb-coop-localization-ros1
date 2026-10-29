@@ -114,6 +114,18 @@ def verify_input_prefix(rows,events,config):
                 values=[e['value'][key] for e in selected if key in e['value']]
                 assert len(values)==r['bins'][car]['sample_counts'][key]
                 if len(values)>=5:assert abs(float(np.median(values))-r['bins'][car]['observations'][key])<1e-12
+            odom=[e for e in events if e['kind']=='odom' and e['vehicle_id']==car and e['receive_epoch_ns']<=ns]
+            headers=[(e['header_epoch_ns']-origin)/1e9 for e in odom]
+            pos=np.searchsorted(headers,stamp)
+            if pos<len(headers) and headers[pos]==stamp:
+                expected=odom[pos]['value']['pose']
+            elif pos>0 and pos<len(headers):
+                before=np.array(odom[pos-1]['value']['pose']);after=np.array(odom[pos]['value']['pose'])
+                after[2]=before[2]+wrap(after[2]-before[2])
+                expected=before+(stamp-headers[pos-1])/(headers[pos]-headers[pos-1])*(after-before)
+            else:expected=None
+            if expected is None:assert r['bins'][car]['local_odom'] is None
+            else:np.testing.assert_allclose(r['bins'][car]['local_odom'],expected,atol=1e-10,rtol=0)
             for dep in r['peer_dependencies']+r['reverse_diagnostic_dependencies']:
                 assert dep['identity']['receive_epoch_ns']<=ns
             checks+=1

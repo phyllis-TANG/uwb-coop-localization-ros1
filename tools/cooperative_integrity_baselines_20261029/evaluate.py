@@ -74,11 +74,19 @@ def evaluate(scenario, rows, truth, config):
                     seg=full[k:end]
                     alarms=[d for d in seg if d['alarm']]
                     protection=[d for d in seg if d['alarm'] or not d['available']]
+                    onset_index=k
+                    if alarms:
+                        onset_index=full.index(alarms[0])
+                        while onset_index>0 and full[onset_index-1]['alarm']:onset_index-=1
+                    onset=full[onset_index] if alarms else None
                     episodes.append(dict(scenario=scenario,car=car,profile=name,AL_m=al,start_s=seg[0]['t_s'],end_s=seg[-1]['t_s']+1,
                         overlimit_s=len(seg),hmi_s=sum(d['available'] and not d['alarm'] for d in seg),
-                        first_alarm_s=alarms[0]['t_s'] if alarms else None,
-                        alarm_delay_state_s=alarms[0]['t_s']-seg[0]['t_s'] if alarms else None,
-                        alarm_delay_virtual_s=alarms[0]['available_virtual_s']-seg[0]['t_s'] if alarms else None,
+                        first_alarm_s=onset['t_s'] if onset else None,
+                        first_alarm_within_overlimit_s=alarms[0]['t_s'] if alarms else None,
+                        alarm_onset_available_virtual_s=onset['available_virtual_s'] if onset else None,
+                        alarm_lead_state_s=max(0.,seg[0]['t_s']-onset['t_s']) if onset else None,
+                        alarm_delay_state_s=max(0.,onset['t_s']-seg[0]['t_s']) if onset else None,
+                        alarm_delay_virtual_s=max(0.,onset['available_virtual_s']-seg[0]['t_s']) if onset else None,
                         alarm_right_censored=not bool(alarms),protection_delay_state_s=protection[0]['t_s']-seg[0]['t_s'] if protection else None,
                         protection_right_censored=not bool(protection),
                         alarm_already_present_at_start=bool(seg[0]['alarm']),unknown_at_start=not seg[0]['computable']))

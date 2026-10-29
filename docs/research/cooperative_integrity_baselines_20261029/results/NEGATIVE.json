@@ -1,0 +1,40 @@
+{
+  "intervention_storage": "private memory only; no raw input modification",
+  "negative_count": 8,
+  "original_sha256_unchanged": "3cb04703ccc13c3c05e176b3fca09a11d3094fb45926dbb44e556eb2f66bb8da",
+  "results": [
+    {
+      "name": "SS_SCORE",
+      "status": "REJECTED"
+    },
+    {
+      "name": "CROSS_CORRELATION_DROPPED",
+      "status": "REJECTED"
+    },
+    {
+      "name": "B1_SCORE",
+      "status": "REJECTED"
+    },
+    {
+      "name": "STARTUP_AVAILABLE",
+      "status": "REJECTED"
+    },
+    {
+      "name": "FAILURE_ACCEPTED",
+      "status": "REJECTED"
+    },
+    {
+      "name": "EXCLUDED_PRIOR_NOISE_REINTRODUCED",
+      "status": "REJECTED"
+    },
+    {
+      "name": "INITIAL_GUESS_HISTORY_CHANGED",
+      "status": "REJECTED"
+    },
+    {
+      "name": "FUTURE_RECEIVE_DEPENDENCY",
+      "status": "REJECTED"
+    }
+  ],
+  "status": "PASS"
+}

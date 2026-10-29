@@ -18,10 +18,11 @@ def load(path):
 
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--runs',type=Path,required=True);ap.add_argument('--output',type=Path,required=True);a=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--runs',type=Path,required=True);ap.add_argument('--output',type=Path,required=True);ap.add_argument('--evaluation-root',type=Path);a=ap.parse_args()
     out=new_output(a.output);metrics=[];trajectory=[];raw={}
     for scenario in SPEC['scenarios_in_execution_order']:
-        metrics+=load(a.runs/scenario/'metrics.csv');trajectory+=load(a.runs/scenario/'trajectory.csv')
+        metrics_root=a.evaluation_root or a.runs
+        metrics+=load(metrics_root/scenario/'metrics.csv');trajectory+=load(metrics_root/scenario/'trajectory.csv')
         with gzip.open(a.runs/scenario/'monitor.jsonl.gz','rt') as f:raw[scenario]=[json.loads(line) for line in f]
     csv_write(out/'ALL_SENSITIVITY_METRICS.csv',metrics)
     table=[r for r in metrics if r['profile'] in primary_names() and r['coverage']=='all_published' and

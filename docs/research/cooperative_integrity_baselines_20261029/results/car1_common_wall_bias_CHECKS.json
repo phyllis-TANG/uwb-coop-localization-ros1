@@ -1,0 +1,19 @@
+{
+  "counts": {
+    "b1_scores": 378,
+    "declarations": 4662,
+    "linear_snapshots": 32,
+    "publications": 63,
+    "schur_steps": 168,
+    "ss_scores": 366
+  },
+  "imports": "numpy/stdlib only; no graph/Jacobian/policy imports",
+  "maximum_fd_k_abs_difference": 5.373757411275548e-10,
+  "maximum_fd_prior_b_abs_difference": 2.697142620355919e-09,
+  "raw_prefix": {
+    "integer_prefix_bins": 126,
+    "status": "PASS"
+  },
+  "scope": "frozen linearization algebra, not physical calibration",
+  "status": "PASS"
+}

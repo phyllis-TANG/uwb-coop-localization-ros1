@@ -1,0 +1,28 @@
+{
+  "metric_rows": 6660,
+  "paired_exclusion": [
+    {
+      "across_actual_marginalizations": 42,
+      "exact_state_guess_cache_prior_noise_history_hash_matches": 63,
+      "excluded_group": "car1_absolute",
+      "full_graph_changed_publications": 40,
+      "scenario": "car1_common_wall_bias"
+    },
+    {
+      "across_actual_marginalizations": 42,
+      "exact_state_guess_cache_prior_noise_history_hash_matches": 63,
+      "excluded_group": "peer",
+      "full_graph_changed_publications": 40,
+      "scenario": "peer_bias"
+    }
+  ],
+  "primary_table_rows": 90,
+  "profiles_per_scene": 37,
+  "results_bytes": 1544798,
+  "scenes": [
+    "nominal",
+    "car1_common_wall_bias",
+    "peer_bias"
+  ],
+  "status": "DONE"
+}
