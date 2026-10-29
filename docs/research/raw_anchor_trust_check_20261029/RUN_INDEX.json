@@ -1,0 +1,49 @@
+{
+  "run_root": "/home/ubuntu22/uwb-raw-anchor-trust-check-20261029-artifacts",
+  "preserve_previous_versions": true,
+  "units": [
+    {
+      "id": "static-v1",
+      "status": "COMPLETE",
+      "scope": "4 preregistered Car1 snapshots; static matrices only; 0 FGO",
+      "receipt": "results/run.json"
+    },
+    {
+      "id": "inventory-v1",
+      "status": "FAILED",
+      "reason": "source path t10_reliability_bridge missing date suffix; no matrix exported",
+      "log": "checks/inventory-v1.log",
+      "source_sha256": "707778827ae75d7ba068e42d17e89c0203fe6b176a3ab929decace4a6c0a7eb9"
+    },
+    {
+      "id": "inventory-v2",
+      "status": "SUPERSEDED",
+      "reason": "review caught unsafe keyword-based candidate reference grade (negation); replaced by explicit source-reviewed membership",
+      "source_sha256": "596338339d545eeee783539256485692cfae1801331dffb63a80aaa90f621100"
+    },
+    {
+      "id": "inventory-v3",
+      "status": "SUPERSEDED",
+      "reason": "tests found simulation vs simulated source enum mismatch; final CSV normalizes to simulated and class S",
+      "source_sha256": "0e9bda37e7a323337a5298efc613e61d9b6c03bbede325b7816a25e2dcb5c77a"
+    },
+    {
+      "id": "tests-v1",
+      "status": "FAILED_1_OF_10",
+      "reason": "simulation enum mismatch plus file-close warning",
+      "source_sha256": "7e292f379b645673a6bbaead3801448197cd91e7841fa066712ba0990fb65952",
+      "log": "checks/tests-v1.log"
+    },
+    {
+      "id": "inventory-v4",
+      "status": "FINAL_COMPLETE",
+      "scope": "98 metadata rows; no raw bag/video opened",
+      "receipt": "checks/inventory_check.json"
+    },
+    {
+      "id": "tests-v2",
+      "status": "PASS_10_OF_10",
+      "log": "checks/tests-v2.log"
+    }
+  ]
+}

@@ -1,0 +1,1646 @@
+[
+  {
+    "t_s": 23.0,
+    "state_epoch_ns": 1790000023000000000,
+    "cutoff_epoch_ns": 1790000024000000000,
+    "point_source": "saved peer-free I antenna, no truth",
+    "antenna_xyz_m": [
+      2.317383045444483,
+      4.112339933985464,
+      0.17
+    ],
+    "anchors_xyz_m": [
+      [
+        3.26,
+        0.1,
+        2.355
+      ],
+      [
+        5.28,
+        5.16,
+        2.755
+      ],
+      [
+        5.28,
+        2.86,
+        2.355
+      ],
+      [
+        0.1,
+        2.41,
+        2.3
+      ]
+    ],
+    "anchor_order": [
+      "node_10",
+      "node_2",
+      "node_3",
+      "node_8"
+    ],
+    "Gxyz": [
+      [
+        -0.20206430488639296,
+        0.8601061924575621,
+        -0.4683880382620098
+      ],
+      [
+        -0.7280912022479118,
+        -0.25747239306071296,
+        -0.635288255849878
+      ],
+      [
+        -0.7619109423465213,
+        0.3220704916893989,
+        -0.5619273212040724
+      ],
+      [
+        0.6309257531188334,
+        0.48437734162378165,
+        -0.606062113131081
+      ]
+    ],
+    "raw_residual_m": [
+      0.01796097518794859,
+      -0.00626998461110162,
+      -0.007560001889244994,
+      0.014709406183714524
+    ],
+    "hypotheses": {
+      "H0_XY": {
+        "shape": [
+          4,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 2,
+        "singular_values": [
+          1.2500307937159363,
+          1.063659199680845
+        ],
+        "condition_nonzero": 1.1752173949052598,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.004596199752588768,
+        "tangent_step": [
+          0.009433284907389802,
+          0.01839855635780858
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H2_XY_common": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          2.2039778922398967,
+          1.2222801172068132,
+          0.5852013703867033
+        ],
+        "condition_nonzero": 3.766187168672383,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.004427546626130851,
+        "tangent_step": [
+          0.010985299443188233,
+          0.01573618164719414,
+          0.002080944661039086
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H3_XY_arbitrary": {
+        "shape": [
+          4,
+          6
+        ],
+        "rank": 4,
+        "nullity": 2,
+        "residual_dof": 0,
+        "singular_values": [
+          1.6008051053260963,
+          1.4599215366127376,
+          0.9999999999999999,
+          0.9999999999999999
+        ],
+        "condition_nonzero": 1.6008051053260965,
+        "full_column_rank": false,
+        "tangent_projected_residual_rms_m": 9.85133562538035e-18,
+        "tangent_step": [
+          0.005978450262641573,
+          0.00993787528958448,
+          0.010621378508124536,
+          0.0006416009609526811,
+          -0.006205651596728332,
+          0.006123766335116295
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H0_unknown_height": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.4933905109410615,
+          1.203243086847121,
+          0.5674423810271926
+        ],
+        "condition_nonzero": 2.631792338523788,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.004468473666419555,
+        "tangent_step": [
+          0.01061232967262235,
+          0.01657205809201816,
+          -0.0028062125306075898
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H2_unknown_height": {
+        "shape": [
+          4,
+          4
+        ],
+        "rank": 4,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          2.4717795033935555,
+          1.222401817755553,
+          0.6289132195096838,
+          0.02253985087337692
+        ],
+        "condition_nonzero": 109.662637844384,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 8.666675708199898e-17,
+        "tangent_step": [
+          0.031170950017719485,
+          -0.04166321165485162,
+          0.32591997547371643,
+          0.21275131582047208
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H1_fault_node_10": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.3975554798317669,
+          1.2492533274939368,
+          0.42444396902455117
+        ],
+        "condition_nonzero": 3.292673666782453,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.0028237031126284303,
+        "tangent_step": [
+          0.011603383002814927,
+          0.008477762372644205,
+          0.013013828793847989
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H1_fault_node_2": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.4487307330735248,
+          1.068619514753925,
+          0.6731860619762732
+        ],
+        "condition_nonzero": 2.1520509928866978,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.0030889692559766904,
+        "tangent_step": [
+          0.01343292462425733,
+          0.020094082018602865,
+          0.008684081011967392
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H1_fault_node_3": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.4498144491267044,
+          1.1161580882518414,
+          0.5883681359805405
+        ],
+        "condition_nonzero": 2.4641280865941644,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.0013359983321691482,
+        "tangent_step": [
+          0.0032097882396077923,
+          0.022257024817664985,
+          -0.012282760033441167
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H1_fault_node_8": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.4450465027129429,
+          1.1016290527862918,
+          0.6262602600820685
+        ],
+        "condition_nonzero": 2.307421682039311,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.004595050280172437,
+        "tangent_step": [
+          0.009539713894023914,
+          0.01850772701779438,
+          -0.00027416860178858943
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      }
+    },
+    "healthy_pair_checks": {
+      "node_10,node_2": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          0.8982574194122374,
+          0.7550861447961772
+        ],
+        "condition_nonzero": 1.1896091930738668,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 7.586316854459692e-18,
+        "tangent_step": [
+          0.0011328920550646058,
+          0.021148426081659726
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_10,node_3": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          1.0798521148156601,
+          0.5465983364643798
+        ],
+        "condition_nonzero": 1.975586171375095,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 2.742838647325548e-18,
+        "tangent_step": [
+          0.02081694356798924,
+          0.025772790167380818
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_10,node_8": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          1.0025414048325774,
+          0.6389147769745797
+        ],
+        "condition_nonzero": 1.56913166037552,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 1.0408340855860843e-17,
+        "tangent_step": [
+          0.006169436840964359,
+          0.02233165895466597
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_2,node_3": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          1.0555467392030045,
+          0.40800441054177283
+        ],
+        "condition_nonzero": 2.587096393887963,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 2.5287722848198975e-18,
+        "tangent_step": [
+          0.009208651062423833,
+          -0.0016885430195133257
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_2,node_8": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          1.0949500788524873,
+          0.17372930618419125
+        ],
+        "condition_nonzero": 6.302621606579143,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 3.6799042000400975e-18,
+        "tangent_step": [
+          -0.003943897269159991,
+          0.03550478327667143
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_3,node_8": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          0.9920635787637034,
+          0.576832953637409
+        ],
+        "condition_nonzero": 1.7198455332829405,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 9.199760500100245e-18,
+        "tangent_step": [
+          0.014677652136406085,
+          0.01124928229976632
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      }
+    },
+    "reference_prior_peer_n": 0,
+    "window_start_s": 3.0,
+    "prior_id": "0ae6a058dbc5a3ce42765ebed7224debafa214acb710e0822d5a3100bfc09890"
+  },
+  {
+    "t_s": 24.0,
+    "state_epoch_ns": 1790000024000000000,
+    "cutoff_epoch_ns": 1790000025000000000,
+    "point_source": "saved peer-free I antenna, no truth",
+    "antenna_xyz_m": [
+      2.2743441349118036,
+      4.133723195850783,
+      0.17
+    ],
+    "anchors_xyz_m": [
+      [
+        3.26,
+        0.1,
+        2.355
+      ],
+      [
+        5.28,
+        5.16,
+        2.755
+      ],
+      [
+        5.28,
+        2.86,
+        2.355
+      ],
+      [
+        0.1,
+        2.41,
+        2.3
+      ]
+    ],
+    "anchor_order": [
+      "node_10",
+      "node_2",
+      "node_3",
+      "node_8"
+    ],
+    "Gxyz": [
+      [
+        -0.21006298876497034,
+        0.8596671316871676,
+        -0.46566722393559756
+      ],
+      [
+        -0.7339728959985328,
+        -0.2506139730722021,
+        -0.6312498906459251
+      ],
+      [
+        -0.7651531469485975,
+        0.32425312656944966,
+        -0.5562378732382348
+      ],
+      [
+        0.6215991715337069,
+        0.492776140303909,
+        -0.6089221177587422
+      ]
+    ],
+    "raw_residual_m": [
+      0.23967394397426744,
+      0.20249391099381864,
+      0.17652242815108687,
+      0.2169275671681845
+    ],
+    "hypotheses": {
+      "H0_XY": {
+        "shape": [
+          4,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 2,
+        "singular_values": [
+          1.2505367012673998,
+          1.0680116355988292
+        ],
+        "condition_nonzero": 1.1709017576070038,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.12017489896070163,
+        "tangent_step": [
+          -0.13942318447902874,
+          0.28527517456641033
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H2_XY_common": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          2.210124812814376,
+          1.2190766107233704,
+          0.5776603015273551
+        ],
+        "condition_nonzero": 3.825993939640173,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.017335598141341765,
+        "tangent_step": [
+          0.013700409064263857,
+          0.023942168035603784,
+          0.20409369280057094
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H3_XY_arbitrary": {
+        "shape": [
+          4,
+          6
+        ],
+        "rank": 4,
+        "nullity": 2,
+        "residual_dof": 0,
+        "singular_values": [
+          1.601200187739419,
+          1.4630956406792028,
+          1.0000000000000002,
+          1.0
+        ],
+        "condition_nonzero": 1.601200187739419,
+        "full_column_rank": false,
+        "tangent_projected_residual_rms_m": 2.3633021048361517e-16,
+        "tangent_step": [
+          -0.08160994694652657,
+          0.1509212681893939,
+          0.09278866087076332,
+          0.1804174005332296,
+          0.06514162734640672,
+          0.19328584255091427
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H0_unknown_height": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.497731890365862,
+          1.2005863195169935,
+          0.5615974305227378
+        ],
+        "condition_nonzero": 2.6669137160612815,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.021537747787228,
+        "tangent_step": [
+          -0.009013412853121096,
+          0.0817689595666046,
+          -0.3127335014880724
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H2_unknown_height": {
+        "shape": [
+          4,
+          4
+        ],
+        "rank": 4,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          2.4748716755219515,
+          1.2193046761238395,
+          0.6227472166721306,
+          0.022185594624009826
+        ],
+        "condition_nonzero": 111.553091880782,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 3.3766115072321297e-16,
+        "tangent_step": [
+          0.1036403620004222,
+          -0.20844719810420864,
+          1.294319086605968,
+          1.043362129021891
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H1_fault_node_10": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.4007233187945853,
+          1.2484978925310113,
+          0.4286234845665162
+        ],
+        "condition_nonzero": 3.2679574713718544,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.11609371043905743,
+        "tangent_step": [
+          -0.15768986699330298,
+          0.36898827398218603,
+          -0.11065795190476102
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H1_fault_node_2": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.4497965364134477,
+          1.0738350522854059,
+          0.6704171674994659
+        ],
+        "condition_nonzero": 2.162528954652109,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.04878558763309763,
+        "tangent_step": [
+          -0.00887614282765275,
+          0.3395488538214266,
+          0.28107475004560983
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H1_fault_node_3": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.4531114042959108,
+          1.1153480407888443,
+          0.5907257312872781
+        ],
+        "condition_nonzero": 2.4598749086642417,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.11913108423373438,
+        "tangent_step": [
+          -0.16166484174167833,
+          0.29890139228598445,
+          -0.04409564524319748
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H1_fault_node_8": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.4424750516671372,
+          1.1111187130149838,
+          0.6238363775037901
+        ],
+        "condition_nonzero": 2.312265048471582,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.050871910068616,
+        "tangent_step": [
+          -0.25101904985729656,
+          0.16659183060854477,
+          0.2908683213052171
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      }
+    },
+    "healthy_pair_checks": {
+      "node_10,node_2": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          0.8954811385043382,
+          0.7634075862176088
+        ],
+        "condition_nonzero": 1.173005291892766,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 2.7755575615628914e-17,
+        "tangent_step": [
+          -0.3425060620787598,
+          0.1951058621663322
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_10,node_3": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          1.0857194068305713,
+          0.5431084924386582
+        ],
+        "condition_nonzero": 1.9990838330579017,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 1.1102230246251565e-16,
+        "tangent_step": [
+          -0.12555552879407264,
+          0.2481185641251638
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_10,node_8": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          1.0045755653516162,
+          0.6349770267929409
+        ],
+        "condition_nonzero": 1.582066000758162,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 9.813077866773594e-17,
+        "tangent_step": [
+          0.10719828262992831,
+          0.3049928582234013
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_2,node_3": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          1.0622905479147897,
+          0.4045513511852467
+        ],
+        "condition_nonzero": 2.6258484733829497,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 9.813077866773594e-17,
+        "tangent_step": [
+          -0.2557254113212163,
+          -0.05904854419951282
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_2,node_8": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          1.0932829213138837,
+          0.18833450036330776
+        ],
+        "condition_nonzero": 5.80500608866076,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 2.7755575615628914e-17,
+        "tangent_step": [
+          -0.7486502269062001,
+          1.3845798775095197
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_3,node_8": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          0.9885488645677222,
+          0.585307120443175
+        ],
+        "condition_nonzero": 1.6889404383449598,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 5.551115123125783e-17,
+        "tangent_step": [
+          -0.028770245445191123,
+          0.4765066907600721
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      }
+    },
+    "reference_prior_peer_n": 0,
+    "window_start_s": 4.0,
+    "prior_id": "4cb74aeb0820ad3d2ebd8038c88ac32206a02f1363bba0d0efb87c0b92a096c2"
+  },
+  {
+    "t_s": 37.0,
+    "state_epoch_ns": 1790000037000000000,
+    "cutoff_epoch_ns": 1790000038000000000,
+    "point_source": "saved peer-free I antenna, no truth",
+    "antenna_xyz_m": [
+      1.9563343814503873,
+      3.954090794823368,
+      0.17
+    ],
+    "anchors_xyz_m": [
+      [
+        3.26,
+        0.1,
+        2.355
+      ],
+      [
+        5.28,
+        5.16,
+        2.755
+      ],
+      [
+        5.28,
+        2.86,
+        2.355
+      ],
+      [
+        0.1,
+        2.41,
+        2.3
+      ]
+    ],
+    "anchor_order": [
+      "node_10",
+      "node_2",
+      "node_3",
+      "node_8"
+    ],
+    "Gxyz": [
+      [
+        -0.28228859752122126,
+        0.8345436664967426,
+        -0.47312790703960367
+      ],
+      [
+        -0.7588515963844987,
+        -0.27533038231516954,
+        -0.5902011820039674
+      ],
+      [
+        -0.8056805908494831,
+        0.2652155238170249,
+        -0.5296598072866103
+      ],
+      [
+        0.5765376799129207,
+        0.479561512903086,
+        -0.6615323567163814
+      ]
+    ],
+    "raw_residual_m": [
+      -0.03925251989752354,
+      0.20402192966208954,
+      -0.010813431643043714,
+      0.3554225811056613
+    ],
+    "hypotheses": {
+      "H0_XY": {
+        "shape": [
+          4,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 2,
+        "singular_values": [
+          1.280377430343862,
+          1.0345441574770382
+        ],
+        "condition_nonzero": 1.237624726881008,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.2006724183856833,
+        "tangent_step": [
+          0.041100270622243036,
+          0.07193959254211295
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H2_XY_common": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          2.2188385672923228,
+          1.205467573965911,
+          0.5772792377322428
+        ],
+        "condition_nonzero": 3.8436140125335294,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.0032535177999249536,
+        "tangent_step": [
+          0.31767672944338976,
+          -0.35590961824412626,
+          0.3442551596867072
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H3_XY_arbitrary": {
+        "shape": [
+          4,
+          6
+        ],
+        "rank": 4,
+        "nullity": 2,
+        "residual_dof": 0,
+        "singular_values": [
+          1.6246126812671227,
+          1.4388473212157964,
+          1.0,
+          0.9999999999999998
+        ],
+        "condition_nonzero": 1.624612681267123,
+        "full_column_rank": false,
+        "tangent_projected_residual_rms_m": 1.8806354742306848e-16,
+        "tangent_step": [
+          0.025986950590266986,
+          0.03749324164456852,
+          -0.06320644741245049,
+          0.23406519715891266,
+          0.00017996034053653978,
+          0.32245980921762707
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H0_unknown_height": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.506519803844341,
+          1.1863201734686366,
+          0.5683683019364757
+        ],
+        "condition_nonzero": 2.6506048960005493,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.010500515230884891,
+        "tangent_step": [
+          0.24878224536730537,
+          -0.2713097080878284,
+          -0.5226401035110371
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H2_unknown_height": {
+        "shape": [
+          4,
+          4
+        ],
+        "rank": 4,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          2.4783263282668457,
+          1.211189513601022,
+          0.6248186109310477,
+          0.022809563706653702
+        ],
+        "condition_nonzero": 108.65294751533986,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 3.608224830031759e-16,
+        "tangent_step": [
+          0.34840099446094597,
+          -0.39356293434472245,
+          0.23485987835373562,
+          0.4986613251221961
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H1_fault_node_10": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.4024609295630168,
+          1.2561023485555458,
+          0.40615047569380774
+        ],
+        "condition_nonzero": 3.453057458980588,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.18352388722710813,
+        "tangent_step": [
+          -0.015931492509249762,
+          0.30770303340734917,
+          -0.3005414162663185
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H1_fault_node_2": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.4739575662709776,
+          1.0542103944740606,
+          0.6524856434583118
+        ],
+        "condition_nonzero": 2.2589885019671714,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.11188261128006044,
+        "tangent_step": [
+          0.24055744157871303,
+          0.1769531796057307,
+          0.4352899148189985
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H1_fault_node_3": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.482532859785771,
+          1.0687319326433433,
+          0.6079114686429867
+        ],
+        "condition_nonzero": 2.4387315197312565,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.20066019757569067,
+        "tangent_step": [
+          0.044133608072840426,
+          0.07033117110107714,
+          0.00609124140116496
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H1_fault_node_8": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.436344690601059,
+          1.1131639558286885,
+          0.6383008030151621
+        ],
+        "condition_nonzero": 2.2502630167722666,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.055354351096661876,
+        "tangent_step": [
+          -0.13041817073323042,
+          -0.14614387715896132,
+          0.5006985495105596
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      }
+    },
+    "healthy_pair_checks": {
+      "node_10,node_2": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          0.8820801631860666,
+          0.8060689387732827
+        ],
+        "condition_nonzero": 1.0942986644894936,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 2.1942709178604383e-17,
+        "tangent_step": [
+          -0.22426707587517727,
+          -0.12289417838019498
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_10,node_3": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          1.094288750218551,
+          0.5460243614258954
+        ],
+        "condition_nonzero": 2.004102431182577,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 1.0971354589302191e-17,
+        "tangent_step": [
+          -0.0023197948843910188,
+          -0.04781939297376593
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_10,node_8": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          0.9641964407169005,
+          0.6394139100038839
+        ],
+        "condition_nonzero": 1.507937856264409,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 8.341116186757555e-17,
+        "tangent_step": [
+          0.5116449532186799,
+          0.1260317711317735
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_2,node_3": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          1.106796196832547,
+          0.38226330190490465
+        ],
+        "condition_nonzero": 2.8953765410310925,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 3.3368072301211387e-17,
+        "tangent_step": [
+          -0.1208556347559767,
+          -0.4079115328685135
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_2,node_8": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          1.085499964281797,
+          0.18901675407912083
+        ],
+        "condition_nonzero": 5.742876971781115,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 1.6653345369377348e-16,
+        "tangent_step": [
+          -0.9538059918735335,
+          1.8878238774145062
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_3,node_8": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          0.9936091910781739,
+          0.5427487493927168
+        ],
+        "condition_nonzero": 1.8306982599037331,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 8.0631992379427e-17,
+        "tangent_step": [
+          0.18441118670766118,
+          0.5194382298597398
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      }
+    },
+    "reference_prior_peer_n": 0,
+    "window_start_s": 17.0,
+    "prior_id": "355190113967cd8baa3dd945e2ef5f00d96f36dff5227ee33ed7df916c7568b1"
+  },
+  {
+    "t_s": 54.0,
+    "state_epoch_ns": 1790000054000000000,
+    "cutoff_epoch_ns": 1790000055000000000,
+    "point_source": "saved peer-free I antenna, no truth",
+    "antenna_xyz_m": [
+      1.9574023566665368,
+      3.2548664349256895,
+      0.17
+    ],
+    "anchors_xyz_m": [
+      [
+        3.26,
+        0.1,
+        2.355
+      ],
+      [
+        5.28,
+        5.16,
+        2.755
+      ],
+      [
+        5.28,
+        2.86,
+        2.355
+      ],
+      [
+        0.1,
+        2.41,
+        2.3
+      ]
+    ],
+    "anchor_order": [
+      "node_10",
+      "node_2",
+      "node_3",
+      "node_8"
+    ],
+    "Gxyz": [
+      [
+        -0.3214168206189159,
+        0.778465356651624,
+        -0.5391501793716548
+      ],
+      [
+        -0.7190588435316667,
+        -0.41229883516720733,
+        -0.5594318993931846
+      ],
+      [
+        -0.8314344580963707,
+        0.09880990585832938,
+        -0.5467662612069828
+      ],
+      [
+        0.6296951124290036,
+        0.2864259662525754,
+        -0.7221109549364996
+      ]
+    ],
+    "raw_residual_m": [
+      -0.013747412631654576,
+      0.0038475007506457715,
+      -0.011771173867437756,
+      -0.010990255993823084
+    ],
+    "hypotheses": {
+      "H0_XY": {
+        "shape": [
+          4,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 2,
+        "singular_values": [
+          1.3161664746496098,
+          0.918510353452643
+        ],
+        "condition_nonzero": 1.4329359159667538,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.00534200636162587,
+        "tangent_step": [
+          0.004323825955792623,
+          -0.019847661502876035
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H2_XY_common": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          2.1565392589862684,
+          1.1978593284464483,
+          0.7003048708213183
+        ],
+        "condition_nonzero": 3.079429186972635,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.003381643990218483,
+        "tangent_step": [
+          -0.00016348960187176413,
+          -0.014314979419222903,
+          -0.005527030294948025
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H3_XY_arbitrary": {
+        "shape": [
+          4,
+          6
+        ],
+        "rank": 4,
+        "nullity": 2,
+        "residual_dof": 0,
+        "singular_values": [
+          1.6529652715624683,
+          1.3578148877515297,
+          0.9999999999999999,
+          0.9999999999999997
+        ],
+        "condition_nonzero": 1.6529652715624688,
+        "full_column_rank": false,
+        "tangent_projected_residual_rms_m": 8.239936510889834e-18,
+        "tangent_step": [
+          0.002151428394499215,
+          -0.009053427156683745,
+          -0.006008127956858057,
+          0.0016617868929637014,
+          -0.009087833881076987,
+          -0.009751863317329773
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H0_unknown_height": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.4771866705178023,
+          1.163039871217096,
+          0.6820980856180814
+        ],
+        "condition_nonzero": 2.1656513948126,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.0032537054312377234,
+        "tangent_step": [
+          0.0009481609193951079,
+          -0.01475367091949081,
+          0.008741491216898935
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H2_unknown_height": {
+        "shape": [
+          4,
+          4
+        ],
+        "rank": 4,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          2.444754165479892,
+          1.222066951674937,
+          0.7274074089022602,
+          0.024655576787893815
+        ],
+        "condition_nonzero": 99.15623497724441,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 1.5515838457795457e-17,
+        "tangent_step": [
+          0.031692569859022725,
+          -0.029248756901766045,
+          0.22834164935591875,
+          0.14231869759108842
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H1_fault_node_10": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.3723972697782434,
+          1.2668974400351096,
+          0.2957229594214668
+        ],
+        "condition_nonzero": 4.640820829275861,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.003913461498401042,
+        "tangent_step": [
+          0.008902915340332336,
+          -0.03594845590801965,
+          0.017098761660786117
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H1_fault_node_2": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.4975682143257725,
+          0.9780521680439127,
+          0.6137253933291322
+        ],
+        "condition_nonzero": 2.4401275075197155,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.005277951148289794,
+        "tangent_step": [
+          0.0034670485575079447,
+          -0.020759014246534913,
+          -0.0022184047161902427
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H1_fault_node_3": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.503638135382653,
+          0.9593944857345719,
+          0.6281640207432729
+        ],
+        "condition_nonzero": 2.3937030548223346,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.0033690290771602096,
+        "tangent_step": [
+          -0.0012451339304469242,
+          -0.017661132978284692,
+          -0.011061326235220558
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "H1_fault_node_8": {
+        "shape": [
+          4,
+          3
+        ],
+        "rank": 3,
+        "nullity": 0,
+        "residual_dof": 1,
+        "singular_values": [
+          1.461052331674347,
+          0.9556706366819879,
+          0.7266190038005341
+        ],
+        "condition_nonzero": 2.010754362372036,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 0.002379185696125179,
+        "tangent_step": [
+          0.008262982312319166,
+          -0.016741306140631348,
+          -0.011398270782317263
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      }
+    },
+    "healthy_pair_checks": {
+      "node_10,node_2": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          0.88809197370038,
+          0.7795163117432568
+        ],
+        "condition_nonzero": 1.1392859396544404,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 2.5287722848198975e-18,
+        "tangent_step": [
+          0.003860992306909441,
+          -0.016065486605244636
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_10,node_3": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          1.0243846059597854,
+          0.6008326878273732
+        ],
+        "condition_nonzero": 1.7049415364932743,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 4.422694427346622e-18,
+        "tangent_step": [
+          0.01268119659825088,
+          -0.01242375483605432
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_10,node_8": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          0.8432898469476134,
+          0.6904600545138583
+        ],
+        "condition_nonzero": 1.2213448720670164,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 6.1331736667334966e-18,
+        "tangent_step": [
+          -0.007931051136577669,
+          -0.02093424676241875
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_2,node_3": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          1.118568923225072,
+          0.36998130972006515
+        ],
+        "condition_nonzero": 3.0233119723572046,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 2.4723613458141377e-18,
+        "tangent_step": [
+          0.01080844378905542,
+          -0.028182005018929417
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_2,node_8": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          1.078478385755883,
+          0.049760327163470924
+        ],
+        "condition_nonzero": 21.673458500642546,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 9.3618832932968e-18,
+        "tangent_step": [
+          -0.06390045056784388,
+          0.10211205985761908
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      },
+      "node_3,node_8": {
+        "shape": [
+          2,
+          2
+        ],
+        "rank": 2,
+        "nullity": 0,
+        "residual_dof": 0,
+        "singular_values": [
+          1.0475639532827323,
+          0.2867266784746195
+        ],
+        "condition_nonzero": 3.6535280178871132,
+        "full_column_rank": true,
+        "tangent_projected_residual_rms_m": 2.742838647325548e-18,
+        "tangent_step": [
+          0.007609499255396081,
+          -0.0550994754053177
+        ],
+        "interpretation": "one linear projection at saved I state; not a new location fit, model selection, alarm or confidence bound"
+      }
+    },
+    "reference_prior_peer_n": 0,
+    "window_start_s": 34.0,
+    "prior_id": "0034eeb8d63eb81d3f902abd9cf3b5ef3a6f5f4315fea47dfdbf0cc673829ef0"
+  }
+]

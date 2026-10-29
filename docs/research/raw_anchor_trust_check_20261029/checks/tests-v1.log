@@ -1,0 +1,26 @@
+test_analytic_derivative_independent_central_difference (__main__.Algebra) ... ok
+test_distinct_bias_models_and_local_sparse_condition (__main__.Algebra) ... ok
+test_four_preregistered_points_only (__main__.Algebra) ... ok
+test_prefix_and_peer_free_saved_identity (__main__.Algebra) ... /home/ubuntu22/uwb-raw-anchor-trust-check-20261029/tools/raw_anchor_trust_check_20261029/test_contract.py:39: ResourceWarning: unclosed file <_io.TextIOWrapper name='/home/ubuntu22/uwb-raw-anchor-trust-check-20261029/docs/research/raw_anchor_trust_check_20261029/results/support_records.csv' mode='r' encoding='UTF-8'>
+  support=list(csv.DictReader((D/'results/support_records.csv').open()))
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+ok
+test_unknown_height_removes_H2_residual_redundancy (__main__.Algebra) ... ok
+test_98_entries_not_98_trials (__main__.Metadata) ... FAIL
+test_holdout_exposure_is_not_erased (__main__.Metadata) ... ok
+test_receipts_and_source_scope (__main__.Metadata) ... ok
+test_retry_anomaly_and_occlusion_status (__main__.Metadata) ... ok
+test_unknown_not_zero_or_new_validation (__main__.Metadata) ... ok
+
+======================================================================
+FAIL: test_98_entries_not_98_trials (__main__.Metadata)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu22/uwb-raw-anchor-trust-check-20261029/tools/raw_anchor_trust_check_20261029/test_contract.py", line 54, in test_98_entries_not_98_trials
+    self.assertEqual(sum(r['data_kind']=='simulated' for r in self.rows),2)
+AssertionError: 0 != 2
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.014s
+
+FAILED (failures=1)
