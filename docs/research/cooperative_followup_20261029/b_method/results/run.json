@@ -1,0 +1,32 @@
+{
+  "B4_candidate_experiment": "NOT_OPENED",
+  "code_commit": "bb99db00e798bdf0d3e0e65dced0588ede3811d1",
+  "command_argv": [
+    "/usr/bin/python3",
+    "tools/cooperative_followup_20261029/b_method/analyze.py",
+    "--output",
+    "docs/research/cooperative_followup_20261029/b_method/results"
+  ],
+  "new_FGO_runs": 0,
+  "new_seeds": 0,
+  "new_static_2D_configs": 0,
+  "outputs": {
+    "exact_worlds.json": "d9a57e83efd4f77e502369ef613a58eacb2a3278cf9a7e1ba968ee4c1fa6522f",
+    "pr72_compact_check.json": "44e71b6a512fe3282f2b1a28b8185c0fbb06c8472208d4431de7bf5e91891a5f"
+  },
+  "preregistration_commit": "d5aa03d",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "read_PR72_head": "1cc7713a7e48776474788a07a1b41040f9df9330",
+  "read_main": "0ef38e8b84dc88cb7b0e26fea595ac05c5162676",
+  "role": "B necessary-condition exact arithmetic",
+  "source_input_sha256": {
+    "docs/field_tests/20261024_25/cooperative_influence_probe_20261028/results/costs.csv": "d652fa4b08b6869d43d8d6d5d013ce673f26555b582d42083079805cb6b87b74",
+    "docs/field_tests/20261024_25/cooperative_influence_probe_20261028/results/metrics.csv": "36381c44747b1e50a40b99ed64b9bc6f707bcf38b363de1a224fd986933fdbe8",
+    "docs/research/cooperative_followup_20261029/b_method/PREREGISTRATION.md": "a939c369a97c9e7542d7dee6c0098b263e87d1692b191b6a6df392ddca58c94a",
+    "tools/cooperative_followup_20261029/b_method/PROOF_CONFIG.json": "ada36bec3674fd333f6d41da8768b4adc2907241b50f2be2d2617808c328c70e",
+    "tools/cooperative_followup_20261029/b_method/analyze.py": "0b93392ea25e9f530a2e1338f7e18f22f3439f9a657559107d40e71bad1fb969"
+  },
+  "status": "DONE",
+  "worktree_dirty": true,
+  "world_count": 2
+}

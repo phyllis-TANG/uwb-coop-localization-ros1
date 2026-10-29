@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "task": "B identifiability necessary conditions only",
+  "units": "m",
+  "local_precision": ["1", "1"],
+  "peer_weight": "25",
+  "budget_m": "1/25",
+  "budget_role": "inherited 0.04 m explanatory development value, not paper budget or absolute accuracy",
+  "observed_local_positions_m": ["3/10", "1"],
+  "observed_signed_peer_m": "1",
+  "online_health_labels": null,
+  "position_definition": "one-dimensional antenna centers, not chassis or arbitrary four-anchor raw UWB",
+  "allowed_bias_model": "signed, unknown support, at most one biased local proxy; magnitude <=0.30m; ideal exact peer in this counterexample",
+  "worlds": [
+    {"id": "A", "evaluation_true_positions_m": ["0", "1"], "evaluation_local_biases_m": ["3/10", "0"], "evaluation_accurate_local_source": "car2"},
+    {"id": "B", "evaluation_true_positions_m": ["3/10", "13/10"], "evaluation_local_biases_m": ["0", "-3/10"], "evaluation_accurate_local_source": "car1"}
+  ],
+  "world_count": 2,
+  "methods": ["I", "J_closed_form", "C_output_clip", "K_equal_precision_box_closed_form"],
+  "motion": "symbolic translation invariance of the same observed per-car increments; no generated trajectory",
+  "new_estimator_runs": 0,
+  "new_seeds": 0,
+  "mechanism_candidate": null,
+  "candidate_B4_experiment": "NOT_OPENED",
+  "stopping_rule": "all exact checks pass then stop; no seed/threshold/budget search"
+}
