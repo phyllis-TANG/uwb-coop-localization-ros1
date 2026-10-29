@@ -1,0 +1,72 @@
+{
+  "status": "COMPLETE_36_CELLS_VERIFIED_AND_RELOCATED",
+  "development_only": true,
+  "reviewed_main": "ca8fbac4dbdf678074be5fb80bf6aff472d258e6",
+  "execution_commit": "19f1bbaa42d6631cc3c2d8660953d13a17ae76de",
+  "delivery_source_commit": "0e9b2fb461655a9cfa5ddce8d61623fcf402cc8e",
+  "logical_cells": 36,
+  "reused": 27,
+  "new_runs": 9,
+  "not_run": 0,
+  "blocked": 0,
+  "estimator_reruns": 0,
+  "archive": {
+    "archive": "/home/ubuntu22/uwb-peer-dcs-minimal-20261028-artifacts/archives-v1/cooperative_dcs_probe_20261028_ca8fbac4_v1.tar.gz",
+    "code_commit": "0e9b2fb461655a9cfa5ddce8d61623fcf402cc8e",
+    "dirty": false,
+    "extraction_prefix": "cooperative_dcs_probe_20261028",
+    "files": 349,
+    "manifest_sha256": "1707cb497d0409b729df09d243505135692ad3e96328fb07101833446dc45b6a",
+    "sha256": "482b6aaeb9841fa6147853abad02a8e1bcf421939b58f1c9e984045049c2e23c",
+    "size_bytes": 32616390
+  },
+  "remote_readback": {
+    "status": "PASS",
+    "NAS_archive": "/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_dcs_probe_20261028_ca8fbac4_v1/cooperative_dcs_probe_20261028_ca8fbac4_v1.tar.gz",
+    "archive_sha256": "482b6aaeb9841fa6147853abad02a8e1bcf421939b58f1c9e984045049c2e23c",
+    "verified_files": 349,
+    "relocated_root": "/home/ubuntu22/uwb-peer-dcs-minimal-20261028-artifacts/relocated-v1/cooperative_dcs_probe_20261028",
+    "estimator_runs": 0
+  },
+  "access": "Existing authorized SMB //10.22.5.135/data; LAN/VPN; not a public HTTP URL",
+  "fetch_argv": [
+    "cp",
+    "/home/ubuntu22/nas/data/uwb_coop_artifacts/cooperative_dcs_probe_20261028_ca8fbac4_v1/cooperative_dcs_probe_20261028_ca8fbac4_v1.tar.gz",
+    "<new-local-file>"
+  ],
+  "verify_argv": [
+    "sha256sum",
+    "<retrieved-archive>"
+  ],
+  "readback_argv": [
+    "python",
+    "<extracted-root>/delivery-source-v1/tools/cooperative_dcs_probe_20261028/evaluate.py",
+    "--matrix",
+    "<extracted-root>/evidence-v1",
+    "--output",
+    "<new-output-dir>"
+  ],
+  "important_members": {
+    "frozen_36_plan_and_completed_index": "evidence-v1/RUN_PLAN.json + RUN_INDEX.json",
+    "source_at_execution": "evidence-v1/source/",
+    "matched_inputs": "evidence-v1/inputs/*/{events.jsonl.gz,config.json,truth.jsonl,labels.json}",
+    "reused_27": "evidence-v1/reused/*",
+    "new_9": "evidence-v1/new-runs/*",
+    "all_iterations_factors_priors": "*/updates.jsonl.gz under both run roots",
+    "full_timeline": "evaluation-v1/timeline.csv.gz",
+    "independent_reader": "delivery-source-v1/tools/cooperative_dcs_probe_20261028/",
+    "paper": "literature/agarwal13icra.pdf",
+    "tests": "tests-v1 + tests-v2 + tests-v3",
+    "solver_source": "solver-source/"
+  },
+  "receipt_files": [
+    "review/archive_readback.json",
+    "review/delivery_verification.json",
+    "review/relocated-evaluation-v1.log"
+  ],
+  "final_file_sha_inventory": "review/DELIVERY_FILES_SHA256.json",
+  "scope_note": "Immutable archive predates final packaging receipts, HANDOFF and verify_delivery.py; these are local-branch files and separately saved beside the archive. No experiment data are overwritten.",
+  "pushed": false,
+  "PR_created": false,
+  "merged": false
+}

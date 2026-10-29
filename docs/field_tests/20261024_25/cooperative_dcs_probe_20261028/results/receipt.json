@@ -1,0 +1,49 @@
+{
+  "common_accepted": {
+    "car1_common_wall_bias_seed101": 61,
+    "car1_common_wall_bias_seed211": 61,
+    "car1_common_wall_bias_seed307": 61,
+    "nominal_seed101": 61,
+    "nominal_seed211": 61,
+    "nominal_seed307": 61,
+    "peer_bias_seed101": 61,
+    "peer_bias_seed211": 61,
+    "peer_bias_seed307": 61
+  },
+  "counts": {
+    "accepted": 2196,
+    "car1_finite": 2268,
+    "car2_finite": 2268,
+    "failures": 0,
+    "finite": 2268,
+    "missing_odom": 0,
+    "missing_peer": 0,
+    "unknown": 18,
+    "warmup": 72
+  },
+  "estimator_imports": [],
+  "independent_counts": {
+    "DCS_all_FD_Schur": 378,
+    "DCS_linearizations": 2143,
+    "DCS_trial_costs": 2143,
+    "DCS_weight_updates": 38994,
+    "baseline_all_FD_Schur": 1512,
+    "bins": 2268,
+    "candidate_objectives": 549,
+    "full_accepted_objectives": 2745,
+    "prior_chain": 2835
+  },
+  "independent_equations_sha256": "95a982bd47dec73c1d03573b6945dbc7c46b0653d95725e6cb035f9714d1f953",
+  "joint_publications": 2268,
+  "limitations": [
+    "already exposed three seeds, no independent validation",
+    "D0-D2 historical timing is not contemporaneous with D3",
+    "D3 loss cost is an IRLS-consistent scalar adaptation, not reproduction of all paper experiments",
+    "virtual availability is not ROS latency"
+  ],
+  "logical_cells": 36,
+  "new_runs": 9,
+  "reader_sha256": "a29390714f837d5ef2796a0c824a4656f45bb2aae0d886eabee9b479f509f75c",
+  "reused": 27,
+  "status": "PASS"
+}
