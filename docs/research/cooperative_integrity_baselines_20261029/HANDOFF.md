@@ -13,3 +13,5 @@
 只读续接见COMMANDS：输入/输出目录已完成，不再调用run.py重复估计；需要审查则independent.py或readback.py输出到全新目录。RUN_INDEX、SOURCE_AUDIT、SHA256SUMS绑定输入/配置/源码/结果；ARTIFACTS给完整证据本地路径、SHA及实际可取得性。完整本地包不冒称NAS/公共HTTP可取得；紧凑审查包随独立草稿PR交付，未自动合并。
 
 真正剩余：Hafez本次指定全文入口502、CIM仅官方摘要；尚无应用批准AL、名义相关噪声标定、故障先验/未监测风险及独立验证，所以不交PL或稀有HMI概率保证。小AL/晚段代价本轮已算，不能通过再扫故障阈值“解决”。实测先引用PR77 G3：已有10静态包适合输入与测距变化诊断，不能唯一归责或验收连续定位精度。本轮没有实测精度结论，不扩T08/T10，留出T09/T11/T13/T15不消费，不启动ROS/串口/车辆。
+
+交付已推送为[草稿PR81](https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/81)，未合并。紧凑包固定归档提交724a2d33d4537112ae76fed198f537dad4c827de，GitHub实际下载586321字节、30成员通过；SHA256 f3b25c1a61590d788e05c0c9d6f0258b8c8d24c536218a17661487c4e9b3a97d。完整外部包SHA256 e8f61f95a06dd135b1540d7c41d066f1d77380e53db7aaaacb0a7c7c1f7d9653，7328908字节、167成员本地通过，未上传NAS。最新交付提交由本分支Git HEAD/PR显示；它不会替换原在线执行SHA。

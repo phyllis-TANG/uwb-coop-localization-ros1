@@ -17,10 +17,13 @@
     "members": 30,
     "path": "/workspace/work/uwb-cooperative-integrity-baselines-20261029/docs/research/cooperative_integrity_baselines_20261029/artifacts/compact-review-v1.tar.gz",
     "sha256": "f3b25c1a61590d788e05c0c9d6f0258b8c8d24c536218a17661487c4e9b3a97d",
-    "availability": "COMMITTED_ON_OWN_BRANCH; pending remote byte retrieval check",
+    "availability": "GITHUB_FIXED_COMMIT_DOWNLOADED_AND_ALL_MEMBERS_VERIFIED",
     "repository_path": "docs/research/cooperative_integrity_baselines_20261029/artifacts/compact-review-v1.tar.gz",
     "snapshot_commit": "b050752864f9fe27e3b004f68a600cfa6032d4c0",
-    "scope": "Compact CSV/JSON, figure, specs/report/handoff; no full monitor logs/raw input. Final archive receipts/PR number are later Git metadata"
+    "scope": "Compact CSV/JSON, figure, specs/report/handoff; no full monitor logs/raw input. Final archive receipts/PR number are later Git metadata",
+    "url": "https://raw.githubusercontent.com/phyllis-TANG/uwb-coop-localization-ros1/724a2d33d4537112ae76fed198f537dad4c827de/docs/research/cooperative_integrity_baselines_20261029/artifacts/compact-review-v1.tar.gz",
+    "archive_commit": "724a2d33d4537112ae76fed198f537dad4c827de",
+    "remote_readback": "REMOTE_READBACK.json"
   },
   "original_PR68": {
     "archive": "cooperative_peer_gate_probe_20261028_74fa210e.tar.gz",
@@ -41,5 +44,6 @@
   ],
   "member_manifest": "MANIFEST.json inside each archive, each member SHA checked by streaming readback",
   "source_metadata": "SOURCE_AUDIT.json + results/RUN_INDEX.json",
-  "scope_budget_bytes": 100000000
+  "scope_budget_bytes": 100000000,
+  "draft_pr": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/81"
 }
