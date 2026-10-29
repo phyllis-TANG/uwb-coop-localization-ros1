@@ -14,6 +14,9 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument("--scene", type=Path)
 parser.add_argument("--replay", type=Path)
 parser.add_argument("--export-usd", type=Path)
+parser.add_argument("--loop", action="store_true", help="Keep the window open and replay continuously")
+parser.add_argument("--terrain-style", choices=("lunar", "semantic"), default="lunar")
+parser.add_argument("--follow-camera", action="store_true", help="Keep both rovers centered in the viewport")
 AppLauncher.add_app_launcher_args(parser)
 args = parser.parse_args()
 if args.scene is None or args.replay is None:
@@ -34,8 +37,20 @@ def color(prim, rgb):
     UsdGeom.Gprim(prim).CreateDisplayColorAttr([Gf.Vec3f(*rgb)])
 
 
-def make_terrain(stage, data):
+def make_terrain(stage, data, style):
     vertices, faces, colors = data["vertices"], data["faces"], data["colors"]
+    if style == "lunar":
+        # The source PLY uses magenta/yellow semantic labels. Use neutral
+        # colors for the visual preview while retaining the original mesh.
+        height = vertices[:, 2]
+        grid = vertices.reshape(*data["grid_shape"], 3)
+        dx = float(grid[1, 0, 0] - grid[0, 0, 0])
+        dy = float(grid[0, 1, 1] - grid[0, 0, 1])
+        slope_x, slope_y = np.gradient(grid[:, :, 2], dx, dy)
+        shade = np.clip(0.31 + 0.10 * (height + 0.3) + 0.10 * np.hypot(slope_x, slope_y).ravel(), 0.25, 0.52)
+        colors = np.column_stack((shade, shade * 0.97, shade * 0.92))
+        rock = data["colors"][:, 1] > 0.7
+        colors[rock] = (0.48, 0.45, 0.39)
     mesh = UsdGeom.Mesh.Define(stage, "/World/Moon1/Terrain")
     mesh.CreateSubdivisionSchemeAttr(UsdGeom.Tokens.none)
     mesh.CreatePointsAttr([Gf.Vec3f(*map(float, row)) for row in vertices])
@@ -84,7 +99,7 @@ def make_line(stage, path, rgb):
     line = UsdGeom.BasisCurves.Define(stage, path)
     line.CreateTypeAttr(UsdGeom.Tokens.linear)
     line.CreateCurveVertexCountsAttr([2])
-    line.CreateWidthsAttr([0.07])
+    line.CreateWidthsAttr([0.07, 0.07])
     line.CreateDisplayColorAttr([Gf.Vec3f(*rgb)])
     return line
 
@@ -122,13 +137,17 @@ def main():
     sim = sim_utils.SimulationContext(sim_cfg)
     stage = omni.usd.get_context().get_stage()
     UsdGeom.Xform.Define(stage, "/World/Moon1")
-    make_terrain(stage, data)
+    make_terrain(stage, data, args.terrain_style)
     sun = sim_utils.DistantLightCfg(intensity=2800.0, color=(0.95, 0.90, 0.80))
     sun.func("/World/Sun", sun, translation=(0.0, 0.0, 20.0))
     car1 = make_rover(stage, "Car1", (0.10, 0.69, 0.82))
     car2 = make_rover(stage, "Car2", (0.91, 0.33, 0.22))
     link = make_line(stage, "/World/UwbLink", (1.0, 0.86, 0.20))
     sim.set_camera_view([21.0, -26.0, 21.0], [23.0, 1.0, 0.0])
+    first = replay[0]
+    a = set_rover(car1, data, first, "car1")
+    b = set_rover(car2, data, first, "car2")
+    link.CreatePointsAttr([a, b])
     sim.reset()
     if args.export_usd:
         args.export_usd.parent.mkdir(parents=True, exist_ok=True)
@@ -138,12 +157,21 @@ def main():
     while simulation_app.is_running():
         current = frame * sim.get_physics_dt()
         if current > times[-1]:
-            break
+            if not args.loop:
+                break
+            frame = 0
+            current = 0.0
         index = min(int(np.searchsorted(times, current)), len(times) - 1)
         row = replay[index]
         a = set_rover(car1, data, row, "car1")
         b = set_rover(car2, data, row, "car2")
-        link.CreatePointsAttr([a, b]) if frame == 0 else link.GetPointsAttr().Set([a, b])
+        link.GetPointsAttr().Set([a, b])
+        if args.follow_camera and frame % 10 == 0:
+            center = [(float(a[i]) + float(b[i])) / 2.0 for i in range(3)]
+            sim.set_camera_view(
+                [center[0] + 3.0, center[1] - 23.0, center[2] + 17.0],
+                [center[0], center[1], center[2] - 1.16],
+            )
         sim.step()
         frame += 1
     print("Replayed %.2f s, %d physics frames" % (times[-1], frame))

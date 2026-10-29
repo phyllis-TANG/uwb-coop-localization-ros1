@@ -21,11 +21,37 @@ PYTHONPATH=/home/ubuntu22/LuSNAR-reproduction/.deps python3 \
 
 输出：`moon1_scene.npz`（网格、观测掩码、双车轨迹）、`moon1_preview.png`、`summary.json` 和 `uwb_replay.csv`。默认场景范围为 x = −5…55 m、y = −12…12 m，网格 0.4 m。`summary.json` 记录实际覆盖率。源数据使用 **x 向前、y 向右、z 向下**；转换到 Isaac/ROS 的 **x 向前、y 向左、z 向上**，即 `(x, -y, -z)`。
 
-## Isaac Lab 2.3.2
+## Isaac Lab 3.0 / Isaac Sim 6.2（当前 RTX 5060 Ti 主机）
+
+当前主机的 NVIDIA 驱动为 595.99.02；原来的 Isaac Sim 5.1 图形版会在 `librtx.scenedb.plugin.so` 初始化时崩溃。NVIDIA 的 [Isaac Sim 6.2 系统要求](https://docs.isaacsim.omniverse.nvidia.com/6.2.0/installation/requirements.html)给出 595 系列驱动，且 [Isaac Lab 3.0 与 Isaac Sim 6.2 兼容](https://docs.isaacsim.omniverse.nvidia.com/6.2.0/installation/compatibility.html)。因此在独立 Python 3.12 环境运行新版，不修改旧环境或系统驱动。
+
+```bash
+uv venv --python 3.12 /home/ubuntu22/isaaclab-moon1-v3-env
+uv pip install --python /home/ubuntu22/isaaclab-moon1-v3-env/bin/python \
+  'isaaclab[isaacsim]==3.0.0' \
+  --overrides https://raw.githubusercontent.com/isaac-sim/IsaacLab/v3.0.0/tools/wheel_builder/uv-overrides.txt \
+  --extra-index-url https://pypi.nvidia.com --torch-backend cu130 \
+  --index-strategy unsafe-best-match --prerelease allow
+```
+
+从仓库根目录启动图形版双车回放：
+
+```bash
+OMNI_KIT_ACCEPT_EULA=YES /home/ubuntu22/isaaclab-moon1-v3-env/bin/python \
+  sim/isaac_lab/moon1/run_moon1_v3.py \
+  --scene sim/isaac_lab/moon1/output/moon1_scene.npz \
+  --replay sim/isaac_lab/moon1/output/uwb_replay.csv \
+  --export-usd sim/isaac_lab/moon1/output/moon1_scene_v3_lunar.usda \
+  --loop --follow-camera --viz kit --device cuda:0
+```
+
+`--loop` 持续回放，`--follow-camera` 把两车保持在视口中央。默认 `--terrain-style lunar` 以中性灰显示地形；`--terrain-style semantic` 可切回源点云的月壤/岩石语义颜色。两种模式使用相同的地形几何和轨迹。首次启动 RTX 着色器编译可能需要数分钟。屏幕截图见 `docs/simulation/moon1/`。
+
+## Isaac Lab 2.3.2（旧版）
 
 本脚本按 [Isaac Lab 2.3.2](https://isaac-sim.github.io/IsaacLab/v2.3.2/source/setup/installation/isaaclab_pip_installation.html) 的独立 Python 脚本接口编写，配套 Isaac Sim 5.1 / Python 3.11。需满足 NVIDIA 驱动和 [Isaac Sim 系统要求](https://docs.isaacsim.omniverse.nvidia.com/5.1.0/installation/requirements.html)。首次运行时按 NVIDIA 提示阅读并接受其许可协议。
 
-本机安装的虚拟环境位于 `/home/ubuntu22/isaaclab-moon1-env`。驱动升级之后需先重启并确认 `nvidia-smi` 正常，再运行：
+旧版虚拟环境位于 `/home/ubuntu22/isaaclab-moon1-env`。当前主机的 595 驱动会使 5.1 图形版崩溃；以下命令仅供在兼容 5.1 的环境中复跑：
 
 ```bash
 cd /home/ubuntu22/uwb-lusnar-moon1-simulation
