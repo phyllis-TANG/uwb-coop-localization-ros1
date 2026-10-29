@@ -127,6 +127,7 @@ def verify(rows,config):
     for r in rows:
         assert type(r['state_epoch_ns']) is int and type(r['availability_cutoff_epoch_ns']) is int
         assert r['state_epoch_ns']<r['availability_cutoff_epoch_ns'];m=r['monitor']
+        assert not r['accepted_graph'] or r['status']=='graph'
         for role,details in r['marginal_evidence'].items():
             for d in details:
                 s=dict(times_s=d['times_s'],local=d['local'],observations=[d['old_observations'],{c:{} for c in CARS}],
@@ -187,7 +188,7 @@ def verify(rows,config):
                 if not s['computable']:assert s['statistic'] is None;continue
                 c=np.asarray(s['covariance']);d=np.asarray(s['delta_xy_m']);cross=np.asarray(s['cross_covariance'])
                 np.testing.assert_allclose(c,np.asarray(s['full_covariance'])+s['subset_covariance']-cross-cross.T,atol=1e-12)
-                assert np.linalg.matrix_rank(c)==2
+                assert np.linalg.matrix_rank(c)==2 and np.min(np.linalg.eigvalsh(c))>0
                 assert abs(float(d@np.linalg.solve(c,d))-s['statistic'])<1e-8
                 counts['ss_scores']+=1
         for noise,local in m['b1'].items():
