@@ -1,0 +1,75 @@
+{
+  "task": "COOPERATION-COST-CRITERIA-20261029",
+  "base_commit": "81fb509ba2d2a1b2e1f1151d53a7e73807820bd4",
+  "branch": "analysis/20261029-cooperation-cost-criteria",
+  "source_pr78_delivery": "66dee2c33a431f3b087df8dd9b09731053651dce",
+  "input_sha256": {
+    "docs/research/history_recovery_minimal_20261029/TIMESERIES.csv": "c4944b03a7fabd306b1ff3fa6a2b39511925a29b79351f380d75ac85939b2da7",
+    "docs/research/history_recovery_minimal_20261029/METRICS.csv": "437a77cec117f4ad220b08004b7667c7df6f719ce429f10c3fe8768f424eec7b",
+    "docs/research/history_recovery_minimal_20261029/COSTS.csv": "e20d0547100295148f08580cfe4501319a44a851b292566ada4378268e0a2087",
+    "docs/research/history_recovery_minimal_20261029/RUN_INDEX.json": "a9764f4ef46335e0ea5a719b024cc6cf781ee9239f5646892ccd8570ea04f2a6",
+    "docs/research/history_recovery_minimal_20261029/REPORT.md": "05cd60380a7b5cecabc7b16b6786a0e50fbe95bf370580e3094b1a1118406aa9",
+    "docs/research/history_recovery_minimal_20261029/CHECKS.json": "ad1f47bfea9e459b5551e80bff1414afd98951609f1c6cd74bde68fb05300e9d",
+    "docs/research/cooperative_followup_20261029/c_scope/LAB_PRECHECK_20261030.md": "f5a09c115febf812abe1c9073ef16eb6da0d1941e3e30fa62e4e33524d919fcd",
+    "docs/research/cooperative_followup_20261029/c_scope/C_SCOPE_ONE_PAGE.md": "24a10aa57087b0de8413509b90c6feef99d7dd588481cc450a12d82a94c0cef0",
+    "docs/research/static_evidence_to_method_20261029/DECISION.md": "9716d01a23181e468b7581114789bcf5d70d415a7aba52e26f54cca541f80b4b",
+    "docs/research/static_evidence_to_method_20261029/LAB_DELTA.md": "de16b76e5f8687f1a1b6c8002cde5387c2693d5716fbdaeda8385ef3fcb4e159",
+    "docs/field_tests/20261024_25/video_reference_20261027/MISSING_EVIDENCE.md": "332d5e6674988040705b07f21c0dab875c659b8c4c20d76bb7d33adb8eb6c76e",
+    "docs/field_tests/20261024_25/research_roadmap_20261028/README.md": "1b05ce5dde381b6bda47a4d16326d9821ef505acea3550122a9bbaafe3de22fc",
+    "docs/research/history_recovery_minimal_20261029/PLAN.md": "077755b0e0bbeab08b952fdba39036a2b10ed93da91d2f533f30b737e04ea8d7"
+  },
+  "analysis_source_sha256": {
+    "tools/cooperation_cost_criteria_20261029/analyze.py": "cbe010e276cd63c1317b22d735be5eddf308f7c001bf5e9d6c976cbb0d9f1d76",
+    "tools/cooperation_cost_criteria_20261029/package.py": "e0c09c0ba2ed3529f17cb4a72693966137bafb353725e87742a4133a4e622cb8",
+    "tools/cooperation_cost_criteria_20261029/test_analysis.py": "baa6bedd3ac49721419fdfec4f9f5d3bb2d9f3b15bd901f18693ce2cf68a1ba2"
+  },
+  "source_state_at_analysis": "task files not yet committed; exact bytes locked here",
+  "estimator_runs": 0,
+  "development_seeds": 1,
+  "conditions": "paired exposed seed101; not independent validation",
+  "raw_bag_reads": 0,
+  "new_thresholds": 0,
+  "tests": {
+    "status": "PASS",
+    "unit_tests": 4,
+    "log_path": "/home/ubuntu22/uwb-cooperation-cost-criteria-20261029-artifacts/tests.log",
+    "log_sha256": "0b640f52f72ff27d9891c71828102d922376ee2d3d67cc3d3e5974ad4eb982a2",
+    "recomputed_rmse": 864,
+    "all_finite_denominator": 63,
+    "common_accepted": 61,
+    "unknown": 2,
+    "tolerance_null_semantics": "PASS",
+    "numerical_csv_equal_after_plot_label_revision": true
+  },
+  "runtime": {
+    "python": "3.10.12",
+    "numpy": "2.2.6",
+    "matplotlib": "3.10.9"
+  },
+  "commands": [
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 /home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/venv/bin/python -m unittest discover -s tools/cooperation_cost_criteria_20261029 -p test_*.py -v",
+    "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 PYTHONDONTWRITEBYTECODE=1 /home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/venv/bin/python tools/cooperation_cost_criteria_20261029/analyze.py",
+    "Same analysis with --output /home/ubuntu22/uwb-cooperation-cost-criteria-20261029-artifacts/plot-label-revision; plotting label offsets revised; all numerical CSV bytes identical",
+    "PYTHONDONTWRITEBYTECODE=1 /home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/venv/bin/python tools/cooperation_cost_criteria_20261029/package.py"
+  ],
+  "delivery_metadata_correction": "Initial packaging assertion expected 15 tolerance rows but actual list has 16. Count/report corrected; no numerical results or tolerance values changed.",
+  "outputs": {
+    "docs/research/cooperation_cost_criteria_20261029/TOLERANCE_SOURCES.json": "6f2e26a2094445ed1bccc59aeb873ef172f42ee31dea1bbe745509a4458569b1",
+    "docs/research/cooperation_cost_criteria_20261029/PER_CAR.csv": "ea2eb0d3e7285a173fd9aec9a7385b27c600a7bc90c7a289b4e6c07e693b2668",
+    "docs/research/cooperation_cost_criteria_20261029/DIAGNOSTICS_ONLY.png": "b479b6cfe809ffac0d27ab535b31d03ff4219125dd119fb2d3904f37c05f7e21",
+    "docs/research/cooperation_cost_criteria_20261029/REFERENCE_SOURCES.json": "c50c94a0781a306d1df25eef0711efbb52bd1075d24e0e4c5f28ff50e72cad89",
+    "docs/research/cooperation_cost_criteria_20261029/PLAN.md": "bcc885e0dcef270ee1c65779990f07a971943f23c4c9b282cce6bfea7657f957",
+    "docs/research/cooperation_cost_criteria_20261029/TOLERANCE_SOURCES.csv": "bfc4fd2db92988d7ba9e1a441adc79ed63b2d562138d44503e0c5faf07e65c95",
+    "docs/research/cooperation_cost_criteria_20261029/MAIN_TRADEOFF.png": "3f2356de11940f68f2335e90edc598c915dfdfabf4ae1b3aec7df0653bc4226f",
+    "docs/research/cooperation_cost_criteria_20261029/CRITERIA.md": "a1920be62ead8a5bcd72a7a8af793e08d3b84812f4eb8ad8554d54425b8763e0",
+    "docs/research/cooperation_cost_criteria_20261029/METHOD_SCOPE.csv": "28871442cfe7d437de4f461a2ae1cd2ef3ad1d130a6d81f2ce1ac9e298bb7a35",
+    "docs/research/cooperation_cost_criteria_20261029/PAIRWISE_RELATIONS.csv": "b33ce66e49c8634f817bcadc1910a526ed3092cbc65e9b4d44179d7c71d82c1b",
+    "docs/research/cooperation_cost_criteria_20261029/RECOVERY_TAIL.png": "b79c324c64e4c8ac7583cee92a20f93c1a69f18e0af3269c89fdc83346933848",
+    "docs/research/cooperation_cost_criteria_20261029/REPORT.md": "1c22db69b024df4106fa1ffc868201bfbd4884ba89fb897523cf6238e39acd37",
+    "docs/research/cooperation_cost_criteria_20261029/HANDOFF.md": "ccb173d1a0aa788b155921d06f1255128633d60b3e91f5596473871e1f04e1c8",
+    "docs/research/cooperation_cost_criteria_20261029/GLOBAL_RELATIONS.csv": "4fbd6189a7ef89b9a16f75d3d994fde94418fffba26236cf4c67e3b2a3c10c84",
+    "docs/research/cooperation_cost_criteria_20261029/TRADEOFF_POINTS.csv": "86b2c0bab3227079a3ab98a5fd9ad21739400583f86ed93c87193abd9ddaf881",
+    "docs/research/cooperation_cost_criteria_20261029/PAIRED_CONDITIONS.csv": "6333a26d32f944c3f79f7414ce4598bddea692526b9ad3860a87e5984fb2df6e",
+    "docs/research/cooperation_cost_criteria_20261029/CHECKS.json": "99c8505e9b49728b756a72a806120b5e201e8c76db812b0b6a5abb445d7414ec"
+  }
+}

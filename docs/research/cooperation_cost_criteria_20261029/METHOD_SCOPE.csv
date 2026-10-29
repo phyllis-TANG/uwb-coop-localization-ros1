@@ -1,0 +1,11 @@
+method,role,budget_car1_car2_m,history,peer,solver,limitation
+I,reference,none,no peer from initialization,none,none,reference is not truth
+J,primary,none,full joint prior,original pseudo-Huber,original,no hard relative budget
+W025,primary,none,full weighted joint prior,fixed info weight 0.25,original,weight is not 4cm budget
+C004,primary,0.04/0.04,J unchanged; no feedback,original pseudo-Huber,original + output clipping,no posterior covariance claim; yaw unchanged
+K004,primary,0.04/0.04,full constrained-path joint prior,original pseudo-Huber,SLSQP,same budget as C004; altered numerical path
+N,diagnostic,none,old peer retained; new peer stops at t39,original until cut,original,"offline known-time intervention, not causal recovery policy"
+Nclip,diagnostic,0.04/0.04,N unchanged; no feedback,N history,original + output clipping,offline known-time intervention
+A0_4,diagnostic,0/0.04,J unchanged; no feedback,original pseudo-Huber,output only,both assignments kept; unequal-budget algebra
+A4_0,diagnostic,0.04/0,J unchanged; no feedback,original pseudo-Huber,output only,zero XY budget leaves J yaw
+same_wall_signal_gate_clip,not_implemented,,,,,fair baseline remains missing; no run authorized
