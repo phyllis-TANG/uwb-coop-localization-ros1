@@ -1,0 +1,13 @@
+fatal: path 'docs/field_tests/20261024_25/t10_reliability_bridge/REPORT.md' does not exist in 'ae8ee37841ade972be3875968c6eb1b557c3ffdb'
+Traceback (most recent call last):
+  File "/home/ubuntu22/uwb-raw-anchor-trust-check-20261029/tools/raw_anchor_trust_check_20261029/inventory.py", line 119, in <module>
+    p=argparse.ArgumentParser();p.add_argument('--output',type=Path,required=True);build(p.parse_args().output)
+  File "/home/ubuntu22/uwb-raw-anchor-trust-check-20261029/tools/raw_anchor_trust_check_20261029/inventory.py", line 75, in build
+    for p in sources:s.read(p)
+  File "/home/ubuntu22/uwb-raw-anchor-trust-check-20261029/tools/raw_anchor_trust_check_20261029/common.py", line 23, in read
+    data=subprocess.check_output(['git','show',ref+':'+path],cwd=ROOT)
+  File "/usr/lib/python3.10/subprocess.py", line 421, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "/usr/lib/python3.10/subprocess.py", line 526, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['git', 'show', 'ae8ee37841ade972be3875968c6eb1b557c3ffdb:docs/field_tests/20261024_25/t10_reliability_bridge/REPORT.md']' returned non-zero exit status 128.

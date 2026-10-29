@@ -1,0 +1,55 @@
+{
+  "status": "DONE",
+  "estimator_runs": 0,
+  "real_bags_read": 0,
+  "seed": 101,
+  "times": [
+    23,
+    24,
+    37,
+    54
+  ],
+  "car": "car1",
+  "archive_sha256": "50c671e3687c3342b8abe99986ecd6a6488de23e24fe112b16b44d9f8fb3f320",
+  "input_sha256": {
+    "config.json": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+    "events.jsonl.gz": "34f3e1a6e2872b1534630691fb6558a28076c268624ec3c00b10e92a1e0736e6",
+    "labels.json": "43fe0acc80463f85ceaa2f695a2d9903cb2343f63eef49ddf7cf54d1dacfabc8",
+    "truth.jsonl": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75"
+  },
+  "saved_updates_sha256": "ac1f91bba1ce7028b81b29bfe19a6273b449f1166281f01c521a1922b81922c5",
+  "original_execution_commit": "312180ef51c6ea4ba394bc85618674ec36ff786d",
+  "source_sha256": {
+    "raw_check.py": "44129738702e2764fe467842a85ae636863c7865d1543826de0320c0dafccba4",
+    "common.py": "115ef4c54f0878af05a420b5213ff1cade208a4d6e0d7be504504fded559e82f"
+  },
+  "fixed_sources": {
+    "709c4127c8835f82c137e604d4c53bb541f52a59:docs/research/cooperative_followup_20261029/a_evidence/checks/ARCHIVE_CHECK.json": {
+      "path": "docs/research/cooperative_followup_20261029/a_evidence/checks/ARCHIVE_CHECK.json",
+      "git_commit": "709c4127c8835f82c137e604d4c53bb541f52a59",
+      "sha256": "c16bdea4224eb9a174fbffdc24c5c046c9b08c85f22164a2dd933fc7c06794e4",
+      "bytes": 6542,
+      "matches_actual_main": true
+    },
+    "ae8ee37841ade972be3875968c6eb1b557c3ffdb:docs/field_tests/20261024_25/geometry.json": {
+      "path": "docs/field_tests/20261024_25/geometry.json",
+      "git_commit": "ae8ee37841ade972be3875968c6eb1b557c3ffdb",
+      "sha256": "bd59d654a6794cc61a5680816d479a7ae3a4b5a0376a3d5ebd517b6c3842266c",
+      "bytes": 8884,
+      "matches_actual_main": true
+    }
+  },
+  "outputs": {
+    "static_matrices.json": "c8f5d43ab4780e007b2a6f1d64f7d2918c892aef781353175e6224adf9d8684d",
+    "four_snapshots.csv": "6d4b6b8e046138ab790bc2fdffa41ceae6ba88c5fb5a503bcd7cc41940273b0a",
+    "support_records.csv": "a9fc926c30b25e1eea13cae89e0803a9e73f92df50170ebef10056cc92f54208",
+    "raw_four_ranges.csv": "f89aad0ad11dc077a80d29f56f05ea78ba9c51c8d80bedf278994b4ea96bb664"
+  },
+  "rank_tolerance": "max(shape)*machine_epsilon*s_max, algebra only, not detection threshold",
+  "limitations": [
+    "linear projection only",
+    "no iterative solve",
+    "no calibrated noise bound",
+    "geometry/height engineering source, uncertainty unknown"
+  ]
+}
