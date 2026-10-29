@@ -76,7 +76,8 @@ def separation(full_xy, subset_xy, full_influence, subset_influence):
     singular = np.linalg.svd(covariance, compute_uv=False)
     rank = int(np.sum(singular > max(1e-14, singular[0]*1e-10)))
     result = dict(delta_xy_m=difference.tolist(), separation_m=float(np.linalg.norm(difference)),
-                  covariance=covariance.tolist(), cross_covariance=cross.tolist(), rank=rank,
+                  covariance=covariance.tolist(), cross_covariance=cross.tolist(),
+                  full_covariance=(kf@kf.T).tolist(), subset_covariance=(ks@ks.T).tolist(), rank=rank,
                   independent_sum_covariance=(kf@kf.T+ks@ks.T).tolist(),
                   statistic=None, computable=False, reason='SEPARATION_RANK_DEFICIENT')
     if rank == 2 and np.isfinite(covariance).all():
