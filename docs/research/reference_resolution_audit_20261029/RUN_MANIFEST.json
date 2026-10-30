@@ -1,0 +1,28 @@
+{
+  "base_commit": "519113f38d636844285e01b56a193ca26ef2bfb4",
+  "source_sha256": {
+    "datasets/field_raw/20260927/notes/live_field/TWO_CAR_PA0_PB1_static_LOS_camera_clear_facing_GT1p85m_20260927_063345_ground_truth.txt": "66ac2ff6831d9cc88b9b4bc1aef06d113d8bc8ed6dad51176760d74ccfa798cd",
+    "docs/field_tests/20260927_FIELD_TEST_SUMMARY.md": "ed93b607c4a79170eb7aa4c6f8402a12e0b2a583b2b26f5d72119f59d528f5e8",
+    "docs/field_tests/20261010_11/source_notes/multipoint_link_diagnostics.txt": "e078ce9b990f9a4ffc4427e3d18b90bae87c0d9f7059b3dd081f9a7cecc86680",
+    "datasets/field_raw/20261011/notes/live_field/MOBILE_P1_h1p00_clear_R1_20261011_020429_survey.txt": "a7fa70f93c5463943f1eb694ae90264656a44ffe408af7319f03ac63ad6c5565",
+    "datasets/field_raw/20261011/notes/live_field/MOBILE_P1_h1p00_clear_R2_20261011_020505_survey.txt": "44515ceaa64508a237071d2f9402e9bfc9446f65d812049a34378ac190d6351a",
+    "docs/field_tests/20261010_11/source_notes/CAR2_static_calibration_key_forward_check.txt": "1f1d7f2fead0e8887efe9c1a60fcd0ce7aa37b23327226cd25a4e6ddda7f5eea",
+    "datasets/field_raw/20261011/metadata/live_field/CAR2_WALL_UWB_ODOM_IMU_key_forward_repeat_20261011_051810_independent_check.txt": "3718356e34d87af7ba84820049a37891b1f5e752689098c53007e7fcf3f3251d",
+    "datasets/field_raw/20261017/notes/live_field/CAR2_P1_REINSTALL_STATIC_20261017_045257_notes.txt": "2f32a6196348add72a2c43b401273733d4073a5ce8f30fcdec3684b8aef88f2c",
+    "datasets/field_raw/20261017/notes/live_field/CAR2_P4_REINSTALL_STATIC_20261017_053806_notes.txt": "674c2ea5f7ff89941c92b06fdf6e5b8bce8d78832a3b3e4c8f12a708dba8d85b",
+    "docs/research/static_evidence_to_method_20261029/DECISION.md": "9716d01a23181e468b7581114789bcf5d70d415a7aba52e26f54cca541f80b4b",
+    "docs/research/static_evidence_to_method_20261029/COMPACT_RESULTS.csv": "ea3670d5d830359f5f05d22f3eab67306142b3c05f1ee10d0ce55d64d62727ee",
+    "docs/field_tests/20261024_25/video_reference_20261027/T10_geometry_summary.json": "b087613b5e1e8cca6391cf4a8bcfe488197d6eb309c449b9de855031fba2f699",
+    "docs/field_tests/20261024_25/video_reference_20261027/verification.json": "034f57f1b96b57878b87be249419c4743758351814aff2f96ee9f56b557fd755",
+    "docs/field_tests/20261024_25/t10_closure_20261027/operator_evidence.json": "80d4a9c851104914eca2886fad657355dfa2e5487df92bd80776b030e2bde140",
+    "docs/field_tests/20261024_25/t10_closure_20261027/reference_decision.json": "f7366c66d9b8c8e0b8ed730290682a8768ff92c80431927883dd5fcf8c360041",
+    "docs/field_tests/20261024_25/video_reference_20261027/MISSING_EVIDENCE.md": "332d5e6674988040705b07f21c0dab875c659b8c4c20d76bb7d33adb8eb6c76e",
+    "docs/research/cooperative_followup_20261029/c_scope/LAB_PRECHECK_20261030.md": "f5a09c115febf812abe1c9073ef16eb6da0d1941e3e30fa62e4e33524d919fcd",
+    "docs/research/cooperation_cost_criteria_20261029/TOLERANCE_SOURCES.json": "6f2e26a2094445ed1bccc59aeb873ef172f42ee31dea1bbe745509a4458569b1",
+    "docs/research/history_recovery_minimal_20261029/RUN_INDEX.json": "a9764f4ef46335e0ea5a719b024cc6cf781ee9239f5646892ccd8570ea04f2a6"
+  },
+  "analysis_sha256": "8a1a8c785fef8f9cef3a1d7799b9ab83272a0510f568d6dc7301518cfcf3c2ab",
+  "command": "PYTHONDONTWRITEBYTECODE=1 /home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/venv/bin/python tools/reference_resolution_audit_20261029/audit.py",
+  "scope": "read-only compact sources and notes; no held-out errors or original recordings",
+  "rows": 12
+}
