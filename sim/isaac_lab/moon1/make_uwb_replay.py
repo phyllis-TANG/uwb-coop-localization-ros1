@@ -8,6 +8,8 @@ import random
 import sys
 
 import numpy as np
+from antenna_geometry import positions
+from provenance import receipt
 
 REPO = Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(REPO / "ros_ws/src/uwb_coop_localization/scripts"))
@@ -18,6 +20,7 @@ FIELDS = [
     "time_s", "car1_x", "car1_y", "car1_z", "car1_yaw",
     "car2_x", "car2_y", "car2_z", "car2_yaw", "true_range_m",
     "car1_range_m", "car1_quality", "car2_range_m", "car2_quality",
+    "car1_body_z", "car2_body_z", "car1_gt_z", "car2_gt_z",
 ]
 
 
@@ -47,6 +50,9 @@ def main():
     tick = np.arange(0.0, times[-1] + 1e-9, 1.0 / args.rate)
     leader, leader_yaw = resample(times, data["leader"], tick)
     follower, follower_yaw = resample(times, data["follower"], tick)
+    leader_gt, follower_gt = leader.copy(), follower.copy()
+    leader_body, leader = positions(data, leader_gt)
+    follower_body, follower = positions(data, follower_gt)
     random_generator = random.Random(args.seed)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open("w", newline="") as stream:
@@ -65,7 +71,9 @@ def main():
                 "%.6f" % distance,
                 "" if a is None else "%.6f" % a[0], "" if a is None else a[1],
                 "" if b is None else "%.6f" % b[0], "" if b is None else b[1],
+                leader_body[i,2], follower_body[i,2], leader_gt[i,2], follower_gt[i,2],
             ])))
+    receipt(args.output.with_suffix(".manifest.json"), vars(args), {"scene_npz":args.scene,"replay_csv":args.output}, {"source_ply":"not supplied to replay generator", "source_gt":"not supplied to replay generator", "usd":"GUI not run"})
     print("Wrote %d UWB ticks to %s" % (len(tick), args.output))
 
 
