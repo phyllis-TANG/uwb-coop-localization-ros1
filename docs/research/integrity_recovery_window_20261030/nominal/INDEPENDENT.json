@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "counts": {
+    "publications": 89,
+    "ss_scores": 522,
+    "b1_scores": 534,
+    "schur_steps": 272,
+    "linear_snapshots": 48,
+    "declarations": 6586
+  },
+  "maximum_fd_k_abs_difference": 6.368520155675128e-10,
+  "maximum_fd_prior_b_abs_difference": 2.7877624653172006e-09,
+  "imports": "numpy/stdlib only; no graph/Jacobian/policy imports",
+  "scope": "frozen linearization algebra, not physical calibration",
+  "extension": "only primitive naming domain and zero-padding earlier saved evidence; same original Schur/FD/score tolerances"
+}
