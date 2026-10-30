@@ -1,0 +1,5 @@
+# 完成交接
+两单元已完成，不重跑。seed5101与尾段610301均为开发。前缀输入全部canonical SHA严格通过，所有旧保存输出精确匹配；wall_long原完整图/prior没有保存，验证范围不能扩大。
+结论：Car2状态68自然恢复available并持续至89；最后混合故障bin于73完全退出。观察截断主张成立于该条件，暂不开发新恢复判据。故障结束后Car2仍有16秒不可用代价，Car1仍有残余HMI；全部AL与normal配对保留。
+工作树/home/ubuntu22/uwb-integrity-recovery-window-20261030，分支analysis/20261030-integrity-recovery-window-v1，基准7001d33da1f77875aa9cd2adbd7ffd155bc13610。计划0b61cfa，prefix检查点/在线包装器9e9ed663fb511ac7530d817b13a875f6cbcce2bd。冻结核19文件SHA不变；只新增指定tools/docs。无实车、无算法改变、无自动合并。
+入口REPORT、TIMELINE、METRICS、PAIRED；各单元ACTIVE_SOURCES/FACTOR_INDEX及audit/monitor提供详细来源/prior/线性/消元证据，INDEPENDENT为独立核验。全部文件SHA见SHA256SUMS，不自含。
