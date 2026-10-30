@@ -1,0 +1,152 @@
+{
+  "base_commit": "868349b543a03a6a713d1675e1d4ada7d905410c",
+  "extensions": {
+    "imu": "reserved_disabled",
+    "quality": "disabled"
+  },
+  "fixed_lag_s": 20.0,
+  "frontend": {
+    "max_sensor_samples_per_stream": 512,
+    "output_history": "external sink; estimator retains last valid publication only"
+  },
+  "models": {
+    "car1": {
+      "anchors_xyz_m": {
+        "node_10": [
+          3.26,
+          0.1,
+          2.355
+        ],
+        "node_2": [
+          5.28,
+          5.16,
+          2.755
+        ],
+        "node_3": [
+          5.28,
+          2.86,
+          2.355
+        ],
+        "node_8": [
+          0.1,
+          2.41,
+          2.3
+        ]
+      },
+      "antenna_height_m": 0.17,
+      "base_to_antenna_body_xy_m": [
+        0.08,
+        -0.06
+      ],
+      "graph_parameters": {
+        "keyframe_step_s": 1,
+        "odom_translation_sigma_m": 0.03,
+        "odom_yaw_sigma_deg": 2,
+        "prior_heading_sigma_deg": 5,
+        "prior_position_sigma_m": 0.2,
+        "range_bin_half_width_s": 0.4,
+        "range_sigma_m": 0.2
+      },
+      "initial_heading_deg": 16.341758290623744,
+      "range_bias_m": {
+        "node_10": 0.0,
+        "node_2": 0.0,
+        "node_3": 0.0,
+        "node_8": 0.0
+      },
+      "start_antenna_xyz_m": [
+        1.6146064641809525,
+        3.6149897048948114,
+        0.17
+      ]
+    },
+    "car2": {
+      "anchors_xyz_m": {
+        "node_10": [
+          3.26,
+          0.1,
+          2.355
+        ],
+        "node_2": [
+          5.28,
+          5.16,
+          2.755
+        ],
+        "node_3": [
+          5.28,
+          2.86,
+          2.355
+        ],
+        "node_8": [
+          0.1,
+          2.41,
+          2.3
+        ]
+      },
+      "antenna_height_m": 0.2,
+      "base_to_antenna_body_xy_m": [
+        0.12,
+        -0.08
+      ],
+      "graph_parameters": {
+        "keyframe_step_s": 1,
+        "odom_translation_sigma_m": 0.03,
+        "odom_yaw_sigma_deg": 2,
+        "prior_heading_sigma_deg": 5,
+        "prior_position_sigma_m": 0.2,
+        "range_bin_half_width_s": 0.4,
+        "range_sigma_m": 0.2
+      },
+      "initial_heading_deg": 69.37361495164357,
+      "range_bias_m": {
+        "node_10": 0.0,
+        "node_2": 0.0,
+        "node_3": 0.0,
+        "node_8": 0.0
+      },
+      "start_antenna_xyz_m": [
+        2.4668940674260136,
+        1.681154745112618,
+        0.2
+      ]
+    }
+  },
+  "optimizer": {
+    "ftol": 1e-07,
+    "gtol": 1e-07,
+    "initialization": "previous accepted active estimates plus Odom prediction",
+    "jacobian": "analytic",
+    "linear_solver": "exact dense",
+    "max_nfev": 50,
+    "method": "trf",
+    "xtol": 1e-07
+  },
+  "peer": {
+    "direction": "car1_to_car2",
+    "minimum_samples": 5,
+    "representation": "bridge",
+    "reverse": "diagnostic_only",
+    "sigma_m": 0.2
+  },
+  "provenance": {
+    "anchors": "historical numerical coordinates for synthetic geometry only",
+    "clock": "integer identity mapping in shared synthetic domain; no field claim",
+    "initial": "synthetic design plus seed-derived uncertain placement prior",
+    "scope": "synthetic_design",
+    "weights": "inherited F0 engineering assumptions"
+  },
+  "replay": {
+    "backend": "arm-specific; see arms",
+    "clock_correction": "none",
+    "closed_bin_policy": "immutable; count late packets",
+    "eof_policy": "no timer advance beyond last recorded receipt",
+    "first_keyframe_margin_s": 1,
+    "imu": "diagnostic messages only; zero independent IMU factors",
+    "keyframe_step_s": 1,
+    "minimum_samples_per_link": 5,
+    "range_bin_half_width_s": 0.4,
+    "release_delay_s": 1
+  },
+  "schema_version": 1,
+  "scope": "synthetic"
+}
