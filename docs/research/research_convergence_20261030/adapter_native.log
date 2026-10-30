@@ -1,0 +1,19 @@
+test_original_three_inputs (original_adapter_test.Adapter.test_original_three_inputs) ... FAIL
+test_registered_changes_and_pairing (original_adapter_test.Adapter.test_registered_changes_and_pairing) ... ok
+
+======================================================================
+FAIL: test_original_three_inputs (original_adapter_test.Adapter.test_original_three_inputs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "I:\UWB\project\outputs\new_pr_review_20261030\v001\pr85\tools\integrity_validation_20261030\test_adapter.py", line 19, in test_original_three_inputs
+    c,e,t,r=make(101,condition);cc,ee,tt,_=original(condition)
+                                           ^^^^^^^^^^^^^^^^^^^
+  File "I:\UWB\project\outputs\new_pr_review_20261030\v001\pr85\tools\cooperative_integrity_baselines_20261029\inputs.py", line 54, in make
+    assert actual['registered_config_bytes_equal'] and actual['registered_truth_bytes_equal']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+----------------------------------------------------------------------
+Ran 2 tests in 4.926s
+
+FAILED (failures=1)
