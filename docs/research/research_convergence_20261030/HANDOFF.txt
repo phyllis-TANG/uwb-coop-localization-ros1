@@ -1,0 +1,12 @@
+2026-10-30 继续收敛检查点
+
+基准main 396eded0d9eca4b38e6400138949a5e4c950da88。I:\UWB\project根目录非Git；既有video-reference-v2保持clean、HEAD d9eea02092511c6571fe1b06e5164ccb5007e1e7，不修改它。仅在outputs/convergence_20261030/v001保存本轮工作；向远端新分支交付tools/docs两个新目录，不覆盖旧分支。
+I盘开始可用229461565440字节；进程TEMP/TMP设I:\UWB\temp。Get-Process未见所筛选python/wsl/ssh进程；CIM进程全景受限，未冒称宿主无其他任务。没有可用WSL发行版或本轮可调用的原Linux环境。未安装Linux、仿真器或绘图库。
+
+实际完成：读取AGENTS、统一总账及前轮HANDOFF；核对main及15份关键源文件Git blob；只做seed101输入生成/身份测试，未运行估计器；120/160位独立truth字节恢复和六次严格配对检查；原adapter测试原生1通过1失败、诊断模式2通过；48个摘要行与384个原seed行读回；24份保存声明、144个seed/车/AL恢复计数的五字段逐项核对。
+truth失败定位完成，原事件canonical身份未完成。两项不能混称“全部输入复现通过”。原源、断言、登记SHA和70结果未改变。最初试图生成图时发现本机无matplotlib，停止该可选图工作；最终采用数值表，不安装依赖。构建时完整profile名称筛选已更正，最终读回检查通过，未改变原表。
+
+结果与用途：CASE_STUDY和TARGET_CARD收敛到逐车完整性与恢复可用性。RECOVERY_DIAGNOSIS仅为事后开发分析；故障结束时刻/真误差不可作为在线解除依据。4101–4106与5101–5108现均暴露；若后续改方法只作开发，须冻结后另登记确认。T02为条件测量响应，T10 accepted不变；T09/T11/T13/T15未用于调参。
+
+下一步只读已有wall_long source-group统计和历史因子，回答保持报警的具体原因与可用在线恢复证据，再判定是否开发一个候选。不重跑70矩阵、不扩月面任务、不同时开发弱/短/长三个方案。真正缺项和最小补证在TARGET_CARD逐项列明。
+本HANDOFF作为统一数据与研究总账增量；旧总账、旧失败和来源更正记录全部保留。远端交付状态另见本地PR_RECEIPT.json。

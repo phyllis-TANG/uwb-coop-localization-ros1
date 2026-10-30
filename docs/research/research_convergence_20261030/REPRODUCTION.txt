@@ -1,0 +1,24 @@
+输入身份检查：已解释的truth失败与保留的事件限制
+
+来源：main 396eded0d9eca4b38e6400138949a5e4c950da88，原冻结核74fa210e7cf6aa322eaebce19530510edb605d22。SHA来源和本地镜像与main的Git blob核对见SOURCE_RECEIPTS.json。
+
+Windows原生三场景config文件SHA均等于原登记值；truth文件SHA为fc63d9ee2635da48e541a373473d4c654cadda1bb415b2fd2d61bf488056b7f5，未通过原断言。独立Decimal三角函数按同一浮点输入计算，120位与160位结果逐字节相同，得到登记truth SHA：
+5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75
+其整数组canonical SHA也与PR81执行回执一致：
+c0a96964f7d01dd8bfbe27ec6d54dbd7ee3f2a302698769784e45fe520c1f2e9
+
+65条truth、每条两车中只有以下两项数值不同；位置与天线坐标字段均相同：
+t=26s，Car1 pose[2] yaw：本机0.3655294363181082，登记重建0.3655294363181083，差1.1102230246251565e-16 rad。
+t=45s，Car1 pose[2] yaw：本机-0.01443733333499378，登记重建-0.014437333334993724，差5.551115123125783e-17 rad。
+在保持矩阵运算、公式和序列化不变时，替换诊断命名空间内的sin/cos即可精确恢复登记SHA，证实本次truth断言失败源自三角运算数值差异；不再仅凭猜测称“可能平台问题”。这不等于已证明所有事件流差异的原因。
+
+原test_adapter.py两项测试：原生1通过1失败；独立三角运算诊断模式2项通过。两模式日志同时交付。另对3场景x2精度的六次原始inputs.make严格SHA与新旧adapter配对检查通过。源文件前后SHA未变化，命名空间退出后恢复；没有改断言、改登记SHA、放宽成epsilon断言或用该模式生成新的定位结果。
+
+必须保留的限制：诊断模式的三个事件数组canonical SHA仍不等于PR81原执行回执；原始事件归档未读回。原生Windows测试并未被修成通过，原Linux运行环境也未在本机重现；本机没有可用WSL发行版。本轮关闭的是truth失败的定位与独立字节重建，不宣布完整输入复现完成。不要用Decimal诊断模式替代已冻结执行版本，或据此修改原归档登记。
+
+在完整main检出、已有numpy/scipy环境中复核（输出必须为新的Git外目录；Windows的TEMP/TMP先设I:\UWB\temp）：
+python tools/research_convergence_20261030/audit_identity.py --repo . --output <new-output>/identity --baseline-index docs/research/cooperative_integrity_baselines_20261029/results/RUN_INDEX.json
+python tools/research_convergence_20261030/check_adapter.py --repo . --output <new-output>/adapter
+这两条只生成轻量输入并跑adapter检查，不调用估计器。不需要下载bag/视频或重跑70结果。
+
+真正需要重新生成定位输入时，应先在原环境取回原事件/运行回执并核对canonical记录；原归档可达性仍是一项独立的复现缺项。已保存结果算术核验及本轮研究案例不依赖该归档重新生成。

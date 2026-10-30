@@ -1,0 +1,268 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "numpy": "2.2.6",
+  "repo_snapshot": "I:\\UWB\\project\\outputs\\new_pr_review_20261030\\v001\\pr85",
+  "source_sha256": {
+    "tools\\two_car_fixed_lag_fgo_v1\\simulate.py": "61288a3a21110da5fcc730b82113468168325ad72e72f4fd957d3ac6f8b0e679",
+    "tools\\two_car_fixed_lag_fgo_v1\\config.json": "20a9f64ac55cc43415dc34733bf436ad5c7181cebe06187e5895b6094c1075fa",
+    "tools\\cooperative_integrity_baselines_20261029\\inputs.py": "b3ceb03a83ac5914739ce69df0bbae2a6aab33d57f6300bf8919f050271a38ca",
+    "tools\\integrity_validation_20261030\\experiment.py": "e1587650c7555d4be65861dce95301c54548b22896158ec51ee703181129645c",
+    "docs\\field_tests\\20261024_25\\cooperative_peer_gate_probe_20261028\\review\\input_index.json": "5281a93958dcbcd9db094af84e9a301f52042881f0ecfd586c116880adb10654"
+  },
+  "scope": "input generation and adapter identity only; no estimator run",
+  "precision120_160_truth_bytes_equal": true,
+  "source_files_unchanged": true,
+  "cases": [
+    {
+      "mode": "native",
+      "condition": "nominal",
+      "strict_original_adapter_and_pairing_pass": false,
+      "config_file_sha256": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+      "registered_config_equal": true,
+      "truth_file_sha256": "fc63d9ee2635da48e541a373473d4c654cadda1bb415b2fd2d61bf488056b7f5",
+      "truth_array_sha256": "7e8d90e16ff99a9ec73199348578e98d81c462d01a36143ca2305591c792a8d4",
+      "registered_truth_equal": false,
+      "events_array_sha256": "94d9371eb087684fc691464f3a2033eeb4f3410e55f23fa84d80ded773cf23e5",
+      "prior_canonical_events_equal": false,
+      "event_count": 5125,
+      "native_truth_differences": [],
+      "original_archive_readback": false
+    },
+    {
+      "mode": "native",
+      "condition": "peer_bias",
+      "strict_original_adapter_and_pairing_pass": false,
+      "config_file_sha256": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+      "registered_config_equal": true,
+      "truth_file_sha256": "fc63d9ee2635da48e541a373473d4c654cadda1bb415b2fd2d61bf488056b7f5",
+      "truth_array_sha256": "7e8d90e16ff99a9ec73199348578e98d81c462d01a36143ca2305591c792a8d4",
+      "registered_truth_equal": false,
+      "events_array_sha256": "751458760e47ec3e8d990ff72babecb592bca570e2ff912ca597554a1f4a2a50",
+      "prior_canonical_events_equal": false,
+      "event_count": 5125,
+      "native_truth_differences": [],
+      "original_archive_readback": false
+    },
+    {
+      "mode": "native",
+      "condition": "car1_common_wall_bias",
+      "strict_original_adapter_and_pairing_pass": false,
+      "config_file_sha256": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+      "registered_config_equal": true,
+      "truth_file_sha256": "fc63d9ee2635da48e541a373473d4c654cadda1bb415b2fd2d61bf488056b7f5",
+      "truth_array_sha256": "7e8d90e16ff99a9ec73199348578e98d81c462d01a36143ca2305591c792a8d4",
+      "registered_truth_equal": false,
+      "events_array_sha256": "f6a75828e640ee493fa8af2fb182b3e43b9c53df97503dc78d497a7718b0cc40",
+      "prior_canonical_events_equal": false,
+      "event_count": 5125,
+      "native_truth_differences": [],
+      "original_archive_readback": false
+    },
+    {
+      "mode": "decimal120",
+      "condition": "nominal",
+      "strict_original_adapter_and_pairing_pass": true,
+      "config_file_sha256": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+      "registered_config_equal": true,
+      "truth_file_sha256": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75",
+      "truth_array_sha256": "c0a96964f7d01dd8bfbe27ec6d54dbd7ee3f2a302698769784e45fe520c1f2e9",
+      "registered_truth_equal": true,
+      "events_array_sha256": "1f51d910cebd1a0ca43d5f0f043ed1cef6859e8c1b214ab4d8aaef67895c36d3",
+      "prior_canonical_events_equal": false,
+      "event_count": 5125,
+      "native_truth_differences": [
+        {
+          "time_s": 26.0,
+          "car": "car1",
+          "field": "pose",
+          "index": 2,
+          "native": 0.3655294363181082,
+          "reference": 0.3655294363181083,
+          "absolute_difference": 1.1102230246251565e-16
+        },
+        {
+          "time_s": 45.0,
+          "car": "car1",
+          "field": "pose",
+          "index": 2,
+          "native": -0.01443733333499378,
+          "reference": -0.014437333334993724,
+          "absolute_difference": 5.551115123125783e-17
+        }
+      ],
+      "original_archive_readback": false
+    },
+    {
+      "mode": "decimal120",
+      "condition": "peer_bias",
+      "strict_original_adapter_and_pairing_pass": true,
+      "config_file_sha256": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+      "registered_config_equal": true,
+      "truth_file_sha256": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75",
+      "truth_array_sha256": "c0a96964f7d01dd8bfbe27ec6d54dbd7ee3f2a302698769784e45fe520c1f2e9",
+      "registered_truth_equal": true,
+      "events_array_sha256": "39d4768fb94f52aa07c0bf2b8bd371ca09641777159c088fb9e32d22827fad0c",
+      "prior_canonical_events_equal": false,
+      "event_count": 5125,
+      "native_truth_differences": [
+        {
+          "time_s": 26.0,
+          "car": "car1",
+          "field": "pose",
+          "index": 2,
+          "native": 0.3655294363181082,
+          "reference": 0.3655294363181083,
+          "absolute_difference": 1.1102230246251565e-16
+        },
+        {
+          "time_s": 45.0,
+          "car": "car1",
+          "field": "pose",
+          "index": 2,
+          "native": -0.01443733333499378,
+          "reference": -0.014437333334993724,
+          "absolute_difference": 5.551115123125783e-17
+        }
+      ],
+      "original_archive_readback": false
+    },
+    {
+      "mode": "decimal120",
+      "condition": "car1_common_wall_bias",
+      "strict_original_adapter_and_pairing_pass": true,
+      "config_file_sha256": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+      "registered_config_equal": true,
+      "truth_file_sha256": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75",
+      "truth_array_sha256": "c0a96964f7d01dd8bfbe27ec6d54dbd7ee3f2a302698769784e45fe520c1f2e9",
+      "registered_truth_equal": true,
+      "events_array_sha256": "2132be69ab886a772e69086543f99e116817d44d964a94476b8a2f0238707156",
+      "prior_canonical_events_equal": false,
+      "event_count": 5125,
+      "native_truth_differences": [
+        {
+          "time_s": 26.0,
+          "car": "car1",
+          "field": "pose",
+          "index": 2,
+          "native": 0.3655294363181082,
+          "reference": 0.3655294363181083,
+          "absolute_difference": 1.1102230246251565e-16
+        },
+        {
+          "time_s": 45.0,
+          "car": "car1",
+          "field": "pose",
+          "index": 2,
+          "native": -0.01443733333499378,
+          "reference": -0.014437333334993724,
+          "absolute_difference": 5.551115123125783e-17
+        }
+      ],
+      "original_archive_readback": false
+    },
+    {
+      "mode": "decimal160",
+      "condition": "nominal",
+      "strict_original_adapter_and_pairing_pass": true,
+      "config_file_sha256": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+      "registered_config_equal": true,
+      "truth_file_sha256": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75",
+      "truth_array_sha256": "c0a96964f7d01dd8bfbe27ec6d54dbd7ee3f2a302698769784e45fe520c1f2e9",
+      "registered_truth_equal": true,
+      "events_array_sha256": "1f51d910cebd1a0ca43d5f0f043ed1cef6859e8c1b214ab4d8aaef67895c36d3",
+      "prior_canonical_events_equal": false,
+      "event_count": 5125,
+      "native_truth_differences": [
+        {
+          "time_s": 26.0,
+          "car": "car1",
+          "field": "pose",
+          "index": 2,
+          "native": 0.3655294363181082,
+          "reference": 0.3655294363181083,
+          "absolute_difference": 1.1102230246251565e-16
+        },
+        {
+          "time_s": 45.0,
+          "car": "car1",
+          "field": "pose",
+          "index": 2,
+          "native": -0.01443733333499378,
+          "reference": -0.014437333334993724,
+          "absolute_difference": 5.551115123125783e-17
+        }
+      ],
+      "original_archive_readback": false
+    },
+    {
+      "mode": "decimal160",
+      "condition": "peer_bias",
+      "strict_original_adapter_and_pairing_pass": true,
+      "config_file_sha256": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+      "registered_config_equal": true,
+      "truth_file_sha256": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75",
+      "truth_array_sha256": "c0a96964f7d01dd8bfbe27ec6d54dbd7ee3f2a302698769784e45fe520c1f2e9",
+      "registered_truth_equal": true,
+      "events_array_sha256": "39d4768fb94f52aa07c0bf2b8bd371ca09641777159c088fb9e32d22827fad0c",
+      "prior_canonical_events_equal": false,
+      "event_count": 5125,
+      "native_truth_differences": [
+        {
+          "time_s": 26.0,
+          "car": "car1",
+          "field": "pose",
+          "index": 2,
+          "native": 0.3655294363181082,
+          "reference": 0.3655294363181083,
+          "absolute_difference": 1.1102230246251565e-16
+        },
+        {
+          "time_s": 45.0,
+          "car": "car1",
+          "field": "pose",
+          "index": 2,
+          "native": -0.01443733333499378,
+          "reference": -0.014437333334993724,
+          "absolute_difference": 5.551115123125783e-17
+        }
+      ],
+      "original_archive_readback": false
+    },
+    {
+      "mode": "decimal160",
+      "condition": "car1_common_wall_bias",
+      "strict_original_adapter_and_pairing_pass": true,
+      "config_file_sha256": "0b3e6c25dc87fb617725060690946839b87c366000e1500f55201160d8f29f0d",
+      "registered_config_equal": true,
+      "truth_file_sha256": "5bca79828e226e293280891f91e29a168d0f7a02c781d1c44dcd58a2c979de75",
+      "truth_array_sha256": "c0a96964f7d01dd8bfbe27ec6d54dbd7ee3f2a302698769784e45fe520c1f2e9",
+      "registered_truth_equal": true,
+      "events_array_sha256": "2132be69ab886a772e69086543f99e116817d44d964a94476b8a2f0238707156",
+      "prior_canonical_events_equal": false,
+      "event_count": 5125,
+      "native_truth_differences": [
+        {
+          "time_s": 26.0,
+          "car": "car1",
+          "field": "pose",
+          "index": 2,
+          "native": 0.3655294363181082,
+          "reference": 0.3655294363181083,
+          "absolute_difference": 1.1102230246251565e-16
+        },
+        {
+          "time_s": 45.0,
+          "car": "car1",
+          "field": "pose",
+          "index": 2,
+          "native": -0.01443733333499378,
+          "reference": -0.014437333334993724,
+          "absolute_difference": 5.551115123125783e-17
+        }
+      ],
+      "original_archive_readback": false
+    }
+  ],
+  "limits": "Scoped independent arithmetic reconstructs truth, not the missing original event archive or original Linux execution. Native test behavior is unchanged."
+}
