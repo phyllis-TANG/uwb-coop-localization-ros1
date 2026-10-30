@@ -30,6 +30,7 @@ def inspect(args):
             raise ValueError('No sensor_msgs/Imu topics found')
         for topic in topics:
             values, frames = [], set()
+            unreported_gyro = unreported_accel = nonfinite_rows = 0
             for c, ns, raw in reader.messages(connections=[c for c in reader.connections if c.topic == topic]):
                 m = reader.deserialize(raw, c.msgtype)
                 q = m.orientation
@@ -44,7 +45,21 @@ def inspect(args):
                 header = m.header.stamp.sec + m.header.stamp.nanosec * 1e-9
                 w = m.angular_velocity
                 a = m.linear_acceleration
-                values.append([receipt, header, norm, heading, w.x, w.y, w.z, a.x, a.y, a.z])
+                gyro = [w.x, w.y, w.z]
+                accel = [a.x, a.y, a.z]
+                gyro_provided = m.angular_velocity_covariance[0] != -1
+                accel_provided = m.linear_acceleration_covariance[0] != -1
+                unreported_gyro += int(not gyro_provided)
+                unreported_accel += int(not accel_provided)
+                nonfinite_rows += int((gyro_provided and not np.isfinite(gyro).all()) or
+                                      (accel_provided and not np.isfinite(accel).all()))
+                # ROS Imu: -1 means unavailable; zero covariance means unknown
+                # covariance, so a provided zero measurement must remain valid.
+                if not gyro_provided:
+                    gyro = [np.nan] * 3
+                if not accel_provided:
+                    accel = [np.nan] * 3
+                values.append([receipt, header, norm, heading, *gyro, *accel])
                 frames.add(m.header.frame_id)
             data = np.asarray(values)
             if not len(data):
@@ -62,12 +77,16 @@ def inspect(args):
                     'header_nonincreasing_count': int((dh <= 0).sum()),
                     'zero_header_count': int((data[:, 1] == 0).sum()),
                     'invalid_or_unreported_orientation_count': int((~np.isfinite(data[:, 3])).sum()),
-                    'nonfinite_gyro_accel_rows': int((~np.isfinite(data[:, 4:]).all(axis=1)).sum()),
+                    'unreported_gyro_count': unreported_gyro,
+                    'unreported_accel_count': unreported_accel,
+                    'nonfinite_gyro_accel_rows': nonfinite_rows,
                     'quaternion_norm_range': [float(valid_norms.min()), float(valid_norms.max())] if len(valid_norms) else None}
             if args.static_start is not None:
                 subset = data[(data[:, 0] >= args.static_start) & (data[:, 0] <= args.static_end)]
                 finite = subset[np.isfinite(subset[:, 4:7]).all(axis=1)]
                 result = {'requested_interval_s': [args.static_start, args.static_end], 'sample_count': len(subset),
+                          'valid_gyro_sample_count': len(finite),
+                          'gyro_xyz_mean_deg_s': None, 'gyro_xyz_std_deg_s': None,
                           'warning': 'Stationarity must be independently confirmed; this is not a calibrated bias.'}
                 if len(finite):
                     result['gyro_xyz_mean_deg_s'] = np.degrees(finite[:, 4:7].mean(axis=0)).tolist()
