@@ -1,0 +1,24 @@
+2026-10-30 merge acceptance and limitations
+
+Reviewed PR85 head: 7001d33da1f77875aa9cd2adbd7ffd155bc13610.
+Parent PR81 head: fed9157008530663280aa2413ef708e345e678e3.
+Independent Windows readback checked 298 file SHA-256 entries, 70 saved
+score files, 142080 metric rows and all supplied aggregate summaries.
+Calibration uses only six normal seeds; selected covariance scale stays 1.
+No research matrix was rerun. All calibration/validation seeds are exposed.
+
+Unresolved reproduction limitation: test_adapter.py has one passing test and
+one failure in inherited PR81 inputs.make registered_truth_bytes_equal.
+For all three seed101 inputs the generated configuration SHA matches, while
+the generated truth byte SHA does not in Python/NumPy 2.2.6 on Windows.
+The cause has NOT been established. This does not invalidate the checked
+saved-result arithmetic, but full input-identity reproduction is NOT passed.
+Do not remove the SHA assertion, refresh the registered hashes, or describe
+the suite as fully passing. Resolve by comparing canonical truth records in
+the original environment before relying on a newly generated input run.
+No new test is claimed to validate the original archived input bytes.
+
+Acceptance scope is archived evidence and an engineering SS baseline, not a
+certified risk bound, new algorithm superiority or field position accuracy.
+T02 remains a conditional B1 response; T10 reference acceptance is unchanged.
+Weak/short faults and long-tail availability remain explicit limitations.

@@ -1,0 +1,70 @@
+{
+  "status": "COMPLETE_NO_FURTHER_EXPERIMENTS_RUNNING",
+  "date_Asia_Shanghai": "2026-10-30T00:11:28.801971+08:00",
+  "branch": "analysis/20261029-cooperative-integrity-baselines",
+  "base_commit": "81fb509ba2d2a1b2e1f1151d53a7e73807820bd4",
+  "observed_main": "519113f38d636844285e01b56a193ca26ef2bfb4",
+  "kernel_commit": "74fa210e7cf6aa322eaebce19530510edb605d22",
+  "online_execution_commit": "d431ba1b44222e1e2d65247b2de6eb362f949b9b",
+  "delivery_snapshot_commit": "b050752864f9fe27e3b004f68a600cfa6032d4c0",
+  "result": "A mechanism-level; no blanket AL/risk certification",
+  "cases": 3,
+  "publications": 189,
+  "accepted": 183,
+  "tests": 15,
+  "semantic_negatives": 8,
+  "independent": {
+    "schur_steps": 504,
+    "linear_snapshots": 96,
+    "ss_scores": 1098,
+    "b1_scores": 1134,
+    "declarations": 13986,
+    "raw_receive_prefix_vehicle_bins": 378
+  },
+  "total_research_results_bytes": 31739766,
+  "external_results_bytes": 28431700,
+  "git_compact_bytes": 3308066,
+  "budget_bytes": 100000000,
+  "dependency_venv_separate": true,
+  "remaining": [
+    "application AL and noise/fault-risk calibration not available",
+    "original archive unavailable; controlled reproduction disclosed",
+    "no field accuracy claim"
+  ],
+  "resume": "Read saved evidence with independent.py/readback.py to a NEW output; do not rerun run.py",
+  "attempts": [
+    {
+      "id": "event_gzip_precheck",
+      "status": "FAILED_BEFORE_ESTIMATION",
+      "effect": "new payload SHA and old numeric equivalence recorded"
+    },
+    {
+      "id": "CLI_pair_v1",
+      "status": "FAILED_IMPORT_BEFORE_ESTIMATION",
+      "effect": "module precedence fixed and tested"
+    },
+    {
+      "id": "pair_v2",
+      "status": "DONE"
+    },
+    {
+      "id": "peer_v2",
+      "status": "DONE"
+    },
+    {
+      "id": "readback_v3",
+      "status": "FAILED_ROW_ORDER_BYTE_ASSUMPTION",
+      "effect": "all cells unchanged; v4 checks exact cell values/multiplicities"
+    },
+    {
+      "id": "readback_v4",
+      "status": "PASS"
+    }
+  ],
+  "draft_pr": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/81",
+  "draft": true,
+  "auto_merge": false,
+  "archive_commit": "724a2d33d4537112ae76fed198f537dad4c827de",
+  "remote_review_readback": "PASS",
+  "resume_required": false
+}

@@ -1,0 +1,33 @@
+{
+  "B2_status": "missing bound Odom/initial XY-yaw/extrinsics/clock model",
+  "cache_sha256": "ffe8e767d505de63db23d5cfb198203aff4f821d3e3c673f0a506e5905cb12b0",
+  "geometry_sha256": "bd59d654a6794cc61a5680816d479a7ae3a4b5a0376a3d5ebd517b6c3842266c",
+  "input": {
+    "all_bag_records": 69295,
+    "decoded_cache_sha256": "ffe8e767d505de63db23d5cfb198203aff4f821d3e3c673f0a506e5905cb12b0",
+    "duration_s": 243.754302503,
+    "end_receive_ns": 1792844301007410852,
+    "file": "T02_controlled_occlusion_20261024_051322.bag",
+    "id": "T02",
+    "index_source": "docs/field_tests/20261024_25/manifest.json#uwb_field_20261024/bags/T02_controlled_occlusion_20261024_051322.bag",
+    "notes": [],
+    "path": "/home/ubuntu22/uwb-static-to-method-02-20261029-artifacts/input-v1/T02_controlled_occlusion_20261024_051322.bag",
+    "ranges_decoded": 24438,
+    "sha256": "d34f0625bd67e1db81767e105fc6f397b1aa27e95d7f231c27f0002f0d3612cc",
+    "start_receive_ns": 1792844057253108349,
+    "topic_counts": {
+      "/car1/PowerVoltage": 409,
+      "/car1/imu": 4904,
+      "/car1/odom": 4902,
+      "/car1/uwb/frame3": 12243,
+      "/car1/uwb/ranges": 12238,
+      "/car2/PowerVoltage": 408,
+      "/car2/imu": 4888,
+      "/car2/nlink_linktrack_nodeframe3": 12214,
+      "/car2/odom": 4882,
+      "/car2/uwb/ranges": 12200,
+      "/rosout": 7
+    }
+  },
+  "scope": "conditional B1 only; no position HMI/FAR/FNR/accuracy"
+}

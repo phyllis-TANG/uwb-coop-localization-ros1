@@ -1,0 +1,15 @@
+{
+  "counts": {
+    "b1_scores": 378,
+    "declarations": 4662,
+    "linear_snapshots": 28,
+    "publications": 63,
+    "schur_steps": 168,
+    "ss_scores": 364
+  },
+  "imports": "numpy/stdlib only; no graph/Jacobian/policy imports",
+  "maximum_fd_k_abs_difference": 7.391634526676683e-10,
+  "maximum_fd_prior_b_abs_difference": 2.8446218713895632e-09,
+  "scope": "frozen linearization algebra, not physical calibration",
+  "status": "PASS"
+}
