@@ -1,0 +1,20 @@
+test_all_source_history_and_noise_no_leak (test_contract.Contracts) ... ok
+test_antenna_rotated_jacobian (test_contract.Contracts) ... ok
+test_cli_import_namespace (test_contract.Contracts) ... ok
+test_correlated_linear_least_squares_known_covariance (test_contract.Contracts) ... ok
+test_failure_unknown_never_success (test_contract.Contracts) ... ok
+test_frozen_graph_identity_through_marginalization (test_contract.Contracts) ... ok
+test_known_four_anchor_model (test_contract.Contracts) ... ok
+test_known_linear_qr_history_matches_batch (test_contract.Contracts) ... ok
+test_missing_invalid_unobservable (test_contract.Contracts) ... ok
+test_missing_odom_does_not_republish_stale_history (test_contract.Contracts) ... ok
+test_noise_derivative_finite_difference (test_contract.Contracts) ... ok
+test_real_solver_failure_is_unknown (test_contract.Contracts) ... ok
+test_shared_noise_not_independent (test_contract.Contracts) ... ok
+test_unsupported_odom_covariance_gap_is_explicit_unknown (test_contract.Contracts) ... ok
+test_alarm_preceding_error_crossing_has_no_fictitious_delay (test_readback.ReadoutContracts) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 1.937s
+
+OK
