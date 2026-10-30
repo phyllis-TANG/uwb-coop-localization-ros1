@@ -1,0 +1,42 @@
+{
+  "base_commit": "ef387a82f8c33d8f4c176568034ad2e89e328fec",
+  "source_sha256": {
+    "sim/isaac_lab/moon1/provenance.py": "eb6934b6375400f5bd342d48682f75bcfc97034f5dee9784b209a14e840807ff",
+    "sim/isaac_lab/moon1/run_moon1_v3.py": "60a63cbbab63e87a9f290d2968fcdd38e5d0fd568869b54ab086f13551664bb9",
+    "sim/isaac_lab/moon1/run_moon1.py": "5a25dbee4c2ff4bf9ac924407c2567abc481d95f7cfdfe565e8aaa071aff2492",
+    "sim/isaac_lab/moon1/antenna_geometry.py": "71dbaefae2a54a5def6311ac656db5b904b640684aa06adb63cfe4d0bbcf5712",
+    "sim/isaac_lab/moon1/test_antenna_geometry.py": "6d3488c66ac41c88757512391a0cf8f59c70a57898dea0c31c5ca31c7a7fbc6e",
+    "sim/isaac_lab/moon1/make_uwb_replay.py": "ea65178772e808f895f25ea1942450a09a0bdbf2da0cf8bebb3b8ddc38cfc273",
+    "sim/isaac_lab/moon1/prepare_moon1.py": "fc7866a12ccf104c04be14e0a76446f4e0ce50dca0ecf1c4b3a9731efed963cf",
+    "ros_ws/src/uwb_coop_localization/scripts/replay_moon1_uwb.py": "07a48e1dd4a0dd175850c83386c42bd01ca05920579b0412d265199bf9d6a8e8"
+  },
+  "real_artifacts": {
+    "source_PLY": {
+      "sha256": null,
+      "status": "not obtained or not generated in this repair"
+    },
+    "source_GT": {
+      "sha256": null,
+      "status": "not obtained or not generated in this repair"
+    },
+    "derived_NPZ": {
+      "sha256": null,
+      "status": "not obtained or not generated in this repair"
+    },
+    "derived_CSV": {
+      "sha256": null,
+      "status": "not obtained or not generated in this repair"
+    },
+    "derived_USD": {
+      "sha256": null,
+      "status": "not obtained or not generated in this repair"
+    }
+  },
+  "parameters": {
+    "antenna_height_m": 1.16,
+    "terrain_interpolation": "original bilinear grid, same clipping",
+    "coordinate_identity": "NPZ GT; CSV gt_z / body_z / antenna xyz"
+  },
+  "tests": "synthetic temporary NPZ/CSV only; removed by TemporaryDirectory; real data SHA not fabricated",
+  "gui_rerun": false
+}
