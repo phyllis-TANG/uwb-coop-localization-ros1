@@ -104,28 +104,16 @@ def make_line(stage, path, rgb):
     return line
 
 
-def terrain_z(data, x, y):
-    nx, ny = map(int, data["grid_shape"])
-    vertices = data["vertices"].reshape(nx, ny, 3)
-    x0, y0 = vertices[0, 0, :2]
-    dx = vertices[1, 0, 0] - x0
-    dy = vertices[0, 1, 1] - y0
-    fx = np.clip((x - x0) / dx, 0, nx - 1.000001)
-    fy = np.clip((y - y0) / dy, 0, ny - 1.000001)
-    ix, iy = int(fx), int(fy)
-    fx, fy = fx - ix, fy - iy
-    z = vertices[:, :, 2]
-    return float((1 - fx) * (1 - fy) * z[ix, iy] + fx * (1 - fy) * z[ix + 1, iy]
-                 + (1 - fx) * fy * z[ix, iy + 1] + fx * fy * z[ix + 1, iy + 1])
+from antenna_geometry import ANTENNA_HEIGHT_M
 
 
 def set_rover(ops, data, row, prefix):
     x, y = float(row[prefix + "_x"]), float(row[prefix + "_y"])
-    z = terrain_z(data, x, y)
+    z = float(row[prefix + "_body_z"])
     yaw = float(row[prefix + "_yaw"])
     ops[0].Set(Gf.Vec3d(x, y, z))
     ops[1].Set(Gf.Quatf(math.cos(yaw / 2), 0, 0, math.sin(yaw / 2)))
-    return Gf.Vec3f(x, y, z + 1.16)
+    return Gf.Vec3f(x, y, float(row[prefix + "_z"]))
 
 
 def main():
@@ -152,6 +140,8 @@ def main():
     if args.export_usd:
         args.export_usd.parent.mkdir(parents=True, exist_ok=True)
         stage.GetRootLayer().Export(str(args.export_usd))
+        from provenance import receipt
+        receipt(args.export_usd.with_suffix(".manifest.json"), vars(args), {"usd":args.export_usd,"scene_npz":args.scene,"replay_csv":args.replay}, {"source_ply":"see scene provenance.json", "source_gt":"see scene provenance.json"})
     times = replay["time_s"]
     frame = 0
     while simulation_app.is_running():
@@ -170,7 +160,7 @@ def main():
             center = [(float(a[i]) + float(b[i])) / 2.0 for i in range(3)]
             sim.set_camera_view(
                 [center[0] + 3.0, center[1] - 23.0, center[2] + 17.0],
-                [center[0], center[1], center[2] - 1.16],
+                [center[0], center[1], center[2] - ANTENNA_HEIGHT_M],
             )
         sim.step()
         frame += 1

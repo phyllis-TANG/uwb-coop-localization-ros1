@@ -183,6 +183,8 @@ def main():
         "caveat": "Unobserved cells use nearest measured height; not a validated collision or RF model.",
     }
     (args.output / "summary.json").write_text(json.dumps(summary, indent=2) + "\n")
+    from provenance import receipt
+    receipt(args.output / "provenance.json", vars(args), {"source_ply":args.ply,"source_gt":args.gt,"scene_npz":args.output / "moon1_scene.npz"}, {"csv":"not generated yet", "usd":"GUI not run"})
     print(json.dumps(summary, indent=2))
 
 

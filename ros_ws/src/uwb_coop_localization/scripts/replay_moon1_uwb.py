@@ -26,7 +26,7 @@ def sampled(row, prefix):
 
 def publish_odom(publisher, stamp, row, prefix, frame_id):
     pose = Pose2D(row[prefix + "_x"], row[prefix + "_y"], row[prefix + "_yaw"])
-    message = make_odometry(stamp, frame_id, prefix + "/base_link", pose, 0.0, 0.0)
+    message = make_odometry(stamp, frame_id, prefix + "/uwb_antenna", pose, 0.0, 0.0)
     message.pose.pose.position.z = float(row[prefix + "_z"])
     publisher.publish(message)
 
