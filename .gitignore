@@ -24,3 +24,6 @@ __pycache__/
 
 # catkin_make generated workspace marker
 ros_ws/.catkin_workspace
+
+# LuSNAR is downloaded and converted locally; do not commit dataset derivatives.
+/sim/isaac_lab/moon1/output/

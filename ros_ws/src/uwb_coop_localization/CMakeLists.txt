@@ -172,6 +172,7 @@ catkin_install_python(PROGRAMS
   scripts/analyze_two_car_bag.py
   scripts/linktrack_frame3.py
   scripts/nlink_frame3_bridge.py
+  scripts/replay_moon1_uwb.py
   scripts/two_car_model.py
   scripts/two_car_uwb_simulator.py
   scripts/uwb_linktrack_driver.py
