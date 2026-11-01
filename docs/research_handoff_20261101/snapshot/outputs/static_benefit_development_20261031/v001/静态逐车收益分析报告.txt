@@ -1,0 +1,95 @@
+2026-10-31 静态逐车收益分析结果
+完成：2包开发＋参数/源码/预测冻结后10包确认；两套固定校正条件、I/J/W025同输入比较。
+范围：静态天线坐标模型，复用固定窗数值核；接收时间离线回放。不是已验收的动态回放。
+I：不使用peer；J：原强度peer；W025：原peer稳健残差与Jacobian乘0.5，代价权重为0.25。
+raw不校正；historical仅Car2采用旧P1四链校正，Car1不迁移该系数，今天坐标不用于拟合。
+初始化：各车前5秒四墙UWB自初始化，未用尺量XY；尺量点仅评价。
+参考：手机测距、多次核对与地面卷尺点位，操作者估计1–2cm；按每轴2cm保守解释，平面半径2.828cm。
+下述方向仅在此参考误差假设下成立，不赋予独立标定或95%覆盖承诺。
+数值为逐包窗口RMSE差的均值，单位cm；正=误差增大，负=误差减小。
+参考条件下的方向由配对平均平方误差差区间判定；RMSE差用于直观描述，不直接加减参考半径。
+组内只有2或3次配对重复；窗口时刻/消息数不是独立试验；不作总体MSE阈值或罕见风险认证。
+
+一 冻结后的10包确认汇总（第9包恢复人员状态备注保留，清洁汇总按预定规则排除该恢复窗）
+profile | geometry | phase | car | arm | runs | I均值cm | 方法均值cm | 方法-I cm | 参考条件下方向
+historical | G1 | human | car1 | J | 2 | 37.80 | 27.52 | -10.29 | 改善
+historical | G1 | human | car1 | W025 | 2 | 37.80 | 33.16 | -4.65 | 改善
+historical | G1 | human | car2 | J | 2 | 2.88 | 14.04 | +11.15 | 受损
+historical | G1 | human | car2 | W025 | 2 | 2.88 | 6.77 | +3.89 | 受损
+historical | G1 | normal | car1 | J | 4 | 36.82 | 27.61 | -9.21 | 改善
+historical | G1 | normal | car1 | W025 | 4 | 36.82 | 32.57 | -4.25 | 改善
+historical | G1 | normal | car2 | J | 4 | 3.15 | 13.95 | +10.79 | 受损
+historical | G1 | normal | car2 | W025 | 4 | 3.15 | 7.18 | +4.02 | 受损
+historical | G1 | recovery | car1 | J | 2 | 36.55 | 27.01 | -9.53 | 改善
+historical | G1 | recovery | car1 | W025 | 2 | 36.55 | 32.26 | -4.28 | 改善
+historical | G1 | recovery | car2 | J | 2 | 3.32 | 14.36 | +11.04 | 受损
+historical | G1 | recovery | car2 | W025 | 2 | 3.32 | 7.57 | +4.24 | 受损
+historical | G2 | human | car1 | J | 3 | 38.93 | 39.86 | +0.94 | 受损
+historical | G2 | human | car1 | W025 | 3 | 38.93 | 39.33 | +0.40 | 受损
+historical | G2 | human | car2 | J | 3 | 17.64 | 1.57 | -16.07 | 改善
+historical | G2 | human | car2 | W025 | 3 | 17.64 | 7.45 | -10.19 | 改善
+historical | G2 | normal | car1 | J | 6 | 39.35 | 40.05 | +0.70 | 受损
+historical | G2 | normal | car1 | W025 | 6 | 39.35 | 39.57 | +0.22 | 不可判定
+historical | G2 | normal | car2 | J | 6 | 17.20 | 1.89 | -15.31 | 改善
+historical | G2 | normal | car2 | W025 | 6 | 17.20 | 6.92 | -10.28 | 改善
+historical | G2 | recovery | car1 | J | 2 | 39.24 | 39.91 | +0.67 | 受损
+historical | G2 | recovery | car1 | W025 | 2 | 39.24 | 39.47 | +0.23 | 不可判定
+historical | G2 | recovery | car2 | J | 2 | 16.01 | 1.91 | -14.10 | 改善
+historical | G2 | recovery | car2 | W025 | 2 | 16.01 | 6.12 | -9.89 | 改善
+raw | G1 | human | car1 | J | 2 | 37.81 | 38.82 | +1.01 | 受损
+raw | G1 | human | car1 | W025 | 2 | 37.81 | 38.74 | +0.94 | 受损
+raw | G1 | human | car2 | J | 2 | 62.66 | 55.24 | -7.42 | 改善
+raw | G1 | human | car2 | W025 | 2 | 62.66 | 56.42 | -6.24 | 改善
+raw | G1 | normal | car1 | J | 4 | 36.82 | 38.25 | +1.43 | 受损
+raw | G1 | normal | car1 | W025 | 4 | 36.82 | 38.15 | +1.33 | 受损
+raw | G1 | normal | car2 | J | 4 | 65.09 | 54.84 | -10.24 | 改善
+raw | G1 | normal | car2 | W025 | 4 | 65.09 | 56.72 | -8.37 | 改善
+raw | G1 | recovery | car1 | J | 2 | 36.55 | 37.85 | +1.31 | 受损
+raw | G1 | recovery | car1 | W025 | 2 | 36.55 | 37.77 | +1.22 | 受损
+raw | G1 | recovery | car2 | J | 2 | 65.37 | 54.92 | -10.45 | 改善
+raw | G1 | recovery | car2 | W025 | 2 | 65.37 | 56.69 | -8.69 | 改善
+raw | G2 | human | car1 | J | 3 | 38.93 | 37.89 | -1.04 | 改善
+raw | G2 | human | car1 | W025 | 3 | 38.93 | 38.05 | -0.87 | 改善
+raw | G2 | human | car2 | J | 3 | 55.66 | 52.52 | -3.14 | 改善
+raw | G2 | human | car2 | W025 | 3 | 55.66 | 53.33 | -2.33 | 改善
+raw | G2 | normal | car1 | J | 6 | 39.35 | 38.70 | -0.65 | 改善
+raw | G2 | normal | car1 | W025 | 6 | 39.35 | 38.77 | -0.58 | 改善
+raw | G2 | normal | car2 | J | 6 | 55.67 | 52.79 | -2.88 | 改善
+raw | G2 | normal | car2 | W025 | 6 | 55.67 | 53.55 | -2.12 | 改善
+raw | G2 | recovery | car1 | J | 2 | 39.24 | 38.55 | -0.69 | 改善
+raw | G2 | recovery | car1 | W025 | 2 | 39.24 | 38.62 | -0.62 | 改善
+raw | G2 | recovery | car2 | J | 2 | 56.47 | 53.74 | -2.72 | 改善
+raw | G2 | recovery | car2 | W025 | 2 | 56.47 | 54.44 | -2.03 | 改善
+
+二 事先冻结的条件性均值偏差方向预测
+historical G1：16/16方向吻合。比较共享数据，不能当独立试验成功率。
+historical G2：0/24方向吻合。比较共享数据，不能当独立试验成功率。
+raw G1：16/16方向吻合。比较共享数据，不能当独立试验成功率。
+raw G2：12/24方向吻合。比较共享数据，不能当独立试验成功率。
+预测假设把G1开发正常包的两车偏差向量迁移到G2，再用工程权重的单次高斯更新近似。
+G2移动Car2也改变其墙几何；预测不符必须保留，不能改为“纯方向因果已验证”。
+
+三 固定缩权与计算完整性
+W025相对I的平均位移小于等于J：80/80个车/窗口/profile比较。它不等于两车位置误差都改善。
+评价窗共同接受时刻缺项行数：0
+所有case/profile的发布状态及共同分母见quality_summary.json；warmup、失败或不确定状态未当作成功。
+一次技术修正：第9包约1.4秒接收积压使第147秒里程计过期。保留0.5秒门槛，该时刻输出null/不可用；其余时刻继续。
+修正在6包已完成后登记，原数值核/权重/窗口/预测不变；不声称10包的软件执行从未中断。INPUT_GAP_AMENDMENT.json保留完整来源。
+接收断档前后源时间间隔仍约0.05秒(odom)/0.02秒(UWB)，之后集中到达，位置未跳变；支持晚到/积压，不支持据此认定位置漂移。
+
+四 论文与后续边界
+已形成可复查的实测逐车对照；协同效果依赖双方初始偏差、校正迁移和几何，不能认证哪辆车永远可靠。
+固定窗、鲁棒权重与历史作用不满足单次独立线性模型全部前提，不能把观察到的方向说成精确MSE边界已验证。
+已有PR71/74/78/79/87、理论稿和受控仿真直接承接，不重跑旧矩阵、不因反例补录或改参数。
+旧动态T08–T15继续保留用途；连续位置参考/动态时钟和外参验收未升级，本轮未读其轨迹误差。
+下一最小工作：用已有受控仿真与上述失败/吻合条件写出方法适用边界，整理一页中心结果和完整论文图表。
+若后续依据这10包再调方法，它们已暴露，必须登记开发，不能再次称未见验证。
+
+来源与产物
+冻结：I:\UWB\project\outputs\static_benefit_development_20261031\v001\CONFIRMATION_FREEZE.json
+逐包：I:\UWB\project\outputs\static_benefit_development_20261031\v001\confirmation001\combined_results.json
+聚合：I:\UWB\project\outputs\static_benefit_development_20261031\v001\confirmation001\aggregate_clean.json
+预测读回：I:\UWB\project\outputs\static_benefit_development_20261031\v001\confirmation001\prediction_checks.json
+环境：I:\UWB\project\outputs\static_benefit_development_20261031\v001\confirmation001\environment.json
+
+补充：第11包140秒也按同一已登记规则输出不可用；与第9包147秒均在预定稳定主窗之外。两个profile各保留一行null，未填补。

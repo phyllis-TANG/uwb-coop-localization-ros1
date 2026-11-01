@@ -1,0 +1,98 @@
+{
+  "recorded_at_utc": "2026-10-31T15:25:00Z",
+  "user_decision": "Include explicit UWB / wheel-odometry / IMU gyro+bias fusion in paper system; retain per-vehicle cooperative benefit/cost as core research question",
+  "status": "OFFLINE_SCOPE_AND_EXISTING_EVIDENCE_REVIEW_COMPLETE_NEW_FIELD_IMU_REPLAY_NOT_RUN",
+  "repository": "phyllis-TANG/uwb-coop-localization-ros1",
+  "repository_ref": "6c8b23087739418faa2169bf08ccae80d2d884c1",
+  "existing_implementation": "tools/two_car_imu_fgo",
+  "historical_algorithm_base": "ca8fbac4dbdf678074be5fb80bf6aff472d258e6",
+  "source_documents": [
+    {
+      "path": "docs/field_tests/20261024_25/two_car_imu_fgo_20261028/HANDOFF.md",
+      "local_path": "I:/UWB/project/outputs/two_car_imu_integration_20261031/v001/source_documents/HANDOFF.md",
+      "git_blob_sha": "23b52bf9ae33357a899bcbc2b0d126cd0d93e4c9"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_imu_fgo_20261028/REPORT.md",
+      "local_path": "I:/UWB/project/outputs/two_car_imu_integration_20261031/v001/source_documents/REPORT.md",
+      "git_blob_sha": "c24b47787cd5861da225f7e289ef2dbd94a9f5a5"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_imu_fgo_20261028/FIELD_MODEL.md",
+      "local_path": "I:/UWB/project/outputs/two_car_imu_integration_20261031/v001/source_documents/FIELD_MODEL.md",
+      "git_blob_sha": "8c64e185f29818513f40a333f57fa83979a4b0a3"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_imu_fgo_20261028/STAGE_C_REPORT.md",
+      "local_path": "I:/UWB/project/outputs/two_car_imu_integration_20261031/v001/source_documents/STAGE_C_REPORT.md",
+      "git_blob_sha": "5dee7ce45c42b2a89630ccf6696cdf7ee10e45fa"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_imu_fgo_20261028/ARTIFACTS.json",
+      "local_path": "I:/UWB/project/outputs/two_car_imu_integration_20261031/v001/source_documents/ARTIFACTS.json",
+      "git_blob_sha": "0886efd76a45c8c2244aa34e5600af5c306455ad"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_imu_fgo_20261028/MODEL.md",
+      "local_path": "I:/UWB/project/outputs/two_car_imu_integration_20261031/v001/source_documents/MODEL.md",
+      "git_blob_sha": "50e98cdcf208eaf39a7edbed95ea79bb93e50272"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_imu_fgo_20261028/SOURCE_VERSIONS.json",
+      "local_path": "I:/UWB/project/outputs/two_car_imu_integration_20261031/v001/source_documents/SOURCE_VERSIONS.json",
+      "git_blob_sha": "62f2b0b1224d490eb6e53c280c24b01da3bbcb40"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_imu_fgo_20261028/STAGE_B_REPORT.md",
+      "local_path": "I:/UWB/project/outputs/two_car_imu_integration_20261031/v001/source_documents/STAGE_B_REPORT.md",
+      "git_blob_sha": "417301377729813c6c8f3a0afc53abb4c490a02d"
+    }
+  ],
+  "today_data": {
+    "completed_static_runs": 12,
+    "recorded_imu_counts": {
+      "car1": 64431,
+      "car2": 64251
+    },
+    "counts_source": "I:/UWB/project/outputs/field_measurements_20261031/v001/IMU已录数据与当前用途.json",
+    "extra_imu_factors_in_completed_static_analysis": 0,
+    "all_existing_confirmation_outputs_exposed": true,
+    "future_method_extension_use": "development; no new unseen-validation claim"
+  },
+  "reviewed_prior_results": {
+    "synthetic_logical_units": 40,
+    "old_field_conditional_development_units": 8,
+    "t08_t10_global_methods_not_run": 8,
+    "independent_archive_verification_this_turn": false,
+    "numerical_replay_this_turn": false,
+    "report_contents_retrieved_and_read": true
+  },
+  "hardware": {
+    "cars_powered_off_per_user": true,
+    "new_ssh_connections": false,
+    "new_capture": false,
+    "power_on_needed_for_this_review": false
+  },
+  "remaining_minimal_work": [
+    "Check today's two development-bag adapter against existing M0-M3 field contracts before new computation",
+    "Bind explicit installation/time/initialization candidates and scope to each new run",
+    "Use a common new interface for matched IMU on/off and peer on/off comparisons; preserve old static results",
+    "Evaluate dynamic/heading claims only within actual independent reference coverage"
+  ],
+  "limitations": [
+    "Existing IMU gains inconsistent; do not claim guaranteed improvement",
+    "Archived host source does not bind Car1 or every historical running binary",
+    "Different MCU fields do not establish statistical independence",
+    "Static new bags do not establish dynamic heading or inertial accuracy",
+    "Clock/extrinsic inputs for old T08/T10 global branch remained absent in historical report"
+  ],
+  "no_actions": [
+    "No solver rerun",
+    "No raw bag re-decode",
+    "No NAS archive download",
+    "No sensor recalibration",
+    "No new acquisition",
+    "No change to old frozen predictions/results",
+    "No external GitHub mutation"
+  ]
+}

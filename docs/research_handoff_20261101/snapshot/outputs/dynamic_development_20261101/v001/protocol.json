@@ -1,0 +1,23 @@
+{
+  "status": "development_protocol_before_first_dynamic_results",
+  "cases": ["A1", "B1"],
+  "methods": ["M2", "M3", "M3W025"],
+  "field_model": "conditional; unverified geometric-center to odom-origin equivalence",
+  "lever_arms_body_xy_m": {"car1": [0.08, -0.06], "car2": [-0.12, 0.08]},
+  "heading": "nominal room +X at start; 5deg inherited prior, not calibrated heading uncertainty",
+  "initialization": "first 5s after recorded start stable begins; four-wall nonlinear least squares only; no manual XY used by estimator",
+  "clock": "VM bag receipt association; preserve original header and prefix availability; no physical clock calibration claim",
+  "keyframe_step_s": 1,
+  "range_bin_half_width_s": 0.4,
+  "availability_delay_s": 1,
+  "minimum_samples_per_link": 5,
+  "odom": "latest arrived receipt at/before state time; max age 0.5s; skip frame if either missing; retain actual cumulative XY and quaternion yaw",
+  "gyro": "published Z engineering axis; left hold max100ms; no complete angular factor on any gap; no odom angular fallback",
+  "weights": "unchanged inherited engineering weights and zero range corrections, not calibrated probabilities",
+  "peer": "car1 node_0 only; reverse direction not duplicated as independent factor",
+  "fixed_vehicle": "not constrained to manual reference",
+  "evaluation": "all four manually measured stable windows; valid and failure coverage separate; no reference interpolation through motion",
+  "main_scope": "first conditional dynamic development comparison; not independent validation, safety certification or novelty proof",
+  "heldout": "do not read A2/B2 measurements or localization outputs in estimator development",
+  "limits": "no parameter search, no new field collection, no old batch rerun; max1200s per cell CPU1"
+}
