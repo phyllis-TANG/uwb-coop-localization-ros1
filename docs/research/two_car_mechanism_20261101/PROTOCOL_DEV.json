@@ -1,0 +1,496 @@
+{
+  "base_commit": "1835472dd34087f1701f8ee8bd8f300b8c742cef",
+  "dependencies": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.2.6",
+    "python": "3.12.14",
+    "scipy": "1.15.3"
+  },
+  "fixed_lag_s": 20,
+  "generation": {
+    "both_moving": {
+      "development_only": true,
+      "duration_s": 96,
+      "fault_start_s": 24,
+      "fixed_antenna_xy_m": [
+        1.5,
+        4
+      ],
+      "fixed_car": "car1",
+      "fixed_yaw_rad": 0.0,
+      "gyro_bias_rad_s": {
+        "car1": 0.025,
+        "car2": -0.015
+      },
+      "initial_prior_time_s": 1,
+      "motion": "both_moving",
+      "noise": {
+        "gyro_bias_rw_rad_s_sqrt_s": 0.0007,
+        "gyro_white_sigma_rad_s": 0.006,
+        "initial_xy_sigma_m": 0.08,
+        "initial_yaw_sigma_deg": 2.0,
+        "odom_step_xy_sigma_m": 0.002,
+        "odom_step_yaw_sigma_rad": 0.0008,
+        "range_sigma_m": 0.04,
+        "wall_network_common_fraction": 0.0,
+        "wall_vehicle_common_fraction": 0.0
+      },
+      "sample_step_ns": 50000000,
+      "seed": 7,
+      "trajectories": {
+        "car1": [
+          {
+            "antenna_xy_m": [
+              1.5,
+              4
+            ],
+            "t_s": 0,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.2,
+              3.5
+            ],
+            "t_s": 8,
+            "yaw_rad": 0.7
+          },
+          {
+            "antenna_xy_m": [
+              2.8,
+              4.2
+            ],
+            "t_s": 16,
+            "yaw_rad": 1.4
+          },
+          {
+            "antenna_xy_m": [
+              1.5,
+              4
+            ],
+            "t_s": 32,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.2,
+              3.5
+            ],
+            "t_s": 40,
+            "yaw_rad": 0.7
+          },
+          {
+            "antenna_xy_m": [
+              2.8,
+              4.2
+            ],
+            "t_s": 48,
+            "yaw_rad": 1.4
+          },
+          {
+            "antenna_xy_m": [
+              1.5,
+              4
+            ],
+            "t_s": 64,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.2,
+              3.5
+            ],
+            "t_s": 72,
+            "yaw_rad": 0.7
+          },
+          {
+            "antenna_xy_m": [
+              2.8,
+              4.2
+            ],
+            "t_s": 80,
+            "yaw_rad": 1.4
+          },
+          {
+            "antenna_xy_m": [
+              1.5,
+              4
+            ],
+            "t_s": 96,
+            "yaw_rad": 0
+          }
+        ],
+        "car2": [
+          {
+            "antenna_xy_m": [
+              2,
+              2
+            ],
+            "t_s": 0,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.75,
+              2
+            ],
+            "t_s": 8,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              3.5,
+              2
+            ],
+            "t_s": 16,
+            "yaw_rad": 3.141592653589793
+          },
+          {
+            "antenna_xy_m": [
+              2,
+              2
+            ],
+            "t_s": 32,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.75,
+              2
+            ],
+            "t_s": 40,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              3.5,
+              2
+            ],
+            "t_s": 48,
+            "yaw_rad": 3.141592653589793
+          },
+          {
+            "antenna_xy_m": [
+              2,
+              2
+            ],
+            "t_s": 64,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.75,
+              2
+            ],
+            "t_s": 72,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              3.5,
+              2
+            ],
+            "t_s": 80,
+            "yaw_rad": 3.141592653589793
+          },
+          {
+            "antenna_xy_m": [
+              2,
+              2
+            ],
+            "t_s": 96,
+            "yaw_rad": 0
+          }
+        ]
+      }
+    },
+    "static_moving": {
+      "development_only": true,
+      "duration_s": 96,
+      "fault_start_s": 24,
+      "fixed_antenna_xy_m": [
+        1.5,
+        4
+      ],
+      "fixed_car": "car1",
+      "fixed_yaw_rad": 0.0,
+      "gyro_bias_rad_s": {
+        "car1": 0.025,
+        "car2": -0.015
+      },
+      "initial_prior_time_s": 1,
+      "motion": "static_moving",
+      "noise": {
+        "gyro_bias_rw_rad_s_sqrt_s": 0.0007,
+        "gyro_white_sigma_rad_s": 0.006,
+        "initial_xy_sigma_m": 0.08,
+        "initial_yaw_sigma_deg": 2.0,
+        "odom_step_xy_sigma_m": 0.002,
+        "odom_step_yaw_sigma_rad": 0.0008,
+        "range_sigma_m": 0.04,
+        "wall_network_common_fraction": 0.0,
+        "wall_vehicle_common_fraction": 0.0
+      },
+      "sample_step_ns": 50000000,
+      "seed": 7,
+      "trajectories": {
+        "car1": [
+          {
+            "antenna_xy_m": [
+              1.5,
+              4
+            ],
+            "t_s": 0,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.2,
+              3.5
+            ],
+            "t_s": 8,
+            "yaw_rad": 0.7
+          },
+          {
+            "antenna_xy_m": [
+              2.8,
+              4.2
+            ],
+            "t_s": 16,
+            "yaw_rad": 1.4
+          },
+          {
+            "antenna_xy_m": [
+              1.5,
+              4
+            ],
+            "t_s": 32,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.2,
+              3.5
+            ],
+            "t_s": 40,
+            "yaw_rad": 0.7
+          },
+          {
+            "antenna_xy_m": [
+              2.8,
+              4.2
+            ],
+            "t_s": 48,
+            "yaw_rad": 1.4
+          },
+          {
+            "antenna_xy_m": [
+              1.5,
+              4
+            ],
+            "t_s": 64,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.2,
+              3.5
+            ],
+            "t_s": 72,
+            "yaw_rad": 0.7
+          },
+          {
+            "antenna_xy_m": [
+              2.8,
+              4.2
+            ],
+            "t_s": 80,
+            "yaw_rad": 1.4
+          },
+          {
+            "antenna_xy_m": [
+              1.5,
+              4
+            ],
+            "t_s": 96,
+            "yaw_rad": 0
+          }
+        ],
+        "car2": [
+          {
+            "antenna_xy_m": [
+              2,
+              2
+            ],
+            "t_s": 0,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.75,
+              2
+            ],
+            "t_s": 8,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              3.5,
+              2
+            ],
+            "t_s": 16,
+            "yaw_rad": 3.141592653589793
+          },
+          {
+            "antenna_xy_m": [
+              2,
+              2
+            ],
+            "t_s": 32,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.75,
+              2
+            ],
+            "t_s": 40,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              3.5,
+              2
+            ],
+            "t_s": 48,
+            "yaw_rad": 3.141592653589793
+          },
+          {
+            "antenna_xy_m": [
+              2,
+              2
+            ],
+            "t_s": 64,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.75,
+              2
+            ],
+            "t_s": 72,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              3.5,
+              2
+            ],
+            "t_s": 80,
+            "yaw_rad": 3.141592653589793
+          },
+          {
+            "antenna_xy_m": [
+              2,
+              2
+            ],
+            "t_s": 96,
+            "yaw_rad": 0
+          }
+        ]
+      }
+    }
+  },
+  "harm_epsilon_m2": 1e-12,
+  "interval": {
+    "method": "Student-t mean interval 95% plus min/max",
+    "no_frame_independence": true,
+    "unit": "seed_run"
+  },
+  "methods": [
+    "M2",
+    "M3",
+    "M3W025"
+  ],
+  "monitor": {
+    "calibration_purpose": "normal descriptive reference, no alarm threshold fitting",
+    "safety_or_FAR_claim": false,
+    "sim_four_wall": "raw only; uncalibrated",
+    "sim_source_exclusion": "unknown; 8D history/covariance not adapted"
+  },
+  "partitions": {
+    "calibration": {
+      "conditions": [
+        "nominal"
+      ],
+      "seeds": []
+    },
+    "development": {
+      "conditions": [
+        "nominal",
+        "car1_wall_14"
+      ],
+      "seeds": [
+        7
+      ]
+    },
+    "test": {
+      "conditions": [
+        "nominal",
+        "car1_wall_14",
+        "car2_wall_14"
+      ],
+      "seeds": []
+    }
+  },
+  "phase_windows": {
+    "all": [
+      0,
+      96
+    ],
+    "fault": [
+      24,
+      38
+    ],
+    "pre": [
+      0,
+      24
+    ],
+    "recovery": [
+      38,
+      96
+    ]
+  },
+  "physical_fault_s": [
+    24,
+    38
+  ],
+  "planned_final_seed_counts": {
+    "calibration": 2,
+    "test": 4
+  },
+  "pr88_head": "e5151ee42d8908f0619b362d2b595c594f7b8352",
+  "pr89_head": "b294cce0ec1760a4b36883ae902759d8ba1718c6",
+  "primary_metric": "per_car_paired_mean_squared_antenna_XY_error_difference_vs_M2",
+  "recovery": {
+    "actual_factor_support_required": true,
+    "consecutive_valid_hold_s": 5,
+    "paired_nominal_displacement_m": 0.02,
+    "report_reexcursion": true
+  },
+  "resources": {
+    "blas_threads": 1,
+    "cpu_workers": 1,
+    "omp_threads": 1,
+    "partition_artifact_cap_bytes": 419430400,
+    "partition_wall_cap_s": 2700,
+    "per_process_observed_rss_cap_kib": 524288,
+    "subprocess_wall_cap_s": 180,
+    "total_expected_final_optimization_cells": 84
+  },
+  "schema_version": 1,
+  "stage": "development_contract_frozen_before_new_results",
+  "stop": "finite matrix/readback only; no tuning, new algorithm, new sensor or new field capture",
+  "study": "six_condition_local_wall_bias_propagation_mechanism",
+  "wall_bias_m": 0.3
+}
