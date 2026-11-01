@@ -53,6 +53,8 @@ def execute(protocol_path, partition, output):
                         command(cell+'-readback.log','readback.py','--run',run,'--events',inp/'events.jsonl.gz',
                             '--output',root/(cell+'-READBACK.json'))
                         meta=json.loads((run/'run.json').read_text())
+                        if meta['process_peak_rss_kib'] > p['resources']['per_process_observed_rss_cap_kib']:
+                            raise ValueError('Observed process RSS exceeds frozen cap')
                         index['cells'].append(dict(seed=seed,motion=motion,condition=condition,method=method,
                             run=str(run.relative_to(root)),input=str(inp.relative_to(root)),
                             run_json_sha256=sha(run/'run.json'),input_manifest_sha256=sha(inp/'manifest.json'),
