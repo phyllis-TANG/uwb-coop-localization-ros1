@@ -1,0 +1,208 @@
+{
+  "authorization": {
+    "PR": "not_published",
+    "external_messages": "none",
+    "formal_matrix": "WAIT_FOR_LOCAL_PARAMETER_AND_SEED_FREEZE",
+    "merge": "not_authorized",
+    "robot_or_field_scripts": "out_of_scope"
+  },
+  "calibration": {
+    "equal_budget_is_not_equal_realized_FAR": true,
+    "local_network_budget_allocation": null,
+    "nominal_budget_per_car_mean_max_fraction": 0.05,
+    "nominal_budget_per_car_run_max_fraction": 0.1,
+    "normal_denominator": null,
+    "profile_selection_rule": null,
+    "threshold_freeze_receipt": null,
+    "truth_or_fault_labels_allowed": false,
+    "unknown_handling": null
+  },
+  "clocks": {
+    "clock_offset_and_drift": null,
+    "eof_policy": "no advance beyond final actual receipt",
+    "header_domains": null,
+    "header_to_receipt_mapping": null,
+    "receipt_delay_and_reordering": null,
+    "release_delay_s": null
+  },
+  "condition_count_does_not_multiply_methods_or_repeats": true,
+  "conditions_per_motion": [
+    "nominal",
+    "car1_wall_14",
+    "car1_wall_28",
+    "car2_wall_14",
+    "car2_wall_28"
+  ],
+  "evaluation": {
+    "AL_status": "engineering_assumption_not_application_approved",
+    "complete_run_window_s": null,
+    "paired_comparison": "same seed same config same arrived events",
+    "paired_nominal_tail_criterion": null,
+    "per_car_and_network_separate": true,
+    "phase_windows_s": null,
+    "primary_AL_m": 0.1,
+    "rare_risk_or_PL_claim": false,
+    "recovery_censoring_rule": null,
+    "recovery_criterion": null,
+    "recovery_dwell_s": null,
+    "reference_point": "antenna_XY_primary_base_XY_also_report",
+    "sensitivity_AL_m": [
+      0.05,
+      0.2
+    ],
+    "state_vs_availability_time": null,
+    "uncertainty_summary_over_runs": null,
+    "unknown_and_missing_error_retained": true
+  },
+  "fault": {
+    "car1_or_car2": "condition",
+    "duration_s": [
+      14,
+      28
+    ],
+    "interval": "left_closed_right_open",
+    "mixed_bin_boundary_rule": null,
+    "onset_s": null,
+    "peer": "nominal",
+    "recovery_window_s": null,
+    "type": "controlled_source_hypothesis_not_natural_NLOS",
+    "wall_common_additive_m": 0.3
+  },
+  "formal_execution_enabled": false,
+  "heldout_data": {
+    "A2": "DO_NOT_OPEN_BEFORE_FREEZE",
+    "B2": "DO_NOT_OPEN_BEFORE_FREEZE"
+  },
+  "initialization": {
+    "design_time_s": 1,
+    "endpoint_constraints": "none",
+    "external_prior_source": null,
+    "per_car_bias_prior": null,
+    "prior_mean_and_covariance": null
+  },
+  "local_development_evidence": {
+    "A1_manifest_sha256": null,
+    "B1_manifest_sha256": null,
+    "parameter_fit_receipt": null
+  },
+  "methods": {
+    "B2_8D_adapter": "INCOMPLETE",
+    "M3W025": {
+      "peer_cost_weight": 0.25,
+      "pseudo_huber_sigma_unchanged": true,
+      "residual_and_jacobian_scale": 0.5
+    },
+    "estimators": [
+      "M2",
+      "M3",
+      "M3W025"
+    ],
+    "monitors": [
+      "B1_local",
+      "B1_network",
+      "B2_local",
+      "B2_network"
+    ],
+    "same_inputs_and_8D_model_required": true,
+    "shared_noise_cross_covariance_required": true,
+    "subset_history_from_start": true
+  },
+  "motion": {
+    "both_moving": {
+      "relative_bearing_coverage": null,
+      "speed_limits_m_s": null,
+      "total_duration_s": null,
+      "trajectory_pair": null,
+      "waypoint_times_s": null
+    },
+    "static_moving": {
+      "coordinates_reference_point_confirmation": null,
+      "fixed_car": null,
+      "fixed_nominal_antenna_xy_m": [
+        1.5,
+        4
+      ],
+      "initial_heading_rad": null,
+      "mobile_nominal_antenna_xy_m": [
+        [
+          2,
+          2
+        ],
+        [
+          2.75,
+          2
+        ],
+        [
+          3.5,
+          2
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "speed_limit_m_s": null,
+      "total_duration_s": null,
+      "waypoint_times_s": null
+    }
+  },
+  "research": {
+    "effect_size_thresholds": null,
+    "falsifiable_prediction_ids": [
+      "P1_B2_coverage_tradeoff",
+      "P2_fixed_weight_tradeoff",
+      "P3_history_tail"
+    ],
+    "novelty_review": null,
+    "stop_rule": "If no sufficient distinction, deliver applicability/negative-result report; no automatic algorithm search"
+  },
+  "resources": {
+    "blas_threads": 1,
+    "cpu_only": true,
+    "max_artifact_bytes": null,
+    "memory_per_process_mib": null,
+    "omp_threads": 1,
+    "timeout_and_failure_policy": null,
+    "total_budget": null,
+    "wall_time_per_run_s": null
+  },
+  "schema_version": 1,
+  "seeds": {
+    "development_exposed": [
+      7
+    ],
+    "independent_calibration": null,
+    "independent_test": null,
+    "repetitions_per_condition": null,
+    "seed_partition_sha256": null,
+    "unit": "complete paired run; never random frames"
+  },
+  "sensors": {
+    "antenna_heights_m": null,
+    "dropout_and_outlier_models": null,
+    "lever_arms_body_xy_m": null,
+    "noise": {
+      "cross_car_covariance": null,
+      "distributions": null,
+      "gyro_bias_initial": null,
+      "gyro_bias_random_walk": null,
+      "odom_gyro_shared_noise": null,
+      "raw_scales": null,
+      "temporal_covariance": null,
+      "within_car_cross_link_covariance": null
+    },
+    "range_corrections_m": null,
+    "sample_rates_hz": null,
+    "wall_anchors_xyz_m": null
+  },
+  "source": {
+    "dependencies": null,
+    "file_sha256": null,
+    "freeze_commit": null,
+    "independent_review_receipt": null,
+    "observed_main": "6c8b23087739418faa2169bf08ccae80d2d884c1",
+    "repo": "phyllis-TANG/uwb-coop-localization-ros1"
+  },
+  "status": "TEMPLATE_NOT_FROZEN",
+  "total_conditions": 10
+}

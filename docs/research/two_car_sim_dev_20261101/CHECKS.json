@@ -1,0 +1,93 @@
+{
+  "artifact_bytes": 17699644,
+  "checks": [
+    {
+      "name": "receipt_prefix_after_marginalization",
+      "scope": "M3W025 development prefix26s vs28s",
+      "status": "PASS"
+    },
+    {
+      "name": "truth_label_separation",
+      "scope": "sensor/config signature; forbidden event fields; builtins.open guard for truth/labels on short replay; no OS sandbox claim",
+      "status": "PASS"
+    },
+    {
+      "full_smoke_car2_max_component_difference": 8.81239525796218e-16,
+      "name": "M2_no_peer_success_path",
+      "scope": "other-car fault/peer perturbation through marginalization, tolerance1e-10; failure-publication independence not claimed",
+      "status": "PASS"
+    },
+    {
+      "name": "gyro_input_and_missing_edge",
+      "scope": "present-time analytic rate/3D geometry, angular receipts in all runs; missing edge core prediction with held yaw and no Odom angular fallback",
+      "status": "PASS"
+    },
+    {
+      "name": "fixed_peer_cost_weight",
+      "scope": "residual/J .5, scalar costs, FD Jacobian, all saved weighted QR H/g/constant and cross terms",
+      "status": "PASS"
+    },
+    {
+      "name": "shared_baseline_inputs",
+      "scope": "all6 runs same per-condition bins and B1 raw statistics",
+      "status": "PASS"
+    },
+    {
+      "name": "B1_new_threshold_and_normal_budget",
+      "status": "INCOMPLETE"
+    },
+    {
+      "name": "B2_8D_subset_and_primitive_history",
+      "status": "INCOMPLETE"
+    },
+    {
+      "name": "B2_8D_causality_and_cross_covariance",
+      "status": "INCOMPLETE"
+    },
+    {
+      "name": "new_field_calibration",
+      "status": "NOT_DONE_NO_A1_B1_DATA"
+    },
+    {
+      "name": "recovery_criterion",
+      "status": "NOT_FROZEN"
+    },
+    {
+      "name": "independent_technical_review",
+      "status": "PENDING_LOCAL_REVIEW"
+    },
+    {
+      "name": "novelty",
+      "status": "NOT_ESTABLISHED"
+    }
+  ],
+  "code_worktree_clean_at_all_runs": true,
+  "development_only": true,
+  "formal_matrix_executed": false,
+  "observed_main": "6c8b23087739418faa2169bf08ccae80d2d884c1",
+  "probability_claim": false,
+  "saved_evidence": {
+    "all_file_hashes": 87,
+    "counts": {
+      "angular_intervals": 360,
+      "bins": 186,
+      "gyro_segments": 7200,
+      "marginals_fd": 60,
+      "objectives": 174,
+      "publications": 186
+    },
+    "reader": "separate scalar equations plus finite differences; no online solver/Jacobian import",
+    "status": "PASS"
+  },
+  "source_execution_commit": "86188b7527810807260fe86e1bdf4c0f1f518301",
+  "unit_contracts": {
+    "first_failure_log": "logs/contracts-01.log",
+    "initial_issues": [
+      "legacy evaluate module collision in test",
+      "overstrict exact equality on floating tails"
+    ],
+    "log": "logs/contracts-final.log",
+    "status": "PASS",
+    "tests": 11
+  }
+}

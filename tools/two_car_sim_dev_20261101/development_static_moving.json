@@ -1,0 +1,100 @@
+{
+  "development_only": true,
+  "duration_s": 32,
+  "fault_start_s": 6,
+  "fixed_antenna_xy_m": [
+    1.5,
+    4
+  ],
+  "fixed_car": "car1",
+  "fixed_yaw_rad": 0.0,
+  "gyro_bias_rad_s": {
+    "car1": 0.025,
+    "car2": -0.015
+  },
+  "initial_prior_time_s": 1,
+  "motion": "static_moving",
+  "noise": {
+    "gyro_bias_rw_rad_s_sqrt_s": 0.0007,
+    "gyro_white_sigma_rad_s": 0.006,
+    "initial_xy_sigma_m": 0.08,
+    "initial_yaw_sigma_deg": 2.0,
+    "odom_step_xy_sigma_m": 0.002,
+    "odom_step_yaw_sigma_rad": 0.0008,
+    "range_sigma_m": 0.04,
+    "wall_network_common_fraction": 0.0,
+    "wall_vehicle_common_fraction": 0.0
+  },
+  "sample_step_ns": 50000000,
+  "seed": 7,
+  "trajectories": {
+    "car1": [
+      {
+        "antenna_xy_m": [
+          1.5,
+          4
+        ],
+        "t_s": 0,
+        "yaw_rad": 0
+      },
+      {
+        "antenna_xy_m": [
+          2.2,
+          3.5
+        ],
+        "t_s": 8,
+        "yaw_rad": 0.7
+      },
+      {
+        "antenna_xy_m": [
+          2.8,
+          4.2
+        ],
+        "t_s": 16,
+        "yaw_rad": 1.4
+      },
+      {
+        "antenna_xy_m": [
+          1.5,
+          4
+        ],
+        "t_s": 32,
+        "yaw_rad": 0
+      }
+    ],
+    "car2": [
+      {
+        "antenna_xy_m": [
+          2,
+          2
+        ],
+        "t_s": 0,
+        "yaw_rad": 0
+      },
+      {
+        "antenna_xy_m": [
+          2.75,
+          2
+        ],
+        "t_s": 8,
+        "yaw_rad": 0
+      },
+      {
+        "antenna_xy_m": [
+          3.5,
+          2
+        ],
+        "t_s": 16,
+        "yaw_rad": 3.141592653589793
+      },
+      {
+        "antenna_xy_m": [
+          2,
+          2
+        ],
+        "t_s": 32,
+        "yaw_rad": 0
+      }
+    ]
+  }
+}

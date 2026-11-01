@@ -1,0 +1,61 @@
+{
+  "declarations": [
+    "local_car1",
+    "local_car2",
+    "network"
+  ],
+  "forbidden_online_inputs": [
+    "truth",
+    "fault_labels",
+    "future_events",
+    "heldout_data"
+  ],
+  "implemented": [
+    "B1 raw four-anchor function on exact shared arrived bins",
+    "explicit B1/B2 unknown declarations",
+    "8D estimator QR records and gyro support",
+    "fixed .25 cost solve/marginal adapter"
+  ],
+  "incomplete": [
+    "8D source-exclusion graph histories",
+    "gyro/bias primitive covariance",
+    "rank-aware prior noise propagation",
+    "8D shared-noise cross covariance",
+    "new-design calibration",
+    "causal B2 availability",
+    "recovery criterion"
+  ],
+  "online_inputs": [
+    "config",
+    "arrived_event_prefix"
+  ],
+  "required_monitor_fields": [
+    "state_epoch_ns",
+    "availability_cutoff_epoch_ns",
+    "source_support_ids",
+    "main_and_each_subset_history_hash",
+    "independent_prior_matrix_offset_constant",
+    "shared_primitive_columns",
+    "prior_noise_sensitivity",
+    "cross_solution_covariance",
+    "rank_and_failure_reason"
+  ],
+  "schema_version": 1,
+  "state_order": [
+    "x1",
+    "y1",
+    "yaw1",
+    "gyro_bias1",
+    "x2",
+    "y2",
+    "yaw2",
+    "gyro_bias2"
+  ],
+  "status": "8D_B2_INCOMPLETE",
+  "subset_groups": [
+    "car1_absolute",
+    "car2_absolute",
+    "peer"
+  ],
+  "unknown_policy": "Missing adaptation, primitive, rank, calibration or accepted main => unknown/failure, never healthy score zero"
+}
