@@ -1,0 +1,4 @@
+# Preserve frozen source bytes and generator-owned vector whitespace.
+**/data/** -text -whitespace
+**/sources/** -text -whitespace
+*.svg -whitespace
