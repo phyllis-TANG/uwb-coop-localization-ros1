@@ -1,0 +1,7 @@
+2026-11-01 用户要求在云端继续仿真时，本地排查B1约2.85m异常。
+产物：outputs/dynamic_development_20261101/v001/anomaly_audit001/排查结论.txt；AUDIT.json、INPUT_AUDIT.json、RAW_FRAME_CHECK.json、DIAGNOSTIC_PROTOCOL.txt、DIAGNOSTIC_RESULTS.json、DIAGNOSTIC_STOP_COMPARISON.json、两259帧诊断轨迹。
+用途：全部为已暴露B1开发排查；A2/B2未访问；没有新采集，没有修改原bag/原六运行，没有新策略验证声明。
+发现：停车后Car1 node_10原Frame3测距约3.36→5.40m，简化ranges与69963个对应raw链值差0；估计位置和航向随后偏离。6929段gyro积分重新对照通过；抽查Jacobian/SVD边缘化未发现实现错误。
+从相同index270图状态原输入重放259帧与原pose差0。仅移除该链的事后诊断在B窗45共同有效时刻使Car1 RMSE 2.84773→0.69532m，Car2 0.39818→0.35611m；不是可部署在线策略，不证明物理故障原因，仍有剩余误差。
+两保存目标函数的M2初值复求未改善不良解，不能简单归因于warmstart；历史/条件模型贡献尚未完全隔离。当前没有应宣布已修复的软件bug，也不把数据作废。保持独立确认未启动。
+云端任务未被本窗口修改或追加；本轮结果尚未上传PR89。

@@ -1,0 +1,59 @@
+{
+  "scope": "saved detailed/compact output and counts consistency; not independent re-solve or full Schur audit",
+  "checks": [
+    {
+      "case": "A1",
+      "method": "M2",
+      "frames_checked": 1111,
+      "marginalization_records": 1090,
+      "trajectory_sha256": "f40264e4875133d6010eeaf9b888b00512d8fa705f277a68dc628c7956c76194",
+      "summary_sha256": "fa571bd5c3a3e8e13067d66bcf1895e80a779386069e92354fd785d6407f3e7b",
+      "passed": true
+    },
+    {
+      "case": "A1",
+      "method": "M3",
+      "frames_checked": 1111,
+      "marginalization_records": 1090,
+      "trajectory_sha256": "da45029797577b356ec97e16068d40a8e1e65df3888b25922c25d6b0f524d7a5",
+      "summary_sha256": "29e9e8ced2dfe2e12d0f39fceb184d05b99a8216b1f87cb1faaee621b1749048",
+      "passed": true
+    },
+    {
+      "case": "A1",
+      "method": "M3W025",
+      "frames_checked": 1111,
+      "marginalization_records": 1090,
+      "trajectory_sha256": "c17de8fb7f11e6b2e9e658ec505c77745804b9c26987f36d59b6f836596e1be9",
+      "summary_sha256": "2021a79d7e5332ec3222b9f299c7bc1b01f6d865be9e72491afe3048c6785ea3",
+      "passed": true
+    },
+    {
+      "case": "B1",
+      "method": "M2",
+      "frames_checked": 1361,
+      "marginalization_records": 1340,
+      "trajectory_sha256": "0f72e6d8dba0f78eb753f307d8a95d1b4c46fa7edad94b848d72871683d06094",
+      "summary_sha256": "75255bbb134f8404a81d9db42168291d883e03fb186cf3927420868326e99f4c",
+      "passed": true
+    },
+    {
+      "case": "B1",
+      "method": "M3",
+      "frames_checked": 1361,
+      "marginalization_records": 1340,
+      "trajectory_sha256": "aa57bc334e10cbe50ba39e2c8cd52ec201afe8172f230af86d6b333f26947fc9",
+      "summary_sha256": "7d7d48b79c1b0ab1f2bcbade4ac54f5d5e94d48e86966e441761f6a80314f682",
+      "passed": true
+    },
+    {
+      "case": "B1",
+      "method": "M3W025",
+      "frames_checked": 1361,
+      "marginalization_records": 1340,
+      "trajectory_sha256": "62a99cc9784e27af71c463826856886da1bad7fb7f3b581468a311f2a6aa6e32",
+      "summary_sha256": "3117da949458dd0a9dd3beac607b63b1cff804b0f8fa741d31468a206006beeb",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+2026-11-01 运行中配置来源文字更正（不改数值或已锁文件）
+两份config.json的angular.<car>.imu_frame_id.value和source已写为真实记录frame及actual recorded frame，但source_kind残留模板的synthetic_design。正确来源类型应理解为recorded_message_metadata；这不是合成IMU，解码sensor_records保留了原话题/header/frame/receipt，适配器按真实carN/gyro_link过滤。
+原配置及INPUT_LOCK保持不变，以便重现本次运行；本更正作为关联附录，不能因模板标签将实测改名synthetic或宣称已标定IMU轴。数值计算只使用value，不使用该source_kind标签，本更正不触发重复计算。后续发布适配器版本时应修正元数据并生成新锁，不覆盖本次运行记录。

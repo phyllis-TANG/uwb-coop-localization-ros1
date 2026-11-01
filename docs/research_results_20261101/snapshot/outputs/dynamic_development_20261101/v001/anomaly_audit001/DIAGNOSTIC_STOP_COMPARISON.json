@@ -1,0 +1,49 @@
+{
+  "scope": "post-hoc diagnostic only; not a tuned method or validation",
+  "rows": [
+    {
+      "car": "car1",
+      "common_valid_frames": 45,
+      "reference_xy_m": [
+        2.8,
+        1.98
+      ],
+      "baseline": {
+        "rmse_m": 2.8477275548965157,
+        "mean_antenna_xy_m": [
+          2.3515730547339806,
+          4.791877523442099
+        ]
+      },
+      "diagnostic_remove_car1_node10": {
+        "rmse_m": 0.6953186942889543,
+        "mean_antenna_xy_m": [
+          3.0299403842146058,
+          1.3238124627594354
+        ]
+      }
+    },
+    {
+      "car": "car2",
+      "common_valid_frames": 45,
+      "reference_xy_m": [
+        1.51,
+        3.99
+      ],
+      "baseline": {
+        "rmse_m": 0.39817619781955443,
+        "mean_antenna_xy_m": [
+          1.22018109704848,
+          4.263000563512985
+        ]
+      },
+      "diagnostic_remove_car1_node10": {
+        "rmse_m": 0.35610928068749453,
+        "mean_antenna_xy_m": [
+          1.392606371853885,
+          4.326186272204999
+        ]
+      }
+    }
+  ]
+}
