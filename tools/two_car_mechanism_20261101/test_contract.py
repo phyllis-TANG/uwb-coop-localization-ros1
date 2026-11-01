@@ -9,6 +9,7 @@ import unittest
 from support import DOC, ROOT, compact, digest, expanded_rows, protocol, write_lines
 from inputs import make
 from bindings import generator
+from analyze import summarize_frames, recovery, interval
 
 
 class Contracts(unittest.TestCase):
@@ -78,6 +79,27 @@ class Contracts(unittest.TestCase):
             bad[-1]['bins']['car1']['observations']['node_2']+=.01
             other=Path(td)/'bad.jsonl.gz';write_lines(other,bad)
             with self.assertRaises(ValueError):list(expanded_rows(other))
+
+    def test_metric_unknown_denominators_and_run_intervals(self):
+        frames=[]
+        for t in range(4):
+            frames.append(dict(time_s=t,published=t>0,valid=t>=2,paired_valid=t>=2,failed=False,
+                squared_error_m2=None if t==0 else [.04,.09,.01][t-1],
+                delta_squared_error_vs_M2_m2=None if t==0 else [0.,.02,-.01][t-1],
+                four_wall_statistic=1.+t,posterior_wall_rms_m=.1,
+                unchanged_stat_error_changed=False,unchanged_stat_error_worse=False))
+        r=summarize_frames(frames,0,4,1e-12)
+        self.assertEqual([r[k] for k in ('window_s','finite_s','valid_s','paired_valid_s','unknown_or_invalid_s','no_publication_s','harm_duration_s')],[4,3,2,2,2,1,1])
+        self.assertAlmostEqual(r['delta_mse_vs_M2_m2'],.005)
+        self.assertEqual(interval([2.,2.,2.,2.]),dict(n=4,mean=2.,lo95=2.,hi95=2.,minimum=2.,maximum=2.))
+
+    def test_recovery_first_confirmation_reexcursion_and_censoring(self):
+        frames=[dict(time_s=t,paired_nominal_valid=True,paired_nominal_displacement_m=.04 if t<4 or t==10 else .01,
+                     availability_cutoff_s=t+1,prior_cross_information_norm=.2,prior_affine_norm=.1) for t in range(20)]
+        r=recovery(frames,4,20,.02,3,8)
+        self.assertEqual((r['first_recovery_start_s'],r['first_recovery_confirm_state_s'],r['first_recovery_confirm_receipt_cutoff_s'],r['first_recovery_after_factor_exit_start_s'],r['reexcursion_or_invalid_s']),(4,6,7,11,1))
+        for f in frames:f['paired_nominal_displacement_m']=.04
+        self.assertTrue(recovery(frames,4,20,.02,3,8)['right_censored'])
 
 
 if __name__=='__main__':unittest.main(verbosity=2)

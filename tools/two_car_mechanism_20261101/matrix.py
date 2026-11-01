@@ -3,6 +3,7 @@ import argparse
 from datetime import datetime,timezone
 import json
 import os
+import resource
 from pathlib import Path
 import subprocess
 import sys
@@ -36,7 +37,11 @@ def execute(protocol_path, partition, output):
         index['commands'].append(argv)
         dump(root/'RUN_INDEX.json',index)
         with (root/'logs'/name).open('x') as f:
-            subprocess.run(argv,env=env,stdout=f,stderr=subprocess.STDOUT,check=True,timeout=p['resources']['subprocess_wall_cap_s'])
+            def limits():
+                cap=p['resources'].get('subprocess_address_space_cap_bytes',2147483648)
+                resource.setrlimit(resource.RLIMIT_AS,(cap,cap))
+            subprocess.run(argv,env=env,stdout=f,stderr=subprocess.STDOUT,check=True,
+                timeout=p['resources']['subprocess_wall_cap_s'],preexec_fn=limits)
     try:
         for seed in part['seeds']:
             for motion in MOTIONS:
