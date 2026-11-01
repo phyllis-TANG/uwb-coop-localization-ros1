@@ -1,0 +1,70 @@
+{
+  "date": "2026-11-01",
+  "runs": [
+    {
+      "id": "A1",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\field_20261101_dynamic\\formal\\A1_DEV_RESTART_20261101T081711Z.bag",
+      "sha256": "3db4ce6b29b24fb629a087cdc7538036123fd5bc2762eb2c7d10f57c2f210dfc",
+      "message_count": 325842,
+      "receipt_span_s": 1142.596249199,
+      "first_receipt_ns": 1.793521034397315E+18,
+      "last_receipt_ns": 1.7935221769935642E+18,
+      "missing_required_topics": [],
+      "assigned_use": "development",
+      "technical_qc_path": "I:\\UWB\\project\\outputs\\field_measurements_20261101\\v001\\A1_technical_QC.json"
+    },
+    {
+      "id": "A2",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\field_20261101_dynamic\\formal\\A2_RESERVED_20261101T083817Z.bag",
+      "sha256": "0184dd239c031618437e9899377045fb2fccb8efeef13c31c11871e65cc22f70",
+      "message_count": 348383,
+      "receipt_span_s": 1222.197610249,
+      "first_receipt_ns": 1.793522300559815E+18,
+      "last_receipt_ns": 1.7935235227574252E+18,
+      "missing_required_topics": [],
+      "assigned_use": "reserved_confirmation",
+      "technical_qc_path": "I:\\UWB\\project\\outputs\\field_measurements_20261101\\v001\\A2_technical_QC.json"
+    },
+    {
+      "id": "B1",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\field_20261101_dynamic\\formal\\B1_DEV_20261101T090416Z.bag",
+      "sha256": "4af1187606cafa5b383215aa5eef9fc3ca88d9f8f59b6e9551ac89b88126062d",
+      "message_count": 399153,
+      "receipt_span_s": 1400.714458506,
+      "first_receipt_ns": 1.7935238599154496E+18,
+      "last_receipt_ns": 1.7935252606299082E+18,
+      "missing_required_topics": [],
+      "assigned_use": "development",
+      "technical_qc_path": "I:\\UWB\\project\\outputs\\field_measurements_20261101\\v001\\B1_technical_QC.json"
+    },
+    {
+      "id": "B2_PREFIX",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\field_20261101_dynamic\\formal\\B2_RESERVED_20261101T092948Z.bag",
+      "sha256": "de205e98b8bcfd79ac2c3852f4492ddaff2f73709b072dec09573d67a785f8d5",
+      "message_count": 72167,
+      "receipt_span_s": 252.006116639,
+      "first_receipt_ns": 1.7935253912537764E+18,
+      "last_receipt_ns": 1.793525643259893E+18,
+      "missing_required_topics": [],
+      "assigned_use": "reserved_confirmation",
+      "technical_qc_path": "I:\\UWB\\project\\outputs\\field_measurements_20261101\\v001\\B2_PREFIX_technical_QC.json"
+    },
+    {
+      "id": "B2_CONTINUATION",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\field_20261101_dynamic\\formal\\B2_RESERVED_CONTINUATION_20261101T093805Z.bag",
+      "sha256": "9c8d55593e9ae09f8bf1193e1a249ec62fac70e4f3bd970881450b8dc524a65f",
+      "message_count": 309562,
+      "receipt_span_s": 1086.741103891,
+      "first_receipt_ns": 1.7935258886747604E+18,
+      "last_receipt_ns": 1.7935269754158643E+18,
+      "missing_required_topics": [],
+      "assigned_use": "reserved_confirmation",
+      "technical_qc_path": "I:\\UWB\\project\\outputs\\field_measurements_20261101\\v001\\B2_CONTINUATION_technical_QC.json"
+    }
+  ],
+  "b2_gap_s": 245.414867456,
+  "b2_status": "route phases captured in two separated segments, not a continuous full-route verification",
+  "raw_data_readonly": true,
+  "algorithm_validation": "not performed on reserved data",
+  "remaining": "L-shaped development capture discussed but not executed; dynamic model/clock/extrinsic assumptions and gap handling remain for analysis"
+}

@@ -1,0 +1,617 @@
+{
+  "status": "FROZEN_BEFORE_RESERVED_ESTIMATOR_EXPOSURE",
+  "created_utc": "2026-10-31T14:41:16.001330+00:00",
+  "protocol": {
+    "status": "confirmation_protocol_v001",
+    "allowed_run_ids": [
+      "G1_R2_W1",
+      "G1_R2_N",
+      "G1_R3_N",
+      "G1_R3_W1",
+      "G2_R1_N",
+      "G2_R1_W1",
+      "G2_R2_W1",
+      "G2_R2_N",
+      "G2_R3_N",
+      "G2_R3_W1"
+    ],
+    "estimator": "existing pinned WindowGraph; no source modifications",
+    "case_scope": "static antenna-frame reduction, not dynamic body-frame calibration",
+    "state": "antenna XY plus auxiliary yaw; fixed historical antenna heights",
+    "initial": "independent per-car four-wall-only first-five-receipt-second bootstrap; no surveyed XY or peer",
+    "timing": "VM bag receipt order; integer ns; 1Hz cutoff; trailing 0.8s median; no future input",
+    "minimum_per_wall_or_peer_samples": 5,
+    "bootstrap_s": 5,
+    "first_keyframe_s": 6,
+    "max_odom_age_s": 0.5,
+    "static_odom_translation_gate_m": 0.001,
+    "core_inherited": {
+      "lag_s": 20,
+      "wall_sigma_m": 0.2,
+      "peer_sigma_m": 0.2,
+      "odom_translation_sigma_m": 0.03,
+      "initial_prior_sigma_m": 0.2
+    },
+    "fixed_strength": {
+      "I": 0.0,
+      "J": 1.0,
+      "W025": 0.25
+    },
+    "weight_definition": "multiply original peer pseudo-Huber residual AND Jacobian by sqrt(weight); keep robust scale fixed",
+    "peer": "car1-to-car2 only; reverse diagnostic, not a second independent factor",
+    "ranges": "parsed bridge canonical once; raw topics not duplicated as additional factors",
+    "no_range_bias_calibration": true,
+    "imu_factors": 0,
+    "phases": "normal electronic-start+40:55; human hold_ack+5:25; recovery returned_ack+60:85; P00 normal bag-start+40:55",
+    "score": "same run/car/reference/time; common accepted I/J/W025; per-window descriptive, not population MSE",
+    "reference_epsilon_m": [
+      0,
+      0.01,
+      0.02,
+      0.05,
+      0.1
+    ],
+    "epsilon_status": "hypothetical sensitivity, not measured uncertainty",
+    "reference_bound": "static shared point: meanD(r) +/- 2*epsilon*norm(mean(c-i)); no epsilon certification",
+    "limitations": [
+      "Receipt time does not establish physical action latency or a calibrated dynamic clock.",
+      "Normal operation is not zero-bias certification; both vehicles can be biased.",
+      "Engineering graph weights are not calibrated sampling covariance.",
+      "Fixed-height installation and anchor uncertainty have not been quantified.",
+      "Single static run and correlated keyframes are not independent experimental repetitions.",
+      "Single-update theoretical MSE boundary is not an exact theorem for nonlinear fixed-lag outputs."
+    ]
+  },
+  "source_sha256": {
+    "I:\\UWB\\project\\outputs\\pr87_review_20261030\\v001\\snapshot\\tools\\two_car_fixed_lag_fgo_v1\\graph.py": "5c80d6b4f947824d581f268c9fac2760d4df9ccc540abb12ccfee689b4234e2a",
+    "I:\\UWB\\project\\outputs\\pr87_review_20261030\\v001\\snapshot\\tools\\two_car_fixed_lag_fgo_v1\\legacy.py": "335fce6b33d4af8977ac54591413bfcdcfc0ffcb62a3f469356943c1f5326ce2",
+    "I:\\UWB\\project\\outputs\\pr87_review_20261030\\v001\\snapshot\\tools\\two_car_fixed_lag_fgo_v1\\config.json": "20a9f64ac55cc43415dc34733bf436ad5c7181cebe06187e5895b6094c1075fa",
+    "I:\\UWB\\project\\outputs\\pr87_review_20261030\\v001\\snapshot\\tools\\two_car_fixed_lag_fgo_v1\\dependency_lock.json": "d2606e4328892d0e3b196fa42cd19360a64b22b9b27b2af1814f956d188c7a4e",
+    "I:\\UWB\\project\\outputs\\static_benefit_development_20261031\\v001\\confirmation_adapter.py": "75600c1b013542419ffb759854943d366a2d228a642811d1d2d87ebe46c994b8",
+    "I:\\UWB\\project\\outputs\\field_measurements_20261031\\v001\\P00_QC\\bag_decoder_snapshot.py": "42a558fc0450927dd6a529ea2978361d2a1454fb6396e5237c5bf9aa9ffd2bc3",
+    "I:\\UWB\\project\\outputs\\pr87_review_20261030\\v001\\snapshot\\docs\\field_tests\\single_car_historical_L_20261021\\results\\evidence\\new_graph.py": "cc8934e0ee34eabddd46ed09e0de1ca69e9a74b00e93147f7d99f5a04d77e903",
+    "I:\\UWB\\project\\outputs\\pr87_review_20261030\\v001\\snapshot\\tools\\single_car_fixed_lag.py": "9a16680c145f84bca3e78810c78108e0ef41ee4aba21409dfe06ae73563473af",
+    "I:\\UWB\\project\\outputs\\pr87_review_20261030\\v001\\snapshot\\tools\\single_car_imu_fgo\\configuration.py": "e7f32bdd4cbc69378b35d53023afa116d6138e9d26e4509766cfe0c02d13a2c4",
+    "I:\\UWB\\project\\outputs\\pr87_review_20261030\\v001\\snapshot\\tools\\single_car_imu_fgo\\replay.py": "09b8cfed9125afc74a4e3050b84ee095f8459bcbc556b77eb489cba6be9aefcd",
+    "I:\\UWB\\project\\outputs\\pr87_review_20261030\\v001\\snapshot\\tools\\single_car_sequential_replay.py": "53429cbdb0804398dd105cd3383ec517b0db1af68b37e474431576d8ef62b9c3",
+    "I:\\UWB\\project\\outputs\\static_benefit_development_20261031\\v001\\confirmation_runner.py": "1fa9462ba3a8b80eafb4799389e8e8c7b7239e39b89914693a107003af232657",
+    "I:\\UWB\\project\\outputs\\static_benefit_development_20261031\\v001\\historical_profile.py": "4fc941b5f883b24e7abb1b0aed9ed366803457e5f4f7c85c57dda95921a6728a",
+    "I:\\UWB\\project\\outputs\\static_benefit_development_20261031\\v001\\analyze_static_development.py": "52b0320fbac9af90685318aaab47c136b3dbbb22eb84ba807688ba1a2ee086b4",
+    "I:\\UWB\\project\\outputs\\pr80_reference_review_20261029\\v001\\snapshot\\docs\\research\\static_evidence_to_method_20261029\\COMPACT_RESULTS.csv": "ea3670d5d830359f5f05d22f3eab67306142b3c05f1ee10d0ce55d64d62727ee"
+  },
+  "calibration_profile": {
+    "profile": "historical_Car2_P1_only_transfer_sensitivity",
+    "source": "I:\\UWB\\project\\outputs\\pr80_reference_review_20261029\\v001\\snapshot\\docs\\research\\static_evidence_to_method_20261029\\COMPACT_RESULTS.csv",
+    "source_sha256": "ea3670d5d830359f5f05d22f3eab67306142b3c05f1ee10d0ce55d64d62727ee",
+    "source_bag_sha256": "f7250698ae484b7ace3bf152b1ff216f5470b5d75f0b90a66483edb402d1ec33",
+    "range_bias_m": {
+      "node_10": 0.6088636183798282,
+      "node_2": 0.449737490591974,
+      "node_3": 0.2012859604623305,
+      "node_8": 0.3685143909425328
+    },
+    "scope": "previous Car2 calibration transferred conditionally; not a health certificate; Car1 remains uncorrected",
+    "fitted_to_current_bags": false,
+    "current_reference_xy_used_for_calibration": false
+  },
+  "profiles": [
+    "raw",
+    "historical"
+  ],
+  "primary_epsilon_m": 0.028284271247461905,
+  "epsilon_basis": {
+    "date_local": "2026-10-31",
+    "source": "operator report in this conversation after development replay started",
+    "original_instrument_statement": "用的雷达测距仪手机的 我们这些误差有多少误差这很难知道 不过我是两次核对的 地上也有卷尺量的点位",
+    "original_error_statement": "误差也就在1-2厘米之间",
+    "instrument": "phone ranging as reported; model/app not specified",
+    "repeat_checks": "operator reports twice checked; individual repeat values not recorded",
+    "floor_reference": "tape-measured floor marks",
+    "operator_estimated_error_m": [
+      0.01,
+      0.02
+    ],
+    "analysis_assumption": "conservatively interpret 2cm per XY coordinate, enclosing planar ball radius sqrt(2)*.02m",
+    "analysis_epsilon_m": 0.028284271247461905,
+    "coverage": "operator estimate, not independently calibrated hard bound or 95% confidence interval",
+    "no_remeasurement_requested": true
+  },
+  "input_manifest_sha256": "98318ce2847bd0409571e55676ca2bce101ebd8f40e4fb24f4d56d24b33b61bc",
+  "input_runs": [
+    {
+      "order": 3,
+      "run_id": "G1_R2_W1",
+      "geometry_id": "G1",
+      "condition": "W1",
+      "assigned_use": "reserved_confirmation",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\bags\\G1_R2_W1_20261031T131416Z.bag",
+      "bytes": 35046635,
+      "sha256": "861c447c2795bd0bf5ed0da7b0e74e62f28fcc248b7be377a77b763d8b5438f8",
+      "qc_path": "I:\\UWB\\project\\outputs\\field_measurements_20261031\\v001\\G1_R2_W1_QC\\G1_R2_W1_technical_QC.json",
+      "duration_s": 292.641131317,
+      "messages": 83159,
+      "required_topics_present": true,
+      "decoded_during_acquisition_qc": true,
+      "current_check": "receipt reconciliation; no repeat bag decoding or range analysis",
+      "reference_record_id": "G1_INITIAL_20261031_01",
+      "electronic_events": [
+        "start",
+        "enter_instruction",
+        "hold_ack",
+        "return_instruction",
+        "returned_ack",
+        "end"
+      ],
+      "sensor_header_anomalies": {},
+      "protocol_context_note": null
+    },
+    {
+      "order": 4,
+      "run_id": "G1_R2_N",
+      "geometry_id": "G1",
+      "condition": "N",
+      "assigned_use": "reserved_confirmation",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\bags\\G1_R2_N_20261031T132052Z.bag",
+      "bytes": 25460395,
+      "sha256": "cbf100132af55a1d17fd2755eaef7b99a8a3fc21ab4097de4c8638f44c7a4a99",
+      "qc_path": "I:\\UWB\\project\\outputs\\field_measurements_20261031\\v001\\G1_R2_N_QC\\G1_R2_N_technical_QC.json",
+      "duration_s": 212.23151315,
+      "messages": 60376,
+      "required_topics_present": true,
+      "decoded_during_acquisition_qc": true,
+      "current_check": "receipt reconciliation; no repeat bag decoding or range analysis",
+      "reference_record_id": "G1_INITIAL_20261031_01",
+      "electronic_events": [
+        "start",
+        "end"
+      ],
+      "sensor_header_anomalies": {},
+      "protocol_context_note": null
+    },
+    {
+      "order": 5,
+      "run_id": "G1_R3_N",
+      "geometry_id": "G1",
+      "condition": "N",
+      "assigned_use": "reserved_confirmation",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\bags\\G1_R3_N_20261031T132428Z.bag",
+      "bytes": 25440585,
+      "sha256": "df5320c1b46f355958ff6856d26fcbfc168d4c8a4c2ebce84cc509e475a36dbf",
+      "qc_path": "I:\\UWB\\project\\outputs\\field_measurements_20261031\\v001\\G1_R3_N_QC\\G1_R3_N_technical_QC.json",
+      "duration_s": 212.161214467,
+      "messages": 60333,
+      "required_topics_present": true,
+      "decoded_during_acquisition_qc": true,
+      "current_check": "receipt reconciliation; no repeat bag decoding or range analysis",
+      "reference_record_id": "G1_INITIAL_20261031_01",
+      "electronic_events": [
+        "start",
+        "end"
+      ],
+      "sensor_header_anomalies": {},
+      "protocol_context_note": null
+    },
+    {
+      "order": 6,
+      "run_id": "G1_R3_W1",
+      "geometry_id": "G1",
+      "condition": "W1",
+      "assigned_use": "reserved_confirmation",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\bags\\G1_R3_W1_20261031T132828Z.bag",
+      "bytes": 30771295,
+      "sha256": "31142426828e7d7f2043813e71c8067abc187853bf220ac93c9d6577d5b17340",
+      "qc_path": "I:\\UWB\\project\\outputs\\field_measurements_20261031\\v001\\G1_R3_W1_QC\\G1_R3_W1_technical_QC.json",
+      "duration_s": 256.810500104,
+      "messages": 72992,
+      "required_topics_present": true,
+      "decoded_during_acquisition_qc": true,
+      "current_check": "receipt reconciliation; no repeat bag decoding or range analysis",
+      "reference_record_id": "G1_INITIAL_20261031_01",
+      "electronic_events": [
+        "start",
+        "enter_instruction",
+        "hold_ack",
+        "return_instruction",
+        "returned_ack",
+        "end"
+      ],
+      "sensor_header_anomalies": {},
+      "protocol_context_note": null
+    },
+    {
+      "order": 7,
+      "run_id": "G2_R1_N",
+      "geometry_id": "G2",
+      "condition": "N",
+      "assigned_use": "reserved_confirmation",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\bags\\G2_R1_N_20261031T134324Z.bag",
+      "bytes": 25458482,
+      "sha256": "ca5d9076d1c5fa2cfa21e7a3387696bde4f45b095f0c68ad5fe777df355b6d52",
+      "qc_path": "I:\\UWB\\project\\outputs\\field_measurements_20261031\\v001\\G2_R1_N_QC\\G2_R1_N_technical_QC.json",
+      "duration_s": 212.125535179,
+      "messages": 60336,
+      "required_topics_present": true,
+      "decoded_during_acquisition_qc": true,
+      "current_check": "receipt reconciliation; no repeat bag decoding or range analysis",
+      "reference_record_id": "G2_INITIAL_20261031_01",
+      "electronic_events": [
+        "start",
+        "end"
+      ],
+      "sensor_header_anomalies": {},
+      "protocol_context_note": null
+    },
+    {
+      "order": 8,
+      "run_id": "G2_R1_W1",
+      "geometry_id": "G2",
+      "condition": "W1",
+      "assigned_use": "reserved_confirmation",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\bags\\G2_R1_W1_20261031T134727Z.bag",
+      "bytes": 35297071,
+      "sha256": "46a61706816b3de9d2f0f68b75e86bf759ca511a4e02a46bead76e6f66a7cbae",
+      "qc_path": "I:\\UWB\\project\\outputs\\field_measurements_20261031\\v001\\G2_R1_W1_QC\\G2_R1_W1_technical_QC.json",
+      "duration_s": 294.604380346,
+      "messages": 83712,
+      "required_topics_present": true,
+      "decoded_during_acquisition_qc": true,
+      "current_check": "receipt reconciliation; no repeat bag decoding or range analysis",
+      "reference_record_id": "G2_INITIAL_20261031_01",
+      "electronic_events": [
+        "start",
+        "enter_instruction",
+        "hold_ack",
+        "return_instruction",
+        "returned_ack",
+        "end"
+      ],
+      "sensor_header_anomalies": {},
+      "protocol_context_note": null
+    },
+    {
+      "order": 9,
+      "run_id": "G2_R2_W1",
+      "geometry_id": "G2",
+      "condition": "W1",
+      "assigned_use": "reserved_confirmation",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\bags\\G2_R2_W1_20261031T135305Z.bag",
+      "bytes": 44207327,
+      "sha256": "ce41feee713346c5e65ecb7372a9a9eba99929821c06e181c30ae47feb3a439b",
+      "qc_path": "I:\\UWB\\project\\outputs\\field_measurements_20261031\\v001\\G2_R2_W1_QC\\G2_R2_W1_technical_QC.json",
+      "duration_s": 369.328139054,
+      "messages": 104884,
+      "required_topics_present": true,
+      "decoded_during_acquisition_qc": true,
+      "current_check": "receipt reconciliation; no repeat bag decoding or range analysis",
+      "reference_record_id": "G2_INITIAL_20261031_01",
+      "electronic_events": [
+        "start",
+        "enter_instruction",
+        "hold_ack",
+        "return_instruction",
+        "returned_ack",
+        "end"
+      ],
+      "sensor_header_anomalies": {},
+      "protocol_context_note": {
+        "run_id": "G2_R2_W1",
+        "operator_request": "ok 录完第九包先停一下 我出去上个厕所",
+        "recovery_human_presence": "possible operator departure from waiting location; actual departure and route not confirmed",
+        "recording": "90-second recovery completed and finalized; no next bag",
+        "evaluation_limit": "technical completeness verified; do not assume recovery human presence stayed identical to other runs; no range effect or estimator assessment",
+        "selection_policy": "preserve entire bag and reserved assignment; no performance-based exclusion"
+      }
+    },
+    {
+      "order": 10,
+      "run_id": "G2_R2_N",
+      "geometry_id": "G2",
+      "condition": "N",
+      "assigned_use": "reserved_confirmation",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\bags\\G2_R2_N_20261031T140542Z.bag",
+      "bytes": 25485738,
+      "sha256": "38ec3a220476c455cfe0242658d55c21bc7fecf2fe3fab89fe2c10c10f0a349e",
+      "qc_path": "I:\\UWB\\project\\outputs\\field_measurements_20261031\\v001\\G2_R2_N_QC\\G2_R2_N_technical_QC.json",
+      "duration_s": 212.276439937,
+      "messages": 60396,
+      "required_topics_present": true,
+      "decoded_during_acquisition_qc": true,
+      "current_check": "receipt reconciliation; no repeat bag decoding or range analysis",
+      "reference_record_id": "G2_INITIAL_20261031_01",
+      "electronic_events": [
+        "start",
+        "end"
+      ],
+      "sensor_header_anomalies": {},
+      "protocol_context_note": null
+    },
+    {
+      "order": 11,
+      "run_id": "G2_R3_N",
+      "geometry_id": "G2",
+      "condition": "N",
+      "assigned_use": "reserved_confirmation",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\bags\\G2_R3_N_20261031T140919Z.bag",
+      "bytes": 25471769,
+      "sha256": "1345a50582f848d2f0b50cacc4ef89bc1632f4cddf5e192da75000df5666a81a",
+      "qc_path": "I:\\UWB\\project\\outputs\\field_measurements_20261031\\v001\\G2_R3_N_QC\\G2_R3_N_technical_QC.json",
+      "duration_s": 212.170946323,
+      "messages": 60362,
+      "required_topics_present": true,
+      "decoded_during_acquisition_qc": true,
+      "current_check": "receipt reconciliation; no repeat bag decoding or range analysis",
+      "reference_record_id": "G2_INITIAL_20261031_01",
+      "electronic_events": [
+        "start",
+        "end"
+      ],
+      "sensor_header_anomalies": {},
+      "protocol_context_note": null
+    },
+    {
+      "order": 12,
+      "run_id": "G2_R3_W1",
+      "geometry_id": "G2",
+      "condition": "W1",
+      "assigned_use": "reserved_confirmation",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\bags\\G2_R3_W1_20261031T141325Z.bag",
+      "bytes": 34440774,
+      "sha256": "0ec4ab95f9972d515f2065788d42e0b03c194eedbc79dc411ae661cc1adaac29",
+      "qc_path": "I:\\UWB\\project\\outputs\\field_measurements_20261031\\v001\\G2_R3_W1_QC\\G2_R3_W1_technical_QC.json",
+      "duration_s": 287.461742487,
+      "messages": 81682,
+      "required_topics_present": true,
+      "decoded_during_acquisition_qc": true,
+      "current_check": "receipt reconciliation; no repeat bag decoding or range analysis",
+      "reference_record_id": "G2_INITIAL_20261031_01",
+      "electronic_events": [
+        "start",
+        "enter_instruction",
+        "hold_ack",
+        "return_instruction",
+        "returned_ack",
+        "end"
+      ],
+      "sensor_header_anomalies": {},
+      "protocol_context_note": null
+    }
+  ],
+  "hypotheses": [
+    "G1 raw repeat windows: J nominally harms Car1 and benefits Car2, as development showed; all exceptions retained.",
+    "G1 historical-calibration repeat windows: J benefits Car1 and harms Car2; classify also under the reported-reference-error assumption.",
+    "W025 reduces mean position displacement from I versus J; this does not guarantee either car improves.",
+    "G2 tests the explicitly conditional mean-bias transfer prediction; changed Car2 geometry can violate constant-bias transfer."
+  ],
+  "predictions": [
+    {
+      "profile": "raw",
+      "geometry": "G1",
+      "car": "car1",
+      "arm": "J",
+      "predicted_bias_square_change_m2": 0.03221628087782211,
+      "predicted_direction": "harm",
+      "predicted_shift_xy_m": [
+        -0.00474903168263681,
+        0.04236762722537293
+      ],
+      "assumptions": "P00 mean bias transferred unchanged; engineering wall covariance, Gaussian single-update gain; nonlinear/history/calibration migration may disagree",
+      "metric": "mean bias squared only, not population MSE or a safety guarantee"
+    },
+    {
+      "profile": "raw",
+      "geometry": "G1",
+      "car": "car2",
+      "arm": "J",
+      "predicted_bias_square_change_m2": -0.05696124568465816,
+      "predicted_direction": "improve",
+      "predicted_shift_xy_m": [
+        0.01439402286637503,
+        -0.0609249436059163
+      ],
+      "assumptions": "P00 mean bias transferred unchanged; engineering wall covariance, Gaussian single-update gain; nonlinear/history/calibration migration may disagree",
+      "metric": "mean bias squared only, not population MSE or a safety guarantee"
+    },
+    {
+      "profile": "raw",
+      "geometry": "G1",
+      "car": "car1",
+      "arm": "W025",
+      "predicted_bias_square_change_m2": 0.016277433940343672,
+      "predicted_direction": "harm",
+      "predicted_shift_xy_m": [
+        -0.0024663537414578328,
+        0.02200312882856389
+      ],
+      "assumptions": "P00 mean bias transferred unchanged; engineering wall covariance, Gaussian single-update gain; nonlinear/history/calibration migration may disagree",
+      "metric": "mean bias squared only, not population MSE or a safety guarantee"
+    },
+    {
+      "profile": "raw",
+      "geometry": "G1",
+      "car": "car2",
+      "arm": "W025",
+      "predicted_bias_square_change_m2": -0.030560446480407122,
+      "predicted_direction": "improve",
+      "predicted_shift_xy_m": [
+        0.007475366458579307,
+        -0.0316406528008524
+      ],
+      "assumptions": "P00 mean bias transferred unchanged; engineering wall covariance, Gaussian single-update gain; nonlinear/history/calibration migration may disagree",
+      "metric": "mean bias squared only, not population MSE or a safety guarantee"
+    },
+    {
+      "profile": "raw",
+      "geometry": "G2",
+      "car": "car1",
+      "arm": "J",
+      "predicted_bias_square_change_m2": 0.024159081737448684,
+      "predicted_direction": "harm",
+      "predicted_shift_xy_m": [
+        -0.09227931297364504,
+        -0.00569692182102144
+      ],
+      "assumptions": "P00 mean bias transferred unchanged; engineering wall covariance, Gaussian single-update gain; nonlinear/history/calibration migration may disagree",
+      "metric": "mean bias squared only, not population MSE or a safety guarantee"
+    },
+    {
+      "profile": "raw",
+      "geometry": "G2",
+      "car": "car2",
+      "arm": "J",
+      "predicted_bias_square_change_m2": -0.12822135461853873,
+      "predicted_direction": "improve",
+      "predicted_shift_xy_m": [
+        0.13113041730362462,
+        -0.03375570499249298
+      ],
+      "assumptions": "P00 mean bias transferred unchanged; engineering wall covariance, Gaussian single-update gain; nonlinear/history/calibration migration may disagree",
+      "metric": "mean bias squared only, not population MSE or a safety guarantee"
+    },
+    {
+      "profile": "raw",
+      "geometry": "G2",
+      "car": "car1",
+      "arm": "W025",
+      "predicted_bias_square_change_m2": 0.008710713697963002,
+      "predicted_direction": "harm",
+      "predicted_shift_xy_m": [
+        -0.041346339366241436,
+        -0.0025525424427701444
+      ],
+      "assumptions": "P00 mean bias transferred unchanged; engineering wall covariance, Gaussian single-update gain; nonlinear/history/calibration migration may disagree",
+      "metric": "mean bias squared only, not population MSE or a safety guarantee"
+    },
+    {
+      "profile": "raw",
+      "geometry": "G2",
+      "car": "car2",
+      "arm": "W025",
+      "predicted_bias_square_change_m2": -0.06198459134649004,
+      "predicted_direction": "improve",
+      "predicted_shift_xy_m": [
+        0.05875382640333459,
+        -0.015124460609767973
+      ],
+      "assumptions": "P00 mean bias transferred unchanged; engineering wall covariance, Gaussian single-update gain; nonlinear/history/calibration migration may disagree",
+      "metric": "mean bias squared only, not population MSE or a safety guarantee"
+    },
+    {
+      "profile": "historical",
+      "geometry": "G1",
+      "car": "car1",
+      "arm": "J",
+      "predicted_bias_square_change_m2": -0.05883740848224493,
+      "predicted_direction": "improve",
+      "predicted_shift_xy_m": [
+        0.01060885629707686,
+        -0.09464499268881309
+      ],
+      "assumptions": "P00 mean bias transferred unchanged; engineering wall covariance, Gaussian single-update gain; nonlinear/history/calibration migration may disagree",
+      "metric": "mean bias squared only, not population MSE or a safety guarantee"
+    },
+    {
+      "profile": "historical",
+      "geometry": "G1",
+      "car": "car2",
+      "arm": "J",
+      "predicted_bias_square_change_m2": 0.018433703827265707,
+      "predicted_direction": "harm",
+      "predicted_shift_xy_m": [
+        -0.03215479077230013,
+        0.13610015995172461
+      ],
+      "assumptions": "P00 mean bias transferred unchanged; engineering wall covariance, Gaussian single-update gain; nonlinear/history/calibration migration may disagree",
+      "metric": "mean bias squared only, not population MSE or a safety guarantee"
+    },
+    {
+      "profile": "historical",
+      "geometry": "G1",
+      "car": "car1",
+      "arm": "W025",
+      "predicted_bias_square_change_m2": -0.03282067964072069,
+      "predicted_direction": "improve",
+      "predicted_shift_xy_m": [
+        0.005509584725776408,
+        -0.04915276364269209
+      ],
+      "assumptions": "P00 mean bias transferred unchanged; engineering wall covariance, Gaussian single-update gain; nonlinear/history/calibration migration may disagree",
+      "metric": "mean bias squared only, not population MSE or a safety guarantee"
+    },
+    {
+      "profile": "historical",
+      "geometry": "G1",
+      "car": "car2",
+      "arm": "W025",
+      "predicted_bias_square_change_m2": 0.004691344969159569,
+      "predicted_direction": "harm",
+      "predicted_shift_xy_m": [
+        -0.01669921235038457,
+        0.0706820171230297
+      ],
+      "assumptions": "P00 mean bias transferred unchanged; engineering wall covariance, Gaussian single-update gain; nonlinear/history/calibration migration may disagree",
+      "metric": "mean bias squared only, not population MSE or a safety guarantee"
+    },
+    {
+      "profile": "historical",
+      "geometry": "G2",
+      "car": "car1",
+      "arm": "J",
+      "predicted_bias_square_change_m2": -0.001808447432527921,
+      "predicted_direction": "improve",
+      "predicted_shift_xy_m": [
+        0.011470969792239598,
+        0.0007081675839562359
+      ],
+      "assumptions": "P00 mean bias transferred unchanged; engineering wall covariance, Gaussian single-update gain; nonlinear/history/calibration migration may disagree",
+      "metric": "mean bias squared only, not population MSE or a safety guarantee"
+    },
+    {
+      "profile": "historical",
+      "geometry": "G2",
+      "car": "car2",
+      "arm": "J",
+      "predicted_bias_square_change_m2": 0.0012247448133581044,
+      "predicted_direction": "harm",
+      "predicted_shift_xy_m": [
+        -0.016300436221965028,
+        0.004196072335250541
+      ],
+      "assumptions": "P00 mean bias transferred unchanged; engineering wall covariance, Gaussian single-update gain; nonlinear/history/calibration migration may disagree",
+      "metric": "mean bias squared only, not population MSE or a safety guarantee"
+    },
+    {
+      "profile": "historical",
+      "geometry": "G2",
+      "car": "car1",
+      "arm": "W025",
+      "predicted_bias_square_change_m2": -0.0008429512773328873,
+      "predicted_direction": "improve",
+      "predicted_shift_xy_m": [
+        0.00513964175291701,
+        0.00031729903822309775
+      ],
+      "assumptions": "P00 mean bias transferred unchanged; engineering wall covariance, Gaussian single-update gain; nonlinear/history/calibration migration may disagree",
+      "metric": "mean bias squared only, not population MSE or a safety guarantee"
+    },
+    {
+      "profile": "historical",
+      "geometry": "G2",
+      "car": "car2",
+      "arm": "W025",
+      "predicted_bias_square_change_m2": 0.0004786913873780249,
+      "predicted_direction": "harm",
+      "predicted_shift_xy_m": [
+        -0.0073035152314541415,
+        0.0018800771829338985
+      ],
+      "assumptions": "P00 mean bias transferred unchanged; engineering wall covariance, Gaussian single-update gain; nonlinear/history/calibration migration may disagree",
+      "metric": "mean bias squared only, not population MSE or a safety guarantee"
+    }
+  ],
+  "report_policy": "all runs/profiles/vehicles/phases, common accepted I/J/W025; no dropping weak/adverse/indeterminate outputs",
+  "run9_policy": "retain all phases and flag possible recovery occupancy change; recovery excluded from clean-protocol aggregate only, not from the results table",
+  "reference_evaluation": "nominal RMSE and exact common-static-reference paired squared-error interval; reported estimate, not certified coverage",
+  "no_dynamic_accuracy_claim": true,
+  "parameters_may_not_change_after_exposure": true,
+  "repair_policy": "preserve attempts; any result-informed method change revokes independent use for affected exposed runs"
+}

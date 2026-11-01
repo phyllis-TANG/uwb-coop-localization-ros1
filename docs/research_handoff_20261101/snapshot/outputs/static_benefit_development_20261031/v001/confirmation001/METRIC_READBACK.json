@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "paired_metric_rows_read_back": 160,
+  "max_squared_difference_identity_error": 1.0434361708000495e-15,
+  "conditional_reference_endpoints_checked": true,
+  "reference_assumption_m": 0.028284271247461905,
+  "unknown_pose_rows": [
+    {
+      "run_id": "G2_R2_W1",
+      "profile": "raw",
+      "second": 147
+    },
+    {
+      "run_id": "G2_R2_W1",
+      "profile": "historical",
+      "second": 147
+    },
+    {
+      "run_id": "G2_R3_N",
+      "profile": "raw",
+      "second": 140
+    },
+    {
+      "run_id": "G2_R3_N",
+      "profile": "historical",
+      "second": 140
+    }
+  ],
+  "estimator_replayed": false,
+  "scope": "arithmetic and saved-output identity only; no independent metrology or covariance certification"
+}

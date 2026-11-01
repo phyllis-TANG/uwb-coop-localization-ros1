@@ -1,0 +1,72 @@
+2026-10-31 UWB／odom／IMU四组静态开发回放与论文承接
+
+本轮完成：两包原定开发数据×两套既有固定校正条件×四组方法，共16个数值运行。
+M0=UWB+odom独立；M1=UWB+odom协同；M2=UWB+odom平移+gyro/bias独立；M3=与M2相同基础的协同。
+沿用今天缓存的因果墙距/peer/odom输入和UWB自初始化，原始包只新增解码两车IMU字段。两套校正为raw与历史Car2 P1，均未按今天参考位置重拟合。
+实际解码gyro消息：Car1 12911，Car2 12883。每条保留原header、receipt、原始消息SHA与来源索引。
+
+接入验证
+两个开发包、两个profile的M0/M1与先前I/J轨迹及接受标志逐值相同，最大差0。M2独立组不受peer扰动影响；M3前缀跨边缘化后与全量同前缀一致。
+只用于合同检查的陀螺仪人工扰动令M2航向响应变化0.2rad，确认角输入确实进入图；该人工扰动不是新增实车试验。
+64项配对指标已由独立输出读器复核，包含共同分母、参考仿射恒等式与极端端点；读器未调用优化器或原bag解码器。
+
+正常稳定窗：三传感器基础上加入协同的逐车结果（开发数据，描述性名义RMSE）
+包 / 校正 | 车辆 | 无协同M2 RMSE(cm) | 协同M3 RMSE(cm) | 参考假设下方向 | 共同/预定时刻
+--- | --- | --- | --- | --- | ---
+P00_NORMAL / raw | car1 | 36.27 | 37.24 | harm | 16/16
+P00_NORMAL / raw | car2 | 60.25 | 53.64 | improve | 16/16
+P00_NORMAL / historical | car1 | 36.27 | 26.26 | improve | 16/16
+P00_NORMAL / historical | car2 | 3.40 | 12.57 | harm | 16/16
+G1_R1_W1 / raw | car1 | 35.36 | 36.86 | harm | 15/15
+G1_R1_W1 / raw | car2 | 65.68 | 54.50 | improve | 15/15
+G1_R1_W1 / historical | car1 | 35.36 | 25.99 | improve | 15/15
+G1_R1_W1 / historical | car2 | 3.35 | 13.99 | harm | 15/15
+
+表中improve/harm分别表示降低/增加误差。方向使用同一参考位置下的配对平均平方误差差，按操作者1–2cm估计保守采用每轴2cm、平面半径sqrt(2)*2cm；这不是经标定的确定误差界。相关时刻不当独立重复。
+
+IMU对本轮XY的影响
+M2-M0或M3-M1在所有已保存发布时刻的最大XY距离差为0.0011337022m（1.133702mm）。这些微小数值差不能解释为惯性定位增益。
+运行前已记录预测：两包odom位置/角度严格恒定，零模型杆臂、各向同性平移权重下，原始非线性代价的XY部分与yaw/bias部分可分离，因而不预期额外的真实XY观测信息。合同检查的交叉块范数0只针对前三帧同点初值，不能当作全程边缘先验解耦证明。body-frame残差的Gauss–Newton线性化与边缘化仍可带入交叉项，连同不同数值维度/停止准则形成小差异，详见STATIC_SCOPE_DIAGNOSIS.json。
+初始yaw=0是辅助状态的任意基准，不是实测房间朝向。bias是带工程先验的状态响应，不是静止标定通过。无加速度积分、无四元数绝对航向、无gyro缺口时odom转角回退。
+
+时间覆盖与未接受情况
+gyro采用VM receipt关联候选、因果左保持及100ms最大支持；支持不足不构造角因子，bias随机游走保留，输出有效性显式标识。header存在并不等于已验收物理采样时钟。
+P00_NORMAL：car1完整角区间171/173，缺口2；car2完整角区间169/173，缺口4
+G1_R1_W1：car1完整角区间438/456，缺口18；car2完整角区间442/456，缺口14
+P00_NORMAL/raw/M0：接受172/174，逐车有效{'car1': 172, 'car2': 172}，状态{'predict_only_warmup': 2, 'graph': 172}
+P00_NORMAL/raw/M1：接受172/174，逐车有效{'car1': 172, 'car2': 172}，状态{'predict_only_warmup': 2, 'graph': 172}
+P00_NORMAL/raw/M2：接受172/174，逐车有效{'car1': 168, 'car2': 168}，状态{'predict_only_warmup': 2, 'graph': 168, 'graph_missing_angular_rank_deficient': 4}
+P00_NORMAL/raw/M3：接受172/174，逐车有效{'car1': 168, 'car2': 168}，状态{'predict_only_warmup': 2, 'graph': 168, 'graph_missing_angular_rank_deficient': 4}
+P00_NORMAL/historical/M0：接受172/174，逐车有效{'car1': 172, 'car2': 172}，状态{'predict_only_warmup': 2, 'graph': 172}
+P00_NORMAL/historical/M1：接受172/174，逐车有效{'car1': 172, 'car2': 172}，状态{'predict_only_warmup': 2, 'graph': 172}
+P00_NORMAL/historical/M2：接受172/174，逐车有效{'car1': 168, 'car2': 168}，状态{'predict_only_warmup': 2, 'graph': 168, 'graph_missing_angular_rank_deficient': 4}
+P00_NORMAL/historical/M3：接受172/174，逐车有效{'car1': 168, 'car2': 168}，状态{'predict_only_warmup': 2, 'graph': 168, 'graph_missing_angular_rank_deficient': 4}
+G1_R1_W1/raw/M0：接受455/457，逐车有效{'car1': 455, 'car2': 455}，状态{'predict_only_warmup': 2, 'graph': 455}
+G1_R1_W1/raw/M1：接受455/457，逐车有效{'car1': 455, 'car2': 455}，状态{'predict_only_warmup': 2, 'graph': 455}
+G1_R1_W1/raw/M2：接受455/457，逐车有效{'car1': 436, 'car2': 436}，状态{'predict_only_warmup': 2, 'graph': 436, 'graph_missing_angular_rank_deficient': 19}
+G1_R1_W1/raw/M3：接受455/457，逐车有效{'car1': 436, 'car2': 436}，状态{'predict_only_warmup': 2, 'graph': 436, 'graph_missing_angular_rank_deficient': 19}
+G1_R1_W1/historical/M0：接受455/457，逐车有效{'car1': 455, 'car2': 455}，状态{'predict_only_warmup': 2, 'graph': 455}
+G1_R1_W1/historical/M1：接受455/457，逐车有效{'car1': 455, 'car2': 455}，状态{'predict_only_warmup': 2, 'graph': 455}
+G1_R1_W1/historical/M2：接受455/457，逐车有效{'car1': 436, 'car2': 436}，状态{'predict_only_warmup': 2, 'graph': 436, 'graph_missing_angular_rank_deficient': 19}
+G1_R1_W1/historical/M3：接受455/457，逐车有效{'car1': 436, 'car2': 436}，状态{'predict_only_warmup': 2, 'graph': 436, 'graph_missing_angular_rank_deficient': 19}
+
+论文故事如何承接
+系统层：采用成熟的UWB/轮式平移/gyro+bias固定窗融合，IMU承担局部运动估计角色。
+问题层：局部运动约束与跨车信息的绝对定位可信度是不同条件；局部墙测距/固定校正存在偏差时，协同仍可能使两车的收益方向不同。
+证据层：本轮真实gyro已接入且无IMU基线精确回归；两开发包在三传感器静态模型下保留逐车帮助/代价现象。此前10包冻结确认和G2角色变化仍属于无新增IMU因子的静态证据；不能把它们改写为本轮四组结果。
+动态与机制层：复用既有双车IMU合成结果及旧包条件开发，说明惯性加入并不自动隔离墙偏差传播。旧包动态缺少验收时钟/外参/连续参考的范围继续保留；本轮不升级为真实动态精度验证。
+贡献表述：聚焦本地校正及迁移条件下的逐车收益与代价、双方偏差的适用前提和有限参考的配对评价。IMU提供系统背景及消融轴，不能把“多加一种传感器”当作已证明的新颖性。
+
+可并入论文的结果段
+在两个原定开发静态包中，我们以相同预处理、初始化和固定工程权重比较有/无gyro-bias约束及有/无车间测距的四组估计器。无IMU路径精确复现既有静态基线，gyro扰动合同检查确认角增量进入估计。由于该静态缩减的平移与航向信息可分离，加入IMU未提供额外的平面位置观测信息；而在采用IMU的基础上，协同仍表现出与本地校正条件相关的逐车帮助与代价。该实验用于接入检查及静态位置现象说明，不检验运动航向改善。
+
+下一最小工作
+将本轮开发结果与此前确认结果、既有IMU合成正反结果在正文中分别标明用途，再核对具体近邻的新颖性；若需要G2的IMU数值结果，先登记已暴露数据的方法扩展用途后复用同一接口。
+若论文要声称动态IMU收益，先解决已有动态的具体初始/外参/时钟或独立角度参考缺项；不自动补录整套、不要求当前小车开机。
+
+产物
+development001/PROTOCOL_BEFORE_RESULTS.json：新IMU结果之前的开发协议与静态可分离预测。
+development001/SOURCE_LOCK.json：不变源码和缓存输入版本。
+development001/{case}/{profile}/{method}/：完整updates、轨迹、末图与状态统计。
+development001/combined_results.json/csv：全部64项比较；METRIC_READBACK.json：独立指标读回。
+本轮未访问10包确认原件、未改原始数据或历史结果、未重跑已完成40合成/8旧包矩阵。

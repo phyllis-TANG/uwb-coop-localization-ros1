@@ -1,0 +1,465 @@
+{
+  "recorded_at": "2026-11-01T00:09:09.980471+08:00",
+  "status": "NEIGHBOR_SCREEN_G2_IMU_EXTENSION_AND_INDICATOR_AUDIT_COMPLETE",
+  "user_preferences": [
+    "IMU completes system/data, not a novelty claim",
+    "Try a concrete novel mechanism if implementation reveals one; otherwise strengthen theory"
+  ],
+  "g2_cases": [
+    "G2_R1_N",
+    "G2_R1_W1"
+  ],
+  "original_use": "reserved confirmation for original frozen I/J/W025, results already exposed",
+  "new_use": "IMU method-extension development, not new independent validation",
+  "g2_cells": 16,
+  "g2_profiles": [
+    "raw",
+    "historical Car2 P1"
+  ],
+  "g2_metric_rows": 64,
+  "g2_normal_results": [
+    {
+      "case": "G2_R1_N",
+      "profile": "raw",
+      "phase": "normal",
+      "car": "car1",
+      "contrast": "cooperation_with_imu",
+      "candidate": "M3",
+      "baseline": "M2",
+      "n_scheduled": 15,
+      "n_common": 15,
+      "reference_epsilon_m": 0.028284271247461905,
+      "reference_status": "operator 1-2cm estimate, conservatively interpreted per XY axis; uncertified",
+      "baseline_rmse_m": 0.38324979487265837,
+      "candidate_rmse_m": 0.3757235675517509,
+      "paired_mse_difference_m2": -0.00571220605611961,
+      "reference_lower_m2": -0.0106182395505498,
+      "reference_upper_m2": -0.0008061725616894198,
+      "reference_direction": "improve",
+      "common_seconds": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ]
+    },
+    {
+      "case": "G2_R1_N",
+      "profile": "raw",
+      "phase": "normal",
+      "car": "car2",
+      "contrast": "cooperation_with_imu",
+      "candidate": "M3",
+      "baseline": "M2",
+      "n_scheduled": 15,
+      "n_common": 15,
+      "reference_epsilon_m": 0.028284271247461905,
+      "reference_status": "operator 1-2cm estimate, conservatively interpreted per XY axis; uncertified",
+      "baseline_rmse_m": 0.5574339645318644,
+      "candidate_rmse_m": 0.5274922652714763,
+      "paired_mse_difference_m2": -0.03248453489247839,
+      "reference_lower_m2": -0.03999769074771115,
+      "reference_upper_m2": -0.024971379037245636,
+      "reference_direction": "improve",
+      "common_seconds": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ]
+    },
+    {
+      "case": "G2_R1_N",
+      "profile": "historical",
+      "phase": "normal",
+      "car": "car1",
+      "contrast": "cooperation_with_imu",
+      "candidate": "M3",
+      "baseline": "M2",
+      "n_scheduled": 15,
+      "n_common": 15,
+      "reference_epsilon_m": 0.028284271247461905,
+      "reference_status": "operator 1-2cm estimate, conservatively interpreted per XY axis; uncertified",
+      "baseline_rmse_m": 0.3832497948726617,
+      "candidate_rmse_m": 0.3922747433765209,
+      "paired_mse_difference_m2": 0.0069990690211780525,
+      "reference_lower_m2": 0.0028564277790284745,
+      "reference_upper_m2": 0.01114171026332763,
+      "reference_direction": "harm",
+      "common_seconds": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ]
+    },
+    {
+      "case": "G2_R1_N",
+      "profile": "historical",
+      "phase": "normal",
+      "car": "car2",
+      "contrast": "cooperation_with_imu",
+      "candidate": "M3",
+      "baseline": "M2",
+      "n_scheduled": 15,
+      "n_common": 15,
+      "reference_epsilon_m": 0.028284271247461905,
+      "reference_status": "operator 1-2cm estimate, conservatively interpreted per XY axis; uncertified",
+      "baseline_rmse_m": 0.17389549672656207,
+      "candidate_rmse_m": 0.017490055435788434,
+      "paired_mse_difference_m2": -0.029933741742630804,
+      "reference_lower_m2": -0.039788216583976826,
+      "reference_upper_m2": -0.02007926690128478,
+      "reference_direction": "improve",
+      "common_seconds": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ]
+    },
+    {
+      "case": "G2_R1_W1",
+      "profile": "raw",
+      "phase": "normal",
+      "car": "car1",
+      "contrast": "cooperation_with_imu",
+      "candidate": "M3",
+      "baseline": "M2",
+      "n_scheduled": 15,
+      "n_common": 14,
+      "reference_epsilon_m": 0.028284271247461905,
+      "reference_status": "operator 1-2cm estimate, conservatively interpreted per XY axis; uncertified",
+      "baseline_rmse_m": 0.39104048412753534,
+      "candidate_rmse_m": 0.38490616352493573,
+      "paired_mse_difference_m2": -0.0047599055072126235,
+      "reference_lower_m2": -0.009266567289244129,
+      "reference_upper_m2": -0.00025324372518111763,
+      "reference_direction": "improve",
+      "common_seconds": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        60,
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "case": "G2_R1_W1",
+      "profile": "raw",
+      "phase": "normal",
+      "car": "car2",
+      "contrast": "cooperation_with_imu",
+      "candidate": "M3",
+      "baseline": "M2",
+      "n_scheduled": 15,
+      "n_common": 14,
+      "reference_epsilon_m": 0.028284271247461905,
+      "reference_status": "operator 1-2cm estimate, conservatively interpreted per XY axis; uncertified",
+      "baseline_rmse_m": 0.556980360215731,
+      "candidate_rmse_m": 0.5299429711461217,
+      "paired_mse_difference_m2": -0.0293875689988663,
+      "reference_lower_m2": -0.036373790450169446,
+      "reference_upper_m2": -0.022401347547563153,
+      "reference_direction": "improve",
+      "common_seconds": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        60,
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "case": "G2_R1_W1",
+      "profile": "historical",
+      "phase": "normal",
+      "car": "car1",
+      "contrast": "cooperation_with_imu",
+      "candidate": "M3",
+      "baseline": "M2",
+      "n_scheduled": 15,
+      "n_common": 14,
+      "reference_epsilon_m": 0.028284271247461905,
+      "reference_status": "operator 1-2cm estimate, conservatively interpreted per XY axis; uncertified",
+      "baseline_rmse_m": 0.3910411014202697,
+      "candidate_rmse_m": 0.39840746748679196,
+      "paired_mse_difference_m2": 0.005815367149261545,
+      "reference_lower_m2": 0.001561815157168911,
+      "reference_upper_m2": 0.01006891914135418,
+      "reference_direction": "harm",
+      "common_seconds": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        60,
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "case": "G2_R1_W1",
+      "profile": "historical",
+      "phase": "normal",
+      "car": "car2",
+      "contrast": "cooperation_with_imu",
+      "candidate": "M3",
+      "baseline": "M2",
+      "n_scheduled": 15,
+      "n_common": 14,
+      "reference_epsilon_m": 0.028284271247461905,
+      "reference_status": "operator 1-2cm estimate, conservatively interpreted per XY axis; uncertified",
+      "baseline_rmse_m": 0.16757453442252562,
+      "candidate_rmse_m": 0.019166086340504082,
+      "paired_mse_difference_m2": -0.027713885721314564,
+      "reference_lower_m2": -0.03772958623252387,
+      "reference_upper_m2": -0.017698185210105254,
+      "reference_direction": "improve",
+      "common_seconds": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        60,
+        61,
+        62,
+        63
+      ]
+    }
+  ],
+  "g2_input_audits": {
+    "G2_R1_N": {
+      "run_id": "G2_R1_N",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\bags\\G2_R1_N_20261031T134324Z.bag",
+      "bag_sha256": "ca5d9076d1c5fa2cfa21e7a3387696bde4f45b095f0c68ad5fe777df355b6d52",
+      "origin_ns": 1793454206914041205,
+      "actual_gyro_decoded": {
+        "car1": 4270,
+        "car2": 4256
+      },
+      "mapped_time": "original VM recorder receipt; physical prefix-max availability",
+      "physical_sample_clock_calibrated": false,
+      "covariance_calibrated": false,
+      "decoded_payload_scope": "only /car1/imu and /car2/imu; other envelopes for causal availability",
+      "cached_wall_odom_bins_sha256": "b277d86231824b10dc22a6f53cedc574c87ad36f6f3a9c3962a5bd69e0071992",
+      "angular_buffer_decisions": {
+        "car1": {
+          "angular_control_accepted": 4267
+        },
+        "car2": {
+          "angular_control_accepted": 4253
+        }
+      },
+      "intervals": {
+        "car1": {
+          "total": 206,
+          "valid": 201,
+          "gaps": 5,
+          "supported_message_segments": 4325
+        },
+        "car2": {
+          "total": 206,
+          "valid": 201,
+          "gaps": 5,
+          "supported_message_segments": 4326
+        }
+      }
+    },
+    "G2_R1_W1": {
+      "run_id": "G2_R1_W1",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\bags\\G2_R1_W1_20261031T134727Z.bag",
+      "bag_sha256": "46a61706816b3de9d2f0f68b75e86bf759ca511a4e02a46bead76e6f66a7cbae",
+      "origin_ns": 1793454463529341444,
+      "actual_gyro_decoded": {
+        "car1": 5920,
+        "car2": 5906
+      },
+      "mapped_time": "original VM recorder receipt; physical prefix-max availability",
+      "physical_sample_clock_calibrated": false,
+      "covariance_calibrated": false,
+      "decoded_payload_scope": "only /car1/imu and /car2/imu; other envelopes for causal availability",
+      "cached_wall_odom_bins_sha256": "bf30c4a2639503c4b3cb48d09169d1e6ab592066d985f309ff33cdc5ad4d4e5b",
+      "angular_buffer_decisions": {
+        "car1": {
+          "angular_control_accepted": 5908
+        },
+        "car2": {
+          "angular_control_accepted": 5893
+        }
+      },
+      "intervals": {
+        "car1": {
+          "total": 288,
+          "valid": 267,
+          "gaps": 21,
+          "supported_message_segments": 6046
+        },
+        "car2": {
+          "total": 288,
+          "valid": 266,
+          "gaps": 22,
+          "supported_message_segments": 6046
+        }
+      }
+    }
+  },
+  "g2_metric_readback": {
+    "status": "PASS",
+    "metric_rows": 64,
+    "common_time_denominators_recomputed": true,
+    "shared_reference_affine_identity_max_abs_error": 1.6859343782149594e-17,
+    "reference_extreme_endpoint_max_abs_error": 1.249000902703301e-16,
+    "source_lock_unchanged": true,
+    "shared_config_groups": 4,
+    "estimator_or_bag_reader_imported": false,
+    "solver_rerun": false,
+    "raw_bag_decode": false
+  },
+  "g2_max_imu_on_off_xy_change_m": 0.0007127824861234583,
+  "reconstruction": "Old G2 bins were not archived; only these two bins were regenerated, original initialization/config reused and F0 regression exact",
+  "indicator_audit": {
+    "status": "AVAILABLE_INDICATOR_AND_SIMPLE_OUTPUT_BASELINE_DEVELOPMENT_COMPLETE",
+    "saved_estimator_outputs_only": true,
+    "reference_used_in_policy": false,
+    "new_solver_runs": 0,
+    "raw_bags_decoded": 0,
+    "threshold_or_parameter_search": false,
+    "independent_validation": false,
+    "cases": [
+      "P00_NORMAL",
+      "G1_R1_W1",
+      "G2_R1_N",
+      "G2_R1_W1"
+    ],
+    "profiles": [
+      "raw",
+      "historical"
+    ],
+    "policies": [
+      "full_cooperation",
+      "protect_fixed_car1",
+      "protect_fixed_car2",
+      "protect_lower_wall_fit_residual"
+    ],
+    "metric_rows": 128,
+    "limitations": [
+      "postfit wall residual is not an accuracy certificate",
+      "one weak ranking rule does not characterize all detectors",
+      "selected per-car outputs are not a newly solved joint estimate or consistent covariance"
+    ]
+  },
+  "indicator_control_readback": {
+    "status": "PASS",
+    "all_control_comparisons_match": 32,
+    "max_control_error": 0.0,
+    "fixed_protected_outputs_exactly_independent": true,
+    "wall_ranking_choices_match_saved_features": true,
+    "sources_unchanged": true,
+    "solver_rerun": false,
+    "raw_bag_decode": false,
+    "scope": "control, choices and denominators, not independent field truth or safety validation"
+  },
+  "literature_screen": "I:\\UWB\\project\\outputs\\novelty_and_next_step_20261031\\v001\\PRIMARY_NEIGHBOR_REVIEW.json",
+  "screen_limit": "Six targeted primary sources; He2024 abstract only, Xie2026 preprint and publication metadata, not exhaustive novelty clearance",
+  "completed_theory_draft": "I:\\UWB\\project\\outputs\\novelty_and_next_step_20261031\\v001\\标定迁移与选择指标的理论衔接.txt",
+  "decision_report": "I:\\UWB\\project\\outputs\\novelty_and_next_step_20261031\\v001\\近邻核对与下一步决定.txt",
+  "current_inference": "Static cooperative benefit roles change after geometry/calibration transfer with IMU; one simple wall-residual ranking baseline succeeds in G1 but leaves Car1 harm in G2 historical condition",
+  "not_claimed": [
+    "New validated online detector",
+    "New adaptive policy superiority",
+    "Failure of all monitors",
+    "IMU precision gain",
+    "New unseen field validation",
+    "Certified reference coverage"
+  ],
+  "next_minimal_work": [
+    "Link calibration-to-position/residual projection to the already-derived both-biased per-vehicle condition",
+    "Predeclare one uncomputed intermediate calibration-strength or controlled geometry/bias case to check predictive value",
+    "Try only one incremental candidate if lawful online information produces value beyond mature baselines; otherwise complete theory/evidence writing"
+  ],
+  "hardware_operations": false,
+  "new_capture": false,
+  "old_40_8_matrices_restarted": false,
+  "output_receipts": {
+    "I:\\UWB\\project\\outputs\\two_car_imu_integration_20261031\\v001\\g2_extension001\\RUN_COMPLETE.json": "db1852819dd1e3810290d7c0135c0d6cc2dc1f53b26f22f80d8f998c40821e16",
+    "I:\\UWB\\project\\outputs\\two_car_imu_integration_20261031\\v001\\g2_extension001\\METRIC_READBACK.json": "2bacaef65d8273bd6bb27d654f234d770b48c3ed49e2095a692411a672a030eb",
+    "I:\\UWB\\project\\outputs\\novelty_and_next_step_20261031\\v001\\indicator_audit001\\RUN_COMPLETE.json": "5f4c12acff7412a7bffb2a9de8f588e5b12b041fab024fa2762c2f11c99846ad",
+    "I:\\UWB\\project\\outputs\\novelty_and_next_step_20261031\\v001\\indicator_audit001\\CONTROL_READBACK.json": "0c3caac6e93c38b0aedb8ec0c1973049936c0916104bbdc415bab35de0631bfc"
+  }
+}

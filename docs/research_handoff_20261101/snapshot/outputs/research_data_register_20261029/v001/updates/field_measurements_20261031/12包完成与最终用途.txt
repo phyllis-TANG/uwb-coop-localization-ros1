@@ -1,0 +1,31 @@
+
+2026-10-31 12/12采集完成并停止
+2026-10-31 双车静态采集完成清单
+已完成12/12个计划运行；另保留1个语音未确认中断尝试，不计完成。
+用途：2开发、10预留确认。仅通过数据完整性技术检查，未开展定位精度验证。
+原始目录：I:\UWB\data\field_20261031\bags
+逐包QC与SHA见同目录采集完成清单.json。
+
+01  P00_NORMAL  179.999s  51233消息  P00_NORMAL_20261031T123627Z.bag
+02  G1_R1_W1  462.811s  131368消息  G1_R1_W1_retry1_20261031T125745Z.bag
+03  G1_R2_W1  292.641s  83159消息  G1_R2_W1_20261031T131416Z.bag
+04  G1_R2_N  212.232s  60376消息  G1_R2_N_20261031T132052Z.bag
+05  G1_R3_N  212.161s  60333消息  G1_R3_N_20261031T132428Z.bag
+06  G1_R3_W1  256.811s  72992消息  G1_R3_W1_20261031T132828Z.bag
+07  G2_R1_N  212.126s  60336消息  G2_R1_N_20261031T134324Z.bag
+08  G2_R1_W1  294.604s  83712消息  G2_R1_W1_20261031T134727Z.bag
+09  G2_R2_W1  369.328s  104884消息  G2_R2_W1_20261031T135305Z.bag
+10  G2_R2_N  212.276s  60396消息  G2_R2_N_20261031T140542Z.bag
+11  G2_R3_N  212.171s  60362消息  G2_R3_N_20261031T140919Z.bag
+12  G2_R3_W1  287.462s  81682消息  G2_R3_W1_20261031T141325Z.bag
+
+限制与后续：
+Reference instrument/repeated readings/total uncertainty not quantified.
+Electronic instructions and OK receipt are not exact physical entry/removal times.
+Run9 restroom pause context retained; actual departure during recovery was not confirmed.
+No photos/video required for this static protocol; no continuous trajectory reference claimed.
+Ten reserved bags have technical QC only; no range-effect or localization result was exposed in this session.
+No estimator replay, parameter fitting, per-vehicle accuracy validation, or paper contribution validation completed here.
+
+下一最小验证：record method/parameter/baseline freeze, then replay independent/cooperative estimators against static antenna references with uncertainty reported
+现已停止录包，无.active；没有第13包。Master/两车节点仍运行，当前新采集目录共享仍挂载。
