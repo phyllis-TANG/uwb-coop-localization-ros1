@@ -1,0 +1,11 @@
+Controlled-simulation main figure
+
+Per-robot effects of range-bias correction under two robot placements in the controlled PR92 simulation. Panels (a,c) show position mean squared error (MSE) for independent estimation (M2) and full cooperation (M3); panels (b,d) show their paired difference D=MSE_M3-MSE_M2. Negative D denotes a relative cooperative benefit. Thin lines and small markers represent four paired random seeds; bold lines show equal-weight seed means. G2 translates Robot 2's complete trajectory by (+1.49,+2.01) m. Raw measurements retain the specified four-link Robot 2 bias; the corrected treatment removes that injected vector exactly. Both treatments include their own measurement-based initialization. Comparisons use the same 88 accepted epochs out of 90 planned epochs per seed across all configurations. The rows have different vertical scales. This is a controlled model result, not a field-accuracy result or a replication of every field interaction direction.
+
+Exploratory field-summary figure
+
+Placement interaction T=C_G2-C_G1 for the full-peer and fixed reduced-peer static estimators, where C is the change, after historical local range correction, in the cooperative-versus-independent MSE difference. Markers reproduce the summary values published in the repository's v003 model-and-calculations document for five static normal bags (G1: two bags; G2: three bags). Whiskers show conditional sensitivity to a shared static-reference displacement bounded by sqrt(2)*0.02 m, based on an operator estimate of 2 cm per coordinate; they are not confidence intervals or certified uncertainty bounds. This post-hoc field comparison does not isolate pure geometry, because placement also changes propagation and initialization conditions. Underlying five-bag result files remain absent from this repository snapshot, so this summary is not presented as an independently reproduced per-bag analysis.
+
+Static five-bag main figure: completed
+
+The companion ../static/ directory contains the final saved-summary five-bag figure and its current caption. No additional trajectory input is required for that plot. Original epoch alignment has not been independently rechecked from timestamps.
