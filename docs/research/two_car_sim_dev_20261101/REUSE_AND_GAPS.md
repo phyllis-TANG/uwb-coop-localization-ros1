@@ -11,12 +11,12 @@
 |`two_car_imu_fgo/simulate.py` 及 F0 simulate|复用配置、事件协议、3D几何/杆臂约定、延迟策略、确定性 gzip 写法|旧生成器固定64秒旧轨迹，且 gyro 定义为下一个50ms区间平均值。新入口改为当前时刻解析瞬时角速度并前向保持，不复用旧轨迹/未来平均 gyro|
 |`cooperative_influence_probe_20261028/core.py:WeightedObjective`|核对权重语义，适配思路相同；没有导入其6维图|外乘代价权重 .25，因此残差/J 均乘 .5；sigma 保持 .2m，不能用 sigma .4m 替代整个非线性伪 Huber 曲线|
 |`tools/cooperative_integrity_baselines_20261029/monitors.py:four_anchor`|只读纯函数，经固定 SHA 独立模块加载；输入为所有方法相同 arrived bins|B1仅原始四墙统计量。原 `.2m` 工程尺度不是新噪声标定；阈值未校准，local/network 均 unknown|
-|同目录 B2 `engine.py/influence.py/binding.py`|仅审阅接口和历史结果，不运行原 run.py|明确绑定原19文件 PR68核 `74fa210e7cf6aa322eaebce19530510edb605d22`、6维状态/先验、三维 Odom 行、固定 primitive 时轴；不能直接接8维|
+|同目录 B2 `engine.py/influence.py/binding.py`|仅审阅接口和历史结果，不运行原 run.py|明确绑定原19文件 PR68核 `74fa210e7cf6aa322eaebce19530510edb605d22`、6维状态/先验、三维 Odom 行、固定 primitive 时轴；旧入口仅seed101 nominal/car1_common_wall_bias/peer_bias，完成目录禁止覆盖；不能直接接8维|
 |40合成/8旧实包 IMU对照|`docs/field_tests/20261024_25/two_car_imu_fgo_20261028/REPORT.md` 等已完成资产|只引用，不重新运行整套，不接触旧实包|
 |37 profile预算比较|`docs/research/cooperative_integrity_baselines_20261029/{REPORT,HANDOFF,FROZEN_SPEC}.md`|37声明profile共用原G1轨迹，不是37套定位器；历史完成，不重复计算|
-|既有确认/边界资料|`docs/research/integrity_validation_20261030/REPORT.md`；followup/c_scope 与 a_evidence|保留14秒较有利、7/28秒及另一车代价、50%校正预测失败、简单残差排序反例。只读已有报告，未打开新留出种子或新本地包|
+|既有确认/边界资料|`docs/research/integrity_validation_20261030/REPORT.md`；followup/c_scope 与 a_evidence；本次用户交接|报告支持14秒较有利、7/28秒及另一车代价；50%校正预测失败、简单残差排序反例按用户交接保留，本checkout未定位到这两项的独立原表，不声称重新核验|
 
-历史边界必须随交付保留：原报告7秒墙故障 Car2 B2 不报警，28秒 Car2 在 AL=.10m 仍有 HMI；14秒有利不能外推成普遍覆盖。原“>=50%校正”预测失败及残差排序反例不能因更换8维模型被抹去。当前所有引用都是既有结果，绝非本轮新独立验证。
+历史边界必须随交付保留：原报告7秒墙故障 Car2 B2 不报警，28秒 Car2 在 AL=.10m 仍有 HMI；14秒有利不能外推成普遍覆盖。交接中明确的“50%校正预测失败”和“简单残差排序反例”作为既有约束原样保留，相关原表/源版本仍待本地补链，不能因更换8维模型被抹去。当前引用均为历史报告或用户交接，绝非本轮新独立验证。
 
 |8维监测缺项|现有6维实现的依赖|本轮状态与必要下一步|
 |---|---|---|
