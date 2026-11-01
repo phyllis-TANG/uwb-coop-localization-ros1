@@ -1,0 +1,52 @@
+{
+  "bag_path": "I:\\UWB\\data\\field_20261031\\field_20261101_dynamic\\formal\\B1_DEV_20261101T090416Z.bag",
+  "bag_sha256": "4af1187606cafa5b383215aa5eef9fc3ca88d9f8f59b6e9551ac89b88126062d",
+  "initialization": {
+    "car1": {
+      "antenna_xy_m": [
+        1.8151795078119808,
+        2.1905088181716947
+      ],
+      "reference_coordinates_used": false,
+      "wall_medians_m": {
+        "node_10": 3.619,
+        "node_2": 5.472,
+        "node_3": 4.166,
+        "node_8": 3.189
+      },
+      "n": {
+        "node_10": 250,
+        "node_2": 249,
+        "node_3": 250,
+        "node_8": 250
+      }
+    },
+    "car2": {
+      "antenna_xy_m": [
+        1.2250215136214755,
+        4.348899170082588
+      ],
+      "reference_coordinates_used": false,
+      "wall_medians_m": {
+        "node_10": 5.105999946594238,
+        "node_2": 5.233999967575073,
+        "node_3": 4.620999813079834,
+        "node_8": 3.368000030517578
+      },
+      "n": {
+        "node_10": 249,
+        "node_2": 248,
+        "node_3": 248,
+        "node_8": 248
+      }
+    }
+  },
+  "rejected": {},
+  "first_state_ns": 1793523899000000000,
+  "last_receipt_ns": 1793525260629908151,
+  "frames": 1361,
+  "skipped_odom": 0,
+  "observed_odom_xy_excursion_m": 1.5080202794908844,
+  "clock": "receipt association, not physical sample time",
+  "dynamic_use": "conditional development only"
+}

@@ -1,0 +1,7 @@
+2026-11-01：用户授权继续A1/B1三组对照，同时要求可转发云端任务指令。
+产物：outputs/dynamic_development_20261101/v001/HANDOFF.txt、STOP_COMPARISON.json、SAVED_OUTPUT_READBACK.json、ADAPTER_CHECK.json、B1_WEIGHTED_ANOMALY.json，以及两包三方法下完整updates/trajectory/summary。
+六运行完成；7416帧保存输出一致性检查通过；16个逐车停车窗比较完成，保留各方法有效分母、失败、unknown及参考敏感性。无连续移动真值评价、无独立验证声明。
+B1固定缩权在B点移动Car1出现约2.85m误差，保存估计和yaw变化已核对，根因未隔离；在完成最小诊断前不把它当新颖机制或推进保留验证。原始数据不修改，不扩大参数搜索。
+A1/B1继续开发；A2/B2未揭示。本次没有重跑昨天静态矩阵，没有新增采集。
+云端指令：outputs/conference_convergence_20261101/v001/云端任务指令.txt。限定PR88的一静一动/双动态×正常/Car1偏差/Car2偏差，三基线；冻结种子和恢复时序、保持unknown、停止于有限矩阵，不开发新策略。
+PR89已存在但本次新结果未上传；本地文档是此轮最新状态。云端指令供用户转发，本窗口未另行启动云端任务。

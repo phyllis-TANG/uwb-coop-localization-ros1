@@ -1,0 +1,105 @@
+{
+  "status": "prepared_not_executed_not_final_frozen",
+  "source_manifest_sha256": "aaf87e5b5a60b90f071afa2e938898682fb16f35d87b0c242a2a1afd77b6543b",
+  "protocol_sha256": "d7ba9137657f8711b09403657a53902296271b047224657883268b3f0ee3b827",
+  "checked": "event identities, exact integer ns, init before window end, three independent units and eight reference windows; no raw bag decode or coordinates/results read",
+  "units": [
+    {
+      "unit": "A2",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\field_20261101_dynamic\\formal\\A2_RESERVED_20261101T083817Z.bag",
+      "bag_sha256_from_capture_manifest": "0184dd239c031618437e9899377045fb2fccb8efeef13c31c11871e65cc22f70",
+      "events_path": "I:\\UWB\\data\\field_20261031\\field_20261101_dynamic\\formal\\A2_RESERVED_20261101T083817Z.bag.events.txt",
+      "events_sha256": "4188e8d62a93cd4e2c93eb3c29f54311eb854add14341873a09bfa7671db072a",
+      "initialization_interval_ns": [
+        1793522321187817928,
+        1793522326187817928
+      ],
+      "first_state_ns": 1793522327000000000,
+      "evaluation_windows": [
+        {
+          "phase": "START",
+          "start_ns": 1793522321187817928,
+          "end_ns": 1793522366971193091,
+          "role": "initialization_stop"
+        },
+        {
+          "phase": "B",
+          "start_ns": 1793522694663228124,
+          "end_ns": 1793522740191998604,
+          "role": "post_motion_stop"
+        },
+        {
+          "phase": "C",
+          "start_ns": 1793523045541729058,
+          "end_ns": 1793523090985294991,
+          "role": "post_motion_stop"
+        },
+        {
+          "phase": "RETURN",
+          "start_ns": 1793523429676993444,
+          "end_ns": 1793523522754860250,
+          "role": "post_motion_stop"
+        }
+      ],
+      "carry_prior_from_other_unit": false,
+      "carry_gyro_from_other_unit": false
+    },
+    {
+      "unit": "B2_PREFIX",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\field_20261101_dynamic\\formal\\B2_RESERVED_20261101T092948Z.bag",
+      "bag_sha256_from_capture_manifest": "de205e98b8bcfd79ac2c3852f4492ddaff2f73709b072dec09573d67a785f8d5",
+      "events_path": "I:\\UWB\\data\\field_20261031\\field_20261101_dynamic\\formal\\B2_RESERVED_20261101T092948Z.bag.events.txt",
+      "events_sha256": "6be4739b7fd93bb5cc6ed8015ffbf5550ca878612dddb973366986cf5c6ab375",
+      "initialization_interval_ns": [
+        1793525419857986059,
+        1793525424857986059
+      ],
+      "first_state_ns": 1793525425000000000,
+      "evaluation_windows": [
+        {
+          "phase": "START",
+          "start_ns": 1793525419857986059,
+          "end_ns": 1793525480304155291,
+          "role": "initialization_stop"
+        }
+      ],
+      "carry_prior_from_other_unit": false,
+      "carry_gyro_from_other_unit": false
+    },
+    {
+      "unit": "B2_CONTINUATION",
+      "bag_path": "I:\\UWB\\data\\field_20261031\\field_20261101_dynamic\\formal\\B2_RESERVED_CONTINUATION_20261101T093805Z.bag",
+      "bag_sha256_from_capture_manifest": "9c8d55593e9ae09f8bf1193e1a249ec62fac70e4f3bd970881450b8dc524a65f",
+      "events_path": "I:\\UWB\\data\\field_20261031\\field_20261101_dynamic\\formal\\B2_RESERVED_CONTINUATION_20261101T093805Z.bag.events.txt",
+      "events_sha256": "4f14b2cadc0847dc34c79aa031493e2fbaebb062bbbe5a089da720d61545bf8c",
+      "initialization_interval_ns": [
+        1793526051197184741,
+        1793526056197184741
+      ],
+      "first_state_ns": 1793526057000000000,
+      "evaluation_windows": [
+        {
+          "phase": "B",
+          "start_ns": 1793526051197184741,
+          "end_ns": 1793526117691817855,
+          "role": "initialization_stop"
+        },
+        {
+          "phase": "C",
+          "start_ns": 1793526355482698927,
+          "end_ns": 1793526422611888938,
+          "role": "post_motion_stop"
+        },
+        {
+          "phase": "RETURN",
+          "start_ns": 1793526871441254347,
+          "end_ns": 1793526975402672205,
+          "role": "post_motion_stop"
+        }
+      ],
+      "carry_prior_from_other_unit": false,
+      "carry_gyro_from_other_unit": false
+    }
+  ],
+  "remaining": "development-only reset interface check, final code/config lock, then reserved execution after cloud handoff review"
+}

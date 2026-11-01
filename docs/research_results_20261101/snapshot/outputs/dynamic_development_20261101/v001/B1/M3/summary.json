@@ -1,0 +1,20 @@
+{
+  "case": "B1",
+  "method": "M3",
+  "elapsed_s": 202.98499999998603,
+  "frames": 1361,
+  "accepted": 1359,
+  "valid": {
+    "car1": 1299,
+    "car2": 1293
+  },
+  "statuses": {
+    "predict_only_warmup": 2,
+    "graph": 1283,
+    "graph_missing_angular": 76
+  },
+  "marginalizations": 1340,
+  "inputs_sha256": "6ea8ecb0794f2d699d98f2fa83880fdf9cabdfc0c6ec48b9d2c92f2588d94ece",
+  "config_sha256": "2e3313e9fa2a95a15b332c517ae2ff3e372e3d36c0b43f37f4d8871b73b47ece",
+  "script_sha256": "ed8a41ec60c127057a918207a1e8ecef113784beb6ea7a39814b1234b874452b"
+}

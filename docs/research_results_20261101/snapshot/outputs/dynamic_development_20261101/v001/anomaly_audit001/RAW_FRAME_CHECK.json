@@ -1,0 +1,131 @@
+{
+  "bag_sha256": "4af1187606cafa5b383215aa5eef9fc3ca88d9f8f59b6e9551ac89b88126062d",
+  "matched_link_values": 69963,
+  "unmatched_raw_frames": 0,
+  "max_raw_to_ranges_difference_m": 0.0,
+  "node10_window_statistics": [
+    {
+      "indices": [
+        250,
+        290
+      ],
+      "samples": 1999,
+      "median_distance_fp_rx": [
+        3.362,
+        -92.0,
+        -79.0
+      ]
+    },
+    {
+      "indices": [
+        300,
+        350
+      ],
+      "samples": 2499,
+      "median_distance_fp_rx": [
+        4.097,
+        -91.5,
+        -79.0
+      ]
+    },
+    {
+      "indices": [
+        380,
+        430
+      ],
+      "samples": 2498,
+      "median_distance_fp_rx": [
+        5.365,
+        -92.5,
+        -79.0
+      ]
+    },
+    {
+      "indices": [
+        483,
+        528
+      ],
+      "samples": 2250,
+      "median_distance_fp_rx": [
+        5.399,
+        -92.5,
+        -79.0
+      ]
+    }
+  ],
+  "raw_examples": [
+    {
+      "receipt_ns": 1793524149017348805,
+      "header_ns": 1793524149026006937,
+      "node": {
+        "distance_m": 4.947,
+        "node_id": 10,
+        "role": 0,
+        "fp_rssi_db": -91.5,
+        "rx_rssi_db": -79.5
+      },
+      "packet_hex": "5505390000016197690048976900000000005012050002f11300a7a000034a0e00a49700084d0f00a59d000a531300b79f0000840900a299bb"
+    },
+    {
+      "receipt_ns": 1793524149039673313,
+      "header_ns": 1793524149045938014,
+      "node": {
+        "distance_m": 3.371,
+        "node_id": 10,
+        "role": 0,
+        "fp_rssi_db": -93.0,
+        "rx_rssi_db": -79.0
+      },
+      "packet_hex": "550539000001759769005c976900000000005212050002fa1300a49f0003150e00a5970008180f00a69f000a2b0d00ba9e0000990900a1996c"
+    },
+    {
+      "receipt_ns": 1793524149059136770,
+      "header_ns": 1793524149065965890,
+      "node": {
+        "distance_m": 6.562,
+        "node_id": 10,
+        "role": 0,
+        "fp_rssi_db": -89.5,
+        "rx_rssi_db": -79.0
+      },
+      "packet_hex": "5505390000018997690070976900000000005212050002ff1300a49f0003610e00a5970008f30e00a89f000aa21900b39e0000bb0900a1995f"
+    },
+    {
+      "receipt_ns": 1793524399000992012,
+      "header_ns": 1793524399009100914,
+      "node": {
+        "distance_m": 5.417,
+        "node_id": 10,
+        "role": 0,
+        "fp_rssi_db": -92.0,
+        "rx_rssi_db": -79.0
+      },
+      "packet_hex": "550539000001df676d00c4676d00000000005212050002cf1300a69f0003330e00a59700083c0f00a89f000a291500b89e00009d0900a29a0b"
+    },
+    {
+      "receipt_ns": 1793524399021622613,
+      "header_ns": 1793524399029159069,
+      "node": {
+        "distance_m": 4.959,
+        "node_id": 10,
+        "role": 0,
+        "fp_rssi_db": -93.5,
+        "rx_rssi_db": -79.0
+      },
+      "packet_hex": "550539000001f3676d00d8676d00000000005212050002da1300a69f00031c0e00a49700083a0f00a59d000a5f1300bb9e0000820900a2993a"
+    },
+    {
+      "receipt_ns": 1793524399040803628,
+      "header_ns": 1793524399049185037,
+      "node": {
+        "distance_m": 4.938,
+        "node_id": 10,
+        "role": 0,
+        "fp_rssi_db": -94.0,
+        "rx_rssi_db": -79.0
+      },
+      "packet_hex": "55053900000107686d00ec676d00000000005212050002af1300a49f0003610e00a3970008410f00a89e000a4a1300bc9e0000740900a49b67"
+    }
+  ],
+  "interpretation": "raw Frame3 decoded distances already contain change; excludes offline binning as creator, does not establish RF fault cause"
+}
