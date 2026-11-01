@@ -91,6 +91,8 @@ class Contracts(unittest.TestCase):
         r=summarize_frames(frames,0,4,1e-12)
         self.assertEqual([r[k] for k in ('window_s','finite_s','valid_s','paired_valid_s','unknown_or_invalid_s','no_publication_s','harm_duration_s')],[4,3,2,2,2,1,1])
         self.assertAlmostEqual(r['delta_mse_vs_M2_m2'],.005)
+        self.assertAlmostEqual(r['delta_mse_all_finite_vs_M2_m2'],.01/3)
+        self.assertEqual(r['paired_finite_s'],3)
         self.assertEqual(interval([2.,2.,2.,2.]),dict(n=4,mean=2.,lo95=2.,hi95=2.,minimum=2.,maximum=2.))
 
     def test_recovery_first_confirmation_reexcursion_and_censoring(self):

@@ -8,7 +8,7 @@ from pathlib import Path
 import statistics
 import numpy as np
 from scipy.stats import t as student_t, spearmanr
-from support import CARS, METHODS, dump, lines, new_output, protocol, sha, write_lines
+from support import CARS, METHODS, dump, git_state, lines, new_output, protocol, sha, sources, write_lines
 
 
 def ant(p, model):
@@ -122,19 +122,24 @@ def summarize_frames(frames, start, end, epsilon):
     finite=[r for r in rows if r['squared_error_m2'] is not None]
     valid=[r for r in rows if r['valid']]
     paired=[r for r in rows if r['paired_valid']]
+    paired_finite=[r for r in rows if r['delta_squared_error_vs_M2_m2'] is not None]
     delta=[r['delta_squared_error_vs_M2_m2'] for r in paired]
+    delta_finite=[r['delta_squared_error_vs_M2_m2'] for r in paired_finite]
     harmonic=[r['paired_valid'] and r['delta_squared_error_vs_M2_m2']>epsilon for r in rows]
+    harmonic_finite=[r['delta_squared_error_vs_M2_m2'] is not None and r['delta_squared_error_vs_M2_m2']>epsilon for r in rows]
     mse=lambda rs:statistics.mean([r['squared_error_m2'] for r in rs]) if rs else None
     raw=[r['four_wall_statistic'] for r in paired if r['four_wall_statistic'] is not None]
     correlation=None
     if len(raw)==len(delta) and len(raw)>=3 and np.ptp(raw)>1e-12 and np.ptp(delta)>epsilon:
         correlation=float(spearmanr(raw,delta).statistic)
-    return dict(window_s=end-start,finite_s=len(finite),valid_s=len(valid),paired_valid_s=len(paired),
+    return dict(window_s=end-start,finite_s=len(finite),valid_s=len(valid),paired_valid_s=len(paired),paired_finite_s=len(paired_finite),
         coverage_fraction=len(valid)/(end-start),paired_coverage_fraction=len(paired)/(end-start),
         unknown_or_invalid_s=sum(not r['valid'] for r in rows),no_publication_s=sum(not r['published'] for r in rows),
         failed_s=sum(r['failed'] for r in rows),mse_all_finite_m2=mse(finite),mse_valid_m2=mse(valid),
         rmse_all_finite_m=None if not finite else math.sqrt(mse(finite)),rmse_valid_m=None if not valid else math.sqrt(mse(valid)),
         delta_mse_vs_M2_m2=statistics.mean(delta) if delta else None,
+        delta_mse_all_finite_vs_M2_m2=statistics.mean(delta_finite) if delta_finite else None,
+        harm_duration_all_finite_s=sum(harmonic_finite),longest_harm_all_finite_s=longest(harmonic_finite),
         harm_duration_s=sum(harmonic),longest_harm_duration_s=longest(harmonic),
         four_wall_raw_mean=None if not raw else statistics.mean(raw),
         raw_stat_delta_SE_spearman_descriptive=correlation,
@@ -233,7 +238,8 @@ def evaluate(matrix_path, protocol_path, output):
     keys=('motion','condition','method','car','phase')
     for values in sorted({tuple(r[k] for k in keys) for r in metrics}):
         group=[r for r in metrics if tuple(r[k] for k in keys)==values]
-        for metric in ('rmse_all_finite_m','rmse_valid_m','delta_mse_vs_M2_m2','harm_duration_s','longest_harm_duration_s',
+        for metric in ('rmse_all_finite_m','rmse_valid_m','delta_mse_vs_M2_m2','delta_mse_all_finite_vs_M2_m2',
+                       'harm_duration_s','harm_duration_all_finite_s','longest_harm_duration_s','longest_harm_all_finite_s',
                        'coverage_fraction','paired_coverage_fraction','failed_s','unknown_or_invalid_s',
                        'unchanged_local_stat_but_changed_error_s','unchanged_local_stat_but_worse_error_s'):
             grouped.append(dict(partition=partition,**dict(zip(keys,values)),metric=metric,**interval([r[metric] for r in group])))
@@ -256,6 +262,7 @@ def evaluate(matrix_path, protocol_path, output):
         exact_shared_method_bins=True,lossless_readback='separate per-cell READBACK receipts',M2_partner_controls=controls,
         no_alarm_threshold_fitted=True,sim_source_exclusion='unknown',frame_correlations='descriptive only; no independent frame trials'))
     dump(out/'ANALYSIS_INDEX.json',dict(status='DONE',partition=partition,protocol_sha256=sha(protocol_path),
+        **git_state(),analysis_source_sha256=sources(),
         source_matrix_index_sha256=sha(root/'RUN_INDEX.json'),per_seed_rows=len(metrics),frame_rows=len(allframes),
         files={q.name:sha(q) for q in out.iterdir()}))
     return metrics

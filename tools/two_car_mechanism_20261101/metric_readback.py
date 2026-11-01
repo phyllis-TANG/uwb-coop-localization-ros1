@@ -75,12 +75,16 @@ def read(matrix, analysis, protocol_path):
         finite=[data[t]['error'] for t in stamps if t in data and data[t]['error'] is not None]
         valid=[data[t]['error'] for t in stamps if t in data and data[t]['valid']]
         paired=[t for t in stamps if t in data and t in ref and data[t]['valid'] and ref[t]['valid']]
+        paired_finite=[t for t in stamps if t in data and t in ref and data[t]['error'] is not None and ref[t]['error'] is not None]
         delta=[data[t]['error']-ref[t]['error'] for t in paired]
+        delta_finite=[data[t]['error']-ref[t]['error'] for t in paired_finite]
         for t,d in zip(paired,delta):
             e=ref[t]['vector'];v=(data[t]['xy'][0]-ref[t]['xy'][0],data[t]['xy'][1]-ref[t]['xy'][1])
             close(d,2*(e[0]*v[0]+e[1]*v[1])+v[0]**2+v[1]**2,'paired square identity');n_identity+=1
         flags=[t in paired and data[t]['error']-ref[t]['error']>p['harm_epsilon_m2'] for t in stamps]
+        flags_finite=[t in paired_finite and data[t]['error']-ref[t]['error']>p['harm_epsilon_m2'] for t in stamps]
         expected=dict(window_s=end-start,finite_s=len(finite),valid_s=len(valid),paired_valid_s=len(paired),
+            paired_finite_s=len(paired_finite),
             coverage_fraction=len(valid)/(end-start),paired_coverage_fraction=len(paired)/(end-start),
             no_publication_s=sum(t not in data for t in stamps),unknown_or_invalid_s=sum(t not in data or not data[t]['valid'] for t in stamps),
             failed_s=sum(t in data and ('failed' in data[t]['status'] or 'error' in data[t]['status']) for t in stamps),
@@ -88,6 +92,8 @@ def read(matrix, analysis, protocol_path):
             rmse_all_finite_m=math.sqrt(sum(finite)/len(finite)) if finite else None,
             rmse_valid_m=math.sqrt(sum(valid)/len(valid)) if valid else None,
             delta_mse_vs_M2_m2=sum(delta)/len(delta) if delta else None,harm_duration_s=sum(flags),longest_harm_duration_s=longest(flags))
+        expected.update(delta_mse_all_finite_vs_M2_m2=sum(delta_finite)/len(delta_finite) if delta_finite else None,
+            harm_duration_all_finite_s=sum(flags_finite),longest_harm_all_finite_s=longest(flags_finite))
         for metric,value in expected.items():close(r[metric],value,'metric '+metric);checked+=1
     intervals=csvrows(out/'RUN_LEVEL_INTERVALS.csv');icount=0
     keys=('motion','condition','method','car','phase')

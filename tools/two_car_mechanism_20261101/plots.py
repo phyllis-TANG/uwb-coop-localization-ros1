@@ -40,6 +40,9 @@ def plot(analysis, output):
             rs=[r for r in subset if r['car']==car and r['method']==method and r['squared_error_m2'] is not None]
             axes[0,ci].plot([r['time_s'] for r in rs],[r['squared_error_m2']**.5 for r in rs],color=COLORS[method],label=method)
             axes[2,ci].plot([r['time_s'] for r in rs],[r['paired_nominal_displacement_m'] for r in rs],color=COLORS[method])
+            bad=[r for r in rs if not r['valid']]
+            axes[0,ci].scatter([r['time_s'] for r in bad],[r['squared_error_m2']**.5 for r in bad],color=COLORS[method],marker='x',s=30)
+            axes[2,ci].scatter([r['time_s'] for r in bad],[r['paired_nominal_displacement_m'] for r in bad],color=COLORS[method],marker='x',s=30)
         fault=[r for r in subset if r['car']==car and r['method']=='M3' and r['four_wall_statistic'] is not None]
         normal=[r for r in frames if r['seed']==seed and r['motion']=='static_moving' and r['condition']=='nominal' and r['car']==car and r['method']=='M3' and r['four_wall_statistic'] is not None]
         axes[1,ci].plot([r['time_s'] for r in fault],[r['four_wall_statistic'] for r in fault],label='fault input',color='#9641a1')
@@ -50,7 +53,7 @@ def plot(analysis, output):
         axes[0,ci].set_title(car);axes[0,ci].set_ylabel('Antenna XY error [m]')
         axes[1,ci].set_ylabel('Raw four-wall fit statistic')
         axes[2,ci].set_ylabel('Distance to paired normal [m]');axes[2,ci].set_xlabel('State time [s]')
-    axes[0,0].legend();axes[1,0].legend();fig.suptitle(f'Fixed first test seed {seed}: Car1 wall fault; dashed line = active-factor exit')
+    axes[0,0].legend();axes[1,0].legend();fig.suptitle(f'Fixed first test seed {seed}; x = invalid prediction; dashed line = active-factor exit')
     fig.tight_layout();fig.savefig(output/'first_seed_trace.png',dpi=180);plt.close(fig)
     fig,axes=plt.subplots(2,2,figsize=(11,7),sharex=True)
     for mi,motion in enumerate(('static_moving','both_moving')):
@@ -59,6 +62,8 @@ def plot(analysis, output):
             for method in ('M2','M3','M3W025'):
                 rs=[r for r in frames if r['seed']==seed and r['motion']==motion and r['condition']==condition and r['car']==car and r['method']==method and r['paired_nominal_displacement_m'] is not None]
                 ax.plot([r['time_s'] for r in rs],[r['paired_nominal_displacement_m'] for r in rs],color=COLORS[method],label=method)
+                bad=[r for r in rs if not r['paired_nominal_valid']]
+                ax.scatter([r['time_s'] for r in bad],[r['paired_nominal_displacement_m'] for r in bad],color=COLORS[method],marker='x',s=30)
             ax.axhline(.02,color='black',linestyle=':');ax.axvspan(24,38,color='orange',alpha=.1);ax.axvline(59,color='black',linestyle='--',linewidth=.7)
             ax.set_title(motion+' / '+condition+' / partner '+car);ax.set_ylabel('Distance to paired normal [m]');ax.grid(alpha=.2);ax.set_xlabel('State time [s]')
     axes[0,0].legend();fig.suptitle('Partner propagation and recovery, fixed first test seed; local raw statistic unchanged')
