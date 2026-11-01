@@ -1,0 +1,622 @@
+{
+  "base_PR91_head": "b7af016b09e5717b718d9251341706fc33aa6f46",
+  "bias_vector_m": [
+    0.6088636184,
+    0.4497374906,
+    0.2012859605,
+    0.3685143909
+  ],
+  "decision": {
+    "CI_strictly_excludes_zero": true,
+    "M3W025": "fixed comparison only, not an alternative primary test",
+    "all_four_assessable": true,
+    "all_four_strict_same_sign": true,
+    "field_direction_support": "Car1 positive and Car2 negative, and both individually pass all primary conditions",
+    "minimum_abs_mean_T_m2": 0.001,
+    "placement_support": "at least one vehicle satisfies all conditions",
+    "primary_method": "M3"
+  },
+  "estimator_template": {
+    "angular": {
+      "car1": {
+        "angle_noise_density_rad_sqrt_s": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "rad/sqrt(s)",
+          "value": 0.03490658503988659
+        },
+        "bias_initial_rad_s": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "rad/s",
+          "value": 0.0
+        },
+        "bias_initial_sigma_rad_s": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "rad/s",
+          "value": 0.03
+        },
+        "bias_random_walk_rad_s_sqrt_s": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "(rad/s)/sqrt(s)",
+          "value": 0.0007
+        },
+        "body_z_in_imu_frame": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "synthetic_design",
+          "units": "dimensionless",
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "imu_frame_id": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "synthetic_design",
+          "units": "frame_id",
+          "value": "car1/imu_link"
+        },
+        "max_hold_ns": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "ns",
+          "value": 100000000
+        }
+      },
+      "car2": {
+        "angle_noise_density_rad_sqrt_s": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "rad/sqrt(s)",
+          "value": 0.03490658503988659
+        },
+        "bias_initial_rad_s": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "rad/s",
+          "value": 0.0
+        },
+        "bias_initial_sigma_rad_s": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "rad/s",
+          "value": 0.03
+        },
+        "bias_random_walk_rad_s_sqrt_s": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "(rad/s)/sqrt(s)",
+          "value": 0.0007
+        },
+        "body_z_in_imu_frame": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "synthetic_design",
+          "units": "dimensionless",
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "imu_frame_id": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "synthetic_design",
+          "units": "frame_id",
+          "value": "car2/imu_link"
+        },
+        "max_hold_ns": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "ns",
+          "value": 100000000
+        }
+      }
+    },
+    "base_commit": "868349b543a03a6a713d1675e1d4ada7d905410c",
+    "clock_policy": {
+      "car1": {
+        "imu": {
+          "approval": "synthetic_design",
+          "kind": "shared_synthetic_header",
+          "physical_uncertainty_ns": 0,
+          "source": "exact shared generated clock"
+        },
+        "odom": {
+          "approval": "synthetic_design",
+          "kind": "shared_synthetic_header",
+          "physical_uncertainty_ns": 0,
+          "source": "exact shared generated clock"
+        },
+        "uwb": {
+          "approval": "synthetic_design",
+          "kind": "shared_synthetic_header",
+          "physical_uncertainty_ns": 0,
+          "source": "exact shared generated clock"
+        }
+      },
+      "car2": {
+        "imu": {
+          "approval": "synthetic_design",
+          "kind": "shared_synthetic_header",
+          "physical_uncertainty_ns": 0,
+          "source": "exact shared generated clock"
+        },
+        "odom": {
+          "approval": "synthetic_design",
+          "kind": "shared_synthetic_header",
+          "physical_uncertainty_ns": 0,
+          "source": "exact shared generated clock"
+        },
+        "uwb": {
+          "approval": "synthetic_design",
+          "kind": "shared_synthetic_header",
+          "physical_uncertainty_ns": 0,
+          "source": "exact shared generated clock"
+        }
+      }
+    },
+    "extensions": {
+      "imu": "reserved_disabled",
+      "quality": "disabled"
+    },
+    "fixed_lag_s": 20.0,
+    "frontend": {
+      "max_sensor_samples_per_stream": 512,
+      "output_history": "external sink; estimator retains last valid publication only"
+    },
+    "models": {
+      "car1": {
+        "anchors_xyz_m": {
+          "node_10": [
+            3.26,
+            0.1,
+            2.355
+          ],
+          "node_2": [
+            5.28,
+            5.16,
+            2.755
+          ],
+          "node_3": [
+            5.28,
+            2.86,
+            2.355
+          ],
+          "node_8": [
+            0.1,
+            2.41,
+            2.3
+          ]
+        },
+        "antenna_height_m": 0.17,
+        "base_to_antenna_body_xy_m": [
+          0.08,
+          -0.06
+        ],
+        "graph_parameters": {
+          "keyframe_step_s": 1,
+          "odom_translation_sigma_m": 0.03,
+          "odom_yaw_sigma_deg": 2,
+          "prior_heading_sigma_deg": 5,
+          "prior_position_sigma_m": 0.2,
+          "range_bin_half_width_s": 0.4,
+          "range_sigma_m": 0.2
+        },
+        "initial_heading_deg": 15,
+        "range_bias_m": {
+          "node_10": 0.0,
+          "node_2": 0.0,
+          "node_3": 0.0,
+          "node_8": 0.0
+        },
+        "start_antenna_xyz_m": [
+          1.6,
+          3.7,
+          0.17
+        ]
+      },
+      "car2": {
+        "anchors_xyz_m": {
+          "node_10": [
+            3.26,
+            0.1,
+            2.355
+          ],
+          "node_2": [
+            5.28,
+            5.16,
+            2.755
+          ],
+          "node_3": [
+            5.28,
+            2.86,
+            2.355
+          ],
+          "node_8": [
+            0.1,
+            2.41,
+            2.3
+          ]
+        },
+        "antenna_height_m": 0.2,
+        "base_to_antenna_body_xy_m": [
+          0.12,
+          -0.08
+        ],
+        "graph_parameters": {
+          "keyframe_step_s": 1,
+          "odom_translation_sigma_m": 0.03,
+          "odom_yaw_sigma_deg": 2,
+          "prior_heading_sigma_deg": 5,
+          "prior_position_sigma_m": 0.2,
+          "range_bin_half_width_s": 0.4,
+          "range_sigma_m": 0.2
+        },
+        "initial_heading_deg": 70,
+        "range_bias_m": {
+          "node_10": 0.0,
+          "node_2": 0.0,
+          "node_3": 0.0,
+          "node_8": 0.0
+        },
+        "start_antenna_xyz_m": [
+          2.4,
+          1.8,
+          0.2
+        ]
+      }
+    },
+    "optimizer": {
+      "ftol": 1e-07,
+      "gtol": 1e-07,
+      "initialization": "previous accepted active estimates plus Odom prediction",
+      "jacobian": "analytic",
+      "linear_solver": "exact dense",
+      "max_nfev": 50,
+      "method": "trf",
+      "xtol": 1e-07
+    },
+    "peer": {
+      "direction": "car1_to_car2",
+      "minimum_samples": 5,
+      "representation": "bridge",
+      "reverse": "diagnostic_only",
+      "sigma_m": 0.2
+    },
+    "provenance": {
+      "anchors": "historical numerical coordinates for synthetic geometry only",
+      "clock": "integer identity mapping in shared synthetic domain; no field claim",
+      "initial": "synthetic design plus seed-derived uncertain placement prior",
+      "scope": "synthetic_design",
+      "weights": "inherited F0 engineering assumptions"
+    },
+    "replay": {
+      "backend": "arm-specific; see arms",
+      "clock_correction": "none",
+      "closed_bin_policy": "immutable; count late packets",
+      "eof_policy": "no timer advance beyond last recorded receipt",
+      "first_keyframe_margin_s": 1,
+      "imu": "diagnostic messages only; zero independent IMU factors",
+      "keyframe_step_s": 1,
+      "minimum_samples_per_link": 5,
+      "range_bin_half_width_s": 0.4,
+      "release_delay_s": 1
+    },
+    "schema_version": 1,
+    "scope": "synthetic"
+  },
+  "evaluation": {
+    "C": "D_historical minus D_raw within geometry",
+    "D": "mean squared antenna XY error(method) minus M2 on exact same common times",
+    "T": "C_G2 minus C_G1",
+    "common_mask": "per seed and vehicle: intersection of accepted_graph and per-car valid over all2geometry x2processing x3method configurations",
+    "decomposition": "C=(MSE_hist_method-MSE_raw_method)-(MSE_hist_M2-MSE_raw_M2)",
+    "interval": "four-seed mean +/- Student-t(.975,df3)*sample_sd/sqrt4; min/max also reported",
+    "low_coverage": "primary T not evaluable for that seed; no imputation or replacement; full-finite output retained",
+    "minimum_common_count": 72,
+    "minimum_common_coverage": 0.8,
+    "scheduled_count": 90,
+    "scheduled_states_inclusive_s": [
+      6,
+      95
+    ]
+  },
+  "geometry_translation_m": {
+    "G1": [
+      0.0,
+      0.0
+    ],
+    "G2": [
+      1.49,
+      2.01
+    ]
+  },
+  "initial_true_antenna_XY_G1_m": {
+    "car1": [
+      1.5,
+      4.0
+    ],
+    "car2": [
+      2.0,
+      2.0
+    ]
+  },
+  "initialization": {
+    "availability_s": 6.05,
+    "first_graph_release_s": 7,
+    "first_graph_state_s": 6,
+    "first_possible_accepted_state_s": 8,
+    "graph_sensor_header_min_s": 5,
+    "gyro_bias_assumed_rad_s": 0.0,
+    "heading_at0_mean_rad": 0.0,
+    "heading_perturb_sigma_deg": 2.0,
+    "mean_model": "2D linear-loss slant-range LS for base at0; odom/gyro motion compensation through first5s; propagate to6s",
+    "position_perturb": "same captured primitive added to fitted base mean, preserving PR91 initial disturbance amplitude; no true-position prior",
+    "position_perturb_sigma_m": 0.08,
+    "prior_reference_s": 6,
+    "range_overlap": "none: fit headers<5, first graph bin5.6..6.4",
+    "scope": "same sensor-only initializer for all methods; separately refit raw and historical in each geometry",
+    "solver": {
+      "ftol": 1e-10,
+      "gtol": 1e-10,
+      "max_nfev": 200,
+      "xtol": 1e-10
+    },
+    "wall_header_window_s": [
+      0,
+      5
+    ]
+  },
+  "main_optimizer_cells": 48,
+  "methods": [
+    "M2",
+    "M3",
+    "M3W025"
+  ],
+  "processing": [
+    "raw",
+    "historical"
+  ],
+  "publication": {
+    "create_PR": false,
+    "git_push": false,
+    "public_upload_authorized": false
+  },
+  "random_primitives": "Trace15 exact PR91 draws; one NPZ per seed; rigid translation recomputes only true wall/peer distance; measured odom/gyro copied invariant",
+  "resource_limits": {
+    "address_space_bytes": 2147483648,
+    "artifact_bytes": 314572800,
+    "blas_threads": 1,
+    "omp_threads": 1,
+    "subprocess_wall_s": 180,
+    "total_wall_s": 3600,
+    "workers": 1
+  },
+  "scientific_scope": "controlled synthetic bias and default noise only; no field bias knowledge, online detection, safety probability, or real dynamic accuracy claim",
+  "seeds": [
+    20261101701,
+    20261101702,
+    20261101703,
+    20261101704
+  ],
+  "study": "geometry_by_Car2_fixed_wall_correction_interaction",
+  "trajectory": {
+    "development_only": true,
+    "duration_s": 96,
+    "fault_start_s": 24,
+    "fixed_antenna_xy_m": [
+      1.5,
+      4
+    ],
+    "fixed_car": "car1",
+    "fixed_yaw_rad": 0.0,
+    "gyro_bias_rad_s": {
+      "car1": 0.025,
+      "car2": -0.015
+    },
+    "initial_prior_time_s": 1,
+    "motion": "both_moving",
+    "noise": {
+      "gyro_bias_rw_rad_s_sqrt_s": 0.0007,
+      "gyro_white_sigma_rad_s": 0.006,
+      "initial_xy_sigma_m": 0.08,
+      "initial_yaw_sigma_deg": 2.0,
+      "odom_step_xy_sigma_m": 0.002,
+      "odom_step_yaw_sigma_rad": 0.0008,
+      "range_sigma_m": 0.04,
+      "wall_network_common_fraction": 0.0,
+      "wall_vehicle_common_fraction": 0.0
+    },
+    "sample_step_ns": 50000000,
+    "seed": 7,
+    "trajectories": {
+      "car1": [
+        {
+          "antenna_xy_m": [
+            1.5,
+            4
+          ],
+          "t_s": 0,
+          "yaw_rad": 0
+        },
+        {
+          "antenna_xy_m": [
+            2.2,
+            3.5
+          ],
+          "t_s": 8,
+          "yaw_rad": 0.7
+        },
+        {
+          "antenna_xy_m": [
+            2.8,
+            4.2
+          ],
+          "t_s": 16,
+          "yaw_rad": 1.4
+        },
+        {
+          "antenna_xy_m": [
+            1.5,
+            4
+          ],
+          "t_s": 32,
+          "yaw_rad": 0
+        },
+        {
+          "antenna_xy_m": [
+            2.2,
+            3.5
+          ],
+          "t_s": 40,
+          "yaw_rad": 0.7
+        },
+        {
+          "antenna_xy_m": [
+            2.8,
+            4.2
+          ],
+          "t_s": 48,
+          "yaw_rad": 1.4
+        },
+        {
+          "antenna_xy_m": [
+            1.5,
+            4
+          ],
+          "t_s": 64,
+          "yaw_rad": 0
+        },
+        {
+          "antenna_xy_m": [
+            2.2,
+            3.5
+          ],
+          "t_s": 72,
+          "yaw_rad": 0.7
+        },
+        {
+          "antenna_xy_m": [
+            2.8,
+            4.2
+          ],
+          "t_s": 80,
+          "yaw_rad": 1.4
+        },
+        {
+          "antenna_xy_m": [
+            1.5,
+            4
+          ],
+          "t_s": 96,
+          "yaw_rad": 0
+        }
+      ],
+      "car2": [
+        {
+          "antenna_xy_m": [
+            2,
+            2
+          ],
+          "t_s": 0,
+          "yaw_rad": 0
+        },
+        {
+          "antenna_xy_m": [
+            2.75,
+            2
+          ],
+          "t_s": 8,
+          "yaw_rad": 0
+        },
+        {
+          "antenna_xy_m": [
+            3.5,
+            2
+          ],
+          "t_s": 16,
+          "yaw_rad": 3.141592653589793
+        },
+        {
+          "antenna_xy_m": [
+            2,
+            2
+          ],
+          "t_s": 32,
+          "yaw_rad": 0
+        },
+        {
+          "antenna_xy_m": [
+            2.75,
+            2
+          ],
+          "t_s": 40,
+          "yaw_rad": 0
+        },
+        {
+          "antenna_xy_m": [
+            3.5,
+            2
+          ],
+          "t_s": 48,
+          "yaw_rad": 3.141592653589793
+        },
+        {
+          "antenna_xy_m": [
+            2,
+            2
+          ],
+          "t_s": 64,
+          "yaw_rad": 0
+        },
+        {
+          "antenna_xy_m": [
+            2.75,
+            2
+          ],
+          "t_s": 72,
+          "yaw_rad": 0
+        },
+        {
+          "antenna_xy_m": [
+            3.5,
+            2
+          ],
+          "t_s": 80,
+          "yaw_rad": 3.141592653589793
+        },
+        {
+          "antenna_xy_m": [
+            2,
+            2
+          ],
+          "t_s": 96,
+          "yaw_rad": 0
+        }
+      ]
+    }
+  },
+  "wall_nodes": [
+    "node_10",
+    "node_2",
+    "node_3",
+    "node_8"
+  ]
+}

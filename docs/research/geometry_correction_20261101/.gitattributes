@@ -1,0 +1,3 @@
+# Preserve original CSV evidence bytes and hashes.
+*.csv -text whitespace=cr-at-eol
+artifacts/*.tar.gz -diff
