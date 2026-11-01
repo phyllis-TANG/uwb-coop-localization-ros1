@@ -1,0 +1,17 @@
+{
+  "field_direction_support": false,
+  "no_rerun_or_tuning": true,
+  "placement_alone_support": true,
+  "primary_method": "M3",
+  "public_upload_authorized": false,
+  "rule": {
+    "CI_strictly_excludes_zero": true,
+    "M3W025": "fixed comparison only, not an alternative primary test",
+    "all_four_assessable": true,
+    "all_four_strict_same_sign": true,
+    "field_direction_support": "Car1 positive and Car2 negative, and both individually pass all primary conditions",
+    "minimum_abs_mean_T_m2": 0.001,
+    "placement_support": "at least one vehicle satisfies all conditions",
+    "primary_method": "M3"
+  }
+}
