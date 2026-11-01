@@ -1,0 +1,29 @@
+{
+  "M2_partner_controls": [
+    {
+      "M2_max_displacement_m": 9.155133597044475e-16,
+      "condition": "car1_wall_14",
+      "motion": "static_moving",
+      "partner": "car2",
+      "seed": 7,
+      "successful_publication_invariance": "PASS"
+    },
+    {
+      "M2_max_displacement_m": 8.881784197001252e-16,
+      "condition": "car1_wall_14",
+      "motion": "both_moving",
+      "partner": "car2",
+      "seed": 7,
+      "successful_publication_invariance": "PASS"
+    }
+  ],
+  "cells": 12,
+  "exact_shared_method_bins": true,
+  "frame_correlations": "descriptive only; no independent frame trials",
+  "lossless_readback": "separate per-cell READBACK receipts",
+  "no_alarm_threshold_fitted": true,
+  "paired_input_CRN": "all changed scalars exactly frozen wall fault; peer/Odom/gyro unchanged",
+  "partition": "development",
+  "sim_source_exclusion": "unknown",
+  "status": "PASS"
+}

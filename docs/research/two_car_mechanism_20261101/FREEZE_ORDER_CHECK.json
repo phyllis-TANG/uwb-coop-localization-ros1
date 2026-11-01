@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "partition": "development",
+      "protocol_commit": "30747e1f86bc052e6bb1c32b6c16f1b693d15245",
+      "commit_timestamp": "2026-11-01T10:34:11Z",
+      "matrix_started_utc": "2026-11-01T10:35:26.834195+00:00",
+      "content_sha256": "4ad0848a9f70bea24d882d79adae4f21235862f661ca53d2702e7ca56c5770c9",
+      "proof": "commit timestamp precedes first partition command"
+    },
+    {
+      "partition": "calibration",
+      "protocol_commit": "5ad1e55c78e27b4844bc8e645131e9e5ac185736",
+      "commit_timestamp": "2026-11-01T10:44:32Z",
+      "matrix_started_utc": "2026-11-01T10:44:50.332915+00:00",
+      "content_sha256": "1b6e922637d865d9434deceb57d5636a5808105a1c300f46bee7791b7a5de4b7",
+      "proof": "commit timestamp precedes first partition command"
+    },
+    {
+      "partition": "test",
+      "protocol_commit": "5ad1e55c78e27b4844bc8e645131e9e5ac185736",
+      "commit_timestamp": "2026-11-01T10:44:32Z",
+      "matrix_started_utc": "2026-11-01T10:48:16.088301+00:00",
+      "content_sha256": "1b6e922637d865d9434deceb57d5636a5808105a1c300f46bee7791b7a5de4b7",
+      "proof": "commit timestamp precedes first partition command"
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "M2_partner_controls": [
+    {
+      "M2_max_displacement_m": 9.930136612989092e-16,
+      "condition": "car1_wall_14",
+      "motion": "static_moving",
+      "partner": "car2",
+      "seed": 20261101201,
+      "successful_publication_invariance": "PASS"
+    },
+    {
+      "M2_max_displacement_m": 9.930136612989092e-16,
+      "condition": "car2_wall_14",
+      "motion": "static_moving",
+      "partner": "car1",
+      "seed": 20261101201,
+      "successful_publication_invariance": "PASS"
+    },
+    {
+      "M2_max_displacement_m": 9.930136612989092e-16,
+      "condition": "car1_wall_14",
+      "motion": "both_moving",
+      "partner": "car2",
+      "seed": 20261101201,
+      "successful_publication_invariance": "PASS"
+    },
+    {
+      "M2_max_displacement_m": 9.155133597044475e-16,
+      "condition": "car2_wall_14",
+      "motion": "both_moving",
+      "partner": "car1",
+      "seed": 20261101201,
+      "successful_publication_invariance": "PASS"
+    },
+    {
+      "M2_max_displacement_m": 8.903102582642027e-07,
+      "condition": "car1_wall_14",
+      "motion": "static_moving",
+      "partner": "car2",
+      "seed": 20261101202,
+      "successful_publication_invariance": "EXCEEDS_TOLERANCE_REVIEW_FAILURE_TRANSACTIONS"
+    },
+    {
+      "M2_max_displacement_m": 1.1102230246251565e-15,
+      "condition": "car2_wall_14",
+      "motion": "static_moving",
+      "partner": "car1",
+      "seed": 20261101202,
+      "successful_publication_invariance": "PASS"
+    },
+    {
+      "M2_max_displacement_m": 8.881784197001252e-16,
+      "condition": "car1_wall_14",
+      "motion": "both_moving",
+      "partner": "car2",
+      "seed": 20261101202,
+      "successful_publication_invariance": "PASS"
+    },
+    {
+      "M2_max_displacement_m": 8.881784197001252e-16,
+      "condition": "car2_wall_14",
+      "motion": "both_moving",
+      "partner": "car1",
+      "seed": 20261101202,
+      "successful_publication_invariance": "PASS"
+    },
+    {
+      "M2_max_displacement_m": 6.661338147750939e-16,
+      "condition": "car1_wall_14",
+      "motion": "static_moving",
+      "partner": "car2",
+      "seed": 20261101203,
+      "successful_publication_invariance": "PASS"
+    },
+    {
+      "M2_max_displacement_m": 1.831026719408895e-15,
+      "condition": "car2_wall_14",
+      "motion": "static_moving",
+      "partner": "car1",
+      "seed": 20261101203,
+      "successful_publication_invariance": "PASS"
+    },
+    {
+      "M2_max_displacement_m": 9.930136612989092e-16,
+      "condition": "car1_wall_14",
+      "motion": "both_moving",
+      "partner": "car2",
+      "seed": 20261101203,
+      "successful_publication_invariance": "PASS"
+    },
+    {
+      "M2_max_displacement_m": 9.930136612989092e-16,
+      "condition": "car2_wall_14",
+      "motion": "both_moving",
+      "partner": "car1",
+      "seed": 20261101203,
+      "successful_publication_invariance": "PASS"
+    },
+    {
+      "M2_max_displacement_m": 1.2560739669470201e-15,
+      "condition": "car1_wall_14",
+      "motion": "static_moving",
+      "partner": "car2",
+      "seed": 20261101204,
+      "successful_publication_invariance": "PASS"
+    },
+    {
+      "M2_max_displacement_m": 2.094764613337708e-15,
+      "condition": "car2_wall_14",
+      "motion": "static_moving",
+      "partner": "car1",
+      "seed": 20261101204,
+      "successful_publication_invariance": "PASS"
+    },
+    {
+      "M2_max_displacement_m": 6.280369834735101e-16,
+      "condition": "car1_wall_14",
+      "motion": "both_moving",
+      "partner": "car2",
+      "seed": 20261101204,
+      "successful_publication_invariance": "PASS"
+    },
+    {
+      "M2_max_displacement_m": 9.930136612989092e-16,
+      "condition": "car2_wall_14",
+      "motion": "both_moving",
+      "partner": "car1",
+      "seed": 20261101204,
+      "successful_publication_invariance": "PASS"
+    }
+  ],
+  "cells": 72,
+  "exact_shared_method_bins": true,
+  "frame_correlations": "descriptive only; no independent frame trials",
+  "lossless_readback": "separate per-cell READBACK receipts",
+  "no_alarm_threshold_fitted": true,
+  "paired_input_CRN": "all changed scalars exactly frozen wall fault; peer/Odom/gyro unchanged",
+  "partition": "test",
+  "sim_source_exclusion": "unknown",
+  "status": "PASS"
+}

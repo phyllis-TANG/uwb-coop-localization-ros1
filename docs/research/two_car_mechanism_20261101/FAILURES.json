@@ -1,0 +1,280 @@
+{
+  "cases": [
+    {
+      "condition": "nominal",
+      "method": "M2",
+      "motion": "static_moving",
+      "optimizer": {
+        "cost": 0.8403765633749516,
+        "message": "independent per-car F3 stopping; ['The maximum number of function evaluations is exceeded.', '`ftol` termination condition is satisfied.']",
+        "nfev": 54,
+        "optimality": 0.003248521674820315,
+        "status": 0,
+        "success": false
+      },
+      "partition": "calibration",
+      "seed": 20261101101,
+      "state_s": 77.0,
+      "status": "predict_only_solver_failed",
+      "valid": {
+        "car1": false,
+        "car2": false
+      }
+    },
+    {
+      "condition": "nominal",
+      "method": "M2",
+      "motion": "static_moving",
+      "optimizer": {
+        "cost": 0.856420829609952,
+        "message": "independent per-car F3 stopping; ['The maximum number of function evaluations is exceeded.', '`ftol` termination condition is satisfied.']",
+        "nfev": 54,
+        "optimality": 0.006699746940572515,
+        "status": 0,
+        "success": false
+      },
+      "partition": "calibration",
+      "seed": 20261101101,
+      "state_s": 78.0,
+      "status": "predict_only_solver_failed",
+      "valid": {
+        "car1": false,
+        "car2": false
+      }
+    },
+    {
+      "condition": "nominal",
+      "method": "M2",
+      "motion": "static_moving",
+      "optimizer": {
+        "cost": 0.8211903111058136,
+        "message": "independent per-car F3 stopping; ['The maximum number of function evaluations is exceeded.', '`ftol` termination condition is satisfied.']",
+        "nfev": 54,
+        "optimality": 0.0020344921027671548,
+        "status": 0,
+        "success": false
+      },
+      "partition": "calibration",
+      "seed": 20261101101,
+      "state_s": 82.0,
+      "status": "predict_only_solver_failed",
+      "valid": {
+        "car1": false,
+        "car2": false
+      }
+    },
+    {
+      "condition": "nominal",
+      "method": "M3",
+      "motion": "static_moving",
+      "optimizer": {
+        "cost": 0.9326581497646785,
+        "message": "The maximum number of function evaluations is exceeded.",
+        "nfev": 50,
+        "optimality": 0.012624774627748955,
+        "status": 0,
+        "success": false
+      },
+      "partition": "calibration",
+      "seed": 20261101101,
+      "state_s": 79.0,
+      "status": "predict_only_solver_failed",
+      "valid": {
+        "car1": false,
+        "car2": false
+      }
+    },
+    {
+      "condition": "nominal",
+      "method": "M3",
+      "motion": "static_moving",
+      "optimizer": {
+        "cost": 0.8935026293004055,
+        "message": "The maximum number of function evaluations is exceeded.",
+        "nfev": 50,
+        "optimality": 0.018202428102176982,
+        "status": 0,
+        "success": false
+      },
+      "partition": "calibration",
+      "seed": 20261101101,
+      "state_s": 80.0,
+      "status": "predict_only_solver_failed",
+      "valid": {
+        "car1": false,
+        "car2": false
+      }
+    },
+    {
+      "condition": "nominal",
+      "method": "M3",
+      "motion": "static_moving",
+      "optimizer": {
+        "cost": 0.8768032623079967,
+        "message": "The maximum number of function evaluations is exceeded.",
+        "nfev": 50,
+        "optimality": 0.003599621367594834,
+        "status": 0,
+        "success": false
+      },
+      "partition": "calibration",
+      "seed": 20261101101,
+      "state_s": 81.0,
+      "status": "predict_only_solver_failed",
+      "valid": {
+        "car1": false,
+        "car2": false
+      }
+    },
+    {
+      "condition": "nominal",
+      "method": "M3",
+      "motion": "static_moving",
+      "optimizer": {
+        "cost": 0.8845633839184349,
+        "message": "The maximum number of function evaluations is exceeded.",
+        "nfev": 50,
+        "optimality": 0.002927770201561042,
+        "status": 0,
+        "success": false
+      },
+      "partition": "calibration",
+      "seed": 20261101101,
+      "state_s": 82.0,
+      "status": "predict_only_solver_failed",
+      "valid": {
+        "car1": false,
+        "car2": false
+      }
+    },
+    {
+      "condition": "nominal",
+      "method": "M3W025",
+      "motion": "static_moving",
+      "optimizer": {
+        "cost": 0.8699989222935051,
+        "message": "The maximum number of function evaluations is exceeded.",
+        "nfev": 50,
+        "optimality": 0.0021152184449495584,
+        "status": 0,
+        "success": false
+      },
+      "partition": "calibration",
+      "seed": 20261101101,
+      "state_s": 79.0,
+      "status": "predict_only_solver_failed",
+      "valid": {
+        "car1": false,
+        "car2": false
+      }
+    },
+    {
+      "condition": "nominal",
+      "method": "M3",
+      "motion": "static_moving",
+      "optimizer": {
+        "cost": 0.7192572049819074,
+        "message": "The maximum number of function evaluations is exceeded.",
+        "nfev": 50,
+        "optimality": 0.0026485992810022924,
+        "status": 0,
+        "success": false
+      },
+      "partition": "calibration",
+      "seed": 20261101102,
+      "state_s": 76.0,
+      "status": "predict_only_solver_failed",
+      "valid": {
+        "car1": false,
+        "car2": false
+      }
+    },
+    {
+      "condition": "car1_wall_14",
+      "method": "M3",
+      "motion": "static_moving",
+      "optimizer": {
+        "cost": 7.361123553341317,
+        "message": "The maximum number of function evaluations is exceeded.",
+        "nfev": 50,
+        "optimality": 0.06712962098348196,
+        "status": 0,
+        "success": false
+      },
+      "partition": "test",
+      "seed": 20261101201,
+      "state_s": 58.0,
+      "status": "predict_only_solver_failed",
+      "valid": {
+        "car1": false,
+        "car2": false
+      }
+    },
+    {
+      "condition": "car1_wall_14",
+      "method": "M3W025",
+      "motion": "static_moving",
+      "optimizer": {
+        "cost": 7.696582282573724,
+        "message": "The maximum number of function evaluations is exceeded.",
+        "nfev": 50,
+        "optimality": 0.010414275997273292,
+        "status": 0,
+        "success": false
+      },
+      "partition": "test",
+      "seed": 20261101201,
+      "state_s": 58.0,
+      "status": "predict_only_solver_failed",
+      "valid": {
+        "car1": false,
+        "car2": false
+      }
+    },
+    {
+      "condition": "car1_wall_14",
+      "method": "M2",
+      "motion": "static_moving",
+      "optimizer": {
+        "cost": 24.35572134523453,
+        "message": "independent per-car F3 stopping; ['The maximum number of function evaluations is exceeded.', '`ftol` termination condition is satisfied.']",
+        "nfev": 54,
+        "optimality": 0.025311680853866925,
+        "status": 0,
+        "success": false
+      },
+      "partition": "test",
+      "seed": 20261101202,
+      "state_s": 43.0,
+      "status": "predict_only_solver_failed",
+      "valid": {
+        "car1": false,
+        "car2": false
+      }
+    },
+    {
+      "condition": "car1_wall_14",
+      "method": "M2",
+      "motion": "static_moving",
+      "optimizer": {
+        "cost": 24.60000022390593,
+        "message": "independent per-car F3 stopping; ['The maximum number of function evaluations is exceeded.', '`ftol` termination condition is satisfied.']",
+        "nfev": 54,
+        "optimality": 0.019531186746195583,
+        "status": 0,
+        "success": false
+      },
+      "partition": "test",
+      "seed": 20261101202,
+      "state_s": 44.0,
+      "status": "predict_only_solver_failed",
+      "valid": {
+        "car1": false,
+        "car2": false
+      }
+    }
+  ],
+  "failed_joint_publications": 13,
+  "new_optimization_after_completion": 0,
+  "policy": "frozen max_nfev=50; no retry; finite predictions retained; validity false"
+}
