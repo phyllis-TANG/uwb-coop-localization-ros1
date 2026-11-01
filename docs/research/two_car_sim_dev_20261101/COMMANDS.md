@@ -1,5 +1,7 @@
 # 命令与已执行范围
 
+后续用户已授权PR交付，完整审查包现随分支提供，见 [PR_DELIVERY.md](PR_DELIVERY.md)。本页“没有推送/创建PR”描述原开发交付时点，运行记录未改变。
+
 本轮已完成。不要重新启动历史 batch.py/field_batch.py、B1/B2 run.py、37 profile或正式10条件矩阵。下面旧输出目录只作读回；若确需复现开发短例，输出改成全新目录。本轮没有推送分支、创建PR或云端定时任务。
 
 实际代码工作树 `/workspace/work/uwb-sim-imu-prep-20261101`；开发代码执行提交 `86188b7527810807260fe86e1bdf4c0f1f518301`，六个运行均记录该提交且 worktree_dirty=false。之后的docs交付变更不是原执行源码；逐文件锁和PLAN可确认Python/配置未变。
