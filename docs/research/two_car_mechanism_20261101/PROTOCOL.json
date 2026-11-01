@@ -1,0 +1,818 @@
+{
+  "base_commit": "1835472dd34087f1701f8ee8bd8f300b8c742cef",
+  "dependencies": {
+    "matplotlib": "3.10.8",
+    "numpy": "2.2.6",
+    "python": "3.12.14",
+    "scipy": "1.15.3"
+  },
+  "development_receipt_sha256": "5ef865b2ad1bbafd9a03f9e37e9c5c67df44c463f9db0370ebdfc11845083475",
+  "estimator_template": {
+    "angular": {
+      "car1": {
+        "angle_noise_density_rad_sqrt_s": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "rad/sqrt(s)",
+          "value": 0.03490658503988659
+        },
+        "bias_initial_rad_s": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "rad/s",
+          "value": 0.0
+        },
+        "bias_initial_sigma_rad_s": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "rad/s",
+          "value": 0.03
+        },
+        "bias_random_walk_rad_s_sqrt_s": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "(rad/s)/sqrt(s)",
+          "value": 0.0007
+        },
+        "body_z_in_imu_frame": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "synthetic_design",
+          "units": "dimensionless",
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "imu_frame_id": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "synthetic_design",
+          "units": "frame_id",
+          "value": "car1/imu_link"
+        },
+        "max_hold_ns": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "ns",
+          "value": 100000000
+        }
+      },
+      "car2": {
+        "angle_noise_density_rad_sqrt_s": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "rad/sqrt(s)",
+          "value": 0.03490658503988659
+        },
+        "bias_initial_rad_s": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "rad/s",
+          "value": 0.0
+        },
+        "bias_initial_sigma_rad_s": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "rad/s",
+          "value": 0.03
+        },
+        "bias_random_walk_rad_s_sqrt_s": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "(rad/s)/sqrt(s)",
+          "value": 0.0007
+        },
+        "body_z_in_imu_frame": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "synthetic_design",
+          "units": "dimensionless",
+          "value": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "imu_frame_id": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "synthetic_design",
+          "units": "frame_id",
+          "value": "car2/imu_link"
+        },
+        "max_hold_ns": {
+          "frozen_before_field_run": true,
+          "source": "frozen exploratory engineering assumption; not calibrated",
+          "source_kind": "engineering_assumption",
+          "units": "ns",
+          "value": 100000000
+        }
+      }
+    },
+    "base_commit": "868349b543a03a6a713d1675e1d4ada7d905410c",
+    "clock_policy": {
+      "car1": {
+        "imu": {
+          "approval": "synthetic_design",
+          "kind": "shared_synthetic_header",
+          "physical_uncertainty_ns": 0,
+          "source": "exact shared generated clock"
+        },
+        "odom": {
+          "approval": "synthetic_design",
+          "kind": "shared_synthetic_header",
+          "physical_uncertainty_ns": 0,
+          "source": "exact shared generated clock"
+        },
+        "uwb": {
+          "approval": "synthetic_design",
+          "kind": "shared_synthetic_header",
+          "physical_uncertainty_ns": 0,
+          "source": "exact shared generated clock"
+        }
+      },
+      "car2": {
+        "imu": {
+          "approval": "synthetic_design",
+          "kind": "shared_synthetic_header",
+          "physical_uncertainty_ns": 0,
+          "source": "exact shared generated clock"
+        },
+        "odom": {
+          "approval": "synthetic_design",
+          "kind": "shared_synthetic_header",
+          "physical_uncertainty_ns": 0,
+          "source": "exact shared generated clock"
+        },
+        "uwb": {
+          "approval": "synthetic_design",
+          "kind": "shared_synthetic_header",
+          "physical_uncertainty_ns": 0,
+          "source": "exact shared generated clock"
+        }
+      }
+    },
+    "extensions": {
+      "imu": "reserved_disabled",
+      "quality": "disabled"
+    },
+    "fixed_lag_s": 20.0,
+    "frontend": {
+      "max_sensor_samples_per_stream": 512,
+      "output_history": "external sink; estimator retains last valid publication only"
+    },
+    "models": {
+      "car1": {
+        "anchors_xyz_m": {
+          "node_10": [
+            3.26,
+            0.1,
+            2.355
+          ],
+          "node_2": [
+            5.28,
+            5.16,
+            2.755
+          ],
+          "node_3": [
+            5.28,
+            2.86,
+            2.355
+          ],
+          "node_8": [
+            0.1,
+            2.41,
+            2.3
+          ]
+        },
+        "antenna_height_m": 0.17,
+        "base_to_antenna_body_xy_m": [
+          0.08,
+          -0.06
+        ],
+        "graph_parameters": {
+          "keyframe_step_s": 1,
+          "odom_translation_sigma_m": 0.03,
+          "odom_yaw_sigma_deg": 2,
+          "prior_heading_sigma_deg": 5,
+          "prior_position_sigma_m": 0.2,
+          "range_bin_half_width_s": 0.4,
+          "range_sigma_m": 0.2
+        },
+        "initial_heading_deg": 15,
+        "range_bias_m": {
+          "node_10": 0.0,
+          "node_2": 0.0,
+          "node_3": 0.0,
+          "node_8": 0.0
+        },
+        "start_antenna_xyz_m": [
+          1.6,
+          3.7,
+          0.17
+        ]
+      },
+      "car2": {
+        "anchors_xyz_m": {
+          "node_10": [
+            3.26,
+            0.1,
+            2.355
+          ],
+          "node_2": [
+            5.28,
+            5.16,
+            2.755
+          ],
+          "node_3": [
+            5.28,
+            2.86,
+            2.355
+          ],
+          "node_8": [
+            0.1,
+            2.41,
+            2.3
+          ]
+        },
+        "antenna_height_m": 0.2,
+        "base_to_antenna_body_xy_m": [
+          0.12,
+          -0.08
+        ],
+        "graph_parameters": {
+          "keyframe_step_s": 1,
+          "odom_translation_sigma_m": 0.03,
+          "odom_yaw_sigma_deg": 2,
+          "prior_heading_sigma_deg": 5,
+          "prior_position_sigma_m": 0.2,
+          "range_bin_half_width_s": 0.4,
+          "range_sigma_m": 0.2
+        },
+        "initial_heading_deg": 70,
+        "range_bias_m": {
+          "node_10": 0.0,
+          "node_2": 0.0,
+          "node_3": 0.0,
+          "node_8": 0.0
+        },
+        "start_antenna_xyz_m": [
+          2.4,
+          1.8,
+          0.2
+        ]
+      }
+    },
+    "optimizer": {
+      "ftol": 1e-07,
+      "gtol": 1e-07,
+      "initialization": "previous accepted active estimates plus Odom prediction",
+      "jacobian": "analytic",
+      "linear_solver": "exact dense",
+      "max_nfev": 50,
+      "method": "trf",
+      "xtol": 1e-07
+    },
+    "peer": {
+      "direction": "car1_to_car2",
+      "minimum_samples": 5,
+      "representation": "bridge",
+      "reverse": "diagnostic_only",
+      "sigma_m": 0.2
+    },
+    "provenance": {
+      "anchors": "historical numerical coordinates for synthetic geometry only",
+      "clock": "integer identity mapping in shared synthetic domain; no field claim",
+      "initial": "synthetic design plus seed-derived uncertain placement prior",
+      "scope": "synthetic_design",
+      "weights": "inherited F0 engineering assumptions"
+    },
+    "replay": {
+      "backend": "arm-specific; see arms",
+      "clock_correction": "none",
+      "closed_bin_policy": "immutable; count late packets",
+      "eof_policy": "no timer advance beyond last recorded receipt",
+      "first_keyframe_margin_s": 1,
+      "imu": "diagnostic messages only; zero independent IMU factors",
+      "keyframe_step_s": 1,
+      "minimum_samples_per_link": 5,
+      "range_bin_half_width_s": 0.4,
+      "release_delay_s": 1
+    },
+    "schema_version": 1,
+    "scope": "synthetic"
+  },
+  "fixed_lag_s": 20,
+  "generation": {
+    "both_moving": {
+      "development_only": true,
+      "duration_s": 96,
+      "fault_start_s": 24,
+      "fixed_antenna_xy_m": [
+        1.5,
+        4
+      ],
+      "fixed_car": "car1",
+      "fixed_yaw_rad": 0.0,
+      "gyro_bias_rad_s": {
+        "car1": 0.025,
+        "car2": -0.015
+      },
+      "initial_prior_time_s": 1,
+      "motion": "both_moving",
+      "noise": {
+        "gyro_bias_rw_rad_s_sqrt_s": 0.0007,
+        "gyro_white_sigma_rad_s": 0.006,
+        "initial_xy_sigma_m": 0.08,
+        "initial_yaw_sigma_deg": 2.0,
+        "odom_step_xy_sigma_m": 0.002,
+        "odom_step_yaw_sigma_rad": 0.0008,
+        "range_sigma_m": 0.04,
+        "wall_network_common_fraction": 0.0,
+        "wall_vehicle_common_fraction": 0.0
+      },
+      "sample_step_ns": 50000000,
+      "seed": 7,
+      "trajectories": {
+        "car1": [
+          {
+            "antenna_xy_m": [
+              1.5,
+              4
+            ],
+            "t_s": 0,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.2,
+              3.5
+            ],
+            "t_s": 8,
+            "yaw_rad": 0.7
+          },
+          {
+            "antenna_xy_m": [
+              2.8,
+              4.2
+            ],
+            "t_s": 16,
+            "yaw_rad": 1.4
+          },
+          {
+            "antenna_xy_m": [
+              1.5,
+              4
+            ],
+            "t_s": 32,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.2,
+              3.5
+            ],
+            "t_s": 40,
+            "yaw_rad": 0.7
+          },
+          {
+            "antenna_xy_m": [
+              2.8,
+              4.2
+            ],
+            "t_s": 48,
+            "yaw_rad": 1.4
+          },
+          {
+            "antenna_xy_m": [
+              1.5,
+              4
+            ],
+            "t_s": 64,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.2,
+              3.5
+            ],
+            "t_s": 72,
+            "yaw_rad": 0.7
+          },
+          {
+            "antenna_xy_m": [
+              2.8,
+              4.2
+            ],
+            "t_s": 80,
+            "yaw_rad": 1.4
+          },
+          {
+            "antenna_xy_m": [
+              1.5,
+              4
+            ],
+            "t_s": 96,
+            "yaw_rad": 0
+          }
+        ],
+        "car2": [
+          {
+            "antenna_xy_m": [
+              2,
+              2
+            ],
+            "t_s": 0,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.75,
+              2
+            ],
+            "t_s": 8,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              3.5,
+              2
+            ],
+            "t_s": 16,
+            "yaw_rad": 3.141592653589793
+          },
+          {
+            "antenna_xy_m": [
+              2,
+              2
+            ],
+            "t_s": 32,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.75,
+              2
+            ],
+            "t_s": 40,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              3.5,
+              2
+            ],
+            "t_s": 48,
+            "yaw_rad": 3.141592653589793
+          },
+          {
+            "antenna_xy_m": [
+              2,
+              2
+            ],
+            "t_s": 64,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.75,
+              2
+            ],
+            "t_s": 72,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              3.5,
+              2
+            ],
+            "t_s": 80,
+            "yaw_rad": 3.141592653589793
+          },
+          {
+            "antenna_xy_m": [
+              2,
+              2
+            ],
+            "t_s": 96,
+            "yaw_rad": 0
+          }
+        ]
+      }
+    },
+    "static_moving": {
+      "development_only": true,
+      "duration_s": 96,
+      "fault_start_s": 24,
+      "fixed_antenna_xy_m": [
+        1.5,
+        4
+      ],
+      "fixed_car": "car1",
+      "fixed_yaw_rad": 0.0,
+      "gyro_bias_rad_s": {
+        "car1": 0.025,
+        "car2": -0.015
+      },
+      "initial_prior_time_s": 1,
+      "motion": "static_moving",
+      "noise": {
+        "gyro_bias_rw_rad_s_sqrt_s": 0.0007,
+        "gyro_white_sigma_rad_s": 0.006,
+        "initial_xy_sigma_m": 0.08,
+        "initial_yaw_sigma_deg": 2.0,
+        "odom_step_xy_sigma_m": 0.002,
+        "odom_step_yaw_sigma_rad": 0.0008,
+        "range_sigma_m": 0.04,
+        "wall_network_common_fraction": 0.0,
+        "wall_vehicle_common_fraction": 0.0
+      },
+      "sample_step_ns": 50000000,
+      "seed": 7,
+      "trajectories": {
+        "car1": [
+          {
+            "antenna_xy_m": [
+              1.5,
+              4
+            ],
+            "t_s": 0,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.2,
+              3.5
+            ],
+            "t_s": 8,
+            "yaw_rad": 0.7
+          },
+          {
+            "antenna_xy_m": [
+              2.8,
+              4.2
+            ],
+            "t_s": 16,
+            "yaw_rad": 1.4
+          },
+          {
+            "antenna_xy_m": [
+              1.5,
+              4
+            ],
+            "t_s": 32,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.2,
+              3.5
+            ],
+            "t_s": 40,
+            "yaw_rad": 0.7
+          },
+          {
+            "antenna_xy_m": [
+              2.8,
+              4.2
+            ],
+            "t_s": 48,
+            "yaw_rad": 1.4
+          },
+          {
+            "antenna_xy_m": [
+              1.5,
+              4
+            ],
+            "t_s": 64,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.2,
+              3.5
+            ],
+            "t_s": 72,
+            "yaw_rad": 0.7
+          },
+          {
+            "antenna_xy_m": [
+              2.8,
+              4.2
+            ],
+            "t_s": 80,
+            "yaw_rad": 1.4
+          },
+          {
+            "antenna_xy_m": [
+              1.5,
+              4
+            ],
+            "t_s": 96,
+            "yaw_rad": 0
+          }
+        ],
+        "car2": [
+          {
+            "antenna_xy_m": [
+              2,
+              2
+            ],
+            "t_s": 0,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.75,
+              2
+            ],
+            "t_s": 8,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              3.5,
+              2
+            ],
+            "t_s": 16,
+            "yaw_rad": 3.141592653589793
+          },
+          {
+            "antenna_xy_m": [
+              2,
+              2
+            ],
+            "t_s": 32,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.75,
+              2
+            ],
+            "t_s": 40,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              3.5,
+              2
+            ],
+            "t_s": 48,
+            "yaw_rad": 3.141592653589793
+          },
+          {
+            "antenna_xy_m": [
+              2,
+              2
+            ],
+            "t_s": 64,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              2.75,
+              2
+            ],
+            "t_s": 72,
+            "yaw_rad": 0
+          },
+          {
+            "antenna_xy_m": [
+              3.5,
+              2
+            ],
+            "t_s": 80,
+            "yaw_rad": 3.141592653589793
+          },
+          {
+            "antenna_xy_m": [
+              2,
+              2
+            ],
+            "t_s": 96,
+            "yaw_rad": 0
+          }
+        ]
+      }
+    }
+  },
+  "harm_epsilon_m2": 1e-12,
+  "interval": {
+    "method": "Student-t mean interval 95% plus min/max",
+    "no_frame_independence": true,
+    "unit": "seed_run"
+  },
+  "methods": [
+    "M2",
+    "M3",
+    "M3W025"
+  ],
+  "monitor": {
+    "calibration_purpose": "normal descriptive reference, no alarm threshold fitting",
+    "safety_or_FAR_claim": false,
+    "sim_four_wall": "raw only; uncalibrated",
+    "sim_source_exclusion": "unknown; 8D history/covariance not adapted"
+  },
+  "partitions": {
+    "calibration": {
+      "conditions": [
+        "nominal"
+      ],
+      "seeds": [
+        20261101101,
+        20261101102
+      ]
+    },
+    "development": {
+      "conditions": [
+        "nominal",
+        "car1_wall_14"
+      ],
+      "seeds": [
+        7
+      ]
+    },
+    "test": {
+      "conditions": [
+        "nominal",
+        "car1_wall_14",
+        "car2_wall_14"
+      ],
+      "seeds": [
+        20261101201,
+        20261101202,
+        20261101203,
+        20261101204
+      ]
+    }
+  },
+  "phase_windows": {
+    "all": [
+      0,
+      96
+    ],
+    "fault": [
+      24,
+      38
+    ],
+    "pre": [
+      0,
+      24
+    ],
+    "recovery": [
+      38,
+      96
+    ]
+  },
+  "physical_fault_s": [
+    24,
+    38
+  ],
+  "planned_final_seed_counts": {
+    "calibration": 2,
+    "test": 4
+  },
+  "pr88_head": "e5151ee42d8908f0619b362d2b595c594f7b8352",
+  "pr89_head": "b294cce0ec1760a4b36883ae902759d8ba1718c6",
+  "primary_metric": "per_car_paired_mean_squared_antenna_XY_error_difference_vs_M2",
+  "recovery": {
+    "actual_factor_support_required": true,
+    "consecutive_valid_hold_s": 5,
+    "paired_nominal_displacement_m": 0.02,
+    "report_reexcursion": true
+  },
+  "resources": {
+    "blas_threads": 1,
+    "cpu_workers": 1,
+    "estimate_source": "12 development cells including readback took152.536s; scale84/12",
+    "expected_calibration_cells": 12,
+    "expected_new_partition_elapsed_s": 1068,
+    "expected_test_cells": 72,
+    "omp_threads": 1,
+    "partition_artifact_cap_bytes": 419430400,
+    "partition_wall_cap_s": 2700,
+    "per_process_observed_rss_cap_kib": 524288,
+    "per_process_rss_cap_scope": "optimizer observed RSS; all subprocesses have2GiB address-space hard cap",
+    "subprocess_address_space_cap_bytes": 2147483648,
+    "subprocess_wall_cap_s": 180,
+    "total_calibration_test_wall_budget_s": 5400,
+    "total_expected_final_optimization_cells": 84
+  },
+  "schema_version": 1,
+  "stage": "final_seed_and_configuration_freeze_before_any_test_output",
+  "stop": "finite matrix/readback only; no tuning, new algorithm, new sensor or new field capture",
+  "study": "six_condition_local_wall_bias_propagation_mechanism",
+  "wall_bias_m": 0.3
+}

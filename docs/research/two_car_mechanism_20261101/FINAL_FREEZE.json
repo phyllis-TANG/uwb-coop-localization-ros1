@@ -1,0 +1,23 @@
+{
+  "calibration_seeds": [
+    20261101101,
+    20261101102
+  ],
+  "development_protocol_sha256": "4ad0848a9f70bea24d882d79adae4f21235862f661ca53d2702e7ca56c5770c9",
+  "development_seed": [
+    7
+  ],
+  "no_calibration_or_test_inputs_generated_before_this_freeze": true,
+  "no_result_based_seed_extension": true,
+  "normal_calibration": "descriptive normal reference, not threshold fitting",
+  "protocol_sha256": "1b6e922637d865d9434deceb57d5636a5808105a1c300f46bee7791b7a5de4b7",
+  "source_changes_since_development": "analysis/packaging code added; subprocess2GiB cap added; no estimator or generation equations changed",
+  "status": "FROZEN_BEFORE_CALIBRATION_AND_TEST",
+  "test_seeds": [
+    20261101201,
+    20261101202,
+    20261101203,
+    20261101204
+  ],
+  "unchanged_physical_generation": "PR88 default noise/bias, same32s trajectories repeated3x, +.30m[24,38)"
+}
