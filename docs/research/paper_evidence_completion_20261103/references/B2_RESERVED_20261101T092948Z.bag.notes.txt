@@ -1,0 +1,5 @@
+B2 reserved_confirmation; Car2 fixed Car1 moving; technical QC only before method freeze, no estimator errors/rankings
+Start reused from immediately preceding unchanged B1 measured endpoint: Car1 antenna=(1.98,2.03)m Car2=(1.51,3.99)m direct antenna distance=2.02m; nominal headings room+X; heights .17/.20m reused; operator uncertainty1-2cm not certified
+Nominal B(2.75,2.00), C(3.50,2.00), return near A; actual stops independently measured; Car1 controller startup guard wait8s retained from B1 development
+INTERRUPTED: operator reports Car1 low battery alarm after B arrival before B reference/stable phase. Retain partial reserved capture; not a completed B2, not eligible full-route verification. No further motion; stop for battery handling. Do not overwrite or relabel as complete.
+CORRECTION: operator explicitly corrected alarm vehicle to Car2 (fixed vehicle), not Car1. Retain original report and this correction. Capture remains incomplete due to battery interruption; no claim that observed sensor data is invalid solely from alarm.

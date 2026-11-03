@@ -1,0 +1,41 @@
+A2/B2 冻结配置保留验证结果
+
+三方法均含 IMU；M2 无协同、M3 完整协同、M3W025 固定协同信息权重 0.25。
+误差为天线平面坐标停点 RMSE，单位米；不代表移动全程精度。
+
+逐单元运行覆盖：
+A2 M2: COMPLETE; 计划 1195; 有效 {'car1': 1108, 'car2': 1108}; 状态 {'predict_only_warmup': 1, 'predict_only_warmup_missing_angular': 1, 'graph': 1099, 'graph_missing_angular': 86, 'missing_fresh_odom': 2, 'predict_only_solver_failed': 6}
+A2 M3: COMPLETE; 计划 1195; 有效 {'car1': 1111, 'car2': 1111}; 状态 {'predict_only_warmup': 1, 'predict_only_warmup_missing_angular': 1, 'graph': 1102, 'graph_missing_angular': 86, 'missing_fresh_odom': 2, 'predict_only_solver_failed': 3}
+A2 M3W025: COMPLETE; 计划 1195; 有效 {'car1': 1110, 'car2': 1110}; 状态 {'predict_only_warmup': 1, 'predict_only_warmup_missing_angular': 1, 'graph': 1101, 'graph_missing_angular': 86, 'missing_fresh_odom': 2, 'predict_only_solver_failed': 4}
+B2_PREFIX M2: COMPLETE; 计划 218; 有效 {'car1': 199, 'car2': 201}; 状态 {'predict_only_warmup': 2, 'graph': 196, 'graph_missing_angular': 20}
+B2_PREFIX M3: COMPLETE; 计划 218; 有效 {'car1': 199, 'car2': 201}; 状态 {'predict_only_warmup': 2, 'graph': 196, 'graph_missing_angular': 20}
+B2_PREFIX M3W025: COMPLETE; 计划 218; 有效 {'car1': 199, 'car2': 201}; 状态 {'predict_only_warmup': 2, 'graph': 196, 'graph_missing_angular': 20}
+B2_CONTINUATION M2: COMPLETE; 计划 918; 有效 {'car1': 870, 'car2': 860}; 状态 {'predict_only_warmup': 1, 'predict_only_warmup_missing_angular': 1, 'graph': 857, 'graph_missing_angular': 54, 'predict_only_solver_failed': 4, 'missing_fresh_odom': 1}
+B2_CONTINUATION M3: COMPLETE; 计划 918; 有效 {'car1': 874, 'car2': 864}; 状态 {'predict_only_warmup': 1, 'predict_only_warmup_missing_angular': 1, 'graph': 861, 'graph_missing_angular': 54, 'missing_fresh_odom': 1}
+B2_CONTINUATION M3W025: COMPLETE; 计划 918; 有效 {'car1': 874, 'car2': 864}; 状态 {'predict_only_warmup': 1, 'predict_only_warmup_missing_angular': 1, 'graph': 861, 'graph_missing_angular': 54, 'missing_fresh_odom': 1}
+
+逐车停点结果：
+单元 / 停点 / 类型 / 车辆 / 共同有效与计划帧 / M2 / M3 / M3W025 / M3方向 / W025方向
+A2 / START / initialization_stop / car1 / 32/40 / 0.3067 / 0.2145 / 0.2553 / improve / improve
+A2 / START / initialization_stop / car2 / 31/40 / 0.9134 / 0.5054 / 0.5149 / improve / improve
+A2 / B / post_motion_stop / car1 / 45/46 / 0.3032 / 0.2829 / 0.2837 / improve / improve
+A2 / B / post_motion_stop / car2 / 46/46 / 0.8689 / 0.4816 / 0.4506 / improve / improve
+A2 / C / post_motion_stop / car1 / 38/45 / 0.3018 / 0.2506 / 0.2581 / improve / improve
+A2 / C / post_motion_stop / car2 / 41/45 / 0.7895 / 0.3203 / 0.7049 / improve / improve
+A2 / RETURN / post_motion_stop / car1 / 86/92 / 0.3084 / 0.2775 / 0.2892 / improve / improve
+A2 / RETURN / post_motion_stop / car2 / 83/92 / 0.4633 / 0.5189 / 0.5037 / harm / harm
+B2_PREFIX / START / initialization_stop / car1 / 52/56 / 0.4299 / 0.4233 / 0.4246 / improve / improve
+B2_PREFIX / START / initialization_stop / car2 / 51/56 / 0.4195 / 0.4209 / 0.4205 / harm / harm
+B2_CONTINUATION / B / initialization_stop / car1 / 58/61 / 1.5973 / 0.5503 / 1.5566 / improve / improve
+B2_CONTINUATION / B / initialization_stop / car2 / 58/61 / 0.4316 / 0.5022 / 0.4685 / harm / harm
+B2_CONTINUATION / C / post_motion_stop / car1 / 65/67 / 0.8566 / 0.3101 / 0.7789 / improve / improve
+B2_CONTINUATION / C / post_motion_stop / car2 / 63/67 / 0.4367 / 0.3496 / 0.3913 / improve / improve
+B2_CONTINUATION / RETURN / post_motion_stop / car1 / 100/103 / 0.4900 / 0.4791 / 0.4810 / improve / improve
+B2_CONTINUATION / RETURN / post_motion_stop / car2 / 99/103 / 0.4216 / 0.4254 / 0.4240 / harm / harm
+
+方向计数（逐车停点条目，不是独立试验成功率）：
+{'initialization_stop': {'M3-M2': Counter({'improve': 4, 'harm': 2}), 'M3W025-M2': Counter({'improve': 4, 'harm': 2})}, 'post_motion_stop': {'M3-M2': Counter({'improve': 8, 'harm': 2}), 'M3W025-M2': Counter({'improve': 8, 'harm': 2})}}
+
+方向根据冻结的 ±2cm 每轴参考敏感性范围判断；不是统计显著性或置信区间。
+初始化停点不作为运动后定位恢复证据；B2 两段不计作独立重复。
+保留首次输出，不进行结果驱动调参、窗口剔除或异常链路删除。
