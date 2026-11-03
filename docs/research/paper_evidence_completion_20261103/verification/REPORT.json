@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "source_files_verified": 141,
+  "static_runs": 10,
+  "static_profiles": 20,
+  "static_paired_rows_recomputed": 160,
+  "external_static_scope_rows_recomputed": 20,
+  "static_profile_time_and_mask_equality": true,
+  "dynamic_units": 5,
+  "dynamic_trajectory_files": 15,
+  "dynamic_stop_car_rows_recomputed": 32,
+  "scalar_checks": 2300,
+  "max_absolute_error": 1.7763568394002505e-15,
+  "raw_bag_decode": false,
+  "estimator_rerun": false,
+  "continuous_truth_validated": false,
+  "reference_uncertainty": "operator estimate per-axis +/-2cm; conservative sqrt(2)*.02m ball, not confidence interval"
+}

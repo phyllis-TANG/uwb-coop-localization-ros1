@@ -1,0 +1,7 @@
+2026-11-01 第二次35秒静止工程预检完成。
+原始文件：I:\UWB\data\field_20261031\field_20261101_dynamic\preflight\PRECHECK_STATIC_20261101T074203Z.bag；4314664字节，10153消息，34.995558秒，已结束无active。
+SHA256：b5b0dcad8da3f6e05125c3c1b14b18b3308bfe650fe5adf14523368438546bf8。
+QC：I:\UWB\project\outputs\field_measurements_20261101\v001\PRECHECK_STATIC_RETRY2_QC.json，8必需话题齐全、完整解码。Car1四墙逐链出现比例99.89–100%，peer99.89%；Car2四墙99.89–99.94%，peer70.62%。比例分母为各车ranges消息数，非独立无线丢包率；不能将双向peer直接当独立观测重复使用。两车odom零位移零速度。静止输入覆盖检查可通过，不代表动态回放、定位精度或时间同步验收。
+仅工程开发用途；两次预检不计正式四包，第一包缺墙结果保留；未执行正式A1/A2/B1/B2、未查看留出性能、未发车辆运动指令。
+只读检查车辆URDF：Car2 V550_mec包含base_link与轮轴坐标，Car1 mini_mec文件存在但尚未确认实车型号；均未据此冒充已测天线杆臂。Car2 timedatectl NTPSynchronized=yes仅系统状态，非跨车同步误差界；Car1旧版timedatectl不支持show -p，查询失败非同步失败。
+下一步：短运动工程检查前确认操车方式和实际几何绑定，验证真实运动输入及时间政策；正式首包前仍须通知用户，用户执行物理动作。当前录包停止、节点保持运行。

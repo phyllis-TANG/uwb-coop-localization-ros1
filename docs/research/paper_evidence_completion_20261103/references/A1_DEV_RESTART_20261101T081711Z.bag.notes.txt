@@ -1,0 +1,6 @@
+FORMAL A1 development; original route restored before this capture
+Car1 antenna XY=(1.51,3.99)m unchanged; Car2=(2.02,2.01)m freshly measured; measured direct antenna distance=2.06m; heading both room +X reused; heights .17/.20m reused; operator uncertainty estimate 1-2cm not certified
+A->B target(2.75,2.00)->C target(3.50,2.00)->A target(2.02,2.01); all stop coordinates measured independently; geometric-center offsets historical conditional; dynamic fusion model not yet validated
+A1 B measured Car2 antenna XY=(2.74,2.01)m; measured direct antenna center distance=2.37m; Car1 unchanged (1.51,3.99); operator reported after stop; no coordinate adjustment performed; waiting operator withdrawal ok before stable window
+A1 C operator measured Car2 antenna XY=(3.49,1.90)m; direct antenna center distance=2.91m; Car1 unchanged (1.51,3.99); actual position retained, no adjustment to nominal C; awaiting withdrawal ok
+A1 RETURN operator measured Car2 antenna XY=(2.02,2.04)m; direct antenna center distance=2.00m; Car1 unchanged (1.51,3.99); actual endpoint retained without repositioning; awaiting operator withdrawal ok before final 60s stable segment

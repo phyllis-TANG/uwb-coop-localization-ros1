@@ -1,0 +1,8 @@
+B1 development; Car2 fixed, Car1 moving; role swap completed
+Start operator measured antenna XY Car1=(2.01,2.02)m Car2=(1.51,3.99)m; direct antenna distance=2.06m; both nominal room+X per placement instruction; heights car1 .17 car2 .20m reused; operator uncertainty1-2cm not certified
+Nominal route A->B(2.75,2.00)->C(3.50,2.00)->A; actual stop coordinates measured; conditional geometry/clock assumptions retained; no dynamic accuracy acceptance yet
+Car1 first B attempt aborted before MOTION_START: Guard not ready within2s, no nonzero command sent; standalone guard check sends zero only; retain bag as B1 development with explicit setup phase
+B1 B measured Car1 antenna XY=(2.80,1.98)m; direct antenna distance=2.39m; Car2 fixed=(1.51,3.99); operator confirms withdrawn; actual stop retained
+B1 C RAW operator message: CAR2(3.48,1.9) distance2.88. Vehicle label conflicts with planned moving Car1 and fixed Car2; reference assignment pending explicit clarification. No return motion authorized from this message.
+CORRECTION confirmed by operator: B1 C is Car1=(3.48,1.90)m, distance2.88m; previous CAR2 label was typo; fixed Car2 unchanged(1.51,3.99); operator already withdrawn
+B1 RETURN operator measured Car1 antenna XY=(1.98,2.03)m; direct antenna distance=2.02m; Car2 fixed(1.51,3.99); operator explicitly confirms withdrawn; no repositioning
