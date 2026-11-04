@@ -1,0 +1,51 @@
+Candidate subsection: Cross-Recording Variability and Calibration Transfer
+
+Recording influence. Removing each of the ten static confirmation recordings
+in turn preserves the opposing placement-interaction signs. For full
+cooperation, the leave-one-recording-out ranges are [0.08023, 0.08157] m^2 for
+robot 1 and [-0.14251, -0.13476] m^2 for robot 2. The corresponding reduced-
+coupling ranges also retain their signs. These ranges describe sensitivity to
+individual recordings; they are not sampling confidence intervals.
+
+Error components. Each finite-window MSE is decomposed into the squared mean
+error and the mean squared deviation about that mean, using a divisor of N.
+Across all 120 recording/profile/robot/method combinations in the normal
+windows, the squared mean error accounts for more than 99.01% of MSE. The
+opposing placement interactions are consequently dominated by changes in mean
+offset rather than within-window fluctuations. Both components are relative
+to the measured position reference.
+
+Historical extension. The three historical two-robot recordings are remeasured
+using epoch-wise MSE on their original, common five-state endpoint windows.
+When robot 2's wall ranges are calibrated, its D changes from -0.04095 to
++0.02511 m^2 in E2-1 and from -0.00101 to +0.00970 m^2 in E2-2, although both
+estimators' absolute MSEs decrease. E2-3 exhibits the opposite ordering change.
+These nominal comparisons extend the observation across the recorded motion
+conditions while retaining the historical batch estimator and its calibration
+profiles. They are reported separately from the dedicated fixed-lag study.
+
+Chronology scope. Acquisition-order plots retain all ten confirmation
+recordings and their actual time spacing. Because placement A precedes B,
+the current sequence does not independently identify temporal and placement
+effects. We therefore report cross-recording variability without treating
+within-recording time blocks as independent acquisition sessions.
+
+Figure caption: E3_calibration_change_chronology
+Calibration-induced change C_i for all ten static confirmation recordings in
+their normal windows, ordered by acquisition time. Each point is one recording.
+The shaded region identifies placement B. Positive C_i indicates a reduction in
+the relative cooperative advantage after calibration. Placement and acquisition
+order are coupled in this sequence.
+
+Figure caption: E3_mean_offset_and_spread
+Finite-window MSE components, averaged with equal weight across recordings
+within each placement. Blue squares show the squared mean error relative to
+the measured position; orange circles show the centered within-window spread.
+The logarithmic ordinate displays their different magnitudes. I, C, and R
+denote Independent, Cooperative, and Reduced, respectively.
+
+Figure caption: E2_historical_calibration_change
+Calibration-induced change C_i in the three historical two-robot recordings.
+All values use epoch-wise MSE on the archived common five-state endpoint
+windows. Both predefined calibration profiles are retained. The historical
+batch estimates are evaluated separately from the dedicated fixed-lag study.
