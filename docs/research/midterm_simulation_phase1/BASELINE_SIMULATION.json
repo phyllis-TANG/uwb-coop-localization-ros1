@@ -1,0 +1,43 @@
+{
+  "checks": [
+    {
+      "method": "M2",
+      "car": "car1",
+      "actual_mse": 0.0006429270574342778,
+      "saved_mse": 0.0006429270574342777,
+      "difference": 1.0842021724855044e-19,
+      "accepted": 93
+    },
+    {
+      "method": "M2",
+      "car": "car2",
+      "actual_mse": 0.000725696606284829,
+      "saved_mse": 0.0007256966062848266,
+      "difference": 2.4936649967166602e-18,
+      "accepted": 93
+    },
+    {
+      "method": "M3",
+      "car": "car1",
+      "actual_mse": 0.0005569078425417612,
+      "saved_mse": 0.0005569078425417621,
+      "difference": 8.673617379884035e-19,
+      "accepted": 93
+    },
+    {
+      "method": "M3",
+      "car": "car2",
+      "actual_mse": 0.0005968696803246878,
+      "saved_mse": 0.0005968696803246883,
+      "difference": 4.336808689942018e-19,
+      "accepted": 93
+    }
+  ],
+  "status": "PASS_EXISTING_1e-10_READBACK_RULE",
+  "input_sha256": {
+    "config": "0fa6521caeec803daba85dfe6296812ff387e4bb4603569d985c25d86f60c841",
+    "events": "0e5a727ab7066231e0f77ee8153880635c809b00f1a8f664f3dbe52c04e10f5d",
+    "truth": "27ea24464edcc0277924d136a9dee16369e6062c034cb34b486574e7cf4a649e"
+  },
+  "environment": "Python3.10.12 versus original3.12.14; numpy/scipy same"
+}
