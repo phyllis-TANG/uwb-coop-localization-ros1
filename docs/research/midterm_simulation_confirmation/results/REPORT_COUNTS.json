@@ -1,0 +1,45 @@
+{
+  "B0": {
+    "n": 1800,
+    "accepted": 1787,
+    "car1_position_over_05": 70,
+    "car2_position_over_05": 0,
+    "bias_over_01": 0
+  },
+  "B1": {
+    "n": 1800,
+    "accepted": 1799,
+    "car1_position_over_05": 65,
+    "car2_position_over_05": 111,
+    "bias_over_01": 0
+  },
+  "B2": {
+    "n": 1800,
+    "accepted": 1791,
+    "car1_position_over_05": 0,
+    "car2_position_over_05": 0,
+    "bias_over_01": 14
+  },
+  "B3": {
+    "n": 1800,
+    "accepted": 1798,
+    "car1_position_over_05": 0,
+    "car2_position_over_05": 0,
+    "bias_over_01": 0
+  },
+  "core_bias_0_B2_minus_B1_pointwise_interval_signs": {
+    "positive": 6,
+    "includes_zero": 18
+  },
+  "core_bias_0_D_pointwise_interval_signs": {
+    "includes_zero": 21,
+    "negative": 3
+  },
+  "core_bias_0.3_B2_minus_B1_pointwise_interval_signs": {
+    "negative": 24
+  },
+  "core_bias_0.3_D_pointwise_interval_signs": {
+    "negative": 9,
+    "includes_zero": 15
+  }
+}
