@@ -1,0 +1,71 @@
+{
+  "passed": true,
+  "optimizer_calls": 0,
+  "localization_observations_generated": 0,
+  "analytic_mc_seed": 88011601,
+  "schur_inverse_max_error": 4.996003610813204e-16,
+  "cases": [
+    {
+      "name": "no_prior",
+      "draws": 100000,
+      "relative_covariance_error": 0.0032966273797727643,
+      "coverage95": 0.95101,
+      "analytic_noncentral_coverage95": 0.95,
+      "mean_bias": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "fixed_wrong_prior",
+      "draws": 100000,
+      "relative_covariance_error": 0.0025569349589712326,
+      "coverage95": 0.92122,
+      "analytic_noncentral_coverage95": 0.9209397501302625,
+      "mean_bias": [
+        0.11999999999999998,
+        -0.12,
+        -0.07999999999999997
+      ]
+    },
+    {
+      "name": "random_correct_prior",
+      "draws": 100000,
+      "relative_covariance_error": 0.00403758342194704,
+      "coverage95": 0.94948,
+      "analytic_noncentral_coverage95": 0.95,
+      "mean_bias": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "variance_mismatch",
+      "draws": 100000,
+      "relative_covariance_error": 0.004545582282138614,
+      "coverage95": 0.91746,
+      "analytic_noncentral_coverage95": 0.9173245692024401,
+      "mean_bias": [
+        0.11999999999999998,
+        -0.12,
+        -0.07999999999999997
+      ]
+    },
+    {
+      "name": "time_correlated",
+      "draws": 100000,
+      "relative_covariance_error": 0.00447757721142411,
+      "coverage95": 0.88674,
+      "analytic_noncentral_coverage95": 0.8864600177120388,
+      "mean_bias": [
+        0.11999999999999998,
+        -0.12,
+        -0.07999999999999997
+      ]
+    }
+  ],
+  "rank_deficient_no_covariance": true,
+  "explicit_layout_rejection": true
+}

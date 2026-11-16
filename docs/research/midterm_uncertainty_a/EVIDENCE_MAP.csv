@@ -1,0 +1,16 @@
+claim_id,claim,result_file,selection_or_metric,figure,scope
+C01,恢复1800输入7200结果7175接受25未驻点,results/RECOVERY.json,inputs/methods/accepted/not_stationary,,core
+C02,未重拟合且独立数学交叉检查一致,results/CHECKS.json,optimizer_calls/max_prototype_difference/max_schur_relative_difference,,core
+C03,终点全部可逆而参考点存在秩亏,results/RANK_SUMMARY.json,endpoint_deficient/reference_deficient,figures/representative_cases.png,core
+C04,全部36条件四方法95与99覆盖和分母,results/COVERAGE.csv.gz,subset=all;point_average/time/all_times,figures/coverage_95.png;figures/coverage_99.png,core
+C05,错误强先验区间收紧但误差增大,results/PRIOR_COMPARISONS.csv,weak B2 strong-core car1/2,figures/strong_prior.png,core
+C06,偏差区间也欠覆盖且局部耦合随条件改变,results/BIAS_COVERAGE.csv.gz,c31/c32 total_curvature level=.95 subset=all,figures/bias_coupling.png,core
+C07,数值接受不保证椭圆覆盖,results/CASES.json,worst_B2_total_point q=36.161,figures/representative_cases.png,core
+C08,残差误差和不确定性不能混同,results/ASSOCIATIONS.csv.gz,residual_error_spearman/uncertainty_error_spearman,figures/error_uncertainty.png,core
+C09,25条未驻点保留并单列,results/NOT_STATIONARY.csv,all rows;COVERAGE subset=not_accepted,,core
+C10,固定偏移与中心波动不同,results/EMPIRICAL_MOMENTS.csv.gz,mean_error_squared/empirical_trace/mse/predicted_trace,,core
+C11,中心改变影响不单调,results/PRIOR_COMPARISONS.csv,weak B2 shifted_strong-core,,core
+C12,Schur和固定先验传播有明确成立条件,THEORY.md,sections 2-4,,core
+S01,失配与相关噪声传播公式通过解析例,results/formula-checks.json,variance_mismatch/time_correlated,,supplement
+S02,接口保留标签并正确处理秩亏非有限,results/interface-checks.json,all assertions,,supplement
+C13,同seed时间点不能扩大独立样本量,results/summary-checks.json,six_duplicate_times_do_not_shrink_CI,,core
