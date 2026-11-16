@@ -1,0 +1,100 @@
+{
+  "baseline": "BASELINE_SIMULATION.json",
+  "field": "FIELD_RECONSTRUCTION.json; field_readback/REPORT.json",
+  "development": {
+    "cases": 32,
+    "methods_per_case": 2,
+    "seeds": [
+      16101,
+      16102
+    ],
+    "code_commit": "803f608"
+  },
+  "confirmation": {
+    "cases": 150,
+    "methods_per_case": 2,
+    "seeds": [
+      17101,
+      17102,
+      17103,
+      17104,
+      17105,
+      17106,
+      17107,
+      17108,
+      17109,
+      17110,
+      17111,
+      17112,
+      17113,
+      17114,
+      17115,
+      17116,
+      17117,
+      17118,
+      17119,
+      17120,
+      17121,
+      17122,
+      17123,
+      17124,
+      17125,
+      17126,
+      17127,
+      17128,
+      17129,
+      17130,
+      17131,
+      17132,
+      17133,
+      17134,
+      17135,
+      17136,
+      17137,
+      17138,
+      17139,
+      17140,
+      17141,
+      17142,
+      17143,
+      17144,
+      17145,
+      17146,
+      17147,
+      17148,
+      17149,
+      17150
+    ],
+    "freeze_commit": "cb3cde7303eedcc58353040cbe370308968ffda9"
+  },
+  "identifiability": {
+    "information_cases": 12,
+    "diagnostic_fits": 108,
+    "source_commit": "145a3d9",
+    "input": "analytic design in identifiability.py, noiseless, b=.3m",
+    "prior_sigma_m": [
+      0.05,
+      0.5,
+      5
+    ],
+    "initial_shift_m": [
+      -0.3,
+      0,
+      0.3
+    ]
+  },
+  "additional_analysis_sources": {
+    "tools/midterm_simulation_phase1/field_analysis.py": "e876a4bac435627921dd3c5185f588b374fcdf36e27cee68ee01e7aeda903a59",
+    "tools/midterm_simulation_phase1/identifiability.py": "cd22ed371ee574e99a7945674a205ce264a68f36acedd6ec52a726ad44f0280c",
+    "tools/midterm_simulation_phase1/propagation.py": "184468d24143a633ba2a233e3da7158a24c887e0c583088e77749cc4bf173ec2",
+    "tools/midterm_simulation_phase1/report.py": "3fbb10dcfcdb4826d1937d8875b5a26232e7e037dbc3566bdad6cf1833b4bd15",
+    "tools/midterm_simulation_phase1/supplement.py": "a0c5b7c2d2945c69c4f2ec6e7490afcbfd12be347877b71d63c1cd21b027cfe6",
+    "tools/midterm_simulation_phase1/checks.py": "7130b5690af2224e911120163a2515b6a575c4876a935cf42677d7d21ff84332"
+  },
+  "failed_attempts": [
+    "original field verifier SHA mismatch",
+    "CRLF reconstruction two setup-note mismatches; field-attempt1.log"
+  ],
+  "estimator_failed_runs": 0,
+  "publication_failures": 0
+}
