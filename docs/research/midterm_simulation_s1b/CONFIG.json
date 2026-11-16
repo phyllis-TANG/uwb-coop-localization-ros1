@@ -1,0 +1,167 @@
+{
+  "base": "df323eccdffd375a2fb255ebbfd734b6c2be4aac",
+  "phase": "development_only",
+  "seeds": [
+    621160101,
+    621160102,
+    621160103,
+    621160104,
+    621160105,
+    621160106,
+    621160107,
+    621160108,
+    621160109,
+    621160110,
+    621160111,
+    621160112
+  ],
+  "rng": "numpy PCG64; SeedSequence([seed,geometry_index,motion_index,kind_index]); paired variants reuse observations",
+  "geometries": [
+    "good",
+    "weak",
+    "near"
+  ],
+  "motions": [
+    "static",
+    "straight",
+    "turn"
+  ],
+  "kinds": [
+    "wall",
+    "peer"
+  ],
+  "near_anchor_y": [
+    0,
+    0.01,
+    -0.01,
+    0.02
+  ],
+  "near_initial_y": [
+    0.01,
+    -0.01
+  ],
+  "bias_truth_m": 0.3,
+  "range_sigma_m": 0.04,
+  "motion_sigma_m": 0.02,
+  "state_scales": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.1
+  ],
+  "rank_rtol": 1e-08,
+  "rank_sensitivity": [
+    1e-06,
+    1e-08,
+    1e-10,
+    1e-12
+  ],
+  "fd_steps": [
+    1e-05,
+    1e-06
+  ],
+  "fd_tolerance": 2e-08,
+  "svd_check_tolerance": 1e-09,
+  "prior_sigmas_m": [
+    0.05,
+    0.5,
+    5.0
+  ],
+  "prior_center_delta": [
+    0.3,
+    -0.3,
+    -0.3,
+    0.3
+  ],
+  "survey_good": [
+    1.2,
+    1.25,
+    1.8,
+    1.8
+  ],
+  "survey_weak_near": [
+    1.2,
+    0.25,
+    1.8,
+    -0.2
+  ],
+  "init_offsets": {
+    "base": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "plus": [
+      0.7,
+      0.5,
+      -0.6,
+      -0.4
+    ],
+    "minus": [
+      -0.7,
+      -0.5,
+      0.6,
+      0.4
+    ]
+  },
+  "init_bias": {
+    "base": 0,
+    "plus": 0.8,
+    "minus": -0.5
+  },
+  "optimizer": {
+    "method": "trf",
+    "max_nfev": 300,
+    "ftol": 1e-10,
+    "xtol": 1e-10,
+    "gtol": 1e-10
+  },
+  "failure": {
+    "solver": "not success or nonfinite estimate",
+    "position_rmse_2d_gt_m": 0.5,
+    "absolute_bias_error_gt_m": 0.1
+  },
+  "noise_levels": [
+    "zero",
+    "gaussian"
+  ],
+  "negative_control": "good/static/peer, keep only peer rows; one constant separation and unknown bias",
+  "variants": [
+    "no_prior_base",
+    "no_prior_plus",
+    "no_prior_minus",
+    "nominal_base",
+    "nominal_plus",
+    "nominal_minus",
+    "center_plus",
+    "center_minus",
+    "strong",
+    "weak_prior",
+    "ideal_truth_center"
+  ],
+  "prior_bias": "none; initial four position coordinates only",
+  "main_runs": 2574,
+  "negative_control_runs": 143
+}

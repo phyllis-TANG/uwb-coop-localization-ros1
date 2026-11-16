@@ -1,0 +1,90 @@
+{
+  "note": "Post-run explicit inventory of constants already used in analyze.py at b64a9c7ff0860f92159d392a608a3b7b07064c9f. No protocol parameter or result changed. CONFIG.json and PROTOCOL.md remain byte-identical to the pre-run freeze.",
+  "n_times": 6,
+  "time_grid": [
+    0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1
+  ],
+  "anchors_good": [
+    [
+      0,
+      0
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      5
+    ],
+    [
+      0,
+      5
+    ]
+  ],
+  "anchors_weak": [
+    [
+      -3,
+      0
+    ],
+    [
+      -1,
+      0
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      6,
+      0
+    ]
+  ],
+  "initial_good": [
+    [
+      1,
+      1
+    ],
+    [
+      2,
+      2
+    ]
+  ],
+  "initial_weak": [
+    [
+      1,
+      0
+    ],
+    [
+      2,
+      0
+    ]
+  ],
+  "trajectory_amplitude_m": 0.5,
+  "straight_formula": "x += .5*t",
+  "turn_formula": "x += .5*sin(pi*t); y += .5*(1-cos(pi*t))",
+  "zero_distance_rejection_m": 1e-12,
+  "display_local_sigma_min_information": 1e-18,
+  "fd_off_truth_position_delta": [
+    0.17,
+    0.23,
+    -0.11,
+    0.19
+  ],
+  "fd_off_truth_bias": -0.2,
+  "global_negative_control_distance_shift_m": 0.2,
+  "transverse_check_shifts_m": [
+    0.1,
+    0.01
+  ],
+  "readback_absolute_relative_tolerance": "1e-7*max(1,abs(reference))",
+  "noise_reconstruction_tolerance_m": 2e-15,
+  "expected_main_scenes": 18,
+  "expected_negative_control_scenes": 1,
+  "expected_fits": 2717
+}

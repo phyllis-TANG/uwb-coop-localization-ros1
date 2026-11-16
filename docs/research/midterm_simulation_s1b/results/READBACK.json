@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "rows_readback": 2717,
+  "observations": 247,
+  "paired_rows": 1235,
+  "maximum_absolute_readback_errors": {
+    "position_rmse_2d_m": 0.0,
+    "position_rmse_coordinate_m": 0.0,
+    "car1_rmse_2d_m": 0.0,
+    "car2_rmse_2d_m": 0.0,
+    "bias_error_m": 0.0,
+    "bias_estimate_m": 0.0,
+    "cost": 0.0
+  },
+  "range_noise_empirical_std_m": 0.039941227637853384,
+  "motion_noise_empirical_std_m": 0.01999738481284292,
+  "noise_seed_reproduction": "exact",
+  "factor_separation": "same start verified for center/strength/ideal contrasts",
+  "scope": "Independent loop range/cost and saved-state error recomputation; no extra refits; 12 seed identities are paired across scenes, not independent scene replicates"
+}

@@ -1,0 +1,581 @@
+{
+  "jacobian": [
+    {
+      "scene": "good/static/wall",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 1.3963719069920444e-11
+    },
+    {
+      "scene": "good/static/wall",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 4.775730921835475e-10
+    },
+    {
+      "scene": "good/static/wall",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 2.3175905639050143e-11
+    },
+    {
+      "scene": "good/static/wall",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 3.6925873470039505e-10
+    },
+    {
+      "scene": "good/static/peer",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 1.3963719069920444e-11
+    },
+    {
+      "scene": "good/static/peer",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 4.775730921835475e-10
+    },
+    {
+      "scene": "good/static/peer",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 2.3175905639050143e-11
+    },
+    {
+      "scene": "good/static/peer",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 3.6925873470039505e-10
+    },
+    {
+      "scene": "good/straight/wall",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 4.896649752339499e-11
+    },
+    {
+      "scene": "good/straight/wall",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 9.244216503390135e-10
+    },
+    {
+      "scene": "good/straight/wall",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 4.391897956423918e-11
+    },
+    {
+      "scene": "good/straight/wall",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 5.875648856346061e-10
+    },
+    {
+      "scene": "good/straight/peer",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 4.896649752339499e-11
+    },
+    {
+      "scene": "good/straight/peer",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 9.244216503390135e-10
+    },
+    {
+      "scene": "good/straight/peer",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 4.391897956423918e-11
+    },
+    {
+      "scene": "good/straight/peer",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 5.875648856346061e-10
+    },
+    {
+      "scene": "good/turn/wall",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 3.9457881406690376e-11
+    },
+    {
+      "scene": "good/turn/wall",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 4.775730921835475e-10
+    },
+    {
+      "scene": "good/turn/wall",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 3.928646297168825e-11
+    },
+    {
+      "scene": "good/turn/wall",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 4.3161452190076943e-10
+    },
+    {
+      "scene": "good/turn/peer",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 3.9457881406690376e-11
+    },
+    {
+      "scene": "good/turn/peer",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 4.775730921835475e-10
+    },
+    {
+      "scene": "good/turn/peer",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 3.928646297168825e-11
+    },
+    {
+      "scene": "good/turn/peer",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 4.3161452190076943e-10
+    },
+    {
+      "scene": "weak/static/wall",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 3.78578279836006e-11
+    },
+    {
+      "scene": "weak/static/wall",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 1.397779669787269e-10
+    },
+    {
+      "scene": "weak/static/wall",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 6.147282682888999e-11
+    },
+    {
+      "scene": "weak/static/wall",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 3.0374747161943105e-10
+    },
+    {
+      "scene": "weak/static/peer",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 3.78578279836006e-11
+    },
+    {
+      "scene": "weak/static/peer",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 1.397779669787269e-10
+    },
+    {
+      "scene": "weak/static/peer",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 6.147282682888999e-11
+    },
+    {
+      "scene": "weak/static/peer",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 3.0374747161943105e-10
+    },
+    {
+      "scene": "weak/straight/wall",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 5.0960125008714385e-11
+    },
+    {
+      "scene": "weak/straight/wall",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 3.043112428713357e-10
+    },
+    {
+      "scene": "weak/straight/wall",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 7.031275561786288e-11
+    },
+    {
+      "scene": "weak/straight/wall",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 5.615207188114368e-10
+    },
+    {
+      "scene": "weak/straight/peer",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 5.0960125008714385e-11
+    },
+    {
+      "scene": "weak/straight/peer",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 3.043112428713357e-10
+    },
+    {
+      "scene": "weak/straight/peer",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 7.031275561786288e-11
+    },
+    {
+      "scene": "weak/straight/peer",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 5.615207188114368e-10
+    },
+    {
+      "scene": "weak/turn/wall",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 7.1550432245715e-11
+    },
+    {
+      "scene": "weak/turn/wall",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 4.775730921835475e-10
+    },
+    {
+      "scene": "weak/turn/wall",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 7.936695745058842e-11
+    },
+    {
+      "scene": "weak/turn/wall",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 5.86766968346808e-10
+    },
+    {
+      "scene": "weak/turn/peer",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 7.1550432245715e-11
+    },
+    {
+      "scene": "weak/turn/peer",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 4.775730921835475e-10
+    },
+    {
+      "scene": "weak/turn/peer",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 7.936695745058842e-11
+    },
+    {
+      "scene": "weak/turn/peer",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 5.86766968346808e-10
+    },
+    {
+      "scene": "near/static/wall",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 4.4023340528553945e-11
+    },
+    {
+      "scene": "near/static/wall",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 4.0006598034381113e-10
+    },
+    {
+      "scene": "near/static/wall",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 6.136957608759985e-11
+    },
+    {
+      "scene": "near/static/wall",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 4.320085400522089e-10
+    },
+    {
+      "scene": "near/static/peer",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 4.4023340528553945e-11
+    },
+    {
+      "scene": "near/static/peer",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 4.0006598034381113e-10
+    },
+    {
+      "scene": "near/static/peer",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 6.136957608759985e-11
+    },
+    {
+      "scene": "near/static/peer",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 4.320085400522089e-10
+    },
+    {
+      "scene": "near/straight/wall",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 5.960532067916802e-11
+    },
+    {
+      "scene": "near/straight/wall",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 5.722921025963501e-10
+    },
+    {
+      "scene": "near/straight/wall",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 6.136957608759985e-11
+    },
+    {
+      "scene": "near/straight/wall",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 5.988968210246526e-10
+    },
+    {
+      "scene": "near/straight/peer",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 5.960532067916802e-11
+    },
+    {
+      "scene": "near/straight/peer",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 5.722921025963501e-10
+    },
+    {
+      "scene": "near/straight/peer",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 6.136957608759985e-11
+    },
+    {
+      "scene": "near/straight/peer",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 5.988968210246526e-10
+    },
+    {
+      "scene": "near/turn/wall",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 7.38168415281848e-11
+    },
+    {
+      "scene": "near/turn/wall",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 4.964813005159385e-10
+    },
+    {
+      "scene": "near/turn/wall",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 6.255029827428871e-11
+    },
+    {
+      "scene": "near/turn/wall",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 6.479925485081139e-10
+    },
+    {
+      "scene": "near/turn/peer",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 7.38168415281848e-11
+    },
+    {
+      "scene": "near/turn/peer",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 4.964813005159385e-10
+    },
+    {
+      "scene": "near/turn/peer",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 6.255029827428871e-11
+    },
+    {
+      "scene": "near/turn/peer",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 6.479925485081139e-10
+    },
+    {
+      "scene": "good/static/peer/peer_only",
+      "point": "truth",
+      "step": 1e-05,
+      "jacobian_max_error": 6.551204023708124e-12
+    },
+    {
+      "scene": "good/static/peer/peer_only",
+      "point": "truth",
+      "step": 1e-06,
+      "jacobian_max_error": 5.2649884452193874e-11
+    },
+    {
+      "scene": "good/static/peer/peer_only",
+      "point": "off_truth",
+      "step": 1e-05,
+      "jacobian_max_error": 1.605326982456745e-11
+    },
+    {
+      "scene": "good/static/peer/peer_only",
+      "point": "off_truth",
+      "step": 1e-06,
+      "jacobian_max_error": 1.397779669787269e-10
+    }
+  ],
+  "global_checks": [
+    {
+      "scene": "weak/static/wall",
+      "type": "transverse_first_order_null_but_finite_change",
+      "epsilon": 0.1,
+      "linearized_change": 0.0,
+      "max_measurement_difference": 0.00498756211208895
+    },
+    {
+      "scene": "weak/static/wall",
+      "type": "transverse_first_order_null_but_finite_change",
+      "epsilon": 0.01,
+      "linearized_change": 0.0,
+      "max_measurement_difference": 4.9998750062396624e-05
+    },
+    {
+      "scene": "weak/static/peer",
+      "type": "transverse_first_order_null_but_finite_change",
+      "epsilon": 0.1,
+      "linearized_change": 0.0,
+      "max_measurement_difference": 0.00498756211208895
+    },
+    {
+      "scene": "weak/static/peer",
+      "type": "transverse_first_order_null_but_finite_change",
+      "epsilon": 0.01,
+      "linearized_change": 0.0,
+      "max_measurement_difference": 4.9998750062396624e-05
+    },
+    {
+      "scene": "weak/straight/wall",
+      "type": "transverse_first_order_null_but_finite_change",
+      "epsilon": 0.1,
+      "linearized_change": 0.0,
+      "max_measurement_difference": 0.00498756211208895
+    },
+    {
+      "scene": "weak/straight/wall",
+      "type": "transverse_first_order_null_but_finite_change",
+      "epsilon": 0.01,
+      "linearized_change": 0.0,
+      "max_measurement_difference": 4.9998750062396624e-05
+    },
+    {
+      "scene": "weak/straight/peer",
+      "type": "transverse_first_order_null_but_finite_change",
+      "epsilon": 0.1,
+      "linearized_change": 0.0,
+      "max_measurement_difference": 0.00498756211208895
+    },
+    {
+      "scene": "weak/straight/peer",
+      "type": "transverse_first_order_null_but_finite_change",
+      "epsilon": 0.01,
+      "linearized_change": 0.0,
+      "max_measurement_difference": 4.9998750062396624e-05
+    },
+    {
+      "scene": "good/static/peer/peer_only",
+      "type": "exact_distinct_bias_same_observations",
+      "truth": [
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        1.0,
+        1.0,
+        2.0,
+        2.0,
+        0.3
+      ],
+      "alternative": [
+        1.0,
+        1.0,
+        2.1414213562373097,
+        2.1414213562373097,
+        1.0,
+        1.0,
+        2.1414213562373097,
+        2.1414213562373097,
+        1.0,
+        1.0,
+        2.1414213562373097,
+        2.1414213562373097,
+        1.0,
+        1.0,
+        2.1414213562373097,
+        2.1414213562373097,
+        1.0,
+        1.0,
+        2.1414213562373097,
+        2.1414213562373097,
+        1.0,
+        1.0,
+        2.1414213562373097,
+        2.1414213562373097,
+        0.09999999999999998
+      ],
+      "max_measurement_difference": 0.0,
+      "max_motion_difference": 0.0
+    }
+  ],
+  "total_fits": 2717,
+  "information_cases": 76,
+  "max_jacobian_error": 9.244216503390135e-10
+}

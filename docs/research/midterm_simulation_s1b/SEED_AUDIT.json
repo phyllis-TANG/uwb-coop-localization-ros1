@@ -1,0 +1,69 @@
+{
+  "seeds": [
+    621160101,
+    621160102,
+    621160103,
+    621160104,
+    621160105,
+    621160106,
+    621160107,
+    621160108,
+    621160109,
+    621160110,
+    621160111,
+    621160112
+  ],
+  "scans": [
+    {
+      "root": "/home/ubuntu22/\u53cc\u8f66\u534f\u540c/uwb-coop-localization-ros1",
+      "command": [
+        "rg",
+        "-l",
+        "--hidden",
+        "-g",
+        "!.git",
+        "-g",
+        "!tmp",
+        "-g",
+        "!*.csv",
+        "-g",
+        "!*.svg",
+        "-g",
+        "!*.html",
+        "-e",
+        "621160101|621160102|621160103|621160104|621160105|621160106|621160107|621160108|621160109|621160110|621160111|621160112",
+        "/home/ubuntu22/\u53cc\u8f66\u534f\u540c/uwb-coop-localization-ros1/docs",
+        "/home/ubuntu22/\u53cc\u8f66\u534f\u540c/uwb-coop-localization-ros1/tools"
+      ],
+      "returncode": 1,
+      "matches": "",
+      "stderr": ""
+    },
+    {
+      "root": "/home/ubuntu22/uwb-midterm-phase1-20261116",
+      "command": [
+        "rg",
+        "-l",
+        "--hidden",
+        "-g",
+        "!.git",
+        "-g",
+        "!tmp",
+        "-g",
+        "!*.csv",
+        "-g",
+        "!*.svg",
+        "-g",
+        "!*.html",
+        "-e",
+        "621160101|621160102|621160103|621160104|621160105|621160106|621160107|621160108|621160109|621160110|621160111|621160112",
+        "/home/ubuntu22/uwb-midterm-phase1-20261116/docs",
+        "/home/ubuntu22/uwb-midterm-phase1-20261116/tools"
+      ],
+      "returncode": 1,
+      "matches": "",
+      "stderr": ""
+    }
+  ],
+  "scope": "Existing readable docs/tools excluding CSV, rendered figures, tmp and archives. Includes all located configuration/seed registration text. No conflict found; not a guarantee about inaccessible records. PR97 16101/16102 and 17101..17150 explicitly excluded."
+}

@@ -1,0 +1,20 @@
+{
+  "executable": "/home/ubuntu22/uwb-midterm-s1b-artifacts-20261116/venv/bin/python",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "modules": {
+    "numpy": {
+      "version": "2.2.6",
+      "file": "/home/ubuntu22/uwb-midterm-s1b-artifacts-20261116/venv/lib/python3.10/site-packages/numpy/__init__.py"
+    },
+    "scipy": {
+      "version": "1.15.3",
+      "file": "/home/ubuntu22/uwb-midterm-s1b-artifacts-20261116/venv/lib/python3.10/site-packages/scipy/__init__.py"
+    },
+    "matplotlib": {
+      "version": "3.10.9",
+      "file": "/home/ubuntu22/uwb-midterm-s1b-artifacts-20261116/venv/lib/python3.10/site-packages/matplotlib/__init__.py"
+    }
+  },
+  "inherited_pythonpath": "/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages",
+  "note": "Ambient ROS paths are inherited from shell; no ROS import or device access. requirements.txt includes only installed isolated venv distributions, excluding ambient ROS metadata. Reproduction clears PYTHONPATH."
+}
