@@ -1,0 +1,17 @@
+{
+  "purpose": "DEVELOPMENT_NUMERICAL_DIAGNOSIS_ONLY",
+  "formal_validation_enabled": false,
+  "formal_runs": 0,
+  "seed": 26011601,
+  "accepted_physical_gradient_inf": 1e-5,
+  "P0": {"method": "trf", "max_nfev": 300, "ftol": 1e-10, "xtol": 1e-10, "gtol": 1e-10},
+  "P1": {"start": "P0_final", "method": "trf", "max_nfev": 100, "ftol": 1e-14, "xtol": 1e-14, "gtol": 1e-14},
+  "P2": {"start": "original_shared_start", "method": "lm", "max_nfev": 300, "ftol": 1e-13, "xtol": 1e-13, "gtol": 1e-13},
+  "supplement_protocol": "P0_then_P1_no_selection",
+  "common_conditions": 32,
+  "supplement_conditions": 27,
+  "numerical_stage_calls": 600,
+  "independent_seeds": 1,
+  "position_error_threshold_m": 0.5,
+  "bias_error_threshold_m": 0.1
+}
