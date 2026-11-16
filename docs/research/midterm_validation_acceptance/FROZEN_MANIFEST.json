@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_SOURCE_CONFIG_PROTOCOL_CANDIDATE_FOR_A_ACCEPTANCE",
+  "formal_runs": 0,
+  "formal_observations_generated": 0,
+  "freeze_commit_policy": "Do not embed self-referential commit. Require exact full checkout HEAD via --frozen-commit and record it in external RUN.json before any generation.",
+  "base_commit": "5e4e7ef6e2592cae5b4a4fc6462cbdbaeefb32da",
+  "readonly_reference_commit": "2e28d99e8b6fa74384b795f8847ab72d5fa6e551",
+  "config_canonical_sha256": "0f83b3add2b1764c65fd2687842b1f2534941527b39fe990dd3bd2c0810f6974",
+  "formal_plan_identity_sha256": "b9bc493e9ef55a495c7cda6acbd5937b2bf6fc1aaff2850f0125a3ab091e08b1",
+  "formal_plan_identity_count": 1800,
+  "planned_method_runs": 7200,
+  "files": {
+    "docs/research/midterm_simulation_validation/CHECKS.json": "9681cf91be5c35c6ecc7810449638bb20116ddd25331d363a1a3f691098b1934",
+    "docs/research/midterm_simulation_validation/CONFIG.json": "93a8cfb3ded8589de493f9f7cd5cdd25bd5ec996e042c23f07c386dd1a627fcb",
+    "docs/research/midterm_simulation_validation/DEVELOPMENT_CHECKS.log": "b4000c31307f9a7e55c71668488b415220156a63bcacf2df8ff87f92d1eeb95c",
+    "docs/research/midterm_simulation_validation/ENVIRONMENT.json": "dca2c9233fce9f393956afecf3e0fdde91354da14857e7095b7b8be7a6b20bde",
+    "docs/research/midterm_simulation_validation/FIX_REPORT.md": "b46ddc0406b7fb5513249255eba0b86a1dd0254e1c6dfddf8519579964c600b9",
+    "docs/research/midterm_simulation_validation/HANDOFF.md": "b687bd3b11f027a4bb9fdad9608e59338d6ac786aef75799f4f7184d8f5f1585",
+    "docs/research/midterm_simulation_validation/README.md": "90ca9197b2ac2138cd6448e27686690014f33de889d3d1225b5081e921c42518",
+    "docs/research/midterm_simulation_validation/SEED_AUDIT.json.gz": "fb251029e1e1374ae285c778455037a895c1a0f8343385039da6b91f2a4bb56c",
+    "docs/research/midterm_simulation_validation/SEED_AUDIT.log": "f0a8715283b993c154a47e06180f6c5ca6f6fac257d01b7c5eb1a26f3bd2b41d",
+    "docs/research/midterm_simulation_validation/SEED_REGISTRY.json": "c935e69b0781f5f1a39ee2271a43de9b9fecd103c0098476a4ef99af4d6cc2ff",
+    "docs/research/midterm_simulation_validation/TARGETED_CHECKS.tar.gz": "30acba47355f2e67303272a8533f8adf55957115ed8f268322e47a8c9e268057",
+    "docs/research/midterm_simulation_validation/VALIDATION_PROTOCOL.md": "22066fd157406d4e5e5ce39e347b98b71335cf2f9fc96426319605426e3e218f",
+    "tools/midterm_simulation_phase1/identifiability.py": "cd22ed371ee574e99a7945674a205ce264a68f36acedd6ec52a726ad44f0280c",
+    "tools/midterm_simulation_s2/prototype.py": "e82f407dd45947d1f63aaa91ca1ed6c348cc26a581c6f721d57f784a0aa89c93",
+    "tools/midterm_simulation_validation/accept.py": "d3fec4ac9006701a30258fd0b9f03f5f1d01ae1f75f98531c7ac3b0df4bcb74c",
+    "tools/midterm_simulation_validation/audit_seeds.py": "d14926fb1541140ff01900cd3b4093c78851950ae51a8ac5f2760439327b9a02",
+    "tools/midterm_simulation_validation/checks.py": "a7421cce2533390e196828aa2339325a56c3f820f0ae6ac0b76f2cc88d160949",
+    "tools/midterm_simulation_validation/core.py": "3711a204c59ca233844918179ef73b9486625408cadc5b8ca72861e79dad0603",
+    "tools/midterm_simulation_validation/pipeline.py": "edd14bc94846462963513dac325e511f7acd3e5a1aa2b3e3ae079e73ffac7cd7"
+  },
+  "reference_documents": {
+    "docs/research/midterm_numerical_audit/REPORT.md": "2ecad41395bbe25720bb703dbd19263605ba207eccd08369fadc7addde739edf",
+    "docs/research/midterm_numerical_audit/SOLVER_RECOMMENDATIONS.md": "105a4823b8fc418dbbc021a7a7bf6d0ae8a88c4c3e8402cc9c2a24e2294073c6",
+    "docs/research/midterm_numerical_audit/HANDOFF.md": "5f46d4f6fab4dd6be5b4b50b820df55a588e801c4382ea21146f81070a00fe17"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "formal_runs": 0,
+  "formal_inputs_generated": 0,
+  "plan_identity_count": 1800,
+  "config_sha256": "0f83b3add2b1764c65fd2687842b1f2534941527b39fe990dd3bd2c0810f6974",
+  "source_sha256": {
+    "tools/midterm_simulation_validation/accept.py": "d3fec4ac9006701a30258fd0b9f03f5f1d01ae1f75f98531c7ac3b0df4bcb74c",
+    "tools/midterm_simulation_validation/audit_seeds.py": "d14926fb1541140ff01900cd3b4093c78851950ae51a8ac5f2760439327b9a02",
+    "tools/midterm_simulation_validation/checks.py": "a7421cce2533390e196828aa2339325a56c3f820f0ae6ac0b76f2cc88d160949",
+    "tools/midterm_simulation_validation/core.py": "3711a204c59ca233844918179ef73b9486625408cadc5b8ca72861e79dad0603",
+    "tools/midterm_simulation_validation/pipeline.py": "edd14bc94846462963513dac325e511f7acd3e5a1aa2b3e3ae079e73ffac7cd7",
+    "tools/midterm_simulation_s2/prototype.py": "e82f407dd45947d1f63aaa91ca1ed6c348cc26a581c6f721d57f784a0aa89c93",
+    "tools/midterm_simulation_phase1/identifiability.py": "cd22ed371ee574e99a7945674a205ce264a68f36acedd6ec52a726ad44f0280c"
+  },
+  "independent_objective": {
+    "cases": 144,
+    "max_residual_error": 0.0,
+    "max_whitened_jacobian_fd_error": 1.7220934012129874e-08
+  },
+  "B_archived_checks_count": 1,
+  "fixtures_independent_readback": {
+    "B0_exception_other_methods_valid": {
+      "planned": 4,
+      "completed": 4,
+      "valid": 3,
+      "accepted": 3,
+      "P0": [
+        "EXCEPTION",
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED"
+      ],
+      "P1": [
+        "SKIPPED_INVALID_P0",
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED"
+      ]
+    },
+    "P1_exception": {
+      "planned": 4,
+      "completed": 4,
+      "valid": 0,
+      "accepted": 0,
+      "P0": [
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED"
+      ],
+      "P1": [
+        "EXCEPTION",
+        "EXCEPTION",
+        "EXCEPTION",
+        "EXCEPTION"
+      ]
+    },
+    "P1_nonfinite": {
+      "planned": 4,
+      "completed": 4,
+      "valid": 0,
+      "accepted": 0,
+      "P0": [
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED"
+      ],
+      "P1": [
+        "NONFINITE",
+        "NONFINITE",
+        "NONFINITE",
+        "NONFINITE"
+      ]
+    },
+    "budget": {
+      "planned": 4,
+      "completed": 4,
+      "valid": 4,
+      "accepted": 0,
+      "P0": [
+        "BUDGET_EXHAUSTED",
+        "BUDGET_EXHAUSTED",
+        "BUDGET_EXHAUSTED",
+        "BUDGET_EXHAUSTED"
+      ],
+      "P1": [
+        "BUDGET_EXHAUSTED",
+        "BUDGET_EXHAUSTED",
+        "BUDGET_EXHAUSTED",
+        "BUDGET_EXHAUSTED"
+      ]
+    },
+    "exception": {
+      "planned": 4,
+      "completed": 4,
+      "valid": 0,
+      "accepted": 0,
+      "P0": [
+        "EXCEPTION",
+        "EXCEPTION",
+        "EXCEPTION",
+        "EXCEPTION"
+      ],
+      "P1": [
+        "SKIPPED_INVALID_P0",
+        "SKIPPED_INVALID_P0",
+        "SKIPPED_INVALID_P0",
+        "SKIPPED_INVALID_P0"
+      ]
+    },
+    "finite_not_stationary": {
+      "planned": 4,
+      "completed": 4,
+      "valid": 4,
+      "accepted": 0,
+      "P0": [
+        "NOT_STATIONARY",
+        "NOT_STATIONARY",
+        "NOT_STATIONARY",
+        "NOT_STATIONARY"
+      ],
+      "P1": [
+        "NOT_STATIONARY",
+        "NOT_STATIONARY",
+        "NOT_STATIONARY",
+        "NOT_STATIONARY"
+      ]
+    },
+    "interruption": {
+      "planned": 4,
+      "completed": 4,
+      "valid": 4,
+      "accepted": 4,
+      "P0": [
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED"
+      ],
+      "P1": [
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED"
+      ]
+    },
+    "nonfinite": {
+      "planned": 4,
+      "completed": 4,
+      "valid": 0,
+      "accepted": 0,
+      "P0": [
+        "NONFINITE",
+        "NONFINITE",
+        "NONFINITE",
+        "NONFINITE"
+      ],
+      "P1": [
+        "SKIPPED_INVALID_P0",
+        "SKIPPED_INVALID_P0",
+        "SKIPPED_INVALID_P0",
+        "SKIPPED_INVALID_P0"
+      ]
+    },
+    "normal": {
+      "planned": 4,
+      "completed": 4,
+      "valid": 4,
+      "accepted": 4,
+      "P0": [
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED"
+      ],
+      "P1": [
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED"
+      ]
+    }
+  },
+  "solver_configuration_and_truth_separation": true,
+  "independent_paired_bootstrap": {
+    "repetitions": 10000,
+    "seed_count": 50,
+    "ci": [
+      547.837,
+      930.6449999999999
+    ]
+  },
+  "seed_evidence_rescan": {
+    "blobs": 3795,
+    "bytes": 582786423,
+    "exact_matches": [],
+    "literal_range_overlaps": [],
+    "scope": "same archived immutable scope; not a claim about unrecorded external runs"
+  },
+  "passed": true
+}
