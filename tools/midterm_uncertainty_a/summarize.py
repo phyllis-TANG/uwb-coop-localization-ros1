@@ -9,7 +9,7 @@ def dump(p,obj):p.write_text(json.dumps(obj,ensure_ascii=False,indent=2,allow_na
 def table(p,rows):
     if not rows:return
     with p.open('w',newline='') as f:
-        w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+        w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator="\n");w.writeheader();w.writerows(rows)
 def interval(c,v,counts):
     active=v>0
     if active.sum()<30:return None,None,'FEWER_THAN_30_EFFECTIVE_SEEDS'
