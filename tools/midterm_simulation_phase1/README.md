@@ -1,0 +1,9 @@
+# 脚本职责
+- propagation.py：PR88生成公式及M2/M3只读复用，开发/确认/基线三个明确入口，单元目录拒绝覆盖。
+- field_analysis.py：显式文本字节恢复及139来源核对，原验证器只读数值回放；两未匹配历史说明不参与数值分析，PARTIAL状态保留。
+- identifiability.py：25维诊断模型/解析Jacobian/SVD/无噪声先验与初始化试验，不是新生产定位器。
+- report.py：只读单元结果，按seed汇总和绘图。
+- checks.py：单因素adapter、配对输入、M2对peer注入的数值独立性及来源锁。
+- supplement.py：已暴露10记录补充留一及信息奇异值图。
+配置：docs/research/midterm_simulation_phase1/PLAN.md与FROZEN.json；原生成JSON和原PR91 PROTOCOL按SOURCE_LOCK引用。
+完整命令/结果解释在同名docs README。所有统计单位和负面结果必须保留。

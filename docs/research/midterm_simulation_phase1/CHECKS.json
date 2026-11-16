@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "adapter_checks": [
+    {
+      "layout": "G1",
+      "link": "wall",
+      "changed_scalars": 280
+    },
+    {
+      "layout": "G1",
+      "link": "peer",
+      "changed_scalars": 280
+    },
+    {
+      "layout": "G2",
+      "link": "wall",
+      "changed_scalars": 280
+    },
+    {
+      "layout": "G2",
+      "link": "peer",
+      "changed_scalars": 280
+    }
+  ],
+  "M2_peer_injection_max_MSE_difference": 0.0,
+  "confirmed_run_count": 182,
+  "S1_jacobian_check": {
+    "max_jacobian_error": 9.244216503390135e-10,
+    "cases": 12,
+    "diagnostic_fits": 108,
+    "failed_fits": 0
+  },
+  "baseline_check": "PASS_EXISTING_1e-10_READBACK_RULE",
+  "field_scope": "numeric verified, two historical setup notes unresolved"
+}
