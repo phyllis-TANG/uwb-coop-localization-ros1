@@ -1,0 +1,1 @@
+CSV由Python csv模块按标准CRLF行尾写出。初次git diff --check将CR报告为行尾空白；本目录.gitattributes明确声明CSV的CRLF格式与字节保留，未转换结果或更改数值。加入属性后重新执行范围diff检查通过。其他文本仍使用默认空白检查。
