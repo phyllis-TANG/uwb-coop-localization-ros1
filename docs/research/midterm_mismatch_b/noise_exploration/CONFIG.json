@@ -1,0 +1,509 @@
+{
+  "schema_version": 1,
+  "model": "six_epoch_two_car_xy_known_global_displacements",
+  "epochs": 6,
+  "time_interval": [
+    0.0,
+    1.0
+  ],
+  "methods": [
+    "B0",
+    "B1",
+    "B2",
+    "B3_full_oracle"
+  ],
+  "geometries": {
+    "good": {
+      "anchors": [
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "initial_positions": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "survey": [
+        1.2,
+        1.25,
+        1.8,
+        1.8
+      ]
+    },
+    "weak": {
+      "anchors": [
+        [
+          -3,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          6,
+          0
+        ]
+      ],
+      "initial_positions": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "survey": [
+        1.2,
+        0.25,
+        1.8,
+        -0.2
+      ]
+    },
+    "near": {
+      "anchors": [
+        [
+          -3,
+          0
+        ],
+        [
+          -1,
+          0.01
+        ],
+        [
+          4,
+          -0.01
+        ],
+        [
+          6,
+          0.02
+        ]
+      ],
+      "initial_positions": [
+        [
+          1,
+          0.01
+        ],
+        [
+          2,
+          -0.01
+        ]
+      ],
+      "survey": [
+        1.2,
+        0.25,
+        1.8,
+        -0.2
+      ]
+    }
+  },
+  "motions": {
+    "static": {
+      "type": "static"
+    },
+    "turn": {
+      "type": "common_sinusoidal",
+      "x_amplitude_m": 0.5,
+      "y_amplitude_m": 0.5,
+      "angle_radians": 3.141592653589793
+    }
+  },
+  "noise": {
+    "range_sigma_m": 0.04,
+    "motion_sigma_m": 0.02,
+    "rng": "PCG64",
+    "seed_sequence": "[observation_seed, stream_id]",
+    "range_stream": 0,
+    "motion_stream": 1,
+    "sharing": "same seed: same 6x9 iid standard-normal innovations across ALL scenarios/noise models; Gaussian .04/.08 and AR .7 transformations fixed; motion noise unchanged",
+    "named_streams": {
+      "range_normal_innovations": 0,
+      "global_displacement": 1
+    }
+  },
+  "initialization": {
+    "rule": "fixed_survey_then_integrate_observed_global_displacements",
+    "position_jitter_m": 0.0,
+    "bias_m": 0.0
+  },
+  "priors": {
+    "core_sigma_m": 0.5,
+    "bias_prior": null,
+    "center": "geometry.survey; fixed across injections"
+  },
+  "matrix": {
+    "geometries": [
+      "good",
+      "weak",
+      "near"
+    ],
+    "motions": [
+      "static",
+      "turn"
+    ],
+    "candidates": [
+      "wall",
+      "peer"
+    ],
+    "injections": [
+      "zero",
+      "constant"
+    ],
+    "noise_models": [
+      "iid_004",
+      "iid_008",
+      "ar1_07"
+    ]
+  },
+  "seeds": {
+    "formal": [
+      971116001,
+      971116002,
+      971116003,
+      971116004,
+      971116005,
+      971116006,
+      971116007,
+      971116008,
+      971116009,
+      971116010,
+      971116011,
+      971116012,
+      971116013,
+      971116014,
+      971116015,
+      971116016,
+      971116017,
+      971116018,
+      971116019,
+      971116020,
+      971116021,
+      971116022,
+      971116023,
+      971116024,
+      971116025,
+      971116026,
+      971116027,
+      971116028,
+      971116029,
+      971116030,
+      971116031,
+      971116032,
+      971116033,
+      971116034,
+      971116035,
+      971116036,
+      971116037,
+      971116038,
+      971116039,
+      971116040,
+      971116041,
+      971116042,
+      971116043,
+      971116044,
+      971116045,
+      971116046,
+      971116047,
+      971116048,
+      971116049,
+      971116050
+    ],
+    "development": [
+      26011601
+    ]
+  },
+  "solver": {
+    "P0": {
+      "method": "trf",
+      "max_nfev": 300,
+      "ftol": 1e-10,
+      "xtol": 1e-10,
+      "gtol": 1e-10
+    },
+    "P1": {
+      "method": "trf",
+      "max_nfev": 100,
+      "ftol": 1e-14,
+      "xtol": 1e-14,
+      "gtol": 1e-14
+    },
+    "continuation": "once_for_every_finite_valid_P0_endpoint; skip otherwise; no selection",
+    "position_scale_m": 1.0,
+    "bias_scale_m": 0.1,
+    "loss": "linear"
+  },
+  "acceptance": {
+    "physical_gradient_inf_max": 1e-05,
+    "require_scipy_success": true,
+    "require_finite_state_residual_jacobian_cost_gradient": true
+  },
+  "information": {
+    "rank_relative_tolerance": 1e-08,
+    "covariance": "unscaled known-noise Gauss-Newton inverse only when full rank and finite; else null; no ridge"
+  },
+  "statistics": {
+    "unit": "seed",
+    "bootstrap_seed": 91327063,
+    "bootstrap_repetitions": 10000,
+    "confidence": 0.95,
+    "minimum_valid_seeds": 40,
+    "maximum_missing_fraction_for_ci": 0.1,
+    "interval": "pointwise percentile of paired seed means, valid subset explicitly conditional; no multiplicity guarantee",
+    "position_rmse_threshold_m": 0.5,
+    "absolute_bias_error_threshold_m": 0.1,
+    "missing_policy": "null, never zero; retain all planned denominators; no superiority claim from success subset",
+    "position_metric": "per-car mean squared 2D error over six epochs; per-seed RMSE=sqrt(MSE)",
+    "aggregate": "per condition and method; do not pool conditions or cars as independent seeds",
+    "bias_policy": "No unique true constant b for step/ramp/wrong_link/multi_link. Report estimated b, candidate injection mean as descriptive reference, and full injected-vector minus b*candidate mask RMS. b error threshold only zero/constant, where the model is correctly specified.",
+    "residual_joint_distribution": "all finite final states: total whitened residual RMS, range residual RMS in metres, per-car RMSE; per-condition Spearman; deterministic scatter, no favorable binary cutoff"
+  },
+  "verification": {
+    "residual_absolute_tolerance": 1e-10,
+    "gradient_absolute_tolerance": 1e-09,
+    "scalar_absolute_tolerance": 1e-10
+  },
+  "expected": {
+    "conditions": 72,
+    "formal_seeds": 50,
+    "formal_paired_units": 3600,
+    "formal_method_runs": 14400,
+    "maximum_stage_records": 28800
+  },
+  "required_dependencies": {
+    "python_major_minor": "3.10",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  },
+  "assumptions": {
+    "B0": "no peer rows",
+    "B1": "unaugmented cooperation",
+    "B2": "one unrestricted constant bias on the PRESET candidate, which may be wrong; no access to true mask",
+    "B3_full_oracle": "In this zero/constant batch knows injected bias only, not noise samples, variance or correlation; same assumed independent sigma=.04 as all methods",
+    "bias_parameter_truth_only_in": [
+      "zero",
+      "constant"
+    ]
+  },
+  "source_base": "fba539052f3ce2ed7d2ed35e79ac03198200c680",
+  "study": "independent subsequent noise-mismatch exploratory batch, after fault batch execution and readback",
+  "links": {
+    "wall": {
+      "id": "Car1-anchor0",
+      "row_within_epoch": 0,
+      "indices": [
+        0,
+        9,
+        18,
+        27,
+        36,
+        45
+      ],
+      "other_id": "Car1-anchor1",
+      "other_row_within_epoch": 1,
+      "other_indices": [
+        1,
+        10,
+        19,
+        28,
+        37,
+        46
+      ]
+    },
+    "peer": {
+      "id": "Car1-Car2",
+      "row_within_epoch": 8,
+      "indices": [
+        8,
+        17,
+        26,
+        35,
+        44,
+        53
+      ],
+      "other_id": "Car1-anchor0",
+      "other_row_within_epoch": 0,
+      "other_indices": [
+        0,
+        9,
+        18,
+        27,
+        36,
+        45
+      ]
+    }
+  },
+  "injection_sequences_m": {
+    "zero": {
+      "candidate": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "other": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "constant": {
+      "candidate": [
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "other": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "step": {
+      "candidate": [
+        0,
+        0,
+        0,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "other": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "ramp": {
+      "candidate": [
+        0.0,
+        0.06,
+        0.12,
+        0.18,
+        0.24,
+        0.3
+      ],
+      "other": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "wrong_link": {
+      "candidate": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "other": [
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    "multi_link": {
+      "candidate": [
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ],
+      "other": [
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ]
+    }
+  },
+  "representative_cases": {
+    "fixed_seed": 971116001,
+    "worst_rule": "for every injection and car select largest B2 per-car RMSE across all conditions/seeds; ties condition id then seed; show all four methods on same input",
+    "low_residual_large_error_rule": "for every injection and car choose maximum (within-condition position-error percentile minus within-condition residual-RMS percentile), then position-error percentile descending then condition id and seed; rank-based description, not failure threshold"
+  },
+  "execution": {
+    "workers": 2,
+    "blas_threads": 1,
+    "minimum_free_disk_GB": 6,
+    "raw_result_policy": "exclusive stage files; existing failures completed; missing only resume",
+    "freeze_before_generation": true
+  },
+  "adapter_module": "noise_adapter",
+  "range_noise_models": {
+    "iid_004": {
+      "type": "iid",
+      "actual_marginal_sigma_m": 0.04
+    },
+    "iid_008": {
+      "type": "iid",
+      "actual_marginal_sigma_m": 0.08
+    },
+    "ar1_07": {
+      "type": "ar1",
+      "rho": 0.7,
+      "actual_marginal_sigma_m": 0.04,
+      "initial": "stationary sigma*z0",
+      "innovation_sigma": "marginal_sigma*sqrt(1-rho**2)",
+      "independent_across_links": true
+    }
+  },
+  "noise_generator_check": {
+    "development_seed": 26011601,
+    "stream": 9000,
+    "independent_probe_blocks": 20000,
+    "covariance_max_abs_error_relative_to_variance": 0.05,
+    "cross_link_correlation_max_abs": 0.04,
+    "not_position_runs": true
+  }
+}
