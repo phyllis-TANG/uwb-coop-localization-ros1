@@ -1,0 +1,88 @@
+{
+  "B_original_config": {
+    "base_commit": "df323eccdffd375a2fb255ebbfd734b6c2be4aac",
+    "purpose": "DEVELOPMENT_ONLY",
+    "geometries": [
+      "good",
+      "weak"
+    ],
+    "motions": [
+      "static",
+      "straight",
+      "turn"
+    ],
+    "links": [
+      "wall",
+      "peer"
+    ],
+    "biases_m": [
+      0.0,
+      0.3
+    ],
+    "deterministic_profiles": [
+      "noiseless",
+      "noiseless_no_prior"
+    ],
+    "noisy_profiles": [
+      "noisy_unbiased_prior",
+      "noisy_biased_prior"
+    ],
+    "development_seeds": [
+      26011601,
+      26011602,
+      26011603
+    ],
+    "range_sigma_m": 0.04,
+    "motion_sigma_m": 0.02,
+    "position_prior_sigma_m": 0.05,
+    "initial_error_sigma_m": 0.15,
+    "biased_prior_offset_m": [
+      0.15,
+      -0.1,
+      -0.1,
+      0.15
+    ],
+    "bias_prior": null,
+    "max_nfev": 300,
+    "ftol": 1e-10,
+    "xtol": 1e-10,
+    "gtol": 1e-10,
+    "accepted_optimality": 1e-05,
+    "rank_relative_tol": 1e-08,
+    "tests": {
+      "jacobian_abs_tol": 1e-08,
+      "exact_solution_abs_tol": 1e-06,
+      "numeric_equivalence_abs_tol": 1e-10
+    },
+    "formal_validation_enabled": false
+  },
+  "geometry": [
+    "good",
+    "weak"
+  ],
+  "motion": [
+    "static",
+    "turn"
+  ],
+  "kind": [
+    "wall",
+    "peer"
+  ],
+  "bias": [
+    0,
+    0.3
+  ],
+  "profile": [
+    "noisy_unbiased_prior",
+    "noisy_biased_prior"
+  ],
+  "seed": 26011601,
+  "purpose": "DEVELOPMENT_NUMERICAL_DIAGNOSTICS_ONLY",
+  "continuation": {
+    "max_nfev": 1000,
+    "ftol": null,
+    "xtol": 1e-14,
+    "gtol": 1e-10
+  },
+  "script_sha256": "39480db0d3750170a59189cc9009f0bbb5a82413f32b95ede13aac91d424a5f2"
+}
