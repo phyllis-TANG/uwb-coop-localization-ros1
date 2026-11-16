@@ -24,5 +24,6 @@
     "recommended_free_disk_GB": 6,
     "recommended_RAM_GB": 4,
     "planning_time_budget_hours": 2
-  }
+  },
+  "packaging_environment_note": "One manifest packaging attempt accidentally used system python3 (NumPy2.2.6/SciPy1.8.0), failed import before generation. Corrected to frozen venv; all checks and solver calls used SciPy1.15.3."
 }
