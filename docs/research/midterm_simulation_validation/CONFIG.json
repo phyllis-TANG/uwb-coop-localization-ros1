@@ -1,0 +1,363 @@
+{
+  "schema_version": 1,
+  "model": "six_epoch_two_car_xy_known_global_displacements",
+  "epochs": 6,
+  "time_interval": [
+    0.0,
+    1.0
+  ],
+  "methods": [
+    "B0",
+    "B1",
+    "B2",
+    "B3"
+  ],
+  "geometries": {
+    "good": {
+      "anchors": [
+        [
+          0,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          0,
+          5
+        ]
+      ],
+      "initial_positions": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "survey": [
+        1.2,
+        1.25,
+        1.8,
+        1.8
+      ]
+    },
+    "weak": {
+      "anchors": [
+        [
+          -3,
+          0
+        ],
+        [
+          -1,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          6,
+          0
+        ]
+      ],
+      "initial_positions": [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "survey": [
+        1.2,
+        0.25,
+        1.8,
+        -0.2
+      ]
+    },
+    "near": {
+      "anchors": [
+        [
+          -3,
+          0
+        ],
+        [
+          -1,
+          0.01
+        ],
+        [
+          4,
+          -0.01
+        ],
+        [
+          6,
+          0.02
+        ]
+      ],
+      "initial_positions": [
+        [
+          1,
+          0.01
+        ],
+        [
+          2,
+          -0.01
+        ]
+      ],
+      "survey": [
+        1.2,
+        0.25,
+        1.8,
+        -0.2
+      ]
+    }
+  },
+  "motions": {
+    "static": {
+      "type": "static"
+    },
+    "turn": {
+      "type": "common_sinusoidal",
+      "x_amplitude_m": 0.5,
+      "y_amplitude_m": 0.5,
+      "angle_radians": 3.141592653589793
+    }
+  },
+  "noise": {
+    "range_sigma_m": 0.04,
+    "motion_sigma_m": 0.02,
+    "rng": "PCG64",
+    "seed_sequence": "[observation_seed, stream_id]",
+    "range_stream": 0,
+    "motion_stream": 1,
+    "sharing": "same seed uses same standard-normal arrays across ALL conditions; all methods share one observation object"
+  },
+  "initialization": {
+    "rule": "fixed_survey_then_integrate_observed_global_displacements",
+    "position_jitter_m": 0.0,
+    "bias_m": 0.0
+  },
+  "priors": {
+    "core_sigma_m": 0.5,
+    "strong_sigma_m": 0.05,
+    "center_delta_m": [
+      0.3,
+      -0.3,
+      -0.3,
+      0.3
+    ],
+    "bias_prior": null,
+    "center": "geometry.survey; variant delta does not change initialization"
+  },
+  "matrix": [
+    {
+      "panel": "core",
+      "geometries": [
+        "good",
+        "weak",
+        "near"
+      ],
+      "motions": [
+        "static",
+        "turn"
+      ],
+      "kinds": [
+        "wall",
+        "peer"
+      ],
+      "biases_m": [
+        0.0,
+        0.3
+      ],
+      "prior": "survey_core"
+    },
+    {
+      "panel": "no_prior",
+      "geometries": [
+        "good",
+        "weak",
+        "near"
+      ],
+      "motions": [
+        "static",
+        "turn"
+      ],
+      "kinds": [
+        "peer"
+      ],
+      "biases_m": [
+        0.3
+      ],
+      "prior": "none"
+    },
+    {
+      "panel": "strong",
+      "geometries": [
+        "good",
+        "weak",
+        "near"
+      ],
+      "motions": [
+        "static"
+      ],
+      "kinds": [
+        "peer"
+      ],
+      "biases_m": [
+        0.3
+      ],
+      "prior": "survey_strong"
+    },
+    {
+      "panel": "shifted_strong",
+      "geometries": [
+        "good",
+        "weak",
+        "near"
+      ],
+      "motions": [
+        "static"
+      ],
+      "kinds": [
+        "peer"
+      ],
+      "biases_m": [
+        0.3
+      ],
+      "prior": "shifted_strong"
+    }
+  ],
+  "seeds": {
+    "formal": [
+      741216001,
+      741216002,
+      741216003,
+      741216004,
+      741216005,
+      741216006,
+      741216007,
+      741216008,
+      741216009,
+      741216010,
+      741216011,
+      741216012,
+      741216013,
+      741216014,
+      741216015,
+      741216016,
+      741216017,
+      741216018,
+      741216019,
+      741216020,
+      741216021,
+      741216022,
+      741216023,
+      741216024,
+      741216025,
+      741216026,
+      741216027,
+      741216028,
+      741216029,
+      741216030,
+      741216031,
+      741216032,
+      741216033,
+      741216034,
+      741216035,
+      741216036,
+      741216037,
+      741216038,
+      741216039,
+      741216040,
+      741216041,
+      741216042,
+      741216043,
+      741216044,
+      741216045,
+      741216046,
+      741216047,
+      741216048,
+      741216049,
+      741216050
+    ],
+    "development": [
+      26011601
+    ]
+  },
+  "solver": {
+    "P0": {
+      "method": "trf",
+      "max_nfev": 300,
+      "ftol": 1e-10,
+      "xtol": 1e-10,
+      "gtol": 1e-10
+    },
+    "P1": {
+      "method": "trf",
+      "max_nfev": 100,
+      "ftol": 1e-14,
+      "xtol": 1e-14,
+      "gtol": 1e-14
+    },
+    "continuation": "once_for_every_finite_valid_P0_endpoint; skip otherwise; no selection",
+    "position_scale_m": 1.0,
+    "bias_scale_m": 0.1,
+    "loss": "linear"
+  },
+  "acceptance": {
+    "physical_gradient_inf_max": 1e-05,
+    "require_scipy_success": true,
+    "require_finite_state_residual_jacobian_cost_gradient": true
+  },
+  "information": {
+    "rank_relative_tolerance": 1e-08,
+    "covariance": "unscaled known-noise Gauss-Newton inverse only when full rank and finite; else null; no ridge"
+  },
+  "statistics": {
+    "unit": "seed",
+    "bootstrap_seed": 91327061,
+    "bootstrap_repetitions": 10000,
+    "confidence": 0.95,
+    "minimum_valid_seeds": 30,
+    "maximum_missing_fraction_for_ci": 0.1,
+    "interval": "pointwise percentile of paired seed means, valid subset explicitly conditional; no multiplicity guarantee",
+    "position_rmse_threshold_m": 0.5,
+    "absolute_bias_error_threshold_m": 0.1,
+    "missing_policy": "null, never zero; retain all planned denominators; no superiority claim from success subset",
+    "position_metric": "per-car mean squared 2D error over six epochs; per-seed RMSE=sqrt(MSE)",
+    "aggregate": "per condition and method; do not pool conditions or cars as independent seeds"
+  },
+  "verification": {
+    "residual_absolute_tolerance": 1e-10,
+    "gradient_absolute_tolerance": 1e-09,
+    "scalar_absolute_tolerance": 1e-10
+  },
+  "expected": {
+    "conditions": 36,
+    "formal_seeds": 50,
+    "formal_paired_units": 1800,
+    "formal_method_runs": 7200
+  },
+  "required_dependencies": {
+    "python_major_minor": "3.10",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  },
+  "assumptions": {
+    "B0": "independent; peer rows omitted",
+    "B1": "cooperative without augmentation",
+    "B2": "known affected link, one unrestricted constant bias",
+    "B3": "known affected link AND injection amplitude; ideal oracle only",
+    "formal_execution_this_delivery": false
+  }
+}
