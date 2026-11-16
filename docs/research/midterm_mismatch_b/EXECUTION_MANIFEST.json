@@ -1,0 +1,47 @@
+{
+  "freeze_sha": "41653fff74255a3222b49933947f31c497640e0f",
+  "base_sha": "fba539052f3ce2ed7d2ed35e79ac03198200c680",
+  "formal_inputs": 7200,
+  "formal_method_runs": 28800,
+  "stage_records": 57600,
+  "accepted": 28419,
+  "NOT_STATIONARY": 367,
+  "BUDGET_EXHAUSTED": 14,
+  "finite_final": 28800,
+  "unavailable": 0,
+  "missing": 0,
+  "optimizer_calls_in_readback": 0,
+  "interruption": {
+    "exit_code": 143,
+    "reason": "external termination signal; no Python exception output; source unknown",
+    "last_progress_units": 3400,
+    "action": "resume exact frozen version, only missing durable stages",
+    "utc": "2026-11-16T14:47:21Z"
+  },
+  "stage_started_attempt_counts": {
+    "1": 57600,
+    "2": 2
+  },
+  "run_events": [
+    {
+      "event": "RUN_STARTED",
+      "utc": "2026-11-16T14:42:28Z"
+    },
+    {
+      "event": "RESUME",
+      "utc": "2026-11-16T14:47:21Z"
+    },
+    {
+      "event": "RUN_COMPLETED",
+      "new_stages": 30202,
+      "units": 7200,
+      "utc": "2026-11-16T14:49:54Z"
+    }
+  ],
+  "raw_directory": "/home/ubuntu22/uwb-midterm-mismatch-b-artifacts/fault-formal",
+  "readback_directory": "/home/ubuntu22/uwb-midterm-mismatch-b-artifacts/fault-readback",
+  "analysis_directory": "/home/ubuntu22/uwb-midterm-mismatch-b-artifacts/fault-analysis",
+  "raw_sha_index": "results/RAW_SHA256.json.gz",
+  "portable_evidence": "results/EVIDENCE-*.jsonl.gz",
+  "original_batch_unchanged": true
+}
