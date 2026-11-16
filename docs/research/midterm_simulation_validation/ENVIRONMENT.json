@@ -1,0 +1,29 @@
+{
+  "initial_path": "/home/ubuntu22/uwb-midterm-s2-numerics-v2",
+  "initial_HEAD": "5e4e7ef6e2592cae5b4a4fc6462cbdbaeefb32da",
+  "initial_git_status": "clean",
+  "checkout": "/home/ubuntu22/uwb-midterm-s2-validation-ready",
+  "branch": "research/midterm-s2-validation-ready",
+  "base_commit": "5e4e7ef6e2592cae5b4a4fc6462cbdbaeefb32da",
+  "readonly_A_checkout": "/home/ubuntu22/uwb-validation-a-readonly",
+  "A_commit": "2e28d99e8b6fa74384b795f8847ab72d5fa6e551",
+  "remote": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1.git",
+  "applicable_AGENTS": [],
+  "python_executable": "/home/ubuntu22/uwb-single-car-quality-fgo-v1-artifacts/venv/bin/python",
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "free_disk_bytes": 40317710336,
+  "external_artifacts": "/home/ubuntu22/uwb-validation-ready-artifacts",
+  "formal_runs": 0,
+  "resource_estimate": {
+    "measured_development_stage_files": 8,
+    "measured_compressed_stage_bytes": 67157,
+    "linear_14400_stage_storage_estimate_bytes": 120882600,
+    "caveat": "single good/static fixture only; weak conditions and wall time not measured formally",
+    "recommended_free_disk_GB": 6,
+    "recommended_RAM_GB": 4,
+    "planning_time_budget_hours": 2
+  },
+  "packaging_environment_note": "One manifest packaging attempt accidentally used system python3 (NumPy2.2.6/SciPy1.8.0), failed import before generation. Corrected to frozen venv; all checks and solver calls used SciPy1.15.3."
+}

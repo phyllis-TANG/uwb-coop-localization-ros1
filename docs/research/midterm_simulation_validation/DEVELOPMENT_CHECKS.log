@@ -1,0 +1,230 @@
+{
+  "formal_runs": 0,
+  "artificial_checks": {
+    "normal": {
+      "planned": 4,
+      "valid": 4,
+      "numerical_failures": 0,
+      "categories": [
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED"
+      ],
+      "readback": {
+        "planned_methods": 4,
+        "stage_records": 8,
+        "recomputed_states": 8,
+        "unavailable_states": 0,
+        "missing_stages": 0,
+        "max_residual_difference": 0.0,
+        "max_gradient_difference": 0.0,
+        "max_scalar_difference": 0.0,
+        "errors": [],
+        "passed": true
+      }
+    },
+    "exception": {
+      "planned": 4,
+      "valid": 0,
+      "numerical_failures": 4,
+      "categories": [
+        "SKIPPED_INVALID_P0",
+        "SKIPPED_INVALID_P0",
+        "SKIPPED_INVALID_P0",
+        "SKIPPED_INVALID_P0"
+      ],
+      "readback": {
+        "planned_methods": 4,
+        "stage_records": 8,
+        "recomputed_states": 0,
+        "unavailable_states": 8,
+        "missing_stages": 0,
+        "max_residual_difference": 0.0,
+        "max_gradient_difference": 0.0,
+        "max_scalar_difference": 0.0,
+        "errors": [],
+        "passed": true
+      }
+    },
+    "nonfinite": {
+      "planned": 4,
+      "valid": 0,
+      "numerical_failures": 4,
+      "categories": [
+        "SKIPPED_INVALID_P0",
+        "SKIPPED_INVALID_P0",
+        "SKIPPED_INVALID_P0",
+        "SKIPPED_INVALID_P0"
+      ],
+      "readback": {
+        "planned_methods": 4,
+        "stage_records": 8,
+        "recomputed_states": 0,
+        "unavailable_states": 8,
+        "missing_stages": 0,
+        "max_residual_difference": 0.0,
+        "max_gradient_difference": 0.0,
+        "max_scalar_difference": 0.0,
+        "errors": [],
+        "passed": true
+      }
+    },
+    "budget": {
+      "planned": 4,
+      "valid": 4,
+      "numerical_failures": 4,
+      "categories": [
+        "BUDGET_EXHAUSTED",
+        "BUDGET_EXHAUSTED",
+        "BUDGET_EXHAUSTED",
+        "BUDGET_EXHAUSTED"
+      ],
+      "readback": {
+        "planned_methods": 4,
+        "stage_records": 8,
+        "recomputed_states": 8,
+        "unavailable_states": 0,
+        "missing_stages": 0,
+        "max_residual_difference": 0.0,
+        "max_gradient_difference": 0.0,
+        "max_scalar_difference": 0.0,
+        "errors": [],
+        "passed": true
+      }
+    },
+    "finite_not_stationary": {
+      "planned": 4,
+      "valid": 4,
+      "numerical_failures": 4,
+      "categories": [
+        "NOT_STATIONARY",
+        "NOT_STATIONARY",
+        "NOT_STATIONARY",
+        "NOT_STATIONARY"
+      ],
+      "readback": {
+        "planned_methods": 4,
+        "stage_records": 8,
+        "recomputed_states": 8,
+        "unavailable_states": 0,
+        "missing_stages": 0,
+        "max_residual_difference": 0.0,
+        "max_gradient_difference": 0.0,
+        "max_scalar_difference": 0.0,
+        "errors": [],
+        "passed": true
+      }
+    },
+    "P1_exception": {
+      "planned": 4,
+      "valid": 0,
+      "numerical_failures": 4,
+      "categories": [
+        "EXCEPTION",
+        "EXCEPTION",
+        "EXCEPTION",
+        "EXCEPTION"
+      ],
+      "readback": {
+        "planned_methods": 4,
+        "stage_records": 8,
+        "recomputed_states": 4,
+        "unavailable_states": 4,
+        "missing_stages": 0,
+        "max_residual_difference": 0.0,
+        "max_gradient_difference": 0.0,
+        "max_scalar_difference": 0.0,
+        "errors": [],
+        "passed": true
+      }
+    },
+    "P1_nonfinite": {
+      "planned": 4,
+      "valid": 0,
+      "numerical_failures": 4,
+      "categories": [
+        "NONFINITE",
+        "NONFINITE",
+        "NONFINITE",
+        "NONFINITE"
+      ],
+      "readback": {
+        "planned_methods": 4,
+        "stage_records": 8,
+        "recomputed_states": 4,
+        "unavailable_states": 4,
+        "missing_stages": 0,
+        "max_residual_difference": 0.0,
+        "max_gradient_difference": 0.0,
+        "max_scalar_difference": 0.0,
+        "errors": [],
+        "passed": true
+      }
+    },
+    "B0_exception_other_methods_valid": {
+      "planned": 4,
+      "valid": 3,
+      "numerical_failures": 1,
+      "categories": [
+        "SKIPPED_INVALID_P0",
+        "ACCEPTED",
+        "ACCEPTED",
+        "ACCEPTED"
+      ],
+      "readback": {
+        "planned_methods": 4,
+        "stage_records": 8,
+        "recomputed_states": 6,
+        "unavailable_states": 2,
+        "missing_stages": 0,
+        "max_residual_difference": 0.0,
+        "max_gradient_difference": 0.0,
+        "max_scalar_difference": 0.0,
+        "errors": [],
+        "passed": true
+      }
+    }
+  },
+  "regression": {
+    "old_input_sha_equal": true,
+    "objective_residual_and_jacobian_exact": true,
+    "stages": 8,
+    "max_state_difference": 0.0
+  },
+  "config_checks": {
+    "generation_only_development_conditions": 36,
+    "controlled_pairs": 9,
+    "shared_noise_all_conditions": true,
+    "noise_geometry_motion_survey_prior_seed_solver_acceptance_statistics_changes_effective": true,
+    "nonfinite_information": "NONFINITE_INFORMATION",
+    "nonfinite_covariance": "NONFINITE_COVARIANCE",
+    "rank_deficient_covariance_null": true
+  },
+  "bootstrap_checks": {
+    "deterministic": true,
+    "repetitions_from_config": 37,
+    "empty_and_insufficient_null": true,
+    "missing_limit_enforced": true,
+    "unfinished_run_no_ci": true
+  },
+  "resume_checks": {
+    "interrupted_after_stages": 1,
+    "resumed_stages": 7,
+    "unchanged_existing_files": true,
+    "second_resume_stages": 0,
+    "failed_records_not_retried": true,
+    "overwrite_rejected": true
+  },
+  "passed": true,
+  "elapsed_s": 1.023788293999587,
+  "source_sha256": {
+    "tools/midterm_simulation_validation/accept.py": "d3fec4ac9006701a30258fd0b9f03f5f1d01ae1f75f98531c7ac3b0df4bcb74c",
+    "tools/midterm_simulation_validation/audit_seeds.py": "d14926fb1541140ff01900cd3b4093c78851950ae51a8ac5f2760439327b9a02",
+    "tools/midterm_simulation_validation/checks.py": "a7421cce2533390e196828aa2339325a56c3f820f0ae6ac0b76f2cc88d160949",
+    "tools/midterm_simulation_validation/core.py": "3711a204c59ca233844918179ef73b9486625408cadc5b8ca72861e79dad0603",
+    "tools/midterm_simulation_validation/pipeline.py": "edd14bc94846462963513dac325e511f7acd3e5a1aa2b3e3ae079e73ffac7cd7",
+    "tools/midterm_simulation_s2/prototype.py": "e82f407dd45947d1f63aaa91ca1ed6c348cc26a581c6f721d57f784a0aa89c93",
+    "tools/midterm_simulation_phase1/identifiability.py": "cd22ed371ee574e99a7945674a205ce264a68f36acedd6ec52a726ad44f0280c"
+  }
+}
