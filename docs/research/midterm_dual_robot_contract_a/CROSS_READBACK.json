@@ -1,0 +1,23 @@
+{
+  "checked_at_utc": "2026-11-17T15:13:45.834118+00:00",
+  "b_branch": "research/dual-robot-region-b",
+  "locked_observed_sha": "dd688106ace4aa3b18c785b519e8940cbca8b325",
+  "results_ready_paths": [],
+  "progress": {
+    "blocked": "A_CONTRACT_READY_NOT_YET_PUBLISHED",
+    "completed": 31,
+    "current_case": null,
+    "formal_methods_completed": 0,
+    "last_updated": "2026-11-17T15:07:59.046983+00:00",
+    "planned": 31,
+    "schema": "DUAL-B-PROGRESS-V1",
+    "stage": "DEVELOPMENT_PIPELINE"
+  },
+  "progress_sha256": "3762aba04d40c1c9be9140c0a929bbf4a4a251d6f39797b67d9edabb8f9944d9",
+  "cross_readback": "PENDING",
+  "formal_certificates_checked": 0,
+  "archive_hash": null,
+  "reason": "No RESULTS_READY.json in observed B tree; do not equate B development tests with formal result acceptance.",
+  "a_ready_sha": "e45ca6d5940ff9f28233f03fb3502d5ed7004817",
+  "note": "B progress field reports A not published, but A PR131 is already published. This is a stale B progress statement, not current A state."
+}

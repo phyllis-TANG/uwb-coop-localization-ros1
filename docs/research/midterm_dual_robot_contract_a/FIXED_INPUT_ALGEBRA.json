@@ -1,0 +1,119 @@
+{
+  "count": 16,
+  "passed": 16,
+  "search_calls": 0,
+  "rows": [
+    {
+      "case_id": "normal_b0_zero",
+      "kind": "evaluation_only_truth_point_upper_bound_NOT_search",
+      "lower": "0",
+      "upper": "0",
+      "passed": true
+    },
+    {
+      "case_id": "normal_b0_direction",
+      "kind": "evaluation_only_truth_point_upper_bound_NOT_search",
+      "lower": "4799999999999999999999999999820000000000000000000000000003/800000000000000000000000000000000000000000000000000000000",
+      "upper": "6",
+      "passed": true
+    },
+    {
+      "case_id": "normal_b6_zero",
+      "kind": "evaluation_only_truth_point_upper_bound_NOT_search",
+      "lower": "0",
+      "upper": "0",
+      "passed": true
+    },
+    {
+      "case_id": "normal_b6_direction",
+      "kind": "evaluation_only_truth_point_upper_bound_NOT_search",
+      "lower": "4799999999999999999999999999820000000000000000000000000003/800000000000000000000000000000000000000000000000000000000",
+      "upper": "6",
+      "passed": true
+    },
+    {
+      "case_id": "near_collinear_b0_zero",
+      "kind": "evaluation_only_truth_point_upper_bound_NOT_search",
+      "lower": "0",
+      "upper": "0",
+      "passed": true
+    },
+    {
+      "case_id": "near_collinear_b0_direction",
+      "kind": "evaluation_only_truth_point_upper_bound_NOT_search",
+      "lower": "9599999999999999999999999999560000000000000000000000000007/1600000000000000000000000000000000000000000000000000000000",
+      "upper": "6",
+      "passed": true
+    },
+    {
+      "case_id": "near_collinear_b6_zero",
+      "kind": "evaluation_only_truth_point_upper_bound_NOT_search",
+      "lower": "0",
+      "upper": "0",
+      "passed": true
+    },
+    {
+      "case_id": "near_collinear_b6_direction",
+      "kind": "evaluation_only_truth_point_upper_bound_NOT_search",
+      "lower": "9599999999999999999999999999560000000000000000000000000007/1600000000000000000000000000000000000000000000000000000000",
+      "upper": "6",
+      "passed": true
+    },
+    {
+      "case_id": "collinear_b0_zero",
+      "kind": "evaluation_only_truth_point_upper_bound_NOT_search",
+      "lower": "0",
+      "upper": "0",
+      "passed": true
+    },
+    {
+      "case_id": "collinear_b0_direction",
+      "kind": "evaluation_only_truth_point_upper_bound_NOT_search",
+      "lower": "9599999999999999999999999999560000000000000000000000000007/1600000000000000000000000000000000000000000000000000000000",
+      "upper": "6",
+      "passed": true
+    },
+    {
+      "case_id": "collinear_b6_zero",
+      "kind": "evaluation_only_truth_point_upper_bound_NOT_search",
+      "lower": "0",
+      "upper": "0",
+      "passed": true
+    },
+    {
+      "case_id": "collinear_b6_direction",
+      "kind": "evaluation_only_truth_point_upper_bound_NOT_search",
+      "lower": "9599999999999999999999999999560000000000000000000000000007/1600000000000000000000000000000000000000000000000000000000",
+      "upper": "6",
+      "passed": true
+    },
+    {
+      "case_id": "empty_in_domain",
+      "kind": "whole_domain_empty_lower_bound",
+      "lower": "7490275190585257936567382907565816031503330028704385528672033241/1600000000000000000000000000000000000000000000000000000000",
+      "upper": "668204881814287230539801355761918431955649340515601098977702837/100000000000000000000000000000000000000000000000000000000",
+      "passed": true
+    },
+    {
+      "case_id": "domain_closed_contact",
+      "kind": "evaluation_only_truth_point_upper_bound_NOT_search",
+      "lower": "0",
+      "upper": "0",
+      "passed": true
+    },
+    {
+      "case_id": "coincident_zero_distance",
+      "kind": "evaluation_only_truth_point_upper_bound_NOT_search",
+      "lower": "0",
+      "upper": "0",
+      "passed": true
+    },
+    {
+      "case_id": "forced_budget",
+      "kind": "evaluation_only_truth_point_upper_bound_NOT_search",
+      "lower": "0",
+      "upper": "0",
+      "passed": true
+    }
+  ]
+}
