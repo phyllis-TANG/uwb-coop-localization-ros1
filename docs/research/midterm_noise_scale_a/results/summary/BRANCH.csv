@@ -1,0 +1,13 @@
+condition,geometry,mechanism,sigma,noise_scale,method,planned_seeds,original_accepted,selected_available,at_least_two_accepted_candidates,multiple_accepted_groups,near_cost_distinct_position_seeds,stable_all_five_seeds,changed_initialization,planned_configurations,additional_initialization_nfev
+n00,good,fixed_correct,0.5,1.0,B2,40,40,40,40,0,0,40,33,200,1640
+n00,good,fixed_correct,0.5,1.0,B3,40,40,40,40,0,0,40,31,200,1722
+n01,good,fixed_correct,0.5,0.5,B2,40,36,40,40,0,0,29,31,200,1622
+n01,good,fixed_correct,0.5,0.5,B3,40,37,40,40,0,0,35,32,200,1600
+n02,good,fixed_correct,0.5,0.25,B2,40,37,40,40,0,0,18,29,200,1668
+n02,good,fixed_correct,0.5,0.25,B3,40,36,40,40,0,0,28,29,200,1728
+n03,weak,fixed_correct,0.5,1.0,B2,40,40,40,40,24,2,15,35,200,5348
+n03,weak,fixed_correct,0.5,1.0,B3,40,40,40,40,21,2,19,30,200,6636
+n04,weak,fixed_correct,0.5,0.5,B2,40,34,40,40,25,3,9,30,200,4950
+n04,weak,fixed_correct,0.5,0.5,B3,40,39,40,40,25,4,12,32,200,6468
+n05,weak,fixed_correct,0.5,0.25,B2,40,31,40,40,26,5,5,31,200,5083
+n05,weak,fixed_correct,0.5,0.25,B3,40,38,40,39,25,4,5,32,200,6683
