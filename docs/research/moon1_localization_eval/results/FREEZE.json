@@ -1,0 +1,138 @@
+{
+  "commit": "e235299f804207421a6713bae25a2c39aa420b01",
+  "source_sha256": {
+    "tools/moon1_localization_eval/generate.py": "f3c4e2516d4a0d2660f9dbe84da4dad40fe39d41134a3e6336077415711468ed",
+    "tools/moon1_localization_eval/solve.py": "51de767f1289077bfb8b17ba7878e4e1aa132e87c58912a29aefd4f9109312d3",
+    "tools/moon1_localization_eval/common.py": "69596f22183bf7aa886770d0f5496cc09b82a8dd7e3734c8af2b17e7ec401e48",
+    "tools/moon1_localization_eval/readback.py": "e43808e9fdea4a774ef8c25e6333b4b6b2fd403d51c14a93e12d0d727a5defc2",
+    "tools/moon1_localization_eval/model.py": "f46f2876ed6f31c238d362a0365ec323206207af4bb184fd3c9e77730f5fd935",
+    "tools/moon1_localization_eval/batch.py": "62e0b0a722ef2ff4bcd922cf356beb5166f9bc44913d678c00665b13cec8131f",
+    "tools/moon1_localization_eval/checks.py": "f261ce466443bb9a5aa4abc53d4fd7f387621de0daea21ca7982916ea8c2ca16",
+    "docs/research/moon1_localization_eval/CONFIG.json": "fb28de46f0b96e5dcc907ee6df688443188798b2bed3e92936c1835278cfed72",
+    "docs/research/moon1_localization_eval/SOLVER.json": "a592499e4c866fd31ce4621b2ec2d54e6e2bb65450a5f0bbaa3c7fdabe9499c3",
+    "docs/research/moon1_localization_eval/INPUT_PROTOCOL.md": "e37a504a27988b1f7b98b9e1ec6e208c7bd970f9d99059a67a33874d9d5716de",
+    "tools/midterm_simulation_s2/prototype.py": "e82f407dd45947d1f63aaa91ca1ed6c348cc26a581c6f721d57f784a0aa89c93",
+    "tools/midterm_simulation_phase1/identifiability.py": "cd22ed371ee574e99a7945674a205ce264a68f36acedd6ec52a726ad44f0280c",
+    "sim/isaac_lab/moon1/antenna_geometry.py": "71dbaefae2a54a5def6311ac656db5b904b640684aa06adb63cfe4d0bbcf5712"
+  },
+  "config": {
+    "base_commit": "d5bf9c1c7127e71bf6eb30f9a5b807952c810e53",
+    "pr114_commit": "4a81bbc582d2e059759b2a89201d8edbcd1a75cc",
+    "plan_commit": "b31789444b04792df58dd78d11a906804eed95a2",
+    "window_starts_s": [
+      0,
+      8,
+      16
+    ],
+    "epochs": 6,
+    "dt_s": 0.2,
+    "anchors_xyz_m": [
+      [
+        -5,
+        -12,
+        1.16
+      ],
+      [
+        -5,
+        12,
+        1.16
+      ],
+      [
+        55,
+        -12,
+        1.16
+      ],
+      [
+        55,
+        12,
+        1.16
+      ]
+    ],
+    "range_sigma_m": 0.04,
+    "motion_sigma_m": 0.02,
+    "prior_sigma_m": 0.5,
+    "height_mode": "height-oracle_world_vertical_1.16m",
+    "prior_mechanism": "independent_correct_gaussian_center",
+    "initialization_offset_m": [
+      0.2,
+      -0.15,
+      -0.2,
+      0.15
+    ],
+    "seeds": [
+      911170101,
+      911170102,
+      911170103,
+      911170104,
+      911170105
+    ],
+    "rng": "PCG64 SeedSequence([seed, window_index, stream]); streams range=0 motion=1 prior=2",
+    "conditions": [
+      {
+        "id": "normal",
+        "car2_motion_multiplier": 1,
+        "peer_bias_m": 0
+      },
+      {
+        "id": "motion5",
+        "car2_motion_multiplier": 5,
+        "peer_bias_m": 0
+      },
+      {
+        "id": "bias03",
+        "car2_motion_multiplier": 1,
+        "peer_bias_m": 0.3
+      },
+      {
+        "id": "both",
+        "car2_motion_multiplier": 5,
+        "peer_bias_m": 0.3
+      }
+    ],
+    "methods": [
+      "M0",
+      "M1",
+      "M2"
+    ],
+    "peer_direction": "one car1-to-car2 observation per epoch; no reciprocal duplicate",
+    "max_noisy_method_runs": 180,
+    "formal_runs": 0
+  },
+  "solver_config": {
+    "max_nfev": 300,
+    "ftol": 1e-12,
+    "xtol": 1e-12,
+    "gtol": 1e-10,
+    "accepted_gradient_inf": 1e-05,
+    "rank_relative_tolerance": 1e-08,
+    "position_scale_m": 1.0,
+    "bias_scale_m": 0.1,
+    "loss": "linear"
+  },
+  "acceptance_sha256": "e0f1b232cc0373b45e7340e6901f3e47b9f626168ca11bc56d020223cfa9a938",
+  "asset": {
+    "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/scene/moon1_scene.npz",
+    "sha256": "ac283d70505a5c1f4869dbb7be84af88041de2d74bf56dcfc2360bcb513de97f",
+    "bytes": 114428,
+    "pr114_commit": "4a81bbc582d2e059759b2a89201d8edbcd1a75cc",
+    "source_receipt_sha256": "241e3f164c858f5dc457f864e759fa371c8c8f7dbbb481e25fb3052f8f602579"
+  },
+  "argv": [
+    "tools/moon1_localization_eval/batch.py",
+    "--scene",
+    "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/scene/moon1_scene.npz",
+    "--out",
+    "/home/ubuntu22/uwb-moon1-localization-interface-artifacts/batch001",
+    "--acceptance",
+    "/home/ubuntu22/uwb-moon1-localization-interface-artifacts/acceptance001/ACCEPTANCE.json",
+    "--freeze",
+    "e235299f804207421a6713bae25a2c39aa420b01"
+  ],
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.9"
+  },
+  "scope": "smoke, not formal coverage confirmation"
+}
