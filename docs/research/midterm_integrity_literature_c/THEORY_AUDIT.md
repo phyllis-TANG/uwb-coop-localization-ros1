@@ -22,7 +22,10 @@
 写白化残差和目标为
 
 $$
-r=\begin{bmatrix}r_d(x;y)\$Ex-c)/\sigma_p\end{bmatrix},\quad
+r=\begin{bmatrix}
+r_d(x;y)\\
+(Ex-c)/\sigma_p
+\end{bmatrix},\quad
 \Phi=\tfrac12r^Tr,\quad J=\begin{bmatrix}A\\L\end{bmatrix},\ L=E/\sigma_p.
 $$
 
