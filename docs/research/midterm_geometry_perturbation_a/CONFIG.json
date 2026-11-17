@@ -1,0 +1,91 @@
+{
+  "source_sha": "b340f6bd05a97ac3f80ea4796d4c317114f508a8",
+  "geometries": [
+    "weak"
+  ],
+  "perturbations_m": [
+    0.0,
+    0.1,
+    0.5
+  ],
+  "anchor_signs": [
+    -1,
+    1,
+    -1,
+    1
+  ],
+  "methods": [
+    "B2",
+    "B3"
+  ],
+  "initializations": [
+    "I0",
+    "I1",
+    "I2",
+    "I3",
+    "I4"
+  ],
+  "seeds": [
+    301118001,
+    301118002,
+    301118003,
+    301118004,
+    301118005,
+    301118006,
+    301118007,
+    301118008,
+    301118009,
+    301118010,
+    301118011,
+    301118012,
+    301118013,
+    301118014,
+    301118015,
+    301118016,
+    301118017,
+    301118018,
+    301118019,
+    301118020,
+    301118021,
+    301118022,
+    301118023,
+    301118024,
+    301118025,
+    301118026,
+    301118027,
+    301118028,
+    301118029,
+    301118030,
+    301118031,
+    301118032,
+    301118033,
+    301118034,
+    301118035,
+    301118036,
+    301118037,
+    301118038,
+    301118039,
+    301118040
+  ],
+  "development_seeds": [
+    26011601
+  ],
+  "prior_sigma": 0.5,
+  "bias_m": 0.3,
+  "motion": "static",
+  "kind": "peer",
+  "range_sigma": 0.04,
+  "motion_sigma": 0.02,
+  "prior_mechanism": "fixed_correct",
+  "expected_inputs": 120,
+  "expected_configurations": 1200,
+  "formal_optimizer_call_limit": 2400,
+  "development_optimizer_call_limit": 60,
+  "bootstrap_seed": 91327067,
+  "bootstrap_repetitions": 10000,
+  "minimum_valid_seeds": 30,
+  "maximum_missing_fraction": 0.1,
+  "weak_eigenvalue_rtol": 0.001,
+  "group_rule_source": "PR112/PR115 unchanged",
+  "primary_contrast": "B2: .50m-minus-0; multiple accepted groups and selected-group point coverage95 per car"
+}
