@@ -1,0 +1,42 @@
+{
+  "frozen_files_all_unchanged": true,
+  "portable_delivery_audit": {
+    "categories": {
+      "nonlinear": {
+        "ACCEPTED": 14335,
+        "NOT_STATIONARY": 65
+      },
+      "truth_linearized": {
+        "DIRECT_ACCEPTED": 14400
+      }
+    },
+    "completed": {
+      "nonlinear": 14400,
+      "truth_linearized": 14400
+    },
+    "inputs": 3600,
+    "max_gradient_diff": 2.6929569685307797e-12,
+    "max_jacobian_diff": 0.0,
+    "max_linear_identity_diff": 2.220446049250313e-16,
+    "max_metric_diff": 8.881784197001252e-16,
+    "max_residual_diff": 0.0,
+    "missing_stages": 0,
+    "optimizer_calls": 0,
+    "passed": true,
+    "planned_methods_each": 14400,
+    "stages": 43200,
+    "usable_stages": 43200
+  },
+  "summary": {
+    "all_denominators_valid": true,
+    "moment_identity_checked": true,
+    "optimizer_calls": 0,
+    "passed": true,
+    "seed_clusters": 100
+  },
+  "coverage_rows": 55296,
+  "sha256_manifest_excludes_itself": true,
+  "read_only_io_acceleration_verified_cells": 1597920,
+  "full_range_scatter_includes_all_conditions": true,
+  "scope": "only new tools/docs prior mechanism directories; no old source/result changes"
+}

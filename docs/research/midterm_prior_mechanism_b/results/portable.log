@@ -1,0 +1,13 @@
+readback 300
+readback 600
+readback 900
+readback 1200
+readback 1500
+readback 1800
+readback 2100
+readback 2400
+readback 2700
+readback 3000
+readback 3300
+readback 3600
+{'optimizer_calls': 0, 'inputs': 3600, 'stages': 43200, 'usable_stages': 43200, 'missing_stages': 0, 'max_residual_diff': 0.0, 'max_jacobian_diff': 0.0, 'max_gradient_diff': 2.6929569685307797e-12, 'max_metric_diff': 8.881784197001252e-16, 'max_linear_identity_diff': 2.220446049250313e-16, 'passed': True, 'planned_methods_each': 14400, 'completed': {'nonlinear': 14400, 'truth_linearized': 14400}, 'categories': {'nonlinear': {'ACCEPTED': 14335, 'NOT_STATIONARY': 65}, 'truth_linearized': {'DIRECT_ACCEPTED': 14400}}}
