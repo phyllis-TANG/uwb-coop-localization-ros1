@@ -1,0 +1,41 @@
+{
+  "source_commit": "704842930f78da60836c7cf56d7a4fdb71b4aa39",
+  "source_archive": "docs/research/midterm_prior_propagation_b/results/EVIDENCE.jsonl.gz",
+  "source_sha256": "9edcbc0866ee1a8d5b71fcfc98b8aef5e9941b3c24dcf1b6e1a577b2c5176fd2",
+  "rho_m": [
+    0,
+    0.01,
+    0.05
+  ],
+  "confidence": 0.95,
+  "views": [
+    "endpoint_GN",
+    "endpoint_exact",
+    "oracle_truth_GN"
+  ],
+  "expected": {
+    "pair_records": 2160,
+    "unique_method_endpoints": 3360,
+    "paired_inputs": 1680
+  },
+  "rank_relative": 1e-08,
+  "hessian_relative_floor": 1e-12,
+  "hessian_absolute_floor": 1e-12,
+  "marginal_relative_floor": 1e-10,
+  "position_scale": 1.0,
+  "bias_scale": 0.1,
+  "bootstrap": {
+    "seed": 91327066,
+    "repetitions": 2000,
+    "confidence": 0.95,
+    "minimum_valid_seeds": 10,
+    "minimum_valid_fraction": 0.9
+  },
+  "versions": {
+    "python": "3.10.12",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  },
+  "formal_runs": 0,
+  "real_optimizer_calls": 0
+}
