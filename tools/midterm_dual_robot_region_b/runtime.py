@@ -6,6 +6,8 @@ def utc():return datetime.datetime.now(datetime.timezone.utc).isoformat()
 def formal_context(freeze):
  lock=read(DOC/'SOURCE_LOCK.json')
  if lock.get('status')!='LOCKED':raise RuntimeError('A_SOURCE_NOT_LOCKED')
+ lock=dict(lock)
+ if os.environ.get('DUAL_A_SOURCE_ROOT'):lock['source_root']=os.environ['DUAL_A_SOURCE_ROOT']
  manifest=read(DOC/'FREEZE_MANIFEST.json')
  for p,h in manifest['files'].items():
   if sha(ROOT/p)!=h:raise RuntimeError('FROZEN_FILE_CHANGED:'+p)

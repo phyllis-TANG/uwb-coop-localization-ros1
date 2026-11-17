@@ -29,6 +29,9 @@ def run(job,out):
   ev=record['evaluation']
   if ev['truth_in_declared_domain'] and ev['noise_event'] and ev['noise_event']['holds'] and not ev['finite_joint_outer_contains']:raise AssertionError('NOISE_EVENT_TRUE_POSITION_EXCLUDED')
   if ev['truth_in_declared_domain'] and ev['exact_joint_position_feasibility']=='FEASIBLE_PROVED' and not ev['finite_joint_outer_contains']:raise AssertionError('EXACT_FEASIBLE_POSITION_EXCLUDED')
+  if ev.get('simultaneous_mirror') and ev['noise_event'] and ev['noise_event']['holds'] and not ev['simultaneous_mirror']['finite_joint_outer_contains']:raise AssertionError('SIMULTANEOUS_MIRROR_EXCLUDED')
+  if case['id']=='empty_in_domain' and not r['empty_proved']:raise AssertionError('EXPECTED_EMPTY_NOT_PROVED')
+  if case['id']=='forced_budget' and not r['queue']:raise AssertionError('FORCED_BUDGET_QUEUE_MISSING')
   status='DEVELOPMENT_COMPLETE' if job.get('development') else 'COMPLETED';record['status']=status;checkpoint()
  except (Exception,MemoryError) as e:
   error=type(e).__name__+': '+str(e);status='TOTAL_BUDGET' if isinstance(e,FullBudget) else 'MEMORY_FAILURE' if isinstance(e,MemoryError) else 'FAILED'

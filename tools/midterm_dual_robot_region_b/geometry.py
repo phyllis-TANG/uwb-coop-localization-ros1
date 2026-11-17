@@ -47,4 +47,7 @@ def evaluate(m,method,s,r,e):
  in_domain=all(F(a)<=F(x)<=F(b) for x,(a,b) in zip(pos,m['domain'])) and (method=='N4' or F(m['bias_domain'][0])<=F(e['truth'][4])<=F(m['bias_domain'][1]))
  joint=contains(r,pos)
  cars={car:any(all(a<=F(x)<=b for x,(a,b) in zip(pos[o:o+2],unpack(n['box'])[o:o+2])) for n in retained(r)) for car,o in [('p',0),('s',2)]}
- return dict(truth_in_declared_domain=in_domain,noise_event=event,exact_joint_position_feasibility=status,bias_recovery=bias,finite_joint_outer_contains=joint,finite_car_projection_contains=cars)
+ mirror=None
+ if e.get('geometry')=='collinear':
+  mirrored=[str(F(pos[0])),str(-F(pos[1])),str(F(pos[2])),str(-F(pos[3]))];mirror={'point':mirrored,'finite_joint_outer_contains':contains(r,mirrored)}
+ return dict(simultaneous_mirror=mirror,truth_in_declared_domain=in_domain,noise_event=event,exact_joint_position_feasibility=status,bias_recovery=bias,finite_joint_outer_contains=joint,finite_car_projection_contains=cars)

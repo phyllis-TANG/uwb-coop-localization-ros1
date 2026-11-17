@@ -1,10 +1,18 @@
 """Dimension-general certified box search. No evaluation truth is accepted."""
 import resource,time
+from math import isqrt
 from collections import deque,Counter
 from common import I,validate
 D=I.D
 
-def distance(a,b):return I.sqrt(I.add(I.square(I.sub(a[0],b[0])),I.square(I.sub(a[1],b[1]))))
+def certified_sqrt28(interval):
+ out=[];scale=10**28
+ for upper,x in enumerate(interval):
+  n,d=x.as_integer_ratio();k=isqrt(n*scale*scale//d)
+  if upper and k*k*d!=n*scale*scale:k+=1
+  out.append(D((0,tuple(map(int,str(k))),-28)))
+ return tuple(out)
+def distance(a,b):return certified_sqrt28(I.add(I.square(I.sub(a[0],b[0])),I.square(I.sub(a[1],b[1]))))
 def gap(t,l,u):
  lo=max(D(0),I.LO.subtract(l[0],t[1]),I.LO.subtract(t[0],u[1]))
  hi=max(D(0),I.HI.subtract(l[1],t[0]),I.HI.subtract(t[1],u[0]))
@@ -15,13 +23,13 @@ def predictions(box,m):
 class BoundEvaluator:
  def __init__(self,m,method):
   from functools import lru_cache
-  self.m=m;self.method=method
+  self.m=m;self.method=method;self.distance_evaluations=0
   anchors=[tuple(I.point(x) for x in a) for a in m['anchors']]
   obs=[tuple(map(I.point,y)) for y in m['observations']]
   variances=[I.point(m['R'][j][j]) for j in range(9)]
   @lru_cache(maxsize=8192)
   def anchor_sum(part,offset):
-   total=I.point('0')
+   total=I.point('0');self.distance_evaluations+=4
    for k,a in enumerate(anchors):
     j=offset+k;d=distance(part,a);l,u=obs[j]
     total=I.add(total,I.divpos(gap(d,l,u),variances[j]))
@@ -30,7 +38,7 @@ class BoundEvaluator:
  def __call__(self,box):
   total=I.add(self.anchor_sum(box[:2],0),self.anchor_sum(box[2:4],4))
   if self.method=='N4':return total
-  d=distance(box[:2],box[2:4]);l,u=self.obs[8]
+  self.distance_evaluations+=1;d=distance(box[:2],box[2:4]);l,u=self.obs[8]
   if self.method=='J5':term=I.square(I.sub((l[0],u[1]),I.add(d,box[4])))
   else:
    l=I.sub(l,I.point(self.m['bias_domain'][1]));u=I.sub(u,I.point(self.m['bias_domain'][0]));term=gap(d,l,u)
@@ -68,4 +76,4 @@ def solve(m,method,s,thresholds,clock=time.monotonic):
  pending=[p for p,b in queue]
  for path,b in queue:nodes.append(dict(path=path,box=I.encode(b),status='PENDING'))
  kept=[n for n in nodes if n['status'] not in ('OUTSIDE','SPLIT')]
- return dict(nodes=nodes,processed=n,search_seconds=clock()-start,termination=termination,failure=failure,counts=dict(Counter(n['status'] for n in nodes)),queue=pending,empty_proved=not kept,dimension=len(box))
+ return dict(nodes=nodes,processed=n,search_seconds=clock()-start,termination=termination,failure=failure,counts=dict(Counter(n['status'] for n in nodes)),queue=pending,empty_proved=not kept,dimension=len(box),distance_evaluations=evaluate_bound.distance_evaluations)
