@@ -1,0 +1,42 @@
+{
+  "id": "T17",
+  "status": "PASS",
+  "classification": "IDENTITY_OR_BOUND_VERIFIED",
+  "criterion": "有理Cholesky直接白化等于R逆二次型，维数仍2",
+  "inputs": {
+    "L": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "3/5",
+        "4/5"
+      ]
+    ],
+    "R": [
+      [
+        "1",
+        "3/5"
+      ],
+      [
+        "3/5",
+        "1"
+      ]
+    ],
+    "e": [
+      "1",
+      "-1"
+    ],
+    "measurement_dimension": 2
+  },
+  "output": {
+    "whitened_noise": [
+      "1",
+      "-2"
+    ],
+    "score": "5",
+    "noise_degrees_of_freedom": 2,
+    "not_fitted_residual_df": true
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "T11",
+  "status": "PASS",
+  "classification": "COUNTEREXAMPLE_CONFIRMED",
+  "criterion": "复制同一观测不使真实方差减半；解析覆盖下降",
+  "inputs": {
+    "single_variance": "1",
+    "copies": 2,
+    "single_radius": "2",
+    "epsilon_witness": "3/2"
+  },
+  "output": {
+    "true_fused_variance": "1",
+    "wrong_independence_variance": "1/2",
+    "single_coverage_erf": 0.9544997361036416,
+    "duplicate_claim_region_true_coverage_erf": 0.8427007929497149,
+    "coverage_values_are_analytic_display_not_tail_certificates": true,
+    "duplicated_covariance_status": "R_NOT_POSITIVE_DEFINITE"
+  }
+}

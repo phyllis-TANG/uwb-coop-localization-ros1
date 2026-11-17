@@ -1,0 +1,573 @@
+[
+  {
+    "id": "T01",
+    "status": "PASS",
+    "classification": "IDENTITY_OR_BOUND_VERIFIED",
+    "criterion": "S={s0}使距离范围精确退化回A0",
+    "inputs": {
+      "d": "5",
+      "rho": "0"
+    },
+    "output": {
+      "distance_interval": [
+        "5",
+        "5"
+      ],
+      "A0_exact": true
+    }
+  },
+  {
+    "id": "T02",
+    "status": "PASS",
+    "classification": "IDENTITY_OR_BOUND_VERIFIED",
+    "criterion": "球边界朝向/背向达到距离像端点",
+    "inputs": {
+      "p": [
+        "3",
+        "4"
+      ],
+      "s0": [
+        "0",
+        "0"
+      ],
+      "rho": "1",
+      "near": [
+        "3/5",
+        "4/5"
+      ],
+      "far": [
+        "-3/5",
+        "-4/5"
+      ]
+    },
+    "output": {
+      "distance_interval": [
+        "4",
+        "6"
+      ],
+      "near_squared_distance": "16",
+      "far_squared_distance": "36"
+    }
+  },
+  {
+    "id": "T03",
+    "status": "PASS",
+    "classification": "IDENTITY_OR_BOUND_VERIFIED",
+    "criterion": "平行参考误差达到逆三角上界",
+    "inputs": {
+      "p": [
+        "3",
+        "4"
+      ],
+      "s": [
+        "3/5",
+        "4/5"
+      ],
+      "rho": "1"
+    },
+    "output": {
+      "range_shift": "-1",
+      "lipschitz_bound_attained": true
+    }
+  },
+  {
+    "id": "T04",
+    "status": "PASS",
+    "classification": "IDENTITY_OR_BOUND_VERIFIED",
+    "criterion": "垂直误差距离平方26，变化小于rho而不等于零",
+    "inputs": {
+      "p": [
+        "3",
+        "4"
+      ],
+      "s": [
+        "-4/5",
+        "3/5"
+      ],
+      "rho": "1",
+      "nominal_distance": "5"
+    },
+    "output": {
+      "distance_squared": "26",
+      "shift_interval": [
+        "49509756796392415014112054511/500000000000000000000000000000",
+        "99019513592784830028224109023/1000000000000000000000000000000"
+      ],
+      "first_order_prediction": "0",
+      "nonlinear_shift_nonzero": true
+    }
+  },
+  {
+    "id": "T05",
+    "status": "PASS",
+    "classification": "IDENTITY_OR_BOUND_VERIFIED",
+    "criterion": "零/近零距离下非负下界及Lipschitz仍成立，无Jacobian",
+    "inputs": {
+      "d": "0",
+      "near_d": "1/1000000",
+      "rho": "1/10"
+    },
+    "output": {
+      "zero_distance_image": [
+        "0",
+        "1/10"
+      ],
+      "near_zero_image": [
+        "0",
+        "100001/1000000"
+      ],
+      "derivative_required": false
+    }
+  },
+  {
+    "id": "T06",
+    "status": "PASS",
+    "classification": "IDENTITY_OR_BOUND_VERIFIED",
+    "criterion": "b与参考误差同达边界，原b范围不够，松弛保留",
+    "inputs": {
+      "d": "2",
+      "rho": "1/10",
+      "b": [
+        "-3/5",
+        "3/5"
+      ]
+    },
+    "output": {
+      "prediction_interval": [
+        "13/10",
+        "27/10"
+      ],
+      "symmetric_relaxation": [
+        "13/10",
+        "27/10"
+      ],
+      "boundary_prediction": "27/10",
+      "old_unexpanded_upper": "13/5"
+    }
+  },
+  {
+    "id": "T07",
+    "status": "PASS",
+    "classification": "COUNTEREXAMPLE_CONFIRMED",
+    "criterion": "联合变化(u,-u)，独立盒包含不可实现(1,1)",
+    "inputs": {
+      "p1": [
+        "-2",
+        "0"
+      ],
+      "p2": [
+        "2",
+        "0"
+      ],
+      "reference_u": [
+        "-1",
+        "1"
+      ],
+      "false_pair": [
+        "3",
+        "3"
+      ]
+    },
+    "output": {
+      "exact_relation": "range1+range2=4",
+      "feasible_witness": [
+        "3",
+        "1"
+      ],
+      "independent_box_false_witness": [
+        "3",
+        "3"
+      ],
+      "false_witness_excluded_by_shared_reference": true
+    }
+  },
+  {
+    "id": "T08",
+    "status": "PASS",
+    "classification": "COUNTEREXAMPLE_CONFIRMED",
+    "criterion": "单一扩宽β不能表示真实(1,-1)两行几何变化",
+    "inputs": {
+      "nominal": [
+        "2",
+        "2"
+      ],
+      "true_ranges": [
+        "3",
+        "1"
+      ],
+      "b": "0"
+    },
+    "output": {
+      "required_effective_biases": [
+        "1",
+        "-1"
+      ],
+      "single_shared_widened_bias_cannot_represent_truth": true
+    }
+  },
+  {
+    "id": "T09",
+    "status": "PASS",
+    "classification": "COUNTEREXAMPLE_CONFIRMED",
+    "criterion": "噪声为零不补偿真位置域外，域前提必要",
+    "inputs": {
+      "p": [
+        "7",
+        "0"
+      ],
+      "domain": [
+        [
+          "-6",
+          "6"
+        ],
+        [
+          "-6",
+          "6"
+        ]
+      ],
+      "noise": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    "output": {
+      "noise_event_score": "0",
+      "true_state_in_domain": false,
+      "domain_limited_set_excludes_truth": true
+    }
+  },
+  {
+    "id": "T10",
+    "status": "PASS",
+    "classification": "COUNTEREXAMPLE_CONFIRMED",
+    "criterion": "误用独立R令同一向量二次型2而真实20",
+    "inputs": {
+      "R": [
+        [
+          "1",
+          "9/10"
+        ],
+        [
+          "9/10",
+          "1"
+        ]
+      ],
+      "e": [
+        "1",
+        "-1"
+      ],
+      "tau": "6"
+    },
+    "output": {
+      "correct_correlated_score": "20",
+      "wrong_independent_score": "2",
+      "threshold": "6",
+      "wrong_event_accepts_outside_true_noise_event": true
+    }
+  },
+  {
+    "id": "T11",
+    "status": "PASS",
+    "classification": "COUNTEREXAMPLE_CONFIRMED",
+    "criterion": "复制同一观测不使真实方差减半；解析覆盖下降",
+    "inputs": {
+      "single_variance": "1",
+      "copies": 2,
+      "single_radius": "2",
+      "epsilon_witness": "3/2"
+    },
+    "output": {
+      "true_fused_variance": "1",
+      "wrong_independence_variance": "1/2",
+      "single_coverage_erf": 0.9544997361036416,
+      "duplicate_claim_region_true_coverage_erf": 0.8427007929497149,
+      "coverage_values_are_analytic_display_not_tail_certificates": true,
+      "duplicated_covariance_status": "R_NOT_POSITIVE_DEFINITE"
+    }
+  },
+  {
+    "id": "T12",
+    "status": "PASS",
+    "classification": "COUNTEREXAMPLE_CONFIRMED",
+    "criterion": "不相交失包含事件给并集界紧例，不可相乘",
+    "inputs": {
+      "atoms": 100,
+      "reference_fail": [
+        0,
+        1
+      ],
+      "noise_fail": [
+        2,
+        3,
+        4
+      ]
+    },
+    "output": {
+      "alpha_reference": "1/50",
+      "alpha_noise": "3/100",
+      "actual_joint_inclusion": "19/20",
+      "valid_union_lower_bound": "19/20",
+      "invalid_product_claim": "4753/5000",
+      "shared_probability_space_atoms": 100,
+      "enumeration_not_monte_carlo": true
+    }
+  },
+  {
+    "id": "T13",
+    "status": "PASS",
+    "classification": "IDENTITY_OR_BOUND_VERIFIED",
+    "criterion": "m/mm统一变换距离、b、sigma、R，白化二次型不变",
+    "inputs": {
+      "scale": "1000",
+      "d": "2",
+      "rho": "1/10",
+      "b": [
+        "-3/5",
+        "3/5"
+      ],
+      "R": [
+        [
+          "1",
+          "3/5"
+        ],
+        [
+          "3/5",
+          "1"
+        ]
+      ],
+      "e": [
+        "1",
+        "-1"
+      ]
+    },
+    "output": {
+      "score_m": "5",
+      "score_mm": "5",
+      "range_m": [
+        "13/10",
+        "27/10"
+      ],
+      "range_mm": [
+        "1300",
+        "2700"
+      ]
+    }
+  },
+  {
+    "id": "T14",
+    "status": "PASS",
+    "classification": "IDENTITY_OR_BOUND_VERIFIED",
+    "criterion": "有理正交旋转加平移保持距离像",
+    "inputs": {
+      "p": [
+        "3",
+        "4"
+      ],
+      "s": [
+        "-4/5",
+        "3/5"
+      ],
+      "Q": [
+        [
+          "3/5",
+          "-4/5"
+        ],
+        [
+          "4/5",
+          "3/5"
+        ]
+      ],
+      "translation": [
+        "7",
+        "-2"
+      ]
+    },
+    "output": {
+      "original_squared_distance": "26",
+      "transformed_squared_distance": "26",
+      "orthogonal_exact": true
+    }
+  },
+  {
+    "id": "T15",
+    "status": "PASS",
+    "classification": "COUNTEREXAMPLE_CONFIRMED",
+    "criterion": "负10锚点读数与非负距离严格不相容，域内空不等于零误差",
+    "inputs": {
+      "anchor_reading": "-10",
+      "sigma": "1/25",
+      "tau": "9.488"
+    },
+    "output": {
+      "one_anchor_global_score_lower_bound": "62500",
+      "threshold": "1186/125",
+      "status": "EMPTY_IN_DECLARED_DOMAIN",
+      "finite_error_radius": null
+    }
+  },
+  {
+    "id": "T16",
+    "status": "PASS",
+    "classification": "COUNTEREXAMPLE_CONFIRMED",
+    "criterion": "无锚点刚体自由度、共线镜像及距离-b混淆均保留",
+    "inputs": {
+      "p": [
+        "1",
+        "2"
+      ],
+      "s": [
+        "3",
+        "1"
+      ],
+      "translation": [
+        "5",
+        "7"
+      ],
+      "anchors": [
+        [
+          "-4",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ],
+        [
+          "4",
+          "0"
+        ]
+      ]
+    },
+    "output": {
+      "joint_translation_invariant": true,
+      "collinear_joint_reflection_invariant": true,
+      "distance_bias_ambiguity": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "1/2",
+          "1/2"
+        ]
+      ],
+      "unique_position_not_proved_by_row_count": true
+    }
+  },
+  {
+    "id": "T17",
+    "status": "PASS",
+    "classification": "IDENTITY_OR_BOUND_VERIFIED",
+    "criterion": "有理Cholesky直接白化等于R逆二次型，维数仍2",
+    "inputs": {
+      "L": [
+        [
+          "1",
+          "0"
+        ],
+        [
+          "3/5",
+          "4/5"
+        ]
+      ],
+      "R": [
+        [
+          "1",
+          "3/5"
+        ],
+        [
+          "3/5",
+          "1"
+        ]
+      ],
+      "e": [
+        "1",
+        "-1"
+      ],
+      "measurement_dimension": 2
+    },
+    "output": {
+      "whitened_noise": [
+        "1",
+        "-2"
+      ],
+      "score": "5",
+      "noise_degrees_of_freedom": 2,
+      "not_fitted_residual_df": true
+    }
+  },
+  {
+    "id": "T18",
+    "status": "PASS",
+    "classification": "COUNTEREXAMPLE_CONFIRMED",
+    "criterion": "固定共享b改变均值不产生随机中心方差，不等价相关噪声",
+    "inputs": {
+      "b": "3/10",
+      "sigma": "1/25",
+      "rows": 2,
+      "noise": [
+        "0",
+        "0"
+      ]
+    },
+    "output": {
+      "fixed_bias_mean": [
+        "3/10",
+        "3/10"
+      ],
+      "fixed_bias_covariance": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0"
+        ]
+      ],
+      "true_random_noise_score": "0",
+      "score_if_fixed_bias_misclassified_zero_mean_noise": "225/2"
+    }
+  },
+  {
+    "id": "T19",
+    "status": "PASS",
+    "classification": "COUNTEREXAMPLE_CONFIRMED",
+    "criterion": "同数据完全负相关时总方差0，忽略交叉项错误得到2",
+    "inputs": {
+      "R": "1",
+      "Q": "1",
+      "cross": "-1",
+      "H": "1"
+    },
+    "output": {
+      "true_total_variance": "0",
+      "wrong_no_cross_term_variance": "2",
+      "joint_model": "epsilon=Z, delta_s=-Z, Var(Z)=1; no sampling"
+    }
+  },
+  {
+    "id": "T20",
+    "status": "PASS",
+    "classification": "IDENTITY_OR_BOUND_VERIFIED",
+    "criterion": "χ²4精确有理尾上界和.02+.03联合预算，旧阈值不可仍称95%",
+    "inputs": {
+      "q_A0": "9.488",
+      "q_A2_example": "10.72",
+      "alpha_reference": "1/50",
+      "alpha_noise": "3/100",
+      "terms": 81
+    },
+    "output": {
+      "old_tail_upper": "232671502513604895055142466018827725630169624629002749917990259724280002792409919511044384846009255604123867784950775844774768250170109913072384500751452620037828888195294285701208991667954251170158386230468750000000000000000000000000000000000000000000000000000000000000000000000000000000/4653950773564489043538499768418899039677131647224818247230952391733781280792025427620745168032384590503056419806316965718607205657959780287624240231257482086143052437665961332411609122949977848815469998005831076065637961673278365881154780947056168817469803817144117998823137964962380304001",
+      "new_tail_upper": "153805217227219799250686617457255262857842973084486081723529087000210038016019528550517844720057671147281815065925969148626733263114985557637338941585170110115223852421950656577109839417971670627593994140625/5144372106654282719159101523472017312497743981526901871900101847479153217784628136426741842142856670195340801578232857865804043046907488666051914649339291512065152500024628686381222867122548112455117599672537",
+      "old_tau_plus_reference_lower": "216410012778979718380629365351584666662670969482565956618417154208741282619188749977864293991286382154443571181261992527973014664731523738439968546294043991219118125035867391003108397441151202033450110590762285227216260121990639928176584266405752272056020387040061781942333760283156634896049/232697538678224452176924988420944951983856582361240912361547619586689064039601271381037258401619229525152820990315848285930360282897989014381212011562874104307152621883298066620580456147498892440773499900291553803281898083663918294057739047352808440873490190857205899941156898248119015200050",
+      "allocated_tau_plus_reference_lower": "244383972364698863276261643777266085169497306440593887636928536176468005770645802257384458028997093282207608524037111577993061446142717666754676870738366778585431279880109272803824428518106273978921062676923063/257218605332714135957955076173600865624887199076345093595005092373957660889231406821337092107142833509767040078911642893290202152345374433302595732466964575603257625001231434319061143356127405622755879983626850",
+      "advertised_allocation_lower": "19/20",
+      "threshold_dimension": 4,
+      "terms": 81
+    }
+  }
+]

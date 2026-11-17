@@ -1,0 +1,17 @@
+{
+  "id": "T19",
+  "status": "PASS",
+  "classification": "COUNTEREXAMPLE_CONFIRMED",
+  "criterion": "同数据完全负相关时总方差0，忽略交叉项错误得到2",
+  "inputs": {
+    "R": "1",
+    "Q": "1",
+    "cross": "-1",
+    "H": "1"
+  },
+  "output": {
+    "true_total_variance": "0",
+    "wrong_no_cross_term_variance": "2",
+    "joint_model": "epsilon=Z, delta_s=-Z, Var(Z)=1; no sampling"
+  }
+}

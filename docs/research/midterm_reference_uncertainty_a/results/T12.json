@@ -1,0 +1,27 @@
+{
+  "id": "T12",
+  "status": "PASS",
+  "classification": "COUNTEREXAMPLE_CONFIRMED",
+  "criterion": "不相交失包含事件给并集界紧例，不可相乘",
+  "inputs": {
+    "atoms": 100,
+    "reference_fail": [
+      0,
+      1
+    ],
+    "noise_fail": [
+      2,
+      3,
+      4
+    ]
+  },
+  "output": {
+    "alpha_reference": "1/50",
+    "alpha_noise": "3/100",
+    "actual_joint_inclusion": "19/20",
+    "valid_union_lower_bound": "19/20",
+    "invalid_product_claim": "4753/5000",
+    "shared_probability_space_atoms": 100,
+    "enumeration_not_monte_carlo": true
+  }
+}

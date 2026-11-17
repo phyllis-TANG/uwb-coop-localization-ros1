@@ -1,0 +1,17 @@
+{
+  "id": "T15",
+  "status": "PASS",
+  "classification": "COUNTEREXAMPLE_CONFIRMED",
+  "criterion": "负10锚点读数与非负距离严格不相容，域内空不等于零误差",
+  "inputs": {
+    "anchor_reading": "-10",
+    "sigma": "1/25",
+    "tau": "9.488"
+  },
+  "output": {
+    "one_anchor_global_score_lower_bound": "62500",
+    "threshold": "1186/125",
+    "status": "EMPTY_IN_DECLARED_DOMAIN",
+    "finite_error_radius": null
+  }
+}

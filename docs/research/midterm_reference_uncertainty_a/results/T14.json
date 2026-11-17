@@ -1,0 +1,35 @@
+{
+  "id": "T14",
+  "status": "PASS",
+  "classification": "IDENTITY_OR_BOUND_VERIFIED",
+  "criterion": "有理正交旋转加平移保持距离像",
+  "inputs": {
+    "p": [
+      "3",
+      "4"
+    ],
+    "s": [
+      "-4/5",
+      "3/5"
+    ],
+    "Q": [
+      [
+        "3/5",
+        "-4/5"
+      ],
+      [
+        "4/5",
+        "3/5"
+      ]
+    ],
+    "translation": [
+      "7",
+      "-2"
+    ]
+  },
+  "output": {
+    "original_squared_distance": "26",
+    "transformed_squared_distance": "26",
+    "orthogonal_exact": true
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "T09",
+  "status": "PASS",
+  "classification": "COUNTEREXAMPLE_CONFIRMED",
+  "criterion": "噪声为零不补偿真位置域外，域前提必要",
+  "inputs": {
+    "p": [
+      "7",
+      "0"
+    ],
+    "domain": [
+      [
+        "-6",
+        "6"
+      ],
+      [
+        "-6",
+        "6"
+      ]
+    ],
+    "noise": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "output": {
+    "noise_event_score": "0",
+    "true_state_in_domain": false,
+    "domain_limited_set_excludes_truth": true
+  }
+}

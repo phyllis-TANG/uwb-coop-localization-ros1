@@ -1,0 +1,33 @@
+{
+  "id": "T02",
+  "status": "PASS",
+  "classification": "IDENTITY_OR_BOUND_VERIFIED",
+  "criterion": "球边界朝向/背向达到距离像端点",
+  "inputs": {
+    "p": [
+      "3",
+      "4"
+    ],
+    "s0": [
+      "0",
+      "0"
+    ],
+    "rho": "1",
+    "near": [
+      "3/5",
+      "4/5"
+    ],
+    "far": [
+      "-3/5",
+      "-4/5"
+    ]
+  },
+  "output": {
+    "distance_interval": [
+      "4",
+      "6"
+    ],
+    "near_squared_distance": "16",
+    "far_squared_distance": "36"
+  }
+}
