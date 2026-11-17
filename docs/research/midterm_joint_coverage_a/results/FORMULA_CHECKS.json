@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "optimizer_calls": 0,
+  "new_localization_inputs": 0,
+  "analytic_draws_per_case": 100000,
+  "seed": 88011701,
+  "AR_stationary_row_contract_checked": true,
+  "B0_selection_checked": true,
+  "rank_deficient_unavailable": true,
+  "cases": [
+    {
+      "case": "independent",
+      "covariance_relative_error": 0.006418935033926778,
+      "coverage95": 0.94927,
+      "analytic_coverage95": 0.95
+    },
+    {
+      "case": "wrong_prior",
+      "covariance_relative_error": 0.006418935033926916,
+      "coverage95": 0.89813,
+      "analytic_coverage95": 0.899269954928093
+    },
+    {
+      "case": "variance_mismatch",
+      "covariance_relative_error": 0.005740944758120429,
+      "coverage95": 0.93361,
+      "analytic_coverage95": 0.9338052075402729
+    },
+    {
+      "case": "time_correlation",
+      "covariance_relative_error": 0.004968444468943935,
+      "coverage95": 0.90232,
+      "analytic_coverage95": 0.9029992382164266
+    },
+    {
+      "case": "no_prior",
+      "covariance_relative_error": 0.006488593261858756,
+      "coverage95": 0.94927,
+      "analytic_coverage95": 0.95
+    }
+  ]
+}

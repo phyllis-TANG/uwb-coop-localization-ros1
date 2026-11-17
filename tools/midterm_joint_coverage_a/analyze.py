@@ -42,7 +42,8 @@ def main():
                 if ss['endpoint_valid']:
                     cat='ACCEPTED' if ss['accepted'] else 'BUDGET_EXHAUSTED' if ss['hit_budget'] else 'NOT_STATIONARY' if ss['gradient_inf']>1e-5 else 'SOLVER_STOP_FAILURE'
                     assert ss['category']==cat and ss['hit_budget']==(ss['scipy_status']==0)
-            base=dict(index=i,shard=number,batch=args.batch,unit=rec['unit'],**u['condition'],seed=u['seed'],method=m,accepted=s['accepted'],category=s['category'],usable=s['usable_estimate'],gradient_inf=s['gradient_inf'],cost=s['cost'],noise_model=u['condition'].get('noise_model','iid_004'))
+            base=dict(index=i,shard=number,batch=args.batch,unit=rec['unit'],**u['condition'],seed=u['seed'],method=m,accepted=s['accepted'],category=s['category'],usable=s['usable_estimate'],gradient_inf=s['gradient_inf'],cost=s['cost'])
+            base['noise_model']=u['condition'].get('noise_model','iid_004')
             if not s['usable_estimate']:
                 rows.append(dict(base,data_residual_rms=None,total_residual_rms=None,mse1=None,mse2=None,bias_eligible=False,bias_error=None));continue
             x=np.asarray(s['estimate']);nstate=25 if m=='B2' else 24;assert x.shape==(nstate,)

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/ubuntu22/uwb-midterm-joint-coverage-a/tools/midterm_joint_coverage_a/analyze.py", line 89, in <module>
+    if __name__=='__main__':main()
+  File "/home/ubuntu22/uwb-midterm-joint-coverage-a/tools/midterm_joint_coverage_a/analyze.py", line 45, in main
+    base=dict(index=i,shard=number,batch=args.batch,unit=rec['unit'],**u['condition'],seed=u['seed'],method=m,accepted=s['accepted'],category=s['category'],usable=s['usable_estimate'],gradient_inf=s['gradient_inf'],cost=s['cost'],noise_model=u['condition'].get('noise_model','iid_004'))
+TypeError: dict() got multiple values for keyword argument 'noise_model'

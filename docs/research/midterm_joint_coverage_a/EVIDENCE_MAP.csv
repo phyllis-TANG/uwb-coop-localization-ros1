@@ -1,0 +1,14 @@
+claim,evidence,selection,figure
+完整来源数量哈希,results/SOURCE_CHECKS.json,fault/noise独立配置计划源码分片,
+两批原数值状态保留,results/fault/summary/CHECKS.json;results/noise/summary/CHECKS.json,categories及source_stage_records,
+全部逐条件95和99覆盖,results/{batch}/summary/COVERAGE.csv.gz,all及三数值子集;逐时刻/点平均/轨迹,figures/{batch}/coverage_95.png;figures/{batch}/coverage_99.png
+故障类型差异,figures/fault/DESCRIPTIVE.csv,B2 A_total level=.95;12条件描述均值,figures/fault/coverage_95.png
+误差改善不等于覆盖充分,results/fault/summary/PAIRED.csv.gz,B2-B1;all;A_total;mse/point_coverage,
+噪声离线传播改善但不充分,results/noise/summary/PAIRED.csv.gz,C-B_iid;all;B2;level=.95,figures/noise/noise_explanations.png
+残余欠覆盖221/300,results/noise/summary/COVERAGE.csv.gz,n32 B2 C_true_noise car1 .95 all point_average,
+均值偏移与随机波动区别,results/fault/summary/MOMENTS.csv.gz,m28 B2 car1 C_true_noise六时刻,figures/fault/error_size.png
+偏差覆盖仅正确常值,results/{batch}/summary/BIAS_COVERAGE.csv.gz,bias_truth_defined;not_applicable;eligible_planned,
+残差关联只是描述性,results/{batch}/summary/ASSOCIATIONS.csv.gz,n30/n32 B2;residual_noncoverage_spearman,
+归一化误差最大案例,results/{batch}/summary/CASES.json,各故障或噪声类B2最大C q,
+独立计数及公式检查,results/FAULT_INDEPENDENT_CHECKS.json;results/NOISE_INDEPENDENT_CHECKS.json,每批110592覆盖行及1728偏差表,
+解析噪声先验秩亏检查,results/FORMULA_CHECKS.json,五种解析例和B0删行/AR平稳协方差,
