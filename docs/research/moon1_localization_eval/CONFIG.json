@@ -1,0 +1,21 @@
+{
+ "base_commit":"d5bf9c1c7127e71bf6eb30f9a5b807952c810e53",
+ "pr114_commit":"4a81bbc582d2e059759b2a89201d8edbcd1a75cc",
+ "plan_commit":"b31789444b04792df58dd78d11a906804eed95a2",
+ "window_starts_s":[0,8,16], "epochs":6, "dt_s":0.2,
+ "anchors_xyz_m":[[-5,-12,1.16],[-5,12,1.16],[55,-12,1.16],[55,12,1.16]],
+ "range_sigma_m":0.04,"motion_sigma_m":0.02,"prior_sigma_m":0.5,
+ "height_mode":"height-oracle_world_vertical_1.16m",
+ "prior_mechanism":"independent_correct_gaussian_center",
+ "initialization_offset_m":[0.2,-0.15,-0.2,0.15],
+ "seeds":[911170101,911170102,911170103,911170104,911170105],
+ "rng":"PCG64 SeedSequence([seed, window_index, stream]); streams range=0 motion=1 prior=2",
+ "conditions":[
+  {"id":"normal","car2_motion_multiplier":1,"peer_bias_m":0},
+  {"id":"motion5","car2_motion_multiplier":5,"peer_bias_m":0},
+  {"id":"bias03","car2_motion_multiplier":1,"peer_bias_m":0.3},
+  {"id":"both","car2_motion_multiplier":5,"peer_bias_m":0.3}
+ ],
+ "methods":["M0","M1","M2"],"peer_direction":"one car1-to-car2 observation per epoch; no reciprocal duplicate",
+ "max_noisy_method_runs":180,"formal_runs":0
+}
