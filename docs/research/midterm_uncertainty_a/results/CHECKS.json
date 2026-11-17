@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "methods": 7200,
+  "accepted": 7175,
+  "not_stationary": 25,
+  "optimizer_calls": 0,
+  "new_localization_observations": 0,
+  "max_cost_difference": 0.0,
+  "max_gradient_norm_difference": 0.0,
+  "prototype_crosscheck_cases": 144,
+  "max_prototype_difference": 0.0,
+  "max_schur_relative_difference": 2.3604919224844433e-12,
+  "max_noise_order_violation_relative": 6.271744536181787e-14,
+  "position_block_order": "t0.car1,t0.car2,...,t5.car2",
+  "covariance_component_order": [
+    "xx",
+    "xy",
+    "yy"
+  ],
+  "views": [
+    "total_curvature",
+    "fixed_prior_noise",
+    "data_only"
+  ]
+}
