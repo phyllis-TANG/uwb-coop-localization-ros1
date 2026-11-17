@@ -1,0 +1,34 @@
+{
+  "cpu_research_delivery_ready": true,
+  "independent_table_check_passed": true,
+  "all_planned_methods_executed": true,
+  "all_methods_numerically_accepted": false,
+  "isaac_execution_complete": false,
+  "dynamics_complete": false,
+  "freeze_sha": "9f7fb56d68b0f45394e7443159f0270fccb75426",
+  "windows": 3,
+  "independent_sequences": 1,
+  "lidar_frames": 10,
+  "inputs": 540,
+  "core_runs": 1920,
+  "sensitivity_runs": 240,
+  "development_runs": 96,
+  "evaluation_optimizer_calls": 4320,
+  "total_optimizer_calls": 4512,
+  "statuses": {
+    "ACCEPTED": 2123,
+    "BUDGET_EXHAUSTED": 0,
+    "FAILED": 0,
+    "INTERRUPTED": 0,
+    "NONFINITE": 0,
+    "NOT_STATIONARY": 37,
+    "RANK_DEFICIENT": 0,
+    "UNEXECUTED": 0
+  },
+  "archive": {
+    "path": "portable_results.tar.gz",
+    "bytes": 13713141,
+    "sha256": "e4b6d8ea68a0ebf1f70449bcd4a7337118c7cc7b65b8df7a732723c453359bf5"
+  },
+  "next_priority": "Explicit motion-error model and identifiability against peer trend; then independent synchronized calibration"
+}

@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "hashes_checked": 7624,
+  "planned": 2160,
+  "states": {
+    "ACCEPTED": 2123,
+    "NOT_STATIONARY": 37,
+    "BUDGET_EXHAUSTED": 0,
+    "RANK_DEFICIENT": 0,
+    "NONFINITE": 0,
+    "FAILED": 0,
+    "INTERRUPTED": 0,
+    "UNEXECUTED": 0
+  },
+  "optimizer_calls": 4320,
+  "metrics_recomputed": 2160,
+  "max_cost_difference": 1.9184653865522705e-13,
+  "max_gradient_difference": 3.945242355030132e-09,
+  "checker": "explicit residual loops and finite-difference Jacobian; no optimizer import/call"
+}
