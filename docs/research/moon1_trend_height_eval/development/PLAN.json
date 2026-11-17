@@ -1,0 +1,74 @@
+[
+  {
+    "id": "u0000",
+    "window": 0,
+    "seed": 911170101,
+    "height_sigma_m": 0.0,
+    "condition": "normal",
+    "part": "A",
+    "sigma0_unit": "u0000"
+  },
+  {
+    "id": "u0001",
+    "window": 0,
+    "seed": 911170101,
+    "height_sigma_m": 0.0,
+    "condition": "constant03",
+    "part": "A",
+    "sigma0_unit": "u0001"
+  },
+  {
+    "id": "u0002",
+    "window": 0,
+    "seed": 911170101,
+    "height_sigma_m": 0.0,
+    "condition": "step03",
+    "part": "A",
+    "sigma0_unit": "u0002"
+  },
+  {
+    "id": "u0003",
+    "window": 0,
+    "seed": 911170101,
+    "height_sigma_m": 0.0,
+    "condition": "ramp03",
+    "part": "A",
+    "sigma0_unit": "u0003"
+  },
+  {
+    "id": "u0004",
+    "window": 0,
+    "seed": 911170101,
+    "height_sigma_m": 0.05,
+    "condition": "normal",
+    "part": "B",
+    "sigma0_unit": "u0000"
+  },
+  {
+    "id": "u0005",
+    "window": 0,
+    "seed": 911170101,
+    "height_sigma_m": 0.05,
+    "condition": "ramp03",
+    "part": "B",
+    "sigma0_unit": "u0003"
+  },
+  {
+    "id": "u0006",
+    "window": 0,
+    "seed": 911170101,
+    "height_sigma_m": 0.15,
+    "condition": "normal",
+    "part": "B",
+    "sigma0_unit": "u0000"
+  },
+  {
+    "id": "u0007",
+    "window": 0,
+    "seed": 911170101,
+    "height_sigma_m": 0.15,
+    "condition": "ramp03",
+    "part": "B",
+    "sigma0_unit": "u0003"
+  }
+]
