@@ -60,6 +60,9 @@ A归档兼容分母48，其中4个特殊N4为OUTSIDE_USER_AUTHORIZED_PLAN。授�
 
 完整墙钟还包括输入、评价、进程启动、attempt/receipt持久化等。最大单方法峰值RSS为{max(float(r['peak_rss_kib']) for r in done)/1024:.2f}MiB。成本逐次记账；认证与IO不可从主比较中删去。A认证没有使用B的剪枝界，结果独立性与执行代价同时保留。
 
+
+CSV与图中半径/成本是十进制显示近似；严格外向包围端点、半径平方及有理数证据以便携包中的原始JSON为准。显示舍入不参与剪枝、包含检查或门槛判定。
+
 位置输出不要求J5/P4相同。results/PAIRED.csv逐车列面积上界、半径、跨度差值及矩形表示是否相同。面积为去重投影和与包围盒面积的较小可靠上界；上界差值不等于精确可行区域面积差值，也没有精确并集面积声明。
 
 主矩阵P4总成本中位数{statistics.median(float(r['wall_seconds']) for r in p4):.3f}秒，N4为{statistics.median(float(r['wall_seconds']) for r in n4):.3f}秒。随机门槛结果{gate['status']}，见GATE.json。
