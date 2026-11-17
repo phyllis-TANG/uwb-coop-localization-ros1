@@ -1,0 +1,25 @@
+{
+  "catalog": {
+    "record_id": "B059",
+    "data_kind": "real",
+    "date": "20261018",
+    "filename": "TWO_CAR_C2_static_C1_auto_straight_aligned_20261018_033248.bag",
+    "category": "two_car_motion",
+    "recording_status": "previously_decoded_complete",
+    "experiment_status": "completed_with_reference_limits",
+    "experiment_description": "Car2静止、Car1对齐后自动直行。",
+    "reference_status": "该包独立原始运动notes和人工终点已在，不能互借其他包终点。",
+    "recommended_use": "首轮双车独立估计/车间约束联合估计对照。 / 双车时间关联、测距有效率和残差诊断。",
+    "limitations": "人工坐标与直接卷尺值有分歧，分别保留，不靠调参消除。 / Car1分析高度0.17m，原notes的0.20m保留；水平外参与odom车体参考对应仍有假设。 / 无连续轨迹真值；双向UWB时间头差随包变化，不能假定严格同步。",
+    "archive_path": "20261018/bags/TWO_CAR_C2_static_C1_auto_straight_aligned_20261018_033248.bag",
+    "linked_support_files": "20261018/notes/live_field/TWO_CAR_C2_static_C1_auto_straight_aligned_20261018_033248_notes.txt",
+    "size_bytes": "4066007",
+    "sha256": "4e1283bbd58f9a64187a872cd9edeccaccdd5c438149d871761c6e2e11a67bbd",
+    "known_sha256": "4e1283bbd58f9a64187a872cd9edeccaccdd5c438149d871761c6e2e11a67bbd",
+    "repository_reported_sha256": "",
+    "this_run_verification": "byte_copy_and_sha256_plus_format_header_only",
+    "new_message_decode_performed": "False"
+  },
+  "continuous_truth": null,
+  "source": "catalog and same-day notes; historical evidence, not independently surveyed this run"
+}

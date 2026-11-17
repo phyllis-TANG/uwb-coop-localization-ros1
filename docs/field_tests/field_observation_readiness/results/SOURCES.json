@@ -1,0 +1,98 @@
+[
+  {
+    "case": "013206",
+    "path": "datasets/field_raw/20261018/bags/TWO_CAR_UWB_ODOM_IMU_static_20261018_013206.bag",
+    "sha256": "d9b8183c2ca6edef82affcde0f6c70dd8fcb71ba6c1b36374cd23e73a7d0671f",
+    "bytes": 2450052,
+    "topics": {
+      "/car1/imu": 711,
+      "/car1/PowerVoltage": 59,
+      "/car1/odom": 708,
+      "/car1/uwb/ranges": 1766,
+      "/car2/imu": 701,
+      "/car2/odom": 697,
+      "/car2/uwb/ranges": 1739,
+      "/car2/PowerVoltage": 58
+    },
+    "all_messages": 6439,
+    "bag_origin_ns": 1792312328085370781
+  },
+  {
+    "case": "015334",
+    "path": "datasets/field_raw/20261018/bags/TWO_CAR_C1_static_C2_auto_L_20261018_015334.bag",
+    "sha256": "bb2f8cbfecf3e73cdf1b12f4c290b51d0c74215006746abba72c0b9c7a0946e6",
+    "bytes": 6721576,
+    "topics": {
+      "/car1/PowerVoltage": 160,
+      "/car1/imu": 1910,
+      "/car1/odom": 1908,
+      "/car1/uwb/ranges": 4760,
+      "/car2/PowerVoltage": 159,
+      "/car2/imu": 1896,
+      "/car2/odom": 1893,
+      "/car2/uwb/ranges": 4729,
+      "/car2/cmd_vel": 1645
+    },
+    "all_messages": 19060,
+    "bag_origin_ns": 1792313648982309104
+  },
+  {
+    "case": "033248",
+    "path": "datasets/field_raw/20261018/bags/TWO_CAR_C2_static_C1_auto_straight_aligned_20261018_033248.bag",
+    "sha256": "4e1283bbd58f9a64187a872cd9edeccaccdd5c438149d871761c6e2e11a67bbd",
+    "bytes": 4066007,
+    "topics": {
+      "/car1/imu": 1160,
+      "/car1/PowerVoltage": 97,
+      "/car1/odom": 1158,
+      "/car1/uwb/ranges": 2888,
+      "/car2/imu": 1150,
+      "/car2/PowerVoltage": 96,
+      "/car2/odom": 1147,
+      "/car2/uwb/ranges": 2861,
+      "/car1/cmd_vel": 671
+    },
+    "all_messages": 11228,
+    "bag_origin_ns": 1792319570409833299
+  },
+  {
+    "case": "050447",
+    "path": "datasets/field_raw/20261018/bags/TWO_CAR_both_motion_clear_repeat_20261018_050447.bag",
+    "sha256": "adfab304646d779c573f9001e1ceb2538b5cdcfffc2948750cde93f495501872",
+    "bytes": 7859349,
+    "topics": {
+      "/car1/PowerVoltage": 185,
+      "/car1/imu": 2214,
+      "/car1/odom": 2211,
+      "/car1/uwb/ranges": 5522,
+      "/car2/PowerVoltage": 184,
+      "/car2/imu": 2201,
+      "/car2/odom": 2199,
+      "/car2/uwb/ranges": 5490,
+      "/car2/cmd_vel": 1670,
+      "/car1/cmd_vel": 666
+    },
+    "all_messages": 22542,
+    "bag_origin_ns": 1792325091247927829
+  },
+  {
+    "case": "045116",
+    "path": "datasets/field_raw/20261018/bags/TWO_CAR_both_motion_20261018_045116.bag",
+    "sha256": "0e42309e71c9f5d4abd95047ff54bcad8e5aee3f4f5190603583af69cc00f94c",
+    "bytes": 8203509,
+    "topics": {
+      "/car1/PowerVoltage": 193,
+      "/car1/uwb/ranges": 5771,
+      "/car1/odom": 2310,
+      "/car2/imu": 2301,
+      "/car1/imu": 2313,
+      "/car2/odom": 2299,
+      "/car2/uwb/ranges": 5740,
+      "/car2/PowerVoltage": 192,
+      "/car2/cmd_vel": 1683,
+      "/car1/cmd_vel": 668
+    },
+    "all_messages": 23470,
+    "bag_origin_ns": 1792324289073717825
+  }
+]
