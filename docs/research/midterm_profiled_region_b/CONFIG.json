@@ -1,0 +1,14 @@
+{
+ "source_commit":"30f9379249a4e695acf75910c40862a770e6f4ce",
+ "settings":{"q":"9.488","tolerance":[".025",".025",".025"],"max_boxes":50000,"max_seconds":5},
+ "geometries":{"normal":[["-4","-3"],["4","-3"],["-4","3"],["4","3"]],"near":[["-4","-.1"],["-1",".1"],["3","-.1"],["5",".1"]],"mirror":[["-4","0"],["-1","0"],["3","0"],["5","0"]]},
+ "position_truth":["1","2"],"position_domain":[["-6","6"],["-6","6"]],"bias_domain":["-.6",".6"],"bias_values":["0",".6"],"affected_index":3,"sigma":".04",
+ "noise_directions":[["0","0","0","0"],[".02","-.01",".03","-.02"],["-.02",".01","-.03",".02"]],
+ "seeds":{"start":419170001,"count":100,"stream":410,"generator":"numpy.PCG64 SeedSequence([seed,410]); same standard four-vector across six conditions"},
+ "random_total_seconds":7200,"bootstrap":{"seed":91327067,"repetitions":2000,"confidence":0.95,"unit":"seed, paired within condition","minimum_pairs":30},
+ "expected":{"legacy_inputs":8,"new_deterministic_inputs":18,"deterministic_method_records":52,"new_deterministic_searches":44,"random_inputs":600,"random_method_runs":1200},
+ "method_order":"alternate OLD first and PROFILED first by input index; sequential, BLAS one thread",
+ "region_metrics":"legacy exact-rational area lower/upper and outer circle; same XY target .025m; old b resolution .025m",
+ "representation_halfwidth_m":"1e-24",
+ "gate":"all deterministic independent certificates pass; prescribed feasible/mirror witnesses retained; inconsistent legacy case empty; forced-budget candidates retained; no numerical failure"
+}
