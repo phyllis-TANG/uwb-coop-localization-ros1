@@ -1,6 +1,7 @@
 """No optimizer imported/called: reconstruct all endpoints, covariance and pairing."""
 from common import *
 from model import CFG,validate_inputs
+distance=legacy.distance
 import argparse,collections,itertools
 from scipy.stats import chi2
 
