@@ -1,0 +1,19 @@
+{
+  "source_sha": "764064f224ada7e793430bd47f5122a14b8d1f30",
+  "views": ["A_total", "B_iid", "C_true_noise"],
+  "rank_rtol": 1e-8,
+  "rank_sensitivity": [1e-6, 1e-8, 1e-10, 1e-12],
+  "position_scale_m": 1.0,
+  "bias_scale_m": 0.1,
+  "levels": [0.95, 0.99],
+  "bootstrap_seed": 91327061,
+  "bootstrap_repetitions": 10000,
+  "minimum_valid_seeds": 30,
+  "maximum_missing_fraction": 0.1,
+  "subsets": ["all", "accepted", "not_stationary", "budget_exhausted"],
+  "batches": {
+    "fault": {"directory": "docs/research/midterm_mismatch_b", "freeze": "41653fff74255a3222b49933947f31c497640e0f", "conditions": 72, "seeds": 100, "methods": 28800, "categories": {"ACCEPTED": 28419, "NOT_STATIONARY": 367, "BUDGET_EXHAUSTED": 14}},
+    "noise": {"directory": "docs/research/midterm_mismatch_b/noise_exploration", "freeze": "54ac42b60a11a0666e8840cf5bd8417a02a677e1", "conditions": 72, "seeds": 50, "methods": 14400, "categories": {"ACCEPTED": 14047, "NOT_STATIONARY": 333, "BUDGET_EXHAUSTED": 20}}
+  },
+  "scope": "exploratory saved endpoints; zero optimizer calls; no truth-based recentering"
+}
