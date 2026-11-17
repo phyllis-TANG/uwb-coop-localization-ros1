@@ -1,0 +1,65 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=24mm,headheight=15pt]{geometry}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setmainfont{DejaVu Serif}
+\setsansfont{DejaVu Sans}
+\setmonofont[Scale=0.78]{DejaVu Sans Mono}
+\setCJKmainfont{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setCJKmonofont{Noto Sans CJK SC}
+\usepackage{amsmath,amssymb,graphicx,booktabs,longtable,array,calc}
+\usepackage{xcolor,fancyvrb,framed,enumitem}
+\usepackage[unicode,hidelinks,breaklinks]{hyperref}
+\usepackage{bookmark}
+% Figure titles already include the report's stable figure number.
+\makeatletter
+\long\def\@makecaption#1#2{\vskip\abovecaptionskip\small\centering #2\par\vskip\belowcaptionskip}
+\makeatother
+\renewcommand{\contentsname}{目录}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small 协同定位中期报告：技术正文}
+\fancyhead[R]{\small C端初稿}
+\fancyfoot[C]{\thepage}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.32em}
+\linespread{1.16}
+\setlength{\emergencystretch}{3em}
+\setlist{nosep,leftmargin=2em}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\pandocbounded}[1]{#1}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>0.69\textheight0.69\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\let\oldlongtable\longtable
+\let\endoldlongtable\endlongtable
+\renewenvironment{longtable}{\small\oldlongtable}{\endoldlongtable\normalsize}
+\setcounter{secnumdepth}{-1}
+\setcounter{tocdepth}{2}
+\begin{document}
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+\centering
+\vspace*{28mm}
+{\LARGE Safety Quantification for Multi-Agent Cooperative Localization in Lunar Exploration\par}
+\vspace{16mm}
+{\Huge 小车协同定位中期报告\par}
+\vspace{10mm}
+{\Large 技术正文初稿与证据整理（C端）\par}
+\vspace{16mm}
+{\large 方法、实测动机、仿真与适用边界\par}
+\vfill
+{\normalsize 固定来源：PR109 已审查提交，补充 PR108 已审查提交\par}
+\vspace{5mm}
+{\normalsize 2026年11月17日\par}
+\end{titlepage}
+\tableofcontents
+\clearpage
+\setcounter{page}{1}
+\hypersetup{pageanchor=true}
+$body$
+\end{document}

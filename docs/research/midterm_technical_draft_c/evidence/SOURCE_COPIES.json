@@ -1,0 +1,165 @@
+{
+  "purpose": "PR108独立只读checkout来源；仅逐字节复制保存表/图，无定位调用、无重绘、无重算",
+  "copies": [
+    {
+      "fixed_commit": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+      "source_file": "docs/research/midterm_joint_coverage_a/results/fault/summary/COVERAGE.csv.gz",
+      "delivery_file": "evidence/pr108/fault/COVERAGE.csv.gz",
+      "sha256": "58e7767efeecd510850c94bbaa07e6d2665f49fdaaa3598ce6cab88c1524f1dd",
+      "bytes": 557762,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+      "source_file": "docs/research/midterm_joint_coverage_a/results/fault/summary/MOMENTS.csv.gz",
+      "delivery_file": "evidence/pr108/fault/MOMENTS.csv.gz",
+      "sha256": "d1580d5a6ed83c913ebd7b7e4e07f18859b5661faa81c79959367647fa25f133",
+      "bytes": 836003,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+      "source_file": "docs/research/midterm_joint_coverage_a/results/fault/summary/PAIRED.csv.gz",
+      "delivery_file": "evidence/pr108/fault/PAIRED.csv.gz",
+      "sha256": "06aaac51d9f3265058da2726fabfdd1d082046ecf189cf323ac5974042d6c2b6",
+      "bytes": 169213,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+      "source_file": "docs/research/midterm_joint_coverage_a/results/fault/summary/BIAS_COVERAGE.csv.gz",
+      "delivery_file": "evidence/pr108/fault/BIAS_COVERAGE.csv.gz",
+      "sha256": "fc152ccc0882f0422b399c43000b8f00e94dfebfb86adaaf6b5b6c7492c0d364",
+      "bytes": 10274,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+      "source_file": "docs/research/midterm_joint_coverage_a/results/fault/summary/CHECKS.json",
+      "delivery_file": "evidence/pr108/fault/CHECKS.json",
+      "sha256": "9f5ecff736d926ad45672343c0ab13edaac2cc6d9f80d397b76522d5b661a4ad",
+      "bytes": 805,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+      "source_file": "docs/research/midterm_joint_coverage_a/figures/fault/DESCRIPTIVE.csv",
+      "delivery_file": "evidence/pr108/fault/DESCRIPTIVE.csv",
+      "sha256": "18427881ff21059ef9d3bd6a54ea37881480d0b6af92bef7a86416178e5f02d5",
+      "bytes": 28532,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+      "source_file": "docs/research/midterm_joint_coverage_a/figures/fault/coverage_95.png",
+      "delivery_file": "evidence/pr108/fault/coverage_95.png",
+      "sha256": "9b3d9b5f6dd323cb69a8beab4232d4521474323f4701d6c7d8557699ed022155",
+      "bytes": 411421,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+      "source_file": "docs/research/midterm_joint_coverage_a/figures/fault/coverage_99.png",
+      "delivery_file": "evidence/pr108/fault/coverage_99.png",
+      "sha256": "7a645d0831dfdac89fc3e064da3e958d612ff15640845bf8d9a12d901a5520cd",
+      "bytes": 409586,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+      "source_file": "docs/research/midterm_joint_coverage_a/results/noise/summary/COVERAGE.csv.gz",
+      "delivery_file": "evidence/pr108/noise/COVERAGE.csv.gz",
+      "sha256": "dbbf1d03c52d7f2c7f4b51a13f98e35a6dfcd8519ae13ed943e9a177d42cfd77",
+      "bytes": 584637,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+      "source_file": "docs/research/midterm_joint_coverage_a/results/noise/summary/MOMENTS.csv.gz",
+      "delivery_file": "evidence/pr108/noise/MOMENTS.csv.gz",
+      "sha256": "336490885f2b6cb01693165fcefcd7e831085d702fe4b5d6f1c8d1d95cd7bd55",
+      "bytes": 916029,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+      "source_file": "docs/research/midterm_joint_coverage_a/results/noise/summary/PAIRED.csv.gz",
+      "delivery_file": "evidence/pr108/noise/PAIRED.csv.gz",
+      "sha256": "14310503864a4178c8ac8c085cc30d15a5ef98c01f66a406e4f4c2b8e377cb24",
+      "bytes": 356660,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+      "source_file": "docs/research/midterm_joint_coverage_a/results/noise/summary/BIAS_COVERAGE.csv.gz",
+      "delivery_file": "evidence/pr108/noise/BIAS_COVERAGE.csv.gz",
+      "sha256": "03011e0c1d17db36f3cbc3c2636ae80108b959430e89b309d2c781bc55943dec",
+      "bytes": 16390,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+      "source_file": "docs/research/midterm_joint_coverage_a/results/noise/summary/CHECKS.json",
+      "delivery_file": "evidence/pr108/noise/CHECKS.json",
+      "sha256": "1e0d4ab6db3bc62157959856f6b6a4169375f7708ca0c64da8b2272ccc0105df",
+      "bytes": 805,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+      "source_file": "docs/research/midterm_joint_coverage_a/figures/noise/DESCRIPTIVE.csv",
+      "delivery_file": "evidence/pr108/noise/DESCRIPTIVE.csv",
+      "sha256": "ce8610e0fa3da5a205346c6757458b8d5c7ffa05e0d799044518f7213756aacb",
+      "bytes": 14173,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+      "source_file": "docs/research/midterm_joint_coverage_a/figures/noise/coverage_95.png",
+      "delivery_file": "evidence/pr108/noise/coverage_95.png",
+      "sha256": "e76fa366504541ff84b2f27d626db55f93f2a6cf0ef04e25b127d88a7112a9b2",
+      "bytes": 477078,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+      "source_file": "docs/research/midterm_joint_coverage_a/figures/noise/coverage_99.png",
+      "delivery_file": "evidence/pr108/noise/coverage_99.png",
+      "sha256": "56801312c94a57b59586ae7dc07a9bbe6ffb14207ec7f0d0488af4941856631a",
+      "bytes": 477026,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "c51411433d30dc379bd69cf5fb20a11e196b7182",
+      "source_file": "docs/research/midterm_prior_mechanism_b/figures/linear_nonlinear_full_range.png",
+      "delivery_file": "figures/prior_linear_nonlinear_full_range.png",
+      "sha256": "406c16e24e7d82f98f77a656677c08ad994bed2757f13041e7bad20e64bddd09",
+      "bytes": 94135,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "c51411433d30dc379bd69cf5fb20a11e196b7182",
+      "source_file": "docs/research/midterm_prior_mechanism_b/figures/coverage_curvature_car1.png",
+      "delivery_file": "figures/prior_coverage_car1.png",
+      "sha256": "2ddd1d41dfd6ed4d4af5da4e4ebf7c13869aa1b64eabd1141836818efa833c80",
+      "bytes": 330320,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "c51411433d30dc379bd69cf5fb20a11e196b7182",
+      "source_file": "docs/research/midterm_prior_mechanism_b/figures/coverage_curvature_car2.png",
+      "delivery_file": "figures/prior_coverage_car2.png",
+      "sha256": "1edd42ff3ea09757c25dc68d9c9b3c866039819138525131e984398771dbe055",
+      "bytes": 337015,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    },
+    {
+      "fixed_commit": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+      "source_file": "docs/research/midterm_joint_coverage_a/figures/noise/noise_explanations.png",
+      "delivery_file": "figures/noise_explanations.png",
+      "sha256": "0fb8839bdd4d4f8ef5e00e51e8cf9918d1474e65ce0a7685b9a5a4eada707872",
+      "bytes": 133046,
+      "copy_check": "BYTE_IDENTICAL_TO_GIT_OBJECT"
+    }
+  ]
+}

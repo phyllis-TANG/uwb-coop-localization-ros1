@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "localization_runs": 0,
+  "new_random_samples": 0,
+  "checks": [
+    {
+      "check": "exact_source_copy_hashes",
+      "files": 20,
+      "status": "PASS"
+    },
+    {
+      "check": "PR108_n32",
+      "covered": 221,
+      "planned_points": 300,
+      "independent_seeds": 50,
+      "coverage": 0.7366666666666667,
+      "status": "PASS"
+    },
+    {
+      "check": "PR108_wrong_link",
+      "conditions": 12,
+      "covered_per_condition": 0,
+      "points_per_condition": 600,
+      "independent_seeds_per_condition": 100,
+      "status": "PASS"
+    },
+    {
+      "check": "PR108_multi_link",
+      "conditions": 12,
+      "covered_per_condition": 0,
+      "points_per_condition": 600,
+      "independent_seeds_per_condition": 100,
+      "status": "PASS"
+    },
+    {
+      "check": "PR109_fixed_correct_0.5_car1",
+      "covered": 544,
+      "planned_points": 600,
+      "independent_seeds": 100,
+      "coverage": 0.9066666666666666,
+      "status": "PASS"
+    },
+    {
+      "check": "PR109_fixed_correct_0.5_car2",
+      "covered": 537,
+      "planned_points": 600,
+      "independent_seeds": 100,
+      "coverage": 0.895,
+      "status": "PASS"
+    },
+    {
+      "check": "PR109_fixed_survey_0.05_car1",
+      "covered": 11,
+      "planned_points": 600,
+      "independent_seeds": 100,
+      "coverage": 0.018333333333333333,
+      "status": "PASS"
+    },
+    {
+      "check": "PR109_fixed_survey_0.05_car2",
+      "covered": 60,
+      "planned_points": 600,
+      "independent_seeds": 100,
+      "coverage": 0.1,
+      "status": "PASS"
+    },
+    {
+      "check": "PR109_counts_and_singular_blocks",
+      "nonlinear": 14400,
+      "truth_linearized_diagnostics": 14400,
+      "not_stationary": 65,
+      "planned_blocks": 691200,
+      "unavailable_blocks": 6400,
+      "status": "PASS"
+    },
+    {
+      "check": "claim_ids_and_fixed_commit_urls",
+      "claims": 55,
+      "status": "PASS"
+    }
+  ]
+}
