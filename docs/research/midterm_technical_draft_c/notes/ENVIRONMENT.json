@@ -1,0 +1,60 @@
+{
+  "task": "C端：技术章节与证据整理",
+  "captured_utc": "2026-11-17",
+  "working_path": "/home/ubuntu22/uwb-midterm-technical-draft-c",
+  "branch": "docs/midterm-technical-draft-c",
+  "fixed_base": "c51411433d30dc379bd69cf5fb20a11e196b7182",
+  "status_before_delivery": "clean",
+  "remote": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1.git",
+  "supplement_checkout": "/home/ubuntu22/uwb-midterm-technical-c-pr108-readonly",
+  "supplement_commit": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+  "agents_md": "No AGENTS.md found at root ancestors or in tracked fixed tree.",
+  "new_localization_runs": 0,
+  "new_truth_linearized_diagnostics": 0,
+  "pull_requests": [
+    {
+      "baseRefName": "main",
+      "headRefName": "research/midterm-uncertainty-a",
+      "headRefOid": "d39c99589bd15938484d64871981d45a9dd74efe",
+      "mergeCommit": {
+        "oid": "ed2b7b5e21a642d683bc2ef3e0cc8234c4c8fece"
+      },
+      "number": 106,
+      "state": "MERGED",
+      "title": "research: 冻结结果的不确定性一致性分析、理论与诊断接口"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "research/midterm-mismatch-b",
+      "headRefOid": "afafabbd2b7f8f25fe38ba99f539dab8baf2491c",
+      "mergeCommit": {
+        "oid": "764064f224ada7e793430bd47f5122a14b8d1f30"
+      },
+      "number": 107,
+      "state": "MERGED",
+      "title": "research: B端模型失配压力测试及独立噪声探索（43200次完整交付）"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "research/midterm-joint-coverage-a",
+      "headRefOid": "41ba0d3a6e69897ef6330cc9ad218253c7fb80ea",
+      "mergeCommit": {
+        "oid": "00eced85e3734df3c1a3274b0f1250c6480992a6"
+      },
+      "number": 108,
+      "state": "MERGED",
+      "title": "research: A端故障与噪声失配的完整覆盖分析"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "research/midterm-prior-mechanism-b",
+      "headRefOid": "c51411433d30dc379bd69cf5fb20a11e196b7182",
+      "mergeCommit": {
+        "oid": "e28fda7361e79c7970bbd34fb680448c6a131617"
+      },
+      "number": 109,
+      "state": "MERGED",
+      "title": "research: B端先验机制与真值处线性诊断完整对照"
+    }
+  ]
+}
