@@ -44,6 +44,7 @@ def evaluate(m,method,s,r,e):
  event=None
  if noise is not None:
   total=sum(F(x)**2/F(m['R'][j][j]) for j,x in enumerate(noise[:8 if method=='N4' else 9]));event={'quadratic':str(total),'holds':total<=F(s['q']),'df':s['df']}
+ in_domain=all(F(a)<=F(x)<=F(b) for x,(a,b) in zip(pos,m['domain'])) and (method=='N4' or F(m['bias_domain'][0])<=F(e['truth'][4])<=F(m['bias_domain'][1]))
  joint=contains(r,pos)
  cars={car:any(all(a<=F(x)<=b for x,(a,b) in zip(pos[o:o+2],unpack(n['box'])[o:o+2])) for n in retained(r)) for car,o in [('p',0),('s',2)]}
- return dict(noise_event=event,exact_joint_position_feasibility=status,bias_recovery=bias,finite_joint_outer_contains=joint,finite_car_projection_contains=cars)
+ return dict(truth_in_declared_domain=in_domain,noise_event=event,exact_joint_position_feasibility=status,bias_recovery=bias,finite_joint_outer_contains=joint,finite_car_projection_contains=cars)

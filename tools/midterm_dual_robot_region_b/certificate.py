@@ -19,19 +19,29 @@ def distance(a,b):return root(plus(square(minus(a[0],b[0])),square(minus(a[1],b[
 def distance_to_interval(d,l,u):
  g=lambda x:max(l-x,x-u,F(0))**2
  return (F(0) if d[0]<=u and d[1]>=l else min(map(g,d)),max(map(g,d)))
-def bound(box,m,method):
- anchors=[tuple(point(x) for x in a) for a in m['anchors']]
- ds=[distance(box[o:o+2],a) for o in (0,2) for a in anchors]
- if method!='N4':ds.append(distance(box[:2],box[2:4]))
- lo=hi=F(0)
- for j,d in enumerate(ds):
-  l,u=map(F,m['observations'][j])
-  if j==8 and method=='J5':term=square(minus((l,u),plus(d,box[4])))
+class RationalEvaluator:
+ def __init__(self,m,method):
+  from functools import lru_cache
+  self.m=m;self.method=method
+  anchors=[tuple(point(x) for x in a) for a in m['anchors']]
+  obs=[tuple(map(F,y)) for y in m['observations']];v=[F(m['R'][j][j]) for j in range(9)]
+  @lru_cache(maxsize=8192)
+  def anchor_sum(part,offset):
+   low=high=F(0)
+   for k,a in enumerate(anchors):
+    j=offset+k;l,u=obs[j];term=distance_to_interval(distance(part,a),l,u)
+    low+=term[0]/v[j];high+=term[1]/v[j]
+   return low,high
+  self.anchor_sum=anchor_sum;self.obs=obs;self.v=v
+ def __call__(self,box):
+  lo,hi=plus(self.anchor_sum(box[:2],0),self.anchor_sum(box[2:4],4))
+  if self.method=='N4':return lo,hi
+  d=distance(box[:2],box[2:4]);l,u=self.obs[8]
+  if self.method=='J5':term=square(minus((l,u),plus(d,box[4])))
   else:
-   if j==8:l-=F(m['bias_domain'][1]);u-=F(m['bias_domain'][0])
-   term=distance_to_interval(d,l,u)
-  v=F(m['R'][j][j]);lo+=term[0]/v;hi+=term[1]/v
- return lo,hi
+   l-=F(self.m['bias_domain'][1]);u-=F(self.m['bias_domain'][0]);term=distance_to_interval(d,l,u)
+  return lo+term[0]/self.v[8],hi+term[1]/self.v[8]
+def bound(box,m,method):return RationalEvaluator(m,method)(box)
 
 def retained(r):return [n for n in r['nodes'] if n['status'] not in ('OUTSIDE','SPLIT')]
 def audit(m,method,s,r):
@@ -39,7 +49,7 @@ def audit(m,method,s,r):
  assert r['dimension']==dim
  nodes={n['path']:n for n in r['nodes']};assert len(nodes)==len(r['nodes'])
  domain=unpack(m['domain']+([m['bias_domain']] if method=='J5' else []));assert unpack(nodes['']['box'])==domain
- q=F(s['q']);stack=[''];seen=set();certs=0
+ q=F(s['q']);stack=[''];seen=set();certs=0;evaluate_bound=RationalEvaluator(m,method)
  while stack:
   path=stack.pop();assert path not in seen;seen.add(path);n=nodes[path];b=unpack(n['box']);assert len(b)==dim and all(a<=z for a,z in b)
   if n['status']=='SPLIT':
@@ -48,7 +58,7 @@ def audit(m,method,s,r):
     child=list(b);child[j]=(b[j][0],mid) if side==0 else (mid,b[j][1]);cp=path+str(side)
     assert unpack(nodes[cp]['box'])==tuple(child);stack.append(cp)
   elif n['status'] in ('OUTSIDE','INSIDE'):
-   lo,hi=bound(b,m,method);assert lo>q if n['status']=='OUTSIDE' else hi<=q;certs+=1
+   lo,hi=evaluate_bound(b);assert lo>q if n['status']=='OUTSIDE' else hi<=q;certs+=1
   else:assert n['status'] in ('PENDING','UNDECIDED','NUMERICAL_UNDECIDED')
  assert seen==set(nodes)
  assert sorted(r['queue'])==sorted(n['path'] for n in nodes.values() if n['status']=='PENDING')
