@@ -2,6 +2,8 @@
 
 本轮只做文献、公式和验证方案。开发基点为包含PR118的main `b492c17d719013c31a93168994afe40beed5001f`；PR119仅只读 `e35f94fb89a71236bd04c7f25fc318b016ba592d`。分支 `research/midterm-integrity-targeted-c`，目标main普通PR，不自动合并。没有更改A/B协议、中期正文、定位器或历史结论。
 
+提交记录：[普通PR #122](https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/122)。创建后核查发现main已前进到 `f9c27436836b814afdea47945887015dcb55fca5`（其他窗口的PR119/121已由仓库流程合并）；本分支没有合并或重放这些提交，PR119证据仍固定为上面的只读SHA。PR的三点差异仅为本轮目录21个新增文件；当时状态OPEN、MERGEABLE/CLEAN，autoMergeRequest为空。PR121内容不在本轮声明的审计范围内。
+
 ## 可立即据以安排的下一步
 
 **先实现 VALIDATION_PROTOCOL 中A1–A3及R1–R4/T1的低维可信外包验收模块。** 不先做24/25维全窗，不先调现有椭圆，不同时加入容错、SS、连续tube或噪声学习。理由是它能直接检验分支完整性与边界/失败返回，且有独立解析对照；PR119的几何改善未提供这些证书。
