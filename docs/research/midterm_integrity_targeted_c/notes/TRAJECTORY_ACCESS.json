@@ -1,0 +1,70 @@
+{
+  "search_date": "2026-11-17",
+  "scope": [
+    "Drevelle 2013题名/DOI作者主页与HAL",
+    "引用追踪：Drevelle 2013 -> Rohou 2017 ref25 -> Rohou 2018",
+    "作者软件链接Tubex重定向与Codac固定分支源码",
+    "仅合法作者/机构全文，不提交版权PDF"
+  ],
+  "sources": [
+    {
+      "key": "DrevelleBonnifait2013",
+      "source": "https://www.hds.utc.fr/~bonnif/pdf/2013_TRO_short_term_trajectory.pdf",
+      "access_date": "2026-11-17",
+      "status": "full_text_read",
+      "version": "作者官网HAL封面稿；封面hal-00877443；正文SUBMISSION，页1–14，PDF15页；不冒充出版排版",
+      "sha256": "205a3e9bfba6407973b508e4e8420026403745f1dbb03a8be76199124eff18d0",
+      "copyright_pdf_committed": false
+    },
+    {
+      "key": "Rohou2017",
+      "source": "https://simon-rohou.fr/research/tubint/",
+      "access_date": "2026-11-17",
+      "status": "full_text_read",
+      "version": "作者官网重定向PDF；正文页1–9，作者稿；机构仓库核对正式2017发表",
+      "sha256": "f01f33965fe8d03c336a142396ced87f68c20f9af127f0658f20ba5a46b600e7",
+      "copyright_pdf_committed": false
+    },
+    {
+      "key": "Rohou2018",
+      "source": "https://simon-rohou.fr/research/tubeval/",
+      "access_date": "2026-11-17",
+      "status": "background_full_text_obtained",
+      "version": "重定向至 https://simon-rohou.fr/doc/papers/tubeval_paper.pdf；只作后继线索，未作本轮核心逐式精读",
+      "sha256": "c9ed6dc539a8182fa794cc3c9d7d7f353de70d7fa46fe546040bf42e3d3cd134",
+      "copyright_pdf_committed": false
+    },
+    {
+      "key": "codac1/examples/robotics/01_causal_chain/main.cpp",
+      "source": "https://github.com/codac-team/codac/blob/19c0b2d87b552286bd375dcec3f42124a7a8c8f6/examples/robotics/01_causal_chain/main.cpp",
+      "access_date": "2026-11-17",
+      "status": "source_read_only_not_executed",
+      "sha256": "3166b49a4480ef4a6d8c59db3e35a7b88e21ad0a64be05257a457e937b6c5491",
+      "source_commit": "19c0b2d87b552286bd375dcec3f42124a7a8c8f6"
+    },
+    {
+      "key": "codac1/examples/robotics/09_lissajous/main.cpp",
+      "source": "https://github.com/codac-team/codac/blob/19c0b2d87b552286bd375dcec3f42124a7a8c8f6/examples/robotics/09_lissajous/main.cpp",
+      "access_date": "2026-11-17",
+      "status": "source_read_only_not_executed",
+      "sha256": "b8be4566a440aef5a605edc0eb634daaa42a113475454ea49ae478eac476b7b2",
+      "source_commit": "19c0b2d87b552286bd375dcec3f42124a7a8c8f6"
+    },
+    {
+      "key": "codac1/src/core/contractors/dyn/codac_CtcDeriv.cpp",
+      "source": "https://github.com/codac-team/codac/blob/19c0b2d87b552286bd375dcec3f42124a7a8c8f6/src/core/contractors/dyn/codac_CtcDeriv.cpp",
+      "access_date": "2026-11-17",
+      "status": "source_read_only_not_executed",
+      "sha256": "849f025d9aedf12f0d7c5ac6aa07f00e16101f22ee651dbd574b497ff7a05aeb",
+      "source_commit": "19c0b2d87b552286bd375dcec3f42124a7a8c8f6"
+    },
+    {
+      "key": "codac1/COPYING.LESSER",
+      "source": "https://github.com/codac-team/codac/blob/19c0b2d87b552286bd375dcec3f42124a7a8c8f6/COPYING.LESSER",
+      "access_date": "2026-11-17",
+      "status": "source_read_only_not_executed",
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768",
+      "source_commit": "19c0b2d87b552286bd375dcec3f42124a7a8c8f6"
+    }
+  ]
+}
