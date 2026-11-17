@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "endpoints": 1800,
+  "independent_qr_term_max": 1.2150003225741557e-14,
+  "independent_qr_identity_max": 1.2878587085651816e-14,
+  "selection_and_group_units": 240,
+  "independent_region_points": 115200,
+  "independent_region_seed_rows": 28800,
+  "independent_radius_max": 2.7755575615628914e-17,
+  "support_rejections": {
+    "NL_COMPARE/point95": 600,
+    "NL_COMPARE/joint95": 600,
+    "AFFINE/point95": 240,
+    "AFFINE/joint95": 240
+  },
+  "historical_unavailable_unchanged": {
+    "NONPOSITIVE_OR_SINGULAR_MARGINAL": 4800
+  },
+  "source_files_before": 5211,
+  "source_files_after": 5211,
+  "optimizer_calls": 0,
+  "new_random_observations": 0
+}
