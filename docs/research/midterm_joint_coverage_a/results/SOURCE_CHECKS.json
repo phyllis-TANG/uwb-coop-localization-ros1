@@ -1,0 +1,85 @@
+{
+  "base": "764064f224ada7e793430bd47f5122a14b8d1f30",
+  "B_delivery_files_checked": 113,
+  "A_delivery_files_checked": 51,
+  "noise_handoff_and_hashes": "Parent HANDOFF.md and SHA256SUMS.json cover both batches; no separate noise files",
+  "batches": {
+    "fault": {
+      "inputs": 7200,
+      "methods": 28800,
+      "categories": {
+        "ACCEPTED": 28419,
+        "NOT_STATIONARY": 367,
+        "BUDGET_EXHAUSTED": 14
+      },
+      "freeze": "41653fff74255a3222b49933947f31c497640e0f",
+      "config_sha256": "2b55cc39c03bbd4f248ca43dc2626cadf1c5bb4344cc3750eb4ea746e3374984",
+      "plan_sha256": "bd6bfcf993a6de321e732065020f138c0bc1cc4876b56b7df3b1607d59d38233",
+      "sources": {
+        "tools/midterm_mismatch_b/adapter.py": "85cd5f4fc307a613e2da6ad26165283c39ba90c282f40f90db3966f787654790",
+        "tools/midterm_mismatch_b/analyze.py": "63fda16873ed116216744a030232badebbb77fbe136625b71c8099c15fe0f6d0",
+        "tools/midterm_mismatch_b/checks.py": "fc241ecdbec790230607e8379fe8e125baa5f6253205bc795e9d30ab3f1a6974",
+        "tools/midterm_mismatch_b/io_utils.py": "cddffe2976079542a5ba96675e361e547bc420c5ae8219fb498b6f352ca22325",
+        "tools/midterm_mismatch_b/plots.py": "2ab283d0935dfd276616325f7f2966dd25629b105e1d8de35716d220dc8f9a15",
+        "tools/midterm_mismatch_b/readback.py": "81e05ca50d0e5c161545d1387e2c6abaf44ba7f6f6cd0a4b2c5568eacdd9b936",
+        "tools/midterm_mismatch_b/run.py": "c41b0e3cda7df47a6fd1e7b11a4d67904ee9dfc032f865975f49934ba276cdfe",
+        "tools/midterm_mismatch_b/seed_audit.py": "ebfce0e216d0046cea517778cadb082202b10453c8fbd36f6794e475010fbfc8",
+        "tools/midterm_simulation_phase1/identifiability.py": "cd22ed371ee574e99a7945674a205ce264a68f36acedd6ec52a726ad44f0280c",
+        "tools/midterm_simulation_s2/prototype.py": "e82f407dd45947d1f63aaa91ca1ed6c348cc26a581c6f721d57f784a0aa89c93",
+        "tools/midterm_simulation_validation/core.py": "3711a204c59ca233844918179ef73b9486625408cadc5b8ca72861e79dad0603"
+      },
+      "shards": {
+        "EVIDENCE-000.jsonl.gz": "a94cb321be2dc54783a614acb7f6359bda2ddea1e3bfef9c0e30460c16c96e21",
+        "EVIDENCE-001.jsonl.gz": "d5329526657d46d0ec05f4e9081a93c0b7aa4f1ec466e32fe5288ff461477fa7",
+        "EVIDENCE-002.jsonl.gz": "690cd02887b9c3959c1fe97422d96b5158dd2ca83656199466171dbd91218f64",
+        "EVIDENCE-003.jsonl.gz": "6ba93541478daad866f50ae0660742f6facfa3580fc51c80d6bc5155cc765c76",
+        "EVIDENCE-004.jsonl.gz": "a1b77e7a8cff82c0c981d0593d37df6c8b666b8abbe29b67519bf4072c6b847d",
+        "EVIDENCE-005.jsonl.gz": "1da404af58024700c0f0bdd141789b0e6a911ca0c373f0eb8ed556553ba1f6bc",
+        "EVIDENCE-006.jsonl.gz": "ab8224acd37fa545b8edb4e4b6b5bc9c44473244a4c1f2ea35acc1e0a33fba8f",
+        "EVIDENCE-007.jsonl.gz": "8c3e43aab7f96e302759a374d0d2d7016e9c9d2d46b4b69be983ff3c529402bd"
+      },
+      "freeze_files_checked": 20,
+      "post_freeze_document_changes": []
+    },
+    "noise": {
+      "inputs": 3600,
+      "methods": 14400,
+      "categories": {
+        "ACCEPTED": 14047,
+        "NOT_STATIONARY": 333,
+        "BUDGET_EXHAUSTED": 20
+      },
+      "freeze": "54ac42b60a11a0666e8840cf5bd8417a02a677e1",
+      "config_sha256": "0d4a9a0c6a9aee03c61083d1563d6201bfa938051553f328da39f4b49c4263af",
+      "plan_sha256": "eee648a05d97088008daedcb09d70212885fc92a8e0a2bcad45f1fa59ccc21f8",
+      "sources": {
+        "tools/midterm_mismatch_b/adapter.py": "85cd5f4fc307a613e2da6ad26165283c39ba90c282f40f90db3966f787654790",
+        "tools/midterm_mismatch_b/analyze.py": "63fda16873ed116216744a030232badebbb77fbe136625b71c8099c15fe0f6d0",
+        "tools/midterm_mismatch_b/checks.py": "fc241ecdbec790230607e8379fe8e125baa5f6253205bc795e9d30ab3f1a6974",
+        "tools/midterm_mismatch_b/io_utils.py": "cddffe2976079542a5ba96675e361e547bc420c5ae8219fb498b6f352ca22325",
+        "tools/midterm_mismatch_b/noise_adapter.py": "180673a909c3ca03d971dcad60a83fb8a4be5d1f7ba3f80752368e14b1c9b633",
+        "tools/midterm_mismatch_b/noise_analysis.py": "375aa929c9f89b496e22f017e6adbf0afbaf57841d978db1eb6d6ad4401f369a",
+        "tools/midterm_mismatch_b/noise_checks.py": "e68a90da1660951e2cce1850adab0fc551553720cfbd968bbc9000a83d465386",
+        "tools/midterm_mismatch_b/noise_plots.py": "3397ce6de9cca126732c069c7d0ef45d87772fa4633b22590ac8870e7dbe094e",
+        "tools/midterm_mismatch_b/noise_readback.py": "cd5d9b61799010d83dfe1776dae804fe28e98bf36cfa1807a09e08fbee5786cd",
+        "tools/midterm_mismatch_b/noise_run.py": "3f1b879f55a715f8fcffbb9ebd4c19787de50b9ab6cdacc692ff0a9bac57877b",
+        "tools/midterm_mismatch_b/plots.py": "2ab283d0935dfd276616325f7f2966dd25629b105e1d8de35716d220dc8f9a15",
+        "tools/midterm_mismatch_b/readback.py": "81e05ca50d0e5c161545d1387e2c6abaf44ba7f6f6cd0a4b2c5568eacdd9b936",
+        "tools/midterm_mismatch_b/run.py": "c41b0e3cda7df47a6fd1e7b11a4d67904ee9dfc032f865975f49934ba276cdfe",
+        "tools/midterm_mismatch_b/seed_audit.py": "ebfce0e216d0046cea517778cadb082202b10453c8fbd36f6794e475010fbfc8",
+        "tools/midterm_simulation_phase1/identifiability.py": "cd22ed371ee574e99a7945674a205ce264a68f36acedd6ec52a726ad44f0280c",
+        "tools/midterm_simulation_s2/prototype.py": "e82f407dd45947d1f63aaa91ca1ed6c348cc26a581c6f721d57f784a0aa89c93",
+        "tools/midterm_simulation_validation/core.py": "3711a204c59ca233844918179ef73b9486625408cadc5b8ca72861e79dad0603"
+      },
+      "shards": {
+        "EVIDENCE-000.jsonl.gz": "8b0d4cf14d64af4f98d688ef73d787ece12efd039221388bcad84dc46e96a211",
+        "EVIDENCE-001.jsonl.gz": "73e1054724b8b667b9818c4c4defbe2e0a6e6ff8659d4f855c16fef3324f3694",
+        "EVIDENCE-002.jsonl.gz": "0358b7cb89ef640d7c3cee872ba27f2277370f82e1eff36ca0fee6b96a2edd14",
+        "EVIDENCE-003.jsonl.gz": "3af51312df713ac77f97091bd31cdf68abfd30ecb81fd61cbbd5783fb26879ff"
+      },
+      "freeze_files_checked": 25,
+      "post_freeze_document_changes": []
+    }
+  },
+  "passed": true
+}

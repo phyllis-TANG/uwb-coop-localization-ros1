@@ -1,0 +1,27 @@
+{
+  "inputs": 900,
+  "stage_records": 7200,
+  "recomputed_states": 7200,
+  "unavailable_states": 0,
+  "missing_stages": 0,
+  "max_metric_diff": 0.0,
+  "max_cost_diff": 0.0,
+  "max_gradient_diff": 0.0,
+  "max_residual_diff": 0.0,
+  "max_jacobian_diff": 0.0,
+  "max_gradient_vector_diff": 0.0,
+  "optimizer_calls": 0,
+  "passed": true,
+  "crosscheck_cases": 36,
+  "max_objective_crosscheck": 0.0,
+  "max_covariance_crosscheck": 5.278529629897978e-14,
+  "methods": 3600,
+  "eligible_bias": 400,
+  "category_counts": {
+    "ACCEPTED": 3512,
+    "NOT_STATIONARY": 85,
+    "BUDGET_EXHAUSTED": 3
+  },
+  "unavailable_point_blocks": 0,
+  "analysis_head": "9b885e9fea0eb594479ecd48a4d4b7b88e681765"
+}
