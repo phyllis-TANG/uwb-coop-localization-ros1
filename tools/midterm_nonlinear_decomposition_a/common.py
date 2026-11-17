@@ -35,7 +35,7 @@ def save(p,v):p.write_text(json.dumps(clean(v),ensure_ascii=False,indent=2)+'\n'
 def table(p,rs):
  keys=list(dict.fromkeys(k for r in rs for k in r));f=gzip.open(p,'wt',newline='') if p.suffix=='.gz' else p.open('x',newline='')
  with f:
-  w=csv.DictWriter(f,fieldnames=keys);w.writeheader();w.writerows(clean(rs))
+  w=csv.DictWriter(f,fieldnames=keys,lineterminator="\n");w.writeheader();w.writerows(clean(rs))
 def readcsv(p):
  with gzip.open(p,'rt') if p.suffix=='.gz' else p.open() as f:return list(csv.DictReader(f))
 def scaled(j,m):
