@@ -1,0 +1,13 @@
+{
+  "frozen_analysis_unchanged": true,
+  "formal_observations_unchanged": true,
+  "statistic_or_parameter_changes": false,
+  "first_attempt": "/home/ubuntu22/uwb-midterm-prior-mechanism-b-artifacts/analysis",
+  "first_attempt_exit": 130,
+  "reason": "Repeated NpzFile indexing decompresses whole arrays; read-only analysis interrupted for I/O efficiency, no simulation rerun",
+  "wrapper": "tools/midterm_prior_mechanism_b/analyze_cached.py",
+  "verification": "all ten arrays bitwise identical (NaNs compared equal); same frozen analyze function",
+  "new_output": "/home/ubuntu22/uwb-midterm-prior-mechanism-b-artifacts/analysis-cached",
+  "development_common_output_cells_exactly_equal": 1597920,
+  "presentation_note": "Original development scatter axes capped MSE at 1; formal values reached 6.608. Added plot_full_range.py with data-enclosing decade limits; original figure preserved externally, delivery figure shows all 144 method-condition pairs/car. No data/statistic changes."
+}
