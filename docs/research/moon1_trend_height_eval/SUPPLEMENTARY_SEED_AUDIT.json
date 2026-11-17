@@ -1,0 +1,1532 @@
+{
+  "base": "0c3dbbb59a5c65087e073ad1c49eaed397f2958b",
+  "timing": "supplementary non-optimizer check after freeze; no seed or configuration changed",
+  "pre_freeze_scope": "all git-grep-readable text and 592 gzip archives",
+  "additional_scope": "18 NPZ numeric/string arrays without pickle and one Overleaf ZIP entries",
+  "records": [
+    {
+      "path": "docs/research/midterm_bias_region_b/results/LOCAL_MATRICES.npz",
+      "sha256": "6e412cf200fe8cee2cb8261445f75826da64fa184cc74c1c0cb102131264ec95",
+      "arrays": [
+        {
+          "array": "P",
+          "dtype": "float64",
+          "shape": [
+            3360,
+            3,
+            6,
+            2,
+            2,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "B",
+          "dtype": "float64",
+          "shape": [
+            3360,
+            3,
+            6,
+            2,
+            2,
+            4
+          ],
+          "matches": []
+        },
+        {
+          "array": "curvature",
+          "dtype": "float64",
+          "shape": [
+            3360,
+            3,
+            6,
+            2,
+            2,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "status",
+          "dtype": "<U9",
+          "shape": [
+            3360,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "state",
+          "dtype": "float64",
+          "shape": [
+            3360,
+            25
+          ],
+          "matches": []
+        },
+        {
+          "array": "id",
+          "dtype": "<U37",
+          "shape": [
+            3360
+          ],
+          "matches": []
+        }
+      ]
+    },
+    {
+      "path": "docs/research/midterm_geometry_perturbation_a/results/readback/POINTS.npz",
+      "sha256": "6552303effe9c7733e53c42300e6a50c301db9b34898e2c3db556da6eff4fe0c",
+      "arrays": [
+        {
+          "array": "gradient",
+          "dtype": "float64",
+          "shape": [
+            1200,
+            25
+          ],
+          "matches": []
+        },
+        {
+          "array": "scaled_gradient",
+          "dtype": "float64",
+          "shape": [
+            1200,
+            25
+          ],
+          "matches": []
+        },
+        {
+          "array": "q",
+          "dtype": "float64",
+          "shape": [
+            1200,
+            2,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "trace",
+          "dtype": "float64",
+          "shape": [
+            1200,
+            2,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "area95",
+          "dtype": "float64",
+          "shape": [
+            1200,
+            2,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "error",
+          "dtype": "float64",
+          "shape": [
+            1200,
+            12,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "reason",
+          "dtype": "<U32",
+          "shape": [
+            1200,
+            2,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_q",
+          "dtype": "float64",
+          "shape": [
+            1200,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_variance",
+          "dtype": "float64",
+          "shape": [
+            1200,
+            2
+          ],
+          "matches": []
+        }
+      ]
+    },
+    {
+      "path": "docs/research/midterm_inset_validation_b/results/LOCAL_MATRICES.npz",
+      "sha256": "a0300e330f93a665eb6cfbe7d33b6d528c6fa15c7f86cfa19e2c49d5ed7dc6ee",
+      "arrays": [
+        {
+          "array": "id",
+          "dtype": "<U14",
+          "shape": [
+            600
+          ],
+          "matches": []
+        },
+        {
+          "array": "P",
+          "dtype": "float64",
+          "shape": [
+            600,
+            2,
+            2,
+            6,
+            2,
+            2,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "B",
+          "dtype": "float64",
+          "shape": [
+            600,
+            2,
+            2,
+            6,
+            2,
+            2,
+            4
+          ],
+          "matches": []
+        },
+        {
+          "array": "curvature",
+          "dtype": "float64",
+          "shape": [
+            600,
+            2,
+            2,
+            6,
+            2,
+            2,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "status",
+          "dtype": "<U9",
+          "shape": [
+            600,
+            2,
+            2
+          ],
+          "matches": []
+        }
+      ]
+    },
+    {
+      "path": "docs/research/midterm_joint_coverage_a/results/fault/shard-000/POINTS.npz",
+      "sha256": "97f4fd7b9f255d05d2285cf57598afa9d1d8c4cb57ab102c6b917c64544f7902",
+      "arrays": [
+        {
+          "array": "covariance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "error",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            12,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "reason",
+          "dtype": "uint8",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_variance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_error",
+          "dtype": "float64",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_eligible",
+          "dtype": "bool",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        }
+      ]
+    },
+    {
+      "path": "docs/research/midterm_joint_coverage_a/results/fault/shard-001/POINTS.npz",
+      "sha256": "4c080a5821dffe6bd9132216652ebed081bf6b22fa7aa1cd6f3bea0f92403665",
+      "arrays": [
+        {
+          "array": "covariance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "error",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            12,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "reason",
+          "dtype": "uint8",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_variance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_error",
+          "dtype": "float64",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_eligible",
+          "dtype": "bool",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        }
+      ]
+    },
+    {
+      "path": "docs/research/midterm_joint_coverage_a/results/fault/shard-002/POINTS.npz",
+      "sha256": "004b686d2b4e3f0c45c8f7a8adab911dcf95a41dccef4ebf4f47f93c7b00a5a9",
+      "arrays": [
+        {
+          "array": "covariance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "error",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            12,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "reason",
+          "dtype": "uint8",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_variance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_error",
+          "dtype": "float64",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_eligible",
+          "dtype": "bool",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        }
+      ]
+    },
+    {
+      "path": "docs/research/midterm_joint_coverage_a/results/fault/shard-003/POINTS.npz",
+      "sha256": "c6f7bfc5f075f31b31917648f212b246b60efd6e84d55b35fdd1ab3bdb43e1a5",
+      "arrays": [
+        {
+          "array": "covariance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "error",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            12,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "reason",
+          "dtype": "uint8",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_variance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_error",
+          "dtype": "float64",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_eligible",
+          "dtype": "bool",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        }
+      ]
+    },
+    {
+      "path": "docs/research/midterm_joint_coverage_a/results/fault/shard-004/POINTS.npz",
+      "sha256": "c63ea1e11e0d426cbe34f701fdab198ef8c60d94c05bf999589dc398335b6ad9",
+      "arrays": [
+        {
+          "array": "covariance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "error",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            12,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "reason",
+          "dtype": "uint8",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_variance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_error",
+          "dtype": "float64",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_eligible",
+          "dtype": "bool",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        }
+      ]
+    },
+    {
+      "path": "docs/research/midterm_joint_coverage_a/results/fault/shard-005/POINTS.npz",
+      "sha256": "474c230ff6884845d371fe536bfb1cc655ac218b6f0161a2715d12575f3efbba",
+      "arrays": [
+        {
+          "array": "covariance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "error",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            12,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "reason",
+          "dtype": "uint8",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_variance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_error",
+          "dtype": "float64",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_eligible",
+          "dtype": "bool",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        }
+      ]
+    },
+    {
+      "path": "docs/research/midterm_joint_coverage_a/results/fault/shard-006/POINTS.npz",
+      "sha256": "2796f148f54f094412d7e54b25e8f2922b8a6cebf436bae47e43ad9981084d5c",
+      "arrays": [
+        {
+          "array": "covariance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "error",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            12,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "reason",
+          "dtype": "uint8",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_variance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_error",
+          "dtype": "float64",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_eligible",
+          "dtype": "bool",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        }
+      ]
+    },
+    {
+      "path": "docs/research/midterm_joint_coverage_a/results/fault/shard-007/POINTS.npz",
+      "sha256": "36b13a3e75e3e665def8ea16ea80d70f443967a6e176c16cfb031f644a9ad45a",
+      "arrays": [
+        {
+          "array": "covariance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "error",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            12,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "reason",
+          "dtype": "uint8",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_variance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_error",
+          "dtype": "float64",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_eligible",
+          "dtype": "bool",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        }
+      ]
+    },
+    {
+      "path": "docs/research/midterm_joint_coverage_a/results/noise/shard-000/POINTS.npz",
+      "sha256": "ac95d89880717dbe0fedce7f01f4561ebeeb1e6c01d4af37acabdc30d4ff928d",
+      "arrays": [
+        {
+          "array": "covariance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "error",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            12,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "reason",
+          "dtype": "uint8",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_variance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_error",
+          "dtype": "float64",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_eligible",
+          "dtype": "bool",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        }
+      ]
+    },
+    {
+      "path": "docs/research/midterm_joint_coverage_a/results/noise/shard-001/POINTS.npz",
+      "sha256": "655e52629cc7910f602b6f7e4d10215a5d359fa02cc9d16e0d890ec418aaac8c",
+      "arrays": [
+        {
+          "array": "covariance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "error",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            12,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "reason",
+          "dtype": "uint8",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_variance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_error",
+          "dtype": "float64",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_eligible",
+          "dtype": "bool",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        }
+      ]
+    },
+    {
+      "path": "docs/research/midterm_joint_coverage_a/results/noise/shard-002/POINTS.npz",
+      "sha256": "c08193c036ba844f5ef0ea92fb6d8904486922c6f3a552bb5bb4888916df6086",
+      "arrays": [
+        {
+          "array": "covariance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "error",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            12,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "reason",
+          "dtype": "uint8",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_variance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_error",
+          "dtype": "float64",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_eligible",
+          "dtype": "bool",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        }
+      ]
+    },
+    {
+      "path": "docs/research/midterm_joint_coverage_a/results/noise/shard-003/POINTS.npz",
+      "sha256": "82da4f2ab88a5673065b9ab6423faae4307f2dfab2f340ecc11e1912e7674a1a",
+      "arrays": [
+        {
+          "array": "covariance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "error",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            12,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "reason",
+          "dtype": "uint8",
+          "shape": [
+            3600,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_variance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_error",
+          "dtype": "float64",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_eligible",
+          "dtype": "bool",
+          "shape": [
+            3600
+          ],
+          "matches": []
+        }
+      ]
+    },
+    {
+      "path": "docs/research/midterm_noise_scale_a/results/readback/POINTS.npz",
+      "sha256": "0567fe425d763dbca1b0145c665de451c23dced29f6f6268026b958e702d9d13",
+      "arrays": [
+        {
+          "array": "gradient",
+          "dtype": "float64",
+          "shape": [
+            2400,
+            25
+          ],
+          "matches": []
+        },
+        {
+          "array": "scaled_gradient",
+          "dtype": "float64",
+          "shape": [
+            2400,
+            25
+          ],
+          "matches": []
+        },
+        {
+          "array": "q",
+          "dtype": "float64",
+          "shape": [
+            2400,
+            2,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "trace",
+          "dtype": "float64",
+          "shape": [
+            2400,
+            2,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "area95",
+          "dtype": "float64",
+          "shape": [
+            2400,
+            2,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "error",
+          "dtype": "float64",
+          "shape": [
+            2400,
+            12,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "reason",
+          "dtype": "<U32",
+          "shape": [
+            2400,
+            2,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_q",
+          "dtype": "float64",
+          "shape": [
+            2400,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_variance",
+          "dtype": "float64",
+          "shape": [
+            2400,
+            2
+          ],
+          "matches": []
+        }
+      ]
+    },
+    {
+      "path": "docs/research/midterm_technical_draft_c/OVERLEAF_PROJECT.zip",
+      "sha256": "f55b5e931c31978f9f49ec685f9fbc4c020375c26dff0d8a73ecb5531b1362c5",
+      "entries": [
+        {
+          "entry": "main.tex",
+          "bytes": 64287,
+          "matches": []
+        },
+        {
+          "entry": "figures/noise_explanations.png",
+          "bytes": 133046,
+          "matches": []
+        },
+        {
+          "entry": "figures/prior_coverage_car1.png",
+          "bytes": 330320,
+          "matches": []
+        },
+        {
+          "entry": "figures/prior_coverage_car2.png",
+          "bytes": 337015,
+          "matches": []
+        },
+        {
+          "entry": "figures/prior_linear_nonlinear_full_range.png",
+          "bytes": 94135,
+          "matches": []
+        },
+        {
+          "entry": "README_UPLOAD.txt",
+          "bytes": 597,
+          "matches": []
+        }
+      ]
+    },
+    {
+      "path": "docs/research/midterm_uncertainty_a/results/MARGINALS.npz",
+      "sha256": "fa99f893f950844778c4b93a99c2d81dff1ea7dcf6416d504b48fa832c5ae558",
+      "arrays": [
+        {
+          "array": "covariance_components",
+          "dtype": "float64",
+          "shape": [
+            7200,
+            3,
+            12,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "position_q",
+          "dtype": "float64",
+          "shape": [
+            7200,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_q",
+          "dtype": "float64",
+          "shape": [
+            7200,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_variance",
+          "dtype": "float64",
+          "shape": [
+            7200,
+            3
+          ],
+          "matches": []
+        },
+        {
+          "array": "position_error",
+          "dtype": "float64",
+          "shape": [
+            7200,
+            12,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_error",
+          "dtype": "float64",
+          "shape": [
+            7200
+          ],
+          "matches": []
+        },
+        {
+          "array": "position_bias_multiple_R2",
+          "dtype": "float64",
+          "shape": [
+            7200,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "coordinate_bias_correlations",
+          "dtype": "float64",
+          "shape": [
+            7200,
+            3,
+            24
+          ],
+          "matches": []
+        },
+        {
+          "array": "reasons",
+          "dtype": "<U40",
+          "shape": [
+            7200,
+            3,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_reasons",
+          "dtype": "<U40",
+          "shape": [
+            7200,
+            3
+          ],
+          "matches": []
+        }
+      ]
+    },
+    {
+      "path": "docs/research/midterm_weak_geometry_a/results/readback/POINTS.npz",
+      "sha256": "29baa40ccd8c2f4ecbc973568b06e8f8ef1d93d4e15906cc367c22271be0c2a3",
+      "arrays": [
+        {
+          "array": "gradient",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            25
+          ],
+          "matches": []
+        },
+        {
+          "array": "scaled_gradient",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            25
+          ],
+          "matches": []
+        },
+        {
+          "array": "q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            2,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "trace",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            2,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "area95",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            2,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "error",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            12,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "reason",
+          "dtype": "<U32",
+          "shape": [
+            3600,
+            2,
+            12
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_q",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            2
+          ],
+          "matches": []
+        },
+        {
+          "array": "bias_variance",
+          "dtype": "float64",
+          "shape": [
+            3600,
+            2
+          ],
+          "matches": []
+        }
+      ]
+    }
+  ],
+  "external_runs_known": false
+}
