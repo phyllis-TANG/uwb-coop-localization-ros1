@@ -1,0 +1,17 @@
+{
+  "id": "T01",
+  "status": "PASS",
+  "classification": "IDENTITY_OR_BOUND_VERIFIED",
+  "criterion": "S={s0}使距离范围精确退化回A0",
+  "inputs": {
+    "d": "5",
+    "rho": "0"
+  },
+  "output": {
+    "distance_interval": [
+      "5",
+      "5"
+    ],
+    "A0_exact": true
+  }
+}

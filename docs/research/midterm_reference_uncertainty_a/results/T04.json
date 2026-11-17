@@ -1,0 +1,27 @@
+{
+  "id": "T04",
+  "status": "PASS",
+  "classification": "IDENTITY_OR_BOUND_VERIFIED",
+  "criterion": "垂直误差距离平方26，变化小于rho而不等于零",
+  "inputs": {
+    "p": [
+      "3",
+      "4"
+    ],
+    "s": [
+      "-4/5",
+      "3/5"
+    ],
+    "rho": "1",
+    "nominal_distance": "5"
+  },
+  "output": {
+    "distance_squared": "26",
+    "shift_interval": [
+      "49509756796392415014112054511/500000000000000000000000000000",
+      "99019513592784830028224109023/1000000000000000000000000000000"
+    ],
+    "first_order_prediction": "0",
+    "nonlinear_shift_nonzero": true
+  }
+}

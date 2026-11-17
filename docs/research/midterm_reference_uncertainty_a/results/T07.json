@@ -1,0 +1,36 @@
+{
+  "id": "T07",
+  "status": "PASS",
+  "classification": "COUNTEREXAMPLE_CONFIRMED",
+  "criterion": "联合变化(u,-u)，独立盒包含不可实现(1,1)",
+  "inputs": {
+    "p1": [
+      "-2",
+      "0"
+    ],
+    "p2": [
+      "2",
+      "0"
+    ],
+    "reference_u": [
+      "-1",
+      "1"
+    ],
+    "false_pair": [
+      "3",
+      "3"
+    ]
+  },
+  "output": {
+    "exact_relation": "range1+range2=4",
+    "feasible_witness": [
+      "3",
+      "1"
+    ],
+    "independent_box_false_witness": [
+      "3",
+      "3"
+    ],
+    "false_witness_excluded_by_shared_reference": true
+  }
+}

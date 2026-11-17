@@ -1,0 +1,26 @@
+{
+  "id": "T06",
+  "status": "PASS",
+  "classification": "IDENTITY_OR_BOUND_VERIFIED",
+  "criterion": "b与参考误差同达边界，原b范围不够，松弛保留",
+  "inputs": {
+    "d": "2",
+    "rho": "1/10",
+    "b": [
+      "-3/5",
+      "3/5"
+    ]
+  },
+  "output": {
+    "prediction_interval": [
+      "13/10",
+      "27/10"
+    ],
+    "symmetric_relaxation": [
+      "13/10",
+      "27/10"
+    ],
+    "boundary_prediction": "27/10",
+    "old_unexpanded_upper": "13/5"
+  }
+}

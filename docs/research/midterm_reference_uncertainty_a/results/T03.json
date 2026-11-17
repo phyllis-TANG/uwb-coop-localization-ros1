@@ -1,0 +1,21 @@
+{
+  "id": "T03",
+  "status": "PASS",
+  "classification": "IDENTITY_OR_BOUND_VERIFIED",
+  "criterion": "平行参考误差达到逆三角上界",
+  "inputs": {
+    "p": [
+      "3",
+      "4"
+    ],
+    "s": [
+      "3/5",
+      "4/5"
+    ],
+    "rho": "1"
+  },
+  "output": {
+    "range_shift": "-1",
+    "lipschitz_bound_attained": true
+  }
+}

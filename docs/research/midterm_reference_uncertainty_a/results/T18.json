@@ -1,0 +1,33 @@
+{
+  "id": "T18",
+  "status": "PASS",
+  "classification": "COUNTEREXAMPLE_CONFIRMED",
+  "criterion": "固定共享b改变均值不产生随机中心方差，不等价相关噪声",
+  "inputs": {
+    "b": "3/10",
+    "sigma": "1/25",
+    "rows": 2,
+    "noise": [
+      "0",
+      "0"
+    ]
+  },
+  "output": {
+    "fixed_bias_mean": [
+      "3/10",
+      "3/10"
+    ],
+    "fixed_bias_covariance": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ]
+    ],
+    "true_random_noise_score": "0",
+    "score_if_fixed_bias_misclassified_zero_mean_noise": "225/2"
+  }
+}

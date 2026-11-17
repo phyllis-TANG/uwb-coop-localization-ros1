@@ -1,0 +1,29 @@
+{
+  "id": "T10",
+  "status": "PASS",
+  "classification": "COUNTEREXAMPLE_CONFIRMED",
+  "criterion": "误用独立R令同一向量二次型2而真实20",
+  "inputs": {
+    "R": [
+      [
+        "1",
+        "9/10"
+      ],
+      [
+        "9/10",
+        "1"
+      ]
+    ],
+    "e": [
+      "1",
+      "-1"
+    ],
+    "tau": "6"
+  },
+  "output": {
+    "correct_correlated_score": "20",
+    "wrong_independent_score": "2",
+    "threshold": "6",
+    "wrong_event_accepts_outside_true_noise_event": true
+  }
+}

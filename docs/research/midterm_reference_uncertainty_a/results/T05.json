@@ -1,0 +1,22 @@
+{
+  "id": "T05",
+  "status": "PASS",
+  "classification": "IDENTITY_OR_BOUND_VERIFIED",
+  "criterion": "零/近零距离下非负下界及Lipschitz仍成立，无Jacobian",
+  "inputs": {
+    "d": "0",
+    "near_d": "1/1000000",
+    "rho": "1/10"
+  },
+  "output": {
+    "zero_distance_image": [
+      "0",
+      "1/10"
+    ],
+    "near_zero_image": [
+      "0",
+      "100001/1000000"
+    ],
+    "derivative_required": false
+  }
+}

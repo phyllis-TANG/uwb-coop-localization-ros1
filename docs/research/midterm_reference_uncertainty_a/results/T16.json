@@ -1,0 +1,49 @@
+{
+  "id": "T16",
+  "status": "PASS",
+  "classification": "COUNTEREXAMPLE_CONFIRMED",
+  "criterion": "无锚点刚体自由度、共线镜像及距离-b混淆均保留",
+  "inputs": {
+    "p": [
+      "1",
+      "2"
+    ],
+    "s": [
+      "3",
+      "1"
+    ],
+    "translation": [
+      "5",
+      "7"
+    ],
+    "anchors": [
+      [
+        "-4",
+        "0"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "4",
+        "0"
+      ]
+    ]
+  },
+  "output": {
+    "joint_translation_invariant": true,
+    "collinear_joint_reflection_invariant": true,
+    "distance_bias_ambiguity": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "1/2",
+        "1/2"
+      ]
+    ],
+    "unique_position_not_proved_by_row_count": true
+  }
+}

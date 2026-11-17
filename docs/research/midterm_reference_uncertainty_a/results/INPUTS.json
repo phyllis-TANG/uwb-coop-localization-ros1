@@ -1,0 +1,402 @@
+{
+  "source_sha": "30f9379249a4e695acf75910c40862a770e6f4ce",
+  "formal_cases": [
+    {
+      "id": "T01",
+      "kind": "zero_reference",
+      "criterion": "S={s0}使距离范围精确退化回A0",
+      "inputs": {
+        "d": "5",
+        "rho": "0"
+      }
+    },
+    {
+      "id": "T02",
+      "kind": "ball_boundary",
+      "criterion": "球边界朝向/背向达到距离像端点",
+      "inputs": {
+        "p": [
+          "3",
+          "4"
+        ],
+        "s0": [
+          "0",
+          "0"
+        ],
+        "rho": "1",
+        "near": [
+          "3/5",
+          "4/5"
+        ],
+        "far": [
+          "-3/5",
+          "-4/5"
+        ]
+      }
+    },
+    {
+      "id": "T03",
+      "kind": "parallel",
+      "criterion": "平行参考误差达到逆三角上界",
+      "inputs": {
+        "p": [
+          "3",
+          "4"
+        ],
+        "s": [
+          "3/5",
+          "4/5"
+        ],
+        "rho": "1"
+      }
+    },
+    {
+      "id": "T04",
+      "kind": "perpendicular",
+      "criterion": "垂直误差距离平方26，变化小于rho而不等于零",
+      "inputs": {
+        "p": [
+          "3",
+          "4"
+        ],
+        "s": [
+          "-4/5",
+          "3/5"
+        ],
+        "rho": "1",
+        "nominal_distance": "5"
+      }
+    },
+    {
+      "id": "T05",
+      "kind": "zero_distance",
+      "criterion": "零/近零距离下非负下界及Lipschitz仍成立，无Jacobian",
+      "inputs": {
+        "d": "0",
+        "near_d": "1/1000000",
+        "rho": "1/10"
+      }
+    },
+    {
+      "id": "T06",
+      "kind": "bias_boundary",
+      "criterion": "b与参考误差同达边界，原b范围不够，松弛保留",
+      "inputs": {
+        "d": "2",
+        "rho": "1/10",
+        "b": [
+          "-3/5",
+          "3/5"
+        ]
+      }
+    },
+    {
+      "id": "T07",
+      "kind": "shared_reference",
+      "criterion": "联合变化(u,-u)，独立盒包含不可实现(1,1)",
+      "inputs": {
+        "p1": [
+          "-2",
+          "0"
+        ],
+        "p2": [
+          "2",
+          "0"
+        ],
+        "reference_u": [
+          "-1",
+          "1"
+        ],
+        "false_pair": [
+          "3",
+          "3"
+        ]
+      }
+    },
+    {
+      "id": "T08",
+      "kind": "shared_bias_counterexample",
+      "criterion": "单一扩宽β不能表示真实(1,-1)两行几何变化",
+      "inputs": {
+        "nominal": [
+          "2",
+          "2"
+        ],
+        "true_ranges": [
+          "3",
+          "1"
+        ],
+        "b": "0"
+      }
+    },
+    {
+      "id": "T09",
+      "kind": "outside_domain",
+      "criterion": "噪声为零不补偿真位置域外，域前提必要",
+      "inputs": {
+        "p": [
+          "7",
+          "0"
+        ],
+        "domain": [
+          [
+            "-6",
+            "6"
+          ],
+          [
+            "-6",
+            "6"
+          ]
+        ],
+        "noise": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "T10",
+      "kind": "correlated_counterexample",
+      "criterion": "误用独立R令同一向量二次型2而真实20",
+      "inputs": {
+        "R": [
+          [
+            "1",
+            "9/10"
+          ],
+          [
+            "9/10",
+            "1"
+          ]
+        ],
+        "e": [
+          "1",
+          "-1"
+        ],
+        "tau": "6"
+      }
+    },
+    {
+      "id": "T11",
+      "kind": "duplicate_information",
+      "criterion": "复制同一观测不使真实方差减半；解析覆盖下降",
+      "inputs": {
+        "single_variance": "1",
+        "copies": 2,
+        "single_radius": "2",
+        "epsilon_witness": "3/2"
+      }
+    },
+    {
+      "id": "T12",
+      "kind": "dependent_union",
+      "criterion": "不相交失包含事件给并集界紧例，不可相乘",
+      "inputs": {
+        "atoms": 100,
+        "reference_fail": [
+          0,
+          1
+        ],
+        "noise_fail": [
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "T13",
+      "kind": "units",
+      "criterion": "m/mm统一变换距离、b、sigma、R，白化二次型不变",
+      "inputs": {
+        "scale": "1000",
+        "d": "2",
+        "rho": "1/10",
+        "b": [
+          "-3/5",
+          "3/5"
+        ],
+        "R": [
+          [
+            "1",
+            "3/5"
+          ],
+          [
+            "3/5",
+            "1"
+          ]
+        ],
+        "e": [
+          "1",
+          "-1"
+        ]
+      }
+    },
+    {
+      "id": "T14",
+      "kind": "rotation",
+      "criterion": "有理正交旋转加平移保持距离像",
+      "inputs": {
+        "p": [
+          "3",
+          "4"
+        ],
+        "s": [
+          "-4/5",
+          "3/5"
+        ],
+        "Q": [
+          [
+            "3/5",
+            "-4/5"
+          ],
+          [
+            "4/5",
+            "3/5"
+          ]
+        ],
+        "translation": [
+          "7",
+          "-2"
+        ]
+      }
+    },
+    {
+      "id": "T15",
+      "kind": "empty",
+      "criterion": "负10锚点读数与非负距离严格不相容，域内空不等于零误差",
+      "inputs": {
+        "anchor_reading": "-10",
+        "sigma": "1/25",
+        "tau": "9.488"
+      }
+    },
+    {
+      "id": "T16",
+      "kind": "unidentifiable",
+      "criterion": "无锚点刚体自由度、共线镜像及距离-b混淆均保留",
+      "inputs": {
+        "p": [
+          "1",
+          "2"
+        ],
+        "s": [
+          "3",
+          "1"
+        ],
+        "translation": [
+          "5",
+          "7"
+        ],
+        "anchors": [
+          [
+            "-4",
+            "0"
+          ],
+          [
+            "0",
+            "0"
+          ],
+          [
+            "4",
+            "0"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "T17",
+      "kind": "whitening",
+      "criterion": "有理Cholesky直接白化等于R逆二次型，维数仍2",
+      "inputs": {
+        "L": [
+          [
+            "1",
+            "0"
+          ],
+          [
+            "3/5",
+            "4/5"
+          ]
+        ],
+        "R": [
+          [
+            "1",
+            "3/5"
+          ],
+          [
+            "3/5",
+            "1"
+          ]
+        ],
+        "e": [
+          "1",
+          "-1"
+        ],
+        "measurement_dimension": 2
+      }
+    },
+    {
+      "id": "T18",
+      "kind": "fixed_bias",
+      "criterion": "固定共享b改变均值不产生随机中心方差，不等价相关噪声",
+      "inputs": {
+        "b": "3/10",
+        "sigma": "1/25",
+        "rows": 2,
+        "noise": [
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "id": "T19",
+      "kind": "cross_covariance",
+      "criterion": "同数据完全负相关时总方差0，忽略交叉项错误得到2",
+      "inputs": {
+        "R": "1",
+        "Q": "1",
+        "cross": "-1",
+        "H": "1"
+      }
+    },
+    {
+      "id": "T20",
+      "kind": "risk_budget",
+      "criterion": "χ²4精确有理尾上界和.02+.03联合预算，旧阈值不可仍称95%",
+      "inputs": {
+        "q_A0": "9.488",
+        "q_A2_example": "10.72",
+        "alpha_reference": "1/50",
+        "alpha_noise": "3/100",
+        "terms": 81
+      }
+    }
+  ],
+  "sensitivity": {
+    "distances_m": [
+      "0",
+      "1/10",
+      "1",
+      "5"
+    ],
+    "radii_m": [
+      "0",
+      "1/100",
+      "1/20",
+      "1/10",
+      "1/2"
+    ],
+    "bias_m": [
+      "-3/5",
+      "3/5"
+    ],
+    "planned_rows": 20
+  },
+  "expected_cases": 20,
+  "arithmetic": "Fraction; certified sqrt endpoints; no sampling",
+  "development_examples": 1
+}
