@@ -1,0 +1,25 @@
+{
+  "catalog": {
+    "record_id": "B063",
+    "data_kind": "real",
+    "date": "20261018",
+    "filename": "TWO_CAR_both_motion_20261018_045116.bag",
+    "category": "two_car_motion",
+    "recording_status": "previously_decoded_complete",
+    "experiment_status": "completed_with_possible_person_interference",
+    "experiment_description": "双车首次同动；现场有人进入，可能短时遮挡。",
+    "reference_status": "旧聊天已有逐车起终点；用户无新增独立notes，追补已关闭。",
+    "recommended_use": "双车同动挑战、人员经过候选阶段与鲁棒性诊断。",
+    "limitations": "人员进入仅约t=30.3至33.3s宽候选，不是已证实时段，不能将距离变化直接归因人员。 / 不能借用正常重录050447的终点或备注；无连续轨迹真值。",
+    "archive_path": "20261018/bags/TWO_CAR_both_motion_20261018_045116.bag",
+    "linked_support_files": "",
+    "size_bytes": "8203509",
+    "sha256": "0e42309e71c9f5d4abd95047ff54bcad8e5aee3f4f5190603583af69cc00f94c",
+    "known_sha256": "0e42309e71c9f5d4abd95047ff54bcad8e5aee3f4f5190603583af69cc00f94c",
+    "repository_reported_sha256": "",
+    "this_run_verification": "byte_copy_and_sha256_plus_format_header_only",
+    "new_message_decode_performed": "False"
+  },
+  "continuous_truth": null,
+  "source": "catalog and same-day notes; historical evidence, not independently surveyed this run"
+}

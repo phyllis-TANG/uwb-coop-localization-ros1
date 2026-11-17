@@ -1,0 +1,20 @@
+{
+  "code_sha": "2fad8a05acd54623b1769feb580e0b5938c2e9e8",
+  "argv": [
+    "tools/field_observation_readiness/audit.py",
+    "--out",
+    "/home/ubuntu22/uwb-field-observation-readiness-artifacts/audit001"
+  ],
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "rosbags": "0.10.11"
+  },
+  "cases": 5,
+  "all_messages": 82739,
+  "decoded_messages": 74353,
+  "optimizer_calls": 0,
+  "formal_runs": 0,
+  "source_unchanged": true,
+  "all_selected_cases_retained": true
+}
