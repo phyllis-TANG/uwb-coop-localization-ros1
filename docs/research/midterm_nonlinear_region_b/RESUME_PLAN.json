@@ -1,0 +1,33 @@
+{
+  "source_freeze": "e5c1d6e1ee83b99859a5c099281efd95b90d1d26",
+  "source_run_sha256": "ad47afc57328a19a8700500a9c7336718100cca1c823021a464ce0890414238a",
+  "cases": [
+    "s1_boundary",
+    "s1_empty",
+    "s1_good",
+    "s1_mirror",
+    "s2_good"
+  ],
+  "result_hashes": {
+    "s1_boundary.json.gz": "3e4de1b5f709fc8cbb5812430c7fc45c2b45d85d48c877cf30962ab4a76371e9",
+    "s1_empty.json.gz": "064f802b323de717438426f3ae91d214cafb725e900af031235d42a7db59b3c7",
+    "s1_good.json.gz": "5166b93230cbd7fb19bff7bcc9fa71cbc104d91d3d7a87c558cb58018ccc6534",
+    "s1_mirror.json.gz": "3885f52a121d7fcba0b878382eaa53682b10eb967a69c704a954df4eb681186d",
+    "s2_good.json.gz": "1e195da286791e728c27cea92772dfc2b16d7ebb1257cd7fc9c290bf1d5a7726"
+  },
+  "unchanged_files": [
+    "tools/midterm_nonlinear_region_b/interval.py",
+    "tools/midterm_nonlinear_region_b/invert.py",
+    "tools/midterm_nonlinear_region_b/inputs.py",
+    "tools/midterm_nonlinear_region_b/plot.py",
+    "docs/research/midterm_nonlinear_region_b/CONFIG.json",
+    "docs/research/midterm_nonlinear_region_b/INPUTS.json",
+    "docs/research/midterm_nonlinear_region_b/MATH.md"
+  ],
+  "remaining_cases": [
+    "s2_mirror",
+    "s2_boundary",
+    "s2_budget"
+  ],
+  "reason": "checker textual .6 versus 0.6 identity error; no solver change; reuse five persisted outputs without search"
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "case": "s1_boundary",
+    "xy_boundary": true,
+    "bias_boundary": null,
+    "axes": [
+      true,
+      false
+    ]
+  },
+  {
+    "case": "s1_empty",
+    "xy_boundary": false,
+    "bias_boundary": null,
+    "axes": [
+      false,
+      false
+    ]
+  },
+  {
+    "case": "s1_good",
+    "xy_boundary": false,
+    "bias_boundary": null,
+    "axes": [
+      false,
+      false
+    ]
+  },
+  {
+    "case": "s1_mirror",
+    "xy_boundary": false,
+    "bias_boundary": null,
+    "axes": [
+      false,
+      false
+    ]
+  },
+  {
+    "case": "s2_boundary",
+    "xy_boundary": true,
+    "bias_boundary": true,
+    "axes": [
+      true,
+      false,
+      true
+    ]
+  },
+  {
+    "case": "s2_budget",
+    "xy_boundary": false,
+    "bias_boundary": true,
+    "axes": [
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "case": "s2_good",
+    "xy_boundary": false,
+    "bias_boundary": false,
+    "axes": [
+      false,
+      false,
+      false
+    ]
+  },
+  {
+    "case": "s2_mirror",
+    "xy_boundary": false,
+    "bias_boundary": false,
+    "axes": [
+      false,
+      false,
+      false
+    ]
+  }
+]

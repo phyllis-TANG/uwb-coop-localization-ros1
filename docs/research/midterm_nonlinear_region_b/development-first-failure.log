@@ -1,0 +1,25 @@
+test_affine_disk (__main__.Tests) ... ok
+test_arithmetic (__main__.Tests) ... ok
+test_boundary (__main__.Tests) ... ok
+test_budget_queue (__main__.Tests) ... ok
+test_empty (__main__.Tests) ... ok
+test_failure (__main__.Tests) ... ok
+test_mirror (__main__.Tests) ... ok
+test_projection (__main__.Tests) ... ok
+test_rational_model (__main__.Tests) ... ok
+test_threshold (__main__.Tests) ... ok
+test_time (__main__.Tests) ... ok
+test_units (__main__.Tests) ... FAIL
+
+======================================================================
+FAIL: test_units (__main__.Tests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/ubuntu22/uwb-midterm-nonlinear-region-b/tools/midterm_nonlinear_region_b/tests.py", line 64, in test_units
+    self.assertLess(abs(l-lo),D('1e-25'));self.assertLess(abs(h-hi),D('1e-25'))
+AssertionError: Decimal('1.2206809839550E-25') not less than Decimal('1E-25')
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.102s
+
+FAILED (failures=1)

@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "status": "PASS",
+      "nodes": 133,
+      "certified_leaves": 47,
+      "retained": 28,
+      "case": "s1_boundary"
+    },
+    {
+      "status": "PASS",
+      "nodes": 1,
+      "certified_leaves": 1,
+      "retained": 0,
+      "case": "s1_empty"
+    },
+    {
+      "status": "PASS",
+      "nodes": 207,
+      "certified_leaves": 62,
+      "retained": 56,
+      "case": "s1_good"
+    },
+    {
+      "status": "PASS",
+      "nodes": 461,
+      "certified_leaves": 151,
+      "retained": 108,
+      "case": "s1_mirror"
+    },
+    {
+      "status": "PASS",
+      "nodes": 591,
+      "certified_leaves": 140,
+      "retained": 175,
+      "case": "s2_boundary"
+    },
+    {
+      "status": "PASS",
+      "nodes": 19,
+      "certified_leaves": 7,
+      "retained": 3,
+      "case": "s2_budget"
+    },
+    {
+      "status": "PASS",
+      "nodes": 2687,
+      "certified_leaves": 549,
+      "retained": 878,
+      "case": "s2_good"
+    },
+    {
+      "status": "PASS",
+      "nodes": 5741,
+      "certified_leaves": 1183,
+      "retained": 1866,
+      "case": "s2_mirror"
+    }
+  ],
+  "search_calls": 0,
+  "optimizer_calls": 0
+}

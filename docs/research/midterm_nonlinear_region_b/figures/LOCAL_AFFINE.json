@@ -1,0 +1,170 @@
+[
+  {
+    "case": "s1_boundary",
+    "status": "AVAILABLE",
+    "linearization": [
+      5.953125,
+      0.0
+    ],
+    "center": [
+      6.000103058183983,
+      -2.345206900378425e-16
+    ],
+    "rank": 2,
+    "remaining_budget": 9.48795877789308,
+    "optimizer_calls": 0,
+    "projected_shape": [
+      [
+        0.006250312639978049,
+        -1.0688698368275539e-19
+      ],
+      [
+        -1.0688698368275539e-19,
+        0.009661847595859625
+      ]
+    ]
+  },
+  {
+    "case": "s1_empty",
+    "status": "NO_OUTPUT_CENTER",
+    "optimizer_calls": 0
+  },
+  {
+    "case": "s1_good",
+    "status": "AVAILABLE",
+    "linearization": [
+      1.03125,
+      2.00390625
+    ],
+    "center": [
+      1.0257023841965964,
+      2.00122712220659
+    ],
+    "rank": 2,
+    "remaining_budget": 9.454586029766844,
+    "optimizer_calls": 0,
+    "projected_shape": [
+      [
+        0.005812374362129961,
+        -0.0007276047017292577
+      ],
+      [
+        -0.0007276047017292577,
+        0.011086137939365042
+      ]
+    ]
+  },
+  {
+    "case": "s1_mirror",
+    "status": "RANK_DEFICIENT",
+    "linearization": [
+      1.0078125,
+      0.0
+    ],
+    "center": [
+      0.978257213033731,
+      0.0
+    ],
+    "rank": 1,
+    "remaining_budget": -1079.2346847178515,
+    "optimizer_calls": 0
+  },
+  {
+    "case": "s2_boundary",
+    "status": "AVAILABLE",
+    "linearization": [
+      5.953125,
+      -0.01171875,
+      0.0
+    ],
+    "center": [
+      6.000025791383792,
+      0.0001209164801968532,
+      0.6003771151327114
+    ],
+    "rank": 3,
+    "remaining_budget": 9.487996091814281,
+    "optimizer_calls": 0,
+    "projected_shape": [
+      [
+        0.0080202117608412,
+        -0.004218528990467082
+      ],
+      [
+        -0.004218528990467082,
+        0.01972345343951064
+      ]
+    ]
+  },
+  {
+    "case": "s2_budget",
+    "status": "AVAILABLE",
+    "linearization": [
+      0.75,
+      1.5,
+      0.0
+    ],
+    "center": [
+      1.0397534858683768,
+      2.0138358607983307,
+      0.34123391037583883
+    ],
+    "rank": 3,
+    "remaining_budget": 8.567249109876984,
+    "optimizer_calls": 0,
+    "projected_shape": [
+      [
+        0.007957163597865014,
+        0.0017110559811673897
+      ],
+      [
+        0.0017110559811673897,
+        0.011595630845758645
+      ]
+    ]
+  },
+  {
+    "case": "s2_good",
+    "status": "AVAILABLE",
+    "linearization": [
+      1.03125,
+      2.00390625,
+      0.0
+    ],
+    "center": [
+      1.0284299209962025,
+      2.002692759448223,
+      0.3078159197290829
+    ],
+    "rank": 3,
+    "remaining_budget": 9.477857152296119,
+    "optimizer_calls": 0,
+    "projected_shape": [
+      [
+        0.008856620941132206,
+        0.0008987376185282123
+      ],
+      [
+        0.0008987376185282123,
+        0.011988299498888614
+      ]
+    ]
+  },
+  {
+    "case": "s2_mirror",
+    "status": "RANK_DEFICIENT",
+    "linearization": [
+      0.99609375,
+      0.0,
+      0.0
+    ],
+    "center": [
+      1.1283882690448348,
+      0.0,
+      0.9005242240444142
+    ],
+    "rank": 2,
+    "remaining_budget": -910.1896798752832,
+    "optimizer_calls": 0
+  }
+]
