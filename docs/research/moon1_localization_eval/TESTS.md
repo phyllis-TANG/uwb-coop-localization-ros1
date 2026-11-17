@@ -19,7 +19,7 @@ export PYTHONDONTWRITEBYTECODE=1 PYTHONPATH= OPENBLAS_NUM_THREADS=1 OMP_NUM_THRE
 
 | 检查 | 输入 | 实际结果 | 实际优化器调用 |
 |---|---|---|---:|
-| 源码编译检查 | 新增8个Python文件 | 通过 | 0 |
+| 源码编译检查 | 新增7个Python文件 | 通过 | 0 |
 | 无噪声匹配 | 实际PR114 NPZ，三窗，M0/M1/M2及M2+.3m | 12/12接受，最大位置分量误差4.09e−15m | 12 |
 | 中心差分J | 固定初始化，步长1e−5 | 最大1.79e−8<2e−6 | 0 |
 | 平面特例交叉 | 新模型对只读旧模型 | r/J差0 | 0 |
