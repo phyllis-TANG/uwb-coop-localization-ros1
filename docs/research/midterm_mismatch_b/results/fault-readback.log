@@ -1,0 +1,15 @@
+readback 500/7200
+readback 1000/7200
+readback 1500/7200
+readback 2000/7200
+readback 2500/7200
+readback 3000/7200
+readback 3500/7200
+readback 4000/7200
+readback 4500/7200
+readback 5000/7200
+readback 5500/7200
+readback 6000/7200
+readback 6500/7200
+readback 7000/7200
+{'inputs': 7200, 'stage_records': 57600, 'recomputed_states': 57600, 'unavailable_states': 0, 'missing_stages': 0, 'max_metric_diff': 0.0, 'max_cost_diff': 0.0, 'max_gradient_diff': 0.0, 'max_residual_diff': 0.0, 'max_jacobian_diff': 0.0, 'max_gradient_vector_diff': 0.0, 'optimizer_calls': 0, 'stage_categories': {'P0:ACCEPTED': 4357, 'P1:ACCEPTED': 28419, 'P0:NOT_STATIONARY': 24443, 'P1:NOT_STATIONARY': 367, 'P1:BUDGET_EXHAUSTED': 14}, 'planned_inputs': 7200, 'planned_methods': 28800, 'completed_methods': 28800, 'valid_final': 28800, 'accepted_final': 28419, 'passed': True}

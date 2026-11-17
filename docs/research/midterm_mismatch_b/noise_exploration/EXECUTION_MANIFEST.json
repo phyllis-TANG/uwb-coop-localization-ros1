@@ -1,0 +1,28 @@
+{
+  "frozen_commit": "54ac42b60a11a0666e8840cf5bd8417a02a677e1",
+  "prior_fault_freeze": "41653fff74255a3222b49933947f31c497640e0f",
+  "planned_inputs": 3600,
+  "completed_inputs": 3600,
+  "planned_methods": 14400,
+  "completed_methods": 14400,
+  "persisted_stages": 28800,
+  "stage_start_attempt_counts": {
+    "1": 28800
+  },
+  "events": [
+    {
+      "event": "RUN_STARTED",
+      "utc": "2026-11-16T15:02:46Z"
+    },
+    {
+      "event": "RUN_COMPLETED",
+      "new_stages": 28800,
+      "units": 3600,
+      "utc": "2026-11-16T15:05:01Z"
+    }
+  ],
+  "raw_directory": "/home/ubuntu22/uwb-midterm-mismatch-b-artifacts/noise-formal",
+  "formal_elapsed_wall_s": 135,
+  "raw_disk_MiB": 369,
+  "notes": "No interruption, no retries. Post-run noise_delivery_plots.py is presentation only; no protocol/selection/optimizer change."
+}
