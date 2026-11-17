@@ -1,0 +1,138 @@
+{
+  "DETERMINISTIC_READBACK": {
+    "status": "PASS",
+    "planned": 52,
+    "completed": 52,
+    "unexecuted": [],
+    "certificate_failures": [],
+    "nodes_checked": 69864,
+    "readback_seconds": 5.168032595,
+    "search_calls": 0,
+    "optimizer_calls": 0
+  },
+  "RANDOM_READBACK": {
+    "status": "PASS",
+    "planned": 1200,
+    "completed": 1200,
+    "unexecuted": [],
+    "certificate_failures": [],
+    "nodes_checked": 1875858,
+    "readback_seconds": 139.411702826,
+    "search_calls": 0,
+    "optimizer_calls": 0
+  },
+  "DELIVERY_AUDIT": {
+    "status": "PASS",
+    "stages": {
+      "deterministic": {
+        "planned": 52,
+        "records": 52,
+        "nodes": {
+          "SPLIT": 34906,
+          "OUTSIDE": 13642,
+          "INSIDE": 2335,
+          "UNDECIDED": 18975,
+          "PENDING": 6
+        },
+        "costs": {
+          "search_seconds": 3.142769648009562,
+          "certificate_seconds": 4.765477011009352,
+          "metrics_evaluation_seconds": 0.41160575799585786,
+          "result_io_seconds": 1.179180088089197,
+          "method_wall_seconds": 9.57125524499861
+        },
+        "pointwise_bias_feasibility": {
+          "near_b.6": {
+            "FEASIBLE_PROVED": 3
+          },
+          "s2_budget": {
+            "FEASIBLE_PROVED": 1
+          },
+          "s1_good": {
+            "FEASIBLE_PROVED": 1
+          },
+          "s1_boundary": {
+            "FEASIBLE_PROVED": 1
+          },
+          "normal_b.6": {
+            "FEASIBLE_PROVED": 3
+          },
+          "mirror_b0": {
+            "FEASIBLE_PROVED": 3
+          },
+          "s2_mirror": {
+            "FEASIBLE_PROVED": 1
+          },
+          "s1_mirror": {
+            "FEASIBLE_PROVED": 1
+          },
+          "s2_good": {
+            "FEASIBLE_PROVED": 1
+          },
+          "s1_empty": {
+            "EMPTY_PROVED": 1
+          },
+          "normal_b0": {
+            "FEASIBLE_PROVED": 3
+          },
+          "mirror_b.6": {
+            "FEASIBLE_PROVED": 3
+          },
+          "s2_boundary": {
+            "FEASIBLE_PROVED": 1
+          },
+          "near_b0": {
+            "FEASIBLE_PROVED": 3
+          }
+        },
+        "stage_elapsed": 9.612022876739502
+      },
+      "random": {
+        "planned": 1200,
+        "records": 1200,
+        "nodes": {
+          "SPLIT": 937329,
+          "OUTSIDE": 377310,
+          "INSIDE": 54122,
+          "UNDECIDED": 507097
+        },
+        "costs": {
+          "search_seconds": 97.20039444600116,
+          "certificate_seconds": 128.26939399295952,
+          "metrics_evaluation_seconds": 11.929122071916936,
+          "result_io_seconds": 31.62393627196434,
+          "method_wall_seconds": 270.33735901181353
+        },
+        "pointwise_bias_feasibility": {
+          "near_b.6": {
+            "FEASIBLE_PROVED": 97,
+            "EMPTY_PROVED": 3
+          },
+          "mirror_b0": {
+            "FEASIBLE_PROVED": 98,
+            "EMPTY_PROVED": 2
+          },
+          "near_b0": {
+            "FEASIBLE_PROVED": 98,
+            "EMPTY_PROVED": 2
+          },
+          "normal_b.6": {
+            "EMPTY_PROVED": 3,
+            "FEASIBLE_PROVED": 97
+          },
+          "normal_b0": {
+            "FEASIBLE_PROVED": 98,
+            "EMPTY_PROVED": 2
+          },
+          "mirror_b.6": {
+            "FEASIBLE_PROVED": 97,
+            "EMPTY_PROVED": 3
+          }
+        },
+        "stage_elapsed": 270.7778534889221
+      }
+    },
+    "search_calls": 0,
+    "optimizer_calls": 0
+  }
+}
