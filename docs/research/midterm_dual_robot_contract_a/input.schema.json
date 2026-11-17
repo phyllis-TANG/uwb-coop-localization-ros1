@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DUAL-A-V1 input",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "model_id",
+    "state_order",
+    "measurement_ids",
+    "anchor_map",
+    "bias_incidence",
+    "domains",
+    "observation_intervals",
+    "noise_model",
+    "threshold_certificate",
+    "arithmetic_policy",
+    "budget",
+    "source_commit",
+    "case_id",
+    "units",
+    "frame",
+    "epoch",
+    "antenna_reference",
+    "representation",
+    "position_prior",
+    "motion",
+    "input_hash"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "DUAL-A-V1"
+    },
+    "model_id": {
+      "const": "dual_robot_single_epoch_diagonal_v1"
+    },
+    "state_order": {
+      "const": [
+        "p_x",
+        "p_y",
+        "s_x",
+        "s_y",
+        "b"
+      ]
+    },
+    "measurement_ids": {
+      "const": [
+        "t0/p/a0",
+        "t0/p/a1",
+        "t0/p/a2",
+        "t0/p/a3",
+        "t0/s/a0",
+        "t0/s/a1",
+        "t0/s/a2",
+        "t0/s/a3",
+        "t0/p/s/peer"
+      ]
+    },
+    "anchor_map": {
+      "type": "object"
+    },
+    "bias_incidence": {
+      "const": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    "domains": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "type": "string",
+          "pattern": "^-?\\d+(?:/\\d+|\\.\\d+)?$"
+        }
+      }
+    },
+    "observation_intervals": {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9,
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "type": "string",
+          "pattern": "^-?\\d+(?:/\\d+|\\.\\d+)?$"
+        }
+      }
+    },
+    "noise_model": {
+      "type": "object"
+    },
+    "threshold_certificate": {
+      "type": "object"
+    },
+    "arithmetic_policy": {
+      "const": {
+        "kind": "rational_isqrt",
+        "sqrt_digits": 30,
+        "closed_sets": true
+      }
+    },
+    "budget": {
+      "type": "object"
+    },
+    "source_commit": {
+      "const": "3ad69c8137183c1986012e354857b73527978c48"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "units": {
+      "const": "m"
+    },
+    "frame": {
+      "const": "synthetic_xy"
+    },
+    "epoch": {
+      "const": "t0"
+    },
+    "antenna_reference": {
+      "const": "2d_antenna"
+    },
+    "representation": {
+      "const": "enclosing_closed_cartesian_intervals"
+    },
+    "position_prior": {
+      "const": null
+    },
+    "motion": {
+      "const": null
+    },
+    "input_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  },
+  "description": "core.validate additionally enforces identities, positive diagonal R, budgets, hash, and threshold proof."
+}

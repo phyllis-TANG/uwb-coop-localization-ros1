@@ -1,0 +1,446 @@
+{
+  "source_commit": "3ad69c8137183c1986012e354857b73527978c48",
+  "generator_version": "DUAL-A-V1-generate-1",
+  "python": "3.10.12",
+  "algorithm": "CPython random.Random MT19937 + gauss; saved IEEE draws as exact rational; no seed rejection",
+  "seeds": [
+    2026111709000000,
+    2026111709000001,
+    2026111709000002,
+    2026111709000003,
+    2026111709000004,
+    2026111709000005,
+    2026111709000006,
+    2026111709000007,
+    2026111709000008,
+    2026111709000009,
+    2026111709000010,
+    2026111709000011,
+    2026111709000012,
+    2026111709000013,
+    2026111709000014,
+    2026111709000015,
+    2026111709000016,
+    2026111709000017,
+    2026111709000018,
+    2026111709000019,
+    2026111709000020,
+    2026111709000021,
+    2026111709000022,
+    2026111709000023,
+    2026111709000024,
+    2026111709000025,
+    2026111709000026,
+    2026111709000027,
+    2026111709000028,
+    2026111709000029,
+    2026111709000030,
+    2026111709000031,
+    2026111709000032,
+    2026111709000033,
+    2026111709000034,
+    2026111709000035,
+    2026111709000036,
+    2026111709000037,
+    2026111709000038,
+    2026111709000039,
+    2026111709000040,
+    2026111709000041,
+    2026111709000042,
+    2026111709000043,
+    2026111709000044,
+    2026111709000045,
+    2026111709000046,
+    2026111709000047,
+    2026111709000048,
+    2026111709000049,
+    2026111709000050,
+    2026111709000051,
+    2026111709000052,
+    2026111709000053,
+    2026111709000054,
+    2026111709000055,
+    2026111709000056,
+    2026111709000057,
+    2026111709000058,
+    2026111709000059,
+    2026111709000060,
+    2026111709000061,
+    2026111709000062,
+    2026111709000063,
+    2026111709000064,
+    2026111709000065,
+    2026111709000066,
+    2026111709000067,
+    2026111709000068,
+    2026111709000069,
+    2026111709000070,
+    2026111709000071,
+    2026111709000072,
+    2026111709000073,
+    2026111709000074,
+    2026111709000075,
+    2026111709000076,
+    2026111709000077,
+    2026111709000078,
+    2026111709000079,
+    2026111709000080,
+    2026111709000081,
+    2026111709000082,
+    2026111709000083,
+    2026111709000084,
+    2026111709000085,
+    2026111709000086,
+    2026111709000087,
+    2026111709000088,
+    2026111709000089,
+    2026111709000090,
+    2026111709000091,
+    2026111709000092,
+    2026111709000093,
+    2026111709000094,
+    2026111709000095,
+    2026111709000096,
+    2026111709000097,
+    2026111709000098,
+    2026111709000099,
+    2026111709000100,
+    2026111709000101,
+    2026111709000102,
+    2026111709000103,
+    2026111709000104,
+    2026111709000105,
+    2026111709000106,
+    2026111709000107,
+    2026111709000108,
+    2026111709000109,
+    2026111709000110,
+    2026111709000111,
+    2026111709000112,
+    2026111709000113,
+    2026111709000114,
+    2026111709000115,
+    2026111709000116,
+    2026111709000117,
+    2026111709000118,
+    2026111709000119
+  ],
+  "count": 120,
+  "paired_methods": [
+    "5d",
+    "4d",
+    "no_peer"
+  ],
+  "prior_registry_audit": [
+    {
+      "path": "datasets/field_raw/provenance/classification_seed.json",
+      "sha256": "b2226f9583446b9bdac6fa840f84aaf5293ef02b27b3dece98fdcf01f993d6ef"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/causal_reliability_20261027/results_summary/paired_seed_summary.csv",
+      "sha256": "b4b410c39b9d2ca5ea53832b412a3c45e8112310434348564721c747a8610d00"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/reliability_stress/per_seed_fault.csv",
+      "sha256": "07cb55bf9fc0d1109ca89820d694a631981399b7d33c5210bb3e3ee416a92f54"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/single_car_quality_fgo_v1/review/normal_by_seed.csv",
+      "sha256": "0215c725e529e9c53e43815ae2df1d6d60b085b29164c33a4d4ad9ebcd09d594"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_fixed_lag_fgo_v1/per_seed_pair.csv",
+      "sha256": "bae03705719a4b218927bd9bd2f3a161ce85706c4bffc68bd53d0dcf76ee0dff"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_fixed_lag_fgo_v1/per_seed_vehicle.csv",
+      "sha256": "5b08411458b108e6e51af4bf3cad20bd8d9279c3354be7f9a177a12ff3ed76ae"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_imu_fgo_20261028/configs/car1_common_wall_bias_seed101.json",
+      "sha256": "4e0165efa623ccb5d8f4266c14bf2da63b6834e0fee8dd1b859ed1d2cf1b92ba"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_imu_fgo_20261028/configs/car1_common_wall_bias_seed211.json",
+      "sha256": "7e6710a202f48d101502080c11d90c4599c3f99ea09ec8414f037fcb48957b8f"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_imu_fgo_20261028/configs/car1_gyro_gap_seed101.json",
+      "sha256": "4e0165efa623ccb5d8f4266c14bf2da63b6834e0fee8dd1b859ed1d2cf1b92ba"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_imu_fgo_20261028/configs/car1_gyro_gap_seed211.json",
+      "sha256": "7e6710a202f48d101502080c11d90c4599c3f99ea09ec8414f037fcb48957b8f"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_imu_fgo_20261028/configs/gyro_constant_bias_seed101.json",
+      "sha256": "4e0165efa623ccb5d8f4266c14bf2da63b6834e0fee8dd1b859ed1d2cf1b92ba"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_imu_fgo_20261028/configs/gyro_constant_bias_seed211.json",
+      "sha256": "7e6710a202f48d101502080c11d90c4599c3f99ea09ec8414f037fcb48957b8f"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_imu_fgo_20261028/configs/nominal_seed101.json",
+      "sha256": "4e0165efa623ccb5d8f4266c14bf2da63b6834e0fee8dd1b859ed1d2cf1b92ba"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_imu_fgo_20261028/configs/nominal_seed211.json",
+      "sha256": "7e6710a202f48d101502080c11d90c4599c3f99ea09ec8414f037fcb48957b8f"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_imu_fgo_20261028/configs/peer_bias_seed101.json",
+      "sha256": "4e0165efa623ccb5d8f4266c14bf2da63b6834e0fee8dd1b859ed1d2cf1b92ba"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/two_car_imu_fgo_20261028/configs/peer_bias_seed211.json",
+      "sha256": "7e6710a202f48d101502080c11d90c4599c3f99ea09ec8414f037fcb48957b8f"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/video_reference_20261026/T12_manual_seed.json",
+      "sha256": "a2f23e52aa4db364512a8cc994a6dd954eb892b687aa324eb71f6ecaafd2747e"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/video_reference_20261026/T14_manual_seed.json",
+      "sha256": "51415a987c6a5a1d51c9af4600709a696af7638444da0182040efa0d5fa06645"
+    },
+    {
+      "path": "docs/field_tests/20261024_25/video_reference_20261026/T15_manual_seed.json",
+      "sha256": "1b82d63da903515e5957a033937160833201ae72f295caf9fdd9f35e25112aea"
+    },
+    {
+      "path": "docs/research/geometry_correction_20261101/artifacts/evidence-seed20261101701.tar.gz",
+      "sha256": "cc1391489e4bb01c517157ffa7064182eccee04dc659b194e327b2b81833d140"
+    },
+    {
+      "path": "docs/research/geometry_correction_20261101/artifacts/evidence-seed20261101702.tar.gz",
+      "sha256": "56fcdf47ab45d516ae35e7e9015ac85e7845f8d3c5062e36e562ef61cd5ff68f"
+    },
+    {
+      "path": "docs/research/geometry_correction_20261101/artifacts/evidence-seed20261101703.tar.gz",
+      "sha256": "db0d9572c3f15a1c9bf9661d916b799cd309502c8a3f254c86e8349752eb8235"
+    },
+    {
+      "path": "docs/research/geometry_correction_20261101/artifacts/evidence-seed20261101704.tar.gz",
+      "sha256": "4ccbdfa267bcc89fff12f9129bf45d1b2d603746d2d4e982296c6c36c2e72180"
+    },
+    {
+      "path": "docs/research/geometry_correction_20261101/results/PER_SEED_INTERACTIONS.csv",
+      "sha256": "2b3d11f0a8c6a77f88350f071d5ca6f95d895963fd0da25775eddd743b915db5"
+    },
+    {
+      "path": "docs/research/integrity_validation_20261030/PER_SEED.csv",
+      "sha256": "836553328c58336bb03ac9d1b339143d2ccb4b149948ae91c8e73e477759ce0d"
+    },
+    {
+      "path": "docs/research/midterm_bias_region_b/results/PER_SEED.csv.gz",
+      "sha256": "a887113f3f4f63699f05fa034062cd0f23e1970ff0c1c14afe254a429a105215"
+    },
+    {
+      "path": "docs/research/midterm_geometry_perturbation_a/SEEDS.csv",
+      "sha256": "23e39b828aed38ea82397dd23e0573b4e14bb8cda60233a217af6fa0833ccf83"
+    },
+    {
+      "path": "docs/research/midterm_geometry_perturbation_a/SEED_AUDIT.json",
+      "sha256": "89ab39b53eac77f8e6d773f4a0e4f77822556d9251736f007eee0b2bd9e260b0"
+    },
+    {
+      "path": "docs/research/midterm_geometry_perturbation_a/SEED_AUDIT_FILES.jsonl.gz",
+      "sha256": "ed6f2320107ea621eca1c451cb93fec875f91865ce20e6faba5f4dac070341f4"
+    },
+    {
+      "path": "docs/research/midterm_geometry_perturbation_a/results/contrasts/GROUP_SEEDS.csv",
+      "sha256": "6c23739628be071f86085b67334362b59a26d0e4800de205deb8aff8fae59350"
+    },
+    {
+      "path": "docs/research/midterm_geometry_perturbation_a/results/contrasts/SEED_METRICS.csv",
+      "sha256": "991121abbcc1e847b87f66f802738331823479f102e687d6055195e2d9777966"
+    },
+    {
+      "path": "docs/research/midterm_inset_validation_b/SEED_AUDIT_FILES.json",
+      "sha256": "41795be2975182f0f0ed8057aa8d536b47fff2fc15d4f800971620da3f574f4c"
+    },
+    {
+      "path": "docs/research/midterm_inset_validation_b/SEED_REGISTRY.json",
+      "sha256": "761a4550c50650e39ed9b45fc07831dbdd18b3c5a7dbd4c84ffd8a4e814bf433"
+    },
+    {
+      "path": "docs/research/midterm_inset_validation_b/results/COMMON_AVAILABLE_PER_SEED.csv.gz",
+      "sha256": "6b04fa2838d4cfa83a14e345593572933fe19cccc05626d343381832c2adbccf"
+    },
+    {
+      "path": "docs/research/midterm_inset_validation_b/results/PER_SEED.csv.gz",
+      "sha256": "0147fad34bc13f8bac510cefb8a6db8438fcc50721535fab9a1812a4fba2ee11"
+    },
+    {
+      "path": "docs/research/midterm_mismatch_b/SEED_AUDIT.json.gz",
+      "sha256": "9686e239fc772d697b549be179db6f009080a401043ebfc1170db7916c17c7d1"
+    },
+    {
+      "path": "docs/research/midterm_mismatch_b/SEED_REGISTRY.json",
+      "sha256": "bcf4d020a2033e5b42a256577be058db455205b188e2c6576dc69c2043f89b04"
+    },
+    {
+      "path": "docs/research/midterm_mismatch_b/noise_exploration/SEED_AUDIT.json.gz",
+      "sha256": "293ccc869b986e34c98530173c4ce722d6231153dcdf7fe24e5f274568b9088f"
+    },
+    {
+      "path": "docs/research/midterm_mismatch_b/noise_exploration/SEED_REGISTRY.json",
+      "sha256": "62fe1b608c602eaf71b13930a22a54dd164ee8fadf187f8fb1261da1e8a592e9"
+    },
+    {
+      "path": "docs/research/midterm_noise_scale_a/SEEDS.csv",
+      "sha256": "93c22fb0b2b3ee096f32fb5bc6915aa43fca2d57376474912a74786696f35589"
+    },
+    {
+      "path": "docs/research/midterm_noise_scale_a/SEED_AUDIT.json",
+      "sha256": "ca09a605354eb0415bcdcf275ae82f84f81041cb1c5260c8aa77a2e3d7cbeb71"
+    },
+    {
+      "path": "docs/research/midterm_noise_scale_a/SEED_AUDIT_FILES.jsonl.gz",
+      "sha256": "9f4e88ed07f3e375de7fb53d750961cd25f19ef0c1e4aa67c689456da38d0bf8"
+    },
+    {
+      "path": "docs/research/midterm_noise_scale_a/results/contrasts/GROUP_SEEDS.csv",
+      "sha256": "fc4ebcab2d31daa2774210ade8ce12a49403cb1f15b0cb50a11bb1c53a752cc9"
+    },
+    {
+      "path": "docs/research/midterm_noise_scale_a/results/contrasts/SEED_METRICS.csv",
+      "sha256": "9e69c6e6ae39fdc67c938528d581d96a92050e1c9edf5c3e373bf40845a04471"
+    },
+    {
+      "path": "docs/research/midterm_nonlinear_decomposition_a/results/summary/DECOMPOSITION_SEEDS.csv",
+      "sha256": "ce9a6636f7e4add426c2ad7436eb76ce808ba5a23a2069d1f6a3c4e433ad3308"
+    },
+    {
+      "path": "docs/research/midterm_nonlinear_decomposition_a/results/summary/REGION_SEEDS.csv.gz",
+      "sha256": "a6809517e207f3703674455dc7268a8d1afbcbc4b3c4ae8d900dd8c36ee2c8ff"
+    },
+    {
+      "path": "docs/research/midterm_prior_mechanism_b/SEED_AUDIT.json.gz",
+      "sha256": "46fef85ba330c6fdd62d5b9deefea305c71388b7c159278b9e5638e6e50008ea"
+    },
+    {
+      "path": "docs/research/midterm_prior_mechanism_b/SEED_REGISTRY.json",
+      "sha256": "af0fd94312981937e77f3a33fb146def606aee8b519d0c33661624d77bc59fcb"
+    },
+    {
+      "path": "docs/research/midterm_profiled_region_b/SEED_AUDIT.json",
+      "sha256": "1daed14002c5b2e468d2da9231e7c1f13801b99470ebfe2dc3498f8f24e08564"
+    },
+    {
+      "path": "docs/research/midterm_profiled_region_b/SEED_REGISTRY.json",
+      "sha256": "6ad67479b072a019c56898c226ed06b640326863e71cc6d7a6e9a4dba59d8294"
+    },
+    {
+      "path": "docs/research/midterm_simulation_s1b/SEED_AUDIT.json",
+      "sha256": "2a981cce8adafd9a5b7dd9d0e4c88c1b93668de605bd0cc4734f71152d0ee48d"
+    },
+    {
+      "path": "docs/research/midterm_simulation_s1b/SEED_BASELINE_AUDIT.json",
+      "sha256": "e5fd30864cf544d7d75652c2ce299000e5a19eca1e4805f5109a455cb12701a6"
+    },
+    {
+      "path": "docs/research/midterm_simulation_s2/SEED_REGISTRY.json",
+      "sha256": "fa27c00b1f4613300735a8ab5eed44d84ec19fdde0039f3ee4216214313935e2"
+    },
+    {
+      "path": "docs/research/midterm_simulation_validation/SEED_AUDIT.json.gz",
+      "sha256": "fb251029e1e1374ae285c778455037a895c1a0f8343385039da6b91f2a4bb56c"
+    },
+    {
+      "path": "docs/research/midterm_simulation_validation/SEED_REGISTRY.json",
+      "sha256": "c935e69b0781f5f1a39ee2271a43de9b9fecd103c0098476a4ef99af4d6cc2ff"
+    },
+    {
+      "path": "docs/research/midterm_validation_acceptance/FROZEN_SEEDS.json",
+      "sha256": "c935e69b0781f5f1a39ee2271a43de9b9fecd103c0098476a4ef99af4d6cc2ff"
+    },
+    {
+      "path": "docs/research/midterm_weak_geometry_a/SEEDS.csv",
+      "sha256": "4ffe0351767edebc4ebb4d6cdaa3d2aae21239afef298b9e91e2a2d2e74aa065"
+    },
+    {
+      "path": "docs/research/moon1_bias_dynamics_eval/SEED_AUDIT.json",
+      "sha256": "fc2744ebe25f51c1dc577f672f822e6a9e674b0c0d7615eda3144085832a6868"
+    },
+    {
+      "path": "docs/research/paper_figures_20261102/simulation/data/pr92_per_seed_interactions.csv",
+      "sha256": "49e139e60a5052a7f3ca669b5879fd7b116f37ee8f12f58a4820f2541b0a4f56"
+    },
+    {
+      "path": "docs/research/two_car_mechanism_20261101/artifacts/calibration-seed20261101101.tar.gz",
+      "sha256": "c4461d79248aac87a58414d8e21351dea7c9b85cf201adbe05bf90046bc427af"
+    },
+    {
+      "path": "docs/research/two_car_mechanism_20261101/artifacts/calibration-seed20261101102.tar.gz",
+      "sha256": "323ecaef5b60eb50db101d08499b3bce23da9cd6e11a504859a06f56e661f98b"
+    },
+    {
+      "path": "docs/research/two_car_mechanism_20261101/artifacts/development-seed7.tar.gz",
+      "sha256": "632224f4082a7b59c51936c3968a24616ce9c8c29888fd9a37595a2d518c4faa"
+    },
+    {
+      "path": "docs/research/two_car_mechanism_20261101/artifacts/test-seed20261101201.tar.gz",
+      "sha256": "592f1e590510f6ab96d0994e75a31ccc960c031d7636d733bbe9c3e3214483e2"
+    },
+    {
+      "path": "docs/research/two_car_mechanism_20261101/artifacts/test-seed20261101202.tar.gz",
+      "sha256": "e1c39d33b8b812fdd6ef8d5202adcc772328b6918967d36f39b728eca5c28acc"
+    },
+    {
+      "path": "docs/research/two_car_mechanism_20261101/artifacts/test-seed20261101203.tar.gz",
+      "sha256": "61c0f586fee8a968154c18554755b1391742725ba3a2a8790e730ec5e77760e6"
+    },
+    {
+      "path": "docs/research/two_car_mechanism_20261101/artifacts/test-seed20261101204.tar.gz",
+      "sha256": "bcce2e6c5deb8a8d75ab9d62f69149d5a52a65eef5701884e55bb2b437fe7a9b"
+    },
+    {
+      "path": "docs/research/two_car_mechanism_20261101/results/calibration/PER_SEED.csv",
+      "sha256": "13849200c3baa74937ba0ff14835b57bd93249a02930e67d7d1de20dbb72f6df"
+    },
+    {
+      "path": "docs/research/two_car_mechanism_20261101/results/development/PER_SEED.csv",
+      "sha256": "04bb0d93946b1c8206e16d8cfcfaa123aec14afffb05c484997befe09fe61ae7"
+    },
+    {
+      "path": "docs/research/two_car_mechanism_20261101/results/development/RECOVERY_PER_SEED.csv",
+      "sha256": "77e38a757adf7da60ebd52da3ad7036e6161b111b637b86cd728841251ed0d07"
+    },
+    {
+      "path": "docs/research/two_car_mechanism_20261101/results/test/PER_SEED.csv",
+      "sha256": "69c822eb36929a58c5b6a7f40242d55e0e97e5332c9ae5358bc5ddf793853db2"
+    },
+    {
+      "path": "docs/research/two_car_mechanism_20261101/results/test/RECOVERY_PER_SEED.csv",
+      "sha256": "f14746c3758cc254b076fb07512b00e00cd397eeabf91e68ed33a747cf8b2db6"
+    },
+    {
+      "path": "tools/midterm_geometry_perturbation_a/seed_audit.py",
+      "sha256": "5a9d175ad40ebeace3ad5433ed73ac3bd4311469929e57960a59da6402e4ae0d"
+    },
+    {
+      "path": "tools/midterm_mismatch_b/seed_audit.py",
+      "sha256": "ebfce0e216d0046cea517778cadb082202b10453c8fbd36f6794e475010fbfc8"
+    },
+    {
+      "path": "tools/midterm_noise_scale_a/seed_audit.py",
+      "sha256": "3366113eea4e03eae3ff4c6ed6ea4d1b86a9bc5a22dac8cb81f3c9859935cc8f"
+    },
+    {
+      "path": "tools/midterm_prior_mechanism_b/seed_audit.py",
+      "sha256": "ac4f966073488c225378f5d38b324f9b481b67153670a09ca1d2c8e4ee40a119"
+    },
+    {
+      "path": "tools/midterm_simulation_s1b/audit_seeds.py",
+      "sha256": "8a4e1ed566620c93d07b50b9166a0fafcfd7bfe62ef8dd81b64dc87bc365ac34"
+    },
+    {
+      "path": "tools/midterm_simulation_validation/audit_seeds.py",
+      "sha256": "d14926fb1541140ff01900cd3b4093c78851950ae51a8ac5f2760439327b9a02"
+    }
+  ],
+  "collision_count": 0,
+  "scope": "all seed/registry-named tracked text/gzip files at fixed baseline; no assertion about future or external registrations"
+}

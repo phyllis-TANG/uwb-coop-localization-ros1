@@ -1,0 +1,550 @@
+{
+  "deterministic": [
+    {
+      "case_id": "normal_b0_zero",
+      "input_hash": "484295b1c57dbaf6c70188815390dd40872166634b5a880e9962be3f393777bb"
+    },
+    {
+      "case_id": "normal_b0_direction",
+      "input_hash": "98d0b7d40fde3b454e9e0263d5f31faa54e7c5bf7a895ecd5ef5ed8e3d8cc724"
+    },
+    {
+      "case_id": "normal_b6_zero",
+      "input_hash": "d92bceb4bf2fc42a9f4912ec883fce52bec61eba0f7fb89e44c1dd1e9c9526ce"
+    },
+    {
+      "case_id": "normal_b6_direction",
+      "input_hash": "dce462a844eeb7e674ff9a826310e38ec51b0fe7999b7c5b6b1f14fce9177da9"
+    },
+    {
+      "case_id": "near_collinear_b0_zero",
+      "input_hash": "38264d0d5250fad79f113aff626c7e50a7c1641549844a5522b5948480d839da"
+    },
+    {
+      "case_id": "near_collinear_b0_direction",
+      "input_hash": "3d7f72c23f3cb913291b5762ed26da5a3f7d2c71f9ff78cfb0603ebe0a7ef4f8"
+    },
+    {
+      "case_id": "near_collinear_b6_zero",
+      "input_hash": "d5824d5e736dda40c59dfc67936246549db1548bb7b80575f00118a5bc7aa93d"
+    },
+    {
+      "case_id": "near_collinear_b6_direction",
+      "input_hash": "cd5fad22da40a37ae7d9b0a7aa30ba38668d75ae0fc32afa8d69bbe31c8764ac"
+    },
+    {
+      "case_id": "collinear_b0_zero",
+      "input_hash": "f0885cd3f43761e27cc351e348b6c14c87efcfbbba2d983909da84b7b7dac697"
+    },
+    {
+      "case_id": "collinear_b0_direction",
+      "input_hash": "35a9a6d6b1b322d6eae95cb25cdba38936c4dd618bf7eece0b59442d2b005be5"
+    },
+    {
+      "case_id": "collinear_b6_zero",
+      "input_hash": "c7ac9090fe9327c2c1712ecd586ab3149bcdd3ca64742b1aea174f96d165d53b"
+    },
+    {
+      "case_id": "collinear_b6_direction",
+      "input_hash": "7909e2cfc7f49667c3ffbc7a7a6e42b8387159e820c638718090481a13424f43"
+    },
+    {
+      "case_id": "empty_in_domain",
+      "input_hash": "3032c827770dfd6fd5bf9665ff7a759b0c3586276eaf4345107b9cf5782c6e0a"
+    },
+    {
+      "case_id": "domain_closed_contact",
+      "input_hash": "4e8ace2632dad1cd56eb4dff7e77f1e43682708a3bdf994204eda8c31ed14311"
+    },
+    {
+      "case_id": "coincident_zero_distance",
+      "input_hash": "16e210ee6723c7c19b38477f5180fe4384218fc7829d5e027faf16ac1f335968"
+    },
+    {
+      "case_id": "forced_budget",
+      "input_hash": "ca4aaa85de407cf87f4e183fc7be1b4cd9cf5048acac47589549fa49c1961086"
+    }
+  ],
+  "random_conditional": [
+    {
+      "case_id": "random_2026111709000000",
+      "input_hash": "1c8bf0382c53c3ef87942988e04d85a2e913b8193e808f4038a48ed586e02a49"
+    },
+    {
+      "case_id": "random_2026111709000001",
+      "input_hash": "3ba4e3aecccf0d62f2340ea9c7cedfbc60898cce41eb1059b9dbf83cce3291f2"
+    },
+    {
+      "case_id": "random_2026111709000002",
+      "input_hash": "5abdf6af78a5115e9e1869b1933bbc84b7d3691b1be8daac3a2c1cef9e379e81"
+    },
+    {
+      "case_id": "random_2026111709000003",
+      "input_hash": "61b0bbf4c973156b1a48a9417353de615bda21a82a6bd9944359545ea6b8fd47"
+    },
+    {
+      "case_id": "random_2026111709000004",
+      "input_hash": "48c630dfe1fc2def9021932237eab5bfa05b915b85c8a6ea353afc905ba1a450"
+    },
+    {
+      "case_id": "random_2026111709000005",
+      "input_hash": "8054d18a7b4632ce4d200ac2ab991285cd36cf939f0750b5b66b2c2051ae7bfb"
+    },
+    {
+      "case_id": "random_2026111709000006",
+      "input_hash": "b846f688e6bb490023d7c4a19b8bf98ba5bdfb5f532e69f88804397d2ab612e8"
+    },
+    {
+      "case_id": "random_2026111709000007",
+      "input_hash": "08ad29c71880758d1406ddd66300a30cc4286248ee759067bd2519c42d78a15e"
+    },
+    {
+      "case_id": "random_2026111709000008",
+      "input_hash": "bd2048e9fa0179ee512394dbb7718f86cc745462907fb4de9872b662552ae73d"
+    },
+    {
+      "case_id": "random_2026111709000009",
+      "input_hash": "5f8950f2236ea834b84d2c27ba69e0ff2728747acbad53e84d20e9789c1765f8"
+    },
+    {
+      "case_id": "random_2026111709000010",
+      "input_hash": "72ac328144270721624a91a99c57a1691c34fb5f5b878443b7191191fdb1b42e"
+    },
+    {
+      "case_id": "random_2026111709000011",
+      "input_hash": "18a75871c81ee125d34549c78cad2a629f079923514cb722690a2f2327e6142c"
+    },
+    {
+      "case_id": "random_2026111709000012",
+      "input_hash": "3b46cc772edf2de8d9016f1eb18aab6f84d3e4e33968f289ee73393cc28eb977"
+    },
+    {
+      "case_id": "random_2026111709000013",
+      "input_hash": "eb74ea5d2ca83192ecd75ac680a14fe280f60da7a623eab04d3a2ed86c623297"
+    },
+    {
+      "case_id": "random_2026111709000014",
+      "input_hash": "92720760ff54ac9f1d56da3bfa9182c9bf129c4e53fdb84ec52416a9317ce086"
+    },
+    {
+      "case_id": "random_2026111709000015",
+      "input_hash": "743c170c600d147c7f813d80fdabd5c379cd0544cf8372a9c81f1e733a89570a"
+    },
+    {
+      "case_id": "random_2026111709000016",
+      "input_hash": "8b538cde9cfd95e69381aa6b16f0af0a85d86f7e8be88064af1ce8e40e77ff1d"
+    },
+    {
+      "case_id": "random_2026111709000017",
+      "input_hash": "d22f65f86320cb99639d940da56de28f8fe7f4d10c6db387a62af6d112397b87"
+    },
+    {
+      "case_id": "random_2026111709000018",
+      "input_hash": "df9418f42c4287588aed914ebbefac685639a6650aed9132cd5e0dc5962fe766"
+    },
+    {
+      "case_id": "random_2026111709000019",
+      "input_hash": "1bc16685edb44384a2e2e736ab56914bcc95d535a190a35c75b9e99983e82f48"
+    },
+    {
+      "case_id": "random_2026111709000020",
+      "input_hash": "a12fd3397c8a20fb6c5e9b706b58fb3adfdad11b4a1a407770090b78391aa429"
+    },
+    {
+      "case_id": "random_2026111709000021",
+      "input_hash": "a0b9cd61a67be7efc165f859cfb62980f12b8aa9b17aa8209bc310d10e5e8f4b"
+    },
+    {
+      "case_id": "random_2026111709000022",
+      "input_hash": "e8de10b542ee9e9fe56a4dc7e2d73b62df987191ef671ce4de8be960df69043d"
+    },
+    {
+      "case_id": "random_2026111709000023",
+      "input_hash": "7dd67aa64b030d3c73dc30cefe4cdaf67e52e5b12d08048a3064b4d8717598f5"
+    },
+    {
+      "case_id": "random_2026111709000024",
+      "input_hash": "f8bd8f8b8e9382a92b02785d6641bb9966ad160fb67e13be913ca4bfe63ac11b"
+    },
+    {
+      "case_id": "random_2026111709000025",
+      "input_hash": "0f603f126c785791c9fe9020d43c528212ec91d66eca34905ca7b5c43d8e3c20"
+    },
+    {
+      "case_id": "random_2026111709000026",
+      "input_hash": "9474e8ff899b666afca9949c396f3638453b2b359cbe559888ad5d11c0da34b3"
+    },
+    {
+      "case_id": "random_2026111709000027",
+      "input_hash": "7f815b244a7d14f4e8180c6cf8180712958059ae615af7a43cd51e966dbb14c7"
+    },
+    {
+      "case_id": "random_2026111709000028",
+      "input_hash": "9ec107c86051877375418467e649d2ea79d4f95ff72a92d1cd3c1348428baa76"
+    },
+    {
+      "case_id": "random_2026111709000029",
+      "input_hash": "0084c395c6c4e3dacfa92d181b2a333cf3a063f962b0b257123c4e70572f01cd"
+    },
+    {
+      "case_id": "random_2026111709000030",
+      "input_hash": "63a64a602dedfddb34abed5095e07517e74ced1a408024e7d6aa0d70a74dd80c"
+    },
+    {
+      "case_id": "random_2026111709000031",
+      "input_hash": "1981cf283eccf2927a3f1f00bf9bc22688a904189249b7841e3edb1152f65e49"
+    },
+    {
+      "case_id": "random_2026111709000032",
+      "input_hash": "fc2196fd5b9e493e1e5190f41e9cd9dbd8fedc3fb7ad10d5e839097d9be6d269"
+    },
+    {
+      "case_id": "random_2026111709000033",
+      "input_hash": "5085c8c7c212787ee5980b9bacc07a360273ae19e493be05c363db14174ded26"
+    },
+    {
+      "case_id": "random_2026111709000034",
+      "input_hash": "554a740b0a95dad78e54d29cbfad161ba315b26f03f49f23d87813ff45c74bd2"
+    },
+    {
+      "case_id": "random_2026111709000035",
+      "input_hash": "a8b96f657ca4ebfeb3f4ef6b3adebe1d8605dc79c006d8a0f8b1354eed5d4afc"
+    },
+    {
+      "case_id": "random_2026111709000036",
+      "input_hash": "3d5cc6e80a9dce2c288b5133247eb198f0bb844c7292f3a8599c297a5a4d2451"
+    },
+    {
+      "case_id": "random_2026111709000037",
+      "input_hash": "5282bf5c012ab2e6990bbdf458eb792f73f387bed8da85d56a94b5dcb33893a2"
+    },
+    {
+      "case_id": "random_2026111709000038",
+      "input_hash": "608e614040374e9371895343656f0ccd2e4f87b384db3a5cd70e191245d4d367"
+    },
+    {
+      "case_id": "random_2026111709000039",
+      "input_hash": "4f10cddab6b9389cc25f7f2041321483e258c73535aa1ff5f280d6cfaa45d7eb"
+    },
+    {
+      "case_id": "random_2026111709000040",
+      "input_hash": "653bee914876a0a64afc33f30b3073df14338a1bb8ca6c94d4ce3bdf40d5eac4"
+    },
+    {
+      "case_id": "random_2026111709000041",
+      "input_hash": "952f32b9bd1abf2f7ecda9f4ecd35942000af3276c27b62f23ca54f4757a5e2e"
+    },
+    {
+      "case_id": "random_2026111709000042",
+      "input_hash": "bd5d4fdad9ef52c9d9b3f6c1654ddcacfb053430461377bacf4ee1aeabc93381"
+    },
+    {
+      "case_id": "random_2026111709000043",
+      "input_hash": "a88bfab22dfeec8ff911fc3fe957cf8d548e5273dfc86cf1b6825510fa690820"
+    },
+    {
+      "case_id": "random_2026111709000044",
+      "input_hash": "bbcfdf165e1023bf25626c16de1e7819b7c9502c3dc793ca359d46bfbdebc835"
+    },
+    {
+      "case_id": "random_2026111709000045",
+      "input_hash": "f6846ef6c70ff6982dbb613c6c6d586b6793c479e8286d0500bbcae8bf4250c5"
+    },
+    {
+      "case_id": "random_2026111709000046",
+      "input_hash": "b0a409b3a60294c1696267e751ef0b565d93c3db3cecd11d1b25f2efda5d3934"
+    },
+    {
+      "case_id": "random_2026111709000047",
+      "input_hash": "798c119ea8fc29ed14ac18746f53232952516eb7b4b88efe5ec2b9850a6c5c9e"
+    },
+    {
+      "case_id": "random_2026111709000048",
+      "input_hash": "05ed6d9816261aaf028cceff6ba613e66bab12efc436359a7077e7dc54811e9d"
+    },
+    {
+      "case_id": "random_2026111709000049",
+      "input_hash": "1591704e50393e1e17d4fe570516cdeaff84180c79b176140d52c8281493416b"
+    },
+    {
+      "case_id": "random_2026111709000050",
+      "input_hash": "827a2edc4874f8848582a9376f3441e98150753a373f1b0d5344ddf7637cd355"
+    },
+    {
+      "case_id": "random_2026111709000051",
+      "input_hash": "31c6c8315ab68ac589a83dd30f279188903295f1512d7576822f9f57a00ecf39"
+    },
+    {
+      "case_id": "random_2026111709000052",
+      "input_hash": "0abab62e02400f55c5e246ff6ace4367de4dfde2a7cbb9ebceb2366b3f5291d2"
+    },
+    {
+      "case_id": "random_2026111709000053",
+      "input_hash": "072c12fe107d76cfdda05eca4eefdc7bf3ee3a5f97ce7841786688007e6b96e1"
+    },
+    {
+      "case_id": "random_2026111709000054",
+      "input_hash": "e4f98c7c19ad696f4ac01d8bc2c94de7c6cab692ea887a1da70a4176973fbbdc"
+    },
+    {
+      "case_id": "random_2026111709000055",
+      "input_hash": "73d94422e589d137b0df80fcd069a48e7f5697431f421c8252b101aa1fcb527d"
+    },
+    {
+      "case_id": "random_2026111709000056",
+      "input_hash": "afa7134df63304ff34a0d051d7ac78a4abd7aac648c6778db30263bc41ad6951"
+    },
+    {
+      "case_id": "random_2026111709000057",
+      "input_hash": "d973dc4f2fc826e1cc43b39f2dc0a2d2868ac294868c66632266eabdf34dd836"
+    },
+    {
+      "case_id": "random_2026111709000058",
+      "input_hash": "784f9a3a48210d15b3ab95ccbb33fe64af1dbd21828a30293ad2e0bafcf4a2af"
+    },
+    {
+      "case_id": "random_2026111709000059",
+      "input_hash": "801d683b320cdf2e8b20fb86c76da506828fc09feb3993820ff385ffa6778953"
+    },
+    {
+      "case_id": "random_2026111709000060",
+      "input_hash": "0bffd9472ae9d40540343695d83f339de8adcf0d2867f6f032d03033b7cdaac6"
+    },
+    {
+      "case_id": "random_2026111709000061",
+      "input_hash": "0b161e594229374b490ae376f08ada0ee8332599a3c46b8dd33806bc37b81179"
+    },
+    {
+      "case_id": "random_2026111709000062",
+      "input_hash": "de1f9acfff8169e8ed81f968cf9d81b4dfc7ca8769319958137a21477bcff37b"
+    },
+    {
+      "case_id": "random_2026111709000063",
+      "input_hash": "c2b7d80ad0efdbe71f0abd6d35ad81fb10776f4217290042cb53bc45efae2b54"
+    },
+    {
+      "case_id": "random_2026111709000064",
+      "input_hash": "52e61d4c9dd7e8af0cd22fc078cd36620ae66ff401b0529af0ebde2c34a76187"
+    },
+    {
+      "case_id": "random_2026111709000065",
+      "input_hash": "ce3785a3d7d728506da27f776ab5e5edcd0df783e914d0fceb59875f19cd1ce8"
+    },
+    {
+      "case_id": "random_2026111709000066",
+      "input_hash": "ef0c84751adb59f4518a19f35ab4e64bfb11f8686c9261fe6ed856a8a5ccd115"
+    },
+    {
+      "case_id": "random_2026111709000067",
+      "input_hash": "fe5e71147ecf76f81c254ea48829a450b537de7788622e0596e665f9736d7b68"
+    },
+    {
+      "case_id": "random_2026111709000068",
+      "input_hash": "450878ba5699145a08fe2c86017934654c1a894422a3f41513e1c55784d1550a"
+    },
+    {
+      "case_id": "random_2026111709000069",
+      "input_hash": "2495e99817d2b114733e0d25f9536652103341de419234b264eeda848f264bad"
+    },
+    {
+      "case_id": "random_2026111709000070",
+      "input_hash": "f1cec0b51375781924d960bf0abb1c95aebbc6a5c4aaaced572d5b792a00f86e"
+    },
+    {
+      "case_id": "random_2026111709000071",
+      "input_hash": "16adefa64daf3c14fbde93652b3ee766bfc2a807c277e8b07e685760bc74e1e5"
+    },
+    {
+      "case_id": "random_2026111709000072",
+      "input_hash": "6195305aba6cdfc47adf55a0bbc7108aecfcc1f9c7f62d9cd0144a8a47d737ad"
+    },
+    {
+      "case_id": "random_2026111709000073",
+      "input_hash": "ed00eae375edfb2a84d1df03f585e367136893394b19f1c06918d0980123f495"
+    },
+    {
+      "case_id": "random_2026111709000074",
+      "input_hash": "56b9f017478e41f603b67bb98d412c01f188e619d9c64f5a1d915b469644ea58"
+    },
+    {
+      "case_id": "random_2026111709000075",
+      "input_hash": "7fd8f5f5d7445f9960bba769bba5b05e3fb062677c8f1b7410f3df4b0b987ee5"
+    },
+    {
+      "case_id": "random_2026111709000076",
+      "input_hash": "cc5ee41ad2cfcec0284ab98c98c85b3759c1bd57dfdb7d028edac19989c69dec"
+    },
+    {
+      "case_id": "random_2026111709000077",
+      "input_hash": "6164840a93bcf532469eae8ce24aa22728a01c0fa2d300068ee9988ac7fc48d3"
+    },
+    {
+      "case_id": "random_2026111709000078",
+      "input_hash": "a2b393d141e41e1655db560563841236c306a0f97e89605b4249819947062f84"
+    },
+    {
+      "case_id": "random_2026111709000079",
+      "input_hash": "98dfd7fbab4c3ead20ec57e4196b1629c226ceeee89c664578d1b06acef5071c"
+    },
+    {
+      "case_id": "random_2026111709000080",
+      "input_hash": "d67d8f851379bdae10ecdae1536f38995315aca377c93f5dc31c6dc2d3cb53ea"
+    },
+    {
+      "case_id": "random_2026111709000081",
+      "input_hash": "747fdb51d8b8b457527d8a1ee5a8d7e48246197cc16b9349a98f4fd93a20bcd5"
+    },
+    {
+      "case_id": "random_2026111709000082",
+      "input_hash": "a7417656860e3a441b76980f9e9b461da64d3da61738ad4fc44e79c00d60384c"
+    },
+    {
+      "case_id": "random_2026111709000083",
+      "input_hash": "8163ecc2226ab296147263f1300365effbb1a5d3cbc276c1c6f7c35b469e86a9"
+    },
+    {
+      "case_id": "random_2026111709000084",
+      "input_hash": "e30ec28ab827d161ea660036bf2860eed28fa719e6c3677600c532cb68399cf4"
+    },
+    {
+      "case_id": "random_2026111709000085",
+      "input_hash": "c53c19f2d6e3b0789cd0051165fc7f2b1bbd6dc9f2873ad30489746d732e1995"
+    },
+    {
+      "case_id": "random_2026111709000086",
+      "input_hash": "5083c81b76e4a58b868c9457845e505d017c85e6214986c12b48ffec92614fc0"
+    },
+    {
+      "case_id": "random_2026111709000087",
+      "input_hash": "a00ff25bb8b402a126aefaa36a2e1c7e740886dbc862441a224ab3eb201edb1c"
+    },
+    {
+      "case_id": "random_2026111709000088",
+      "input_hash": "77a71ed4797737c1abf4897576a87b004acaf1523083ebb16a6da734bbda8e56"
+    },
+    {
+      "case_id": "random_2026111709000089",
+      "input_hash": "fc4eef0503265ebe6d0e0455dfb6275e4d28859aa6909216bfc58fa7097bc7fc"
+    },
+    {
+      "case_id": "random_2026111709000090",
+      "input_hash": "e0219507e206d2f3c3ac500c6a96fc381a2f99c0c394d7c499532085baa5b883"
+    },
+    {
+      "case_id": "random_2026111709000091",
+      "input_hash": "d9cb24900a6f21c646baba7c1df148825cbf841d83e7727f4eb306ba9abdf97c"
+    },
+    {
+      "case_id": "random_2026111709000092",
+      "input_hash": "9e470d6804d1a28304f3bd9a3692c50667dd29c484f274d8f5a7a777afca52a4"
+    },
+    {
+      "case_id": "random_2026111709000093",
+      "input_hash": "f2d631a6d68af53d896562e8281a61cae744be433eb40f260d3b222f58229c9a"
+    },
+    {
+      "case_id": "random_2026111709000094",
+      "input_hash": "c43c9e4c805c2dcf00fb8f18fb9e543c2abdb87db80d4df0c932e55b3fac5f3d"
+    },
+    {
+      "case_id": "random_2026111709000095",
+      "input_hash": "2b50c050dc57c3dda49980f866b8aacd44a2e3fc37632154630ae945124cf6d5"
+    },
+    {
+      "case_id": "random_2026111709000096",
+      "input_hash": "f53e5596d300407186007327b8ac16c254dc316f2fc06839d96166ca100c4405"
+    },
+    {
+      "case_id": "random_2026111709000097",
+      "input_hash": "1d0ba753751bead934dcecb5cb2dc57c6281358136f8fa07141e68a439d1b181"
+    },
+    {
+      "case_id": "random_2026111709000098",
+      "input_hash": "cc24011a87f3f2bb14fa3924843526aefb62fbb35951852ea9ebf1f0e5df2cde"
+    },
+    {
+      "case_id": "random_2026111709000099",
+      "input_hash": "d28a44c0d6dac5804546f71fdfad3497c0fdea028f999af4d6fb9da1bc60e778"
+    },
+    {
+      "case_id": "random_2026111709000100",
+      "input_hash": "5766b00e7a43a3b490adf08113d8dd201697807da18c40d5dd3e1c4cf941df98"
+    },
+    {
+      "case_id": "random_2026111709000101",
+      "input_hash": "65f358427856d1c0c3e9205de9d7e79344df1bfd75b04e8ed697f081b50152c4"
+    },
+    {
+      "case_id": "random_2026111709000102",
+      "input_hash": "82a24d4e3e422f534a05ed5e11236dea1d08a74732b39a80301ab60a7933b1a7"
+    },
+    {
+      "case_id": "random_2026111709000103",
+      "input_hash": "49657e0d773ee6cb0fe78def62bcef6f5c9e785fa9cdba1d7c340ed598045965"
+    },
+    {
+      "case_id": "random_2026111709000104",
+      "input_hash": "eaf83c2d0c151ced6a1e324546a92e992331cda6cdbbd49b3978fd536d2ee0f3"
+    },
+    {
+      "case_id": "random_2026111709000105",
+      "input_hash": "74999e0f51d5031c996895c14addf7deab0d0d7010ab5bf95749e3d49eec64f9"
+    },
+    {
+      "case_id": "random_2026111709000106",
+      "input_hash": "b0370d268ec768c0846245e3368e7e4b587adef5e5aeb33ef5fe30129c0b84f6"
+    },
+    {
+      "case_id": "random_2026111709000107",
+      "input_hash": "f74f9cd9114707e6343d0b2664a8fb45b41da451181d0f2b9de5b7b61ae90d29"
+    },
+    {
+      "case_id": "random_2026111709000108",
+      "input_hash": "a40754e01a4b97fd31490861f32c3724b0c644a6cab06d367c6f4f2a1f82516f"
+    },
+    {
+      "case_id": "random_2026111709000109",
+      "input_hash": "ed12fd37a2236ded583d66d4b673af1050958b5d40353c64d5cdfd749f001880"
+    },
+    {
+      "case_id": "random_2026111709000110",
+      "input_hash": "094ca13502a0956301012ac8183544fa1adcda0e150cd5afd2dc660f384b9dbe"
+    },
+    {
+      "case_id": "random_2026111709000111",
+      "input_hash": "6fc0c806ff1ca8d0ede400e78ecbf3314ec486781674bc1964ecb708c8cb53db"
+    },
+    {
+      "case_id": "random_2026111709000112",
+      "input_hash": "1545102ea9a02fc6296a258309cd1022605ce87e66ea89da8b67e446c4b27de3"
+    },
+    {
+      "case_id": "random_2026111709000113",
+      "input_hash": "619013cf4e39b0286a49b92e8493b88638c72e237796d3534e032f02d01a9892"
+    },
+    {
+      "case_id": "random_2026111709000114",
+      "input_hash": "7b5c56d608815ccc7318650a54fb659890444c58b95b82eb88bec312d735e6b3"
+    },
+    {
+      "case_id": "random_2026111709000115",
+      "input_hash": "ec075e203502e88a183c862b8422342a0a68d209c18fb54501c55f1208dcdd44"
+    },
+    {
+      "case_id": "random_2026111709000116",
+      "input_hash": "0e7c0bbd4f5c9e5447fa6b76d72c071b1220c677b76037b531e5fd65e7fedde8"
+    },
+    {
+      "case_id": "random_2026111709000117",
+      "input_hash": "371b5871bd4a202b8106e9f2d570f14d7872b5cdb0198af6791c5b304f5d5c29"
+    },
+    {
+      "case_id": "random_2026111709000118",
+      "input_hash": "a241ea3d8e8d9ad047428ab7a3e4127145aaca3c90045d409316f1e29dfaaccb"
+    },
+    {
+      "case_id": "random_2026111709000119",
+      "input_hash": "9c949fba5c49287b719355530ea8b0530c356b77963a826afe04cc475a39350a"
+    }
+  ]
+}
