@@ -1,0 +1,202 @@
+{
+  "commit": "02af736734e272cd524cf38afb9991bb0b240f48",
+  "source_sha256": {
+    "docs/research/moon1_bias_dynamics_eval/CONFIG.json": "cf2a65eec88147f90a261535940830c7b2eabbdeb5e748abb7f68eed58f1e4e2",
+    "docs/research/moon1_bias_dynamics_eval/CONTINUATION.json": "2d622f3c5174d901ce786b2bc67b4f1095624448009966971191ca37bf545f99",
+    "docs/research/moon1_bias_dynamics_eval/NUMERICAL_DIAGNOSIS.md": "3782bb858d56fc37dcac05f3f0b7dcd9aaeb155c79d6fb6e67376cc8f00cfd01",
+    "docs/research/moon1_bias_dynamics_eval/PROTOCOL.md": "1448d3e474fdbd5905713d530b29ad9ac7f6ddd29b9bcf6ec7abde254fb315a1",
+    "docs/research/moon1_bias_dynamics_eval/SOLVER.json": "cbd584c235e1c4f2f95b56ac41f932dfa1a847327fff7a53d7a8bd98ac4cabf5",
+    "tools/midterm_simulation_phase1/identifiability.py": "cd22ed371ee574e99a7945674a205ce264a68f36acedd6ec52a726ad44f0280c",
+    "tools/midterm_simulation_s2/prototype.py": "e82f407dd45947d1f63aaa91ca1ed6c348cc26a581c6f721d57f784a0aa89c93",
+    "tools/moon1_bias_dynamics_eval/archive.py": "a8ba425df9df19a5d09ce08d1289a6a976ce3ba60c038da67f38390c4e14638c",
+    "tools/moon1_bias_dynamics_eval/batch.py": "decd5605d396293c89e9af7ae50c059d3f370a061f785ab2a5c66c2600fc38d2",
+    "tools/moon1_bias_dynamics_eval/bridge.py": "6215cd3985589e74f8076a871b3348b059070e1de392f50a30eac12f1d65614f",
+    "tools/moon1_bias_dynamics_eval/checks.py": "df93363371e2037d378679f0da0c7ee30fa6200af47b5cafbd0c3a39f0445af2",
+    "tools/moon1_bias_dynamics_eval/continue_endpoints.py": "dc8ebf72f0979c27674fe564c6e035127631cbca3e4e17246cbc3b0e3975d9e4",
+    "tools/moon1_bias_dynamics_eval/diagnose.py": "f13d71698083d98c456304f136545e08a1c16ec2b6291077d217653c4749554b",
+    "tools/moon1_bias_dynamics_eval/durable_checks.py": "aff7ae6425cb1f6534737253b6939b6a3a7737b4024e19e9f04d5267d75cdd9d",
+    "tools/moon1_bias_dynamics_eval/engine.py": "4b8101e73a2a18dba7269c2d15259ad291d7f25f4f61b560bb985872879e52ff",
+    "tools/moon1_bias_dynamics_eval/inputs.py": "2fb884d8e8af9e27cb63892253249d0bc3d2b6fcc7d48508ad21f28e33d6e512",
+    "tools/moon1_bias_dynamics_eval/readback.py": "de0fb9aca99f313f519c1c7cdd35db16dd6644327417d67bd0ae111af2972beb",
+    "tools/moon1_bias_dynamics_eval/worker.py": "0cc7b816d2c7360f83f1233e3a83ca3b174613cb437d70b3d81c724dab061b6c",
+    "tools/moon1_localization_eval/batch.py": "62e0b0a722ef2ff4bcd922cf356beb5166f9bc44913d678c00665b13cec8131f",
+    "tools/moon1_localization_eval/checks.py": "f261ce466443bb9a5aa4abc53d4fd7f387621de0daea21ca7982916ea8c2ca16",
+    "tools/moon1_localization_eval/common.py": "69596f22183bf7aa886770d0f5496cc09b82a8dd7e3734c8af2b17e7ec401e48",
+    "tools/moon1_localization_eval/generate.py": "f3c4e2516d4a0d2660f9dbe84da4dad40fe39d41134a3e6336077415711468ed",
+    "tools/moon1_localization_eval/model.py": "f46f2876ed6f31c238d362a0365ec323206207af4bb184fd3c9e77730f5fd935",
+    "tools/moon1_localization_eval/readback.py": "e43808e9fdea4a774ef8c25e6333b4b6b2fd403d51c14a93e12d0d727a5defc2",
+    "tools/moon1_localization_eval/solve.py": "51de767f1289077bfb8b17ba7878e4e1aa132e87c58912a29aefd4f9109312d3"
+  },
+  "config": {
+    "base_commit": "27b0ecf4d76124d54912d26d33432e1718dca494",
+    "pr114_commit": "4a81bbc582d2e059759b2a89201d8edbcd1a75cc",
+    "plan_commit": "b31789444b04792df58dd78d11a906804eed95a2",
+    "window_starts_s": [
+      0,
+      8,
+      16
+    ],
+    "epochs": 6,
+    "dt_s": 0.2,
+    "anchors_xyz_m": [
+      [
+        -5,
+        -12,
+        1.16
+      ],
+      [
+        -5,
+        12,
+        1.16
+      ],
+      [
+        55,
+        -12,
+        1.16
+      ],
+      [
+        55,
+        12,
+        1.16
+      ]
+    ],
+    "range_sigma_m": 0.04,
+    "motion_sigma_m": 0.02,
+    "prior_sigma_m": 0.5,
+    "height_mode": "height-oracle_world_vertical_1.16m",
+    "prior_mechanism": "independent_correct_gaussian_center",
+    "initialization_offset_m": [
+      0.2,
+      -0.15,
+      -0.2,
+      0.15
+    ],
+    "seeds": [
+      911170201,
+      911170202,
+      911170203,
+      911170204,
+      911170205,
+      911170206,
+      911170207,
+      911170208,
+      911170209,
+      911170210
+    ],
+    "rng": "PCG64 SeedSequence([seed, window_index, stream]); streams range=0 motion=1 prior=2",
+    "conditions": [
+      {
+        "id": "normal",
+        "peer_curve_m": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "constant03",
+        "peer_curve_m": [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      },
+      {
+        "id": "step03",
+        "peer_curve_m": [
+          0,
+          0,
+          0,
+          0.3,
+          0.3,
+          0.3
+        ]
+      },
+      {
+        "id": "ramp03",
+        "peer_curve_m": [
+          0,
+          0.06,
+          0.12,
+          0.18,
+          0.24,
+          0.3
+        ]
+      }
+    ],
+    "methods": [
+      "M0",
+      "M1",
+      "M2"
+    ],
+    "peer_direction": "one car1-to-car2 observation per epoch; no reciprocal duplicate",
+    "max_noisy_method_runs": 360,
+    "formal_runs": 0,
+    "max_optimizer_calls": 720,
+    "input_mode": "derived from committed PR117 reference; no new NPZ provenance verification",
+    "development_seed": 911170101,
+    "development_window": 0
+  },
+  "solver": {
+    "P0": {
+      "max_nfev": 300,
+      "ftol": 1e-12,
+      "xtol": 1e-12,
+      "gtol": 1e-10
+    },
+    "P1": {
+      "max_nfev": 100,
+      "ftol": null,
+      "xtol": 1e-15,
+      "gtol": 1e-09
+    },
+    "P1_rule": "exactly once for every finite P0 state, regardless of acceptance or truth error",
+    "accepted_gradient_inf": 1e-05,
+    "rank_relative_tolerance": 1e-08,
+    "position_scale_m": 1.0,
+    "bias_scale_m": 0.1,
+    "loss": "linear",
+    "final_rule": "P1 if finite; otherwise P0 estimate retained only as failed diagnostic; no best-of-stage selection"
+  },
+  "input_source": {
+    "mode": "committed_reference_derived_not_NPZ_reverified",
+    "commit": "27b0ecf4d76124d54912d26d33432e1718dca494",
+    "path": "docs/research/moon1_localization_eval/results/reference.json.gz",
+    "sha256": "cc45f83ad764f3bcc53f4251fc330178a44a9edcaa91d7272ce50a3a9798fd2b",
+    "records": 60,
+    "per_window_records": 20,
+    "track_sha256": [
+      "3b8a8eb4b4aca2d5c8a81003e8b0cbab75a11e4b1eabcc254fe7339ed5ea67fa",
+      "ba0e811ad7c955faf02b4126d1fce6254bc91714978205991d5a82001bb7efc0",
+      "3a8080cd7e1ea22f71401aac664401a0001f23b7613cdb1f53af365bde91884b"
+    ],
+    "inherited_npz_receipt": {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/scene/moon1_scene.npz",
+      "sha256": "ac283d70505a5c1f4869dbb7be84af88041de2d74bf56dcfc2360bcb513de97f",
+      "bytes": 114428,
+      "pr114_commit": "4a81bbc582d2e059759b2a89201d8edbcd1a75cc",
+      "source_receipt_sha256": "241e3f164c858f5dc457f864e759fa371c8c8f7dbbb481e25fb3052f8f602579"
+    }
+  },
+  "mode": "smoke",
+  "argv": [
+    "tools/moon1_bias_dynamics_eval/batch.py",
+    "--mode",
+    "smoke",
+    "--out",
+    "/home/ubuntu22/uwb-moon1-numerics-timevarying-bias-artifacts/smoke001"
+  ],
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.9"
+  },
+  "acceptance_sha256": null
+}
