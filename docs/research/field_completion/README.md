@@ -26,3 +26,5 @@ OPENBLAS_NUM_THREADS=1 $PY tools/field_completion/recovery_readback.py /tmp/fiel
 完整输入重新核验（需要原bag）可用accept.py向新的JSON路径输出；不调用优化器。运行器execute.py/recover.py已经完成，不应再次运行。现有结果目录和孤立attempt均拒绝自动重跑。
 
 F0/F1/F2/F3表示实测SE(2)目标下的四模型家族，不与Moon_1的数值目标或状态维数混同。没有连续真值、没有风险或保护级声明，formal_runs=0；同包的多个方法和时刻不增加独立实验数量。
+
+复核在上述固定依赖环境下完成；Jacobian字节哈希是严格环境回执，不保证跨BLAS/硬件逐位相同。更换平台时应保留原回执并独立容差核对，不能据此重跑或改写旧优化结果。
