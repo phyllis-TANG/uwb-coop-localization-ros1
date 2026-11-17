@@ -1,0 +1,333 @@
+{
+  "date_utc": "2026-11-17",
+  "purpose": "Documentation validation, no localization or numerical examples executed",
+  "base_main_sha": "0c3dbbb59a5c65087e073ad1c49eaed397f2958b",
+  "remote_main_at_check": "30f9379249a4e695acf75910c40862a770e6f4ce",
+  "markdown_parsed": [
+    "ASSUMPTION_AND_GUARANTEE_AUDIT.md",
+    "CHECK_PROTOCOL.md",
+    "CURRENT_EVIDENCE.md",
+    "HANDOFF.md",
+    "LITERATURE_MATRIX.md",
+    "METHOD_TRANSFER_DECISION.md",
+    "NEXT_EXPERIMENT_SPEC.md",
+    "README.md",
+    "SEARCH_LOG.md",
+    "notes/CALAFIORE.md",
+    "notes/CERTIFICATION.md",
+    "notes/GAUSS_MARKOV.md",
+    "notes/IMM_CONNECTIVITY.md",
+    "notes/INDEPENDENT_REVIEW.md"
+  ],
+  "bib_keys": [
+    "Calafiore2026",
+    "Duembgen2023SafeSmooth",
+    "GarciaCrespillo2020GMP",
+    "Papalia2024CORA",
+    "ZhuKia2019Connectivity",
+    "ZhuKia2022UWB"
+  ],
+  "json_parsed": [
+    "checks/RESULTS.json",
+    "notes/CALAFIORE_ACCESS.json",
+    "notes/CERTIFICATION_ACCESS.json",
+    "notes/DELIVERY_ENVIRONMENT.json",
+    "notes/ENVIRONMENT.json",
+    "notes/GAUSS_MARKOV_ACCESS.json",
+    "notes/IMM_CONNECTIVITY_ACCESS.json"
+  ],
+  "python_AST_only": true,
+  "registered_check_artifact_hashes_and_protocol_commit_verified": true,
+  "local_links_checked": 78,
+  "fixed_sha_links_checked": [
+    "https://github.com/MarineRoboticsGroup/cora/blob/015dc43340ca3aed07226bee1727ea929536fd01/src/CORA_utils.cpp#L17",
+    "https://github.com/MarineRoboticsGroup/cora/blob/015dc43340ca3aed07226bee1727ea929536fd01/src/Symbol.cpp#L3",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/0c3dbbb59a5c65087e073ad1c49eaed397f2958b/docs/research/moon1_bias_dynamics_eval/DECISION_MEMO.md",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/0c3dbbb59a5c65087e073ad1c49eaed397f2958b/docs/research/moon1_bias_dynamics_eval/DECISION_MEMO.md#L5-L24",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/0c3dbbb59a5c65087e073ad1c49eaed397f2958b/docs/research/moon1_bias_dynamics_eval/REPORT.md",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/0c3dbbb59a5c65087e073ad1c49eaed397f2958b/docs/research/moon1_bias_dynamics_eval/REPORT.md#L5-L134",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/0c3dbbb59a5c65087e073ad1c49eaed397f2958b/tools/moon1_bias_dynamics_eval/bridge.py#L35-L60",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/0c3dbbb59a5c65087e073ad1c49eaed397f2958b/tools/moon1_bias_dynamics_eval/inputs.py#L17-L37",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/0c3dbbb59a5c65087e073ad1c49eaed397f2958b/tools/moon1_localization_eval/generate.py#L25-L39",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/0c3dbbb59a5c65087e073ad1c49eaed397f2958b/tools/moon1_localization_eval/model.py#L23-L59",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/0c3dbbb59a5c65087e073ad1c49eaed397f2958b/tools/moon1_localization_eval/model.py#L24",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/9832da3b7cb44e43c89bd10dad550d96419b72c0/docs/research/midterm_integrity_targeted_c/LITERATURE_MATRIX.md#L3-L15",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/9832da3b7cb44e43c89bd10dad550d96419b72c0/docs/research/midterm_integrity_targeted_c/METHOD_OPTIONS.md#L3-L24",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/9832da3b7cb44e43c89bd10dad550d96419b72c0/docs/research/midterm_integrity_targeted_c/THEORY_AUDIT.md#L5-L126",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/aab57504262fff739d0754145c61a61efa79791a/docs/research/midterm_nonlinear_region_b/DECISION_MEMO.md",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/aab57504262fff739d0754145c61a61efa79791a/docs/research/midterm_nonlinear_region_b/DECISION_MEMO.md#L3-L11",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/aab57504262fff739d0754145c61a61efa79791a/docs/research/midterm_nonlinear_region_b/MATH.md",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/aab57504262fff739d0754145c61a61efa79791a/docs/research/midterm_nonlinear_region_b/MATH.md#L5-L43",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/aab57504262fff739d0754145c61a61efa79791a/docs/research/midterm_nonlinear_region_b/REPORT.md#L3-L39",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/aab57504262fff739d0754145c61a61efa79791a/tools/midterm_nonlinear_region_b/inputs.py#L4-L26",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/aab57504262fff739d0754145c61a61efa79791a/tools/midterm_nonlinear_region_b/invert.py#L6-L60",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/f354cf5e370d4ffc54077b7280ca97638a8bd585/docs/research/midterm_nonlinear_decomposition_a/DECISION_MEMO.md#L3-L9",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/f354cf5e370d4ffc54077b7280ca97638a8bd585/docs/research/midterm_nonlinear_decomposition_a/MATH.md#L3-L81",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/f354cf5e370d4ffc54077b7280ca97638a8bd585/docs/research/midterm_nonlinear_decomposition_a/REPORT.md#L9-L93",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/f354cf5e370d4ffc54077b7280ca97638a8bd585/tools/midterm_nonlinear_decomposition_a/analyze.py#L6-L68",
+    "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/blob/f354cf5e370d4ffc54077b7280ca97638a8bd585/tools/midterm_nonlinear_decomposition_a/common.py#L15-L61",
+    "https://github.com/utiasASRL/safe_and_smooth/blob/42def2d19403e08ec92d81377426d6e92d6355d7/LICENSE",
+    "https://github.com/utiasASRL/safe_and_smooth/blob/42def2d19403e08ec92d81377426d6e92d6355d7/poly_certificate/certificate.py#L12",
+    "https://github.com/utiasASRL/safe_and_smooth/blob/42def2d19403e08ec92d81377426d6e92d6355d7/poly_certificate/certificate.py#L237",
+    "https://github.com/utiasASRL/safe_and_smooth/blob/42def2d19403e08ec92d81377426d6e92d6355d7/poly_certificate/certificate.py#L75",
+    "https://github.com/utiasASRL/safe_and_smooth/blob/42def2d19403e08ec92d81377426d6e92d6355d7/poly_certificate/decompositions.py#L4",
+    "https://github.com/utiasASRL/safe_and_smooth/blob/42def2d19403e08ec92d81377426d6e92d6355d7/poly_certificate/gaussian_process.py#L56"
+  ],
+  "external_HEAD_checks": [
+    {
+      "url": "https://api.crossref.org/works/10.1109/JSEN.2021.3083724",
+      "status": 429,
+      "result": "access restricted or endpoint rejected HEAD"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1109/LRA.2022.3233232",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1109/LRA.2022.3233232"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1109/TRO.2019.2930404",
+      "status": 429,
+      "result": "access restricted or endpoint rejected HEAD"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1109/TRO.2024.3454430",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1109/TRO.2024.3454430"
+    },
+    {
+      "url": "https://arxiv.org/abs/1904.13074v2",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/1904.13074v2"
+    },
+    {
+      "url": "https://arxiv.org/abs/2009.03538v3",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2009.03538v3"
+    },
+    {
+      "url": "https://arxiv.org/abs/2009.09495v1",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2009.09495v1"
+    },
+    {
+      "url": "https://arxiv.org/abs/2209.04266v5",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2209.04266v5"
+    },
+    {
+      "url": "https://arxiv.org/abs/2302.11614v3",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2302.11614v3"
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.04867v1",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2603.04867v1"
+    },
+    {
+      "url": "https://arxiv.org/pdf/1904.13074v2",
+      "status": 200,
+      "final_url": "https://arxiv.org/pdf/1904.13074v2"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2009.03538v3",
+      "status": 200,
+      "final_url": "https://arxiv.org/pdf/2009.03538v3"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2009.09495v1",
+      "status": 200,
+      "final_url": "https://arxiv.org/pdf/2009.09495v1"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2209.04266v5",
+      "status": 200,
+      "final_url": "https://arxiv.org/pdf/2209.04266v5"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2302.11614v3",
+      "status": 200,
+      "final_url": "https://arxiv.org/pdf/2302.11614v3"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2603.04867v1",
+      "status": 200,
+      "final_url": "https://arxiv.org/pdf/2603.04867v1"
+    },
+    {
+      "url": "https://doi.org/10.1109/JSEN.2021.3083724",
+      "status": 202,
+      "final_url": "https://ieeexplore.ieee.org/document/9441014/"
+    },
+    {
+      "url": "https://doi.org/10.1109/LRA.2022.3233232",
+      "status": 202,
+      "final_url": "https://ieeexplore.ieee.org/document/10003973/"
+    },
+    {
+      "url": "https://doi.org/10.1109/TAES.2023.3242943",
+      "status": 202,
+      "final_url": "https://ieeexplore.ieee.org/document/10040237/"
+    },
+    {
+      "url": "https://doi.org/10.1109/TRO.2019.2930404",
+      "status": 202,
+      "final_url": "https://ieeexplore.ieee.org/document/8796410/"
+    },
+    {
+      "url": "https://doi.org/10.1109/TRO.2024.3454430",
+      "status": 202,
+      "final_url": "https://ieeexplore.ieee.org/document/10665918/"
+    },
+    {
+      "url": "https://elib.dlr.de/193615/",
+      "status": 200,
+      "final_url": "https://elib.dlr.de/193615/"
+    },
+    {
+      "url": "https://epubs.siam.org/doi/10.1137/25M1750652",
+      "status": 403,
+      "result": "access restricted or endpoint rejected HEAD"
+    },
+    {
+      "url": "https://github.com/MarineRoboticsGroup/cora",
+      "status": 200,
+      "final_url": "https://github.com/MarineRoboticsGroup/cora"
+    },
+    {
+      "url": "https://github.com/utiasASRL/safe_and_smooth",
+      "status": 200,
+      "final_url": "https://github.com/utiasASRL/safe_and_smooth"
+    },
+    {
+      "url": "https://marinerobotics.mit.edu/publications",
+      "status": 200,
+      "final_url": "https://marinerobotics.mit.edu/publications"
+    },
+    {
+      "url": "https://solmaz.eng.uci.edu/Papers/UWB.html",
+      "status": 200,
+      "final_url": "https://solmaz.eng.uci.edu/Papers/UWB.html"
+    },
+    {
+      "url": "https://solmaz.eng.uci.edu/papers.html",
+      "status": 200,
+      "final_url": "https://solmaz.eng.uci.edu/papers.html"
+    },
+    {
+      "url": "https://staff.polito.it/giuseppe.calafiore/Home_Page/Publications.html",
+      "status": 200,
+      "final_url": "https://staff.polito.it/giuseppe.calafiore/Home_Page/Publications.html"
+    }
+  ],
+  "source_scope": [
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/ASSUMPTION_AND_GUARANTEE_AUDIT.md"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/CHECK_PROTOCOL.md"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/CURRENT_EVIDENCE.md"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/HANDOFF.md"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/LITERATURE_MATRIX.md"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/METHOD_TRANSFER_DECISION.md"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/NEXT_EXPERIMENT_SPEC.md"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/README.md"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/REFERENCES.bib"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/SEARCH_LOG.md"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/checks/DELIVERY_CHECKS.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/checks/RESULTS.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/checks/analytic_checks.py"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/checks/validate_delivery.py"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/notes/CALAFIORE.md"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/notes/CALAFIORE_ACCESS.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/notes/CERTIFICATION.md"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/notes/CERTIFICATION_ACCESS.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/notes/DELIVERY_ENVIRONMENT.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/notes/ENVIRONMENT.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/notes/GAUSS_MARKOV.md"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/notes/GAUSS_MARKOV_ACCESS.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/notes/IMM_CONNECTIVITY.md"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/notes/IMM_CONNECTIVITY_ACCESS.json"
+    },
+    {
+      "status": "A",
+      "path": "docs/research/midterm_open_literature_c/notes/INDEPENDENT_REVIEW.md"
+    }
+  ],
+  "copyright_fulltext_or_author_source_added": false,
+  "failures": [],
+  "limitations": [
+    "HEAD restrictions/timeouts are not proof of missing pages; manuscript accesses recorded separately",
+    "Markdown parsing and paper review are not TeX/PDF compilation",
+    "Author libraries were not executed; no localization or Monte Carlo",
+    "No probability validation inferred from three exact algebra cases"
+  ]
+}

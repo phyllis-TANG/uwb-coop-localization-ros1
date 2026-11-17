@@ -1,0 +1,146 @@
+{
+  "access_date": "2026-11-17",
+  "papers": [
+    {
+      "key": "DumbgenHolmesBarfoot2023",
+      "title": "Safe and Smooth: Certified Continuous-Time Range-Only Localization",
+      "actual_version": "arXiv:2209.04266v5, 2024-09-02; 10-page author manuscript including appendix",
+      "full_text_url": "https://arxiv.org/pdf/2209.04266v5",
+      "sha256": "f663163f668d2158cd3b4bd5f28d7236f9bc068bb457805fe2eeac01f694839b",
+      "formal_doi": "10.1109/LRA.2022.3233232",
+      "formal_identity": "IEEE Robotics and Automation Letters 8(2):1117-1124, 2023",
+      "status": "full_text_read; formula and code audit",
+      "formula_locations": "author manuscript pp2-7, Eqs1-33; p4 Example1 visually checked",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1109/LRA.2022.3233232",
+        "https://github.com/utiasASRL/safe_and_smooth"
+      ],
+      "copyright_pdf_committed": false
+    },
+    {
+      "key": "PapaliaEtAl2024CORA",
+      "title": "Certifiably Correct Range-Aided SLAM",
+      "actual_version": "arXiv:2302.11614v3, 2024-09-28; 20-page author manuscript including appendices",
+      "full_text_url": "https://arxiv.org/pdf/2302.11614v3",
+      "sha256": "aaa086b3359d4a7d8d8efd6b4001e477bbeda3062b94e29072ff1d08de0ef2ce",
+      "formal_doi": "10.1109/TRO.2024.3454430",
+      "formal_identity": "IEEE Transactions on Robotics 40:4265-4283, 2024",
+      "status": "supplementary full-text comparison; objectives, certificate, experiments read",
+      "formula_locations": "author manuscript pp4-8, Problems1-5, Eqs1-15; pp11-13 experiments",
+      "metadata_sources": [
+        "https://api.crossref.org/works/10.1109/TRO.2024.3454430",
+        "https://marinerobotics.mit.edu/publications"
+      ],
+      "copyright_pdf_committed": false
+    }
+  ],
+  "code": [
+    {
+      "repository": "https://github.com/utiasASRL/safe_and_smooth",
+      "commit": "42def2d19403e08ec92d81377426d6e92d6355d7",
+      "license": "BSD-2-Clause root LICENSE; dependent submodule licenses not audited",
+      "submodules_initialized": false,
+      "submodule_pointers": [
+        "-8a309bfd90272fe35bf7d323b4426b0273d2b5bc poly_matrix"
+      ],
+      "execution": "not installed, built, tested, or executed",
+      "static_check": "25 Python files AST-parse passed",
+      "files": [
+        {
+          "path": "LICENSE",
+          "url": "https://github.com/utiasASRL/safe_and_smooth/blob/42def2d19403e08ec92d81377426d6e92d6355d7/LICENSE",
+          "sha256": "d60f9db8e1133ad9bdf132898b6bf9910021b3413424032afe97616ece1c237a"
+        },
+        {
+          "path": "README.md",
+          "url": "https://github.com/utiasASRL/safe_and_smooth/blob/42def2d19403e08ec92d81377426d6e92d6355d7/README.md",
+          "sha256": "286ff8d4162da949ae55490a517548c7c2e341edfa707eb73da086292a48ffcc"
+        },
+        {
+          "path": "setup.cfg",
+          "url": "https://github.com/utiasASRL/safe_and_smooth/blob/42def2d19403e08ec92d81377426d6e92d6355d7/setup.cfg",
+          "sha256": "db791e88d480ef2dab72187be76999fb49cbb365bd5c4b38b9600693bcacc0b3"
+        },
+        {
+          "path": "environment.yml",
+          "url": "https://github.com/utiasASRL/safe_and_smooth/blob/42def2d19403e08ec92d81377426d6e92d6355d7/environment.yml",
+          "sha256": "2caaf01544b9c4d334438af40b12b9e544eab2a1c06afe493537cbc6eb45602c"
+        },
+        {
+          "path": ".gitmodules",
+          "url": "https://github.com/utiasASRL/safe_and_smooth/blob/42def2d19403e08ec92d81377426d6e92d6355d7/.gitmodules",
+          "sha256": "75c91fb5a8a8198819521c3b1e99a8c4d01a054355b026a7a7dfbc39cf331bfd"
+        },
+        {
+          "path": "poly_certificate/certificate.py",
+          "url": "https://github.com/utiasASRL/safe_and_smooth/blob/42def2d19403e08ec92d81377426d6e92d6355d7/poly_certificate/certificate.py",
+          "sha256": "2044cda0ef023e02b0734a82eb9cc373881159de27686feb30d0931b1d8222ac"
+        },
+        {
+          "path": "poly_certificate/decompositions.py",
+          "url": "https://github.com/utiasASRL/safe_and_smooth/blob/42def2d19403e08ec92d81377426d6e92d6355d7/poly_certificate/decompositions.py",
+          "sha256": "95f4f7680fae40a2d6329bda89b9ffeeade231343ddf0acd4811adca113bf641"
+        },
+        {
+          "path": "poly_certificate/problem.py",
+          "url": "https://github.com/utiasASRL/safe_and_smooth/blob/42def2d19403e08ec92d81377426d6e92d6355d7/poly_certificate/problem.py",
+          "sha256": "2c6e4883ba431f290a86437777c6e556223e6a41cf54f13b76b0b6f69f68c307"
+        },
+        {
+          "path": "poly_certificate/gaussian_process.py",
+          "url": "https://github.com/utiasASRL/safe_and_smooth/blob/42def2d19403e08ec92d81377426d6e92d6355d7/poly_certificate/gaussian_process.py",
+          "sha256": "4e9d8e750c7e5d059b627918abda7f63924b5433689b0c6e202101839101e3fc"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/MarineRoboticsGroup/cora",
+      "commit": "015dc43340ca3aed07226bee1727ea929536fd01",
+      "license": "no LICENSE/COPYING path found in full tracked main-repository tree; reuse license unconfirmed; submodule licenses not audited",
+      "submodules_initialized": false,
+      "submodule_pointers": [
+        "-6e79e682b726f524310d55dec8ddac4e9c52fb5f libs/Catch2",
+        "-6d87cc2e46a0ece2720c4b94de943641d9750e50 libs/Optimization",
+        "-68a9d24fee8a24bf10920171033ceb7d09517f52 libs/Preconditioners",
+        "-b6f521d2d20fb85922a6e2deadb4c42e833bad62 libs/tonioviz"
+      ],
+      "execution": "not installed, built, tested, or executed",
+      "static_check": "CMake/dependencies/certificate source inspected; build not attempted",
+      "files": [
+        {
+          "path": "README.md",
+          "url": "https://github.com/MarineRoboticsGroup/cora/blob/015dc43340ca3aed07226bee1727ea929536fd01/README.md",
+          "sha256": "786b2763b57a523f85554a800d6d5ebe5d634cf603163f3b9a5d3811aad42411"
+        },
+        {
+          "path": "CMakeLists.txt",
+          "url": "https://github.com/MarineRoboticsGroup/cora/blob/015dc43340ca3aed07226bee1727ea929536fd01/CMakeLists.txt",
+          "sha256": "51b51b6fd90c32446028a17471a68a86ce4b3b7e81d938a9efff46a6b5aec235"
+        },
+        {
+          "path": ".gitmodules",
+          "url": "https://github.com/MarineRoboticsGroup/cora/blob/015dc43340ca3aed07226bee1727ea929536fd01/.gitmodules",
+          "sha256": "c3ddb3f992a085c4076eb3e2ddc4962397b5f5df77567368d06fca488dfb5e65"
+        },
+        {
+          "path": "src/CORA_utils.cpp",
+          "url": "https://github.com/MarineRoboticsGroup/cora/blob/015dc43340ca3aed07226bee1727ea929536fd01/src/CORA_utils.cpp",
+          "sha256": "6f79abdf7ba737629d2ffc36361c79c9d840c1561baa4063658d157b54df3cd0"
+        },
+        {
+          "path": "src/CORA_problem.cpp",
+          "url": "https://github.com/MarineRoboticsGroup/cora/blob/015dc43340ca3aed07226bee1727ea929536fd01/src/CORA_problem.cpp",
+          "sha256": "71d564d53babe7cf1a28db64cdf8d12c13638973538c11e68633dde3b947a311"
+        },
+        {
+          "path": "include/CORA/Measurements.h",
+          "url": "https://github.com/MarineRoboticsGroup/cora/blob/015dc43340ca3aed07226bee1727ea929536fd01/include/CORA/Measurements.h",
+          "sha256": "41c07f0ae237c5df69bc9c36998e38154c0880ebc4219c042509d638ce0851c0"
+        }
+      ]
+    }
+  ],
+  "new_numerical_examples_executed": 0,
+  "method_experiments_executed": 0,
+  "scope": "read-only source inspection and Python AST parsing only; no dependency installation, imports of author solver, tests or solver execution"
+}
