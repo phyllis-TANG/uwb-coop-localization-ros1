@@ -1,0 +1,132 @@
+[
+  {
+    "path": "datasets/field_raw/20260927/notes/live_field/TWO_CAR_PA0_PB1_static_LOS_camera_clear_facing_GT1p85m_20260927_063345_ground_truth.txt",
+    "commit": "c51411433d30dc379bd69cf5fb20a11e196b7182",
+    "sha256": "66ac2ff6831d9cc88b9b4bc1aef06d113d8bc8ed6dad51176760d74ccfa798cd",
+    "topic": "直接测距参照",
+    "record": "卷尺量天线参考点间距1.85m，approximately .01m不确定度",
+    "classification": "实测记录+未经定义的精度估计",
+    "constraint": "仅约束该次标量距离参照；不能转换四维XY先验sigma",
+    "missing": "覆盖概率、校准、重复读数、两车全局坐标误差"
+  },
+  {
+    "path": "datasets/field_raw/20261011/notes/live_field/MOBILE_P1_h0p20_clear_A_20261011_014350_survey.txt",
+    "commit": "c51411433d30dc379bd69cf5fb20a11e196b7182",
+    "sha256": "cd0654f0b289298700ead08d348e184df4845c2c421133a679784a2be3eba211",
+    "topic": "tag参考位置",
+    "record": "人工参考XYZ=[2.01,1.99,.20]",
+    "classification": "人工记录",
+    "constraint": "可核对该次名义/人工参考位置；无法建立误差分布",
+    "missing": "工具、坐标原点实现、重复测量、真值精度"
+  },
+  {
+    "path": "datasets/field_raw/20261011/notes/live_field/MOBILE_P1_h1p00_clear_R1_20261011_020429_survey.txt",
+    "commit": "c51411433d30dc379bd69cf5fb20a11e196b7182",
+    "sha256": "a7fa70f93c5463943f1eb694ae90264656a44ffe408af7319f03ac63ad6c5565",
+    "topic": "重复采集",
+    "record": "R1人工参考[2,2,1]",
+    "classification": "人工设定/记录，测量过程未确认",
+    "constraint": "R1/R2是UWB重复采集，不证明XY独立重复读数",
+    "missing": "独立参考测量读数、工具与方差"
+  },
+  {
+    "path": "datasets/field_raw/20261018/notes/live_field/antenna_mount_survey_20261018.txt",
+    "commit": "c51411433d30dc379bd69cf5fb20a11e196b7182",
+    "sha256": "5cc8c640036782b4b564dee126db140c4245dc382b9ef762fd9fd918e9ca2d1b",
+    "topic": "安装外参",
+    "record": "手工量相对近似底盘几何中心Car1[.08,-.06]、Car2[.12,-.08]，odom对应待核",
+    "classification": "实测人工安装记录",
+    "constraint": "外参来源，不是机器人全球起点精度；不追溯历史安装",
+    "missing": "原点对应、角度、重复读数、外参协方差"
+  },
+  {
+    "path": "docs/field_tests/20261024_25/geometry.json",
+    "commit": "c51411433d30dc379bd69cf5fb20a11e196b7182",
+    "sha256": "bd59d654a6794cc61a5680816d479a7ae3a4b5a0376a3d5ebd517b6c3842266c",
+    "topic": "锚点/坐标系/安装",
+    "record": "历史锚点沿用、fresh_survey_date及uncertainty为null；房间/odom不直接等同；部分目标名义值",
+    "classification": "历史测量复用+人工名义值+计算值混合，字段区分",
+    "constraint": "不能把锚点坐标小数位解释为定位先验精度",
+    "missing": "新测日期、工具、原点、相关误差、外参旋转和不确定度"
+  },
+  {
+    "path": "docs/field_tests/20261017/session_config.json",
+    "commit": "c51411433d30dc379bd69cf5fb20a11e196b7182",
+    "sha256": "4b0a97be01b3541937345080af27b747ee8294fd7dcd58f3c53338f8339a9c94",
+    "topic": "锚点坐标来源",
+    "record": "现场session引用的锚点坐标配置",
+    "classification": "配置保存的测量来源，精度待确认",
+    "constraint": "几何输入来源，不是误差上界",
+    "missing": "校准及重复测量报告"
+  },
+  {
+    "path": "docs/field_tests/20261024_25/SESSION_LOG_ARCHIVE.md",
+    "commit": "c51411433d30dc379bd69cf5fb20a11e196b7182",
+    "sha256": "1ddbb717261744525a06b0738f987af6f9dffb2e247679b2d7c3ac834dc113fa",
+    "topic": "现场交叉核对",
+    "record": "直接卷尺2.08m与XYZ推算2.061771m均保留；人工标记非连续计量真值；安装可能变化",
+    "classification": "实测+计算+操作者说明",
+    "constraint": "1.82cm差额提示核对问题，不是标准差；不同日期安装不混用",
+    "missing": "独立全局XYZ复测、姿态/参考点一致性"
+  },
+  {
+    "path": "docs/research/paper_evidence_completion_20261103/references/A1_DEV_RESTART_20261101T081711Z.bag.notes.txt",
+    "commit": "c51411433d30dc379bd69cf5fb20a11e196b7182",
+    "sha256": "9b068389974a6e26c4a33b2c9a97ef5f4dd7572bd8ee4e63f05ea5bf5e5c5d9e",
+    "topic": "停车点参考",
+    "record": "Car1(1.51,3.99)，Car2起点(2.02,2.01)、B(2.74,2.01)、C(3.49,1.90)、返程(2.02,2.04)；operator estimate1–2cm not certified",
+    "classification": "操作者现场人工测量记录；1–2cm是自报估计",
+    "constraint": "存在实际停车点资料，但不同位置不能当同一真值重复测量，不能认定sigma=.01/.02",
+    "missing": "测量工具/校准/基准坐标误差、独立重复、同点重复读数"
+  },
+  {
+    "path": "docs/research/paper_evidence_completion_20261103/references/A1_B_reference.json",
+    "commit": "c51411433d30dc379bd69cf5fb20a11e196b7182",
+    "sha256": "3aebc37618c80df8a60121530c67d46d37e148b709744b05ba8cc99e8a4c3807",
+    "topic": "参考值交叉检查",
+    "record": "直接2.37m与坐标水平距离2.330944m；未调坐标",
+    "classification": "人工读数+派生计算",
+    "constraint": "不闭合约3.89cm（高度修正前）不应被消除或视为误差分布",
+    "missing": "差额归因、工具误差、共同坐标误差"
+  },
+  {
+    "path": "ros_ws/src/uwb_coop_localization/config/anchors.yaml",
+    "commit": "c51411433d30dc379bd69cf5fb20a11e196b7182",
+    "sha256": "dbf240369289d46ca3cc410df7a2bb238da8abc9d25712c56b8a98412eff85aa",
+    "topic": "示例软件配置",
+    "record": "文件明确simulation only，需换实测坐标",
+    "classification": "人工仿真示例",
+    "constraint": "不能用于真实平台先验精度",
+    "missing": "现场测量关联"
+  },
+  {
+    "path": "docs/research/midterm_prior_mechanism_b/CONFIG.json",
+    "commit": "c51411433d30dc379bd69cf5fb20a11e196b7182",
+    "sha256": "a86d1e032fa4afca4feccee7aaff55c6c5e29ff797957d97b12e6ac2d02e6ee0",
+    "topic": "本研究survey/先验",
+    "record": "survey为固定人为偏移；sigma=.5/.05；fixed_correct/random_correct依赖truth",
+    "classification": "人工仿真假设",
+    "constraint": "适用机制隔离，不是实车标定证据",
+    "missing": "survey误差来源、4维偏移集合/协方差"
+  },
+  {
+    "path": "tools/midterm_prior_mechanism_b/adapter.py",
+    "commit": "c51411433d30dc379bd69cf5fb20a11e196b7182",
+    "sha256": "8c65e2842cb24888b968fcb57b7735b7706083cca5806d128c01ce7b4bf08ca6",
+    "topic": "先验生成实现",
+    "record": "fixed_correct用truth；random_correct独立stream2高斯；survey积分初值不变",
+    "classification": "计算定义",
+    "constraint": "证明控制变量实现，不证明现场精度",
+    "missing": "实车先验生成和误差机制"
+  },
+  {
+    "path": "docs/research/reference_resolution_audit_20261029/REPORT.md",
+    "commit": "c51411433d30dc379bd69cf5fb20a11e196b7182",
+    "sha256": "19d256d6a50cb58036e0fbff6a922e9b5a889d44e3db75d3d986db6574bcc755",
+    "topic": "较早二手审计",
+    "record": "区分参考分辨率、UWB重复性与计量准确度",
+    "classification": "派生分析",
+    "constraint": "辅助定位缺口；日期早于11月停车点记录，不能代替最新证据",
+    "missing": "原始测量误差模型"
+  }
+]
