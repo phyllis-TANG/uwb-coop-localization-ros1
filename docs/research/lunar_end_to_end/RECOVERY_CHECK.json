@@ -1,0 +1,36 @@
+{
+  "actual_alarm": true,
+  "ledger": {
+    "attempted": 1,
+    "completed_method_seconds": 0.0,
+    "finite_results": 0,
+    "groups": {
+      "test": {
+        "ACCEPTED": 0,
+        "BUDGET_EXHAUSTED": 0,
+        "FAILED": 0,
+        "INTERRUPTED": 1,
+        "NONFINITE": 0,
+        "NOT_STATIONARY": 0,
+        "RANK_DEFICIENT": 0,
+        "UNEXECUTED": 1
+      }
+    },
+    "optimizer_calls": 1,
+    "planned": 2,
+    "statuses": {
+      "ACCEPTED": 0,
+      "BUDGET_EXHAUSTED": 0,
+      "FAILED": 0,
+      "INTERRUPTED": 1,
+      "NONFINITE": 0,
+      "NOT_STATIONARY": 0,
+      "RANK_DEFICIENT": 0,
+      "UNEXECUTED": 1
+    }
+  },
+  "note": "Synthetic worker killed after durable started-call receipt; no actual evaluation task rerun",
+  "optimizer_calls": 0,
+  "passed": true,
+  "terminated_returncode": -15
+}
