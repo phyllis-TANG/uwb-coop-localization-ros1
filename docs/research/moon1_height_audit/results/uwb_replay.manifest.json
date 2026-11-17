@@ -1,0 +1,40 @@
+{
+  "parameters": {
+    "scene": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/scene/moon1_scene.npz",
+    "output": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/scene/uwb_replay.csv",
+    "rate": 20.0,
+    "noise": 0.03,
+    "bias": 0.0,
+    "nlos_probability": 0.0,
+    "nlos_bias": 0.4,
+    "dropout_probability": 0.0,
+    "seed": 7
+  },
+  "artifacts": {
+    "scene_npz": {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/scene/moon1_scene.npz",
+      "sha256": "ac283d70505a5c1f4869dbb7be84af88041de2d74bf56dcfc2360bcb513de97f",
+      "status": "readable"
+    },
+    "replay_csv": {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/scene/uwb_replay.csv",
+      "sha256": "2e89cd42f81f2943d6ec2c00c63e15a93548865ee7db13c1969e0030cd44723d",
+      "status": "readable"
+    },
+    "source_ply": {
+      "sha256": null,
+      "status": "unavailable",
+      "reason": "not supplied to replay generator"
+    },
+    "source_gt": {
+      "sha256": null,
+      "status": "unavailable",
+      "reason": "not supplied to replay generator"
+    },
+    "usd": {
+      "sha256": null,
+      "status": "unavailable",
+      "reason": "GUI not run"
+    }
+  }
+}

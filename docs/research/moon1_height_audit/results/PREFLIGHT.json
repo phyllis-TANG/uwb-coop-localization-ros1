@@ -1,0 +1,34 @@
+{
+  "checked_utc": "2026-11-17T09:57:20Z",
+  "initial_cwd": "/home/ubuntu22",
+  "worktree": "/home/ubuntu22/uwb-moon1-height-audit-20261117",
+  "branch": "research/moon1-height-audit-20261117",
+  "initial_worktree_head": "db45d94d03061e6828afb25d841c2b1777d0af48",
+  "execution_head": "0d5c1a65db6362d69dce4298ebee1eae59cdbdb5",
+  "remote": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1.git",
+  "initial_status": "clean",
+  "applicable_AGENTS": "none found in ancestor paths, baseline tree or task paths",
+  "remote_main_at_start": "db45d94d03061e6828afb25d841c2b1777d0af48",
+  "pr113_at_start": {
+    "state": "open",
+    "merged": false,
+    "head": "b31789444b04792df58dd78d11a906804eed95a2"
+  },
+  "protected_old_tree": "/home/ubuntu22/uwb-lusnar-moon1-simulation; existing README/run_moon1_v3 modifications and untracked presentation scripts retained",
+  "system_environment": "Python3.10.12 NumPy2.2.6 SciPy1.8.0 Matplotlib3.10.8: incompatible SciPy/NumPy; not used",
+  "new_environment": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/venv",
+  "environment_setup": [
+    "python3 -m venv failed: ensurepip unavailable; no system changes",
+    "python3 -m venv --without-pip /home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/venv",
+    "python3 -m pip --python /home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/venv/bin/python install numpy==2.2.6 scipy==1.15.3 matplotlib==3.10.9"
+  ],
+  "disk_at_start": "300GiB total, 262GiB used, 23GiB available, 93%",
+  "process_scope": "sandbox PID namespace only; observed codex-linux-san/bash/ps/head, no active workload visible; not host-wide assurance",
+  "current_ps": "    PID %CPU %MEM COMMAND\n      1  0.0  0.0 codex-linux-san\n      2  0.0  0.0 bash\n      6  0.0  0.0 python3\n      8  0.0  0.0 ps\n",
+  "current_disk": "Filesystem      Size  Used Avail Use% Mounted on\n/dev/nvme0n1p7  300G  264G   21G  93% /home/ubuntu22\n",
+  "development_events": [
+    "Initial commit rejected because Git author unset; used command-local Codex identity, did not change shared Git config",
+    "Initial run invocation stopped at SyntaxError before output directory or any generation; fixed unmatched parenthesis and syntax-checked before freeze",
+    "Only one real asset rebuild completed; no nonlinear solver was invoked"
+  ]
+}

@@ -1,0 +1,278 @@
+[
+  {
+    "path": "/home/ubuntu22/LuSNAR-reproduction/results/moon1_fused_lidar.ply",
+    "exists": true,
+    "bytes": 4148250,
+    "sha256": "5662c60bf9b9379d1577142ab79931bd9cba4f4ee2f073d8abfc78430e32a13b"
+  },
+  {
+    "path": "/home/ubuntu22/LuSNAR-reproduction/sample/Moon_1/gt.txt",
+    "exists": true,
+    "bytes": 201441,
+    "sha256": "023a9352b744e7739d465e720379b538bcdc10af6f7fd5e5424185cb0a470d6e"
+  },
+  {
+    "path": "/home/ubuntu22/uwb-lusnar-moon1-simulation/sim/isaac_lab/moon1/output/moon1_scene.npz",
+    "exists": true,
+    "bytes": 114428,
+    "sha256": "ac283d70505a5c1f4869dbb7be84af88041de2d74bf56dcfc2360bcb513de97f",
+    "arrays": {
+      "vertices": {
+        "shape": [
+          9211,
+          3
+        ],
+        "dtype": "float32"
+      },
+      "faces": {
+        "shape": [
+          18000,
+          3
+        ],
+        "dtype": "int32"
+      },
+      "colors": {
+        "shape": [
+          9211,
+          3
+        ],
+        "dtype": "float32"
+      },
+      "observed": {
+        "shape": [
+          151,
+          61
+        ],
+        "dtype": "bool"
+      },
+      "distance_to_observation": {
+        "shape": [
+          151,
+          61
+        ],
+        "dtype": "float64"
+      },
+      "grid_shape": {
+        "shape": [
+          2
+        ],
+        "dtype": "int64"
+      },
+      "sim_time": {
+        "shape": [
+          155
+        ],
+        "dtype": "float64"
+      },
+      "leader": {
+        "shape": [
+          155,
+          3
+        ],
+        "dtype": "float64"
+      },
+      "follower": {
+        "shape": [
+          155,
+          3
+        ],
+        "dtype": "float64"
+      }
+    }
+  },
+  {
+    "path": "/home/ubuntu22/uwb-lusnar-moon1-simulation/sim/isaac_lab/moon1/output/summary.json",
+    "exists": true,
+    "bytes": 664,
+    "sha256": "1b64f6cfc4c0ea8cfd729a0279f8abfd26f15cf4d572002db36af10d399c37ed"
+  },
+  {
+    "path": "/home/ubuntu22/uwb-lusnar-moon1-simulation/sim/isaac_lab/moon1/output/uwb_replay.csv",
+    "exists": true,
+    "bytes": 43608,
+    "sha256": "21c880684d5b48b645fbd5a2a15acae796d17807d5bf63d61aeab71f433c441e",
+    "fields": [
+      "time_s",
+      "car1_x",
+      "car1_y",
+      "car1_z",
+      "car1_yaw",
+      "car2_x",
+      "car2_y",
+      "car2_z",
+      "car2_yaw",
+      "true_range_m",
+      "car1_range_m",
+      "car1_quality",
+      "car2_range_m",
+      "car2_quality"
+    ],
+    "rows": 352,
+    "time_range_s": [
+      0.0,
+      17.55
+    ]
+  },
+  {
+    "path": "/home/ubuntu22/uwb-lusnar-moon1-simulation/sim/isaac_lab/moon1/output/moon1_scene.usda",
+    "exists": true,
+    "bytes": 956196,
+    "sha256": "e4d882ca76cbc49a009b07247b4fb7412d83957dcedbc01f9b44329bf2d0f7d3"
+  },
+  {
+    "path": "/home/ubuntu22/uwb-lusnar-moon1-simulation/sim/isaac_lab/moon1/output/moon1_scene_v3.usda",
+    "exists": true,
+    "bytes": 960130,
+    "sha256": "9fcd11d439ed8bb9c3505d48981592237f0ed423215810f25067d87e06d5b95a"
+  },
+  {
+    "path": "/home/ubuntu22/uwb-lusnar-moon1-simulation/sim/isaac_lab/moon1/output/moon1_scene_v3_lunar.usda",
+    "exists": true,
+    "bytes": 949788,
+    "sha256": "e9da077a59b690dd74ce70d1962c93627c8fb5c31d4f8d36fd3ddfd45c62f22d"
+  },
+  {
+    "path": "/home/ubuntu22/uwb-lusnar-moon1-simulation/sim/isaac_lab/moon1/output/isaaclab_v3_run.log",
+    "exists": true,
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "/home/ubuntu22/uwb-lusnar-moon1-simulation/sim/isaac_lab/moon1/output/provenance.json",
+    "exists": false,
+    "bytes": null,
+    "sha256": null
+  },
+  {
+    "path": "/home/ubuntu22/uwb-lusnar-moon1-simulation/sim/isaac_lab/moon1/output/uwb_replay.manifest.json",
+    "exists": false,
+    "bytes": null,
+    "sha256": null
+  },
+  {
+    "path": "/home/ubuntu22/uwb-lusnar-moon1-simulation/sim/isaac_lab/moon1/output/moon1_scene_v3_lunar.manifest.json",
+    "exists": false,
+    "bytes": null,
+    "sha256": null
+  },
+  {
+    "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117/sim/isaac_lab/moon1/provenance.py",
+    "exists": true,
+    "bytes": 890,
+    "sha256": "eb6934b6375400f5bd342d48682f75bcfc97034f5dee9784b209a14e840807ff"
+  },
+  {
+    "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117/sim/isaac_lab/moon1/run_moon1_v3.py",
+    "exists": true,
+    "bytes": 7306,
+    "sha256": "60a63cbbab63e87a9f290d2968fcdd38e5d0fd568869b54ab086f13551664bb9"
+  },
+  {
+    "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117/sim/isaac_lab/moon1/run_moon1.py",
+    "exists": true,
+    "bytes": 7315,
+    "sha256": "5a25dbee4c2ff4bf9ac924407c2567abc481d95f7cfdfe565e8aaa071aff2492"
+  },
+  {
+    "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117/sim/isaac_lab/moon1/antenna_geometry.py",
+    "exists": true,
+    "bytes": 963,
+    "sha256": "71dbaefae2a54a5def6311ac656db5b904b640684aa06adb63cfe4d0bbcf5712"
+  },
+  {
+    "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117/sim/isaac_lab/moon1/test_antenna_geometry.py",
+    "exists": true,
+    "bytes": 1307,
+    "sha256": "6d3488c66ac41c88757512391a0cf8f59c70a57898dea0c31c5ca31c7a7fbc6e"
+  },
+  {
+    "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117/sim/isaac_lab/moon1/make_uwb_replay.py",
+    "exists": true,
+    "bytes": 3718,
+    "sha256": "ea65178772e808f895f25ea1942450a09a0bdbf2da0cf8bebb3b8ddc38cfc273"
+  },
+  {
+    "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117/sim/isaac_lab/moon1/prepare_moon1.py",
+    "exists": true,
+    "bytes": 9588,
+    "sha256": "fc7866a12ccf104c04be14e0a76446f4e0ce50dca0ecf1c4b3a9731efed963cf"
+  },
+  {
+    "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117/ros_ws/src/uwb_coop_localization/scripts/two_car_model.py",
+    "exists": true,
+    "bytes": 2640,
+    "sha256": "988345702fe4accb587fc16b6694deadacf0aa42f85062b5453b9e3f7812cdf6"
+  },
+  {
+    "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117/tools/two_car_fixed_lag_fgo_v1/config.json",
+    "exists": true,
+    "bytes": 3589,
+    "sha256": "20a9f64ac55cc43415dc34733bf436ad5c7181cebe06187e5895b6094c1075fa"
+  },
+  {
+    "path": "/home/ubuntu22/LuSNAR-reproduction/sample/Moon_1/LiDAR/1693274729185205504.txt",
+    "exists": true,
+    "bytes": 1236343,
+    "sha256": "2120f514d3fb5ee12e30a053ad819a549584363ca1054c74c20fa698f933797a"
+  },
+  {
+    "path": "/home/ubuntu22/LuSNAR-reproduction/sample/Moon_1/LiDAR/1693274737960493568.txt",
+    "exists": true,
+    "bytes": 1312338,
+    "sha256": "63fb0ee1186b83ee400b254a4d05a223c34b7b59364756257516fc7ac1d556cd"
+  },
+  {
+    "path": "/home/ubuntu22/LuSNAR-reproduction/sample/Moon_1/LiDAR/1693274742327358976.txt",
+    "exists": true,
+    "bytes": 1402616,
+    "sha256": "80a107d34fbd0df646c9223abf4d9691c2cc0a351faeaa60eab38d5d7b6378fe"
+  },
+  {
+    "path": "/home/ubuntu22/LuSNAR-reproduction/sample/Moon_1/LiDAR/1693274724086398208.txt",
+    "exists": true,
+    "bytes": 1235406,
+    "sha256": "e7105306d32a03ba7def14020dc1415b3321cc9c38ff0b4d9d5c1daa312222f8"
+  },
+  {
+    "path": "/home/ubuntu22/LuSNAR-reproduction/sample/Moon_1/LiDAR/1693274733568775168.txt",
+    "exists": true,
+    "bytes": 1240887,
+    "sha256": "257aa7af67bfe9c73fa4c321b5e7fafc0f713ad36c1de78cf3588201db007546"
+  },
+  {
+    "path": "/home/ubuntu22/LuSNAR-reproduction/sample/Moon_1/LiDAR/1693274746702347008.txt",
+    "exists": true,
+    "bytes": 1629158,
+    "sha256": "933ea4f2bf8b73eca521de548d206a04f6b44148698d1cd98906b41684293944"
+  },
+  {
+    "path": "/home/ubuntu22/LuSNAR-reproduction/archive_manifest.json",
+    "exists": true,
+    "bytes": 356,
+    "sha256": "3b26f6c6760fcd75ed9e2be490faac0be2d79ebd32ab7048f61c986a543b4811"
+  },
+  {
+    "path": "/home/ubuntu22/LuSNAR-reproduction/results/fusion_metrics.json",
+    "exists": true,
+    "bytes": 2046,
+    "sha256": "9cf763616069de0a93b6ade7c960f37386de12d6364e4967ee974d269f45f477"
+  },
+  {
+    "path": "/home/ubuntu22/LuSNAR-reproduction/fuse_lidar.py",
+    "exists": true,
+    "bytes": 3737,
+    "sha256": "3628b37ea6dab10e5ea58818182e3e2857a4e4fc4b5440248626064840f3e21f"
+  },
+  {
+    "path": "/home/ubuntu22/LuSNAR-reproduction/README.md",
+    "exists": true,
+    "bytes": 4874,
+    "sha256": "0320176fe4ea7aa544e73438e4d0cb211ffe70f25cb46e150ea9e46973b2f385"
+  },
+  {
+    "path": "/home/ubuntu22/LuSNAR-reproduction/source/README.md",
+    "exists": true,
+    "bytes": 11058,
+    "sha256": "1930646c6d4790ce9fafa24f13f975b3ba61cd7c660e5103505704e29eb28aa6"
+  }
+]

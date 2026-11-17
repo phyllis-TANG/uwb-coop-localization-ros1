@@ -1,0 +1,16 @@
+{
+  "syntax": "all audit Python files compile",
+  "scope": "only tools/moon1_height_audit and docs/research/moon1_height_audit",
+  "plots": "all four PNGs visually inspected; labels and units readable",
+  "formal_runs": 0,
+  "nonlinear_solver_calls": 0,
+  "rebuilds_completed": 1,
+  "synthetic_tests_passed": 7,
+  "source_inventory": "29 existing inputs verified; missing historical receipts explicit",
+  "known_limitations": [
+    "CSV rejection is in new audit entry; historical ROS consumer unchanged",
+    "USD/GUI/ROS not rerun",
+    "rank diagnostic is free 3D pair; not terrain-constrained localization",
+    "source PLY historical fusion not independently regenerated"
+  ]
+}
