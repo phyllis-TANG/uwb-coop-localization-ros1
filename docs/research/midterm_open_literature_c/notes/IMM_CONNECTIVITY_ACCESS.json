@@ -1,0 +1,73 @@
+{
+  "access_date_utc": "2026-11-17",
+  "scope": "Zhu/Kia IMM primary full text and Limited Connectivity supplementary full text; read-only project comparison",
+  "sources": [
+    {
+      "key": "ZhuKia2022UWB",
+      "published_title": "Decentralized Cooperative Localization With LoS and NLoS UWB Inter-Agent Ranging",
+      "published_doi": "10.1109/JSEN.2021.3083724",
+      "journal": "IEEE Sensors Journal",
+      "volume": "22",
+      "issue": "6",
+      "pages": "5447-5456",
+      "issue_date": "2022-03-15",
+      "ieee_online_date": "2021-05-26",
+      "published_metadata_sources": [
+        "https://solmaz.eng.uci.edu/Papers/UWB.html",
+        "https://ieeexplore.ieee.org/document/9441014/",
+        "https://api.crossref.org/works/10.1109/JSEN.2021.3083724"
+      ],
+      "actual_read_title": "An IMM-based Decentralized Cooperative Localization with LoS and NLoS UWB Inter-agent Ranging",
+      "actual_read_version": "arXiv:2009.03538v3, revised 2020-12-30, 11 pages",
+      "full_text_source": "https://arxiv.org/pdf/2009.03538v3",
+      "sha256": "f56af97976c83cf8bb3453939a808331fd601b7611b01e42ad33d0636e7af096",
+      "publisher_full_text_compared": false,
+      "paper_pdf_committed": false,
+      "code": {
+        "status": "No paper-bound author repository found in this search scope",
+        "searched": ["article full text", "author UWB publication page", "author publications page", "exact title plus code/GitHub", "Jianan Zhu Kia plus GitHub localization"],
+        "sha": null,
+        "license": "not verified",
+        "runnability": "not verified; no installation or execution"
+      },
+      "formula_caveats": [
+        "v3 p3 Eq1 prints the same b outside and inside the NLoS case; visual PDF check confirms mismatch with no-bias LoS text and later coefficient-one SKF formulas. No inference about final 2022 version or implementation.",
+        "v3 p3 E[bb]=Phi called variance with nonzero mean and p6 B=phi^2+Phi require explicit centering convention before reuse."
+      ]
+    },
+    {
+      "key": "ZhuKia2019Connectivity",
+      "published_title": "Cooperative Localization Under Limited Connectivity",
+      "published_doi": "10.1109/TRO.2019.2930404",
+      "journal": "IEEE Transactions on Robotics",
+      "volume": "35",
+      "issue": "6",
+      "pages": "1523-1530",
+      "year": "2019",
+      "published_metadata_sources": [
+        "https://solmaz.eng.uci.edu/papers.html",
+        "https://api.crossref.org/works/10.1109/TRO.2019.2930404"
+      ],
+      "actual_read_version": "arXiv:1904.13074v2, revised 2019-07-21, 9 pages",
+      "full_text_source": "https://arxiv.org/pdf/1904.13074v2",
+      "sha256": "0dc2ebdc506ac85dcf793d447ae6e5448bf2e47d0bbb218aad495d8ed8af5fe5",
+      "paper_pdf_committed": false,
+      "code": {
+        "status": "No paper-bound author repository found; manuscript identifies Quadratic Fit and CVXOPT solvers, not reproducible source version",
+        "sha": null,
+        "license": "not verified",
+        "runnability": "not verified; no installation or execution"
+      },
+      "access_limits": ["IEEE pages may return JavaScript bot-verification page; successful author and Crossref metadata used instead", "No final publisher full-text equivalence claimed"]
+    }
+  ],
+  "project_source_sha": "0c3dbbb59a5c65087e073ad1c49eaed397f2958b",
+  "project_reads": [
+    "docs/research/moon1_bias_dynamics_eval/REPORT.md",
+    "docs/research/moon1_bias_dynamics_eval/DECISION_MEMO.md",
+    "tools/moon1_localization_eval/model.py",
+    "tools/moon1_bias_dynamics_eval/inputs.py",
+    "tools/moon1_bias_dynamics_eval/engine.py"
+  ],
+  "new_numerical_examples_or_solver_runs": 0
+}

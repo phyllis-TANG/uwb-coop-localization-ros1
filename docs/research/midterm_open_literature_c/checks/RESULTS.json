@@ -1,0 +1,104 @@
+{
+  "protocol_commit": "10871a2392483884db5119825f6f4695d0f6fb1e",
+  "protocol_sha256": "15429fb0151f932599b1e850c68c9ca08858bbd70355d3cd3a82a40c6778f225",
+  "script_sha256": "54b481f6462d99bc67d417d61577241496f592f483e3edf632dc12e7f184b3b4",
+  "example_count": 3,
+  "optimizer_calls": 0,
+  "random_draws": 0,
+  "results": {
+    "E1": {
+      "squared_ranges": [
+        "2",
+        "2",
+        "2"
+      ],
+      "difference_matrix_determinant": "16",
+      "feasible_point": [
+        "1",
+        "1"
+      ],
+      "twice_positive_radius": "1/2",
+      "original_set_nonempty": true,
+      "positive_radius_ball_impossible": true,
+      "finding": "positive-radius inflation does not imply original-set emptiness"
+    },
+    "E2": {
+      "raw_unique_minimizer": "2 on x>=0",
+      "squared_range_unique_minimizer": "sqrt(5) on x>=0",
+      "f_at_2": "1",
+      "g_at_2": "17",
+      "g_at_sqrt5": "16",
+      "f_at_sqrt5": "10-4*sqrt(5)",
+      "strict_raw_cost_gap_proof": "9>4*sqrt(5), because both positive and 81>80",
+      "targets_differ": true,
+      "finding": "certificate for squared-range objective is not a raw-range certificate"
+    },
+    "E3": {
+      "alpha_interval": [
+        "1/3",
+        "7/9"
+      ],
+      "alpha_hat": "3/5",
+      "stationary_k": "2",
+      "nonstationary_k0_eq32": "11/9",
+      "endpoint_spectral_equalities": [
+        true,
+        true
+      ],
+      "actual_covariance": [
+        [
+          "1",
+          "1/3",
+          "1/9"
+        ],
+        [
+          "1/3",
+          "1",
+          "1/3"
+        ],
+        [
+          "1/9",
+          "1/3",
+          "1"
+        ]
+      ],
+      "nonstationary_difference": [
+        [
+          "2/9",
+          "2/5",
+          "74/225"
+        ],
+        [
+          "2/5",
+          "18/25",
+          "262/375"
+        ],
+        [
+          "74/225",
+          "262/375",
+          "562/625"
+        ]
+      ],
+      "first_pair_difference_determinant": "0",
+      "fixed_response": [
+        "-9/5",
+        "1",
+        "-1/10"
+      ],
+      "response_variance_difference": "-1157/93750",
+      "stationary_difference_principal_minors": {
+        "(0,)": "1",
+        "(1,)": "1",
+        "(2,)": "1",
+        "(0, 1)": "56/225",
+        "(0, 2)": "31856/50625",
+        "(1, 2)": "56/225",
+        "(0, 1, 2)": "704/16875"
+      },
+      "stationary_finite_matrix_psd": true,
+      "nonstationary_general_bound_rejected": true,
+      "finding": "v1 lowered initial variance is not a universal 3-epoch covariance bound"
+    }
+  },
+  "meaning": "exact algebra checks and counterexamples; not coverage validation"
+}
