@@ -1,0 +1,9 @@
+{
+ "settings":{"max_nfev":100,"ftol":null,"xtol":1e-15,"gtol":1e-9},
+ "acceptance":"unchanged PR117 physical gradient infinity <= 1e-5, finite, full rank, SciPy successful",
+ "selection":"all 11 old NOT_STATIONARY plus 11 accepted controls; round-robin sorted window/method strata then ascending fixed ID; no truth error selection",
+ "max_calls":22,
+ "purpose":"disable relative cost stop, keep tight step safeguard; start at saved endpoint once, no repeated tolerance trials",
+ "case_A_endpoint_scale_m":1e-7,
+ "case_A_note":"descriptive 100nm movement boundary fixed before continuation, not a localization or numerical acceptance criterion"
+}

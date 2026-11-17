@@ -1,0 +1,74 @@
+{
+  "commit": "02af736734e272cd524cf38afb9991bb0b240f48",
+  "settings": {
+    "settings": {
+      "max_nfev": 100,
+      "ftol": null,
+      "xtol": 1e-15,
+      "gtol": 1e-09
+    },
+    "acceptance": "unchanged PR117 physical gradient infinity <= 1e-5, finite, full rank, SciPy successful",
+    "selection": "all 11 old NOT_STATIONARY plus 11 accepted controls; round-robin sorted window/method strata then ascending fixed ID; no truth error selection",
+    "max_calls": 22,
+    "purpose": "disable relative cost stop, keep tight step safeguard; start at saved endpoint once, no repeated tolerance trials",
+    "case_A_endpoint_scale_m": 1e-07,
+    "case_A_note": "descriptive 100nm movement boundary fixed before continuation, not a localization or numerical acceptance criterion"
+  },
+  "cases": {
+    "failures": [
+      "u000-M2",
+      "u002-M2",
+      "u008-M1",
+      "u009-M2",
+      "u011-M2",
+      "u012-M0",
+      "u014-M0",
+      "u017-M0",
+      "u019-M0",
+      "u019-M1",
+      "u020-M1"
+    ],
+    "controls": [
+      "u000-M0",
+      "u000-M1",
+      "u001-M2",
+      "u020-M0",
+      "u021-M1",
+      "u020-M2",
+      "u040-M0",
+      "u040-M1",
+      "u040-M2",
+      "u001-M0",
+      "u001-M1"
+    ],
+    "selection": "accepted endpoints: round-robin sorted (window,method), within-stratum ascending ID, until 11; no truth/error selection"
+  },
+  "source_sha256": {
+    "docs/research/moon1_bias_dynamics_eval/CONTINUATION.json": "2d622f3c5174d901ce786b2bc67b4f1095624448009966971191ca37bf545f99",
+    "tools/midterm_simulation_phase1/identifiability.py": "cd22ed371ee574e99a7945674a205ce264a68f36acedd6ec52a726ad44f0280c",
+    "tools/midterm_simulation_s2/prototype.py": "e82f407dd45947d1f63aaa91ca1ed6c348cc26a581c6f721d57f784a0aa89c93",
+    "tools/moon1_bias_dynamics_eval/bridge.py": "6215cd3985589e74f8076a871b3348b059070e1de392f50a30eac12f1d65614f",
+    "tools/moon1_bias_dynamics_eval/continue_endpoints.py": "dc8ebf72f0979c27674fe564c6e035127631cbca3e4e17246cbc3b0e3975d9e4",
+    "tools/moon1_bias_dynamics_eval/diagnose.py": "f13d71698083d98c456304f136545e08a1c16ec2b6291077d217653c4749554b",
+    "tools/moon1_bias_dynamics_eval/durable_checks.py": "aff7ae6425cb1f6534737253b6939b6a3a7737b4024e19e9f04d5267d75cdd9d",
+    "tools/moon1_bias_dynamics_eval/engine.py": "4b8101e73a2a18dba7269c2d15259ad291d7f25f4f61b560bb985872879e52ff",
+    "tools/moon1_localization_eval/batch.py": "62e0b0a722ef2ff4bcd922cf356beb5166f9bc44913d678c00665b13cec8131f",
+    "tools/moon1_localization_eval/checks.py": "f261ce466443bb9a5aa4abc53d4fd7f387621de0daea21ca7982916ea8c2ca16",
+    "tools/moon1_localization_eval/common.py": "69596f22183bf7aa886770d0f5496cc09b82a8dd7e3734c8af2b17e7ec401e48",
+    "tools/moon1_localization_eval/generate.py": "f3c4e2516d4a0d2660f9dbe84da4dad40fe39d41134a3e6336077415711468ed",
+    "tools/moon1_localization_eval/model.py": "f46f2876ed6f31c238d362a0365ec323206207af4bb184fd3c9e77730f5fd935",
+    "tools/moon1_localization_eval/readback.py": "e43808e9fdea4a774ef8c25e6333b4b6b2fd403d51c14a93e12d0d727a5defc2",
+    "tools/moon1_localization_eval/solve.py": "51de767f1289077bfb8b17ba7878e4e1aa132e87c58912a29aefd4f9109312d3"
+  },
+  "argv": [
+    "tools/moon1_bias_dynamics_eval/continue_endpoints.py",
+    "--cases",
+    "docs/research/moon1_bias_dynamics_eval/diagnosis/CASES.json",
+    "--out",
+    "/home/ubuntu22/uwb-moon1-numerics-timevarying-bias-artifacts/continuation001",
+    "--freeze",
+    "02af736734e272cd524cf38afb9991bb0b240f48"
+  ],
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "case_sha256": "5ee29d0b975c0c9f2c2571b4e2d69d16c91106f2c01a696e1823524fee4c410f"
+}

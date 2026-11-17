@@ -1,0 +1,116 @@
+{
+  "base_commit": "27b0ecf4d76124d54912d26d33432e1718dca494",
+  "pr114_commit": "4a81bbc582d2e059759b2a89201d8edbcd1a75cc",
+  "plan_commit": "b31789444b04792df58dd78d11a906804eed95a2",
+  "window_starts_s": [
+    0,
+    8,
+    16
+  ],
+  "epochs": 6,
+  "dt_s": 0.2,
+  "anchors_xyz_m": [
+    [
+      -5,
+      -12,
+      1.16
+    ],
+    [
+      -5,
+      12,
+      1.16
+    ],
+    [
+      55,
+      -12,
+      1.16
+    ],
+    [
+      55,
+      12,
+      1.16
+    ]
+  ],
+  "range_sigma_m": 0.04,
+  "motion_sigma_m": 0.02,
+  "prior_sigma_m": 0.5,
+  "height_mode": "height-oracle_world_vertical_1.16m",
+  "prior_mechanism": "independent_correct_gaussian_center",
+  "initialization_offset_m": [
+    0.2,
+    -0.15,
+    -0.2,
+    0.15
+  ],
+  "seeds": [
+    911170201,
+    911170202,
+    911170203,
+    911170204,
+    911170205,
+    911170206,
+    911170207,
+    911170208,
+    911170209,
+    911170210
+  ],
+  "rng": "PCG64 SeedSequence([seed, window_index, stream]); streams range=0 motion=1 prior=2",
+  "conditions": [
+    {
+      "id": "normal",
+      "peer_curve_m": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "constant03",
+      "peer_curve_m": [
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    {
+      "id": "step03",
+      "peer_curve_m": [
+        0,
+        0,
+        0,
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    {
+      "id": "ramp03",
+      "peer_curve_m": [
+        0,
+        0.06,
+        0.12,
+        0.18,
+        0.24,
+        0.3
+      ]
+    }
+  ],
+  "methods": [
+    "M0",
+    "M1",
+    "M2"
+  ],
+  "peer_direction": "one car1-to-car2 observation per epoch; no reciprocal duplicate",
+  "max_noisy_method_runs": 360,
+  "formal_runs": 0,
+  "max_optimizer_calls": 720,
+  "input_mode": "derived from committed PR117 reference; no new NPZ provenance verification",
+  "development_seed": 911170101,
+  "development_window": 0
+}

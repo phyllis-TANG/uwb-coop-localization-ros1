@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "old_accepted": 169,
+  "old_not_stationary": 11,
+  "optimizer_calls": 0,
+  "hessian_fd_max_error": 9.907862477120943e-07,
+  "longdouble_mantissa": 63,
+  "source_sha256": {
+    "tools/midterm_simulation_phase1/identifiability.py": "cd22ed371ee574e99a7945674a205ce264a68f36acedd6ec52a726ad44f0280c",
+    "tools/midterm_simulation_s2/prototype.py": "e82f407dd45947d1f63aaa91ca1ed6c348cc26a581c6f721d57f784a0aa89c93",
+    "tools/moon1_bias_dynamics_eval/bridge.py": "6215cd3985589e74f8076a871b3348b059070e1de392f50a30eac12f1d65614f",
+    "tools/moon1_bias_dynamics_eval/diagnose.py": "f13d71698083d98c456304f136545e08a1c16ec2b6291077d217653c4749554b",
+    "tools/moon1_localization_eval/batch.py": "62e0b0a722ef2ff4bcd922cf356beb5166f9bc44913d678c00665b13cec8131f",
+    "tools/moon1_localization_eval/checks.py": "f261ce466443bb9a5aa4abc53d4fd7f387621de0daea21ca7982916ea8c2ca16",
+    "tools/moon1_localization_eval/common.py": "69596f22183bf7aa886770d0f5496cc09b82a8dd7e3734c8af2b17e7ec401e48",
+    "tools/moon1_localization_eval/generate.py": "f3c4e2516d4a0d2660f9dbe84da4dad40fe39d41134a3e6336077415711468ed",
+    "tools/moon1_localization_eval/model.py": "f46f2876ed6f31c238d362a0365ec323206207af4bb184fd3c9e77730f5fd935",
+    "tools/moon1_localization_eval/readback.py": "e43808e9fdea4a774ef8c25e6333b4b6b2fd403d51c14a93e12d0d727a5defc2",
+    "tools/moon1_localization_eval/solve.py": "51de767f1289077bfb8b17ba7878e4e1aa132e87c58912a29aefd4f9109312d3"
+  },
+  "inputs": {
+    "docs/research/moon1_localization_eval/results/estimates.json.gz": "fd85ec24bf7c3691987a89afbc8605e59bd42722ec3ddafe341dc5a923049b2f",
+    "docs/research/moon1_localization_eval/results/measurements.json.gz": "af3b553c52173d87b0a303f0e90bc2b4a74ea9bf0c265d37d5c45eac25ef3758",
+    "docs/research/moon1_localization_eval/results/reference.json.gz": "cc45f83ad764f3bcc53f4251fc330178a44a9edcaa91d7272ce50a3a9798fd2b"
+  },
+  "argv": [
+    "tools/moon1_bias_dynamics_eval/diagnose.py",
+    "--out",
+    "/home/ubuntu22/uwb-moon1-numerics-timevarying-bias-artifacts/diagnosis001"
+  ]
+}
