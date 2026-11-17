@@ -1,0 +1,26 @@
+{
+  "source_sha": "f9c27436836b814afdea47945887015dcb55fca5",
+  "expected": {
+    "PR119": 1200,
+    "PR121": 600
+  },
+  "rank_rtol": 1e-08,
+  "rank_sensitivity": [
+    1e-06,
+    1e-10,
+    1e-12
+  ],
+  "support_tolerance_m": 1e-10,
+  "alpha_point": 0.05,
+  "alpha_joint_block": 0.004166666666666667,
+  "rhos_m": [
+    0,
+    0.01,
+    0.05
+  ],
+  "position_scale_m": 1,
+  "bias_scale_m": 0.1,
+  "near_eigen_rtol": 0.001,
+  "optimizer_call_limit": 0,
+  "new_random_observations": 0
+}
