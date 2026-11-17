@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "case": "before_attempt",
+      "calls_before_recovery": 0,
+      "calls_after_recovery": 1,
+      "mode": "EXECUTED"
+    },
+    {
+      "case": "after_attempt",
+      "calls_before_recovery": 0,
+      "calls_after_recovery": 0,
+      "mode": "EXECUTION_UNCERTAIN"
+    },
+    {
+      "case": "after_call",
+      "calls_before_recovery": 1,
+      "calls_after_recovery": 1,
+      "mode": "EXECUTION_UNCERTAIN"
+    },
+    {
+      "case": "after_result",
+      "calls_before_recovery": 1,
+      "calls_after_recovery": 1,
+      "mode": "RESTORED"
+    },
+    {
+      "case": "after_done",
+      "calls_before_recovery": 1,
+      "calls_after_recovery": 1,
+      "mode": "RESTORED"
+    },
+    {
+      "case": "returned_failure",
+      "calls": 1,
+      "mode": "RESTORED"
+    },
+    {
+      "case": "exception",
+      "calls": 1,
+      "mode": "RESTORED"
+    },
+    {
+      "case": "mismatch_input_sha256",
+      "called": false
+    },
+    {
+      "case": "mismatch_config_sha256",
+      "called": false
+    },
+    {
+      "case": "mismatch_code_sha256",
+      "called": false
+    },
+    {
+      "case": "result_stage_identity",
+      "called": false
+    },
+    {
+      "case": "two_process_conflict",
+      "second_solver_called": false
+    }
+  ],
+  "real_optimizer_calls": 0,
+  "formal_runs": 0
+}
