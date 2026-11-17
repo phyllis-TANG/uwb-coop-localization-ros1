@@ -1,0 +1,43 @@
+{
+  "parameters": {
+    "ply": "/home/ubuntu22/LuSNAR-reproduction/results/moon1_fused_lidar.ply",
+    "gt": "/home/ubuntu22/LuSNAR-reproduction/sample/Moon_1/gt.txt",
+    "output": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/scene",
+    "resolution": 0.4,
+    "bounds": [
+      -5.0,
+      55.0,
+      -12.0,
+      12.0
+    ],
+    "max_gt_index": 200,
+    "follower_delay": 5.0
+  },
+  "artifacts": {
+    "source_ply": {
+      "path": "/home/ubuntu22/LuSNAR-reproduction/results/moon1_fused_lidar.ply",
+      "sha256": "5662c60bf9b9379d1577142ab79931bd9cba4f4ee2f073d8abfc78430e32a13b",
+      "status": "readable"
+    },
+    "source_gt": {
+      "path": "/home/ubuntu22/LuSNAR-reproduction/sample/Moon_1/gt.txt",
+      "sha256": "023a9352b744e7739d465e720379b538bcdc10af6f7fd5e5424185cb0a470d6e",
+      "status": "readable"
+    },
+    "scene_npz": {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/scene/moon1_scene.npz",
+      "sha256": "ac283d70505a5c1f4869dbb7be84af88041de2d74bf56dcfc2360bcb513de97f",
+      "status": "readable"
+    },
+    "csv": {
+      "sha256": null,
+      "status": "unavailable",
+      "reason": "not generated yet"
+    },
+    "usd": {
+      "sha256": null,
+      "status": "unavailable",
+      "reason": "GUI not run"
+    }
+  }
+}

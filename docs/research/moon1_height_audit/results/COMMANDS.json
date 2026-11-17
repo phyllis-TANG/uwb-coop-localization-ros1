@@ -1,0 +1,53 @@
+[
+  {
+    "argv": [
+      "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/venv/bin/python",
+      "/home/ubuntu22/uwb-moon1-height-audit-20261117/sim/isaac_lab/moon1/prepare_moon1.py",
+      "--ply",
+      "/home/ubuntu22/LuSNAR-reproduction/results/moon1_fused_lidar.ply",
+      "--gt",
+      "/home/ubuntu22/LuSNAR-reproduction/sample/Moon_1/gt.txt",
+      "--output",
+      "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/scene",
+      "--bounds",
+      "-5",
+      "55",
+      "-12",
+      "12",
+      "--resolution",
+      "0.4",
+      "--max-gt-index",
+      "200",
+      "--follower-delay",
+      "5.0"
+    ],
+    "cwd": "/home/ubuntu22/uwb-moon1-height-audit-20261117",
+    "returncode": 0
+  },
+  {
+    "argv": [
+      "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/venv/bin/python",
+      "/home/ubuntu22/uwb-moon1-height-audit-20261117/sim/isaac_lab/moon1/make_uwb_replay.py",
+      "--scene",
+      "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/scene/moon1_scene.npz",
+      "--output",
+      "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/scene/uwb_replay.csv",
+      "--rate",
+      "20.0",
+      "--noise",
+      "0.03",
+      "--bias",
+      "0.0",
+      "--nlos-probability",
+      "0.0",
+      "--nlos-bias",
+      "0.4",
+      "--dropout-probability",
+      "0.0",
+      "--seed",
+      "7"
+    ],
+    "cwd": "/home/ubuntu22/uwb-moon1-height-audit-20261117",
+    "returncode": 0
+  }
+]

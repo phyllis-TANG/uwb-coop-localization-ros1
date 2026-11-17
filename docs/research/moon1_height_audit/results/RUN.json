@@ -1,0 +1,195 @@
+{
+  "utc": "2026-11-17T09:55:04.005150+00:00",
+  "audit_commit": "0d5c1a65db6362d69dce4298ebee1eae59cdbdb5",
+  "generator_commit": "db45d94d03061e6828afb25d841c2b1777d0af48",
+  "plan_commit": "b31789444b04792df58dd78d11a906804eed95a2",
+  "branch": "research/moon1-height-audit-20261117",
+  "remote": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1.git",
+  "argv": [
+    "tools/moon1_height_audit/run.py",
+    "--ply",
+    "/home/ubuntu22/LuSNAR-reproduction/results/moon1_fused_lidar.ply",
+    "--gt",
+    "/home/ubuntu22/LuSNAR-reproduction/sample/Moon_1/gt.txt",
+    "--old-dir",
+    "/home/ubuntu22/uwb-lusnar-moon1-simulation/sim/isaac_lab/moon1/output",
+    "--out",
+    "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001"
+  ],
+  "cwd": "/home/ubuntu22/uwb-moon1-height-audit-20261117",
+  "config_sha256": "13059995a09e8d6dbdfc9e1e64f80c2d9c847f1470eb5d2369733bf2ec0c9f94",
+  "source_files": [
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117/tools/moon1_height_audit/geometry.py",
+      "exists": true,
+      "bytes": 6004,
+      "sha256": "e8824441a2915f56bbb0415845bd674a7ebb307d230c6e1182835927f5eacdc1"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117/tools/moon1_height_audit/run.py",
+      "exists": true,
+      "bytes": 18238,
+      "sha256": "271fb6a83939a7323d757a6912cadeac3f314c52ee7c43d35ad40358fadb2ba8"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117/tools/moon1_height_audit/test_geometry.py",
+      "exists": true,
+      "bytes": 2793,
+      "sha256": "e233e370e11f7bf5b4f20da2ba8ad4feb58ceeae7b2a7f084d35906e7e00457d"
+    }
+  ],
+  "gt_rows": 1094,
+  "gt_timestamp_ns": [
+    "1693274724086398300",
+    "1693274844150504700"
+  ],
+  "used_gt_timestamp_ns": [
+    "1693274724086398300",
+    "1693274746702346900"
+  ],
+  "coordinate_system": "LuSNAR (x,y,z) -> (x,-y,-z); m, s",
+  "fixed_height_source": {
+    "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117/tools/two_car_fixed_lag_fgo_v1/config.json",
+    "exists": true,
+    "bytes": 3589,
+    "sha256": "20a9f64ac55cc43415dc34733bf436ad5c7181cebe06187e5895b6094c1075fa"
+  },
+  "outputs": [
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/CHECKS.json",
+      "exists": true,
+      "bytes": 961,
+      "sha256": "ddfaab976fffbaf7302a4eaeb6292e00511a0cc9086c1829bd36f0e9e846d2f1"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/COMMANDS.json",
+      "exists": true,
+      "bytes": 1490,
+      "sha256": "8d3b0fd16e61772e14e55789f1b7e0b39f491fe253974cee180a9c4a673a97c4"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/COMPARISON.json",
+      "exists": true,
+      "bytes": 7527,
+      "sha256": "eb5b989fd44cdcdf88ec7b5258b80401049b5afe5858d4c3cd0f928b64813e81"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/CONFIG.json",
+      "exists": true,
+      "bytes": 802,
+      "sha256": "3975c67b2173cc16139036535fbf442a9bde3bfdeafdb37eb6eb2e4dbd4cdcab"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/ENVIRONMENT.json",
+      "exists": true,
+      "bytes": 482,
+      "sha256": "7ea985ae2c3e3eed9ebd6c3565fb5ef43d631f3ddbf81e4a51dde8071b27563b"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/INPUTS.json",
+      "exists": true,
+      "bytes": 8375,
+      "sha256": "c7949e83848e12893ce592119f1480dee777a948e463fea7cb618b176ff8021b"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/METRICS.csv",
+      "exists": true,
+      "bytes": 14220,
+      "sha256": "61ace4007ea6c82ee2cf748c7c1b923117d4cddbd665818a37c0334afb4c995d"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/RANK.csv",
+      "exists": true,
+      "bytes": 15651,
+      "sha256": "047e7098fa8776ae51f09d525199c17565b6f4a356e5cdfe7cf00dda4e567ac3"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/SUPPORT_TRACE.json",
+      "exists": true,
+      "bytes": 1031244,
+      "sha256": "58bfe84d689228d8713c0c7929708a48728168e3062adc70ce488e4e4d25bf47"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/TIMESERIES.csv",
+      "exists": true,
+      "bytes": 255426,
+      "sha256": "a2052fd719baff0e852adbc46a3a5e2358fc6ab22d8b0b4b609fb61fbb27ddf9"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/figures/height_distance.png",
+      "exists": true,
+      "bytes": 110312,
+      "sha256": "5e62bd482b5f8a1007f87c74e25f5682e2a2a6a4e893ff21784027908358a526"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/figures/mismatch.png",
+      "exists": true,
+      "bytes": 132449,
+      "sha256": "56971866f17739ffd16e7399eba32e77facfb46c31413bc9c537558873a9a835"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/figures/strata.png",
+      "exists": true,
+      "bytes": 48396,
+      "sha256": "ade791eea59d1af0644602d8853c9eb8663ad6f6399a27ccc95693a15a1650df"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/figures/support.png",
+      "exists": true,
+      "bytes": 56983,
+      "sha256": "7ce9915f1b7ade6740017598cf110aff6502ca252087964a7c40623ac50b326b"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/make_uwb_replay.py.log",
+      "exists": true,
+      "bytes": 112,
+      "sha256": "102cf9feb14b71d035be1cccd8f39e18667514e821252808968c2ce72efd594b"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/prepare_moon1.py.log",
+      "exists": true,
+      "bytes": 672,
+      "sha256": "e562349f1ad023cd0538ea2412acfc81ba2e2f4fb32fd40602159b682e8f2c33"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/scene/moon1_preview.png",
+      "exists": true,
+      "bytes": 139853,
+      "sha256": "88f689fa7389cdc0026205983516f4d9864845681620d03bb920a410cb7edba6"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/scene/moon1_scene.npz",
+      "exists": true,
+      "bytes": 114428,
+      "sha256": "ac283d70505a5c1f4869dbb7be84af88041de2d74bf56dcfc2360bcb513de97f"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/scene/provenance.json",
+      "exists": true,
+      "bytes": 1317,
+      "sha256": "9f17aeb17fb8af1cb958064b388cb685462cc4243cfb87dba7e13427624e2d06"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/scene/summary.json",
+      "exists": true,
+      "bytes": 672,
+      "sha256": "e562349f1ad023cd0538ea2412acfc81ba2e2f4fb32fd40602159b682e8f2c33"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/scene/uwb_replay.csv",
+      "exists": true,
+      "bytes": 72166,
+      "sha256": "2e89cd42f81f2943d6ec2c00c63e15a93548865ee7db13c1969e0030cd44723d"
+    },
+    {
+      "path": "/home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001/scene/uwb_replay.manifest.json",
+      "exists": true,
+      "bytes": 1262,
+      "sha256": "5b52bdfb9f6ccb95bf264d951deec6c096a2080aa79afe57e19c556255b4c116"
+    }
+  ],
+  "formal_runs": 0,
+  "nonlinear_solver_calls": 0,
+  "historical_provenance": "Old hashes identify currently accessible files only; original generation receipts absent",
+  "usd": "Existing USD inventoried only; no new USD or GUI run"
+}

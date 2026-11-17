@@ -1,0 +1,387 @@
+{
+  "npz": {
+    "vertices": {
+      "old_shape": [
+        9211,
+        3
+      ],
+      "new_shape": [
+        9211,
+        3
+      ],
+      "old_dtype": "float32",
+      "new_dtype": "float32",
+      "equal": true,
+      "max_abs_difference": 0.0
+    },
+    "faces": {
+      "old_shape": [
+        18000,
+        3
+      ],
+      "new_shape": [
+        18000,
+        3
+      ],
+      "old_dtype": "int32",
+      "new_dtype": "int32",
+      "equal": true,
+      "max_abs_difference": 0.0
+    },
+    "colors": {
+      "old_shape": [
+        9211,
+        3
+      ],
+      "new_shape": [
+        9211,
+        3
+      ],
+      "old_dtype": "float32",
+      "new_dtype": "float32",
+      "equal": true,
+      "max_abs_difference": 0.0
+    },
+    "observed": {
+      "old_shape": [
+        151,
+        61
+      ],
+      "new_shape": [
+        151,
+        61
+      ],
+      "old_dtype": "bool",
+      "new_dtype": "bool",
+      "equal": true,
+      "max_abs_difference": 0.0
+    },
+    "distance_to_observation": {
+      "old_shape": [
+        151,
+        61
+      ],
+      "new_shape": [
+        151,
+        61
+      ],
+      "old_dtype": "float64",
+      "new_dtype": "float64",
+      "equal": true,
+      "max_abs_difference": 0.0
+    },
+    "grid_shape": {
+      "old_shape": [
+        2
+      ],
+      "new_shape": [
+        2
+      ],
+      "old_dtype": "int64",
+      "new_dtype": "int64",
+      "equal": true,
+      "max_abs_difference": 0.0
+    },
+    "sim_time": {
+      "old_shape": [
+        155
+      ],
+      "new_shape": [
+        155
+      ],
+      "old_dtype": "float64",
+      "new_dtype": "float64",
+      "equal": true,
+      "max_abs_difference": 0.0
+    },
+    "leader": {
+      "old_shape": [
+        155,
+        3
+      ],
+      "new_shape": [
+        155,
+        3
+      ],
+      "old_dtype": "float64",
+      "new_dtype": "float64",
+      "equal": true,
+      "max_abs_difference": 0.0
+    },
+    "follower": {
+      "old_shape": [
+        155,
+        3
+      ],
+      "new_shape": [
+        155,
+        3
+      ],
+      "old_dtype": "float64",
+      "new_dtype": "float64",
+      "equal": true,
+      "max_abs_difference": 0.0
+    }
+  },
+  "old_only_arrays": [],
+  "summary": {
+    "replay_samples": {
+      "old": 155,
+      "new": 155,
+      "equal": true
+    },
+    "bounds_m": {
+      "old": [
+        -5,
+        55,
+        -12,
+        12
+      ],
+      "new": [
+        -5.0,
+        55.0,
+        -12.0,
+        12.0
+      ],
+      "equal": true
+    },
+    "replay_duration_s": {
+      "old": 17.590822656,
+      "new": 17.590822656,
+      "equal": true
+    },
+    "source": {
+      "old": "LuSNAR Moon_1, six fused LiDAR frames and first 201 GT poses",
+      "new": "LuSNAR Moon_1, six fused LiDAR frames and first 201 GT poses",
+      "equal": true
+    },
+    "observed_grid_fraction": {
+      "old": 0.919227011182282,
+      "new": 0.919227011182282,
+      "equal": true
+    },
+    "caveat": {
+      "old": "Unobserved cells use nearest measured height; not a validated collision or RF model.",
+      "new": "Unobserved cells use nearest measured height; not a validated collision or RF model.",
+      "equal": true
+    },
+    "follower_delay_s": {
+      "old": 5.0,
+      "new": 5.0,
+      "equal": true
+    },
+    "mesh_triangles": {
+      "old": 18000,
+      "new": 18000,
+      "equal": true
+    },
+    "source_gt": {
+      "old": "/home/ubuntu22/LuSNAR-reproduction/sample/Moon_1/gt.txt",
+      "new": "/home/ubuntu22/LuSNAR-reproduction/sample/Moon_1/gt.txt",
+      "equal": true
+    },
+    "source_ply": {
+      "old": "/home/ubuntu22/LuSNAR-reproduction/results/moon1_fused_lidar.ply",
+      "new": "/home/ubuntu22/LuSNAR-reproduction/results/moon1_fused_lidar.ply",
+      "equal": true
+    },
+    "resolution_m": {
+      "old": 0.4,
+      "new": 0.4,
+      "equal": true
+    },
+    "coordinate_conversion": {
+      "old": "Isaac (x,y,z) = LuSNAR (x,-y,-z)",
+      "new": "Isaac (x,y,z) = LuSNAR (x,-y,-z)",
+      "equal": true
+    },
+    "grid_vertices": {
+      "old": 9211,
+      "new": 9211,
+      "equal": true
+    }
+  },
+  "csv": {
+    "time_s": {
+      "old_shape": [
+        352
+      ],
+      "new_shape": [
+        352
+      ],
+      "old_dtype": "float64",
+      "new_dtype": "float64",
+      "equal": true,
+      "max_abs_difference": 0.0
+    },
+    "car1_x": {
+      "old_shape": [
+        352
+      ],
+      "new_shape": [
+        352
+      ],
+      "old_dtype": "float64",
+      "new_dtype": "float64",
+      "equal": true,
+      "max_abs_difference": 0.0
+    },
+    "car1_y": {
+      "old_shape": [
+        352
+      ],
+      "new_shape": [
+        352
+      ],
+      "old_dtype": "float64",
+      "new_dtype": "float64",
+      "equal": true,
+      "max_abs_difference": 0.0
+    },
+    "car1_z": {
+      "old_shape": [
+        352
+      ],
+      "new_shape": [
+        352
+      ],
+      "old_dtype": "float64",
+      "new_dtype": "float64",
+      "equal": false,
+      "max_abs_difference": 1.197233
+    },
+    "car1_yaw": {
+      "old_shape": [
+        352
+      ],
+      "new_shape": [
+        352
+      ],
+      "old_dtype": "float64",
+      "new_dtype": "float64",
+      "equal": true,
+      "max_abs_difference": 0.0
+    },
+    "car2_x": {
+      "old_shape": [
+        352
+      ],
+      "new_shape": [
+        352
+      ],
+      "old_dtype": "float64",
+      "new_dtype": "float64",
+      "equal": true,
+      "max_abs_difference": 0.0
+    },
+    "car2_y": {
+      "old_shape": [
+        352
+      ],
+      "new_shape": [
+        352
+      ],
+      "old_dtype": "float64",
+      "new_dtype": "float64",
+      "equal": true,
+      "max_abs_difference": 0.0
+    },
+    "car2_z": {
+      "old_shape": [
+        352
+      ],
+      "new_shape": [
+        352
+      ],
+      "old_dtype": "float64",
+      "new_dtype": "float64",
+      "equal": false,
+      "max_abs_difference": 1.197298
+    },
+    "car2_yaw": {
+      "old_shape": [
+        352
+      ],
+      "new_shape": [
+        352
+      ],
+      "old_dtype": "float64",
+      "new_dtype": "float64",
+      "equal": true,
+      "max_abs_difference": 0.0
+    },
+    "true_range_m": {
+      "old_shape": [
+        352
+      ],
+      "new_shape": [
+        352
+      ],
+      "old_dtype": "float64",
+      "new_dtype": "float64",
+      "equal": false,
+      "max_abs_difference": 0.0003109999999999502
+    },
+    "car1_range_m": {
+      "old_shape": [
+        352
+      ],
+      "new_shape": [
+        352
+      ],
+      "old_dtype": "float64",
+      "new_dtype": "float64",
+      "equal": false,
+      "max_abs_difference": 0.00031200000000097816
+    },
+    "car1_quality": {
+      "old_shape": [
+        352
+      ],
+      "new_shape": [
+        352
+      ],
+      "old_dtype": "float64",
+      "new_dtype": "float64",
+      "equal": true,
+      "max_abs_difference": 0.0
+    },
+    "car2_range_m": {
+      "old_shape": [
+        352
+      ],
+      "new_shape": [
+        352
+      ],
+      "old_dtype": "float64",
+      "new_dtype": "float64",
+      "equal": false,
+      "max_abs_difference": 0.0003109999999999502
+    },
+    "car2_quality": {
+      "old_shape": [
+        352
+      ],
+      "new_shape": [
+        352
+      ],
+      "old_dtype": "float64",
+      "new_dtype": "float64",
+      "equal": true,
+      "max_abs_difference": 0.0
+    },
+    "car1_body_z": {
+      "status": "new_only"
+    },
+    "car2_body_z": {
+      "status": "new_only"
+    },
+    "car1_gt_z": {
+      "status": "new_only"
+    },
+    "car2_gt_z": {
+      "status": "new_only"
+    }
+  },
+  "csv_old_only_fields": []
+}

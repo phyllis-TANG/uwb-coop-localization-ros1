@@ -1,0 +1,20 @@
+{
+  "tests": [
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH= OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/venv/bin/python -m unittest discover -s tools/moon1_height_audit -p test_*.py -v",
+      "input": "synthetic flat/slope/hole/edge/coincident/legacy CSV fixtures",
+      "result": "5 tests PASS"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH= OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/venv/bin/python sim/isaac_lab/moon1/test_antenna_geometry.py",
+      "input": "upstream synthetic geometry and temporary CSV fixture",
+      "result": "2 tests PASS"
+    },
+    {
+      "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH= OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/venv/bin/python tools/moon1_height_audit/verify.py --input /home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/rebuild001 --out /home/ubuntu22/uwb-moon1-height-audit-20261117-artifacts/READBACK_WITH_GRID.json",
+      "input": "saved scene, 507 geometry rows, 1014 support records, 70 summary rows",
+      "result": "PASS; see READBACK_WITH_GRID.json"
+    }
+  ],
+  "cwd": "/home/ubuntu22/uwb-moon1-height-audit-20261117"
+}

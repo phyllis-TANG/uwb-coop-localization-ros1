@@ -1,0 +1,24 @@
+{
+  "legacy_csv": {
+    "rejected": true,
+    "reason": "Legacy/incomplete CSV; regenerate explicitly; missing: car1_body_z, car1_gt_z, car2_body_z, car2_gt_z"
+  },
+  "csv_distance_max_error_m": 1.3223042252263895e-06,
+  "formula_max_error_m": 2.6428512156506656e-15,
+  "timestamp_float_minus_integer_max_s": 2.1600000010835174e-07,
+  "time_pairing": "PASS: car1 at t+5, car2 at t; 20Hz resampled from paired NPZ tracks",
+  "coordinate_transform": "PASS: (x,-y,-z); meters, nanoseconds converted to seconds",
+  "body_gt_antenna_fields": "PASS",
+  "raw_grid_reconstruction": "PASS: mask and smoothed heights exactly equal",
+  "retained_ply_points": 224148,
+  "rejected_ply_points": 52390,
+  "gaussian_radius_cells": 3,
+  "input_hashes_unchanged": true,
+  "old_new_sample_noise_difference_m": {
+    "car1": 1.0000000028043132e-06,
+    "car2": 1.0000000028043132e-06
+  },
+  "independent_time_replicates": false,
+  "formal_runs": 0,
+  "nonlinear_solver_calls": 0
+}
