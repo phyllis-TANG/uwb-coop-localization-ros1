@@ -1,0 +1,32 @@
+{
+  "source_sha": "f9c27436836b814afdea47945887015dcb55fca5",
+  "protocol_freeze_sha": "8659412f0988a5cec95a118702287b8994ea379f",
+  "analysis_kind": "posthoc_saved_endpoint_readback",
+  "new_observations": 0,
+  "nonlinear_optimizer_calls": 0,
+  "monte_carlo_draws": 0,
+  "bootstrap_draws": 0,
+  "complete_inputs": {
+    "PR119": 120,
+    "PR121": 600
+  },
+  "complete_endpoints": {
+    "PR119": 1200,
+    "PR121": 600
+  },
+  "complete_source": "artifacts/analysis; bias magnitudes enriched into analysis-complete",
+  "interrupted_diagnostic": "artifacts/analysis-final, exit143; partial output excluded",
+  "accepted_categories_preserved": true,
+  "source_hashes": "SOURCE_HASHES.json",
+  "scripts": {
+    "tools/midterm_nonlinear_decomposition_a/add_bias_magnitudes.py": "e0de2ec70dcdce5b9d8cd1f0264ff9fbbc30ebc4865fbd8d77e52a14ea8fea0f",
+    "tools/midterm_nonlinear_decomposition_a/analyze.py": "3ecf74d3b006f8edff35694bbcfc8746224f3427f83f54b361628a2022d7b572",
+    "tools/midterm_nonlinear_decomposition_a/common.py": "b24e214fca232890ebb3960b2e2c48c6ececdbaf18b9a0edae73d7b8b7ed4221",
+    "tools/midterm_nonlinear_decomposition_a/figures.py": "df347c6b36ec52f72882c8de72b2b2470e00856d80aa61e05caa4140b032628d",
+    "tools/midterm_nonlinear_decomposition_a/regions.py": "da424d84d84c5b95f8007c0f06ec3d88f3ca4c7c1c5196424f2ebae57ed56f67",
+    "tools/midterm_nonlinear_decomposition_a/summarize.py": "2597fe2faecbbc721bbf0614a6948ee60d12da11ecdbe43c95a71a50d8d4c2e3",
+    "tools/midterm_nonlinear_decomposition_a/test_math.py": "f5676bfcf25d67b6cc7a0828163f0a96fb885fcfb10143f5ceba89cf3746572b",
+    "tools/midterm_nonlinear_decomposition_a/verify.py": "257af8356fa2e9dc7d8e437eeb200ec48be43ecfacf9df814abbf3c0b68a4170"
+  },
+  "csv_lf_normalization_tables_verified_equal": 9
+}
