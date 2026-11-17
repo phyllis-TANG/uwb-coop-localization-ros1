@@ -1,0 +1,42 @@
+{
+  "directory": "/home/ubuntu22/uwb-midterm-bias-region-b-artifacts/analysis",
+  "files": {
+    "COUNTS.json": {
+      "sha256": "1f345f9c97243a8d01acbc393864a3ba2cabf1055518280749235fdd117f1c2e",
+      "bytes": 247
+    },
+    "PAIRED_DIFFERENCES.csv": {
+      "sha256": "1273242c35abfc7f83ae466eea191053902c5ab713905df4df802703d87975f6",
+      "bytes": 141282
+    },
+    "RUN.json": {
+      "sha256": "a715e923ef7f17cb5b74bc94b121a788bce1382a72375d9d0975e6ee98e5a503",
+      "bytes": 1055
+    },
+    "POINTS.csv.gz": {
+      "sha256": "fc3434fd8c80c4ba21c44ced355f094bc909194c923a0cf2a8fa5e8279891bfd",
+      "bytes": 18024007
+    },
+    "SUMMARY.csv": {
+      "sha256": "5796128e13c1739e1ef9649adb8a6514a57bf8002f293db141e25bec16a09a76",
+      "bytes": 1638609
+    },
+    "ENDPOINTS.json.gz": {
+      "sha256": "8120d32b8de3629a3851ba9e1114b35824e0d8cccc191c6cc83a2d2bdcdd5dd0",
+      "bytes": 89542
+    },
+    "ENDPOINT_FAILURES.csv": {
+      "sha256": "2317e89d9a103f96ce1192ab464f042127b45e8201e3897900b92c4280e1c59f",
+      "bytes": 1949
+    },
+    "LOCAL_MATRICES.npz": {
+      "sha256": "6e412cf200fe8cee2cb8261445f75826da64fa184cc74c1c0cb102131264ec95",
+      "bytes": 7847953
+    },
+    "PER_SEED.csv.gz": {
+      "sha256": "a887113f3f4f63699f05fa034062cd0f23e1970ff0c1c14afe254a429a105215",
+      "bytes": 1855230
+    }
+  },
+  "note": "Full POINTS.csv.gz remains outside Git; reproduce with analyze.py from pinned portable source. Compressed per-seed records and all local matrices are carried in Git."
+}

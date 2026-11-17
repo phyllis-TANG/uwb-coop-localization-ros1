@@ -16,7 +16,7 @@ $PY tools/midterm_bias_region_b/test_recovery.py --out /tmp/bias-region-recovery
 $PY tools/midterm_bias_region_b/test_math.py --out /tmp/bias-region-math.json
 # 只读复算旧状态，不调用优化器
 $PY tools/midterm_bias_region_b/analyze.py --out /tmp/bias-region-recompute
-$PY tools/midterm_bias_region_b/verify.py --results /tmp/bias-region-recompute --out /tmp/bias-region-verified.json
+$PY tools/midterm_bias_region_b/readback.py --results /tmp/bias-region-recompute --out /tmp/bias-region-verified.json
 $PY tools/midterm_bias_region_b/figures.py --summary /tmp/bias-region-recompute/SUMMARY.csv --out /tmp/bias-region-figures
 ```
 
@@ -25,3 +25,5 @@ POINTS.csv.gz为逐时刻候选表；PER_SEED.csv.gz按每车每seed六时刻汇
 LOCAL_MATRICES.npz按ENDPOINTS顺序保存P/B/curvature，维度分别为[终点,3视图,6时刻,2车辆,2,2或4]；state按25维填充，B0最后一维NaN。status是全局信息状态，逐边缘不可用原因见POINTS。压缩矩阵不是新的优化结果；原输入/状态依赖PR111仓库内便携归档，哈希冻结。
 
 所有rho只是假设敏感性集合；当前survey偏移不默认属于5cm球。线性Gaussian结论不自动推广到非线性端点，不称保护级或安全保证。
+
+审计入口readback.py只将NPZ一次性载入内存，再调用冻结verify.py的全部独立核验；避免循环反复解压。该交付期性能适配不改数学、候选选择或结果。完整逐点POINTS表保留Git外，按上述命令可从仓库固定源重建；Git内携带压缩逐seed表和全部局部矩阵。
