@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "source_commit": "f9c27436836b814afdea47945887015dcb55fca5",
+  "anchors": {"good": [["-4","-3"],["4","-3"],["-4","3"],["4","3"]], "collinear": [["-4","0"],["-1","0"],["3","0"],["5","0"]]},
+  "settings": {"q":"9.488", "tolerance":[".025",".025",".025"], "max_boxes":50000, "max_seconds":60},
+  "sigma_m":".04",
+  "xy_domain_m":[["-6","6"],["-6","6"]],
+  "bias_domain_m":["-.6",".6"],
+  "known_bias_m":".3",
+  "affected_index":3,
+  "confidence_lower_bound":".95",
+  "measurement_dimension":4,
+  "validation_cases":8,
+  "case_type":"predeclared deterministic mechanism checks, not random coverage samples",
+  "scope":"single unknown position and known anchors/reference position; fourth range alone may have one unknown constant bias",
+  "domain_basis":"synthetic test assumptions only, no measured platform bound",
+  "local_comparison":"one affine direct least-squares at returned XY hull midpoint, b=0 if unknown; full measurement threshold; rank-deficient or negative remaining budget unavailable; not a certified nonlinear region"
+}
