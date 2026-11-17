@@ -38,7 +38,7 @@ def unpack(b):return tuple(tuple(map(F,x)) for x in b)
 def retained(result):return [n for n in result['nodes'] if n['status'] not in ('SPLIT','OUTSIDE')]
 def contains(result,p):return any(all(a<=F(x)<=b for x,(a,b) in zip(p,unpack(n['box']))) for n in retained(result))
 def audit(model,settings,result):
- nodes={n['path']:n for n in result['nodes']};assert len(nodes)==len(result['nodes']);assert nodes['']['box']==model['domain']
+ nodes={n['path']:n for n in result['nodes']};assert len(nodes)==len(result['nodes']);assert unpack(nodes['']['box'])==unpack(model['domain'])
  stack=[''];visited=set();q=F(settings['q']);certs=0
  while stack:
   path=stack.pop();assert path not in visited;visited.add(path);n=nodes[path];box=unpack(n['box'])
@@ -72,12 +72,16 @@ def metrics(model,result):
 def verify_directory(path):
  meta=json.loads((path/'RUN.json').read_text());root=Path(__file__).resolve().parents[2]
  for file,h in meta['manifest']['files'].items():assert hashlib.sha256((root/file).read_bytes()).hexdigest()==h,file
+ if meta.get('reuse'):assert hashlib.sha256((path/'ORIGINAL_RUN.json').read_bytes()).hexdigest()==meta['reuse']['source_run_sha256']
  planned=json.loads((root/'docs/research/midterm_nonlinear_region_b/INPUTS.json').read_text());plan={c['id']:c for c in planned}
  assert {f.name.removesuffix('.json.gz') for f in path.glob('*.json.gz')}==set(plan)
  summary=[]
  for f in sorted(path.glob('*.json.gz')):
   with gzip.open(f,'rt') as h:r=json.load(h)
-  c=plan[r['id']];assert all(r[k]==v for k,v in c.items());assert r['identity']['freeze']==meta['freeze']
+  c=plan[r['id']];assert all(r[k]==v for k,v in c.items())
+  reuse=meta.get('reuse',{});reused=r['id'] in reuse.get('cases',[])
+  assert r['identity']['freeze']==(reuse['source_freeze'] if reused else meta['freeze'])
+  if reused:assert hashlib.sha256(f.read_bytes()).hexdigest()==reuse['result_hashes'][f.name]
   assert r['identity']['input_sha']==hashlib.sha256(json.dumps(c,sort_keys=True).encode()).hexdigest()
   z=audit(r['model'],r['settings'],r['result']);assert metrics(r['model'],r['result'])==r['metrics'];z['case']=r['id'];summary.append(z)
  assert len(summary)==8

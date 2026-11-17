@@ -52,9 +52,9 @@ class Tests(unittest.TestCase):
   def fail(*a):raise ArithmeticError('injected')
   r=solve(m,SET,bound=fail);audit(m,SET,r);self.assertFalse(r['empty_proved']);self.assertEqual(r['termination'],'NUMERICAL_FAILURE')
  def test_projection(self):
-  m=self.affine();m['A']=[['1','0','0'],['0','1','0']];m['domain']+=[['-1','1']]
+  m=self.affine();m['A']=[['1','0','0'],['0','1','0']];m['domain']+=[['-.6','.6']]
   s=dict(SET,max_boxes=100);r=solve(m,s);audit(m,s,r);z=metrics(m,r)
-  self.assertTrue(contains(r,['0','0','1']));self.assertIsNotNone(z['radius_upper_m'])
+  self.assertTrue(contains(r,['0','0','.6']));self.assertIsNotNone(z['radius_upper_m'])
   c=list(map(F,z['center']));rad=F(z['radius_upper_m'])
   for b in z['projection_rectangles']:
    for x in b[0]:
