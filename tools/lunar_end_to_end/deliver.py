@@ -12,7 +12,7 @@ COLORS=['#555555','#2171b5','#f28e2b','#c43939']
 def csvwrite(path,rows):
  if not rows:return
  with path.open('w') as f:
-  w=csv.DictWriter(f,fieldnames=list(rows[0]));w.writeheader();w.writerows(rows)
+  w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
 def summarize():
  root=ART/'evaluation';plan=json.loads((root/'RUN_PLAN.json').read_text());meta={r['id']:r for r in json.loads((DOC/'INPUT_MANIFEST.json').read_text())};runs=[];full=[];fail=[]
  for task in plan:
@@ -141,7 +141,7 @@ def archive():
   shutil.copytree(root/name,package/name,dirs_exist_ok=True)
  for name in ['RUN_PLAN.json','PROGRESS.json','CLOCK.json']:shutil.copy2(root/name,package/name)
  for name in ['INPUT_MANIFEST.json','INPUT_SOURCES.json','WINDOWS.json','FREEZE.json','SEEDS.json','SCENE_STATS.json','OBSERVATION_CONTRACT.md','SOURCE_MAP.md','MODEL_AND_PARAMETERS.md','PROTOCOL.md']:shutil.copy2(DOC/name,package/name)
- 
+
  # Full delivery material, excluding circular archive/checksum/readback receipt.
  for source in sorted(DOC.rglob('*')):
   if source.is_file() and source.name not in ['portable_results.tar.gz','SHA256SUMS','INDEPENDENT_CHECK.json','RESULTS_READY.json']:
