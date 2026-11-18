@@ -70,3 +70,5 @@ OPENBLAS_NUM_THREADS=1 python3 tools/midterm_dual_robot_contract_a/calibration_v
 set -o pipefail
 python3 tools/midterm_dual_robot_contract_a/calibration_v1/increment_error.py | diff - docs/research/midterm_dual_robot_contract_a/calibration_v1/increment_error.csv
 ```
+
+写作窗口可直接使用[英文图表与报告段落](FIRST_SECOND_REPORT.md)。
