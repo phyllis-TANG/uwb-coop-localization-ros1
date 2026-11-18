@@ -1,0 +1,97 @@
+{
+  "epoch_ns": 1790000000000000000,
+  "prior_state_s": 1,
+  "models": {
+    "car1": {
+      "anchors_xyz_m": {
+        "node_10": [
+          3.26,
+          0.1,
+          2.355
+        ],
+        "node_2": [
+          5.28,
+          5.16,
+          2.755
+        ],
+        "node_3": [
+          5.28,
+          2.86,
+          2.355
+        ],
+        "node_8": [
+          0.1,
+          2.41,
+          2.3
+        ]
+      },
+      "antenna_height_m": 0.17,
+      "base_to_antenna_body_xy_m": [
+        0.08,
+        -0.06
+      ],
+      "initial_heading_deg": 15.875646608271103,
+      "start_antenna_xyz_m": [
+        1.6304946655801489,
+        3.606388373008068,
+        0.17
+      ],
+      "graph_parameters": {
+        "keyframe_step_s": 1,
+        "odom_translation_sigma_m": 0.03,
+        "odom_yaw_sigma_deg": 2,
+        "prior_heading_sigma_deg": 5,
+        "prior_position_sigma_m": 0.2,
+        "range_bin_half_width_s": 0.4,
+        "range_sigma_m": 0.2
+      }
+    },
+    "car2": {
+      "anchors_xyz_m": {
+        "node_10": [
+          3.26,
+          0.1,
+          2.355
+        ],
+        "node_2": [
+          5.28,
+          5.16,
+          2.755
+        ],
+        "node_3": [
+          5.28,
+          2.86,
+          2.355
+        ],
+        "node_8": [
+          0.1,
+          2.41,
+          2.3
+        ]
+      },
+      "antenna_height_m": 0.2,
+      "base_to_antenna_body_xy_m": [
+        0.12,
+        -0.08
+      ],
+      "initial_heading_deg": 67.0819394472258,
+      "start_antenna_xyz_m": [
+        2.4489831647871454,
+        1.8462204337013364,
+        0.2
+      ],
+      "graph_parameters": {
+        "keyframe_step_s": 1,
+        "odom_translation_sigma_m": 0.03,
+        "odom_yaw_sigma_deg": 2,
+        "prior_heading_sigma_deg": 5,
+        "prior_position_sigma_m": 0.2,
+        "range_bin_half_width_s": 0.4,
+        "range_sigma_m": 0.2
+      }
+    }
+  },
+  "raw_range_sigma_m": 0.04,
+  "odom_body_step_xy_sigma_m": 0.002,
+  "odom_step_yaw_sigma_rad": 0.0008
+}

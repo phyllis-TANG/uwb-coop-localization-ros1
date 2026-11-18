@@ -9,6 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'tools/ground_continuous_b'))
 from run_b import generate, simulate
+from legacy import wrap
 
 OUT = ROOT / 'docs/research/ground_b_round2/runtime'
 
@@ -20,6 +21,8 @@ def export(seed, scene):
     fields = ('vehicle_id', 'kind', 'header_epoch_ns', 'receive_epoch_ns', 'source_observation_id')
     messages = []
     indexed = {}
+    last_yaw = {}
+    local_pose = {}
     for event in events:
         kind = event['kind']
         if kind not in ('uwb', 'odom'):
@@ -29,6 +32,12 @@ def export(seed, scene):
             *sorted(cfg['models'][car]['anchors_xyz_m']), {'car1':'node_0','car2':'node_1'}[car]]
         msg = {k:event[k] for k in fields}
         msg['value'] = {k:event['value'][k] for k in keys}
+        if kind == 'odom':
+            x,y,yaw = msg['value']['pose']
+            if car in last_yaw:
+                yaw = last_yaw[car] + wrap(yaw-last_yaw[car])
+            last_yaw[car] = yaw
+            local_pose[car,event['header_epoch_ns']] = [x,y,yaw]
         messages.append(msg)
         indexed[car,kind,event['header_epoch_ns']] = msg
 
@@ -46,7 +55,7 @@ def export(seed, scene):
         assert [m['source_observation_id'] for m in frames] == obs['ids']
         assert (max(m['receive_epoch_ns'] for m in frames)-epoch)/1e9 == obs['received']
         for car in ('car1','car2'):
-            assert indexed[car,'odom',stamp]['value']['pose'] == row['bins'][car]['local_odom']
+            assert local_pose[car,stamp] == row['bins'][car]['local_odom']
     assert len(messages) == len(indexed) == 5124
     assert all(a['receive_epoch_ns'] <= b['receive_epoch_ns'] for a,b in zip(messages,messages[1:]))
     models = {car:{k:model[k] for k in ('anchors_xyz_m','antenna_height_m',
