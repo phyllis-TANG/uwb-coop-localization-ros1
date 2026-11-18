@@ -26,36 +26,41 @@ def range_interval(box,other,z,h):
 def gap(a,b):
     return max(0,a[0]-b[1],b[0]-a[1])
 
-def anchor_cells(anchors,height,ranges):
+def anchor_cells(anchors,height,ranges,limit=LIMIT,cell=None):
+    if cell is None:
+        cell=CELL
     # |horizontal offset| <= slant <= measured upper + ceil(sqrt(26)*sigma).
-    radial=[r[1]+sqrt_up(LIMIT) for r in ranges]
+    radial=[r[1]+sqrt_up(limit) for r in ranges]
     root=tuple((max(a[k][0]-d for a,d in zip(anchors,radial)),min(a[k][1]+d for a,d in zip(anchors,radial))) for k in (0,1))
     stack=[root];cells=[];visited=0
     while stack:
         box=stack.pop();visited+=1
         if any(a>b for a,b in box):continue
         lower=sum(gap(range_interval(box,a[:2],height,a[2]),y)**2 for a,y in zip(anchors,ranges))
-        if lower>LIMIT:continue
+        if lower>limit:continue
         axis=max((0,1),key=lambda j:box[j][1]-box[j][0])
         l,u=box[axis]
-        if u-l<=CELL:
+        if u-l<=cell:
             cells.append((box,lower));continue
         mid=(l+u)//2
         for interval in [(l,mid),(mid,u)]:stack.append(box[:axis]+(interval,)+box[axis+1:])
     return root,cells,visited
 
-def solve(obs,published):
+def solve(obs,published,*,sigma_um=SIGMA,bias_um=600000,cell_um=None):
+    if sigma_um<=0 or bias_um<0 or (cell_um is not None and cell_um<=0):
+        raise ValueError("Invalid noise, bias or cell size")
+    limit=26*sigma_um**2
     anchors=[[enclosure(x) for x in xyz] for xyz in obs['anchors']]
     heights=list(map(enclosure,obs['heights']))
     ranges=list(map(enclosure,obs['ranges']))
-    car=[anchor_cells(anchors,h,ranges[4*i:4*i+4]) for i,h in enumerate(heights)]
-    target=(ranges[8][0]-600000,ranges[8][1]+600000)
+    car=[anchor_cells(anchors,h,ranges[4*i:4*i+4],limit,cell_um) for i,h in enumerate(heights)]
+    target=(ranges[8][0]-bias_um,ranges[8][1]+bias_um)
     kept=[set(),set()];pairs=[]
     for i,(p,lp) in enumerate(car[0][1]):
         matched=[]
         for j,(s,ls) in enumerate(car[1][1]):
-            if lp+ls>LIMIT:continue
-            if lp+ls+gap(range_interval(p,s,*heights),target)**2<=LIMIT:
+            if lp+ls>limit:continue
+            if lp+ls+gap(range_interval(p,s,*heights),target)**2<=limit:
                 kept[0].add(i);kept[1].add(j);matched.append(j)
         if matched:pairs.append([i,matched])
     pl=[]
