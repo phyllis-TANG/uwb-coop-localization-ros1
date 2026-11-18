@@ -1,0 +1,22 @@
+{
+  "P0": {
+    "max_nfev": 300,
+    "ftol": 1e-12,
+    "xtol": 1e-12,
+    "gtol": 1e-10
+  },
+  "P1": {
+    "max_nfev": 100,
+    "ftol": null,
+    "xtol": 1e-15,
+    "gtol": 1e-09
+  },
+  "P1_rule": "exactly once for every finite P0 state, regardless of acceptance or truth error",
+  "accepted_gradient_inf": 1e-05,
+  "rank_relative_tolerance": 1e-08,
+  "position_scale_m": 1.0,
+  "bias_scale_m": 0.1,
+  "loss": "linear",
+  "final_rule": "P1 if finite; otherwise P0 estimate retained only as failed diagnostic; no best-of-stage selection",
+  "trend_scale_m_per_s": 0.1
+}

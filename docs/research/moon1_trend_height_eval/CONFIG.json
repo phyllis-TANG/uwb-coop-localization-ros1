@@ -1,0 +1,106 @@
+{
+  "window_starts_s": [
+    0,
+    8,
+    16
+  ],
+  "epochs": 6,
+  "dt_s": 0.2,
+  "anchors_xyz_m": [
+    [
+      -5,
+      -12,
+      1.16
+    ],
+    [
+      -5,
+      12,
+      1.16
+    ],
+    [
+      55,
+      -12,
+      1.16
+    ],
+    [
+      55,
+      12,
+      1.16
+    ]
+  ],
+  "range_sigma_m": 0.04,
+  "motion_sigma_m": 0.02,
+  "prior_sigma_m": 0.5,
+  "initialization_offset_m": [
+    0.2,
+    -0.15,
+    -0.2,
+    0.15
+  ],
+  "base_commit": "0c3dbbb59a5c65087e073ad1c49eaed397f2958b",
+  "methods": [
+    "M0",
+    "M1",
+    "M2",
+    "M3"
+  ],
+  "height_sigmas_m": [
+    0,
+    0.05,
+    0.15
+  ],
+  "conditions": [
+    {
+      "id": "normal",
+      "curve_m": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "constant03",
+      "curve_m": [
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    {
+      "id": "step03",
+      "curve_m": [
+        0,
+        0,
+        0,
+        0.3,
+        0.3,
+        0.3
+      ]
+    },
+    {
+      "id": "ramp03",
+      "curve_m": [
+        0,
+        0.06,
+        0.12,
+        0.18,
+        0.24,
+        0.3
+      ]
+    }
+  ],
+  "height_mode": "given_world_vertical_height_not_estimated",
+  "height_error": "one independent standard Gaussian per car/window/seed, fixed within window, stream 3",
+  "covariance": "GN conditional given supplied heights; marginal 2x2 XY blocks, no height uncertainty propagation",
+  "formal_runs": 0,
+  "explore_method_budget": 1920,
+  "explore_call_budget": 3840,
+  "development_method_budget": 96,
+  "development_call_budget": 192
+}

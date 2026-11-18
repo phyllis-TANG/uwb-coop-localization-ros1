@@ -1,0 +1,219 @@
+{
+  "commit": "96fddaabd3dfcb3f3e668e4a736bcd7b07761a2f",
+  "source_sha256": {
+    "docs/research/moon1_trend_height_eval/CONFIG.json": "0d9197ed3ae8ea43a5d735ba31a8ef21fad1899d8aa644e9467c161d6c390b9d",
+    "docs/research/moon1_trend_height_eval/HISTORY_SHA256.json.gz": "c8c87b5ae1b8f334aa8107bf760d641d247475f06adcb1e3a3597b962550eb90",
+    "docs/research/moon1_trend_height_eval/INPUT_PLAN.json": "83ccfd01122f97d5979e2054bb2deefb59f3bf958b55e42c60771103cc795108",
+    "docs/research/moon1_trend_height_eval/MATH.md": "e0ec911f354ce13854fb29b20ba256cf84d4ce7a74750e14ddc025cbbfbbebfb",
+    "docs/research/moon1_trend_height_eval/PROTOCOL.md": "daa2274d2e576c226ea593605593e633bbb2cbcfc768fd56d66e4a824805beb9",
+    "docs/research/moon1_trend_height_eval/SEEDS.json": "a3c120762adedb0e18355586c9665fdb82fe7bf56a46e05bf57bdf80a64427e2",
+    "docs/research/moon1_trend_height_eval/SEED_AUDIT.json": "da75123518ed07a027a814cc5f9f9ce5b59a1e371097d07efd7785562c7f7565",
+    "docs/research/moon1_trend_height_eval/SOLVER.json": "0108ce09e59c4b65630443594cf0cd24eb9d462adaa5631cd43be2f6301fa61e",
+    "docs/research/moon1_trend_height_eval/UNCERTAINTY_CONTRACT.md": "66b1bedbab71b57404b358ea2ea0e95ccfc82746a4eb253954320de960536c59",
+    "sim/isaac_lab/moon1/antenna_geometry.py": "71dbaefae2a54a5def6311ac656db5b904b640684aa06adb63cfe4d0bbcf5712",
+    "tools/midterm_simulation_phase1/identifiability.py": "cd22ed371ee574e99a7945674a205ce264a68f36acedd6ec52a726ad44f0280c",
+    "tools/midterm_simulation_s2/prototype.py": "e82f407dd45947d1f63aaa91ca1ed6c348cc26a581c6f721d57f784a0aa89c93",
+    "tools/moon1_bias_dynamics_eval/bridge.py": "6215cd3985589e74f8076a871b3348b059070e1de392f50a30eac12f1d65614f",
+    "tools/moon1_localization_eval/common.py": "69596f22183bf7aa886770d0f5496cc09b82a8dd7e3734c8af2b17e7ec401e48",
+    "tools/moon1_localization_eval/generate.py": "f3c4e2516d4a0d2660f9dbe84da4dad40fe39d41134a3e6336077415711468ed",
+    "tools/moon1_localization_eval/model.py": "f46f2876ed6f31c238d362a0365ec323206207af4bb184fd3c9e77730f5fd935",
+    "tools/moon1_trend_height_eval/tarchive.py": "b562f0cd9d0da41a1e95f5f2bfb7cb209e7f81a2f736bc591e383cd2d8ba7030",
+    "tools/moon1_trend_height_eval/tbatch.py": "913fde33ac1b582f238c94337235e44aed98fe13584f96d9972ff777c0b60c78",
+    "tools/moon1_trend_height_eval/tchecks.py": "ec6ae228d13463f8802b9ca58a3edd8bacb5876e278af0b046502038a2ff8f6a",
+    "tools/moon1_trend_height_eval/tcommon.py": "304d7809839ee2a812dfe2e97fd5c6fb37c3fc48fead27bf392e5acc57b2b25f",
+    "tools/moon1_trend_height_eval/tengine.py": "5d8b78c823646fc03dee78f6c00fac1754afffa16631a4c60fb73849545b66ac",
+    "tools/moon1_trend_height_eval/tinputs.py": "23dad0e8bd252f72153e42afb3f5bb0973743cbb17d16ffd9208c7d61e04e8c4",
+    "tools/moon1_trend_height_eval/tmodel.py": "4af57c0cf435b836e6e593f3944996bed12793f07d4d05d3af62e8d1aaeb9237",
+    "tools/moon1_trend_height_eval/tplots.py": "9514a27bc2c8532b3704186c62803250e8eb01748e473b0eeef64aacf7ff1251",
+    "tools/moon1_trend_height_eval/tstats.py": "a58eb1e3d530f364e4c227f21051d8d41ec945b50f5f683fed6c6a68de71d569",
+    "tools/moon1_trend_height_eval/tverify.py": "65862f75b4d74b8e5191b27856a2ca927a4e6df98ca6884b687821b68a334df5"
+  },
+  "config": {
+    "window_starts_s": [
+      0,
+      8,
+      16
+    ],
+    "epochs": 6,
+    "dt_s": 0.2,
+    "anchors_xyz_m": [
+      [
+        -5,
+        -12,
+        1.16
+      ],
+      [
+        -5,
+        12,
+        1.16
+      ],
+      [
+        55,
+        -12,
+        1.16
+      ],
+      [
+        55,
+        12,
+        1.16
+      ]
+    ],
+    "range_sigma_m": 0.04,
+    "motion_sigma_m": 0.02,
+    "prior_sigma_m": 0.5,
+    "initialization_offset_m": [
+      0.2,
+      -0.15,
+      -0.2,
+      0.15
+    ],
+    "base_commit": "0c3dbbb59a5c65087e073ad1c49eaed397f2958b",
+    "methods": [
+      "M0",
+      "M1",
+      "M2",
+      "M3"
+    ],
+    "height_sigmas_m": [
+      0,
+      0.05,
+      0.15
+    ],
+    "conditions": [
+      {
+        "id": "normal",
+        "curve_m": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "constant03",
+        "curve_m": [
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3,
+          0.3
+        ]
+      },
+      {
+        "id": "step03",
+        "curve_m": [
+          0,
+          0,
+          0,
+          0.3,
+          0.3,
+          0.3
+        ]
+      },
+      {
+        "id": "ramp03",
+        "curve_m": [
+          0,
+          0.06,
+          0.12,
+          0.18,
+          0.24,
+          0.3
+        ]
+      }
+    ],
+    "height_mode": "given_world_vertical_height_not_estimated",
+    "height_error": "one independent standard Gaussian per car/window/seed, fixed within window, stream 3",
+    "covariance": "GN conditional given supplied heights; marginal 2x2 XY blocks, no height uncertainty propagation",
+    "formal_runs": 0,
+    "explore_method_budget": 1920,
+    "explore_call_budget": 3840,
+    "development_method_budget": 96,
+    "development_call_budget": 192
+  },
+  "seeds": {
+    "seeds": [
+      911170301,
+      911170302,
+      911170303,
+      911170304,
+      911170305,
+      911170306,
+      911170307,
+      911170308,
+      911170309,
+      911170310,
+      911170311,
+      911170312,
+      911170313,
+      911170314,
+      911170315,
+      911170316,
+      911170317,
+      911170318,
+      911170319,
+      911170320
+    ],
+    "development_seed": 911170101,
+    "independent_unit": "seed cluster containing all three windows, methods and heights",
+    "streams": {
+      "range": 0,
+      "motion": 1,
+      "prior": 2,
+      "height": 3
+    }
+  },
+  "solver": {
+    "P0": {
+      "max_nfev": 300,
+      "ftol": 1e-12,
+      "xtol": 1e-12,
+      "gtol": 1e-10
+    },
+    "P1": {
+      "max_nfev": 100,
+      "ftol": null,
+      "xtol": 1e-15,
+      "gtol": 1e-09
+    },
+    "P1_rule": "exactly once for every finite P0 state, regardless of acceptance or truth error",
+    "accepted_gradient_inf": 1e-05,
+    "rank_relative_tolerance": 1e-08,
+    "position_scale_m": 1.0,
+    "bias_scale_m": 0.1,
+    "loss": "linear",
+    "final_rule": "P1 if finite; otherwise P0 estimate retained only as failed diagnostic; no best-of-stage selection",
+    "trend_scale_m_per_s": 0.1
+  },
+  "input_source": {
+    "mode": "committed_PR120_reference_derived",
+    "fixed_commit": "0c3dbbb59a5c65087e073ad1c49eaed397f2958b",
+    "path": "docs/research/moon1_bias_dynamics_eval/results/reference.json.gz",
+    "sha256": "66344b6e78fc74a72ecae15b9af065ed38dd1f7739f85f6d43c3e6cad9018520",
+    "tracks_sha256": [
+      "3b8a8eb4b4aca2d5c8a81003e8b0cbab75a11e4b1eabcc254fe7339ed5ea67fa",
+      "ba0e811ad7c955faf02b4126d1fce6254bc91714978205991d5a82001bb7efc0",
+      "3a8080cd7e1ea22f71401aac664401a0001f23b7613cdb1f53af365bde91884b"
+    ],
+    "same_window_records": 40,
+    "NPZ_chain_reverified": false
+  },
+  "mode": "development",
+  "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+  "packages": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.9"
+  },
+  "argv": [
+    "tools/moon1_trend_height_eval/tbatch.py",
+    "--mode",
+    "development",
+    "--out",
+    "/home/ubuntu22/uwb-moon1-trend-height-sensitivity-artifacts/development001"
+  ],
+  "acceptance_sha256": null
+}
