@@ -68,7 +68,7 @@ def route_map():
         "Moon_1 reconstruction and the four evaluation epochs",
         "Evaluation maps (right): both cars follow one source trajectory. Car 1 samples it 5 s later than Car 2 at each scene time.",
     )
-    fig.text(0.055, 0.777, "Isaac Lab demonstration replay", fontsize=23, weight="bold")
+    fig.text(0.055, 0.777, "Historical Isaac Lab replay", fontsize=23, weight="bold")
     src = OUT / "isaac_replay_7s.png"
     im = Image.open(src)
     assert im.size == (1920, 1080)
@@ -85,7 +85,7 @@ def route_map():
     fig.text(
         0.055,
         0.206,
-        "Kinematic replay with four anchors and decorative craters.",
+        "Kinematic replay with decorative craters.",
         fontsize=16,
         linespacing=1.4,
     )
@@ -155,7 +155,7 @@ def route_map():
     ]
     handles.extend(
         Line2D([], [], marker=m, ls="", color=INK, label=l)
-        for m, l in [("^", "Anchor"), ("o", "Index 0"), ("D", "Index 11")]
+        for m, l in [("^", "Synthetic anchor"), ("o", "Index 0"), ("D", "Index 11")]
     )
     fig.legend(
         handles=handles,
@@ -183,7 +183,7 @@ def route_map():
     fig.text(
         0.055,
         0.031,
-        "White outside map patches: beyond the archived crop.",
+        "Evaluation uses synthetic ranges and known antenna heights.",
         fontsize=14,
     )
     export(fig, "01_scene")

@@ -1,5 +1,7 @@
 # Moon_1 中期答辩配图
 
+[第 7 章英文正文与配图](../Chapter7_results.md)
+
 正文按图 1、图 2 的顺序讲。图 1 建立场景与实验位置，图 2 给出一个可独立核算的几何证明。图 3 用于备用页，回答改变测距假设后的结果。数值与路线资产固定于提交 `c7d53da2bb989f73514a6ce540813c379d698897` ，场景介绍另用本地归档视频。数值来自已验收的 #151。PNG 为 3200 × 1800，PDF 保留文字与绘图线条。生成环境使用 Liberation Serif，脚本在有 Times New Roman 的环境中优先使用该字体。
 
 在仓库根目录运行以下命令。依赖为 Python 3.10+、NumPy、Matplotlib 和 Pillow。三个入口都只读归档数据。
@@ -8,9 +10,9 @@
 
 [高清 PNG](01_scene.png) · [PDF](01_scene.pdf)
 
-**English caption.** Left, a frame at 7.00 s from the October 30 Isaac Lab demonstration video shows terrestrial rover tracks replayed on a LuSNAR-derived display mesh. The craters outside the cooperative area are decorative. Right, plan views drawn from the two evaluation segments show the antenna tracks and synthetic anchors in the local moon_map frame. Circles and diamonds identify indices 0 and 11 on each track. At a common scene time, Car 1 uses a source pose five seconds later than Car 2. Green encodes gridded terrain elevation at observed cells, salmon marks filled cells, and white lies outside the archived crop.
+**English caption.** Left, a frame at 7.00 s from the October 30 Isaac Lab demonstration video shows terrestrial rover tracks replayed on a LuSNAR-derived display mesh. The craters outside the cooperative area are decorative. Right, plan views drawn from the two evaluation segments show the antenna tracks and synthetic anchors in the local moon_map frame. Circles and diamonds identify indices 0 and 11 on each track. Both cars follow the same Moon_1 source trajectory, with Car 1 sampled 5 s later than Car 2 at each scene time. The evaluation uses synthetic slant ranges and known antenna heights. Green encodes gridded terrain elevation at observed cells, salmon marks filled cells, and white lies outside the archived crop.
 
-**中文讲解（约 30 秒）**　左图是后期 Isaac 演示视频第七秒。团队用 LuSNAR 数据生成月面网格，在上面回放地面双车实验；远处的环形山是展示素材。右边两幅地图给出本次实验的实际位置。蓝、橙两车取自同一条源轨迹，同一场景时刻，一号车取晚五秒的源位置。圆点和菱形是每段的第 0 和第 11 个索引；三角形是合成锚点，橙粉色网格是地形填补区。
+**中文讲解（约 30 秒）**　左图取自 10 月 30 日的 Isaac 历史演示视频第七秒。团队用 LuSNAR 数据生成月面网格，在上面回放地面双车实验；远处的环形山是展示素材。右边两幅地图给出本次实验的实际位置。蓝、橙两车取自同一条源轨迹，同一场景时刻，一号车取晚五秒的源位置。圆点和菱形是每段的第 0 和第 11 个索引；三角形是合成锚点，橙粉色网格是地形填补区。评价使用合成的锚车和车间斜距，并给定两车天线高度。
 
 左图直接读取[视频第 210 帧，零基索引](isaac_replay_7s.png)。原视频位于场景工作树的 `sim/isaac_lab/moon1/output/videos/moon_uwb_topright_en.mp4`（1920 × 1080，30 fps，SHA-256 `fe3010389bcd411c6303a5d290f5f3746ca881f985d0384ab72452a0982b53d8`）。取帧命令为 `ffmpeg -ss 7 -i moon_uwb_topright_en.mp4 -frames:v 1 isaac_replay_7s.png`。原场景的 `output/videos/presentation_provenance.json` 记录装饰性环形山与车载天线模型的来源。两幅地图分别读取主段的 [terrain.npz](../continuous/terrain.npz)、[ROUTE.json](../continuous/ROUTE.json) 和第二段的 [terrain.npz](../replication/terrain.npz)、[ROUTE.json](../replication/ROUTE.json)。可与[主段原图](../continuous/selected_route.png)、[第二段原图](../replication/routes.png) 对照。地图在 CPU 上按网格绘制。高度色标共用，两个地图保留各自的实际坐标。
 
@@ -36,9 +38,9 @@ python3 tools/lunar_end_to_end/defense_figures/render.py witness
 
 [高清 PNG](03_assumptions.png) · [PDF](03_assumptions.pdf)
 
-**English caption.** Horizontal outer radii are measured about each vehicle’s published antenna position. The first two columns retain the original observations and 4 cm noise scale. Fixing peer bias to zero changes seven radii by zero at the displayed precision and reduces the eighth by 0.34 cm. Halving the assumed noise scale on the old observations yields two sub-10 cm radii for Car 2, but excludes the true joint position at both segment starts. With new observations generated at the matched 2 cm scale and new position fixes, the joint truth is feasible at all four epochs and the eight radii range from 10.68 to 16.43 cm. These four epochs measure state-time geometry only.
+**English caption.** Horizontal outer radii are measured about each vehicle’s published antenna position. The first two columns retain the original observations and 4 cm noise scale. Fixing peer bias to zero changes seven radii by zero at the displayed precision and reduces the eighth (Car 2 at the middle epoch of the second segment) by approximately 0.35 cm. Halving the assumed noise scale on the old observations yields two sub-10 cm radii for Car 2, but excludes the true joint position at both segment starts. With new observations generated at the matched 2 cm scale and new position fixes, the joint truth is feasible at all four epochs and the eight radii range from 10.68 to 16.43 cm. These four epochs measure state-time geometry only.
 
-**中文讲解（约 30 秒）**　从左往右看，车间偏差即使完全已知，八个外半径几乎没有变化。把同一批观测的噪声假设收紧，二号车两次看起来进了十厘米，但这两个时刻连双车真值都被模型排除了。最后一列用更小的噪声重新生成观测，再重新定位，真值四次都相容，八个外半径仍都超过十厘米。这组数据回答的是四个时刻的空间范围，不能推算车辆实时可用率。
+**中文讲解（约 30 秒）**　从左往右看，车间偏差即使完全已知，七个外半径在表中精度下都没变，只有第二段中间历元的二号车缩小约 0.35 厘米。把同一批观测的噪声假设收紧，二号车两次看起来进了十厘米，但这两个时刻连双车真值都被模型排除了。最后一列用更小的噪声重新生成观测，再重新定位，真值四次都相容，八个外半径仍都超过十厘米。这组数据回答的是四个时刻的空间范围，不能推算车辆实时可用率。
 
 [attribution.csv](../round2_radius/attribution.csv) 的 `baseline_cm`、`zero_outer_cm`、`tight_outer_cm` 对应前三个半径列，`tight_truth` 给出联合真值相容性。[matched.csv](../round2_radius/matched.csv) 的 `outer_cm`、`true_feasible` 给出第四列及其相容性。按 `case,car` 对齐，p、s 分别表示一、二号车。匹配组沿用标准化噪声抽样。两种 2 cm 条件均为仿真假设，四个历元来自同一源序列。
 
