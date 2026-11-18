@@ -1,0 +1,78 @@
+{
+  "seed": "2026111902",
+  "scene": "wall",
+  "input_sha": "85fbe8aca47f0b8d25b6b97107e91b8550737195",
+  "runtime": "docs/research/ground_b_round2/runtime/2026111902_wall",
+  "hashes": {
+    "geometry.json": "6d48c78099aecf76757159c4159a74048c7fcc34b0ca5bd73775dd2c47283d24",
+    "events.jsonl.gz": "d44b57abdefadae32a56fe4838fed473ab05980119bebb6607194e300f4f22a7"
+  },
+  "epochs": 63,
+  "vehicle_ticks": 2560,
+  "actions": {
+    "ACCEPT": 49,
+    "REJECT": 14
+  },
+  "summary": [
+    {
+      "car": 1,
+      "variant": "original",
+      "ticks": 1280,
+      "seconds": 64.0,
+      "available_s": 0.0,
+      "alarm_s": 62.95,
+      "no_decision_s": 1.05,
+      "exceed_available_s": 0.0
+    },
+    {
+      "car": 1,
+      "variant": "axis",
+      "ticks": 1280,
+      "seconds": 64.0,
+      "available_s": 0.0,
+      "alarm_s": 62.95,
+      "no_decision_s": 1.05,
+      "exceed_available_s": 0.0
+    },
+    {
+      "car": 1,
+      "variant": "history",
+      "ticks": 1280,
+      "seconds": 64.0,
+      "available_s": 0.0,
+      "alarm_s": 62.95,
+      "no_decision_s": 1.05,
+      "exceed_available_s": 0.0
+    },
+    {
+      "car": 2,
+      "variant": "original",
+      "ticks": 1280,
+      "seconds": 64.0,
+      "available_s": 0.0,
+      "alarm_s": 62.95,
+      "no_decision_s": 1.05,
+      "exceed_available_s": 0.0
+    },
+    {
+      "car": 2,
+      "variant": "axis",
+      "ticks": 1280,
+      "seconds": 64.0,
+      "available_s": 0.0,
+      "alarm_s": 62.95,
+      "no_decision_s": 1.05,
+      "exceed_available_s": 0.0
+    },
+    {
+      "car": 2,
+      "variant": "history",
+      "ticks": 1280,
+      "seconds": 64.0,
+      "available_s": 0.0,
+      "alarm_s": 62.95,
+      "no_decision_s": 1.05,
+      "exceed_available_s": 0.0
+    }
+  ]
+}
