@@ -1,5 +1,6 @@
 """Independent post-hoc readback. No imports from the estimator or either scorer."""
 import gzip
+import hashlib
 import json
 import math
 import subprocess
@@ -140,15 +141,53 @@ def blob(sha,path):
     return subprocess.check_output(['git','show',f'{sha}:{path}'],cwd=ROOT)
 
 
+INPUT_SHA = '85fbe8aca47f0b8d25b6b97107e91b8550737195'
+FREEZE = 'efd9f9560de6d0661f5c3322dfa545515b51594d'
+
+
+def check_frames(epochs, raw, origin_ns):
+    expected = [{} for _ in range(63)]
+    for line in gzip.decompress(raw).splitlines():
+        frame = json.loads(line)
+        stamp = frame['header_epoch_ns']
+        t, remainder = divmod(stamp - origin_ns, 10**9)
+        if remainder or not 1 <= t <= 63:
+            continue
+        if frame['vehicle_id'] not in ('car1', 'car2') or frame['kind'] not in ('odom', 'uwb'):
+            continue
+        received = frame['receive_epoch_ns']
+        need(received >= stamp, 'receipt before source stamp')
+        if received > stamp + 10**9:
+            continue
+        key = frame['source_observation_id']
+        need(key not in expected[t-1], f'duplicate raw ID {key}')
+        expected[t-1][key] = (received - origin_ns) / 10**9
+    for t, (epoch, frames) in enumerate(zip(epochs, expected, strict=True), 1):
+        pairs = dict(zip(epoch['ids'], epoch['receipts'], strict=True))
+        need(len(pairs) == len(epoch['ids']) and pairs == frames,
+             f'epoch {t}: frame IDs or receipt times differ from source packet')
+
+
 def verify(folder):
     def read(name):
         return json.loads(gzip.decompress((folder/(name+'.json.gz')).read_bytes()))
     meta=json.loads((folder/'summary.json').read_text())
     need(folder.name==f"{meta['seed']}_{meta['scene']}",'run identity')
     truth=json.loads(gzip.decompress(blob(TRUTH_SHA,f'docs/research/ground_continuous_b/runs/{folder.name}/truth.json.gz')))
-    geometry=json.loads(blob(meta['input_sha'],meta['runtime']+'/geometry.json'))
+    runtime = 'docs/research/ground_b_round2/runtime/' + folder.name
+    need(meta['input_sha'] == INPUT_SHA and meta['runtime'] == runtime, 'frozen package identity')
+    manifest = json.loads(blob(FREEZE, 'docs/research/midterm_dual_robot_contract_a/round2/packages.json'))
+    sums = blob(INPUT_SHA, runtime+'/SHA256SUMS')
+    need(hashlib.sha256(sums).hexdigest() == manifest[folder.name], 'package manifest hash')
+    hashes = {name: digest for digest, name in (line.split() for line in sums.decode().splitlines())}
+    need(hashes == meta['hashes'] and set(hashes) == {'geometry.json','events.jsonl.gz'}, 'archived package hashes')
+    payload = {name: blob(INPUT_SHA, runtime+'/'+name) for name in hashes}
+    need(all(hashlib.sha256(data).hexdigest() == hashes[name] for name,data in payload.items()), 'source payload hash')
+    geometry = json.loads(payload['geometry.json'])
+    epochs = read('epochs')
+    check_frames(epochs, payload['events.jsonl.gz'], geometry['epoch_ns'])
     survey=[geometry['models'][c]['start_antenna_xyz_m'][:2] for c in ('car1','car2')]
-    audit(read('epochs'),read('ticks'),read('tta'),meta,truth,survey)
+    audit(epochs,read('ticks'),read('tta'),meta,truth,survey)
     return meta['scene']
 
 

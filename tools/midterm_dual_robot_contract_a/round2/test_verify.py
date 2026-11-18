@@ -2,10 +2,13 @@ import copy
 import gzip
 import json
 import unittest
+import tempfile
+import shutil
+from pathlib import Path
 from collections import Counter
 
 from trajectory import ROOT, replay, display, score
-from verify import audit, rebuild, VERSIONS
+from verify import audit, rebuild, check_frames, verify, blob, INPUT_SHA, VERSIONS
 
 
 class Readback(unittest.TestCase):
@@ -31,6 +34,7 @@ class Readback(unittest.TestCase):
                         e['receive_epoch_ns']=e['header_epoch_ns']+10**9+(t==4)
             frames.append(e)
         raw=gzip.compress(b'\n'.join(json.dumps(e).encode() for e in sorted(frames,key=lambda e:e['receive_epoch_ns'])))
+        cls.raw=raw
         ep=replay(raw,cls.cfg)
         # Simulate a slow worker; reconstruct FIFO after changing its service time.
         ep[10]['service']=3
@@ -52,6 +56,55 @@ class Readback(unittest.TestCase):
         self.assertEqual(ep[4]['all_arrived'],6)
         self.assertIsNone(ticks[2*241]['state_time'])
         audit(*self.args)
+
+    def test_raw_receipts(self):
+        ep = copy.deepcopy(self.args[0])
+        origin = self.cfg['epoch_ns']
+        check_frames(ep, self.raw, origin)
+        receipts = ep[0]['receipts']
+        index = receipts.index(min(receipts))
+        receipts[index] += .001
+        self.assertLess(receipts[index], max(receipts))
+        with self.assertRaisesRegex(ValueError, 'epoch 1: frame IDs or receipt'):
+            check_frames(ep, self.raw, origin)
+
+    def test_regenerated_without_first_odometry(self):
+        origin = self.cfg['epoch_ns']
+        lines = gzip.decompress(self.raw).splitlines()
+        reduced = gzip.compress(b'\n'.join(line for line in lines
+            if json.loads(line)['source_observation_id'] != 'car1:odom:20'))
+        ep = replay(reduced, self.cfg)
+        self.assertTrue(all(e['action']=='MISSING_ODOM_OR_SURVEY_REFERENCE' for e in ep))
+        check_frames(ep, reduced, origin)
+        with self.assertRaisesRegex(ValueError, 'epoch 1: frame IDs or receipt'):
+            check_frames(ep, self.raw, origin)
+
+    def test_frozen_package_counterexamples(self):
+        source = ROOT/'docs/research/midterm_dual_robot_contract_a/round2/dev/101_nominal'
+        with tempfile.TemporaryDirectory() as tmp:
+            folder = Path(tmp)/source.name
+            shutil.copytree(source, folder)
+            epfile = folder/'epochs.json.gz'
+            epochs = json.loads(gzip.decompress(epfile.read_bytes()))
+            receipts = epochs[0]['receipts']
+            receipts[receipts.index(min(receipts))] += .001
+            epfile.write_bytes(gzip.compress(json.dumps(epochs).encode()))
+            with self.assertRaisesRegex(ValueError, 'epoch 1: frame IDs or receipt'):
+                verify(folder)
+            meta = json.loads((folder/'summary.json').read_text())
+            raw = blob(INPUT_SHA, meta['runtime']+'/events.jsonl.gz')
+            cfg = json.loads(blob(INPUT_SHA, meta['runtime']+'/geometry.json'))
+            reduced = gzip.compress(b'\n'.join(line for line in gzip.decompress(raw).splitlines()
+                if json.loads(line)['source_observation_id'] != 'car1:odom:20'))
+            epochs = replay(reduced, cfg)
+            ticks = display(epochs)
+            summary, events = score(ticks, [[[0,0],[0,0]]]*1280)  # all positions absent
+            meta.update(summary=summary, actions=dict(Counter(e['action'] for e in epochs)))
+            for name, rows in [('epochs', epochs), ('ticks', ticks), ('tta', events)]:
+                (folder/(name+'.json.gz')).write_bytes(gzip.compress(json.dumps(rows).encode()))
+            (folder/'summary.json').write_text(json.dumps(meta))
+            with self.assertRaisesRegex(ValueError, 'epoch 1: frame IDs or receipt'):
+                verify(folder)
 
     def test_deleted(self):
         ep,ticks,_,meta,*tail=self.args

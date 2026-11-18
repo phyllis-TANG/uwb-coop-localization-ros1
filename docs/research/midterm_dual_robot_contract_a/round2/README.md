@@ -45,3 +45,5 @@ python3 "$t/stage.py" holdout /tmp/round2-replay/holdout --freeze efd9f9560de6d0
 python3 "$t/verify.py" /tmp/round2-replay/holdout
 python3 "$t/report.py"  # 从仓内归档重建报告表、片段和图
 ```
+
+原包读回补验：verify.py 从冻结提交 efd9f9560de6d0661f5c3322dfa545515b51594d 读取 packages.json，从 85fbe8aca47f0b8d25b6b97107e91b8550737195 校验各包清单、几何、事件字节，再按源时标和含端点的一秒截止逐帧比对 ID 与接收时刻。独立读回开发 4/4、留出 8/8。首条非最晚接收时间改动 1 ms、删首秒一条里程后重建输出却声称同一原包，两种篡改均在首历元被拒。原包本身缺帧或迟到仍按实际到达记录处理。验收器和轨迹回归可用 `python3 -m unittest discover -s tools/midterm_dual_robot_contract_a/round2 -p 'test_*.py'` 复验。
