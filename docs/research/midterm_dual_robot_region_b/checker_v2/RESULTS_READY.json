@@ -1,0 +1,82 @@
+{
+  "status": "READY_GATE_FAIL_RANDOM_NOT_RUN",
+  "freeze_sha": "12894b821bf620587e5a4e154d83e23828e6cf4e",
+  "a_publication_sha": "50b592fbd672a1f19075147f53061a5861b3b892",
+  "a_implementation_sha": "b7b1d99903fa6adcfb6765c0adab57ab3660ae40",
+  "counts": {
+    "deterministic": {
+      "completed": 44,
+      "failed": 0,
+      "interrupted": 0,
+      "planned": 44,
+      "statuses": {
+        "COMPLETED": 44
+      },
+      "unexecuted": 0
+    },
+    "random": {
+      "completed": 0,
+      "failed": 0,
+      "interrupted": 0,
+      "planned": 240,
+      "statuses": {
+        "NOT_RUN": 240
+      },
+      "unexecuted": 240
+    }
+  },
+  "gate": {
+    "a_sha": "b7b1d99903fa6adcfb6765c0adab57ab3660ae40",
+    "formal_records": 44,
+    "freeze_sha": "12894b821bf620587e5a4e154d83e23828e6cf4e",
+    "main_cost_median_seconds": {
+      "N4": 1.6184324729983928,
+      "P4": 2.319768862998899
+    },
+    "main_terminations": {
+      "N4": [
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE"
+      ],
+      "P4": [
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE",
+        "RESOLUTION_COMPLETE"
+      ]
+    },
+    "random_authorized_to_execute": false,
+    "random_planned": 240,
+    "reasons": [
+      "P4_MEDIAN_FULL_COST_EXCEEDS_2_SECONDS"
+    ],
+    "status": "FAIL"
+  },
+  "readback_pass": 44,
+  "development_search_calls": 3,
+  "formal_search_calls": 44,
+  "random_search_calls": 0,
+  "two_epoch_search_calls": 0,
+  "report": "REPORT.md",
+  "portable_verification": "PORTABLE_SEMANTIC_READBACK.json",
+  "next_experiment": "NEXT_PERFORMANCE_EXPERIMENT.md",
+  "next_experiment_executed": false
+}
