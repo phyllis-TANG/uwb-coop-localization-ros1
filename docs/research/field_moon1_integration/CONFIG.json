@@ -1,0 +1,185 @@
+{
+  "base_sha": "7f02c403f513be70e64e90951bfe5633af356796",
+  "cases": [
+    "015334",
+    "033248",
+    "050447"
+  ],
+  "times_s": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "methods": [
+    "independent",
+    "joint"
+  ],
+  "optimizer_call_limit": 6,
+  "formal_runs": 0,
+  "field_protocol": {
+    "anchors_xyz_m": {
+      "node_10": [
+        3.26,
+        0.1,
+        2.355
+      ],
+      "node_2": [
+        5.28,
+        5.16,
+        2.755
+      ],
+      "node_3": [
+        5.28,
+        2.86,
+        2.355
+      ],
+      "node_8": [
+        0.1,
+        2.41,
+        2.3
+      ]
+    },
+    "mounts": {
+      "car1": {
+        "height_m": 0.17,
+        "lever_xy_m": [
+          0.08,
+          -0.06
+        ]
+      },
+      "car2": {
+        "height_m": 0.2,
+        "lever_xy_m": [
+          0.12,
+          -0.08
+        ]
+      }
+    },
+    "graph_parameters": {
+      "keyframe_step_s": 1,
+      "odom_translation_sigma_m": 0.03,
+      "odom_yaw_sigma_deg": 2,
+      "prior_heading_sigma_deg": 5,
+      "prior_position_sigma_m": 0.2,
+      "range_bin_half_width_s": 0.4,
+      "range_sigma_m": 0.2
+    },
+    "time_association": {
+      "axis": "common bag receipt time, not unsynchronized headers",
+      "keyframe_grid": "integer seconds 1 through floor(bag duration)-1, inherited from historical two-car graph",
+      "odom_interpolation": "received-time interpolation; require brackets, no extrapolation",
+      "range_bin_half_width_s": 0.4,
+      "minimum_samples_per_link": 5,
+      "peer_policy": "each direction median separately, average available directions into ONE factor; keep sigma .2m, do not treat directions as independent constraints",
+      "sensitivity_car2_peer_shift_s": [
+        -0.1,
+        0.1
+      ]
+    }
+  },
+  "model_cases": {
+    "015334": {
+      "start_antenna_xyz_m": {
+        "car1": [
+          1.5,
+          4.0,
+          0.17
+        ],
+        "car2": [
+          2.0,
+          2.0,
+          0.2
+        ]
+      },
+      "initial_heading_deg": {
+        "car1": 0.0,
+        "car2": 90.0
+      }
+    },
+    "033248": {
+      "start_antenna_xyz_m": {
+        "car1": [
+          1.5,
+          4.0,
+          0.17
+        ],
+        "car2": [
+          2.95,
+          3.04,
+          0.2
+        ]
+      },
+      "initial_heading_deg": {
+        "car1": -90.0,
+        "car2": 0.0
+      }
+    },
+    "050447": {
+      "start_antenna_xyz_m": {
+        "car1": [
+          1.0,
+          4.0,
+          0.17
+        ],
+        "car2": [
+          3.0,
+          2.0,
+          0.2
+        ]
+      },
+      "initial_heading_deg": {
+        "car1": -90.0,
+        "car2": 90.0
+      }
+    }
+  },
+  "configuration": {
+    "id": "per_car_walls",
+    "correction": "per_car",
+    "peer_sigma_m": 0.2,
+    "withheld_wall_car": null,
+    "car2_peer_shift_s": 0.0,
+    "role": "primary updated comparison"
+  },
+  "calibrated_biases_m": {
+    "car1": {
+      "node_10": 0.5516943809619503,
+      "node_2": 0.4242948730272982,
+      "node_3": 0.12145191431702473,
+      "node_8": 0.34176906929909334
+    },
+    "car2": {
+      "node_10": 0.6088636183798282,
+      "node_2": 0.449737490591974,
+      "node_3": 0.2012859604623305,
+      "node_8": 0.3685143909425328
+    }
+  },
+  "optimizer": {
+    "method": "trf",
+    "jacobian": "analytic",
+    "linear_solver": "exact dense",
+    "max_nfev": 100,
+    "ftol": 1e-07,
+    "xtol": 1e-07,
+    "gtol": 1e-07,
+    "initialization": "aligned Odom; same initial states for independent and joint"
+  }
+}
