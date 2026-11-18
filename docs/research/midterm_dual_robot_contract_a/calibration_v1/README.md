@@ -50,3 +50,23 @@ python3 "$t/verify.py"
 set -o pipefail
 OPENBLAS_NUM_THREADS=1 python3 tools/midterm_dual_robot_contract_a/calibration_v1/second_epoch.py | diff - docs/research/midterm_dual_robot_contract_a/calibration_v1/second_epoch.csv
 ```
+
+### 一秒天线位移误差核查
+
+**现场判定仍待补测。** 当前地面归档中，Car2 两次前进的整段里程位移与人工距离分别为 1.003 对 1.020 m、1.005 对 1.010 m，差 −1.7、−0.5 cm。第二次没有独立测量终点 XYZ。整段标量距离可掩盖沿途误差与横向误差，无法按一秒、分车、分轴给 Q 定值。现场输入合同仅认可人工端点/静态参考，视频尚未获准作为连续位置真值。[第一次现场记录](../../../field_tests/20261010_11/source_notes/CAR2_WALL_UWB_ODOM_IMU_key_forward_20261011_045550_survey.txt) · [第二次现场记录](../../../field_tests/20261010_11/source_notes/CAR2_WALL_UWB_ODOM_IMU_key_forward_repeat_20261011_051810_independent_check.txt) · [现场输入合同](../../../field_tests/field_observation_readiness/INPUT_CONTRACT.md) · [视频核查](../../../field_tests/20261024_25/imu_parallel_20261027/README.md)
+
+在能够精确配对的合成开发轨迹 101 nominal 上，取每车 1–63 s 的全部 62 个相邻一秒区间。用此前合成调查的平均起始航向，将车体平移转到房间坐标，再加两端姿态旋转造成的天线杆臂位移差。事后以 #143 的 20 Hz 天线 XY 真值在同戳作差。每一行都与冻结估计器的天线偏移函数交叉核对；未调用定位器或读取留出轨迹。
+
+|车|1→2 s 误差 x/y (cm)|全程均值 x/y (cm)|全程 RMS x/y (cm)|逐轴最大绝对误差 x/y (cm)|
+|---|---:|---:|---:|---:|
+|Car1|−0.48 / −1.99|−0.02 / −0.15|0.92 / 1.00|2.82 / 2.39|
+|Car2|+1.92 / −0.52|+0.15 / −0.08|0.86 / 0.92|2.06 / 2.67|
+
+误差符号为里程天线增量减真值增量。合成轨迹四个轴的样本 RMS 都低于冻结的 3 cm 过程标准差。区间共享端点、同一次航向调查和同一安装，单条轨迹的描述统计不足以给出保守方差界或尾部风险保证。本轮保留 Q。实车复测需要同安装、同房间基准、经时间同步的两车独立天线 XY（或有已测杆臂和姿态的参考刚体），同时记录参考位置与同步误差；以整趟划分标定和独立验证，分别覆盖直行与转弯。
+
+[124 行逐段核对，坐标和误差单位 m](increment_error.csv)。在仓库根目录执行：
+
+```sh
+set -o pipefail
+python3 tools/midterm_dual_robot_contract_a/calibration_v1/increment_error.py | diff - docs/research/midterm_dual_robot_contract_a/calibration_v1/increment_error.csv
+```
