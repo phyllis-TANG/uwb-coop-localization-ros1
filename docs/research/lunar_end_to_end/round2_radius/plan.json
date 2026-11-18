@@ -1,0 +1,11 @@
+{
+ "base":"f61c02e3aad26709a07940bd9900024ec9a93aa1",
+ "cases":["main_start_normal","main_mid_normal","second_start_normal","second_mid_normal"],
+ "source_indices":[0,11,0,11],"seed":2026111801,"method":"P4","q":26,"resolution":"1/40",
+ "max_nodes":300000,"max_search_seconds":240,
+ "variants":{"zero":{"bias":["0","0"],"variance":"1/625","observations":"archived","center":"archived"},
+ "tight":{"bias":["-3/5","3/5"],"variance":"1/2500","observations":"archived","center":"archived"},
+ "matched":{"bias":["-3/5","3/5"],"variance":"1/2500","observations":"noiseless synthetic slant plus original generated noise divided by two","center":"recompute #144 current-epoch anchor-only publication"}},
+ "priority":["certify zero-bias separated points","tight full searches and truth check","matched synthetic observations","zero full searches for published radius deltas"],
+ "limits_m":["1/10","1/5"],"timing":"search, serialize, reopen and fixed checker as in #146; no delivery-clock experiment"
+}
