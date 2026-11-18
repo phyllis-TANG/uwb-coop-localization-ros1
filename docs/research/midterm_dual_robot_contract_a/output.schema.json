@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DUAL-A-V1 certificate",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "input_hash",
+    "source_commit",
+    "mode",
+    "measurement_ids",
+    "threshold_certificate",
+    "root",
+    "nodes",
+    "queue",
+    "projections",
+    "domain_contact",
+    "counts",
+    "status",
+    "internal_semantics",
+    "bias_recovery",
+    "cost"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "input_hash": {
+      "type": "string"
+    },
+    "source_commit": {
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "5d",
+        "4d",
+        "no_peer"
+      ]
+    },
+    "measurement_ids": {
+      "type": "array"
+    },
+    "threshold_certificate": {
+      "type": "object"
+    },
+    "root": {
+      "type": "string"
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "box",
+          "kind"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "box": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "type": "string",
+                "pattern": "^-?\\d+(?:/\\d+|\\.\\d+)?$"
+              }
+            }
+          },
+          "kind": {
+            "enum": [
+              "SPLIT",
+              "INSIDE",
+              "OUTSIDE",
+              "UNDECIDED",
+              "PENDING"
+            ]
+          },
+          "axis": {
+            "type": "integer"
+          },
+          "cut": {
+            "type": "string",
+            "pattern": "^-?\\d+(?:/\\d+|\\.\\d+)?$"
+          },
+          "children": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "queue": {
+      "type": "array"
+    },
+    "projections": {
+      "type": "object"
+    },
+    "domain_contact": {
+      "type": "boolean"
+    },
+    "counts": {
+      "type": "object"
+    },
+    "status": {
+      "type": "string"
+    },
+    "internal_semantics": {
+      "type": "string"
+    },
+    "bias_recovery": {
+      "type": "array"
+    },
+    "cost": {
+      "type": "object"
+    }
+  },
+  "description": "Semantic exact validation by core.check required. Diagnostic lower/upper/success are ignored."
+}

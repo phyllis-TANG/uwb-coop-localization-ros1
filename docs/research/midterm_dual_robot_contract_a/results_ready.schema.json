@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "stage",
+    "source_commit",
+    "files",
+    "archive_hash",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "DUAL-A-V1"
+    },
+    "stage": {
+      "enum": [
+        "deterministic",
+        "conditional_random"
+      ]
+    },
+    "source_commit": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "files": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^[a-f0-9]{64}$"
+      }
+    },
+    "archive_hash": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "case_id",
+          "mode",
+          "input_hash",
+          "execution_status"
+        ],
+        "properties": {
+          "execution_status": {
+            "enum": [
+              "CERTIFICATE_AVAILABLE",
+              "FAILED",
+              "INTERRUPTED",
+              "NOT_RUN"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

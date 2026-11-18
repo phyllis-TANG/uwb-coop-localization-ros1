@@ -1,0 +1,2592 @@
+{
+  "raw_linkage_and_evaluation": "PASS",
+  "formal_denominator": {
+    "J5": 16,
+    "P4": 16,
+    "N4": 12,
+    "total": 44
+  },
+  "completed": 44,
+  "failed": 0,
+  "unexecuted": 0,
+  "outside_plan": [
+    {
+      "case_id": "empty_in_domain",
+      "execution_status": "NOT_RUN",
+      "input_hash": "3032c827770dfd6fd5bf9665ff7a759b0c3586276eaf4345107b9cf5782c6e0a",
+      "mode": "no_peer",
+      "reason": "OUTSIDE_USER_AUTHORIZED_PLAN"
+    },
+    {
+      "case_id": "domain_closed_contact",
+      "execution_status": "NOT_RUN",
+      "input_hash": "4e8ace2632dad1cd56eb4dff7e77f1e43682708a3bdf994204eda8c31ed14311",
+      "mode": "no_peer",
+      "reason": "OUTSIDE_USER_AUTHORIZED_PLAN"
+    },
+    {
+      "case_id": "coincident_zero_distance",
+      "execution_status": "NOT_RUN",
+      "input_hash": "16e210ee6723c7c19b38477f5180fe4384218fc7829d5e027faf16ac1f335968",
+      "mode": "no_peer",
+      "reason": "OUTSIDE_USER_AUTHORIZED_PLAN"
+    },
+    {
+      "case_id": "forced_budget",
+      "execution_status": "NOT_RUN",
+      "input_hash": "ca4aaa85de407cf87f4e183fc7be1b4cd9cf5048acac47589549fa49c1961086",
+      "mode": "no_peer",
+      "reason": "OUTSIDE_USER_AUTHORIZED_PLAN"
+    }
+  ],
+  "conditional_random": {
+    "planned": 240,
+    "performed_by_A": 0,
+    "b_recorded_completed": 0,
+    "b_recorded_status": "SKIPPED_GATE_FAILED"
+  },
+  "search_calls": 0,
+  "cost_scope": "archival linkage and consistency, not independent proof of historical wall-clock measurement",
+  "rows": [
+    {
+      "case_id": "normal_b0_zero",
+      "method": "J5",
+      "mode": "5d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "464a0c84bbc8a6f57b7bdb7fcbc68384f2ec32bca109d9e6429e6ccd672253e2",
+      "original_costs": {
+        "certificate_a": 19.099624551000034,
+        "certificate_b": 2.492122640999696,
+        "compressed_io": 0.5890684400001192,
+        "evaluation": 0.005813994000163802,
+        "projection": 2.3510024360002717,
+        "search": 1.0067247679999127
+      },
+      "original_total_wall_seconds": 25.60127963199966,
+      "original_peak_rss_kib": 192396,
+      "termination": "BOX_BUDGET",
+      "counts": {
+        "INSIDE": 46,
+        "OUTSIDE": 9968,
+        "PENDING": 3715,
+        "SPLIT": 26857,
+        "UNDECIDED": 13129
+      },
+      "queue_length": 3715,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "-101980390271855696600564482181/500000000000000000000000000000",
+          "101980390271855696600564482181/500000000000000000000000000000"
+        ],
+        "inner": [
+          "-5099019513592784830028224109/25000000000000000000000000000",
+          "5099019513592784830028224109/25000000000000000000000000000"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "567/4096",
+          "center": [
+            "-129/128",
+            "129/128"
+          ],
+          "radius": "222347647980589171781172202343/1000000000000000000000000000000",
+          "radius_squared": "405/8192"
+        },
+        "s": {
+          "area_upper": "63/512",
+          "center": [
+            "255/128",
+            "3/2"
+          ],
+          "radius": "221108932782576651827827977601/1000000000000000000000000000000",
+          "radius_squared": "801/16384"
+        }
+      }
+    },
+    {
+      "case_id": "normal_b0_zero",
+      "method": "P4",
+      "mode": "4d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "04d0ca32012998ce2a25aebd071b914b292fe5e79decbd9f90126bcb395fe461",
+      "original_costs": {
+        "certificate_a": 1.8584863040000528,
+        "certificate_b": 0.28147536300002685,
+        "compressed_io": 0.06822440299993104,
+        "evaluation": 0.0010035669997705554,
+        "projection": 0.1933531640002002,
+        "search": 0.11991162000003897
+      },
+      "original_total_wall_seconds": 2.568427351000082,
+      "original_peak_rss_kib": 35576,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 46,
+        "OUTSIDE": 1242,
+        "PENDING": 0,
+        "SPLIT": 2823,
+        "UNDECIDED": 1536
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "-101980390271855696600564482181/500000000000000000000000000000",
+          "101980390271855696600564482181/500000000000000000000000000000"
+        ],
+        "inner": [
+          "-5099019513592784830028224109/25000000000000000000000000000",
+          "5099019513592784830028224109/25000000000000000000000000000"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "567/4096",
+          "center": [
+            "-129/128",
+            "129/128"
+          ],
+          "radius": "222347647980589171781172202343/1000000000000000000000000000000",
+          "radius_squared": "405/8192"
+        },
+        "s": {
+          "area_upper": "63/512",
+          "center": [
+            "255/128",
+            "3/2"
+          ],
+          "radius": "221108932782576651827827977601/1000000000000000000000000000000",
+          "radius_squared": "801/16384"
+        }
+      }
+    },
+    {
+      "case_id": "normal_b0_zero",
+      "method": "N4",
+      "mode": "no_peer",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "8f49a5ec567bc1befb38bbe74a083939a21099dd1eeedfe3689af5a2e9919986",
+      "original_costs": {
+        "certificate_a": 1.5787231429999338,
+        "certificate_b": 0.2049453520003226,
+        "compressed_io": 0.061259667000285845,
+        "evaluation": 0.0009564169999976002,
+        "projection": 0.1743151669998042,
+        "search": 0.046446028999980626
+      },
+      "original_total_wall_seconds": 2.1174691259998326,
+      "original_peak_rss_kib": 35080,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 40,
+        "OUTSIDE": 1118,
+        "PENDING": 0,
+        "SPLIT": 2539,
+        "UNDECIDED": 1382
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": null,
+      "projections": {
+        "p": {
+          "area_upper": "567/4096",
+          "center": [
+            "-129/128",
+            "129/128"
+          ],
+          "radius": "222347647980589171781172202343/1000000000000000000000000000000",
+          "radius_squared": "405/8192"
+        },
+        "s": {
+          "area_upper": "63/512",
+          "center": [
+            "255/128",
+            "3/2"
+          ],
+          "radius": "221108932782576651827827977601/1000000000000000000000000000000",
+          "radius_squared": "801/16384"
+        }
+      }
+    },
+    {
+      "case_id": "normal_b0_direction",
+      "method": "J5",
+      "mode": "5d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "6cc9a8360904ece1c88d31301b0614718d9b4f1cc8fe66361007e23d44351f83",
+      "original_costs": {
+        "certificate_a": 15.105985911000062,
+        "certificate_b": 1.9947211519997836,
+        "compressed_io": 0.4918826480002281,
+        "evaluation": 0.004578220999974292,
+        "projection": 1.7824637349999648,
+        "search": 0.8365279449999434
+      },
+      "original_total_wall_seconds": 20.29475020200016,
+      "original_peak_rss_kib": 156164,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 4,
+        "OUTSIDE": 8669,
+        "PENDING": 0,
+        "SPLIT": 21433,
+        "UNDECIDED": 12761
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "-143303027798233600263521887751/1000000000000000000000000000000",
+          "223303027798233600263521887751/1000000000000000000000000000000"
+        ],
+        "inner": [
+          "-143303027798233600263521887749/1000000000000000000000000000000",
+          "223303027798233600263521887749/1000000000000000000000000000000"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "567/4096",
+          "center": [
+            "-129/128",
+            "129/128"
+          ],
+          "radius": "222347647980589171781172202343/1000000000000000000000000000000",
+          "radius_squared": "405/8192"
+        },
+        "s": {
+          "area_upper": "567/4096",
+          "center": [
+            "255/128",
+            "189/128"
+          ],
+          "radius": "222347647980589171781172202343/1000000000000000000000000000000",
+          "radius_squared": "405/8192"
+        }
+      }
+    },
+    {
+      "case_id": "normal_b0_direction",
+      "method": "P4",
+      "mode": "4d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "092e97fcc76fb96dbae2984c4f71eb7bb389e8364f739c8e0bf7428785695151",
+      "original_costs": {
+        "certificate_a": 1.5431703710000875,
+        "certificate_b": 0.24068009599977813,
+        "compressed_io": 0.05666194000014002,
+        "evaluation": 0.0010115649997715082,
+        "projection": 0.15560821200006103,
+        "search": 0.10062142400010998
+      },
+      "original_total_wall_seconds": 2.1682980589998806,
+      "original_peak_rss_kib": 32660,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 17,
+        "OUTSIDE": 1072,
+        "PENDING": 0,
+        "SPLIT": 2346,
+        "UNDECIDED": 1258
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "-143303027798233600263521887751/1000000000000000000000000000000",
+          "223303027798233600263521887751/1000000000000000000000000000000"
+        ],
+        "inner": [
+          "-143303027798233600263521887749/1000000000000000000000000000000",
+          "223303027798233600263521887749/1000000000000000000000000000000"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "567/4096",
+          "center": [
+            "-129/128",
+            "129/128"
+          ],
+          "radius": "222347647980589171781172202343/1000000000000000000000000000000",
+          "radius_squared": "405/8192"
+        },
+        "s": {
+          "area_upper": "567/4096",
+          "center": [
+            "255/128",
+            "189/128"
+          ],
+          "radius": "222347647980589171781172202343/1000000000000000000000000000000",
+          "radius_squared": "405/8192"
+        }
+      }
+    },
+    {
+      "case_id": "normal_b0_direction",
+      "method": "N4",
+      "mode": "no_peer",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "5f18842fecf1cded1e8aa9bdeaaa200598dfa160befa8f7007d4d833a09320aa",
+      "original_costs": {
+        "certificate_a": 1.295621561000189,
+        "certificate_b": 0.17543570299994826,
+        "compressed_io": 0.05076806100032627,
+        "evaluation": 0.004491629999847646,
+        "projection": 0.13607681800021965,
+        "search": 0.042008332000023074
+      },
+      "original_total_wall_seconds": 1.769142987000123,
+      "original_peak_rss_kib": 32544,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 10,
+        "OUTSIDE": 998,
+        "PENDING": 0,
+        "SPLIT": 2115,
+        "UNDECIDED": 1108
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": null,
+      "projections": {
+        "p": {
+          "area_upper": "567/4096",
+          "center": [
+            "-129/128",
+            "129/128"
+          ],
+          "radius": "222347647980589171781172202343/1000000000000000000000000000000",
+          "radius_squared": "405/8192"
+        },
+        "s": {
+          "area_upper": "63/512",
+          "center": [
+            "255/128",
+            "3/2"
+          ],
+          "radius": "221108932782576651827827977601/1000000000000000000000000000000",
+          "radius_squared": "801/16384"
+        }
+      }
+    },
+    {
+      "case_id": "normal_b6_zero",
+      "method": "J5",
+      "mode": "5d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "9aecc987578a27dcc5379f9aa4a93b3fb320cb4c3d6afec4533e78a9d2327e70",
+      "original_costs": {
+        "certificate_a": 9.015208239000003,
+        "certificate_b": 1.2728007480000088,
+        "compressed_io": 0.31820185699962167,
+        "evaluation": 0.003251486999943154,
+        "projection": 1.1589166570001908,
+        "search": 0.5406815729998016
+      },
+      "original_total_wall_seconds": 12.383290770999793,
+      "original_peak_rss_kib": 106676,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 24,
+        "OUTSIDE": 5367,
+        "PENDING": 0,
+        "SPLIT": 13751,
+        "UNDECIDED": 8361
+      },
+      "queue_length": 0,
+      "domain_contact": true,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "198019609728144303399435517819/500000000000000000000000000000",
+          "3/5"
+        ],
+        "inner": [
+          "9900980486407215169971775891/25000000000000000000000000000",
+          "3/5"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "567/4096",
+          "center": [
+            "-129/128",
+            "129/128"
+          ],
+          "radius": "222347647980589171781172202343/1000000000000000000000000000000",
+          "radius_squared": "405/8192"
+        },
+        "s": {
+          "area_upper": "63/512",
+          "center": [
+            "255/128",
+            "3/2"
+          ],
+          "radius": "221108932782576651827827977601/1000000000000000000000000000000",
+          "radius_squared": "801/16384"
+        }
+      }
+    },
+    {
+      "case_id": "normal_b6_zero",
+      "method": "P4",
+      "mode": "4d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "1df4fc05669376b2fa0a15218daff575adb73f082d7833e5cd091b147008eb9d",
+      "original_costs": {
+        "certificate_a": 1.745214565000424,
+        "certificate_b": 0.26987182499988194,
+        "compressed_io": 0.06365793599979952,
+        "evaluation": 0.001025697999921249,
+        "projection": 0.1781967890001397,
+        "search": 0.11284625400003279
+      },
+      "original_total_wall_seconds": 2.419662046999747,
+      "original_peak_rss_kib": 34860,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 41,
+        "OUTSIDE": 1178,
+        "PENDING": 0,
+        "SPLIT": 2647,
+        "UNDECIDED": 1429
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "198019609728144303399435517819/500000000000000000000000000000",
+          "3/5"
+        ],
+        "inner": [
+          "9900980486407215169971775891/25000000000000000000000000000",
+          "3/5"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "567/4096",
+          "center": [
+            "-129/128",
+            "129/128"
+          ],
+          "radius": "222347647980589171781172202343/1000000000000000000000000000000",
+          "radius_squared": "405/8192"
+        },
+        "s": {
+          "area_upper": "63/512",
+          "center": [
+            "255/128",
+            "3/2"
+          ],
+          "radius": "221108932782576651827827977601/1000000000000000000000000000000",
+          "radius_squared": "801/16384"
+        }
+      }
+    },
+    {
+      "case_id": "normal_b6_zero",
+      "method": "N4",
+      "mode": "no_peer",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "0aca297b91bc14bf17243741b02982697f9a641102a1554e63ab8aa5b56648c1",
+      "original_costs": {
+        "certificate_a": 1.542662609999752,
+        "certificate_b": 0.20013610700016216,
+        "compressed_io": 0.061645936999866535,
+        "evaluation": 0.0009111670001402672,
+        "projection": 0.1695462980001139,
+        "search": 0.04586800000015501
+      },
+      "original_total_wall_seconds": 2.068541309000011,
+      "original_peak_rss_kib": 35292,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 40,
+        "OUTSIDE": 1118,
+        "PENDING": 0,
+        "SPLIT": 2539,
+        "UNDECIDED": 1382
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": null,
+      "projections": {
+        "p": {
+          "area_upper": "567/4096",
+          "center": [
+            "-129/128",
+            "129/128"
+          ],
+          "radius": "222347647980589171781172202343/1000000000000000000000000000000",
+          "radius_squared": "405/8192"
+        },
+        "s": {
+          "area_upper": "63/512",
+          "center": [
+            "255/128",
+            "3/2"
+          ],
+          "radius": "221108932782576651827827977601/1000000000000000000000000000000",
+          "radius_squared": "801/16384"
+        }
+      }
+    },
+    {
+      "case_id": "normal_b6_direction",
+      "method": "J5",
+      "mode": "5d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "30ccfc813cb620b02b0888135e8b45b22d23ba2bd327defb56458f71edd15fdd",
+      "original_costs": {
+        "certificate_a": 5.736086487999728,
+        "certificate_b": 0.8650573820000318,
+        "compressed_io": 0.2084876680000889,
+        "evaluation": 0.02795996000031664,
+        "projection": 0.7020183760000691,
+        "search": 0.34700428899986946
+      },
+      "original_total_wall_seconds": 7.977115853999749,
+      "original_peak_rss_kib": 75504,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 1,
+        "OUTSIDE": 3881,
+        "PENDING": 0,
+        "SPLIT": 8978,
+        "UNDECIDED": 5097
+      },
+      "queue_length": 0,
+      "domain_contact": true,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "456696972201766399736478112249/1000000000000000000000000000000",
+          "3/5"
+        ],
+        "inner": [
+          "456696972201766399736478112251/1000000000000000000000000000000",
+          "3/5"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "567/4096",
+          "center": [
+            "-129/128",
+            "129/128"
+          ],
+          "radius": "222347647980589171781172202343/1000000000000000000000000000000",
+          "radius_squared": "405/8192"
+        },
+        "s": {
+          "area_upper": "243/2048",
+          "center": [
+            "129/64",
+            "189/128"
+          ],
+          "radius": "115416302364798102207963415019/500000000000000000000000000000",
+          "radius_squared": "873/16384"
+        }
+      }
+    },
+    {
+      "case_id": "normal_b6_direction",
+      "method": "P4",
+      "mode": "4d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "12e25932ada4bc67fdbb024068d54839fee8c590dabc281ac81656c1364eea4c",
+      "original_costs": {
+        "certificate_a": 1.3537060379999275,
+        "certificate_b": 0.22204318900003273,
+        "compressed_io": 0.05015037700013636,
+        "evaluation": 0.006673231000149826,
+        "projection": 0.13201108800012662,
+        "search": 0.09346658599997681
+      },
+      "original_total_wall_seconds": 1.9177126390000012,
+      "original_peak_rss_kib": 31092,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 5,
+        "OUTSIDE": 993,
+        "PENDING": 0,
+        "SPLIT": 2086,
+        "UNDECIDED": 1089
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "456696972201766399736478112249/1000000000000000000000000000000",
+          "3/5"
+        ],
+        "inner": [
+          "456696972201766399736478112251/1000000000000000000000000000000",
+          "3/5"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "567/4096",
+          "center": [
+            "-129/128",
+            "129/128"
+          ],
+          "radius": "222347647980589171781172202343/1000000000000000000000000000000",
+          "radius_squared": "405/8192"
+        },
+        "s": {
+          "area_upper": "243/2048",
+          "center": [
+            "129/64",
+            "189/128"
+          ],
+          "radius": "115416302364798102207963415019/500000000000000000000000000000",
+          "radius_squared": "873/16384"
+        }
+      }
+    },
+    {
+      "case_id": "normal_b6_direction",
+      "method": "N4",
+      "mode": "no_peer",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "714499da4496cb709b5f60d6c99529725b371d3d9601267a45e80a22cab2f178",
+      "original_costs": {
+        "certificate_a": 1.264883245999954,
+        "certificate_b": 0.17260658799978046,
+        "compressed_io": 0.051478610999765806,
+        "evaluation": 0.004368582000097376,
+        "projection": 0.13326675400003296,
+        "search": 0.04046386500021981
+      },
+      "original_total_wall_seconds": 1.7187785880000774,
+      "original_peak_rss_kib": 31644,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 10,
+        "OUTSIDE": 998,
+        "PENDING": 0,
+        "SPLIT": 2115,
+        "UNDECIDED": 1108
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": null,
+      "projections": {
+        "p": {
+          "area_upper": "567/4096",
+          "center": [
+            "-129/128",
+            "129/128"
+          ],
+          "radius": "222347647980589171781172202343/1000000000000000000000000000000",
+          "radius_squared": "405/8192"
+        },
+        "s": {
+          "area_upper": "63/512",
+          "center": [
+            "255/128",
+            "3/2"
+          ],
+          "radius": "221108932782576651827827977601/1000000000000000000000000000000",
+          "radius_squared": "801/16384"
+        }
+      }
+    },
+    {
+      "case_id": "near_collinear_b0_zero",
+      "method": "J5",
+      "mode": "5d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "a9d4cb1ac4f4599d09afc7285d688fadf7ac3b8d7121d7bb7787d76f889bd27c",
+      "original_costs": {
+        "certificate_a": 25.579040559000077,
+        "certificate_b": 3.3909681420000197,
+        "compressed_io": 0.7183620319997317,
+        "evaluation": 0.022894733999692107,
+        "projection": 3.1177596040001845,
+        "search": 1.1745996500003457
+      },
+      "original_total_wall_seconds": 34.08132067999986,
+      "original_peak_rss_kib": 247692,
+      "termination": "BOX_BUDGET",
+      "counts": {
+        "INSIDE": 2,
+        "OUTSIDE": 13836,
+        "PENDING": 22325,
+        "SPLIT": 36162,
+        "UNDECIDED": 0
+      },
+      "queue_length": 22325,
+      "domain_contact": true,
+      "max_unresolved_position_width": "3/32",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "-101980390271855696600564482181/500000000000000000000000000000",
+          "101980390271855696600564482181/500000000000000000000000000000"
+        ],
+        "inner": [
+          "-5099019513592784830028224109/25000000000000000000000000000",
+          "5099019513592784830028224109/25000000000000000000000000000"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "3213/4096",
+          "center": [
+            "-129/128",
+            "3/128"
+          ],
+          "radius": "1201043247686152224179315969817/1000000000000000000000000000000",
+          "radius_squared": "11817/8192"
+        },
+        "s": {
+          "area_upper": "171/128",
+          "center": [
+            "63/32",
+            "0"
+          ],
+          "radius": "356743079820758401211135545031/200000000000000000000000000000",
+          "radius_squared": "1629/512"
+        }
+      }
+    },
+    {
+      "case_id": "near_collinear_b0_zero",
+      "method": "P4",
+      "mode": "4d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "6858ac494a8d0b1ace6057301f9afe01a2b8c067924c630af139a8696503120f",
+      "original_costs": {
+        "certificate_a": 5.5134928780003065,
+        "certificate_b": 0.8291686100001243,
+        "compressed_io": 0.19683066900006452,
+        "evaluation": 0.0020303119999880437,
+        "projection": 0.5086008609996497,
+        "search": 0.3412973909998982
+      },
+      "original_total_wall_seconds": 7.47831887700022,
+      "original_peak_rss_kib": 66088,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 112,
+        "OUTSIDE": 4208,
+        "PENDING": 0,
+        "SPLIT": 8377,
+        "UNDECIDED": 4058
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "-101980390271855696600564482181/500000000000000000000000000000",
+          "101980390271855696600564482181/500000000000000000000000000000"
+        ],
+        "inner": [
+          "-5099019513592784830028224109/25000000000000000000000000000",
+          "5099019513592784830028224109/25000000000000000000000000000"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "3213/4096",
+          "center": [
+            "-129/128",
+            "3/128"
+          ],
+          "radius": "1201043247686152224179315969817/1000000000000000000000000000000",
+          "radius_squared": "11817/8192"
+        },
+        "s": {
+          "area_upper": "2331/2048",
+          "center": [
+            "255/128",
+            "0"
+          ],
+          "radius": "434582382205984191229328888169/250000000000000000000000000000",
+          "radius_squared": "49509/16384"
+        }
+      }
+    },
+    {
+      "case_id": "near_collinear_b0_zero",
+      "method": "N4",
+      "mode": "no_peer",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "cdfeaf7b45df9d8bbd7d103a8bf49224350499aa6fd6b643ca0b243191f6d46d",
+      "original_costs": {
+        "certificate_a": 6.354470282999955,
+        "certificate_b": 0.7287223110001833,
+        "compressed_io": 0.23966376900034447,
+        "evaluation": 0.0022323729999698116,
+        "projection": 0.6823318199999449,
+        "search": 0.15334539800005587
+      },
+      "original_total_wall_seconds": 8.232772412000031,
+      "original_peak_rss_kib": 78096,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 162,
+        "OUTSIDE": 4505,
+        "PENDING": 0,
+        "SPLIT": 10179,
+        "UNDECIDED": 5513
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": null,
+      "projections": {
+        "p": {
+          "area_upper": "3213/4096",
+          "center": [
+            "-129/128",
+            "3/128"
+          ],
+          "radius": "598689364427100040996874595371/500000000000000000000000000000",
+          "radius_squared": "11745/8192"
+        },
+        "s": {
+          "area_upper": "2331/2048",
+          "center": [
+            "255/128",
+            "0"
+          ],
+          "radius": "434582382205984191229328888169/250000000000000000000000000000",
+          "radius_squared": "49509/16384"
+        }
+      }
+    },
+    {
+      "case_id": "near_collinear_b0_direction",
+      "method": "J5",
+      "mode": "5d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "37a88ed5cb736b17b96e8d581d99e705002d27336d15ea28b0f191a7d3fbdace",
+      "original_costs": {
+        "certificate_a": 24.13249317000009,
+        "certificate_b": 3.395452361000025,
+        "compressed_io": 0.726046955000129,
+        "evaluation": 0.16280981999989308,
+        "projection": 3.108349578000343,
+        "search": 1.1835587589998795
+      },
+      "original_total_wall_seconds": 32.80846165599996,
+      "original_peak_rss_kib": 246604,
+      "termination": "BOX_BUDGET",
+      "counts": {
+        "INSIDE": 0,
+        "OUTSIDE": 13914,
+        "PENDING": 22173,
+        "SPLIT": 36086,
+        "UNDECIDED": 0
+      },
+      "queue_length": 22173,
+      "domain_contact": true,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "-17912878474779200032940235969/125000000000000000000000000000",
+          "27912878474779200032940235969/125000000000000000000000000000"
+        ],
+        "inner": [
+          "-143303027798233600263521887749/1000000000000000000000000000000",
+          "223303027798233600263521887749/1000000000000000000000000000000"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "1323/2048",
+          "center": [
+            "-63/64",
+            "3/128"
+          ],
+          "radius": "1152257676870173861719970633713/1000000000000000000000000000000",
+          "radius_squared": "21753/16384"
+        },
+        "s": {
+          "area_upper": "675/512",
+          "center": [
+            "129/64",
+            "3/128"
+          ],
+          "radius": "440077681186532822560030607537/250000000000000000000000000000",
+          "radius_squared": "50769/16384"
+        }
+      }
+    },
+    {
+      "case_id": "near_collinear_b0_direction",
+      "method": "P4",
+      "mode": "4d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "1625db81f97da2e828c1b60329b6f62af6f626663b0c80272c932f905f03df3f",
+      "original_costs": {
+        "certificate_a": 4.5863166029998865,
+        "certificate_b": 0.7424568399997042,
+        "compressed_io": 0.16618165800036877,
+        "evaluation": 0.07174999900007606,
+        "projection": 0.44149042599974564,
+        "search": 0.29455594699993526
+      },
+      "original_total_wall_seconds": 6.3747567430000345,
+      "original_peak_rss_kib": 58016,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 33,
+        "OUTSIDE": 3590,
+        "PENDING": 0,
+        "SPLIT": 7027,
+        "UNDECIDED": 3405
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "-17912878474779200032940235969/125000000000000000000000000000",
+          "27912878474779200032940235969/125000000000000000000000000000"
+        ],
+        "inner": [
+          "-143303027798233600263521887749/1000000000000000000000000000000",
+          "223303027798233600263521887749/1000000000000000000000000000000"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "1323/2048",
+          "center": [
+            "-63/64",
+            "3/128"
+          ],
+          "radius": "1152257676870173861719970633713/1000000000000000000000000000000",
+          "radius_squared": "21753/16384"
+        },
+        "s": {
+          "area_upper": "999/1024",
+          "center": [
+            "129/64",
+            "0"
+          ],
+          "radius": "1736906935654584804962943720733/1000000000000000000000000000000",
+          "radius_squared": "12357/4096"
+        }
+      }
+    },
+    {
+      "case_id": "near_collinear_b0_direction",
+      "method": "N4",
+      "mode": "no_peer",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "81d40bd5dbf2b2b39b7ad204d437cb55b38f8606913b35f95ccc78569c187f2d",
+      "original_costs": {
+        "certificate_a": 4.778751590999946,
+        "certificate_b": 0.5645336960001259,
+        "compressed_io": 0.18184724399952756,
+        "evaluation": 0.08655610899995736,
+        "projection": 0.4982855200000813,
+        "search": 0.1219657010001356
+      },
+      "original_total_wall_seconds": 6.32487158899994,
+      "original_peak_rss_kib": 63064,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 25,
+        "OUTSIDE": 3525,
+        "PENDING": 0,
+        "SPLIT": 7713,
+        "UNDECIDED": 4164
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": null,
+      "projections": {
+        "p": {
+          "area_upper": "1323/2048",
+          "center": [
+            "-63/64",
+            "3/128"
+          ],
+          "radius": "1152257676870173861719970633713/1000000000000000000000000000000",
+          "radius_squared": "21753/16384"
+        },
+        "s": {
+          "area_upper": "1971/2048",
+          "center": [
+            "129/64",
+            "-3/128"
+          ],
+          "radius": "3352943129375607979868781111/1953125000000000000000000000",
+          "radius_squared": "48285/16384"
+        }
+      }
+    },
+    {
+      "case_id": "near_collinear_b6_zero",
+      "method": "J5",
+      "mode": "5d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "0577938ac9e563456b5015c368a3a22f270a52a69a67f9704a736d2c23146f3b",
+      "original_costs": {
+        "certificate_a": 25.410951749000105,
+        "certificate_b": 3.3605007189999014,
+        "compressed_io": 0.7279184620001615,
+        "evaluation": 0.627091221000228,
+        "projection": 3.525233334999939,
+        "search": 1.1791815850001512
+      },
+      "original_total_wall_seconds": 34.90972762399997,
+      "original_peak_rss_kib": 261540,
+      "termination": "BOX_BUDGET",
+      "counts": {
+        "INSIDE": 0,
+        "OUTSIDE": 12177,
+        "PENDING": 25647,
+        "SPLIT": 37823,
+        "UNDECIDED": 0
+      },
+      "queue_length": 25647,
+      "domain_contact": true,
+      "max_unresolved_position_width": "3/32",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "198019609728144303399435517819/500000000000000000000000000000",
+          "3/5"
+        ],
+        "inner": [
+          "9900980486407215169971775891/25000000000000000000000000000",
+          "3/5"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "3213/4096",
+          "center": [
+            "-129/128",
+            "3/128"
+          ],
+          "radius": "1201043247686152224179315969817/1000000000000000000000000000000",
+          "radius_squared": "11817/8192"
+        },
+        "s": {
+          "area_upper": "171/128",
+          "center": [
+            "63/32",
+            "0"
+          ],
+          "radius": "356743079820758401211135545031/200000000000000000000000000000",
+          "radius_squared": "1629/512"
+        }
+      }
+    },
+    {
+      "case_id": "near_collinear_b6_zero",
+      "method": "P4",
+      "mode": "4d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "2e272857ac6dc1ba4ad601bae13ddb7b5376ae6b7d3a97161fd11a90d2afe5b4",
+      "original_costs": {
+        "certificate_a": 7.3753350809997755,
+        "certificate_b": 1.0188064419999137,
+        "compressed_io": 0.25923539999985223,
+        "evaluation": 0.00249036100012745,
+        "projection": 0.7530169920000844,
+        "search": 0.4356313630000841
+      },
+      "original_total_wall_seconds": 9.926349504999962,
+      "original_peak_rss_kib": 83144,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 198,
+        "OUTSIDE": 4774,
+        "PENDING": 0,
+        "SPLIT": 11013,
+        "UNDECIDED": 6042
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "198019609728144303399435517819/500000000000000000000000000000",
+          "3/5"
+        ],
+        "inner": [
+          "9900980486407215169971775891/25000000000000000000000000000",
+          "3/5"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "3213/4096",
+          "center": [
+            "-129/128",
+            "3/128"
+          ],
+          "radius": "1201043247686152224179315969817/1000000000000000000000000000000",
+          "radius_squared": "11817/8192"
+        },
+        "s": {
+          "area_upper": "2331/2048",
+          "center": [
+            "255/128",
+            "0"
+          ],
+          "radius": "434582382205984191229328888169/250000000000000000000000000000",
+          "radius_squared": "49509/16384"
+        }
+      }
+    },
+    {
+      "case_id": "near_collinear_b6_zero",
+      "method": "N4",
+      "mode": "no_peer",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "5911739a0c6bab9322cb13bf688d9bef2ee88ffaa5fc3942e53df3b0b6d79962",
+      "original_costs": {
+        "certificate_a": 6.248578520000137,
+        "certificate_b": 0.7271749339997768,
+        "compressed_io": 0.23959643199987113,
+        "evaluation": 0.0022294440000223403,
+        "projection": 0.6844305579998036,
+        "search": 0.15322035600001982
+      },
+      "original_total_wall_seconds": 8.127307768000264,
+      "original_peak_rss_kib": 77896,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 162,
+        "OUTSIDE": 4505,
+        "PENDING": 0,
+        "SPLIT": 10179,
+        "UNDECIDED": 5513
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": null,
+      "projections": {
+        "p": {
+          "area_upper": "3213/4096",
+          "center": [
+            "-129/128",
+            "3/128"
+          ],
+          "radius": "598689364427100040996874595371/500000000000000000000000000000",
+          "radius_squared": "11745/8192"
+        },
+        "s": {
+          "area_upper": "2331/2048",
+          "center": [
+            "255/128",
+            "0"
+          ],
+          "radius": "434582382205984191229328888169/250000000000000000000000000000",
+          "radius_squared": "49509/16384"
+        }
+      }
+    },
+    {
+      "case_id": "near_collinear_b6_direction",
+      "method": "J5",
+      "mode": "5d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "f2856c8994e74d46973b7b50a0fd969532ee7db0b0a9ae0c6a82e6244bee1b5f",
+      "original_costs": {
+        "certificate_a": 24.95763715699968,
+        "certificate_b": 3.441630123000323,
+        "compressed_io": 0.7268609339998875,
+        "evaluation": 0.1020719459997963,
+        "projection": 3.3304184960002203,
+        "search": 1.1868827899997996
+      },
+      "original_total_wall_seconds": 33.80753770299998,
+      "original_peak_rss_kib": 253768,
+      "termination": "BOX_BUDGET",
+      "counts": {
+        "INSIDE": 0,
+        "OUTSIDE": 13127,
+        "PENDING": 23747,
+        "SPLIT": 36873,
+        "UNDECIDED": 0
+      },
+      "queue_length": 23747,
+      "domain_contact": true,
+      "max_unresolved_position_width": "3/32",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "57087121525220799967059764031/125000000000000000000000000000",
+          "3/5"
+        ],
+        "inner": [
+          "456696972201766399736478112251/1000000000000000000000000000000",
+          "3/5"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "1323/2048",
+          "center": [
+            "-63/64",
+            "3/128"
+          ],
+          "radius": "1152257676870173861719970633713/1000000000000000000000000000000",
+          "radius_squared": "21753/16384"
+        },
+        "s": {
+          "area_upper": "1539/1024",
+          "center": [
+            "261/128",
+            "0"
+          ],
+          "radius": "55899673544215385834677546511/31250000000000000000000000000",
+          "radius_squared": "52425/16384"
+        }
+      }
+    },
+    {
+      "case_id": "near_collinear_b6_direction",
+      "method": "P4",
+      "mode": "4d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "ce828f33b0c991db62253be854b3823f1c753900ba7260e2f229bb320fbc3665",
+      "original_costs": {
+        "certificate_a": 5.51501899699997,
+        "certificate_b": 0.7880909780001275,
+        "compressed_io": 0.19473767999988922,
+        "evaluation": 0.09360035500003505,
+        "projection": 0.5424792529997831,
+        "search": 0.3422743490000357
+      },
+      "original_total_wall_seconds": 7.528621039999962,
+      "original_peak_rss_kib": 66916,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 38,
+        "OUTSIDE": 3773,
+        "PENDING": 0,
+        "SPLIT": 8315,
+        "UNDECIDED": 4505
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "57087121525220799967059764031/125000000000000000000000000000",
+          "3/5"
+        ],
+        "inner": [
+          "456696972201766399736478112251/1000000000000000000000000000000",
+          "3/5"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "1323/2048",
+          "center": [
+            "-63/64",
+            "3/128"
+          ],
+          "radius": "1152257676870173861719970633713/1000000000000000000000000000000",
+          "radius_squared": "21753/16384"
+        },
+        "s": {
+          "area_upper": "999/1024",
+          "center": [
+            "129/64",
+            "0"
+          ],
+          "radius": "1736906935654584804962943720733/1000000000000000000000000000000",
+          "radius_squared": "12357/4096"
+        }
+      }
+    },
+    {
+      "case_id": "near_collinear_b6_direction",
+      "method": "N4",
+      "mode": "no_peer",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "ea80a5221400779cb2280ed345587b9bd93ecc30d4b1c5dc1caf3230e7d1d58a",
+      "original_costs": {
+        "certificate_a": 4.706828941999902,
+        "certificate_b": 0.5604241109999748,
+        "compressed_io": 0.1807042180003009,
+        "evaluation": 0.08627651200004038,
+        "projection": 0.496647940999992,
+        "search": 0.12181375700038188
+      },
+      "original_total_wall_seconds": 6.223000383999988,
+      "original_peak_rss_kib": 62804,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 25,
+        "OUTSIDE": 3525,
+        "PENDING": 0,
+        "SPLIT": 7713,
+        "UNDECIDED": 4164
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": null,
+      "projections": {
+        "p": {
+          "area_upper": "1323/2048",
+          "center": [
+            "-63/64",
+            "3/128"
+          ],
+          "radius": "1152257676870173861719970633713/1000000000000000000000000000000",
+          "radius_squared": "21753/16384"
+        },
+        "s": {
+          "area_upper": "1971/2048",
+          "center": [
+            "129/64",
+            "-3/128"
+          ],
+          "radius": "3352943129375607979868781111/1953125000000000000000000000",
+          "radius_squared": "48285/16384"
+        }
+      }
+    },
+    {
+      "case_id": "collinear_b0_zero",
+      "method": "J5",
+      "mode": "5d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "ca33d1ded9036b965c2cfd95b6e4754584249c59815c57eccc67b9ad3ae8d528",
+      "original_costs": {
+        "certificate_a": 25.597068819000015,
+        "certificate_b": 3.3807650329999888,
+        "compressed_io": 0.7208157160002884,
+        "evaluation": 0.03636352200010151,
+        "projection": 3.1626096549998692,
+        "search": 1.174587925999731
+      },
+      "original_total_wall_seconds": 34.15818509000019,
+      "original_peak_rss_kib": 248836,
+      "termination": "BOX_BUDGET",
+      "counts": {
+        "INSIDE": 3,
+        "OUTSIDE": 13678,
+        "PENDING": 22639,
+        "SPLIT": 36319,
+        "UNDECIDED": 0
+      },
+      "queue_length": 22639,
+      "domain_contact": true,
+      "max_unresolved_position_width": "3/32",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": "COMMON_MIRROR_FEASIBLE_AND_RETAINED",
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "-101980390271855696600564482181/500000000000000000000000000000",
+          "101980390271855696600564482181/500000000000000000000000000000"
+        ],
+        "inner": [
+          "-5099019513592784830028224109/25000000000000000000000000000",
+          "5099019513592784830028224109/25000000000000000000000000000"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "819/1024",
+          "center": [
+            "-129/128",
+            "0"
+          ],
+          "radius": "610388280145566441723627467949/500000000000000000000000000000",
+          "radius_squared": "24417/16384"
+        },
+        "s": {
+          "area_upper": "171/128",
+          "center": [
+            "63/32",
+            "0"
+          ],
+          "radius": "356743079820758401211135545031/200000000000000000000000000000",
+          "radius_squared": "1629/512"
+        }
+      }
+    },
+    {
+      "case_id": "collinear_b0_zero",
+      "method": "P4",
+      "mode": "4d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "b58c4cfd1f58f1abf6c93777f300a129776aaa836c38812fea4885cc5f029223",
+      "original_costs": {
+        "certificate_a": 5.666070516000218,
+        "certificate_b": 0.8509072150000065,
+        "compressed_io": 0.1942217270002402,
+        "evaluation": 0.002473200000167708,
+        "projection": 0.5243782899997314,
+        "search": 0.3433209709996845
+      },
+      "original_total_wall_seconds": 7.624120222000329,
+      "original_peak_rss_kib": 66404,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 120,
+        "OUTSIDE": 4181,
+        "PENDING": 0,
+        "SPLIT": 8450,
+        "UNDECIDED": 4150
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": "COMMON_MIRROR_FEASIBLE_AND_RETAINED",
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "-101980390271855696600564482181/500000000000000000000000000000",
+          "101980390271855696600564482181/500000000000000000000000000000"
+        ],
+        "inner": [
+          "-5099019513592784830028224109/25000000000000000000000000000",
+          "5099019513592784830028224109/25000000000000000000000000000"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "819/1024",
+          "center": [
+            "-129/128",
+            "0"
+          ],
+          "radius": "610388280145566441723627467949/500000000000000000000000000000",
+          "radius_squared": "24417/16384"
+        },
+        "s": {
+          "area_upper": "2331/2048",
+          "center": [
+            "255/128",
+            "0"
+          ],
+          "radius": "434582382205984191229328888169/250000000000000000000000000000",
+          "radius_squared": "49509/16384"
+        }
+      }
+    },
+    {
+      "case_id": "collinear_b0_zero",
+      "method": "N4",
+      "mode": "no_peer",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "4d5acd826feffb61c09c15a7154487618c6bbb0ce19353e9cd2635e0ac9dfa3b",
+      "original_costs": {
+        "certificate_a": 6.45807471299986,
+        "certificate_b": 0.7450035169999865,
+        "compressed_io": 0.24021853600015675,
+        "evaluation": 0.00294969000015044,
+        "projection": 0.7123153219999949,
+        "search": 0.15851558600024873
+      },
+      "original_total_wall_seconds": 8.3753111420001,
+      "original_peak_rss_kib": 79348,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 172,
+        "OUTSIDE": 4551,
+        "PENDING": 0,
+        "SPLIT": 10454,
+        "UNDECIDED": 5732
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": "COMMON_MIRROR_FEASIBLE_AND_RETAINED",
+      "truth_bias_recovery_evaluation_only": null,
+      "projections": {
+        "p": {
+          "area_upper": "819/1024",
+          "center": [
+            "-129/128",
+            "0"
+          ],
+          "radius": "610388280145566441723627467949/500000000000000000000000000000",
+          "radius_squared": "24417/16384"
+        },
+        "s": {
+          "area_upper": "2331/2048",
+          "center": [
+            "255/128",
+            "0"
+          ],
+          "radius": "108487479265344868701816274363/62500000000000000000000000000",
+          "radius_squared": "49365/16384"
+        }
+      }
+    },
+    {
+      "case_id": "collinear_b0_direction",
+      "method": "J5",
+      "mode": "5d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "07365e18b56fedeff06c9b65edeb96c829e1d90caeb0872980844dff5a5ff631",
+      "original_costs": {
+        "certificate_a": 24.906228906999786,
+        "certificate_b": 3.3694621599997845,
+        "compressed_io": 0.7161710360001052,
+        "evaluation": 0.5435318400000142,
+        "projection": 3.0664463389998673,
+        "search": 1.1840622329996222
+      },
+      "original_total_wall_seconds": 33.87732703099982,
+      "original_peak_rss_kib": 244920,
+      "termination": "BOX_BUDGET",
+      "counts": {
+        "INSIDE": 0,
+        "OUTSIDE": 14073,
+        "PENDING": 21855,
+        "SPLIT": 35927,
+        "UNDECIDED": 0
+      },
+      "queue_length": 21855,
+      "domain_contact": true,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": "COMMON_MIRROR_FEASIBLE_AND_RETAINED",
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "-17912878474779200032940235969/125000000000000000000000000000",
+          "27912878474779200032940235969/125000000000000000000000000000"
+        ],
+        "inner": [
+          "-143303027798233600263521887749/1000000000000000000000000000000",
+          "223303027798233600263521887749/1000000000000000000000000000000"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "675/1024",
+          "center": [
+            "-63/64",
+            "0"
+          ],
+          "radius": "1175619019123542420754566437597/1000000000000000000000000000000",
+          "radius_squared": "5661/4096"
+        },
+        "s": {
+          "area_upper": "171/128",
+          "center": [
+            "129/64",
+            "0"
+          ],
+          "radius": "356743079820758401211135545031/200000000000000000000000000000",
+          "radius_squared": "1629/512"
+        }
+      }
+    },
+    {
+      "case_id": "collinear_b0_direction",
+      "method": "P4",
+      "mode": "4d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "fe9ee6fc95a7fa496f43cc6ee43694100f99f9e8f33efb1c471ea3cf97b0fb86",
+      "original_costs": {
+        "certificate_a": 5.128369095999915,
+        "certificate_b": 0.7876241409999238,
+        "compressed_io": 0.1797424259998479,
+        "evaluation": 0.07168366499990952,
+        "projection": 0.4742349580001246,
+        "search": 0.3230823579997377
+      },
+      "original_total_wall_seconds": 7.025886514000376,
+      "original_peak_rss_kib": 63008,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 64,
+        "OUTSIDE": 3885,
+        "PENDING": 0,
+        "SPLIT": 7796,
+        "UNDECIDED": 3848
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": "COMMON_MIRROR_FEASIBLE_AND_RETAINED",
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "-17912878474779200032940235969/125000000000000000000000000000",
+          "27912878474779200032940235969/125000000000000000000000000000"
+        ],
+        "inner": [
+          "-143303027798233600263521887749/1000000000000000000000000000000",
+          "223303027798233600263521887749/1000000000000000000000000000000"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "675/1024",
+          "center": [
+            "-63/64",
+            "0"
+          ],
+          "radius": "1175619019123542420754566437597/1000000000000000000000000000000",
+          "radius_squared": "5661/4096"
+        },
+        "s": {
+          "area_upper": "999/1024",
+          "center": [
+            "129/64",
+            "0"
+          ],
+          "radius": "1736906935654584804962943720733/1000000000000000000000000000000",
+          "radius_squared": "12357/4096"
+        }
+      }
+    },
+    {
+      "case_id": "collinear_b0_direction",
+      "method": "N4",
+      "mode": "no_peer",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "e4d00b010d118e61fd51bf1e68ca8236c3883eb23e6052925b9a8abe4e903d8d",
+      "original_costs": {
+        "certificate_a": 5.310530423999808,
+        "certificate_b": 0.6120938269996259,
+        "compressed_io": 0.19503953999992518,
+        "evaluation": 0.10898504000033427,
+        "projection": 0.5683110909999414,
+        "search": 0.13327180799979033
+      },
+      "original_total_wall_seconds": 6.974780186999851,
+      "original_peak_rss_kib": 68636,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 76,
+        "OUTSIDE": 3775,
+        "PENDING": 0,
+        "SPLIT": 8610,
+        "UNDECIDED": 4760
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": "COMMON_MIRROR_FEASIBLE_AND_RETAINED",
+      "truth_bias_recovery_evaluation_only": null,
+      "projections": {
+        "p": {
+          "area_upper": "675/1024",
+          "center": [
+            "-63/64",
+            "0"
+          ],
+          "radius": "1175619019123542420754566437597/1000000000000000000000000000000",
+          "radius_squared": "5661/4096"
+        },
+        "s": {
+          "area_upper": "243/256",
+          "center": [
+            "129/64",
+            "0"
+          ],
+          "radius": "1693349237642666551893033894897/1000000000000000000000000000000",
+          "radius_squared": "11745/4096"
+        }
+      }
+    },
+    {
+      "case_id": "collinear_b6_zero",
+      "method": "J5",
+      "mode": "5d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "0d66a05a322d09e7119b78a9452eeb9f395b5876ebaa36c6ef22775a51fd33d8",
+      "original_costs": {
+        "certificate_a": 25.386028590000024,
+        "certificate_b": 3.351955674000237,
+        "compressed_io": 0.7247182430000976,
+        "evaluation": 0.6518416149997392,
+        "projection": 3.554471348000334,
+        "search": 1.1613571689999844
+      },
+      "original_total_wall_seconds": 34.91251669600024,
+      "original_peak_rss_kib": 260904,
+      "termination": "BOX_BUDGET",
+      "counts": {
+        "INSIDE": 0,
+        "OUTSIDE": 12232,
+        "PENDING": 25537,
+        "SPLIT": 37768,
+        "UNDECIDED": 0
+      },
+      "queue_length": 25537,
+      "domain_contact": true,
+      "max_unresolved_position_width": "3/32",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": "COMMON_MIRROR_FEASIBLE_AND_RETAINED",
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "198019609728144303399435517819/500000000000000000000000000000",
+          "3/5"
+        ],
+        "inner": [
+          "9900980486407215169971775891/25000000000000000000000000000",
+          "3/5"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "819/1024",
+          "center": [
+            "-129/128",
+            "0"
+          ],
+          "radius": "610388280145566441723627467949/500000000000000000000000000000",
+          "radius_squared": "24417/16384"
+        },
+        "s": {
+          "area_upper": "171/128",
+          "center": [
+            "63/32",
+            "0"
+          ],
+          "radius": "356743079820758401211135545031/200000000000000000000000000000",
+          "radius_squared": "1629/512"
+        }
+      }
+    },
+    {
+      "case_id": "collinear_b6_zero",
+      "method": "P4",
+      "mode": "4d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "943984b545fab465471b12a7c9c877480bbb7b452e76d1c1239f1c4ce5ae1b93",
+      "original_costs": {
+        "certificate_a": 7.495917721000296,
+        "certificate_b": 1.0285869280000952,
+        "compressed_io": 0.2564376820000689,
+        "evaluation": 0.003108741999767517,
+        "projection": 0.7583208890000606,
+        "search": 0.44071771600010834
+      },
+      "original_total_wall_seconds": 10.030754484000227,
+      "original_peak_rss_kib": 83380,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 214,
+        "OUTSIDE": 4745,
+        "PENDING": 0,
+        "SPLIT": 11078,
+        "UNDECIDED": 6120
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": "COMMON_MIRROR_FEASIBLE_AND_RETAINED",
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "198019609728144303399435517819/500000000000000000000000000000",
+          "3/5"
+        ],
+        "inner": [
+          "9900980486407215169971775891/25000000000000000000000000000",
+          "3/5"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "819/1024",
+          "center": [
+            "-129/128",
+            "0"
+          ],
+          "radius": "610388280145566441723627467949/500000000000000000000000000000",
+          "radius_squared": "24417/16384"
+        },
+        "s": {
+          "area_upper": "2331/2048",
+          "center": [
+            "255/128",
+            "0"
+          ],
+          "radius": "434582382205984191229328888169/250000000000000000000000000000",
+          "radius_squared": "49509/16384"
+        }
+      }
+    },
+    {
+      "case_id": "collinear_b6_zero",
+      "method": "N4",
+      "mode": "no_peer",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "0972b3d9d422c2f614900f79182d88fb236df3bcaa94b9a7cf807f684a955e18",
+      "original_costs": {
+        "certificate_a": 6.65774189800004,
+        "certificate_b": 0.7508303009999509,
+        "compressed_io": 0.24084533699988242,
+        "evaluation": 0.0028906239999741956,
+        "projection": 0.7172294320002948,
+        "search": 0.15765546100010397
+      },
+      "original_total_wall_seconds": 8.574484915000085,
+      "original_peak_rss_kib": 79516,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 172,
+        "OUTSIDE": 4551,
+        "PENDING": 0,
+        "SPLIT": 10454,
+        "UNDECIDED": 5732
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": "COMMON_MIRROR_FEASIBLE_AND_RETAINED",
+      "truth_bias_recovery_evaluation_only": null,
+      "projections": {
+        "p": {
+          "area_upper": "819/1024",
+          "center": [
+            "-129/128",
+            "0"
+          ],
+          "radius": "610388280145566441723627467949/500000000000000000000000000000",
+          "radius_squared": "24417/16384"
+        },
+        "s": {
+          "area_upper": "2331/2048",
+          "center": [
+            "255/128",
+            "0"
+          ],
+          "radius": "108487479265344868701816274363/62500000000000000000000000000",
+          "radius_squared": "49365/16384"
+        }
+      }
+    },
+    {
+      "case_id": "collinear_b6_direction",
+      "method": "J5",
+      "mode": "5d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "a76a98125dfdf9930c4cf449915db1cdee3af3d4aaf12029f0869add3605a10a",
+      "original_costs": {
+        "certificate_a": 24.754684799000188,
+        "certificate_b": 3.4583355229997323,
+        "compressed_io": 0.723695275999944,
+        "evaluation": 0.3475304899998264,
+        "projection": 3.4670363629998064,
+        "search": 1.182737194999845
+      },
+      "original_total_wall_seconds": 34.03474794499971,
+      "original_peak_rss_kib": 256132,
+      "termination": "BOX_BUDGET",
+      "counts": {
+        "INSIDE": 0,
+        "OUTSIDE": 12802,
+        "PENDING": 24397,
+        "SPLIT": 37198,
+        "UNDECIDED": 0
+      },
+      "queue_length": 24397,
+      "domain_contact": true,
+      "max_unresolved_position_width": "3/32",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": "COMMON_MIRROR_FEASIBLE_AND_RETAINED",
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "57087121525220799967059764031/125000000000000000000000000000",
+          "3/5"
+        ],
+        "inner": [
+          "456696972201766399736478112251/1000000000000000000000000000000",
+          "3/5"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "675/1024",
+          "center": [
+            "-63/64",
+            "0"
+          ],
+          "radius": "1175619019123542420754566437597/1000000000000000000000000000000",
+          "radius_squared": "5661/4096"
+        },
+        "s": {
+          "area_upper": "855/512",
+          "center": [
+            "129/64",
+            "0"
+          ],
+          "radius": "893396182150589895837120716099/500000000000000000000000000000",
+          "radius_squared": "13077/4096"
+        }
+      }
+    },
+    {
+      "case_id": "collinear_b6_direction",
+      "method": "P4",
+      "mode": "4d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "fddfa00cab0e50115b1a0fa4181214dc8ffa7ae5224b66250e0c191f414ebaa4",
+      "original_costs": {
+        "certificate_a": 6.090555958000095,
+        "certificate_b": 0.8655811680000625,
+        "compressed_io": 0.21339817299985953,
+        "evaluation": 0.09810490700010632,
+        "projection": 0.5999510909996388,
+        "search": 0.37793735200011724
+      },
+      "original_total_wall_seconds": 8.325077023000176,
+      "original_peak_rss_kib": 72188,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 86,
+        "OUTSIDE": 4145,
+        "PENDING": 0,
+        "SPLIT": 9230,
+        "UNDECIDED": 5000
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": "COMMON_MIRROR_FEASIBLE_AND_RETAINED",
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "57087121525220799967059764031/125000000000000000000000000000",
+          "3/5"
+        ],
+        "inner": [
+          "456696972201766399736478112251/1000000000000000000000000000000",
+          "3/5"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "675/1024",
+          "center": [
+            "-63/64",
+            "0"
+          ],
+          "radius": "1175619019123542420754566437597/1000000000000000000000000000000",
+          "radius_squared": "5661/4096"
+        },
+        "s": {
+          "area_upper": "999/1024",
+          "center": [
+            "129/64",
+            "0"
+          ],
+          "radius": "1736906935654584804962943720733/1000000000000000000000000000000",
+          "radius_squared": "12357/4096"
+        }
+      }
+    },
+    {
+      "case_id": "collinear_b6_direction",
+      "method": "N4",
+      "mode": "no_peer",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "bdc83e57f8d462235991ba394385e051fcc684a6fb8a608c98d143eaa8a9451b",
+      "original_costs": {
+        "certificate_a": 5.314514346000124,
+        "certificate_b": 0.6241319079999812,
+        "compressed_io": 0.1953329699999813,
+        "evaluation": 0.10979494299999715,
+        "projection": 0.5817525039997236,
+        "search": 0.13371615599999132
+      },
+      "original_total_wall_seconds": 7.033755233000193,
+      "original_peak_rss_kib": 68464,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 76,
+        "OUTSIDE": 3775,
+        "PENDING": 0,
+        "SPLIT": 8610,
+        "UNDECIDED": 4760
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": "COMMON_MIRROR_FEASIBLE_AND_RETAINED",
+      "truth_bias_recovery_evaluation_only": null,
+      "projections": {
+        "p": {
+          "area_upper": "675/1024",
+          "center": [
+            "-63/64",
+            "0"
+          ],
+          "radius": "1175619019123542420754566437597/1000000000000000000000000000000",
+          "radius_squared": "5661/4096"
+        },
+        "s": {
+          "area_upper": "243/256",
+          "center": [
+            "129/64",
+            "0"
+          ],
+          "radius": "1693349237642666551893033894897/1000000000000000000000000000000",
+          "radius_squared": "11745/4096"
+        }
+      }
+    },
+    {
+      "case_id": "empty_in_domain",
+      "method": "J5",
+      "mode": "5d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "35f4f3416935a0d1659aef1e45e2571ef61908ef8a9f16c340e53be9f8df2ed0",
+      "original_costs": {
+        "certificate_a": 0.0034492659997340525,
+        "certificate_b": 0.00044199900003150105,
+        "compressed_io": 0.0015235610003401234,
+        "evaluation": 0.0003857460001199797,
+        "projection": 8.51499999043881e-06,
+        "search": 0.0003242770003453188
+      },
+      "original_total_wall_seconds": 0.06716160799987847,
+      "original_peak_rss_kib": 21340,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 0,
+        "OUTSIDE": 1,
+        "PENDING": 0,
+        "SPLIT": 0,
+        "UNDECIDED": 0
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "0",
+      "point_evaluation": "NOT_APPLICABLE_INTENTIONALLY_INCONSISTENT",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": null,
+        "inner": null,
+        "status": "EMPTY_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "0",
+          "center": null,
+          "radius": null,
+          "radius_squared": null
+        },
+        "s": {
+          "area_upper": "0",
+          "center": null,
+          "radius": null,
+          "radius_squared": null
+        }
+      }
+    },
+    {
+      "case_id": "empty_in_domain",
+      "method": "P4",
+      "mode": "4d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "bb8e1d0eb3db8086e5fcc791eb138b7085bd5f8d0bbba45c2950635a09630e0c",
+      "original_costs": {
+        "certificate_a": 0.003421523000270099,
+        "certificate_b": 0.0004473260000850132,
+        "compressed_io": 0.0016511870003341755,
+        "evaluation": 0.00037851799970667344,
+        "projection": 8.280000201921212e-06,
+        "search": 0.0003217710000171792
+      },
+      "original_total_wall_seconds": 0.06659836900007576,
+      "original_peak_rss_kib": 21340,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 0,
+        "OUTSIDE": 1,
+        "PENDING": 0,
+        "SPLIT": 0,
+        "UNDECIDED": 0
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "0",
+      "point_evaluation": "NOT_APPLICABLE_INTENTIONALLY_INCONSISTENT",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": null,
+        "inner": null,
+        "status": "EMPTY_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "0",
+          "center": null,
+          "radius": null,
+          "radius_squared": null
+        },
+        "s": {
+          "area_upper": "0",
+          "center": null,
+          "radius": null,
+          "radius_squared": null
+        }
+      }
+    },
+    {
+      "case_id": "domain_closed_contact",
+      "method": "J5",
+      "mode": "5d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "34da800a5a2a6fed04866c2f556d5dc91284fb05cf5dde4ca92cbef236319bf9",
+      "original_costs": {
+        "certificate_a": 3.0544368470000336,
+        "certificate_b": 0.46690672899967467,
+        "compressed_io": 0.10524949899991043,
+        "evaluation": 0.0013640989996019925,
+        "projection": 0.3727157520002038,
+        "search": 0.18237463000014031
+      },
+      "original_total_wall_seconds": 4.221435767000003,
+      "original_peak_rss_kib": 49604,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 8,
+        "OUTSIDE": 1971,
+        "PENDING": 0,
+        "SPLIT": 4728,
+        "UNDECIDED": 2750
+      },
+      "queue_length": 0,
+      "domain_contact": true,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "396039219456288606798871035639/1000000000000000000000000000000",
+          "3/5"
+        ],
+        "inner": [
+          "9900980486407215169971775891/25000000000000000000000000000",
+          "3/5"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "27/512",
+          "center": [
+            "759/128",
+            "0"
+          ],
+          "radius": "200250087780879636746991757647/1000000000000000000000000000000",
+          "radius_squared": "657/16384"
+        },
+        "s": {
+          "area_upper": "63/512",
+          "center": [
+            "255/128",
+            "0"
+          ],
+          "radius": "200250087780879636746991757647/1000000000000000000000000000000",
+          "radius_squared": "657/16384"
+        }
+      }
+    },
+    {
+      "case_id": "domain_closed_contact",
+      "method": "P4",
+      "mode": "4d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "6f95981f73db68c0b7ebd06701c372c3534f49bf4f630117c30ed30fd9f455d6",
+      "original_costs": {
+        "certificate_a": 0.7333164030001171,
+        "certificate_b": 0.13063764800017452,
+        "compressed_io": 0.027096328000425274,
+        "evaluation": 0.00071674399987387,
+        "projection": 0.07782746399971074,
+        "search": 0.056741045999842754
+      },
+      "original_total_wall_seconds": 1.0676565320000009,
+      "original_peak_rss_kib": 26808,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 16,
+        "OUTSIDE": 547,
+        "PENDING": 0,
+        "SPLIT": 1184,
+        "UNDECIDED": 622
+      },
+      "queue_length": 0,
+      "domain_contact": true,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "396039219456288606798871035639/1000000000000000000000000000000",
+          "3/5"
+        ],
+        "inner": [
+          "9900980486407215169971775891/25000000000000000000000000000",
+          "3/5"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "27/512",
+          "center": [
+            "759/128",
+            "0"
+          ],
+          "radius": "200250087780879636746991757647/1000000000000000000000000000000",
+          "radius_squared": "657/16384"
+        },
+        "s": {
+          "area_upper": "63/512",
+          "center": [
+            "255/128",
+            "0"
+          ],
+          "radius": "200250087780879636746991757647/1000000000000000000000000000000",
+          "radius_squared": "657/16384"
+        }
+      }
+    },
+    {
+      "case_id": "coincident_zero_distance",
+      "method": "J5",
+      "mode": "5d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "e872b73e5b46a417ebdbcbcfe388715eea8691b8b3d1b86affca8e4d717a9cfa",
+      "original_costs": {
+        "certificate_a": 20.481505945999743,
+        "certificate_b": 2.530759868000132,
+        "compressed_io": 0.5794645219998529,
+        "evaluation": 0.006058203000065987,
+        "projection": 2.541520453999965,
+        "search": 1.0754004159998658
+      },
+      "original_total_wall_seconds": 27.302561842999694,
+      "original_peak_rss_kib": 202248,
+      "termination": "BOX_BUDGET",
+      "counts": {
+        "INSIDE": 42,
+        "OUTSIDE": 10314,
+        "PENDING": 7479,
+        "SPLIT": 28739,
+        "UNDECIDED": 10905
+      },
+      "queue_length": 7479,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "-203960780543711393201128964361/1000000000000000000000000000000",
+          "203960780543711393201128964361/1000000000000000000000000000000"
+        ],
+        "inner": [
+          "-5099019513592784830028224109/25000000000000000000000000000",
+          "5099019513592784830028224109/25000000000000000000000000000"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "567/4096",
+          "center": [
+            "129/128",
+            "129/128"
+          ],
+          "radius": "222347647980589171781172202343/1000000000000000000000000000000",
+          "radius_squared": "405/8192"
+        },
+        "s": {
+          "area_upper": "567/4096",
+          "center": [
+            "129/128",
+            "129/128"
+          ],
+          "radius": "222347647980589171781172202343/1000000000000000000000000000000",
+          "radius_squared": "405/8192"
+        }
+      }
+    },
+    {
+      "case_id": "coincident_zero_distance",
+      "method": "P4",
+      "mode": "4d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "51ac7a1bf58a952c8c94551b6d39a3481c4f125e2cf806616584b74ebd96b48e",
+      "original_costs": {
+        "certificate_a": 1.9199434060001295,
+        "certificate_b": 0.2827400139999554,
+        "compressed_io": 0.06809464300022228,
+        "evaluation": 0.0009698379999463214,
+        "projection": 0.1974360340000203,
+        "search": 0.12462544599975445
+      },
+      "original_total_wall_seconds": 2.6696606180003073,
+      "original_peak_rss_kib": 36324,
+      "termination": "RESOLUTION_COMPLETE",
+      "counts": {
+        "INSIDE": 45,
+        "OUTSIDE": 1300,
+        "PENDING": 0,
+        "SPLIT": 2945,
+        "UNDECIDED": 1601
+      },
+      "queue_length": 0,
+      "domain_contact": false,
+      "max_unresolved_position_width": "3/64",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "-203960780543711393201128964361/1000000000000000000000000000000",
+          "203960780543711393201128964361/1000000000000000000000000000000"
+        ],
+        "inner": [
+          "-5099019513592784830028224109/25000000000000000000000000000",
+          "5099019513592784830028224109/25000000000000000000000000000"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "567/4096",
+          "center": [
+            "129/128",
+            "129/128"
+          ],
+          "radius": "222347647980589171781172202343/1000000000000000000000000000000",
+          "radius_squared": "405/8192"
+        },
+        "s": {
+          "area_upper": "567/4096",
+          "center": [
+            "129/128",
+            "129/128"
+          ],
+          "radius": "222347647980589171781172202343/1000000000000000000000000000000",
+          "radius_squared": "405/8192"
+        }
+      }
+    },
+    {
+      "case_id": "forced_budget",
+      "method": "J5",
+      "mode": "5d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "5bb019b51b7d44af347de6b2271c8d25e69cd9c54de06aedb421e7a3621e9c22",
+      "original_costs": {
+        "certificate_a": 0.004183852000096522,
+        "certificate_b": 0.00021469399962370517,
+        "compressed_io": 0.0016154310001184058,
+        "evaluation": 0.0005246199998509837,
+        "projection": 0.0005768519999946875,
+        "search": 0.000337472999945021
+      },
+      "original_total_wall_seconds": 0.06576785599963841,
+      "original_peak_rss_kib": 21340,
+      "termination": "BOX_BUDGET",
+      "counts": {
+        "INSIDE": 0,
+        "OUTSIDE": 0,
+        "PENDING": 2,
+        "SPLIT": 1,
+        "UNDECIDED": 0
+      },
+      "queue_length": 2,
+      "domain_contact": true,
+      "max_unresolved_position_width": "12",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "-101980390271855696600564482181/500000000000000000000000000000",
+          "101980390271855696600564482181/500000000000000000000000000000"
+        ],
+        "inner": [
+          "-5099019513592784830028224109/25000000000000000000000000000",
+          "5099019513592784830028224109/25000000000000000000000000000"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "144",
+          "center": [
+            "0",
+            "0"
+          ],
+          "radius": "8485281374238570292810132345259/1000000000000000000000000000000",
+          "radius_squared": "72"
+        },
+        "s": {
+          "area_upper": "144",
+          "center": [
+            "0",
+            "0"
+          ],
+          "radius": "8485281374238570292810132345259/1000000000000000000000000000000",
+          "radius_squared": "72"
+        }
+      }
+    },
+    {
+      "case_id": "forced_budget",
+      "method": "P4",
+      "mode": "4d",
+      "raw_linkage": "PASS",
+      "original_receipt_sha256": "986d544ce9e503f3c3a86a11266f589688a38541b84db8f3a63faf34ef246962",
+      "original_costs": {
+        "certificate_a": 0.004830182000205241,
+        "certificate_b": 0.00018362700029683765,
+        "compressed_io": 0.0015701619995525107,
+        "evaluation": 0.0005209420000937826,
+        "projection": 0.0005426370003078773,
+        "search": 0.0003460860002633126
+      },
+      "original_total_wall_seconds": 0.06644852299996273,
+      "original_peak_rss_kib": 21340,
+      "termination": "BOX_BUDGET",
+      "counts": {
+        "INSIDE": 0,
+        "OUTSIDE": 0,
+        "PENDING": 2,
+        "SPLIT": 1,
+        "UNDECIDED": 0
+      },
+      "queue_length": 2,
+      "domain_contact": true,
+      "max_unresolved_position_width": "12",
+      "point_evaluation": "POINT_FEASIBILITY_AND_OUTER_MEMBERSHIP_PROVED",
+      "mirror": null,
+      "truth_bias_recovery_evaluation_only": {
+        "outer": [
+          "-101980390271855696600564482181/500000000000000000000000000000",
+          "101980390271855696600564482181/500000000000000000000000000000"
+        ],
+        "inner": [
+          "-5099019513592784830028224109/25000000000000000000000000000",
+          "5099019513592784830028224109/25000000000000000000000000000"
+        ],
+        "status": "FEASIBLE_PROVED"
+      },
+      "projections": {
+        "p": {
+          "area_upper": "144",
+          "center": [
+            "0",
+            "0"
+          ],
+          "radius": "8485281374238570292810132345259/1000000000000000000000000000000",
+          "radius_squared": "72"
+        },
+        "s": {
+          "area_upper": "144",
+          "center": [
+            "0",
+            "0"
+          ],
+          "radius": "8485281374238570292810132345259/1000000000000000000000000000000",
+          "radius_squared": "72"
+        }
+      }
+    }
+  ]
+}

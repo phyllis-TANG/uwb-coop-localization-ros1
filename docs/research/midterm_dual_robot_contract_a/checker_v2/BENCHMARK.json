@@ -1,0 +1,3964 @@
+{
+  "status": "PASS",
+  "planned": 44,
+  "v1_passed": 44,
+  "v2_passed": 44,
+  "consistent": 44,
+  "failed": 0,
+  "unexecuted": 0,
+  "tree_nodes_checked_per_version": 1134406,
+  "search_calls": 0,
+  "environment": {
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]",
+    "platform": "Linux-6.14.6-custom-x86_64-with-glibc2.35",
+    "machine": "x86_64",
+    "cpu_affinity": [
+      0
+    ],
+    "cpu_model": "model name\t: Intel(R) Core(TM) i5-14600KF",
+    "policy": "one fresh interpreter per certificate, sequential, fixed CPU, empty application cache; OS page cache not flushed",
+    "kernel": "v1",
+    "evidence_archive_hash": "7b8c1cff805e545d82cc313d75283ad005d281993f4345621b79038ca2937e8f"
+  },
+  "timing_scope": "One measured pass/version; old pass first, then new pass; no repeated trials or fastest-sample selection. Fresh processes and empty application caches; OS cache not flushed. Results are descriptive, not statistical speed guarantees.",
+  "groups": {
+    "all": {
+      "count": 44,
+      "v1": {
+        "check_seconds": {
+          "sum": 355.39576665702043,
+          "median": 5.150728885000717,
+          "min": 0.0011751369966077618,
+          "max": 23.909387197003525
+        },
+        "cold_process_wall_seconds": {
+          "sum": 363.60175894102576,
+          "median": 5.232179471502604,
+          "min": 0.025740851000591647,
+          "max": 24.543714999999793
+        },
+        "import_seconds": {
+          "sum": 0.679044075019192,
+          "median": 0.0154099125029461,
+          "min": 0.014882994997606147,
+          "max": 0.016208158995141275
+        },
+        "load_seconds": {
+          "sum": 6.2432989699955215,
+          "median": 0.04565496749637532,
+          "min": 0.00042275899613741785,
+          "max": 0.5480076449966873
+        },
+        "peak_rss_bytes": {
+          "sum": 4213833728,
+          "median": 63313920.0,
+          "min": 18079744,
+          "max": 261390336
+        },
+        "child_cpu_seconds": {
+          "sum": 363.07885600000003,
+          "median": 5.222830500000001,
+          "min": 0.022709,
+          "max": 24.518220999999997
+        }
+      },
+      "v2": {
+        "check_seconds": {
+          "sum": 65.8697383050021,
+          "median": 0.7627956874966912,
+          "min": 0.0011758690015994944,
+          "max": 4.629302661996917
+        },
+        "cold_process_wall_seconds": {
+          "sum": 74.28345891497884,
+          "median": 0.8798457650009368,
+          "min": 0.029303556999366265,
+          "max": 5.250516523999977
+        },
+        "import_seconds": {
+          "sum": 0.8132688159748795,
+          "median": 0.018513438499212498,
+          "min": 0.017919982004968915,
+          "max": 0.018946222997328732
+        },
+        "load_seconds": {
+          "sum": 6.3167681880077,
+          "median": 0.042513559499639086,
+          "min": 0.00038006599788786843,
+          "max": 0.5555170549996546
+        },
+        "peak_rss_bytes": {
+          "sum": 4099006464,
+          "median": 62519296.0,
+          "min": 18665472,
+          "max": 248958976
+        },
+        "child_cpu_seconds": {
+          "sum": 73.788991,
+          "median": 0.8696969999999999,
+          "min": 0.025748,
+          "max": 5.226025999999999
+        }
+      },
+      "aggregate_check_speedup": 5.3954331048258,
+      "aggregate_cold_process_speedup": 4.894787672140931,
+      "min_individual_check_speedup": 0.9992890929239632
+    },
+    "5d": {
+      "count": 16,
+      "v1": {
+        "check_seconds": {
+          "sum": 254.58847798800707,
+          "median": 20.636741738999262,
+          "min": 0.0011751369966077618,
+          "max": 23.909387197003525
+        },
+        "cold_process_wall_seconds": {
+          "sum": 260.9032648110224,
+          "median": 21.172140503000264,
+          "min": 0.025740851000591647,
+          "max": 24.543714999999793
+        },
+        "import_seconds": {
+          "sum": 0.24628549203043804,
+          "median": 0.015294512999389553,
+          "min": 0.014882994997606147,
+          "max": 0.016049600999394897
+        },
+        "load_seconds": {
+          "sum": 5.2815648739779135,
+          "median": 0.40573992150166305,
+          "min": 0.00042275899613741785,
+          "max": 0.5480076449966873
+        },
+        "peak_rss_bytes": {
+          "sum": 2791399424,
+          "median": 219473920.0,
+          "min": 18079744,
+          "max": 261390336
+        },
+        "child_cpu_seconds": {
+          "sum": 260.587296,
+          "median": 21.1478885,
+          "min": 0.022709,
+          "max": 24.518220999999997
+        }
+      },
+      "v2": {
+        "check_seconds": {
+          "sum": 49.02951863499766,
+          "median": 3.9454301635014417,
+          "min": 0.0011759730041376315,
+          "max": 4.629302661996917
+        },
+        "cold_process_wall_seconds": {
+          "sum": 55.47197967199463,
+          "median": 4.4342769859977125,
+          "min": 0.02958194600068964,
+          "max": 5.250516523999977
+        },
+        "import_seconds": {
+          "sum": 0.294780221003748,
+          "median": 0.018472336501872633,
+          "min": 0.017919982004968915,
+          "max": 0.01880892400367884
+        },
+        "load_seconds": {
+          "sum": 5.356829846983601,
+          "median": 0.412703171998146,
+          "min": 0.00038006599788786843,
+          "max": 0.5555170549996546
+        },
+        "peak_rss_bytes": {
+          "sum": 2679631872,
+          "median": 211005440.0,
+          "min": 18755584,
+          "max": 248958976
+        },
+        "child_cpu_seconds": {
+          "sum": 55.170722999999995,
+          "median": 4.412635,
+          "min": 0.026037,
+          "max": 5.226025999999999
+        }
+      },
+      "aggregate_check_speedup": 5.192555119361907,
+      "aggregate_cold_process_speedup": 4.703334302358439,
+      "min_individual_check_speedup": 0.9992890929239632
+    },
+    "4d": {
+      "count": 16,
+      "v1": {
+        "check_seconds": {
+          "sum": 52.910669447002874,
+          "median": 3.092732117002015,
+          "min": 0.0012132679985370487,
+          "max": 6.943493321996357
+        },
+        "cold_process_wall_seconds": {
+          "sum": 53.89893548801774,
+          "median": 3.148861363002652,
+          "min": 0.026272249000612646,
+          "max": 7.061809489001462
+        },
+        "import_seconds": {
+          "sum": 0.24967046799429227,
+          "median": 0.0156310954989749,
+          "min": 0.014997988000686746,
+          "max": 0.016208158995141275
+        },
+        "load_seconds": {
+          "sum": 0.4719417579981382,
+          "median": 0.024666432498634094,
+          "min": 0.0004345820052549243,
+          "max": 0.07711973800178384
+        },
+        "peak_rss_bytes": {
+          "sum": 747507712,
+          "median": 44283904.0,
+          "min": 18178048,
+          "max": 81768448
+        },
+        "child_cpu_seconds": {
+          "sum": 53.789111,
+          "median": 3.142147,
+          "min": 0.023007,
+          "max": 7.0511870000000005
+        }
+      },
+      "v2": {
+        "check_seconds": {
+          "sum": 10.46114948700415,
+          "median": 0.6083948175000842,
+          "min": 0.0011758690015994944,
+          "max": 1.3545315510054934
+        },
+        "cold_process_wall_seconds": {
+          "sum": 11.482428890973097,
+          "median": 0.6655307284963783,
+          "min": 0.029303556999366265,
+          "max": 1.477395700996567
+        },
+        "import_seconds": {
+          "sum": 0.29657522299385164,
+          "median": 0.018530712495703483,
+          "min": 0.018028016995231155,
+          "max": 0.018946222997328732
+        },
+        "load_seconds": {
+          "sum": 0.4614893550024135,
+          "median": 0.023498184000345645,
+          "min": 0.0003858010022668168,
+          "max": 0.08033772099588532
+        },
+        "peak_rss_bytes": {
+          "sum": 748908544,
+          "median": 44455936.0,
+          "min": 18665472,
+          "max": 80470016
+        },
+        "child_cpu_seconds": {
+          "sum": 11.381153,
+          "median": 0.6594479999999999,
+          "min": 0.025748,
+          "max": 1.468481
+        }
+      },
+      "aggregate_check_speedup": 5.057825577651253,
+      "aggregate_cold_process_speedup": 4.694036078933643,
+      "min_individual_check_speedup": 1.0318054110506203
+    },
+    "no_peer": {
+      "count": 12,
+      "v1": {
+        "check_seconds": {
+          "sum": 47.896619222010486,
+          "median": 4.659115720503905,
+          "min": 1.2071249770015129,
+          "max": 6.052538046998961
+        },
+        "cold_process_wall_seconds": {
+          "sum": 48.79955864198564,
+          "median": 4.736946110995632,
+          "min": 1.2433894510031678,
+          "max": 6.165239371002826
+        },
+        "import_seconds": {
+          "sum": 0.18308811499446165,
+          "median": 0.015120457497687312,
+          "min": 0.01492747500014957,
+          "max": 0.015965172002324834
+        },
+        "load_seconds": {
+          "sum": 0.48979233801946975,
+          "median": 0.04182528400269803,
+          "min": 0.00914328599901637,
+          "max": 0.0720864730028552
+        },
+        "peak_rss_bytes": {
+          "sum": 674926592,
+          "median": 61648896.0,
+          "min": 28819456,
+          "max": 77459456
+        },
+        "child_cpu_seconds": {
+          "sum": 48.702449,
+          "median": 4.729044,
+          "min": 1.23901,
+          "max": 6.153926
+        }
+      },
+      "v2": {
+        "check_seconds": {
+          "sum": 6.3790701830002945,
+          "median": 0.6345824525014905,
+          "min": 0.1830754269976751,
+          "max": 0.7634900349949021
+        },
+        "cold_process_wall_seconds": {
+          "sum": 7.329050352011109,
+          "median": 0.7135761135032226,
+          "min": 0.2240859689991339,
+          "max": 0.8804087890021037
+        },
+        "import_seconds": {
+          "sum": 0.2219133719772799,
+          "median": 0.018554908499936573,
+          "min": 0.018000390999077354,
+          "max": 0.018824175996996928
+        },
+        "load_seconds": {
+          "sum": 0.4984489860216854,
+          "median": 0.041033880504983244,
+          "min": 0.009779489002539776,
+          "max": 0.07470144900435116
+        },
+        "peak_rss_bytes": {
+          "sum": 670466048,
+          "median": 61140992.0,
+          "min": 29769728,
+          "max": 76189696
+        },
+        "child_cpu_seconds": {
+          "sum": 7.237114999999999,
+          "median": 0.705916,
+          "min": 0.21875299999999998,
+          "max": 0.8699359999999999
+        }
+      },
+      "aggregate_check_speedup": 7.508401357560087,
+      "aggregate_cold_process_speedup": 6.658374045498941,
+      "min_individual_check_speedup": 6.59359367227827
+    }
+  },
+  "rows": [
+    {
+      "case_id": "normal_b0_zero",
+      "mode": "5d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 53715,
+      "v1": {
+        "kernel": "v1",
+        "index": 0,
+        "case_id": "normal_b0_zero",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "484295b1c57dbaf6c70188815390dd40872166634b5a880e9962be3f393777bb",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 26857,
+            "OUTSIDE": 9968,
+            "INSIDE": 46,
+            "UNDECIDED": 13129,
+            "PENDING": 3715
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "ac763b5e71ca90cecfa2ed0d5db8480265b934ca16b33e66287153747297289f",
+        "queue_hash": "7e7d69763fee2526d3ced0895fd01ce5389eb3487003ea7c03a40905e29a2013",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 53715,
+        "import_seconds": 0.015009708004072309,
+        "load_seconds": 0.2891066359952674,
+        "check_seconds": 17.623865009001747,
+        "child_elapsed_seconds": 17.927981353001087,
+        "child_cpu_seconds": 17.95895,
+        "peak_rss_bytes": 186494976,
+        "cold_process_wall_seconds": 17.9788039940031
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 0,
+        "case_id": "normal_b0_zero",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "484295b1c57dbaf6c70188815390dd40872166634b5a880e9962be3f393777bb",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 26857,
+            "OUTSIDE": 9968,
+            "INSIDE": 46,
+            "UNDECIDED": 13129,
+            "PENDING": 3715
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "ac763b5e71ca90cecfa2ed0d5db8480265b934ca16b33e66287153747297289f",
+        "queue_hash": "7e7d69763fee2526d3ced0895fd01ce5389eb3487003ea7c03a40905e29a2013",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 53715,
+        "import_seconds": 0.018514214003516827,
+        "load_seconds": 0.2926959119940875,
+        "check_seconds": 3.561118333003833,
+        "child_elapsed_seconds": 3.8723284590014373,
+        "child_cpu_seconds": 3.9030959999999997,
+        "peak_rss_bytes": 179146752,
+        "cold_process_wall_seconds": 3.922134811000433
+      },
+      "check_speedup": 4.948969217244705
+    },
+    {
+      "case_id": "normal_b0_zero",
+      "mode": "4d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 5647,
+      "v1": {
+        "kernel": "v1",
+        "index": 1,
+        "case_id": "normal_b0_zero",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "484295b1c57dbaf6c70188815390dd40872166634b5a880e9962be3f393777bb",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 2823,
+            "OUTSIDE": 1242,
+            "INSIDE": 46,
+            "UNDECIDED": 1536,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "756fef67a7bfb7c10012fe029a3afa63f252c6e4142516779aeeb9bd27587909",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "f227553667a84930a0e3056dd0bbe767aa9a6aa3fd5abff9e357a9702d9be383",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 5647,
+        "import_seconds": 0.01591962699603755,
+        "load_seconds": 0.012023835006402805,
+        "check_seconds": 1.7399004779945244,
+        "child_elapsed_seconds": 1.7678439399969648,
+        "child_cpu_seconds": 1.7758520000000002,
+        "peak_rss_bytes": 33529856,
+        "cold_process_wall_seconds": 1.780597224002122
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 1,
+        "case_id": "normal_b0_zero",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "484295b1c57dbaf6c70188815390dd40872166634b5a880e9962be3f393777bb",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 2823,
+            "OUTSIDE": 1242,
+            "INSIDE": 46,
+            "UNDECIDED": 1536,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "756fef67a7bfb7c10012fe029a3afa63f252c6e4142516779aeeb9bd27587909",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "f227553667a84930a0e3056dd0bbe767aa9a6aa3fd5abff9e357a9702d9be383",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 5647,
+        "import_seconds": 0.01851266299490817,
+        "load_seconds": 0.012118010003177915,
+        "check_seconds": 0.3637476889998652,
+        "child_elapsed_seconds": 0.3943783619979513,
+        "child_cpu_seconds": 0.402268,
+        "peak_rss_bytes": 34287616,
+        "cold_process_wall_seconds": 0.40676691799308173
+      },
+      "check_speedup": 4.783261943954699
+    },
+    {
+      "case_id": "normal_b0_zero",
+      "mode": "no_peer",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 5079,
+      "v1": {
+        "kernel": "v1",
+        "index": 2,
+        "case_id": "normal_b0_zero",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "484295b1c57dbaf6c70188815390dd40872166634b5a880e9962be3f393777bb",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 2539,
+            "OUTSIDE": 1118,
+            "INSIDE": 40,
+            "UNDECIDED": 1382,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "6e74f978d3093d4d7f070c2cd4f9a9f532172ee893a90f8e8da42abbaf2680bc",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 5079,
+        "import_seconds": 0.015301457002351526,
+        "load_seconds": 0.010962305001157802,
+        "check_seconds": 1.4285536600000341,
+        "child_elapsed_seconds": 1.4548174220035435,
+        "child_cpu_seconds": 1.463001,
+        "peak_rss_bytes": 31846400,
+        "cold_process_wall_seconds": 1.4693446699966444
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 2,
+        "case_id": "normal_b0_zero",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "484295b1c57dbaf6c70188815390dd40872166634b5a880e9962be3f393777bb",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 2539,
+            "OUTSIDE": 1118,
+            "INSIDE": 40,
+            "UNDECIDED": 1382,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "6e74f978d3093d4d7f070c2cd4f9a9f532172ee893a90f8e8da42abbaf2680bc",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 5079,
+        "import_seconds": 0.01860146300168708,
+        "load_seconds": 0.01085933500144165,
+        "check_seconds": 0.21440696599893272,
+        "child_elapsed_seconds": 0.24386776400206145,
+        "child_cpu_seconds": 0.251476,
+        "peak_rss_bytes": 32538624,
+        "cold_process_wall_seconds": 0.25615151199599495
+      },
+      "check_speedup": 6.6628136513397855
+    },
+    {
+      "case_id": "normal_b0_direction",
+      "mode": "5d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 42867,
+      "v1": {
+        "kernel": "v1",
+        "index": 3,
+        "case_id": "normal_b0_direction",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "98d0b7d40fde3b454e9e0263d5f31faa54e7c5bf7a895ecd5ef5ed8e3d8cc724",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 21433,
+            "OUTSIDE": 8669,
+            "INSIDE": 4,
+            "UNDECIDED": 12761,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "7a2c8a38d9cd10bf9c7938e1ed221104e295e997d73c69c1639ea3003ea1e1b2",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 42867,
+        "import_seconds": 0.015189526005997322,
+        "load_seconds": 0.20922424599848455,
+        "check_seconds": 14.0116235280002,
+        "child_elapsed_seconds": 14.236037300004682,
+        "child_cpu_seconds": 14.259821,
+        "peak_rss_bytes": 148934656,
+        "cold_process_wall_seconds": 14.278453546001401
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 3,
+        "case_id": "normal_b0_direction",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "98d0b7d40fde3b454e9e0263d5f31faa54e7c5bf7a895ecd5ef5ed8e3d8cc724",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 21433,
+            "OUTSIDE": 8669,
+            "INSIDE": 4,
+            "UNDECIDED": 12761,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "7a2c8a38d9cd10bf9c7938e1ed221104e295e997d73c69c1639ea3003ea1e1b2",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 42867,
+        "import_seconds": 0.018201628998212982,
+        "load_seconds": 0.2240499319959781,
+        "check_seconds": 2.7403598119999515,
+        "child_elapsed_seconds": 2.9826113729941426,
+        "child_cpu_seconds": 3.00714,
+        "peak_rss_bytes": 143835136,
+        "cold_process_wall_seconds": 3.0219979129979038
+      },
+      "check_speedup": 5.113059776546033
+    },
+    {
+      "case_id": "normal_b0_direction",
+      "mode": "4d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 4693,
+      "v1": {
+        "kernel": "v1",
+        "index": 4,
+        "case_id": "normal_b0_direction",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "98d0b7d40fde3b454e9e0263d5f31faa54e7c5bf7a895ecd5ef5ed8e3d8cc724",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 2346,
+            "OUTSIDE": 1072,
+            "INSIDE": 17,
+            "UNDECIDED": 1258,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "711b4d8d044c4c5afa9423f68fe6ace3682a8acb953828fb8e9c1a2358a8c26c",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4202dc9247045ae4f0fd3497001aa8efc06d47c65ccfd4143f5bbd393c412ace",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 4693,
+        "import_seconds": 0.015435610999702476,
+        "load_seconds": 0.010330165998311713,
+        "check_seconds": 1.4915151340028387,
+        "child_elapsed_seconds": 1.517280911000853,
+        "child_cpu_seconds": 1.524944,
+        "peak_rss_bytes": 30359552,
+        "cold_process_wall_seconds": 1.529915143000835
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 4,
+        "case_id": "normal_b0_direction",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "98d0b7d40fde3b454e9e0263d5f31faa54e7c5bf7a895ecd5ef5ed8e3d8cc724",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 2346,
+            "OUTSIDE": 1072,
+            "INSIDE": 17,
+            "UNDECIDED": 1258,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "711b4d8d044c4c5afa9423f68fe6ace3682a8acb953828fb8e9c1a2358a8c26c",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4202dc9247045ae4f0fd3497001aa8efc06d47c65ccfd4143f5bbd393c412ace",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 4693,
+        "import_seconds": 0.018102631998772267,
+        "load_seconds": 0.010567994002485648,
+        "check_seconds": 0.3019287560018711,
+        "child_elapsed_seconds": 0.330599382003129,
+        "child_cpu_seconds": 0.338927,
+        "peak_rss_bytes": 31223808,
+        "cold_process_wall_seconds": 0.34341598599712597
+      },
+      "check_speedup": 4.939957206307291
+    },
+    {
+      "case_id": "normal_b0_direction",
+      "mode": "no_peer",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 4231,
+      "v1": {
+        "kernel": "v1",
+        "index": 5,
+        "case_id": "normal_b0_direction",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "98d0b7d40fde3b454e9e0263d5f31faa54e7c5bf7a895ecd5ef5ed8e3d8cc724",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 2115,
+            "OUTSIDE": 998,
+            "INSIDE": 10,
+            "UNDECIDED": 1108,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "1d78f2d9cb15389872cdd18eaea9993add2af9b595b0b82b705a653ccafa461e",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 4231,
+        "import_seconds": 0.015057527998578735,
+        "load_seconds": 0.009637533003115095,
+        "check_seconds": 1.2071249770015129,
+        "child_elapsed_seconds": 1.2318200380032067,
+        "child_cpu_seconds": 1.23901,
+        "peak_rss_bytes": 28925952,
+        "cold_process_wall_seconds": 1.2433894510031678
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 5,
+        "case_id": "normal_b0_direction",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "98d0b7d40fde3b454e9e0263d5f31faa54e7c5bf7a895ecd5ef5ed8e3d8cc724",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 2115,
+            "OUTSIDE": 998,
+            "INSIDE": 10,
+            "UNDECIDED": 1108,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "1d78f2d9cb15389872cdd18eaea9993add2af9b595b0b82b705a653ccafa461e",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 4231,
+        "import_seconds": 0.018431586999213323,
+        "load_seconds": 0.009779489002539776,
+        "check_seconds": 0.1830754269976751,
+        "child_elapsed_seconds": 0.2112865029994282,
+        "child_cpu_seconds": 0.21875299999999998,
+        "peak_rss_bytes": 29798400,
+        "cold_process_wall_seconds": 0.2240859689991339
+      },
+      "check_speedup": 6.59359367227827
+    },
+    {
+      "case_id": "normal_b6_zero",
+      "mode": "5d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 27503,
+      "v1": {
+        "kernel": "v1",
+        "index": 6,
+        "case_id": "normal_b6_zero",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "d92bceb4bf2fc42a9f4912ec883fce52bec61eba0f7fb89e44c1dd1e9c9526ce",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 13751,
+            "OUTSIDE": 5367,
+            "INSIDE": 24,
+            "UNDECIDED": 8361,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "9f39e68998a0415c2191c3d6991a0be2890fb4c45386637025d7825d3ba3c948",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 27503,
+        "import_seconds": 0.01571381400572136,
+        "load_seconds": 0.13003851599933114,
+        "check_seconds": 8.516192645001865,
+        "child_elapsed_seconds": 8.661944975006918,
+        "child_cpu_seconds": 8.679708,
+        "peak_rss_bytes": 104714240,
+        "cold_process_wall_seconds": 8.692515343005653
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 6,
+        "case_id": "normal_b6_zero",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "d92bceb4bf2fc42a9f4912ec883fce52bec61eba0f7fb89e44c1dd1e9c9526ce",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 13751,
+            "OUTSIDE": 5367,
+            "INSIDE": 24,
+            "UNDECIDED": 8361,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "9f39e68998a0415c2191c3d6991a0be2890fb4c45386637025d7825d3ba3c948",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 27503,
+        "import_seconds": 0.01806857599876821,
+        "load_seconds": 0.13315612999576842,
+        "check_seconds": 1.625317502002872,
+        "child_elapsed_seconds": 1.7765422079974087,
+        "child_cpu_seconds": 1.7947849999999999,
+        "peak_rss_bytes": 101978112,
+        "cold_process_wall_seconds": 1.8082183379956405
+      },
+      "check_speedup": 5.2397101701713025
+    },
+    {
+      "case_id": "normal_b6_zero",
+      "mode": "4d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 5295,
+      "v1": {
+        "kernel": "v1",
+        "index": 7,
+        "case_id": "normal_b6_zero",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "d92bceb4bf2fc42a9f4912ec883fce52bec61eba0f7fb89e44c1dd1e9c9526ce",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 2647,
+            "OUTSIDE": 1178,
+            "INSIDE": 41,
+            "UNDECIDED": 1429,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "ff0a9d1ace1b669d7e6c8cdd33a08c0f7ec9e1b5ff4b0d0d5cf819d5518d34b1",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "5f9f4ea0576ebd59fbd4a412610b17fabbeb7123234e41a02bce3485b448747d",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 5295,
+        "import_seconds": 0.015365045997896232,
+        "load_seconds": 0.011536858000908978,
+        "check_seconds": 1.6441857609970612,
+        "child_elapsed_seconds": 1.6710876649958664,
+        "child_cpu_seconds": 1.6788079999999999,
+        "peak_rss_bytes": 32190464,
+        "cold_process_wall_seconds": 1.683618294999178
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 7,
+        "case_id": "normal_b6_zero",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "d92bceb4bf2fc42a9f4912ec883fce52bec61eba0f7fb89e44c1dd1e9c9526ce",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 2647,
+            "OUTSIDE": 1178,
+            "INSIDE": 41,
+            "UNDECIDED": 1429,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "ff0a9d1ace1b669d7e6c8cdd33a08c0f7ec9e1b5ff4b0d0d5cf819d5518d34b1",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "5f9f4ea0576ebd59fbd4a412610b17fabbeb7123234e41a02bce3485b448747d",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 5295,
+        "import_seconds": 0.018306534002476837,
+        "load_seconds": 0.011533215001691133,
+        "check_seconds": 0.34273632199619897,
+        "child_elapsed_seconds": 0.37257607100036694,
+        "child_cpu_seconds": 0.38043699999999997,
+        "peak_rss_bytes": 33124352,
+        "cold_process_wall_seconds": 0.3852281919971574
+      },
+      "check_speedup": 4.797232319646867
+    },
+    {
+      "case_id": "normal_b6_zero",
+      "mode": "no_peer",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 5079,
+      "v1": {
+        "kernel": "v1",
+        "index": 8,
+        "case_id": "normal_b6_zero",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "d92bceb4bf2fc42a9f4912ec883fce52bec61eba0f7fb89e44c1dd1e9c9526ce",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 2539,
+            "OUTSIDE": 1118,
+            "INSIDE": 40,
+            "UNDECIDED": 1382,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "6e74f978d3093d4d7f070c2cd4f9a9f532172ee893a90f8e8da42abbaf2680bc",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 5079,
+        "import_seconds": 0.015545178001048043,
+        "load_seconds": 0.011245474001043476,
+        "check_seconds": 1.4849758300042595,
+        "child_elapsed_seconds": 1.511766482006351,
+        "child_cpu_seconds": 1.5162200000000001,
+        "peak_rss_bytes": 31895552,
+        "cold_process_wall_seconds": 1.5252796909990138
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 8,
+        "case_id": "normal_b6_zero",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "d92bceb4bf2fc42a9f4912ec883fce52bec61eba0f7fb89e44c1dd1e9c9526ce",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 2539,
+            "OUTSIDE": 1118,
+            "INSIDE": 40,
+            "UNDECIDED": 1382,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "6e74f978d3093d4d7f070c2cd4f9a9f532172ee893a90f8e8da42abbaf2680bc",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 5079,
+        "import_seconds": 0.018508353998186067,
+        "load_seconds": 0.011078187999373768,
+        "check_seconds": 0.21845533700252417,
+        "child_elapsed_seconds": 0.248041879000084,
+        "child_cpu_seconds": 0.25588999999999995,
+        "peak_rss_bytes": 32555008,
+        "cold_process_wall_seconds": 0.2606290710027679
+      },
+      "check_speedup": 6.797617537662177
+    },
+    {
+      "case_id": "normal_b6_direction",
+      "mode": "5d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 17957,
+      "v1": {
+        "kernel": "v1",
+        "index": 9,
+        "case_id": "normal_b6_direction",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "dce462a844eeb7e674ff9a826310e38ec51b0fe7999b7c5b6b1f14fce9177da9",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 8978,
+            "OUTSIDE": 3881,
+            "INSIDE": 1,
+            "UNDECIDED": 5097,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "a92ecad6b44c975e5772251fe2fb5405967dca51987427ea783e4eaade8ccff0",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 17957,
+        "import_seconds": 0.014882994997606147,
+        "load_seconds": 0.06706547799694818,
+        "check_seconds": 5.610606050999195,
+        "child_elapsed_seconds": 5.692554523993749,
+        "child_cpu_seconds": 5.705735000000001,
+        "peak_rss_bytes": 71086080,
+        "cold_process_wall_seconds": 5.714377211006649
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 9,
+        "case_id": "normal_b6_direction",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "dce462a844eeb7e674ff9a826310e38ec51b0fe7999b7c5b6b1f14fce9177da9",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 8978,
+            "OUTSIDE": 3881,
+            "INSIDE": 1,
+            "UNDECIDED": 5097,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "a92ecad6b44c975e5772251fe2fb5405967dca51987427ea783e4eaade8ccff0",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 17957,
+        "import_seconds": 0.01880892400367884,
+        "load_seconds": 0.07093897099548485,
+        "check_seconds": 1.051356465999561,
+        "child_elapsed_seconds": 1.1411043609987246,
+        "child_cpu_seconds": 1.1544519999999998,
+        "peak_rss_bytes": 69881856,
+        "cold_process_wall_seconds": 1.162600037001539
+      },
+      "check_speedup": 5.336540205385999
+    },
+    {
+      "case_id": "normal_b6_direction",
+      "mode": "4d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 4173,
+      "v1": {
+        "kernel": "v1",
+        "index": 10,
+        "case_id": "normal_b6_direction",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "dce462a844eeb7e674ff9a826310e38ec51b0fe7999b7c5b6b1f14fce9177da9",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 2086,
+            "OUTSIDE": 993,
+            "INSIDE": 5,
+            "UNDECIDED": 1089,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "7e9fbf9580da17f3172f9fce2a4a77fb1a51a55e2a1118eb0bd7abceb13ef303",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "de2ff7beabb7da2020c26cc29ced4b71fa33c56c8063923f507c8e8e85f1e064",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 4173,
+        "import_seconds": 0.015782465001393575,
+        "load_seconds": 0.008979953003290575,
+        "check_seconds": 1.3027631469958578,
+        "child_elapsed_seconds": 1.327525565000542,
+        "child_cpu_seconds": 1.334706,
+        "peak_rss_bytes": 28643328,
+        "cold_process_wall_seconds": 1.3392504660005216
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 10,
+        "case_id": "normal_b6_direction",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "dce462a844eeb7e674ff9a826310e38ec51b0fe7999b7c5b6b1f14fce9177da9",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 2086,
+            "OUTSIDE": 993,
+            "INSIDE": 5,
+            "UNDECIDED": 1089,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "7e9fbf9580da17f3172f9fce2a4a77fb1a51a55e2a1118eb0bd7abceb13ef303",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "de2ff7beabb7da2020c26cc29ced4b71fa33c56c8063923f507c8e8e85f1e064",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 4173,
+        "import_seconds": 0.018557504001364578,
+        "load_seconds": 0.008966514003986958,
+        "check_seconds": 0.27791443999740295,
+        "child_elapsed_seconds": 0.3054384580027545,
+        "child_cpu_seconds": 0.31294399999999994,
+        "peak_rss_bytes": 29765632,
+        "cold_process_wall_seconds": 0.3183063440010301
+      },
+      "check_speedup": 4.687641084817442
+    },
+    {
+      "case_id": "normal_b6_direction",
+      "mode": "no_peer",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 4231,
+      "v1": {
+        "kernel": "v1",
+        "index": 11,
+        "case_id": "normal_b6_direction",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "dce462a844eeb7e674ff9a826310e38ec51b0fe7999b7c5b6b1f14fce9177da9",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 2115,
+            "OUTSIDE": 998,
+            "INSIDE": 10,
+            "UNDECIDED": 1108,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "1d78f2d9cb15389872cdd18eaea9993add2af9b595b0b82b705a653ccafa461e",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 4231,
+        "import_seconds": 0.015402823002659716,
+        "load_seconds": 0.00914328599901637,
+        "check_seconds": 1.2123514760023681,
+        "child_elapsed_seconds": 1.2368975850040442,
+        "child_cpu_seconds": 1.2446629999999999,
+        "peak_rss_bytes": 28819456,
+        "cold_process_wall_seconds": 1.2491807530022925
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 11,
+        "case_id": "normal_b6_direction",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "dce462a844eeb7e674ff9a826310e38ec51b0fe7999b7c5b6b1f14fce9177da9",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 2115,
+            "OUTSIDE": 998,
+            "INSIDE": 10,
+            "UNDECIDED": 1108,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "1d78f2d9cb15389872cdd18eaea9993add2af9b595b0b82b705a653ccafa461e",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 4231,
+        "import_seconds": 0.018000390999077354,
+        "load_seconds": 0.010575964995950926,
+        "check_seconds": 0.18323369700374315,
+        "child_elapsed_seconds": 0.21181005299877143,
+        "child_cpu_seconds": 0.21943100000000001,
+        "peak_rss_bytes": 29769728,
+        "cold_process_wall_seconds": 0.22450839100201847
+      },
+      "check_speedup": 6.616422065519979
+    },
+    {
+      "case_id": "near_collinear_b0_zero",
+      "mode": "5d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 72325,
+      "v1": {
+        "kernel": "v1",
+        "index": 12,
+        "case_id": "near_collinear_b0_zero",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "38264d0d5250fad79f113aff626c7e50a7c1641549844a5522b5948480d839da",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 36162,
+            "OUTSIDE": 13836,
+            "INSIDE": 2,
+            "UNDECIDED": 0,
+            "PENDING": 22325
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "4fe1b5557848298564b751b9044ecf09f24b618a84de38ace2e8c3b509949fda",
+        "queue_hash": "abc3e95a0bbfb903a256e43c633e5332e4e2c634329a106a1b7f78227e7e637f",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 72325,
+        "import_seconds": 0.015035190001071896,
+        "load_seconds": 0.5294601099958527,
+        "check_seconds": 23.59871193300205,
+        "child_elapsed_seconds": 24.143207232998975,
+        "child_cpu_seconds": 24.182775,
+        "peak_rss_bytes": 243449856,
+        "cold_process_wall_seconds": 24.209504733000358
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 12,
+        "case_id": "near_collinear_b0_zero",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "38264d0d5250fad79f113aff626c7e50a7c1641549844a5522b5948480d839da",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 36162,
+            "OUTSIDE": 13836,
+            "INSIDE": 2,
+            "UNDECIDED": 0,
+            "PENDING": 22325
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "4fe1b5557848298564b751b9044ecf09f24b618a84de38ace2e8c3b509949fda",
+        "queue_hash": "abc3e95a0bbfb903a256e43c633e5332e4e2c634329a106a1b7f78227e7e637f",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 72325,
+        "import_seconds": 0.01843045900022844,
+        "load_seconds": 0.5352270080038579,
+        "check_seconds": 4.579849820998788,
+        "child_elapsed_seconds": 5.133507288002875,
+        "child_cpu_seconds": 5.175839,
+        "peak_rss_bytes": 232853504,
+        "cold_process_wall_seconds": 5.199400896002771
+      },
+      "check_speedup": 5.152726149403643
+    },
+    {
+      "case_id": "near_collinear_b0_zero",
+      "mode": "4d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 16755,
+      "v1": {
+        "kernel": "v1",
+        "index": 13,
+        "case_id": "near_collinear_b0_zero",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "38264d0d5250fad79f113aff626c7e50a7c1641549844a5522b5948480d839da",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 8377,
+            "OUTSIDE": 4208,
+            "INSIDE": 112,
+            "UNDECIDED": 4058,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "baf06351c9c70b862de5b0d4f29b4b3c0bcd2dcfce10337dfe9bafbfded2c1a7",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4ec3b465e77758218313f7bad851f2b2aa6ce8beb8ed45c8b5c391838099d6f2",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 16755,
+        "import_seconds": 0.015776230000483338,
+        "load_seconds": 0.043433981998532545,
+        "check_seconds": 5.133913994999602,
+        "child_elapsed_seconds": 5.193124206998618,
+        "child_cpu_seconds": 5.204873,
+        "peak_rss_bytes": 61349888,
+        "cold_process_wall_seconds": 5.213386795003316
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 13,
+        "case_id": "near_collinear_b0_zero",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "38264d0d5250fad79f113aff626c7e50a7c1641549844a5522b5948480d839da",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 8377,
+            "OUTSIDE": 4208,
+            "INSIDE": 112,
+            "UNDECIDED": 4058,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "baf06351c9c70b862de5b0d4f29b4b3c0bcd2dcfce10337dfe9bafbfded2c1a7",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4ec3b465e77758218313f7bad851f2b2aa6ce8beb8ed45c8b5c391838099d6f2",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 16755,
+        "import_seconds": 0.01847783799894387,
+        "load_seconds": 0.04063956699974369,
+        "check_seconds": 1.0073484009990352,
+        "child_elapsed_seconds": 1.0664658059977228,
+        "child_cpu_seconds": 1.078558,
+        "peak_rss_bytes": 61136896,
+        "cold_process_wall_seconds": 1.0857866489968728
+      },
+      "check_speedup": 5.096463140168839
+    },
+    {
+      "case_id": "near_collinear_b0_zero",
+      "mode": "no_peer",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 20359,
+      "v1": {
+        "kernel": "v1",
+        "index": 14,
+        "case_id": "near_collinear_b0_zero",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "38264d0d5250fad79f113aff626c7e50a7c1641549844a5522b5948480d839da",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 10179,
+            "OUTSIDE": 4505,
+            "INSIDE": 162,
+            "UNDECIDED": 5513,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "7029164039fd36cce6d9970abc354f6c5fc8d4f07eac85b5f45a6f1b08b733c7",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 20359,
+        "import_seconds": 0.015126473001146223,
+        "load_seconds": 0.07031292300234782,
+        "check_seconds": 5.8759214710007655,
+        "child_elapsed_seconds": 5.9613608670042595,
+        "child_cpu_seconds": 5.975383,
+        "peak_rss_bytes": 75927552,
+        "cold_process_wall_seconds": 5.984333655993396
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 14,
+        "case_id": "near_collinear_b0_zero",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "38264d0d5250fad79f113aff626c7e50a7c1641549844a5522b5948480d839da",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 10179,
+            "OUTSIDE": 4505,
+            "INSIDE": 162,
+            "UNDECIDED": 5513,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "7029164039fd36cce6d9970abc354f6c5fc8d4f07eac85b5f45a6f1b08b733c7",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 20359,
+        "import_seconds": 0.018748511996818706,
+        "load_seconds": 0.07413573100348003,
+        "check_seconds": 0.7559275579988025,
+        "child_elapsed_seconds": 0.8488118009991013,
+        "child_cpu_seconds": 0.8628009999999999,
+        "peak_rss_bytes": 74473472,
+        "cold_process_wall_seconds": 0.8709932400015532
+      },
+      "check_speedup": 7.773127740647965
+    },
+    {
+      "case_id": "near_collinear_b0_direction",
+      "mode": "5d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 72173,
+      "v1": {
+        "kernel": "v1",
+        "index": 15,
+        "case_id": "near_collinear_b0_direction",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "3d7f72c23f3cb913291b5762ed26da5a3f7d2c71f9ff78cfb0603ebe0a7ef4f8",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 36086,
+            "OUTSIDE": 13914,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 22173
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "745e4c60c4118cce89ab0ed441a64a72415109a1f5b3f8142a778523aa7956c4",
+        "queue_hash": "aa9a2c9acf97a1ea81b91275f80c75e98201817adb38830d06ba1398375cdd37",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 72173,
+        "import_seconds": 0.015972178996889852,
+        "load_seconds": 0.5314271690003807,
+        "check_seconds": 22.397635082001216,
+        "child_elapsed_seconds": 22.945034429998486,
+        "child_cpu_seconds": 22.985347,
+        "peak_rss_bytes": 242540544,
+        "cold_process_wall_seconds": 23.009640418000345
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 15,
+        "case_id": "near_collinear_b0_direction",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "3d7f72c23f3cb913291b5762ed26da5a3f7d2c71f9ff78cfb0603ebe0a7ef4f8",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 36086,
+            "OUTSIDE": 13914,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 22173
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "745e4c60c4118cce89ab0ed441a64a72415109a1f5b3f8142a778523aa7956c4",
+        "queue_hash": "aa9a2c9acf97a1ea81b91275f80c75e98201817adb38830d06ba1398375cdd37",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 72173,
+        "import_seconds": 0.01880853999318788,
+        "load_seconds": 0.532523077003134,
+        "check_seconds": 4.3297419939990505,
+        "child_elapsed_seconds": 4.881073610995372,
+        "child_cpu_seconds": 4.922174,
+        "peak_rss_bytes": 232210432,
+        "cold_process_wall_seconds": 4.946419160994992
+      },
+      "check_speedup": 5.172972226299849
+    },
+    {
+      "case_id": "near_collinear_b0_direction",
+      "mode": "4d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 14055,
+      "v1": {
+        "kernel": "v1",
+        "index": 16,
+        "case_id": "near_collinear_b0_direction",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "3d7f72c23f3cb913291b5762ed26da5a3f7d2c71f9ff78cfb0603ebe0a7ef4f8",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 7027,
+            "OUTSIDE": 3590,
+            "INSIDE": 33,
+            "UNDECIDED": 3405,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "d0505c957a59e57b696d6c7519f6b76bf004525831eaed1f4eec5495211fb625",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "a6dc0c1a7ef9d57752c7fd21c1f117e6773973c5a5e934d54dda5d224d3d0c7e",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 14055,
+        "import_seconds": 0.015493922001041938,
+        "load_seconds": 0.0360678039942286,
+        "check_seconds": 4.375333021002007,
+        "child_elapsed_seconds": 4.426894746997277,
+        "child_cpu_seconds": 4.43781,
+        "peak_rss_bytes": 54407168,
+        "cold_process_wall_seconds": 4.446346257005644
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 16,
+        "case_id": "near_collinear_b0_direction",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "3d7f72c23f3cb913291b5762ed26da5a3f7d2c71f9ff78cfb0603ebe0a7ef4f8",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 7027,
+            "OUTSIDE": 3590,
+            "INSIDE": 33,
+            "UNDECIDED": 3405,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "d0505c957a59e57b696d6c7519f6b76bf004525831eaed1f4eec5495211fb625",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "a6dc0c1a7ef9d57752c7fd21c1f117e6773973c5a5e934d54dda5d224d3d0c7e",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 14055,
+        "import_seconds": 0.018028016995231155,
+        "load_seconds": 0.03440938600397203,
+        "check_seconds": 0.8530419460003031,
+        "child_elapsed_seconds": 0.9054793489995063,
+        "child_cpu_seconds": 0.9166279999999999,
+        "peak_rss_bytes": 54181888,
+        "cold_process_wall_seconds": 0.9242945389996748
+      },
+      "check_speedup": 5.1290948135866365
+    },
+    {
+      "case_id": "near_collinear_b0_direction",
+      "mode": "no_peer",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 15427,
+      "v1": {
+        "kernel": "v1",
+        "index": 17,
+        "case_id": "near_collinear_b0_direction",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "3d7f72c23f3cb913291b5762ed26da5a3f7d2c71f9ff78cfb0603ebe0a7ef4f8",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 7713,
+            "OUTSIDE": 3525,
+            "INSIDE": 25,
+            "UNDECIDED": 4164,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "a537846966ecc8135e150c59a2a3c70fbf050c80762a08f8b84a156dd9596215",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 15427,
+        "import_seconds": 0.015014952994533814,
+        "load_seconds": 0.039092815000913106,
+        "check_seconds": 4.435621692005952,
+        "child_elapsed_seconds": 4.489729460001399,
+        "child_cpu_seconds": 4.501487,
+        "peak_rss_bytes": 59011072,
+        "cold_process_wall_seconds": 4.509231819996785
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 17,
+        "case_id": "near_collinear_b0_direction",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "3d7f72c23f3cb913291b5762ed26da5a3f7d2c71f9ff78cfb0603ebe0a7ef4f8",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 7713,
+            "OUTSIDE": 3525,
+            "INSIDE": 25,
+            "UNDECIDED": 4164,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "a537846966ecc8135e150c59a2a3c70fbf050c80762a08f8b84a156dd9596215",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 15427,
+        "import_seconds": 0.01869108999380842,
+        "load_seconds": 0.039290199005336035,
+        "check_seconds": 0.6003617030000896,
+        "child_elapsed_seconds": 0.6583429919992341,
+        "child_cpu_seconds": 0.670049,
+        "peak_rss_bytes": 58953728,
+        "cold_process_wall_seconds": 0.6784531720040832
+      },
+      "check_speedup": 7.3882489003554745
+    },
+    {
+      "case_id": "near_collinear_b6_zero",
+      "mode": "5d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 75647,
+      "v1": {
+        "kernel": "v1",
+        "index": 18,
+        "case_id": "near_collinear_b6_zero",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "d5824d5e736dda40c59dfc67936246549db1548bb7b80575f00118a5bc7aa93d",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 37823,
+            "OUTSIDE": 12177,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 25647
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "040531fdb3f0eff020cae8dedc429e8ca012eafab9eebbfa16534b9a69bfde40",
+        "queue_hash": "6871fe5f3b041d598c8001433d024565a4036db9d15aa90b03bbdc3000e98c7c",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 75647,
+        "import_seconds": 0.015714139000920113,
+        "load_seconds": 0.5479005449960823,
+        "check_seconds": 23.909387197003525,
+        "child_elapsed_seconds": 24.473001881000528,
+        "child_cpu_seconds": 24.518220999999997,
+        "peak_rss_bytes": 261390336,
+        "cold_process_wall_seconds": 24.543714999999793
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 18,
+        "case_id": "near_collinear_b6_zero",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "d5824d5e736dda40c59dfc67936246549db1548bb7b80575f00118a5bc7aa93d",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 37823,
+            "OUTSIDE": 12177,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 25647
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "040531fdb3f0eff020cae8dedc429e8ca012eafab9eebbfa16534b9a69bfde40",
+        "queue_hash": "6871fe5f3b041d598c8001433d024565a4036db9d15aa90b03bbdc3000e98c7c",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 75647,
+        "import_seconds": 0.018081283000356052,
+        "load_seconds": 0.5318725269971765,
+        "check_seconds": 4.5897699689958245,
+        "child_elapsed_seconds": 5.139723778993357,
+        "child_cpu_seconds": 5.186755,
+        "peak_rss_bytes": 248958976,
+        "cold_process_wall_seconds": 5.216119481003261
+      },
+      "check_speedup": 5.20927788506023
+    },
+    {
+      "case_id": "near_collinear_b6_zero",
+      "mode": "4d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 22027,
+      "v1": {
+        "kernel": "v1",
+        "index": 19,
+        "case_id": "near_collinear_b6_zero",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "d5824d5e736dda40c59dfc67936246549db1548bb7b80575f00118a5bc7aa93d",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 11013,
+            "OUTSIDE": 4774,
+            "INSIDE": 198,
+            "UNDECIDED": 6042,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "e42847612c16f17e1981645b9aa47c055bc8964debe9cf544cd7d3e660680093",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4ec3b465e77758218313f7bad851f2b2aa6ce8beb8ed45c8b5c391838099d6f2",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 22027,
+        "import_seconds": 0.015440611001395155,
+        "load_seconds": 0.0755078299989691,
+        "check_seconds": 6.861261437996291,
+        "child_elapsed_seconds": 6.952209878996655,
+        "child_cpu_seconds": 6.966965,
+        "peak_rss_bytes": 81330176,
+        "cold_process_wall_seconds": 6.978742995001085
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 19,
+        "case_id": "near_collinear_b6_zero",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "d5824d5e736dda40c59dfc67936246549db1548bb7b80575f00118a5bc7aa93d",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 11013,
+            "OUTSIDE": 4774,
+            "INSIDE": 198,
+            "UNDECIDED": 6042,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "e42847612c16f17e1981645b9aa47c055bc8964debe9cf544cd7d3e660680093",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4ec3b465e77758218313f7bad851f2b2aa6ce8beb8ed45c8b5c391838099d6f2",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 22027,
+        "import_seconds": 0.018856373004382476,
+        "load_seconds": 0.08033772099588532,
+        "check_seconds": 1.3545315510054934,
+        "child_elapsed_seconds": 1.4537256450057612,
+        "child_cpu_seconds": 1.468481,
+        "peak_rss_bytes": 80076800,
+        "cold_process_wall_seconds": 1.477395700996567
+      },
+      "check_speedup": 5.065412786363708
+    },
+    {
+      "case_id": "near_collinear_b6_zero",
+      "mode": "no_peer",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 20359,
+      "v1": {
+        "kernel": "v1",
+        "index": 20,
+        "case_id": "near_collinear_b6_zero",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "d5824d5e736dda40c59dfc67936246549db1548bb7b80575f00118a5bc7aa93d",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 10179,
+            "OUTSIDE": 4505,
+            "INSIDE": 162,
+            "UNDECIDED": 5513,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "7029164039fd36cce6d9970abc354f6c5fc8d4f07eac85b5f45a6f1b08b733c7",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 20359,
+        "import_seconds": 0.01492747500014957,
+        "load_seconds": 0.06781079500069609,
+        "check_seconds": 5.874831487002666,
+        "child_elapsed_seconds": 5.957569757003512,
+        "child_cpu_seconds": 5.971272,
+        "peak_rss_bytes": 75980800,
+        "cold_process_wall_seconds": 5.980176773999119
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 20,
+        "case_id": "near_collinear_b6_zero",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "d5824d5e736dda40c59dfc67936246549db1548bb7b80575f00118a5bc7aa93d",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 10179,
+            "OUTSIDE": 4505,
+            "INSIDE": 162,
+            "UNDECIDED": 5513,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "7029164039fd36cce6d9970abc354f6c5fc8d4f07eac85b5f45a6f1b08b733c7",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 20359,
+        "import_seconds": 0.018362082999374252,
+        "load_seconds": 0.07125560299755307,
+        "check_seconds": 0.7596595440045348,
+        "child_elapsed_seconds": 0.8492772300014622,
+        "child_cpu_seconds": 0.863555,
+        "peak_rss_bytes": 74674176,
+        "cold_process_wall_seconds": 0.8739669940041495
+      },
+      "check_speedup": 7.733505796601426
+    },
+    {
+      "case_id": "near_collinear_b6_direction",
+      "mode": "5d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 73747,
+      "v1": {
+        "kernel": "v1",
+        "index": 21,
+        "case_id": "near_collinear_b6_direction",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "cd5fad22da40a37ae7d9b0a7aa30ba38668d75ae0fc32afa8d69bbe31c8764ac",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 36873,
+            "OUTSIDE": 13127,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 23747
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "5cd14cf20594be382259f470df7e0de68b9c01770a4188418f3bedf54c694d64",
+        "queue_hash": "9f39e8e7892893cd5ca0637b0f90657375ef8a8bbf51a5b56203fb72f4147e29",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 73747,
+        "import_seconds": 0.0158337870016112,
+        "load_seconds": 0.5372189319969038,
+        "check_seconds": 23.511662206001347,
+        "child_elapsed_seconds": 24.064714924999862,
+        "child_cpu_seconds": 24.106668,
+        "peak_rss_bytes": 251117568,
+        "cold_process_wall_seconds": 24.133966253000835
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 21,
+        "case_id": "near_collinear_b6_direction",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "cd5fad22da40a37ae7d9b0a7aa30ba38668d75ae0fc32afa8d69bbe31c8764ac",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 36873,
+            "OUTSIDE": 13127,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 23747
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "5cd14cf20594be382259f470df7e0de68b9c01770a4188418f3bedf54c694d64",
+        "queue_hash": "9f39e8e7892893cd5ca0637b0f90657375ef8a8bbf51a5b56203fb72f4147e29",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 73747,
+        "import_seconds": 0.018185131004429422,
+        "load_seconds": 0.5555170549996546,
+        "check_seconds": 4.431578559000627,
+        "child_elapsed_seconds": 5.005280745004711,
+        "child_cpu_seconds": 5.048971,
+        "peak_rss_bytes": 239755264,
+        "cold_process_wall_seconds": 5.0777027619988075
+      },
+      "check_speedup": 5.305482435428946
+    },
+    {
+      "case_id": "near_collinear_b6_direction",
+      "mode": "4d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 16631,
+      "v1": {
+        "kernel": "v1",
+        "index": 22,
+        "case_id": "near_collinear_b6_direction",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "cd5fad22da40a37ae7d9b0a7aa30ba38668d75ae0fc32afa8d69bbe31c8764ac",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 8315,
+            "OUTSIDE": 3773,
+            "INSIDE": 38,
+            "UNDECIDED": 4505,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "a7b3b3a1bcea996549b6c8b40d7a46adb37a274532b6378f857e27442374e686",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "a6dc0c1a7ef9d57752c7fd21c1f117e6773973c5a5e934d54dda5d224d3d0c7e",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 16631,
+        "import_seconds": 0.0159484789983253,
+        "load_seconds": 0.04593601899978239,
+        "check_seconds": 5.197973751004611,
+        "child_elapsed_seconds": 5.259858249002718,
+        "child_cpu_seconds": 5.2721160000000005,
+        "peak_rss_bytes": 62341120,
+        "cold_process_wall_seconds": 5.282014153999626
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 22,
+        "case_id": "near_collinear_b6_direction",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "cd5fad22da40a37ae7d9b0a7aa30ba38668d75ae0fc32afa8d69bbe31c8764ac",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 8315,
+            "OUTSIDE": 3773,
+            "INSIDE": 38,
+            "UNDECIDED": 4505,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "a7b3b3a1bcea996549b6c8b40d7a46adb37a274532b6378f857e27442374e686",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "a6dc0c1a7ef9d57752c7fd21c1f117e6773973c5a5e934d54dda5d224d3d0c7e",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 16631,
+        "import_seconds": 0.01883288899989566,
+        "load_seconds": 0.04224955699464772,
+        "check_seconds": 1.0033612000042922,
+        "child_elapsed_seconds": 1.0644436459988356,
+        "child_cpu_seconds": 1.076936,
+        "peak_rss_bytes": 61460480,
+        "cold_process_wall_seconds": 1.0855438639991917
+      },
+      "check_speedup": 5.180560849853846
+    },
+    {
+      "case_id": "near_collinear_b6_direction",
+      "mode": "no_peer",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 15427,
+      "v1": {
+        "kernel": "v1",
+        "index": 23,
+        "case_id": "near_collinear_b6_direction",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "cd5fad22da40a37ae7d9b0a7aa30ba38668d75ae0fc32afa8d69bbe31c8764ac",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 7713,
+            "OUTSIDE": 3525,
+            "INSIDE": 25,
+            "UNDECIDED": 4164,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "a537846966ecc8135e150c59a2a3c70fbf050c80762a08f8b84a156dd9596215",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 15427,
+        "import_seconds": 0.015087699997820891,
+        "load_seconds": 0.03883844600204611,
+        "check_seconds": 4.431031291998806,
+        "child_elapsed_seconds": 4.484957437998673,
+        "child_cpu_seconds": 4.49707,
+        "peak_rss_bytes": 58998784,
+        "cold_process_wall_seconds": 4.506307206000201
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 23,
+        "case_id": "near_collinear_b6_direction",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "cd5fad22da40a37ae7d9b0a7aa30ba38668d75ae0fc32afa8d69bbe31c8764ac",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 7713,
+            "OUTSIDE": 3525,
+            "INSIDE": 25,
+            "UNDECIDED": 4164,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "a537846966ecc8135e150c59a2a3c70fbf050c80762a08f8b84a156dd9596215",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 15427,
+        "import_seconds": 0.01809283199690981,
+        "load_seconds": 0.03807959100231528,
+        "check_seconds": 0.6055802490009228,
+        "child_elapsed_seconds": 0.6617526720001479,
+        "child_cpu_seconds": 0.673884,
+        "peak_rss_bytes": 58589184,
+        "cold_process_wall_seconds": 0.6816687210011878
+      },
+      "check_speedup": 7.317001007395891
+    },
+    {
+      "case_id": "collinear_b0_zero",
+      "mode": "5d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 72639,
+      "v1": {
+        "kernel": "v1",
+        "index": 24,
+        "case_id": "collinear_b0_zero",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "f0885cd3f43761e27cc351e348b6c14c87efcfbbba2d983909da84b7b7dac697",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 36319,
+            "OUTSIDE": 13678,
+            "INSIDE": 3,
+            "UNDECIDED": 0,
+            "PENDING": 22639
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "27e9874aae03ce5bf573979cf85898812a3ca0eec219e26f50b2582c258fb1fa",
+        "queue_hash": "4c716ed66939b9134b0a3333a0096867ff1ddad532b0c99e0c176f0f71a6e9c4",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 72639,
+        "import_seconds": 0.015141590003622696,
+        "load_seconds": 0.5288940009995713,
+        "check_seconds": 23.866555257998698,
+        "child_elapsed_seconds": 24.410590849001892,
+        "child_cpu_seconds": 24.450537,
+        "peak_rss_bytes": 245166080,
+        "cold_process_wall_seconds": 24.47738328300329
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 24,
+        "case_id": "collinear_b0_zero",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "f0885cd3f43761e27cc351e348b6c14c87efcfbbba2d983909da84b7b7dac697",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 36319,
+            "OUTSIDE": 13678,
+            "INSIDE": 3,
+            "UNDECIDED": 0,
+            "PENDING": 22639
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "27e9874aae03ce5bf573979cf85898812a3ca0eec219e26f50b2582c258fb1fa",
+        "queue_hash": "4c716ed66939b9134b0a3333a0096867ff1ddad532b0c99e0c176f0f71a6e9c4",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 72639,
+        "import_seconds": 0.01875493099942105,
+        "load_seconds": 0.5362261000045692,
+        "check_seconds": 4.629302661996917,
+        "child_elapsed_seconds": 5.184283693000907,
+        "child_cpu_seconds": 5.226025999999999,
+        "peak_rss_bytes": 234418176,
+        "cold_process_wall_seconds": 5.250516523999977
+      },
+      "check_speedup": 5.15554004578813
+    },
+    {
+      "case_id": "collinear_b0_zero",
+      "mode": "4d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 16901,
+      "v1": {
+        "kernel": "v1",
+        "index": 25,
+        "case_id": "collinear_b0_zero",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "f0885cd3f43761e27cc351e348b6c14c87efcfbbba2d983909da84b7b7dac697",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 8450,
+            "OUTSIDE": 4181,
+            "INSIDE": 120,
+            "UNDECIDED": 4150,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "145227b40186d5037ee251e52962ec2ba9014637e168afff522bea8d763b46a5",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "007e04270c8f7fc03092787b3e22b84acd2a8f5142e5ad5e0aa1173a70f15096",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 16901,
+        "import_seconds": 0.01574210700346157,
+        "load_seconds": 0.04588390599383274,
+        "check_seconds": 5.167543775001832,
+        "child_elapsed_seconds": 5.229169787999126,
+        "child_cpu_seconds": 5.240788,
+        "peak_rss_bytes": 61870080,
+        "cold_process_wall_seconds": 5.2509721480018925
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 25,
+        "case_id": "collinear_b0_zero",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "f0885cd3f43761e27cc351e348b6c14c87efcfbbba2d983909da84b7b7dac697",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 8450,
+            "OUTSIDE": 4181,
+            "INSIDE": 120,
+            "UNDECIDED": 4150,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "145227b40186d5037ee251e52962ec2ba9014637e168afff522bea8d763b46a5",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "007e04270c8f7fc03092787b3e22b84acd2a8f5142e5ad5e0aa1173a70f15096",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 16901,
+        "import_seconds": 0.018209639005362988,
+        "load_seconds": 0.0418333419947885,
+        "check_seconds": 1.0417819020003662,
+        "child_elapsed_seconds": 1.1018248830005177,
+        "child_cpu_seconds": 1.115847,
+        "peak_rss_bytes": 61710336,
+        "cold_process_wall_seconds": 1.123088018000999
+      },
+      "check_speedup": 4.960293286991671
+    },
+    {
+      "case_id": "collinear_b0_zero",
+      "mode": "no_peer",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 20909,
+      "v1": {
+        "kernel": "v1",
+        "index": 26,
+        "case_id": "collinear_b0_zero",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "f0885cd3f43761e27cc351e348b6c14c87efcfbbba2d983909da84b7b7dac697",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 10454,
+            "OUTSIDE": 4551,
+            "INSIDE": 172,
+            "UNDECIDED": 5732,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "5cd517fed4cbfca09e2d8866eacc9d5bbdc2680002e89adde4855101fc2ee82c",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 20909,
+        "import_seconds": 0.015096911003638525,
+        "load_seconds": 0.07067850600287784,
+        "check_seconds": 6.026919986994471,
+        "child_elapsed_seconds": 6.112695404000988,
+        "child_cpu_seconds": 6.126946,
+        "peak_rss_bytes": 77455360,
+        "cold_process_wall_seconds": 6.137468390996219
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 26,
+        "case_id": "collinear_b0_zero",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "f0885cd3f43761e27cc351e348b6c14c87efcfbbba2d983909da84b7b7dac697",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 10454,
+            "OUTSIDE": 4551,
+            "INSIDE": 172,
+            "UNDECIDED": 5732,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "5cd517fed4cbfca09e2d8866eacc9d5bbdc2680002e89adde4855101fc2ee82c",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 20909,
+        "import_seconds": 0.018797616998199373,
+        "load_seconds": 0.07470144900435116,
+        "check_seconds": 0.7621013399984804,
+        "child_elapsed_seconds": 0.8556004060010309,
+        "child_cpu_seconds": 0.8699359999999999,
+        "peak_rss_bytes": 76189696,
+        "cold_process_wall_seconds": 0.8804087890021037
+      },
+      "check_speedup": 7.908292074393268
+    },
+    {
+      "case_id": "collinear_b0_direction",
+      "mode": "5d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 71855,
+      "v1": {
+        "kernel": "v1",
+        "index": 27,
+        "case_id": "collinear_b0_direction",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "35a9a6d6b1b322d6eae95cb25cdba38936c4dd618bf7eece0b59442d2b005be5",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 35927,
+            "OUTSIDE": 14073,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 21855
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "1e527c23ce37659627a6e893fdd89983b39c71d6dd1dc1f2b4bc907d2c6680d1",
+        "queue_hash": "701049a3087d8492635d136dc1465aec1621d3ceee6b4a38a2d2a5838c51aa0e",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 71855,
+        "import_seconds": 0.015384792000986636,
+        "load_seconds": 0.42415281500143465,
+        "check_seconds": 22.96575325599406,
+        "child_elapsed_seconds": 23.40529086299648,
+        "child_cpu_seconds": 23.443899000000002,
+        "peak_rss_bytes": 240943104,
+        "cold_process_wall_seconds": 23.472191966997343
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 27,
+        "case_id": "collinear_b0_direction",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "35a9a6d6b1b322d6eae95cb25cdba38936c4dd618bf7eece0b59442d2b005be5",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 35927,
+            "OUTSIDE": 14073,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 21855
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "1e527c23ce37659627a6e893fdd89983b39c71d6dd1dc1f2b4bc907d2c6680d1",
+        "queue_hash": "701049a3087d8492635d136dc1465aec1621d3ceee6b4a38a2d2a5838c51aa0e",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 71855,
+        "import_seconds": 0.018071757003781386,
+        "load_seconds": 0.4347400589977042,
+        "check_seconds": 4.523669201000303,
+        "child_elapsed_seconds": 4.976481017001788,
+        "child_cpu_seconds": 5.016764,
+        "peak_rss_bytes": 230694912,
+        "cold_process_wall_seconds": 5.044083688997489
+      },
+      "check_speedup": 5.076797669227388
+    },
+    {
+      "case_id": "collinear_b0_direction",
+      "mode": "4d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 15593,
+      "v1": {
+        "kernel": "v1",
+        "index": 28,
+        "case_id": "collinear_b0_direction",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "35a9a6d6b1b322d6eae95cb25cdba38936c4dd618bf7eece0b59442d2b005be5",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 7796,
+            "OUTSIDE": 3885,
+            "INSIDE": 64,
+            "UNDECIDED": 3848,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "cd17f289bca0cd1526e15af8e265b74f0cc8e427a4bb645c45833e6e7931de61",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "b940fe9246c5f97c5ced54e6ff218d93df0ffd05bcf4cf50bd9ae96408a97804",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 15593,
+        "import_seconds": 0.016208158995141275,
+        "load_seconds": 0.039592043998709414,
+        "check_seconds": 4.828865134004445,
+        "child_elapsed_seconds": 4.884665336998296,
+        "child_cpu_seconds": 4.895797,
+        "peak_rss_bytes": 58339328,
+        "cold_process_wall_seconds": 4.903048968000803
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 28,
+        "case_id": "collinear_b0_direction",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "35a9a6d6b1b322d6eae95cb25cdba38936c4dd618bf7eece0b59442d2b005be5",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 7796,
+            "OUTSIDE": 3885,
+            "INSIDE": 64,
+            "UNDECIDED": 3848,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "cd17f289bca0cd1526e15af8e265b74f0cc8e427a4bb645c45833e6e7931de61",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "b940fe9246c5f97c5ced54e6ff218d93df0ffd05bcf4cf50bd9ae96408a97804",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 15593,
+        "import_seconds": 0.01886373999877833,
+        "load_seconds": 0.04072466300567612,
+        "check_seconds": 0.9395686079951702,
+        "child_elapsed_seconds": 0.9991570109996246,
+        "child_cpu_seconds": 1.0104229999999998,
+        "peak_rss_bytes": 58142720,
+        "cold_process_wall_seconds": 1.0187366799946176
+      },
+      "check_speedup": 5.139449203510711
+    },
+    {
+      "case_id": "collinear_b0_direction",
+      "mode": "no_peer",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 17221,
+      "v1": {
+        "kernel": "v1",
+        "index": 29,
+        "case_id": "collinear_b0_direction",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "35a9a6d6b1b322d6eae95cb25cdba38936c4dd618bf7eece0b59442d2b005be5",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 8610,
+            "OUTSIDE": 3775,
+            "INSIDE": 76,
+            "UNDECIDED": 4760,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "b1c399b29f5c0f531af22b05f1a55ac172ddd71eebd23050f2b96ac63234a01b",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 17221,
+        "import_seconds": 0.015965172002324834,
+        "load_seconds": 0.0454260289989179,
+        "check_seconds": 4.882609749001858,
+        "child_elapsed_seconds": 4.944000950003101,
+        "child_cpu_seconds": 4.956601,
+        "peak_rss_bytes": 64286720,
+        "cold_process_wall_seconds": 4.964660401994479
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 29,
+        "case_id": "collinear_b0_direction",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "35a9a6d6b1b322d6eae95cb25cdba38936c4dd618bf7eece0b59442d2b005be5",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 8610,
+            "OUTSIDE": 3775,
+            "INSIDE": 76,
+            "UNDECIDED": 4760,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "b1c399b29f5c0f531af22b05f1a55ac172ddd71eebd23050f2b96ac63234a01b",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 17221,
+        "import_seconds": 0.01811329199699685,
+        "load_seconds": 0.042978648001735564,
+        "check_seconds": 0.6635846560020582,
+        "child_elapsed_seconds": 0.7246765960007906,
+        "child_cpu_seconds": 0.7379479999999999,
+        "peak_rss_bytes": 63459328,
+        "cold_process_wall_seconds": 0.7454835060052574
+      },
+      "check_speedup": 7.3579304536943875
+    },
+    {
+      "case_id": "collinear_b6_zero",
+      "mode": "5d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 75537,
+      "v1": {
+        "kernel": "v1",
+        "index": 30,
+        "case_id": "collinear_b6_zero",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "c7ac9090fe9327c2c1712ecd586ab3149bcdd3ca64742b1aea174f96d165d53b",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 37768,
+            "OUTSIDE": 12232,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 25537
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "96301ddbff4c1aa61e2c6be6e02e684dba657fbe654d03c8b229ec42d44ed246",
+        "queue_hash": "c1057b1c3686a426c851ea5f3696a1d25830649ffecd42811a7192fb1cbeea68",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 75537,
+        "import_seconds": 0.016049600999394897,
+        "load_seconds": 0.5219748050003545,
+        "check_seconds": 23.584062360001553,
+        "child_elapsed_seconds": 24.122086766001303,
+        "child_cpu_seconds": 24.166231,
+        "peak_rss_bytes": 260747264,
+        "cold_process_wall_seconds": 24.19723496700317
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 30,
+        "case_id": "collinear_b6_zero",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "c7ac9090fe9327c2c1712ecd586ab3149bcdd3ca64742b1aea174f96d165d53b",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 37768,
+            "OUTSIDE": 12232,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 25537
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "96301ddbff4c1aa61e2c6be6e02e684dba657fbe654d03c8b229ec42d44ed246",
+        "queue_hash": "c1057b1c3686a426c851ea5f3696a1d25830649ffecd42811a7192fb1cbeea68",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 75537,
+        "import_seconds": 0.01876424100191798,
+        "load_seconds": 0.5309663559964974,
+        "check_seconds": 4.485846367999329,
+        "child_elapsed_seconds": 5.035576964997745,
+        "child_cpu_seconds": 5.081379,
+        "peak_rss_bytes": 248291328,
+        "cold_process_wall_seconds": 5.110769832994265
+      },
+      "check_speedup": 5.25743871396112
+    },
+    {
+      "case_id": "collinear_b6_zero",
+      "mode": "4d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 22157,
+      "v1": {
+        "kernel": "v1",
+        "index": 31,
+        "case_id": "collinear_b6_zero",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "c7ac9090fe9327c2c1712ecd586ab3149bcdd3ca64742b1aea174f96d165d53b",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 11078,
+            "OUTSIDE": 4745,
+            "INSIDE": 214,
+            "UNDECIDED": 6120,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "bdceb84fb9ed70622462a596e730b0e1154783b4c50d1d5f87fb15d67f86ab3b",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "007e04270c8f7fc03092787b3e22b84acd2a8f5142e5ad5e0aa1173a70f15096",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 22157,
+        "import_seconds": 0.01571374599734554,
+        "load_seconds": 0.07711973800178384,
+        "check_seconds": 6.943493321996357,
+        "child_elapsed_seconds": 7.036326805995486,
+        "child_cpu_seconds": 7.0511870000000005,
+        "peak_rss_bytes": 81768448,
+        "cold_process_wall_seconds": 7.061809489001462
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 31,
+        "case_id": "collinear_b6_zero",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "c7ac9090fe9327c2c1712ecd586ab3149bcdd3ca64742b1aea174f96d165d53b",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 11078,
+            "OUTSIDE": 4745,
+            "INSIDE": 214,
+            "UNDECIDED": 6120,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "bdceb84fb9ed70622462a596e730b0e1154783b4c50d1d5f87fb15d67f86ab3b",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "007e04270c8f7fc03092787b3e22b84acd2a8f5142e5ad5e0aa1173a70f15096",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 22157,
+        "import_seconds": 0.01882624399877386,
+        "load_seconds": 0.07443133999913698,
+        "check_seconds": 1.3487040100008016,
+        "child_elapsed_seconds": 1.4419615939987125,
+        "child_cpu_seconds": 1.456893,
+        "peak_rss_bytes": 80470016,
+        "cold_process_wall_seconds": 1.4664860789998784
+      },
+      "check_speedup": 5.1482706883864235
+    },
+    {
+      "case_id": "collinear_b6_zero",
+      "mode": "no_peer",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 20909,
+      "v1": {
+        "kernel": "v1",
+        "index": 32,
+        "case_id": "collinear_b6_zero",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "c7ac9090fe9327c2c1712ecd586ab3149bcdd3ca64742b1aea174f96d165d53b",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 10454,
+            "OUTSIDE": 4551,
+            "INSIDE": 172,
+            "UNDECIDED": 5732,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "5cd517fed4cbfca09e2d8866eacc9d5bbdc2680002e89adde4855101fc2ee82c",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 20909,
+        "import_seconds": 0.0151144419942284,
+        "load_seconds": 0.0720864730028552,
+        "check_seconds": 6.052538046998961,
+        "child_elapsed_seconds": 6.139738961996045,
+        "child_cpu_seconds": 6.153926,
+        "peak_rss_bytes": 77459456,
+        "cold_process_wall_seconds": 6.165239371002826
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 32,
+        "case_id": "collinear_b6_zero",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "c7ac9090fe9327c2c1712ecd586ab3149bcdd3ca64742b1aea174f96d165d53b",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 10454,
+            "OUTSIDE": 4551,
+            "INSIDE": 172,
+            "UNDECIDED": 5732,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "5cd517fed4cbfca09e2d8866eacc9d5bbdc2680002e89adde4855101fc2ee82c",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 20909,
+        "import_seconds": 0.018741975000011735,
+        "load_seconds": 0.0729372260029777,
+        "check_seconds": 0.7634900349949021,
+        "child_elapsed_seconds": 0.8551692359978915,
+        "child_cpu_seconds": 0.869458,
+        "peak_rss_bytes": 76136448,
+        "cold_process_wall_seconds": 0.8792827409997699
+      },
+      "check_speedup": 7.927461747473069
+    },
+    {
+      "case_id": "collinear_b6_direction",
+      "mode": "5d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 74397,
+      "v1": {
+        "kernel": "v1",
+        "index": 33,
+        "case_id": "collinear_b6_direction",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "7909e2cfc7f49667c3ffbc7a7a6e42b8387159e820c638718090481a13424f43",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 37198,
+            "OUTSIDE": 12802,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 24397
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "faafa4588e19fac1ff65b180b1658ce2bf762fa8b4bc15851c0e6bebd7825dbe",
+        "queue_hash": "e817505e43ebe8574b1781f549de4622368ef7565396c615f6ac3a0922655aab",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 74397,
+        "import_seconds": 0.015204233997792471,
+        "load_seconds": 0.5480076449966873,
+        "check_seconds": 23.252239662004285,
+        "child_elapsed_seconds": 23.815451540998765,
+        "child_cpu_seconds": 23.858121999999998,
+        "peak_rss_bytes": 254742528,
+        "cold_process_wall_seconds": 23.887220399999933
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 33,
+        "case_id": "collinear_b6_direction",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "7909e2cfc7f49667c3ffbc7a7a6e42b8387159e820c638718090481a13424f43",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 37198,
+            "OUTSIDE": 12802,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 24397
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "faafa4588e19fac1ff65b180b1658ce2bf762fa8b4bc15851c0e6bebd7825dbe",
+        "queue_hash": "e817505e43ebe8574b1781f549de4622368ef7565396c615f6ac3a0922655aab",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 74397,
+        "import_seconds": 0.018145309993997216,
+        "load_seconds": 0.5549974200039287,
+        "check_seconds": 4.482051437997143,
+        "child_elapsed_seconds": 5.055194167995069,
+        "child_cpu_seconds": 5.100906,
+        "peak_rss_bytes": 242987008,
+        "cold_process_wall_seconds": 5.126577843999257
+      },
+      "check_speedup": 5.187856494657907
+    },
+    {
+      "case_id": "collinear_b6_direction",
+      "mode": "4d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 18461,
+      "v1": {
+        "kernel": "v1",
+        "index": 34,
+        "case_id": "collinear_b6_direction",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "7909e2cfc7f49667c3ffbc7a7a6e42b8387159e820c638718090481a13424f43",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 9230,
+            "OUTSIDE": 4145,
+            "INSIDE": 86,
+            "UNDECIDED": 5000,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "3c777517b9e835a21755a5550cd98555a67cc296faeeafc42ea2e8a58e7e16e8",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "b940fe9246c5f97c5ced54e6ff218d93df0ffd05bcf4cf50bd9ae96408a97804",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 18461,
+        "import_seconds": 0.014997988000686746,
+        "load_seconds": 0.04617061199678574,
+        "check_seconds": 5.70106835700426,
+        "child_elapsed_seconds": 5.762236957001733,
+        "child_cpu_seconds": 5.7751790000000005,
+        "peak_rss_bytes": 66973696,
+        "cold_process_wall_seconds": 5.783472591996542
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 34,
+        "case_id": "collinear_b6_direction",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "7909e2cfc7f49667c3ffbc7a7a6e42b8387159e820c638718090481a13424f43",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 9230,
+            "OUTSIDE": 4145,
+            "INSIDE": 86,
+            "UNDECIDED": 5000,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "3c777517b9e835a21755a5550cd98555a67cc296faeeafc42ea2e8a58e7e16e8",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "b940fe9246c5f97c5ced54e6ff218d93df0ffd05bcf4cf50bd9ae96408a97804",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 18461,
+        "import_seconds": 0.01837759400223149,
+        "load_seconds": 0.045099878996552434,
+        "check_seconds": 1.1082667270020465,
+        "child_elapsed_seconds": 1.1717442000008305,
+        "child_cpu_seconds": 1.185559,
+        "peak_rss_bytes": 66322432,
+        "cold_process_wall_seconds": 1.1940238230017712
+      },
+      "check_speedup": 5.144130215319306
+    },
+    {
+      "case_id": "collinear_b6_direction",
+      "mode": "no_peer",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 17221,
+      "v1": {
+        "kernel": "v1",
+        "index": 35,
+        "case_id": "collinear_b6_direction",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "7909e2cfc7f49667c3ffbc7a7a6e42b8387159e820c638718090481a13424f43",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 8610,
+            "OUTSIDE": 3775,
+            "INSIDE": 76,
+            "UNDECIDED": 4760,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "b1c399b29f5c0f531af22b05f1a55ac172ddd71eebd23050f2b96ac63234a01b",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 17221,
+        "import_seconds": 0.01544800299598137,
+        "load_seconds": 0.04455775300448295,
+        "check_seconds": 4.98413955399883,
+        "child_elapsed_seconds": 5.044145309999294,
+        "child_cpu_seconds": 5.05687,
+        "peak_rss_bytes": 64319488,
+        "cold_process_wall_seconds": 5.064946457001497
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 35,
+        "case_id": "collinear_b6_direction",
+        "mode": "no_peer",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "7909e2cfc7f49667c3ffbc7a7a6e42b8387159e820c638718090481a13424f43",
+          "mode": "no_peer",
+          "counts": {
+            "SPLIT": 8610,
+            "OUTSIDE": 3775,
+            "INSIDE": 76,
+            "UNDECIDED": 4760,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "b1c399b29f5c0f531af22b05f1a55ac172ddd71eebd23050f2b96ac63234a01b",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 17221,
+        "import_seconds": 0.018824175996996928,
+        "load_seconds": 0.042777562004630454,
+        "check_seconds": 0.6691936709976289,
+        "child_elapsed_seconds": 0.7307954089992563,
+        "child_cpu_seconds": 0.7439339999999999,
+        "peak_rss_bytes": 63328256,
+        "cold_process_wall_seconds": 0.7534182459930889
+      },
+      "check_speedup": 7.447977723053644
+    },
+    {
+      "case_id": "empty_in_domain",
+      "mode": "5d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 1,
+      "v1": {
+        "kernel": "v1",
+        "index": 36,
+        "case_id": "empty_in_domain",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "3032c827770dfd6fd5bf9665ff7a759b0c3586276eaf4345107b9cf5782c6e0a",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 0,
+            "OUTSIDE": 1,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 0
+          },
+          "status": "EMPTY_IN_DECLARED_DOMAIN",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "e542668ee9a3c1bb40b3ae642bf15ee6fac721a88ccde91bad0e4593b3729caa",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "EMPTY_IN_DECLARED_DOMAIN",
+        "nodes": 1,
+        "import_seconds": 0.015532674005953595,
+        "load_seconds": 0.00042549399950075895,
+        "check_seconds": 0.0011751369966077618,
+        "child_elapsed_seconds": 0.017133305002062116,
+        "child_cpu_seconds": 0.022709,
+        "peak_rss_bytes": 18219008,
+        "cold_process_wall_seconds": 0.025740851000591647
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 36,
+        "case_id": "empty_in_domain",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "3032c827770dfd6fd5bf9665ff7a759b0c3586276eaf4345107b9cf5782c6e0a",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 0,
+            "OUTSIDE": 1,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 0
+          },
+          "status": "EMPTY_IN_DECLARED_DOMAIN",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "e542668ee9a3c1bb40b3ae642bf15ee6fac721a88ccde91bad0e4593b3729caa",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "EMPTY_IN_DECLARED_DOMAIN",
+        "nodes": 1,
+        "import_seconds": 0.018775147997075692,
+        "load_seconds": 0.0004145359998801723,
+        "check_seconds": 0.0011759730041376315,
+        "child_elapsed_seconds": 0.020365657001093496,
+        "child_cpu_seconds": 0.026037,
+        "peak_rss_bytes": 18837504,
+        "cold_process_wall_seconds": 0.029675501995370723
+      },
+      "check_speedup": 0.9992890929239632
+    },
+    {
+      "case_id": "empty_in_domain",
+      "mode": "4d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 1,
+      "v1": {
+        "kernel": "v1",
+        "index": 37,
+        "case_id": "empty_in_domain",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "3032c827770dfd6fd5bf9665ff7a759b0c3586276eaf4345107b9cf5782c6e0a",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 0,
+            "OUTSIDE": 1,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 0
+          },
+          "status": "EMPTY_IN_DECLARED_DOMAIN",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "e542668ee9a3c1bb40b3ae642bf15ee6fac721a88ccde91bad0e4593b3729caa",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "EMPTY_IN_DECLARED_DOMAIN",
+        "nodes": 1,
+        "import_seconds": 0.015850862000661436,
+        "load_seconds": 0.00043729200115194544,
+        "check_seconds": 0.0012132679985370487,
+        "child_elapsed_seconds": 0.01750142200035043,
+        "child_cpu_seconds": 0.023007,
+        "peak_rss_bytes": 18182144,
+        "cold_process_wall_seconds": 0.026272249000612646
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 37,
+        "case_id": "empty_in_domain",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "3032c827770dfd6fd5bf9665ff7a759b0c3586276eaf4345107b9cf5782c6e0a",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 0,
+            "OUTSIDE": 1,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 0
+          },
+          "status": "EMPTY_IN_DECLARED_DOMAIN",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "e542668ee9a3c1bb40b3ae642bf15ee6fac721a88ccde91bad0e4593b3729caa",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "EMPTY_IN_DECLARED_DOMAIN",
+        "nodes": 1,
+        "import_seconds": 0.018478771999070887,
+        "load_seconds": 0.00043446799827506766,
+        "check_seconds": 0.0011758690015994944,
+        "child_elapsed_seconds": 0.02008910899894545,
+        "child_cpu_seconds": 0.025748,
+        "peak_rss_bytes": 18767872,
+        "cold_process_wall_seconds": 0.029662208995432593
+      },
+      "check_speedup": 1.0318054110506203
+    },
+    {
+      "case_id": "domain_closed_contact",
+      "mode": "5d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 9457,
+      "v1": {
+        "kernel": "v1",
+        "index": 38,
+        "case_id": "domain_closed_contact",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "4e8ace2632dad1cd56eb4dff7e77f1e43682708a3bdf994204eda8c31ed14311",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 4728,
+            "OUTSIDE": 1971,
+            "INSIDE": 8,
+            "UNDECIDED": 2750,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "7721f849ecc98ed95ff6a33363d806244ce9957ec204a9bd68bfcbd2e0142341",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 9457,
+        "import_seconds": 0.015157150002778508,
+        "load_seconds": 0.028918695003085304,
+        "check_seconds": 2.8613247350003803,
+        "child_elapsed_seconds": 2.905400580006244,
+        "child_cpu_seconds": 2.914797,
+        "peak_rss_bytes": 45768704,
+        "cold_process_wall_seconds": 2.921503017001669
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 38,
+        "case_id": "domain_closed_contact",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "4e8ace2632dad1cd56eb4dff7e77f1e43682708a3bdf994204eda8c31ed14311",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 4728,
+            "OUTSIDE": 1971,
+            "INSIDE": 8,
+            "UNDECIDED": 2750,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "7721f849ecc98ed95ff6a33363d806244ce9957ec204a9bd68bfcbd2e0142341",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 9457,
+        "import_seconds": 0.01872098400053801,
+        "load_seconds": 0.03245841299940366,
+        "check_seconds": 0.5424153700005263,
+        "child_elapsed_seconds": 0.593594767000468,
+        "child_cpu_seconds": 0.603722,
+        "peak_rss_bytes": 45711360,
+        "cold_process_wall_seconds": 0.6102616750067682
+      },
+      "check_speedup": 5.275154232811662
+    },
+    {
+      "case_id": "domain_closed_contact",
+      "mode": "4d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 2369,
+      "v1": {
+        "kernel": "v1",
+        "index": 39,
+        "case_id": "domain_closed_contact",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "4e8ace2632dad1cd56eb4dff7e77f1e43682708a3bdf994204eda8c31ed14311",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 1184,
+            "OUTSIDE": 547,
+            "INSIDE": 16,
+            "UNDECIDED": 622,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "0c7e185e8dd9ca8420ad1b686b8f51a3bc418e94edd8467491712563d9eefd77",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "711f898a5aa780c99341e3a641810a6ac56cca89266940069f284f5ea6c73098",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 2369,
+        "import_seconds": 0.015338738005084451,
+        "load_seconds": 0.005222075997153297,
+        "check_seconds": 0.7092792940020445,
+        "child_elapsed_seconds": 0.7298401080042822,
+        "child_cpu_seconds": 0.736852,
+        "peak_rss_bytes": 23883776,
+        "cold_process_wall_seconds": 0.7412303849996533
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 39,
+        "case_id": "domain_closed_contact",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "4e8ace2632dad1cd56eb4dff7e77f1e43682708a3bdf994204eda8c31ed14311",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 1184,
+            "OUTSIDE": 547,
+            "INSIDE": 16,
+            "UNDECIDED": 622,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "0c7e185e8dd9ca8420ad1b686b8f51a3bc418e94edd8467491712563d9eefd77",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "711f898a5aa780c99341e3a641810a6ac56cca89266940069f284f5ea6c73098",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 2369,
+        "import_seconds": 0.018946222997328732,
+        "load_seconds": 0.0051709160034079105,
+        "check_seconds": 0.15631625699461438,
+        "child_elapsed_seconds": 0.18043339599535102,
+        "child_cpu_seconds": 0.187161,
+        "peak_rss_bytes": 24842240,
+        "cold_process_wall_seconds": 0.19145532500260742
+      },
+      "check_speedup": 4.537463394012061
+    },
+    {
+      "case_id": "coincident_zero_distance",
+      "mode": "5d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 57479,
+      "v1": {
+        "kernel": "v1",
+        "index": 40,
+        "case_id": "coincident_zero_distance",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "16e210ee6723c7c19b38477f5180fe4384218fc7829d5e027faf16ac1f335968",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 28739,
+            "OUTSIDE": 10314,
+            "INSIDE": 42,
+            "UNDECIDED": 10905,
+            "PENDING": 7479
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "39a6f7da4237250fdab82dcced590f8e367e93565a2370776c0ce6c5eadc2625",
+        "queue_hash": "b6d45250195a632ea6df108c772b53201be7e0daed2a022c1df39b0013b7c3a3",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 57479,
+        "import_seconds": 0.01504711100278655,
+        "load_seconds": 0.38732702800189145,
+        "check_seconds": 18.87584839599731,
+        "child_elapsed_seconds": 19.278222535001987,
+        "child_cpu_seconds": 19.31043,
+        "peak_rss_bytes": 198004736,
+        "cold_process_wall_seconds": 19.334640588000184
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 40,
+        "case_id": "coincident_zero_distance",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "16e210ee6723c7c19b38477f5180fe4384218fc7829d5e027faf16ac1f335968",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 28739,
+            "OUTSIDE": 10314,
+            "INSIDE": 42,
+            "UNDECIDED": 10905,
+            "PENDING": 7479
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "39a6f7da4237250fdab82dcced590f8e367e93565a2370776c0ce6c5eadc2625",
+        "queue_hash": "b6d45250195a632ea6df108c772b53201be7e0daed2a022c1df39b0013b7c3a3",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 57479,
+        "import_seconds": 0.017919982004968915,
+        "load_seconds": 0.3906662849985878,
+        "check_seconds": 3.4544734619994415,
+        "child_elapsed_seconds": 3.863059729002998,
+        "child_cpu_seconds": 3.896368,
+        "peak_rss_bytes": 191315968,
+        "cold_process_wall_seconds": 3.9159192600054666
+      },
+      "check_speedup": 5.464175250914219
+    },
+    {
+      "case_id": "coincident_zero_distance",
+      "mode": "4d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 5891,
+      "v1": {
+        "kernel": "v1",
+        "index": 41,
+        "case_id": "coincident_zero_distance",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "16e210ee6723c7c19b38477f5180fe4384218fc7829d5e027faf16ac1f335968",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 2945,
+            "OUTSIDE": 1300,
+            "INSIDE": 45,
+            "UNDECIDED": 1601,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "66fb8d3ee219430e0a7935879c64c8dda4a4be30bf7e1980635be5d6e0f5c785",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f6ae19035b774717d7c9fe8ee7bf3da69f06f912c794beb7be6fc884911515a",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 5891,
+        "import_seconds": 0.015108431995031424,
+        "load_seconds": 0.013265061003039591,
+        "check_seconds": 1.8101312130020233,
+        "child_elapsed_seconds": 1.8385047060000943,
+        "child_cpu_seconds": 1.846484,
+        "peak_rss_bytes": 34160640,
+        "cold_process_wall_seconds": 1.8513764689996606
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 41,
+        "case_id": "coincident_zero_distance",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "16e210ee6723c7c19b38477f5180fe4384218fc7829d5e027faf16ac1f335968",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 2945,
+            "OUTSIDE": 1300,
+            "INSIDE": 45,
+            "UNDECIDED": 1601,
+            "PENDING": 0
+          },
+          "status": "OUTER_CERTIFIED",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "66fb8d3ee219430e0a7935879c64c8dda4a4be30bf7e1980635be5d6e0f5c785",
+        "queue_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "recovery_hash": "4f6ae19035b774717d7c9fe8ee7bf3da69f06f912c794beb7be6fc884911515a",
+        "region_status": "OUTER_CERTIFIED",
+        "nodes": 5891,
+        "import_seconds": 0.018649798999831546,
+        "load_seconds": 0.01258698199671926,
+        "check_seconds": 0.35897528000350576,
+        "child_elapsed_seconds": 0.39021206100005656,
+        "child_cpu_seconds": 0.39814499999999997,
+        "peak_rss_bytes": 34729984,
+        "cold_process_wall_seconds": 0.40293500699772267
+      },
+      "check_speedup": 5.04249544142523
+    },
+    {
+      "case_id": "forced_budget",
+      "mode": "5d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 3,
+      "v1": {
+        "kernel": "v1",
+        "index": 42,
+        "case_id": "forced_budget",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "ca4aaa85de407cf87f4e183fc7be1b4cd9cf5048acac47589549fa49c1961086",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 1,
+            "OUTSIDE": 0,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 2
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "95f96f8ef02a7123b3c2c92785c9c8e1c2f9f60c08f1e9f7b7480120cb2eaea3",
+        "queue_hash": "53d7f4a048bd0daee134c84d46a9de1de3d4c71942f740eb4f964d3fccbeecf3",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 3,
+        "import_seconds": 0.015417002003232483,
+        "load_seconds": 0.00042275899613741785,
+        "check_seconds": 0.0018355330030317418,
+        "child_elapsed_seconds": 0.017675294002401643,
+        "child_cpu_seconds": 0.023346,
+        "peak_rss_bytes": 18079744,
+        "cold_process_wall_seconds": 0.0263732399980654
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 42,
+        "case_id": "forced_budget",
+        "mode": "5d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "ca4aaa85de407cf87f4e183fc7be1b4cd9cf5048acac47589549fa49c1961086",
+          "mode": "5d",
+          "counts": {
+            "SPLIT": 1,
+            "OUTSIDE": 0,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 2
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "95f96f8ef02a7123b3c2c92785c9c8e1c2f9f60c08f1e9f7b7480120cb2eaea3",
+        "queue_hash": "53d7f4a048bd0daee134c84d46a9de1de3d4c71942f740eb4f964d3fccbeecf3",
+        "recovery_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 3,
+        "import_seconds": 0.018529111999669112,
+        "load_seconds": 0.00038006599788786843,
+        "check_seconds": 0.0014917049993528053,
+        "child_elapsed_seconds": 0.020400882996909786,
+        "child_cpu_seconds": 0.026309,
+        "peak_rss_bytes": 18755584,
+        "cold_process_wall_seconds": 0.02958194600068964
+      },
+      "check_speedup": 1.2304932971519909
+    },
+    {
+      "case_id": "forced_budget",
+      "mode": "4d",
+      "consistency": {
+        "index": true,
+        "case_id": true,
+        "mode": true,
+        "result": true,
+        "projection_hash": true,
+        "queue_hash": true,
+        "recovery_hash": true,
+        "region_status": true,
+        "nodes": true
+      },
+      "all_equal": true,
+      "nodes": 3,
+      "v1": {
+        "kernel": "v1",
+        "index": 43,
+        "case_id": "forced_budget",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "ca4aaa85de407cf87f4e183fc7be1b4cd9cf5048acac47589549fa49c1961086",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 1,
+            "OUTSIDE": 0,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 2
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "95f96f8ef02a7123b3c2c92785c9c8e1c2f9f60c08f1e9f7b7480120cb2eaea3",
+        "queue_hash": "53d7f4a048bd0daee134c84d46a9de1de3d4c71942f740eb4f964d3fccbeecf3",
+        "recovery_hash": "39cc708579260738a71642d44b162f3381d6952341a498fa2c3e5450b4493a30",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 3,
+        "import_seconds": 0.01554844500060426,
+        "load_seconds": 0.0004345820052549243,
+        "check_seconds": 0.0022283590005827136,
+        "child_elapsed_seconds": 0.0182113860064419,
+        "child_cpu_seconds": 0.023742999999999997,
+        "peak_rss_bytes": 18178048,
+        "cold_process_wall_seconds": 0.026881859004788566
+      },
+      "v2": {
+        "kernel": "v2",
+        "index": 43,
+        "case_id": "forced_budget",
+        "mode": "4d",
+        "result": {
+          "certificate_valid": true,
+          "input_hash": "ca4aaa85de407cf87f4e183fc7be1b4cd9cf5048acac47589549fa49c1961086",
+          "mode": "4d",
+          "counts": {
+            "SPLIT": 1,
+            "OUTSIDE": 0,
+            "INSIDE": 0,
+            "UNDECIDED": 0,
+            "PENDING": 2
+          },
+          "status": "BUDGET_OUTER",
+          "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+        },
+        "projection_hash": "95f96f8ef02a7123b3c2c92785c9c8e1c2f9f60c08f1e9f7b7480120cb2eaea3",
+        "queue_hash": "53d7f4a048bd0daee134c84d46a9de1de3d4c71942f740eb4f964d3fccbeecf3",
+        "recovery_hash": "39cc708579260738a71642d44b162f3381d6952341a498fa2c3e5450b4493a30",
+        "region_status": "BUDGET_OUTER",
+        "nodes": 3,
+        "import_seconds": 0.018548761996498797,
+        "load_seconds": 0.0003858010022668168,
+        "check_seconds": 0.0017505290015833452,
+        "child_elapsed_seconds": 0.02068509200034896,
+        "child_cpu_seconds": 0.026198,
+        "peak_rss_bytes": 18665472,
+        "cold_process_wall_seconds": 0.029303556999366265
+      },
+      "check_speedup": 1.272963200590892
+    }
+  ]
+}
