@@ -1,0 +1,20 @@
+{
+  "scope": "All 44 preserved records; sequential zero-search diagnostic measurements, not admission timing",
+  "components": {
+    "b_check_seconds": {
+      "old_zero_search_sum_seconds": 52.122799291035335,
+      "new_zero_search_sum_seconds": 25.906778972996108,
+      "ratio": 2.0119366960039864
+    },
+    "projection_with_audit_seconds": {
+      "old_zero_search_sum_seconds": 46.57595156496973,
+      "new_zero_search_sum_seconds": 10.43073534299765,
+      "ratio": 4.465260600848918
+    },
+    "certificate_conversion_seconds": {
+      "old_zero_search_sum_seconds": 22.757380878996628,
+      "new_zero_search_sum_seconds": 7.852798648993485,
+      "ratio": 2.897996229906328
+    }
+  }
+}
