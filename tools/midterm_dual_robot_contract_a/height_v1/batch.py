@@ -39,7 +39,12 @@ def run(plan_sha,plan_path,evidence_sha,ledger_path):
             row=dict(case_id=entry['case'],mode=mode,reason=status,
                      status='NOT_RUN' if status.startswith('NOT_RUN') else status)
             if row['status']!='NOT_RUN':
-                row.update(input_hash=entry['input_hash'],certificate=entry['certificate'],sha256=entry['sha256'])
+                folder=str(Path(ledger_path).parent/'results'/(entry['case']+'_'+entry['method']))
+                receipt,_=load(evidence_sha,folder+'/receipt.json')
+                archived_input,_=load(evidence_sha,folder+'/input.json')
+                row.update(status='DELIVERED',input_hash=archived_input['input_hash'],
+                           certificate=folder+'/certificate.json.gz',sha256=receipt['certificate_sha256'],
+                           csv=entry,root=receipt['event_root'],archived_input=archived_input)
             ledger.append(row)
     else:
         ledger,ledger_hash=load(evidence_sha,ledger_path)
@@ -64,7 +69,11 @@ def run(plan_sha,plan_path,evidence_sha,ledger_path):
         archived[key]=row
     results=[]
     for case,x in cases.items():
+        shared=x
         for mode in ('4d','no_peer'):
+            x=shared
+            if mode=='no_peer' and ledger_path.endswith('.csv'):
+                x=C.K.seal(dict(shared,**{k:shared[k][:8] for k in ('measurement_ids','observations','variance')}))
             key=case,mode
             item=dict(case_id=case,mode=mode,input_hash=x['input_hash'])
             results.append(item)
@@ -83,6 +92,8 @@ def run(plan_sha,plan_path,evidence_sha,ledger_path):
                 c,checksum=load(evidence_sha,row['certificate'])
                 item.update(certificate=row['certificate'],certificate_sha256=checksum)
                 C.need(c['mode']==mode and checksum==row['sha256'],'ARCHIVE_IDENTITY')
+                if 'csv' in row:
+                    C.need(row['archived_input']==x and row['root']==C.event_root(x),'FROZEN_ORIGINAL_OR_ROOT')
                 verdict=C.check(x,c)
                 item.update(verdict=verdict,queue=c.get('queue',[]),
                             projection_hash=C.K.digest(c.get('projections',{})),
@@ -90,6 +101,17 @@ def run(plan_sha,plan_path,evidence_sha,ledger_path):
                 tolerance=C.q(x['budget']['position_resolution'])
                 item['target_resolution']=not item['queue'] and all(C.q(b)-C.q(a)<=tolerance
                     for n in c.get('nodes',[]) if n['kind']=='UNDECIDED' for a,b in n['box'])
+                if 'csv' in row:
+                    entry=row['csv']
+                    C.need(entry['status']==verdict['status'] and entry['certificate']=='PASS'
+                           and int(entry['nodes'])==len(c.get('nodes',[]))
+                           and entry['budget_stop']==str(bool(item['queue']))
+                           and entry['resolution_met']==str(item['target_resolution']), 'LEDGER_RESULT')
+                    for car,pr in c.get('projections',{}).items():
+                        for field,col in [('radius','radius'),('area_upper','area_upper')]:
+                            value=pr[field]
+                            cell=entry[car+'_'+col]
+                            C.need((not cell and value is None) or (value is not None and float(C.q(value))==float(cell)), 'LEDGER_REGION')
             except (ValueError,KeyError,TypeError,IndexError,OSError,subprocess.CalledProcessError) as exc:
                 item.update(outcome='REJECT',reason=str(exc))
     return dict(plan_sha=plan_sha,evidence_sha=evidence_sha,plan_hash=plan_hash,

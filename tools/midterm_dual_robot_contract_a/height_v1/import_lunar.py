@@ -21,8 +21,8 @@ def main():
         case=r['case']
         raw,sha=load(SOURCE,f'{LUNAR}/inputs/{case}.json')
         C.need(sha==r['solver_sha256'],'LUNAR_INPUT_BYTES')
-        time=C.F(r['car2_source_s'])
-        C.need(float(time+5)==r['car1_source_s'],'SOURCE_CLOCK')
+        time=C.F(str(r['car2_source_s']))
+        C.need(float(time)+5==r['car1_source_s'],'SOURCE_CLOCK')
         x=C.K.seal(dict(schema_version=C.VERSION,source_commit=C.BASE,case_id=case,
             units='m',frame='moon_map_z_up',source_times={'p':str(time+5),'s':str(time)},
             domain_source='joint_event_26',anchors={f'a{i}':v for i,v in enumerate(raw['anchors'])},
