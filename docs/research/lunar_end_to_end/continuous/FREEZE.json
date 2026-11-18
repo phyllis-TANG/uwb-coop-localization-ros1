@@ -1,0 +1,29 @@
+{
+  "base_sha": "591354134e4390812a1e8fad71873d5b13d75fc9",
+  "files": {
+    "docs/research/lunar_end_to_end/continuous/CONTINUOUS_SOURCES.json": "539593e8302031e1a946d5e1e05f331fe22edf534fef5d10f77f5095adaa6bb4",
+    "docs/research/lunar_end_to_end/continuous/COVERAGE_AUDIT.json": "b095285219d55293fd535515349ab2b82a250b73b70ebf192926550950f84c03",
+    "docs/research/lunar_end_to_end/continuous/COVERAGE_PROTOCOL.json": "74316bd70d7156acac8144165339f075e35d4328fc0f34ef12cc4822b9231a64",
+    "docs/research/lunar_end_to_end/continuous/DENSE_COVERAGE.csv": "b949e395751744c572802e7e4aa4fcb5d3b2e17d49adc1b4d1003b0b4c33f22e",
+    "docs/research/lunar_end_to_end/continuous/INPUTS.json.gz": "363d90a53e355611046f75d0a37433c2ac4643e0888a7647d8c488ce7b67b3bc",
+    "docs/research/lunar_end_to_end/continuous/PROTOCOL.json": "d4c5e4824c444cb7daf781b377bbd7f36e4ea5eee3efdacadbc29508bc4eaf44",
+    "docs/research/lunar_end_to_end/continuous/ROUTE.json": "2026cc1169c556f75003c790fb7e2442e9dc3e569a4e04ce81796c1bcb1786d9",
+    "docs/research/lunar_end_to_end/continuous/SUPPLEMENT_PLAN.json": "b3ae3c1767ea7156c07d8e5e2a2e30461332c1f2be6924892f872e2ff138bd1a",
+    "docs/research/lunar_end_to_end/continuous/SUPPLEMENT_RECEIPT.json": "eb39f70c9c94d7447e33b1255a826207af828f960afe682415bf94146a70d46d",
+    "docs/research/lunar_end_to_end/continuous/continuous_route.usda": "7bc4a530191b7609c68e167d55445e4f8cceacb9a1019a7f5cfc6e46dd362181",
+    "docs/research/lunar_end_to_end/continuous/terrain.npz": "344460e63fb7a7d9d7596bbf66a55523792046b7a24a702e7703830c6150104c",
+    "tools/lunar_end_to_end/continuous/checker.py": "0e5af07037e98cd4725f59214c5bc753f85ce49b5ef3f55b08eacd54c84539ac",
+    "tools/lunar_end_to_end/continuous/coverage.py": "517b10c338e382ae2baee68fb5cfad66978b2b851210e24ee54b4c635603dd8a",
+    "tools/lunar_end_to_end/continuous/estimator.py": "a1110dd89b26b461fdf5b54d83fa08488f6a9ecc4daa8f8a62e76da55cbb3ea1",
+    "tools/lunar_end_to_end/continuous/isaac_replay.py": "b48c8b3be93e984b12924c06ddb11a01b43b044d27eb516826594eb10d76a6fe",
+    "tools/lunar_end_to_end/continuous/prepare.py": "0b93d0785de4dcb6dfc270e3c2079816730984f2db55d34c0fe7e264ed370ffb",
+    "tools/lunar_end_to_end/continuous/replay.py": "14b024cb727c13601c1e9ea28336929485c9557ad0102e233fea5ea99100a24e",
+    "tools/lunar_end_to_end/continuous/runner.py": "e5f2c4b59ebbae601cc0c00517e2f4c028bcec5b2df01827077256eab96334e6",
+    "tools/lunar_end_to_end/continuous/supplement.py": "5acb2d628d6f90716c8a0b4c5f99339e3c3cae0c07e395638cf637bab4ed34fb",
+    "tools/lunar_end_to_end/continuous/test_development.py": "57cebf68396d1b7d6cc784c7f31f58c323bbba1957fed8c7f3e45c27ec348bed"
+  },
+  "main_runs": 120,
+  "optional_additional_runs": 30,
+  "development_synthetic_solves": 4,
+  "development_optimizer_calls": 8
+}

@@ -1,0 +1,13 @@
+{
+  "dt_s": 0.02,
+  "footprint_half_length_m": 0.4,
+  "footprint_half_width_m": 0.3,
+  "footprint_grid_m": 0.1,
+  "minimum_four_corner_observed_fraction": 0.75,
+  "maximum_nearest_observed_node_m": 0.4,
+  "maximum_adjacent_sample_height_change_m": 0.15,
+  "maximum_frame_cell_height_spread_m": 0.25,
+  "car1_source_offset_s": 5,
+  "car2_source_offset_s": 0,
+  "meaning": "sampled point-cloud support, not collision or traversability certification"
+}
