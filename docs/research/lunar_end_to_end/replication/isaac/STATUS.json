@@ -1,0 +1,15 @@
+{
+  "versions": {
+    "isaacsim": "6.2.0.0",
+    "isaaclab": "3.0.0",
+    "torch": "2.11.0+cu130"
+  },
+  "cuda_available": false,
+  "device_count": 0,
+  "nvidia_smi_returncode": 9,
+  "isaac_executed": false,
+  "rendered": false,
+  "dynamics_executed": false,
+  "state": "BLOCKED_GPU_UNAVAILABLE",
+  "reason": "No usable CUDA GPU/driver; no SimulationApp launch attempted. CPU replay continues independently."
+}
