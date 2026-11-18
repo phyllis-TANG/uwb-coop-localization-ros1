@@ -1,0 +1,44 @@
+{
+  "date_utc": "2026-11-17",
+  "base_main": "b492c17d719013c31a93168994afe40beed5001f",
+  "pr118_head": "4e79199e1fbe3d38d3a21b864690634a2b35c3c1",
+  "pr118_state": "MERGED",
+  "worktree": "/home/ubuntu22/uwb-midterm-integrity-targeted-c",
+  "branch": "research/midterm-integrity-targeted-c",
+  "head_before_commit": "b492c17d719013c31a93168994afe40beed5001f",
+  "remote": "origin\thttps://github.com/phyllis-TANG/uwb-coop-localization-ros1.git (fetch)\norigin\thttps://github.com/phyllis-TANG/uwb-coop-localization-ros1.git (push)",
+  "applicable_agents": {
+    "ancestor_checks": {
+      "/AGENTS.md": false,
+      "/home/AGENTS.md": false,
+      "/home/ubuntu22/AGENTS.md": false,
+      "/home/ubuntu22/双车协同/AGENTS.md": false,
+      "/home/ubuntu22/uwb-midterm-integrity-targeted-c/AGENTS.md": false
+    },
+    "tracked_agents": []
+  },
+  "source_worktrees": [
+    {
+      "path": "/home/ubuntu22/双车协同/uwb-coop-localization-ros1",
+      "head": "115b17deb2f848e596d1638a0b45cf360deae947",
+      "branch": "experiment/two-car-independent-integrity-bridge-20261023",
+      "status_short": ""
+    },
+    {
+      "path": "/home/ubuntu22/uwb-integrity-targeted-pr119-readonly",
+      "head": "e35f94fb89a71236bd04c7f25fc318b016ba592d",
+      "branch": "",
+      "status_short": ""
+    }
+  ],
+  "scope": "additions only under docs/research/midterm_integrity_targeted_c/",
+  "new_localization_or_mc_calls": 0,
+  "publication_check": {
+    "pr": "https://github.com/phyllis-TANG/uwb-coop-localization-ros1/pull/122",
+    "main_at_publication": "f9c27436836b814afdea47945887015dcb55fca5",
+    "merge_state": "CLEAN",
+    "auto_merge": false,
+    "incoming_main_merged_into_branch": false,
+    "pr119_source_still_fixed": true
+  }
+}

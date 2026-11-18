@@ -1,0 +1,50 @@
+{
+  "retrieved_utc": "2026-11-17",
+  "scope": "Official ION/author VT/IIT CARNATIONS/NSF/USDOT ROSA P/public author GitHub; title and DOI queries; no paywall bypass",
+  "requested_2026": {
+    "doi": "10.33012/2026.20494",
+    "title": "Fault-Mode Aware Integrity Monitoring for Collaborative CAV Localization",
+    "authors": [
+      "Shinsaku Kuwada",
+      "Mathieu Joerger",
+      "Matthew Spenko"
+    ],
+    "status": "peer-reviewed conference publication, official record verified; FULL TEXT NOT OBTAINED",
+    "pages": "288-301",
+    "official_url": "https://www.ion.org/publications/abstract.cfm?articleID=20494",
+    "author_listing": "https://www.aoe.vt.edu/people/faculty/joerger/personal-page/publications.html",
+    "project_listing": "https://www.iitcarnations.org/publications",
+    "restriction": "ION account with subscription/download credit or purchase required; no verified public full text found"
+  },
+  "fulltexts": [
+    {
+      "source_url": "https://par.nsf.gov/servlets/purl/10203881",
+      "version": "IEEE RA-L2020 official typesetting pp3182-3189,8pages",
+      "sha256": "3f7fbdcc64cd90c6ad277226c5d01a67eb0134b5be1db86c772383b5229c9651",
+      "committed_copy": false
+    },
+    {
+      "source_url": "https://rosap.ntl.bts.gov/view/dot/79312/dot_79312_DS1.pdf",
+      "version": "ROSA P report6 dated2024-09-30; AppendixA PDFpp9-20, not 2026paper",
+      "sha256": "2a30794490f9f6c5739098477263c9b5140602a027faae6bc4eccedebb738db1",
+      "committed_copy": false
+    },
+    {
+      "source_url": "https://raw.githubusercontent.com/mspenko/RoboticsLab-Integrity-Evaluation/9737f3497c00eff81a32df0d6dbbf3720cfc485e/utils/class/IntegrityMonitoringClassFgSimOff.py",
+      "version": "static source review only",
+      "sha256": "8f667454fceddc0b6bbe0b6db4e0c039413162a3608032f96c888bb2d65acdaf",
+      "committed_copy": false
+    }
+  ],
+  "code": {
+    "url": "https://github.com/mspenko/RoboticsLab-Integrity-Evaluation",
+    "commit": "9737f3497c00eff81a32df0d6dbbf3720cfc485e",
+    "paper_pointer": "Hafez2020 p3189 conclusion",
+    "inspected_file": "utils/class/IntegrityMonitoringClassFgSimOff.py",
+    "lines": "137-139",
+    "finding": "uses Gaussian outside-tail complement, unlike printed PDF eq36/39",
+    "license": "no root LICENSE; GitHub license API404; recursive tree truncated, no claim of exhaustive nested-license search",
+    "execution": false,
+    "paper_exact_version_confirmed": false
+  }
+}
