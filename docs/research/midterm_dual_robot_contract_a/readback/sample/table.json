@@ -1,0 +1,207 @@
+{
+  "evidence_commit": "d3dc0dc8a028de569fa84941cb09ab801c8e5ed8",
+  "ledger": "fixtures",
+  "checker": "d3dc0dc8a028de569fa84941cb09ab801c8e5ed8",
+  "rows": [
+    {
+      "phase": "sample",
+      "case": "normal",
+      "arm": "contracted",
+      "status": "FIXTURE",
+      "inclusion": "PASS",
+      "resolution": "FAIL",
+      "budget": "UNKNOWN",
+      "path": "docs/research/midterm_dual_robot_contract_a/precontract_v1/examples/normal.composite.json",
+      "sha256": "9713226052e81ea410cd9ace67f08ff2aa05892213aebb5ec866d97f52ac027e",
+      "input_hash": "0ef6399b2866c2e946ed143c53a8b574c8ff1bc19f554ba8ad38438e7b80fa66",
+      "checks": {
+        "queue_size": 0,
+        "retained_leaves": 1
+      },
+      "mechanism": "PASS",
+      "figure_data": {
+        "original": [
+          [
+            "-6",
+            "6"
+          ],
+          [
+            "-6",
+            "6"
+          ],
+          [
+            "-6",
+            "6"
+          ],
+          [
+            "-6",
+            "6"
+          ]
+        ],
+        "contracted": [
+          [
+            "1/8",
+            "31/8"
+          ],
+          [
+            "1/8",
+            "31/8"
+          ],
+          [
+            "1/8",
+            "31/8"
+          ],
+          [
+            "1/8",
+            "31/8"
+          ]
+        ],
+        "projections": {
+          "p": [
+            [
+              [
+                "1/8",
+                "31/8"
+              ],
+              [
+                "1/8",
+                "31/8"
+              ]
+            ]
+          ],
+          "s": [
+            [
+              [
+                "1/8",
+                "31/8"
+              ],
+              [
+                "1/8",
+                "31/8"
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "phase": "sample",
+      "case": "collinear",
+      "arm": "contracted",
+      "status": "FIXTURE",
+      "inclusion": "PASS",
+      "resolution": "FAIL",
+      "budget": "UNKNOWN",
+      "path": "docs/research/midterm_dual_robot_contract_a/precontract_v1/examples/collinear.composite.json",
+      "sha256": "38caf1bee2dff13cb636491e89e77f30e6514f5df5975cdcc5a8a4c4b0422442",
+      "input_hash": "cb5b7a41759fed929f4301cf2bebbaf182705723e3db6f58cd8eb17ab40dbc61",
+      "checks": {
+        "queue_size": 0,
+        "retained_leaves": 1,
+        "witness_0_retained": true,
+        "witness_1_retained": true
+      },
+      "mechanism": "PASS",
+      "figure_data": {
+        "original": [
+          [
+            "-6",
+            "6"
+          ],
+          [
+            "-6",
+            "6"
+          ],
+          [
+            "-6",
+            "6"
+          ],
+          [
+            "-6",
+            "6"
+          ]
+        ],
+        "contracted": [
+          [
+            "-2",
+            "2"
+          ],
+          [
+            "-5",
+            "5"
+          ],
+          [
+            "-2",
+            "2"
+          ],
+          [
+            "-5",
+            "5"
+          ]
+        ],
+        "projections": {
+          "p": [
+            [
+              [
+                "-2",
+                "2"
+              ],
+              [
+                "-5",
+                "5"
+              ]
+            ]
+          ],
+          "s": [
+            [
+              [
+                "-2",
+                "2"
+              ],
+              [
+                "-5",
+                "5"
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "phase": "sample",
+      "case": "boundary",
+      "arm": "contracted",
+      "status": "FIXTURE",
+      "inclusion": "PASS",
+      "resolution": "FAIL",
+      "budget": "UNKNOWN",
+      "path": "docs/research/midterm_dual_robot_contract_a/precontract_v1/examples/boundary.composite.json",
+      "sha256": "39d80c9b2eebbfe47bb322aea0ffb1d8f950d39dc40a64cfe01c7038415d8c9f",
+      "input_hash": "791745c5a3d993fd442f9815af86efa484a58fe55fcdf1bf792e8b3b8f24ca34",
+      "checks": {
+        "queue_size": 0,
+        "retained_leaves": 1,
+        "witness_0_retained": true
+      },
+      "mechanism": "PASS"
+    },
+    {
+      "phase": "sample",
+      "case": "empty",
+      "arm": "contracted",
+      "status": "FIXTURE",
+      "inclusion": "PASS",
+      "resolution": "PASS",
+      "budget": "UNKNOWN",
+      "path": "docs/research/midterm_dual_robot_contract_a/precontract_v1/examples/empty.composite.json",
+      "sha256": "6b5ce9e3583a69d5c256e57123ff5755fa8c9f1d65c94d6e3b61e1d0f5ceedc7",
+      "input_hash": "e5dce76cf57028cebd8647c0fb73a63ac09fe329547a5241e00856102b5b0a23",
+      "checks": {
+        "queue_size": 0,
+        "retained_leaves": 0,
+        "strict_empty": true
+      },
+      "mechanism": "PASS"
+    }
+  ]
+}
