@@ -1,0 +1,9 @@
+{
+  "source_sha": "01e588021e7e3ddd918b1d1fc9561973373758c6",
+  "prior_feed_sha": "d3b39fa9003519f70aef4abfdd050fc969a4a513",
+  "coordinator_reference_sha": "f61c02e3aad26709a07940bd9900024ec9a93aa1",
+  "injection": {"start_s":24,"end_exclusive_s":38,"peer_step":"Car1 node_0 +0.6 m","peer_ramp":"Car1 node_0 +0.6*((t-24)/13.95) m","wall":"Car1 four anchor links +0.30 m","nominal":"none"},
+  "recovery_window_s":[38,48],
+  "plot":{"seed":2026111901,"scene":"peer_step","vehicles":[1,2],"clock":"delivery"},
+  "conditional_resolution":{"seed":101,"scenes":["nominal","peer_step","wall"],"state_s":30,"resolution_m":[0.05,0.025],"center":"archived G1 at same state","comparison":"outer radius only"}
+}
