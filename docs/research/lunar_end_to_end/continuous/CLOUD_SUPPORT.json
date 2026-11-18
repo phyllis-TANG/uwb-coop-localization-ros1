@@ -1,0 +1,14 @@
+{
+  "points": 111472,
+  "source_frame_manifest": "CONTINUOUS_SOURCES.json entries[1:]",
+  "crop_min_xy": [
+    0.20000000000000062,
+    -3.7999999999999994
+  ],
+  "crop_max_xy": [
+    29.000000000000004,
+    6.600000000000001
+  ],
+  "filter": "finite, abs(world_z)<2m; exact float64 transformed points",
+  "sha256": "ec37e5be77876350d2e71b04237502b7ed8a2c0773066617178e8a43e0b2b137"
+}

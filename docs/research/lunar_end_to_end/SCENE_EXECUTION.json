@@ -1,0 +1,19 @@
+{
+  "cpu_usd_export": true,
+  "dynamics_executed": false,
+  "isaac_executed": false,
+  "meters_per_unit": 1,
+  "mode": "kinematic timeSamples, no physics execution",
+  "reason": "nvidia-smi driver communication failure; torch.cuda.is_available() False; existing Sim6.2/Lab3.0 retained unchanged",
+  "rendered_in_isaac": false,
+  "screenshots": "figures are CPU matplotlib plots, not Isaac screenshots",
+  "time_codes_per_second": 5,
+  "up_axis": "Z",
+  "usd_reopened": true,
+  "versions": {
+    "matplotlib": "3.10.9",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "usd-core": "26.8"
+  }
+}

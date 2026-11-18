@@ -1,0 +1,27 @@
+{
+  "rule": "Only midpoint-nearest scans for blocking footprint coverage gaps near Car2 5.0-5.42s and Car1 18.86-19s. Existing frame disagreement is not resolved by deleting scans.",
+  "frames": [
+    {
+      "relative_path": "Moon_1/LiDAR/1693274729293519360.txt",
+      "requested_time_s": 5.22,
+      "method": 8,
+      "crc": 3699691999,
+      "compressed": 355746,
+      "size": 1240430,
+      "offset": 14535440
+    },
+    {
+      "relative_path": "Moon_1/LiDAR/1693274742985580544.txt",
+      "requested_time_s": 18.93,
+      "method": 8,
+      "crc": 1337770041,
+      "compressed": 416173,
+      "size": 1430271,
+      "offset": 61056155
+    }
+  ],
+  "central_sha256": "4ff7d3d1299653fded242f36484387efea10fdac1fa31a737dfb980b00264477",
+  "fetch_code_sha256": "ac271167c016d275224fa1929c04e6fd6fd3a80168482572dbc291af96f19358",
+  "max_files": 2,
+  "max_wall_seconds": 150
+}

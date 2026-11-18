@@ -1,0 +1,43 @@
+{
+  "base_sha": "591354134e4390812a1e8fad71873d5b13d75fc9",
+  "route_sha256": "2026cc1169c556f75003c790fb7e2442e9dc3e569a4e04ce81796c1bcb1786d9",
+  "terrain_sha256": "344460e63fb7a7d9d7596bbf66a55523792046b7a24a702e7703830c6150104c",
+  "conditions": [
+    "normal",
+    "ramp_only",
+    "motion_only",
+    "both"
+  ],
+  "seeds": [
+    2026111801,
+    2026111802,
+    2026111803,
+    2026111804,
+    2026111805,
+    2026111806,
+    2026111807,
+    2026111808,
+    2026111809,
+    2026111810
+  ],
+  "methods": [
+    "M0",
+    "M2",
+    "M3"
+  ],
+  "main_runs": 120,
+  "ramp_total_m": 0.3,
+  "ramp_slope_m_s": 0.06787330316742082,
+  "motion_anomaly_car": 2,
+  "motion_anomaly_increment_index": 11,
+  "motion_anomaly_vector_rule": "0.15m along source yaw on exactly one increment",
+  "sigma_range_m": 0.04,
+  "sigma_motion_m": 0.02,
+  "sigma_prior_m": 0.5,
+  "ar1_rho": 0.8,
+  "optional": "40 paired records: original M3 vs rho=.8 whitened M3, white/correlated zero-bias inputs, 10 seeds; 10 main M3 records reused, only 30 additional executions",
+  "optimizer": "two fixed trf calls max_nfev=150,100; no retry; strict gradient<=1e-5, full scaled rank",
+  "max_method_wall_seconds": 30,
+  "max_matrix_wall_seconds": 3600,
+  "reference_use": "generation and evaluation only; no reference, labels or seeds in estimator API"
+}
