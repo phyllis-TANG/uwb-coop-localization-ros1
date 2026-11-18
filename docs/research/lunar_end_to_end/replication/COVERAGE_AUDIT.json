@@ -1,0 +1,107 @@
+{
+  "protocol": {
+    "dt_s": 0.02,
+    "footprint_half_length_m": 0.4,
+    "footprint_half_width_m": 0.3,
+    "footprint_grid_m": 0.1,
+    "minimum_four_corner_observed_fraction": 0.75,
+    "maximum_nearest_observed_node_m": 0.4,
+    "maximum_adjacent_sample_height_change_m": 0.15,
+    "maximum_frame_cell_height_spread_m": 0.25,
+    "car1_source_offset_s": 5,
+    "car2_source_offset_s": 0,
+    "meaning": "sampled point-cloud support, not collision or traversability certification"
+  },
+  "candidates": [
+    {
+      "candidate": [
+        109,
+        114
+      ],
+      "all_pass": false,
+      "longest_pass": [
+        109.66,
+        114.0
+      ],
+      "passing_intervals": [
+        [
+          109.66,
+          114.0
+        ]
+      ],
+      "failed_times": [
+        109.0,
+        109.02,
+        109.04,
+        109.06,
+        109.08,
+        109.1,
+        109.12,
+        109.14,
+        109.16,
+        109.18,
+        109.2,
+        109.22,
+        109.24,
+        109.26,
+        109.28,
+        109.3,
+        109.32,
+        109.34,
+        109.36,
+        109.38,
+        109.4,
+        109.42,
+        109.44,
+        109.46,
+        109.48,
+        109.5,
+        109.52,
+        109.54,
+        109.56,
+        109.58,
+        109.6,
+        109.62,
+        109.64
+      ],
+      "cars": [
+        {
+          "car": 1,
+          "passed": 251,
+          "total": 251,
+          "support_min": 1.0,
+          "fill_distance_max_m": 0.28028577182015546,
+          "frame_spread_max_m": 0.00044124158672778635
+        },
+        {
+          "car": 2,
+          "passed": 218,
+          "total": 251,
+          "support_min": 0.5,
+          "fill_distance_max_m": 0.39952619082356683,
+          "frame_spread_max_m": 0.000744274085073382
+        }
+      ]
+    }
+  ],
+  "source_scene_sha256": "5edd8d99d4876bed6a4d3ada44a5dcb4281a2d3d459268f720265bfc8a9c33da",
+  "coordinate_transform": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0
+    ]
+  ],
+  "transform_determinant": 1.0,
+  "source_hashes_verified": 12
+}
