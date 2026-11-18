@@ -107,6 +107,21 @@ def run(plan_sha,plan_path,evidence_sha,ledger_path):
                            and int(entry['nodes'])==len(c.get('nodes',[]))
                            and entry['budget_stop']==str(bool(item['queue']))
                            and entry['resolution_met']==str(item['target_resolution']), 'LEDGER_RESULT')
+                    eval_path=str(Path(ledger_path).parent/'evaluation'/(case+'.json'))
+                    # Evaluation is read only after accepting the certificate.
+                    truth,_=load('3b68bcf0df9de496cf7353f3cd506a06e5a6f40c',eval_path)
+                    position=[C.q(v) for xyz in truth['xyz'] for v in xyz[:2]]
+                    hit=[False]*3
+                    for node in c.get('nodes',[]):
+                        if node['kind'] in ('INSIDE','UNDECIDED','PENDING'):
+                            axes=[C.q(a)<=v<=C.q(b) for v,(a,b) in zip(position,node['box'])]
+                            for i,ok in enumerate((all(axes),all(axes[:2]),all(axes[2:]))):
+                                hit[i]|=ok
+                    noise=sum(C.q(e)**2/C.q(v) for e,v in zip(truth['generated_noise'],x['variance']))
+                    event=noise<=C.q(c['threshold_certificate']['tau'])
+                    C.need(all(entry[k]==str(v) for k,v in zip(('joint_hit','p_hit','s_hit','original_event'),[*hit,event])), 'EVALUATION_MISMATCH')
+                    item.update(joint_hit=hit[0],p_hit=hit[1],s_hit=hit[2],original_event=event,
+                                nodes=len(c.get('nodes',[])),reported_wall_seconds=entry['wall_seconds'])
                     for car,pr in c.get('projections',{}).items():
                         for field,col in [('radius','radius'),('area_upper','area_upper')]:
                             value=pr[field]
