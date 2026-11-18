@@ -23,3 +23,5 @@ git fetch origin refs/pull/150/head
 git fetch origin research/round2-ground-b
 OPENBLAS_NUM_THREADS=1 python3 tools/midterm_dual_robot_contract_a/round3/decompose.py
 ```
+
+[后续开发灵敏度试验](SCAN_RESULTS.md)在相同 101 输入上重算 16 组先验。首秒之后无一配置恢复 10 cm 服务；最乐观调查假设出现了首秒已越限却声明可用的反例。
