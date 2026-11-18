@@ -1,0 +1,31 @@
+{
+  "status": "DELIVERED_WITH_GPU_BLOCKER",
+  "pr": 132,
+  "base_sha": "591354134e4390812a1e8fad71873d5b13d75fc9",
+  "run_freeze_sha": "4d9003de7a9320d25374948f9093557b3364c3a3",
+  "route_car2_source_s": [
+    5.44,
+    9.86
+  ],
+  "route_car1_source_s": [
+    10.44,
+    14.86
+  ],
+  "requested_5_14_complete": false,
+  "cpu_actual_usd_replay": "PASS_443_QUERIES",
+  "isaac_replay": "BLOCKED_GPU_UNAVAILABLE",
+  "main_completed": 120,
+  "main_planned": 120,
+  "main_accepted": 119,
+  "main_not_stationary": 1,
+  "optional_comparison_records": 40,
+  "optional_new_runs": 30,
+  "optional_reused_main_runs": 10,
+  "portable_readback": "PASS_487_FILES_150_ENDPOINTS",
+  "ramp_total_m": 0.3,
+  "ramp_slope_m_s": 0.06787330316742081,
+  "archive_sha256": "13263ea7042de6461ce7677ef68fd59329e678640dbb0c6c7bdd6fc2ca7d873c",
+  "frozen_files_unchanged": 20,
+  "old_experiments_rerun": false,
+  "dynamics_executed": false
+}
