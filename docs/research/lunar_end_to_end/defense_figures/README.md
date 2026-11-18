@@ -1,6 +1,6 @@
 # Moon_1 中期答辩配图
 
-正文按图 1、图 2 的顺序讲。图 1 建立场景与实验位置，图 2 给出一个可独立核算的几何证明。图 3 用于备用页，回答改变测距假设后的结果。三图共用提交 `c7d53da2bb989f73514a6ce540813c379d698897` 上的资产，数值来自已验收的 #151。PNG 为 3200 × 1800，PDF 保留文字与绘图线条。生成环境使用 Liberation Serif，脚本在有 Times New Roman 的环境中优先使用该字体。
+正文按图 1、图 2 的顺序讲。图 1 建立场景与实验位置，图 2 给出一个可独立核算的几何证明。图 3 用于备用页，回答改变测距假设后的结果。数值与路线资产固定于提交 `c7d53da2bb989f73514a6ce540813c379d698897` ，场景介绍另用本地归档视频。数值来自已验收的 #151。PNG 为 3200 × 1800，PDF 保留文字与绘图线条。生成环境使用 Liberation Serif，脚本在有 Times New Roman 的环境中优先使用该字体。
 
 在仓库根目录运行以下命令。依赖为 Python 3.10+、NumPy、Matplotlib 和 Pillow。三个入口都只读归档数据。
 
@@ -8,11 +8,11 @@
 
 [高清 PNG](01_scene.png) · [PDF](01_scene.pdf)
 
-**English caption.** Left, a cropped viewport from the October 29, 2026 Isaac Lab GPU run shows two vehicles replayed kinematically on a terrain mesh reconstructed from six LuSNAR Moon_1 LiDAR frames. Right, plan views drawn from the two evaluation segments show the antenna tracks and synthetic anchors in the local moon_map frame. Circles and diamonds identify indices 0 and 11 on each track. At a common scene time, Car 1 uses a source pose five seconds later than Car 2. Green encodes gridded terrain elevation at observed cells, salmon marks filled cells, and white lies outside the archived crop.
+**English caption.** Left, a frame at 7.00 s from the October 30 Isaac Lab demonstration video shows terrestrial rover tracks replayed on a LuSNAR-derived display mesh. The craters outside the cooperative area are decorative. Right, plan views drawn from the two evaluation segments show the antenna tracks and synthetic anchors in the local moon_map frame. Circles and diamonds identify indices 0 and 11 on each track. At a common scene time, Car 1 uses a source pose five seconds later than Car 2. Green encodes gridded terrain elevation at observed cells, salmon marks filled cells, and white lies outside the archived crop.
 
-**中文讲解（约 30 秒）**　左图交代场景来源。早期团队把 LuSNAR 的六帧激光雷达数据融合成地形，在 Isaac 中做了双车运动学回放。右边两幅地图给出本次实验的实际位置。蓝、橙两车取自同一条源轨迹，同一场景时刻，一号车取晚五秒的源位置。圆点和菱形是每段的第 0 和第 11 个索引；三角形是合成锚点，橙粉色网格是地形填补区。
+**中文讲解（约 30 秒）**　左图是后期 Isaac 演示视频第七秒。团队用 LuSNAR 数据生成月面网格，在上面回放地面双车实验；远处的环形山是展示素材。右边两幅地图给出本次实验的实际位置。蓝、橙两车取自同一条源轨迹，同一场景时刻，一号车取晚五秒的源位置。圆点和菱形是每段的第 0 和第 11 个索引；三角形是合成锚点，橙粉色网格是地形填补区。
 
-来源为 [GPU 截图说明](../../../simulation/moon1/CAPTURES.md) 和[原截图](../../../simulation/moon1/isaaclab_lunar_rocks.png)。两幅地图分别读取主段的 [terrain.npz](../continuous/terrain.npz)、[ROUTE.json](../continuous/ROUTE.json) 和第二段的 [terrain.npz](../replication/terrain.npz)、[ROUTE.json](../replication/ROUTE.json)。可与[主段原图](../continuous/selected_route.png)、[第二段原图](../replication/routes.png) 对照。地图在 CPU 上按网格绘制。高度色标共用，两个地图保留各自的实际坐标。
+左图直接读取[视频第 210 帧，零基索引](isaac_replay_7s.png)。原视频位于场景工作树的 `sim/isaac_lab/moon1/output/videos/moon_uwb_topright_en.mp4`（1920 × 1080，30 fps，SHA-256 `fe3010389bcd411c6303a5d290f5f3746ca881f985d0384ab72452a0982b53d8`）。取帧命令为 `ffmpeg -ss 7 -i moon_uwb_topright_en.mp4 -frames:v 1 isaac_replay_7s.png`。原场景的 `output/videos/presentation_provenance.json` 记录装饰性环形山与车载天线模型的来源。两幅地图分别读取主段的 [terrain.npz](../continuous/terrain.npz)、[ROUTE.json](../continuous/ROUTE.json) 和第二段的 [terrain.npz](../replication/terrain.npz)、[ROUTE.json](../replication/ROUTE.json)。可与[主段原图](../continuous/selected_route.png)、[第二段原图](../replication/routes.png) 对照。地图在 CPU 上按网格绘制。高度色标共用，两个地图保留各自的实际坐标。
 
 ```bash
 python3 tools/lunar_end_to_end/defense_figures/render.py scene

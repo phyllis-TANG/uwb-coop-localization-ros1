@@ -66,26 +66,26 @@ def export(fig, name):
 def route_map():
     fig = canvas(
         "Moon_1 reconstruction and the four evaluation epochs",
-        "Both antenna tracks follow one source trajectory. At the same scene time, Car 1 samples it 5 s later than Car 2.",
+        "Evaluation maps (right): both cars follow one source trajectory. Car 1 samples it 5 s later than Car 2 at each scene time.",
     )
-    fig.text(0.055, 0.777, "Early Isaac Lab scene", fontsize=23, weight="bold")
-    src = ROOT / "docs/simulation/moon1/isaaclab_lunar_rocks.png"
+    fig.text(0.055, 0.777, "Isaac Lab demonstration replay", fontsize=23, weight="bold")
+    src = OUT / "isaac_replay_7s.png"
     im = Image.open(src)
-    assert im.size == (1440, 900)
-    ax = fig.add_axes([0.055, 0.365, 0.39, 0.39])
-    ax.imshow(im.crop((53, 58, 998, 570)))
+    assert im.size == (1920, 1080)
+    ax = fig.add_axes([0.055, 0.295, 0.46, 0.46])
+    ax.imshow(im)
     ax.axis("off")
     fig.text(
         0.055,
-        0.327,
-        "GPU capture  ·  six fused LiDAR frames",
+        0.251,
+        "Terrestrial tracks on a LuSNAR display mesh",
         fontsize=19,
         weight="bold",
     )
     fig.text(
         0.055,
-        0.256,
-        "LuSNAR terrain mesh with two kinematic vehicles.\nThe line marks the simulated UWB link.",
+        0.206,
+        "Kinematic replay with four anchors and decorative craters.",
         fontsize=16,
         linespacing=1.4,
     )
@@ -169,20 +169,20 @@ def route_map():
     )
     cb = fig.colorbar(
         plt.cm.ScalarMappable(norm, palette),
-        cax=fig.add_axes([0.057, 0.153, 0.228, 0.016]),
+        cax=fig.add_axes([0.057, 0.098, 0.228, 0.016]),
         orientation="horizontal",
     )
     cb.ax.tick_params(labelsize=13)
-    fig.text(0.055, 0.195, "Observed grid  ·  terrain z (m)", fontsize=15)
+    fig.text(0.055, 0.142, "Observed grid  ·  terrain z (m)", fontsize=15)
     fig.patches.append(
         patches.Rectangle(
-            (0.326, 0.151), 0.025, 0.023, transform=fig.transFigure, facecolor="#eb9b78"
+            (0.326, 0.096), 0.025, 0.023, transform=fig.transFigure, facecolor="#eb9b78"
         )
     )
-    fig.text(0.36, 0.151, "Filled grid", fontsize=15)
+    fig.text(0.36, 0.096, "Filled grid", fontsize=15)
     fig.text(
         0.055,
-        0.046,
+        0.031,
         "White outside map patches: beyond the archived crop.",
         fontsize=14,
     )
