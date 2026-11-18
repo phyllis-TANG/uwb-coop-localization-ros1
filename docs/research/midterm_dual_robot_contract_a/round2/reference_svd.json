@@ -1,0 +1,141 @@
+{
+  "xy": [
+    2.217551787941003,
+    3.957809339835413
+  ],
+  "bias": [
+    0.1089068715239679,
+    0.10354223622044305
+  ],
+  "covariance": [
+    [
+      0.021570577681020168,
+      -0.0016149174633125428
+    ],
+    [
+      -0.0016149174633125428,
+      0.02047386280484613
+    ]
+  ],
+  "HCPL_difference_m": {
+    "eq13_to_16": 5.995204332975845e-15,
+    "axis_preallocated": 6.439293542825908e-15,
+    "history_preallocated": 1.0547118733938987e-14
+  },
+  "cars": [
+    {
+      "car": 1,
+      "xy": [
+        2.217551787941003,
+        3.957809339835413
+      ],
+      "covariance": [
+        [
+          0.021570577681020168,
+          -0.0016149174633125428
+        ],
+        [
+          -0.0016149174633125428,
+          0.02047386280484613
+        ]
+      ],
+      "bias": [
+        0.1089068715239679,
+        0.10354223622044305
+      ],
+      "current_bias": [
+        0.019596556249677387,
+        0.02684904503601645
+      ],
+      "HCPL_difference_m": {
+        "eq13_to_16": 5.995204332975845e-15,
+        "axis_preallocated": 6.439293542825908e-15,
+        "history_preallocated": 1.0547118733938987e-14
+      }
+    },
+    {
+      "car": 2,
+      "xy": [
+        2.781326684445611,
+        2.2228986758946903
+      ],
+      "covariance": [
+        [
+          0.021342744751605306,
+          -0.004877734287006688
+        ],
+        [
+          -0.004877734287006688,
+          0.01968731547791613
+        ]
+      ],
+      "bias": [
+        0.11935268325230118,
+        0.15541378591974725
+      ],
+      "current_bias": [
+        0.020893113854124686,
+        0.03198172973669601
+      ],
+      "HCPL_difference_m": {
+        "eq13_to_16": 5.662137425588298e-15,
+        "axis_preallocated": 5.995204332975845e-15,
+        "history_preallocated": 7.66053886991358e-15
+      }
+    }
+  ],
+  "prefixes": [
+    {
+      "t": 1,
+      "max_abs_state_difference": 4.884981308350689e-15,
+      "max_abs_covariance_difference": 9.020562075079397e-17
+    },
+    {
+      "t": 2,
+      "max_abs_state_difference": 5.495603971894525e-15,
+      "max_abs_covariance_difference": 2.0122792321330962e-16
+    },
+    {
+      "t": 3,
+      "max_abs_state_difference": 7.827072323607354e-15,
+      "max_abs_covariance_difference": 2.5326962749261384e-16
+    },
+    {
+      "t": 4,
+      "max_abs_state_difference": 7.688294445529209e-15,
+      "max_abs_covariance_difference": 2.220446049250313e-16
+    },
+    {
+      "t": 5,
+      "max_abs_state_difference": 2.5354718324877012e-14,
+      "max_abs_covariance_difference": 4.163336342344337e-16
+    },
+    {
+      "t": 6,
+      "max_abs_state_difference": 2.842170943040401e-14,
+      "max_abs_covariance_difference": 4.683753385137379e-16
+    },
+    {
+      "t": 7,
+      "max_abs_state_difference": 1.4654943925052066e-14,
+      "max_abs_covariance_difference": 6.314393452555578e-16
+    },
+    {
+      "t": 8,
+      "max_abs_state_difference": 4.1744385725905886e-14,
+      "max_abs_covariance_difference": 3.365363543395006e-16
+    },
+    {
+      "t": 9,
+      "max_abs_state_difference": 5.595524044110789e-14,
+      "max_abs_covariance_difference": 5.134781488891349e-16
+    },
+    {
+      "t": 10,
+      "max_abs_state_difference": 6.661338147750939e-14,
+      "max_abs_covariance_difference": 1.734723475976807e-15
+    }
+  ],
+  "NIS": 11.970472267281634,
+  "max_abs_transfer_difference": 1.8568480086855743e-13
+}
