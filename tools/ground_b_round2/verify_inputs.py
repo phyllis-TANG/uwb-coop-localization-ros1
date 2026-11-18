@@ -37,6 +37,15 @@ def verify():
             changes=0
             for raw,other in zip(nominal,data,strict=True):
                 assert raw.keys()==other.keys() and all(raw[k]==other[k] for k in raw if k!='value')
+                # #143 stores the later of the two UWB arrivals. Also check each
+                # individual sensor timestamp against the frozen generator schedule.
+                car,kind,index=other['source_observation_id'].split(':')
+                sample=int(index)
+                stream={('car1','odom'):0,('car1','uwb'):1,('car2','odom'):2,('car2','uwb'):3}[car,kind]
+                assert (car,kind)==(other['vehicle_id'],other['kind'])
+                stamp=epoch+sample*50_000_000
+                assert other['header_epoch_ns']==stamp
+                assert other['receive_epoch_ns']==stamp+(10+(7*sample+5*stream)%31)*1_000_000
                 t=(raw['header_epoch_ns']-epoch)/1e9
                 delta={}
                 if raw['kind']=='uwb' and raw['vehicle_id']=='car1' and 24<=t<38:
@@ -63,7 +72,7 @@ def verify():
                 assert obs['ranges']==[m['value'][k] for m in frames for k in obs['anchor_order']]+[frames[0]['value']['node_0']]
             entries.append(dict(package=name,frames=len(data),archive_ranges=9*len(records),
                 archive_pose_checks=2*len(records),uwb_ids=2*len(records),joint_receipts=len(records),
-                changed_scalar_measurements=changes,events_sha256=digest(folder/'events.jsonl.gz'),
+                individual_receive_stamps=len(data),changed_scalar_measurements=changes,events_sha256=digest(folder/'events.jsonl.gz'),
                 geometry_sha256=digest(folder/'geometry.json'),source_records_sha256=digest(original)))
     for name in ('geometry.json','events.jsonl.gz'):
         assert digest(DOC/'runtime/101_nominal'/name)==digest(ROOT/'docs/research/ground_b_round1/runtime'/name)
