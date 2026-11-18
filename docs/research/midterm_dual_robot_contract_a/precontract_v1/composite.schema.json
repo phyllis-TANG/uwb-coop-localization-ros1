@@ -1,0 +1,44 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "original_input_hash",
+    "preprocessing",
+    "preprocess_hash",
+    "restricted_input_hash",
+    "search_certificate"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "DUAL-P4-PRECONTRACT-V1"
+    },
+    "original_input_hash": {
+      "type": "string"
+    },
+    "preprocessing": {
+      "$ref": "preprocessing.schema.json"
+    },
+    "preprocess_hash": {
+      "type": "string"
+    },
+    "restricted_input_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "search_certificate": {
+      "anyOf": [
+        {
+          "$ref": "../output.schema.json"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "contract.check_composite is mandatory. Only mode=4d and exactly reconstructed restricted input/root are supported."
+}

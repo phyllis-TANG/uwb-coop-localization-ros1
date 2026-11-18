@@ -1,0 +1,44 @@
+test_01_hand_normal_shrink (__main__.PrecontractTests) ... ok
+test_02_joint_composite (__main__.PrecontractTests) ... ok
+test_03_collinear_both_mirrors (__main__.PrecontractTests) ... ok
+test_04_closed_boundary_exact_event (__main__.PrecontractTests) ... ok
+test_05_zero_distance_not_squared_negative (__main__.PrecontractTests) ... ok
+test_06_partial_fallback (__main__.PrecontractTests) ... ok
+test_07_all_fallback_original_domain (__main__.PrecontractTests) ... ok
+test_08_inward_extra_endpoint (__main__.PrecontractTests) ... ok
+test_09_sign_flip (__main__.PrecontractTests) ... ok
+test_10_other_vehicle_row (__main__.PrecontractTests) ... ok
+test_11_forged_domain (__main__.PrecontractTests) ... ok
+test_12_forged_range (__main__.PrecontractTests) ... ok
+test_13_negative_multiplier (__main__.PrecontractTests) ... ok
+test_14_inexact_dual_residual_repaired (__main__.PrecontractTests) ... ok
+test_15_residual_ignored_is_rejected (__main__.PrecontractTests) ... ok
+test_16_valid_soc_dual (__main__.PrecontractTests) ... ok
+test_17_invalid_soc_dual (__main__.PrecontractTests) ... ok
+test_18_unknown_peer_not_anchor (__main__.PrecontractTests) ... ok
+test_19_fallback_cannot_shrink (__main__.PrecontractTests) ... ok
+test_20_timeout_cannot_certify (__main__.PrecontractTests) ... ok
+test_21_empty_by_crossed_endpoints (__main__.PrecontractTests) ... ok
+test_22_false_empty (__main__.PrecontractTests) ... ok
+test_23_missing_direction (__main__.PrecontractTests) ... ok
+test_24_original_observation_identity (__main__.PrecontractTests) ... ok
+test_25_composite_root_cropped (__main__.PrecontractTests) ... ok
+test_26_composite_missing_queue (__main__.PrecontractTests) ... ok
+test_27_composite_split_coverage (__main__.PrecontractTests) ... ok
+test_28_composite_threshold_changed (__main__.PrecontractTests) ... ok
+test_29_composite_domain_hash (__main__.PrecontractTests) ... ok
+test_30_solver_success_not_evidence (__main__.PrecontractTests) ... ok
+test_31_outward_endpoint_rounding_allowed (__main__.PrecontractTests) ... ok
+test_32_same_domain_bias_observations_budget (__main__.PrecontractTests) ... ok
+test_33_car_inputs_are_separate (__main__.PrecontractTests) ... ok
+test_34_clock_deadline_falls_back (__main__.PrecontractTests) ... ok
+test_35_preprocess_hash_tamper (__main__.PrecontractTests) ... ok
+test_36_old_checker_rejects_small_root_against_original (__main__.PrecontractTests) ... ok
+test_37_unknown_car_as_anchor_counterexample (__main__.PrecontractTests) ... ok
+test_38_composite_recovery_tamper (__main__.PrecontractTests) ... ok
+test_39_composite_radius_tamper (__main__.PrecontractTests) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 1.271s
+
+OK

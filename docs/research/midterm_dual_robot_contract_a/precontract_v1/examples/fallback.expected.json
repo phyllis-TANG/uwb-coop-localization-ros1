@@ -1,0 +1,101 @@
+{
+  "accepted": true,
+  "status": "COMPOSITE_OUTER_CERTIFIED",
+  "original_input_hash": "91a2f904516b946390f9241d1af08977e658e340a0111748c38ff22099ad71d4",
+  "preprocessing": {
+    "accepted": true,
+    "schema_version": "DUAL-P4-PRECONTRACT-V1",
+    "status": "BOX_CERTIFIED",
+    "original_input_hash": "91a2f904516b946390f9241d1af08977e658e340a0111748c38ff22099ad71d4",
+    "contracted_domain": [
+      [
+        "1/8",
+        "31/8"
+      ],
+      [
+        "-6",
+        "31/8"
+      ],
+      [
+        "1/8",
+        "6"
+      ],
+      [
+        "1/8",
+        "31/8"
+      ]
+    ],
+    "directions": [
+      {
+        "id": "p_x_min",
+        "status": "CERTIFIED",
+        "accepted_endpoint": "1/8",
+        "reason": "已验证非负组合/锥条件与原域残差修正，闭端点向外有效"
+      },
+      {
+        "id": "p_x_max",
+        "status": "CERTIFIED",
+        "accepted_endpoint": "31/8",
+        "reason": "已验证非负组合/锥条件与原域残差修正，闭端点向外有效"
+      },
+      {
+        "id": "p_y_min",
+        "status": "FALLBACK_UNCERTIFIED",
+        "accepted_endpoint": "-6",
+        "reason": "未使用候选端点，保留原方向端点"
+      },
+      {
+        "id": "p_y_max",
+        "status": "CERTIFIED",
+        "accepted_endpoint": "31/8",
+        "reason": "已验证非负组合/锥条件与原域残差修正，闭端点向外有效"
+      },
+      {
+        "id": "s_x_min",
+        "status": "CERTIFIED",
+        "accepted_endpoint": "1/8",
+        "reason": "已验证非负组合/锥条件与原域残差修正，闭端点向外有效"
+      },
+      {
+        "id": "s_x_max",
+        "status": "FALLBACK_TIMEOUT",
+        "accepted_endpoint": "6",
+        "reason": "未使用候选端点，保留原方向端点"
+      },
+      {
+        "id": "s_y_min",
+        "status": "CERTIFIED",
+        "accepted_endpoint": "1/8",
+        "reason": "已验证非负组合/锥条件与原域残差修正，闭端点向外有效"
+      },
+      {
+        "id": "s_y_max",
+        "status": "CERTIFIED",
+        "accepted_endpoint": "31/8",
+        "reason": "已验证非负组合/锥条件与原域残差修正，闭端点向外有效"
+      }
+    ],
+    "preprocess_hash": "d0d803e7c9b469f8e0b8d00b738a153d16c391c16ed33e4f50f7ee5047220f77",
+    "cost_within_declared_total": true,
+    "claim": "all original P4-compatible positions are inside contracted_domain, or original P4 set is empty"
+  },
+  "restricted_input_hash": "6105fca64b8f7d3300d0dd4b0094a364b79d320fc943706140f3ac8fbf929e22",
+  "tree": {
+    "certificate_valid": true,
+    "input_hash": "6105fca64b8f7d3300d0dd4b0094a364b79d320fc943706140f3ac8fbf929e22",
+    "mode": "4d",
+    "counts": {
+      "SPLIT": 0,
+      "OUTSIDE": 0,
+      "INSIDE": 0,
+      "UNDECIDED": 1,
+      "PENDING": 0
+    },
+    "status": "OUTER_CERTIFIED",
+    "cost_attestation": "structural counters checked; timing/RSS self-reported, not independently measurable from archive"
+  },
+  "original_domain_contact": true,
+  "contracted_domain_contact": true,
+  "projection_hash": "1e87421d3348d7945de83d42ad52385d54813bd2920d7e1a184470fdc6a088f1",
+  "claim": "the retained boxes and complete pending queue contain all original P4-compatible positions"
+}

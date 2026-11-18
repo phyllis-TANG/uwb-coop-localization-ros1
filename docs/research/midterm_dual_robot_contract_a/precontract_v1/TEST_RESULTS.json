@@ -1,0 +1,133 @@
+{
+  "planned": 39,
+  "passed": 39,
+  "failures": 0,
+  "errors": 0,
+  "expected_corruption_rejections": [
+    {
+      "test": "test_08_inward_extra_endpoint",
+      "accepted": false,
+      "reason": "CANDIDATE_ENDPOINT_INWARD: p_x_max"
+    },
+    {
+      "test": "test_09_sign_flip",
+      "accepted": false,
+      "reason": "DIRECTION_ID_OR_SIGN_MISMATCH: p_x_max"
+    },
+    {
+      "test": "test_10_other_vehicle_row",
+      "accepted": false,
+      "reason": "ROW_ID_OR_VEHICLE_MISMATCH: s:pair:a0:a1"
+    },
+    {
+      "test": "test_11_forged_domain",
+      "accepted": false,
+      "reason": "CONTRACTED_DOMAIN_MISMATCH"
+    },
+    {
+      "test": "test_12_forged_range",
+      "accepted": false,
+      "reason": "RANGE_ENCLOSURE_OR_VEHICLE_MISMATCH"
+    },
+    {
+      "test": "test_13_negative_multiplier",
+      "accepted": false,
+      "reason": "NEGATIVE_MULTIPLIER"
+    },
+    {
+      "test": "test_15_residual_ignored_is_rejected",
+      "accepted": false,
+      "reason": "RESIDUAL_MISMATCH"
+    },
+    {
+      "test": "test_17_invalid_soc_dual",
+      "accepted": false,
+      "reason": "SOC_DUAL_NOT_CERTIFIED"
+    },
+    {
+      "test": "test_18_unknown_peer_not_anchor",
+      "accepted": false,
+      "reason": "INVALID_BALL_ANCHOR"
+    },
+    {
+      "test": "test_19_fallback_cannot_shrink",
+      "accepted": false,
+      "reason": "ADOPTED_ENDPOINT_MISMATCH: p_x_max"
+    },
+    {
+      "test": "test_20_timeout_cannot_certify",
+      "accepted": false,
+      "reason": "DIRECTION_BUDGET_EXCEEDED_WITHOUT_FALLBACK: p_x_max"
+    },
+    {
+      "test": "test_22_false_empty",
+      "accepted": false,
+      "reason": "CONTRACTED_DOMAIN_MISMATCH"
+    },
+    {
+      "test": "test_23_missing_direction",
+      "accepted": false,
+      "reason": "EIGHT_DIRECTIONS_REQUIRED"
+    },
+    {
+      "test": "test_24_original_observation_identity",
+      "accepted": false,
+      "reason": "ORIGINAL_INPUT_HASH_MISMATCH"
+    },
+    {
+      "test": "test_25_composite_root_cropped",
+      "accepted": false,
+      "reason": "ROOT_DOMAIN_MISMATCH"
+    },
+    {
+      "test": "test_26_composite_missing_queue",
+      "accepted": false,
+      "reason": "LOST_OR_REORDERED_QUEUE"
+    },
+    {
+      "test": "test_27_composite_split_coverage",
+      "accepted": false,
+      "reason": "CHILDREN_DO_NOT_COVER_PARENT"
+    },
+    {
+      "test": "test_28_composite_threshold_changed",
+      "accepted": false,
+      "reason": "THRESHOLD_IDENTITY_MISMATCH"
+    },
+    {
+      "test": "test_29_composite_domain_hash",
+      "accepted": false,
+      "reason": "RESTRICTED_INPUT_HASH_MISMATCH"
+    },
+    {
+      "test": "test_30_solver_success_not_evidence",
+      "accepted": false,
+      "reason": "INVALID_SUPPORT_FORMAT"
+    },
+    {
+      "test": "test_33_car_inputs_are_separate",
+      "accepted": false,
+      "reason": "RANGE_ENCLOSURE_OR_VEHICLE_MISMATCH"
+    },
+    {
+      "test": "test_35_preprocess_hash_tamper",
+      "accepted": false,
+      "reason": "PREPROCESS_HASH_MISMATCH"
+    },
+    {
+      "test": "test_36_old_checker_rejects_small_root_against_original",
+      "accepted": false,
+      "reason": "ROOT_DOMAIN_MISMATCH"
+    },
+    {
+      "test": "test_38_composite_recovery_tamper",
+      "accepted": false,
+      "reason": "BIAS_RECOVERY_MISMATCH"
+    },
+    {
+      "test": "test_39_composite_radius_tamper",
+      "accepted": false,
+      "reason": "PROJECTION_OR_RADIUS_MISMATCH"
+    }
+  ]
+}
