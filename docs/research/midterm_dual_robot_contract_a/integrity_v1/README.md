@@ -15,3 +15,5 @@ python3 "$t/decision.py" "$d/integrity_v1/publication.json" "$d/precontract_v1/e
 PL≤AL 时 available=true；PL>AL 时 alarm=true。启动、未发布、未就绪、缺证、坏证、空域、迟到和过期均 available=false，alarm=false 表示未产生超限告警，原因另列。有效预算外包按同一半径规则。查询早于结果到达时不显示未来 PL 或超限告警。真值、故障类型和起止时刻不属于发布接口；事后评价可用首次实际告警时间计算延迟。
 
 两车共享同一历元联合事件，可同时推出各自误差界。要推整段任务风险，需另计各历元联合事件失败、模型失效、故障未覆盖和超时策略；时序相关时不能将逐历元概率相乘。该段尚无任务风险预算。
+
+[一页方案对照](COMPARISON.md) · [独立验收与中文结论](VALIDATION.md) · [月面逐车核验表](READBACK_141.json)。接口固定提交 f823013b4d96579b5c2ec622fb6ed30848721514。
