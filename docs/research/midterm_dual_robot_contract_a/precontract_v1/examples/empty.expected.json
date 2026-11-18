@@ -1,0 +1,67 @@
+{
+  "accepted": true,
+  "status": "EMPTY_IN_ORIGINAL_DOMAIN",
+  "original_input_hash": "e5dce76cf57028cebd8647c0fb73a63ac09fe329547a5241e00856102b5b0a23",
+  "preprocessing": {
+    "accepted": true,
+    "schema_version": "DUAL-P4-PRECONTRACT-V1",
+    "status": "EMPTY_PROVED",
+    "original_input_hash": "e5dce76cf57028cebd8647c0fb73a63ac09fe329547a5241e00856102b5b0a23",
+    "contracted_domain": null,
+    "directions": [
+      {
+        "id": "p_x_min",
+        "status": "CERTIFIED",
+        "accepted_endpoint": "3",
+        "reason": "已验证非负组合/锥条件与原域残差修正，闭端点向外有效"
+      },
+      {
+        "id": "p_x_max",
+        "status": "CERTIFIED",
+        "accepted_endpoint": "1",
+        "reason": "已验证非负组合/锥条件与原域残差修正，闭端点向外有效"
+      },
+      {
+        "id": "p_y_min",
+        "status": "CERTIFIED",
+        "accepted_endpoint": "-1",
+        "reason": "已验证非负组合/锥条件与原域残差修正，闭端点向外有效"
+      },
+      {
+        "id": "p_y_max",
+        "status": "CERTIFIED",
+        "accepted_endpoint": "1",
+        "reason": "已验证非负组合/锥条件与原域残差修正，闭端点向外有效"
+      },
+      {
+        "id": "s_x_min",
+        "status": "CERTIFIED",
+        "accepted_endpoint": "3",
+        "reason": "已验证非负组合/锥条件与原域残差修正，闭端点向外有效"
+      },
+      {
+        "id": "s_x_max",
+        "status": "CERTIFIED",
+        "accepted_endpoint": "1",
+        "reason": "已验证非负组合/锥条件与原域残差修正，闭端点向外有效"
+      },
+      {
+        "id": "s_y_min",
+        "status": "CERTIFIED",
+        "accepted_endpoint": "-1",
+        "reason": "已验证非负组合/锥条件与原域残差修正，闭端点向外有效"
+      },
+      {
+        "id": "s_y_max",
+        "status": "CERTIFIED",
+        "accepted_endpoint": "1",
+        "reason": "已验证非负组合/锥条件与原域残差修正，闭端点向外有效"
+      }
+    ],
+    "preprocess_hash": "af6434a2daffb2be9217e0bdbcdbaf5dc8ad5808da139b40bc2db36682171077",
+    "cost_within_declared_total": true,
+    "claim": "all original P4-compatible positions are inside contracted_domain, or original P4 set is empty"
+  },
+  "tree": null,
+  "original_domain_contact": false
+}

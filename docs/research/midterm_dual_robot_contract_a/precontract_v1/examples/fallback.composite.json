@@ -1,0 +1,430 @@
+{
+  "schema_version": "DUAL-P4-PRECONTRACT-V1",
+  "original_input_hash": "91a2f904516b946390f9241d1af08977e658e340a0111748c38ff22099ad71d4",
+  "preprocessing": {
+    "schema_version": "DUAL-P4-PRECONTRACT-V1",
+    "source_contract_commit": "50b592fbd672a1f19075147f53061a5861b3b892",
+    "original_input_hash": "91a2f904516b946390f9241d1af08977e658e340a0111748c38ff22099ad71d4",
+    "measurement_ids": [
+      "t0/p/a0",
+      "t0/p/a1",
+      "t0/p/a2",
+      "t0/p/a3",
+      "t0/s/a0",
+      "t0/s/a1",
+      "t0/s/a2",
+      "t0/s/a3",
+      "t0/p/s/peer"
+    ],
+    "original_domain": [
+      [
+        "-6",
+        "6"
+      ],
+      [
+        "-6",
+        "6"
+      ],
+      [
+        "-6",
+        "6"
+      ],
+      [
+        "-6",
+        "6"
+      ]
+    ],
+    "range_enclosures": {
+      "p": [
+        {
+          "measurement_id": "t0/p/a0",
+          "rho_upper": "1",
+          "lower": "1",
+          "upper": "4"
+        },
+        {
+          "measurement_id": "t0/p/a1",
+          "rho_upper": "1",
+          "lower": "1",
+          "upper": "4"
+        },
+        {
+          "measurement_id": "t0/p/a2",
+          "rho_upper": "1",
+          "lower": "1",
+          "upper": "4"
+        },
+        {
+          "measurement_id": "t0/p/a3",
+          "rho_upper": "1",
+          "lower": "1",
+          "upper": "4"
+        }
+      ],
+      "s": [
+        {
+          "measurement_id": "t0/s/a0",
+          "rho_upper": "1",
+          "lower": "1",
+          "upper": "4"
+        },
+        {
+          "measurement_id": "t0/s/a1",
+          "rho_upper": "1",
+          "lower": "1",
+          "upper": "4"
+        },
+        {
+          "measurement_id": "t0/s/a2",
+          "rho_upper": "1",
+          "lower": "1",
+          "upper": "4"
+        },
+        {
+          "measurement_id": "t0/s/a3",
+          "rho_upper": "1",
+          "lower": "1",
+          "upper": "4"
+        }
+      ]
+    },
+    "directions": [
+      {
+        "id": "p_x_min",
+        "car": "p",
+        "axis": 0,
+        "sign": -1,
+        "status": "CERTIFIED",
+        "original_endpoint": "-6",
+        "candidate_endpoint": "1/8",
+        "adopted_endpoint": "1/8",
+        "proof": {
+          "kind": "rational_support_v1",
+          "linear": [
+            {
+              "row_id": "p:pair:a1:a0",
+              "weight": "1/8"
+            }
+          ],
+          "balls": [],
+          "residual": [
+            "0",
+            "0"
+          ],
+          "support_upper": "-1/8"
+        },
+        "reason": "exact nonnegative affine certificate",
+        "elapsed_seconds": "0.003205501001502853"
+      },
+      {
+        "id": "p_x_max",
+        "car": "p",
+        "axis": 0,
+        "sign": 1,
+        "status": "CERTIFIED",
+        "original_endpoint": "6",
+        "candidate_endpoint": "31/8",
+        "adopted_endpoint": "31/8",
+        "proof": {
+          "kind": "rational_support_v1",
+          "linear": [
+            {
+              "row_id": "p:pair:a0:a1",
+              "weight": "1/8"
+            }
+          ],
+          "balls": [],
+          "residual": [
+            "0",
+            "0"
+          ],
+          "support_upper": "31/8"
+        },
+        "reason": "exact nonnegative affine certificate",
+        "elapsed_seconds": "0.003194288998201955"
+      },
+      {
+        "id": "p_y_min",
+        "car": "p",
+        "axis": 1,
+        "sign": -1,
+        "status": "FALLBACK_UNCERTIFIED",
+        "original_endpoint": "-6",
+        "candidate_endpoint": null,
+        "adopted_endpoint": "-6",
+        "proof": null,
+        "reason": "caller supplied no usable direction certificate; original endpoint retained",
+        "elapsed_seconds": "3.815999662037939e-06"
+      },
+      {
+        "id": "p_y_max",
+        "car": "p",
+        "axis": 1,
+        "sign": 1,
+        "status": "CERTIFIED",
+        "original_endpoint": "6",
+        "candidate_endpoint": "31/8",
+        "adopted_endpoint": "31/8",
+        "proof": {
+          "kind": "rational_support_v1",
+          "linear": [
+            {
+              "row_id": "p:pair:a0:a2",
+              "weight": "1/8"
+            }
+          ],
+          "balls": [],
+          "residual": [
+            "0",
+            "0"
+          ],
+          "support_upper": "31/8"
+        },
+        "reason": "exact nonnegative affine certificate",
+        "elapsed_seconds": "0.0032392630018875934"
+      },
+      {
+        "id": "s_x_min",
+        "car": "s",
+        "axis": 0,
+        "sign": -1,
+        "status": "CERTIFIED",
+        "original_endpoint": "-6",
+        "candidate_endpoint": "1/8",
+        "adopted_endpoint": "1/8",
+        "proof": {
+          "kind": "rational_support_v1",
+          "linear": [
+            {
+              "row_id": "s:pair:a1:a0",
+              "weight": "1/8"
+            }
+          ],
+          "balls": [],
+          "residual": [
+            "0",
+            "0"
+          ],
+          "support_upper": "-1/8"
+        },
+        "reason": "exact nonnegative affine certificate",
+        "elapsed_seconds": "0.0031818499992368743"
+      },
+      {
+        "id": "s_x_max",
+        "car": "s",
+        "axis": 0,
+        "sign": 1,
+        "status": "FALLBACK_TIMEOUT",
+        "original_endpoint": "6",
+        "candidate_endpoint": null,
+        "adopted_endpoint": "6",
+        "proof": null,
+        "reason": "caller supplied no usable direction certificate; original endpoint retained",
+        "elapsed_seconds": "4.583998816087842e-06"
+      },
+      {
+        "id": "s_y_min",
+        "car": "s",
+        "axis": 1,
+        "sign": -1,
+        "status": "CERTIFIED",
+        "original_endpoint": "-6",
+        "candidate_endpoint": "1/8",
+        "adopted_endpoint": "1/8",
+        "proof": {
+          "kind": "rational_support_v1",
+          "linear": [
+            {
+              "row_id": "s:pair:a2:a0",
+              "weight": "1/8"
+            }
+          ],
+          "balls": [],
+          "residual": [
+            "0",
+            "0"
+          ],
+          "support_upper": "-1/8"
+        },
+        "reason": "exact nonnegative affine certificate",
+        "elapsed_seconds": "0.0032497590000275522"
+      },
+      {
+        "id": "s_y_max",
+        "car": "s",
+        "axis": 1,
+        "sign": 1,
+        "status": "CERTIFIED",
+        "original_endpoint": "6",
+        "candidate_endpoint": "31/8",
+        "adopted_endpoint": "31/8",
+        "proof": {
+          "kind": "rational_support_v1",
+          "linear": [
+            {
+              "row_id": "s:pair:a0:a2",
+              "weight": "1/8"
+            }
+          ],
+          "balls": [],
+          "residual": [
+            "0",
+            "0"
+          ],
+          "support_upper": "31/8"
+        },
+        "reason": "exact nonnegative affine certificate",
+        "elapsed_seconds": "0.003210158000001684"
+      }
+    ],
+    "contracted_domain": [
+      [
+        "1/8",
+        "31/8"
+      ],
+      [
+        "-6",
+        "31/8"
+      ],
+      [
+        "1/8",
+        "6"
+      ],
+      [
+        "1/8",
+        "31/8"
+      ]
+    ],
+    "status": "BOX_CERTIFIED",
+    "budget": {
+      "per_direction_seconds": "1/2",
+      "total_seconds": "4"
+    },
+    "cost": {
+      "preprocess_seconds": "0.020275636998121627"
+    }
+  },
+  "preprocess_hash": "d0d803e7c9b469f8e0b8d00b738a153d16c391c16ed33e4f50f7ee5047220f77",
+  "restricted_input_hash": "6105fca64b8f7d3300d0dd4b0094a364b79d320fc943706140f3ac8fbf929e22",
+  "search_certificate": {
+    "schema_version": "DUAL-A-V1",
+    "input_hash": "6105fca64b8f7d3300d0dd4b0094a364b79d320fc943706140f3ac8fbf929e22",
+    "source_commit": "3ad69c8137183c1986012e354857b73527978c48",
+    "mode": "4d",
+    "measurement_ids": [
+      "t0/p/a0",
+      "t0/p/a1",
+      "t0/p/a2",
+      "t0/p/a3",
+      "t0/s/a0",
+      "t0/s/a1",
+      "t0/s/a2",
+      "t0/s/a3",
+      "t0/p/s/peer"
+    ],
+    "threshold_certificate": {
+      "id": "DUAL-A-V1-CHI2-9-CHERNOFF",
+      "dimension": 9,
+      "tau": "26",
+      "alpha": "1/20",
+      "method": "mgf_t_1/4_squared_taylor_80",
+      "t": "1/4",
+      "terms": 80
+    },
+    "root": "r",
+    "nodes": [
+      {
+        "id": "r",
+        "box": [
+          [
+            "1/8",
+            "31/8"
+          ],
+          [
+            "-6",
+            "31/8"
+          ],
+          [
+            "1/8",
+            "6"
+          ],
+          [
+            "1/8",
+            "31/8"
+          ]
+        ],
+        "kind": "UNDECIDED"
+      }
+    ],
+    "queue": [],
+    "projections": {
+      "p": {
+        "rectangles": [
+          {
+            "leaf": "r",
+            "box": [
+              [
+                "1/8",
+                "31/8"
+              ],
+              [
+                "-6",
+                "31/8"
+              ]
+            ]
+          }
+        ],
+        "center": [
+          "2",
+          "-17/16"
+        ],
+        "radius_squared": "7141/256",
+        "radius": "2640763679790374578303056860919/500000000000000000000000000000",
+        "area_upper": "1185/32"
+      },
+      "s": {
+        "rectangles": [
+          {
+            "leaf": "r",
+            "box": [
+              [
+                "1/8",
+                "6"
+              ],
+              [
+                "1/8",
+                "31/8"
+              ]
+            ]
+          }
+        ],
+        "center": [
+          "49/16",
+          "2"
+        ],
+        "radius_squared": "3109/256",
+        "radius": "3484900464862662329292830801727/1000000000000000000000000000000",
+        "area_upper": "705/32"
+      }
+    },
+    "domain_contact": true,
+    "counts": {
+      "SPLIT": 0,
+      "OUTSIDE": 0,
+      "INSIDE": 0,
+      "UNDECIDED": 1,
+      "PENDING": 0
+    },
+    "status": "OUTER_CERTIFIED",
+    "internal_semantics": "forall_position_exists_bias_and_observation",
+    "bias_recovery": [],
+    "cost": {
+      "processed_nodes": 1,
+      "search_seconds": "0",
+      "certificate_write_seconds": "0",
+      "peak_rss_bytes": "0",
+      "distance_evaluations": 0
+    }
+  }
+}

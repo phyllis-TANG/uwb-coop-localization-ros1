@@ -1,0 +1,158 @@
+{
+  "schema_version": "DUAL-A-V1",
+  "model_id": "dual_robot_single_epoch_diagonal_v1",
+  "state_order": [
+    "p_x",
+    "p_y",
+    "s_x",
+    "s_y",
+    "b"
+  ],
+  "measurement_ids": [
+    "t0/p/a0",
+    "t0/p/a1",
+    "t0/p/a2",
+    "t0/p/a3",
+    "t0/s/a0",
+    "t0/s/a1",
+    "t0/s/a2",
+    "t0/s/a3",
+    "t0/p/s/peer"
+  ],
+  "anchor_map": {
+    "a0": [
+      "0",
+      "0"
+    ],
+    "a1": [
+      "4",
+      "0"
+    ],
+    "a2": [
+      "0",
+      "4"
+    ],
+    "a3": [
+      "4",
+      "4"
+    ]
+  },
+  "bias_incidence": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "domains": [
+    [
+      "-6",
+      "6"
+    ],
+    [
+      "-6",
+      "6"
+    ],
+    [
+      "-6",
+      "6"
+    ],
+    [
+      "-6",
+      "6"
+    ],
+    [
+      "-3/5",
+      "3/5"
+    ]
+  ],
+  "observation_intervals": [
+    [
+      "2",
+      "3"
+    ],
+    [
+      "2",
+      "3"
+    ],
+    [
+      "2",
+      "3"
+    ],
+    [
+      "2",
+      "3"
+    ],
+    [
+      "2",
+      "3"
+    ],
+    [
+      "2",
+      "3"
+    ],
+    [
+      "2",
+      "3"
+    ],
+    [
+      "2",
+      "3"
+    ],
+    [
+      "0",
+      "4"
+    ]
+  ],
+  "noise_model": {
+    "kind": "known_diagonal_gaussian",
+    "dimension": 9,
+    "variance": [
+      "1/26",
+      "1/26",
+      "1/26",
+      "1/26",
+      "1/26",
+      "1/26",
+      "1/26",
+      "1/26",
+      "1/26"
+    ],
+    "independence": "nine_unique_raw_errors",
+    "bias_evolution": "single_constant"
+  },
+  "threshold_certificate": {
+    "id": "DUAL-A-V1-CHI2-9-CHERNOFF",
+    "dimension": 9,
+    "tau": "26",
+    "alpha": "1/20",
+    "method": "mgf_t_1/4_squared_taylor_80",
+    "t": "1/4",
+    "terms": 80
+  },
+  "arithmetic_policy": {
+    "kind": "rational_isqrt",
+    "sqrt_digits": 30,
+    "closed_sets": true
+  },
+  "budget": {
+    "max_nodes": 100001,
+    "max_seconds": "120",
+    "position_resolution": "1/8",
+    "bias_resolution": "1/20"
+  },
+  "source_commit": "3ad69c8137183c1986012e354857b73527978c48",
+  "case_id": "hand_normal",
+  "units": "m",
+  "frame": "synthetic_xy",
+  "epoch": "t0",
+  "antenna_reference": "2d_antenna",
+  "representation": "enclosing_closed_cartesian_intervals",
+  "position_prior": null,
+  "motion": null,
+  "input_hash": "0ef6399b2866c2e946ed143c53a8b574c8ff1bc19f554ba8ad38438e7b80fa66"
+}

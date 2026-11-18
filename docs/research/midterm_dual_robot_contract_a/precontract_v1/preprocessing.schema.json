@@ -1,0 +1,345 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source_contract_commit",
+    "original_input_hash",
+    "measurement_ids",
+    "original_domain",
+    "range_enclosures",
+    "directions",
+    "contracted_domain",
+    "status",
+    "budget",
+    "cost"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "DUAL-P4-PRECONTRACT-V1"
+    },
+    "source_contract_commit": {
+      "const": "50b592fbd672a1f19075147f53061a5861b3b892"
+    },
+    "original_input_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "measurement_ids": {
+      "type": "array",
+      "minItems": 9,
+      "maxItems": 9,
+      "items": {
+        "type": "string"
+      }
+    },
+    "original_domain": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "type": "string",
+          "description": "exact Fraction-readable rational, never a JSON floating number"
+        }
+      }
+    },
+    "range_enclosures": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "p",
+        "s"
+      ],
+      "properties": {
+        "p": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "measurement_id",
+              "rho_upper",
+              "lower",
+              "upper"
+            ],
+            "properties": {
+              "measurement_id": {
+                "type": "string"
+              },
+              "rho_upper": {
+                "type": "string",
+                "description": "exact Fraction-readable rational, never a JSON floating number"
+              },
+              "lower": {
+                "type": "string",
+                "description": "exact Fraction-readable rational, never a JSON floating number"
+              },
+              "upper": {
+                "type": "string",
+                "description": "exact Fraction-readable rational, never a JSON floating number"
+              }
+            }
+          }
+        },
+        "s": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "measurement_id",
+              "rho_upper",
+              "lower",
+              "upper"
+            ],
+            "properties": {
+              "measurement_id": {
+                "type": "string"
+              },
+              "rho_upper": {
+                "type": "string",
+                "description": "exact Fraction-readable rational, never a JSON floating number"
+              },
+              "lower": {
+                "type": "string",
+                "description": "exact Fraction-readable rational, never a JSON floating number"
+              },
+              "upper": {
+                "type": "string",
+                "description": "exact Fraction-readable rational, never a JSON floating number"
+              }
+            }
+          }
+        }
+      }
+    },
+    "directions": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "car",
+          "axis",
+          "sign",
+          "status",
+          "original_endpoint",
+          "candidate_endpoint",
+          "adopted_endpoint",
+          "proof",
+          "reason",
+          "elapsed_seconds"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "car": {
+            "enum": [
+              "p",
+              "s"
+            ]
+          },
+          "axis": {
+            "enum": [
+              0,
+              1
+            ]
+          },
+          "sign": {
+            "enum": [
+              -1,
+              1
+            ]
+          },
+          "status": {
+            "enum": [
+              "CERTIFIED",
+              "FALLBACK_TIMEOUT",
+              "FALLBACK_UNCERTIFIED",
+              "FALLBACK_ERROR"
+            ]
+          },
+          "original_endpoint": {
+            "type": "string",
+            "description": "exact Fraction-readable rational, never a JSON floating number"
+          },
+          "candidate_endpoint": {
+            "anyOf": [
+              {
+                "type": "string",
+                "description": "exact Fraction-readable rational, never a JSON floating number"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "adopted_endpoint": {
+            "type": "string",
+            "description": "exact Fraction-readable rational, never a JSON floating number"
+          },
+          "proof": {
+            "anyOf": [
+              {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "linear",
+                  "balls",
+                  "residual",
+                  "support_upper"
+                ],
+                "properties": {
+                  "kind": {
+                    "const": "rational_support_v1"
+                  },
+                  "linear": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "row_id",
+                        "weight"
+                      ],
+                      "properties": {
+                        "row_id": {
+                          "type": "string"
+                        },
+                        "weight": {
+                          "type": "string",
+                          "description": "exact Fraction-readable rational, never a JSON floating number"
+                        }
+                      }
+                    }
+                  },
+                  "balls": {
+                    "type": "array",
+                    "maxItems": 4,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "anchor_id",
+                        "vector",
+                        "t"
+                      ],
+                      "properties": {
+                        "anchor_id": {
+                          "enum": [
+                            "a0",
+                            "a1",
+                            "a2",
+                            "a3"
+                          ]
+                        },
+                        "vector": {
+                          "type": "array",
+                          "minItems": 2,
+                          "maxItems": 2,
+                          "items": {
+                            "type": "string",
+                            "description": "exact Fraction-readable rational, never a JSON floating number"
+                          }
+                        },
+                        "t": {
+                          "type": "string",
+                          "description": "exact Fraction-readable rational, never a JSON floating number"
+                        }
+                      }
+                    }
+                  },
+                  "residual": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "items": {
+                      "type": "string",
+                      "description": "exact Fraction-readable rational, never a JSON floating number"
+                    }
+                  },
+                  "support_upper": {
+                    "type": "string",
+                    "description": "exact Fraction-readable rational, never a JSON floating number"
+                  }
+                }
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "elapsed_seconds": {
+            "type": "string",
+            "description": "exact Fraction-readable rational, never a JSON floating number"
+          }
+        }
+      }
+    },
+    "contracted_domain": {
+      "anyOf": [
+        {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "string",
+              "description": "exact Fraction-readable rational, never a JSON floating number"
+            }
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "status": {
+      "enum": [
+        "BOX_CERTIFIED",
+        "EMPTY_PROVED"
+      ]
+    },
+    "budget": {
+      "const": {
+        "per_direction_seconds": "1/2",
+        "total_seconds": "4"
+      }
+    },
+    "cost": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "preprocess_seconds"
+      ],
+      "properties": {
+        "preprocess_seconds": {
+          "type": "string",
+          "description": "exact Fraction-readable rational, never a JSON floating number"
+        }
+      }
+    }
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "All identities, row reconstruction, exact cone/residual/adoption and closure checks in contract.verify_preprocessing are additionally required."
+}

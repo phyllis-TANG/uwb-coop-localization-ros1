@@ -1,0 +1,332 @@
+{
+  "schema_version": "DUAL-P4-PRECONTRACT-V1",
+  "source_contract_commit": "50b592fbd672a1f19075147f53061a5861b3b892",
+  "original_input_hash": "3b8829f1132125a87572ceb00025961d722c623aec55f54e2940de8dccd69da1",
+  "measurement_ids": [
+    "t0/p/a0",
+    "t0/p/a1",
+    "t0/p/a2",
+    "t0/p/a3",
+    "t0/s/a0",
+    "t0/s/a1",
+    "t0/s/a2",
+    "t0/s/a3",
+    "t0/p/s/peer"
+  ],
+  "original_domain": [
+    [
+      "-6",
+      "6"
+    ],
+    [
+      "-6",
+      "6"
+    ],
+    [
+      "-6",
+      "6"
+    ],
+    [
+      "-6",
+      "6"
+    ]
+  ],
+  "range_enclosures": {
+    "p": [
+      {
+        "measurement_id": "t0/p/a0",
+        "rho_upper": "1",
+        "lower": "0",
+        "upper": "1"
+      },
+      {
+        "measurement_id": "t0/p/a1",
+        "rho_upper": "1",
+        "lower": "0",
+        "upper": "1"
+      },
+      {
+        "measurement_id": "t0/p/a2",
+        "rho_upper": "1",
+        "lower": "0",
+        "upper": "1"
+      },
+      {
+        "measurement_id": "t0/p/a3",
+        "rho_upper": "1",
+        "lower": "0",
+        "upper": "1"
+      }
+    ],
+    "s": [
+      {
+        "measurement_id": "t0/s/a0",
+        "rho_upper": "1",
+        "lower": "0",
+        "upper": "1"
+      },
+      {
+        "measurement_id": "t0/s/a1",
+        "rho_upper": "1",
+        "lower": "0",
+        "upper": "1"
+      },
+      {
+        "measurement_id": "t0/s/a2",
+        "rho_upper": "1",
+        "lower": "0",
+        "upper": "1"
+      },
+      {
+        "measurement_id": "t0/s/a3",
+        "rho_upper": "1",
+        "lower": "0",
+        "upper": "1"
+      }
+    ]
+  },
+  "directions": [
+    {
+      "id": "p_x_min",
+      "car": "p",
+      "axis": 0,
+      "sign": -1,
+      "status": "CERTIFIED",
+      "original_endpoint": "-6",
+      "candidate_endpoint": "-1",
+      "adopted_endpoint": "-1",
+      "proof": {
+        "kind": "rational_support_v1",
+        "linear": [
+          {
+            "row_id": "p:ball_axis:a0:0:-",
+            "weight": "1"
+          }
+        ],
+        "balls": [],
+        "residual": [
+          "0",
+          "0"
+        ],
+        "support_upper": "1"
+      },
+      "reason": "exact nonnegative affine certificate",
+      "elapsed_seconds": "0.0016968659983831458"
+    },
+    {
+      "id": "p_x_max",
+      "car": "p",
+      "axis": 0,
+      "sign": 1,
+      "status": "CERTIFIED",
+      "original_endpoint": "6",
+      "candidate_endpoint": "1",
+      "adopted_endpoint": "1",
+      "proof": {
+        "kind": "rational_support_v1",
+        "linear": [
+          {
+            "row_id": "p:ball_axis:a0:0:+",
+            "weight": "1"
+          }
+        ],
+        "balls": [],
+        "residual": [
+          "0",
+          "0"
+        ],
+        "support_upper": "1"
+      },
+      "reason": "exact nonnegative affine certificate",
+      "elapsed_seconds": "0.0016917579996515997"
+    },
+    {
+      "id": "p_y_min",
+      "car": "p",
+      "axis": 1,
+      "sign": -1,
+      "status": "CERTIFIED",
+      "original_endpoint": "-6",
+      "candidate_endpoint": "-1",
+      "adopted_endpoint": "-1",
+      "proof": {
+        "kind": "rational_support_v1",
+        "linear": [
+          {
+            "row_id": "p:ball_axis:a0:1:-",
+            "weight": "1"
+          }
+        ],
+        "balls": [],
+        "residual": [
+          "0",
+          "0"
+        ],
+        "support_upper": "1"
+      },
+      "reason": "exact nonnegative affine certificate",
+      "elapsed_seconds": "0.0017028540023602545"
+    },
+    {
+      "id": "p_y_max",
+      "car": "p",
+      "axis": 1,
+      "sign": 1,
+      "status": "CERTIFIED",
+      "original_endpoint": "6",
+      "candidate_endpoint": "1",
+      "adopted_endpoint": "1",
+      "proof": {
+        "kind": "rational_support_v1",
+        "linear": [
+          {
+            "row_id": "p:ball_axis:a0:1:+",
+            "weight": "1"
+          }
+        ],
+        "balls": [],
+        "residual": [
+          "0",
+          "0"
+        ],
+        "support_upper": "1"
+      },
+      "reason": "exact nonnegative affine certificate",
+      "elapsed_seconds": "0.001684872004261706"
+    },
+    {
+      "id": "s_x_min",
+      "car": "s",
+      "axis": 0,
+      "sign": -1,
+      "status": "CERTIFIED",
+      "original_endpoint": "-6",
+      "candidate_endpoint": "-1",
+      "adopted_endpoint": "-1",
+      "proof": {
+        "kind": "rational_support_v1",
+        "linear": [
+          {
+            "row_id": "s:ball_axis:a0:0:-",
+            "weight": "1"
+          }
+        ],
+        "balls": [],
+        "residual": [
+          "0",
+          "0"
+        ],
+        "support_upper": "1"
+      },
+      "reason": "exact nonnegative affine certificate",
+      "elapsed_seconds": "0.001667226002609823"
+    },
+    {
+      "id": "s_x_max",
+      "car": "s",
+      "axis": 0,
+      "sign": 1,
+      "status": "CERTIFIED",
+      "original_endpoint": "6",
+      "candidate_endpoint": "1",
+      "adopted_endpoint": "1",
+      "proof": {
+        "kind": "rational_support_v1",
+        "linear": [
+          {
+            "row_id": "s:ball_axis:a0:0:+",
+            "weight": "1"
+          }
+        ],
+        "balls": [],
+        "residual": [
+          "0",
+          "0"
+        ],
+        "support_upper": "1"
+      },
+      "reason": "exact nonnegative affine certificate",
+      "elapsed_seconds": "0.0016812370013212785"
+    },
+    {
+      "id": "s_y_min",
+      "car": "s",
+      "axis": 1,
+      "sign": -1,
+      "status": "CERTIFIED",
+      "original_endpoint": "-6",
+      "candidate_endpoint": "-1",
+      "adopted_endpoint": "-1",
+      "proof": {
+        "kind": "rational_support_v1",
+        "linear": [
+          {
+            "row_id": "s:ball_axis:a0:1:-",
+            "weight": "1"
+          }
+        ],
+        "balls": [],
+        "residual": [
+          "0",
+          "0"
+        ],
+        "support_upper": "1"
+      },
+      "reason": "exact nonnegative affine certificate",
+      "elapsed_seconds": "0.001704370995867066"
+    },
+    {
+      "id": "s_y_max",
+      "car": "s",
+      "axis": 1,
+      "sign": 1,
+      "status": "CERTIFIED",
+      "original_endpoint": "6",
+      "candidate_endpoint": "1",
+      "adopted_endpoint": "1",
+      "proof": {
+        "kind": "rational_support_v1",
+        "linear": [
+          {
+            "row_id": "s:ball_axis:a0:1:+",
+            "weight": "1"
+          }
+        ],
+        "balls": [],
+        "residual": [
+          "0",
+          "0"
+        ],
+        "support_upper": "1"
+      },
+      "reason": "exact nonnegative affine certificate",
+      "elapsed_seconds": "0.0017112010027631186"
+    }
+  ],
+  "contracted_domain": [
+    [
+      "-1",
+      "1"
+    ],
+    [
+      "-1",
+      "1"
+    ],
+    [
+      "-1",
+      "1"
+    ],
+    [
+      "-1",
+      "1"
+    ]
+  ],
+  "status": "BOX_CERTIFIED",
+  "budget": {
+    "per_direction_seconds": "1/2",
+    "total_seconds": "4"
+  },
+  "cost": {
+    "preprocess_seconds": "0.014501804995234124"
+  }
+}
