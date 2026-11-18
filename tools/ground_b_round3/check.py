@@ -45,7 +45,7 @@ def bracket(q):
     return left,right
 
 
-def point(w,obs):
+def point(w,obs,*,variance=V,bound=B):
     xy=[tuple(map(Q,v)) for v in w['xy_m']]
     require(len(xy)==2 and all(len(v)==2 for v in xy),'paired XY')
     a,b=[(*v,Q(h)) for v,h in zip(xy,obs['heights'],strict=True)]
@@ -54,7 +54,7 @@ def point(w,obs):
     bias=Q(w['bias_m'])
     il,ih=map(Q,w['feasible_bias_inner_m'])
     ol,oh=map(Q,w['feasible_bias_outer_m'])
-    require(-B<=ol<=il<=bias<=ih<=oh<=B,'bias domain')
+    require(-bound<=ol<=il<=bias<=ih<=oh<=bound,'bias domain')
     raw=[]
     for k,((p,s),y,(lo,hi)) in enumerate(zip(links,obs['ranges'],residual,strict=True)):
         d2=norm2(p,s)
@@ -65,16 +65,16 @@ def point(w,obs):
                 max(0,center-hi)**2<=d2<=(center-lo)**2,'residual enclosure')
         low,high=bracket(d2)
         raw.append((y-high,y-low))
-    stat=sum(max(lo**2,hi**2) for lo,hi in residual)/V
+    stat=sum(max(lo**2,hi**2) for lo,hi in residual)/variance
     require(stat<Q(w['weighted_stat_strict_upper'])<26,'strict joint statistic')
     anchor_upper=sum(max(l*l,h*h) for l,h in raw[:8])
     anchor_lower=sum(max(l,-h,0)**2 for l,h in raw[:8])
     pl,ph=raw[8]
     for btest in (il,ih):
-        require(anchor_upper+max((pl-btest)**2,(ph-btest)**2)<=26*V,'bias endpoint')
+        require(anchor_upper+max((pl-btest)**2,(ph-btest)**2)<=26*variance,'bias endpoint')
     # Convexity covers the entire inner interval. Outer endpoints may clip at ±B.
-    maxwidth=bracket(26*V-anchor_lower)[1]
-    require(ol<=max(-B,pl-maxwidth) and oh>=min(B,ph+maxwidth),'bias outer enclosure')
+    maxwidth=bracket(26*variance-anchor_lower)[1]
+    require(ol<=max(-bound,pl-maxwidth) and oh>=min(bound,ph+maxwidth),'bias outer enclosure')
     return xy
 
 

@@ -23,8 +23,8 @@ def penalty(box,other,y):
     lo,hi=sqbounds(box,other)
     return max(y[0]-hi,lo-y[1],0)**2
 
-def validate(r):
-    obs=r['obs']; cert=r['region']; limit=26*40000**2
+def validate(r,*,sigma_um=40000,bias_um=600000,cell_um=50000):
+    obs=r['obs']; cert=r['region']; limit=26*sigma_um**2
     anchors=[[ends(x) for x in a] for a in obs['anchors']]
     heights=list(map(ends,obs['heights']));meas=list(map(ends,obs['ranges']))
     losses=[]
@@ -45,7 +45,7 @@ def validate(r):
             loss=sum(penalty(b+[heights[c]],a,y) for a,y in zip(anchors,samples))
             if loss>limit:continue
             widths=[u-l for l,u in b]
-            if max(widths)<=50000:
+            if max(widths)<=cell_um:
                 leaves[tuple(map(tuple,b))]=loss
             else:
                 k=widths.index(max(widths));l,u=b[k];mid=(l+u)//2
@@ -53,7 +53,7 @@ def validate(r):
         stored=cert['cells'][c]
         assert len(stored)==len(leaves) and {tuple(map(tuple,b)):v for b,v in stored}==leaves
         losses.append(stored)
-    peer=[meas[-1][0]-600000,meas[-1][1]+600000]
+    peer=[meas[-1][0]-bias_um,meas[-1][1]+bias_um]
     expected={}
     for i,(p,lp) in enumerate(losses[0]):
         ok=[j for j,(s,ls) in enumerate(losses[1]) if lp+ls<=limit and lp+ls+penalty(p+[heights[0]],s+[heights[1]],peer)<=limit]

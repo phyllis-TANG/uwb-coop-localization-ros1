@@ -28,7 +28,7 @@ def square_bounds(lo,hi):
     return max(lo,-hi,0)**2,max(abs(lo),abs(hi))**2
 
 
-def candidates(row):
+def candidates(row, *, bias=.6, squared_limit=.04159):
     obs=row['obs']
     cert=row['region']
     centers=[[tuple((l+u)/2e6 for l,u in box) for box,_ in cells] for cells in cert['cells']]
@@ -37,12 +37,12 @@ def candidates(row):
            for p in group] for c,group in enumerate(xyz)]
     for i,js in cert['joint']:
         for j in js:
-            gap=max(0,abs(obs['ranges'][8]-math.dist(xyz[0][i],xyz[1][j]))-.6)
-            if loss[0][i]+loss[1][j]+gap**2<.04159:
+            gap=max(0,abs(obs['ranges'][8]-math.dist(xyz[0][i],xyz[1][j]))-bias)
+            if loss[0][i]+loss[1][j]+gap**2<squared_limit:
                 yield centers[0][i],centers[1][j]
 
 
-def evidence(xy,obs):
+def evidence(xy,obs,*,variance=VAR,bound=BOUND):
     points=[[F(str(v)) for v in p] for p in xy]
     xyz=[[*p,F(h)] for p,h in zip(points,obs['heights'])]
     pairs=[(p,a) for p in xyz for a in obs['anchors']]+[tuple(xyz)]
@@ -52,17 +52,17 @@ def evidence(xy,obs):
         lo,hi=root(dist2(p,a))
         raw.append((F(y)-hi,F(y)-lo))
     sq=[square_bounds(*r) for r in raw[:8]]
-    margin_lo=26*VAR-sum(hi for _,hi in sq)
-    margin_hi=26*VAR-sum(lo for lo,_ in sq)
+    margin_lo=26*variance-sum(hi for _,hi in sq)
+    margin_hi=26*variance-sum(lo for lo,_ in sq)
     width_lo=root(margin_lo)[0]
     width_hi=root(margin_hi)[1]
     lo,hi=raw[-1]
-    inner=(max(-BOUND,hi-width_lo),min(BOUND,lo+width_lo))
-    outer=(max(-BOUND,lo-width_hi),min(BOUND,hi+width_hi))
-    assert inner[0]<inner[1]
+    inner=(max(-bound,hi-width_lo),min(bound,lo+width_lo))
+    outer=(max(-bound,lo-width_hi),min(bound,hi+width_hi))
+    assert inner[0]<=inner[1]
     bias=sum(inner)/2
     residuals=raw[:8]+[(lo-bias,hi-bias)]
-    stat=sum(square_bounds(*r)[1] for r in residuals)/VAR
+    stat=sum(square_bounds(*r)[1] for r in residuals)/variance
     upper=F(math.floor(stat*10**9)+1,10**9)
     assert upper<26
     return dict(xy_m=[list(map(str,p)) for p in points],bias_m=str(bias),

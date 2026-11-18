@@ -52,3 +52,5 @@ python tools/ground_b_round3/reproduce.py
 ```
 
 共同基准与本地检出的主线均为 c7d53da2bb989f73514a6ce540813c379d698897，独立工作树 /home/ubuntu22/ground-b-round3。连续故障图重用 #149 的车辆时钟表、越限事件表与窗口标记；单历元半径见证与图中的轨迹使用不同登记种子。
+
+[固定九条观测的偏差域与测距噪声敏感性实验：六例对照、英文图和第 6 章结果段](sensitivity/README.md)
