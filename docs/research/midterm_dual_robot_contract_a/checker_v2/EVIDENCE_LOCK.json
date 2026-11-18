@@ -1,0 +1,384 @@
+{
+  "schema": "DUAL-A-CHECKER-V2-EVIDENCE-LOCK",
+  "delivery_sha": "5e3579086776725f9330f64eca75b63a21cd661c",
+  "evidence_source_commit": "4513c59a70f5b45a2ddd9e0e4fb1e35f6737436c",
+  "run_frozen_sha": "e112b900a97dc92acb08c950e5f65e6e8e515ac8",
+  "a_frozen_sha": "e45ca6d5940ff9f28233f03fb3502d5ed7004817",
+  "ready_sha256": "25dc894bcea20036af9a78d5caa352281a2b2afdb1aba5bc4971c5d59d383024",
+  "archive_hash": "7b8c1cff805e545d82cc313d75283ad005d281993f4345621b79038ca2937e8f",
+  "archives": {
+    "deterministic_certificates_J5_00.tar.gz": "d727de5ca46e8d9521ed2bcb013c56ce1646227fa8b74a5e4152f9bf9923b21f",
+    "deterministic_certificates_J5_01.tar.gz": "0d4e2a11e4359de3ef80a12b8f441802e435cb785020b8ccf4315adc2b2a3857",
+    "deterministic_certificates_J5_02.tar.gz": "cbe5b6e2af49e309481228bf8f721936a56e4e9308a23ce9097eae34bddc18c1",
+    "deterministic_certificates_J5_03.tar.gz": "042511ed3282671324a3616887baca23605aec73e9501a4efd22c1f3dedaf966",
+    "deterministic_certificates_J5_04.tar.gz": "88eea890244bf73d121cea2a274d757ebf4d54b6ed3b9276b7b7d09585365a1a",
+    "deterministic_certificates_J5_05.tar.gz": "e06317a4f95a6e21b7d23ef8f2ea3364f48686b3188bd0a14939171780530805",
+    "deterministic_certificates_J5_06.tar.gz": "5446abaed29b093ffd6e75833d972c91a85983462877fec78081a7f7e661cf4b",
+    "deterministic_certificates_J5_07.tar.gz": "b64bbaba7bbf82c04ec6ae9bbc90b4f09f4e259e1f0c3ade64af470f70dcd2cb",
+    "deterministic_certificates_J5_08.tar.gz": "2ea3fd9b1466c25c75faf2e6cc0ef0d006b4dee7452cadb520a8f29868d33916",
+    "deterministic_certificates_J5_09.tar.gz": "30d18b63a0299f2e0f2644a60eacdeb7dc1f7a1c6fd39aeb8e7ba36e31625cfc",
+    "deterministic_certificates_N4_00.tar.gz": "54d7e931fb8337db4461722dd49446e57282ae07e9210b98fa712968b4fc1434",
+    "deterministic_certificates_N4_01.tar.gz": "b80ffa60f21fe07602565d992febf5007c9e749cc17b450802f3ee9944d05e7d",
+    "deterministic_certificates_P4_00.tar.gz": "e95ddcb631cc2d9b48d5e841baec704053c0e6877469dd9b327a0426dc4936c8",
+    "deterministic_certificates_P4_01.tar.gz": "746a02fa496d8c337cdade8a02bfbdd31532b69a88581264a8846c8c304b9d8c",
+    "deterministic_metadata_00.tar.gz": "7825811b6b00eeca794e81f2924eb8d5847d7e09e62220c3ab66e6683aa52684",
+    "deterministic_raw_J5_00.tar.gz": "5f70fe98a552643cf46c6d85140bbbffacffcb2764cfc13789c3cca96bb287cb",
+    "deterministic_raw_N4_00.tar.gz": "bacf64aa774ce563a0862ef5bc74f352ba7c898d6ea7e052e93701fe1964e333",
+    "deterministic_raw_P4_00.tar.gz": "da0150434617dcb08ee8e168fa1f573a2205cf494f2859881ec1174c5eea5278"
+  },
+  "verified_payload_files": 268,
+  "verified_frozen_source_files": 24,
+  "input_file_sha256": "7a3938bb1d3a0214c757aeb98aad6b0fb27477c3111876a8b52b952fc6c1d981",
+  "formal_records": [
+    {
+      "case_id": "normal_b0_zero",
+      "certificate_file": "certificates/normal_b0_zero_J5.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "484295b1c57dbaf6c70188815390dd40872166634b5a880e9962be3f393777bb",
+      "mode": "5d"
+    },
+    {
+      "case_id": "normal_b0_zero",
+      "certificate_file": "certificates/normal_b0_zero_P4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "484295b1c57dbaf6c70188815390dd40872166634b5a880e9962be3f393777bb",
+      "mode": "4d"
+    },
+    {
+      "case_id": "normal_b0_zero",
+      "certificate_file": "certificates/normal_b0_zero_N4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "484295b1c57dbaf6c70188815390dd40872166634b5a880e9962be3f393777bb",
+      "mode": "no_peer"
+    },
+    {
+      "case_id": "normal_b0_direction",
+      "certificate_file": "certificates/normal_b0_direction_J5.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "98d0b7d40fde3b454e9e0263d5f31faa54e7c5bf7a895ecd5ef5ed8e3d8cc724",
+      "mode": "5d"
+    },
+    {
+      "case_id": "normal_b0_direction",
+      "certificate_file": "certificates/normal_b0_direction_P4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "98d0b7d40fde3b454e9e0263d5f31faa54e7c5bf7a895ecd5ef5ed8e3d8cc724",
+      "mode": "4d"
+    },
+    {
+      "case_id": "normal_b0_direction",
+      "certificate_file": "certificates/normal_b0_direction_N4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "98d0b7d40fde3b454e9e0263d5f31faa54e7c5bf7a895ecd5ef5ed8e3d8cc724",
+      "mode": "no_peer"
+    },
+    {
+      "case_id": "normal_b6_zero",
+      "certificate_file": "certificates/normal_b6_zero_J5.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "d92bceb4bf2fc42a9f4912ec883fce52bec61eba0f7fb89e44c1dd1e9c9526ce",
+      "mode": "5d"
+    },
+    {
+      "case_id": "normal_b6_zero",
+      "certificate_file": "certificates/normal_b6_zero_P4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "d92bceb4bf2fc42a9f4912ec883fce52bec61eba0f7fb89e44c1dd1e9c9526ce",
+      "mode": "4d"
+    },
+    {
+      "case_id": "normal_b6_zero",
+      "certificate_file": "certificates/normal_b6_zero_N4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "d92bceb4bf2fc42a9f4912ec883fce52bec61eba0f7fb89e44c1dd1e9c9526ce",
+      "mode": "no_peer"
+    },
+    {
+      "case_id": "normal_b6_direction",
+      "certificate_file": "certificates/normal_b6_direction_J5.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "dce462a844eeb7e674ff9a826310e38ec51b0fe7999b7c5b6b1f14fce9177da9",
+      "mode": "5d"
+    },
+    {
+      "case_id": "normal_b6_direction",
+      "certificate_file": "certificates/normal_b6_direction_P4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "dce462a844eeb7e674ff9a826310e38ec51b0fe7999b7c5b6b1f14fce9177da9",
+      "mode": "4d"
+    },
+    {
+      "case_id": "normal_b6_direction",
+      "certificate_file": "certificates/normal_b6_direction_N4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "dce462a844eeb7e674ff9a826310e38ec51b0fe7999b7c5b6b1f14fce9177da9",
+      "mode": "no_peer"
+    },
+    {
+      "case_id": "near_collinear_b0_zero",
+      "certificate_file": "certificates/near_collinear_b0_zero_J5.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "38264d0d5250fad79f113aff626c7e50a7c1641549844a5522b5948480d839da",
+      "mode": "5d"
+    },
+    {
+      "case_id": "near_collinear_b0_zero",
+      "certificate_file": "certificates/near_collinear_b0_zero_P4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "38264d0d5250fad79f113aff626c7e50a7c1641549844a5522b5948480d839da",
+      "mode": "4d"
+    },
+    {
+      "case_id": "near_collinear_b0_zero",
+      "certificate_file": "certificates/near_collinear_b0_zero_N4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "38264d0d5250fad79f113aff626c7e50a7c1641549844a5522b5948480d839da",
+      "mode": "no_peer"
+    },
+    {
+      "case_id": "near_collinear_b0_direction",
+      "certificate_file": "certificates/near_collinear_b0_direction_J5.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "3d7f72c23f3cb913291b5762ed26da5a3f7d2c71f9ff78cfb0603ebe0a7ef4f8",
+      "mode": "5d"
+    },
+    {
+      "case_id": "near_collinear_b0_direction",
+      "certificate_file": "certificates/near_collinear_b0_direction_P4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "3d7f72c23f3cb913291b5762ed26da5a3f7d2c71f9ff78cfb0603ebe0a7ef4f8",
+      "mode": "4d"
+    },
+    {
+      "case_id": "near_collinear_b0_direction",
+      "certificate_file": "certificates/near_collinear_b0_direction_N4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "3d7f72c23f3cb913291b5762ed26da5a3f7d2c71f9ff78cfb0603ebe0a7ef4f8",
+      "mode": "no_peer"
+    },
+    {
+      "case_id": "near_collinear_b6_zero",
+      "certificate_file": "certificates/near_collinear_b6_zero_J5.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "d5824d5e736dda40c59dfc67936246549db1548bb7b80575f00118a5bc7aa93d",
+      "mode": "5d"
+    },
+    {
+      "case_id": "near_collinear_b6_zero",
+      "certificate_file": "certificates/near_collinear_b6_zero_P4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "d5824d5e736dda40c59dfc67936246549db1548bb7b80575f00118a5bc7aa93d",
+      "mode": "4d"
+    },
+    {
+      "case_id": "near_collinear_b6_zero",
+      "certificate_file": "certificates/near_collinear_b6_zero_N4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "d5824d5e736dda40c59dfc67936246549db1548bb7b80575f00118a5bc7aa93d",
+      "mode": "no_peer"
+    },
+    {
+      "case_id": "near_collinear_b6_direction",
+      "certificate_file": "certificates/near_collinear_b6_direction_J5.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "cd5fad22da40a37ae7d9b0a7aa30ba38668d75ae0fc32afa8d69bbe31c8764ac",
+      "mode": "5d"
+    },
+    {
+      "case_id": "near_collinear_b6_direction",
+      "certificate_file": "certificates/near_collinear_b6_direction_P4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "cd5fad22da40a37ae7d9b0a7aa30ba38668d75ae0fc32afa8d69bbe31c8764ac",
+      "mode": "4d"
+    },
+    {
+      "case_id": "near_collinear_b6_direction",
+      "certificate_file": "certificates/near_collinear_b6_direction_N4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "cd5fad22da40a37ae7d9b0a7aa30ba38668d75ae0fc32afa8d69bbe31c8764ac",
+      "mode": "no_peer"
+    },
+    {
+      "case_id": "collinear_b0_zero",
+      "certificate_file": "certificates/collinear_b0_zero_J5.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "f0885cd3f43761e27cc351e348b6c14c87efcfbbba2d983909da84b7b7dac697",
+      "mode": "5d"
+    },
+    {
+      "case_id": "collinear_b0_zero",
+      "certificate_file": "certificates/collinear_b0_zero_P4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "f0885cd3f43761e27cc351e348b6c14c87efcfbbba2d983909da84b7b7dac697",
+      "mode": "4d"
+    },
+    {
+      "case_id": "collinear_b0_zero",
+      "certificate_file": "certificates/collinear_b0_zero_N4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "f0885cd3f43761e27cc351e348b6c14c87efcfbbba2d983909da84b7b7dac697",
+      "mode": "no_peer"
+    },
+    {
+      "case_id": "collinear_b0_direction",
+      "certificate_file": "certificates/collinear_b0_direction_J5.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "35a9a6d6b1b322d6eae95cb25cdba38936c4dd618bf7eece0b59442d2b005be5",
+      "mode": "5d"
+    },
+    {
+      "case_id": "collinear_b0_direction",
+      "certificate_file": "certificates/collinear_b0_direction_P4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "35a9a6d6b1b322d6eae95cb25cdba38936c4dd618bf7eece0b59442d2b005be5",
+      "mode": "4d"
+    },
+    {
+      "case_id": "collinear_b0_direction",
+      "certificate_file": "certificates/collinear_b0_direction_N4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "35a9a6d6b1b322d6eae95cb25cdba38936c4dd618bf7eece0b59442d2b005be5",
+      "mode": "no_peer"
+    },
+    {
+      "case_id": "collinear_b6_zero",
+      "certificate_file": "certificates/collinear_b6_zero_J5.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "c7ac9090fe9327c2c1712ecd586ab3149bcdd3ca64742b1aea174f96d165d53b",
+      "mode": "5d"
+    },
+    {
+      "case_id": "collinear_b6_zero",
+      "certificate_file": "certificates/collinear_b6_zero_P4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "c7ac9090fe9327c2c1712ecd586ab3149bcdd3ca64742b1aea174f96d165d53b",
+      "mode": "4d"
+    },
+    {
+      "case_id": "collinear_b6_zero",
+      "certificate_file": "certificates/collinear_b6_zero_N4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "c7ac9090fe9327c2c1712ecd586ab3149bcdd3ca64742b1aea174f96d165d53b",
+      "mode": "no_peer"
+    },
+    {
+      "case_id": "collinear_b6_direction",
+      "certificate_file": "certificates/collinear_b6_direction_J5.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "7909e2cfc7f49667c3ffbc7a7a6e42b8387159e820c638718090481a13424f43",
+      "mode": "5d"
+    },
+    {
+      "case_id": "collinear_b6_direction",
+      "certificate_file": "certificates/collinear_b6_direction_P4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "7909e2cfc7f49667c3ffbc7a7a6e42b8387159e820c638718090481a13424f43",
+      "mode": "4d"
+    },
+    {
+      "case_id": "collinear_b6_direction",
+      "certificate_file": "certificates/collinear_b6_direction_N4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "7909e2cfc7f49667c3ffbc7a7a6e42b8387159e820c638718090481a13424f43",
+      "mode": "no_peer"
+    },
+    {
+      "case_id": "empty_in_domain",
+      "certificate_file": "certificates/empty_in_domain_J5.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "3032c827770dfd6fd5bf9665ff7a759b0c3586276eaf4345107b9cf5782c6e0a",
+      "mode": "5d"
+    },
+    {
+      "case_id": "empty_in_domain",
+      "certificate_file": "certificates/empty_in_domain_P4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "3032c827770dfd6fd5bf9665ff7a759b0c3586276eaf4345107b9cf5782c6e0a",
+      "mode": "4d"
+    },
+    {
+      "case_id": "domain_closed_contact",
+      "certificate_file": "certificates/domain_closed_contact_J5.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "4e8ace2632dad1cd56eb4dff7e77f1e43682708a3bdf994204eda8c31ed14311",
+      "mode": "5d"
+    },
+    {
+      "case_id": "domain_closed_contact",
+      "certificate_file": "certificates/domain_closed_contact_P4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "4e8ace2632dad1cd56eb4dff7e77f1e43682708a3bdf994204eda8c31ed14311",
+      "mode": "4d"
+    },
+    {
+      "case_id": "coincident_zero_distance",
+      "certificate_file": "certificates/coincident_zero_distance_J5.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "16e210ee6723c7c19b38477f5180fe4384218fc7829d5e027faf16ac1f335968",
+      "mode": "5d"
+    },
+    {
+      "case_id": "coincident_zero_distance",
+      "certificate_file": "certificates/coincident_zero_distance_P4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "16e210ee6723c7c19b38477f5180fe4384218fc7829d5e027faf16ac1f335968",
+      "mode": "4d"
+    },
+    {
+      "case_id": "forced_budget",
+      "certificate_file": "certificates/forced_budget_J5.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "ca4aaa85de407cf87f4e183fc7be1b4cd9cf5048acac47589549fa49c1961086",
+      "mode": "5d"
+    },
+    {
+      "case_id": "forced_budget",
+      "certificate_file": "certificates/forced_budget_P4.json",
+      "execution_status": "CERTIFICATE_AVAILABLE",
+      "input_hash": "ca4aaa85de407cf87f4e183fc7be1b4cd9cf5048acac47589549fa49c1961086",
+      "mode": "4d"
+    }
+  ],
+  "outside_plan_records": [
+    {
+      "case_id": "empty_in_domain",
+      "execution_status": "NOT_RUN",
+      "input_hash": "3032c827770dfd6fd5bf9665ff7a759b0c3586276eaf4345107b9cf5782c6e0a",
+      "mode": "no_peer",
+      "reason": "OUTSIDE_USER_AUTHORIZED_PLAN"
+    },
+    {
+      "case_id": "domain_closed_contact",
+      "execution_status": "NOT_RUN",
+      "input_hash": "4e8ace2632dad1cd56eb4dff7e77f1e43682708a3bdf994204eda8c31ed14311",
+      "mode": "no_peer",
+      "reason": "OUTSIDE_USER_AUTHORIZED_PLAN"
+    },
+    {
+      "case_id": "coincident_zero_distance",
+      "execution_status": "NOT_RUN",
+      "input_hash": "16e210ee6723c7c19b38477f5180fe4384218fc7829d5e027faf16ac1f335968",
+      "mode": "no_peer",
+      "reason": "OUTSIDE_USER_AUTHORIZED_PLAN"
+    },
+    {
+      "case_id": "forced_budget",
+      "execution_status": "NOT_RUN",
+      "input_hash": "ca4aaa85de407cf87f4e183fc7be1b4cd9cf5048acac47589549fa49c1961086",
+      "mode": "no_peer",
+      "reason": "OUTSIDE_USER_AUTHORIZED_PLAN"
+    }
+  ],
+  "formal_denominator": {
+    "J5": 16,
+    "P4": 16,
+    "N4": 12,
+    "total": 44
+  },
+  "conditional_random": {
+    "planned": 240,
+    "performed_by_A": 0,
+    "b_recorded_completed": 0,
+    "b_recorded_status": "SKIPPED_GATE_FAILED"
+  }
+}

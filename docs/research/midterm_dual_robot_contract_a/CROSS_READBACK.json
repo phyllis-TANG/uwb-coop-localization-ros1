@@ -1,23 +1,85 @@
 {
-  "checked_at_utc": "2026-11-17T15:13:45.834118+00:00",
-  "b_branch": "research/dual-robot-region-b",
-  "locked_observed_sha": "dd688106ace4aa3b18c785b519e8940cbca8b325",
-  "results_ready_paths": [],
-  "progress": {
-    "blocked": "A_CONTRACT_READY_NOT_YET_PUBLISHED",
-    "completed": 31,
-    "current_case": null,
-    "formal_methods_completed": 0,
-    "last_updated": "2026-11-17T15:07:59.046983+00:00",
-    "planned": 31,
-    "schema": "DUAL-B-PROGRESS-V1",
-    "stage": "DEVELOPMENT_PIPELINE"
+  "checked_at_utc": "2026-11-18T05:14:43.176231+00:00",
+  "cross_readback": "PASS",
+  "delivery_sha": "5e3579086776725f9330f64eca75b63a21cd661c",
+  "evidence_source_commit": "4513c59a70f5b45a2ddd9e0e4fb1e35f6737436c",
+  "run_frozen_sha": "e112b900a97dc92acb08c950e5f65e6e8e515ac8",
+  "a_frozen_sha": "e45ca6d5940ff9f28233f03fb3502d5ed7004817",
+  "archive_hash": "7b8c1cff805e545d82cc313d75283ad005d281993f4345621b79038ca2937e8f",
+  "formal_denominator": {
+    "J5": 16,
+    "P4": 16,
+    "N4": 12,
+    "total": 44
   },
-  "progress_sha256": "3762aba04d40c1c9be9140c0a929bbf4a4a251d6f39797b67d9edabb8f9944d9",
-  "cross_readback": "PENDING",
-  "formal_certificates_checked": 0,
-  "archive_hash": null,
-  "reason": "No RESULTS_READY.json in observed B tree; do not equate B development tests with formal result acceptance.",
-  "a_ready_sha": "e45ca6d5940ff9f28233f03fb3502d5ed7004817",
-  "note": "B progress field reports A not published, but A PR131 is already published. This is a stale B progress statement, not current A state."
+  "formal_certificates_checked": 44,
+  "v1_passed": 44,
+  "v2_passed": 44,
+  "consistent": 44,
+  "failed": 0,
+  "unexecuted": 0,
+  "tree_nodes_checked_per_version": 1134406,
+  "outside_plan_records": [
+    {
+      "case_id": "empty_in_domain",
+      "execution_status": "NOT_RUN",
+      "input_hash": "3032c827770dfd6fd5bf9665ff7a759b0c3586276eaf4345107b9cf5782c6e0a",
+      "mode": "no_peer",
+      "reason": "OUTSIDE_USER_AUTHORIZED_PLAN"
+    },
+    {
+      "case_id": "domain_closed_contact",
+      "execution_status": "NOT_RUN",
+      "input_hash": "4e8ace2632dad1cd56eb4dff7e77f1e43682708a3bdf994204eda8c31ed14311",
+      "mode": "no_peer",
+      "reason": "OUTSIDE_USER_AUTHORIZED_PLAN"
+    },
+    {
+      "case_id": "coincident_zero_distance",
+      "execution_status": "NOT_RUN",
+      "input_hash": "16e210ee6723c7c19b38477f5180fe4384218fc7829d5e027faf16ac1f335968",
+      "mode": "no_peer",
+      "reason": "OUTSIDE_USER_AUTHORIZED_PLAN"
+    },
+    {
+      "case_id": "forced_budget",
+      "execution_status": "NOT_RUN",
+      "input_hash": "ca4aaa85de407cf87f4e183fc7be1b4cd9cf5048acac47589549fa49c1961086",
+      "mode": "no_peer",
+      "reason": "OUTSIDE_USER_AUTHORIZED_PLAN"
+    }
+  ],
+  "conditional_random": {
+    "planned": 240,
+    "performed_by_A": 0,
+    "b_recorded_completed": 0,
+    "b_recorded_status": "SKIPPED_GATE_FAILED"
+  },
+  "search_calls": 0,
+  "benchmark": "checker_v2/BENCHMARK.json",
+  "raw_and_geometry_audit": "checker_v2/RAW_AND_GEOMETRY_AUDIT.json",
+  "previous_pending_observation": {
+    "checked_at_utc": "2026-11-17T15:13:45.834118+00:00",
+    "b_branch": "research/dual-robot-region-b",
+    "locked_observed_sha": "dd688106ace4aa3b18c785b519e8940cbca8b325",
+    "results_ready_paths": [],
+    "progress": {
+      "blocked": "A_CONTRACT_READY_NOT_YET_PUBLISHED",
+      "completed": 31,
+      "current_case": null,
+      "formal_methods_completed": 0,
+      "last_updated": "2026-11-17T15:07:59.046983+00:00",
+      "planned": 31,
+      "schema": "DUAL-B-PROGRESS-V1",
+      "stage": "DEVELOPMENT_PIPELINE"
+    },
+    "progress_sha256": "3762aba04d40c1c9be9140c0a929bbf4a4a251d6f39797b67d9edabb8f9944d9",
+    "cross_readback": "PENDING",
+    "formal_certificates_checked": 0,
+    "archive_hash": null,
+    "reason": "No RESULTS_READY.json in observed B tree; do not equate B development tests with formal result acceptance.",
+    "a_ready_sha": "e45ca6d5940ff9f28233f03fb3502d5ed7004817",
+    "note": "B progress field reports A not published, but A PR131 is already published. This is a stale B progress statement, not current A state."
+  },
+  "scope": "A independent certificate acceptance and raw linkage, not a claim of task safety or new search results"
 }
