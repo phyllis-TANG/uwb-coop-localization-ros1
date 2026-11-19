@@ -14,6 +14,8 @@
 
 **中文讲解（约 30 秒）**　左图取自 10 月 30 日的 Isaac 历史演示视频第七秒。团队用 LuSNAR 数据生成月面网格，在上面回放地面双车实验；远处的环形山是展示素材。右边两幅地图给出本次实验的实际位置。蓝、橙两车取自同一条源轨迹，同一场景时刻，一号车取晚五秒的源位置。圆点和菱形是每段的第 0 和第 11 个索引；三角形是合成锚点，橙粉色网格是地形填补区。评价使用合成的锚车和车间斜距，并给定两车天线高度。
 
+[PPT 用完整 Isaac 演示录像（MP4）](moon_uwb_topright_en.mp4)，时长 49.03 秒，H.264，1920 × 1080，30 fps。建议幻灯片标注「LuSNAR 月面网格上的地面双车轨迹回放（10 月 30 日 Isaac 演示）」。
+
 左图直接读取[视频第 210 帧，零基索引](isaac_replay_7s.png)。原视频位于场景工作树的 `sim/isaac_lab/moon1/output/videos/moon_uwb_topright_en.mp4`（1920 × 1080，30 fps，SHA-256 `fe3010389bcd411c6303a5d290f5f3746ca881f985d0384ab72452a0982b53d8`）。取帧命令为 `ffmpeg -ss 7 -i moon_uwb_topright_en.mp4 -frames:v 1 isaac_replay_7s.png`。原场景的 `output/videos/presentation_provenance.json` 记录装饰性环形山与车载天线模型的来源。两幅地图分别读取主段的 [terrain.npz](../continuous/terrain.npz)、[ROUTE.json](../continuous/ROUTE.json) 和第二段的 [terrain.npz](../replication/terrain.npz)、[ROUTE.json](../replication/ROUTE.json)。可与[主段原图](../continuous/selected_route.png)、[第二段原图](../replication/routes.png) 对照。地图在 CPU 上按网格绘制。高度色标共用，两个地图保留各自的实际坐标。
 
 ```bash
