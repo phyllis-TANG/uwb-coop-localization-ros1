@@ -1,0 +1,113 @@
+{
+  "schema_version": "DUAL-FIXED-HEIGHT-1",
+  "source_commit": "8acffa9f4061e4740c18c7d0f1e09d28cf7f3155",
+  "case_id": "vertical-contact",
+  "frame": "moon_map_z_up",
+  "units": "m",
+  "source_times": {
+    "p": "5",
+    "s": "0"
+  },
+  "heights": {
+    "p": "1",
+    "s": "1"
+  },
+  "anchors": {
+    "a0": [
+      "0",
+      "0",
+      "0"
+    ],
+    "a1": [
+      "0",
+      "0",
+      "0"
+    ],
+    "a2": [
+      "0",
+      "0",
+      "0"
+    ],
+    "a3": [
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "measurement_ids": [
+    "t0/p/a0",
+    "t0/p/a1",
+    "t0/p/a2",
+    "t0/p/a3",
+    "t0/s/a0",
+    "t0/s/a1",
+    "t0/s/a2",
+    "t0/s/a3",
+    "t0/p/s/peer"
+  ],
+  "observations": [
+    [
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "1"
+    ],
+    [
+      "1",
+      "1"
+    ],
+    [
+      "1",
+      "1"
+    ],
+    [
+      "1",
+      "1"
+    ],
+    [
+      "1",
+      "1"
+    ],
+    [
+      "1",
+      "1"
+    ],
+    [
+      "1",
+      "1"
+    ],
+    [
+      "0",
+      "0"
+    ]
+  ],
+  "variance": [
+    "1/26",
+    "1/26",
+    "1/26",
+    "1/26",
+    "1/26",
+    "1/26",
+    "1/26",
+    "1/26",
+    "1/26"
+  ],
+  "bias_domain": [
+    "-3/5",
+    "3/5"
+  ],
+  "arithmetic_policy": {
+    "kind": "rational_isqrt",
+    "sqrt_digits": 30,
+    "closed_sets": true
+  },
+  "domain_source": "joint_event_26",
+  "budget": {
+    "max_nodes": 1,
+    "max_seconds": "30",
+    "position_resolution": "1/20"
+  },
+  "input_hash": "aad0c2f85a426ecc1f526b4cd2da1371226ecc18ba63fbca3f9b96efad6b4af9"
+}

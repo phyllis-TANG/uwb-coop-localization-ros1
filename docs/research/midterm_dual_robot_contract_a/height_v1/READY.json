@@ -1,0 +1,20 @@
+{
+  "status": "READY",
+  "implementation_commit": "da852740689113529b38815e1eb81f949ff5a8c6",
+  "entry": "tools/midterm_dual_robot_contract_a/height_v1/checker.py",
+  "format": "docs/research/midterm_dual_robot_contract_a/height_v1/MODEL.md",
+  "tests_passed": 15,
+  "tests_failed": 0,
+  "command": "python3 tools/midterm_dual_robot_contract_a/height_v1/checker.py docs/research/midterm_dual_robot_contract_a/height_v1/input.json docs/research/midterm_dual_robot_contract_a/height_v1/certificate.json",
+  "expected_output": "docs/research/midterm_dual_robot_contract_a/height_v1/expected.json",
+  "sha256": {
+    "docs/research/midterm_dual_robot_contract_a/height_v1/input.json": "070f5832e4c5c70b9dc3d2f1558e22c353b9baaec7a55508bb4ad804db91385e",
+    "docs/research/midterm_dual_robot_contract_a/height_v1/expected.json": "80b9a721470018b10f04a6821335e8b2aacae75bb459b63f474ac13c28eb298b",
+    "docs/research/midterm_dual_robot_contract_a/height_v1/certificate.json": "9a79dec7e5090d6962143ecab4bb207f8473221e6e2830b64a18d5d017d63dda",
+    "docs/research/midterm_dual_robot_contract_a/height_v1/MODEL.md": "97fe0af24b761a829fb35d0f3ba9de1c8d7d466cf10bc8dd946a3b06caac4ced",
+    "tools/midterm_dual_robot_contract_a/height_v1/checker.py": "547d139c0165de2eae7b46cdfd42ea34350859991a75634c8ee23775ea5b8971",
+    "tools/midterm_dual_robot_contract_a/height_v1/test_height.py": "ed9d5775383b020c79b1eff638c00a09e611b2cd01ad1f1d8d5ddadbe6be5f2f",
+    "tools/midterm_dual_robot_contract_a/checker_v2.py": "67b6966f5904e97b5a5289be4da197acdb19243cf3b605a25bb99ae85517697d",
+    "tools/midterm_dual_robot_contract_a/core.py": "12b0618b1e85bfc1c1d965172be868dde9f57d4749aebe14c74187f929ff4466"
+  }
+}
