@@ -1,0 +1,20 @@
+{
+  "route": "crossing_offset",
+  "base": "3787e3a4b61aac969a46ab8245c37f5ed1199d92",
+  "car1_xyz_m": ["5+0.60*t","1+0.12*t",0.97],
+  "car2_xyz_m": ["17-0.45*t","5-0.10*t",0.95],
+  "integer_seconds": [0,22],
+  "epochs": [4,14],
+  "seeds": [2026112311,2026112312,2026112313],
+  "noise": "Generator(PCG64(seed)).standard_normal((23,9))*0.04",
+  "columns": ["Car1 a0..a3","Car2 a0..a3","peer"],
+  "injected_bias_m": 0,
+  "layouts": ["original","equal_area_square"],
+  "peer_bias_halfwidth_m": {"anchor_only":null,"peer_60":"3/5","peer_15":"3/20","peer_05":"1/20"},
+  "sigma_m": 0.04,
+  "q": 26,
+  "resolution_m": 0.05,
+  "node_limit": 150000,
+  "time_limit_s": 240,
+  "workers": 2
+}
