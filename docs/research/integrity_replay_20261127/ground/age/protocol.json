@@ -1,0 +1,13 @@
+{
+  "experiment": "Frozen-output downlink interruption with priority alarm delivery",
+  "primary_phase": 0, "alternative_phases": [1, 2, 3],
+  "cycle_s": 4, "closed_source_epoch_modulo": [2, 3],
+  "clock_hz": 20, "ticks_per_replay": 1280, "expiry_ticks_inclusive": 40,
+  "methods": ["Nine-link", "Iterative"], "vehicles": [1, 2],
+  "display": "odom_age_bound", "horizontal_alert_limits_m": [0.1, 0.2, 0.5, 0.8, 1.0],
+  "splits": {"dev": [101], "holdout": [2026111901, 2026111902]},
+  "scenes": ["nominal","wall","peer_step","peer_ramp"],
+  "alarm_transport": "priority path at original recorded ready time for every rejected source; all source epochs predetermined regardless of status or truth",
+  "packet_handling": "drop, not buffer, numerical solution packets at scheduled closed source epochs; filtering and 20 Hz odometry remain unaffected",
+  "control": "all source decisions arrive at original published ready times"
+}
